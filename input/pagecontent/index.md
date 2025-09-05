@@ -34,3 +34,10 @@ This IG is grounded in a series of national co-design workshops and feedback ses
 
 - For technical documentation, installation, build instructions, and modeling standards, see the [GitHub Wiki](https://github.com/UP-Manila-SILab/PH-RoadSafetyIG/wiki).
 - This Implementation Guide and its Minimum Data Set are still being finalized and validated. For questions, refer to the wiki or contact the project team.
+
+---
+
+{% include ip-statements.xhtml %}
+{% include dependency-table.xhtml %}
+{% include globals-table.xhtml %}
+{% include cross-version-analysis.xhtml %}
