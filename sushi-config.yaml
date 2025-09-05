@@ -3,22 +3,26 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.example
-canonical: http://example.org
+id: ph-road-safety-ig
+canonical: https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG
 name: PH-RoadSafetyIG
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: PH Road Safety Implementation Guide
+description: FHIR IG for road safety and health information in the Philippines
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#PH "Philippines"
 publisher:
-  name: Example Publisher
-  url: http://example.org/example-publisher
-  # email: test@example.org
+  name: UP Manila SILab
+  url: https://github.com/UP-Manila-SILab/PH-RoadSafetyIG
+contact:
+  - name: PH Road Safety IG Maintainers
+    telecom:
+      - system: url
+        value: https://github.com/UP-Manila-SILab/PH-RoadSafetyIG
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
