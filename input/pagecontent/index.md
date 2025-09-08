@@ -14,7 +14,7 @@ The PH-RoadSafetyIG Implementation Guide (IG) represents the **Level 3 (L3) "Mac
 
 ---
 
-## Project Context
+### Project Context
 
 Road-traffic injuries are among the most preventable yet under-reported public health threats in the Philippines. Data is fragmented across paper forms, stand-alone apps, and ad-hoc spreadsheets, creating critical blind spots for policymakers, emergency responders, and families. PH-RoadSafetyIG aims to close these gaps by defining a consensus-driven MDS and mapping it to HL7 FHIR R4 resources, enabling interoperable, machine-readable data exchange nationwide.
 
@@ -22,7 +22,7 @@ This IG is grounded in a series of project-led co-design workshops and feedback 
 
 ---
 
-## Publisher and Contact
+### Publisher and Contact
 
 - **Publisher:** UP Manila SILab
 - **Canonical:** [https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG](https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG)
@@ -31,7 +31,7 @@ This IG is grounded in a series of project-led co-design workshops and feedback 
 
 ---
 
-## Documentation
+### Documentation
 
 - For technical documentation, installation, build instructions, and modeling standards, see the [GitHub Wiki](https://github.com/UP-Manila-SILab/PH-RoadSafetyIG/wiki).
 - This Implementation Guide and its Minimum Data Set are still being finalized and validated. For questions, refer to the wiki or contact the project team.
