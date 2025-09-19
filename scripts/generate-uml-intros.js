@@ -27,8 +27,8 @@
 const fs = require("fs");
 const path = require("path");
 
-// Configurable allowlist. To support other resource types later, add them here.
-const resourceTypeAllowlist = ["Patient"];
+// Configurable allowlist. To support all FHIR resources, set to null or [] for no filtering.
+const resourceTypeAllowlist = null; // null or [] means allow all resource types
 
 // Repository-relative paths
 const repoRoot = process.cwd();
@@ -215,9 +215,9 @@ function main() {
       }
     }
 
-    const filtered = allProfiles.filter(
-      (p) => p.parent && resourceTypeAllowlist.includes(p.parent)
-    );
+    const filtered = resourceTypeAllowlist && resourceTypeAllowlist.length
+      ? allProfiles.filter((p) => p.parent && resourceTypeAllowlist.includes(p.parent))
+      : allProfiles.filter((p) => p.parent); // allow all FHIR resource types if allowlist is null/empty
 
     let created = 0;
     let updated = 0;
@@ -232,8 +232,11 @@ function main() {
 
     const sushiRes = ensureGenerateUmlParamInSushiConfig();
     const n = filtered.length;
+    const resourceTypeSummary = resourceTypeAllowlist && resourceTypeAllowlist.length
+      ? resourceTypeAllowlist.join(", ")
+      : "all FHIR resource types";
     console.log(
-      `${n} Patient profiles found; ${created} intros created; ${updated} intros updated; ${skipped} skipped (already present).`
+      `${n} profiles found for ${resourceTypeSummary}; ${created} intros created; ${updated} intros updated; ${skipped} skipped (already present).`
     );
     if (sushiRes.changed) {
       console.log(`sushi-config.yaml updated: ${sushiRes.reason}`);
