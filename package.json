@@ -1,0 +1,11 @@
+{
+  "name": "ph-roadsafety-ig",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Auto-generated helpers for UML diagram generation via IG Publisher. Safe to commit.",
+  "scripts": {
+    "gen:intros": "node scripts/generate-uml-intros.js",
+    "build:uml": "node scripts/generate-uml-intros.js && node -e \"process.platform==='win32'?process.exit(1):process.exit(0)\" || bash ./scripts/build-uml.sh",
+    "build:uml:win": "node scripts/generate-uml-intros.js && powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-uml.ps1"
+  }
+}
