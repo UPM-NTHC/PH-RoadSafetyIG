@@ -1,0 +1,84 @@
+@startuml
+title Road Safety Data Exchange - Central FHIR Server
+skinparam actorStyle awesome
+skinparam roundcorner 20
+box "Scene to Facility" #White
+actor EMS
+collections FHIR as "FHIR Gateway"
+actor EHR as "Facility EHR"
+database ETL as "ONEISS API"
+end box
+participant DPWH as "DPWH/DOTr"
+participant HC as "Health Center"
+
+note over FHIR
+ONEISS / NHDR
+FHIR Server
+Supports Subscription delivery to ETL
+end note
+
+
+
+group Scene to EMS Transport Reporting
+note right of EMS
+EMS* (Electronic Reporting system)
+end note
+    EMS -> FHIR : POST Bundle.runreport\n(Encounter.transport-runreport + resources)
+    FHIR --> EMS : 201 Created (Encounter id)\nValidate & index
+end
+
+group Facility [Retrieval]
+note left of EHR
+Facility EHR (iHOMIS / other EHR)
+end note
+    EHR -> FHIR : GET /Encounter?identifier=IncidentNo|<system>|<value>
+    FHIR --> EHR : 200 Bundle (Encounter + subject)
+
+    EHR -> FHIR : GET /Observation?encounter={id}&category=vital-signs
+    FHIR --> EHR : 200 Bundle (Vitals at scene)
+
+    EHR -> FHIR : GET /DocumentReference?context-encounter={id}
+    FHIR --> EHR : 200 Bundle (Run form, attachments)
+
+    note left of EHR
+    Prefill triage, vitals, timestamps, crew handoff notes
+    end note
+else Submission
+    EHR -> FHIR : POST Bundle.facility\n(Encounter + clinical resources)
+    FHIR --> EHR : 201 Created
+end
+
+group ONEISS ETL (Subscription) [Hook based]
+    FHIR -> ETL : POST /notifications (Subscription delivery)\nTransform 200 /SOAP Bundle (facility submission)
+    ETL --> FHIR : 201 Created
+
+else Alternative (Scheduled or Manual Trigger)
+    FHIR -> ETL : POST /SOAP Bundle  (transformed/normalized) every X seconds
+    ETL --> FHIR : 201 Created
+end
+
+group Agency Reporting
+    note left of DPWH
+    DPWH/DOTr (Agency reporting system)
+    end note
+    DPWH -> FHIR : GET /Encounter?service-provider=Org/{id}&...
+    FHIR --> DPWH : 200 Bundle (relevant agency report data)
+end
+
+group Follow-up Care
+    note left of HC
+    Health centers (iClinicSys, or other private EHR)
+    end note
+    HC -> FHIR : GET /Patient/{id} or /Encounter?patient={id}
+    FHIR --> HC : 200 Bundle (patient/encounter data)
+end
+
+legend left
+Key concepts
+- Presence of a ONEISS / NHDR central FHIR gateway
+- Bundles carry Encounter, Observations, Documents
+- Systems retrieve or submit via standard FHIR endpoints
+- ETL subscribes to transform and normalize data for reporting
+endlegend
+
+@enduml

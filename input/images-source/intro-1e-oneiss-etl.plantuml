@@ -1,0 +1,44 @@
+@startuml
+title ONEISS ETL — Gateway ↔ ONEISS Subscription Workflow
+skinparam actorStyle awesome
+skinparam roundcorner 20
+collections FHIR as "FHIR Gateway"
+queue ETL as "ETL Script"
+database ONEISS as "ONEISS API"
+
+note right of FHIR
+Gateway hosts Subscription resources
+and delivers notifications to Script Endpoint
+end note
+
+group Subscription delivery
+    FHIR -> ETL : POST /notifications (Subscription delivery)
+    ETL --> FHIR : 200 OK
+
+    note left of ETL
+    Notification may include resource references or
+    inline resources (application/fhir+json).
+    ETL Script may choose to pull full resources after notify.
+    end note
+end
+
+group Pull & Transform
+    ETL -> FHIR : GET /Encounter?identifier=IncidentNo|{system}|{value}
+    FHIR --> ETL : 200 Bundle (raw EMS + Facility data) (transformed / normalized)
+
+    ETL -> ONEISS : POST /SOAP  (transformed / normalized)
+    ONEISS --> ETL : 201 Created
+end
+
+legend left
+Example interactions:
+- Subscription.delivery: HTTP POST to ETL endpoint with content-type application/fhir+json
+- ETL Script can pull resources using standard GET queries or accept pushed content
+
+Operational notes:
+- Secure endpoints (OAuth2 client credentials or mTLS)
+- Support retries, backoff, and dead-letter handling on the Gateway
+- Agree transformation rules, canonical mappings, and provenance
+endlegend
+
+@enduml
