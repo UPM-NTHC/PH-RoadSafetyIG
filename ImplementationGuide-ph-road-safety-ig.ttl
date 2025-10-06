@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-06T04:28:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-06T14:14:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -2454,6 +2454,20 @@
            fhir:v "usecase-facility-oneiss.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Usecase Facility Oneiss" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "usecase-ph-core-interoperability.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "usecase-ph-core-interoperability.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Usecase Ph Core Interoperability" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
