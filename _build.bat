@@ -89,7 +89,7 @@ echo ---------------------------------------------------------------
 echo.
 
 echo Please select an option:
-echo 1. Download or upload publisher
+echo 1. Download or update publisher
 echo 2. Build IG
 echo 3. Build IG - no sushi
 echo 4. Build IG - force no TX server
@@ -122,7 +122,7 @@ IF "%userChoice%"=="0" EXIT /B
 
 :debugjekyll
     echo Running Jekyll build...
-    jekyll build -s temp/pages -d output
+    jekyll build -s temp/pages -d output --verbose --trace 
 GOTO end
 
 
