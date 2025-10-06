@@ -1,4 +1,4 @@
-@startuml usecase-phcore-interoperability
+@startuml
 !theme plain
 skinparam backgroundColor #FEFEFE
 skinparam rectangleBorderColor #333333
@@ -8,6 +8,7 @@ skinparam noteBackgroundColor #BBDEFB
 skinparam arrowColor #1565C0
 skinparam packageBorderColor #0D47A1
 skinparam packageBackgroundColor #E8EAF6
+skinparam actorStyle awesome
 
 title PH-CORE: Promoting Interoperability in Philippine Health Systems
 
@@ -15,10 +16,10 @@ package "National Standards Layer" #E8EAF6 {
   component "PH-CORE\nBase Profiles" as PHCORE #90CAF9
   note right of PHCORE
     **Core Philippine Profiles**
-    - PHPatient
-    - PHPractitioner
-    - PHOrganization
-    - PHLocation
+    - PHCorePatient
+    - PHCorePractitioner
+    - PHCoreOrganization
+    - PHCoreLocation
     - Common Extensions
     - Shared ValueSets
   end note
@@ -27,23 +28,23 @@ package "National Standards Layer" #E8EAF6 {
 package "Domain-Specific Implementation Guides" #FFF3E0 {
   component "PH Road Safety IG" as RoadSafety #FFCC80
   component "PH Immunization IG" as Immunization #FFCC80
-  component "PH Laboratory IG" as Laboratory #FFCC80
-  component "PH Vital Records IG" as VitalRecords #FFCC80
+  component "PH Laboratory IG\n[example]" as Laboratory #FFCC80
+  component "PH Vital Records IG\n[example]" as VitalRecords #FFCC80
   component "Future Domain IGs..." as FutureIGs #FFE0B2
 }
 
-package "Implementation Benefits" #E8F5E9 {
-  rectangle "Profile Reuse\n(Reduce Fragmentation)" as ProfileReuse #81C784
-  rectangle "Consistent Data Models\n(Semantic Interoperability)" as ConsistentModels #81C784
-  rectangle "Reduced Development\n(DRY Principle)" as ReducedDev #81C784
-  rectangle "National Governance\n(Standards Alignment)" as Governance #81C784
-}
+' package "Implementation Benefits" #E8F5E9 {
+'   rectangle "Profile Reuse\n(Reduce Fragmentation)" as ProfileReuse #81C784
+'   rectangle "Consistent Data Models\n(Semantic Interoperability)" as ConsistentModels #81C784
+'   rectangle "Reduced Development\n(DRY Principle)" as ReducedDev #81C784
+'   rectangle "National Governance\n(Standards Alignment)" as Governance #81C784
+' }
 
 package "Real-World Systems" #FCE4EC {
   actor "Hospital EMR" as Hospital #F48FB1
   actor "EMS System" as EMS #F48FB1
-  actor "OneISS\n(National Registry)" as OneISS #F48FB1
-  actor "DOH Systems" as DOH #F48FB1
+  actor "ONEISS\n(National Registry)" as OneISS #F48FB1
+  actor "Other DOH Systems" as DOH #F48FB1
   actor "Local Registries" as LocalRegistry #F48FB1
 }
 
@@ -54,15 +55,15 @@ PHCORE --> Laboratory : extends
 PHCORE --> VitalRecords : extends
 PHCORE --> FutureIGs : extends
 
-' Benefits realization
-RoadSafety --> ProfileReuse
-Immunization --> ProfileReuse
-Laboratory --> ProfileReuse
-VitalRecords --> ProfileReuse
+' ' Benefits realization
+' RoadSafety --> ProfileReuse
+' Immunization --> ProfileReuse
+' Laboratory --> ProfileReuse
+' VitalRecords --> ProfileReuse
 
-PHCORE --> ConsistentModels
-PHCORE --> ReducedDev
-PHCORE --> Governance
+' PHCORE --> ConsistentModels
+' PHCORE --> ReducedDev
+' PHCORE --> Governance
 
 ' Implementation connections
 RoadSafety --> Hospital : implements
@@ -80,20 +81,20 @@ VitalRecords --> Hospital : implements
 VitalRecords --> LocalRegistry : implements
 VitalRecords --> DOH : implements
 
-note bottom of RoadSafety
-  **Avoids Duplication**
-  Instead of defining PHPatient again,
-  Road Safety IG constrains PH-CORE's
-  PHPatient for domain-specific needs
-end note
+' note right of PHCORE
+'   **Avoids Duplication**
+'   Instead of defining PHCorePatient again,
+'   Road Safety IG constrains PH-CORE's
+'   PHCorePatient for domain-specific needs
+' end note
 
-note bottom of Governance
-  **Key Insight from Firely Analysis**
-  Countries with strong governance
-  (e.g., Netherlands, Germany) achieve
-  better interoperability through
-  centralized base profiles and
-  profile reuse strategies
-end note
+' note bottom of Governance
+'   **Key Insight from Firely Analysis**
+'   Countries with strong governance
+'   (e.g., Netherlands, Germany) achieve
+'   better interoperability through
+'   centralized base profiles and
+'   profile reuse strategies
+' end note
 
 @enduml
