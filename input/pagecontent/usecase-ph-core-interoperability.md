@@ -1,14 +1,30 @@
-# PH-CORE Interoperability Use Case
+<style>
+/* Container centers inline content */
+.svg-wrap {
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center; /* center smaller images without forcing them to grow */
+}
 
-## Overview
-
+/* Keep intrinsic size (no upscaling), allow downscaling to fit width,
+   but constrain very tall/large images by viewport height so they don't stretch the page. */
+.svg-wrap svg {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;       /* allow downscaling to container width */
+  height: auto !important; 
+  box-sizing: border-box;
+}
+</style>
 This use case demonstrates how the PH-CORE (Philippine Core) Implementation Guide serves as a foundational layer for domain-specific implementation guides in the Philippine health ecosystem. By establishing common base profiles and shared resources, PH-CORE promotes interoperability, reduces fragmentation, and enables consistent data exchange across different health domains.
 
 ## Architecture Diagram
 
 The following diagram illustrates the relationship between PH-CORE and domain-specific implementation guides, including the PH Road Safety IG:
 
+<div class="svg-wrap">
 {% include usecase-phcore-interoperability.svg %}
+</div>
 
 ## Key Components
 
