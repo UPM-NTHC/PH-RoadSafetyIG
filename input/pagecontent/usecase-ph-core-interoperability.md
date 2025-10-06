@@ -26,14 +26,18 @@ The following diagram illustrates the relationship between PH-CORE and domain-sp
 {% include usecase-phcore-interoperability.svg %}
 </div>
 
+<div class="svg-wrap">
+{% include usecase-phcore-benefits.svg %}
+</div>
+
 ## Key Components
 
 ### National Standards Layer
-The **PH-CORE Base Profiles** form the foundation of the Philippine health data standards. These include:
-- **PHPatient**: Standard patient demographics and identifiers
-- **PHPractitioner**: Healthcare provider information
-- **PHOrganization**: Health facility and organization data
-- **PHLocation**: Geographic and facility location data
+The **PH-CORE Base Profiles** form the foundation of the Philippine health data standards. These for example should include:
+- **PH Core Patient**: Standard patient demographics and identifiers
+- **PH Core Practitioner**: Healthcare provider information
+- **PH Core Organization**: Health facility and organization data
+- **PH Core Location**: Geographic and facility location data
 - **Common Extensions**: Reusable data elements specific to Philippine context
 - **Shared ValueSets**: Standardized code systems and terminologies
 
@@ -41,8 +45,6 @@ The **PH-CORE Base Profiles** form the foundation of the Philippine health data 
 Multiple domain-specific IGs extend PH-CORE for specialized use cases:
 - **PH Road Safety IG**: Traffic injury surveillance and emergency medical services
 - **PH Immunization IG**: Vaccination programs and immunization records
-- **PH Laboratory IG**: Laboratory orders and results
-- **PH Vital Records IG**: Birth, death, and civil registration
 - **Future Domain IGs**: Additional health domains as needed
 
 ### Implementation Benefits
@@ -71,22 +73,20 @@ The PH-CORE architecture delivers several key advantages:
 
 ### Real-World Systems
 
-The implementation guides are adopted by actual health information systems:
+The implementation guides hope to be adopted by actual health information systems:
 - **Hospital EMR**: Electronic medical record systems in healthcare facilities
 - **EMS System**: Emergency medical services and ambulance dispatch
-- **OneISS (National Registry)**: National injury surveillance system
-- **DOH Systems**: Department of Health information systems
+- **ONEISS (National Registry)**: National injury surveillance system
+- **National Health Systems**: Department of Health information systems
 - **Local Registries**: Provincial and municipal health registries
 
-## How This Relates to PH Road Safety IG
-
-The **PH Road Safety Implementation Guide** is an exemplar of the PH-CORE architecture in action:
+The **PH Road Safety Implementation Guide** is an example of the PH-CORE architecture in action:
 
 ### Profile Inheritance
 Instead of defining a completely new patient profile, the Road Safety IG:
-- Extends `PHPatient` from PH-CORE
+- Extends `PHCorePatient` from PH-CORE
 - Adds domain-specific constraints (e.g., injury-related extensions)
-- Maintains compatibility with other IGs that also use `PHPatient`
+- Maintains compatibility with other IGs that also use `PHCorePatient`
 
 ### Avoiding Duplication
 The Road Safety IG does not need to:
@@ -98,7 +98,7 @@ The Road Safety IG does not need to:
 When a patient moves through the care continuum:
 1. **EMS System** records initial injury data using Road Safety IG profiles
 2. **Hospital EMR** receives the patient data and understands core elements via PH-CORE
-3. **OneISS** aggregates injury surveillance data using standardized profiles
+3. **ONEISS** aggregates injury surveillance data using standardized profiles
 4. **DOH Systems** can query and analyze data across multiple facilities
 
 All systems share a common understanding of patient identity, provider information, and organizational context through PH-CORE base profiles.
