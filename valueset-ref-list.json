@@ -1,0 +1,288 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-AVPU",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSAVPUVS",
+      "title" : "MDS AVPU Level of Consciousness",
+      "description" : "AVPU scale coded in SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationLevelOfConsciousness.html" : "Observation - Level of Consciousness"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-BreathSounds",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSBreathSoundsVS",
+      "title" : "MDS Breath Sounds",
+      "description" : "Breath sounds by auscultation.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ConditionOfPatient",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSConditionOfPatientVS",
+      "title" : "MDS Condition of Patient",
+      "description" : "Overall condition assertion (Alive/Dead).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationConditionOfPatient.html" : "Observation - Condition of Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Cyanosis",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSCyanosisVS",
+      "title" : "MDS Cyanosis",
+      "description" : "Cyanosis presence/type.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationCyanosis.html" : "Observation - Cyanosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-DrowningWaterBody",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSDrowningWaterBodyVS",
+      "title" : "MDS Drowning Body of Water",
+      "description" : "Type/body of water involved in drowning.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSEyes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSGCSEyesVS",
+      "title" : "MDS GCS Eyes",
+      "description" : "GCS Eye opening (LOINC answers).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationGCS.html" : "Observation - Glasgow Coma Scale"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSMotor",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSGCSMotorVS",
+      "title" : "MDS GCS Motor",
+      "description" : "GCS Motor response (LOINC answers).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationGCS.html" : "Observation - Glasgow Coma Scale"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSVerbal",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSGCSVerbalVS",
+      "title" : "MDS GCS Verbal",
+      "description" : "GCS Verbal response (LOINC answers).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationGCS.html" : "Observation - Glasgow Coma Scale"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryIntent",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSInjuryIntentVS",
+      "title" : "MDS Injury Intent",
+      "description" : "Intent of injury.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSInjuryTypeVS",
+      "title" : "MDS Injury Types",
+      "description" : "Common injury morphology/types.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationExtentOfInjury.html" : "Observation - Extent of Injury"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-MDSRoadSafety",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSRoadSafetyVS",
+      "title" : "MDSRoadSafety ValueSet",
+      "description" : "Aggregated ValueSet of coded options from the MDS Road Safety dataset, prioritizing SNOMED CT first, then LOINC. One code per sheet row is retained based on this priority.",
+      "systems" : [
+        "http://loinc.org",
+        "https://psgc.gitlab.io/psgc",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSModeOfTransportVS",
+      "title" : "MDS Mode of Transport to Facility",
+      "description" : "Transport mode answer list (LOINC answers).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationModeOfTransport.html" : "Observation - Mode of Transport to Facility"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSOutcomeVS",
+      "title" : "MDS Outcome",
+      "description" : "Outcome at discharge/release.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationOutcomeAtDischarge.html" : "Observation - Outcome at Discharge"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSPulseQualityVS",
+      "title" : "MDS Pulse Quality",
+      "description" : "Pulse quality (normal/thready/bounding).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseRhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSPulseRhythmVS",
+      "title" : "MDS Pulse Rhythm",
+      "description" : "Pulse rhythm (regular/irregular).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Pupils",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSPupilsVS",
+      "title" : "MDS Pupils",
+      "description" : "Pupil findings.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationPupils.html" : "Observation - Pupils"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-RespiratoryRhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSRespiratoryRhythmVS",
+      "title" : "MDS Respiratory Rhythm",
+      "description" : "Respiratory rhythm findings.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MDSStatusOnArrivalVS",
+      "title" : "MDS Status on Arrival",
+      "description" : "Status upon reaching facility.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationStatusOnArrival.html" : "Observation - Status on Arrival"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-PH-RoadSafetyLogicalModel.html" : "Road Safety Minimum Dataset (MDS) Logical Model"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/ValueSet/CollisionTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollisionTypeVS",
+      "title" : "Collision types (sample)",
+      "description" : "",
+      "systems" : [
+        "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationCollisionType.html" : "Observation - Collision Type"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/ValueSet/DispositionVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DispositionVS",
+      "title" : "Disposition values (sample)",
+      "description" : "",
+      "uses" : {
+      },
+      "StructureDefinition-EncounterFacility.html" : "Encounter - Facility"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/ValueSet/DocumentFormatVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DocumentFormatVS",
+      "title" : "Document formats (sample)",
+      "description" : "",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-DocumentFormat"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceOneissRunForm.html" : "DocumentReference - ONEISS Run Form",
+      "StructureDefinition-DocumentReferenceFacilityReport.html" : "DocumentReference - ONEISS Facility Report"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/ValueSet/ICD10ExternalCauseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ICD10ExternalCauseVS",
+      "title" : "ICD-10 External Cause (sample)",
+      "description" : "",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/ValueSet/ICD10NatureOfInjuryVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ICD10NatureOfInjuryVS",
+      "title" : "ICD-10 Nature of Injury (sample)",
+      "description" : "",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionRoadSafety.html" : "Road Safety Condition"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/ValueSet/TriageCategoryVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TriageCategoryVS",
+      "title" : "Triage categories (sample)",
+      "description" : "",
+      "systems" : ["http://example.org/fhir/CodeSystem/triage-category"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationTriageCategory.html" : "Observation - Triage Category (Scene)"
+    }
+  ]
+}

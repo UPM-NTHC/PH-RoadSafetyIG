@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MDS-RespiratoryRhythm-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MDS-RespiratoryRhythm-VS</b></p><a name="MDS-RespiratoryRhythm-VS"> </a><a name="hcMDS-RespiratoryRhythm-VS"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/5467003">5467003</a></td><td>Normal respiratory rhythm (finding)</td></tr><tr><td><a href="http://snomed.info/id/248585001">248585001</a></td><td>Irregular breathing (finding)</td></tr><tr><td><a href="http://snomed.info/id/248549001">248549001</a></td><td>Labored breathing (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ValueSet/PH-RoadSafety-RespiratoryRhythm"/>
+  <version value="0.1.0"/>
+  <name value="MDSRespiratoryRhythmVS"/>
+  <title value="MDS Respiratory Rhythm"/>
+  <status value="draft"/>
+  <date value="2025-10-06T04:28:30+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Respiratory rhythm findings."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="5467003"/>
+        <display value="Normal respiratory rhythm (finding)"/>
+      </concept>
+      <concept>
+        <code value="248585001"/>
+        <display value="Irregular breathing (finding)"/>
+      </concept>
+      <concept>
+        <code value="248549001"/>
+        <display value="Labored breathing (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

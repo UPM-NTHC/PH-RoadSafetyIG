@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DispositionVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DispositionVS</b></p><a name="DispositionVS"> </a><a name="hcDispositionVS"> </a><ul><li>Import all the codes that are contained in http://hl7.org/fhir/ValueSet/discharge-disposition</li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/ValueSet/DispositionVS"/>
+  <version value="0.1.0"/>
+  <name value="DispositionVS"/>
+  <title value="Disposition values (sample)"/>
+  <status value="draft"/>
+  <date value="2025-10-06T04:28:30+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/discharge-disposition"/>
+    </include>
+  </compose>
+</ValueSet>
