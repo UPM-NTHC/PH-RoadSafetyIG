@@ -1,0 +1,82 @@
+@startuml
+title Road Safety Data Exchange - Scene to Facility EHR
+skinparam actorStyle awesome
+skinparam roundcorner 20
+actor EMS
+collections FHIR as "FHIR Gateway"
+actor EHR as "Facility EHR"
+database ETL as "ONEISS API"
+
+
+note over FHIR
+ONEISS / NHDR FHIR Server
+(gateway) — supports Subscription delivery to ETL
+end note
+
+
+group Scene to EMS Transport Reporting
+    note right of EMS
+    EMS* (Electronic Reporting system)
+    end note
+
+    EMS -> FHIR : POST Bundle.runreport\n(Encounter.transport-runreport + Observations + DocumentReference)
+    FHIR --> EMS : 201 Created (Encounter id)\nValidate & index
+end
+
+group Facility [Retrieval]
+    note left of EHR
+    Facility EHR (iHOMIS / other EMR)
+    end note
+
+    EHR -> FHIR : GET /Encounter?identifier=IncidentNo|{system}|{value}
+    FHIR --> EHR : 200 Bundle (Encounter + subject)
+
+    EHR -> FHIR : GET /Observation?encounter={Encounter/id}&category=vital-signs
+    FHIR --> EHR : 200 Bundle (Vitals at scene)
+
+    EHR -> FHIR : GET /DocumentReference?context-encounter={Encounter/id}
+    FHIR --> EHR : 200 Bundle (Run form, attachments)
+
+    note left of EHR
+    Prefill intake form (triage, vitals, timestamps, handoff notes)
+    end note
+
+else Submission
+    EHR -> FHIR : POST Bundle.facility\n(Encounter + clinical resources)
+    FHIR --> EHR : 201 Created
+end
+
+group ONEISS ETL (Subscription) [Hook based]
+    note left of ETL
+    ONEISS ETL subscribes to relevant events on the FHIR Gateway
+    (e.g. Encounter updates, Bundle.facility submissions) and pull
+    resources referenced by notification. 
+    end note
+
+    FHIR -> ETL : POST /notifications (Subscription delivery)
+    ETL --> FHIR : 200 OK
+
+    note left of ETL
+    After transformation of the bundle, ETL returns a SOAP format API call to ONEISS.
+    end note
+    ETL -> FHIR : GET /Encounter?identifier=IncidentNo|{system}|{value}
+    FHIR --> ETL : 200 Bundle (raw run-report + facility submission)
+
+else Alternative (Scheduled or Manual Trigger)
+    note left of ETL
+    ETL may just loop api calls looking for changes 
+    or new submissions or by button trigger.
+    end note
+    FHIR -> ETL : POST /SOAP ONEISS  (transformed/normalized)
+    ETL --> FHIR : 201 Created
+end
+
+legend left
+Key concepts
+- EMS submits run reports to ONEISS/NHDR (FHIR Gateway)
+- Facility systems retrieve scene data (Encounters, Observations, Documents)
+- ONEISS ETL subscribes to Gateway notifications and can pull or accept pushed content
+- Use standard FHIR endpoints and Bundles for exchange
+endlegend
+
+@enduml
