@@ -1,0 +1,26 @@
+@startuml
+start
+:Facility EHR arrives;
+if (Do they have Incident No.?) then (Yes)
+  :GET /Encounter?identifier=IncidentSystem|value\n&_include=Encounter:subject\n&_revinclude=Observation:encounter;
+  if (Encounter found?) then (Yes)
+    :GET related resources or use $everything;
+  else (No)
+    :Search by time window + demographics;
+  endif
+else (No)
+  :Search by time window + demographics;
+endif
+
+if (Single match?) then (Yes)
+  :FetchAll;
+else (No)
+  :Manual reconcile by staff;
+endif
+
+partition "(Optional) Notifications" {
+  :Subscribe (criteria: Encounter.class=AMB & service-provider=Org/<id>);
+  :On create -> notify facility;
+}
+stop
+@enduml

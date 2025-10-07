@@ -3,10 +3,10 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ph-road-safety-ig
-canonical: https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG
+id: example.fhir.ph.roadsafety
+canonical: https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG
 name: PH-RoadSafetyIG
-title: PH Road Safety Implementation Guide
+title: DRAFT PH Road Safety Implementation Guide
 description: FHIR IG for road safety and health information in the Philippines
 status: draft # draft | active | retired | unknown
 version: 0.1.0
@@ -17,13 +17,17 @@ language: en
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#PH "Philippines"
 publisher:
-  name: UP Manila SILab
-  url: https://github.com/UP-Manila-SILab/PH-RoadSafetyIG
+  name: UP Manila - National Institutes of Health - National Telehealth Center
+  url: https://github.com/UPM-NTHC/PH-RoadSafetyIG
 contact:
-  - name: PH Road Safety IG Maintainers
+  - name: PH Road Safety IG Repository
     telecom:
       - system: url
-        value: https://github.com/UP-Manila-SILab/PH-RoadSafetyIG
+        value: https://github.com/UPM-NTHC/PH-RoadSafetyIG
+
+# Dependencies (IG.dependsOn) — reference PH‑CORE draft branch on build.fhir.org
+dependencies:
+  example.fhir.ph.core: current #dev if local ~/.fhir/ | #current if build.fhir.org/
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -74,14 +78,61 @@ contact:
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
+# │ The IG publisher currently only supports one level deep on the sub-menus. To provide a             │
 # │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# Menu configuration (use sushi-config to generate menu.xml)
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Table of Contents: toc.html
+  Usecase Guide:
+    Use Case navigation: usecase.html
+    High Level Flow: usecase.html#high-level-overview
+    EMS decision flow: usecase.html#ems-decision-flow-submitupdatecancel
+    Facility retrieval: usecase.html#facility-retrieval-alternatives
+    PH-CORE Interoperability: usecase-ph-core-interoperability.html
+  Data Modelling: 
+    General model: data-modelling.html
+    Logical model: StructureDefinition-PH-RoadSafetyLogicalModel.html
+    Concept Map: ConceptMap-MDSRoadSafety2FHIR.html
+  Artifacts:
+    Profiles: artifacts.html#1
+    Value Sets: artifacts.html#2
+    Code Systems: artifacts.html#3
+  Examples: examples.html
+  Downloads: downloads.html
+  Roadmap: roadmap.html
+  History: http://hl7.org/fhir/us/example/history.html
+
+# Explicit pages and ordering for the IG site. When present, SUSHI will use this list
+# and will not auto-generate pages. Ensure all files listed below exist under `input/`.
+# pages:
+#   pagecontent/index.md:
+#     title: Home
+#   pagecontent/introdution.md:
+#     title: Use Cases
+#     pagecontent/usecase-ems-facility.md:
+#     pagecontent/usecase-facility-oneiss.md:
+#     pagecontent/usecase-claims.md:
+#   pagecontent/diagram-sil-mds.md:
+#     title: MDS Mapping
+#   pagecontent/diagram-sil-discussion.md:
+#     title: Workshop Notes
+#   pagecontent/artifacts-profiles.md:
+#     title: Profiles
+#   pagecontent/artifacts-valuesets.md:
+#     title: Value Sets
+#   pagecontent/examples.md:
+#     title: Examples
+#   pagecontent/implementation-notes.md:
+#     title: Implementation Notes
+#   pagecontent/roadmap.md:
+#     title: Roadmap
+#   pagecontent/downloads.md:
+#     title: Downloads
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
