@@ -63,13 +63,40 @@ Description: "Example of a road safety hospital encounter with identifiers, part
 // =============================
 // Supporting Organization
 // =============================
-//Instance: hospital-example
-//InstanceOf: PHCoreOrganization
-//Title: "City General Hospital"
-//* name = "City General Hospital"
-//* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-//* address.text = "123 Health Avenue, Quezon City, NCR, Philippines"
+Instance: hospital-example
+InstanceOf: PHCoreOrganization
+Title: "City General Hospital"
+Description: "Receiving medical facility for the road safety encounter."
+* name = "City General Hospital"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+* address.text = "123 Health Avenue, Quezon City, NCR, Philippines"
 
+// =============================
+// Supporting Locations
+// =============================
+
+// Accident Scene Location
+Instance: Example-RS-Scene-Location
+InstanceOf: PHCoreLocation
+Title: "Accident Scene Location"
+Description: "Road traffic accident scene for the encounter."
+* status = #active
+* mode = #instance
+* name = "Accident Scene - Corner of EDSA and Main St"
+* address.text = "Corner of EDSA and Main St, Barangay 123, Quezon City, NCR, Philippines"
+* position.longitude = 121.0345
+* position.latitude = 14.6512
+
+// Hospital Location (Emergency Department)
+Instance: Example-RS-Hospital-Location
+InstanceOf: PHCoreLocation
+Title: "City General Hospital - Emergency Department"
+Description: "ED Location involved in the encounter."
+* status = #active
+* mode = #instance
+* name = "City General Hospital - Emergency Department"
+* address.text = "123 Health Avenue, Quezon City, NCR, Philippines"
+* managingOrganization = Reference(Organization/hospital-example)
 
 // =============================
 // Supporting Practitioners
