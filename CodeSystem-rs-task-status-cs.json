@@ -1,0 +1,57 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "rs-task-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem rs-task-status-cs</b></p><a name=\"rs-task-status-cs\"> </a><a name=\"hcrs-task-status-cs\"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">received<a name=\"rs-task-status-cs-received\"> </a></td><td>Report form received</td></tr><tr><td style=\"white-space:nowrap\">not-received<a name=\"rs-task-status-cs-not-received\"> </a></td><td>Report form not received</td></tr><tr><td style=\"white-space:nowrap\">in-progress<a name=\"rs-task-status-cs-in-progress\"> </a></td><td>Task in progress</td></tr><tr><td style=\"white-space:nowrap\">completed<a name=\"rs-task-status-cs-completed\"> </a></td><td>Task completed</td></tr></table></div>"
+  },
+  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs",
+  "version" : "0.1.0",
+  "name" : "TaskStatus",
+  "title" : "Road Safety Task Status Codes",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-08T01:21:21+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "Custom codes for Task.status specific to Road Safety reporting.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "received",
+    "display" : "Report form received"
+  },
+  {
+    "code" : "not-received",
+    "display" : "Report form not received"
+  },
+  {
+    "code" : "in-progress",
+    "display" : "Task in progress"
+  },
+  {
+    "code" : "completed",
+    "display" : "Task completed"
+  }]
+}

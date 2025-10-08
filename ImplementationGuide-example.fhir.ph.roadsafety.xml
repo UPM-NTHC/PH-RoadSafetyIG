@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-07T15:24:26+00:00"/>
+  <date value="2025-10-08T01:21:21+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -469,9 +469,9 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/CollisionTypeCS"/>
+        <reference value="CodeSystem/activity-cs"/>
       </reference>
-      <name value="Collision Type code system (sample)"/>
+      <name value="Activity at time of incident (example)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -479,9 +479,107 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/CollisionTypeVS"/>
+        <reference value="ValueSet/activity-vs"/>
       </reference>
-      <name value="Collision types (sample)"/>
+      <name value="Activity ValueSet (example)"/>
+      <description value="Example ValueSet for Activity at time of incident"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-patient-age"/>
+      </reference>
+      <name value="Age"/>
+      <description value="Patient age, derived from birthDate. Not intended for direct data entry."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/age-units-vs"/>
+      </reference>
+      <name value="Age Units ValueSet"/>
+      <description value="Allowed units for Patient Age when Date of Birth is not available."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/rs-procedure"/>
+      </reference>
+      <name value="All Road Safety Procedure Codes"/>
+      <description value="Combines medical interventions, first aid, and psychosocial procedures."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cause-of-crash-file-type-vs"/>
+      </reference>
+      <name value="Cause of Crash File Type ValueSet"/>
+      <description value="Allowed file types for documents describing the cause of a road crash."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cause-of-crash-vs"/>
+      </reference>
+      <name value="Cause of Road Crash"/>
+      <description value="Defines codes representing the external causes of road traffic crashes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cause-of-crash-cs"/>
+      </reference>
+      <name value="Cause of Road Crash"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cause-of-road-crash"/>
+      </reference>
+      <name value="Cause of Road Crash Incident"/>
+      <description value="Cause or contributing factor of the road crash."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/collision-type-cs"/>
+      </reference>
+      <name value="Collision Type (example)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/collision-type-vs"/>
+      </reference>
+      <name value="Collision Type ValueSet (example)"/>
+      <description value="Types of collision in road traffic incidents"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -649,6 +747,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ed-availability"/>
+      </reference>
+      <name value="Emergency Department Availability"/>
+      <description value="Indicates if the emergency department is currently accepting patients."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -671,12 +780,45 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-hospital-ex"/>
+      </reference>
+      <name value="Example Hospital Organization"/>
+      <description value="Hospital submitting the road safety patient report."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/ExternalCauseCS"/>
+        <reference value="CodeSystem/external-cause-cs"/>
       </reference>
-      <name value="External cause code system (sample)"/>
+      <name value="External Cause CodeSystem (example)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/external-cause-detail-ext"/>
+      </reference>
+      <name value="External Cause Detail"/>
+      <description value="Additional detail for external cause (e.g., specify animal/insect, weapon, burn type)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/external-cause-vs"/>
+      </reference>
+      <name value="External Cause ValueSet (example)"/>
+      <description value="Illustrative set of codes representing external causes of injury."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -705,6 +847,72 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/first-aid"/>
+      </reference>
+      <name value="First Aid Codes"/>
+      <description value="Allowed values for first aid performed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/first-aid-given"/>
+      </reference>
+      <name value="First Aid Given"/>
+      <description value="Indicates whether first aid was provided to the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/rs-hospital-category"/>
+      </reference>
+      <name value="Hospital / EMS Category"/>
+      <description value="Categories for hospitals relevant to EMS referral."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-HealthcareService"/>
+      </reference>
+      <name value="Hospital Available"/>
+      <description value="Represents a hospital available for EMS referral, linked to its location."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/hospital-case-no-ns"/>
+      </reference>
+      <name value="Hospital Case Number System"/>
+      <description value="Unique identifier assigned to each hospital case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/hospital-patient-id-ns"/>
+      </reference>
+      <name value="Hospital Patient ID No."/>
+      <description value="The permanent and unique number issued by hospitals to individual patients and their dependents."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/ICD10ExternalCauseVS"/>
       </reference>
       <name value="ICD-10 External Cause (sample)"/>
@@ -718,6 +926,28 @@
         <reference value="ValueSet/ICD10NatureOfInjuryVS"/>
       </reference>
       <name value="ICD-10 Nature of Injury (sample)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/IncidentNoNS"/>
+      </reference>
+      <name value="Incident Number System"/>
+      <description value="Unique identifier assigned to each incident."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Observation"/>
+      </reference>
+      <name value="Injury Observation"/>
+      <description value="It is intended to support documentation of external causes, nature and extent of injuries, &#xA;vital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -938,6 +1168,70 @@
       </reference>
       <name value="MDSRoadSafety ValueSet"/>
       <description value="Aggregated ValueSet of coded options from the MDS Road Safety dataset, prioritizing SNOMED CT first, then LOINC. One code per sheet row is retained based on this priority."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/intervention"/>
+      </reference>
+      <name value="Medical Intervention Procedure Codes"/>
+      <description value="Procedure codes representing medical interventions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mode-of-transport-cs"/>
+      </reference>
+      <name value="Mode of Transport (example)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mode-of-transport-vs"/>
+      </reference>
+      <name value="Mode of Transport ValueSet (example)"/>
+      <description value="Sample ValueSet capturing transport modes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/hospital-registry-id-ns"/>
+      </reference>
+      <name value="National Health Facility Registry ID"/>
+      <description value="The permanent and unique number issued by PhilHealth to individual members and to each and every dependent."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/injury-nature-cs"/>
+      </reference>
+      <name value="Nature of Injury (example)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/injury-nature-vs"/>
+      </reference>
+      <name value="Nature of Injury ValueSet (example)"/>
+      <description value="Demonstration ValueSet capturing the nature of injury."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1286,6 +1580,277 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/outcome-cs"/>
+      </reference>
+      <name value="Outcome (example)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/outcome-vs"/>
+      </reference>
+      <name value="Outcome ValueSet (example)"/>
+      <description value="Example ValueSet capturing possible outcomes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/party-at-fault"/>
+      </reference>
+      <name value="Party at Fault"/>
+      <description value="Identifies the party considered at fault in the road crash."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/party-at-fault-vs"/>
+      </reference>
+      <name value="Party at Fault"/>
+      <description value="ValueSet indicating the party at fault in an incident."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/party-at-fault-cs"/>
+      </reference>
+      <name value="Party at Fault"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-road-safety-ex"/>
+      </reference>
+      <name value="patient-road-safety-ex"/>
+      <description value="Example patient involved in a road traffic crash, aligned to the RoadSafetyProfile."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ph-core-occupation"/>
+      </reference>
+      <name value="PH Core Occupation (Stub)"/>
+      <description value="Temporary local copy of PH Core Occupation extension for Road Safety testing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/place-occ-cs"/>
+      </reference>
+      <name value="Place of Occurrence (example)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/place-occ-vs"/>
+      </reference>
+      <name value="Place of Occurrence ValueSet (example)"/>
+      <description value="Example ValueSet capturing places of occurrence."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-ana-cruz"/>
+      </reference>
+      <name value="Practitioner - Ana Cruz"/>
+      <description value="Team Leader in the Road Safety Encounter (Dr. Ana Cruz leads the medical response team)."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-john-lee"/>
+      </reference>
+      <name value="Practitioner - John Lee"/>
+      <description value="Assistant in the Road Safety Encounter (Nurse John Lee assists the treatment and transport officers)."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-lisa-tan"/>
+      </reference>
+      <name value="Practitioner - Lisa Tan"/>
+      <description value="Transport Officer in the Road Safety Encounter (Dr. Lisa Tan is responsible for patient transfer and transport decisions)."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-maria-santos"/>
+      </reference>
+      <name value="Practitioner - Maria Santos"/>
+      <description value="Received By in the Road Safety Encounter (Clerk Maria Santos logs the patient’s arrival at the receiving facility)."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-mark-reyes"/>
+      </reference>
+      <name value="Practitioner - Mark Reyes"/>
+      <description value="Treatment Officer in the Road Safety Encounter (Dr. Mark Reyes provides primary patient treatment)."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/psychosocial-procedure"/>
+      </reference>
+      <name value="Psychosocial Procedure Codes"/>
+      <description value="Codes representing psychosocial support interventions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Servicerequest"/>
+      </reference>
+      <name value="Refusal to Admit Service Request"/>
+      <description value="Profile for recording refusal to admit a patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/road-safety-servicerequest-example"/>
+      </reference>
+      <name value="Refusal to Admit Service Request Example"/>
+      <description value="This example records a refusal to admit a road crash patient during a Road Safety Encounter, including the hospital that refused admission and the physician involved."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/report-form-received"/>
+      </reference>
+      <name value="Report Form Received"/>
+      <description value="Whether the report form was received as digital or physical."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/report-form-received-vs"/>
+      </reference>
+      <name value="Report Form Received"/>
+      <description value="ValueSet indicating whether a report form has been received."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/report-form-received-cs"/>
+      </reference>
+      <name value="Report Form Received"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/road-network-file-type-vs"/>
+      </reference>
+      <name value="Road Network File Type"/>
+      <description value="Permitted file types for detailed road network shapefiles or GIS documents."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/road-network-file-type-cs"/>
+      </reference>
+      <name value="Road Network File Type"/>
+      <description value="Allowed file types for detailed road network shapefiles or GIS data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/road-network-shapefile"/>
+      </reference>
+      <name value="Road Network Shape File"/>
+      <description value="Metadata reference to detailed road network shapefile related to the incident."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Allergyintolerance"/>
+      </reference>
+      <name value="Road Safety AllergyIntolerance"/>
+      <description value="Profile for recording allergy or intolerance information in the Philippine Road Safety IG."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Claim"/>
+      </reference>
+      <name value="Road Safety Claim"/>
+      <description value="A Claim profile for PH Road Safety IG requiring total."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/RSCompositionTypeCS-Facility"/>
       </reference>
       <name value="Road Safety Composition Type (Facility)"/>
@@ -1306,10 +1871,65 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/RS-Condition"/>
+      </reference>
+      <name value="Road Safety Condition"/>
+      <description value="A Condition for the Safety of the Roads in the Philippines."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ConditionRoadSafety"/>
       </reference>
       <name value="Road Safety Condition"/>
       <description value="Condition profile for coding diagnoses, ICD-10 nature of injury, and external cause mappings required by the Road Safety MDS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Documentreference"/>
+      </reference>
+      <name value="Road Safety Document Reference"/>
+      <description value="A profile to capture documents related to road safety incidents in the Philippine context."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Encounter"/>
+      </reference>
+      <name value="Road Safety Encounter"/>
+      <description value="Encounter profile for road safety reporting (hospital case no, incident no, transport details, disposition, etc.)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/road-safety-encounter-example"/>
+      </reference>
+      <name value="Road Safety Encounter Example"/>
+      <description value="Example of a road safety hospital encounter with identifiers, participants, and disposition."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Medicationstatement"/>
+      </reference>
+      <name value="Road Safety MedicationStatement"/>
+      <description value="A profile representing a patient's current medication statement for the Philippine health context."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1328,10 +1948,131 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/RS-Patient"/>
+      </reference>
+      <name value="Road Safety Patient"/>
+      <description value="A profile for Road Safety resource specific to Philippine context."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-road-safety-age2"/>
+      </reference>
+      <name value="Road Safety Patient Example - Age Only"/>
+      <description value="Example of a patient where only age is known."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-road-safety-age4"/>
+      </reference>
+      <name value="Road Safety Patient Example - Elderly"/>
+      <description value="Example of an elderly patient with approximate age."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-road-safety-age3"/>
+      </reference>
+      <name value="Road Safety Patient Example - Infant Age"/>
+      <description value="Example of a pediatric patient with age in months."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-road-safety-two-addresses"/>
+      </reference>
+      <name value="Road Safety Patient Example - With Two Addresses"/>
+      <description value="A patient with both permanent and temporary addresses."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Procedure"/>
+      </reference>
+      <name value="Road Safety Procedure"/>
+      <description value="Procedure profile for road safety and injury surveillance.&#xA;- Captures interventions performed on the patient.&#xA;- Supplies used during the procedure.&#xA;- Coordination with receiving hospital if applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-Questionnaire"/>
+      </reference>
+      <name value="Road Safety Questionnaire"/>
+      <description value="A profile on Questionnaire to capture repeating Vital Signs data (Respiratory Rate, Pulse, Blood Pressure, Temperature, LOC)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RS-task"/>
+      </reference>
+      <name value="Road Safety Task"/>
+      <description value="A profile for tasks related to road safety, tracking report forms and delays."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/TaskRoadSafety"/>
       </reference>
       <name value="Road Safety Task"/>
       <description value="Task profile for workflow events related to report submission, coordination with receiving facilities, and delays (executionPeriod, notes) in the Road Safety MDS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/task-road-safety-ex"/>
+      </reference>
+      <name value="Road Safety Task Example"/>
+      <description value="Example of a road safety task to track report form receipt and delays."/>
+      <exampleCanonical value="urn://example.com.ph/StructureDefinition/rs-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/rs-task-status"/>
+      </reference>
+      <name value="Road Safety Task Status"/>
+      <description value="ValueSet for Task.status using custom Road Safety codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/rs-task-status-cs"/>
+      </reference>
+      <name value="Road Safety Task Status Codes"/>
+      <description value="Custom codes for Task.status specific to Road Safety reporting."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1357,6 +2098,27 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/safety-notes-ext"/>
+      </reference>
+      <name value="Safety / Other Risk Factors"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/supplies-used"/>
+      </reference>
+      <name value="Supplies Used"/>
+      <description value="Records any devices or medications used during the procedure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1368,6 +2130,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/traffic-incident-management"/>
+      </reference>
+      <name value="Traffic Incident Management"/>
+      <description value="Documentation or status of traffic incident management."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/transpo-coordination"/>
+      </reference>
+      <name value="Transport Coordination"/>
+      <description value="Indicates if transport to receiving hospital was coordinated."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/coordination"/>
+      </reference>
+      <name value="Transport Coordination Codes"/>
+      <description value="Standard codes for documenting transport coordination."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/transport-details-ext"/>
+      </reference>
+      <name value="Transport Details"/>
+      <description value="Details about mode of transport, vehicles involved, positions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1375,6 +2181,124 @@
       </reference>
       <name value="Triage categories (sample)"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/priority-cs"/>
+      </reference>
+      <name value="Triage Priority (example)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/priority-vs"/>
+      </reference>
+      <name value="Triage Priority ValueSet (example)"/>
+      <description value="Example ValueSet capturing triage priorities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rs-vehicle-type"/>
+      </reference>
+      <name value="ValueSet for Vehicle Used"/>
+      <description value="Vehicle types allowed for Road Safety Encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vehicle-condition"/>
+      </reference>
+      <name value="Vehicle Condition"/>
+      <description value="Condition of the vehicle involved in the incident."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vehicle-condition-vs"/>
+      </reference>
+      <name value="Vehicle Condition"/>
+      <description value="ValueSet indicating the condition of a vehicle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/vehicle-condition-cs"/>
+      </reference>
+      <name value="Vehicle Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vehicle-list-ext"/>
+      </reference>
+      <name value="Vehicle list"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/vehicle-types"/>
+      </reference>
+      <name value="Vehicle Types"/>
+      <description value="A code system for different types of vehicles used in road safety encounters."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vehicle-used"/>
+      </reference>
+      <name value="Vehicle Used"/>
+      <description value="The type of vehicle used by the patient or involved in the encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/VitalSignsQuestionnaire"/>
+      </reference>
+      <name value="Vital Signs Questionnaire"/>
+      <description value="Example Questionnaire instance to capture repeating sets of Vital Signs."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/VitalSignsQuestionnaireResponse"/>
+      </reference>
+      <name value="Vital Signs QuestionnaireResponse Example"/>
+      <description value="Example response to the Vital Signs Questionnaire with sample measurements."/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

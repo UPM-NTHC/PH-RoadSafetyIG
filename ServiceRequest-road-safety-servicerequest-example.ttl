@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ServiceRequest/road-safety-servicerequest-example> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "road-safety-servicerequest-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest road-safety-servicerequest-example</b></p><a name=\"road-safety-servicerequest-example\"> </a><a name=\"hcroad-safety-servicerequest-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RS-Servicerequest.html\">Refusal to Admit Service Request</a></p></div><p><b>status</b>: Revoked</p><p><b>intent</b>: Order</p><p><b>subject</b>: <code>patient-jose-dela-cruz</code></p><p><b>encounter</b>: <a href=\"Encounter-road-safety-encounter-example.html\">Encounter: extension = Ambulance; identifier = http://yourhospital.org/hospital-case-number#HC-2025-0001,http://yourhospital.org/incident-number#IncidentNo#INC-2025-045; status = finished; class = emergency (ActCode#EMER); period = 2025-09-15 09:45:00+0800 --&gt; (ongoing); reasonCode = Motor vehicle accident</a></p><p><b>occurrence</b>: 2025-09-25 14:45:00+0800</p><p><b>supportingInfo</b>: </p><ul><li><code>organization-stlukes</code></li><li><a href=\"Practitioner-practitioner-ana-cruz.html\">Practitioner Dr. Ana Cruz</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "revoked"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "patient-jose-dela-cruz" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/road-safety-encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/road-safety-encounter-example" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-09-25T14:45:00+08:00"^^xsd:dateTime
+  ] ; # 
+  fhir:supportingInfo ( [
+     fhir:reference [ fhir:v "organization-stlukes" ]
+  ] [
+     fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-ana-cruz> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-ana-cruz" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

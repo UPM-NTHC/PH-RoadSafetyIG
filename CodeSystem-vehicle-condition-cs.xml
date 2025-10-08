@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="vehicle-condition-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem vehicle-condition-cs</b></p><a name="vehicle-condition-cs"> </a><a name="hcvehicle-condition-cs"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">intact<a name="vehicle-condition-cs-intact"> </a></td><td>Intact</td><td>Vehicle is in good working condition with no visible damage.</td></tr><tr><td style="white-space:nowrap">minor-damage<a name="vehicle-condition-cs-minor-damage"> </a></td><td>Minor Damage</td><td>Vehicle has cosmetic or small functional damage but is still operable.</td></tr><tr><td style="white-space:nowrap">major-damage<a name="vehicle-condition-cs-major-damage"> </a></td><td>Major Damage</td><td>Vehicle has significant structural or functional damage, may not be safe to drive.</td></tr><tr><td style="white-space:nowrap">total-loss<a name="vehicle-condition-cs-total-loss"> </a></td><td>Total Loss</td><td>Vehicle is beyond economical repair (insurance write-off).</td></tr><tr><td style="white-space:nowrap">unknown<a name="vehicle-condition-cs-unknown"> </a></td><td>Unknown</td><td>Vehicle condition could not be determined at the time of assessment.</td></tr></table></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"/>
+  <version value="0.1.0"/>
+  <name value="VehicleConditionCS"/>
+  <title value="Vehicle Condition"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-08T01:21:21+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="intact"/>
+    <display value="Intact"/>
+    <definition value="Vehicle is in good working condition with no visible damage."/>
+  </concept>
+  <concept>
+    <code value="minor-damage"/>
+    <display value="Minor Damage"/>
+    <definition value="Vehicle has cosmetic or small functional damage but is still operable."/>
+  </concept>
+  <concept>
+    <code value="major-damage"/>
+    <display value="Major Damage"/>
+    <definition value="Vehicle has significant structural or functional damage, may not be safe to drive."/>
+  </concept>
+  <concept>
+    <code value="total-loss"/>
+    <display value="Total Loss"/>
+    <definition value="Vehicle is beyond economical repair (insurance write-off)."/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <definition value="Vehicle condition could not be determined at the time of assessment."/>
+  </concept>
+</CodeSystem>

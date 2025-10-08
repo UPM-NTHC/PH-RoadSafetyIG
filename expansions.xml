@@ -1,128 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="86bcbbe7-865b-47d8-93ec-e9b5b80eb23b"/>
+  <id value="14cfbf38-e2a2-4883-ac62-402290d20d6e"/>
   <meta>
-    <lastUpdated value="2025-10-07T15:25:13.553+00:00"/>
+    <lastUpdated value="2025-10-08T01:22:12.862+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/CollisionTypeVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-CollisionTypeCS.html">codesystem Collision Type code system (sample) v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 4 concepts</p>
-            <table class="codes" data-fhir="generated">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS-rear-end"> </a>  
-                  <a href="CodeSystem-CollisionTypeCS.html#CollisionTypeCS-rear-end">rear-end</a>
-                </td>
-                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS</td>
-                <td>Rear End</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS-head-on"> </a>  
-                  <a href="CodeSystem-CollisionTypeCS.html#CollisionTypeCS-head-on">head-on</a>
-                </td>
-                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS</td>
-                <td>Head On</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS-angle-impact"> </a>  
-                  <a href="CodeSystem-CollisionTypeCS.html#CollisionTypeCS-angle-impact">angle-impact</a>
-                </td>
-                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS</td>
-                <td>Angle Impact</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS-side-swipe"> </a>  
-                  <a href="CodeSystem-CollisionTypeCS.html#CollisionTypeCS-side-swipe">side-swipe</a>
-                </td>
-                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS</td>
-                <td>Side Swipe</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/CollisionTypeVS"/>
-        <version value="0.1.0"/>
-        <name value="CollisionTypeVS"/>
-        <title value="Collision types (sample)"/>
-        <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="PH"/>
-            <display value="Philippines"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:b578340c-eb95-4a5b-b371-b59154505e71"/>
-          <timestamp value="2025-10-07T15:27:31+00:00"/>
-          <total value="4"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS"/>
-            <code value="rear-end"/>
-            <display value="Rear End"/>
-          </contains>
-          <contains>
-            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS"/>
-            <code value="head-on"/>
-            <display value="Head On"/>
-          </contains>
-          <contains>
-            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS"/>
-            <code value="angle-impact"/>
-            <display value="Angle Impact"/>
-          </contains>
-          <contains>
-            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS"/>
-            <code value="side-swipe"/>
-            <display value="Side Swipe"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/ICD10ExternalCauseVS"/>
     <resource>
@@ -7153,7 +7036,7 @@
         <name value="ICD10ExternalCauseVS"/>
         <title value="ICD-10 External Cause (sample)"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7162,8 +7045,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:49c8e9f1-3494-40a8-9cb7-206989284104"/>
-          <timestamp value="2025-10-07T15:27:33.357Z"/>
+          <identifier value="urn:uuid:0c1c1606-4579-4c00-bb35-e68ffbb34c5b"/>
+          <timestamp value="2025-10-08T01:24:46.726Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -19223,7 +19106,7 @@
         <name value="ICD10NatureOfInjuryVS"/>
         <title value="ICD-10 Nature of Injury (sample)"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -19232,8 +19115,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:828d1eca-d4c6-42e9-97b4-aae313fffd7f"/>
-          <timestamp value="2025-10-07T15:27:37.051Z"/>
+          <identifier value="urn:uuid:5bafb22a-73c1-4919-94cf-d46a8e3d4c69"/>
+          <timestamp value="2025-10-08T01:24:49.803Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -24325,7 +24208,7 @@
         <name value="MDSAVPUVS"/>
         <title value="MDS AVPU Level of Consciousness"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24334,8 +24217,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:41702a0f-9a68-4306-982e-7d9ee43f1249"/>
-          <timestamp value="2025-10-07T15:27:40+00:00"/>
+          <identifier value="urn:uuid:4f91c3de-3c86-4120-ad93-9368621b3656"/>
+          <timestamp value="2025-10-08T01:24:52+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -24437,7 +24320,7 @@
         <name value="MDSBreathSoundsVS"/>
         <title value="MDS Breath Sounds"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24446,8 +24329,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d605a8c1-a911-498f-9400-5a9e339d85ed"/>
-          <timestamp value="2025-10-07T15:27:40+00:00"/>
+          <identifier value="urn:uuid:480e8011-353b-4555-9007-b6e0868f4cd0"/>
+          <timestamp value="2025-10-08T01:24:52+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -24535,7 +24418,7 @@
         <name value="MDSConditionOfPatientVS"/>
         <title value="MDS Condition of Patient"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24544,8 +24427,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a063a41c-7ff1-4441-8f35-a10340df1ea7"/>
-          <timestamp value="2025-10-07T15:27:41+00:00"/>
+          <identifier value="urn:uuid:e4adc2c4-37d3-41bf-9cbe-55ff59ec7b7c"/>
+          <timestamp value="2025-10-08T01:24:53+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -24640,7 +24523,7 @@
         <name value="MDSCyanosisVS"/>
         <title value="MDS Cyanosis"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24649,8 +24532,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e392d850-8217-4de5-89ce-8e9fae7836ce"/>
-          <timestamp value="2025-10-07T15:27:41+00:00"/>
+          <identifier value="urn:uuid:0607f40a-bfa6-483f-8d9f-aa1dade8ee1a"/>
+          <timestamp value="2025-10-08T01:24:53+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -24766,7 +24649,7 @@
         <name value="MDSDrowningWaterBodyVS"/>
         <title value="MDS Drowning Body of Water"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24775,8 +24658,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1cf40801-c4e3-4d0e-997d-ea8e811398d4"/>
-          <timestamp value="2025-10-07T15:27:42+00:00"/>
+          <identifier value="urn:uuid:1356f82d-7846-4da3-84a7-eca8a9735b61"/>
+          <timestamp value="2025-10-08T01:24:53+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -24894,7 +24777,7 @@
         <name value="MDSGCSEyesVS"/>
         <title value="MDS GCS Eyes"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24903,8 +24786,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e482f7fa-b6ac-42fd-8f31-2696eb4655cb"/>
-          <timestamp value="2025-10-07T15:27:42+00:00"/>
+          <identifier value="urn:uuid:e10175c9-1965-4678-b72a-e1abd09d8730"/>
+          <timestamp value="2025-10-08T01:24:54+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -25033,7 +24916,7 @@
         <name value="MDSGCSMotorVS"/>
         <title value="MDS GCS Motor"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25042,8 +24925,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9c3b11da-e36a-408e-95db-e14be444a083"/>
-          <timestamp value="2025-10-07T15:27:42+00:00"/>
+          <identifier value="urn:uuid:b6f17a7d-3bf5-46ec-805a-d144052da141"/>
+          <timestamp value="2025-10-08T01:24:54+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -25174,7 +25057,7 @@
         <name value="MDSGCSVerbalVS"/>
         <title value="MDS GCS Verbal"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25183,8 +25066,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:315f5cf3-c89c-4b00-afdd-758c751bff7e"/>
-          <timestamp value="2025-10-07T15:27:43+00:00"/>
+          <identifier value="urn:uuid:ee021c0b-19b2-48d7-8f20-675283ad6e1d"/>
+          <timestamp value="2025-10-08T01:24:54+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -25302,7 +25185,7 @@
         <name value="MDSInjuryIntentVS"/>
         <title value="MDS Injury Intent"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25311,8 +25194,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b649745e-c46b-4bff-8928-fb088355edd8"/>
-          <timestamp value="2025-10-07T15:27:43+00:00"/>
+          <identifier value="urn:uuid:de9a6c7b-187b-453e-8b56-e6143abbcd33"/>
+          <timestamp value="2025-10-08T01:24:54+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -25505,7 +25388,7 @@
         <name value="MDSInjuryTypeVS"/>
         <title value="MDS Injury Types"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25514,8 +25397,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5edd5e6f-add0-40cb-88f7-6509197075b4"/>
-          <timestamp value="2025-10-07T15:27:43+00:00"/>
+          <identifier value="urn:uuid:15955653-f9bf-4ceb-a203-c27c356f00b7"/>
+          <timestamp value="2025-10-08T01:24:55+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -25678,7 +25561,7 @@
         <name value="MDSModeOfTransportVS"/>
         <title value="MDS Mode of Transport to Facility"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25687,8 +25570,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d6f8a2cb-e385-4340-8976-c99bb2e3f038"/>
-          <timestamp value="2025-10-07T15:27:44+00:00"/>
+          <identifier value="urn:uuid:83c16d75-9fa0-4b74-ab1a-f51fb1611f48"/>
+          <timestamp value="2025-10-08T01:24:55+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -25785,7 +25668,7 @@
         <name value="MDSOutcomeVS"/>
         <title value="MDS Outcome"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25794,8 +25677,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e77f2a6-0143-4add-8c8a-e004da4ef129"/>
-          <timestamp value="2025-10-07T15:27:44+00:00"/>
+          <identifier value="urn:uuid:3f097b8f-d119-4437-ba8d-2218adcc5fff"/>
+          <timestamp value="2025-10-08T01:24:55+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -25890,7 +25773,7 @@
         <name value="MDSPulseQualityVS"/>
         <title value="MDS Pulse Quality"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25899,8 +25782,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:66d87403-3e61-42ff-8283-05842898f066"/>
-          <timestamp value="2025-10-07T15:27:44+00:00"/>
+          <identifier value="urn:uuid:21af9dc5-19d2-49c5-a23f-dda63dfb4697"/>
+          <timestamp value="2025-10-08T01:24:55+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -25992,7 +25875,7 @@
         <name value="MDSPulseRhythmVS"/>
         <title value="MDS Pulse Rhythm"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -26001,8 +25884,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c51481e8-5484-40dc-b012-67c28dafc1c3"/>
-          <timestamp value="2025-10-07T15:27:45+00:00"/>
+          <identifier value="urn:uuid:08ae3b53-1393-4b75-8d46-8527d7dcc014"/>
+          <timestamp value="2025-10-08T01:24:56+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -26113,7 +25996,7 @@
         <name value="MDSPupilsVS"/>
         <title value="MDS Pupils"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -26122,8 +26005,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:582f2094-72cf-40ec-aef8-8dabf286cd03"/>
-          <timestamp value="2025-10-07T15:27:45+00:00"/>
+          <identifier value="urn:uuid:1ea4b9b4-1530-4609-b0b7-70129c2853d8"/>
+          <timestamp value="2025-10-08T01:24:56+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -26233,7 +26116,7 @@
         <name value="MDSRespiratoryRhythmVS"/>
         <title value="MDS Respiratory Rhythm"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -26242,8 +26125,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db6f4ee2-18ae-417b-913b-330b66c51879"/>
-          <timestamp value="2025-10-07T15:27:45+00:00"/>
+          <identifier value="urn:uuid:45576fa8-2d0b-48de-ba79-4f4e6886ae63"/>
+          <timestamp value="2025-10-08T01:24:56+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -26343,7 +26226,7 @@
         <name value="MDSStatusOnArrivalVS"/>
         <title value="MDS Status on Arrival"/>
         <status value="draft"/>
-        <date value="2025-10-07T15:24:26+00:00"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -26352,8 +26235,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d195c4c8-5ee7-469a-a4b1-fd465c11bcc4"/>
-          <timestamp value="2025-10-07T15:27:46+00:00"/>
+          <identifier value="urn:uuid:a0fd50c0-caba-4d0a-909c-70fef076f125"/>
+          <timestamp value="2025-10-08T01:24:57+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -26394,6 +26277,2885 @@
             <system value="http://snomed.info/sct"/>
             <code value="63238001"/>
             <display value="Dead on arrival at hospital (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-activity-cs.html">codesystem Activity at time of incident (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs-driving"> </a>  
+                  <a href="CodeSystem-activity-cs.html#activity-cs-driving">driving</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs</td>
+                <td>Driving</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs-walking"> </a>  
+                  <a href="CodeSystem-activity-cs.html#activity-cs-walking">walking</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs</td>
+                <td>Walking</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs-working"> </a>  
+                  <a href="CodeSystem-activity-cs.html#activity-cs-working">working</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs</td>
+                <td>Working</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs-playing"> </a>  
+                  <a href="CodeSystem-activity-cs.html#activity-cs-playing">playing</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs</td>
+                <td>Playing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs-other"> </a>  
+                  <a href="CodeSystem-activity-cs.html#activity-cs-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs"/>
+        <version value="0.1.0"/>
+        <name value="ActivityVS"/>
+        <title value="Activity ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5b371ad1-9950-4f0c-9f41-23b272d06354"/>
+          <timestamp value="2025-10-08T01:24:59+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs"/>
+            <code value="driving"/>
+            <display value="Driving"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs"/>
+            <code value="walking"/>
+            <display value="Walking"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs"/>
+            <code value="working"/>
+            <display value="Working"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs"/>
+            <code value="playing"/>
+            <display value="Playing"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/age-units-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem UCUM version 2.2</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://unitsofmeasure.org-a"> </a>  a
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>a</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://unitsofmeasure.org-mo"> </a>  mo
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>mo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://unitsofmeasure.org-d"> </a>  d
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>d</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/age-units-vs"/>
+        <version value="0.1.0"/>
+        <name value="AgeUnitsVS"/>
+        <title value="Age Units ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5b7db89b-a529-472f-aab3-4f5f6b174414"/>
+          <timestamp value="2025-10-08T01:24:59+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.2"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://unitsofmeasure.org|2.2"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="a"/>
+            <display value="a"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mo"/>
+            <display value="mo"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+            <display value="d"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-file-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:ietf:bcp:13-application/pdf"> </a>  application/pdf
+                </td>
+                <td>urn:ietf:bcp:13</td>
+                <td>application/pdf</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:ietf:bcp:13-application/vnd.openxmlformats-officedocument.wordprocessingml.document"> </a>  application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                </td>
+                <td>urn:ietf:bcp:13</td>
+                <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-file-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="CauseOfCrashFileTypeVS"/>
+        <title value="Cause of Crash File Type ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0e7b1997-ece4-4c77-9703-df6ef7c38d29"/>
+          <timestamp value="2025-10-08T01:24:59+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="urn:ietf:bcp:13"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:bcp:13"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:bcp:13"/>
+            <code value="application/pdf"/>
+            <display value="application/pdf"/>
+          </contains>
+          <contains>
+            <system value="urn:ietf:bcp:13"/>
+            <code value="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+            <display value="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-cause-of-crash-cs.html">codesystem Cause of Road Crash v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs-driver-error"> </a>  
+                  <a href="CodeSystem-cause-of-crash-cs.html#cause-of-crash-cs-driver-error">driver-error</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs</td>
+                <td>Driver Error</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs-mechanical-failure"> </a>  
+                  <a href="CodeSystem-cause-of-crash-cs.html#cause-of-crash-cs-mechanical-failure">mechanical-failure</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs</td>
+                <td>Mechanical Failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs-road-condition"> </a>  
+                  <a href="CodeSystem-cause-of-crash-cs.html#cause-of-crash-cs-road-condition">road-condition</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs</td>
+                <td>Road Condition</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs-weather"> </a>  
+                  <a href="CodeSystem-cause-of-crash-cs.html#cause-of-crash-cs-weather">weather</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs</td>
+                <td>Weather</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs-other"> </a>  
+                  <a href="CodeSystem-cause-of-crash-cs.html#cause-of-crash-cs-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-vs"/>
+        <version value="0.1.0"/>
+        <name value="CauseOfCrashVS"/>
+        <title value="Cause of Road Crash"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3741c192-038e-40a7-a2ca-fa741a725c04"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs"/>
+            <code value="driver-error"/>
+            <display value="Driver Error"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs"/>
+            <code value="mechanical-failure"/>
+            <display value="Mechanical Failure"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs"/>
+            <code value="road-condition"/>
+            <display value="Road Condition"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs"/>
+            <code value="weather"/>
+            <display value="Weather"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-collision-type-cs.html">codesystem Collision Type (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-head-on"> </a>  
+                  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-head-on">head-on</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</td>
+                <td>Head-on</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-rear-end"> </a>  
+                  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-rear-end">rear-end</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</td>
+                <td>Rear-end</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-side-swipe"> </a>  
+                  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-side-swipe">side-swipe</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</td>
+                <td>Side-swipe</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-rollover"> </a>  
+                  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-rollover">rollover</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</td>
+                <td>Rollover</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-non-collision"> </a>  
+                  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-non-collision">non-collision</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</td>
+                <td>Non-collision</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-other"> </a>  
+                  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="CollisionTypeVS"/>
+        <title value="Collision Type ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f06f7fbc-7aa3-4771-bd9b-fbdcae5ac235"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"/>
+            <code value="head-on"/>
+            <display value="Head-on"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"/>
+            <code value="rear-end"/>
+            <display value="Rear-end"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"/>
+            <code value="side-swipe"/>
+            <display value="Side-swipe"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"/>
+            <code value="rollover"/>
+            <display value="Rollover"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"/>
+            <code value="non-collision"/>
+            <display value="Non-collision"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/coordination"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373873005"> </a>  
+                  <a href="http://snomed.info/id/373873005">373873005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pharmaceutical / biologic product (product)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373874004"> </a>  
+                  <a href="http://snomed.info/id/373874004">373874004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Unsatisfactory for evaluation due to other obscuring factor (finding)</td>
+                <td>inactive</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/coordination"/>
+        <version value="0.1.0"/>
+        <name value="CoordinationVS"/>
+        <title value="Transport Coordination Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fc133435-6271-4144-b89a-eaa6219ecf62"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373873005"/>
+            <display value="Pharmaceutical / biologic product (product)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
+            <code value="373874004"/>
+            <display value="Unsatisfactory for evaluation due to other obscuring factor (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-external-cause-cs.html">codesystem External Cause CodeSystem (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 14 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-bites-stings"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-bites-stings">bites-stings</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Bites/stings</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-burns"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-burns">burns</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Burns</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-chemical"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-chemical">chemical</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Chemical/substance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-sharp-object"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-sharp-object">sharp-object</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Contact with sharp object</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-drowning"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-drowning">drowning</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Drowning</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-fall"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-fall">fall</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Fall</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-firecracker"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-firecracker">firecracker</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Firecracker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-gunshot"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-gunshot">gunshot</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Gunshot</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-hanging"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-hanging">hanging</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Hanging/Strangulation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-assault"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-assault">assault</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Assault/Mauling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-sexual-assault"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-sexual-assault">sexual-assault</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Sexual assault</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-transport-accident"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-transport-accident">transport-accident</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Transport/Vehicular accident</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-exposure-nature"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-exposure-nature">exposure-nature</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Exposure to forces of nature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs-others"> </a>  
+                  <a href="CodeSystem-external-cause-cs.html#external-cause-cs-others">others</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</td>
+                <td>Others</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs"/>
+        <version value="0.1.0"/>
+        <name value="ExternalCauseVS"/>
+        <title value="External Cause ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:95db86f1-e44b-4706-87ef-4d492307f2c4"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="14"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="bites-stings"/>
+            <display value="Bites/stings"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="burns"/>
+            <display value="Burns"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="chemical"/>
+            <display value="Chemical/substance"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="sharp-object"/>
+            <display value="Contact with sharp object"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="drowning"/>
+            <display value="Drowning"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="fall"/>
+            <display value="Fall"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="firecracker"/>
+            <display value="Firecracker"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="gunshot"/>
+            <display value="Gunshot"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="hanging"/>
+            <display value="Hanging/Strangulation"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="assault"/>
+            <display value="Assault/Mauling"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="sexual-assault"/>
+            <display value="Sexual assault"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="transport-accident"/>
+            <display value="Transport/Vehicular accident"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="exposure-nature"/>
+            <display value="Exposure to forces of nature"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"/>
+            <code value="others"/>
+            <display value="Others"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/first-aid"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-225337009"> </a>  
+                  <a href="http://snomed.info/id/225337009">225337009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Suicide risk assessment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373873005"> </a>  
+                  <a href="http://snomed.info/id/373873005">373873005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pharmaceutical / biologic product (product)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/first-aid"/>
+        <version value="0.1.0"/>
+        <name value="FirstAidVS"/>
+        <title value="First Aid Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7345fb56-aa32-4621-953c-ad9c1ec7e33a"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="225337009"/>
+            <display value="Suicide risk assessment"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373873005"/>
+            <display value="Pharmaceutical / biologic product (product)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-injury-nature-cs.html">codesystem Nature of Injury (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 9 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-abrasion"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-abrasion">abrasion</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Abrasion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-avulsion"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-avulsion">avulsion</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Avulsion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-burn"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-burn">burn</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Burn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-concussion"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-concussion">concussion</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Concussion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-contusion"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-contusion">contusion</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Contusion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-fracture"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-fracture">fracture</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Fracture</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-open-wound"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-open-wound">open-wound</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Open wound</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-amputation"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-amputation">amputation</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Traumatic amputation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs-other"> </a>  
+                  <a href="CodeSystem-injury-nature-cs.html#injury-nature-cs-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs"/>
+        <version value="0.1.0"/>
+        <name value="InjuryNatureVS"/>
+        <title value="Nature of Injury ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:152a6278-0b07-496b-b665-d26aa1bc8fcf"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="abrasion"/>
+            <display value="Abrasion"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="avulsion"/>
+            <display value="Avulsion"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="burn"/>
+            <display value="Burn"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="concussion"/>
+            <display value="Concussion"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="contusion"/>
+            <display value="Contusion"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="fracture"/>
+            <display value="Fracture"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="open-wound"/>
+            <display value="Open wound"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="amputation"/>
+            <display value="Traumatic amputation"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/intervention"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-80146002"> </a>  
+                  <a href="http://snomed.info/id/80146002">80146002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Appendectomy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-233604007"> </a>  
+                  <a href="http://snomed.info/id/233604007">233604007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pneumonia</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/intervention"/>
+        <version value="0.1.0"/>
+        <name value="InterventionVS"/>
+        <title value="Medical Intervention Procedure Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d398ca20-db6a-4a3c-b9e8-e0f52685fe01"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80146002"/>
+            <display value="Appendectomy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-mode-of-transport-cs.html">codesystem Mode of Transport (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs-ambulance"> </a>  
+                  <a href="CodeSystem-mode-of-transport-cs.html#mode-of-transport-cs-ambulance">ambulance</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs</td>
+                <td>Ambulance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs-private-vehicle"> </a>  
+                  <a href="CodeSystem-mode-of-transport-cs.html#mode-of-transport-cs-private-vehicle">private-vehicle</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs</td>
+                <td>Private vehicle</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs-police"> </a>  
+                  <a href="CodeSystem-mode-of-transport-cs.html#mode-of-transport-cs-police">police</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs</td>
+                <td>Police vehicle</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs-walk-in"> </a>  
+                  <a href="CodeSystem-mode-of-transport-cs.html#mode-of-transport-cs-walk-in">walk-in</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs</td>
+                <td>Walk-in</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs-other"> </a>  
+                  <a href="CodeSystem-mode-of-transport-cs.html#mode-of-transport-cs-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs"/>
+        <version value="0.1.0"/>
+        <name value="ModeOfTransportVS"/>
+        <title value="Mode of Transport ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:203d2c85-ba07-4fbd-8fbd-b8a990ff1d40"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"/>
+            <code value="ambulance"/>
+            <display value="Ambulance"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"/>
+            <code value="private-vehicle"/>
+            <display value="Private vehicle"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"/>
+            <code value="police"/>
+            <display value="Police vehicle"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"/>
+            <code value="walk-in"/>
+            <display value="Walk-in"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-outcome-cs.html">codesystem Outcome (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs-alive-stable"> </a>  
+                  <a href="CodeSystem-outcome-cs.html#outcome-cs-alive-stable">alive-stable</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs</td>
+                <td>Alive - stable</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs-alive-unstable"> </a>  
+                  <a href="CodeSystem-outcome-cs.html#outcome-cs-alive-unstable">alive-unstable</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs</td>
+                <td>Alive - unstable</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs-dead"> </a>  
+                  <a href="CodeSystem-outcome-cs.html#outcome-cs-dead">dead</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs</td>
+                <td>Dead</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs-transferred"> </a>  
+                  <a href="CodeSystem-outcome-cs.html#outcome-cs-transferred">transferred</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs</td>
+                <td>Transferred</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs"/>
+        <version value="0.1.0"/>
+        <name value="OutcomeVS"/>
+        <title value="Outcome ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:07814f88-1c30-4307-9a66-8031c8ff69fa"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"/>
+            <code value="alive-stable"/>
+            <display value="Alive - stable"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"/>
+            <code value="alive-unstable"/>
+            <display value="Alive - unstable"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"/>
+            <code value="dead"/>
+            <display value="Dead"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"/>
+            <code value="transferred"/>
+            <display value="Transferred"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/party-at-fault-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-party-at-fault-cs.html">codesystem Party at Fault v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs-driverA"> </a>  
+                  <a href="CodeSystem-party-at-fault-cs.html#party-at-fault-cs-driverA">driverA</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</td>
+                <td>Driver of Vehicle A</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs-driverB"> </a>  
+                  <a href="CodeSystem-party-at-fault-cs.html#party-at-fault-cs-driverB">driverB</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</td>
+                <td>Driver of Vehicle B</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs-roadAuthority"> </a>  
+                  <a href="CodeSystem-party-at-fault-cs.html#party-at-fault-cs-roadAuthority">roadAuthority</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</td>
+                <td>Road authority / Infrastructure issue</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs-pedestrian"> </a>  
+                  <a href="CodeSystem-party-at-fault-cs.html#party-at-fault-cs-pedestrian">pedestrian</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</td>
+                <td>Pedestrian</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs-cyclist"> </a>  
+                  <a href="CodeSystem-party-at-fault-cs.html#party-at-fault-cs-cyclist">cyclist</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</td>
+                <td>Cyclist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs-other"> </a>  
+                  <a href="CodeSystem-party-at-fault-cs.html#party-at-fault-cs-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/party-at-fault-vs"/>
+        <version value="0.1.0"/>
+        <name value="PartyAtFaultVS"/>
+        <title value="Party at Fault"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:44b425f0-2e96-4d5c-9fb2-5405404014db"/>
+          <timestamp value="2025-10-08T01:25:00+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"/>
+            <code value="driverA"/>
+            <display value="Driver of Vehicle A"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"/>
+            <code value="driverB"/>
+            <display value="Driver of Vehicle B"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"/>
+            <code value="roadAuthority"/>
+            <display value="Road authority / Infrastructure issue"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"/>
+            <code value="pedestrian"/>
+            <display value="Pedestrian"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"/>
+            <code value="cyclist"/>
+            <display value="Cyclist"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-place-occ-cs.html">codesystem Place of Occurrence (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs-home"> </a>  
+                  <a href="CodeSystem-place-occ-cs.html#place-occ-cs-home">home</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</td>
+                <td>Home</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs-workplace"> </a>  
+                  <a href="CodeSystem-place-occ-cs.html#place-occ-cs-workplace">workplace</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</td>
+                <td>Workplace</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs-roadway"> </a>  
+                  <a href="CodeSystem-place-occ-cs.html#place-occ-cs-roadway">roadway</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</td>
+                <td>Roadway</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs-recreation"> </a>  
+                  <a href="CodeSystem-place-occ-cs.html#place-occ-cs-recreation">recreation</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</td>
+                <td>Recreation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs-other"> </a>  
+                  <a href="CodeSystem-place-occ-cs.html#place-occ-cs-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs"/>
+        <version value="0.1.0"/>
+        <name value="PlaceOccVS"/>
+        <title value="Place of Occurrence ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f5b96a43-b9e4-4135-a87a-74a2df5aaf3c"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"/>
+            <code value="home"/>
+            <display value="Home"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"/>
+            <code value="workplace"/>
+            <display value="Workplace"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"/>
+            <code value="roadway"/>
+            <display value="Roadway"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"/>
+            <code value="recreation"/>
+            <display value="Recreation"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-priority-cs.html">codesystem Triage Priority (example) v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs-red"> </a>  
+                  <a href="CodeSystem-priority-cs.html#priority-cs-red">red</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs</td>
+                <td>Red - immediate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs-yellow"> </a>  
+                  <a href="CodeSystem-priority-cs.html#priority-cs-yellow">yellow</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs</td>
+                <td>Yellow - urgent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs-green"> </a>  
+                  <a href="CodeSystem-priority-cs.html#priority-cs-green">green</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs</td>
+                <td>Green - delayed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs-blue"> </a>  
+                  <a href="CodeSystem-priority-cs.html#priority-cs-blue">blue</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs</td>
+                <td>Blue - minimal</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs"/>
+        <version value="0.1.0"/>
+        <name value="PriorityVS"/>
+        <title value="Triage Priority ValueSet (example)"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:783dfcc5-44b3-4348-96f4-2b3f82821d6f"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs"/>
+            <code value="red"/>
+            <display value="Red - immediate"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs"/>
+            <code value="yellow"/>
+            <display value="Yellow - urgent"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs"/>
+            <code value="green"/>
+            <display value="Green - delayed"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs"/>
+            <code value="blue"/>
+            <display value="Blue - minimal"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/psychosocial-procedure"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-71388002"> </a>  
+                  <a href="http://snomed.info/id/71388002">71388002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Procedure</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/psychosocial-procedure"/>
+        <version value="0.1.0"/>
+        <name value="PsychosocialProcedureVS"/>
+        <title value="Psychosocial Procedure Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c641bd46-70cf-49d6-8cad-efd9d482223a"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="71388002"/>
+            <display value="Procedure"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-report-form-received-cs.html">codesystem Report Form Received v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs-digital"> </a>  
+                  <a href="CodeSystem-report-form-received-cs.html#report-form-received-cs-digital">digital</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs</td>
+                <td>Digital</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs-physical"> </a>  
+                  <a href="CodeSystem-report-form-received-cs.html#report-form-received-cs-physical">physical</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs</td>
+                <td>Physical</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs"/>
+        <version value="0.1.0"/>
+        <name value="ReportFormReceivedVS"/>
+        <title value="Report Form Received"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4d8ebacf-34ea-4602-9da5-21b62c101250"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs"/>
+            <code value="digital"/>
+            <display value="Digital"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs"/>
+            <code value="physical"/>
+            <display value="Physical"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/road-network-file-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-road-network-file-type-cs.html">codesystem Road Network File Type v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs-shapefile"> </a>  
+                  <a href="CodeSystem-road-network-file-type-cs.html#road-network-file-type-cs-shapefile">shapefile</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs</td>
+                <td>ESRI Shapefile (zipped)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs-geojson"> </a>  
+                  <a href="CodeSystem-road-network-file-type-cs.html#road-network-file-type-cs-geojson">geojson</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs</td>
+                <td>GeoJSON</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs-kml"> </a>  
+                  <a href="CodeSystem-road-network-file-type-cs.html#road-network-file-type-cs-kml">kml</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs</td>
+                <td>Google Earth KML</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs-kmz"> </a>  
+                  <a href="CodeSystem-road-network-file-type-cs.html#road-network-file-type-cs-kmz">kmz</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs</td>
+                <td>Google Earth KMZ</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs-gml"> </a>  
+                  <a href="CodeSystem-road-network-file-type-cs.html#road-network-file-type-cs-gml">gml</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs</td>
+                <td>Geography Markup Language (GML)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/road-network-file-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="RoadNetworkFileTypeVS"/>
+        <title value="Road Network File Type"/>
+        <status value="draft"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2c14f042-5c82-4678-884d-b4d762c2cbd6"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"/>
+            <code value="shapefile"/>
+            <display value="ESRI Shapefile (zipped)"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"/>
+            <code value="geojson"/>
+            <display value="GeoJSON"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"/>
+            <code value="kml"/>
+            <display value="Google Earth KML"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"/>
+            <code value="kmz"/>
+            <display value="Google Earth KMZ"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"/>
+            <code value="gml"/>
+            <display value="Geography Markup Language (GML)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-hospital-category"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-394814009"> </a>  
+                  <a href="http://snomed.info/id/394814009">394814009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>General practice (specialty) (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-22232009"> </a>  
+                  <a href="http://snomed.info/id/22232009">22232009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hospital</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-hospital-category"/>
+        <version value="0.1.0"/>
+        <name value="RSHospitalCategoryVS"/>
+        <title value="Hospital / EMS Category"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2e6b63f8-a66f-44fb-ad0e-188856bd733a"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="394814009"/>
+            <display value="General practice (specialty) (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22232009"/>
+            <display value="Hospital"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-procedure"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-80146002"> </a>  
+                  <a href="http://snomed.info/id/80146002">80146002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Appendectomy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-225337009"> </a>  
+                  <a href="http://snomed.info/id/225337009">225337009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Suicide risk assessment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-71388002"> </a>  
+                  <a href="http://snomed.info/id/71388002">71388002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Procedure</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-procedure"/>
+        <version value="0.1.0"/>
+        <name value="RSProcedureVS"/>
+        <title value="All Road Safety Procedure Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:932eaa42-e5d0-4e29-a305-b3dcfd112407"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80146002"/>
+            <display value="Appendectomy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="225337009"/>
+            <display value="Suicide risk assessment"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="71388002"/>
+            <display value="Procedure"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-rs-task-status-cs.html">codesystem Road Safety Task Status Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs-received"> </a>  
+                  <a href="CodeSystem-rs-task-status-cs.html#rs-task-status-cs-received">received</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs</td>
+                <td>Report form received</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs-not-received"> </a>  
+                  <a href="CodeSystem-rs-task-status-cs.html#rs-task-status-cs-not-received">not-received</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs</td>
+                <td>Report form not received</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs-in-progress"> </a>  
+                  <a href="CodeSystem-rs-task-status-cs.html#rs-task-status-cs-in-progress">in-progress</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs</td>
+                <td>Task in progress</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs-completed"> </a>  
+                  <a href="CodeSystem-rs-task-status-cs.html#rs-task-status-cs-completed">completed</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs</td>
+                <td>Task completed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status"/>
+        <version value="0.1.0"/>
+        <name value="TaskStatus"/>
+        <title value="Road Safety Task Status"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1e951d99-b2d0-4adc-a41e-67baaa3caae6"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs"/>
+            <code value="received"/>
+            <display value="Report form received"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs"/>
+            <code value="not-received"/>
+            <display value="Report form not received"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs"/>
+            <code value="in-progress"/>
+            <display value="Task in progress"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs"/>
+            <code value="completed"/>
+            <display value="Task completed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vehicle-condition-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-vehicle-condition-cs.html">codesystem Vehicle Condition v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs-intact"> </a>  
+                  <a href="CodeSystem-vehicle-condition-cs.html#vehicle-condition-cs-intact">intact</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs</td>
+                <td>Intact</td>
+                <td>Vehicle is in good working condition with no visible damage.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs-minor-damage"> </a>  
+                  <a href="CodeSystem-vehicle-condition-cs.html#vehicle-condition-cs-minor-damage">minor-damage</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs</td>
+                <td>Minor Damage</td>
+                <td>Vehicle has cosmetic or small functional damage but is still operable.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs-major-damage"> </a>  
+                  <a href="CodeSystem-vehicle-condition-cs.html#vehicle-condition-cs-major-damage">major-damage</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs</td>
+                <td>Major Damage</td>
+                <td>Vehicle has significant structural or functional damage, may not be safe to drive.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs-total-loss"> </a>  
+                  <a href="CodeSystem-vehicle-condition-cs.html#vehicle-condition-cs-total-loss">total-loss</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs</td>
+                <td>Total Loss</td>
+                <td>Vehicle is beyond economical repair (insurance write-off).</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs-unknown"> </a>  
+                  <a href="CodeSystem-vehicle-condition-cs.html#vehicle-condition-cs-unknown">unknown</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs</td>
+                <td>Unknown</td>
+                <td>Vehicle condition could not be determined at the time of assessment.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vehicle-condition-vs"/>
+        <version value="0.1.0"/>
+        <name value="VehicleConditionVS"/>
+        <title value="Vehicle Condition"/>
+        <status value="draft"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f6c4aa47-2d6c-406f-8825-7a9a2737bee0"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"/>
+            <code value="intact"/>
+            <display value="Intact"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"/>
+            <code value="minor-damage"/>
+            <display value="Minor Damage"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"/>
+            <code value="major-damage"/>
+            <display value="Major Damage"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"/>
+            <code value="total-loss"/>
+            <display value="Total Loss"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-vehicle-types.html">codesystem Vehicle Types v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types-ambulance"> </a>  
+                  <a href="CodeSystem-vehicle-types.html#vehicle-types-ambulance">ambulance</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types</td>
+                <td>Ambulance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types-motorcycle"> </a>  
+                  <a href="CodeSystem-vehicle-types.html#vehicle-types-motorcycle">motorcycle</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types</td>
+                <td>Motorcycle</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types-private_car"> </a>  
+                  <a href="CodeSystem-vehicle-types.html#vehicle-types-private_car">private_car</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types</td>
+                <td>Private Car</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types-other"> </a>  
+                  <a href="CodeSystem-vehicle-types.html#vehicle-types-other">other</a>
+                </td>
+                <td>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type"/>
+        <version value="0.1.0"/>
+        <name value="VehicleTypeVS"/>
+        <title value="ValueSet for Vehicle Used"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2025-10-08T01:21:21+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PH"/>
+            <display value="Philippines"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cf4eacb3-89f4-4191-80c5-03df958fb135"/>
+          <timestamp value="2025-10-08T01:25:01+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types"/>
+            <code value="ambulance"/>
+            <display value="Ambulance"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types"/>
+            <code value="motorcycle"/>
+            <display value="Motorcycle"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types"/>
+            <code value="private_car"/>
+            <display value="Private Car"/>
+          </contains>
+          <contains>
+            <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types"/>
+            <code value="other"/>
+            <display value="Other"/>
           </contains>
         </expansion>
       </ValueSet>

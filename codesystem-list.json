@@ -1,22 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CollisionTypeCS",
-      "title" : "Collision Type code system (sample)",
-      "description" : ""
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/ExternalCauseCS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ExternalCauseCS",
-      "title" : "External cause code system (sample)",
-      "description" : ""
-    },
-    {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/RSCompositionTypeCS-Facility",
       "version" : "0.1.0",
       "status" : "draft",
@@ -47,6 +31,126 @@
       "name" : "RSRunSectionCS",
       "title" : "Run Report Composition Sections",
       "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ActivityCS",
+      "title" : "Activity at time of incident (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CauseOfCrashCS",
+      "title" : "Cause of Road Crash",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollisionTypeCS",
+      "title" : "Collision Type (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ExternalCauseCS",
+      "title" : "External Cause CodeSystem (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "InjuryNatureCS",
+      "title" : "Nature of Injury (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ModeOfTransportCS",
+      "title" : "Mode of Transport (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OutcomeCS",
+      "title" : "Outcome (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PartyAtFaultCS",
+      "title" : "Party at Fault",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PlaceOccCS",
+      "title" : "Place of Occurrence (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PriorityCS",
+      "title" : "Triage Priority (example)",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReportFormReceivedCS",
+      "title" : "Report Form Received",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoadNetworkFileTypeCS",
+      "title" : "Road Network File Type",
+      "description" : "Allowed file types for detailed road network shapefiles or GIS data."
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "Road Safety Task Status Codes",
+      "description" : "Custom codes for Task.status specific to Road Safety reporting."
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleConditionCS",
+      "title" : "Vehicle Condition",
+      "description" : ""
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleTypeCS",
+      "title" : "Vehicle Types",
+      "description" : "A code system for different types of vehicles used in road safety encounters."
     }
   ]
 }

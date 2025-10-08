@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="place-occ-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem place-occ-cs</b></p><a name="place-occ-cs"> </a><a name="hcplace-occ-cs"> </a><p>This  code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">home<a name="place-occ-cs-home"> </a></td><td>Home</td></tr><tr><td style="white-space:nowrap">workplace<a name="place-occ-cs-workplace"> </a></td><td>Workplace</td></tr><tr><td style="white-space:nowrap">roadway<a name="place-occ-cs-roadway"> </a></td><td>Roadway</td></tr><tr><td style="white-space:nowrap">recreation<a name="place-occ-cs-recreation"> </a></td><td>Recreation</td></tr><tr><td style="white-space:nowrap">other<a name="place-occ-cs-other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"/>
+  <version value="0.1.0"/>
+  <name value="PlaceOccCS"/>
+  <title value="Place of Occurrence (example)"/>
+  <status value="draft"/>
+  <date value="2025-10-08T01:21:21+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="home"/>
+    <display value="Home"/>
+  </concept>
+  <concept>
+    <code value="workplace"/>
+    <display value="Workplace"/>
+  </concept>
+  <concept>
+    <code value="roadway"/>
+    <display value="Roadway"/>
+  </concept>
+  <concept>
+    <code value="recreation"/>
+    <display value="Recreation"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

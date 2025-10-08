@@ -1,0 +1,58 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "place-occ-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem place-occ-cs</b></p><a name=\"place-occ-cs\"> </a><a name=\"hcplace-occ-cs\"> </a><p>This  code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">home<a name=\"place-occ-cs-home\"> </a></td><td>Home</td></tr><tr><td style=\"white-space:nowrap\">workplace<a name=\"place-occ-cs-workplace\"> </a></td><td>Workplace</td></tr><tr><td style=\"white-space:nowrap\">roadway<a name=\"place-occ-cs-roadway\"> </a></td><td>Roadway</td></tr><tr><td style=\"white-space:nowrap\">recreation<a name=\"place-occ-cs-recreation\"> </a></td><td>Recreation</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"place-occ-cs-other\"> </a></td><td>Other</td></tr></table></div>"
+  },
+  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs",
+  "version" : "0.1.0",
+  "name" : "PlaceOccCS",
+  "title" : "Place of Occurrence (example)",
+  "status" : "draft",
+  "date" : "2025-10-08T01:21:21+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "home",
+    "display" : "Home"
+  },
+  {
+    "code" : "workplace",
+    "display" : "Workplace"
+  },
+  {
+    "code" : "roadway",
+    "display" : "Roadway"
+  },
+  {
+    "code" : "recreation",
+    "display" : "Recreation"
+  },
+  {
+    "code" : "other",
+    "display" : "Other"
+  }]
+}

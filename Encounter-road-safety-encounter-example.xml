@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="road-safety-encounter-example"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Road Safety Encounter</b></p><p>Case No: HC-2025-0001</p><p>Incident No: INC-2025-045</p><p>Emergency consultation on 15 Sept 2025 for a motor vehicle accident.</p><p>Handled at City General Hospital with disposition: Discharged to home.</p><p>Team: Dr. Ana Cruz (Leader), Dr. Mark Reyes (Treatment), Dr. Lisa Tan (Transport), Nurse John Lee (Assistant), Clerk Maria Santos (Received By).</p><p>Vehicle used: Ambulance</p></div>
+  </text>
+  <extension url="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-used">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="7771000"/>
+        <display value="Ambulance"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://yourhospital.org/hospital-case-number"/>
+    <value value="HC-2025-0001"/>
+  </identifier>
+  <identifier>
+    <system value="http://yourhospital.org/incident-number"/>
+    <value value="INC-2025-045"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="EMER"/>
+    <display value="emergency"/>
+  </class>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-ana-cruz"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-mark-reyes"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-lisa-tan"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-john-lee"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-maria-santos"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2025-09-15T09:45:00+08:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="22298006"/>
+      <display value="Motor vehicle accident"/>
+    </coding>
+  </reasonCode>
+  <hospitalization>
+    <destination>
+      <reference value="Organization/hospital-example"/>
+    </destination>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+        <code value="home"/>
+        <display value="Discharged to home"/>
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Example-RS-Scene-Location"/>
+    </location>
+    <status value="active"/>
+    <period>
+      <start value="2025-09-15T09:30:00+08:00"/>
+    </period>
+  </location>
+  <location>
+    <location>
+      <reference value="Example-RS-Hospital-Location"/>
+    </location>
+    <status value="active"/>
+    <period>
+      <start value="2025-09-15T09:50:00+08:00"/>
+    </period>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/hospital-example"/>
+  </serviceProvider>
+</Encounter>

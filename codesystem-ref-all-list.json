@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1379"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
+    },
+    {
       "url" : "http://hl7.org/fhir/CodeSystem/task-code",
       "version" : "4.0.1",
       "status" : "active",
@@ -49,6 +61,42 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "oids" : ["2.16.840.1.113883.4.642.4.134"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergy-intolerance-category.html" : "AllergyIntoleranceCategory"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "oids" : ["2.16.840.1.113883.4.642.4.130"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergy-intolerance-criticality.html" : "AllergyIntoleranceCriticality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "oids" : ["2.16.840.1.113883.4.642.4.132"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergy-intolerance-type.html" : "AllergyIntoleranceType"
+    },
+    {
       "url" : "http://hl7.org/fhir/bundle-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -59,6 +107,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/claim-use",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Use",
+      "title" : "Use",
+      "description" : "The purpose of the Claim: predetermination, preauthorization, claim.",
+      "oids" : ["2.16.840.1.113883.4.642.4.545"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-claim-use.html" : "Use"
     },
     {
       "url" : "http://hl7.org/fhir/composition-attestation-mode",
@@ -145,6 +205,18 @@
       "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/fm-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FinancialResourceStatusCodes",
+      "title" : "Financial Resource Status Codes",
+      "description" : "This value set includes Status codes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.593"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-fm-status.html" : "Financial Resource Status Codes"
+    },
+    {
       "url" : "http://hl7.org/fhir/http-verb",
       "version" : "4.0.1",
       "status" : "active",
@@ -167,6 +239,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/item-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemType",
+      "title" : "QuestionnaireItemType",
+      "description" : "Distinguishes groups from questions and display text and indicates data type for questions.",
+      "oids" : ["2.16.840.1.113883.4.642.4.445"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-item-type.html" : "QuestionnaireItemType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
     },
     {
       "url" : "http://hl7.org/fhir/list-mode",
@@ -229,6 +325,66 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "oids" : ["2.16.840.1.113883.4.642.4.60"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+    },
+    {
+      "url" : "http://hl7.org/fhir/questionnaire-enable-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EnableWhenBehavior",
+      "title" : "EnableWhenBehavior",
+      "description" : "Controls how multiple enableWhen values are interpreted -  whether all or any must be true.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html" : "EnableWhenBehavior"
+    },
+    {
+      "url" : "http://hl7.org/fhir/questionnaire-enable-operator",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemOperator",
+      "title" : "QuestionnaireItemOperator",
+      "description" : "The criteria by which a question is enabled.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1006"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html" : "QuestionnaireItemOperator"
+    },
+    {
+      "url" : "http://hl7.org/fhir/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "oids" : ["2.16.840.1.113883.4.642.4.136"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-reaction-event-severity.html" : "AllergyIntoleranceSeverity"
+    },
+    {
       "url" : "http://hl7.org/fhir/request-intent",
       "version" : "4.0.1",
       "status" : "draft",
@@ -238,6 +394,7 @@
       "oids" : ["2.16.840.1.113883.4.642.4.114"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
       "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
     },
     {
@@ -253,6 +410,29 @@
       "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
     },
     {
+      "url" : "http://hl7.org/fhir/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
       "url" : "http://hl7.org/fhir/search-entry-mode",
       "version" : "4.0.1",
       "status" : "active",
@@ -265,6 +445,18 @@
       "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
     },
     {
+      "url" : "http://hl7.org/fhir/sid/ex-icd-10-procedures",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ICD-10ProcedureCodes",
+      "title" : "ICD-10 Procedure Codes",
+      "description" : "This value set includes sample ICD-10 Procedure codes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.575"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-icd-10-procedures.html" : "ICD-10 Procedure Codes"
+    },
+    {
       "url" : "http://hl7.org/fhir/sid/icd-10",
       "version" : "2.1.1",
       "status" : "retired",
@@ -274,8 +466,9 @@
       "oids" : ["2.16.840.1.113883.6.3"],
       "uses" : {
       },
-      "ValueSet-ICD10NatureOfInjuryVS.html" : "ICD-10 Nature of Injury (sample)",
-      "ValueSet-ICD10ExternalCauseVS.html" : "ICD-10 External Cause (sample)"
+      "http://hl7.org/fhir/R4/valueset-icd-10.html" : "ICD-10 Codes",
+      "ValueSet-ICD10ExternalCauseVS.html" : "ICD-10 External Cause (sample)",
+      "ValueSet-ICD10NatureOfInjuryVS.html" : "ICD-10 Nature of Injury (sample)"
     },
     {
       "url" : "http://hl7.org/fhir/task-intent",
@@ -311,15 +504,16 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
-      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-      "ValueSet-MDS-GCSEyes-VS.html" : "MDS GCS Eyes",
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
       "ValueSet-MDS-ModeOfTransport-VS.html" : "MDS Mode of Transport to Facility",
-      "ValueSet-MDS-GCSMotor-VS.html" : "MDS GCS Motor",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes",
+      "ValueSet-MDS-GCSEyes-VS.html" : "MDS GCS Eyes",
+      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
       "ValueSet-MDS-GCSVerbal-VS.html" : "MDS GCS Verbal",
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-MDS-GCSMotor-VS.html" : "MDS GCS Motor",
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
       "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set"
     },
     {
@@ -332,32 +526,68 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-MDS-StatusOnArrival-VS.html" : "MDS Status on Arrival",
-      "ValueSet-MDS-InjuryType-VS.html" : "MDS Injury Types",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "ValueSet-MDS-InjuryIntent-VS.html" : "MDS Injury Intent",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+      "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
       "ValueSet-MDS-Outcome-VS.html" : "MDS Outcome",
-      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "ValueSet-MDS-Cyanosis-VS.html" : "MDS Cyanosis",
-      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
-      "ValueSet-MDS-PulseRhythm-VS.html" : "MDS Pulse Rhythm",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ValueSet-MDS-ConditionOfPatient-VS.html" : "MDS Condition of Patient",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "ValueSet-MDS-AVPU-VS.html" : "MDS AVPU Level of Consciousness",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "ValueSet-MDS-PulseQuality-VS.html" : "MDS Pulse Quality",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "ValueSet-MDS-RespiratoryRhythm-VS.html" : "MDS Respiratory Rhythm",
-      "ValueSet-MDS-Pupils-VS.html" : "MDS Pupils",
+      "ValueSet-MDS-InjuryType-VS.html" : "MDS Injury Types",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
       "ValueSet-MDS-BreathSounds-VS.html" : "MDS Breath Sounds",
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "ValueSet-MDS-ConditionOfPatient-VS.html" : "MDS Condition of Patient",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "ValueSet-MDS-AVPU-VS.html" : "MDS AVPU Level of Consciousness",
+      "ValueSet-MDS-InjuryIntent-VS.html" : "MDS Injury Intent",
+      "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "ValueSet-MDS-PulseRhythm-VS.html" : "MDS Pulse Rhythm",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
+      "ValueSet-MDS-Cyanosis-VS.html" : "MDS Cyanosis",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-coordination.html" : "Transport Coordination Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "ValueSet-MDS-Pupils-VS.html" : "MDS Pupils",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "ValueSet-MDS-PulseQuality-VS.html" : "MDS Pulse Quality",
+      "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "ValueSet-MDS-DrowningWaterBody-VS.html" : "MDS Drowning Body of Water",
+      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
+      "ValueSet-first-aid.html" : "First Aid Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "ValueSet-MDS-DrowningWaterBody-VS.html" : "MDS Drowning Body of Water"
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "ValueSet-MDS-StatusOnArrival-VS.html" : "MDS Status on Arrival",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "ValueSet-MDS-RespiratoryRhythm-VS.html" : "MDS Respiratory Rhythm",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/FDI-surface",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "SurfaceCodes",
+      "title" : "Surface Codes",
+      "description" : "This value set includes a smattering of FDI tooth surface codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1154"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-surface.html" : "Surface Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -370,6 +600,54 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-admit-source.html" : "Admit source"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/claim-exception",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExceptionCodes",
+      "title" : "Exception Codes",
+      "description" : "This value set includes sample Exception codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1162"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-claim-exception.html" : "Exception Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/claim-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ClaimTypeCodes",
+      "title" : "Claim Type Codes",
+      "description" : "This value set includes Claim Type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1156"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-claim-type.html" : "Claim Type Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ClaimCareTeamRoleCodes",
+      "title" : "Claim Care Team Role Codes",
+      "description" : "Claim roles of the care team members providing products and services.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1165"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-claim-careteamrole.html" : "Claim Care Team Role Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ClaimInformationCategoryCodes",
+      "title" : "Claim Information Category Codes",
+      "description" : "This value set includes sample Information Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1163"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-claim-informationcategory.html" : "Claim Information Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -480,6 +758,174 @@
       "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-USCLS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "USCLSCodes",
+      "title" : "USCLS Codes",
+      "description" : "This value set includes a smattering of USCLS codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1153"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-uscls.html" : "USCLS Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "BenefitCategoryCodes",
+      "title" : "Benefit Category Codes",
+      "description" : "This value set includes examples of Benefit Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1175"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ex-benefitcategory.html" : "Benefit Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-claimsubtype",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleClaimSubTypeCodes",
+      "title" : "Example Claim SubType Codes",
+      "description" : "This value set includes sample Claim SubType codes which are used to distinguish the claim types for example within type institutional there may be subtypes for emergency services, bed stay and transportation.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1158"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-claim-subtype.html" : "Example Claim SubType Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-diagnosis-on-admission",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleDiagnosisOnAdmissionCodes",
+      "title" : "Example Diagnosis on Admission Codes",
+      "description" : "This value set includes example Diagnosis on Admission codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1170"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ex-diagnosis-on-admission.html" : "Example Diagnosis on Admission Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-diagnosisrelatedgroup",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleDiagnosisRelatedGroupCodes",
+      "title" : "Example Diagnosis Related Group Codes",
+      "description" : "This value set includes example Diagnosis Related Group codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1166"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ex-diagnosisrelatedgroup.html" : "Example Diagnosis Related Group Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleDiagnosisTypeCodes",
+      "title" : "Example Diagnosis Type Codes",
+      "description" : "This value set includes example Diagnosis Type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1167"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ex-diagnosistype.html" : "Example Diagnosis Type Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleProcedureTypeCodes",
+      "title" : "Example Procedure Type Codes",
+      "description" : "This value set includes example Procedure Type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1388"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ex-procedure-type.html" : "Example Procedure Type Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-programcode",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleProgramReasonCodes",
+      "title" : "Example Program Reason Codes",
+      "description" : "This value set includes sample Program Reason Span codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1161"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ex-program-code.html" : "Example Program Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-providerqualification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleProviderQualificationCodes",
+      "title" : "Example Provider Qualification Codes",
+      "description" : "This value set includes sample Provider Qualification codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1160"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-provider-qualification.html" : "Example Provider Qualification Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleRelatedClaimRelationshipCodes",
+      "title" : "Example Related Claim Relationship Codes",
+      "description" : "This value set includes sample Related Claim Relationship codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1159"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-related-claim-relationship.html" : "Example Related Claim Relationship Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-revenue-center",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleRevenueCenterCodes",
+      "title" : "Example Revenue Center Codes",
+      "description" : "This value set includes sample Revenue Center codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1168"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ex-revenue-center.html" : "Example Revenue Center Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleServicePlaceCodes",
+      "title" : "Example Service Place Codes",
+      "description" : "This value set includes a smattering of Service Place codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1157"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-place.html" : "Example Service Place Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/ex-tooth",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "OralSiteCodes",
+      "title" : "Oral Site Codes",
+      "description" : "This value set includes a smattering of FDI oral site codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1152"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-tooth.html" : "Oral Site Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/fundsreserve",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "FundsReservationCodes",
+      "title" : "Funds Reservation Codes",
+      "description" : "This value set includes sample funds reservation type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1051"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-fundsreserve.html" : "FundsReserve"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
       "version" : "1.0.1",
       "status" : "active",
@@ -516,6 +962,42 @@
       "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/missingtoothreason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MissingToothReasonCodes",
+      "title" : "Missing Tooth Reason Codes",
+      "description" : "This value set includes sample Missing Tooth Reason codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1150"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-missing-tooth-reason.html" : "Missing Tooth Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/modifiers",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ModifierTypeCodes",
+      "title" : "Modifier type Codes",
+      "description" : "This value set includes sample Modifier type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1151"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-claim-modifiers.html" : "Modifier type Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "version" : "1.0.1",
       "status" : "active",
@@ -540,6 +1022,42 @@
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/payeetype",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ClaimPayeeTypeCodes",
+      "title" : "Payee Type Codes",
+      "description" : "Codes indicating the type of party to be reimbursed for cost of products and services.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1050"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-payeetype.html" : "PayeeType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/processpriority",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ProcessPriorityCodes",
+      "title" : "Process Priority Codes",
+      "description" : "This value set includes the financial processing priority codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1155"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-process-priority.html" : "Process Priority Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/program",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Program",
+      "title" : "Program",
+      "description" : "This value set defines an example set of codes that could be can be used to classify groupings of service-types/specialties.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1384"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-program.html" : "Program"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
       "version" : "1.0.1",
       "status" : "active",
@@ -550,6 +1068,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-provision-conditions",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ServiceProvisionConditions",
+      "title" : "ServiceProvisionConditions",
+      "description" : "The code(s) that detail the conditions under which the healthcare service is available/offered.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1143"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-provision-conditions.html" : "ServiceProvisionConditions"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-referral-method",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ReferralMethod",
+      "title" : "ReferralMethod",
+      "description" : "The methods of referral can be used when referring to a specific HealthCareService resource.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1142"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-referral-method.html" : "ReferralMethod"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/service-type",
@@ -588,6 +1130,18 @@
       "http://terminology.hl7.org/6.5.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "version" : "5.0.0",
       "status" : "active",
@@ -609,8 +1163,9 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
       "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActIncidentCode.html" : "ActIncidentCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -649,6 +1204,18 @@
       "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
       "version" : "3.0.0",
       "status" : "active",
@@ -658,7 +1225,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -694,18 +1262,185 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS",
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-age-units-vs.html" : "Age Units ValueSet"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CollisionTypeCS",
-      "title" : "Collision Type code system (sample)",
+      "name" : "ActivityCS",
+      "title" : "Activity at time of incident (example)",
       "description" : "",
       "uses" : {
       },
-      "ValueSet-CollisionTypeVS.html" : "Collision types (sample)"
+      "ValueSet-activity-vs.html" : "Activity ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CauseOfCrashCS",
+      "title" : "Cause of Road Crash",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-cause-of-crash-vs.html" : "Cause of Road Crash"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollisionTypeCS",
+      "title" : "Collision Type (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-collision-type-vs.html" : "Collision Type ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ExternalCauseCS",
+      "title" : "External Cause CodeSystem (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-external-cause-vs.html" : "External Cause ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "InjuryNatureCS",
+      "title" : "Nature of Injury (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-injury-nature-vs.html" : "Nature of Injury ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ModeOfTransportCS",
+      "title" : "Mode of Transport (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-mode-of-transport-vs.html" : "Mode of Transport ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OutcomeCS",
+      "title" : "Outcome (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-outcome-vs.html" : "Outcome ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PartyAtFaultCS",
+      "title" : "Party at Fault",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-party-at-fault-vs.html" : "Party at Fault"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PlaceOccCS",
+      "title" : "Place of Occurrence (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-place-occ-vs.html" : "Place of Occurrence ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PriorityCS",
+      "title" : "Triage Priority (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-priority-vs.html" : "Triage Priority ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReportFormReceivedCS",
+      "title" : "Report Form Received",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-report-form-received-vs.html" : "Report Form Received"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoadNetworkFileTypeCS",
+      "title" : "Road Network File Type",
+      "description" : "Allowed file types for detailed road network shapefiles or GIS data.",
+      "uses" : {
+      },
+      "ValueSet-road-network-file-type-vs.html" : "Road Network File Type"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "Road Safety Task Status Codes",
+      "description" : "Custom codes for Task.status specific to Road Safety reporting.",
+      "uses" : {
+      },
+      "ValueSet-rs-task-status.html" : "Road Safety Task Status"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleConditionCS",
+      "title" : "Vehicle Condition",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-vehicle-condition-vs.html" : "Vehicle Condition"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleTypeCS",
+      "title" : "Vehicle Types",
+      "description" : "A code system for different types of vehicles used in road safety encounters.",
+      "uses" : {
+      },
+      "ValueSet-vs-rs-vehicle-type.html" : "ValueSet for Vehicle Used"
     },
     {
       "url" : "urn:ietf:bcp:47",
@@ -718,6 +1453,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part2",
+      "title" : "ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code",
+      "description" : "ISO 3166-2 establishes a code that represents the names of the principal administrative divisions, or similar areas, of the countries and entities included in ISO 3166-1.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
     }
   ]
 }

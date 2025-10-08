@@ -3,7 +3,337 @@
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "PH",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.org.ph/fhir/StructureDefinition/ph-core-occupation",
+      "title": "PH Core Occupation (Stub)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/cause-of-road-crash",
+      "title": "Cause of Road Crash Incident",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ed-availability",
+      "title": "Emergency Department Availability",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/external-cause-detail-ext",
+      "title": "External Cause Detail",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/first-aid-given",
+      "title": "First Aid Given",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/party-at-fault",
+      "title": "Party at Fault",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/report-form-received",
+      "title": "Report Form Received",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/road-network-shapefile",
+      "title": "Road Network Shape File",
+      "types": [
+        "url"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient-age",
+      "title": "Age",
+      "types": [
+        "Age",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/safety-notes-ext",
+      "title": "Safety / Other Risk Factors",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "string"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/supplies-used",
+      "title": "Supplies Used",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/traffic-incident-management",
+      "title": "Traffic Incident Management",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transpo-coordination",
+      "title": "Transport Coordination",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transport-details-ext",
+      "title": "Transport Details",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-condition",
+      "title": "Vehicle Condition",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-list-ext",
+      "title": "Vehicle list",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-used",
+      "title": "Vehicle Used",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
     "Composition": [
       {
@@ -17,64 +347,20 @@
     ],
     "Condition": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ConditionICD10ExternalCause",
-        "title": "Condition - ICD-10 External Cause"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ConditionICD10NatureOfInjury",
-        "title": "Condition - ICD-10 Nature of Injury"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ConditionInitialImpression",
-        "title": "Condition - Initial Impression"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ConditionProblem",
-        "title": "Condition - Problem / Chief Complaint"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ConditionRoadSafety",
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Condition",
         "title": "Road Safety Condition"
       }
     ],
     "DocumentReference": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/DocumentReferenceCauseOfCrash",
-        "title": "DocumentReference - Cause of Road Crash"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/DocumentReferenceFacilityReport",
-        "title": "DocumentReference - ONEISS Facility Report"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/DocumentReferenceIncidentManagement",
-        "title": "DocumentReference - Traffic Incident Management"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/DocumentReferenceOneissRunForm",
-        "title": "DocumentReference - ONEISS Run Form"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/DocumentReferencePartyAtFault",
-        "title": "DocumentReference - Party at Fault"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/DocumentReferenceRoadNetworkShapes",
-        "title": "DocumentReference - Road Network Shape Files"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/DocumentReferenceVehicleCondition",
-        "title": "DocumentReference - Vehicle Condition"
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Documentreference",
+        "title": "Road Safety Document Reference"
       }
     ],
     "Encounter": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/EncounterFacility",
-        "title": "Encounter - Facility"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/EncounterTransportRunReport",
-        "title": "Encounter - Transport / Run Report"
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter",
+        "title": "Road Safety Encounter"
       }
     ],
     "Bundle": [
@@ -91,128 +377,56 @@
     ],
     "Observation": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationBloodPressure",
-        "title": "Observation - Blood Pressure"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation",
+        "title": "Injury Observation"
+      }
+    ],
+    "AllergyIntolerance": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationCCTVAvailable",
-        "title": "Observation - CCTV Available"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Allergyintolerance",
+        "title": "Road Safety AllergyIntolerance"
+      }
+    ],
+    "Claim": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationCollisionType",
-        "title": "Observation - Collision Type"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Claim",
+        "title": "Road Safety Claim"
+      }
+    ],
+    "HealthcareService": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationConditionOfPatient",
-        "title": "Observation - Condition of Patient"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-HealthcareService",
+        "title": "Hospital Available"
+      }
+    ],
+    "MedicationStatement": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationCyanosis",
-        "title": "Observation - Cyanosis"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Medicationstatement",
+        "title": "Road Safety MedicationStatement"
+      }
+    ],
+    "Patient": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationDateReceived",
-        "title": "Observation - Date Received"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient",
+        "title": "Road Safety Patient"
+      }
+    ],
+    "Procedure": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationEDBloodPressure",
-        "title": "Observation - ED Blood Pressure"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Procedure",
+        "title": "Road Safety Procedure"
+      }
+    ],
+    "Questionnaire": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationEDHeartRate",
-        "title": "Observation - ED Heart Rate"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Questionnaire",
+        "title": "Road Safety Questionnaire"
+      }
+    ],
+    "ServiceRequest": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationExtentOfInjury",
-        "title": "Observation - Extent of Injury"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationExternalCause",
-        "title": "Observation - External Cause (Generic)"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationFacility",
-        "title": "Observation - Facility / ONEISS"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationGCS",
-        "title": "Observation - Glasgow Coma Scale"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationHeartRate",
-        "title": "Observation - Heart Rate"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationLevelOfConsciousness",
-        "title": "Observation - Level of Consciousness"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationModeOfTransport",
-        "title": "Observation - Mode of Transport to Facility"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationOutcomeAtDischarge",
-        "title": "Observation - Outcome at Discharge"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationPatientsInvolved",
-        "title": "Observation - Patients Involved Count"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationPupils",
-        "title": "Observation - Pupils"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationRespiratoryRate",
-        "title": "Observation - Respiratory Rate"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationScene",
-        "title": "Observation - Scene / Base"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationStatusOnArrival",
-        "title": "Observation - Status on Arrival"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTemperature",
-        "title": "Observation - Temperature"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTimeDeparted",
-        "title": "Observation - Time Departed Scene"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTimeEnroute",
-        "title": "Observation - Time Enroute"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTimeHospitalArrival",
-        "title": "Observation - Time Hospital Arrival"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTimeOnScene",
-        "title": "Observation - Time On Scene"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTimeReceived",
-        "title": "Observation - Time Received"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTimeStationArrival",
-        "title": "Observation - Time Station Arrival"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTransportVehicularFlag",
-        "title": "Observation - Transport/Vehicular Accident Flag"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationTriageCategory",
-        "title": "Observation - Triage Category (Scene)"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationVehiclesInvolved",
-        "title": "Observation - Vehicles Involved Count"
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest",
+        "title": "Refusal to Admit Service Request"
       }
     ],
     "Task": [
@@ -223,10 +437,23 @@
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/TaskRoadSafety",
         "title": "Road Safety Task"
+      },
+      {
+        "url": "urn://example.com.ph/StructureDefinition/rs-task",
+        "title": "Road Safety Task"
       }
     ]
   },
   "usage": {
+    "http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -241,6 +468,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-religion|5.2.0": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -269,6 +502,72 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/cause-of-road-crash": [
+      "Encounter"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ed-availability": [
+      "HealthcareService"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/external-cause-detail-ext": [
+      "Observation"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/first-aid-given": [
+      "Procedure"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/party-at-fault": [
+      "Encounter"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/road-network-shapefile": [
+      "Encounter"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient-age": [
+      "Patient"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/safety-notes-ext": [
+      "Observation"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/supplies-used": [
+      "Procedure"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/traffic-incident-management": [
+      "Encounter"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transpo-coordination": [
+      "Procedure"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transport-details-ext": [
+      "Observation"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-condition": [
+      "Encounter"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-used": [
+      "Encounter"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/barangay": [
+      "Patient.address"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality": [
+      "Patient.address"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/educational-attainment": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/indigenous-group": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/occupation": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/province": [
+      "Patient.address"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/race": [
+      "Patient"
     ]
   }
 }

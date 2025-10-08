@@ -205,13 +205,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Terminology: Concept Maps</a>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -384,6 +393,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Bundle profile that prescribes the required slices/resources for facility (ONEISS) submissions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-HealthcareService.html"
+                  title="StructureDefinition/RS-HealthcareService">Hospital Available</a>
+            </td>
+            <td>
+<p>Represents a hospital available for EMS referral, linked to its location.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Observation.html"
+                  title="StructureDefinition/RS-Observation">Injury Observation</a>
+            </td>
+            <td>
+<p>It is intended to support documentation of external causes, nature and extent of injuries, 
+vital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents.</p>
 </td>
          </tr>
          <tr>
@@ -676,11 +704,115 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Servicerequest.html"
+                  title="StructureDefinition/RS-Servicerequest">Refusal to Admit Service Request</a>
+            </td>
+            <td>
+<p>Profile for recording refusal to admit a patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Allergyintolerance.html"
+                  title="StructureDefinition/RS-Allergyintolerance">Road Safety AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Profile for recording allergy or intolerance information in the Philippine Road Safety IG.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Claim.html"
+                  title="StructureDefinition/RS-Claim">Road Safety Claim</a>
+            </td>
+            <td>
+<p>A Claim profile for PH Road Safety IG requiring total.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ConditionRoadSafety.html"
                   title="StructureDefinition/ConditionRoadSafety">Road Safety Condition</a>
             </td>
             <td>
 <p>Condition profile for coding diagnoses, ICD-10 nature of injury, and external cause mappings required by the Road Safety MDS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Condition.html"
+                  title="StructureDefinition/RS-Condition">Road Safety Condition</a>
+            </td>
+            <td>
+<p>A Condition for the Safety of the Roads in the Philippines.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Documentreference.html"
+                  title="StructureDefinition/RS-Documentreference">Road Safety Document Reference</a>
+            </td>
+            <td>
+<p>A profile to capture documents related to road safety incidents in the Philippine context.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Encounter.html"
+                  title="StructureDefinition/RS-Encounter">Road Safety Encounter</a>
+            </td>
+            <td>
+<p>Encounter profile for road safety reporting (hospital case no, incident no, transport details, disposition, etc.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Medicationstatement.html"
+                  title="StructureDefinition/RS-Medicationstatement">Road Safety MedicationStatement</a>
+            </td>
+            <td>
+<p>A profile representing a patient's current medication statement for the Philippine health context.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Patient.html"
+                  title="StructureDefinition/RS-Patient">Road Safety Patient</a>
+            </td>
+            <td>
+<p>A profile for Road Safety resource specific to Philippine context.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Procedure.html"
+                  title="StructureDefinition/RS-Procedure">Road Safety Procedure</a>
+            </td>
+            <td>
+<p>Procedure profile for road safety and injury surveillance.</p>
+<ul>
+  <li>Captures interventions performed on the patient.</li>
+  <li>Supplies used during the procedure.</li>
+  <li>Coordination with receiving hospital if applicable.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-Questionnaire.html"
+                  title="StructureDefinition/RS-Questionnaire">Road Safety Questionnaire</a>
+            </td>
+            <td>
+<p>A profile on Questionnaire to capture repeating Vital Signs data (Respiratory Rate, Pulse, Blood Pressure, Temperature, LOC).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RS-task.html"
+                  title="StructureDefinition/RS-task">Road Safety Task</a>
+            </td>
+            <td>
+<p>A profile for tasks related to road safety, tracking report forms and delays.</p>
 </td>
          </tr>
          <tr>
@@ -713,6 +845,167 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-patient-age.html"
+                  title="StructureDefinition/rs-patient-age">Age</a>
+            </td>
+            <td>
+<p>Patient age, derived from birthDate. Not intended for direct data entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cause-of-road-crash.html"
+                  title="StructureDefinition/cause-of-road-crash">Cause of Road Crash Incident</a>
+            </td>
+            <td>
+<p>Cause or contributing factor of the road crash.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ed-availability.html"
+                  title="StructureDefinition/ed-availability">Emergency Department Availability</a>
+            </td>
+            <td>
+<p>Indicates if the emergency department is currently accepting patients.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-external-cause-detail-ext.html"
+                  title="StructureDefinition/external-cause-detail-ext">External Cause Detail</a>
+            </td>
+            <td>
+<p>Additional detail for external cause (e.g., specify animal/insect, weapon, burn type).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-first-aid-given.html"
+                  title="StructureDefinition/first-aid-given">First Aid Given</a>
+            </td>
+            <td>
+<p>Indicates whether first aid was provided to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ph-core-occupation.html"
+                  title="StructureDefinition/ph-core-occupation">PH Core Occupation (Stub)</a>
+            </td>
+            <td>
+<p>Temporary local copy of PH Core Occupation extension for Road Safety testing</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-party-at-fault.html"
+                  title="StructureDefinition/party-at-fault">Party at Fault</a>
+            </td>
+            <td>
+<p>Identifies the party considered at fault in the road crash.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-report-form-received.html"
+                  title="StructureDefinition/report-form-received">Report Form Received</a>
+            </td>
+            <td>
+<p>Whether the report form was received as digital or physical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-road-network-shapefile.html"
+                  title="StructureDefinition/road-network-shapefile">Road Network Shape File</a>
+            </td>
+            <td>
+<p>Metadata reference to detailed road network shapefile related to the incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-safety-notes-ext.html"
+                  title="StructureDefinition/safety-notes-ext">Safety / Other Risk Factors</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-supplies-used.html"
+                  title="StructureDefinition/supplies-used">Supplies Used</a>
+            </td>
+            <td>
+<p>Records any devices or medications used during the procedure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-traffic-incident-management.html"
+                  title="StructureDefinition/traffic-incident-management">Traffic Incident Management</a>
+            </td>
+            <td>
+<p>Documentation or status of traffic incident management.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-transpo-coordination.html"
+                  title="StructureDefinition/transpo-coordination">Transport Coordination</a>
+            </td>
+            <td>
+<p>Indicates if transport to receiving hospital was coordinated.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-transport-details-ext.html"
+                  title="StructureDefinition/transport-details-ext">Transport Details</a>
+            </td>
+            <td>
+<p>Details about mode of transport, vehicles involved, positions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vehicle-condition.html"
+                  title="StructureDefinition/vehicle-condition">Vehicle Condition</a>
+            </td>
+            <td>
+<p>Condition of the vehicle involved in the incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vehicle-used.html"
+                  title="StructureDefinition/vehicle-used">Vehicle Used</a>
+            </td>
+            <td>
+<p>The type of vehicle used by the patient or involved in the encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vehicle-list-ext.html"
+                  title="StructureDefinition/vehicle-list-ext">Vehicle list</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -720,10 +1013,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-CollisionTypeVS.html" title="ValueSet/CollisionTypeVS">Collision types (sample)</a>
+               <a href="ValueSet-activity-vs.html" title="ValueSet/activity-vs">Activity ValueSet (example)</a>
             </td>
             <td>
-
+<p>Example ValueSet for Activity at time of incident</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-age-units-vs.html" title="ValueSet/age-units-vs">Age Units ValueSet</a>
+            </td>
+            <td>
+<p>Allowed units for Patient Age when Date of Birth is not available.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-rs-procedure.html" title="ValueSet/rs-procedure">All Road Safety Procedure Codes</a>
+            </td>
+            <td>
+<p>Combines medical interventions, first aid, and psychosocial procedures.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cause-of-crash-file-type-vs.html"
+                  title="ValueSet/cause-of-crash-file-type-vs">Cause of Crash File Type ValueSet</a>
+            </td>
+            <td>
+<p>Allowed file types for documents describing the cause of a road crash.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cause-of-crash-vs.html"
+                  title="ValueSet/cause-of-crash-vs">Cause of Road Crash</a>
+            </td>
+            <td>
+<p>Defines codes representing the external causes of road traffic crashes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-collision-type-vs.html"
+                  title="ValueSet/collision-type-vs">Collision Type ValueSet (example)</a>
+            </td>
+            <td>
+<p>Types of collision in road traffic incidents</p>
 </td>
          </tr>
          <tr>
@@ -740,6 +1076,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-external-cause-vs.html"
+                  title="ValueSet/external-cause-vs">External Cause ValueSet (example)</a>
+            </td>
+            <td>
+<p>Illustrative set of codes representing external causes of injury.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-first-aid.html" title="ValueSet/first-aid">First Aid Codes</a>
+            </td>
+            <td>
+<p>Allowed values for first aid performed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-rs-hospital-category.html"
+                  title="ValueSet/rs-hospital-category">Hospital / EMS Category</a>
+            </td>
+            <td>
+<p>Categories for hospitals relevant to EMS referral.</p>
 </td>
          </tr>
          <tr>
@@ -916,15 +1278,134 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-intervention.html" title="ValueSet/intervention">Medical Intervention Procedure Codes</a>
+            </td>
+            <td>
+<p>Procedure codes representing medical interventions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-mode-of-transport-vs.html"
+                  title="ValueSet/mode-of-transport-vs">Mode of Transport ValueSet (example)</a>
+            </td>
+            <td>
+<p>Sample ValueSet capturing transport modes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-injury-nature-vs.html" title="ValueSet/injury-nature-vs">Nature of Injury ValueSet (example)</a>
+            </td>
+            <td>
+<p>Demonstration ValueSet capturing the nature of injury.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-outcome-vs.html" title="ValueSet/outcome-vs">Outcome ValueSet (example)</a>
+            </td>
+            <td>
+<p>Example ValueSet capturing possible outcomes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-party-at-fault-vs.html"
+                  title="ValueSet/party-at-fault-vs">Party at Fault</a>
+            </td>
+            <td>
+<p>ValueSet indicating the party at fault in an incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-place-occ-vs.html" title="ValueSet/place-occ-vs">Place of Occurrence ValueSet (example)</a>
+            </td>
+            <td>
+<p>Example ValueSet capturing places of occurrence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-psychosocial-procedure.html"
+                  title="ValueSet/psychosocial-procedure">Psychosocial Procedure Codes</a>
+            </td>
+            <td>
+<p>Codes representing psychosocial support interventions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-report-form-received-vs.html"
+                  title="ValueSet/report-form-received-vs">Report Form Received</a>
+            </td>
+            <td>
+<p>ValueSet indicating whether a report form has been received.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-road-network-file-type-vs.html"
+                  title="ValueSet/road-network-file-type-vs">Road Network File Type</a>
+            </td>
+            <td>
+<p>Permitted file types for detailed road network shapefiles or GIS documents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-rs-task-status.html" title="ValueSet/rs-task-status">Road Safety Task Status</a>
+            </td>
+            <td>
+<p>ValueSet for Task.status using custom Road Safety codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-coordination.html" title="ValueSet/coordination">Transport Coordination Codes</a>
+            </td>
+            <td>
+<p>Standard codes for documenting transport coordination.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-priority-vs.html" title="ValueSet/priority-vs">Triage Priority ValueSet (example)</a>
+            </td>
+            <td>
+<p>Example ValueSet capturing triage priorities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-TriageCategoryVS.html" title="ValueSet/TriageCategoryVS">Triage categories (sample)</a>
             </td>
             <td>
 
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rs-vehicle-type.html"
+                  title="ValueSet/vs-rs-vehicle-type">ValueSet for Vehicle Used</a>
+            </td>
+            <td>
+<p>Vehicle types allowed for Road Safety Encounter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vehicle-condition-vs.html"
+                  title="ValueSet/vehicle-condition-vs">Vehicle Condition</a>
+            </td>
+            <td>
+<p>ValueSet indicating the condition of a vehicle.</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -932,42 +1413,215 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-CollisionTypeCS.html"
-                  title="CodeSystem/CollisionTypeCS">Collision Type code system (sample)</a>
+               <a href="CodeSystem-activity-cs.html" title="CodeSystem/activity-cs">Activity at time of incident (example)</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-ExternalCauseCS.html"
-                  title="CodeSystem/ExternalCauseCS">External cause code system (sample)</a>
+               <a href="CodeSystem-cause-of-crash-cs.html"
+                  title="CodeSystem/cause-of-crash-cs">Cause of Road Crash</a>
             </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-collision-type-cs.html"
+                  title="CodeSystem/collision-type-cs">Collision Type (example)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-external-cause-cs.html"
+                  title="CodeSystem/external-cause-cs">External Cause CodeSystem (example)</a>
+            </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-RSFacilitySectionCS.html"
                   title="CodeSystem/RSFacilitySectionCS">Facility Composition Sections</a>
             </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-mode-of-transport-cs.html"
+                  title="CodeSystem/mode-of-transport-cs">Mode of Transport (example)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-injury-nature-cs.html"
+                  title="CodeSystem/injury-nature-cs">Nature of Injury (example)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-outcome-cs.html" title="CodeSystem/outcome-cs">Outcome (example)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-party-at-fault-cs.html"
+                  title="CodeSystem/party-at-fault-cs">Party at Fault</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-place-occ-cs.html" title="CodeSystem/place-occ-cs">Place of Occurrence (example)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-report-form-received-cs.html"
+                  title="CodeSystem/report-form-received-cs">Report Form Received</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-road-network-file-type-cs.html"
+                  title="CodeSystem/road-network-file-type-cs">Road Network File Type</a>
+            </td>
+            <td>
+<p>Allowed file types for detailed road network shapefiles or GIS data.</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-RSCompositionTypeCS-Facility.html"
                   title="CodeSystem/RSCompositionTypeCS-Facility">Road Safety Composition Type (Facility)</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-RSCompositionTypeCS-Run.html"
                   title="CodeSystem/RSCompositionTypeCS-Run">Road Safety Composition Type (Run)</a>
             </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-rs-task-status-cs.html"
+                  title="CodeSystem/rs-task-status-cs">Road Safety Task Status Codes</a>
+            </td>
+            <td>
+<p>Custom codes for Task.status specific to Road Safety reporting.</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-RSRunSectionCS.html" title="CodeSystem/RSRunSectionCS">Run Report Composition Sections</a>
             </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-priority-cs.html" title="CodeSystem/priority-cs">Triage Priority (example)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-vehicle-condition-cs.html"
+                  title="CodeSystem/vehicle-condition-cs">Vehicle Condition</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-vehicle-types.html" title="CodeSystem/vehicle-types">Vehicle Types</a>
+            </td>
+            <td>
+<p>A code system for different types of vehicles used in road safety encounters.</p>
+</td>
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
+   <h3>Terminology: Naming Systems </h3>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-hospital-case-no-ns.html"
+                  title="NamingSystem/hospital-case-no-ns">Hospital Case Number System</a>
+            </td>
+            <td>
+<p>Unique identifier assigned to each hospital case.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-hospital-patient-id-ns.html"
+                  title="NamingSystem/hospital-patient-id-ns">Hospital Patient ID No.</a>
+            </td>
+            <td>
+<p>The permanent and unique number issued by hospitals to individual patients and their dependents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-IncidentNoNS.html" title="NamingSystem/IncidentNoNS">Incident Number System</a>
+            </td>
+            <td>
+<p>Unique identifier assigned to each incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-hospital-registry-id-ns.html"
+                  title="NamingSystem/hospital-registry-id-ns">National Health Facility Registry ID</a>
+            </td>
+            <td>
+<p>The permanent and unique number issued by PhilHealth to individual members and to each and every dependent.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -980,6 +1634,157 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-hospital-ex.html"
+                  title="Organization/organization-hospital-ex">Example Hospital Organization</a>
+            </td>
+            <td>
+<p>Hospital submitting the road safety patient report.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-ana-cruz.html"
+                  title="Practitioner/practitioner-ana-cruz">Practitioner - Ana Cruz</a>
+            </td>
+            <td>
+<p>Team Leader in the Road Safety Encounter (Dr. Ana Cruz leads the medical response team).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-john-lee.html"
+                  title="Practitioner/practitioner-john-lee">Practitioner - John Lee</a>
+            </td>
+            <td>
+<p>Assistant in the Road Safety Encounter (Nurse John Lee assists the treatment and transport officers).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-lisa-tan.html"
+                  title="Practitioner/practitioner-lisa-tan">Practitioner - Lisa Tan</a>
+            </td>
+            <td>
+<p>Transport Officer in the Road Safety Encounter (Dr. Lisa Tan is responsible for patient transfer and transport decisions).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-maria-santos.html"
+                  title="Practitioner/practitioner-maria-santos">Practitioner - Maria Santos</a>
+            </td>
+            <td>
+<p>Received By in the Road Safety Encounter (Clerk Maria Santos logs the patient’s arrival at the receiving facility).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-mark-reyes.html"
+                  title="Practitioner/practitioner-mark-reyes">Practitioner - Mark Reyes</a>
+            </td>
+            <td>
+<p>Treatment Officer in the Road Safety Encounter (Dr. Mark Reyes provides primary patient treatment).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-road-safety-servicerequest-example.html"
+                  title="ServiceRequest/road-safety-servicerequest-example">Refusal to Admit Service Request Example</a>
+            </td>
+            <td>
+<p>This example records a refusal to admit a road crash patient during a Road Safety Encounter, including the hospital that refused admission and the physician involved.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-road-safety-encounter-example.html"
+                  title="Encounter/road-safety-encounter-example">Road Safety Encounter Example</a>
+            </td>
+            <td>
+<p>Example of a road safety hospital encounter with identifiers, participants, and disposition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-road-safety-age2.html"
+                  title="Patient/patient-road-safety-age2">Road Safety Patient Example - Age Only</a>
+            </td>
+            <td>
+<p>Example of a patient where only age is known.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-road-safety-age4.html"
+                  title="Patient/patient-road-safety-age4">Road Safety Patient Example - Elderly</a>
+            </td>
+            <td>
+<p>Example of an elderly patient with approximate age.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-road-safety-age3.html"
+                  title="Patient/patient-road-safety-age3">Road Safety Patient Example - Infant Age</a>
+            </td>
+            <td>
+<p>Example of a pediatric patient with age in months.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-road-safety-two-addresses.html"
+                  title="Patient/patient-road-safety-two-addresses">Road Safety Patient Example - With Two Addresses</a>
+            </td>
+            <td>
+<p>A patient with both permanent and temporary addresses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-task-road-safety-ex.html" title="Task/task-road-safety-ex">Road Safety Task Example</a>
+            </td>
+            <td>
+<p>Example of a road safety task to track report form receipt and delays.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-VitalSignsQuestionnaire.html"
+                  title="Questionnaire/VitalSignsQuestionnaire">Vital Signs Questionnaire</a>
+            </td>
+            <td>
+<p>Example Questionnaire instance to capture repeating sets of Vital Signs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-VitalSignsQuestionnaireResponse.html"
+                  title="QuestionnaireResponse/VitalSignsQuestionnaireResponse">Vital Signs QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Example response to the Vital Signs Questionnaire with sample measurements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-road-safety-ex.html"
+                  title="Patient/patient-road-safety-ex">patient-road-safety-ex</a>
+            </td>
+            <td>
+<p>Example patient involved in a road traffic crash, aligned to the RoadSafetyProfile.</p>
 </td>
          </tr>
       </tbody>
@@ -1002,7 +1807,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 7, 2025 15:25+0000">2025-10-07</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 8, 2025 01:22+0000">2025-10-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

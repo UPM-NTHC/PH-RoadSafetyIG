@@ -1,18 +1,50 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 83, warn = 684, info = 56
+err = 179, warn = 826, info = 82
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
- Build Errors : 0 / 12 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-CollisionTypeCS : 0 / 4 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-ExternalCauseCS : 0 / 4 / 1
+ Build Errors : 1 / 23 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-RSCompositionTypeCS-Facility : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-RSCompositionTypeCS-Run : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-RSFacilitySectionCS : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-RSRunSectionCS : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-activity-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cause-of-crash-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-collision-type-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-external-cause-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-injury-nature-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-mode-of-transport-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-outcome-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-party-at-fault-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-place-occ-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-priority-cs : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-report-form-received-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-road-network-file-type-cs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-rs-task-status-cs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-vehicle-condition-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-vehicle-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 13 / 1
+ /github/workspace/fsh-generated/resources/Encounter-road-safety-encounter-example : 36 / 2 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-IncidentNoNS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-hospital-case-no-ns : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-hospital-patient-id-ns : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-hospital-registry-id-ns : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-organization-hospital-ex : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-patient-road-safety-age2 : 4 / 2 / 2
+ /github/workspace/fsh-generated/resources/Patient-patient-road-safety-age3 : 4 / 2 / 2
+ /github/workspace/fsh-generated/resources/Patient-patient-road-safety-age4 : 4 / 2 / 2
+ /github/workspace/fsh-generated/resources/Patient-patient-road-safety-ex : 4 / 8 / 8
+ /github/workspace/fsh-generated/resources/Patient-patient-road-safety-two-addresses : 4 / 2 / 2
+ /github/workspace/fsh-generated/resources/Practitioner-practitioner-ana-cruz : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-practitioner-john-lee : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-practitioner-lisa-tan : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-practitioner-maria-santos : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-practitioner-mark-reyes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-VitalSignsQuestionnaire : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-VitalSignsQuestionnaireResponse : 2 / 5 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-road-safety-servicerequest-example : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-CompositionFacility : 2 / 1 / 22
  /github/workspace/fsh-generated/resources/StructureDefinition-CompositionRunReport : 2 / 1 / 19
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionICD10ExternalCause : 0 / 1 / 1
@@ -33,7 +65,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-LocationIncident : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationBloodPressure : 2 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationCCTVAvailable : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ObservationCollisionType : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationCollisionType : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationConditionOfPatient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationCyanosis : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationDateReceived : 0 / 1 / 1
@@ -63,10 +95,40 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationTriageCategory : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationVehiclesInvolved : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PH-RoadSafetyLogicalModel : 0 / 566 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Allergyintolerance : 12 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Claim : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Condition : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Documentreference : 1 / 3 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Encounter : 2 / 0 / 6
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-HealthcareService : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Medicationstatement : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Observation : 10 / 23 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Procedure : 2 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Questionnaire : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Servicerequest : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-task : 3 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RunReportBundle : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-TaskDelayReporting : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TaskRoadSafety : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-CollisionTypeVS : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-cause-of-road-crash : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ed-availability : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-external-cause-detail-ext : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-first-aid-given : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-party-at-fault : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ph-core-occupation : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-report-form-received : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-road-network-shapefile : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-patient-age : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-safety-notes-ext : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-supplies-used : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-traffic-incident-management : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-transpo-coordination : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-transport-details-ext : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vehicle-condition : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vehicle-list-ext : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vehicle-used : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Task-task-road-safety-ex : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DispositionVS : 2 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DocumentFormatVS : 1 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ICD10ExternalCauseVS : 0 / 2 / 1
@@ -90,30 +152,55 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/ValueSet-MDS-StatusOnArrival-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-MDSRoadSafetyVS : 4 / 2 / 3
  /github/workspace/fsh-generated/resources/ValueSet-TriageCategoryVS : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-activity-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-age-units-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-cause-of-crash-file-type-vs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-cause-of-crash-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-collision-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-coordination : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-external-cause-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-first-aid : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-injury-nature-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-intervention : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-mode-of-transport-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-outcome-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-party-at-fault-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-place-occ-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-priority-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-psychosocial-procedure : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-report-form-received-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-road-network-file-type-vs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-rs-hospital-category : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-rs-procedure : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-rs-task-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vehicle-condition-vs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-rs-vehicle-type : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/CollisionTypeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Extension.value.code: The reference http://hl7.org/fhir/ValueSet/ucum-age-units could not be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/safety-notes-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vehicle-list-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/DispositionVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/DocumentFormatVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ICD10ExternalCauseVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ICD10NatureOfInjuryVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TriageCategoryVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/CollisionTypeCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ExternalCauseCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/activity-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cause-of-crash-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/collision-type-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/external-cause-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RSFacilitySectionCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/mode-of-transport-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/injury-nature-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/outcome-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/party-at-fault-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/place-occ-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/report-form-received-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RSCompositionTypeCS-Facility.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RSCompositionTypeCS-Run.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RSRunSectionCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-== fsh-generated/resources/CodeSystem-CollisionTypeCS.json ==
-WARNING: CodeSystem/CollisionTypeCS: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/CollisionTypeCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/CollisionTypeCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/CollisionTypeCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-== fsh-generated/resources/CodeSystem-ExternalCauseCS.json ==
-WARNING: CodeSystem/ExternalCauseCS: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/ExternalCauseCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/ExternalCauseCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/ExternalCauseCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/priority-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/vehicle-condition-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/CodeSystem-RSCompositionTypeCS-Facility.json ==
 WARNING: CodeSystem/RSCompositionTypeCS-Facility: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/RSCompositionTypeCS-Facility: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -134,6 +221,57 @@ WARNING: CodeSystem/RSRunSectionCS: CodeSystem: HL7 Defined CodeSystems SHOULD h
 WARNING: CodeSystem/RSRunSectionCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/RSRunSectionCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 WARNING: CodeSystem/RSRunSectionCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-activity-cs.json ==
+WARNING: CodeSystem/activity-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/activity-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/activity-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/activity-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-cause-of-crash-cs.json ==
+WARNING: CodeSystem/cause-of-crash-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-collision-type-cs.json ==
+WARNING: CodeSystem/collision-type-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/collision-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/collision-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/collision-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-external-cause-cs.json ==
+WARNING: CodeSystem/external-cause-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/external-cause-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/external-cause-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/external-cause-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-injury-nature-cs.json ==
+WARNING: CodeSystem/injury-nature-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/injury-nature-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/injury-nature-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/injury-nature-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-mode-of-transport-cs.json ==
+WARNING: CodeSystem/mode-of-transport-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/mode-of-transport-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/mode-of-transport-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/mode-of-transport-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-outcome-cs.json ==
+WARNING: CodeSystem/outcome-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-party-at-fault-cs.json ==
+WARNING: CodeSystem/party-at-fault-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-place-occ-cs.json ==
+WARNING: CodeSystem/place-occ-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/place-occ-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/place-occ-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/place-occ-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-priority-cs.json ==
+WARNING: CodeSystem/priority-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/priority-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/priority-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/priority-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-report-form-received-cs.json ==
+WARNING: CodeSystem/report-form-received-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-road-network-file-type-cs.json ==
+== fsh-generated/resources/CodeSystem-rs-task-status-cs.json ==
+== fsh-generated/resources/CodeSystem-vehicle-condition-cs.json ==
+WARNING: CodeSystem/vehicle-condition-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-vehicle-types.json ==
 == fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR.json ==
 WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.source.ofType(uri): No definition could be found for URL value 'https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety'
 WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.group[0].source: No definition could be found for URL value 'https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety'
@@ -148,7 +286,124 @@ WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.group[8].source: No definitio
 WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.group[9].source: No definition could be found for URL value 'https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety'
 WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.group[10].source: No definition could be found for URL value 'https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety'
 WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.group[11].source: No definition could be found for URL value 'https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety'
+== fsh-generated/resources/Encounter-road-safety-encounter-example.json ==
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[0]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:teamLeader in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[1]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:teamLeader in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[2]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:teamLeader in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[3]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:teamLeader in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[4]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:teamLeader in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[0]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:treatmentOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[1]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:treatmentOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[2]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:treatmentOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[3]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:treatmentOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[4]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:treatmentOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[0]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:transportOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[1]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:transportOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[2]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:transportOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[3]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:transportOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[4]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:transportOfficer in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[0]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:assistant in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[1]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:assistant in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[2]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:assistant in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[3]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:assistant in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[4]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:assistant in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[0]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:receivedBy in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[1]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:receivedBy in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[2]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:receivedBy in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[3]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:receivedBy in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.participant[4]: Slicing cannot be evaluated: Could not match discriminator (type.coding.code) for slice Encounter.participant:receivedBy in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.location[0]: Slicing cannot be evaluated: Could not match discriminator (location) for slice Encounter.location:scene in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [location] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.location[1]: Slicing cannot be evaluated: Could not match discriminator (location) for slice Encounter.location:scene in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [location] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.location[0]: Slicing cannot be evaluated: Could not match discriminator (location) for slice Encounter.location:facility in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [location] does not have fixed value, binding or existence assertions
+ERROR: Encounter/road-safety-encounter-example: Encounter.location[1]: Slicing cannot be evaluated: Could not match discriminator (location) for slice Encounter.location:facility in profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0 - the discriminator [location] does not have fixed value, binding or existence assertions
+INFORMATION: Encounter/road-safety-encounter-example: Encounter: Encounter.location:scene: Found 0 matches, but unable to check minimum required (Encounter.location) due to lack of slicing validation (from https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter|0.1.0)
+WARNING: Encounter/road-safety-encounter-example: Encounter.extension[0].value.ofType(CodeableConcept): ValueSet 'http://example.com/fhir/ValueSet/vs-rs-vehicle-type' not found
+ERROR: Encounter/road-safety-encounter-example: Encounter.extension[0].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Ambulance' for http://snomed.info/sct#7771000. Valid display is one of 6 choices: 'Left' (en), 'Left lateral' (en), 'Levo-' (en), 'Left (qualifier value)' (en), 'Left side' (en) or 'Lt - Left' (en) (for the language(s) 'en')
+WARNING: Encounter/road-safety-encounter-example: Encounter.identifier[0].system: No definition could be found for URL value 'http://yourhospital.org/hospital-case-number'
+ERROR: Encounter/road-safety-encounter-example: Encounter.reasonCode[0].coding[0].display: Wrong Display Name 'Motor vehicle accident' for http://snomed.info/sct#22298006. Valid display is one of 7 choices: 'Myocardial infarction' (en), 'Infarction of heart' (en), 'Cardiac infarction' (en), 'Heart attack' (en), 'Myocardial infarction (disorder)' (en), 'Myocardial infarct' (en) or 'MI - myocardial infarction' (en) (for the language(s) 'en')
+ERROR: Encounter/road-safety-encounter-example: Encounter.hospitalization.destination: Unable to resolve resource with reference 'Organization/hospital-example'
+ERROR: Encounter/road-safety-encounter-example: Encounter.hospitalization.dischargeDisposition.coding[0].display: Wrong Display Name 'Discharged to home' for http://terminology.hl7.org/CodeSystem/discharge-disposition#home. Valid display is 'Home' (for the language(s) 'en')
+ERROR: Encounter/road-safety-encounter-example: Encounter.location[0].location: Unable to resolve resource with reference 'Example-RS-Scene-Location'
+ERROR: Encounter/road-safety-encounter-example: Encounter.location[1].location: Unable to resolve resource with reference 'Example-RS-Hospital-Location'
+ERROR: Encounter/road-safety-encounter-example: Encounter.serviceProvider: Unable to resolve resource with reference 'Organization/hospital-example'
 == fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety.json ==
+== fsh-generated/resources/NamingSystem-IncidentNoNS.json ==
+== fsh-generated/resources/NamingSystem-hospital-case-no-ns.json ==
+== fsh-generated/resources/NamingSystem-hospital-patient-id-ns.json ==
+== fsh-generated/resources/NamingSystem-hospital-registry-id-ns.json ==
+== fsh-generated/resources/Organization-organization-hospital-ex.json ==
+INFORMATION: Organization/organization-hospital-ex: Organization.identifier[0]: This element does not match any known slice defined in the profile urn://example.com/ph-core/fhir/StructureDefinition/ph-core-organization|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Patient-patient-road-safety-age2.json ==
+INFORMATION: Patient/patient-road-safety-age2: Patient.extension[1]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/patient-road-safety-age2: Patient: Slice 'Patient.extension:indigenousPeople' for extension 'urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people': a matching slice is required, but not found (from https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Patient/patient-road-safety-age2: Patient.extension[0].value.ofType(Age).code: ValueSet 'http://hl7.org/fhir/ValueSet/ucum-age-units' not found
+ERROR: Patient/patient-road-safety-age2: Patient.extension[1]: The extension http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople could not be found so is not allowed here
+WARNING: Patient/patient-road-safety-age2: Patient.extension[1].url: No definition could be found for URL value 'http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople'
+ERROR: Patient/patient-road-safety-age2: Patient.extension[1].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/v3/NullFlavor'
+ERROR: Patient/patient-road-safety-age2: Patient.extension[1].value.ofType(Coding).system: No definition could be found for URL value 'http://hl7.org/fhir/v3/NullFlavor'
+== fsh-generated/resources/Patient-patient-road-safety-age3.json ==
+INFORMATION: Patient/patient-road-safety-age3: Patient.extension[1]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/patient-road-safety-age3: Patient: Slice 'Patient.extension:indigenousPeople' for extension 'urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people': a matching slice is required, but not found (from https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Patient/patient-road-safety-age3: Patient.extension[0].value.ofType(Age).code: ValueSet 'http://hl7.org/fhir/ValueSet/ucum-age-units' not found
+ERROR: Patient/patient-road-safety-age3: Patient.extension[1]: The extension http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople could not be found so is not allowed here
+WARNING: Patient/patient-road-safety-age3: Patient.extension[1].url: No definition could be found for URL value 'http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople'
+ERROR: Patient/patient-road-safety-age3: Patient.extension[1].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/v3/NullFlavor'
+ERROR: Patient/patient-road-safety-age3: Patient.extension[1].value.ofType(Coding).system: No definition could be found for URL value 'http://hl7.org/fhir/v3/NullFlavor'
+== fsh-generated/resources/Patient-patient-road-safety-age4.json ==
+INFORMATION: Patient/patient-road-safety-age4: Patient.extension[1]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/patient-road-safety-age4: Patient: Slice 'Patient.extension:indigenousPeople' for extension 'urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people': a matching slice is required, but not found (from https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Patient/patient-road-safety-age4: Patient.extension[0].value.ofType(Age).code: ValueSet 'http://hl7.org/fhir/ValueSet/ucum-age-units' not found
+ERROR: Patient/patient-road-safety-age4: Patient.extension[1]: The extension http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople could not be found so is not allowed here
+WARNING: Patient/patient-road-safety-age4: Patient.extension[1].url: No definition could be found for URL value 'http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople'
+ERROR: Patient/patient-road-safety-age4: Patient.extension[1].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/v3/NullFlavor'
+ERROR: Patient/patient-road-safety-age4: Patient.extension[1].value.ofType(Coding).system: No definition could be found for URL value 'http://hl7.org/fhir/v3/NullFlavor'
+== fsh-generated/resources/Patient-patient-road-safety-ex.json ==
+INFORMATION: Patient/patient-road-safety-ex: Patient.extension[1]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/patient-road-safety-ex: Patient: Slice 'Patient.extension:indigenousPeople' for extension 'urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people': a matching slice is required, but not found (from https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Patient/patient-road-safety-ex: Patient.extension[0].value.ofType(Age).code: ValueSet 'http://hl7.org/fhir/ValueSet/ucum-age-units' not found
+ERROR: Patient/patient-road-safety-ex: Patient.extension[1]: The extension http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople could not be found so is not allowed here
+WARNING: Patient/patient-road-safety-ex: Patient.extension[1].url: No definition could be found for URL value 'http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople'
+ERROR: Patient/patient-road-safety-ex: Patient.extension[1].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/v3/NullFlavor'
+ERROR: Patient/patient-road-safety-ex: Patient.extension[1].value.ofType(Coding).system: No definition could be found for URL value 'http://hl7.org/fhir/v3/NullFlavor'
+WARNING: Patient/patient-road-safety-ex: Patient.address[0].extension[0].value.ofType(Coding).system: A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+INFORMATION: Patient/patient-road-safety-ex: Patient.address[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+WARNING: Patient/patient-road-safety-ex: Patient.address[0].extension[1].value.ofType(Coding).system: A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+INFORMATION: Patient/patient-road-safety-ex: Patient.address[0].extension[1].value.ofType(Coding): A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+WARNING: Patient/patient-road-safety-ex: Patient.address[0].extension[2].value.ofType(Coding).system: A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+INFORMATION: Patient/patient-road-safety-ex: Patient.address[0].extension[2].value.ofType(Coding): A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+WARNING: Patient/patient-road-safety-ex: Patient.address[1].extension[0].value.ofType(Coding).system: A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+INFORMATION: Patient/patient-road-safety-ex: Patient.address[1].extension[0].value.ofType(Coding): A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+WARNING: Patient/patient-road-safety-ex: Patient.address[1].extension[1].value.ofType(Coding).system: A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+INFORMATION: Patient/patient-road-safety-ex: Patient.address[1].extension[1].value.ofType(Coding): A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+WARNING: Patient/patient-road-safety-ex: Patient.address[1].extension[2].value.ofType(Coding).system: A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+INFORMATION: Patient/patient-road-safety-ex: Patient.address[1].extension[2].value.ofType(Coding): A definition for CodeSystem 'https://psgc.gitlab.io/psgc' could not be found, so the code cannot be validated
+== fsh-generated/resources/Patient-patient-road-safety-two-addresses.json ==
+INFORMATION: Patient/patient-road-safety-two-addresses: Patient.extension[1]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/patient-road-safety-two-addresses: Patient: Slice 'Patient.extension:indigenousPeople' for extension 'urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people': a matching slice is required, but not found (from https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Patient/patient-road-safety-two-addresses: Patient.extension[0].value.ofType(Age).code: ValueSet 'http://hl7.org/fhir/ValueSet/ucum-age-units' not found
+ERROR: Patient/patient-road-safety-two-addresses: Patient.extension[1]: The extension http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople could not be found so is not allowed here
+WARNING: Patient/patient-road-safety-two-addresses: Patient.extension[1].url: No definition could be found for URL value 'http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople'
+ERROR: Patient/patient-road-safety-two-addresses: Patient.extension[1].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/v3/NullFlavor'
+ERROR: Patient/patient-road-safety-two-addresses: Patient.extension[1].value.ofType(Coding).system: No definition could be found for URL value 'http://hl7.org/fhir/v3/NullFlavor'
+== fsh-generated/resources/Practitioner-practitioner-ana-cruz.json ==
+== fsh-generated/resources/Practitioner-practitioner-john-lee.json ==
+== fsh-generated/resources/Practitioner-practitioner-lisa-tan.json ==
+== fsh-generated/resources/Practitioner-practitioner-maria-santos.json ==
+== fsh-generated/resources/Practitioner-practitioner-mark-reyes.json ==
+== fsh-generated/resources/Questionnaire-VitalSignsQuestionnaire.json ==
+INFORMATION: Resource: The resource Questionnaire/VitalSignsQuestionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/QuestionnaireResponse-VitalSignsQuestionnaireResponse.json ==
+ERROR: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.questionnaire: Canonical URLs must be absolute URLs if they are not fragment references (VitalSignsQuestionnaire)
+ERROR: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.subject: Unable to resolve resource with reference 'Patient/example'
+WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[3].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[5].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[10].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/ServiceRequest-road-safety-servicerequest-example.json ==
+INFORMATION: ServiceRequest/road-safety-servicerequest-example: ServiceRequest.supportingInfo[0]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: ServiceRequest/road-safety-servicerequest-example: ServiceRequest.subject: Unable to resolve resource with reference 'patient-jose-dela-cruz'
+ERROR: ServiceRequest/road-safety-servicerequest-example: ServiceRequest.supportingInfo[0]: Unable to resolve resource with reference 'organization-stlukes'
 == fsh-generated/resources/StructureDefinition-CompositionFacility.json ==
 INFORMATION: StructureDefinition/CompositionFacility: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 INFORMATION: StructureDefinition/CompositionFacility: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/RSCompositionTypeCS-Facility|0.1.0
@@ -243,6 +498,8 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-ObservationCCTVAvailable.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationCCTVAvailable'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ObservationCollisionType.json ==
+WARNING: StructureDefinition/ObservationCollisionType: StructureDefinition.differential.element[2].binding: The definition for the element 'Observation.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ObservationCollisionType: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationCollisionType'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ObservationConditionOfPatient.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ObservationConditionOfPatient'): The Implementation Guide contains no examples for this profile
@@ -873,6 +1130,101 @@ WARNING: StructureDefinition/PH-RoadSafetyLogicalModel: StructureDefinition.diff
 WARNING: StructureDefinition/PH-RoadSafetyLogicalModel: StructureDefinition.differential.element[218]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/PH-RoadSafetyLogicalModel: StructureDefinition.differential.element[219]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/PH-RoadSafetyLogicalModel: StructureDefinition.differential.element[220]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-RS-Allergyintolerance.json ==
+WARNING: Road Safety AllergyIntolerance.AllergyIntolerance.clinicalStatus: Binding http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical could not be located
+WARNING: Road Safety AllergyIntolerance.AllergyIntolerance.verificationStatus: Binding http://terminology.hl7.org/CodeSystem/allergyintolerance-verification could not be located
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[10].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[11].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[15].binding.valueSet: Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.differential.element[1].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.differential.element[2].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.differential.element[1].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical on element AllergyIntolerance.clinicalStatus points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.differential.element[2].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/allergyintolerance-verification on element AllergyIntolerance.verificationStatus points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.differential.element[3].binding: The valueSet reference http://snomed.info/sct on element AllergyIntolerance.code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[10].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical on element AllergyIntolerance.clinicalStatus points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[11].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/allergyintolerance-verification on element AllergyIntolerance.verificationStatus points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[15].binding: The valueSet reference http://snomed.info/sct on element AllergyIntolerance.code points to something that is not a value set (CodeSystem)
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Allergyintolerance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Claim.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Claim'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Condition.json ==
+INFORMATION: StructureDefinition/RS-Condition: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/RS-Condition: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Documentreference.json ==
+ERROR: Road Safety Document Reference.content.DocumentReference.content.attachment.contentType: Binding https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/road-network-file-type-vs is not a subset of binding http://hl7.org/fhir/ValueSet/mimetypes|4.0.1
+WARNING: StructureDefinition/RS-Documentreference: StructureDefinition.differential.element[2].binding: The definition for the element 'DocumentReference.category' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/RS-Documentreference: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/RS-Documentreference: StructureDefinition.snapshot.element[14].binding: The definition for the element 'DocumentReference.category' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/RS-Documentreference: StructureDefinition.snapshot.element[28].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Documentreference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Encounter.json ==
+ERROR: StructureDefinition/RS-Encounter: StructureDefinition.differential.element[39]: This element has a Binding but the types [Reference] do not make this kind of constraint relevant
+ERROR: StructureDefinition/RS-Encounter: StructureDefinition.differential.element[41]: This element has a Binding but the types [Reference] do not make this kind of constraint relevant
+INFORMATION: StructureDefinition/RS-Encounter: StructureDefinition.snapshot.element[65].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/RS-Encounter: StructureDefinition.snapshot.element[72].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/RS-Encounter: StructureDefinition.snapshot.element[79].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/RS-Encounter: StructureDefinition.snapshot.element[86].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/RS-Encounter: StructureDefinition.snapshot.element[93].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+== fsh-generated/resources/StructureDefinition-RS-HealthcareService.json ==
+WARNING: StructureDefinition/RS-HealthcareService: StructureDefinition.differential.element[4].binding: The definition for the element 'HealthcareService.category' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-hospital-category' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-HealthcareService: StructureDefinition.snapshot.element[13].binding: The definition for the element 'HealthcareService.category' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-hospital-category' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-HealthcareService'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Medicationstatement.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Medicationstatement'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Observation.json ==
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[116].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[126].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[136].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[146].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '9263-8' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[156].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XXXX' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[156].pattern.ofType(CodeableConcept).coding[0].code: Code XXXX is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "X", in "XXXX") at character 1)
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[166].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/mode-of-transport' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[176].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/outcome' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[186].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/priority' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[32].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[36].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[40].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[44].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '9263-8' in the CodeSystem 'http://loinc.org' version '2.81'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[48].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XXXX' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/RS-Observation: StructureDefinition.differential.element[48].pattern.ofType(CodeableConcept).coding[0].code: Code XXXX is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "X", in "XXXX") at character 1)
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[52].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/mode-of-transport' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[56].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/outcome' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[60].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/priority' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[6].binding: The definition for the element 'Observation.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[50].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[54].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[58].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[62].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[65].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[68].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[71].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[17].binding: The definition for the element 'Observation.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[158].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[168].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[178].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[188].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[198].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[208].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[218].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Patient.json ==
+== fsh-generated/resources/StructureDefinition-RS-Procedure.json ==
+WARNING: Road Safety Procedure.Procedure.status: Binding http://hl7.org/fhir/CodeSystem/procedure-status could not be located
+ERROR: StructureDefinition/RS-Procedure: StructureDefinition.snapshot.element[17].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/CodeSystem/procedure-status'
+ERROR: StructureDefinition/RS-Procedure: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/CodeSystem/procedure-status'
+WARNING: StructureDefinition/RS-Procedure: StructureDefinition.differential.element[6].binding: The definition for the element 'Procedure.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-procedure' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Procedure: StructureDefinition.snapshot.element[20].binding: The definition for the element 'Procedure.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-procedure' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Procedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RS-Questionnaire.json ==
+== fsh-generated/resources/StructureDefinition-RS-Servicerequest.json ==
+== fsh-generated/resources/StructureDefinition-RS-task.json ==
+ERROR: StructureDefinition.where(url = 'urn://example.com.ph/StructureDefinition/rs-task'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-RS-task.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-task) does not match the URL (urn://example.com.ph/StructureDefinition/rs-task). Use the special-url parameter if you really mean for it not to match
+ERROR: Road Safety Task.Task.status: Binding https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status is not a subset of binding http://hl7.org/fhir/ValueSet/task-status|4.0.1 because The codes 'not-received,received,completed,in-progress' are not in the base valueset
+WARNING: StructureDefinition/RS-task: StructureDefinition.differential.element[1].binding: The definition for the element 'Task.status' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-task: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Task.status' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status' which is experimental, but this structure is not labeled as experimental
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-RS-task: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-task vs urn://example.com.ph/StructureDefinition/rs-task
 == fsh-generated/resources/StructureDefinition-RunReportBundle.json ==
 INFORMATION: StructureDefinition/RunReportBundle: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/RunReportBundle: StructureDefinition.snapshot.element[15].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -881,9 +1233,64 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/TaskDelayReporting'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TaskRoadSafety.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/TaskRoadSafety'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/ValueSet-CollisionTypeVS.json ==
-WARNING: ValueSet/CollisionTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/CollisionTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/StructureDefinition-cause-of-road-crash.json ==
+WARNING: StructureDefinition/cause-of-road-crash: StructureDefinition.context[0]: Review the extension type for cause-of-road-crash: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/cause-of-road-crash: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/cause-of-road-crash: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/cause-of-road-crash'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ed-availability.json ==
+WARNING: StructureDefinition/ed-availability: StructureDefinition.context[0]: Review the extension type for ed-availability: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ed-availability'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-external-cause-detail-ext.json ==
+WARNING: StructureDefinition/external-cause-detail-ext: StructureDefinition.context[0]: Review the extension type for external-cause-detail-ext: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/external-cause-detail-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-first-aid-given.json ==
+WARNING: StructureDefinition/first-aid-given: StructureDefinition.context[0]: Review the extension type for first-aid-given: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/first-aid-given'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-party-at-fault.json ==
+WARNING: StructureDefinition/party-at-fault: StructureDefinition.context[0]: Review the extension type for party-at-fault: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/party-at-fault: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/party-at-fault-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/party-at-fault: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/party-at-fault-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/party-at-fault'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ph-core-occupation.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org.ph/fhir/StructureDefinition/ph-core-occupation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ph-core-occupation.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-core-occupation) does not match the URL (http://hl7.org.ph/fhir/StructureDefinition/ph-core-occupation). Use the special-url parameter if you really mean for it not to match
+WARNING: StructureDefinition/ph-core-occupation: StructureDefinition.context[0]: Review the extension type for ph-core-occupation: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://hl7.org.ph/fhir/StructureDefinition/ph-core-occupation'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-ph-core-occupation: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-core-occupation vs http://hl7.org.ph/fhir/StructureDefinition/ph-core-occupation
+== fsh-generated/resources/StructureDefinition-report-form-received.json ==
+WARNING: StructureDefinition/report-form-received: StructureDefinition.context[0]: Review the extension type for report-form-received: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/report-form-received: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/report-form-received: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/report-form-received'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-road-network-shapefile.json ==
+WARNING: StructureDefinition/road-network-shapefile: StructureDefinition.context[0]: Review the extension type for road-network-shapefile: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/road-network-shapefile'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-rs-patient-age.json ==
+ERROR: StructureDefinition/rs-patient-age: StructureDefinition.snapshot.element[11].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/ucum-age-units'
+ERROR: StructureDefinition/rs-patient-age: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/ucum-age-units'
+== fsh-generated/resources/StructureDefinition-safety-notes-ext.json ==
+WARNING: StructureDefinition/safety-notes-ext: StructureDefinition.context[0]: Review the extension type for safety-notes-ext: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/safety-notes-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-supplies-used.json ==
+WARNING: StructureDefinition/supplies-used: StructureDefinition.context[0]: Review the extension type for supplies-used: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/supplies-used'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-traffic-incident-management.json ==
+WARNING: StructureDefinition/traffic-incident-management: StructureDefinition.context[0]: Review the extension type for traffic-incident-management: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/traffic-incident-management'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-transpo-coordination.json ==
+WARNING: StructureDefinition/transpo-coordination: StructureDefinition.context[0]: Review the extension type for transpo-coordination: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transpo-coordination'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-transport-details-ext.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transport-details-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-vehicle-condition.json ==
+WARNING: StructureDefinition/vehicle-condition: StructureDefinition.context[0]: Review the extension type for vehicle-condition: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-condition'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-vehicle-list-ext.json ==
+WARNING: StructureDefinition/vehicle-list-ext: StructureDefinition.context[0]: Review the extension type for vehicle-list-ext: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-list-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-vehicle-used.json ==
+WARNING: StructureDefinition/vehicle-used: StructureDefinition.context[0]: Review the extension type for vehicle-used: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/Task-task-road-safety-ex.json ==
 == fsh-generated/resources/ValueSet-DispositionVS.json ==
 ERROR: ValueSet/DispositionVS: ValueSet.compose.include[0].valueSet[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/discharge-disposition'
 WARNING: ValueSet/DispositionVS: ValueSet.compose.include[0].valueSet[0]: The value set import http://hl7.org/fhir/ValueSet/discharge-disposition could not be found so cannot be checked
@@ -1000,3 +1407,30 @@ ERROR: /github/workspace/fsh-generated/resources/ValueSet-MDSRoadSafetyVS: URL M
 WARNING: ValueSet/TriageCategoryVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/TriageCategoryVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'TriageCategoryVS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://example.org/fhir/CodeSystem/triage-category
+== fsh-generated/resources/ValueSet-activity-vs.json ==
+== fsh-generated/resources/ValueSet-age-units-vs.json ==
+== fsh-generated/resources/ValueSet-cause-of-crash-file-type-vs.json ==
+WARNING: ValueSet/cause-of-crash-file-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-cause-of-crash-vs.json ==
+== fsh-generated/resources/ValueSet-collision-type-vs.json ==
+== fsh-generated/resources/ValueSet-coordination.json ==
+== fsh-generated/resources/ValueSet-external-cause-vs.json ==
+== fsh-generated/resources/ValueSet-first-aid.json ==
+== fsh-generated/resources/ValueSet-injury-nature-vs.json ==
+== fsh-generated/resources/ValueSet-intervention.json ==
+== fsh-generated/resources/ValueSet-mode-of-transport-vs.json ==
+== fsh-generated/resources/ValueSet-outcome-vs.json ==
+== fsh-generated/resources/ValueSet-party-at-fault-vs.json ==
+== fsh-generated/resources/ValueSet-place-occ-vs.json ==
+== fsh-generated/resources/ValueSet-priority-vs.json ==
+== fsh-generated/resources/ValueSet-psychosocial-procedure.json ==
+== fsh-generated/resources/ValueSet-report-form-received-vs.json ==
+== fsh-generated/resources/ValueSet-road-network-file-type-vs.json ==
+WARNING: ValueSet/road-network-file-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-rs-hospital-category.json ==
+ERROR: ValueSet/rs-hospital-category: ValueSet.compose.include[0].concept[1]: The code '22633000' is not valid in the system http://snomed.info/sct (Unknown code '22633000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
+== fsh-generated/resources/ValueSet-rs-procedure.json ==
+== fsh-generated/resources/ValueSet-rs-task-status.json ==
+== fsh-generated/resources/ValueSet-vehicle-condition-vs.json ==
+WARNING: ValueSet/vehicle-condition-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-vs-rs-vehicle-type.json ==

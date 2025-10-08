@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="rs-task-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem rs-task-status-cs</b></p><a name="rs-task-status-cs"> </a><a name="hcrs-task-status-cs"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">received<a name="rs-task-status-cs-received"> </a></td><td>Report form received</td></tr><tr><td style="white-space:nowrap">not-received<a name="rs-task-status-cs-not-received"> </a></td><td>Report form not received</td></tr><tr><td style="white-space:nowrap">in-progress<a name="rs-task-status-cs-in-progress"> </a></td><td>Task in progress</td></tr><tr><td style="white-space:nowrap">completed<a name="rs-task-status-cs-completed"> </a></td><td>Task completed</td></tr></table></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs"/>
+  <version value="0.1.0"/>
+  <name value="TaskStatus"/>
+  <title value="Road Safety Task Status Codes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-08T01:21:21+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Custom codes for Task.status specific to Road Safety reporting."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="received"/>
+    <display value="Report form received"/>
+  </concept>
+  <concept>
+    <code value="not-received"/>
+    <display value="Report form not received"/>
+  </concept>
+  <concept>
+    <code value="in-progress"/>
+    <display value="Task in progress"/>
+  </concept>
+  <concept>
+    <code value="completed"/>
+    <display value="Task completed"/>
+  </concept>
+</CodeSystem>

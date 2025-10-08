@@ -22,8 +22,8 @@
       "oids" : ["2.16.840.1.113883.6.3"],
       "uses" : {
       },
-      "ValueSet-ICD10NatureOfInjuryVS.html" : "ICD-10 Nature of Injury (sample)",
-      "ValueSet-ICD10ExternalCauseVS.html" : "ICD-10 External Cause (sample)"
+      "ValueSet-ICD10ExternalCauseVS.html" : "ICD-10 External Cause (sample)",
+      "ValueSet-ICD10NatureOfInjuryVS.html" : "ICD-10 Nature of Injury (sample)"
     },
     {
       "url" : "http://loinc.org",
@@ -35,11 +35,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
-      "ValueSet-MDS-GCSEyes-VS.html" : "MDS GCS Eyes",
       "ValueSet-MDS-ModeOfTransport-VS.html" : "MDS Mode of Transport to Facility",
-      "ValueSet-MDS-GCSMotor-VS.html" : "MDS GCS Motor",
-      "ValueSet-MDS-GCSVerbal-VS.html" : "MDS GCS Verbal"
+      "ValueSet-MDS-GCSEyes-VS.html" : "MDS GCS Eyes",
+      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
+      "ValueSet-MDS-GCSVerbal-VS.html" : "MDS GCS Verbal",
+      "ValueSet-MDS-GCSMotor-VS.html" : "MDS GCS Motor"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -51,31 +51,227 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
-      "ValueSet-MDS-PulseRhythm-VS.html" : "MDS Pulse Rhythm",
-      "ValueSet-MDS-StatusOnArrival-VS.html" : "MDS Status on Arrival",
-      "ValueSet-MDS-InjuryType-VS.html" : "MDS Injury Types",
-      "ValueSet-MDS-ConditionOfPatient-VS.html" : "MDS Condition of Patient",
       "ValueSet-MDS-AVPU-VS.html" : "MDS AVPU Level of Consciousness",
       "ValueSet-MDS-InjuryIntent-VS.html" : "MDS Injury Intent",
-      "ValueSet-MDS-PulseQuality-VS.html" : "MDS Pulse Quality",
+      "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
+      "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
+      "ValueSet-coordination.html" : "Transport Coordination Codes",
       "ValueSet-MDS-Outcome-VS.html" : "MDS Outcome",
-      "ValueSet-MDS-RespiratoryRhythm-VS.html" : "MDS Respiratory Rhythm",
+      "ValueSet-MDS-DrowningWaterBody-VS.html" : "MDS Drowning Body of Water",
+      "ValueSet-MDS-InjuryType-VS.html" : "MDS Injury Types",
       "ValueSet-MDS-Pupils-VS.html" : "MDS Pupils",
       "ValueSet-MDS-BreathSounds-VS.html" : "MDS Breath Sounds",
-      "ValueSet-MDS-Cyanosis-VS.html" : "MDS Cyanosis",
-      "ValueSet-MDS-DrowningWaterBody-VS.html" : "MDS Drowning Body of Water"
+      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
+      "ValueSet-first-aid.html" : "First Aid Codes",
+      "ValueSet-MDS-StatusOnArrival-VS.html" : "MDS Status on Arrival",
+      "ValueSet-MDS-RespiratoryRhythm-VS.html" : "MDS Respiratory Rhythm",
+      "ValueSet-MDS-PulseQuality-VS.html" : "MDS Pulse Quality",
+      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes",
+      "ValueSet-MDS-PulseRhythm-VS.html" : "MDS Pulse Rhythm",
+      "ValueSet-MDS-ConditionOfPatient-VS.html" : "MDS Condition of Patient",
+      "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
+      "ValueSet-MDS-Cyanosis-VS.html" : "MDS Cyanosis"
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/CollisionTypeCS",
+      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-age-units-vs.html" : "Age Units ValueSet"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CollisionTypeCS",
-      "title" : "Collision Type code system (sample)",
+      "name" : "ActivityCS",
+      "title" : "Activity at time of incident (example)",
       "description" : "",
       "uses" : {
       },
-      "ValueSet-CollisionTypeVS.html" : "Collision types (sample)"
+      "ValueSet-activity-vs.html" : "Activity ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CauseOfCrashCS",
+      "title" : "Cause of Road Crash",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-cause-of-crash-vs.html" : "Cause of Road Crash"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollisionTypeCS",
+      "title" : "Collision Type (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-collision-type-vs.html" : "Collision Type ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ExternalCauseCS",
+      "title" : "External Cause CodeSystem (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-external-cause-vs.html" : "External Cause ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "InjuryNatureCS",
+      "title" : "Nature of Injury (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-injury-nature-vs.html" : "Nature of Injury ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ModeOfTransportCS",
+      "title" : "Mode of Transport (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-mode-of-transport-vs.html" : "Mode of Transport ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OutcomeCS",
+      "title" : "Outcome (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-outcome-vs.html" : "Outcome ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PartyAtFaultCS",
+      "title" : "Party at Fault",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-party-at-fault-vs.html" : "Party at Fault"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PlaceOccCS",
+      "title" : "Place of Occurrence (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-place-occ-vs.html" : "Place of Occurrence ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PriorityCS",
+      "title" : "Triage Priority (example)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-priority-vs.html" : "Triage Priority ValueSet (example)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReportFormReceivedCS",
+      "title" : "Report Form Received",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-report-form-received-vs.html" : "Report Form Received"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoadNetworkFileTypeCS",
+      "title" : "Road Network File Type",
+      "description" : "Allowed file types for detailed road network shapefiles or GIS data.",
+      "uses" : {
+      },
+      "ValueSet-road-network-file-type-vs.html" : "Road Network File Type"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "Road Safety Task Status Codes",
+      "description" : "Custom codes for Task.status specific to Road Safety reporting.",
+      "uses" : {
+      },
+      "ValueSet-rs-task-status.html" : "Road Safety Task Status"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleConditionCS",
+      "title" : "Vehicle Condition",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-vehicle-condition-vs.html" : "Vehicle Condition"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleTypeCS",
+      "title" : "Vehicle Types",
+      "description" : "A code system for different types of vehicles used in road safety encounters.",
+      "uses" : {
+      },
+      "ValueSet-vs-rs-vehicle-type.html" : "ValueSet for Vehicle Used"
     }
   ]
 }
