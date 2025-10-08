@@ -334,29 +334,29 @@ Description: "Bundle profile that prescribes required slices/resources for EMS r
 * entry[DelayTask].resource only TaskDelayReporting
 
 // Minimal CodeSystem and ValueSet samples used by run-report instances
-CodeSystem: ExternalCauseCS
-Id: ExternalCauseCS
-Title: "External cause code system (sample)"
-* #bites-stings "Bites / Stings"
-* #burns "Burns"
-* #gunshot "Gunshot"
-* #transport-vehicular "Transport / Vehicular Accident"
-* #contact-sharp "Contact with sharp objects"
-* #chemical-substance "Chemical / Substance Exposure"
-* #drowning "Drowning"
+// CodeSystem: ExternalCauseCS
+// Id: ExternalCauseCS
+// Title: "External cause code system (sample)"
+// * #bites-stings "Bites / Stings"
+// * #burns "Burns"
+// * #gunshot "Gunshot"
+// * #transport-vehicular "Transport / Vehicular Accident"
+// * #contact-sharp "Contact with sharp objects"
+// * #chemical-substance "Chemical / Substance Exposure"
+// * #drowning "Drowning"
 
-CodeSystem: CollisionTypeCS
-Id: CollisionTypeCS
-Title: "Collision Type code system (sample)"
-* #rear-end "Rear End"
-* #head-on "Head On"
-* #angle-impact "Angle Impact"
-* #side-swipe "Side Swipe"
+// CodeSystem: CollisionTypeCS
+// Id: CollisionTypeCS
+// Title: "Collision Type code system (sample)"
+// * #rear-end "Rear End"
+// * #head-on "Head On"
+// * #angle-impact "Angle Impact"
+// * #side-swipe "Side Swipe"
 
-ValueSet: CollisionTypeVS
-Id: CollisionTypeVS
-Title: "Collision types (sample)"
-* include codes from system CollisionTypeCS
+// ValueSet: CollisionTypeVS
+// Id: CollisionTypeVS
+// Title: "Collision types (sample)"
+// * include codes from system CollisionTypeCS
 
 ValueSet: TriageCategoryVS
 Id: TriageCategoryVS
