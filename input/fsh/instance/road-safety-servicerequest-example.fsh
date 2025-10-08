@@ -10,7 +10,7 @@ Description: "This example records a refusal to admit a road crash patient durin
 * occurrenceDateTime = "2025-09-25T14:45:00+08:00"
 
 // Supporting Info: Hospital that refused
-* supportingInfo[hospital] = Reference(Organization/organization-stjaylords) 
+* supportingInfo[hospital] = Reference(Organization/organization-uppgh) 
 
 // Supporting Info: Physician involved
 * supportingInfo[physician] = Reference(Practitioner/practitioner-ana-cruz)
