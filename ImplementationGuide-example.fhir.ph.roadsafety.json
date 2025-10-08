@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-08T01:21:21+00:00",
+  "date" : "2025-10-08T01:44:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -622,6 +622,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/Example-RS-Scene-Location"
+      },
+      "name" : "Accident Scene Location",
+      "description" : "Road traffic accident scene for the encounter.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -724,6 +736,30 @@
       "name" : "Cause of Road Crash Incident",
       "description" : "Cause or contributing factor of the road crash.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/hospital-example"
+      },
+      "name" : "City General Hospital",
+      "description" : "Receiving medical facility for the road safety encounter.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/Example-RS-Hospital-Location"
+      },
+      "name" : "City General Hospital - Emergency Department",
+      "description" : "ED Location involved in the encounter.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1896,6 +1932,18 @@
         "valueString" : "Patient"
       }],
       "reference" : {
+        "reference" : "Patient/patient-jose-dela-cruz"
+      },
+      "name" : "Patient - Jose Dela Cruz",
+      "description" : "Road crash patient referenced by the ServiceRequest example.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
         "reference" : "Patient/patient-road-safety-ex"
       },
       "name" : "patient-road-safety-ex",
@@ -2411,6 +2459,18 @@
       },
       "name" : "Safety / Other Risk Factors",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organization-stjaylords"
+      },
+      "name" : "St. Jaylord's Medical Center",
+      "description" : "Hospital referenced in the ServiceRequest example (refused admission).",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

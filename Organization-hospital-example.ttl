@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/hospital-example> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hospital-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-organization"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/urn://example.com/ph-core/fhir/StructureDefinition/ph-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization hospital-example</b></p><a name=\"hospital-example\"> </a><a name=\"hchospital-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/UP-Manila-SILab/ph-core/StructureDefinition-ph-core-organization.html\">PH Core Organization</a></p></div><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: City General Hospital</p><p><b>address</b>: 123 Health Avenue, Quezon City, NCR, Philippines</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "prov" ] ;
+       fhir:display [ fhir:v "Healthcare Provider" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "City General Hospital"] ; # 
+  fhir:address ( [
+     fhir:text [ fhir:v "123 Health Avenue, Quezon City, NCR, Philippines" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -230,6 +230,20 @@
       "StructureDefinition-RS-Encounter.html" : "Road Safety Encounter"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/task-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "systems" : ["http://hl7.org/fhir/task-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.790"],
+      "sources" : ["2.16.840.1.113883.4.642.3.790"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-task.html" : "Road Safety Task"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
       "version" : "3.0.0",
       "status" : "active",
@@ -561,15 +575,12 @@
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "TaskStatus",
+      "name" : "RSTaskStatusVS",
       "title" : "Road Safety Task Status",
       "description" : "ValueSet for Task.status using custom Road Safety codes.",
       "systems" : [
         "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-RS-task.html" : "Road Safety Task"
+      ]
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vehicle-condition-vs",
