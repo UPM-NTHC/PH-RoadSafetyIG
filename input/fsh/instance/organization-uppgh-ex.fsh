@@ -1,7 +1,7 @@
-Instance: organization-stjaylords
+Instance: organization-uppgh
 InstanceOf: PHCoreOrganization
-Title: "St. Jaylord's Medical Center"
+Title: "UP Philippine General Hospital (UP-PGH)"
 Description: "Hospital referenced in the ServiceRequest example (refused admission)."
-* name = "St. Jaylord's Medical Center"
+* name = "UP Philippine General Hospital"
 * type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-* address.text = "Quezon City, NCR, Philippines"
+* address.text = "Taft Avenue, Ermita, Manila, Philippines"
