@@ -1,6 +1,12 @@
 ValueSet: ModeOfTransportVS
 Id: mode-of-transport-vs
-Title: "Mode of Transport ValueSet (example)"
-Description: "Sample ValueSet capturing transport modes."
-* insert ShareableValueSet
-* include codes from system ModeOfTransportCS
+Title: "Mode of Transport to Facility"
+Description: "Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6."
+* ^status = #draft
+* ^url = "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport"
+
+// LOINC Answer List members
+* include http://loinc.org#LA9318-2 "Ambulance"
+* include http://loinc.org#LA9321-6 "Walk-in following nonambulance, law enforcement transport"
+* include http://loinc.org#LA9319-0 "Walk-in following transport via private transportation"
+* include http://loinc.org#LA9323-2 "Other mode of transport"
