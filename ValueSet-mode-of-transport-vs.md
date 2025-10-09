@@ -16,7 +16,7 @@ Transport mode answer list using LOINC Answer List codes; Observation.code shoul
 
  **References** 
 
-* [Injury Observation](StructureDefinition-RS-Observation.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "ModeOfTransportVS",
   "title" : "Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

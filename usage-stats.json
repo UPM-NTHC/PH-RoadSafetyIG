@@ -335,6 +335,12 @@
     }
   ],
   "profiles": {
+    "Composition": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/CompositionRunReport",
+        "title": "Composition - Run Report"
+      }
+    ],
     "AllergyIntolerance": [
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Allergyintolerance",
@@ -405,6 +411,12 @@
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest",
         "title": "Refusal to Admit Service Request"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RunReportBundle",
+        "title": "Run Report Bundle (prescribed)"
       }
     ],
     "Task": [
@@ -479,9 +491,6 @@
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ed-availability": [
       "HealthcareService"
     ],
-    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/external-cause-detail-ext": [
-      "Observation"
-    ],
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/first-aid-given": [
       "Procedure"
     ],
@@ -494,9 +503,6 @@
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient-age": [
       "Patient"
     ],
-    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/safety-notes-ext": [
-      "Observation"
-    ],
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/supplies-used": [
       "Procedure"
     ],
@@ -505,9 +511,6 @@
     ],
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transpo-coordination": [
       "Procedure"
-    ],
-    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transport-details-ext": [
-      "Observation"
     ],
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-condition": [
       "Encounter"

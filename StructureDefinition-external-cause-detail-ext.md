@@ -19,7 +19,7 @@ Additional detail for external cause (e.g., specify animal/insect, weapon, burn 
 
 **Usages:**
 
-* Use this Extension: [Injury Observation](StructureDefinition-RS-Observation.md)
+* This Extension is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/external-cause-detail-ext)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-external-cause-detai
   "name" : "ExternalCauseDetailExt",
   "title" : "External Cause Detail",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

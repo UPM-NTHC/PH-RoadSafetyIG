@@ -16,7 +16,7 @@ Safety equipment/accessories at time of incident. Temporary local codes.
 
  **References** 
 
-* [Injury Observation](StructureDefinition-RS-Observation.md)
+* [Run Report Bundle (prescribed)](StructureDefinition-RunReportBundle.md)
 
 ### Logical Definition (CLD)
 
@@ -52,7 +52,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "RSSafetyAccessoriesVS",
   "title" : "RS Safety Accessories",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

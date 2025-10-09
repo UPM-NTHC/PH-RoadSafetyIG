@@ -16,7 +16,7 @@ AVPU scale coded in SNOMED CT.
 
  **References** 
 
-* [Injury Observation](StructureDefinition-RS-Observation.md)
+* [Run Report Bundle (prescribed)](StructureDefinition-RunReportBundle.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "RSAVPUVS",
   "title" : "RS AVPU Level of Consciousness",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

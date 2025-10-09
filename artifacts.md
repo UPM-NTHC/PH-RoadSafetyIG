@@ -21,8 +21,9 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
+| [Composition - Run Report](StructureDefinition-CompositionRunReport.md) | Composition for EMS Run Report navigation, structured into coded sections derived from the Road Safety MDS (triage, vitals, counts, post‑crash, documents, tasks). Enables IG UIs to present a consistent outline. |
 | [Hospital Available](StructureDefinition-RS-HealthcareService.md) | Represents a hospital available for EMS referral, linked to its location. |
-| [Injury Observation](StructureDefinition-RS-Observation.md) | It is intended to support documentation of external causes, nature and extent of injuries, vital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents. |
+| [Injury Observation](StructureDefinition-RS-Observation.md) | Reusable Observation base for Road Safety. Use separate RSObservation instances for each MDS element. Reserve components for complex panels (e.g., BP) but do not predefine slices at base level. |
 | [Refusal to Admit Service Request](StructureDefinition-RS-Servicerequest.md) | Profile for recording refusal to admit a patient. |
 | [Road Safety AllergyIntolerance](StructureDefinition-RS-Allergyintolerance.md) | Profile for recording allergy or intolerance information in the Philippine Road Safety IG. |
 | [Road Safety Claim](StructureDefinition-RS-Claim.md) | A Claim profile for PH Road Safety IG requiring total. |
@@ -37,6 +38,7 @@ These define constraints on FHIR resources for systems conforming to this implem
  |
 | [Road Safety Questionnaire](StructureDefinition-RS-Questionnaire.md) | A profile on Questionnaire to capture repeating Vital Signs data (Respiratory Rate, Pulse, Blood Pressure, Temperature, LOC). |
 | [Road Safety Task](StructureDefinition-RS-task.md) | A profile for tasks related to road safety, tracking report forms and delays. |
+| [Run Report Bundle (prescribed)](StructureDefinition-RunReportBundle.md) | Bundle profile that prescribes required slices/resources for EMS run reports using RSObservation repeatedly. |
 
 ### Structures: Extension Definitions 
 

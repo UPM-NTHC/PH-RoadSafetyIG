@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -787,6 +787,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CompositionRunReport"
+      },
+      "name" : "Composition - Run Report",
+      "description" : "Composition for EMS Run Report navigation, structured into coded sections derived from the Road Safety MDS (triage, vitals, counts, post‑crash, documents, tasks). Enables IG UIs to present a consistent outline.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -936,7 +948,7 @@
         "reference" : "StructureDefinition/RS-Observation"
       },
       "name" : "Injury Observation",
-      "description" : "It is intended to support documentation of external causes, nature and extent of injuries, \nvital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents.",
+      "description" : "Reusable Observation base for Road Safety. Use separate RSObservation instances for each MDS element. Reserve components for complex panels (e.g., BP) but do not predefine slices at base level.",
       "exampleBoolean" : false
     },
     {
@@ -1795,6 +1807,18 @@
       },
       "name" : "RS Urgency Level (example)",
       "description" : "System-generated urgency/priority level. Temporary local codes pending mapping.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RunReportBundle"
+      },
+      "name" : "Run Report Bundle (prescribed)",
+      "description" : "Bundle profile that prescribes required slices/resources for EMS run reports using RSObservation repeatedly.",
       "exampleBoolean" : false
     },
     {

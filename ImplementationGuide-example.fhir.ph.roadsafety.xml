@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-09T17:33:43+00:00"/>
+  <date value="2025-10-09T18:52:26+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -617,6 +617,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CompositionRunReport"/>
+      </reference>
+      <name value="Composition - Run Report"/>
+      <description value="Composition for EMS Run Report navigation, structured into coded sections derived from the Road Safety MDS (triage, vitals, counts, post‑crash, documents, tasks). Enables IG UIs to present a consistent outline."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -754,7 +765,7 @@
         <reference value="StructureDefinition/RS-Observation"/>
       </reference>
       <name value="Injury Observation"/>
-      <description value="It is intended to support documentation of external causes, nature and extent of injuries, &#xA;vital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents."/>
+      <description value="Reusable Observation base for Road Safety. Use separate RSObservation instances for each MDS element. Reserve components for complex panels (e.g., BP) but do not predefine slices at base level."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1541,6 +1552,17 @@
       </reference>
       <name value="RS Urgency Level (example)"/>
       <description value="System-generated urgency/priority level. Temporary local codes pending mapping."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RunReportBundle"/>
+      </reference>
+      <name value="Run Report Bundle (prescribed)"/>
+      <description value="Bundle profile that prescribes required slices/resources for EMS run reports using RSObservation repeatedly."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

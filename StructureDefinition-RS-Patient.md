@@ -16,7 +16,8 @@ A profile for Road Safety resource specific to Philippine context.
 
 **Usages:**
 
-* Refer to this Profile: [Road Safety AllergyIntolerance](StructureDefinition-RS-Allergyintolerance.md), [Road Safety Condition](StructureDefinition-RS-Condition.md), [Road Safety MedicationStatement](StructureDefinition-RS-Medicationstatement.md), [Injury Observation](StructureDefinition-RS-Observation.md) and [Road Safety Procedure](StructureDefinition-RS-Procedure.md)
+* Use this Profile: [Run Report Bundle (prescribed)](StructureDefinition-RunReportBundle.md)
+* Refer to this Profile: [Composition - Run Report](StructureDefinition-CompositionRunReport.md), [Road Safety AllergyIntolerance](StructureDefinition-RS-Allergyintolerance.md), [Road Safety Condition](StructureDefinition-RS-Condition.md), [Road Safety MedicationStatement](StructureDefinition-RS-Medicationstatement.md)...Show 2 more,[Injury Observation](StructureDefinition-RS-Observation.md)and[Road Safety Procedure](StructureDefinition-RS-Procedure.md)
 * Examples for this Profile: [Patient/patient-road-safety-age2](Patient-patient-road-safety-age2.md), [Patient/patient-road-safety-age3](Patient-patient-road-safety-age3.md), [Patient/patient-road-safety-age4](Patient-patient-road-safety-age4.md), [Patient/patient-road-safety-ex](Patient-patient-road-safety-ex.md) and [Patient/patient-road-safety-two-addresses](Patient-patient-road-safety-two-addresses.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/RS-Patient)
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "Road Safety Patient",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

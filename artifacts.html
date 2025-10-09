@@ -253,6 +253,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-CompositionRunReport.html"
+                  title="StructureDefinition/CompositionRunReport">Composition - Run Report</a>
+            </td>
+            <td>
+<p>Composition for EMS Run Report navigation, structured into coded sections derived from the Road Safety MDS (triage, vitals, counts, post‑crash, documents, tasks). Enables IG UIs to present a consistent outline.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-RS-HealthcareService.html"
                   title="StructureDefinition/RS-HealthcareService">Hospital Available</a>
             </td>
@@ -266,8 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/RS-Observation">Injury Observation</a>
             </td>
             <td>
-<p>It is intended to support documentation of external causes, nature and extent of injuries, 
-vital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents.</p>
+<p>Reusable Observation base for Road Safety. Use separate RSObservation instances for each MDS element. Reserve components for complex panels (e.g., BP) but do not predefine slices at base level.</p>
 </td>
          </tr>
          <tr>
@@ -372,6 +380,15 @@ vital signs, Glasgow Coma Scale, and other clinical or scene observations relate
             </td>
             <td>
 <p>A profile for tasks related to road safety, tracking report forms and delays.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RunReportBundle.html"
+                  title="StructureDefinition/RunReportBundle">Run Report Bundle (prescribed)</a>
+            </td>
+            <td>
+<p>Bundle profile that prescribes required slices/resources for EMS run reports using RSObservation repeatedly.</p>
 </td>
          </tr>
       </tbody>
@@ -1344,7 +1361,7 @@ vital signs, Glasgow Coma Scale, and other clinical or scene observations relate
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 9, 2025 17:34+0000">2025-10-09</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 9, 2025 18:53+0000">2025-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

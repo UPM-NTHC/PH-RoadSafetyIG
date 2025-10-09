@@ -16,7 +16,8 @@ A profile to capture documents related to road safety incidents in the Philippin
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Run Report Bundle (prescribed)](StructureDefinition-RunReportBundle.md)
+* Refer to this Profile: [Composition - Run Report](StructureDefinition-CompositionRunReport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/RS-Documentreference)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Documentreference
   "name" : "RSDocumentReference",
   "title" : "Road Safety Document Reference",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

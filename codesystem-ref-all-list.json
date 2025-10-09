@@ -97,6 +97,18 @@
       "http://hl7.org/fhir/R4/valueset-allergy-intolerance-type.html" : "AllergyIntoleranceType"
     },
     {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.621"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
       "url" : "http://hl7.org/fhir/claim-use",
       "version" : "4.0.1",
       "status" : "draft",
@@ -107,6 +119,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-claim-use.html" : "Use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.239"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
     },
     {
       "url" : "http://hl7.org/fhir/composition-status",
@@ -193,6 +217,18 @@
       "http://hl7.org/fhir/R4/valueset-fm-status.html" : "Financial Resource Status Codes"
     },
     {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : ["2.16.840.1.113883.4.642.4.625"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+    },
+    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -227,6 +263,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "oids" : ["2.16.840.1.113883.4.642.4.319"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
     },
     {
       "url" : "http://hl7.org/fhir/name-use",
@@ -322,8 +370,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.114"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
-      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
     },
     {
       "url" : "http://hl7.org/fhir/request-priority",
@@ -359,6 +407,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : ["2.16.840.1.113883.4.642.4.623"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
     },
     {
       "url" : "http://hl7.org/fhir/sid/ex-icd-10-procedures",
@@ -418,13 +478,16 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "ValueSet-RS-GCSVerbal-VS.html" : "RS GCS Verbal",
-      "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
-      "ValueSet-RS-GCSMotor-VS.html" : "RS GCS Motor",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes",
       "ValueSet-mode-of-transport-vs.html" : "Mode of Transport to Facility",
-      "ValueSet-RS-GCSEyes-VS.html" : "RS GCS Eyes"
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+      "ValueSet-RS-GCSMotor-VS.html" : "RS GCS Motor",
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-RS-GCSEyes-VS.html" : "RS GCS Eyes",
+      "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -436,56 +499,56 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
-      "ValueSet-RS-ConditionOfPatient-VS.html" : "RS Condition of Patient",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "ValueSet-RS-AVPU-VS.html" : "RS AVPU Level of Consciousness",
-      "ValueSet-RS-StatusOnArrival-VS.html" : "RS Status on Arrival",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "ValueSet-coordination.html" : "Transport Coordination Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "ValueSet-outcome-vs.html" : "Outcome ValueSet",
-      "ValueSet-RS-BreathSounds-VS.html" : "RS Breath Sounds",
-      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "ValueSet-RS-InjuryIntent-VS.html" : "RS Injury Intent",
-      "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
       "ValueSet-RS-Pupils-VS.html" : "RS Pupils",
-      "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
-      "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
       "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "ValueSet-RS-Cyanosis-VS.html" : "RS Cyanosis",
-      "ValueSet-RS-DrowningWaterBody-VS.html" : "RS Drowning Body of Water",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "ValueSet-RS-PulseQuality-VS.html" : "RS Pulse Quality",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "ValueSet-RS-InjuryType-VS.html" : "RS Injury Types",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
       "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
-      "ValueSet-RS-RespiratoryRhythm-VS.html" : "RS Respiratory Rhythm",
-      "ValueSet-external-cause-vs.html" : "External Cause ValueSet (example)",
-      "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
+      "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
+      "ValueSet-RS-PulseQuality-VS.html" : "RS Pulse Quality",
+      "ValueSet-RS-Cyanosis-VS.html" : "RS Cyanosis",
       "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
+      "ValueSet-external-cause-vs.html" : "External Cause ValueSet (example)",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+      "ValueSet-RS-PulseRhythm-VS.html" : "RS Pulse Rhythm",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-RS-AVPU-VS.html" : "RS AVPU Level of Consciousness",
+      "ValueSet-RS-DrowningWaterBody-VS.html" : "RS Drowning Body of Water",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "ValueSet-RS-StatusOnArrival-VS.html" : "RS Status on Arrival",
+      "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
+      "ValueSet-RS-ConditionOfPatient-VS.html" : "RS Condition of Patient",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes",
+      "ValueSet-outcome-vs.html" : "Outcome ValueSet",
+      "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-coordination.html" : "Transport Coordination Codes",
+      "ValueSet-RS-InjuryIntent-VS.html" : "RS Injury Intent",
+      "ValueSet-RS-BreathSounds-VS.html" : "RS Breath Sounds",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "ValueSet-RS-InjuryType-VS.html" : "RS Injury Types",
+      "ValueSet-RS-RespiratoryRhythm-VS.html" : "RS Respiratory Rhythm",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "ValueSet-first-aid.html" : "First Aid Codes",
-      "ValueSet-RS-PulseRhythm-VS.html" : "RS Pulse Rhythm"
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/FDI-surface",
@@ -836,6 +899,30 @@
       "http://hl7.org/fhir/R4/valueset-fundsreserve.html" : "FundsReserve"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
       "version" : "2.0.1",
       "status" : "active",
@@ -1038,8 +1125,8 @@
       "uses" : {
       },
       "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActIncidentCode.html" : "ActIncidentCode",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActIncidentCode.html" : "ActIncidentCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -1052,6 +1139,18 @@
       "uses" : {
       },
       "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Confidentiality",
+      "title" : "Confidentiality",
+      "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+      "oids" : ["2.16.840.1.113883.5.25"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -1087,8 +1186,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -1124,8 +1223,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
     },
     {
       "url" : "http://unitsofmeasure.org",

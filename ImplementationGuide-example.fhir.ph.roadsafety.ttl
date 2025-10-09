@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-09T17:33:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T18:52:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -1096,6 +1096,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/CompositionRunReport> ;
+         fhir:reference [ fhir:v "StructureDefinition/CompositionRunReport" ]
+       ] ;
+       fhir:name [ fhir:v "Composition - Run Report" ] ;
+       fhir:description [ fhir:v "Composition for EMS Run Report navigation, structured into coded sections derived from the Road Safety MDS (triage, vitals, counts, post‑crash, documents, tasks). Enables IG UIs to present a consistent outline." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1319,7 +1337,7 @@
          fhir:reference [ fhir:v "StructureDefinition/RS-Observation" ]
        ] ;
        fhir:name [ fhir:v "Injury Observation" ] ;
-       fhir:description [ fhir:v "It is intended to support documentation of external causes, nature and extent of injuries, \nvital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents." ] ;
+       fhir:description [ fhir:v "Reusable Observation base for Road Safety. Use separate RSObservation instances for each MDS element. Reserve components for complex panels (e.g., BP) but do not predefine slices at base level." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2618,6 +2636,24 @@
        ] ;
        fhir:name [ fhir:v "RS Urgency Level (example)" ] ;
        fhir:description [ fhir:v "System-generated urgency/priority level. Temporary local codes pending mapping." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RunReportBundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/RunReportBundle" ]
+       ] ;
+       fhir:name [ fhir:v "Run Report Bundle (prescribed)" ] ;
+       fhir:description [ fhir:v "Bundle profile that prescribes required slices/resources for EMS run reports using RSObservation repeatedly." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

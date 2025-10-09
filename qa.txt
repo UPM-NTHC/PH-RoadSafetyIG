@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 198, warn = 717, info = 33
-IG Publisher Version: 2.0.20 Out of date - current version is null
-Generated Thu Oct 09 17:39:25 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+err = 192, warn = 715, info = 37
+IG Publisher Version: 2.0.20
+Generated Thu Oct 09 19:03:03 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 1 / 14 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-activity-cs : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cause-of-crash-cs : 0 / 1 / 1
@@ -46,20 +46,22 @@ Generated Thu Oct 09 17:39:25 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/Questionnaire-VitalSignsQuestionnaire : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-VitalSignsQuestionnaireResponse : 2 / 5 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-road-safety-servicerequest-example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CompositionRunReport : 0 / 1 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-PH-RoadSafetyLogicalModel : 0 / 566 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-RS-Allergyintolerance : 12 / 3 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Allergyintolerance : 12 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Claim : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Condition : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Documentreference : 1 / 3 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Encounter : 2 / 0 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-HealthcareService : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Medicationstatement : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-RS-Observation : 8 / 7 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Observation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Procedure : 2 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Questionnaire : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Servicerequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-task : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RunReportBundle : 2 / 3 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-cause-of-road-crash : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ed-availability : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-external-cause-detail-ext : 0 / 2 / 1
@@ -318,6 +320,11 @@ WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireRes
 WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[10].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ServiceRequest-road-safety-servicerequest-example.json ==
+== fsh-generated/resources/StructureDefinition-CompositionRunReport.json ==
+INFORMATION: StructureDefinition/CompositionRunReport: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/CompositionRunReport: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/CompositionRunReport: StructureDefinition.snapshot.element[40].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/CompositionRunReport'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PH-RoadSafetyLogicalModel.json ==
 WARNING: StructureDefinition/PH-RoadSafetyLogicalModel: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/PH-RoadSafetyLogicalModel: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -888,7 +895,6 @@ WARNING: StructureDefinition/PH-RoadSafetyLogicalModel: StructureDefinition.diff
 == fsh-generated/resources/StructureDefinition-RS-Allergyintolerance.json ==
 WARNING: Road Safety AllergyIntolerance.AllergyIntolerance.clinicalStatus: Binding http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical could not be located
 WARNING: Road Safety AllergyIntolerance.AllergyIntolerance.verificationStatus: Binding http://terminology.hl7.org/CodeSystem/allergyintolerance-verification could not be located
-INFORMATION: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[10].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[11].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: StructureDefinition/RS-Allergyintolerance: StructureDefinition.snapshot.element[15].binding.valueSet: Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
@@ -930,20 +936,6 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-RS-Medicationstatement.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Medicationstatement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Observation.json ==
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[176].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[186].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[196].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[256].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Mode of transport to the Hospital/Facility' for http://loinc.org#74286-6. Valid display is one of 3 choices: 'Transport mode to hospital [NTDS]' (en-US), 'Transport mode to hospital [NTDS]' (en-US) or 'Hospital transport [NTDS]' (en-US) (for the language(s) 'en')
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[56].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[60].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[64].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[85].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Mode of transport to the Hospital/Facility' for http://loinc.org#74286-6. Valid display is one of 3 choices: 'Transport mode to hospital [NTDS]' (en-US), 'Transport mode to hospital [NTDS]' (en-US) or 'Hospital transport [NTDS]' (en-US) (for the language(s) 'en')
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[105].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[108].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[140].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[318].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[328].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[436].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Patient.json ==
 == fsh-generated/resources/StructureDefinition-RS-Procedure.json ==
@@ -958,6 +950,14 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-RS-task.json ==
 ERROR: StructureDefinition.where(url = 'urn://example.com.ph/StructureDefinition/rs-task'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-RS-task.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-task) does not match the URL (urn://example.com.ph/StructureDefinition/rs-task). Use the special-url parameter if you really mean for it not to match
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-RS-task: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-task vs urn://example.com.ph/StructureDefinition/rs-task
+== fsh-generated/resources/StructureDefinition-RunReportBundle.json ==
+ERROR: StructureDefinition/RunReportBundle: StructureDefinition.snapshot.element[391].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Blood pressure panel' for http://loinc.org#85354-9. Valid display is one of 3 choices: 'Blood pressure panel with all children optional' (en-US), 'Blood pressure panel with all children optional' (en-US) or 'BP pnl w all optional' (en-US) (for the language(s) 'en')
+ERROR: StructureDefinition/RunReportBundle: StructureDefinition.differential.element[27].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Blood pressure panel' for http://loinc.org#85354-9. Valid display is one of 3 choices: 'Blood pressure panel with all children optional' (en-US), 'Blood pressure panel with all children optional' (en-US) or 'BP pnl w all optional' (en-US) (for the language(s) 'en')
+INFORMATION: StructureDefinition/RunReportBundle: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/RunReportBundle: StructureDefinition.differential.element[130].binding: The definition for the element 'Bundle.entry.resource.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/RunReportBundle: StructureDefinition.snapshot.element[15].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/RunReportBundle: StructureDefinition.snapshot.element[2358].binding: The definition for the element 'Bundle.entry.resource.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RunReportBundle'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cause-of-road-crash.json ==
 WARNING: StructureDefinition/cause-of-road-crash: StructureDefinition.context[0]: Review the extension type for cause-of-road-crash: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition/cause-of-road-crash: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-vs' which is experimental, but this structure is not labeled as experimental

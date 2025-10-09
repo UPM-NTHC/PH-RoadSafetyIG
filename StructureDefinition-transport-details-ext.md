@@ -19,7 +19,7 @@ Details about mode of transport, vehicles involved, positions.
 
 **Usages:**
 
-* Use this Extension: [Injury Observation](StructureDefinition-RS-Observation.md)
+* This Extension is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/transport-details-ext)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-transport-details-ex
   "name" : "TransportDetailsExt",
   "title" : "Transport Details",
   "status" : "draft",
-  "date" : "2025-10-09T17:33:43+00:00",
+  "date" : "2025-10-09T18:52:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
