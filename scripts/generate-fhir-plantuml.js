@@ -8,7 +8,7 @@
  Defaults:
    --mode  fsh (parses ./input/fsh/**.fsh)
    --input ./input/fsh when mode=fsh, or ./output when mode=sd
-   --out   stdout
+   --out   input/images-source/fsh-relationships.plantuml
    --paths all (default) or a comma list to filter
 */
 
@@ -27,6 +27,11 @@ function parseArgs(argv) {
     }
   }
   return args;
+}
+
+function ensureDirForFile(filePath) {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
 function listFilesRecursive(dir, extFilter) {
@@ -48,7 +53,7 @@ function parseFshFiles(root, opts) {
   const edges = [];
   const attrs = new Map(); // name -> [{name,type,card}]
 
-  const profileHeaderRe = /^(Profile|Logical):\s*(.+?)\s*$/i;
+  const profileHeaderRe = /^(Profile):\s*(.+?)\s*$/i;
   const extensionHeaderRe = /^Extension:\s*(.+?)\s*$/i;
   const parentRe = /^Parent:\s*(.+?)\s*$/i;
   const ruleLineRe = /^\s*\*\s+(.+?)\s*$/; // capture after '*'
@@ -316,9 +321,13 @@ function main() {
   }
 
   const plantuml = emitPlantUML(nodes, edges, attrs);
-  const outFile = args.out || '';
-  if (outFile) { fs.writeFileSync(outFile, plantuml, 'utf8'); console.log(`PlantUML diagram written to ${outFile}`); }
-  else { console.log(plantuml); }
+  // Default output file if not specified
+  let outFile = args.out || path.resolve(process.cwd(), 'input', 'images-source', 'fsh-relationships.plantuml');
+  // Ensure directory exists
+  const outDir = path.dirname(outFile);
+  if (!fs.existsSync(outDir)) { fs.mkdirSync(outDir, { recursive: true }); }
+  fs.writeFileSync(outFile, plantuml, 'utf8');
+  console.log(`PlantUML diagram written to ${outFile}`);
 }
 
 main();
