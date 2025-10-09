@@ -13,7 +13,7 @@
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [ModeOfTransportVS](ValueSet-mode-of-transport-vs.md)
+* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 
 
@@ -28,7 +28,7 @@
   "name" : "ModeOfTransportCS",
   "title" : "Mode of Transport (example)",
   "status" : "draft",
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-cause-of-road-crash.
   "name" : "CauseOfRoadCrash",
   "title" : "Cause of Road Crash Incident",
   "status" : "draft",
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

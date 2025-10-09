@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Collision Type ValueSet (example) - DRAFT PH Road Safety Implementation Guide v0.1.0</title>
+    <title>Collision Type ValueSet - DRAFT PH Road Safety Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -167,7 +167,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Collision Type ValueSet (example)</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Collision Type ValueSet</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -223,16 +223,16 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: Collision Type ValueSet (example)
-(Experimental)
+  <h2 id="root">ValueSet: Collision Type ValueSet
+
   </h2>
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType|0.1.0"/></span>
       </td>
     </tr>
 
@@ -264,7 +264,7 @@
   </table>
 
 <p>
-<p>Types of collision in road traffic incidents</p>
+<p>Types of collision in road traffic incidents (temporary local codes; map to a standard when available).</p>
 
 </p>
 
@@ -288,13 +288,14 @@
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
 <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="collision-type-vs"> </a><a name="hccollision-type-vs"> </a>
-<ul><li>Include all codes defined in <a href="CodeSystem-collision-type-cs.html"><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></a> version <span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</span></li></ul></div>
+<ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType</code> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>rear-end</td><td>Rear End</td></tr><tr><td>head-on</td><td>Head On</td></tr><tr><td>angle-impact</td><td>Angle Impact</td></tr><tr><td>side-swipe</td><td>Side Swipe</td></tr><tr><td>hit-object</td><td>Hit Object</td></tr><tr><td>hit-parked-vehicle</td><td>Hit Parked Vehicle</td></tr><tr><td>hit-pedestrian</td><td>Hit Pedestrian</td></tr><tr><td>multiple</td><td>Multiple Collision</td></tr><tr><td>none-stated</td><td>No Collision Stated</td></tr><tr><td>self-accident</td><td>Self-Accident</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-collision-type-cs.html">codesystem Collision Type (example) v0.1.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 6 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-head-on"> </a><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-head-on">head-on</a></td><td>Head-on</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;head-on&quot;, &quot;display&quot;: &quot;Head-on&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;head-on&quot;&gt;&lt;display value=&quot;Head-on&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-rear-end"> </a><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-rear-end">rear-end</a></td><td>Rear-end</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rear-end&quot;, &quot;display&quot;: &quot;Rear-end&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;rear-end&quot;&gt;&lt;display value=&quot;Rear-end&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-side-swipe"> </a><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-side-swipe">side-swipe</a></td><td>Side-swipe</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;side-swipe&quot;, &quot;display&quot;: &quot;Side-swipe&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;side-swipe&quot;&gt;&lt;display value=&quot;Side-swipe&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-rollover"> </a><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-rollover">rollover</a></td><td>Rollover</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rollover&quot;, &quot;display&quot;: &quot;Rollover&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;rollover&quot;&gt;&lt;display value=&quot;Rollover&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-non-collision"> </a><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-non-collision">non-collision</a></td><td>Non-collision</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;non-collision&quot;, &quot;display&quot;: &quot;Non-collision&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;non-collision&quot;&gt;&lt;display value=&quot;Non-collision&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs-other"> </a><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-collision-type-cs.html#collision-type-cs-other">other</a></td><td>Other</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;other&quot;, &quot;display&quot;: &quot;Other&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;other&quot;&gt;&lt;display value=&quot;Other&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+  <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px" title="No Expansion for this valueset (Unknown Code System&lt;!-- [Unable to expand imported value set: Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType, Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType] --&gt;)">No Expansion for this valueset (Unknown Code System<!-- [Unable to expand imported value set: Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType, Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType] -->)</p>
+
 
   <hr/>
   <p>
@@ -353,7 +354,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 9, 2025 12:27+0000">2025-10-09</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 9, 2025 16:05+0000">2025-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

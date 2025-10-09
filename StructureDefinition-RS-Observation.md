@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation.csv),
   "name" : "RSObservation",
   "title" : "Injury Observation",
   "status" : "draft",
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -733,7 +733,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation.csv),
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport"
         }
       },
       {
@@ -783,7 +783,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation.csv),
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome"
         }
       },
       {
@@ -870,7 +870,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation.csv),
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType"
         }
       },
       {

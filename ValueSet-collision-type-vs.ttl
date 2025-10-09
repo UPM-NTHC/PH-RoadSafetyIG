@@ -11,15 +11,14 @@
   fhir:id [ fhir:v "collision-type-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet collision-type-vs</b></p><a name=\"collision-type-vs\"> </a><a name=\"hccollision-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-collision-type-cs.html\"><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet collision-type-vs</b></p><a name=\"collision-type-vs\"> </a><a name=\"hccollision-type-vs\"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType</code> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>rear-end</td><td>Rear End</td></tr><tr><td>head-on</td><td>Head On</td></tr><tr><td>angle-impact</td><td>Angle Impact</td></tr><tr><td>side-swipe</td><td>Side Swipe</td></tr><tr><td>hit-object</td><td>Hit Object</td></tr><tr><td>hit-parked-vehicle</td><td>Hit Parked Vehicle</td></tr><tr><td>hit-pedestrian</td><td>Hit Pedestrian</td></tr><tr><td>multiple</td><td>Multiple Collision</td></tr><tr><td>none-stated</td><td>No Collision Stated</td></tr><tr><td>self-accident</td><td>Self-Accident</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "CollisionTypeVS"] ; # 
-  fhir:title [ fhir:v "Collision Type ValueSet (example)"] ; # 
+  fhir:title [ fhir:v "Collision Type ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-10-09T12:26:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T16:04:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -34,7 +33,7 @@
        fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Types of collision in road traffic incidents"] ; # 
+  fhir:description [ fhir:v "Types of collision in road traffic incidents (temporary local codes; map to a standard when available)."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -44,7 +43,38 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"^^xsd:anyURI ]
+       fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "rear-end" ] ;
+         fhir:display [ fhir:v "Rear End" ]
+       ] [
+         fhir:code [ fhir:v "head-on" ] ;
+         fhir:display [ fhir:v "Head On" ]
+       ] [
+         fhir:code [ fhir:v "angle-impact" ] ;
+         fhir:display [ fhir:v "Angle Impact" ]
+       ] [
+         fhir:code [ fhir:v "side-swipe" ] ;
+         fhir:display [ fhir:v "Side Swipe" ]
+       ] [
+         fhir:code [ fhir:v "hit-object" ] ;
+         fhir:display [ fhir:v "Hit Object" ]
+       ] [
+         fhir:code [ fhir:v "hit-parked-vehicle" ] ;
+         fhir:display [ fhir:v "Hit Parked Vehicle" ]
+       ] [
+         fhir:code [ fhir:v "hit-pedestrian" ] ;
+         fhir:display [ fhir:v "Hit Pedestrian" ]
+       ] [
+         fhir:code [ fhir:v "multiple" ] ;
+         fhir:display [ fhir:v "Multiple Collision" ]
+       ] [
+         fhir:code [ fhir:v "none-stated" ] ;
+         fhir:display [ fhir:v "No Collision Stated" ]
+       ] [
+         fhir:code [ fhir:v "self-accident" ] ;
+         fhir:display [ fhir:v "Self-Accident" ]
+       ] )
      ] )
   ] . # 
 

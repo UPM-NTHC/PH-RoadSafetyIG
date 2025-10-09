@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-09T12:26:29+00:00"/>
+  <date value="2025-10-09T16:04:50+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -611,8 +611,8 @@
       <reference>
         <reference value="ValueSet/collision-type-vs"/>
       </reference>
-      <name value="Collision Type ValueSet (example)"/>
-      <description value="Types of collision in road traffic incidents"/>
+      <name value="Collision Type ValueSet"/>
+      <description value="Types of collision in road traffic incidents (temporary local codes; map to a standard when available)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -796,8 +796,8 @@
       <reference>
         <reference value="ValueSet/mode-of-transport-vs"/>
       </reference>
-      <name value="Mode of Transport ValueSet (example)"/>
-      <description value="Sample ValueSet capturing transport modes."/>
+      <name value="Mode of Transport to Facility"/>
+      <description value="Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -849,8 +849,8 @@
       <reference>
         <reference value="ValueSet/outcome-vs"/>
       </reference>
-      <name value="Outcome ValueSet (example)"/>
-      <description value="Example ValueSet capturing possible outcomes."/>
+      <name value="Outcome ValueSet"/>
+      <description value="Outcome at release/discharge using SNOMED CT codes (prioritized)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1299,6 +1299,182 @@
       </reference>
       <name value="Road Safety Task Status Codes"/>
       <description value="Custom codes for Task.status specific to Road Safety reporting."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-AVPU-VS"/>
+      </reference>
+      <name value="RS AVPU Level of Consciousness"/>
+      <description value="AVPU scale coded in SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-BreathSounds-VS"/>
+      </reference>
+      <name value="RS Breath Sounds"/>
+      <description value="Breath sounds by auscultation (SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-ConditionOfPatient-VS"/>
+      </reference>
+      <name value="RS Condition of Patient"/>
+      <description value="Overall condition assertion (Alive/Deceased) using SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-Cyanosis-VS"/>
+      </reference>
+      <name value="RS Cyanosis"/>
+      <description value="Cyanosis presence/type (SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-DrowningWaterBody-VS"/>
+      </reference>
+      <name value="RS Drowning Body of Water"/>
+      <description value="Type/body of water involved in drowning (SNOMED)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-GCSEyes-VS"/>
+      </reference>
+      <name value="RS GCS Eyes"/>
+      <description value="GCS Eye opening (LOINC answers)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-GCSMotor-VS"/>
+      </reference>
+      <name value="RS GCS Motor"/>
+      <description value="GCS Motor response (LOINC answers)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-GCSVerbal-VS"/>
+      </reference>
+      <name value="RS GCS Verbal"/>
+      <description value="GCS Verbal response (LOINC answers)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-InjuryIntent-VS"/>
+      </reference>
+      <name value="RS Injury Intent"/>
+      <description value="Intent of injury (SNOMED-first)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-InjuryType-VS"/>
+      </reference>
+      <name value="RS Injury Types"/>
+      <description value="Common injury morphology/types (SNOMED-first)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-PulseQuality-VS"/>
+      </reference>
+      <name value="RS Pulse Quality"/>
+      <description value="Pulse quality using SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-PulseRhythm-VS"/>
+      </reference>
+      <name value="RS Pulse Rhythm"/>
+      <description value="Pulse rhythm (regular/irregular) using SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-Pupils-VS"/>
+      </reference>
+      <name value="RS Pupils"/>
+      <description value="Pupil findings (SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-RespiratoryRhythm-VS"/>
+      </reference>
+      <name value="RS Respiratory Rhythm"/>
+      <description value="Respiratory rhythm findings using SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-StatusOnArrival-VS"/>
+      </reference>
+      <name value="RS Status on Arrival"/>
+      <description value="Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RS-TriageCategory-VS"/>
+      </reference>
+      <name value="RS Triage Category (Scene)"/>
+      <description value="Triage category values. Temporary local codes pending final mapping to a standard vocabulary."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

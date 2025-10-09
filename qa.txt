@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 92, warn = 724, info = 26
+err = 170, warn = 720, info = 29
 IG Publisher Version: 2.0.20
-Generated Thu Oct 09 12:29:32 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Thu Oct 09 16:09:24 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 1 / 14 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-activity-cs : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cause-of-crash-cs : 0 / 1 / 1
@@ -54,7 +54,7 @@ Generated Thu Oct 09 12:29:32 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Encounter : 2 / 0 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-HealthcareService : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Medicationstatement : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-RS-Observation : 10 / 23 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Observation : 10 / 17 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Procedure : 2 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Questionnaire : 0 / 0 / 1
@@ -78,18 +78,34 @@ Generated Thu Oct 09 12:29:32 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-vehicle-list-ext : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vehicle-used : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Task-task-road-safety-ex : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-AVPU-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-BreathSounds-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-ConditionOfPatient-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-Cyanosis-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-DrowningWaterBody-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-GCSEyes-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-GCSMotor-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-GCSVerbal-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryIntent-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryType-VS : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-RS-PulseQuality-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-PulseRhythm-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-Pupils-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-RespiratoryRhythm-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-StatusOnArrival-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-TriageCategory-VS : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-activity-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-age-units-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-cause-of-crash-file-type-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-cause-of-crash-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-collision-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-collision-type-vs : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-coordination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-external-cause-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-first-aid : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-injury-nature-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-intervention : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-mode-of-transport-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-outcome-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-mode-of-transport-vs : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-outcome-vs : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-party-at-fault-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-place-occ-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-priority-vs : 0 / 0 / 1
@@ -928,18 +944,12 @@ WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.el
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[60].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/priority' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[6].binding: The definition for the element 'Observation.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[50].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[54].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[58].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[62].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[65].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[68].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[71].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[17].binding: The definition for the element 'Observation.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[158].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[168].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[178].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[188].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[198].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[208].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[218].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation'): The Implementation Guide contains no examples for this profile
@@ -1014,19 +1024,118 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-vehicle-used.json ==
 WARNING: StructureDefinition/vehicle-used: StructureDefinition.context[0]: Review the extension type for vehicle-used: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/Task-task-road-safety-ex.json ==
+== fsh-generated/resources/ValueSet-RS-AVPU-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-AVPU'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-AVPU-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-AVPU-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-AVPU). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-AVPU-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-AVPU-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-AVPU-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-AVPU-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-AVPU
+== fsh-generated/resources/ValueSet-RS-BreathSounds-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-BreathSounds'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-BreathSounds-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-BreathSounds-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-BreathSounds). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-BreathSounds-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-BreathSounds-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-BreathSounds-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-BreathSounds-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-BreathSounds
+== fsh-generated/resources/ValueSet-RS-ConditionOfPatient-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-ConditionOfPatient'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-ConditionOfPatient-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-ConditionOfPatient-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-ConditionOfPatient). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-ConditionOfPatient-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-ConditionOfPatient-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-ConditionOfPatient-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-ConditionOfPatient-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-ConditionOfPatient
+== fsh-generated/resources/ValueSet-RS-Cyanosis-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-Cyanosis'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-Cyanosis-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-Cyanosis-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-Cyanosis). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-Cyanosis-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-Cyanosis-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-Cyanosis-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-Cyanosis-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-Cyanosis
+== fsh-generated/resources/ValueSet-RS-DrowningWaterBody-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-DrowningWaterBody'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-DrowningWaterBody-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-DrowningWaterBody-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-DrowningWaterBody). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-DrowningWaterBody-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-DrowningWaterBody-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-DrowningWaterBody-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-DrowningWaterBody-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-DrowningWaterBody
+== fsh-generated/resources/ValueSet-RS-GCSEyes-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSEyes'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-GCSEyes-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSEyes-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSEyes). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-GCSEyes-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-GCSEyes-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-GCSEyes-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSEyes-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSEyes
+== fsh-generated/resources/ValueSet-RS-GCSMotor-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSMotor'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-GCSMotor-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSMotor-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSMotor). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-GCSMotor-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-GCSMotor-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-GCSMotor-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSMotor-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSMotor
+== fsh-generated/resources/ValueSet-RS-GCSVerbal-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSVerbal'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-GCSVerbal-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSVerbal-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSVerbal). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-GCSVerbal-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-GCSVerbal-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-GCSVerbal-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSVerbal-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSVerbal
+== fsh-generated/resources/ValueSet-RS-InjuryIntent-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryIntent'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryIntent-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryIntent-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryIntent). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-InjuryIntent-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-InjuryIntent-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryIntent-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryIntent-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryIntent
+== fsh-generated/resources/ValueSet-RS-InjuryType-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryType'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryType-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryType-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryType). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-InjuryType-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-InjuryType-VS: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Abrasion (disorder), Avulsion - injury (disorder), Burn (disorder), Concussion injury of brain (disorder), Contusion (disorder)] and examples for no FSN: [Second degree burn injury (morphologic abnormality), First degree burn injury (morphologic abnormality), Third degree burn injury (morphologic abnormality), Fourth degree burn injury (morphologic abnormality), Fracture (morphologic abnormality)])
+ERROR: ValueSet/RS-InjuryType-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryType-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryType-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryType
+== fsh-generated/resources/ValueSet-RS-PulseQuality-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-PulseQuality-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseQuality-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-PulseQuality-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-PulseQuality-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-PulseQuality-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseQuality-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality
+== fsh-generated/resources/ValueSet-RS-PulseRhythm-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseRhythm'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-PulseRhythm-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseRhythm-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseRhythm). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-PulseRhythm-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-PulseRhythm-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-PulseRhythm-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseRhythm-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseRhythm
+== fsh-generated/resources/ValueSet-RS-Pupils-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-Pupils'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-Pupils-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-Pupils-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-Pupils). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-Pupils-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-Pupils-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-Pupils-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-Pupils-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-Pupils
+== fsh-generated/resources/ValueSet-RS-RespiratoryRhythm-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-RespiratoryRhythm'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-RespiratoryRhythm-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-RespiratoryRhythm-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-RespiratoryRhythm). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-RespiratoryRhythm-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-RespiratoryRhythm-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-RespiratoryRhythm-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-RespiratoryRhythm-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-RespiratoryRhythm
+== fsh-generated/resources/ValueSet-RS-StatusOnArrival-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-StatusOnArrival-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-StatusOnArrival-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-StatusOnArrival-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/RS-StatusOnArrival-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-StatusOnArrival-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-StatusOnArrival-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival
+== fsh-generated/resources/ValueSet-RS-TriageCategory-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-TriageCategory'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-TriageCategory-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-TriageCategory-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-TriageCategory). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-TriageCategory-VS: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-TriageCategory'
+ERROR: ValueSet/RS-TriageCategory-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-TriageCategory-VS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/RS-TriageCategory-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'RS-TriageCategory-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-TriageCategory
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-TriageCategory-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-TriageCategory-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-TriageCategory
 == fsh-generated/resources/ValueSet-activity-vs.json ==
 == fsh-generated/resources/ValueSet-age-units-vs.json ==
 == fsh-generated/resources/ValueSet-cause-of-crash-file-type-vs.json ==
 WARNING: ValueSet/cause-of-crash-file-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-cause-of-crash-vs.json ==
 == fsh-generated/resources/ValueSet-collision-type-vs.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-collision-type-vs.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/collision-type-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType'
+ERROR: ValueSet/collision-type-vs: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/collision-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/collision-type-vs: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'collision-type-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-collision-type-vs: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType
 == fsh-generated/resources/ValueSet-coordination.json ==
 == fsh-generated/resources/ValueSet-external-cause-vs.json ==
 == fsh-generated/resources/ValueSet-first-aid.json ==
 == fsh-generated/resources/ValueSet-injury-nature-vs.json ==
 == fsh-generated/resources/ValueSet-intervention.json ==
 == fsh-generated/resources/ValueSet-mode-of-transport-vs.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-mode-of-transport-vs.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/mode-of-transport-vs: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/mode-of-transport-vs: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-mode-of-transport-vs: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport
 == fsh-generated/resources/ValueSet-outcome-vs.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-outcome-vs.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/outcome-vs: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: ValueSet/outcome-vs: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-outcome-vs: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome
 == fsh-generated/resources/ValueSet-party-at-fault-vs.json ==
 == fsh-generated/resources/ValueSet-place-occ-vs.json ==
 == fsh-generated/resources/ValueSet-priority-vs.json ==

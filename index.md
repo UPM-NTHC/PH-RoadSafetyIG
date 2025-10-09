@@ -53,7 +53,7 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ActivityCS](CodeSystem-activity-cs.md), [ActivityVS](ValueSet-activity-vs.md)...Show 74 more,[AgeUnitsVS](ValueSet-age-units-vs.md),[CauseOfCrashCS](CodeSystem-cause-of-crash-cs.md),[CauseOfCrashFileTypeVS](ValueSet-cause-of-crash-file-type-vs.md),[CauseOfCrashVS](ValueSet-cause-of-crash-vs.md),[CauseOfRoadCrash](StructureDefinition-cause-of-road-crash.md),[CollisionTypeCS](CodeSystem-collision-type-cs.md),[CollisionTypeVS](ValueSet-collision-type-vs.md),[CoordinationVS](ValueSet-coordination.md),[EDAvailability](StructureDefinition-ed-availability.md),[ExternalCauseCS](CodeSystem-external-cause-cs.md),[ExternalCauseDetailExt](StructureDefinition-external-cause-detail-ext.md),[ExternalCauseVS](ValueSet-external-cause-vs.md),[FirstAidGiven](StructureDefinition-first-aid-given.md),[FirstAidVS](ValueSet-first-aid.md),[HospitalCaseNo](NamingSystem-hospital-case-no-ns.md),[HospitalPatientID](NamingSystem-hospital-patient-id-ns.md),[IncidentNo](NamingSystem-IncidentNoNS.md),[InjuryNatureCS](CodeSystem-injury-nature-cs.md),[InjuryNatureVS](ValueSet-injury-nature-vs.md),[InterventionVS](ValueSet-intervention.md),[MDSRoadSafety](StructureDefinition-PH-RoadSafetyLogicalModel.md),[MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md),[ModeOfTransportCS](CodeSystem-mode-of-transport-cs.md),[ModeOfTransportVS](ValueSet-mode-of-transport-vs.md),[NHFR](NamingSystem-hospital-registry-id-ns.md),[OutcomeCS](CodeSystem-outcome-cs.md),[OutcomeVS](ValueSet-outcome-vs.md),[PHCoreOccupation](StructureDefinition-ph-core-occupation.md),[PHRoadSafetyIG](index.md),[PartyAtFault](StructureDefinition-party-at-fault.md),[PartyAtFaultCS](CodeSystem-party-at-fault-cs.md),[PartyAtFaultVS](ValueSet-party-at-fault-vs.md),[PlaceOccCS](CodeSystem-place-occ-cs.md),[PlaceOccVS](ValueSet-place-occ-vs.md),[PriorityCS](CodeSystem-priority-cs.md),[PriorityVS](ValueSet-priority-vs.md),[PsychosocialProcedureVS](ValueSet-psychosocial-procedure.md),[RSAllergyIntolerance](StructureDefinition-RS-Allergyintolerance.md),[RSClaim](StructureDefinition-RS-Claim.md),[RSCondition](StructureDefinition-RS-Condition.md),[RSDocumentReference](StructureDefinition-RS-Documentreference.md),[RSEncounter](StructureDefinition-RS-Encounter.md),[RSHealthcareService](StructureDefinition-RS-HealthcareService.md),[RSHospitalCategoryVS](ValueSet-rs-hospital-category.md),[RSMedicationStatement](StructureDefinition-RS-Medicationstatement.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSPatient](StructureDefinition-RS-Patient.md),[RSPatientAge](StructureDefinition-rs-patient-age.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSProcedureVS](ValueSet-rs-procedure.md),[RSQuestionnaire](StructureDefinition-RS-Questionnaire.md),[RSServiceRequest](StructureDefinition-RS-Servicerequest.md),[RSTask](StructureDefinition-RS-task.md),[RSTaskStatusCS](CodeSystem-rs-task-status-cs.md),[RSTaskStatusVS](ValueSet-rs-task-status.md),[ReportFormReceived](StructureDefinition-report-form-received.md),[ReportFormReceivedCS](CodeSystem-report-form-received-cs.md),[ReportFormReceivedVS](ValueSet-report-form-received-vs.md),[RoadNetworkFileTypeCS](CodeSystem-road-network-file-type-cs.md),[RoadNetworkFileTypeVS](ValueSet-road-network-file-type-vs.md),[RoadNetworkShapeFile](StructureDefinition-road-network-shapefile.md),[SafetyNotesExt](StructureDefinition-safety-notes-ext.md),[SuppliesUsed](StructureDefinition-supplies-used.md),[TrafficIncidentManagement](StructureDefinition-traffic-incident-management.md),[TranspoCoordination](StructureDefinition-transpo-coordination.md),[TransportDetailsExt](StructureDefinition-transport-details-ext.md),[VehicleCondition](StructureDefinition-vehicle-condition.md),[VehicleConditionCS](CodeSystem-vehicle-condition-cs.md),[VehicleConditionVS](ValueSet-vehicle-condition-vs.md),[VehicleList](StructureDefinition-vehicle-list-ext.md),[VehicleTypeCS](CodeSystem-vehicle-types.md),[VehicleTypeVS](ValueSet-vs-rs-vehicle-type.md),[VehicleUsed](StructureDefinition-vehicle-used.md)and[VitalSignsQuestionnaire](Questionnaire-VitalSignsQuestionnaire.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ActivityCS](CodeSystem-activity-cs.md), [ActivityVS](ValueSet-activity-vs.md)...Show 90 more,[AgeUnitsVS](ValueSet-age-units-vs.md),[CauseOfCrashCS](CodeSystem-cause-of-crash-cs.md),[CauseOfCrashFileTypeVS](ValueSet-cause-of-crash-file-type-vs.md),[CauseOfCrashVS](ValueSet-cause-of-crash-vs.md),[CauseOfRoadCrash](StructureDefinition-cause-of-road-crash.md),[CollisionTypeCS](CodeSystem-collision-type-cs.md),[CollisionTypeVS](ValueSet-collision-type-vs.md),[CoordinationVS](ValueSet-coordination.md),[EDAvailability](StructureDefinition-ed-availability.md),[ExternalCauseCS](CodeSystem-external-cause-cs.md),[ExternalCauseDetailExt](StructureDefinition-external-cause-detail-ext.md),[ExternalCauseVS](ValueSet-external-cause-vs.md),[FirstAidGiven](StructureDefinition-first-aid-given.md),[FirstAidVS](ValueSet-first-aid.md),[HospitalCaseNo](NamingSystem-hospital-case-no-ns.md),[HospitalPatientID](NamingSystem-hospital-patient-id-ns.md),[IncidentNo](NamingSystem-IncidentNoNS.md),[InjuryNatureCS](CodeSystem-injury-nature-cs.md),[InjuryNatureVS](ValueSet-injury-nature-vs.md),[InterventionVS](ValueSet-intervention.md),[MDSRoadSafety](StructureDefinition-PH-RoadSafetyLogicalModel.md),[MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md),[ModeOfTransportCS](CodeSystem-mode-of-transport-cs.md),[ModeOfTransportVS](ValueSet-mode-of-transport-vs.md),[NHFR](NamingSystem-hospital-registry-id-ns.md),[OutcomeCS](CodeSystem-outcome-cs.md),[OutcomeVS](ValueSet-outcome-vs.md),[PHCoreOccupation](StructureDefinition-ph-core-occupation.md),[PHRoadSafetyIG](index.md),[PartyAtFault](StructureDefinition-party-at-fault.md),[PartyAtFaultCS](CodeSystem-party-at-fault-cs.md),[PartyAtFaultVS](ValueSet-party-at-fault-vs.md),[PlaceOccCS](CodeSystem-place-occ-cs.md),[PlaceOccVS](ValueSet-place-occ-vs.md),[PriorityCS](CodeSystem-priority-cs.md),[PriorityVS](ValueSet-priority-vs.md),[PsychosocialProcedureVS](ValueSet-psychosocial-procedure.md),[RSAVPUVS](ValueSet-RS-AVPU-VS.md),[RSAllergyIntolerance](StructureDefinition-RS-Allergyintolerance.md),[RSBreathSoundsVS](ValueSet-RS-BreathSounds-VS.md),[RSClaim](StructureDefinition-RS-Claim.md),[RSCondition](StructureDefinition-RS-Condition.md),[RSConditionOfPatientVS](ValueSet-RS-ConditionOfPatient-VS.md),[RSCyanosisVS](ValueSet-RS-Cyanosis-VS.md),[RSDocumentReference](StructureDefinition-RS-Documentreference.md),[RSDrowningWaterBodyVS](ValueSet-RS-DrowningWaterBody-VS.md),[RSEncounter](StructureDefinition-RS-Encounter.md),[RSGCSEyesVS](ValueSet-RS-GCSEyes-VS.md),[RSGCSMotorVS](ValueSet-RS-GCSMotor-VS.md),[RSGCSVerbalVS](ValueSet-RS-GCSVerbal-VS.md),[RSHealthcareService](StructureDefinition-RS-HealthcareService.md),[RSHospitalCategoryVS](ValueSet-rs-hospital-category.md),[RSInjuryIntentVS](ValueSet-RS-InjuryIntent-VS.md),[RSInjuryTypeVS](ValueSet-RS-InjuryType-VS.md),[RSMedicationStatement](StructureDefinition-RS-Medicationstatement.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSPatient](StructureDefinition-RS-Patient.md),[RSPatientAge](StructureDefinition-rs-patient-age.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSProcedureVS](ValueSet-rs-procedure.md),[RSPulseQualityVS](ValueSet-RS-PulseQuality-VS.md),[RSPulseRhythmVS](ValueSet-RS-PulseRhythm-VS.md),[RSPupilsVS](ValueSet-RS-Pupils-VS.md),[RSQuestionnaire](StructureDefinition-RS-Questionnaire.md),[RSRespiratoryRhythmVS](ValueSet-RS-RespiratoryRhythm-VS.md),[RSServiceRequest](StructureDefinition-RS-Servicerequest.md),[RSStatusOnArrivalVS](ValueSet-RS-StatusOnArrival-VS.md),[RSTask](StructureDefinition-RS-task.md),[RSTaskStatusCS](CodeSystem-rs-task-status-cs.md),[RSTaskStatusVS](ValueSet-rs-task-status.md),[RSTriageCategoryVS](ValueSet-RS-TriageCategory-VS.md),[ReportFormReceived](StructureDefinition-report-form-received.md),[ReportFormReceivedCS](CodeSystem-report-form-received-cs.md),[ReportFormReceivedVS](ValueSet-report-form-received-vs.md),[RoadNetworkFileTypeCS](CodeSystem-road-network-file-type-cs.md),[RoadNetworkFileTypeVS](ValueSet-road-network-file-type-vs.md),[RoadNetworkShapeFile](StructureDefinition-road-network-shapefile.md),[SafetyNotesExt](StructureDefinition-safety-notes-ext.md),[SuppliesUsed](StructureDefinition-supplies-used.md),[TrafficIncidentManagement](StructureDefinition-traffic-incident-management.md),[TranspoCoordination](StructureDefinition-transpo-coordination.md),[TransportDetailsExt](StructureDefinition-transport-details-ext.md),[VehicleCondition](StructureDefinition-vehicle-condition.md),[VehicleConditionCS](CodeSystem-vehicle-condition-cs.md),[VehicleConditionVS](ValueSet-vehicle-condition-vs.md),[VehicleList](StructureDefinition-vehicle-list-ext.md),[VehicleTypeCS](CodeSystem-vehicle-types.md),[VehicleTypeVS](ValueSet-vs-rs-vehicle-type.md),[VehicleUsed](StructureDefinition-vehicle-used.md)and[VitalSignsQuestionnaire](Questionnaire-VitalSignsQuestionnaire.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
@@ -63,12 +63,12 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [RSObservation](StructureDefinition-RS-Observation.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [ModeOfTransportVS](ValueSet-mode-of-transport-vs.md), [RSGCSEyesVS](ValueSet-RS-GCSEyes-VS.md), [RSGCSMotorVS](ValueSet-RS-GCSMotor-VS.md), [RSGCSVerbalVS](ValueSet-RS-GCSVerbal-VS.md) and [RSObservation](StructureDefinition-RS-Observation.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [CoordinationVS](ValueSet-coordination.md), [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)...Show 10 more,[FirstAidGiven](StructureDefinition-first-aid-given.md),[FirstAidVS](ValueSet-first-aid.md),[InterventionVS](ValueSet-intervention.md),[PsychosocialProcedureVS](ValueSet-psychosocial-procedure.md),[RSHealthcareService](StructureDefinition-RS-HealthcareService.md),[RSHospitalCategoryVS](ValueSet-rs-hospital-category.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSProcedureVS](ValueSet-rs-procedure.md)and[TranspoCoordination](StructureDefinition-transpo-coordination.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [CoordinationVS](ValueSet-coordination.md), [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)...Show 23 more,[FirstAidGiven](StructureDefinition-first-aid-given.md),[FirstAidVS](ValueSet-first-aid.md),[InterventionVS](ValueSet-intervention.md),[OutcomeVS](ValueSet-outcome-vs.md),[PsychosocialProcedureVS](ValueSet-psychosocial-procedure.md),[RSAVPUVS](ValueSet-RS-AVPU-VS.md),[RSBreathSoundsVS](ValueSet-RS-BreathSounds-VS.md),[RSConditionOfPatientVS](ValueSet-RS-ConditionOfPatient-VS.md),[RSCyanosisVS](ValueSet-RS-Cyanosis-VS.md),[RSDrowningWaterBodyVS](ValueSet-RS-DrowningWaterBody-VS.md),[RSHealthcareService](StructureDefinition-RS-HealthcareService.md),[RSHospitalCategoryVS](ValueSet-rs-hospital-category.md),[RSInjuryIntentVS](ValueSet-RS-InjuryIntent-VS.md),[RSInjuryTypeVS](ValueSet-RS-InjuryType-VS.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSProcedureVS](ValueSet-rs-procedure.md),[RSPulseQualityVS](ValueSet-RS-PulseQuality-VS.md),[RSPulseRhythmVS](ValueSet-RS-PulseRhythm-VS.md),[RSPupilsVS](ValueSet-RS-Pupils-VS.md),[RSRespiratoryRhythmVS](ValueSet-RS-RespiratoryRhythm-VS.md),[RSStatusOnArrivalVS](ValueSet-RS-StatusOnArrival-VS.md)and[TranspoCoordination](StructureDefinition-transpo-coordination.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
@@ -102,7 +102,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -1018,8 +1018,8 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "reference" : {
           "reference" : "ValueSet/collision-type-vs"
         },
-        "name" : "Collision Type ValueSet (example)",
-        "description" : "Types of collision in road traffic incidents",
+        "name" : "Collision Type ValueSet",
+        "description" : "Types of collision in road traffic incidents (temporary local codes; map to a standard when available).",
         "exampleBoolean" : false
       },
       {
@@ -1254,8 +1254,8 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "reference" : {
           "reference" : "ValueSet/mode-of-transport-vs"
         },
-        "name" : "Mode of Transport ValueSet (example)",
-        "description" : "Sample ValueSet capturing transport modes.",
+        "name" : "Mode of Transport to Facility",
+        "description" : "Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6.",
         "exampleBoolean" : false
       },
       {
@@ -1322,8 +1322,8 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "reference" : {
           "reference" : "ValueSet/outcome-vs"
         },
-        "name" : "Outcome ValueSet (example)",
-        "description" : "Example ValueSet capturing possible outcomes.",
+        "name" : "Outcome ValueSet",
+        "description" : "Outcome at release/discharge using SNOMED CT codes (prioritized).",
         "exampleBoolean" : false
       },
       {
@@ -1895,6 +1895,230 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         },
         "name" : "Road Safety Task Status Codes",
         "description" : "Custom codes for Task.status specific to Road Safety reporting.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-AVPU-VS"
+        },
+        "name" : "RS AVPU Level of Consciousness",
+        "description" : "AVPU scale coded in SNOMED CT.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-BreathSounds-VS"
+        },
+        "name" : "RS Breath Sounds",
+        "description" : "Breath sounds by auscultation (SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-ConditionOfPatient-VS"
+        },
+        "name" : "RS Condition of Patient",
+        "description" : "Overall condition assertion (Alive/Deceased) using SNOMED CT.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-Cyanosis-VS"
+        },
+        "name" : "RS Cyanosis",
+        "description" : "Cyanosis presence/type (SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-DrowningWaterBody-VS"
+        },
+        "name" : "RS Drowning Body of Water",
+        "description" : "Type/body of water involved in drowning (SNOMED).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-GCSEyes-VS"
+        },
+        "name" : "RS GCS Eyes",
+        "description" : "GCS Eye opening (LOINC answers).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-GCSMotor-VS"
+        },
+        "name" : "RS GCS Motor",
+        "description" : "GCS Motor response (LOINC answers).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-GCSVerbal-VS"
+        },
+        "name" : "RS GCS Verbal",
+        "description" : "GCS Verbal response (LOINC answers).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-InjuryIntent-VS"
+        },
+        "name" : "RS Injury Intent",
+        "description" : "Intent of injury (SNOMED-first).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-InjuryType-VS"
+        },
+        "name" : "RS Injury Types",
+        "description" : "Common injury morphology/types (SNOMED-first).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-PulseQuality-VS"
+        },
+        "name" : "RS Pulse Quality",
+        "description" : "Pulse quality using SNOMED CT.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-PulseRhythm-VS"
+        },
+        "name" : "RS Pulse Rhythm",
+        "description" : "Pulse rhythm (regular/irregular) using SNOMED CT.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-Pupils-VS"
+        },
+        "name" : "RS Pupils",
+        "description" : "Pupil findings (SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-RespiratoryRhythm-VS"
+        },
+        "name" : "RS Respiratory Rhythm",
+        "description" : "Respiratory rhythm findings using SNOMED CT.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-StatusOnArrival-VS"
+        },
+        "name" : "RS Status on Arrival",
+        "description" : "Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/RS-TriageCategory-VS"
+        },
+        "name" : "RS Triage Category (Scene)",
+        "description" : "Triage category values. Temporary local codes pending final mapping to a standard vocabulary.",
         "exampleBoolean" : false
       },
       {

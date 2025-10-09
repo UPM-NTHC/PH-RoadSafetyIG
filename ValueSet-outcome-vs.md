@@ -1,18 +1,18 @@
-# Outcome ValueSet (example) - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Outcome ValueSet - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Outcome ValueSet (example)**
+* **Outcome ValueSet**
 
-## ValueSet: Outcome ValueSet (example) (Experimental) 
+## ValueSet: Outcome ValueSet 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs | *Version*:0.1.0 |
+| *Official URL*:http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome | *Version*:0.1.0 |
 | Draft as of 2025-10-09 | *Computable Name*:OutcomeVS |
 
  
-Example ValueSet capturing possible outcomes. 
+Outcome at release/discharge using SNOMED CT codes (prioritized). 
 
  **References** 
 
@@ -20,11 +20,13 @@ Example ValueSet capturing possible outcomes.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs`](CodeSystem-outcome-cs.md) version 📦0.1.0
-
  
 
 ### Expansion
+
+Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+
+This value set contains 2 concepts
 
 -------
 
@@ -47,13 +49,12 @@ Example ValueSet capturing possible outcomes.
 {
   "resourceType" : "ValueSet",
   "id" : "outcome-vs",
-  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs",
+  "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome",
   "version" : "0.1.0",
   "name" : "OutcomeVS",
-  "title" : "Outcome ValueSet (example)",
+  "title" : "Outcome ValueSet",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -75,7 +76,7 @@ Example ValueSet capturing possible outcomes.
       ]
     }
   ],
-  "description" : "Example ValueSet capturing possible outcomes.",
+  "description" : "Outcome at release/discharge using SNOMED CT codes (prioritized).",
   "jurisdiction" : [
     {
       "coding" : [
@@ -90,7 +91,17 @@ Example ValueSet capturing possible outcomes.
   "compose" : {
     "include" : [
       {
-        "system" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "18632008",
+            "display" : "Patient status determination, deceased (finding)"
+          },
+          {
+            "code" : "268910001",
+            "display" : "Patient's condition improved (finding)"
+          }
+        ]
       }
     ]
   }

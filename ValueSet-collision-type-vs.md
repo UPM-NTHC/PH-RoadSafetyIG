@@ -1,18 +1,18 @@
-# Collision Type ValueSet (example) - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Collision Type ValueSet - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Collision Type ValueSet (example)**
+* **Collision Type ValueSet**
 
-## ValueSet: Collision Type ValueSet (example) (Experimental) 
+## ValueSet: Collision Type ValueSet 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs | *Version*:0.1.0 |
+| *Official URL*:http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType | *Version*:0.1.0 |
 | Draft as of 2025-10-09 | *Computable Name*:CollisionTypeVS |
 
  
-Types of collision in road traffic incidents 
+Types of collision in road traffic incidents (temporary local codes; map to a standard when available). 
 
  **References** 
 
@@ -20,11 +20,11 @@ Types of collision in road traffic incidents
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs`](CodeSystem-collision-type-cs.md) version 📦0.1.0
-
  
 
 ### Expansion
+
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -47,13 +47,12 @@ Types of collision in road traffic incidents
 {
   "resourceType" : "ValueSet",
   "id" : "collision-type-vs",
-  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs",
+  "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType",
   "version" : "0.1.0",
   "name" : "CollisionTypeVS",
-  "title" : "Collision Type ValueSet (example)",
+  "title" : "Collision Type ValueSet",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -75,7 +74,7 @@ Types of collision in road traffic incidents
       ]
     }
   ],
-  "description" : "Types of collision in road traffic incidents",
+  "description" : "Types of collision in road traffic incidents (temporary local codes; map to a standard when available).",
   "jurisdiction" : [
     {
       "coding" : [
@@ -90,7 +89,49 @@ Types of collision in road traffic incidents
   "compose" : {
     "include" : [
       {
-        "system" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"
+        "system" : "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType",
+        "concept" : [
+          {
+            "code" : "rear-end",
+            "display" : "Rear End"
+          },
+          {
+            "code" : "head-on",
+            "display" : "Head On"
+          },
+          {
+            "code" : "angle-impact",
+            "display" : "Angle Impact"
+          },
+          {
+            "code" : "side-swipe",
+            "display" : "Side Swipe"
+          },
+          {
+            "code" : "hit-object",
+            "display" : "Hit Object"
+          },
+          {
+            "code" : "hit-parked-vehicle",
+            "display" : "Hit Parked Vehicle"
+          },
+          {
+            "code" : "hit-pedestrian",
+            "display" : "Hit Pedestrian"
+          },
+          {
+            "code" : "multiple",
+            "display" : "Multiple Collision"
+          },
+          {
+            "code" : "none-stated",
+            "display" : "No Collision Stated"
+          },
+          {
+            "code" : "self-accident",
+            "display" : "Self-Accident"
+          }
+        ]
       }
     ]
   }

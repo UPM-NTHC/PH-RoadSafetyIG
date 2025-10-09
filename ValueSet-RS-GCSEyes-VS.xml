@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RS-GCSEyes-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet RS-GCSEyes-VS</b></p><a name="RS-GCSEyes-VS"> </a><a name="hcRS-GCSEyes-VS"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA6556-0/">LA6556-0</a></td><td>Eyes open spontaneously</td></tr><tr><td><a href="https://loinc.org/LA6555-2/">LA6555-2</a></td><td>Eye opening to verbal command</td></tr><tr><td><a href="https://loinc.org/LA6554-5/">LA6554-5</a></td><td>Eye opening to pain</td></tr><tr><td><a href="https://loinc.org/LA6553-7/">LA6553-7</a></td><td>No eye opening</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSEyes"/>
+  <version value="0.1.0"/>
+  <name value="RSGCSEyesVS"/>
+  <title value="RS GCS Eyes"/>
+  <status value="draft"/>
+  <date value="2025-10-09T16:04:50+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="GCS Eye opening (LOINC answers)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6556-0"/>
+        <display value="Eyes open spontaneously"/>
+      </concept>
+      <concept>
+        <code value="LA6555-2"/>
+        <display value="Eye opening to verbal command"/>
+      </concept>
+      <concept>
+        <code value="LA6554-5"/>
+        <display value="Eye opening to pain"/>
+      </concept>
+      <concept>
+        <code value="LA6553-7"/>
+        <display value="No eye opening"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

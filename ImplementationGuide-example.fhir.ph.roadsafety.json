@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -780,8 +780,8 @@
       "reference" : {
         "reference" : "ValueSet/collision-type-vs"
       },
-      "name" : "Collision Type ValueSet (example)",
-      "description" : "Types of collision in road traffic incidents",
+      "name" : "Collision Type ValueSet",
+      "description" : "Types of collision in road traffic incidents (temporary local codes; map to a standard when available).",
       "exampleBoolean" : false
     },
     {
@@ -982,8 +982,8 @@
       "reference" : {
         "reference" : "ValueSet/mode-of-transport-vs"
       },
-      "name" : "Mode of Transport ValueSet (example)",
-      "description" : "Sample ValueSet capturing transport modes.",
+      "name" : "Mode of Transport to Facility",
+      "description" : "Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6.",
       "exampleBoolean" : false
     },
     {
@@ -1040,8 +1040,8 @@
       "reference" : {
         "reference" : "ValueSet/outcome-vs"
       },
-      "name" : "Outcome ValueSet (example)",
-      "description" : "Example ValueSet capturing possible outcomes.",
+      "name" : "Outcome ValueSet",
+      "description" : "Outcome at release/discharge using SNOMED CT codes (prioritized).",
       "exampleBoolean" : false
     },
     {
@@ -1531,6 +1531,198 @@
       },
       "name" : "Road Safety Task Status Codes",
       "description" : "Custom codes for Task.status specific to Road Safety reporting.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-AVPU-VS"
+      },
+      "name" : "RS AVPU Level of Consciousness",
+      "description" : "AVPU scale coded in SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-BreathSounds-VS"
+      },
+      "name" : "RS Breath Sounds",
+      "description" : "Breath sounds by auscultation (SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-ConditionOfPatient-VS"
+      },
+      "name" : "RS Condition of Patient",
+      "description" : "Overall condition assertion (Alive/Deceased) using SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-Cyanosis-VS"
+      },
+      "name" : "RS Cyanosis",
+      "description" : "Cyanosis presence/type (SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-DrowningWaterBody-VS"
+      },
+      "name" : "RS Drowning Body of Water",
+      "description" : "Type/body of water involved in drowning (SNOMED).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-GCSEyes-VS"
+      },
+      "name" : "RS GCS Eyes",
+      "description" : "GCS Eye opening (LOINC answers).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-GCSMotor-VS"
+      },
+      "name" : "RS GCS Motor",
+      "description" : "GCS Motor response (LOINC answers).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-GCSVerbal-VS"
+      },
+      "name" : "RS GCS Verbal",
+      "description" : "GCS Verbal response (LOINC answers).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-InjuryIntent-VS"
+      },
+      "name" : "RS Injury Intent",
+      "description" : "Intent of injury (SNOMED-first).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-InjuryType-VS"
+      },
+      "name" : "RS Injury Types",
+      "description" : "Common injury morphology/types (SNOMED-first).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-PulseQuality-VS"
+      },
+      "name" : "RS Pulse Quality",
+      "description" : "Pulse quality using SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-PulseRhythm-VS"
+      },
+      "name" : "RS Pulse Rhythm",
+      "description" : "Pulse rhythm (regular/irregular) using SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-Pupils-VS"
+      },
+      "name" : "RS Pupils",
+      "description" : "Pupil findings (SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-RespiratoryRhythm-VS"
+      },
+      "name" : "RS Respiratory Rhythm",
+      "description" : "Respiratory rhythm findings using SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-StatusOnArrival-VS"
+      },
+      "name" : "RS Status on Arrival",
+      "description" : "Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-TriageCategory-VS"
+      },
+      "name" : "RS Triage Category (Scene)",
+      "description" : "Triage category values. Temporary local codes pending final mapping to a standard vocabulary.",
       "exampleBoolean" : false
     },
     {

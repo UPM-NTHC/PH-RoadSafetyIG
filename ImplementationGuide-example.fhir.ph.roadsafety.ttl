@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-09T12:26:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T16:04:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -1085,8 +1085,8 @@
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs> ;
          fhir:reference [ fhir:v "ValueSet/collision-type-vs" ]
        ] ;
-       fhir:name [ fhir:v "Collision Type ValueSet (example)" ] ;
-       fhir:description [ fhir:v "Types of collision in road traffic incidents" ] ;
+       fhir:name [ fhir:v "Collision Type ValueSet" ] ;
+       fhir:description [ fhir:v "Types of collision in road traffic incidents (temporary local codes; map to a standard when available)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1389,8 +1389,8 @@
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs> ;
          fhir:reference [ fhir:v "ValueSet/mode-of-transport-vs" ]
        ] ;
-       fhir:name [ fhir:v "Mode of Transport ValueSet (example)" ] ;
-       fhir:description [ fhir:v "Sample ValueSet capturing transport modes." ] ;
+       fhir:name [ fhir:v "Mode of Transport to Facility" ] ;
+       fhir:description [ fhir:v "Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1477,8 +1477,8 @@
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs> ;
          fhir:reference [ fhir:v "ValueSet/outcome-vs" ]
        ] ;
-       fhir:name [ fhir:v "Outcome ValueSet (example)" ] ;
-       fhir:description [ fhir:v "Example ValueSet capturing possible outcomes." ] ;
+       fhir:name [ fhir:v "Outcome ValueSet" ] ;
+       fhir:description [ fhir:v "Outcome at release/discharge using SNOMED CT codes (prioritized)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2222,6 +2222,294 @@
        ] ;
        fhir:name [ fhir:v "Road Safety Task Status Codes" ] ;
        fhir:description [ fhir:v "Custom codes for Task.status specific to Road Safety reporting." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-AVPU-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-AVPU-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS AVPU Level of Consciousness" ] ;
+       fhir:description [ fhir:v "AVPU scale coded in SNOMED CT." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-BreathSounds-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-BreathSounds-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Breath Sounds" ] ;
+       fhir:description [ fhir:v "Breath sounds by auscultation (SNOMED CT)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-ConditionOfPatient-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-ConditionOfPatient-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Condition of Patient" ] ;
+       fhir:description [ fhir:v "Overall condition assertion (Alive/Deceased) using SNOMED CT." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-Cyanosis-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-Cyanosis-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Cyanosis" ] ;
+       fhir:description [ fhir:v "Cyanosis presence/type (SNOMED CT)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-DrowningWaterBody-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-DrowningWaterBody-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Drowning Body of Water" ] ;
+       fhir:description [ fhir:v "Type/body of water involved in drowning (SNOMED)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSEyes-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-GCSEyes-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS GCS Eyes" ] ;
+       fhir:description [ fhir:v "GCS Eye opening (LOINC answers)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSMotor-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-GCSMotor-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS GCS Motor" ] ;
+       fhir:description [ fhir:v "GCS Motor response (LOINC answers)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-GCSVerbal-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-GCSVerbal-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS GCS Verbal" ] ;
+       fhir:description [ fhir:v "GCS Verbal response (LOINC answers)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryIntent-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-InjuryIntent-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Injury Intent" ] ;
+       fhir:description [ fhir:v "Intent of injury (SNOMED-first)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryType-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-InjuryType-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Injury Types" ] ;
+       fhir:description [ fhir:v "Common injury morphology/types (SNOMED-first)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseQuality-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-PulseQuality-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Pulse Quality" ] ;
+       fhir:description [ fhir:v "Pulse quality using SNOMED CT." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseRhythm-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-PulseRhythm-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Pulse Rhythm" ] ;
+       fhir:description [ fhir:v "Pulse rhythm (regular/irregular) using SNOMED CT." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-Pupils-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-Pupils-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Pupils" ] ;
+       fhir:description [ fhir:v "Pupil findings (SNOMED CT)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-RespiratoryRhythm-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-RespiratoryRhythm-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Respiratory Rhythm" ] ;
+       fhir:description [ fhir:v "Respiratory rhythm findings using SNOMED CT." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-StatusOnArrival-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-StatusOnArrival-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Status on Arrival" ] ;
+       fhir:description [ fhir:v "Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-TriageCategory-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-TriageCategory-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Triage Category (Scene)" ] ;
+       fhir:description [ fhir:v "Triage category values. Temporary local codes pending final mapping to a standard vocabulary." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

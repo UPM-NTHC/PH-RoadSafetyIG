@@ -1,6 +1,188 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-AVPU",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSAVPUVS",
+      "title" : "RS AVPU Level of Consciousness",
+      "description" : "AVPU scale coded in SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-BreathSounds",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSBreathSoundsVS",
+      "title" : "RS Breath Sounds",
+      "description" : "Breath sounds by auscultation (SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollisionTypeVS",
+      "title" : "Collision Type ValueSet",
+      "description" : "Types of collision in road traffic incidents (temporary local codes; map to a standard when available).",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionType"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-Observation.html" : "Injury Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ConditionOfPatient",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSConditionOfPatientVS",
+      "title" : "RS Condition of Patient",
+      "description" : "Overall condition assertion (Alive/Deceased) using SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Cyanosis",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSCyanosisVS",
+      "title" : "RS Cyanosis",
+      "description" : "Cyanosis presence/type (SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-DrowningWaterBody",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSDrowningWaterBodyVS",
+      "title" : "RS Drowning Body of Water",
+      "description" : "Type/body of water involved in drowning (SNOMED).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSEyes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSGCSEyesVS",
+      "title" : "RS GCS Eyes",
+      "description" : "GCS Eye opening (LOINC answers).",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSMotor",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSGCSMotorVS",
+      "title" : "RS GCS Motor",
+      "description" : "GCS Motor response (LOINC answers).",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-GCSVerbal",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSGCSVerbalVS",
+      "title" : "RS GCS Verbal",
+      "description" : "GCS Verbal response (LOINC answers).",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryIntent",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSInjuryIntentVS",
+      "title" : "RS Injury Intent",
+      "description" : "Intent of injury (SNOMED-first).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSInjuryTypeVS",
+      "title" : "RS Injury Types",
+      "description" : "Common injury morphology/types (SNOMED-first).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ModeOfTransportVS",
+      "title" : "Mode of Transport to Facility",
+      "description" : "Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-Observation.html" : "Injury Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OutcomeVS",
+      "title" : "Outcome ValueSet",
+      "description" : "Outcome at release/discharge using SNOMED CT codes (prioritized).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-Observation.html" : "Injury Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSPulseQualityVS",
+      "title" : "RS Pulse Quality",
+      "description" : "Pulse quality using SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseRhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSPulseRhythmVS",
+      "title" : "RS Pulse Rhythm",
+      "description" : "Pulse rhythm (regular/irregular) using SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Pupils",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSPupilsVS",
+      "title" : "RS Pupils",
+      "description" : "Pupil findings (SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-RespiratoryRhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSRespiratoryRhythmVS",
+      "title" : "RS Respiratory Rhythm",
+      "description" : "Respiratory rhythm findings using SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSStatusOnArrivalVS",
+      "title" : "RS Status on Arrival",
+      "description" : "Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-TriageCategory",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSTriageCategoryVS",
+      "title" : "RS Triage Category (Scene)",
+      "description" : "Triage category values. Temporary local codes pending final mapping to a standard vocabulary.",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-TriageCategory"
+      ]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -100,9 +282,9 @@
       "uses" : {
       },
       "StructureDefinition-RS-Servicerequest.html" : "Refusal to Admit Service Request",
-      "StructureDefinition-RS-Observation.html" : "Injury Observation",
       "StructureDefinition-RS-Procedure.html" : "Road Safety Procedure",
-      "StructureDefinition-RS-Condition.html" : "Road Safety Condition"
+      "StructureDefinition-RS-Condition.html" : "Road Safety Condition",
+      "StructureDefinition-RS-Observation.html" : "Injury Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
@@ -144,8 +326,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-RS-Documentreference.html" : "Road Safety Document Reference",
-      "StructureDefinition-RS-HealthcareService.html" : "Hospital Available"
+      "StructureDefinition-RS-HealthcareService.html" : "Hospital Available",
+      "StructureDefinition-RS-Documentreference.html" : "Road Safety Document Reference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/claim-careteamrole",
@@ -315,9 +497,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
+      "StructureDefinition-RS-Medicationstatement.html" : "Road Safety MedicationStatement",
       "StructureDefinition-RS-Procedure.html" : "Road Safety Procedure",
-      "StructureDefinition-RS-Condition.html" : "Road Safety Condition",
-      "StructureDefinition-RS-Medicationstatement.html" : "Road Safety MedicationStatement"
+      "StructureDefinition-RS-Condition.html" : "Road Safety Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -807,8 +989,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-RS-Encounter.html" : "Road Safety Encounter",
       "StructureDefinition-RS-Patient.html" : "Road Safety Patient",
+      "StructureDefinition-RS-Encounter.html" : "Road Safety Encounter",
       "StructureDefinition-PH-RoadSafetyLogicalModel.html" : "Road Safety Minimum Dataset (MDS) Logical Model"
     },
     {
@@ -823,8 +1005,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-RS-Encounter.html" : "Road Safety Encounter",
       "StructureDefinition-RS-Patient.html" : "Road Safety Patient",
+      "StructureDefinition-RS-Encounter.html" : "Road Safety Encounter",
       "StructureDefinition-PH-RoadSafetyLogicalModel.html" : "Road Safety Minimum Dataset (MDS) Logical Model"
     },
     {
@@ -871,19 +1053,19 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-RS-Procedure.html" : "Road Safety Procedure",
-      "StructureDefinition-RS-Medicationstatement.html" : "Road Safety MedicationStatement",
       "StructureDefinition-RS-Servicerequest.html" : "Refusal to Admit Service Request",
+      "StructureDefinition-RS-Medicationstatement.html" : "Road Safety MedicationStatement",
       "StructureDefinition-RS-Documentreference.html" : "Road Safety Document Reference",
-      "StructureDefinition-RS-Observation.html" : "Injury Observation",
-      "StructureDefinition-RS-Claim.html" : "Road Safety Claim",
-      "StructureDefinition-RS-Encounter.html" : "Road Safety Encounter",
       "StructureDefinition-RS-task.html" : "Road Safety Task",
+      "StructureDefinition-RS-Patient.html" : "Road Safety Patient",
       "StructureDefinition-RS-Allergyintolerance.html" : "Road Safety AllergyIntolerance",
+      "StructureDefinition-RS-Encounter.html" : "Road Safety Encounter",
+      "StructureDefinition-RS-Claim.html" : "Road Safety Claim",
+      "StructureDefinition-RS-Questionnaire.html" : "Road Safety Questionnaire",
+      "StructureDefinition-RS-Procedure.html" : "Road Safety Procedure",
       "StructureDefinition-RS-Condition.html" : "Road Safety Condition",
       "StructureDefinition-RS-HealthcareService.html" : "Hospital Available",
-      "StructureDefinition-RS-Patient.html" : "Road Safety Patient",
-      "StructureDefinition-RS-Questionnaire.html" : "Road Safety Questionnaire"
+      "StructureDefinition-RS-Observation.html" : "Injury Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -1868,20 +2050,6 @@
       "StructureDefinition-cause-of-road-crash.html" : "Cause of Road Crash Incident"
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CollisionTypeVS",
-      "title" : "Collision Type ValueSet (example)",
-      "description" : "Types of collision in road traffic incidents",
-      "systems" : [
-        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-RS-Observation.html" : "Injury Observation"
-    },
-    {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/coordination",
       "version" : "0.1.0",
       "status" : "active",
@@ -1941,34 +2109,6 @@
       "title" : "Medical Intervention Procedure Codes",
       "description" : "Procedure codes representing medical interventions.",
       "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ModeOfTransportVS",
-      "title" : "Mode of Transport ValueSet (example)",
-      "description" : "Sample ValueSet capturing transport modes.",
-      "systems" : [
-        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-RS-Observation.html" : "Injury Observation"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "OutcomeVS",
-      "title" : "Outcome ValueSet (example)",
-      "description" : "Example ValueSet capturing possible outcomes.",
-      "systems" : [
-        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-RS-Observation.html" : "Injury Observation"
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/party-at-fault-vs",
@@ -2033,8 +2173,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-RS-Documentreference.html" : "Road Safety Document Reference",
-      "StructureDefinition-report-form-received.html" : "Report Form Received"
+      "StructureDefinition-report-form-received.html" : "Report Form Received",
+      "StructureDefinition-RS-Documentreference.html" : "Road Safety Document Reference"
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/road-network-file-type-vs",

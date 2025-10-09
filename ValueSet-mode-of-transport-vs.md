@@ -1,18 +1,18 @@
-# Mode of Transport ValueSet (example) - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Mode of Transport to Facility - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Mode of Transport ValueSet (example)**
+* **Mode of Transport to Facility**
 
-## ValueSet: Mode of Transport ValueSet (example) (Experimental) 
+## ValueSet: Mode of Transport to Facility 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs | *Version*:0.1.0 |
+| *Official URL*:http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport | *Version*:0.1.0 |
 | Draft as of 2025-10-09 | *Computable Name*:ModeOfTransportVS |
 
  
-Sample ValueSet capturing transport modes. 
+Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6. 
 
  **References** 
 
@@ -20,11 +20,13 @@ Sample ValueSet capturing transport modes.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs`](CodeSystem-mode-of-transport-cs.md) version 📦0.1.0
-
  
 
 ### Expansion
+
+Expansion from tx.fhir.org based on Loinc v2.81
+
+This value set contains 4 concepts
 
 -------
 
@@ -47,13 +49,12 @@ Sample ValueSet capturing transport modes.
 {
   "resourceType" : "ValueSet",
   "id" : "mode-of-transport-vs",
-  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs",
+  "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport",
   "version" : "0.1.0",
   "name" : "ModeOfTransportVS",
-  "title" : "Mode of Transport ValueSet (example)",
+  "title" : "Mode of Transport to Facility",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-10-09T12:26:29+00:00",
+  "date" : "2025-10-09T16:04:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -75,7 +76,7 @@ Sample ValueSet capturing transport modes.
       ]
     }
   ],
-  "description" : "Sample ValueSet capturing transport modes.",
+  "description" : "Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -90,7 +91,25 @@ Sample ValueSet capturing transport modes.
   "compose" : {
     "include" : [
       {
-        "system" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"
+        "system" : "http://loinc.org",
+        "concept" : [
+          {
+            "code" : "LA9318-2",
+            "display" : "Ambulance"
+          },
+          {
+            "code" : "LA9321-6",
+            "display" : "Walk-in following nonambulance, law enforcement transport"
+          },
+          {
+            "code" : "LA9319-0",
+            "display" : "Walk-in following transport via private transportation"
+          },
+          {
+            "code" : "LA9323-2",
+            "display" : "Other mode of transport"
+          }
+        ]
       }
     ]
   }

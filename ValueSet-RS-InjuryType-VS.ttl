@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryType-VS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RS-InjuryType-VS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RS-InjuryType-VS</b></p><a name=\"RS-InjuryType-VS\"> </a><a name=\"hcRS-InjuryType-VS\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/399963005\">399963005</a></td><td>Abrasion (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/284554003\">284554003</a></td><td>Avulsion - injury (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/125666000\">125666000</a></td><td>Burn (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/46541008\">46541008</a></td><td>Second degree burn injury (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/77140003\">77140003</a></td><td>First degree burn injury (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/80247002\">80247002</a></td><td>Third degree burn injury (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/770400008\">770400008</a></td><td>Fourth degree burn injury (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/110030002\">110030002</a></td><td>Concussion injury of brain (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/125667009\">125667009</a></td><td>Contusion (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/72704001\">72704001</a></td><td>Fracture (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/423125000\">423125000</a></td><td>Closed fracture of bone (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/397181002\">397181002</a></td><td>Open fracture (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/125643001\">125643001</a></td><td>Open wound (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/262595009\">262595009</a></td><td>Traumatic amputation (disorder)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RSInjuryTypeVS"] ; # 
+  fhir:title [ fhir:v "RS Injury Types"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-09T16:04:50+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Common injury morphology/types (SNOMED-first)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "399963005" ] ;
+         fhir:display [ fhir:v "Abrasion (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "284554003" ] ;
+         fhir:display [ fhir:v "Avulsion - injury (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "125666000" ] ;
+         fhir:display [ fhir:v "Burn (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "46541008" ] ;
+         fhir:display [ fhir:v "Second degree burn injury (morphologic abnormality)" ]
+       ] [
+         fhir:code [ fhir:v "77140003" ] ;
+         fhir:display [ fhir:v "First degree burn injury (morphologic abnormality)" ]
+       ] [
+         fhir:code [ fhir:v "80247002" ] ;
+         fhir:display [ fhir:v "Third degree burn injury (morphologic abnormality)" ]
+       ] [
+         fhir:code [ fhir:v "770400008" ] ;
+         fhir:display [ fhir:v "Fourth degree burn injury (morphologic abnormality)" ]
+       ] [
+         fhir:code [ fhir:v "110030002" ] ;
+         fhir:display [ fhir:v "Concussion injury of brain (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "125667009" ] ;
+         fhir:display [ fhir:v "Contusion (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "72704001" ] ;
+         fhir:display [ fhir:v "Fracture (morphologic abnormality)" ]
+       ] [
+         fhir:code [ fhir:v "423125000" ] ;
+         fhir:display [ fhir:v "Closed fracture of bone (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "397181002" ] ;
+         fhir:display [ fhir:v "Open fracture (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "125643001" ] ;
+         fhir:display [ fhir:v "Open wound (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "262595009" ] ;
+         fhir:display [ fhir:v "Traumatic amputation (disorder)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

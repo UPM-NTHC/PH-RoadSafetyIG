@@ -73,17 +73,33 @@ These define sets of codes used by systems conforming to this implementation gui
 | [All Road Safety Procedure Codes](ValueSet-rs-procedure.md) | Combines medical interventions, first aid, and psychosocial procedures. |
 | [Cause of Crash File Type ValueSet](ValueSet-cause-of-crash-file-type-vs.md) | Allowed file types for documents describing the cause of a road crash. |
 | [Cause of Road Crash](ValueSet-cause-of-crash-vs.md) | Defines codes representing the external causes of road traffic crashes |
-| [Collision Type ValueSet (example)](ValueSet-collision-type-vs.md) | Types of collision in road traffic incidents |
+| [Collision Type ValueSet](ValueSet-collision-type-vs.md) | Types of collision in road traffic incidents (temporary local codes; map to a standard when available). |
 | [External Cause ValueSet (example)](ValueSet-external-cause-vs.md) | Illustrative set of codes representing external causes of injury. |
 | [First Aid Codes](ValueSet-first-aid.md) | Allowed values for first aid performed. |
 | [Hospital / EMS Category](ValueSet-rs-hospital-category.md) | Categories for hospitals relevant to EMS referral. |
 | [Medical Intervention Procedure Codes](ValueSet-intervention.md) | Procedure codes representing medical interventions. |
-| [Mode of Transport ValueSet (example)](ValueSet-mode-of-transport-vs.md) | Sample ValueSet capturing transport modes. |
+| [Mode of Transport to Facility](ValueSet-mode-of-transport-vs.md) | Transport mode answer list using LOINC Answer List codes; Observation.code should be LOINC 74286-6. |
 | [Nature of Injury ValueSet (example)](ValueSet-injury-nature-vs.md) | Demonstration ValueSet capturing the nature of injury. |
-| [Outcome ValueSet (example)](ValueSet-outcome-vs.md) | Example ValueSet capturing possible outcomes. |
+| [Outcome ValueSet](ValueSet-outcome-vs.md) | Outcome at release/discharge using SNOMED CT codes (prioritized). |
 | [Party at Fault](ValueSet-party-at-fault-vs.md) | ValueSet indicating the party at fault in an incident. |
 | [Place of Occurrence ValueSet (example)](ValueSet-place-occ-vs.md) | Example ValueSet capturing places of occurrence. |
 | [Psychosocial Procedure Codes](ValueSet-psychosocial-procedure.md) | Codes representing psychosocial support interventions. |
+| [RS AVPU Level of Consciousness](ValueSet-RS-AVPU-VS.md) | AVPU scale coded in SNOMED CT. |
+| [RS Breath Sounds](ValueSet-RS-BreathSounds-VS.md) | Breath sounds by auscultation (SNOMED CT). |
+| [RS Condition of Patient](ValueSet-RS-ConditionOfPatient-VS.md) | Overall condition assertion (Alive/Deceased) using SNOMED CT. |
+| [RS Cyanosis](ValueSet-RS-Cyanosis-VS.md) | Cyanosis presence/type (SNOMED CT). |
+| [RS Drowning Body of Water](ValueSet-RS-DrowningWaterBody-VS.md) | Type/body of water involved in drowning (SNOMED). |
+| [RS GCS Eyes](ValueSet-RS-GCSEyes-VS.md) | GCS Eye opening (LOINC answers). |
+| [RS GCS Motor](ValueSet-RS-GCSMotor-VS.md) | GCS Motor response (LOINC answers). |
+| [RS GCS Verbal](ValueSet-RS-GCSVerbal-VS.md) | GCS Verbal response (LOINC answers). |
+| [RS Injury Intent](ValueSet-RS-InjuryIntent-VS.md) | Intent of injury (SNOMED-first). |
+| [RS Injury Types](ValueSet-RS-InjuryType-VS.md) | Common injury morphology/types (SNOMED-first). |
+| [RS Pulse Quality](ValueSet-RS-PulseQuality-VS.md) | Pulse quality using SNOMED CT. |
+| [RS Pulse Rhythm](ValueSet-RS-PulseRhythm-VS.md) | Pulse rhythm (regular/irregular) using SNOMED CT. |
+| [RS Pupils](ValueSet-RS-Pupils-VS.md) | Pupil findings (SNOMED CT). |
+| [RS Respiratory Rhythm](ValueSet-RS-RespiratoryRhythm-VS.md) | Respiratory rhythm findings using SNOMED CT. |
+| [RS Status on Arrival](ValueSet-RS-StatusOnArrival-VS.md) | Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT. |
+| [RS Triage Category (Scene)](ValueSet-RS-TriageCategory-VS.md) | Triage category values. Temporary local codes pending final mapping to a standard vocabulary. |
 | [Report Form Received](ValueSet-report-form-received-vs.md) | ValueSet indicating whether a report form has been received. |
 | [Road Network File Type](ValueSet-road-network-file-type-vs.md) | Permitted file types for detailed road network shapefiles or GIS documents. |
 | [Road Safety Task Status](ValueSet-rs-task-status.md) | ValueSet for Task.status using custom Road Safety codes. |

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RS-TriageCategory-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet RS-TriageCategory-VS</b></p><a name="RS-TriageCategory-VS"> </a><a name="hcRS-TriageCategory-VS"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/PH-RoadSafety-TriageCategory</code> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>red</td><td>Red / Immediate</td></tr><tr><td>yellow</td><td>Yellow / Delayed</td></tr><tr><td>green</td><td>Green / Minimal</td></tr><tr><td>black</td><td>Black / Expectant</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ValueSet/PH-RoadSafety-TriageCategory"/>
+  <version value="0.1.0"/>
+  <name value="RSTriageCategoryVS"/>
+  <title value="RS Triage Category (Scene)"/>
+  <status value="draft"/>
+  <date value="2025-10-09T16:04:50+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Triage category values. Temporary local codes pending final mapping to a standard vocabulary."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/CodeSystem/PH-RoadSafety-TriageCategory"/>
+      <concept>
+        <code value="red"/>
+        <display value="Red / Immediate"/>
+      </concept>
+      <concept>
+        <code value="yellow"/>
+        <display value="Yellow / Delayed"/>
+      </concept>
+      <concept>
+        <code value="green"/>
+        <display value="Green / Minimal"/>
+      </concept>
+      <concept>
+        <code value="black"/>
+        <display value="Black / Expectant"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
