@@ -6,7 +6,7 @@ Description: "Transport mode answer list using LOINC Answer List codes; Observat
 * ^url = "http://hl7.org/fhir/ValueSet/PH-RoadSafety-ModeOfTransport"
 
 // LOINC Answer List members
-* include http://loinc.org#LA9318-2 "Ambulance"
-* include http://loinc.org#LA9321-6 "Walk-in following nonambulance, law enforcement transport"
-* include http://loinc.org#LA9319-0 "Walk-in following transport via private transportation"
-* include http://loinc.org#LA9323-2 "Other mode of transport"
+* include $LNC#LA9318-2 "Ambulance"
+* include $LNC#LA9321-6 "Walk-in following nonambulance, law enforcement transport"
+* include $LNC#LA9319-0 "Walk-in following transport via private transportation"
+* include $LNC#LA9323-2 "Other mode of transport"

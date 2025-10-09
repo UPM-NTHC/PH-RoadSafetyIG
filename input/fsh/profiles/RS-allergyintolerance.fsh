@@ -9,7 +9,7 @@ Description: "Profile for recording allergy or intolerance information in the Ph
 
 // Require allergy code
 * code 1..1 MS
-* code from http://snomed.info/sct (extensible)
+* code from $SCT (extensible)
 
 // Require clinical status
 * clinicalStatus 1..1 MS

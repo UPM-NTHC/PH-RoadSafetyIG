@@ -5,7 +5,7 @@ Description: "AVPU scale coded in SNOMED CT."
 * ^status = #draft
 * ^url = "http://hl7.org/fhir/ValueSet/PH-RoadSafety-AVPU"
 
-* include http://snomed.info/sct#248234008 "Mentally alert (finding)"
-* include http://snomed.info/sct#300202002 "Responds to voice (finding)"
-* include http://snomed.info/sct#450847001 "Responds to pain (finding)"
-* include http://snomed.info/sct#422768004 "Unresponsive (finding)"
+* include $SCT#248234008 "Mentally alert (finding)"
+* include $SCT#300202002 "Responds to voice (finding)"
+* include $SCT#450847001 "Responds to pain (finding)"
+* include $SCT#422768004 "Unresponsive (finding)"
