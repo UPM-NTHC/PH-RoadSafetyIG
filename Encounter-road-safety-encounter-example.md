@@ -176,7 +176,7 @@ Vehicle used: Ambulance
   "location" : [
     {
       "location" : {
-        "reference" : "Example-RS-Scene-Location"
+        "reference" : "Location/Example-RS-Scene-Location"
       },
       "status" : "active",
       "period" : {
@@ -185,7 +185,7 @@ Vehicle used: Ambulance
     },
     {
       "location" : {
-        "reference" : "Example-RS-Hospital-Location"
+        "reference" : "Location/Example-RS-Hospital-Location"
       },
       "status" : "active",
       "period" : {

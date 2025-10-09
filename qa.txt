@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 177, warn = 824, info = 82
+err = 172, warn = 824, info = 81
 IG Publisher Version: 2.0.20
-Generated Thu Oct 09 04:31:44 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Thu Oct 09 07:38:50 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 1 / 23 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-RSCompositionTypeCS-Facility : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-RSCompositionTypeCS-Run : 0 / 4 / 1
@@ -25,12 +25,15 @@ Generated Thu Oct 09 04:31:44 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/CodeSystem-vehicle-condition-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-vehicle-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 13 / 1
- /github/workspace/fsh-generated/resources/Encounter-road-safety-encounter-example : 36 / 2 / 2
+ /github/workspace/fsh-generated/resources/Encounter-road-safety-encounter-example : 32 / 2 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-Example-RS-Hospital-Location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-Example-RS-Scene-Location : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-IncidentNoNS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-hospital-case-no-ns : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-hospital-patient-id-ns : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-hospital-registry-id-ns : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-hospital-example : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-organization-hospital-ex : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-organization-stjaylords : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-patient-jose-dela-cruz : 0 / 0 / 1
@@ -46,7 +49,7 @@ Generated Thu Oct 09 04:31:44 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/Practitioner-practitioner-mark-reyes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-VitalSignsQuestionnaire : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-VitalSignsQuestionnaireResponse : 2 / 5 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-road-safety-servicerequest-example : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ServiceRequest-road-safety-servicerequest-example : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CompositionFacility : 2 / 1 / 22
  /github/workspace/fsh-generated/resources/StructureDefinition-CompositionRunReport : 2 / 1 / 19
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionICD10ExternalCause : 0 / 1 / 1
@@ -323,16 +326,15 @@ WARNING: Encounter/road-safety-encounter-example: Encounter.extension[0].value.o
 ERROR: Encounter/road-safety-encounter-example: Encounter.extension[0].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Ambulance' for http://snomed.info/sct#7771000. Valid display is one of 6 choices: 'Left' (en), 'Left lateral' (en), 'Levo-' (en), 'Left (qualifier value)' (en), 'Left side' (en) or 'Lt - Left' (en) (for the language(s) 'en')
 WARNING: Encounter/road-safety-encounter-example: Encounter.identifier[0].system: No definition could be found for URL value 'http://yourhospital.org/hospital-case-number'
 ERROR: Encounter/road-safety-encounter-example: Encounter.reasonCode[0].coding[0].display: Wrong Display Name 'Motor vehicle accident' for http://snomed.info/sct#22298006. Valid display is one of 7 choices: 'Myocardial infarction' (en), 'Infarction of heart' (en), 'Cardiac infarction' (en), 'Heart attack' (en), 'Myocardial infarction (disorder)' (en), 'Myocardial infarct' (en) or 'MI - myocardial infarction' (en) (for the language(s) 'en')
-ERROR: Encounter/road-safety-encounter-example: Encounter.hospitalization.destination: Unable to resolve resource with reference 'Organization/hospital-example'
 ERROR: Encounter/road-safety-encounter-example: Encounter.hospitalization.dischargeDisposition.coding[0].display: Wrong Display Name 'Discharged to home' for http://terminology.hl7.org/CodeSystem/discharge-disposition#home. Valid display is 'Home' (for the language(s) 'en')
-ERROR: Encounter/road-safety-encounter-example: Encounter.location[0].location: Unable to resolve resource with reference 'Example-RS-Scene-Location'
-ERROR: Encounter/road-safety-encounter-example: Encounter.location[1].location: Unable to resolve resource with reference 'Example-RS-Hospital-Location'
-ERROR: Encounter/road-safety-encounter-example: Encounter.serviceProvider: Unable to resolve resource with reference 'Organization/hospital-example'
 == fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety.json ==
+== fsh-generated/resources/Location-Example-RS-Hospital-Location.json ==
+== fsh-generated/resources/Location-Example-RS-Scene-Location.json ==
 == fsh-generated/resources/NamingSystem-IncidentNoNS.json ==
 == fsh-generated/resources/NamingSystem-hospital-case-no-ns.json ==
 == fsh-generated/resources/NamingSystem-hospital-patient-id-ns.json ==
 == fsh-generated/resources/NamingSystem-hospital-registry-id-ns.json ==
+== fsh-generated/resources/Organization-hospital-example.json ==
 == fsh-generated/resources/Organization-organization-hospital-ex.json ==
 INFORMATION: Organization/organization-hospital-ex: Organization.identifier[0]: This element does not match any known slice defined in the profile urn://example.com/ph-core/fhir/StructureDefinition/ph-core-organization|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Organization-organization-stjaylords.json ==
@@ -405,8 +407,6 @@ WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireRes
 WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: QuestionnaireResponse/VitalSignsQuestionnaireResponse: QuestionnaireResponse.item[0].item[10].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ServiceRequest-road-safety-servicerequest-example.json ==
-INFORMATION: ServiceRequest/road-safety-servicerequest-example: ServiceRequest.supportingInfo[0]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: ServiceRequest/road-safety-servicerequest-example: ServiceRequest.supportingInfo[0]: Unable to resolve resource with reference 'organization-stlukes'
 == fsh-generated/resources/StructureDefinition-CompositionFacility.json ==
 INFORMATION: StructureDefinition/CompositionFacility: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 INFORMATION: StructureDefinition/CompositionFacility: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/RSCompositionTypeCS-Facility|0.1.0

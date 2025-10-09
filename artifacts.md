@@ -218,6 +218,9 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [Accident Scene Location](Location-Example-RS-Scene-Location.md) | Road traffic accident scene for the encounter. |
+| [City General Hospital](Organization-hospital-example.md) | Receiving medical facility for the road safety encounter. |
+| [City General Hospital - Emergency Department](Location-Example-RS-Hospital-Location.md) | ED Location involved in the encounter. |
 | [Example Hospital Organization](Organization-organization-hospital-ex.md) | Hospital submitting the road safety patient report. |
 | [Patient - Jose Dela Cruz](Patient-patient-jose-dela-cruz.md) | Road crash patient referenced by the ServiceRequest example. |
 | [Practitioner - Ana Cruz](Practitioner-practitioner-ana-cruz.md) | Team Leader in the Road Safety Encounter (Dr. Ana Cruz leads the medical response team). |

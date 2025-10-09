@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-09T04:26:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T07:33:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -847,6 +847,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/Example-RS-Scene-Location> ;
+         fhir:reference [ fhir:v "Location/Example-RS-Scene-Location" ]
+       ] ;
+       fhir:name [ fhir:v "Accident Scene Location" ] ;
+       fhir:description [ fhir:v "Road traffic accident scene for the encounter." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1001,6 +1019,42 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/hospital-example> ;
+         fhir:reference [ fhir:v "Organization/hospital-example" ]
+       ] ;
+       fhir:name [ fhir:v "City General Hospital" ] ;
+       fhir:description [ fhir:v "Receiving medical facility for the road safety encounter." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/Example-RS-Hospital-Location> ;
+         fhir:reference [ fhir:v "Location/Example-RS-Hospital-Location" ]
+       ] ;
+       fhir:name [ fhir:v "City General Hospital - Emergency Department" ] ;
+       fhir:description [ fhir:v "ED Location involved in the encounter." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
        ]
      ] [
        fhir:extension ( [

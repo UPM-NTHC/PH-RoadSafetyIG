@@ -53,7 +53,7 @@ This value set has >1000 codes in it. In order to keep the publication size mana
   "name" : "ICD10NatureOfInjuryVS",
   "title" : "ICD-10 Nature of Injury (sample)",
   "status" : "draft",
-  "date" : "2025-10-09T04:26:27+00:00",
+  "date" : "2025-10-09T07:33:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

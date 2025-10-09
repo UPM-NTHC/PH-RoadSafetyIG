@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "Road Safety Patient",
   "status" : "draft",
-  "date" : "2025-10-09T04:26:27+00:00",
+  "date" : "2025-10-09T07:33:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
