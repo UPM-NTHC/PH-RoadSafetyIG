@@ -63,15 +63,6 @@ Description: "Example of a road safety hospital encounter with identifiers, part
 // =============================
 // Supporting Organization
 // =============================
-<<<<<<< HEAD
-//Instance: hospital-example
-//InstanceOf: PHCoreOrganization
-//Title: "City General Hospital"
-//* name = "City General Hospital"
-//* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-//* address.text = "123 Health Avenue, Quezon City, NCR, Philippines"
-
-=======
 Instance: hospital-example
 InstanceOf: PHCoreOrganization
 Title: "City General Hospital"
@@ -106,7 +97,6 @@ Description: "ED Location involved in the encounter."
 * name = "City General Hospital - Emergency Department"
 * address.text = "123 Health Avenue, Quezon City, NCR, Philippines"
 * managingOrganization = Reference(Organization/hospital-example)
->>>>>>> 87049ad99590e2e571f76b55ccf6b256cae8b6b6
 
 // =============================
 // Supporting Practitioners
