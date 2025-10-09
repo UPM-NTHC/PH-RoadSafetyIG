@@ -5,8 +5,6 @@
 
 ## Data Modelling
 
-# General Data Model - Discussion and integration notes
-
 * This page gives a high level overview of the mapped FHIR resources from workshops (dot-vote priorities, ONEISS, ONEISS vs NHDR mapping), map MDS fields to FHIR resources (Observation, Encounter, Condition, DocumentReference, Procedure, Patient, Location, etc.) and note areas marked MUST SUPPORT.
 
 Key decisions (high-level)
@@ -18,7 +16,11 @@ Key decisions (high-level)
 * Use Procedure for psychosocial support, coordination tasks, and other performed procedures.
 * Use Patient/Location/Organization references where appropriate for identifiers and facility information.
 
-Mermaid diagram (simplified)
+Generated Plantuml (v0.2)
+
+Manually created Plantuml
+
+Mermaid diagram (simplified v0.1)
 
 ```
 flowchart LR
