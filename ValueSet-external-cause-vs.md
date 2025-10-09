@@ -4,7 +4,7 @@
 * [**Artifacts Summary**](artifacts.md)
 * **External Cause ValueSet (example)**
 
-## ValueSet: External Cause ValueSet (example) (Experimental) 
+## ValueSet: External Cause ValueSet (example) 
 
 | | |
 | :--- | :--- |
@@ -20,11 +20,13 @@ Illustrative set of codes representing external causes of injury.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs`](CodeSystem-external-cause-cs.md) version 📦0.1.0
-
  
 
 ### Expansion
+
+Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+
+This value set contains 7 concepts
 
 -------
 
@@ -52,8 +54,7 @@ Illustrative set of codes representing external causes of injury.
   "name" : "ExternalCauseVS",
   "title" : "External Cause ValueSet (example)",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-10-09T16:04:50+00:00",
+  "date" : "2025-10-09T17:33:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -90,7 +91,37 @@ Illustrative set of codes representing external causes of injury.
   "compose" : {
     "include" : [
       {
-        "system" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "40947009",
+            "display" : "Drowning (event)"
+          },
+          {
+            "code" : "88999006",
+            "display" : "Heat (physical force)"
+          },
+          {
+            "code" : "80032004",
+            "display" : "Fire (physical force)"
+          },
+          {
+            "code" : "18213006",
+            "display" : "Electricity (physical force)"
+          },
+          {
+            "code" : "21847005",
+            "display" : "Oil (substance)"
+          },
+          {
+            "code" : "263762005",
+            "display" : "Friction (physical force)"
+          },
+          {
+            "code" : "1912002",
+            "display" : "Fall (event)"
+          }
+        ]
       }
     ]
   }

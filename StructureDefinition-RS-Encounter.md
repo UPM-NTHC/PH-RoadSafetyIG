@@ -16,7 +16,7 @@ Encounter profile for road safety reporting (hospital case no, incident no, tran
 
 **Usages:**
 
-* Refer to this Profile: [Road Safety Document Reference](StructureDefinition-RS-Documentreference.md)
+* Refer to this Profile: [Road Safety Document Reference](StructureDefinition-RS-Documentreference.md) and [Injury Observation](StructureDefinition-RS-Observation.md)
 * Examples for this Profile: [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/RS-Encounter)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Encounter.csv), [
   "name" : "RSEncounter",
   "title" : "Road Safety Encounter",
   "status" : "draft",
-  "date" : "2025-10-09T16:04:50+00:00",
+  "date" : "2025-10-09T17:33:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

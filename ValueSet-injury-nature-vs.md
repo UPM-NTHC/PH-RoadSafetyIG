@@ -16,7 +16,7 @@ Demonstration ValueSet capturing the nature of injury.
 
  **References** 
 
-* [Injury Observation](StructureDefinition-RS-Observation.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -53,7 +53,7 @@ Demonstration ValueSet capturing the nature of injury.
   "title" : "Nature of Injury ValueSet (example)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-09T16:04:50+00:00",
+  "date" : "2025-10-09T17:33:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

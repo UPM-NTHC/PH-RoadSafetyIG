@@ -16,7 +16,7 @@ Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT.
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [Injury Observation](StructureDefinition-RS-Observation.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "RSStatusOnArrivalVS",
   "title" : "RS Status on Arrival",
   "status" : "draft",
-  "date" : "2025-10-09T16:04:50+00:00",
+  "date" : "2025-10-09T17:33:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

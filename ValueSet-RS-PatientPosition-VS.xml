@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RS-PatientPosition-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet RS-PatientPosition-VS</b></p><a name="RS-PatientPosition-VS"> </a><a name="hcRS-PatientPosition-VS"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/PH-RoadSafety-PatientPosition</code> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>driver</td><td>Driver</td></tr><tr><td>front-passenger</td><td>Front passenger</td></tr><tr><td>rear-left</td><td>Rear left</td></tr><tr><td>rear-right</td><td>Rear right</td></tr><tr><td>rear-middle</td><td>Rear middle</td></tr><tr><td>pedestrian</td><td>Pedestrian</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ValueSet/PH-RoadSafety-PatientPosition"/>
+  <version value="0.1.0"/>
+  <name value="RSPatientPositionVS"/>
+  <title value="RS Patient Position"/>
+  <status value="draft"/>
+  <date value="2025-10-09T17:33:43+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Position/role of the patient at time of incident. Temporary local codes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/CodeSystem/PH-RoadSafety-PatientPosition"/>
+      <concept>
+        <code value="driver"/>
+        <display value="Driver"/>
+      </concept>
+      <concept>
+        <code value="front-passenger"/>
+        <display value="Front passenger"/>
+      </concept>
+      <concept>
+        <code value="rear-left"/>
+        <display value="Rear left"/>
+      </concept>
+      <concept>
+        <code value="rear-right"/>
+        <display value="Rear right"/>
+      </concept>
+      <concept>
+        <code value="rear-middle"/>
+        <display value="Rear middle"/>
+      </concept>
+      <concept>
+        <code value="pedestrian"/>
+        <display value="Pedestrian"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

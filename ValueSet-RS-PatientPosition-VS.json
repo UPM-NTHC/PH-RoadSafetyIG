@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RS-PatientPosition-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RS-PatientPosition-VS</b></p><a name=\"RS-PatientPosition-VS\"> </a><a name=\"hcRS-PatientPosition-VS\"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/PH-RoadSafety-PatientPosition</code> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>driver</td><td>Driver</td></tr><tr><td>front-passenger</td><td>Front passenger</td></tr><tr><td>rear-left</td><td>Rear left</td></tr><tr><td>rear-right</td><td>Rear right</td></tr><tr><td>rear-middle</td><td>Rear middle</td></tr><tr><td>pedestrian</td><td>Pedestrian</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PatientPosition",
+  "version" : "0.1.0",
+  "name" : "RSPatientPositionVS",
+  "title" : "RS Patient Position",
+  "status" : "draft",
+  "date" : "2025-10-09T17:33:43+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "Position/role of the patient at time of incident. Temporary local codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-PatientPosition",
+      "concept" : [{
+        "code" : "driver",
+        "display" : "Driver"
+      },
+      {
+        "code" : "front-passenger",
+        "display" : "Front passenger"
+      },
+      {
+        "code" : "rear-left",
+        "display" : "Rear left"
+      },
+      {
+        "code" : "rear-right",
+        "display" : "Rear right"
+      },
+      {
+        "code" : "rear-middle",
+        "display" : "Rear middle"
+      },
+      {
+        "code" : "pedestrian",
+        "display" : "Pedestrian"
+      }]
+    }]
+  }
+}

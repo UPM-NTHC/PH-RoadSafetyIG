@@ -16,7 +16,7 @@ Triage category values. Temporary local codes pending final mapping to a standar
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [Injury Observation](StructureDefinition-RS-Observation.md)
 
 ### Logical Definition (CLD)
 
@@ -52,7 +52,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "RSTriageCategoryVS",
   "title" : "RS Triage Category (Scene)",
   "status" : "draft",
-  "date" : "2025-10-09T16:04:50+00:00",
+  "date" : "2025-10-09T17:33:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

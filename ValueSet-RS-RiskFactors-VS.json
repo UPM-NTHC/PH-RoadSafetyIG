@@ -1,0 +1,74 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RS-RiskFactors-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RS-RiskFactors-VS</b></p><a name=\"RS-RiskFactors-VS\"> </a><a name=\"hcRS-RiskFactors-VS\"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/PH-RoadSafety-RiskFactors</code> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>alcohol-intoxication</td><td>Alcohol intoxication</td></tr><tr><td>drug-intoxication</td><td>Drug intoxication</td></tr><tr><td>smoking</td><td>Smoking</td></tr><tr><td>fatigue</td><td>Fatigue</td></tr><tr><td>phone-use</td><td>Phone use</td></tr><tr><td>overspeeding</td><td>Overspeeding</td></tr><tr><td>none</td><td>None</td></tr><tr><td>other</td><td>Other</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-RiskFactors",
+  "version" : "0.1.0",
+  "name" : "RSRiskFactorsVS",
+  "title" : "RS Other Risk Factors",
+  "status" : "draft",
+  "date" : "2025-10-09T17:33:43+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "Other risk factors at time of incident. Temporary local codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-RiskFactors",
+      "concept" : [{
+        "code" : "alcohol-intoxication",
+        "display" : "Alcohol intoxication"
+      },
+      {
+        "code" : "drug-intoxication",
+        "display" : "Drug intoxication"
+      },
+      {
+        "code" : "smoking",
+        "display" : "Smoking"
+      },
+      {
+        "code" : "fatigue",
+        "display" : "Fatigue"
+      },
+      {
+        "code" : "phone-use",
+        "display" : "Phone use"
+      },
+      {
+        "code" : "overspeeding",
+        "display" : "Overspeeding"
+      },
+      {
+        "code" : "none",
+        "display" : "None"
+      },
+      {
+        "code" : "other",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

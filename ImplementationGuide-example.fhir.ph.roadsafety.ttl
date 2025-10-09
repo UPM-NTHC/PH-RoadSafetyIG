@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-09T16:04:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T17:33:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -2271,6 +2271,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-CollisionMode-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-CollisionMode-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Collision Mode" ] ;
+       fhir:description [ fhir:v "Collision vs non-collision transport incident. Temporary local codes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-ConditionOfPatient-VS> ;
          fhir:reference [ fhir:v "ValueSet/RS-ConditionOfPatient-VS" ]
        ] ;
@@ -2415,6 +2433,60 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-RiskFactors-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-RiskFactors-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Other Risk Factors" ] ;
+       fhir:description [ fhir:v "Other risk factors at time of incident. Temporary local codes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-OtherVehicleObject-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-OtherVehicleObject-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Other Vehicle/Object Involved" ] ;
+       fhir:description [ fhir:v "Other vehicle/object involved in collision. Temporary local codes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PatientPosition-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-PatientPosition-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Patient Position" ] ;
+       fhir:description [ fhir:v "Position/role of the patient at time of incident. Temporary local codes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseQuality-VS> ;
          fhir:reference [ fhir:v "ValueSet/RS-PulseQuality-VS" ]
        ] ;
@@ -2487,6 +2559,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-SafetyAccessories-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-SafetyAccessories-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Safety Accessories" ] ;
+       fhir:description [ fhir:v "Safety equipment/accessories at time of incident. Temporary local codes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-StatusOnArrival-VS> ;
          fhir:reference [ fhir:v "ValueSet/RS-StatusOnArrival-VS" ]
        ] ;
@@ -2510,6 +2600,24 @@
        ] ;
        fhir:name [ fhir:v "RS Triage Category (Scene)" ] ;
        fhir:description [ fhir:v "Triage category values. Temporary local codes pending final mapping to a standard vocabulary." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-UrgencyLevel-VS> ;
+         fhir:reference [ fhir:v "ValueSet/RS-UrgencyLevel-VS" ]
+       ] ;
+       fhir:name [ fhir:v "RS Urgency Level (example)" ] ;
+       fhir:description [ fhir:v "System-generated urgency/priority level. Temporary local codes pending mapping." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

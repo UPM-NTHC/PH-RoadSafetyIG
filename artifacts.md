@@ -86,6 +86,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Psychosocial Procedure Codes](ValueSet-psychosocial-procedure.md) | Codes representing psychosocial support interventions. |
 | [RS AVPU Level of Consciousness](ValueSet-RS-AVPU-VS.md) | AVPU scale coded in SNOMED CT. |
 | [RS Breath Sounds](ValueSet-RS-BreathSounds-VS.md) | Breath sounds by auscultation (SNOMED CT). |
+| [RS Collision Mode](ValueSet-RS-CollisionMode-VS.md) | Collision vs non-collision transport incident. Temporary local codes. |
 | [RS Condition of Patient](ValueSet-RS-ConditionOfPatient-VS.md) | Overall condition assertion (Alive/Deceased) using SNOMED CT. |
 | [RS Cyanosis](ValueSet-RS-Cyanosis-VS.md) | Cyanosis presence/type (SNOMED CT). |
 | [RS Drowning Body of Water](ValueSet-RS-DrowningWaterBody-VS.md) | Type/body of water involved in drowning (SNOMED). |
@@ -94,12 +95,17 @@ These define sets of codes used by systems conforming to this implementation gui
 | [RS GCS Verbal](ValueSet-RS-GCSVerbal-VS.md) | GCS Verbal response (LOINC answers). |
 | [RS Injury Intent](ValueSet-RS-InjuryIntent-VS.md) | Intent of injury (SNOMED-first). |
 | [RS Injury Types](ValueSet-RS-InjuryType-VS.md) | Common injury morphology/types (SNOMED-first). |
+| [RS Other Risk Factors](ValueSet-RS-RiskFactors-VS.md) | Other risk factors at time of incident. Temporary local codes. |
+| [RS Other Vehicle/Object Involved](ValueSet-RS-OtherVehicleObject-VS.md) | Other vehicle/object involved in collision. Temporary local codes. |
+| [RS Patient Position](ValueSet-RS-PatientPosition-VS.md) | Position/role of the patient at time of incident. Temporary local codes. |
 | [RS Pulse Quality](ValueSet-RS-PulseQuality-VS.md) | Pulse quality using SNOMED CT. |
 | [RS Pulse Rhythm](ValueSet-RS-PulseRhythm-VS.md) | Pulse rhythm (regular/irregular) using SNOMED CT. |
 | [RS Pupils](ValueSet-RS-Pupils-VS.md) | Pupil findings (SNOMED CT). |
 | [RS Respiratory Rhythm](ValueSet-RS-RespiratoryRhythm-VS.md) | Respiratory rhythm findings using SNOMED CT. |
+| [RS Safety Accessories](ValueSet-RS-SafetyAccessories-VS.md) | Safety equipment/accessories at time of incident. Temporary local codes. |
 | [RS Status on Arrival](ValueSet-RS-StatusOnArrival-VS.md) | Status upon reaching facility (consciousness/dead on arrival) using SNOMED CT. |
 | [RS Triage Category (Scene)](ValueSet-RS-TriageCategory-VS.md) | Triage category values. Temporary local codes pending final mapping to a standard vocabulary. |
+| [RS Urgency Level (example)](ValueSet-RS-UrgencyLevel-VS.md) | System-generated urgency/priority level. Temporary local codes pending mapping. |
 | [Report Form Received](ValueSet-report-form-received-vs.md) | ValueSet indicating whether a report form has been received. |
 | [Road Network File Type](ValueSet-road-network-file-type-vs.md) | Permitted file types for detailed road network shapefiles or GIS documents. |
 | [Road Safety Task Status](ValueSet-rs-task-status.md) | ValueSet for Task.status using custom Road Safety codes. |

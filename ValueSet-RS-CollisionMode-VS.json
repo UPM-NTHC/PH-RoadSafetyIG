@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RS-CollisionMode-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RS-CollisionMode-VS</b></p><a name=\"RS-CollisionMode-VS\"> </a><a name=\"hcRS-CollisionMode-VS\"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionMode</code> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>collision</td><td>Collision</td></tr><tr><td>non-collision</td><td>Non-collision</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionMode",
+  "version" : "0.1.0",
+  "name" : "RSCollisionModeVS",
+  "title" : "RS Collision Mode",
+  "status" : "draft",
+  "date" : "2025-10-09T17:33:43+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "Collision vs non-collision transport incident. Temporary local codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionMode",
+      "concept" : [{
+        "code" : "collision",
+        "display" : "Collision"
+      },
+      {
+        "code" : "non-collision",
+        "display" : "Non-collision"
+      }]
+    }]
+  }
+}

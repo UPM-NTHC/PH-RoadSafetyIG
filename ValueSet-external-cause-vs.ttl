@@ -11,15 +11,14 @@
   fhir:id [ fhir:v "external-cause-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet external-cause-vs</b></p><a name=\"external-cause-vs\"> </a><a name=\"hcexternal-cause-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-external-cause-cs.html\"><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet external-cause-vs</b></p><a name=\"external-cause-vs\"> </a><a name=\"hcexternal-cause-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/40947009\">40947009</a></td><td>Drowning (event)</td></tr><tr><td><a href=\"http://snomed.info/id/88999006\">88999006</a></td><td>Heat (physical force)</td></tr><tr><td><a href=\"http://snomed.info/id/80032004\">80032004</a></td><td>Fire (physical force)</td></tr><tr><td><a href=\"http://snomed.info/id/18213006\">18213006</a></td><td>Electricity (physical force)</td></tr><tr><td><a href=\"http://snomed.info/id/21847005\">21847005</a></td><td>Oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/263762005\">263762005</a></td><td>Friction (physical force)</td></tr><tr><td><a href=\"http://snomed.info/id/1912002\">1912002</a></td><td>Fall (event)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ExternalCauseVS"] ; # 
   fhir:title [ fhir:v "External Cause ValueSet (example)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-10-09T16:04:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T17:33:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -44,7 +43,29 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"^^xsd:anyURI ]
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "40947009" ] ;
+         fhir:display [ fhir:v "Drowning (event)" ]
+       ] [
+         fhir:code [ fhir:v "88999006" ] ;
+         fhir:display [ fhir:v "Heat (physical force)" ]
+       ] [
+         fhir:code [ fhir:v "80032004" ] ;
+         fhir:display [ fhir:v "Fire (physical force)" ]
+       ] [
+         fhir:code [ fhir:v "18213006" ] ;
+         fhir:display [ fhir:v "Electricity (physical force)" ]
+       ] [
+         fhir:code [ fhir:v "21847005" ] ;
+         fhir:display [ fhir:v "Oil (substance)" ]
+       ] [
+         fhir:code [ fhir:v "263762005" ] ;
+         fhir:display [ fhir:v "Friction (physical force)" ]
+       ] [
+         fhir:code [ fhir:v "1912002" ] ;
+         fhir:display [ fhir:v "Fall (event)" ]
+       ] )
      ] )
   ] . # 
 

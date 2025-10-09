@@ -13,7 +13,7 @@
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [ExternalCauseVS](ValueSet-external-cause-vs.md)
+* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 
 
@@ -28,7 +28,7 @@
   "name" : "ExternalCauseCS",
   "title" : "External Cause CodeSystem (example)",
   "status" : "draft",
-  "date" : "2025-10-09T16:04:50+00:00",
+  "date" : "2025-10-09T17:33:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-09T16:04:50+00:00",
+  "date" : "2025-10-09T17:33:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -1563,6 +1563,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/RS-CollisionMode-VS"
+      },
+      "name" : "RS Collision Mode",
+      "description" : "Collision vs non-collision transport incident. Temporary local codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/RS-ConditionOfPatient-VS"
       },
       "name" : "RS Condition of Patient",
@@ -1659,6 +1671,42 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/RS-RiskFactors-VS"
+      },
+      "name" : "RS Other Risk Factors",
+      "description" : "Other risk factors at time of incident. Temporary local codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-OtherVehicleObject-VS"
+      },
+      "name" : "RS Other Vehicle/Object Involved",
+      "description" : "Other vehicle/object involved in collision. Temporary local codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-PatientPosition-VS"
+      },
+      "name" : "RS Patient Position",
+      "description" : "Position/role of the patient at time of incident. Temporary local codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/RS-PulseQuality-VS"
       },
       "name" : "RS Pulse Quality",
@@ -1707,6 +1755,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/RS-SafetyAccessories-VS"
+      },
+      "name" : "RS Safety Accessories",
+      "description" : "Safety equipment/accessories at time of incident. Temporary local codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/RS-StatusOnArrival-VS"
       },
       "name" : "RS Status on Arrival",
@@ -1723,6 +1783,18 @@
       },
       "name" : "RS Triage Category (Scene)",
       "description" : "Triage category values. Temporary local codes pending final mapping to a standard vocabulary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RS-UrgencyLevel-VS"
+      },
+      "name" : "RS Urgency Level (example)",
+      "description" : "System-generated urgency/priority level. Temporary local codes pending mapping.",
       "exampleBoolean" : false
     },
     {

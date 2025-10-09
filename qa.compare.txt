@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 170, warn = 720, info = 29
+err = 198, warn = 717, info = 33
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 1 / 14 / 0
@@ -54,7 +54,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Encounter : 2 / 0 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-HealthcareService : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Medicationstatement : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-RS-Observation : 10 / 17 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-RS-Observation : 8 / 7 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Procedure : 2 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Questionnaire : 0 / 0 / 1
@@ -80,6 +80,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/Task-task-road-safety-ex : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-AVPU-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-BreathSounds-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-CollisionMode-VS : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-RS-ConditionOfPatient-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-Cyanosis-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-DrowningWaterBody-VS : 4 / 0 / 1
@@ -88,19 +89,24 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/ValueSet-RS-GCSVerbal-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryIntent-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryType-VS : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-RS-OtherVehicleObject-VS : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-RS-PatientPosition-VS : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-RS-PulseQuality-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-PulseRhythm-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-Pupils-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-RespiratoryRhythm-VS : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-RS-RiskFactors-VS : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-RS-SafetyAccessories-VS : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-RS-StatusOnArrival-VS : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-RS-TriageCategory-VS : 5 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-RS-UrgencyLevel-VS : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-activity-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-age-units-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-cause-of-crash-file-type-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-cause-of-crash-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-collision-type-vs : 5 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-coordination : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-external-cause-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-external-cause-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-first-aid : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-injury-nature-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-intervention : 0 / 0 / 1
@@ -924,34 +930,20 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-RS-Medicationstatement.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Medicationstatement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Observation.json ==
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[116].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[126].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[136].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[146].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '9263-8' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[156].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XXXX' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-INFORMATION: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[156].pattern.ofType(CodeableConcept).coding[0].code: Code XXXX is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "X", in "XXXX") at character 1)
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[166].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/mode-of-transport' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[176].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/outcome' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[186].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/priority' could not be found, so the code cannot be validated
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[32].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[36].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[40].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[44].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '9263-8' in the CodeSystem 'http://loinc.org' version '2.81'
-ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[48].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'XXXX' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-INFORMATION: StructureDefinition/RS-Observation: StructureDefinition.differential.element[48].pattern.ofType(CodeableConcept).coding[0].code: Code XXXX is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "X", in "XXXX") at character 1)
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[52].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/mode-of-transport' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[56].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/outcome' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[60].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/CodeSystem/priority' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[6].binding: The definition for the element 'Observation.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[50].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[62].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[68].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[71].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[17].binding: The definition for the element 'Observation.code' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[158].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[188].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[208].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[218].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[176].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[186].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[196].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[256].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Mode of transport to the Hospital/Facility' for http://loinc.org#74286-6. Valid display is one of 3 choices: 'Transport mode to hospital [NTDS]' (en-US), 'Transport mode to hospital [NTDS]' (en-US) or 'Hospital transport [NTDS]' (en-US) (for the language(s) 'en')
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[56].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276867008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[60].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276868003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[64].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '276869006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/RS-Observation: StructureDefinition.differential.element[85].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Mode of transport to the Hospital/Facility' for http://loinc.org#74286-6. Valid display is one of 3 choices: 'Transport mode to hospital [NTDS]' (en-US), 'Transport mode to hospital [NTDS]' (en-US) or 'Hospital transport [NTDS]' (en-US) (for the language(s) 'en')
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[105].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[108].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.differential.element[140].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[318].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[328].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/RS-Observation: StructureDefinition.snapshot.element[436].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Patient.json ==
 == fsh-generated/resources/StructureDefinition-RS-Procedure.json ==
@@ -1034,6 +1026,14 @@ ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-BreathSo
 ERROR: ValueSet/RS-BreathSounds-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: ValueSet/RS-BreathSounds-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-BreathSounds-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-BreathSounds-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-BreathSounds
+== fsh-generated/resources/ValueSet-RS-CollisionMode-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionMode'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-CollisionMode-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-CollisionMode-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionMode). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-CollisionMode-VS: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionMode'
+ERROR: ValueSet/RS-CollisionMode-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-CollisionMode-VS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/RS-CollisionMode-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'RS-CollisionMode-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionMode
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-CollisionMode-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-CollisionMode-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionMode
 == fsh-generated/resources/ValueSet-RS-ConditionOfPatient-VS.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-ConditionOfPatient'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-ConditionOfPatient-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-ConditionOfPatient-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-ConditionOfPatient). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet/RS-ConditionOfPatient-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
@@ -1075,6 +1075,22 @@ ERROR: ValueSet/RS-InjuryType-VS: ValueSet: When HL7 is publishing a resource, t
 INFORMATION: ValueSet/RS-InjuryType-VS: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Abrasion (disorder), Avulsion - injury (disorder), Burn (disorder), Concussion injury of brain (disorder), Contusion (disorder)] and examples for no FSN: [Second degree burn injury (morphologic abnormality), First degree burn injury (morphologic abnormality), Third degree burn injury (morphologic abnormality), Fourth degree burn injury (morphologic abnormality), Fracture (morphologic abnormality)])
 ERROR: ValueSet/RS-InjuryType-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-InjuryType-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-InjuryType-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-InjuryType
+== fsh-generated/resources/ValueSet-RS-OtherVehicleObject-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-OtherVehicleObject'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-OtherVehicleObject-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-OtherVehicleObject-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-OtherVehicleObject). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-OtherVehicleObject-VS: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-OtherVehicleObject'
+ERROR: ValueSet/RS-OtherVehicleObject-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-OtherVehicleObject-VS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/RS-OtherVehicleObject-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'RS-OtherVehicleObject-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-OtherVehicleObject
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-OtherVehicleObject-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-OtherVehicleObject-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-OtherVehicleObject
+== fsh-generated/resources/ValueSet-RS-PatientPosition-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-PatientPosition'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-PatientPosition-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PatientPosition-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-PatientPosition). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-PatientPosition-VS: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-PatientPosition'
+ERROR: ValueSet/RS-PatientPosition-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-PatientPosition-VS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/RS-PatientPosition-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'RS-PatientPosition-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-PatientPosition
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-PatientPosition-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PatientPosition-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-PatientPosition
 == fsh-generated/resources/ValueSet-RS-PulseQuality-VS.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-PulseQuality-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-PulseQuality-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet/RS-PulseQuality-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
@@ -1095,6 +1111,22 @@ ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-Respirat
 ERROR: ValueSet/RS-RespiratoryRhythm-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: ValueSet/RS-RespiratoryRhythm-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-RespiratoryRhythm-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-RespiratoryRhythm-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-RespiratoryRhythm
+== fsh-generated/resources/ValueSet-RS-RiskFactors-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-RiskFactors'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-RiskFactors-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-RiskFactors-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-RiskFactors). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-RiskFactors-VS: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-RiskFactors'
+ERROR: ValueSet/RS-RiskFactors-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-RiskFactors-VS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/RS-RiskFactors-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'RS-RiskFactors-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-RiskFactors
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-RiskFactors-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-RiskFactors-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-RiskFactors
+== fsh-generated/resources/ValueSet-RS-SafetyAccessories-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-SafetyAccessories'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-SafetyAccessories-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-SafetyAccessories-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-SafetyAccessories). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-SafetyAccessories-VS: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-SafetyAccessories'
+ERROR: ValueSet/RS-SafetyAccessories-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-SafetyAccessories-VS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/RS-SafetyAccessories-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'RS-SafetyAccessories-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-SafetyAccessories
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-SafetyAccessories-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-SafetyAccessories-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-SafetyAccessories
 == fsh-generated/resources/ValueSet-RS-StatusOnArrival-VS.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-StatusOnArrival-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-StatusOnArrival-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet/RS-StatusOnArrival-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
@@ -1108,6 +1140,14 @@ INFORMATION: ValueSet/RS-TriageCategory-VS: ValueSet.compose.include[0]: The con
 ERROR: ValueSet/RS-TriageCategory-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'RS-TriageCategory-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-TriageCategory
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-TriageCategory-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-TriageCategory-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-TriageCategory
+== fsh-generated/resources/ValueSet-RS-UrgencyLevel-VS.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/ValueSet/PH-RoadSafety-UrgencyLevel'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-RS-UrgencyLevel-VS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-UrgencyLevel-VS) does not match the URL (http://hl7.org/fhir/ValueSet/PH-RoadSafety-UrgencyLevel). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/RS-UrgencyLevel-VS: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://hl7.org/fhir/CodeSystem/PH-RoadSafety-UrgencyLevel'
+ERROR: ValueSet/RS-UrgencyLevel-VS: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: ValueSet/RS-UrgencyLevel-VS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/RS-UrgencyLevel-VS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'RS-UrgencyLevel-VS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/CodeSystem/PH-RoadSafety-UrgencyLevel
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-RS-UrgencyLevel-VS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/RS-UrgencyLevel-VS vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-UrgencyLevel
 == fsh-generated/resources/ValueSet-activity-vs.json ==
 == fsh-generated/resources/ValueSet-age-units-vs.json ==
 == fsh-generated/resources/ValueSet-cause-of-crash-file-type-vs.json ==
@@ -1123,6 +1163,7 @@ WARNING: ValueSet.where(id = 'collision-type-vs'): Error from https://tx.fhir.or
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-collision-type-vs: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs vs http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType
 == fsh-generated/resources/ValueSet-coordination.json ==
 == fsh-generated/resources/ValueSet-external-cause-vs.json ==
+WARNING: ValueSet/external-cause-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-first-aid.json ==
 == fsh-generated/resources/ValueSet-injury-nature-vs.json ==
 == fsh-generated/resources/ValueSet-intervention.json ==

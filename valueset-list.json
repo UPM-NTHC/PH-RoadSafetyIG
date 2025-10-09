@@ -19,6 +19,15 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionMode",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSCollisionModeVS",
+      "title" : "RS Collision Mode",
+      "description" : "Collision vs non-collision transport incident. Temporary local codes.",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/PH-RoadSafety-CollisionMode"]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-CollisionType",
       "version" : "0.1.0",
       "status" : "draft",
@@ -109,6 +118,17 @@
       "systems" : ["http://loinc.org"]
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-OtherVehicleObject",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSOtherVehicleObjectVS",
+      "title" : "RS Other Vehicle/Object Involved",
+      "description" : "Other vehicle/object involved in collision. Temporary local codes.",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-OtherVehicleObject"
+      ]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-Outcome",
       "version" : "0.1.0",
       "status" : "draft",
@@ -116,6 +136,17 @@
       "title" : "Outcome ValueSet",
       "description" : "Outcome at release/discharge using SNOMED CT codes (prioritized).",
       "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PatientPosition",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSPatientPositionVS",
+      "title" : "RS Patient Position",
+      "description" : "Position/role of the patient at time of incident. Temporary local codes.",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-PatientPosition"
+      ]
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality",
@@ -154,6 +185,26 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-RiskFactors",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSRiskFactorsVS",
+      "title" : "RS Other Risk Factors",
+      "description" : "Other risk factors at time of incident. Temporary local codes.",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/PH-RoadSafety-RiskFactors"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-SafetyAccessories",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSSafetyAccessoriesVS",
+      "title" : "RS Safety Accessories",
+      "description" : "Safety equipment/accessories at time of incident. Temporary local codes.",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-SafetyAccessories"
+      ]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival",
       "version" : "0.1.0",
       "status" : "draft",
@@ -172,6 +223,15 @@
       "systems" : [
         "http://hl7.org/fhir/CodeSystem/PH-RoadSafety-TriageCategory"
       ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/PH-RoadSafety-UrgencyLevel",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSUrgencyLevelVS",
+      "title" : "RS Urgency Level (example)",
+      "description" : "System-generated urgency/priority level. Temporary local codes pending mapping.",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/PH-RoadSafety-UrgencyLevel"]
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs",
@@ -229,9 +289,7 @@
       "name" : "ExternalCauseVS",
       "title" : "External Cause ValueSet (example)",
       "description" : "Illustrative set of codes representing external causes of injury.",
-      "systems" : [
-        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"
-      ]
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/first-aid",
