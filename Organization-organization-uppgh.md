@@ -1,18 +1,18 @@
-# St. Jaylord's Medical Center - DRAFT PH Road Safety Implementation Guide v0.1.0
+# UP Philippine General Hospital (UP-PGH) - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **St. Jaylord's Medical Center**
+* **UP Philippine General Hospital (UP-PGH)**
 
-## Example Organization: St. Jaylord's Medical Center
+## Example Organization: UP Philippine General Hospital (UP-PGH)
 
 Profile: [PH Core Organization](https://build.fhir.org/ig/UP-Manila-SILab/ph-core/StructureDefinition-ph-core-organization.html)
 
 **type**: Healthcare Provider
 
-**name**: St. Jaylord's Medical Center
+**name**: UP Philippine General Hospital
 
-**address**: Quezon City, NCR, Philippines
+**address**: Taft Avenue, Ermita, Manila, Philippines
 
 
 
@@ -21,7 +21,7 @@ Profile: [PH Core Organization](https://build.fhir.org/ig/UP-Manila-SILab/ph-cor
 ```json
 {
   "resourceType" : "Organization",
-  "id" : "organization-stjaylords",
+  "id" : "organization-uppgh",
   "meta" : {
     "profile" : [
       "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-organization"
@@ -38,10 +38,10 @@ Profile: [PH Core Organization](https://build.fhir.org/ig/UP-Manila-SILab/ph-cor
       ]
     }
   ],
-  "name" : "St. Jaylord's Medical Center",
+  "name" : "UP Philippine General Hospital",
   "address" : [
     {
-      "text" : "Quezon City, NCR, Philippines"
+      "text" : "Taft Avenue, Ermita, Manila, Philippines"
     }
   ]
 }

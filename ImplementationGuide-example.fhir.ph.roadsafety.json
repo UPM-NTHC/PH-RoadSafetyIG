@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-09T07:33:25+00:00",
+  "date" : "2025-10-09T07:37:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -2463,18 +2463,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/organization-stjaylords"
-      },
-      "name" : "St. Jaylord's Medical Center",
-      "description" : "Hospital referenced in the ServiceRequest example (refused admission).",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -2577,6 +2565,18 @@
       "name" : "Triage Priority ValueSet (example)",
       "description" : "Example ValueSet capturing triage priorities.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organization-uppgh"
+      },
+      "name" : "UP Philippine General Hospital (UP-PGH)",
+      "description" : "Hospital referenced in the ServiceRequest example (refused admission).",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

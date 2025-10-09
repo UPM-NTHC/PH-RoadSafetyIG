@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Procedure.csv), [
   "name" : "RSProcedure",
   "title" : "Road Safety Procedure",
   "status" : "draft",
-  "date" : "2025-10-09T07:33:25+00:00",
+  "date" : "2025-10-09T07:37:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -235,7 +235,7 @@ These are example instances that show what data produced and consumed by systems
 | [Road Safety Patient Example - Infant Age](Patient-patient-road-safety-age3.md) | Example of a pediatric patient with age in months. |
 | [Road Safety Patient Example - With Two Addresses](Patient-patient-road-safety-two-addresses.md) | A patient with both permanent and temporary addresses. |
 | [Road Safety Task Example](Task-task-road-safety-ex.md) | Example of a road safety task to track report form receipt and delays. |
-| [St. Jaylord's Medical Center](Organization-organization-stjaylords.md) | Hospital referenced in the ServiceRequest example (refused admission). |
+| [UP Philippine General Hospital (UP-PGH)](Organization-organization-uppgh.md) | Hospital referenced in the ServiceRequest example (refused admission). |
 | [Vital Signs Questionnaire](Questionnaire-VitalSignsQuestionnaire.md) | Example Questionnaire instance to capture repeating sets of Vital Signs. |
 | [Vital Signs QuestionnaireResponse Example](QuestionnaireResponse-VitalSignsQuestionnaireResponse.md) | Example response to the Vital Signs Questionnaire with sample measurements. |
 | [patient-road-safety-ex](Patient-patient-road-safety-ex.md) | Example patient involved in a road traffic crash, aligned to the RoadSafetyProfile. |

@@ -20,7 +20,7 @@ Profile: [Refusal to Admit Service Request](StructureDefinition-RS-Servicereques
 
 **supportingInfo**: 
 
-* [Organization St. Jaylord's Medical Center](Organization-organization-stjaylords.md)
+* [Organization UP Philippine General Hospital](Organization-organization-uppgh.md)
 * [Practitioner Dr. Ana Cruz](Practitioner-practitioner-ana-cruz.md)
 
 
@@ -47,7 +47,7 @@ Profile: [Refusal to Admit Service Request](StructureDefinition-RS-Servicereques
   "occurrenceDateTime" : "2025-09-25T14:45:00+08:00",
   "supportingInfo" : [
     {
-      "reference" : "Organization/organization-stjaylords"
+      "reference" : "Organization/organization-uppgh"
     },
     {
       "reference" : "Practitioner/practitioner-ana-cruz"

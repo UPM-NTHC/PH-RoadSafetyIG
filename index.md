@@ -75,7 +75,7 @@ This publication includes IP covered under the following statements.
 
 * [Discharge disposition](http://terminology.hl7.org/6.5.0/CodeSystem-discharge-disposition.html): [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)
 * [Location type](http://terminology.hl7.org/6.5.0/CodeSystem-location-physical-type.html): [RSEncounter](StructureDefinition-RS-Encounter.md)
-* [Organization type](http://terminology.hl7.org/6.5.0/CodeSystem-organization-type.html): [City General Hospital](Organization-hospital-example.md) and [St. Jaylord's Medical Center](Organization-organization-stjaylords.md)
+* [Organization type](http://terminology.hl7.org/6.5.0/CodeSystem-organization-type.html): [City General Hospital](Organization-hospital-example.md) and [UP Philippine General Hospital](Organization-organization-uppgh.md)
 * [ActCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html): [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)
 * [ParticipationType](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ParticipationType.html): [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md) and [RSEncounter](StructureDefinition-RS-Encounter.md)
 * [RoleCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html): [RSEncounter](StructureDefinition-RS-Encounter.md)
@@ -102,7 +102,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-09T07:33:25+00:00",
+  "date" : "2025-10-09T07:37:26+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -2984,20 +2984,6 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/organization-stjaylords"
-        },
-        "name" : "St. Jaylord's Medical Center",
-        "description" : "Hospital referenced in the ServiceRequest example (refused admission).",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -3117,6 +3103,20 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "name" : "Triage Priority ValueSet (example)",
         "description" : "Example ValueSet capturing triage priorities.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/organization-uppgh"
+        },
+        "name" : "UP Philippine General Hospital (UP-PGH)",
+        "description" : "Hospital referenced in the ServiceRequest example (refused admission).",
+        "exampleBoolean" : true
       },
       {
         "extension" : [

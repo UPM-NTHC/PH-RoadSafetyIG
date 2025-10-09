@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-09T07:33:25+00:00"/>
+  <date value="2025-10-09T07:37:26+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -2152,17 +2152,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/organization-stjaylords"/>
-      </reference>
-      <name value="St. Jaylord's Medical Center"/>
-      <description value="Hospital referenced in the ServiceRequest example (refused admission)."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -2257,6 +2246,17 @@
       <name value="Triage Priority ValueSet (example)"/>
       <description value="Example ValueSet capturing triage priorities."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-uppgh"/>
+      </reference>
+      <name value="UP Philippine General Hospital (UP-PGH)"/>
+      <description value="Hospital referenced in the ServiceRequest example (refused admission)."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

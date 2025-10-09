@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-09T07:33:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T07:37:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -3626,24 +3626,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Organization"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/organization-stjaylords> ;
-         fhir:reference [ fhir:v "Organization/organization-stjaylords" ]
-       ] ;
-       fhir:name [ fhir:v "St. Jaylord's Medical Center" ] ;
-       fhir:description [ fhir:v "Hospital referenced in the ServiceRequest example (refused admission)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -3798,6 +3780,24 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/organization-uppgh> ;
+         fhir:reference [ fhir:v "Organization/organization-uppgh" ]
+       ] ;
+       fhir:name [ fhir:v "UP Philippine General Hospital (UP-PGH)" ] ;
+       fhir:description [ fhir:v "Hospital referenced in the ServiceRequest example (refused admission)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
