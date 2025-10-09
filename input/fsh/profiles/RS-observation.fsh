@@ -349,57 +349,62 @@ vital signs, Glasgow Coma Scale, and other clinical or scene observations relate
 * component[External_BitesStings].code.text = "Bites/stings"
 * component[External_BitesStings].valueBoolean 0..1
 * component[External_BitesStings_Specify].code.text = "Specify animal/insect"
-* component[External_BitesStings_Specify].valueCodeableConcept 0..*
+* component[External_BitesStings_Specify].valueCodeableConcept 0..1
 
 // Burns
-* component[External_Burns].code.text = "Burns"
+* component[External_Burns].code = $SCT#125666000 "Burn (disorder)"
 * component[External_Burns].valueBoolean 0..1
-* component[External_Burns_Specify].code.text = "Burns - Specify"
-* component[External_Burns_Specify].valueCodeableConcept 0..*
+
+* component[External_Burns_Specify].code = $SCT#88999006 "Heat (physical force)"
+* component[External_Burns_Specify].valueCodeableConcept 0..1
 * component[External_Burns_OtherText].code.text = "Burns - Others, specify"
-* component[External_Burns_OtherText].valueString 0..*
+* component[External_Burns_OtherText].valueString 0..1
 
 // Chemical/Substance
 * component[External_Chemical].code.text = "Chemical/substance"
 * component[External_Chemical].valueBoolean 0..1
 * component[External_Chemical_Specify].code.text = "Chemical/substance, specify"
-* component[External_Chemical_Specify].valueCodeableConcept 0..*
+* component[External_Chemical_Specify].valueCodeableConcept 0..1
 
 // Contact with sharp objects
 * component[External_ContactSharp].code.text = "Contact with sharp objects"
 * component[External_ContactSharp].valueBoolean 0..1
 * component[External_ContactSharp_Specify].code.text = "Contact with sharp objects, specify"
-* component[External_ContactSharp_Specify].valueCodeableConcept 0..*
+* component[External_ContactSharp_Specify].valueCodeableConcept 0..1
 
 // Drowning
-* component[External_Drowning].code.text = "Drowning"
+* component[External_Drowning].code = $SCT#40947009 "Drowning (event)"
 * component[External_Drowning].valueBoolean 0..1
-* component[External_Drowning_Type].code.text = "Drowning - Type/Body of Water"
-* component[External_Drowning_Type].valueCodeableConcept 0..*
+* component[External_Drowning_Type].code = $SCT#225742004 "Sea (environment)"
+* component[External_Drowning_Type].valueCodeableConcept 0..1
 * component[External_Drowning_OtherText].code.text = "Drowning - Others, specify"
-* component[External_Drowning_OtherText].valueString 0..*
+* component[External_Drowning_OtherText].valueString 0..1
 
-// Exposure to forces of nature
+// Exposure to forces of nature / physical agents (map known agents)
 * component[External_ExposureForces].code.text = "Exposure to forces of nature"
 * component[External_ExposureForces].valueBoolean 0..1
+* component[External_ExposureForces].valueCodeableConcept 0..1 
+* component[External_ExposureForces].valueCodeableConcept from ExternalCauseVS (preferred)
+// common agent codes for burns/exposure: heat, fire, electricity, friction
+// NOTE: The following lines referenced non-existent sub-elements. Keeping as comments; use dedicated slices below instead.
 
 // Fall
-* component[External_Fall].code.text = "Fall"
+* component[External_Fall].code = $SCT#1912002 "Fall (event)"
 * component[External_Fall].valueBoolean 0..1
 * component[External_Fall_Specify].code.text = "Fall - specify location/type"
-* component[External_Fall_Specify].valueCodeableConcept 0..*
+* component[External_Fall_Specify].valueCodeableConcept 0..1
 
 // Firecracker
 * component[External_Firecracker].code.text = "Firecracker"
 * component[External_Firecracker].valueBoolean 0..1
 * component[External_Firecracker_Specify].code.text = "Firecracker - specify"
-* component[External_Firecracker_Specify].valueCodeableConcept 0..*
+* component[External_Firecracker_Specify].valueCodeableConcept 0..1
 
 // Gunshot
 * component[External_Gunshot].code.text = "Gunshot"
 * component[External_Gunshot].valueBoolean 0..1
 * component[External_Gunshot_Specify].code.text = "Gunshot - specify weapon"
-* component[External_Gunshot_Specify].valueCodeableConcept 0..*
+* component[External_Gunshot_Specify].valueCodeableConcept 0..1
 
 // Hanging/Strangulation
 * component[External_Hanging].code.text = "Hanging/Strangulation"
@@ -414,11 +419,97 @@ vital signs, Glasgow Coma Scale, and other clinical or scene observations relate
 * component[External_SexualAssault].valueBoolean 0..1
 
 // Transport / Vehicular Accident (mandatory)
-* component[External_TransportVehicularAccident].code.text = "Transport /Vehicular Accident"
+* component[External_TransportVehicularAccident].code = $SCT#274215009 "Transport accident (event)"
 * component[External_TransportVehicularAccident].valueBoolean 1..1
 
 // Others
 * component[External_Others].code.text = "Others (external cause)"
 * component[External_Others].valueBoolean 0..1
 * component[External_Others_Specify].code.text = "Others, specify"
-* component[External_Others_Specify].valueCodeableConcept 0..*
+* component[External_Others_Specify].valueCodeableConcept 0..1
+
+// Run-report / dispatch timestamps (MDS 1-7)
+* component contains DateReceived 0..1 and TimeReceived 0..1 and TimeEnroute 0..1 and TimeOnScene 0..1 and TimeDeparted 0..1 and TimeHospitalArrival 0..1 and TimeStationArrival 0..1
+* component[DateReceived].code = $LNC#30976-5 "Date received Form" // MDS: LNC#30976-5 available
+* component[DateReceived].valueDateTime 0..1
+* component[TimeReceived].code.text = "Time received" // no explicit LOINC in MDS for time-only; using DateTime pairing
+* component[TimeReceived].valueDateTime 0..1
+* component[TimeEnroute].code.text = "Time enroute (dispatched)"
+* component[TimeEnroute].valueDateTime 0..1
+* component[TimeOnScene].code.text = "Time on scene"
+* component[TimeOnScene].valueDateTime 0..1
+* component[TimeDeparted].code.text = "Time departed scene"
+* component[TimeDeparted].valueDateTime 0..1
+* component[TimeHospitalArrival].code.text = "Time of hospital arrival"
+* component[TimeHospitalArrival].valueDateTime 0..1
+* component[TimeStationArrival].code.text = "Time of emergency station arrival"
+* component[TimeStationArrival].valueDateTime 0..1
+
+// Reported Complaint and Call Source: ensure cardinality per table
+* component[ReportedComplaint] MS
+* component[ReportedComplaint].code.text = "Reported complaint"
+* component[ReportedComplaint].valueString 0..1
+
+* component[CallSource].code.text = "Call source"
+* component[CallSource].valueString 0..1
+
+// Transfer / Referral
+* component contains TransferredFromFacility 0..1 and ReferredFromFacility 0..1
+* component[TransferredFromFacility].code.text = "Transferred from another hospital/facility"
+* component[TransferredFromFacility].valueBoolean 0..1
+// Note: proposed LOINC 77305-1 not present in MDSRoadSafetyVS; placeholder left for code
+* component[ReferredFromFacility].code.text = "Referred by another hospital/facility"
+* component[ReferredFromFacility].valueBoolean 0..1
+
+// Vehicle / patient counts
+* component contains HowManyVehiclesInvolved 0..1 and HowManyPatientsInvolved 0..1
+* component[HowManyVehiclesInvolved].code.text = "How many vehicles involved"
+* component[HowManyVehiclesInvolved].valueInteger 0..1
+* component[HowManyPatientsInvolved].code.text = "How many patients involved"
+* component[HowManyPatientsInvolved].valueInteger 0..1
+
+// CCTV / reconstruction
+* component contains CCTV_Reconstruction 0..1
+* component[CCTV_Reconstruction].code.text = "CCTV video, reconstruction of what happened"
+* component[CCTV_Reconstruction].valueBoolean 0..1
+// If true, recommended to use Observation.derivedFrom or derivedFrom DocumentReference to link video
+
+// Formalize exposure agent slices (instead of comment-only entries)
+* component contains Exposure_Heat 0..1 and Exposure_Fire 0..1 and Exposure_Electricity 0..1 and Exposure_Friction 0..1 and Exposure_Oil 0..1
+* component[Exposure_Heat].code = $SCT#88999006 "Heat (physical force)"
+* component[Exposure_Heat].valueBoolean 0..1
+* component[Exposure_Fire].code = $SCT#80032004 "Fire (physical force)"
+* component[Exposure_Fire].valueBoolean 0..1
+* component[Exposure_Electricity].code = $SCT#18213006 "Electricity (physical force)"
+* component[Exposure_Electricity].valueBoolean 0..1
+* component[Exposure_Friction].code = $SCT#263762005 "Friction (physical force)"
+* component[Exposure_Friction].valueBoolean 0..1
+* component[Exposure_Oil].code = $SCT#21847005 "Oil (substance)"
+* component[Exposure_Oil].valueBoolean 0..1
+
+// Mode of transport - others specify (declare slice)
+* component contains ModeOfTransport_Other 0..1
+* component[ModeOfTransport_Other].code.text = "Mode of transport - Others, specify"
+* component[ModeOfTransport_Other].valueString 0..1
+
+// PlaceOfOccurrence companion specify fields (declare slices)
+* component contains PlaceOfOccurrence_WorkplaceName 0..1 and PlaceOfOccurrence_Other 0..1
+* component[PlaceOfOccurrence_WorkplaceName].code.text = "Place of occurrence - Workplace, specify"
+* component[PlaceOfOccurrence_WorkplaceName].valueString 0..1
+* component[PlaceOfOccurrence_Other].code.text = "Place of occurrence - Others, specify"
+* component[PlaceOfOccurrence_Other].valueString 0..1
+
+// Activity at time of incident - others specify (declare slice)
+* component contains ActivityAtIncident_Other 0..1
+* component[ActivityAtIncident_Other].code.text = "Activity at incident - Others, specify"
+* component[ActivityAtIncident_Other].valueString 0..1
+
+// Other risk factors - others specify (declare slice)
+* component contains OtherRiskFactors_Other 0..1
+* component[OtherRiskFactors_Other].code.text = "Other risk factors - Others, specify"
+* component[OtherRiskFactors_Other].valueString 0..1
+
+// Remarks (transport/handover) (declare slice)
+* component contains Remarks 0..*
+* component[Remarks].code.text = "Remarks (transport/handover)"
+* component[Remarks].valueString 0..1
