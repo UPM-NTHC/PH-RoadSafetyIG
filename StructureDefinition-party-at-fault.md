@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-party-at-fault.csv),
   "name" : "PartyAtFault",
   "title" : "Party at Fault",
   "status" : "draft",
-  "date" : "2025-10-09T08:41:35+00:00",
+  "date" : "2025-10-09T09:07:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

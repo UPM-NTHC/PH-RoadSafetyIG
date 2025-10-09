@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-HealthcareService
   "name" : "RSHealthcareService",
   "title" : "Hospital Available",
   "status" : "draft",
-  "date" : "2025-10-09T08:41:35+00:00",
+  "date" : "2025-10-09T09:07:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

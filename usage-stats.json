@@ -335,14 +335,16 @@
     }
   ],
   "profiles": {
-    "Composition": [
+    "AllergyIntolerance": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/CompositionFacility",
-        "title": "Composition - Facility Report"
-      },
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Allergyintolerance",
+        "title": "Road Safety AllergyIntolerance"
+      }
+    ],
+    "Claim": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/CompositionRunReport",
-        "title": "Composition - Run Report"
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Claim",
+        "title": "Road Safety Claim"
       }
     ],
     "Condition": [
@@ -363,36 +365,6 @@
         "title": "Road Safety Encounter"
       }
     ],
-    "Bundle": [
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RunReportBundle",
-        "title": "Run Report Bundle (prescribed)"
-      }
-    ],
-    "Location": [
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/LocationIncident",
-        "title": "Location - Incident / Scene"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation",
-        "title": "Injury Observation"
-      }
-    ],
-    "AllergyIntolerance": [
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Allergyintolerance",
-        "title": "Road Safety AllergyIntolerance"
-      }
-    ],
-    "Claim": [
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Claim",
-        "title": "Road Safety Claim"
-      }
-    ],
     "HealthcareService": [
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-HealthcareService",
@@ -403,6 +375,12 @@
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Medicationstatement",
         "title": "Road Safety MedicationStatement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation",
+        "title": "Injury Observation"
       }
     ],
     "Patient": [
@@ -430,14 +408,6 @@
       }
     ],
     "Task": [
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/TaskDelayReporting",
-        "title": "Task - Delay Reporting"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/TaskRoadSafety",
-        "title": "Road Safety Task"
-      },
       {
         "url": "urn://example.com.ph/StructureDefinition/rs-task",
         "title": "Road Safety Task"

@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-09T08:41:35+00:00"/>
+  <date value="2025-10-09T09:07:51+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -617,169 +617,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CompositionFacility"/>
-      </reference>
-      <name value="Composition - Facility Report"/>
-      <description value="Composition for facility/ONEISS navigation, structured into coded sections derived from the Road Safety MDS (ED vitals, conditions, outcome, documents, tasks). Enables IG UIs to present a consistent outline."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CompositionRunReport"/>
-      </reference>
-      <name value="Composition - Run Report"/>
-      <description value="Composition for EMS Run Report navigation, structured into coded sections derived from the Road Safety MDS (triage, vitals, counts, post‑crash, documents, tasks). Enables IG UIs to present a consistent outline."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConditionICD10ExternalCause"/>
-      </reference>
-      <name value="Condition - ICD-10 External Cause"/>
-      <description value="ONEISS: ICD-10 external cause codes (V01–Y36 etc.)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConditionICD10NatureOfInjury"/>
-      </reference>
-      <name value="Condition - ICD-10 Nature of Injury"/>
-      <description value="ONEISS: ICD-10 nature of injury codes (S00–T98)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConditionInitialImpression"/>
-      </reference>
-      <name value="Condition - Initial Impression"/>
-      <description value="ONEISS: Initial impression on patient condition."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConditionProblem"/>
-      </reference>
-      <name value="Condition - Problem / Chief Complaint"/>
-      <description value="MDS89: Problem (chief complaint as code/text)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DispositionVS"/>
-      </reference>
-      <name value="Disposition values (sample)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DocumentFormatVS"/>
-      </reference>
-      <name value="Document formats (sample)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferenceCauseOfCrash"/>
-      </reference>
-      <name value="DocumentReference - Cause of Road Crash"/>
-      <description value="MDS115: Post-crash report reference (URL preferred)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferenceFacilityReport"/>
-      </reference>
-      <name value="DocumentReference - ONEISS Facility Report"/>
-      <description value="DocumentReference profile for the ONEISS facility report (scan or link)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferenceOneissRunForm"/>
-      </reference>
-      <name value="DocumentReference - ONEISS Run Form"/>
-      <description value="Run Report scanned form or structured document (MDS5/MDS4 workflow docs)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferencePartyAtFault"/>
-      </reference>
-      <name value="DocumentReference - Party at Fault"/>
-      <description value="MDS221: Party-at-fault narrative/report."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferenceRoadNetworkShapes"/>
-      </reference>
-      <name value="DocumentReference - Road Network Shape Files"/>
-      <description value="MDS225: Geospatial resources references."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferenceIncidentManagement"/>
-      </reference>
-      <name value="DocumentReference - Traffic Incident Management"/>
-      <description value="MDS224: Incident management logs/evidence."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DocumentReferenceVehicleCondition"/>
-      </reference>
-      <name value="DocumentReference - Vehicle Condition"/>
-      <description value="MDS226: Vehicle condition documents; alternative structured observations may exist."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -787,28 +624,6 @@
       </reference>
       <name value="Emergency Department Availability"/>
       <description value="Indicates if the emergency department is currently accepting patients."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/EncounterFacility"/>
-      </reference>
-      <name value="Encounter - Facility"/>
-      <description value="Encounter profile for facility visits (ONEISS). Contains hospital identifiers and hospitalization.dischargeDisposition."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/EncounterTransportRunReport"/>
-      </reference>
-      <name value="Encounter - Transport / Run Report"/>
-      <description value="Encounter for EMS transport/run-report. Incorporates MDS: Incident number (req), Type/class, Received-by participant role."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -852,27 +667,6 @@
       </reference>
       <name value="External Cause ValueSet (example)"/>
       <description value="Illustrative set of codes representing external causes of injury."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/FacilityBundle"/>
-      </reference>
-      <name value="Facility Bundle (prescribed)"/>
-      <description value="Bundle profile that prescribes the required slices/resources for facility (ONEISS) submissions."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/RSFacilitySectionCS"/>
-      </reference>
-      <name value="Facility Composition Sections"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -943,26 +737,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ICD10ExternalCauseVS"/>
-      </reference>
-      <name value="ICD-10 External Cause (sample)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ICD10NatureOfInjuryVS"/>
-      </reference>
-      <name value="ICD-10 Nature of Injury (sample)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="NamingSystem"/>
       </extension>
       <reference>
@@ -985,127 +759,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/LocationIncident"/>
-      </reference>
-      <name value="Location - Incident / Scene"/>
-      <description value="Location profile for crash/incident scene with optional geocoordinates and free-text reference to road network shapefiles or external resources."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-AVPU-VS"/>
-      </reference>
-      <name value="MDS AVPU Level of Consciousness"/>
-      <description value="AVPU scale coded in SNOMED CT."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-BreathSounds-VS"/>
-      </reference>
-      <name value="MDS Breath Sounds"/>
-      <description value="Breath sounds by auscultation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-ConditionOfPatient-VS"/>
-      </reference>
-      <name value="MDS Condition of Patient"/>
-      <description value="Overall condition assertion (Alive/Dead)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-Cyanosis-VS"/>
-      </reference>
-      <name value="MDS Cyanosis"/>
-      <description value="Cyanosis presence/type."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-DrowningWaterBody-VS"/>
-      </reference>
-      <name value="MDS Drowning Body of Water"/>
-      <description value="Type/body of water involved in drowning."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-GCSEyes-VS"/>
-      </reference>
-      <name value="MDS GCS Eyes"/>
-      <description value="GCS Eye opening (LOINC answers)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-GCSMotor-VS"/>
-      </reference>
-      <name value="MDS GCS Motor"/>
-      <description value="GCS Motor response (LOINC answers)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-GCSVerbal-VS"/>
-      </reference>
-      <name value="MDS GCS Verbal"/>
-      <description value="GCS Verbal response (LOINC answers)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-InjuryIntent-VS"/>
-      </reference>
-      <name value="MDS Injury Intent"/>
-      <description value="Intent of injury."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-InjuryType-VS"/>
-      </reference>
-      <name value="MDS Injury Types"/>
-      <description value="Common injury morphology/types."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
@@ -1113,94 +766,6 @@
       </reference>
       <name value="MDS Logical Model to FHIR Mapping"/>
       <description value="Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-ModeOfTransport-VS"/>
-      </reference>
-      <name value="MDS Mode of Transport to Facility"/>
-      <description value="Transport mode answer list (LOINC answers)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-Outcome-VS"/>
-      </reference>
-      <name value="MDS Outcome"/>
-      <description value="Outcome at discharge/release."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-PulseQuality-VS"/>
-      </reference>
-      <name value="MDS Pulse Quality"/>
-      <description value="Pulse quality (normal/thready/bounding)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-PulseRhythm-VS"/>
-      </reference>
-      <name value="MDS Pulse Rhythm"/>
-      <description value="Pulse rhythm (regular/irregular)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-Pupils-VS"/>
-      </reference>
-      <name value="MDS Pupils"/>
-      <description value="Pupil findings."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-RespiratoryRhythm-VS"/>
-      </reference>
-      <name value="MDS Respiratory Rhythm"/>
-      <description value="Respiratory rhythm findings."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDS-StatusOnArrival-VS"/>
-      </reference>
-      <name value="MDS Status on Arrival"/>
-      <description value="Status upon reaching facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MDSRoadSafetyVS"/>
-      </reference>
-      <name value="MDSRoadSafety ValueSet"/>
-      <description value="Aggregated ValueSet of coded options from the MDS Road Safety dataset, prioritizing SNOMED CT first, then LOINC. One code per sheet row is retained based on this priority."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1265,347 +830,6 @@
       </reference>
       <name value="Nature of Injury ValueSet (example)"/>
       <description value="Demonstration ValueSet capturing the nature of injury."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationBloodPressure"/>
-      </reference>
-      <name value="Observation - Blood Pressure"/>
-      <description value="MDS76-77: Vital sign at scene (BP panel with systolic/diastolic)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationCCTVAvailable"/>
-      </reference>
-      <name value="Observation - CCTV Available"/>
-      <description value="MDS227: CCTV video/reconstruction available."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationCollisionType"/>
-      </reference>
-      <name value="Observation - Collision Type"/>
-      <description value="MDS218: Collision type (Must Support)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationConditionOfPatient"/>
-      </reference>
-      <name value="Observation - Condition of Patient"/>
-      <description value="MDS108: Alive/Dead or other condition upon assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationCyanosis"/>
-      </reference>
-      <name value="Observation - Cyanosis"/>
-      <description value="MDS81: Cyanosis presence/type."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationDateReceived"/>
-      </reference>
-      <name value="Observation - Date Received"/>
-      <description value="MDS62: Date received; single anchor dateTime."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationEDBloodPressure"/>
-      </reference>
-      <name value="Observation - ED Blood Pressure"/>
-      <description value="ONEISS: Vital sign at facility (BP panel)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationEDHeartRate"/>
-      </reference>
-      <name value="Observation - ED Heart Rate"/>
-      <description value="ONEISS: Vital sign at facility (HR)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationExtentOfInjury"/>
-      </reference>
-      <name value="Observation - Extent of Injury"/>
-      <description value="MDS109: Extent/severity estimate/category (free text/category)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationExternalCause"/>
-      </reference>
-      <name value="Observation - External Cause (Generic)"/>
-      <description value="Generic pattern for boolean flag with optional coded specifics for external causes (bites, burns, drowning, etc.)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationFacility"/>
-      </reference>
-      <name value="Observation - Facility / ONEISS"/>
-      <description value="Observation profile for facility-collected vitals and clinical observations for ONEISS reporting. Intended to be derived from PH‑CORE Observation profile when available."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationGCS"/>
-      </reference>
-      <name value="Observation - Glasgow Coma Scale"/>
-      <description value="MDS83-86: GCS modeled as components (eyes, verbal, motor) with optional total integer."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationHeartRate"/>
-      </reference>
-      <name value="Observation - Heart Rate"/>
-      <description value="MDS73: Vital sign at scene (HR)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationLevelOfConsciousness"/>
-      </reference>
-      <name value="Observation - Level of Consciousness"/>
-      <description value="MDS79: LOC; bind to AVPU/GCS category where available."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationModeOfTransport"/>
-      </reference>
-      <name value="Observation - Mode of Transport to Facility"/>
-      <description value="MDS118/119: Mode of transport to hospital/facility with optional free-text."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationOutcomeAtDischarge"/>
-      </reference>
-      <name value="Observation - Outcome at Discharge"/>
-      <description value="ONEISS: Outcome/condition at discharge (MDS53/58)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationPatientsInvolved"/>
-      </reference>
-      <name value="Observation - Patients Involved Count"/>
-      <description value="MDS157: How many patients involved (integer)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationPupils"/>
-      </reference>
-      <name value="Observation - Pupils"/>
-      <description value="MDS80: Pupils size/reactivity summary."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationRespiratoryRate"/>
-      </reference>
-      <name value="Observation - Respiratory Rate"/>
-      <description value="MDS70: Respiratory rate with MS, optional rhythm/breath sounds captured elsewhere."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationScene"/>
-      </reference>
-      <name value="Observation - Scene / Base"/>
-      <description value="Base for scene/transport observations in the Run Report derived from MDS. Provides common elements and Must Support flags where applicable."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationStatusOnArrival"/>
-      </reference>
-      <name value="Observation - Status on Arrival"/>
-      <description value="MDS116/117: Status upon reaching facility (e.g., conscious/unconscious)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTemperature"/>
-      </reference>
-      <name value="Observation - Temperature"/>
-      <description value="MDS78: Temperature with MS; method/site optional in notes or components."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTimeDeparted"/>
-      </reference>
-      <name value="Observation - Time Departed Scene"/>
-      <description value="MDS66: Depart scene timestamp."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTimeEnroute"/>
-      </reference>
-      <name value="Observation - Time Enroute"/>
-      <description value="MDS64: Unit dispatched/enroute timestamp."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTimeHospitalArrival"/>
-      </reference>
-      <name value="Observation - Time Hospital Arrival"/>
-      <description value="MDS67: Arrival at hospital timestamp."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTimeOnScene"/>
-      </reference>
-      <name value="Observation - Time On Scene"/>
-      <description value="MDS65: Arrival on scene timestamp."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTimeReceived"/>
-      </reference>
-      <name value="Observation - Time Received"/>
-      <description value="MDS63: Use single dateTime; stored as valueDateTime."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTimeStationArrival"/>
-      </reference>
-      <name value="Observation - Time Station Arrival"/>
-      <description value="MDS68: Station return/available timestamp."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTransportVehicularFlag"/>
-      </reference>
-      <name value="Observation - Transport/Vehicular Accident Flag"/>
-      <description value="MDS41: Required flag for RS reporting."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationTriageCategory"/>
-      </reference>
-      <name value="Observation - Triage Category (Scene)"/>
-      <description value="MDS111: Priority to Scene (Triage)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationVehiclesInvolved"/>
-      </reference>
-      <name value="Observation - Vehicles Involved Count"/>
-      <description value="MDS156: How many vehicles involved (integer)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1892,26 +1116,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/RSCompositionTypeCS-Facility"/>
-      </reference>
-      <name value="Road Safety Composition Type (Facility)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/RSCompositionTypeCS-Run"/>
-      </reference>
-      <name value="Road Safety Composition Type (Run)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1919,17 +1123,6 @@
       </reference>
       <name value="Road Safety Condition"/>
       <description value="A Condition for the Safety of the Roads in the Philippines."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConditionRoadSafety"/>
-      </reference>
-      <name value="Road Safety Condition"/>
-      <description value="Condition profile for coding diagnoses, ICD-10 nature of injury, and external cause mappings required by the Road Safety MDS."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2077,17 +1270,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TaskRoadSafety"/>
-      </reference>
-      <name value="Road Safety Task"/>
-      <description value="Task profile for workflow events related to report submission, coordination with receiving facilities, and delays (executionPeriod, notes) in the Road Safety MDS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Task"/>
       </extension>
       <reference>
@@ -2121,27 +1303,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/RunReportBundle"/>
-      </reference>
-      <name value="Run Report Bundle (prescribed)"/>
-      <description value="Bundle profile that prescribes required slices/resources for EMS run reports."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/RSRunSectionCS"/>
-      </reference>
-      <name value="Run Report Composition Sections"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -2159,17 +1320,6 @@
       </reference>
       <name value="Supplies Used"/>
       <description value="Records any devices or medications used during the procedure."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TaskDelayReporting"/>
-      </reference>
-      <name value="Task - Delay Reporting"/>
-      <description value="MDS9-10: Sources of delays, Duration of delay."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2214,16 +1364,6 @@
       </reference>
       <name value="Transport Details"/>
       <description value="Details about mode of transport, vehicles involved, positions."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/TriageCategoryVS"/>
-      </reference>
-      <name value="Triage categories (sample)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

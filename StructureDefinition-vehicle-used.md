@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-vehicle-used.csv), [
   "title" : "Vehicle Used",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-09T08:41:35+00:00",
+  "date" : "2025-10-09T09:07:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

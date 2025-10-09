@@ -76,7 +76,7 @@ Juan Dela Cruz was reported as a **road traffic crash patient** and this record 
         {
           "url" : "urn://example.com/ph-core/fhir/StructureDefinition/barangay",
           "valueCoding" : {
-            "system" : "https://psgc.gitlab.io/psgc",
+            "system" : "urn://example.com/ph-core/fhir/CodeSystem/PSGC",
             "code" : "1380100001",
             "display" : "Barangay 1"
           }
@@ -84,7 +84,7 @@ Juan Dela Cruz was reported as a **road traffic crash patient** and this record 
         {
           "url" : "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality",
           "valueCoding" : {
-            "system" : "https://psgc.gitlab.io/psgc",
+            "system" : "urn://example.com/ph-core/fhir/CodeSystem/PSGC",
             "code" : "1380200000",
             "display" : "City of Las Piñas"
           }
@@ -92,7 +92,7 @@ Juan Dela Cruz was reported as a **road traffic crash patient** and this record 
         {
           "url" : "urn://example.com/ph-core/fhir/StructureDefinition/province",
           "valueCoding" : {
-            "system" : "https://psgc.gitlab.io/psgc",
+            "system" : "urn://example.com/ph-core/fhir/CodeSystem/PSGC",
             "code" : "0402100000",
             "display" : "Cavite"
           }
@@ -110,7 +110,7 @@ Juan Dela Cruz was reported as a **road traffic crash patient** and this record 
         {
           "url" : "urn://example.com/ph-core/fhir/StructureDefinition/barangay",
           "valueCoding" : {
-            "system" : "https://psgc.gitlab.io/psgc",
+            "system" : "urn://example.com/ph-core/fhir/CodeSystem/PSGC",
             "code" : "1389900001",
             "display" : "Barangay 701"
           }
@@ -118,7 +118,7 @@ Juan Dela Cruz was reported as a **road traffic crash patient** and this record 
         {
           "url" : "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality",
           "valueCoding" : {
-            "system" : "https://psgc.gitlab.io/psgc",
+            "system" : "urn://example.com/ph-core/fhir/CodeSystem/PSGC",
             "code" : "1339000000",
             "display" : "City of Manila"
           }
@@ -126,7 +126,7 @@ Juan Dela Cruz was reported as a **road traffic crash patient** and this record 
         {
           "url" : "urn://example.com/ph-core/fhir/StructureDefinition/province",
           "valueCoding" : {
-            "system" : "https://psgc.gitlab.io/psgc",
+            "system" : "urn://example.com/ph-core/fhir/CodeSystem/PSGC",
             "code" : "1339000000",
             "display" : "Metro Manila"
           }

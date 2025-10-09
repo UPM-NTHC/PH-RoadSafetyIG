@@ -13,19 +13,6 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
-      "url" : "http://hl7.org/fhir/sid/icd-10",
-      "version" : "2.1.1",
-      "status" : "retired",
-      "name" : "Icd10",
-      "title" : "ICD-10",
-      "description" : "International Classification of Diseases revision 10 (ICD 10)",
-      "oids" : ["2.16.840.1.113883.6.3"],
-      "uses" : {
-      },
-      "ValueSet-ICD10ExternalCauseVS.html" : "ICD-10 External Cause (sample)",
-      "ValueSet-ICD10NatureOfInjuryVS.html" : "ICD-10 Nature of Injury (sample)"
-    },
-    {
       "url" : "http://hl7.org/fhir/task-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -38,22 +25,6 @@
       "http://hl7.org/fhir/R4/valueset-task-status.html" : "TaskStatus"
     },
     {
-      "url" : "http://loinc.org",
-      "version" : "3.1.0",
-      "status" : "active",
-      "name" : "LOINC",
-      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
-      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
-      "oids" : ["2.16.840.1.113883.6.1"],
-      "uses" : {
-      },
-      "ValueSet-MDS-GCSMotor-VS.html" : "MDS GCS Motor",
-      "ValueSet-MDS-GCSVerbal-VS.html" : "MDS GCS Verbal",
-      "ValueSet-MDS-GCSEyes-VS.html" : "MDS GCS Eyes",
-      "ValueSet-MDS-ModeOfTransport-VS.html" : "MDS Mode of Transport to Facility",
-      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet"
-    },
-    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -63,26 +34,12 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
       "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
-      "ValueSet-MDS-ConditionOfPatient-VS.html" : "MDS Condition of Patient",
-      "ValueSet-MDS-BreathSounds-VS.html" : "MDS Breath Sounds",
-      "ValueSet-MDS-PulseRhythm-VS.html" : "MDS Pulse Rhythm",
-      "ValueSet-MDS-Pupils-VS.html" : "MDS Pupils",
-      "ValueSet-MDS-InjuryIntent-VS.html" : "MDS Injury Intent",
-      "ValueSet-MDS-Cyanosis-VS.html" : "MDS Cyanosis",
       "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
-      "ValueSet-MDS-StatusOnArrival-VS.html" : "MDS Status on Arrival",
-      "ValueSet-MDS-DrowningWaterBody-VS.html" : "MDS Drowning Body of Water",
-      "ValueSet-MDS-PulseQuality-VS.html" : "MDS Pulse Quality",
-      "ValueSet-MDSRoadSafetyVS.html" : "MDSRoadSafety ValueSet",
-      "ValueSet-coordination.html" : "Transport Coordination Codes",
-      "ValueSet-MDS-Outcome-VS.html" : "MDS Outcome",
+      "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
       "ValueSet-first-aid.html" : "First Aid Codes",
-      "ValueSet-MDS-InjuryType-VS.html" : "MDS Injury Types",
-      "ValueSet-MDS-AVPU-VS.html" : "MDS AVPU Level of Consciousness",
-      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes",
-      "ValueSet-MDS-RespiratoryRhythm-VS.html" : "MDS Respiratory Rhythm"
+      "ValueSet-coordination.html" : "Transport Coordination Codes",
+      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
