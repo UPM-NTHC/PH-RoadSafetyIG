@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-08T02:57:10+00:00"/>
+  <date value="2025-10-09T04:26:27+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -466,17 +466,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/Example-RS-Scene-Location"/>
-      </reference>
-      <name value="Accident Scene Location"/>
-      <description value="Road traffic accident scene for the encounter."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -571,28 +560,6 @@
       <name value="Cause of Road Crash Incident"/>
       <description value="Cause or contributing factor of the road crash."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/hospital-example"/>
-      </reference>
-      <name value="City General Hospital"/>
-      <description value="Receiving medical facility for the road safety encounter."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/Example-RS-Hospital-Location"/>
-      </reference>
-      <name value="City General Hospital - Emergency Department"/>
-      <description value="ED Location involved in the encounter."/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
