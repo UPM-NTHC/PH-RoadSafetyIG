@@ -122,7 +122,7 @@ IF "%userChoice%"=="0" EXIT /B
 
 :debugjekyll
     echo Running Jekyll build...
-    jekyll build -s temp/pages -d output --verbose --trace 
+    jekyll build -s temp/pages -d output
 GOTO end
 
 
