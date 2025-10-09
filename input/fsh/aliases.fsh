@@ -1,3 +1,3 @@
-Alias: $sct = http://snomed.info/sct
-Alias: $loinc = http://loinc.org
+Alias: $SCT = http://snomed.info/sct
+Alias: $LNC = http://loinc.org
 

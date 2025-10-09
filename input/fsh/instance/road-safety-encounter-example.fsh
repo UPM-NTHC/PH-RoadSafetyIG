@@ -18,7 +18,7 @@ Description: "Example of a road safety hospital encounter with identifiers, part
 * period.start = "2025-09-15T09:45:00+08:00"
 
 // Reason
-* reasonCode = http://snomed.info/sct#22298006 "Motor vehicle accident"
+* reasonCode = $SCT#22298006 "Motor vehicle accident"
 
 // Hospitalization
 * hospitalization.dischargeDisposition = http://terminology.hl7.org/CodeSystem/discharge-disposition#home "Discharged to home"
@@ -45,7 +45,7 @@ Description: "Example of a road safety hospital encounter with identifiers, part
 * location[facility][0].period.start = "2025-09-15T09:50:00+08:00"
 
 // Extension: Vehicle Used
-* extension[VehicleUsed].valueCodeableConcept = http://snomed.info/sct#7771000 "Ambulance"
+* extension[VehicleUsed].valueCodeableConcept = $SCT#7771000 "Ambulance"
 
 // Narrative
 * text.status = #generated

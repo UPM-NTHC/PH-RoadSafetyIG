@@ -179,10 +179,10 @@ class "RSObservation" {
   status : — [1..1]
   category : — [0..*]
   code : — [1..1]
-  subject : — [1..1]
-  encounter : — [0..1]
+  subject : Reference(RSPatient)
+  encounter : Reference(RSEncounter)
   effective[x] : — [0..1]
-  performer : — [0..*]
+  performer : Reference(PHCorePractitioner)
   component : — [0..*]
   component[DateTimeComponent].code : — [1..1]
   component[DateTimeComponent].value[x] : — [1..1]
@@ -192,16 +192,64 @@ class "RSObservation" {
   component[HeartRate].valueQuantity : — [0..1]
   component[RespiratoryRate].valueQuantity : — [0..1]
   component[Temperature].valueQuantity : — [0..1]
-  component[GCS_Eyes].valueInteger : — [0..1]
-  component[GCS_Verbal].valueInteger : — [0..1]
-  component[GCS_Motor].valueInteger : — [0..1]
+  component[RespiratoryRhythm].valueCodeableConcept : — [0..1]
+  component[BreathSounds].valueCodeableConcept : — [0..1]
+  component[PulseRhythm].valueCodeableConcept : — [0..1]
+  component[PulseQuality].valueCodeableConcept : — [0..1]
+  component[Pupils].code : — [1..1]
+  component[Pupils].valueCodeableConcept : — [0..1]
+  component[Cyanosis].code : — [1..1]
+  component[Cyanosis].valueCodeableConcept : — [0..1]
+  component[GCS_Eyes].valueCodeableConcept : — [0..1]
+  component[GCS_Verbal].valueCodeableConcept : — [0..1]
+  component[GCS_Motor].valueCodeableConcept : — [0..1]
   component[GCS_Total].valueInteger : — [0..1]
+  component[AVPU].valueCodeableConcept : — [0..1]
   bodySite : — [0..1]
   note : — [0..*]
-  component[ExternalCause].valueCodeableConcept : — [0..1]
+  component[ExternalCause].code : — [1..1]
+  component[ExternalCause].value[x] : — [0..1]
+  component[InjuryIntent].code : — [1..1]
+  component[InjuryIntent].valueCodeableConcept : — [0..1]
+  component[DrowningWaterBody].code : — [1..1]
+  component[DrowningWaterBody].valueCodeableConcept : — [0..1]
+  component[Outcome].code : — [1..1]
+  component[ConditionOfPatient].code : — [1..1]
+  component[StatusOnArrival].code : — [1..1]
+  component[TriagePriority].code : — [1..1]
   component[CollisionType].code : — [1..1]
   component[PlaceOfOccurrence].code : — [1..1]
   component[ActivityAtIncident].code : — [1..1]
+  component[TransportVehicularAccidentFlag].code : — [1..1]
+  component[TransportVehicularAccidentFlag].valueBoolean : — [0..1]
+  component[InjuryDateTime].code : — [1..1]
+  component[InjuryDateTime].valueDateTime : — [0..1]
+  component[PresenceOfTrafficInvestigator].code : — [1..1]
+  component[PresenceOfTrafficInvestigator].valueBoolean : — [0..1]
+  component[UrgencyLevel].code : — [1..1]
+  component[UrgencyLevel].valueCodeableConcept : — [0..1]
+  component[CallSource].code : — [1..1]
+  component[CallSource].valueString : — [0..1]
+  component[ReportedComplaint].code : — [1..1]
+  component[ReportedComplaint].valueString : — [0..1]
+  component[MultipleInjuriesFlag].code : — [1..1]
+  component[MultipleInjuriesFlag].valueBoolean : — [0..1]
+  component[ExtentOfInjury].code : — [1..1]
+  component[ExtentOfInjury].valueCodeableConcept : — [0..1]
+  component[CollisionMode].code : — [1..1]
+  component[CollisionMode].valueCodeableConcept : — [0..1]
+  component[PatientsVehicleType].code : — [1..1]
+  component[PatientsVehicleType].valueCodeableConcept : — [0..1]
+  component[OtherVehicleObjectType].code : — [1..1]
+  component[OtherVehicleObjectType].valueCodeableConcept : — [0..1]
+  component[PositionOfPatient].code : — [1..1]
+  component[PositionOfPatient].valueCodeableConcept : — [0..1]
+  component[SafetyAccessories].code : — [1..1]
+  component[SafetyAccessories].valueCodeableConcept : — [0..1]
+  component[OtherRiskFactors].code : — [1..1]
+  component[OtherRiskFactors].valueCodeableConcept : — [0..1]
+  component[BloodAlcoholConcentration].code : — [1..1]
+  component[BloodAlcoholConcentration].valueQuantity : — [0..1]
 }
 class "RSProcedure" {
   subject : Reference(RSPatient)
@@ -248,6 +296,9 @@ class "RSTask" {
 "RSEncounter" --> "PHCoreLocation" : location[facility].location
 "RSHealthcareService" --> "PHCoreLocation" : location
 "RSMedicationStatement" --> "RSPatient" : subject
+"RSObservation" --> "RSPatient" : subject
+"RSObservation" --> "RSEncounter" : encounter
+"RSObservation" --> "PHCorePractitioner" : performer
 "RSPatient" --> "PHCoreOrganization" : managingOrganization
 "RSProcedure" --> "RSPatient" : subject
 "RSProcedure" --> "PHCorePractitioner" : performer.actor

@@ -5,6 +5,6 @@ Description: "Status upon reaching facility (consciousness/dead on arrival) usin
 * ^status = #draft
 * ^url = "http://hl7.org/fhir/ValueSet/PH-RoadSafety-StatusOnArrival"
 
-* include http://snomed.info/sct#271591004 "Fully conscious (finding)"
-* include http://snomed.info/sct#418107008 "Unconscious (finding)"
-* include http://snomed.info/sct#63238001 "Dead on arrival at hospital (finding)"
+* include $SCT#271591004 "Fully conscious (finding)"
+* include $SCT#418107008 "Unconscious (finding)"
+* include $SCT#63238001 "Dead on arrival at hospital (finding)"

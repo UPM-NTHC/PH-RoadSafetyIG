@@ -5,6 +5,6 @@ Description: "Pulse quality using SNOMED CT."
 * ^status = #draft
 * ^url = "http://hl7.org/fhir/ValueSet/PH-RoadSafety-PulseQuality"
 
-* include http://snomed.info/sct#12146004  "Normal pulse (finding)"
-* include http://snomed.info/sct#64661000  "Thready pulse (finding)"
-* include http://snomed.info/sct#271640005 "Bounding pulse (finding)"
+* include $SCT#12146004  "Normal pulse (finding)"
+* include $SCT#64661000  "Thready pulse (finding)"
+* include $SCT#271640005 "Bounding pulse (finding)"
