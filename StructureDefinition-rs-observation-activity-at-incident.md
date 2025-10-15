@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "name" : "RSObsActivityAtIncident",
   "title" : "Road Safety Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
       {
         "id" : "Observation.code.coding.system",
         "path" : "Observation.code.coding.system",
-        "patternUri" : "http://example.com/silph"
+        "patternUri" : "http://snomed.info/sct"
       },
       {
         "id" : "Observation.code.coding.code",

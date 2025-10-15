@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
   "name" : "RSBundleEMS",
   "title" : "Road Safety Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -321,7 +321,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality"
             ]
           }
         ]
@@ -622,6 +626,63 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
             "code" : "Claim",
             "profile" : [
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:observationVehicleUsed",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationVehicleUsed",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:observationVehicleUsed.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-used"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:observationRunReportComments",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationRunReportComments",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:observationRunReportComments.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:observationClinicalRemarks",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationClinicalRemarks",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:observationClinicalRemarks.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks"
             ]
           }
         ]

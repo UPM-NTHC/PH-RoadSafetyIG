@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
   "name" : "RSServiceRequest",
   "title" : "Road Safety ServiceRequest",
   "status" : "draft",
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +116,33 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
         "mustSupport" : true
       },
       {
+        "id" : "ServiceRequest.code",
+        "path" : "ServiceRequest.code",
+        "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "ServiceRequest.code.coding",
+        "path" : "ServiceRequest.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "ServiceRequest.code.coding.system",
+        "path" : "ServiceRequest.code.coding.system",
+        "patternUri" : "http://example.com/silph"
+      },
+      {
+        "id" : "ServiceRequest.code.coding.code",
+        "path" : "ServiceRequest.code.coding.code",
+        "patternCode" : "refusal-to-admit"
+      },
+      {
+        "id" : "ServiceRequest.code.coding.display",
+        "path" : "ServiceRequest.code.coding.display",
+        "patternString" : "Refusal to admit"
+      },
+      {
         "id" : "ServiceRequest.subject",
         "path" : "ServiceRequest.subject",
         "type" : [
@@ -164,6 +191,19 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
         "type" : [
           {
             "code" : "dateTime"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "ServiceRequest.requester",
+        "path" : "ServiceRequest.requester",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
           }
         ],
         "mustSupport" : true

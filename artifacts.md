@@ -35,16 +35,21 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Abrasion](StructureDefinition-rs-observation-abrasion.md) | Abrasion present; with optional site and details. |
 | [Road Safety Observation - Activity at Time of Incident](StructureDefinition-rs-observation-activity-at-incident.md) | Activity of the patient at time of incident; allow text fallback. |
 | [Road Safety Observation - Avulsion](StructureDefinition-rs-observation-avulsion.md) | Avulsion present; with optional site and details. |
+| [Road Safety Observation - Blood Alcohol Concentration](StructureDefinition-rs-observation-blood-alcohol.md) | Blood alcohol concentration. |
 | [Road Safety Observation - Blood Pressure](StructureDefinition-rs-observation-blood-pressure.md) | Blood pressure using component entries for systolic/diastolic. |
 | [Road Safety Observation - Body Temperature](StructureDefinition-rs-observation-body-temperature.md) | Body temperature. |
+| [Road Safety Observation - Breath Sounds](StructureDefinition-rs-observation-breath-sounds.md) | Breath sounds assessment. |
 | [Road Safety Observation - Burn 1st Degree](StructureDefinition-rs-observation-burn-1st.md) | 1st degree burn present; with site and details. |
 | [Road Safety Observation - Burn 2nd Degree](StructureDefinition-rs-observation-burn-2nd.md) | 2nd degree burn present; with site and details. |
 | [Road Safety Observation - Burn 3rd Degree](StructureDefinition-rs-observation-burn-3rd.md) | 3rd degree burn present; with site and details. |
 | [Road Safety Observation - Burn 4th Degree](StructureDefinition-rs-observation-burn-4th.md) | 4th degree burn present; with site and details. |
+| [Road Safety Observation - CCTV Available](StructureDefinition-rs-observation-cctv-available.md) | Availability of CCTV video. |
 | [Road Safety Observation - Call Source](StructureDefinition-rs-observation-call-source.md) | Call source description (free text). |
+| [Road Safety Observation - Clinical Remarks](StructureDefinition-rs-observation-clinical-remarks.md) | Clinical remarks/notes. |
 | [Road Safety Observation - Collision Type](StructureDefinition-rs-observation-collision-type.md) | Collision type (Angle, Head-on, Rear end, Side swipe, etc.). |
 | [Road Safety Observation - Collision vs Non-Collision](StructureDefinition-rs-observation-collision-vs-noncollision.md) | Indicates whether the incident was collision or non-collision. |
 | [Road Safety Observation - Concussion](StructureDefinition-rs-observation-concussion.md) | Concussion present; with site and details. |
+| [Road Safety Observation - Condition of Patient](StructureDefinition-rs-observation-condition-of-patient.md) | Overall condition of patient at assessment. |
 | [Road Safety Observation - Contusion](StructureDefinition-rs-observation-contusion.md) | Contusion present; with site and details. |
 | [Road Safety Observation - Cyanosis](StructureDefinition-rs-observation-cyanosis.md) | Cyanosis assessment. |
 | [Road Safety Observation - Date/Time Received by EMS](StructureDefinition-rs-observation-date-received.md) | Calendar/timestamp the EMS/dispatch received the request. |
@@ -67,6 +72,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Glasgow Coma Scale](StructureDefinition-rs-observation-gcs.md) | GCS with components for eyes, verbal, motor; optional total score as integer. |
 | [Road Safety Observation - How Many Patients Involved](StructureDefinition-rs-observation-how-many-patients.md) | Count of patients involved. |
 | [Road Safety Observation - How Many Vehicles Involved](StructureDefinition-rs-observation-how-many-vehicles.md) | Count of vehicles involved. |
+| [Road Safety Observation - If Alive: Conscious/Unconscious](StructureDefinition-rs-observation-status-on-arrival-alive.md) | If alive on arrival, consciousness detail. |
 | [Road Safety Observation - Injury Intent](StructureDefinition-rs-observation-injury-intent.md) | Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined). |
 | [Road Safety Observation - Level of Consciousness (AVPU)](StructureDefinition-rs-observation-level-of-consciousness.md) | Level of consciousness (e.g., AVPU). |
 | [Road Safety Observation - Mode of Transport to Facility](StructureDefinition-rs-observation-mode-of-transport.md) | Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'. |
@@ -75,16 +81,23 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Other Risk Factors](StructureDefinition-rs-observation-other-risk-factors.md) | Other risk factors at the time of incident; allow text for 'Others'. |
 | [Road Safety Observation - Other Specified Injury](StructureDefinition-rs-observation-other-injury.md) | Other specified injury present; with site and details. |
 | [Road Safety Observation - Other Vehicle/Object Involved](StructureDefinition-rs-observation-other-vehicle.md) | Other vehicle/object type involved; text for 'Others'. |
+| [Road Safety Observation - Outcome at Discharge](StructureDefinition-rs-observation-outcome-discharge.md) | Outcome at discharge. |
+| [Road Safety Observation - Outcome at Release](StructureDefinition-rs-observation-outcome-release.md) | Outcome at release from ER/OPD/RHU. |
 | [Road Safety Observation - Patient's Vehicle](StructureDefinition-rs-observation-patients-vehicle.md) | Type of vehicle used by patient; text for 'Others'. |
 | [Road Safety Observation - Place of Occurrence](StructureDefinition-rs-observation-place-of-occurrence.md) | Place type where injury occurred; name can be carried in note when applicable. |
 | [Road Safety Observation - Position of Patient](StructureDefinition-rs-observation-position-of-patient.md) | Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'. |
 | [Road Safety Observation - Presence of Traffic Investigator](StructureDefinition-rs-observation-traffic-investigator.md) | Boolean presence/absence of traffic investigator. |
 | [Road Safety Observation - Priority Level (Urgency)](StructureDefinition-rs-observation-urgency.md) | System-generated urgency level per CAD/agency rules. |
+| [Road Safety Observation - Pulse Quality](StructureDefinition-rs-observation-pulse-quality.md) | Pulse quality. |
 | [Road Safety Observation - Pulse Rate](StructureDefinition-rs-observation-pulse-rate.md) | Pulse/heart rate in beats/min. |
+| [Road Safety Observation - Pulse Rhythm](StructureDefinition-rs-observation-pulse-rhythm.md) | Pulse rhythm. |
 | [Road Safety Observation - Pupils](StructureDefinition-rs-observation-pupils.md) | Pupil size/reactivity summary. |
 | [Road Safety Observation - Reported Complaint](StructureDefinition-rs-observation-reported-complaint.md) | Free-text reported complaint. |
 | [Road Safety Observation - Respiratory Rate](StructureDefinition-rs-observation-respiratory-rate.md) | Respiratory rate in breaths/min. |
+| [Road Safety Observation - Respiratory Rhythm](StructureDefinition-rs-observation-respiratory-rhythm.md) | Respiratory rhythm (normal/irregular/labored). |
+| [Road Safety Observation - Run Report Comments](StructureDefinition-rs-observation-runreport-comments.md) | General comments from run report. |
 | [Road Safety Observation - Safety Accessories](StructureDefinition-rs-observation-safety-accessories.md) | Safety accessories present/used; allow text for 'Others'. |
+| [Road Safety Observation - Status on Arrival](StructureDefinition-rs-observation-status-on-arrival.md) | Status upon reaching facility/hospital. |
 | [Road Safety Observation - Time Departed Scene](StructureDefinition-rs-observation-time-departed.md) | Timestamp unit departed scene. |
 | [Road Safety Observation - Time Enroute](StructureDefinition-rs-observation-time-enroute.md) | Timestamp when unit dispatched/began traveling. |
 | [Road Safety Observation - Time On Scene](StructureDefinition-rs-observation-time-on-scene.md) | Timestamp crew arrived at scene. |
@@ -93,6 +106,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Transport/Vehicular Accident (flag)](StructureDefinition-rs-observation-transport-vehicular-flag.md) | Boolean flag indicating transport/vehicular accident. |
 | [Road Safety Observation - Traumatic Amputation](StructureDefinition-rs-observation-traumatic-amputation.md) | Traumatic amputation present; with site and details. |
 | [Road Safety Observation - Triage Priority](StructureDefinition-rs-observation-triage-priority.md) | Triage category assigned at scene (e.g., Red/Yellow/Green/Black). |
+| [Road Safety Observation - Vehicle Condition](StructureDefinition-rs-observation-vehicle-condition.md) | Vehicle condition assessment. |
+| [Road Safety Observation - Vehicle Used](StructureDefinition-rs-observation-vehicle-used.md) | Vehicle used during response. |
 | [Road Safety Organization](StructureDefinition-rs-organization.md) | Organization profile for EMS providers and receiving facilities involved in road safety encounters. |
 | [Road Safety Patient](StructureDefinition-rs-patient.md) | Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region. |
 | [Road Safety Procedure](StructureDefinition-rs-procedure.md) | Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions). |

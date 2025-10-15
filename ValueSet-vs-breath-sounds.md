@@ -16,7 +16,7 @@ Breath sounds options (prefer SNOMED CT).
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [Road Safety Observation - Breath Sounds](StructureDefinition-rs-observation-breath-sounds.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "VSBreathSounds",
   "title" : "RS VS - Breath Sounds",
   "status" : "draft",
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

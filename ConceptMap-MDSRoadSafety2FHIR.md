@@ -18,49 +18,49 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 1**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Encounter](http://hl7.org/fhir/R4/encounter.html)
 
-* **Source Code**: MDSRoadSafety.encounter.incidentNumber
+* **Source Code**: MDSRoadSafety.oneiss.encounter.incidentNumber
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.identifier
-* **Source Code**: MDSRoadSafety.encounter.hospitalCaseNo
+* **Source Code**: MDSRoadSafety.oneiss.encounter.hospitalCaseNo
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.identifier
-* **Source Code**: MDSRoadSafety.encounter.typeOfPatient
+* **Source Code**: MDSRoadSafety.oneiss.encounter.typeOfPatient
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.class
-* **Source Code**: MDSRoadSafety.encounter.dateTimeOfConsult
+* **Source Code**: MDSRoadSafety.oneiss.encounter.dateTimeOfConsult
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.period.start
-* **Source Code**: MDSRoadSafety.encounter.serviceProvider
+* **Source Code**: MDSRoadSafety.oneiss.encounter.serviceProvider
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.serviceProvider
-* **Source Code**: MDSRoadSafety.workflow.receivedBy
+* **Source Code**: MDSRoadSafety.runreport.workflow.receivedBy
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.participant.individual
-* **Source Code**: MDSRoadSafety.workflow.crew.teamLeader
+* **Source Code**: MDSRoadSafety.runreport.workflow.crew.teamLeader
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.participant.individual
-* **Source Code**: MDSRoadSafety.workflow.crew.treatmentOfficer
+* **Source Code**: MDSRoadSafety.runreport.workflow.crew.treatmentOfficer
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.participant.individual
-* **Source Code**: MDSRoadSafety.workflow.crew.transportOfficer
+* **Source Code**: MDSRoadSafety.runreport.workflow.crew.transportOfficer
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.participant.individual
-* **Source Code**: MDSRoadSafety.workflow.crew.assistant
+* **Source Code**: MDSRoadSafety.runreport.workflow.crew.assistant
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.participant.individual
-* **Source Code**: MDSRoadSafety.encounter.originating.organization
+* **Source Code**: MDSRoadSafety.oneiss.encounter.originating.organization
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.hospitalization.origin
-* **Source Code**: MDSRoadSafety.encounter.originating.practitioner
+* **Source Code**: MDSRoadSafety.oneiss.encounter.originating.practitioner
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.participant.individual
-* **Source Code**: MDSRoadSafety.encounter.disposition
+* **Source Code**: MDSRoadSafety.oneiss.encounter.disposition
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.hospitalization.dischargeDisposition
-* **Source Code**: MDSRoadSafety.encounter.disposition.text
+* **Source Code**: MDSRoadSafety.oneiss.encounter.disposition.text
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.hospitalization.dischargeDisposition.text
-* **Source Code**: MDSRoadSafety.encounter.transferDestination
+* **Source Code**: MDSRoadSafety.oneiss.encounter.transferDestination
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Encounter.hospitalization.destination
 
@@ -68,40 +68,40 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 2**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Patient](http://hl7.org/fhir/R4/patient.html)
 
-* **Source Code**: MDSRoadSafety.patient.name.family
+* **Source Code**: MDSRoadSafety.oneiss.patient.name.family
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.name.family
-* **Source Code**: MDSRoadSafety.patient.name.given
+* **Source Code**: MDSRoadSafety.oneiss.patient.name.given
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.name.given
-* **Source Code**: MDSRoadSafety.patient.birthDate
+* **Source Code**: MDSRoadSafety.oneiss.patient.birthDate
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.birthDate
-* **Source Code**: MDSRoadSafety.patient.gender
+* **Source Code**: MDSRoadSafety.oneiss.patient.gender
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.gender
-* **Source Code**: MDSRoadSafety.patient.telecom
+* **Source Code**: MDSRoadSafety.oneiss.patient.telecom
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.telecom
-* **Source Code**: MDSRoadSafety.patient.identifier
+* **Source Code**: MDSRoadSafety.oneiss.patient.identifier
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.identifier
-* **Source Code**: MDSRoadSafety.patient.occupation
+* **Source Code**: MDSRoadSafety.oneiss.patient.occupation
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.extension:occupation
-* **Source Code**: MDSRoadSafety.patient.address.line
+* **Source Code**: MDSRoadSafety.oneiss.patient.address.line
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.address.line
-* **Source Code**: MDSRoadSafety.patient.address.extension[barangay]
+* **Source Code**: MDSRoadSafety.oneiss.patient.address.barangay
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.address.extension:barangay
-* **Source Code**: MDSRoadSafety.patient.address.extension[cityMunicipality]
+* **Source Code**: MDSRoadSafety.oneiss.patient.address.cityMunicipality
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.address.extension:cityMunicipality
-* **Source Code**: MDSRoadSafety.patient.address.extension[province]
+* **Source Code**: MDSRoadSafety.oneiss.patient.address.province
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.address.extension:province
-* **Source Code**: MDSRoadSafety.patient.address.extension[region]
+* **Source Code**: MDSRoadSafety.oneiss.patient.address.region
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Patient.address.extension:region
 
@@ -109,25 +109,25 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 3**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Location](http://hl7.org/fhir/R4/location.html)
 
-* **Source Code**: MDSRoadSafety.incident.location.street
+* **Source Code**: MDSRoadSafety.oneiss.incident.location.street
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Location.address.line
-* **Source Code**: MDSRoadSafety.incident.location.barangay
+* **Source Code**: MDSRoadSafety.oneiss.incident.location.barangay
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Location.address.extension:barangay
-* **Source Code**: MDSRoadSafety.incident.location.city
+* **Source Code**: MDSRoadSafety.oneiss.incident.location.city
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Location.address.extension:cityMunicipality
-* **Source Code**: MDSRoadSafety.incident.location.province
+* **Source Code**: MDSRoadSafety.oneiss.incident.location.province
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Location.address.extension:province
-* **Source Code**: MDSRoadSafety.incident.location.region
+* **Source Code**: MDSRoadSafety.oneiss.incident.location.region
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Location.address.extension:region
-* **Source Code**: MDSRoadSafety.incident.location.position.longitude
+* **Source Code**: MDSRoadSafety.oneiss.incident.location.position.longitude
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Location.position.longitude
-* **Source Code**: MDSRoadSafety.incident.location.position.latitude
+* **Source Code**: MDSRoadSafety.oneiss.incident.location.position.latitude
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Location.position.latitude
 
@@ -135,16 +135,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 4**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html)
 
-* **Source Code**: MDSRoadSafety.workflow.refusalToAdmit.flag
+* **Source Code**: MDSRoadSafety.runreport.workflow.refusalToAdmit.flag
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: ServiceRequest.status
-* **Source Code**: MDSRoadSafety.workflow.refusalToAdmit.hospital
+* **Source Code**: MDSRoadSafety.runreport.workflow.refusalToAdmit.hospital
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: ServiceRequest.supportingInfo
-* **Source Code**: MDSRoadSafety.workflow.refusalToAdmit.physician
+* **Source Code**: MDSRoadSafety.runreport.workflow.refusalToAdmit.physician
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: ServiceRequest.supportingInfo
-* **Source Code**: MDSRoadSafety.workflow.refusalToAdmit.dateTime
+* **Source Code**: MDSRoadSafety.runreport.workflow.refusalToAdmit.dateTime
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: ServiceRequest.occurrenceDateTime
 
@@ -152,13 +152,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 5**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Procedure](http://hl7.org/fhir/R4/procedure.html)
 
-* **Source Code**: MDSRoadSafety.workflow.transportCoordinated
+* **Source Code**: MDSRoadSafety.runreport.clinical.procedures.intervention
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Procedure.code
-* **Source Code**: MDSRoadSafety.clinical.psychosocialSupport
+* **Source Code**: MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedCode
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Procedure.code
-* **Source Code**: MDSRoadSafety.clinical.intervention
+  * **Target Code**: Procedure.usedCode
+* **Source Code**: MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedReference
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Procedure.usedReference
+* **Source Code**: MDSRoadSafety.oneiss.clinical.psychosocialSupport
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Procedure.code
 
@@ -166,156 +169,168 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 6**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Observation](http://hl7.org/fhir/R4/observation.html)
 
-* **Source Code**: MDSRoadSafety.workflow.dateReceived
+* **Source Code**: MDSRoadSafety.runreport.workflow.dateReceived
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueDateTime
-* **Source Code**: MDSRoadSafety.workflow.timeEnroute
+* **Source Code**: MDSRoadSafety.runreport.workflow.timeEnroute
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueDateTime
-* **Source Code**: MDSRoadSafety.workflow.timeOnScene
+* **Source Code**: MDSRoadSafety.runreport.workflow.timeOnScene
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueDateTime
-* **Source Code**: MDSRoadSafety.workflow.timeDepartedScene
+* **Source Code**: MDSRoadSafety.runreport.workflow.timeDepartedScene
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueDateTime
-* **Source Code**: MDSRoadSafety.workflow.timeHospitalArrival
+* **Source Code**: MDSRoadSafety.runreport.workflow.timeHospitalArrival
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueDateTime
-* **Source Code**: MDSRoadSafety.workflow.timeStationArrival
+* **Source Code**: MDSRoadSafety.runreport.workflow.timeStationArrival
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueDateTime
-* **Source Code**: MDSRoadSafety.incident.injuryDateTime
+* **Source Code**: MDSRoadSafety.oneiss.incident.injuryDateTime
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueDateTime
-* **Source Code**: MDSRoadSafety.incident.injuryIntent
+* **Source Code**: MDSRoadSafety.oneiss.incident.injuryIntent
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.transportOrVehicular
+* **Source Code**: MDSRoadSafety.oneiss.incident.transportOrVehicular
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.transportModeToFacility
+* **Source Code**: MDSRoadSafety.oneiss.incident.transportModeToFacility
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.transportModeOther
+* **Source Code**: MDSRoadSafety.oneiss.incident.transportModeOther
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.oneiss.incident.triagePriority
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.triagePriority
+* **Source Code**: MDSRoadSafety.oneiss.incident.urgency
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.urgency
+* **Source Code**: MDSRoadSafety.oneiss.incident.placeOfOccurrence
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.placeOfOccurrence
+* **Source Code**: MDSRoadSafety.oneiss.incident.placeOfOccurrenceOther
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.oneiss.incident.placeOfOccurrenceWorkplaceName
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.note
+* **Source Code**: MDSRoadSafety.oneiss.incident.activityAtTime
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.placeOfOccurrenceOther
+* **Source Code**: MDSRoadSafety.oneiss.incident.activityOther
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.oneiss.incident.collisionVsNonCollision
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.activityAtTime
+* **Source Code**: MDSRoadSafety.oneiss.incident.patientsVehicle
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.activityOther
+* **Source Code**: MDSRoadSafety.oneiss.incident.patientsVehicleOther
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.oneiss.incident.otherVehicleOrObject
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.collisionVsNonCollision
+* **Source Code**: MDSRoadSafety.oneiss.incident.otherVehicleOther
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.oneiss.incident.positionOfPatient
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.patientsVehicle
+* **Source Code**: MDSRoadSafety.oneiss.incident.positionOfPatientOther
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.patientsVehicleOther
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.otherVehicleOrObject
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.otherVehicleOther
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.positionOfPatient
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.positionOfPatientOther
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.howManyVehicles
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.oneiss.incident.howManyVehicles
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueInteger
-* **Source Code**: MDSRoadSafety.incident.howManyPatients
+* **Source Code**: MDSRoadSafety.oneiss.incident.howManyPatients
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueInteger
-* **Source Code**: MDSRoadSafety.incident.collisionType
+* **Source Code**: MDSRoadSafety.postcrash.incident.collisionType
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.trafficInvestigatorPresent
+* **Source Code**: MDSRoadSafety.postcrash.incident.trafficInvestigatorPresent
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.otherRiskFactors
+* **Source Code**: MDSRoadSafety.postcrash.incident.otherRiskFactors
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.otherRiskFactorsOther
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.safetyAccessories
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.safetyAccessoriesOther
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.reportedComplaint
+* **Source Code**: MDSRoadSafety.postcrash.incident.otherRiskFactorsOther
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.incident.callSource
+* **Source Code**: MDSRoadSafety.postcrash.incident.safetyAccessories
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueCodeableConcept
+* **Source Code**: MDSRoadSafety.postcrash.incident.safetyAccessoriesOther
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.vitals.time
+* **Source Code**: MDSRoadSafety.runreport.incident.reportedComplaint
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.runreport.incident.callSource
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.runreport.vitals.time
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.effectiveDateTime
-* **Source Code**: MDSRoadSafety.vitals.respiratoryRate
+* **Source Code**: MDSRoadSafety.runreport.vitals.respiratoryRate
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueQuantity
-* **Source Code**: MDSRoadSafety.vitals.respiratoryRhythm
+* **Source Code**: MDSRoadSafety.runreport.vitals.respiratoryRhythm
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.breathSounds
+* **Source Code**: MDSRoadSafety.runreport.vitals.breathSounds
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.pulseRate
+* **Source Code**: MDSRoadSafety.runreport.vitals.pulseRate
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueQuantity
-* **Source Code**: MDSRoadSafety.vitals.pulseRhythm
+* **Source Code**: MDSRoadSafety.runreport.vitals.pulseRhythm
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.pulseQuality
+* **Source Code**: MDSRoadSafety.runreport.vitals.pulseQuality
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.bloodPressure.systolic
+* **Source Code**: MDSRoadSafety.runreport.vitals.bloodPressure.systolic
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.component:bpSystolic.valueQuantity
-* **Source Code**: MDSRoadSafety.vitals.bloodPressure.diastolic
+* **Source Code**: MDSRoadSafety.runreport.vitals.bloodPressure.diastolic
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.component:bpDiastolic.valueQuantity
-* **Source Code**: MDSRoadSafety.vitals.temperature
+* **Source Code**: MDSRoadSafety.runreport.vitals.temperature
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueQuantity
-* **Source Code**: MDSRoadSafety.vitals.levelOfConsciousness
+* **Source Code**: MDSRoadSafety.runreport.vitals.levelOfConsciousness
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.pupils
+* **Source Code**: MDSRoadSafety.runreport.vitals.pupils
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.gcs.eyes
+* **Source Code**: MDSRoadSafety.runreport.vitals.gcs.eyes
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.component:gcsEyes.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.gcs.verbal
+* **Source Code**: MDSRoadSafety.runreport.vitals.gcs.verbal
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.component:gcsVerbal.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.gcs.motor
+* **Source Code**: MDSRoadSafety.runreport.vitals.gcs.motor
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.component:gcsMotor.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.vitals.gcs.total
+* **Source Code**: MDSRoadSafety.runreport.vitals.gcs.total
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueInteger
+* **Source Code**: MDSRoadSafety.runreport.clinical.remarks
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.runreport.notes
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.runreport.workflow.vehicleUsed
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueCodeableConcept
 
 -------
 
@@ -429,93 +444,39 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 * **Source Code**: MDSRoadSafety.injuries.otherInjury.details
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.note
-* **Source Code**: MDSRoadSafety.incident.externalCauses.bitesStings
+* **Source Code**: MDSRoadSafety.oneiss.clinical.bloodAlcoholConcentration
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.bitesStingsAgent
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.externalCauses.burns
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.burnsAgent
+  * **Target Code**: Observation.valueQuantity
+* **Source Code**: MDSRoadSafety.oneiss.clinical.conditionOfPatient
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.externalCauses.burnsOther
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.incident.externalCauses.chemicalSubstance
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.chemicalAgent
+* **Source Code**: MDSRoadSafety.oneiss.clinical.outcomeAtRelease
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.externalCauses.sharpObject
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.sharpObjectSpecify
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.incident.externalCauses.drowning
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.drowningType
+* **Source Code**: MDSRoadSafety.oneiss.clinical.outcomeAtDischarge
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
-* **Source Code**: MDSRoadSafety.incident.externalCauses.drowningOther
+* **Source Code**: MDSRoadSafety.oneiss.clinical.statusOnArrival
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.incident.externalCauses.forcesOfNature
+  * **Target Code**: Observation.valueCodeableConcept
+* **Source Code**: MDSRoadSafety.oneiss.clinical.statusOnArrivalAliveDetail
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.fall
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.fallSpecifics
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.incident.externalCauses.firecracker
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.firecrackerType
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.incident.externalCauses.gunshot
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.gunshotWeapon
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueString
-* **Source Code**: MDSRoadSafety.incident.externalCauses.hangingStrangulation
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.maulingAssault
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.sexualAssault
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.other
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueBoolean
-* **Source Code**: MDSRoadSafety.incident.externalCauses.otherSpecify
-  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
-  * **Target Code**: Observation.valueString
+  * **Target Code**: Observation.valueCodeableConcept
 
 -------
 
 **Group 8**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Condition](http://hl7.org/fhir/R4/condition.html)
 
-* **Source Code**: MDSRoadSafety.clinical.medicalHistory
+* **Source Code**: MDSRoadSafety.oneiss.clinical.medicalHistory
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Condition.code
-* **Source Code**: MDSRoadSafety.clinical.initialImpression
+* **Source Code**: MDSRoadSafety.oneiss.clinical.initialImpression
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Condition.code
-* **Source Code**: MDSRoadSafety.clinical.icd10NatureOfInjury
+* **Source Code**: MDSRoadSafety.oneiss.clinical.icd10NatureOfInjury
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Condition.code
-* **Source Code**: MDSRoadSafety.clinical.icd10ExternalCause
+* **Source Code**: MDSRoadSafety.oneiss.clinical.icd10ExternalCause
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Condition.code
 
@@ -523,7 +484,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 9**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html)
 
-* **Source Code**: MDSRoadSafety.clinical.currentMedication
+* **Source Code**: MDSRoadSafety.oneiss.clinical.currentMedication
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: MedicationStatement.medicationCodeableConcept
 
@@ -531,7 +492,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 10**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [AllergyIntolerance](http://hl7.org/fhir/R4/allergyintolerance.html)
 
-* **Source Code**: MDSRoadSafety.clinical.knownAllergies
+* **Source Code**: MDSRoadSafety.oneiss.clinical.knownAllergies
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: AllergyIntolerance.code
 
@@ -539,27 +500,33 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 **Group 11**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [DocumentReference](http://hl7.org/fhir/R4/documentreference.html)
 
-* **Source Code**: MDSRoadSafety.evidence.causeOfCrash
+* **Source Code**: MDSRoadSafety.postcrash.evidence.causeOfCrash
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: DocumentReference.content.attachment.url
-* **Source Code**: MDSRoadSafety.evidence.partyAtFault
+* **Source Code**: MDSRoadSafety.postcrash.evidence.partyAtFault
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: DocumentReference.content.attachment.url
-* **Source Code**: MDSRoadSafety.evidence.trafficIncidentManagement
+* **Source Code**: MDSRoadSafety.postcrash.evidence.trafficIncidentManagement
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: DocumentReference.content.attachment.url
-* **Source Code**: MDSRoadSafety.evidence.roadNetworkShapeFiles
+* **Source Code**: MDSRoadSafety.postcrash.evidence.roadNetworkShapeFiles
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: DocumentReference.content.attachment.url
-* **Source Code**: MDSRoadSafety.evidence.cctvReconstruction.link
+* **Source Code**: MDSRoadSafety.postcrash.evidence.cctvReconstruction.link
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: DocumentReference.content.attachment.url
+* **Source Code**: MDSRoadSafety.postcrash.evidence.cctvReconstruction.available
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueBoolean
+* **Source Code**: MDSRoadSafety.postcrash.evidence.vehicleCondition
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueCodeableConcept
 
 -------
 
 **Group 12**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Claim](http://hl7.org/fhir/R4/claim.html)
 
-* **Source Code**: MDSRoadSafety.finance.costOfCare
+* **Source Code**: MDSRoadSafety.oneiss.finance.costOfCare
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Claim.total
 
@@ -577,7 +544,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
   "title" : "MDS Logical Model to FHIR Mapping",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -619,7 +586,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/Encounter",
       "element" : [
         {
-          "code" : "MDSRoadSafety.encounter.incidentNumber",
+          "code" : "MDSRoadSafety.oneiss.encounter.incidentNumber",
           "target" : [
             {
               "code" : "Encounter.identifier",
@@ -628,7 +595,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.hospitalCaseNo",
+          "code" : "MDSRoadSafety.oneiss.encounter.hospitalCaseNo",
           "target" : [
             {
               "code" : "Encounter.identifier",
@@ -637,7 +604,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.typeOfPatient",
+          "code" : "MDSRoadSafety.oneiss.encounter.typeOfPatient",
           "target" : [
             {
               "code" : "Encounter.class",
@@ -646,7 +613,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.dateTimeOfConsult",
+          "code" : "MDSRoadSafety.oneiss.encounter.dateTimeOfConsult",
           "target" : [
             {
               "code" : "Encounter.period.start",
@@ -655,7 +622,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.serviceProvider",
+          "code" : "MDSRoadSafety.oneiss.encounter.serviceProvider",
           "target" : [
             {
               "code" : "Encounter.serviceProvider",
@@ -664,7 +631,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.receivedBy",
+          "code" : "MDSRoadSafety.runreport.workflow.receivedBy",
           "target" : [
             {
               "code" : "Encounter.participant.individual",
@@ -673,7 +640,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.crew.teamLeader",
+          "code" : "MDSRoadSafety.runreport.workflow.crew.teamLeader",
           "target" : [
             {
               "code" : "Encounter.participant.individual",
@@ -682,7 +649,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.crew.treatmentOfficer",
+          "code" : "MDSRoadSafety.runreport.workflow.crew.treatmentOfficer",
           "target" : [
             {
               "code" : "Encounter.participant.individual",
@@ -691,7 +658,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.crew.transportOfficer",
+          "code" : "MDSRoadSafety.runreport.workflow.crew.transportOfficer",
           "target" : [
             {
               "code" : "Encounter.participant.individual",
@@ -700,7 +667,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.crew.assistant",
+          "code" : "MDSRoadSafety.runreport.workflow.crew.assistant",
           "target" : [
             {
               "code" : "Encounter.participant.individual",
@@ -709,7 +676,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.originating.organization",
+          "code" : "MDSRoadSafety.oneiss.encounter.originating.organization",
           "target" : [
             {
               "code" : "Encounter.hospitalization.origin",
@@ -718,7 +685,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.originating.practitioner",
+          "code" : "MDSRoadSafety.oneiss.encounter.originating.practitioner",
           "target" : [
             {
               "code" : "Encounter.participant.individual",
@@ -727,7 +694,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.disposition",
+          "code" : "MDSRoadSafety.oneiss.encounter.disposition",
           "target" : [
             {
               "code" : "Encounter.hospitalization.dischargeDisposition",
@@ -736,7 +703,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.disposition.text",
+          "code" : "MDSRoadSafety.oneiss.encounter.disposition.text",
           "target" : [
             {
               "code" : "Encounter.hospitalization.dischargeDisposition.text",
@@ -745,7 +712,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.encounter.transferDestination",
+          "code" : "MDSRoadSafety.oneiss.encounter.transferDestination",
           "target" : [
             {
               "code" : "Encounter.hospitalization.destination",
@@ -760,7 +727,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/Patient",
       "element" : [
         {
-          "code" : "MDSRoadSafety.patient.name.family",
+          "code" : "MDSRoadSafety.oneiss.patient.name.family",
           "target" : [
             {
               "code" : "Patient.name.family",
@@ -769,7 +736,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.name.given",
+          "code" : "MDSRoadSafety.oneiss.patient.name.given",
           "target" : [
             {
               "code" : "Patient.name.given",
@@ -778,7 +745,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.birthDate",
+          "code" : "MDSRoadSafety.oneiss.patient.birthDate",
           "target" : [
             {
               "code" : "Patient.birthDate",
@@ -787,7 +754,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.gender",
+          "code" : "MDSRoadSafety.oneiss.patient.gender",
           "target" : [
             {
               "code" : "Patient.gender",
@@ -796,7 +763,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.telecom",
+          "code" : "MDSRoadSafety.oneiss.patient.telecom",
           "target" : [
             {
               "code" : "Patient.telecom",
@@ -805,7 +772,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.identifier",
+          "code" : "MDSRoadSafety.oneiss.patient.identifier",
           "target" : [
             {
               "code" : "Patient.identifier",
@@ -814,7 +781,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.occupation",
+          "code" : "MDSRoadSafety.oneiss.patient.occupation",
           "target" : [
             {
               "code" : "Patient.extension:occupation",
@@ -823,7 +790,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.address.line",
+          "code" : "MDSRoadSafety.oneiss.patient.address.line",
           "target" : [
             {
               "code" : "Patient.address.line",
@@ -832,7 +799,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.address.extension[barangay]",
+          "code" : "MDSRoadSafety.oneiss.patient.address.barangay",
           "target" : [
             {
               "code" : "Patient.address.extension:barangay",
@@ -841,7 +808,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.address.extension[cityMunicipality]",
+          "code" : "MDSRoadSafety.oneiss.patient.address.cityMunicipality",
           "target" : [
             {
               "code" : "Patient.address.extension:cityMunicipality",
@@ -850,7 +817,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.address.extension[province]",
+          "code" : "MDSRoadSafety.oneiss.patient.address.province",
           "target" : [
             {
               "code" : "Patient.address.extension:province",
@@ -859,7 +826,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.patient.address.extension[region]",
+          "code" : "MDSRoadSafety.oneiss.patient.address.region",
           "target" : [
             {
               "code" : "Patient.address.extension:region",
@@ -874,7 +841,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/Location",
       "element" : [
         {
-          "code" : "MDSRoadSafety.incident.location.street",
+          "code" : "MDSRoadSafety.oneiss.incident.location.street",
           "target" : [
             {
               "code" : "Location.address.line",
@@ -883,7 +850,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.location.barangay",
+          "code" : "MDSRoadSafety.oneiss.incident.location.barangay",
           "target" : [
             {
               "code" : "Location.address.extension:barangay",
@@ -892,7 +859,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.location.city",
+          "code" : "MDSRoadSafety.oneiss.incident.location.city",
           "target" : [
             {
               "code" : "Location.address.extension:cityMunicipality",
@@ -901,7 +868,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.location.province",
+          "code" : "MDSRoadSafety.oneiss.incident.location.province",
           "target" : [
             {
               "code" : "Location.address.extension:province",
@@ -910,7 +877,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.location.region",
+          "code" : "MDSRoadSafety.oneiss.incident.location.region",
           "target" : [
             {
               "code" : "Location.address.extension:region",
@@ -919,7 +886,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.location.position.longitude",
+          "code" : "MDSRoadSafety.oneiss.incident.location.position.longitude",
           "target" : [
             {
               "code" : "Location.position.longitude",
@@ -928,7 +895,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.location.position.latitude",
+          "code" : "MDSRoadSafety.oneiss.incident.location.position.latitude",
           "target" : [
             {
               "code" : "Location.position.latitude",
@@ -943,7 +910,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
       "element" : [
         {
-          "code" : "MDSRoadSafety.workflow.refusalToAdmit.flag",
+          "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.flag",
           "target" : [
             {
               "code" : "ServiceRequest.status",
@@ -952,7 +919,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.refusalToAdmit.hospital",
+          "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.hospital",
           "target" : [
             {
               "code" : "ServiceRequest.supportingInfo",
@@ -961,7 +928,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.refusalToAdmit.physician",
+          "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.physician",
           "target" : [
             {
               "code" : "ServiceRequest.supportingInfo",
@@ -970,7 +937,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.refusalToAdmit.dateTime",
+          "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.dateTime",
           "target" : [
             {
               "code" : "ServiceRequest.occurrenceDateTime",
@@ -985,7 +952,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/Procedure",
       "element" : [
         {
-          "code" : "MDSRoadSafety.workflow.transportCoordinated",
+          "code" : "MDSRoadSafety.runreport.clinical.procedures.intervention",
           "target" : [
             {
               "code" : "Procedure.code",
@@ -994,16 +961,25 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.clinical.psychosocialSupport",
+          "code" : "MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedCode",
           "target" : [
             {
-              "code" : "Procedure.code",
+              "code" : "Procedure.usedCode",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "MDSRoadSafety.clinical.intervention",
+          "code" : "MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedReference",
+          "target" : [
+            {
+              "code" : "Procedure.usedReference",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.clinical.psychosocialSupport",
           "target" : [
             {
               "code" : "Procedure.code",
@@ -1018,7 +994,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/Observation",
       "element" : [
         {
-          "code" : "MDSRoadSafety.workflow.dateReceived",
+          "code" : "MDSRoadSafety.runreport.workflow.dateReceived",
           "target" : [
             {
               "code" : "Observation.valueDateTime",
@@ -1027,7 +1003,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.timeEnroute",
+          "code" : "MDSRoadSafety.runreport.workflow.timeEnroute",
           "target" : [
             {
               "code" : "Observation.valueDateTime",
@@ -1036,7 +1012,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.timeOnScene",
+          "code" : "MDSRoadSafety.runreport.workflow.timeOnScene",
           "target" : [
             {
               "code" : "Observation.valueDateTime",
@@ -1045,7 +1021,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.timeDepartedScene",
+          "code" : "MDSRoadSafety.runreport.workflow.timeDepartedScene",
           "target" : [
             {
               "code" : "Observation.valueDateTime",
@@ -1054,7 +1030,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.timeHospitalArrival",
+          "code" : "MDSRoadSafety.runreport.workflow.timeHospitalArrival",
           "target" : [
             {
               "code" : "Observation.valueDateTime",
@@ -1063,7 +1039,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.workflow.timeStationArrival",
+          "code" : "MDSRoadSafety.runreport.workflow.timeStationArrival",
           "target" : [
             {
               "code" : "Observation.valueDateTime",
@@ -1072,7 +1048,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.injuryDateTime",
+          "code" : "MDSRoadSafety.oneiss.incident.injuryDateTime",
           "target" : [
             {
               "code" : "Observation.valueDateTime",
@@ -1081,7 +1057,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.injuryIntent",
+          "code" : "MDSRoadSafety.oneiss.incident.injuryIntent",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1090,7 +1066,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.transportOrVehicular",
+          "code" : "MDSRoadSafety.oneiss.incident.transportOrVehicular",
           "target" : [
             {
               "code" : "Observation.valueBoolean",
@@ -1099,7 +1075,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.transportModeToFacility",
+          "code" : "MDSRoadSafety.oneiss.incident.transportModeToFacility",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1108,7 +1084,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.transportModeOther",
+          "code" : "MDSRoadSafety.oneiss.incident.transportModeOther",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.incident.triagePriority",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1117,7 +1102,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.triagePriority",
+          "code" : "MDSRoadSafety.oneiss.incident.urgency",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1126,7 +1111,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.urgency",
+          "code" : "MDSRoadSafety.oneiss.incident.placeOfOccurrence",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1135,7 +1120,25 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.placeOfOccurrence",
+          "code" : "MDSRoadSafety.oneiss.incident.placeOfOccurrenceOther",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.incident.placeOfOccurrenceWorkplaceName",
+          "target" : [
+            {
+              "code" : "Observation.note",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.incident.activityAtTime",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1144,7 +1147,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.placeOfOccurrenceOther",
+          "code" : "MDSRoadSafety.oneiss.incident.activityOther",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.incident.collisionVsNonCollision",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1153,7 +1165,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.activityAtTime",
+          "code" : "MDSRoadSafety.oneiss.incident.patientsVehicle",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1162,7 +1174,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.activityOther",
+          "code" : "MDSRoadSafety.oneiss.incident.patientsVehicleOther",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.incident.otherVehicleOrObject",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1171,7 +1192,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.collisionVsNonCollision",
+          "code" : "MDSRoadSafety.oneiss.incident.otherVehicleOther",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.incident.positionOfPatient",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1180,61 +1210,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.patientsVehicle",
+          "code" : "MDSRoadSafety.oneiss.incident.positionOfPatientOther",
           "target" : [
             {
-              "code" : "Observation.valueCodeableConcept",
+              "code" : "Observation.valueString",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.patientsVehicleOther",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.otherVehicleOrObject",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.otherVehicleOther",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.positionOfPatient",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.positionOfPatientOther",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.howManyVehicles",
+          "code" : "MDSRoadSafety.oneiss.incident.howManyVehicles",
           "target" : [
             {
               "code" : "Observation.valueInteger",
@@ -1243,7 +1228,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.howManyPatients",
+          "code" : "MDSRoadSafety.oneiss.incident.howManyPatients",
           "target" : [
             {
               "code" : "Observation.valueInteger",
@@ -1252,7 +1237,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.collisionType",
+          "code" : "MDSRoadSafety.postcrash.incident.collisionType",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1261,7 +1246,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.trafficInvestigatorPresent",
+          "code" : "MDSRoadSafety.postcrash.incident.trafficInvestigatorPresent",
           "target" : [
             {
               "code" : "Observation.valueBoolean",
@@ -1270,7 +1255,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.otherRiskFactors",
+          "code" : "MDSRoadSafety.postcrash.incident.otherRiskFactors",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1279,34 +1264,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.otherRiskFactorsOther",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.safetyAccessories",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.safetyAccessoriesOther",
-          "target" : [
-            {
-              "code" : "Observation.valueCodeableConcept",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.reportedComplaint",
+          "code" : "MDSRoadSafety.postcrash.incident.otherRiskFactorsOther",
           "target" : [
             {
               "code" : "Observation.valueString",
@@ -1315,7 +1273,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.callSource",
+          "code" : "MDSRoadSafety.postcrash.incident.safetyAccessories",
+          "target" : [
+            {
+              "code" : "Observation.valueCodeableConcept",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.postcrash.incident.safetyAccessoriesOther",
           "target" : [
             {
               "code" : "Observation.valueString",
@@ -1324,7 +1291,25 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.time",
+          "code" : "MDSRoadSafety.runreport.incident.reportedComplaint",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.runreport.incident.callSource",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.runreport.vitals.time",
           "target" : [
             {
               "code" : "Observation.effectiveDateTime",
@@ -1333,7 +1318,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.respiratoryRate",
+          "code" : "MDSRoadSafety.runreport.vitals.respiratoryRate",
           "target" : [
             {
               "code" : "Observation.valueQuantity",
@@ -1342,7 +1327,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.respiratoryRhythm",
+          "code" : "MDSRoadSafety.runreport.vitals.respiratoryRhythm",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1351,7 +1336,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.breathSounds",
+          "code" : "MDSRoadSafety.runreport.vitals.breathSounds",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1360,7 +1345,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.pulseRate",
+          "code" : "MDSRoadSafety.runreport.vitals.pulseRate",
           "target" : [
             {
               "code" : "Observation.valueQuantity",
@@ -1369,7 +1354,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.pulseRhythm",
+          "code" : "MDSRoadSafety.runreport.vitals.pulseRhythm",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1378,7 +1363,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.pulseQuality",
+          "code" : "MDSRoadSafety.runreport.vitals.pulseQuality",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1387,7 +1372,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.bloodPressure.systolic",
+          "code" : "MDSRoadSafety.runreport.vitals.bloodPressure.systolic",
           "target" : [
             {
               "code" : "Observation.component:bpSystolic.valueQuantity",
@@ -1396,7 +1381,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.bloodPressure.diastolic",
+          "code" : "MDSRoadSafety.runreport.vitals.bloodPressure.diastolic",
           "target" : [
             {
               "code" : "Observation.component:bpDiastolic.valueQuantity",
@@ -1405,7 +1390,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.temperature",
+          "code" : "MDSRoadSafety.runreport.vitals.temperature",
           "target" : [
             {
               "code" : "Observation.valueQuantity",
@@ -1414,7 +1399,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.levelOfConsciousness",
+          "code" : "MDSRoadSafety.runreport.vitals.levelOfConsciousness",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1423,7 +1408,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.pupils",
+          "code" : "MDSRoadSafety.runreport.vitals.pupils",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1432,7 +1417,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.gcs.eyes",
+          "code" : "MDSRoadSafety.runreport.vitals.gcs.eyes",
           "target" : [
             {
               "code" : "Observation.component:gcsEyes.valueCodeableConcept",
@@ -1441,7 +1426,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.gcs.verbal",
+          "code" : "MDSRoadSafety.runreport.vitals.gcs.verbal",
           "target" : [
             {
               "code" : "Observation.component:gcsVerbal.valueCodeableConcept",
@@ -1450,7 +1435,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.gcs.motor",
+          "code" : "MDSRoadSafety.runreport.vitals.gcs.motor",
           "target" : [
             {
               "code" : "Observation.component:gcsMotor.valueCodeableConcept",
@@ -1459,10 +1444,37 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.vitals.gcs.total",
+          "code" : "MDSRoadSafety.runreport.vitals.gcs.total",
           "target" : [
             {
               "code" : "Observation.valueInteger",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.runreport.clinical.remarks",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.runreport.notes",
+          "target" : [
+            {
+              "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.runreport.workflow.vehicleUsed",
+          "target" : [
+            {
+              "code" : "Observation.valueCodeableConcept",
               "equivalence" : "equivalent"
             }
           ]
@@ -1798,16 +1810,16 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.externalCauses.bitesStings",
+          "code" : "MDSRoadSafety.oneiss.clinical.bloodAlcoholConcentration",
           "target" : [
             {
-              "code" : "Observation.valueBoolean",
+              "code" : "Observation.valueQuantity",
               "equivalence" : "equivalent"
             }
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.externalCauses.bitesStingsAgent",
+          "code" : "MDSRoadSafety.oneiss.clinical.conditionOfPatient",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1816,16 +1828,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.externalCauses.burns",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.burnsAgent",
+          "code" : "MDSRoadSafety.oneiss.clinical.outcomeAtRelease",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1834,25 +1837,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.externalCauses.burnsOther",
-          "target" : [
-            {
-              "code" : "Observation.valueString",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.chemicalSubstance",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.chemicalAgent",
+          "code" : "MDSRoadSafety.oneiss.clinical.outcomeAtDischarge",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1861,34 +1846,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.externalCauses.sharpObject",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.sharpObjectSpecify",
-          "target" : [
-            {
-              "code" : "Observation.valueString",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.drowning",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.drowningType",
+          "code" : "MDSRoadSafety.oneiss.clinical.statusOnArrival",
           "target" : [
             {
               "code" : "Observation.valueCodeableConcept",
@@ -1897,118 +1855,10 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.incident.externalCauses.drowningOther",
+          "code" : "MDSRoadSafety.oneiss.clinical.statusOnArrivalAliveDetail",
           "target" : [
             {
-              "code" : "Observation.valueString",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.forcesOfNature",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.fall",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.fallSpecifics",
-          "target" : [
-            {
-              "code" : "Observation.valueString",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.firecracker",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.firecrackerType",
-          "target" : [
-            {
-              "code" : "Observation.valueString",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.gunshot",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.gunshotWeapon",
-          "target" : [
-            {
-              "code" : "Observation.valueString",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.hangingStrangulation",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.maulingAssault",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.sexualAssault",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.other",
-          "target" : [
-            {
-              "code" : "Observation.valueBoolean",
-              "equivalence" : "equivalent"
-            }
-          ]
-        },
-        {
-          "code" : "MDSRoadSafety.incident.externalCauses.otherSpecify",
-          "target" : [
-            {
-              "code" : "Observation.valueString",
+              "code" : "Observation.valueCodeableConcept",
               "equivalence" : "equivalent"
             }
           ]
@@ -2020,7 +1870,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/Condition",
       "element" : [
         {
-          "code" : "MDSRoadSafety.clinical.medicalHistory",
+          "code" : "MDSRoadSafety.oneiss.clinical.medicalHistory",
           "target" : [
             {
               "code" : "Condition.code",
@@ -2029,7 +1879,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.clinical.initialImpression",
+          "code" : "MDSRoadSafety.oneiss.clinical.initialImpression",
           "target" : [
             {
               "code" : "Condition.code",
@@ -2038,7 +1888,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.clinical.icd10NatureOfInjury",
+          "code" : "MDSRoadSafety.oneiss.clinical.icd10NatureOfInjury",
           "target" : [
             {
               "code" : "Condition.code",
@@ -2047,7 +1897,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.clinical.icd10ExternalCause",
+          "code" : "MDSRoadSafety.oneiss.clinical.icd10ExternalCause",
           "target" : [
             {
               "code" : "Condition.code",
@@ -2062,7 +1912,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
       "element" : [
         {
-          "code" : "MDSRoadSafety.clinical.currentMedication",
+          "code" : "MDSRoadSafety.oneiss.clinical.currentMedication",
           "target" : [
             {
               "code" : "MedicationStatement.medicationCodeableConcept",
@@ -2077,7 +1927,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
       "element" : [
         {
-          "code" : "MDSRoadSafety.clinical.knownAllergies",
+          "code" : "MDSRoadSafety.oneiss.clinical.knownAllergies",
           "target" : [
             {
               "code" : "AllergyIntolerance.code",
@@ -2092,7 +1942,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/DocumentReference",
       "element" : [
         {
-          "code" : "MDSRoadSafety.evidence.causeOfCrash",
+          "code" : "MDSRoadSafety.postcrash.evidence.causeOfCrash",
           "target" : [
             {
               "code" : "DocumentReference.content.attachment.url",
@@ -2101,7 +1951,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.evidence.partyAtFault",
+          "code" : "MDSRoadSafety.postcrash.evidence.partyAtFault",
           "target" : [
             {
               "code" : "DocumentReference.content.attachment.url",
@@ -2110,7 +1960,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.evidence.trafficIncidentManagement",
+          "code" : "MDSRoadSafety.postcrash.evidence.trafficIncidentManagement",
           "target" : [
             {
               "code" : "DocumentReference.content.attachment.url",
@@ -2119,7 +1969,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.evidence.roadNetworkShapeFiles",
+          "code" : "MDSRoadSafety.postcrash.evidence.roadNetworkShapeFiles",
           "target" : [
             {
               "code" : "DocumentReference.content.attachment.url",
@@ -2128,10 +1978,28 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
-          "code" : "MDSRoadSafety.evidence.cctvReconstruction.link",
+          "code" : "MDSRoadSafety.postcrash.evidence.cctvReconstruction.link",
           "target" : [
             {
               "code" : "DocumentReference.content.attachment.url",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.postcrash.evidence.cctvReconstruction.available",
+          "target" : [
+            {
+              "code" : "Observation.valueBoolean",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.postcrash.evidence.vehicleCondition",
+          "target" : [
+            {
+              "code" : "Observation.valueCodeableConcept",
               "equivalence" : "equivalent"
             }
           ]
@@ -2143,7 +2011,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
       "target" : "http://hl7.org/fhir/StructureDefinition/Claim",
       "element" : [
         {
-          "code" : "MDSRoadSafety.finance.costOfCare",
+          "code" : "MDSRoadSafety.oneiss.finance.costOfCare",
           "target" : [
             {
               "code" : "Claim.total",

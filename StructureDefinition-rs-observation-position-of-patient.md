@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-posit
   "name" : "RSObsPositionOfPatient",
   "title" : "Road Safety Observation - Position of Patient",
   "status" : "draft",
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -124,7 +124,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-posit
       {
         "id" : "Observation.code.coding.system",
         "path" : "Observation.code.coding.system",
-        "patternUri" : "http://example.com/silph"
+        "patternUri" : "http://snomed.info/sct"
       },
       {
         "id" : "Observation.code.coding.code",

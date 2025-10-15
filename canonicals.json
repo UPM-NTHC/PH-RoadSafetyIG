@@ -119,6 +119,13 @@
     "name" : "RSObsAvulsion"
   },
   {
+    "id" : "rs-observation-blood-alcohol",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-alcohol",
+    "version" : "0.1.0",
+    "name" : "RSObsBloodAlcoholConcentration"
+  },
+  {
     "id" : "rs-observation-blood-pressure",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure",
@@ -131,6 +138,13 @@
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature",
     "version" : "0.1.0",
     "name" : "RSObsBodyTemperature"
+  },
+  {
+    "id" : "rs-observation-breath-sounds",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds",
+    "version" : "0.1.0",
+    "name" : "RSObsBreathSounds"
   },
   {
     "id" : "rs-observation-burn-1st",
@@ -168,6 +182,20 @@
     "name" : "RSObsCallSource"
   },
   {
+    "id" : "rs-observation-cctv-available",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available",
+    "version" : "0.1.0",
+    "name" : "RSObsCCTVAvailable"
+  },
+  {
+    "id" : "rs-observation-clinical-remarks",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks",
+    "version" : "0.1.0",
+    "name" : "RSObsClinicalRemarks"
+  },
+  {
     "id" : "rs-observation-collision-type",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type",
@@ -187,6 +215,13 @@
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion",
     "version" : "0.1.0",
     "name" : "RSObsConcussion"
+  },
+  {
+    "id" : "rs-observation-condition-of-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient",
+    "version" : "0.1.0",
+    "name" : "RSObsConditionOfPatient"
   },
   {
     "id" : "rs-observation-contusion",
@@ -399,6 +434,20 @@
     "name" : "RSObsOtherVehicleInvolved"
   },
   {
+    "id" : "rs-observation-outcome-discharge",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-discharge",
+    "version" : "0.1.0",
+    "name" : "RSObsOutcomeAtDischarge"
+  },
+  {
+    "id" : "rs-observation-outcome-release",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release",
+    "version" : "0.1.0",
+    "name" : "RSObsOutcomeAtRelease"
+  },
+  {
     "id" : "rs-observation-patients-vehicle",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle",
@@ -420,11 +469,25 @@
     "name" : "RSObsPositionOfPatient"
   },
   {
+    "id" : "rs-observation-pulse-quality",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality",
+    "version" : "0.1.0",
+    "name" : "RSObsPulseQuality"
+  },
+  {
     "id" : "rs-observation-pulse-rate",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate",
     "version" : "0.1.0",
     "name" : "RSObsPulseRate"
+  },
+  {
+    "id" : "rs-observation-pulse-rhythm",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm",
+    "version" : "0.1.0",
+    "name" : "RSObsPulseRhythm"
   },
   {
     "id" : "rs-observation-pupils",
@@ -448,11 +511,39 @@
     "name" : "RSObsRespiratoryRate"
   },
   {
+    "id" : "rs-observation-respiratory-rhythm",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm",
+    "version" : "0.1.0",
+    "name" : "RSObsRespiratoryRhythm"
+  },
+  {
+    "id" : "rs-observation-runreport-comments",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments",
+    "version" : "0.1.0",
+    "name" : "RSObsRunReportComments"
+  },
+  {
     "id" : "rs-observation-safety-accessories",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories",
     "version" : "0.1.0",
     "name" : "RSObsSafetyAccessories"
+  },
+  {
+    "id" : "rs-observation-status-on-arrival",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival",
+    "version" : "0.1.0",
+    "name" : "RSObsStatusOnArrival"
+  },
+  {
+    "id" : "rs-observation-status-on-arrival-alive",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival-alive",
+    "version" : "0.1.0",
+    "name" : "RSObsStatusOnArrivalAliveDetail"
   },
   {
     "id" : "rs-observation-time-departed",
@@ -523,6 +614,20 @@
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-urgency",
     "version" : "0.1.0",
     "name" : "RSObsUrgencyLevel"
+  },
+  {
+    "id" : "rs-observation-vehicle-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-condition",
+    "version" : "0.1.0",
+    "name" : "RSObsVehicleCondition"
+  },
+  {
+    "id" : "rs-observation-vehicle-used",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-used",
+    "version" : "0.1.0",
+    "name" : "RSObsVehicleUsed"
   },
   {
     "id" : "rs-organization",

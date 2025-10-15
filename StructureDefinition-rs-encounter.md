@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "Road Safety Encounter",
   "status" : "draft",
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -109,8 +109,65 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
       {
         "id" : "Encounter.identifier",
         "path" : "Encounter.identifier",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "type"
+            }
+          ],
+          "rules" : "open"
+        },
         "min" : 1,
         "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.identifier:incidentNumber",
+        "path" : "Encounter.identifier",
+        "sliceName" : "incidentNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.identifier:incidentNumber.type",
+        "path" : "Encounter.identifier.type",
+        "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.identifier:incidentNumber.type.coding",
+        "path" : "Encounter.identifier.type.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.identifier:incidentNumber.type.coding.display",
+        "path" : "Encounter.identifier.type.coding.display",
+        "patternString" : "Incident number"
+      },
+      {
+        "id" : "Encounter.identifier:hospitalCaseNo",
+        "path" : "Encounter.identifier",
+        "sliceName" : "hospitalCaseNo",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.identifier:hospitalCaseNo.type",
+        "path" : "Encounter.identifier.type",
+        "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.identifier:hospitalCaseNo.type.coding",
+        "path" : "Encounter.identifier.type.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.identifier:hospitalCaseNo.type.coding.display",
+        "path" : "Encounter.identifier.type.coding.display",
+        "patternString" : "Hospital case number"
       },
       {
         "id" : "Encounter.status",
@@ -125,12 +182,134 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
       {
         "id" : "Encounter.participant",
         "path" : "Encounter.participant",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "type"
+            }
+          ],
+          "rules" : "open"
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.participant:receivedBy",
+        "path" : "Encounter.participant",
+        "sliceName" : "receivedBy",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.participant:receivedBy.individual",
+        "path" : "Encounter.participant.individual",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.participant:teamLeader",
+        "path" : "Encounter.participant",
+        "sliceName" : "teamLeader",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.participant:teamLeader.individual",
+        "path" : "Encounter.participant.individual",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.participant:treatmentOfficer",
+        "path" : "Encounter.participant",
+        "sliceName" : "treatmentOfficer",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.participant:treatmentOfficer.individual",
+        "path" : "Encounter.participant.individual",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.participant:transportOfficer",
+        "path" : "Encounter.participant",
+        "sliceName" : "transportOfficer",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.participant:transportOfficer.individual",
+        "path" : "Encounter.participant.individual",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.participant:assistant",
+        "path" : "Encounter.participant",
+        "sliceName" : "assistant",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Encounter.participant:assistant.individual",
+        "path" : "Encounter.participant.individual",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {
         "id" : "Encounter.period.start",
         "path" : "Encounter.period.start",
         "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.hospitalization.origin",
+        "path" : "Encounter.hospitalization.origin",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {

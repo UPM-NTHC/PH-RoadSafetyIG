@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T16:03:41+00:00",
+  "date" : "2025-10-15T17:01:16+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -817,6 +817,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-blood-alcohol"
+      },
+      "name" : "Road Safety Observation - Blood Alcohol Concentration",
+      "description" : "Blood alcohol concentration.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-blood-pressure"
       },
       "name" : "Road Safety Observation - Blood Pressure",
@@ -833,6 +845,18 @@
       },
       "name" : "Road Safety Observation - Body Temperature",
       "description" : "Body temperature.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-breath-sounds"
+      },
+      "name" : "Road Safety Observation - Breath Sounds",
+      "description" : "Breath sounds assessment.",
       "exampleBoolean" : false
     },
     {
@@ -901,6 +925,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-cctv-available"
+      },
+      "name" : "Road Safety Observation - CCTV Available",
+      "description" : "Availability of CCTV video.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-clinical-remarks"
+      },
+      "name" : "Road Safety Observation - Clinical Remarks",
+      "description" : "Clinical remarks/notes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-collision-type"
       },
       "name" : "Road Safety Observation - Collision Type",
@@ -929,6 +977,18 @@
       },
       "name" : "Road Safety Observation - Concussion",
       "description" : "Concussion present; with site and details.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-condition-of-patient"
+      },
+      "name" : "Road Safety Observation - Condition of Patient",
+      "description" : "Overall condition of patient at assessment.",
       "exampleBoolean" : false
     },
     {
@@ -1201,6 +1261,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-status-on-arrival-alive"
+      },
+      "name" : "Road Safety Observation - If Alive: Conscious/Unconscious",
+      "description" : "If alive on arrival, consciousness detail.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-injury-intent"
       },
       "name" : "Road Safety Observation - Injury Intent",
@@ -1297,6 +1369,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-outcome-discharge"
+      },
+      "name" : "Road Safety Observation - Outcome at Discharge",
+      "description" : "Outcome at discharge.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-outcome-release"
+      },
+      "name" : "Road Safety Observation - Outcome at Release",
+      "description" : "Outcome at release from ER/OPD/RHU.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-patients-vehicle"
       },
       "name" : "Road Safety Observation - Patient's Vehicle",
@@ -1357,10 +1453,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-pulse-quality"
+      },
+      "name" : "Road Safety Observation - Pulse Quality",
+      "description" : "Pulse quality.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-pulse-rate"
       },
       "name" : "Road Safety Observation - Pulse Rate",
       "description" : "Pulse/heart rate in beats/min.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-pulse-rhythm"
+      },
+      "name" : "Road Safety Observation - Pulse Rhythm",
+      "description" : "Pulse rhythm.",
       "exampleBoolean" : false
     },
     {
@@ -1405,10 +1525,46 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-respiratory-rhythm"
+      },
+      "name" : "Road Safety Observation - Respiratory Rhythm",
+      "description" : "Respiratory rhythm (normal/irregular/labored).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-runreport-comments"
+      },
+      "name" : "Road Safety Observation - Run Report Comments",
+      "description" : "General comments from run report.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-safety-accessories"
       },
       "name" : "Road Safety Observation - Safety Accessories",
       "description" : "Safety accessories present/used; allow text for 'Others'.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-status-on-arrival"
+      },
+      "name" : "Road Safety Observation - Status on Arrival",
+      "description" : "Status upon reaching facility/hospital.",
       "exampleBoolean" : false
     },
     {
@@ -1505,6 +1661,30 @@
       },
       "name" : "Road Safety Observation - Triage Priority",
       "description" : "Triage category assigned at scene (e.g., Red/Yellow/Green/Black).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-vehicle-condition"
+      },
+      "name" : "Road Safety Observation - Vehicle Condition",
+      "description" : "Vehicle condition assessment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-observation-vehicle-used"
+      },
+      "name" : "Road Safety Observation - Vehicle Used",
+      "description" : "Vehicle used during response.",
       "exampleBoolean" : false
     },
     {
