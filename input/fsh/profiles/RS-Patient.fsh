@@ -13,7 +13,3 @@ Description: "Patient demographics and identifiers for road safety reporting; re
 * address 0..* MS
 * address.line 0..* MS
 * address.extension 0..* MS
-/* Occupation extension (PH-Core style via extension) */
-* extension contains occupation 0..1
-* extension[occupation].url = $SILPH
-* extension[occupation].valueCodeableConcept 0..1 MS

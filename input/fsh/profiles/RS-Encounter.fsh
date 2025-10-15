@@ -34,12 +34,12 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * participant ^slicing.rules = #open
 * participant contains receivedBy 0..1 and teamLeader 0..1 and treatmentOfficer 0..1 and transportOfficer 0..1 and assistant 0..*
 * participant[receivedBy].individual 0..1 MS
-* participant[receivedBy].individual only Reference(RSOrganization or PHCorePractitioner)
+* participant[receivedBy].individual only Reference(PHCorePractitioner)
 * participant[teamLeader].individual 0..1 MS
 * participant[teamLeader].individual only Reference(PHCorePractitioner)
 * participant[treatmentOfficer].individual 0..1 MS
 * participant[treatmentOfficer].individual only Reference(PHCorePractitioner)
 * participant[transportOfficer].individual 0..1 MS
 * participant[transportOfficer].individual only Reference(PHCorePractitioner)
-* participant[assistant].individual 0..* MS
+* participant[assistant].individual 0..1 MS
 * participant[assistant].individual only Reference(PHCorePractitioner)
