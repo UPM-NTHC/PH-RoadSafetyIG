@@ -232,6 +232,7 @@ Id: rs-observation-injury-intent
 Title: "Road Safety Observation - Injury Intent"
 Description: "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSInjuryIntent (preferred)
 * code.coding 1..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #11375-3
@@ -255,6 +256,7 @@ Title: "Road Safety Observation - Mode of Transport to Facility"
 Description: "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSModeOfTransport (preferred)
 * code.coding 1..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #74286-6
@@ -280,6 +282,7 @@ Id: rs-observation-place-of-occurrence
 Title: "Road Safety Observation - Place of Occurrence"
 Description: "Place type where injury occurred; name can be carried in note when applicable."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPlaceOfOccurrence (preferred)
 * note 0..* 
 
 Profile: RSObsActivityAtIncident
@@ -289,6 +292,7 @@ Title: "Road Safety Observation - Activity at Time of Incident"
 Description: "Activity of the patient at time of incident; allow text fallback."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSActivity (preferred)
 
 Profile: RSObsCollisionVsNonCollision
 Parent: RSObservation
@@ -296,6 +300,7 @@ Id: rs-observation-collision-vs-noncollision
 Title: "Road Safety Observation - Collision vs Non-Collision"
 Description: "Indicates whether the incident was collision or non-collision."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSCollisionCategory (preferred)
 
 Profile: RSObsPatientsVehicle
 Parent: RSObservation
@@ -304,6 +309,7 @@ Title: "Road Safety Observation - Patient's Vehicle"
 Description: "Type of vehicle used by patient; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSPatientsVehicle (preferred)
 
 Profile: RSObsOtherVehicleInvolved
 Parent: RSObservation
@@ -312,6 +318,7 @@ Title: "Road Safety Observation - Other Vehicle/Object Involved"
 Description: "Other vehicle/object type involved; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSOtherVehicle (preferred)
 
 Profile: RSObsPositionOfPatient
 Parent: RSObservation
@@ -320,6 +327,7 @@ Title: "Road Safety Observation - Position of Patient"
 Description: "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSPositionOfPatient (preferred)
 
 Profile: RSObsHowManyVehicles
 Parent: RSObservation
@@ -356,6 +364,7 @@ Title: "Road Safety Observation - Other Risk Factors"
 Description: "Other risk factors at the time of incident; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSOtherRiskFactors (preferred)
 
 Profile: RSObsSafetyAccessories
 Parent: RSObservation
@@ -364,6 +373,7 @@ Title: "Road Safety Observation - Safety Accessories"
 Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSSafetyDevices (preferred)
 
 Profile: RSObsReportedComplaint
 Parent: RSObservation
@@ -427,6 +437,7 @@ Id: rs-observation-ec-burns-agent
 Title: "Road Safety Observation - External Cause: Burns Agent"
 Description: "Agent causing burn (heat/electric/chemical/etc.)."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSBurnsAgent (preferred)
 
 Profile: RSObsECBurnsOther
 Parent: RSObservation
@@ -480,6 +491,7 @@ Id: rs-observation-ec-drowning-type
 Title: "Road Safety Observation - External Cause: Drowning Type/Body of Water"
 Description: "Type/body of water."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSDrowningType (preferred)
 
 Profile: RSObsECDrowningOther
 Parent: RSObservation

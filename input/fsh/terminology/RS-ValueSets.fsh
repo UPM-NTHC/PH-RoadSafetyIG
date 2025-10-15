@@ -111,3 +111,123 @@ Description: "Safety devices present/used (prefer SNOMED CT)."
 * $SCT#285695004 "Helmet (physical object)"
 * $SCT#74964007 "Other (qualifier value)"
 * $SCT#261665006 "Unknown (qualifier value)"
+
+// Place of occurrence
+ValueSet: VSPlaceOfOccurrence
+Id: vs-place-of-occurrence
+Title: "RS VS - Place of Occurrence"
+Description: "Place of occurrence (prefer SNOMED CT; use ICD-11 where needed)."
+* ^status = #draft
+* $SCT#264362003 "Home (environment)"
+* $SCT#257698009 "School (environment)"
+* $SCT#272510001 "Road (environment)"
+* http://id.who.int/icd/release/11/mms#XE67Y2 "Nightclub/restaurant or other commercial place for socialising and recreation"
+* $SCT#285141008 "Work environment (environment)"
+* $SCT#74964007 "Other (qualifier value)"
+* $SCT#261665006 "Unknown (qualifier value)"
+
+// Activity at time of incident
+ValueSet: VSActivity
+Id: vs-activity
+Title: "RS VS - Activity at Time of Incident"
+Description: "Activity at time of incident (prefer SNOMED CT)."
+* ^status = #draft
+* $SCT#443786003 "Injury while engaged in sports activity (disorder)"
+* $LNC#LA9374-5 "Leisure"
+* $SCT#17542004 "Accident while engaged in work-related activity (event)"
+* $SCT#74964007 "Other (qualifier value)"
+* $SCT#261665006 "Unknown (qualifier value)"
+
+// Mode of transport to facility
+ValueSet: VSModeOfTransport
+Id: vs-mode-of-transport
+Title: "RS VS - Mode of Transport to Facility"
+Description: "Mode of transport to the hospital/facility."
+* ^status = #draft
+* $SCT#49122002 "Ambulance, device (physical object)"
+* $LNC#LA9321-6 "Law enforcement transport"
+* $LNC#LA9319-0 "Private transportation"
+* $LNC#LA9323-2 "Other mode of transport"
+
+// Other risk factors
+ValueSet: VSOtherRiskFactors
+Id: vs-other-risk-factors
+Title: "RS VS - Other Risk Factors"
+Description: "Other risk factors at time of incident (prefer SNOMED CT)."
+* ^status = #draft
+* $SCT#704197006 "Admits alcohol use (finding)"
+* $SCT#719363002 "Does use high technology communication device (finding)"
+* $SCT#271782001 "Drowsy (finding)"
+* $SCT#365982000 "Finding of tobacco smoking consumption (finding)"
+* $SCT#74964007 "Other (qualifier value)"
+
+// Collision vs Non-collision
+ValueSet: VSCollisionCategory
+Id: vs-collision-category
+Title: "RS VS - Collision Category"
+Description: "Collision vs non-collision category."
+* ^status = #draft
+* $LNC#LA7319-2 "Collision"
+* http://upm-nthc.ph/CodeSystem/rs-local#non-collision "Non-collision"
+
+// Patient's vehicle
+ValueSet: VSPatientsVehicle
+Id: vs-patients-vehicle
+Title: "RS VS - Patient's Vehicle"
+Description: "Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC)."
+* ^status = #draft
+* $LNC#LA18039-0 "Pedestrian"
+* $SCT#71783008 "Automobile, device (physical object)"
+* $SCT#224832000 "Van (physical object)"
+* $SCT#224830008 "Coach (physical object)"
+* $SCT#90748009 "Motorcycle, device (physical object)"
+* $SCT#70224005 "Bicycle, device (physical object)"
+* http://id.who.int/icd/release/11/mms#XE9AX "Three-wheeled motor vehicle or scooter"
+* http://upm-nthc.ph/CodeSystem/rs-local#jeepney "Jeepney"
+* $SCT#12247004 "Truck, device (physical object)"
+* $LNC#LA46-8 "Other"
+* $LNC#LA4489-6 "Unknown"
+
+// Other vehicle involved (for collision)
+ValueSet: VSOtherVehicle
+Id: vs-other-vehicle
+Title: "RS VS - Other Vehicle in Collision"
+Description: "Other vehicle/object involved in collision."
+* ^status = #draft
+* $SCT#260413007 "None (qualifier value)"
+* $SCT#71783008 "Automobile, device (physical object)"
+* $SCT#224832000 "Van (physical object)"
+* $SCT#224830008 "Coach (physical object)"
+* $SCT#90748009 "Motorcycle, device (physical object)"
+* $SCT#70224005 "Bicycle, device (physical object)"
+* http://id.who.int/icd/release/11/mms#XE9AX "Three-wheeled motor vehicle or scooter"
+* http://upm-nthc.ph/CodeSystem/rs-local#jeepney "Jeepney"
+* $SCT#12247004 "Truck, device (physical object)"
+* $LNC#LA46-8 "Other"
+* $LNC#LA4489-6 "Unknown"
+
+// Drowning - type/body of water
+ValueSet: VSDrowningType
+Id: vs-drowning-type
+Title: "RS VS - Drowning Type/Body of Water"
+Description: "Type/body of water for drowning incidents."
+* ^status = #draft
+* $SCT#225742004 "Sea (environment)"
+* $SCT#420531007 "River (environment)"
+* $SCT#421084007 "Lake (environment)"
+* $SCT#69297003 "Pool (environment)"
+* $SCT#75988000 "Bathtub, device (physical object)"
+* $LNC#LA46-8 "Other"
+
+// Burns - specify agent
+ValueSet: VSBurnsAgent
+Id: vs-burns-agent
+Title: "RS VS - Burns Agent"
+Description: "Agent causing burn (prefer SNOMED CT)."
+* ^status = #draft
+* $SCT#88999006 "Heat (physical force)"
+* $SCT#80032004 "Fire (physical force)"
+* $SCT#18213006 "Electricity (physical force)"
+* $SCT#21847005 "Oil (substance)"
+* $SCT#263762005 "Friction (physical force)"
+* $SCT#74964007 "Other (qualifier value)"
