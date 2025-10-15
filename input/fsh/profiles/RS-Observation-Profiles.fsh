@@ -473,6 +473,7 @@ Description: "Flag indicating bites/stings."
 * component[bitesAgent].code.coding.code = #95376-0
 * component[bitesAgent].code.coding.display = "Type of animal exposed to"
 * component[bitesAgent].valueCodeableConcept 0..1 MS
+* component[bitesAgent].valueCodeableConcept from VSBitesAgent (preferred)
 
 // (Consolidated into RSObsECBitesStings as component[bitesAgent])
 
@@ -491,13 +492,13 @@ Description: "Flag indicating burns as external cause."
 * component ^slicing.rules = #open
 * component contains burnsAgent 0..1 and burnsOther 0..1
 * component[burnsAgent].code.coding 1..1
-* component[burnsAgent].code.coding.system = $SILPH (exactly)
+* component[burnsAgent].code.coding.system = $SCT (exactly)
 * component[burnsAgent].code.coding.code = #burns-agent
 * component[burnsAgent].code.coding.display = "Burns agent"
 * component[burnsAgent].valueCodeableConcept 0..1 MS
 * component[burnsAgent].valueCodeableConcept from VSBurnsAgent (preferred)
 * component[burnsOther].code.coding 1..1
-* component[burnsOther].code.coding.system = $SILPH (exactly)
+* component[burnsOther].code.coding.system = $SCT (exactly)
 * component[burnsOther].code.coding.code = #burns-other
 * component[burnsOther].code.coding.display = "Burns other (specify)"
 * component[burnsOther].valueString 0..1 MS
@@ -510,12 +511,16 @@ Id: rs-observation-ec-chemical
 Title: "Road Safety Observation - External Cause: Chemical/Substance"
 Description: "Flag indicating chemical/substance exposure."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #chemical-event
+* code.coding.display = "Chemical/substance exposure (event)"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains chemicalAgent 0..1
 * component[chemicalAgent].code.coding 1..1
-* component[chemicalAgent].code.coding.system = $SILPH (exactly)
+* component[chemicalAgent].code.coding.system = $SCT (exactly)
 * component[chemicalAgent].code.coding.code = #chemical-agent
 * component[chemicalAgent].code.coding.display = "Chemical agent"
 * component[chemicalAgent].valueCodeableConcept 0..1 MS
@@ -528,12 +533,16 @@ Id: rs-observation-ec-sharp-object
 Title: "Road Safety Observation - External Cause: Contact with Sharp Object"
 Description: "Flag indicating sharp object cause."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #sharp-object-event
+* code.coding.display = "Contact with sharp object (event)"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains sharpObjectSpecify 0..1
 * component[sharpObjectSpecify].code.coding 1..1
-* component[sharpObjectSpecify].code.coding.system = $SILPH (exactly)
+* component[sharpObjectSpecify].code.coding.system = $SCT (exactly)
 * component[sharpObjectSpecify].code.coding.code = #sharp-object-specify
 * component[sharpObjectSpecify].code.coding.display = "Sharp object (specify)"
 * component[sharpObjectSpecify].valueString 0..1 MS
@@ -555,13 +564,13 @@ Description: "Flag indicating drowning."
 * component ^slicing.rules = #open
 * component contains drowningType 0..1 and drowningOther 0..1
 * component[drowningType].code.coding 1..1
-* component[drowningType].code.coding.system = $SILPH (exactly)
+* component[drowningType].code.coding.system = $SCT (exactly)
 * component[drowningType].code.coding.code = #drowning-type
 * component[drowningType].code.coding.display = "Drowning type/body of water"
 * component[drowningType].valueCodeableConcept 0..1 MS
 * component[drowningType].valueCodeableConcept from VSDrowningType (preferred)
 * component[drowningOther].code.coding 1..1
-* component[drowningOther].code.coding.system = $SILPH (exactly)
+* component[drowningOther].code.coding.system = $SCT (exactly)
 * component[drowningOther].code.coding.code = #drowning-other
 * component[drowningOther].code.coding.display = "Drowning other (specify)"
 * component[drowningOther].valueString 0..1 MS
@@ -574,6 +583,10 @@ Id: rs-observation-ec-forces-of-nature
 Title: "Road Safety Observation - External Cause: Exposure to Forces of Nature"
 Description: "Flag indicating exposure to natural disaster/calamity."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #forces-of-nature-event
+* code.coding.display = "Exposure to forces of nature (event)"
 
 Profile: RSObsECFall
 Parent: RSObservation
@@ -581,12 +594,16 @@ Id: rs-observation-ec-fall
 Title: "Road Safety Observation - External Cause: Fall"
 Description: "Flag indicating fall."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #fall-event
+* code.coding.display = "Fall (event)"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains fallSpecifics 0..1
 * component[fallSpecifics].code.coding 1..1
-* component[fallSpecifics].code.coding.system = $SILPH (exactly)
+* component[fallSpecifics].code.coding.system = $SCT (exactly)
 * component[fallSpecifics].code.coding.code = #fall-specifics
 * component[fallSpecifics].code.coding.display = "Fall specifics"
 * component[fallSpecifics].valueString 0..1 MS
@@ -599,12 +616,16 @@ Id: rs-observation-ec-firecracker
 Title: "Road Safety Observation - External Cause: Firecracker"
 Description: "Flag indicating firecracker-related cause."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #firecracker-event
+* code.coding.display = "Firecracker event"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains firecrackerType 0..1
 * component[firecrackerType].code.coding 1..1
-* component[firecrackerType].code.coding.system = $SILPH (exactly)
+* component[firecrackerType].code.coding.system = $SCT (exactly)
 * component[firecrackerType].code.coding.code = #firecracker-type
 * component[firecrackerType].code.coding.display = "Firecracker type"
 * component[firecrackerType].valueString 0..1 MS
@@ -617,12 +638,16 @@ Id: rs-observation-ec-gunshot
 Title: "Road Safety Observation - External Cause: Gunshot"
 Description: "Flag indicating gunshot."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #gunshot-event
+* code.coding.display = "Gunshot event"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains gunshotWeapon 0..1
 * component[gunshotWeapon].code.coding 1..1
-* component[gunshotWeapon].code.coding.system = $SILPH (exactly)
+* component[gunshotWeapon].code.coding.system = $SCT (exactly)
 * component[gunshotWeapon].code.coding.code = #gunshot-weapon
 * component[gunshotWeapon].code.coding.display = "Gunshot weapon"
 * component[gunshotWeapon].valueString 0..1 MS
@@ -635,6 +660,10 @@ Id: rs-observation-ec-hanging-strangulation
 Title: "Road Safety Observation - External Cause: Hanging/Strangulation"
 Description: "Flag indicating hanging/strangulation."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #hanging-strangulation-event
+* code.coding.display = "Hanging/strangulation event"
 
 Profile: RSObsECMaulingAssault
 Parent: RSObservation
@@ -642,6 +671,10 @@ Id: rs-observation-ec-mauling-assault
 Title: "Road Safety Observation - External Cause: Mauling/Assault"
 Description: "Flag indicating assault."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #mauling-assault-event
+* code.coding.display = "Mauling/assault event"
 
 Profile: RSObsECSexualAssault
 Parent: RSObservation
@@ -649,6 +682,10 @@ Id: rs-observation-ec-sexual-assault
 Title: "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"
 Description: "Flag indicating sexual assault."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #sexual-assault-event
+* code.coding.display = "Sexual assault event"
 
 Profile: RSObsECOther
 Parent: RSObservation
@@ -656,12 +693,16 @@ Id: rs-observation-ec-other
 Title: "Road Safety Observation - External Cause: Other"
 Description: "Flag indicating other external cause."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #other-external-cause-event
+* code.coding.display = "Other external cause event"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains otherSpecify 0..1
 * component[otherSpecify].code.coding 1..1
-* component[otherSpecify].code.coding.system = $SILPH (exactly)
+* component[otherSpecify].code.coding.system = $SCT (exactly)
 * component[otherSpecify].code.coding.code = #other-external-cause-specify
 * component[otherSpecify].code.coding.display = "Other external cause (specify)"
 * component[otherSpecify].valueString 0..1 MS
