@@ -1,6 +1,6 @@
 Profile: RSCondition
 Parent: Condition
-Id: RS-Condition
+Id: rs-condition
 Title: "Road Safety Condition"
 Description: "Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries."
 * ^version = "1.0.0"
@@ -14,7 +14,7 @@ Description: "Conditions used for medical history, initial impression, ICD-10 na
 
 Profile: RSMedicationStatement
 Parent: MedicationStatement
-Id: RS-MedicationStatement
+Id: rs-medication-statement
 Title: "Road Safety MedicationStatement"
 Description: "Current medications as codeable concepts or references where available."
 * ^version = "1.0.0"
@@ -25,14 +25,14 @@ Description: "Current medications as codeable concepts or references where avail
 
 Profile: RSAllergyIntolerance
 Parent: AllergyIntolerance
-Id: RS-AllergyIntolerance
+Id: rs-allergy-intolerance
 Title: "Road Safety AllergyIntolerance"
 Description: "Known allergies, substances and reactions."
 * ^version = "1.0.0"
 * code 0..1 MS
-* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (preferred)
-* clinicalStatus from http://terminology.hl7.org/ValueSet/allergyintolerance-clinical (required)
-* verificationStatus from http://terminology.hl7.org/ValueSet/allergyintolerance-verification (required)
+// * code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (preferred)
+// * clinicalStatus from http://terminology.hl7.org/ValueSet/allergyintolerance-clinical (required)
+// * verificationStatus from http://terminology.hl7.org/ValueSet/allergyintolerance-verification (required)
 * patient 1..1 MS
 * patient only Reference(RSPatient)
-* reaction 0..* 
+* reaction.substance 0..1 
