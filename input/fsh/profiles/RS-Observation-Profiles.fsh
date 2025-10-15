@@ -147,6 +147,55 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 * component[gcsMotor].code.coding.code = #9268-4
 * component[gcsMotor].code.coding.display = "Glasgow coma score motor"
 
+// ---------------- VITALS QUALIFIERS ----------------
+Profile: RSObsRespiratoryRhythm
+Parent: RSObservation
+Id: rs-observation-respiratory-rhythm
+Title: "Road Safety Observation - Respiratory Rhythm"
+Description: "Respiratory rhythm (normal/irregular/labored)."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSRespiratoryRhythm (preferred)
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #respiratory-rhythm
+* code.coding.display = "Respiratory rhythm"
+
+Profile: RSObsBreathSounds
+Parent: RSObservation
+Id: rs-observation-breath-sounds
+Title: "Road Safety Observation - Breath Sounds"
+Description: "Breath sounds assessment."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSBreathSounds (preferred)
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #breath-sounds
+* code.coding.display = "Breath sounds"
+
+Profile: RSObsPulseRhythm
+Parent: RSObservation
+Id: rs-observation-pulse-rhythm
+Title: "Road Safety Observation - Pulse Rhythm"
+Description: "Pulse rhythm."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPulseRhythm (preferred)
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #pulse-rhythm
+* code.coding.display = "Pulse rhythm"
+
+Profile: RSObsPulseQuality
+Parent: RSObservation
+Id: rs-observation-pulse-quality
+Title: "Road Safety Observation - Pulse Quality"
+Description: "Pulse quality."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPulseQuality (preferred)
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #pulse-quality
+* code.coding.display = "Pulse quality"
+
 // ---------------- TIMELINE (dispatch/transport timestamps) ----------------
 Profile: RSObsDateReceived
 Parent: RSObservation
@@ -269,7 +318,7 @@ Title: "Road Safety Observation - Triage Priority"
 Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 * valueCodeableConcept 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #triage-priority
 * code.coding.display = "Triage priority"
 
@@ -280,7 +329,7 @@ Title: "Road Safety Observation - Priority Level (Urgency)"
 Description: "System-generated urgency level per CAD/agency rules."
 * valueCodeableConcept 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #urgency-level
 * code.coding.display = "Urgency level"
 
@@ -293,7 +342,7 @@ Description: "Place type where injury occurred; name can be carried in note when
 * valueCodeableConcept from VSPlaceOfOccurrence (preferred)
 * note 0..* 
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #place-of-occurrence
 * code.coding.display = "Place of occurrence"
 
@@ -306,7 +355,7 @@ Description: "Activity of the patient at time of incident; allow text fallback."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSActivity (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #activity-at-incident
 * code.coding.display = "Activity at time of incident"
 
@@ -318,7 +367,7 @@ Description: "Indicates whether the incident was collision or non-collision."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCollisionCategory (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #collision-category
 * code.coding.display = "Collision category"
 
@@ -331,7 +380,7 @@ Description: "Type of vehicle used by patient; text for 'Others'."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPatientsVehicle (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #patients-vehicle
 * code.coding.display = "Patient's vehicle"
 
@@ -344,7 +393,7 @@ Description: "Other vehicle/object type involved; text for 'Others'."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSOtherVehicle (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #other-vehicle-involved
 * code.coding.display = "Other vehicle/object involved"
 
@@ -357,7 +406,7 @@ Description: "Seat/position (driver/front passenger/rear/pedestrian); text for '
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPositionOfPatient (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #position-of-patient
 * code.coding.display = "Position of patient"
 
@@ -368,7 +417,7 @@ Title: "Road Safety Observation - How Many Vehicles Involved"
 Description: "Count of vehicles involved."
 * valueInteger 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #how-many-vehicles
 * code.coding.display = "How many vehicles involved"
 
@@ -379,7 +428,7 @@ Title: "Road Safety Observation - How Many Patients Involved"
 Description: "Count of patients involved."
 * valueInteger 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #how-many-patients
 * code.coding.display = "How many patients involved"
 
@@ -391,7 +440,7 @@ Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCollisionCategory (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #collision-type
 * code.coding.display = "Collision type"
 
@@ -402,7 +451,7 @@ Title: "Road Safety Observation - Presence of Traffic Investigator"
 Description: "Boolean presence/absence of traffic investigator."
 * valueBoolean 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #traffic-investigator-presence
 * code.coding.display = "Presence of traffic investigator"
 
@@ -415,7 +464,7 @@ Description: "Other risk factors at the time of incident; allow text for 'Others
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSOtherRiskFactors (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #other-risk-factors
 * code.coding.display = "Other risk factors"
 
@@ -428,7 +477,7 @@ Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSSafetyDevices (preferred)
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = $SCT
 * code.coding.code = #safety-accessories
 * code.coding.display = "Safety accessories"
 
@@ -890,3 +939,127 @@ Description: "Other specified injury present; with site and details."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #417163006
 * code.coding.display = "Traumatic or non-traumatic injury (disorder)"
+
+// ---------------- ONEISS CLINICAL ----------------
+Profile: RSObsBloodAlcoholConcentration
+Parent: RSObservation
+Id: rs-observation-blood-alcohol
+Title: "Road Safety Observation - Blood Alcohol Concentration"
+Description: "Blood alcohol concentration."
+* valueQuantity 1..1 MS
+* code.coding 1..1
+* code.coding.system = $LNC (exactly)
+* code.coding.code = #56425-3
+* code.coding.display = "Ethanol [Mass/volume] in Blood"
+
+Profile: RSObsConditionOfPatient
+Parent: RSObservation
+Id: rs-observation-condition-of-patient
+Title: "Road Safety Observation - Condition of Patient"
+Description: "Overall condition of patient at assessment."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #condition-of-patient
+* code.coding.display = "Condition of patient"
+
+Profile: RSObsOutcomeAtRelease
+Parent: RSObservation
+Id: rs-observation-outcome-release
+Title: "Road Safety Observation - Outcome at Release"
+Description: "Outcome at release from ER/OPD/RHU."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #outcome-at-release
+* code.coding.display = "Outcome at release"
+
+Profile: RSObsOutcomeAtDischarge
+Parent: RSObservation
+Id: rs-observation-outcome-discharge
+Title: "Road Safety Observation - Outcome at Discharge"
+Description: "Outcome at discharge."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #outcome-at-discharge
+* code.coding.display = "Outcome at discharge"
+
+Profile: RSObsStatusOnArrival
+Parent: RSObservation
+Id: rs-observation-status-on-arrival
+Title: "Road Safety Observation - Status on Arrival"
+Description: "Status upon reaching facility/hospital."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #status-on-arrival
+* code.coding.display = "Status on arrival"
+
+Profile: RSObsStatusOnArrivalAliveDetail
+Parent: RSObservation
+Id: rs-observation-status-on-arrival-alive
+Title: "Road Safety Observation - If Alive: Conscious/Unconscious"
+Description: "If alive on arrival, consciousness detail."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #status-on-arrival-alive
+* code.coding.display = "Status on arrival (alive detail)"
+
+// ---------------- RUN REPORT ADDITIONALS ----------------
+Profile: RSObsVehicleUsed
+Parent: RSObservation
+Id: rs-observation-vehicle-used
+Title: "Road Safety Observation - Vehicle Used"
+Description: "Vehicle used during response."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #vehicle-used
+* code.coding.display = "Vehicle used"
+
+Profile: RSObsClinicalRemarks
+Parent: RSObservation
+Id: rs-observation-clinical-remarks
+Title: "Road Safety Observation - Clinical Remarks"
+Description: "Clinical remarks/notes."
+* valueString 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #clinical-remarks
+* code.coding.display = "Clinical remarks"
+
+Profile: RSObsRunReportComments
+Parent: RSObservation
+Id: rs-observation-runreport-comments
+Title: "Road Safety Observation - Run Report Comments"
+Description: "General comments from run report."
+* valueString 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #runreport-comments
+* code.coding.display = "Run report comments"
+
+// ---------------- POST-CRASH ----------------
+Profile: RSObsVehicleCondition
+Parent: RSObservation
+Id: rs-observation-vehicle-condition
+Title: "Road Safety Observation - Vehicle Condition"
+Description: "Vehicle condition assessment."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #vehicle-condition
+* code.coding.display = "Vehicle condition"
+
+Profile: RSObsCCTVAvailable
+Parent: RSObservation
+Id: rs-observation-cctv-available
+Title: "Road Safety Observation - CCTV Available"
+Description: "Availability of CCTV video."
+* valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #cctv-available
+* code.coding.display = "CCTV available"
