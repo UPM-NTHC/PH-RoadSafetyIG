@@ -19,5 +19,586 @@
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/PH-RoadSafetyLogicalModel",
     "version" : "0.1.0",
     "name" : "MDSRoadSafety"
+  },
+  {
+    "id" : "RS-AllergyIntolerance",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-AllergyIntolerance",
+    "version" : "0.1.0",
+    "name" : "RSAllergyIntolerance"
+  },
+  {
+    "id" : "RS-Claim",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Claim",
+    "version" : "0.1.0",
+    "name" : "RSClaim"
+  },
+  {
+    "id" : "RS-Condition",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Condition",
+    "version" : "0.1.0",
+    "name" : "RSCondition"
+  },
+  {
+    "id" : "RS-DocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-DocumentReference",
+    "version" : "0.1.0",
+    "name" : "RSDocumentReference"
+  },
+  {
+    "id" : "RS-Encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter",
+    "version" : "0.1.0",
+    "name" : "RSEncounter"
+  },
+  {
+    "id" : "RS-Location-Incident",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Location-Incident",
+    "version" : "0.1.0",
+    "name" : "RSLocation"
+  },
+  {
+    "id" : "RS-MedicationStatement",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-MedicationStatement",
+    "version" : "0.1.0",
+    "name" : "RSMedicationStatement"
+  },
+  {
+    "id" : "RS-Observation",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation",
+    "version" : "0.1.0",
+    "name" : "RSObservation"
+  },
+  {
+    "id" : "RS-Observation-abrasion",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-abrasion",
+    "version" : "0.1.0",
+    "name" : "RSObsAbrasion"
+  },
+  {
+    "id" : "RS-Observation-activity-at-incident",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-activity-at-incident",
+    "version" : "0.1.0",
+    "name" : "RSObsActivityAtIncident"
+  },
+  {
+    "id" : "RS-Observation-avulsion",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-avulsion",
+    "version" : "0.1.0",
+    "name" : "RSObsAvulsion"
+  },
+  {
+    "id" : "RS-Observation-blood-pressure",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-blood-pressure",
+    "version" : "0.1.0",
+    "name" : "RSObsBloodPressure"
+  },
+  {
+    "id" : "RS-Observation-body-temperature",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-body-temperature",
+    "version" : "0.1.0",
+    "name" : "RSObsBodyTemperature"
+  },
+  {
+    "id" : "RS-Observation-burn-1st",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-1st",
+    "version" : "0.1.0",
+    "name" : "RSObsBurn1stDegree"
+  },
+  {
+    "id" : "RS-Observation-burn-2nd",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-2nd",
+    "version" : "0.1.0",
+    "name" : "RSObsBurn2ndDegree"
+  },
+  {
+    "id" : "RS-Observation-burn-3rd",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-3rd",
+    "version" : "0.1.0",
+    "name" : "RSObsBurn3rdDegree"
+  },
+  {
+    "id" : "RS-Observation-burn-4th",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-4th",
+    "version" : "0.1.0",
+    "name" : "RSObsBurn4thDegree"
+  },
+  {
+    "id" : "RS-Observation-call-source",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-call-source",
+    "version" : "0.1.0",
+    "name" : "RSObsCallSource"
+  },
+  {
+    "id" : "RS-Observation-collision-type",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-collision-type",
+    "version" : "0.1.0",
+    "name" : "RSObsCollisionType"
+  },
+  {
+    "id" : "RS-Observation-collision-vs-noncollision",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-collision-vs-noncollision",
+    "version" : "0.1.0",
+    "name" : "RSObsCollisionVsNonCollision"
+  },
+  {
+    "id" : "RS-Observation-concussion",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-concussion",
+    "version" : "0.1.0",
+    "name" : "RSObsConcussion"
+  },
+  {
+    "id" : "RS-Observation-contusion",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-contusion",
+    "version" : "0.1.0",
+    "name" : "RSObsContusion"
+  },
+  {
+    "id" : "RS-Observation-cyanosis",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-cyanosis",
+    "version" : "0.1.0",
+    "name" : "RSObsCyanosis"
+  },
+  {
+    "id" : "RS-Observation-date-received",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-date-received",
+    "version" : "0.1.0",
+    "name" : "RSObsDateReceived"
+  },
+  {
+    "id" : "RS-Observation-ec-bites-stings",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-bites-stings",
+    "version" : "0.1.0",
+    "name" : "RSObsECBitesStings"
+  },
+  {
+    "id" : "RS-Observation-ec-bites-stings-agent",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-bites-stings-agent",
+    "version" : "0.1.0",
+    "name" : "RSObsECBitesStingsAgent"
+  },
+  {
+    "id" : "RS-Observation-ec-burns",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-burns",
+    "version" : "0.1.0",
+    "name" : "RSObsECBurns"
+  },
+  {
+    "id" : "RS-Observation-ec-burns-agent",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-burns-agent",
+    "version" : "0.1.0",
+    "name" : "RSObsECBurnsAgent"
+  },
+  {
+    "id" : "RS-Observation-ec-burns-other",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-burns-other",
+    "version" : "0.1.0",
+    "name" : "RSObsECBurnsOther"
+  },
+  {
+    "id" : "RS-Observation-ec-chemical",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-chemical",
+    "version" : "0.1.0",
+    "name" : "RSObsECChemical"
+  },
+  {
+    "id" : "RS-Observation-ec-chemical-agent",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-chemical-agent",
+    "version" : "0.1.0",
+    "name" : "RSObsECChemicalAgent"
+  },
+  {
+    "id" : "RS-Observation-ec-drowning",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-drowning",
+    "version" : "0.1.0",
+    "name" : "RSObsECDrowning"
+  },
+  {
+    "id" : "RS-Observation-ec-drowning-other",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-drowning-other",
+    "version" : "0.1.0",
+    "name" : "RSObsECDrowningOther"
+  },
+  {
+    "id" : "RS-Observation-ec-drowning-type",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-drowning-type",
+    "version" : "0.1.0",
+    "name" : "RSObsECDrowningType"
+  },
+  {
+    "id" : "RS-Observation-ec-fall",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-fall",
+    "version" : "0.1.0",
+    "name" : "RSObsECFall"
+  },
+  {
+    "id" : "RS-Observation-ec-fall-specifics",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-fall-specifics",
+    "version" : "0.1.0",
+    "name" : "RSObsECFallSpecifics"
+  },
+  {
+    "id" : "RS-Observation-ec-firecracker",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-firecracker",
+    "version" : "0.1.0",
+    "name" : "RSObsECFirecracker"
+  },
+  {
+    "id" : "RS-Observation-ec-firecracker-type",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-firecracker-type",
+    "version" : "0.1.0",
+    "name" : "RSObsECFirecrackerType"
+  },
+  {
+    "id" : "RS-Observation-ec-forces-of-nature",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-forces-of-nature",
+    "version" : "0.1.0",
+    "name" : "RSObsECForcesOfNature"
+  },
+  {
+    "id" : "RS-Observation-ec-gunshot",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-gunshot",
+    "version" : "0.1.0",
+    "name" : "RSObsECGunshot"
+  },
+  {
+    "id" : "RS-Observation-ec-gunshot-weapon",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-gunshot-weapon",
+    "version" : "0.1.0",
+    "name" : "RSObsECGunshotWeapon"
+  },
+  {
+    "id" : "RS-Observation-ec-hanging-strangulation",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-hanging-strangulation",
+    "version" : "0.1.0",
+    "name" : "RSObsECHangingStrangulation"
+  },
+  {
+    "id" : "RS-Observation-ec-mauling-assault",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-mauling-assault",
+    "version" : "0.1.0",
+    "name" : "RSObsECMaulingAssault"
+  },
+  {
+    "id" : "RS-Observation-ec-other",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-other",
+    "version" : "0.1.0",
+    "name" : "RSObsECOther"
+  },
+  {
+    "id" : "RS-Observation-ec-other-specify",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-other-specify",
+    "version" : "0.1.0",
+    "name" : "RSObsECOtherSpecify"
+  },
+  {
+    "id" : "RS-Observation-ec-sexual-assault",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-sexual-assault",
+    "version" : "0.1.0",
+    "name" : "RSObsECSexualAssault"
+  },
+  {
+    "id" : "RS-Observation-ec-sharp-object",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-sharp-object",
+    "version" : "0.1.0",
+    "name" : "RSObsECSharpObject"
+  },
+  {
+    "id" : "RS-Observation-ec-sharp-object-specify",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-sharp-object-specify",
+    "version" : "0.1.0",
+    "name" : "RSObsECSharpObjectSpecify"
+  },
+  {
+    "id" : "RS-Observation-fracture-closed",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-fracture-closed",
+    "version" : "0.1.0",
+    "name" : "RSObsFractureClosed"
+  },
+  {
+    "id" : "RS-Observation-fracture-open",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-fracture-open",
+    "version" : "0.1.0",
+    "name" : "RSObsFractureOpen"
+  },
+  {
+    "id" : "RS-Observation-gcs",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-gcs",
+    "version" : "0.1.0",
+    "name" : "RSObsGCS"
+  },
+  {
+    "id" : "RS-Observation-how-many-patients",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-how-many-patients",
+    "version" : "0.1.0",
+    "name" : "RSObsHowManyPatients"
+  },
+  {
+    "id" : "RS-Observation-how-many-vehicles",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-how-many-vehicles",
+    "version" : "0.1.0",
+    "name" : "RSObsHowManyVehicles"
+  },
+  {
+    "id" : "RS-Observation-injury-datetime",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-injury-datetime",
+    "version" : "0.1.0",
+    "name" : "RSObsInjuryDateTime"
+  },
+  {
+    "id" : "RS-Observation-injury-intent",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-injury-intent",
+    "version" : "0.1.0",
+    "name" : "RSObsInjuryIntent"
+  },
+  {
+    "id" : "RS-Observation-level-of-consciousness",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-level-of-consciousness",
+    "version" : "0.1.0",
+    "name" : "RSObsLevelOfConsciousness"
+  },
+  {
+    "id" : "RS-Observation-mode-of-transport",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-mode-of-transport",
+    "version" : "0.1.0",
+    "name" : "RSObsModeOfTransport"
+  },
+  {
+    "id" : "RS-Observation-multiple-injuries",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-multiple-injuries",
+    "version" : "0.1.0",
+    "name" : "RSObsMultipleInjuries"
+  },
+  {
+    "id" : "RS-Observation-open-wound",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-open-wound",
+    "version" : "0.1.0",
+    "name" : "RSObsOpenWound"
+  },
+  {
+    "id" : "RS-Observation-other-injury",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-other-injury",
+    "version" : "0.1.0",
+    "name" : "RSObsOtherInjury"
+  },
+  {
+    "id" : "RS-Observation-other-risk-factors",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-other-risk-factors",
+    "version" : "0.1.0",
+    "name" : "RSObsOtherRiskFactors"
+  },
+  {
+    "id" : "RS-Observation-other-vehicle",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-other-vehicle",
+    "version" : "0.1.0",
+    "name" : "RSObsOtherVehicleInvolved"
+  },
+  {
+    "id" : "RS-Observation-patients-vehicle",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-patients-vehicle",
+    "version" : "0.1.0",
+    "name" : "RSObsPatientsVehicle"
+  },
+  {
+    "id" : "RS-Observation-place-of-occurrence",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-place-of-occurrence",
+    "version" : "0.1.0",
+    "name" : "RSObsPlaceOfOccurrence"
+  },
+  {
+    "id" : "RS-Observation-position-of-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-position-of-patient",
+    "version" : "0.1.0",
+    "name" : "RSObsPositionOfPatient"
+  },
+  {
+    "id" : "RS-Observation-pulse-rate",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-pulse-rate",
+    "version" : "0.1.0",
+    "name" : "RSObsPulseRate"
+  },
+  {
+    "id" : "RS-Observation-pupils",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-pupils",
+    "version" : "0.1.0",
+    "name" : "RSObsPupils"
+  },
+  {
+    "id" : "RS-Observation-reported-complaint",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-reported-complaint",
+    "version" : "0.1.0",
+    "name" : "RSObsReportedComplaint"
+  },
+  {
+    "id" : "RS-Observation-respiratory-rate",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-respiratory-rate",
+    "version" : "0.1.0",
+    "name" : "RSObsRespiratoryRate"
+  },
+  {
+    "id" : "RS-Observation-safety-accessories",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-safety-accessories",
+    "version" : "0.1.0",
+    "name" : "RSObsSafetyAccessories"
+  },
+  {
+    "id" : "RS-Observation-time-departed",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-departed",
+    "version" : "0.1.0",
+    "name" : "RSObsTimeDepartedScene"
+  },
+  {
+    "id" : "RS-Observation-time-enroute",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-enroute",
+    "version" : "0.1.0",
+    "name" : "RSObsTimeEnroute"
+  },
+  {
+    "id" : "RS-Observation-time-hospital-arrival",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-hospital-arrival",
+    "version" : "0.1.0",
+    "name" : "RSObsTimeHospitalArrival"
+  },
+  {
+    "id" : "RS-Observation-time-on-scene",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-on-scene",
+    "version" : "0.1.0",
+    "name" : "RSObsTimeOnScene"
+  },
+  {
+    "id" : "RS-Observation-time-station-arrival",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-station-arrival",
+    "version" : "0.1.0",
+    "name" : "RSObsTimeStationArrival"
+  },
+  {
+    "id" : "RS-Observation-traffic-investigator",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-traffic-investigator",
+    "version" : "0.1.0",
+    "name" : "RSObsPresenceTrafficInvestigator"
+  },
+  {
+    "id" : "RS-Observation-transport-vehicular-flag",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-transport-vehicular-flag",
+    "version" : "0.1.0",
+    "name" : "RSObsTransportVehicularFlag"
+  },
+  {
+    "id" : "RS-Observation-traumatic-amputation",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-traumatic-amputation",
+    "version" : "0.1.0",
+    "name" : "RSObsTraumaticAmputation"
+  },
+  {
+    "id" : "RS-Observation-triage-priority",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-triage-priority",
+    "version" : "0.1.0",
+    "name" : "RSObsTriagePriority"
+  },
+  {
+    "id" : "RS-Observation-urgency",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-urgency",
+    "version" : "0.1.0",
+    "name" : "RSObsUrgencyLevel"
+  },
+  {
+    "id" : "RS-Patient",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient",
+    "version" : "0.1.0",
+    "name" : "RSPatient"
+  },
+  {
+    "id" : "RS-Procedure",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Procedure",
+    "version" : "0.1.0",
+    "name" : "RSProcedure"
+  },
+  {
+    "id" : "RS-ServiceRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-ServiceRequest",
+    "version" : "0.1.0",
+    "name" : "RSServiceRequest"
   }
 ]

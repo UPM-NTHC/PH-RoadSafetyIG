@@ -4,15 +4,391 @@
   "fhirVersion": "4.0.1",
   "jurisdiction": "PH",
   "extensions": [],
-  "profiles": {},
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-AllergyIntolerance",
+        "title": "Road Safety AllergyIntolerance"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Claim",
+        "title": "Road Safety Claim"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Condition",
+        "title": "Road Safety Condition"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-DocumentReference",
+        "title": "Road Safety DocumentReference (Evidence)"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter",
+        "title": "Road Safety Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Location-Incident",
+        "title": "Road Safety Incident Location"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-MedicationStatement",
+        "title": "Road Safety MedicationStatement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation",
+        "title": "Road Safety Observation"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-abrasion",
+        "title": "Road Safety Observation - Abrasion"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-activity-at-incident",
+        "title": "Road Safety Observation - Activity at Time of Incident"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-avulsion",
+        "title": "Road Safety Observation - Avulsion"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-blood-pressure",
+        "title": "Road Safety Observation - Blood Pressure"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-body-temperature",
+        "title": "Road Safety Observation - Body Temperature"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-1st",
+        "title": "Road Safety Observation - Burn 1st Degree"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-2nd",
+        "title": "Road Safety Observation - Burn 2nd Degree"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-3rd",
+        "title": "Road Safety Observation - Burn 3rd Degree"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-burn-4th",
+        "title": "Road Safety Observation - Burn 4th Degree"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-call-source",
+        "title": "Road Safety Observation - Call Source"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-collision-type",
+        "title": "Road Safety Observation - Collision Type"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-collision-vs-noncollision",
+        "title": "Road Safety Observation - Collision vs Non-Collision"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-concussion",
+        "title": "Road Safety Observation - Concussion"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-contusion",
+        "title": "Road Safety Observation - Contusion"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-cyanosis",
+        "title": "Road Safety Observation - Cyanosis"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-date-received",
+        "title": "Road Safety Observation - Date/Time Received by EMS"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-bites-stings",
+        "title": "Road Safety Observation - External Cause: Bites/Stings"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-bites-stings-agent",
+        "title": "Road Safety Observation - External Cause: Bites/Stings Agent"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-burns",
+        "title": "Road Safety Observation - External Cause: Burns"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-burns-agent",
+        "title": "Road Safety Observation - External Cause: Burns Agent"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-burns-other",
+        "title": "Road Safety Observation - External Cause: Burns (Other specify)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-chemical",
+        "title": "Road Safety Observation - External Cause: Chemical/Substance"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-chemical-agent",
+        "title": "Road Safety Observation - External Cause: Chemical (Specify)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-drowning",
+        "title": "Road Safety Observation - External Cause: Drowning"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-drowning-other",
+        "title": "Road Safety Observation - External Cause: Drowning (Other specify)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-drowning-type",
+        "title": "Road Safety Observation - External Cause: Drowning Type/Body of Water"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-fall",
+        "title": "Road Safety Observation - External Cause: Fall"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-fall-specifics",
+        "title": "Road Safety Observation - External Cause: Fall (Specifics)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-firecracker",
+        "title": "Road Safety Observation - External Cause: Firecracker"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-firecracker-type",
+        "title": "Road Safety Observation - External Cause: Firecracker (Type)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-forces-of-nature",
+        "title": "Road Safety Observation - External Cause: Exposure to Forces of Nature"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-gunshot",
+        "title": "Road Safety Observation - External Cause: Gunshot"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-gunshot-weapon",
+        "title": "Road Safety Observation - External Cause: Gunshot (Weapon)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-hanging-strangulation",
+        "title": "Road Safety Observation - External Cause: Hanging/Strangulation"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-mauling-assault",
+        "title": "Road Safety Observation - External Cause: Mauling/Assault"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-other",
+        "title": "Road Safety Observation - External Cause: Other"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-other-specify",
+        "title": "Road Safety Observation - External Cause: Other (Specify)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-sexual-assault",
+        "title": "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-sharp-object",
+        "title": "Road Safety Observation - External Cause: Contact with Sharp Object"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-ec-sharp-object-specify",
+        "title": "Road Safety Observation - External Cause: Sharp Object (Specify)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-fracture-closed",
+        "title": "Road Safety Observation - Fracture (Closed)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-fracture-open",
+        "title": "Road Safety Observation - Fracture (Open)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-gcs",
+        "title": "Road Safety Observation - Glasgow Coma Scale"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-how-many-patients",
+        "title": "Road Safety Observation - How Many Patients Involved"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-how-many-vehicles",
+        "title": "Road Safety Observation - How Many Vehicles Involved"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-injury-datetime",
+        "title": "Road Safety Observation - Date/Time of Injury"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-injury-intent",
+        "title": "Road Safety Observation - Injury Intent"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-level-of-consciousness",
+        "title": "Road Safety Observation - Level of Consciousness (AVPU)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-mode-of-transport",
+        "title": "Road Safety Observation - Mode of Transport to Facility"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-multiple-injuries",
+        "title": "Road Safety Observation - Multiple Injuries?"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-open-wound",
+        "title": "Road Safety Observation - Open Wound"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-other-injury",
+        "title": "Road Safety Observation - Other Specified Injury"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-other-risk-factors",
+        "title": "Road Safety Observation - Other Risk Factors"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-other-vehicle",
+        "title": "Road Safety Observation - Other Vehicle/Object Involved"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-patients-vehicle",
+        "title": "Road Safety Observation - Patient\u0027s Vehicle"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-place-of-occurrence",
+        "title": "Road Safety Observation - Place of Occurrence"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-position-of-patient",
+        "title": "Road Safety Observation - Position of Patient"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-pulse-rate",
+        "title": "Road Safety Observation - Pulse Rate"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-pupils",
+        "title": "Road Safety Observation - Pupils"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-reported-complaint",
+        "title": "Road Safety Observation - Reported Complaint"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-respiratory-rate",
+        "title": "Road Safety Observation - Respiratory Rate"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-safety-accessories",
+        "title": "Road Safety Observation - Safety Accessories"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-departed",
+        "title": "Road Safety Observation - Time Departed Scene"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-enroute",
+        "title": "Road Safety Observation - Time Enroute"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-hospital-arrival",
+        "title": "Road Safety Observation - Time of Hospital Arrival"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-on-scene",
+        "title": "Road Safety Observation - Time On Scene"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-time-station-arrival",
+        "title": "Road Safety Observation - Time of Emergency Station Arrival"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-traffic-investigator",
+        "title": "Road Safety Observation - Presence of Traffic Investigator"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-transport-vehicular-flag",
+        "title": "Road Safety Observation - Transport/Vehicular Accident (flag)"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-traumatic-amputation",
+        "title": "Road Safety Observation - Traumatic Amputation"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-triage-priority",
+        "title": "Road Safety Observation - Triage Priority"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-urgency",
+        "title": "Road Safety Observation - Priority Level (Urgency)"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient",
+        "title": "Road Safety Patient"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Procedure",
+        "title": "Road Safety Procedure"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-ServiceRequest",
+        "title": "Road Safety ServiceRequest"
+      }
+    ]
+  },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-religion|5.2.0": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
@@ -33,6 +409,33 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/barangay": [
+      "Location.address",
+      "Patient.address"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality": [
+      "Location.address",
+      "Patient.address"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/educational-attainment": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/indigenous-group": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/occupation": [
+      "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/province": [
+      "Location.address",
+      "Patient.address"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/race": [
+      "Patient"
     ]
   }
 }
