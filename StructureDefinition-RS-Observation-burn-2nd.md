@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-burn-
   "name" : "RSObsBurn2ndDegree",
   "title" : "Road Safety Observation - Burn 2nd Degree",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -118,6 +118,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-burn-
       {
         "id" : "Observation",
         "path" : "Observation"
+      },
+      {
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "fixedUri" : "http://snomed.info/sct"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "46541008"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "Second degree burn injury (morphologic abnormality)"
       },
       {
         "id" : "Observation.value[x]",

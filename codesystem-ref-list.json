@@ -11,6 +11,49 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-VS-cyanosis.html" : "RS VS - Cyanosis",
+      "ValueSet-VS-breath-sounds.html" : "RS VS - Breath Sounds",
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "ValueSet-VS-pulse-quality.html" : "RS VS - Pulse Quality",
+      "ValueSet-VS-respiratory-rhythm.html" : "RS VS - Respiratory Rhythm",
+      "ValueSet-VS-level-of-consciousness.html" : "RS VS - Level of Consciousness (AVPU)",
+      "ValueSet-VS-pupils.html" : "RS VS - Pupils",
+      "ValueSet-VS-pulse-rhythm.html" : "RS VS - Pulse Rhythm"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1373"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.5.0/ValueSet-allergyintolerance-clinical.html" : "AllergyIntolerance Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1371"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.5.0/ValueSet-allergyintolerance-verification.html" : "AllergyIntolerance Verification Status"
     }
   ]
 }

@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-15T06:06:11+00:00"/>
+  <date value="2025-10-15T08:26:35+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -1397,6 +1397,83 @@
       </reference>
       <name value="Road Safety ServiceRequest"/>
       <description value="Requests or records related to refusal to admit and related workflow signals."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VS-breath-sounds"/>
+      </reference>
+      <name value="RS VS - Breath Sounds"/>
+      <description value="Breath sounds options (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VS-cyanosis"/>
+      </reference>
+      <name value="RS VS - Cyanosis"/>
+      <description value="Cyanosis assessment options (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VS-level-of-consciousness"/>
+      </reference>
+      <name value="RS VS - Level of Consciousness (AVPU)"/>
+      <description value="AVPU options for level of consciousness (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VS-pulse-quality"/>
+      </reference>
+      <name value="RS VS - Pulse Quality"/>
+      <description value="Pulse quality options (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VS-pulse-rhythm"/>
+      </reference>
+      <name value="RS VS - Pulse Rhythm"/>
+      <description value="Pulse rhythm options (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VS-pupils"/>
+      </reference>
+      <name value="RS VS - Pupils"/>
+      <description value="Pupil size/reactivity options (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VS-respiratory-rhythm"/>
+      </reference>
+      <name value="RS VS - Respiratory Rhythm"/>
+      <description value="Respiratory rhythm options (prefer SNOMED CT)."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

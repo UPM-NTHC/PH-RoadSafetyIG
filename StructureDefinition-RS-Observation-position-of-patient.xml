@@ -14,7 +14,7 @@
   <name value="RSObsPositionOfPatient"/>
   <title value="Road Safety Observation - Position of Patient"/>
   <status value="draft"/>
-  <date value="2025-10-15T06:06:11+00:00"/>
+  <date value="2025-10-15T08:26:35+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -741,7 +741,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="urn://example.com/ph-core/fhir/StructureDefinition/ph-core-patient"/>
+        <targetProfile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -834,7 +834,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="urn://example.com/ph-core/fhir/StructureDefinition/ph-core-encounter"/>
+        <targetProfile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"/>
       </type>
       <constraint>
         <key value="ele-1"/>

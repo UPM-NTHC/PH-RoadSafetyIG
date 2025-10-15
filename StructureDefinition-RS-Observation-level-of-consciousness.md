@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-level
   "name" : "RSObsLevelOfConsciousness",
   "title" : "Road Safety Observation - Level of Consciousness (AVPU)",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,6 +120,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-level
         "path" : "Observation"
       },
       {
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "67775-7"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "Level of responsiveness"
+      },
+      {
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "slicing" : {
@@ -145,7 +166,11 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-level
             "code" : "CodeableConcept"
           }
         ],
-        "mustSupport" : true
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-level-of-consciousness"
+        }
       }
     ]
   }

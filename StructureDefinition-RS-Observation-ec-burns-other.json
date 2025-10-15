@@ -10,7 +10,7 @@
   "name" : "RSObsECBurnsOther",
   "title" : "Road Safety Observation - External Cause: Burns (Other specify)",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -763,7 +763,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["urn://example.com/ph-core/fhir/StructureDefinition/ph-core-patient"]
+        "targetProfile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -858,7 +858,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["urn://example.com/ph-core/fhir/StructureDefinition/ph-core-encounter"]
+        "targetProfile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"]
       }],
       "constraint" : [{
         "key" : "ele-1",

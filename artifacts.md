@@ -105,6 +105,20 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Procedure](StructureDefinition-RS-Procedure.md) | Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions). |
 | [Road Safety ServiceRequest](StructureDefinition-RS-ServiceRequest.md) | Requests or records related to refusal to admit and related workflow signals. |
 
+### Terminology: Value Sets 
+
+These define sets of codes used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [RS VS - Breath Sounds](ValueSet-VS-breath-sounds.md) | Breath sounds options (prefer SNOMED CT). |
+| [RS VS - Cyanosis](ValueSet-VS-cyanosis.md) | Cyanosis assessment options (prefer SNOMED CT). |
+| [RS VS - Level of Consciousness (AVPU)](ValueSet-VS-level-of-consciousness.md) | AVPU options for level of consciousness (prefer SNOMED CT). |
+| [RS VS - Pulse Quality](ValueSet-VS-pulse-quality.md) | Pulse quality options (prefer SNOMED CT). |
+| [RS VS - Pulse Rhythm](ValueSet-VS-pulse-rhythm.md) | Pulse rhythm options (prefer SNOMED CT). |
+| [RS VS - Pupils](ValueSet-VS-pupils.md) | Pupil size/reactivity options (prefer SNOMED CT). |
+| [RS VS - Respiratory Rhythm](ValueSet-VS-respiratory-rhythm.md) | Respiratory rhythm options (prefer SNOMED CT). |
+
 ### Terminology: Concept Maps 
 
 These define transformations to convert between codes by systems conforming with this implementation guide.

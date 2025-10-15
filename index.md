@@ -53,7 +53,18 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MDSRoadSafety](StructureDefinition-PH-RoadSafetyLogicalModel.md), [MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md)...Show 84 more,[PHRoadSafetyIG](index.md),[RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md),[RSClaim](StructureDefinition-RS-Claim.md),[RSCondition](StructureDefinition-RS-Condition.md),[RSDocumentReference](StructureDefinition-RS-DocumentReference.md),[RSEncounter](StructureDefinition-RS-Encounter.md),[RSLocation](StructureDefinition-RS-Location-Incident.md),[RSMedicationStatement](StructureDefinition-RS-MedicationStatement.md),[RSObsAbrasion](StructureDefinition-RS-Observation-abrasion.md),[RSObsActivityAtIncident](StructureDefinition-RS-Observation-activity-at-incident.md),[RSObsAvulsion](StructureDefinition-RS-Observation-avulsion.md),[RSObsBloodPressure](StructureDefinition-RS-Observation-blood-pressure.md),[RSObsBodyTemperature](StructureDefinition-RS-Observation-body-temperature.md),[RSObsBurn1stDegree](StructureDefinition-RS-Observation-burn-1st.md),[RSObsBurn2ndDegree](StructureDefinition-RS-Observation-burn-2nd.md),[RSObsBurn3rdDegree](StructureDefinition-RS-Observation-burn-3rd.md),[RSObsBurn4thDegree](StructureDefinition-RS-Observation-burn-4th.md),[RSObsCallSource](StructureDefinition-RS-Observation-call-source.md),[RSObsCollisionType](StructureDefinition-RS-Observation-collision-type.md),[RSObsCollisionVsNonCollision](StructureDefinition-RS-Observation-collision-vs-noncollision.md),[RSObsConcussion](StructureDefinition-RS-Observation-concussion.md),[RSObsContusion](StructureDefinition-RS-Observation-contusion.md),[RSObsCyanosis](StructureDefinition-RS-Observation-cyanosis.md),[RSObsDateReceived](StructureDefinition-RS-Observation-date-received.md),[RSObsECBitesStings](StructureDefinition-RS-Observation-ec-bites-stings.md),[RSObsECBitesStingsAgent](StructureDefinition-RS-Observation-ec-bites-stings-agent.md),[RSObsECBurns](StructureDefinition-RS-Observation-ec-burns.md),[RSObsECBurnsAgent](StructureDefinition-RS-Observation-ec-burns-agent.md),[RSObsECBurnsOther](StructureDefinition-RS-Observation-ec-burns-other.md),[RSObsECChemical](StructureDefinition-RS-Observation-ec-chemical.md),[RSObsECChemicalAgent](StructureDefinition-RS-Observation-ec-chemical-agent.md),[RSObsECDrowning](StructureDefinition-RS-Observation-ec-drowning.md),[RSObsECDrowningOther](StructureDefinition-RS-Observation-ec-drowning-other.md),[RSObsECDrowningType](StructureDefinition-RS-Observation-ec-drowning-type.md),[RSObsECFall](StructureDefinition-RS-Observation-ec-fall.md),[RSObsECFallSpecifics](StructureDefinition-RS-Observation-ec-fall-specifics.md),[RSObsECFirecracker](StructureDefinition-RS-Observation-ec-firecracker.md),[RSObsECFirecrackerType](StructureDefinition-RS-Observation-ec-firecracker-type.md),[RSObsECForcesOfNature](StructureDefinition-RS-Observation-ec-forces-of-nature.md),[RSObsECGunshot](StructureDefinition-RS-Observation-ec-gunshot.md),[RSObsECGunshotWeapon](StructureDefinition-RS-Observation-ec-gunshot-weapon.md),[RSObsECHangingStrangulation](StructureDefinition-RS-Observation-ec-hanging-strangulation.md),[RSObsECMaulingAssault](StructureDefinition-RS-Observation-ec-mauling-assault.md),[RSObsECOther](StructureDefinition-RS-Observation-ec-other.md),[RSObsECOtherSpecify](StructureDefinition-RS-Observation-ec-other-specify.md),[RSObsECSexualAssault](StructureDefinition-RS-Observation-ec-sexual-assault.md),[RSObsECSharpObject](StructureDefinition-RS-Observation-ec-sharp-object.md),[RSObsECSharpObjectSpecify](StructureDefinition-RS-Observation-ec-sharp-object-specify.md),[RSObsFractureClosed](StructureDefinition-RS-Observation-fracture-closed.md),[RSObsFractureOpen](StructureDefinition-RS-Observation-fracture-open.md),[RSObsGCS](StructureDefinition-RS-Observation-gcs.md),[RSObsHowManyPatients](StructureDefinition-RS-Observation-how-many-patients.md),[RSObsHowManyVehicles](StructureDefinition-RS-Observation-how-many-vehicles.md),[RSObsInjuryDateTime](StructureDefinition-RS-Observation-injury-datetime.md),[RSObsInjuryIntent](StructureDefinition-RS-Observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-RS-Observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-RS-Observation-mode-of-transport.md),[RSObsMultipleInjuries](StructureDefinition-RS-Observation-multiple-injuries.md),[RSObsOpenWound](StructureDefinition-RS-Observation-open-wound.md),[RSObsOtherInjury](StructureDefinition-RS-Observation-other-injury.md),[RSObsOtherRiskFactors](StructureDefinition-RS-Observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-RS-Observation-other-vehicle.md),[RSObsPatientsVehicle](StructureDefinition-RS-Observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-RS-Observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-RS-Observation-position-of-patient.md),[RSObsPresenceTrafficInvestigator](StructureDefinition-RS-Observation-traffic-investigator.md),[RSObsPulseRate](StructureDefinition-RS-Observation-pulse-rate.md),[RSObsPupils](StructureDefinition-RS-Observation-pupils.md),[RSObsReportedComplaint](StructureDefinition-RS-Observation-reported-complaint.md),[RSObsRespiratoryRate](StructureDefinition-RS-Observation-respiratory-rate.md),[RSObsSafetyAccessories](StructureDefinition-RS-Observation-safety-accessories.md),[RSObsTimeDepartedScene](StructureDefinition-RS-Observation-time-departed.md),[RSObsTimeEnroute](StructureDefinition-RS-Observation-time-enroute.md),[RSObsTimeHospitalArrival](StructureDefinition-RS-Observation-time-hospital-arrival.md),[RSObsTimeOnScene](StructureDefinition-RS-Observation-time-on-scene.md),[RSObsTimeStationArrival](StructureDefinition-RS-Observation-time-station-arrival.md),[RSObsTransportVehicularFlag](StructureDefinition-RS-Observation-transport-vehicular-flag.md),[RSObsTraumaticAmputation](StructureDefinition-RS-Observation-traumatic-amputation.md),[RSObsTriagePriority](StructureDefinition-RS-Observation-triage-priority.md),[RSObsUrgencyLevel](StructureDefinition-RS-Observation-urgency.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSPatient](StructureDefinition-RS-Patient.md),[RSProcedure](StructureDefinition-RS-Procedure.md)and[RSServiceRequest](StructureDefinition-RS-ServiceRequest.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MDSRoadSafety](StructureDefinition-PH-RoadSafetyLogicalModel.md), [MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md)...Show 91 more,[PHRoadSafetyIG](index.md),[RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md),[RSClaim](StructureDefinition-RS-Claim.md),[RSCondition](StructureDefinition-RS-Condition.md),[RSDocumentReference](StructureDefinition-RS-DocumentReference.md),[RSEncounter](StructureDefinition-RS-Encounter.md),[RSLocation](StructureDefinition-RS-Location-Incident.md),[RSMedicationStatement](StructureDefinition-RS-MedicationStatement.md),[RSObsAbrasion](StructureDefinition-RS-Observation-abrasion.md),[RSObsActivityAtIncident](StructureDefinition-RS-Observation-activity-at-incident.md),[RSObsAvulsion](StructureDefinition-RS-Observation-avulsion.md),[RSObsBloodPressure](StructureDefinition-RS-Observation-blood-pressure.md),[RSObsBodyTemperature](StructureDefinition-RS-Observation-body-temperature.md),[RSObsBurn1stDegree](StructureDefinition-RS-Observation-burn-1st.md),[RSObsBurn2ndDegree](StructureDefinition-RS-Observation-burn-2nd.md),[RSObsBurn3rdDegree](StructureDefinition-RS-Observation-burn-3rd.md),[RSObsBurn4thDegree](StructureDefinition-RS-Observation-burn-4th.md),[RSObsCallSource](StructureDefinition-RS-Observation-call-source.md),[RSObsCollisionType](StructureDefinition-RS-Observation-collision-type.md),[RSObsCollisionVsNonCollision](StructureDefinition-RS-Observation-collision-vs-noncollision.md),[RSObsConcussion](StructureDefinition-RS-Observation-concussion.md),[RSObsContusion](StructureDefinition-RS-Observation-contusion.md),[RSObsCyanosis](StructureDefinition-RS-Observation-cyanosis.md),[RSObsDateReceived](StructureDefinition-RS-Observation-date-received.md),[RSObsECBitesStings](StructureDefinition-RS-Observation-ec-bites-stings.md),[RSObsECBitesStingsAgent](StructureDefinition-RS-Observation-ec-bites-stings-agent.md),[RSObsECBurns](StructureDefinition-RS-Observation-ec-burns.md),[RSObsECBurnsAgent](StructureDefinition-RS-Observation-ec-burns-agent.md),[RSObsECBurnsOther](StructureDefinition-RS-Observation-ec-burns-other.md),[RSObsECChemical](StructureDefinition-RS-Observation-ec-chemical.md),[RSObsECChemicalAgent](StructureDefinition-RS-Observation-ec-chemical-agent.md),[RSObsECDrowning](StructureDefinition-RS-Observation-ec-drowning.md),[RSObsECDrowningOther](StructureDefinition-RS-Observation-ec-drowning-other.md),[RSObsECDrowningType](StructureDefinition-RS-Observation-ec-drowning-type.md),[RSObsECFall](StructureDefinition-RS-Observation-ec-fall.md),[RSObsECFallSpecifics](StructureDefinition-RS-Observation-ec-fall-specifics.md),[RSObsECFirecracker](StructureDefinition-RS-Observation-ec-firecracker.md),[RSObsECFirecrackerType](StructureDefinition-RS-Observation-ec-firecracker-type.md),[RSObsECForcesOfNature](StructureDefinition-RS-Observation-ec-forces-of-nature.md),[RSObsECGunshot](StructureDefinition-RS-Observation-ec-gunshot.md),[RSObsECGunshotWeapon](StructureDefinition-RS-Observation-ec-gunshot-weapon.md),[RSObsECHangingStrangulation](StructureDefinition-RS-Observation-ec-hanging-strangulation.md),[RSObsECMaulingAssault](StructureDefinition-RS-Observation-ec-mauling-assault.md),[RSObsECOther](StructureDefinition-RS-Observation-ec-other.md),[RSObsECOtherSpecify](StructureDefinition-RS-Observation-ec-other-specify.md),[RSObsECSexualAssault](StructureDefinition-RS-Observation-ec-sexual-assault.md),[RSObsECSharpObject](StructureDefinition-RS-Observation-ec-sharp-object.md),[RSObsECSharpObjectSpecify](StructureDefinition-RS-Observation-ec-sharp-object-specify.md),[RSObsFractureClosed](StructureDefinition-RS-Observation-fracture-closed.md),[RSObsFractureOpen](StructureDefinition-RS-Observation-fracture-open.md),[RSObsGCS](StructureDefinition-RS-Observation-gcs.md),[RSObsHowManyPatients](StructureDefinition-RS-Observation-how-many-patients.md),[RSObsHowManyVehicles](StructureDefinition-RS-Observation-how-many-vehicles.md),[RSObsInjuryDateTime](StructureDefinition-RS-Observation-injury-datetime.md),[RSObsInjuryIntent](StructureDefinition-RS-Observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-RS-Observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-RS-Observation-mode-of-transport.md),[RSObsMultipleInjuries](StructureDefinition-RS-Observation-multiple-injuries.md),[RSObsOpenWound](StructureDefinition-RS-Observation-open-wound.md),[RSObsOtherInjury](StructureDefinition-RS-Observation-other-injury.md),[RSObsOtherRiskFactors](StructureDefinition-RS-Observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-RS-Observation-other-vehicle.md),[RSObsPatientsVehicle](StructureDefinition-RS-Observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-RS-Observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-RS-Observation-position-of-patient.md),[RSObsPresenceTrafficInvestigator](StructureDefinition-RS-Observation-traffic-investigator.md),[RSObsPulseRate](StructureDefinition-RS-Observation-pulse-rate.md),[RSObsPupils](StructureDefinition-RS-Observation-pupils.md),[RSObsReportedComplaint](StructureDefinition-RS-Observation-reported-complaint.md),[RSObsRespiratoryRate](StructureDefinition-RS-Observation-respiratory-rate.md),[RSObsSafetyAccessories](StructureDefinition-RS-Observation-safety-accessories.md),[RSObsTimeDepartedScene](StructureDefinition-RS-Observation-time-departed.md),[RSObsTimeEnroute](StructureDefinition-RS-Observation-time-enroute.md),[RSObsTimeHospitalArrival](StructureDefinition-RS-Observation-time-hospital-arrival.md),[RSObsTimeOnScene](StructureDefinition-RS-Observation-time-on-scene.md),[RSObsTimeStationArrival](StructureDefinition-RS-Observation-time-station-arrival.md),[RSObsTransportVehicularFlag](StructureDefinition-RS-Observation-transport-vehicular-flag.md),[RSObsTraumaticAmputation](StructureDefinition-RS-Observation-traumatic-amputation.md),[RSObsTriagePriority](StructureDefinition-RS-Observation-triage-priority.md),[RSObsUrgencyLevel](StructureDefinition-RS-Observation-urgency.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSPatient](StructureDefinition-RS-Patient.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSServiceRequest](StructureDefinition-RS-ServiceRequest.md),[VSBreathSounds](ValueSet-VS-breath-sounds.md),[VSCyanosis](ValueSet-VS-cyanosis.md),[VSLevelOfConsciousness](ValueSet-VS-level-of-consciousness.md),[VSPulseQuality](ValueSet-VS-pulse-quality.md),[VSPulseRhythm](ValueSet-VS-pulse-rhythm.md),[VSPupils](ValueSet-VS-pupils.md)and[VSRespiratoryRhythm](ValueSet-VS-respiratory-rhythm.md)
+
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md), [RSObsCyanosis](StructureDefinition-RS-Observation-cyanosis.md)...Show 9 more,[RSObsLevelOfConsciousness](StructureDefinition-RS-Observation-level-of-consciousness.md),[RSObsPupils](StructureDefinition-RS-Observation-pupils.md),[VSBreathSounds](ValueSet-VS-breath-sounds.md),[VSCyanosis](ValueSet-VS-cyanosis.md),[VSLevelOfConsciousness](ValueSet-VS-level-of-consciousness.md),[VSPulseQuality](ValueSet-VS-pulse-quality.md),[VSPulseRhythm](ValueSet-VS-pulse-rhythm.md),[VSPupils](ValueSet-VS-pupils.md)and[VSRespiratoryRhythm](ValueSet-VS-respiratory-rhythm.md)
+
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/6.5.0/CodeSystem-allergyintolerance-clinical.html): [RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md)
+* [AllergyIntolerance Verification Status](http://terminology.hl7.org/6.5.0/CodeSystem-allergyintolerance-verification.html): [RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md)
 
 
 
@@ -77,7 +88,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -1992,6 +2003,104 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         },
         "name" : "Road Safety ServiceRequest",
         "description" : "Requests or records related to refusal to admit and related workflow signals.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/VS-breath-sounds"
+        },
+        "name" : "RS VS - Breath Sounds",
+        "description" : "Breath sounds options (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/VS-cyanosis"
+        },
+        "name" : "RS VS - Cyanosis",
+        "description" : "Cyanosis assessment options (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/VS-level-of-consciousness"
+        },
+        "name" : "RS VS - Level of Consciousness (AVPU)",
+        "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/VS-pulse-quality"
+        },
+        "name" : "RS VS - Pulse Quality",
+        "description" : "Pulse quality options (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/VS-pulse-rhythm"
+        },
+        "name" : "RS VS - Pulse Rhythm",
+        "description" : "Pulse rhythm options (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/VS-pupils"
+        },
+        "name" : "RS VS - Pupils",
+        "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/VS-respiratory-rhythm"
+        },
+        "name" : "RS VS - Respiratory Rhythm",
+        "description" : "Respiratory rhythm options (prefer SNOMED CT).",
         "exampleBoolean" : false
       }
     ],

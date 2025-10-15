@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-DocumentReference
   "name" : "RSDocumentReference",
   "title" : "Road Safety DocumentReference (Evidence)",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -149,6 +149,14 @@ Other representations of profile: [CSV](StructureDefinition-RS-DocumentReference
         "id" : "DocumentReference.context.encounter",
         "path" : "DocumentReference.context.encounter",
         "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"
+            ]
+          }
+        ],
         "mustSupport" : true
       }
     ]

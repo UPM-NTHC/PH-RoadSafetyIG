@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation.csv),
   "name" : "RSObservation",
   "title" : "Road Safety Observation",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -133,11 +133,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation.csv),
         "id" : "Observation.subject",
         "path" : "Observation.subject",
         "min" : 1,
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {
         "id" : "Observation.encounter",
         "path" : "Observation.encounter",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {

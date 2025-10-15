@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -1637,6 +1637,90 @@
       },
       "name" : "Road Safety ServiceRequest",
       "description" : "Requests or records related to refusal to admit and related workflow signals.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VS-breath-sounds"
+      },
+      "name" : "RS VS - Breath Sounds",
+      "description" : "Breath sounds options (prefer SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VS-cyanosis"
+      },
+      "name" : "RS VS - Cyanosis",
+      "description" : "Cyanosis assessment options (prefer SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VS-level-of-consciousness"
+      },
+      "name" : "RS VS - Level of Consciousness (AVPU)",
+      "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VS-pulse-quality"
+      },
+      "name" : "RS VS - Pulse Quality",
+      "description" : "Pulse quality options (prefer SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VS-pulse-rhythm"
+      },
+      "name" : "RS VS - Pulse Rhythm",
+      "description" : "Pulse rhythm options (prefer SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VS-pupils"
+      },
+      "name" : "RS VS - Pupils",
+      "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VS-respiratory-rhythm"
+      },
+      "name" : "RS VS - Respiratory Rhythm",
+      "description" : "Respiratory rhythm options (prefer SNOMED CT).",
       "exampleBoolean" : false
     }],
     "page" : {

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-AllergyIntoleranc
   "name" : "RSAllergyIntolerance",
   "title" : "Road Safety AllergyIntolerance",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -105,13 +105,41 @@ Other representations of profile: [CSV](StructureDefinition-RS-AllergyIntoleranc
         "path" : "AllergyIntolerance"
       },
       {
+        "id" : "AllergyIntolerance.clinicalStatus",
+        "path" : "AllergyIntolerance.clinicalStatus",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://terminology.hl7.org/ValueSet/allergyintolerance-clinical"
+        }
+      },
+      {
+        "id" : "AllergyIntolerance.verificationStatus",
+        "path" : "AllergyIntolerance.verificationStatus",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://terminology.hl7.org/ValueSet/allergyintolerance-verification"
+        }
+      },
+      {
         "id" : "AllergyIntolerance.code",
         "path" : "AllergyIntolerance.code",
-        "mustSupport" : true
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code"
+        }
       },
       {
         "id" : "AllergyIntolerance.patient",
         "path" : "AllergyIntolerance.patient",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+            ]
+          }
+        ],
         "mustSupport" : true
       }
     ]

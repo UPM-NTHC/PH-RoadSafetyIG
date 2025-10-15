@@ -13,6 +13,124 @@
       "uses" : {
       },
       "StructureDefinition-PH-RoadSafetyLogicalModel.html" : "Road Safety Minimum Dataset (MDS) Logical Model"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes",
+      "title" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "description" : "This value set includes concept codes for specific substances/pharmaceutical products, allergy or intolerance conditions, and negation/exclusion codes to specify the absence of specific types of allergies or intolerances.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.137"],
+      "sources" : ["2.16.840.1.113883.4.642.3.137"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-AllergyIntolerance.html" : "Road Safety AllergyIntolerance"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/allergyintolerance-clinical",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-AllergyIntolerance.html" : "Road Safety AllergyIntolerance"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/allergyintolerance-verification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-AllergyIntolerance.html" : "Road Safety AllergyIntolerance"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-breath-sounds",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBreathSounds",
+      "title" : "RS VS - Breath Sounds",
+      "description" : "Breath sounds options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-cyanosis",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSCyanosis",
+      "title" : "RS VS - Cyanosis",
+      "description" : "Cyanosis assessment options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-Observation-cyanosis.html" : "Road Safety Observation - Cyanosis"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-level-of-consciousness",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSLevelOfConsciousness",
+      "title" : "RS VS - Level of Consciousness (AVPU)",
+      "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-Observation-level-of-consciousness.html" : "Road Safety Observation - Level of Consciousness (AVPU)"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pulse-quality",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPulseQuality",
+      "title" : "RS VS - Pulse Quality",
+      "description" : "Pulse quality options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pulse-rhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPulseRhythm",
+      "title" : "RS VS - Pulse Rhythm",
+      "description" : "Pulse rhythm options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pupils",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPupils",
+      "title" : "RS VS - Pupils",
+      "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-RS-Observation-pupils.html" : "Road Safety Observation - Pupils"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-respiratory-rhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSRespiratoryRhythm",
+      "title" : "RS VS - Respiratory Rhythm",
+      "description" : "Respiratory rhythm options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
     }
   ]
 }

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Condition.csv), [
   "name" : "RSCondition",
   "title" : "Road Safety Condition",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -128,12 +128,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Condition.csv), [
       {
         "id" : "Condition.subject",
         "path" : "Condition.subject",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {
         "id" : "Condition.encounter",
         "path" : "Condition.encounter",
-        "mustSupport" : true
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"
+            ]
+          }
+        ]
       }
     ]
   }

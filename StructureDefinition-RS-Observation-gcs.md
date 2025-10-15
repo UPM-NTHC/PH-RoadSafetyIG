@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-gcs.c
   "name" : "RSObsGCS",
   "title" : "Road Safety Observation - Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,6 +120,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-gcs.c
         "path" : "Observation"
       },
       {
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "9269-2"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "Glasgow coma score total"
+      },
+      {
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "slicing" : {
@@ -172,6 +193,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-gcs.c
         "mustSupport" : true
       },
       {
+        "id" : "Observation.component:gcsEyes.code.coding",
+        "path" : "Observation.component.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:gcsEyes.code.coding.system",
+        "path" : "Observation.component.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.component:gcsEyes.code.coding.code",
+        "path" : "Observation.component.code.coding.code",
+        "patternCode" : "9267-6"
+      },
+      {
+        "id" : "Observation.component:gcsEyes.code.coding.display",
+        "path" : "Observation.component.code.coding.display",
+        "patternString" : "Glasgow coma score eye opening"
+      },
+      {
         "id" : "Observation.component:gcsEyes.value[x]",
         "path" : "Observation.component.value[x]",
         "slicing" : {
@@ -211,6 +253,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-gcs.c
         "mustSupport" : true
       },
       {
+        "id" : "Observation.component:gcsVerbal.code.coding",
+        "path" : "Observation.component.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:gcsVerbal.code.coding.system",
+        "path" : "Observation.component.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.component:gcsVerbal.code.coding.code",
+        "path" : "Observation.component.code.coding.code",
+        "patternCode" : "9270-0"
+      },
+      {
+        "id" : "Observation.component:gcsVerbal.code.coding.display",
+        "path" : "Observation.component.code.coding.display",
+        "patternString" : "Glasgow coma score verbal"
+      },
+      {
         "id" : "Observation.component:gcsVerbal.value[x]",
         "path" : "Observation.component.value[x]",
         "slicing" : {
@@ -248,6 +311,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-gcs.c
         "id" : "Observation.component:gcsMotor.code",
         "path" : "Observation.component.code",
         "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:gcsMotor.code.coding",
+        "path" : "Observation.component.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:gcsMotor.code.coding.system",
+        "path" : "Observation.component.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.component:gcsMotor.code.coding.code",
+        "path" : "Observation.component.code.coding.code",
+        "patternCode" : "9268-4"
+      },
+      {
+        "id" : "Observation.component:gcsMotor.code.coding.display",
+        "path" : "Observation.component.code.coding.display",
+        "patternString" : "Glasgow coma score motor"
       },
       {
         "id" : "Observation.component:gcsMotor.value[x]",

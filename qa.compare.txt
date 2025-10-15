@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 0, warn = 668, info = 5
+err = 0, warn = 675, info = 5
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
@@ -91,6 +91,13 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Patient : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-Procedure : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RS-ServiceRequest : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-breath-sounds : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-cyanosis : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-level-of-consciousness : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-pulse-quality : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-pulse-rhythm : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-pupils : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-respiratory-rhythm : 0 / 1 / 1
 </table>
 == n/a ==
 == fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR.json ==
@@ -702,8 +709,8 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-RS-Observation-avulsion.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-avulsion'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Observation-blood-pressure.json ==
-INFORMATION: StructureDefinition/RS-Observation-blood-pressure: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/RS-Observation-blood-pressure: StructureDefinition.snapshot.element[41].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/RS-Observation-blood-pressure: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/RS-Observation-blood-pressure: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-blood-pressure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Observation-body-temperature.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-body-temperature'): The Implementation Guide contains no examples for this profile
@@ -782,8 +789,8 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-RS-Observation-fracture-open.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-fracture-open'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Observation-gcs.json ==
-INFORMATION: StructureDefinition/RS-Observation-gcs: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/RS-Observation-gcs: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/RS-Observation-gcs: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/RS-Observation-gcs: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-gcs'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-Observation-how-many-patients.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation-how-many-patients'): The Implementation Guide contains no examples for this profile
@@ -852,3 +859,17 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RS-ServiceRequest.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-ServiceRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-VS-breath-sounds.json ==
+WARNING: ValueSet/VS-breath-sounds: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VS-cyanosis.json ==
+WARNING: ValueSet/VS-cyanosis: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VS-level-of-consciousness.json ==
+WARNING: ValueSet/VS-level-of-consciousness: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VS-pulse-quality.json ==
+WARNING: ValueSet/VS-pulse-quality: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VS-pulse-rhythm.json ==
+WARNING: ValueSet/VS-pulse-rhythm: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VS-pupils.json ==
+WARNING: ValueSet/VS-pupils: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VS-respiratory-rhythm.json ==
+WARNING: ValueSet/VS-respiratory-rhythm: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

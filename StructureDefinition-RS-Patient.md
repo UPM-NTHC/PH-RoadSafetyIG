@@ -16,7 +16,7 @@ Patient demographics and identifiers for road safety reporting; reuse PH-Core ad
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Refer to this Profile: [Road Safety AllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md), [Road Safety Condition](StructureDefinition-RS-Condition.md), [Road Safety MedicationStatement](StructureDefinition-RS-MedicationStatement.md), [Road Safety Observation](StructureDefinition-RS-Observation.md)...Show 2 more,[Road Safety Procedure](StructureDefinition-RS-Procedure.md)and[Road Safety ServiceRequest](StructureDefinition-RS-ServiceRequest.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/RS-Patient)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "Road Safety Patient",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

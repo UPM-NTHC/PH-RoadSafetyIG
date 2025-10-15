@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-ServiceRequest.cs
   "name" : "RSServiceRequest",
   "title" : "Road Safety ServiceRequest",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,11 +122,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-ServiceRequest.cs
       {
         "id" : "ServiceRequest.subject",
         "path" : "ServiceRequest.subject",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {
         "id" : "ServiceRequest.encounter",
         "path" : "ServiceRequest.encounter",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {
@@ -159,6 +175,15 @@ Other representations of profile: [CSV](StructureDefinition-RS-ServiceRequest.cs
       {
         "id" : "ServiceRequest.supportingInfo",
         "path" : "ServiceRequest.supportingInfo",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-organization",
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
+          }
+        ],
         "mustSupport" : true
       }
     ]

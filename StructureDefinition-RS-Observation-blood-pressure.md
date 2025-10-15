@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-blood
   "name" : "RSObsBloodPressure",
   "title" : "Road Safety Observation - Blood Pressure",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,6 +120,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-blood
         "path" : "Observation"
       },
       {
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "85354-9"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "Blood pressure panel with all children optional"
+      },
+      {
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "max" : "0"
@@ -149,6 +170,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-blood
         "id" : "Observation.component:systolic.code",
         "path" : "Observation.component.code",
         "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:systolic.code.coding",
+        "path" : "Observation.component.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:systolic.code.coding.system",
+        "path" : "Observation.component.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.component:systolic.code.coding.code",
+        "path" : "Observation.component.code.coding.code",
+        "patternCode" : "8480-6"
+      },
+      {
+        "id" : "Observation.component:systolic.code.coding.display",
+        "path" : "Observation.component.code.coding.display",
+        "patternString" : "Systolic blood pressure"
       },
       {
         "id" : "Observation.component:systolic.value[x]",
@@ -189,6 +231,27 @@ Other representations of profile: [CSV](StructureDefinition-RS-Observation-blood
         "id" : "Observation.component:diastolic.code",
         "path" : "Observation.component.code",
         "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:diastolic.code.coding",
+        "path" : "Observation.component.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:diastolic.code.coding.system",
+        "path" : "Observation.component.code.coding.system",
+        "fixedUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.component:diastolic.code.coding.code",
+        "path" : "Observation.component.code.coding.code",
+        "patternCode" : "8462-4"
+      },
+      {
+        "id" : "Observation.component:diastolic.code.coding.display",
+        "path" : "Observation.component.code.coding.display",
+        "patternString" : "Diastolic blood pressure"
       },
       {
         "id" : "Observation.component:diastolic.value[x]",

@@ -1,3 +1,67 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-breath-sounds",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBreathSounds",
+      "title" : "RS VS - Breath Sounds",
+      "description" : "Breath sounds options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-cyanosis",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSCyanosis",
+      "title" : "RS VS - Cyanosis",
+      "description" : "Cyanosis assessment options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-level-of-consciousness",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSLevelOfConsciousness",
+      "title" : "RS VS - Level of Consciousness (AVPU)",
+      "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pulse-quality",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPulseQuality",
+      "title" : "RS VS - Pulse Quality",
+      "description" : "Pulse quality options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pulse-rhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPulseRhythm",
+      "title" : "RS VS - Pulse Rhythm",
+      "description" : "Pulse rhythm options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pupils",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPupils",
+      "title" : "RS VS - Pupils",
+      "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-respiratory-rhythm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSRespiratoryRhythm",
+      "title" : "RS VS - Respiratory Rhythm",
+      "description" : "Respiratory rhythm options (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
 }

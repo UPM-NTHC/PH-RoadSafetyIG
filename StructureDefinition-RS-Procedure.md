@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RS-Procedure.csv), [
   "name" : "RSProcedure",
   "title" : "Road Safety Procedure",
   "status" : "draft",
-  "date" : "2025-10-15T06:06:11+00:00",
+  "date" : "2025-10-15T08:26:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,12 +122,40 @@ Other representations of profile: [CSV](StructureDefinition-RS-Procedure.csv), [
       {
         "id" : "Procedure.subject",
         "path" : "Procedure.subject",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+            ]
+          }
+        ],
         "mustSupport" : true
       },
       {
         "id" : "Procedure.encounter",
         "path" : "Procedure.encounter",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"
+            ]
+          }
+        ],
         "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.performer.actor",
+        "path" : "Procedure.performer.actor",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
+            ]
+          }
+        ]
       }
     ]
   }
