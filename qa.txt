@@ -3,7 +3,7 @@ PHRoadSafetyIG : Validation Results
 
 err = 0, warn = 708, info = 35
 IG Publisher Version: 2.0.21
-Generated Wed Oct 15 18:14:13 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Wed Oct 15 18:39:25 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 13 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
@@ -718,7 +718,7 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-encounter.json ==
 INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.differential.element[11].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.differential.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[70].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'incidentNumber' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true

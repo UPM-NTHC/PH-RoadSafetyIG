@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "name" : "RSObsModeOfTransport",
   "title" : "Road Safety Observation - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-10-15T18:08:27+00:00",
+  "date" : "2025-10-15T18:32:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
