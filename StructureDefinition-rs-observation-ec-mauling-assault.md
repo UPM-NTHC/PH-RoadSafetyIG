@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ma
   "name" : "RSObsECMaulingAssault",
   "title" : "Road Safety Observation - External Cause: Mauling/Assault",
   "status" : "draft",
-  "date" : "2025-10-15T17:40:06+00:00",
+  "date" : "2025-10-15T18:08:27+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

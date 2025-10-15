@@ -92,7 +92,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T17:40:06+00:00",
+  "date" : "2025-10-15T18:08:27+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -900,7 +900,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           "reference" : "StructureDefinition/rs-condition"
         },
         "name" : "Road Safety Condition",
-        "description" : "Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries.",
+        "description" : "Condition resource for Road Safety IG.  Designed following the TW Core philosophy: a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. Not a copy of TW Core — adapted to Road Safety needs.",
         "exampleBoolean" : false
       },
       {

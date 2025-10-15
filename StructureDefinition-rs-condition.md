@@ -12,7 +12,7 @@
 | Draft as of 2025-10-15 | *Computable Name*:RSCondition |
 
  
-Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries. 
+Condition resource for Road Safety IG. Designed following the TW Core philosophy: a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. Not a copy of TW Core — adapted to Road Safety needs. 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "name" : "RSCondition",
   "title" : "Road Safety Condition",
   "status" : "draft",
-  "date" : "2025-10-15T17:40:06+00:00",
+  "date" : "2025-10-15T18:08:27+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
       ]
     }
   ],
-  "description" : "Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries.",
+  "description" : "Condition resource for Road Safety IG.  Designed following the TW Core philosophy: a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. Not a copy of TW Core — adapted to Road Safety needs.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -116,9 +116,70 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "differential" : {
     "element" : [
       {
+        "id" : "Condition.category",
+        "path" : "Condition.category",
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Condition.severity",
+        "path" : "Condition.severity",
+        "mustSupport" : true
+      },
+      {
         "id" : "Condition.code",
         "path" : "Condition.code",
-        "min" : 1,
+        "mustSupport" : true
+      },
+      {
+        "id" : "Condition.code.coding",
+        "path" : "Condition.code.coding",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "$this"
+            }
+          ],
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Condition.code.coding:icd10Nature",
+        "path" : "Condition.code.coding",
+        "sliceName" : "icd10Nature",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Condition.code.coding:icd10ExternalCause",
+        "path" : "Condition.code.coding",
+        "sliceName" : "icd10ExternalCause",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Condition.code.coding:sct",
+        "path" : "Condition.code.coding",
+        "sliceName" : "sct",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Condition.code.coding:otherLocal",
+        "path" : "Condition.code.coding",
+        "sliceName" : "otherLocal",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Condition.code.text",
+        "path" : "Condition.code.text",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Condition.bodySite",
+        "path" : "Condition.bodySite",
         "mustSupport" : true
       },
       {
@@ -144,7 +205,18 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"
             ]
           }
-        ]
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Condition.evidence",
+        "path" : "Condition.evidence",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Condition.note",
+        "path" : "Condition.note",
+        "mustSupport" : true
       }
     ]
   }

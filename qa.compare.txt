@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 0, warn = 708, info = 33
+err = 0, warn = 708, info = 35
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
@@ -12,7 +12,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-ems : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-oneiss : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-claim : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-document-reference : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 0 / 8 / 5
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-healthcare-service : 0 / 1 / 1
@@ -711,6 +711,8 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-claim.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-condition.json ==
+INFORMATION: StructureDefinition/rs-condition: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-condition: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-document-reference.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference'): The Implementation Guide contains no examples for this profile
