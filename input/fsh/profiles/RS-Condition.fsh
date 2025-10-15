@@ -33,9 +33,9 @@ Description: "Condition resource for Road Safety IG.  Designed following the TW 
 
 /* onset / abatement */
 * onset[x] 0..1
-* onset[x] ^type = dateTime
+// * onset[x] ^type = dateTime
 * abatement[x] 0..1
-* abatement[x] ^type = dateTime
+// * abatement[x] ^type = dateTime
 
 /* supporting elements */
 * bodySite 0..* MS
