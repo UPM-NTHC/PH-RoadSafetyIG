@@ -1,6 +1,6 @@
 Profile: RSProcedure
 Parent: PHCoreProcedure
-Id: RS-Procedure
+Id: rs-procedure
 Title: "Road Safety Procedure"
 Description: "Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions)."
 * ^version = "1.0.0"
@@ -16,7 +16,7 @@ Description: "Procedures related to incident/report (e.g., coordination with rec
 
 Profile: RSServiceRequest
 Parent: ServiceRequest
-Id: RS-ServiceRequest
+Id: rs-service-request
 Title: "Road Safety ServiceRequest"
 Description: "Requests or records related to refusal to admit and related workflow signals."
 * ^version = "1.0.0"

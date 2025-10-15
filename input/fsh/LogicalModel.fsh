@@ -9,7 +9,7 @@
 // https://github.com/hl7ch/ch-ems/blob/master/input/fsh/LogicalModel.fsh
 
 Logical: MDSRoadSafety
-Id: PH-RoadSafetyLogicalModel
+Id: ph-road-safety-logical-model
 Title: "Road Safety Minimum Dataset (MDS) Logical Model"
 Description: "Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."
 * ^status = #draft

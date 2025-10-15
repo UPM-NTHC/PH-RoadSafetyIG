@@ -1,6 +1,6 @@
 Profile: RSEncounter
 Parent: PHCoreEncounter
-Id: RS-Encounter
+Id: rs-encounter
 Title: "Road Safety Encounter"
 Description: "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer."
 * ^version = "1.0.0"
@@ -15,7 +15,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 
 Profile: RSPatient
 Parent: PHCorePatient
-Id: RS-Patient
+Id: rs-patient
 Title: "Road Safety Patient"
 Description: "Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region."
 * ^version = "1.0.0"
@@ -31,7 +31,7 @@ Description: "Patient demographics and identifiers for road safety reporting; re
 
 Profile: RSLocation
 Parent: PHCoreLocation
-Id: RS-Location-Incident
+Id: rs-location-incident
 Title: "Road Safety Incident Location"
 Description: "Location of incident; supports PH-Core address extensions and geolocation."
 * ^version = "1.0.0"

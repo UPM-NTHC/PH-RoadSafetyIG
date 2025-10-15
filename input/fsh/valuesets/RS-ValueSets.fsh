@@ -1,7 +1,7 @@
 // Road Safety ValueSets (prioritize SNOMED CT per mapping)
 
 ValueSet: VSLevelOfConsciousness
-Id: VS-level-of-consciousness
+Id: vs-level-of-consciousness
 Title: "RS VS - Level of Consciousness (AVPU)"
 Description: "AVPU options for level of consciousness (prefer SNOMED CT)."
 * ^status = #draft
@@ -11,7 +11,7 @@ Description: "AVPU options for level of consciousness (prefer SNOMED CT)."
 * $SCT#422768004 "Unresponsive (finding)"
 
 ValueSet: VSPupils
-Id: VS-pupils
+Id: vs-pupils
 Title: "RS VS - Pupils"
 Description: "Pupil size/reactivity options (prefer SNOMED CT)."
 * ^status = #draft
@@ -22,7 +22,7 @@ Description: "Pupil size/reactivity options (prefer SNOMED CT)."
 * $SCT#301944006 "No pupillary reaction to light (finding)"
 
 ValueSet: VSCyanosis
-Id: VS-cyanosis
+Id: vs-cyanosis
 Title: "RS VS - Cyanosis"
 Description: "Cyanosis assessment options (prefer SNOMED CT)."
 * ^status = #draft
@@ -31,7 +31,7 @@ Description: "Cyanosis assessment options (prefer SNOMED CT)."
 * $SCT#95442007 "Peripheral cyanosis (finding)"
 
 ValueSet: VSRespiratoryRhythm
-Id: VS-respiratory-rhythm
+Id: vs-respiratory-rhythm
 Title: "RS VS - Respiratory Rhythm"
 Description: "Respiratory rhythm options (prefer SNOMED CT)."
 * ^status = #draft
@@ -40,7 +40,7 @@ Description: "Respiratory rhythm options (prefer SNOMED CT)."
 * $SCT#248549001 "Labored breathing (finding)"
 
 ValueSet: VSBreathSounds
-Id: VS-breath-sounds
+Id: vs-breath-sounds
 Title: "RS VS - Breath Sounds"
 Description: "Breath sounds options (prefer SNOMED CT)."
 * ^status = #draft
@@ -48,7 +48,7 @@ Description: "Breath sounds options (prefer SNOMED CT)."
 * $SCT#56018004 "Wheezing (finding)"
 
 ValueSet: VSPulseRhythm
-Id: VS-pulse-rhythm
+Id: vs-pulse-rhythm
 Title: "RS VS - Pulse Rhythm"
 Description: "Pulse rhythm options (prefer SNOMED CT)."
 * ^status = #draft
@@ -56,7 +56,7 @@ Description: "Pulse rhythm options (prefer SNOMED CT)."
 * $SCT#61086009 "Pulse irregular (finding)"
 
 ValueSet: VSPulseQuality
-Id: VS-pulse-quality
+Id: vs-pulse-quality
 Title: "RS VS - Pulse Quality"
 Description: "Pulse quality options (prefer SNOMED CT)."
 * ^status = #draft
