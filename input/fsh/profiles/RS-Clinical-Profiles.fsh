@@ -30,9 +30,8 @@ Title: "Road Safety AllergyIntolerance"
 Description: "Known allergies, substances and reactions."
 * ^version = "1.0.0"
 * code 0..1 MS
-// * code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (preferred)
+* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (preferred)
 // * clinicalStatus from http://terminology.hl7.org/ValueSet/allergyintolerance-clinical (required)
 // * verificationStatus from http://terminology.hl7.org/ValueSet/allergyintolerance-verification (required)
 * patient 1..1 MS
 * patient only Reference(RSPatient)
-* reaction.substance 0..1 

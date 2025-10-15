@@ -6,6 +6,8 @@ Description: "Evidence and post-crash documentation linked to the incident (e.g.
 * ^version = "1.0.0"
 * status 1..1 MS
 * type 0..1 MS
+* subject 0..1 MS
+* subject only Reference(RSPatient)
 * context.encounter 0..1 MS
 * context.encounter only Reference(RSEncounter)
 * content 1..* MS
@@ -18,4 +20,6 @@ Id: rs-claim
 Title: "Road Safety Claim"
 Description: "Claim information related to cost of care."
 * ^version = "1.0.0"
+* patient 1..1 MS
+* patient only Reference(RSPatient)
 * total 0..1 MS
