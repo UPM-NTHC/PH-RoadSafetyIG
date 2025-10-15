@@ -7,7 +7,7 @@ Description: "Evidence and post-crash documentation linked to the incident (e.g.
 * status 1..1 MS
 * type 0..1 MS
 * context.encounter 0..1 MS
-* context.encounter only Reference(RS-Encounter or PHCoreEncounter)
+* context.encounter only Reference(RSEncounter)
 * content 1..* MS
 * content.attachment.url 1..1 MS
 * content.format 0..1
