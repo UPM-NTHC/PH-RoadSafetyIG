@@ -84,7 +84,7 @@ Id: rs-observation-level-of-consciousness
 Title: "Road Safety Observation - Level of Consciousness (AVPU)"
 Description: "Level of consciousness (e.g., AVPU)."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VS-level-of-consciousness (preferred)
+* valueCodeableConcept from VSLevelOfConsciousness (preferred)
 * code.coding 1..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #67775-7
@@ -96,7 +96,7 @@ Id: rs-observation-pupils
 Title: "Road Safety Observation - Pupils"
 Description: "Pupil size/reactivity summary."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VS-pupils (preferred)
+* valueCodeableConcept from VSPupils (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #113147002
@@ -108,7 +108,7 @@ Id: rs-observation-cyanosis
 Title: "Road Safety Observation - Cyanosis"
 Description: "Cyanosis assessment."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VS-cyanosis (preferred)
+* valueCodeableConcept from VSCyanosis (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #3415004
