@@ -23,15 +23,8 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
     observationTimeStationArrival 0..1 and
     observationVitals 0..* and
     observationGCS 0..1 and
-    observationInjuryDatetime 0..1 and
-    observationInjuryIntent 0..1 and
-    observationTransportFlag 0..1 and
-    observationModeOfTransport 0..1 and
-    observationTriage 0..1 and
-    observationCollisionType 0..1 and
-    observationVehicles 0..* and
-    observationInjuries 0..* and
-    observationExternalCauses 0..* and
+    observationReportedComplaint 0..1 and
+    observationCallSource 0..1 and
     document 0..* and
     task 0..* and
     serviceRequest 0..* and
@@ -47,14 +40,10 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
 * entry[observationTimeHospitalArrival].resource only rs-observation-time-hospital-arrival
 * entry[observationTimeStationArrival].resource only rs-observation-time-station-arrival
 * entry[observationVitals].resource only rs-observation-respiratory-rate or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature
-    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm or rs-observation-pulse-quality
+    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm or rs-observation-pulse-quality or rs-observation-cyanosis
 * entry[observationGCS].resource only rs-observation-gcs
-* entry[observationInjuryDatetime].resource only rs-observation-injury-datetime
-* entry[observationInjuryIntent].resource only rs-observation-injury-intent
-* entry[observationTransportFlag].resource only rs-observation-transport-vehicular-flag
-* entry[observationModeOfTransport].resource only rs-observation-mode-of-transport
-* entry[observationTriage].resource only rs-observation-triage-priority
-* entry[observationCollisionType].resource only rs-observation-collision-type
+* entry[observationReportedComplaint].resource only rs-observation-reported-complaint
+* entry[observationCallSource].resource only rs-observation-call-source
 * entry contains
     observationVehicleUsed 0..1 and
     observationRunReportComments 0..1 and
@@ -62,9 +51,6 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
 * entry[observationVehicleUsed].resource only rs-observation-vehicle-used
 * entry[observationRunReportComments].resource only rs-observation-runreport-comments
 * entry[observationClinicalRemarks].resource only rs-observation-clinical-remarks
-* entry[observationVehicles].resource only rs-observation-patients-vehicle or rs-observation-other-vehicle
-* entry[observationInjuries].resource only rs-observation-abrasion or rs-observation-fracture-closed or rs-observation-fracture-open or rs-observation-open-wound or rs-observation-traumatic-amputation or rs-observation-other-injury
-* entry[observationExternalCauses].resource only rs-observation-ec-bites-stings or rs-observation-ec-burns or rs-observation-ec-chemical or rs-observation-ec-drowning or rs-observation-ec-fall or rs-observation-ec-gunshot or rs-observation-ec-firecracker or rs-observation-ec-hanging-strangulation or rs-observation-ec-mauling-assault or rs-observation-ec-sexual-assault
 * entry[document].resource only RSDocumentReference
 * entry[task].resource only RSTask
 * entry[serviceRequest].resource only RSServiceRequest
@@ -100,10 +86,11 @@ Description: "Bundle for Facility ONEISS submission containing patient, encounte
 * entry[conditionInitial].resource only rs-condition
 * entry[conditionFinal].resource only rs-condition
 * entry[observationVitals].resource only rs-observation-respiratory-rate or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature or rs-observation-gcs
-    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm or rs-observation-pulse-quality
-* entry[observationClinical].resource only rs-observation-reported-complaint or rs-observation-call-source or rs-observation-other-risk-factors
-    or rs-observation-condition-of-patient or rs-observation-outcome-release or rs-observation-outcome-discharge or rs-observation-status-on-arrival or rs-observation-status-on-arrival-alive or rs-observation-blood-alcohol
-* entry[observationIncident].resource only rs-observation-injury-datetime or rs-observation-injury-intent or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport or rs-observation-collision-type or rs-observation-patients-vehicle or rs-observation-position-of-patient
+    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm or rs-observation-pulse-quality or rs-observation-cyanosis
+* entry[observationClinical].resource only rs-observation-other-risk-factors or rs-observation-condition-of-patient or rs-observation-outcome-release or rs-observation-outcome-discharge or rs-observation-status-on-arrival or rs-observation-status-on-arrival-alive or rs-observation-blood-alcohol
+* entry[observationIncident].resource only rs-observation-injury-datetime or rs-observation-injury-intent or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport or rs-observation-collision-type or rs-observation-collision-vs-noncollision or rs-observation-patients-vehicle or rs-observation-other-vehicle or rs-observation-position-of-patient or rs-observation-how-many-vehicles or rs-observation-how-many-patients or rs-observation-place-of-occurrence or rs-observation-activity-at-incident
+* entry contains observationPostCrash 0..*
+* entry[observationPostCrash].resource only rs-observation-traffic-investigator or rs-observation-other-risk-factors or rs-observation-safety-accessories or rs-observation-vehicle-condition or rs-observation-cctv-available
 * entry[document].resource only RSDocumentReference
 * entry[serviceRequest].resource only RSServiceRequest
 * entry[procedure].resource only RSProcedure
