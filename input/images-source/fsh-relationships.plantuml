@@ -15,10 +15,12 @@ class "RSEncounter" {
   identifier : — [1..*]
   period.start : — [1..1]
   serviceProvider : — [0..1]
+  serviceProvider : Reference(RSHealthService)
   participant : — [0..*]
   hospitalization.dischargeDisposition : — [0..1]
   hospitalization.destination : — [0..1]
 }
+class "RSHealthService"
 class "RSPatient" {
   name : — [1..*]
   name.family : — [0..1]
@@ -41,23 +43,28 @@ class "RSLocation" {
 class "RSCondition" {
   code : — [1..1]
   subject : — [1..1]
+  subject : Reference(RSPatient)
   encounter : — [0..1]
+  encounter : Reference(RSEncounter)
   onset[x] : — [0..1]
   abatement[x] : — [0..1]
 }
 class "RSMedicationStatement" {
   medication[x] : — [1..1]
   subject : — [1..1]
+  subject : Reference(RSPatient)
   effective[x] : — [0..1]
 }
 class "RSAllergyIntolerance" {
   code : — [0..1]
   patient : — [1..1]
-  reaction : — [0..*]
+  patient : Reference(RSPatient)
 }
 class "RSDocumentReference" {
   status : — [1..1]
   type : — [0..1]
+  subject : — [0..1]
+  subject : Reference(RSPatient)
   context.encounter : — [0..1]
   context.encounter : Reference(RSEncounter)
   content : — [1..*]
@@ -65,6 +72,8 @@ class "RSDocumentReference" {
   content.format : — [0..1]
 }
 class "RSClaim" {
+  patient : — [1..1]
+  patient : Reference(RSPatient)
   total : — [0..1]
 }
 class "RSObservation" {
@@ -383,6 +392,22 @@ class "RSObsOtherInjury" {
   note : — [0..*]
   code.coding : — [1..1]
 }
+class "RSOrganization" {
+  active : — [0..1]
+  type : — [0..*]
+  name : — [1..1]
+  identifier : — [0..*]
+  telecom : — [0..*]
+  address : — [0..*]
+}
+class "RSHealthcareService" {
+  active : — [0..1]
+  type : — [0..*]
+  name : — [1..1]
+  identifier : — [0..*]
+  telecom : — [0..*]
+  address : — [0..*]
+}
 class "RSProcedure" {
   status : — [1..1]
   code : — [0..1]
@@ -399,7 +424,7 @@ class "RSServiceRequest" {
   status : — [1..1]
   occurrenceDateTime : — [0..1]
   supportingInfo : — [0..*]
-  supportingInfo : Reference(PHCoreOrganization | PHCorePractitioner)
+  supportingInfo : Reference(RSHealthService | RSOrganization | PHCoreOrganization | PHCorePractitioner)
   subject : — [1..1]
   subject : Reference(RSPatient)
   encounter : — [0..1]
@@ -407,12 +432,21 @@ class "RSServiceRequest" {
 }
 class "PHCoreOrganization"
 
+"RSEncounter" --> "RSHealthService" : serviceProvider
+"RSCondition" --> "RSPatient" : subject
+"RSCondition" --> "RSEncounter" : encounter
+"RSMedicationStatement" --> "RSPatient" : subject
+"RSAllergyIntolerance" --> "RSPatient" : patient
+"RSDocumentReference" --> "RSPatient" : subject
 "RSDocumentReference" --> "RSEncounter" : context.encounter
+"RSClaim" --> "RSPatient" : patient
 "RSObservation" --> "RSPatient" : subject
 "RSObservation" --> "RSEncounter" : encounter
 "RSProcedure" --> "RSPatient" : subject
 "RSProcedure" --> "RSEncounter" : encounter
 "RSProcedure" --> "PHCorePractitioner" : performer.actor
+"RSServiceRequest" --> "RSHealthService" : supportingInfo
+"RSServiceRequest" --> "RSOrganization" : supportingInfo
 "RSServiceRequest" --> "PHCoreOrganization" : supportingInfo
 "RSServiceRequest" --> "PHCorePractitioner" : supportingInfo
 "RSServiceRequest" --> "RSPatient" : subject
