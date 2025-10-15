@@ -41,18 +41,11 @@ class "RSBundleEMS" {
   entry[observationTimeStationArrival].resource : rs
   entry[observationVitals].resource : rs
   entry[observationGCS].resource : rs
-  entry[observationInjuryDatetime].resource : rs
-  entry[observationInjuryIntent].resource : rs
-  entry[observationTransportFlag].resource : rs
-  entry[observationModeOfTransport].resource : rs
-  entry[observationTriage].resource : rs
-  entry[observationCollisionType].resource : rs
+  entry[observationReportedComplaint].resource : rs
+  entry[observationCallSource].resource : rs
   entry[observationVehicleUsed].resource : rs
   entry[observationRunReportComments].resource : rs
   entry[observationClinicalRemarks].resource : rs
-  entry[observationVehicles].resource : rs
-  entry[observationInjuries].resource : rs
-  entry[observationExternalCauses].resource : rs
   entry[document].resource : RSDocumentReference
   entry[task].resource : RSTask
   entry[serviceRequest].resource : RSServiceRequest
@@ -71,6 +64,8 @@ class "RSBundleONEISS" {
   entry[observationVitals].resource : rs
   entry[observationClinical].resource : rs
   entry[observationIncident].resource : rs
+  entry : — [0..*]
+  entry[observationPostCrash].resource : rs
   entry[document].resource : RSDocumentReference
   entry[serviceRequest].resource : RSServiceRequest
   entry[procedure].resource : RSProcedure
@@ -82,19 +77,33 @@ class "RSClaim" {
 }
 class "Claim"
 class "RSCondition" {
-  code : — [1..1]
   subject : — [1..1]
   subject : Reference(RSPatient)
   encounter : — [0..1]
   encounter : Reference(RSEncounter)
+  category : — [0..1]
+  severity : — [0..1]
+  code : — [0..1]
+  code.coding[icd10Nature].system : — [0..1]
+  code.coding[icd10Nature].display : — [0..1]
+  code.coding[icd10ExternalCause].system : — [0..1]
+  code.coding[icd10ExternalCause].display : — [0..1]
+  code.coding[sct].system : — [0..1]
+  code.coding[sct].display : — [0..1]
+  code.text : — [0..1]
   onset[x] : — [0..1]
   abatement[x] : — [0..1]
+  bodySite : — [0..*]
+  evidence : — [0..*]
+  note : — [0..*]
 }
 class "Condition"
 class "RSEncounter" {
   status : — [1..1]
   class : — [1..1]
   identifier : — [1..*]
+  subject : — [1..1]
+  subject : Reference(RSPatient)
   period.start : — [1..1]
   serviceProvider : — [0..1]
   serviceProvider : Reference(RSOrganization)
@@ -308,6 +317,7 @@ class "Obs (RS profiles)" {
 "RSCondition" --> "RSEncounter" : encounter
 "RSDocumentReference" --> "RSPatient" : subject
 "RSDocumentReference" --> "RSEncounter" : context.encounter
+"RSEncounter" --> "RSPatient" : subject
 "RSEncounter" --> "RSOrganization" : serviceProvider
 "RSEncounter" --> "RSOrganization" : hospitalization.origin
 "RSEncounter" --> "PHCorePractitioner" : participant[receivedBy].individual

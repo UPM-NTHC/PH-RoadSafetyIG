@@ -7,6 +7,8 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * status 1..1 MS
 * class 1..1 MS
 * identifier 1..* MS
+* subject 1..1 MS
+* subject only Reference(RSPatient)
 * period.start 1..1 MS
 * serviceProvider 0..1 MS
 * serviceProvider only Reference(RSOrganization)

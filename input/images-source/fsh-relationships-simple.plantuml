@@ -49,6 +49,7 @@ class "Obs (RS profiles)"
 "RSCondition" --> "RSEncounter" : encounter
 "RSDocumentReference" --> "RSPatient" : subject
 "RSDocumentReference" --> "RSEncounter" : context.encounter
+"RSEncounter" --> "RSPatient" : subject
 "RSEncounter" --> "RSOrganization" : serviceProvider
 "RSEncounter" --> "RSOrganization" : hospitalization.origin
 "RSEncounter" --> "PHCorePractitioner" : participant[receivedBy].individual
