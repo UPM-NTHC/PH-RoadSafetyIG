@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ot
   "name" : "RSObsECOther",
   "title" : "Road Safety Observation - External Cause: Other",
   "status" : "draft",
-  "date" : "2025-10-15T14:23:03+00:00",
+  "date" : "2025-10-15T15:54:27+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-posit
   "name" : "RSObsPositionOfPatient",
   "title" : "Road Safety Observation - Position of Patient",
   "status" : "draft",
-  "date" : "2025-10-15T14:23:03+00:00",
+  "date" : "2025-10-15T15:54:27+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
