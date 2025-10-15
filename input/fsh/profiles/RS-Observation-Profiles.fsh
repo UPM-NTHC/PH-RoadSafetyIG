@@ -389,6 +389,7 @@ Id: rs-observation-collision-type
 Title: "Road Safety Observation - Collision Type"
 Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSCollisionCategory (preferred)
 * code.coding 1..1
 * code.coding.system = $SILPH
 * code.coding.code = #collision-type
