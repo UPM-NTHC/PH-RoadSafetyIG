@@ -1,52 +1,52 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>Artifacts Summary - DRAFT PH Road Safety Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"9"}
     h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
 
-          <!-- Placeholder for child template header declarations -->
+        <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
@@ -56,33 +56,33 @@
 
 
 
-  <img src="assets/images/phl.svg" alt="Philippines flag" title="Philippines" height="16"/>
+  <img alt="Philippines flag" src="assets/images/phl.svg" height="16" title="Philippines"/>
 
 
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -119,8 +119,8 @@
       <li>
         <a href="data-modelling.html">General model</a>
       </li>
-      <li><a name="l207">​</a>
-        <a href="StructureDefinition-PH-RoadSafetyLogicalModel.html">Logical model</a>
+      <li>
+        <a href="StructureDefinition-ph-road-safety-logical-model.html">Logical model</a>
       </li>
       <li>
         <a href="ConceptMap-MDSRoadSafety2FHIR.html">Concept Map</a>
@@ -156,26 +156,26 @@
     <a href="http://hl7.org/fhir/us/example/history.html">History</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -187,12 +187,15 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">DRAFT PH Road Safety Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">DRAFT PH Road Safety Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
   
-    <!-- DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten --><div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir" class="markdown-toc">
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
    <p>Contents:</p>
    <ul>
       <li>
@@ -209,7 +212,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
    </ul>
 </div>
-<div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir">
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
    <h3>Structures: Logical Models </h3>
@@ -219,7 +224,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ph-road-safety-logical-model.html" title="StructureDefinition/ph-road-safety-logical-model">Road Safety Minimum Dataset (MDS) Logical Model</a>
+               <a href="StructureDefinition-ph-road-safety-logical-model.html"
+                  title="StructureDefinition/ph-road-safety-logical-model">Road Safety Minimum Dataset (MDS) Logical Model</a>
             </td>
             <td>
 <p>Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling.</p>
@@ -235,7 +241,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-allergy-intolerance.html" title="StructureDefinition/rs-allergy-intolerance">Road Safety AllergyIntolerance</a>
+               <a href="StructureDefinition-rs-allergy-intolerance.html"
+                  title="StructureDefinition/rs-allergy-intolerance">Road Safety AllergyIntolerance</a>
             </td>
             <td>
 <p>Known allergies, substances and reactions.</p>
@@ -243,7 +250,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-bundle-ems.html" title="StructureDefinition/rs-bundle-ems">Road Safety Bundle — EMS Submission</a>
+               <a href="StructureDefinition-rs-bundle-ems.html"
+                  title="StructureDefinition/rs-bundle-ems">Road Safety Bundle — EMS Submission</a>
             </td>
             <td>
 <p>Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items.</p>
@@ -251,7 +259,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-bundle-oneiss.html" title="StructureDefinition/rs-bundle-oneiss">Road Safety Bundle — ONEISS Submission</a>
+               <a href="StructureDefinition-rs-bundle-oneiss.html"
+                  title="StructureDefinition/rs-bundle-oneiss">Road Safety Bundle — ONEISS Submission</a>
             </td>
             <td>
 <p>Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents.</p>
@@ -259,7 +268,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-claim.html" title="StructureDefinition/rs-claim">Road Safety Claim</a>
+               <a href="StructureDefinition-rs-claim.html"
+                  title="StructureDefinition/rs-claim">Road Safety Claim</a>
             </td>
             <td>
 <p>Claim information related to cost of care.</p>
@@ -267,7 +277,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-condition.html" title="StructureDefinition/rs-condition">Road Safety Condition</a>
+               <a href="StructureDefinition-rs-condition.html"
+                  title="StructureDefinition/rs-condition">Road Safety Condition</a>
             </td>
             <td>
 <p>Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries.</p>
@@ -275,7 +286,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-document-reference.html" title="StructureDefinition/rs-document-reference">Road Safety DocumentReference (Evidence)</a>
+               <a href="StructureDefinition-rs-document-reference.html"
+                  title="StructureDefinition/rs-document-reference">Road Safety DocumentReference (Evidence)</a>
             </td>
             <td>
 <p>Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files).</p>
@@ -283,7 +295,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-encounter.html" title="StructureDefinition/rs-encounter">Road Safety Encounter</a>
+               <a href="StructureDefinition-rs-encounter.html"
+                  title="StructureDefinition/rs-encounter">Road Safety Encounter</a>
             </td>
             <td>
 <p>Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition &amp; transfer.</p>
@@ -291,7 +304,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-healthcare-service.html" title="StructureDefinition/rs-healthcare-service">Road Safety HealthcareService</a>
+               <a href="StructureDefinition-rs-healthcare-service.html"
+                  title="StructureDefinition/rs-healthcare-service">Road Safety HealthcareService</a>
             </td>
             <td>
 <p>Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units).</p>
@@ -299,7 +313,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-location-incident.html" title="StructureDefinition/rs-location-incident">Road Safety Incident Location</a>
+               <a href="StructureDefinition-rs-location-incident.html"
+                  title="StructureDefinition/rs-location-incident">Road Safety Incident Location</a>
             </td>
             <td>
 <p>Location of incident; supports PH-Core address extensions and geolocation.</p>
@@ -307,7 +322,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-medication-statement.html" title="StructureDefinition/rs-medication-statement">Road Safety MedicationStatement</a>
+               <a href="StructureDefinition-rs-medication-statement.html"
+                  title="StructureDefinition/rs-medication-statement">Road Safety MedicationStatement</a>
             </td>
             <td>
 <p>Current medications as codeable concepts or references where available.</p>
@@ -315,7 +331,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation.html" title="StructureDefinition/rs-observation">Road Safety Observation</a>
+               <a href="StructureDefinition-rs-observation.html"
+                  title="StructureDefinition/rs-observation">Road Safety Observation</a>
             </td>
             <td>
 <p>Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns.</p>
@@ -323,7 +340,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-abrasion.html" title="StructureDefinition/rs-observation-abrasion">Road Safety Observation - Abrasion</a>
+               <a href="StructureDefinition-rs-observation-abrasion.html"
+                  title="StructureDefinition/rs-observation-abrasion">Road Safety Observation - Abrasion</a>
             </td>
             <td>
 <p>Abrasion present; with optional site and details.</p>
@@ -331,7 +349,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-activity-at-incident.html" title="StructureDefinition/rs-observation-activity-at-incident">Road Safety Observation - Activity at Time of Incident</a>
+               <a href="StructureDefinition-rs-observation-activity-at-incident.html"
+                  title="StructureDefinition/rs-observation-activity-at-incident">Road Safety Observation - Activity at Time of Incident</a>
             </td>
             <td>
 <p>Activity of the patient at time of incident; allow text fallback.</p>
@@ -339,7 +358,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-avulsion.html" title="StructureDefinition/rs-observation-avulsion">Road Safety Observation - Avulsion</a>
+               <a href="StructureDefinition-rs-observation-avulsion.html"
+                  title="StructureDefinition/rs-observation-avulsion">Road Safety Observation - Avulsion</a>
             </td>
             <td>
 <p>Avulsion present; with optional site and details.</p>
@@ -347,7 +367,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-blood-pressure.html" title="StructureDefinition/rs-observation-blood-pressure">Road Safety Observation - Blood Pressure</a>
+               <a href="StructureDefinition-rs-observation-blood-pressure.html"
+                  title="StructureDefinition/rs-observation-blood-pressure">Road Safety Observation - Blood Pressure</a>
             </td>
             <td>
 <p>Blood pressure using component entries for systolic/diastolic.</p>
@@ -355,7 +376,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-body-temperature.html" title="StructureDefinition/rs-observation-body-temperature">Road Safety Observation - Body Temperature</a>
+               <a href="StructureDefinition-rs-observation-body-temperature.html"
+                  title="StructureDefinition/rs-observation-body-temperature">Road Safety Observation - Body Temperature</a>
             </td>
             <td>
 <p>Body temperature.</p>
@@ -363,7 +385,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-burn-1st.html" title="StructureDefinition/rs-observation-burn-1st">Road Safety Observation - Burn 1st Degree</a>
+               <a href="StructureDefinition-rs-observation-burn-1st.html"
+                  title="StructureDefinition/rs-observation-burn-1st">Road Safety Observation - Burn 1st Degree</a>
             </td>
             <td>
 <p>1st degree burn present; with site and details.</p>
@@ -371,7 +394,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-burn-2nd.html" title="StructureDefinition/rs-observation-burn-2nd">Road Safety Observation - Burn 2nd Degree</a>
+               <a href="StructureDefinition-rs-observation-burn-2nd.html"
+                  title="StructureDefinition/rs-observation-burn-2nd">Road Safety Observation - Burn 2nd Degree</a>
             </td>
             <td>
 <p>2nd degree burn present; with site and details.</p>
@@ -379,7 +403,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-burn-3rd.html" title="StructureDefinition/rs-observation-burn-3rd">Road Safety Observation - Burn 3rd Degree</a>
+               <a href="StructureDefinition-rs-observation-burn-3rd.html"
+                  title="StructureDefinition/rs-observation-burn-3rd">Road Safety Observation - Burn 3rd Degree</a>
             </td>
             <td>
 <p>3rd degree burn present; with site and details.</p>
@@ -387,7 +412,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-burn-4th.html" title="StructureDefinition/rs-observation-burn-4th">Road Safety Observation - Burn 4th Degree</a>
+               <a href="StructureDefinition-rs-observation-burn-4th.html"
+                  title="StructureDefinition/rs-observation-burn-4th">Road Safety Observation - Burn 4th Degree</a>
             </td>
             <td>
 <p>4th degree burn present; with site and details.</p>
@@ -395,7 +421,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-call-source.html" title="StructureDefinition/rs-observation-call-source">Road Safety Observation - Call Source</a>
+               <a href="StructureDefinition-rs-observation-call-source.html"
+                  title="StructureDefinition/rs-observation-call-source">Road Safety Observation - Call Source</a>
             </td>
             <td>
 <p>Call source description (free text).</p>
@@ -403,7 +430,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-collision-type.html" title="StructureDefinition/rs-observation-collision-type">Road Safety Observation - Collision Type</a>
+               <a href="StructureDefinition-rs-observation-collision-type.html"
+                  title="StructureDefinition/rs-observation-collision-type">Road Safety Observation - Collision Type</a>
             </td>
             <td>
 <p>Collision type (Angle, Head-on, Rear end, Side swipe, etc.).</p>
@@ -411,7 +439,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-collision-vs-noncollision.html" title="StructureDefinition/rs-observation-collision-vs-noncollision">Road Safety Observation - Collision vs Non-Collision</a>
+               <a href="StructureDefinition-rs-observation-collision-vs-noncollision.html"
+                  title="StructureDefinition/rs-observation-collision-vs-noncollision">Road Safety Observation - Collision vs Non-Collision</a>
             </td>
             <td>
 <p>Indicates whether the incident was collision or non-collision.</p>
@@ -419,7 +448,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-concussion.html" title="StructureDefinition/rs-observation-concussion">Road Safety Observation - Concussion</a>
+               <a href="StructureDefinition-rs-observation-concussion.html"
+                  title="StructureDefinition/rs-observation-concussion">Road Safety Observation - Concussion</a>
             </td>
             <td>
 <p>Concussion present; with site and details.</p>
@@ -427,7 +457,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-contusion.html" title="StructureDefinition/rs-observation-contusion">Road Safety Observation - Contusion</a>
+               <a href="StructureDefinition-rs-observation-contusion.html"
+                  title="StructureDefinition/rs-observation-contusion">Road Safety Observation - Contusion</a>
             </td>
             <td>
 <p>Contusion present; with site and details.</p>
@@ -435,7 +466,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-cyanosis.html" title="StructureDefinition/rs-observation-cyanosis">Road Safety Observation - Cyanosis</a>
+               <a href="StructureDefinition-rs-observation-cyanosis.html"
+                  title="StructureDefinition/rs-observation-cyanosis">Road Safety Observation - Cyanosis</a>
             </td>
             <td>
 <p>Cyanosis assessment.</p>
@@ -443,7 +475,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-date-received.html" title="StructureDefinition/rs-observation-date-received">Road Safety Observation - Date/Time Received by EMS</a>
+               <a href="StructureDefinition-rs-observation-date-received.html"
+                  title="StructureDefinition/rs-observation-date-received">Road Safety Observation - Date/Time Received by EMS</a>
             </td>
             <td>
 <p>Calendar/timestamp the EMS/dispatch received the request.</p>
@@ -451,7 +484,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-injury-datetime.html" title="StructureDefinition/rs-observation-injury-datetime">Road Safety Observation - Date/Time of Injury</a>
+               <a href="StructureDefinition-rs-observation-injury-datetime.html"
+                  title="StructureDefinition/rs-observation-injury-datetime">Road Safety Observation - Date/Time of Injury</a>
             </td>
             <td>
 <p>Timestamp of injury occurrence.</p>
@@ -459,7 +493,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-bites-stings.html" title="StructureDefinition/rs-observation-ec-bites-stings">Road Safety Observation - External Cause: Bites/Stings</a>
+               <a href="StructureDefinition-rs-observation-ec-bites-stings.html"
+                  title="StructureDefinition/rs-observation-ec-bites-stings">Road Safety Observation - External Cause: Bites/Stings</a>
             </td>
             <td>
 <p>Flag indicating bites/stings.</p>
@@ -467,7 +502,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-burns.html" title="StructureDefinition/rs-observation-ec-burns">Road Safety Observation - External Cause: Burns</a>
+               <a href="StructureDefinition-rs-observation-ec-burns.html"
+                  title="StructureDefinition/rs-observation-ec-burns">Road Safety Observation - External Cause: Burns</a>
             </td>
             <td>
 <p>Flag indicating burns as external cause.</p>
@@ -475,7 +511,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-chemical.html" title="StructureDefinition/rs-observation-ec-chemical">Road Safety Observation - External Cause: Chemical/Substance</a>
+               <a href="StructureDefinition-rs-observation-ec-chemical.html"
+                  title="StructureDefinition/rs-observation-ec-chemical">Road Safety Observation - External Cause: Chemical/Substance</a>
             </td>
             <td>
 <p>Flag indicating chemical/substance exposure.</p>
@@ -483,7 +520,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-sharp-object.html" title="StructureDefinition/rs-observation-ec-sharp-object">Road Safety Observation - External Cause: Contact with Sharp Object</a>
+               <a href="StructureDefinition-rs-observation-ec-sharp-object.html"
+                  title="StructureDefinition/rs-observation-ec-sharp-object">Road Safety Observation - External Cause: Contact with Sharp Object</a>
             </td>
             <td>
 <p>Flag indicating sharp object cause.</p>
@@ -491,7 +529,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-drowning.html" title="StructureDefinition/rs-observation-ec-drowning">Road Safety Observation - External Cause: Drowning</a>
+               <a href="StructureDefinition-rs-observation-ec-drowning.html"
+                  title="StructureDefinition/rs-observation-ec-drowning">Road Safety Observation - External Cause: Drowning</a>
             </td>
             <td>
 <p>Flag indicating drowning.</p>
@@ -499,7 +538,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-forces-of-nature.html" title="StructureDefinition/rs-observation-ec-forces-of-nature">Road Safety Observation - External Cause: Exposure to Forces of Nature</a>
+               <a href="StructureDefinition-rs-observation-ec-forces-of-nature.html"
+                  title="StructureDefinition/rs-observation-ec-forces-of-nature">Road Safety Observation - External Cause: Exposure to Forces of Nature</a>
             </td>
             <td>
 <p>Flag indicating exposure to natural disaster/calamity.</p>
@@ -507,7 +547,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-fall.html" title="StructureDefinition/rs-observation-ec-fall">Road Safety Observation - External Cause: Fall</a>
+               <a href="StructureDefinition-rs-observation-ec-fall.html"
+                  title="StructureDefinition/rs-observation-ec-fall">Road Safety Observation - External Cause: Fall</a>
             </td>
             <td>
 <p>Flag indicating fall.</p>
@@ -515,7 +556,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-firecracker.html" title="StructureDefinition/rs-observation-ec-firecracker">Road Safety Observation - External Cause: Firecracker</a>
+               <a href="StructureDefinition-rs-observation-ec-firecracker.html"
+                  title="StructureDefinition/rs-observation-ec-firecracker">Road Safety Observation - External Cause: Firecracker</a>
             </td>
             <td>
 <p>Flag indicating firecracker-related cause.</p>
@@ -523,7 +565,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-gunshot.html" title="StructureDefinition/rs-observation-ec-gunshot">Road Safety Observation - External Cause: Gunshot</a>
+               <a href="StructureDefinition-rs-observation-ec-gunshot.html"
+                  title="StructureDefinition/rs-observation-ec-gunshot">Road Safety Observation - External Cause: Gunshot</a>
             </td>
             <td>
 <p>Flag indicating gunshot.</p>
@@ -531,7 +574,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-hanging-strangulation.html" title="StructureDefinition/rs-observation-ec-hanging-strangulation">Road Safety Observation - External Cause: Hanging/Strangulation</a>
+               <a href="StructureDefinition-rs-observation-ec-hanging-strangulation.html"
+                  title="StructureDefinition/rs-observation-ec-hanging-strangulation">Road Safety Observation - External Cause: Hanging/Strangulation</a>
             </td>
             <td>
 <p>Flag indicating hanging/strangulation.</p>
@@ -539,7 +583,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-mauling-assault.html" title="StructureDefinition/rs-observation-ec-mauling-assault">Road Safety Observation - External Cause: Mauling/Assault</a>
+               <a href="StructureDefinition-rs-observation-ec-mauling-assault.html"
+                  title="StructureDefinition/rs-observation-ec-mauling-assault">Road Safety Observation - External Cause: Mauling/Assault</a>
             </td>
             <td>
 <p>Flag indicating assault.</p>
@@ -547,7 +592,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-other.html" title="StructureDefinition/rs-observation-ec-other">Road Safety Observation - External Cause: Other</a>
+               <a href="StructureDefinition-rs-observation-ec-other.html"
+                  title="StructureDefinition/rs-observation-ec-other">Road Safety Observation - External Cause: Other</a>
             </td>
             <td>
 <p>Flag indicating other external cause.</p>
@@ -555,7 +601,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-sexual-assault.html" title="StructureDefinition/rs-observation-ec-sexual-assault">Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)</a>
+               <a href="StructureDefinition-rs-observation-ec-sexual-assault.html"
+                  title="StructureDefinition/rs-observation-ec-sexual-assault">Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)</a>
             </td>
             <td>
 <p>Flag indicating sexual assault.</p>
@@ -563,7 +610,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-fracture-closed.html" title="StructureDefinition/rs-observation-fracture-closed">Road Safety Observation - Fracture (Closed)</a>
+               <a href="StructureDefinition-rs-observation-fracture-closed.html"
+                  title="StructureDefinition/rs-observation-fracture-closed">Road Safety Observation - Fracture (Closed)</a>
             </td>
             <td>
 <p>Closed fracture present; with site and details.</p>
@@ -571,7 +619,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-fracture-open.html" title="StructureDefinition/rs-observation-fracture-open">Road Safety Observation - Fracture (Open)</a>
+               <a href="StructureDefinition-rs-observation-fracture-open.html"
+                  title="StructureDefinition/rs-observation-fracture-open">Road Safety Observation - Fracture (Open)</a>
             </td>
             <td>
 <p>Open fracture present; with site and details.</p>
@@ -579,7 +628,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-gcs.html" title="StructureDefinition/rs-observation-gcs">Road Safety Observation - Glasgow Coma Scale</a>
+               <a href="StructureDefinition-rs-observation-gcs.html"
+                  title="StructureDefinition/rs-observation-gcs">Road Safety Observation - Glasgow Coma Scale</a>
             </td>
             <td>
 <p>GCS with components for eyes, verbal, motor; optional total score as integer.</p>
@@ -587,7 +637,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-how-many-patients.html" title="StructureDefinition/rs-observation-how-many-patients">Road Safety Observation - How Many Patients Involved</a>
+               <a href="StructureDefinition-rs-observation-how-many-patients.html"
+                  title="StructureDefinition/rs-observation-how-many-patients">Road Safety Observation - How Many Patients Involved</a>
             </td>
             <td>
 <p>Count of patients involved.</p>
@@ -595,7 +646,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-how-many-vehicles.html" title="StructureDefinition/rs-observation-how-many-vehicles">Road Safety Observation - How Many Vehicles Involved</a>
+               <a href="StructureDefinition-rs-observation-how-many-vehicles.html"
+                  title="StructureDefinition/rs-observation-how-many-vehicles">Road Safety Observation - How Many Vehicles Involved</a>
             </td>
             <td>
 <p>Count of vehicles involved.</p>
@@ -603,7 +655,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-injury-intent.html" title="StructureDefinition/rs-observation-injury-intent">Road Safety Observation - Injury Intent</a>
+               <a href="StructureDefinition-rs-observation-injury-intent.html"
+                  title="StructureDefinition/rs-observation-injury-intent">Road Safety Observation - Injury Intent</a>
             </td>
             <td>
 <p>Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined).</p>
@@ -611,7 +664,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-level-of-consciousness.html" title="StructureDefinition/rs-observation-level-of-consciousness">Road Safety Observation - Level of Consciousness (AVPU)</a>
+               <a href="StructureDefinition-rs-observation-level-of-consciousness.html"
+                  title="StructureDefinition/rs-observation-level-of-consciousness">Road Safety Observation - Level of Consciousness (AVPU)</a>
             </td>
             <td>
 <p>Level of consciousness (e.g., AVPU).</p>
@@ -619,7 +673,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-mode-of-transport.html" title="StructureDefinition/rs-observation-mode-of-transport">Road Safety Observation - Mode of Transport to Facility</a>
+               <a href="StructureDefinition-rs-observation-mode-of-transport.html"
+                  title="StructureDefinition/rs-observation-mode-of-transport">Road Safety Observation - Mode of Transport to Facility</a>
             </td>
             <td>
 <p>Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'.</p>
@@ -627,7 +682,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-multiple-injuries.html" title="StructureDefinition/rs-observation-multiple-injuries">Road Safety Observation - Multiple Injuries?</a>
+               <a href="StructureDefinition-rs-observation-multiple-injuries.html"
+                  title="StructureDefinition/rs-observation-multiple-injuries">Road Safety Observation - Multiple Injuries?</a>
             </td>
             <td>
 <p>Boolean flag indicating multiple injuries.</p>
@@ -635,7 +691,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-open-wound.html" title="StructureDefinition/rs-observation-open-wound">Road Safety Observation - Open Wound</a>
+               <a href="StructureDefinition-rs-observation-open-wound.html"
+                  title="StructureDefinition/rs-observation-open-wound">Road Safety Observation - Open Wound</a>
             </td>
             <td>
 <p>Open wound present; with site and details.</p>
@@ -643,7 +700,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-other-risk-factors.html" title="StructureDefinition/rs-observation-other-risk-factors">Road Safety Observation - Other Risk Factors</a>
+               <a href="StructureDefinition-rs-observation-other-risk-factors.html"
+                  title="StructureDefinition/rs-observation-other-risk-factors">Road Safety Observation - Other Risk Factors</a>
             </td>
             <td>
 <p>Other risk factors at the time of incident; allow text for 'Others'.</p>
@@ -651,7 +709,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-other-injury.html" title="StructureDefinition/rs-observation-other-injury">Road Safety Observation - Other Specified Injury</a>
+               <a href="StructureDefinition-rs-observation-other-injury.html"
+                  title="StructureDefinition/rs-observation-other-injury">Road Safety Observation - Other Specified Injury</a>
             </td>
             <td>
 <p>Other specified injury present; with site and details.</p>
@@ -659,7 +718,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-other-vehicle.html" title="StructureDefinition/rs-observation-other-vehicle">Road Safety Observation - Other Vehicle/Object Involved</a>
+               <a href="StructureDefinition-rs-observation-other-vehicle.html"
+                  title="StructureDefinition/rs-observation-other-vehicle">Road Safety Observation - Other Vehicle/Object Involved</a>
             </td>
             <td>
 <p>Other vehicle/object type involved; text for 'Others'.</p>
@@ -667,7 +727,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-patients-vehicle.html" title="StructureDefinition/rs-observation-patients-vehicle">Road Safety Observation - Patient's Vehicle</a>
+               <a href="StructureDefinition-rs-observation-patients-vehicle.html"
+                  title="StructureDefinition/rs-observation-patients-vehicle">Road Safety Observation - Patient's Vehicle</a>
             </td>
             <td>
 <p>Type of vehicle used by patient; text for 'Others'.</p>
@@ -675,7 +736,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-place-of-occurrence.html" title="StructureDefinition/rs-observation-place-of-occurrence">Road Safety Observation - Place of Occurrence</a>
+               <a href="StructureDefinition-rs-observation-place-of-occurrence.html"
+                  title="StructureDefinition/rs-observation-place-of-occurrence">Road Safety Observation - Place of Occurrence</a>
             </td>
             <td>
 <p>Place type where injury occurred; name can be carried in note when applicable.</p>
@@ -683,7 +745,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-position-of-patient.html" title="StructureDefinition/rs-observation-position-of-patient">Road Safety Observation - Position of Patient</a>
+               <a href="StructureDefinition-rs-observation-position-of-patient.html"
+                  title="StructureDefinition/rs-observation-position-of-patient">Road Safety Observation - Position of Patient</a>
             </td>
             <td>
 <p>Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'.</p>
@@ -691,7 +754,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-traffic-investigator.html" title="StructureDefinition/rs-observation-traffic-investigator">Road Safety Observation - Presence of Traffic Investigator</a>
+               <a href="StructureDefinition-rs-observation-traffic-investigator.html"
+                  title="StructureDefinition/rs-observation-traffic-investigator">Road Safety Observation - Presence of Traffic Investigator</a>
             </td>
             <td>
 <p>Boolean presence/absence of traffic investigator.</p>
@@ -699,7 +763,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-urgency.html" title="StructureDefinition/rs-observation-urgency">Road Safety Observation - Priority Level (Urgency)</a>
+               <a href="StructureDefinition-rs-observation-urgency.html"
+                  title="StructureDefinition/rs-observation-urgency">Road Safety Observation - Priority Level (Urgency)</a>
             </td>
             <td>
 <p>System-generated urgency level per CAD/agency rules.</p>
@@ -707,7 +772,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pulse-rate.html" title="StructureDefinition/rs-observation-pulse-rate">Road Safety Observation - Pulse Rate</a>
+               <a href="StructureDefinition-rs-observation-pulse-rate.html"
+                  title="StructureDefinition/rs-observation-pulse-rate">Road Safety Observation - Pulse Rate</a>
             </td>
             <td>
 <p>Pulse/heart rate in beats/min.</p>
@@ -715,7 +781,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pupils.html" title="StructureDefinition/rs-observation-pupils">Road Safety Observation - Pupils</a>
+               <a href="StructureDefinition-rs-observation-pupils.html"
+                  title="StructureDefinition/rs-observation-pupils">Road Safety Observation - Pupils</a>
             </td>
             <td>
 <p>Pupil size/reactivity summary.</p>
@@ -723,7 +790,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-reported-complaint.html" title="StructureDefinition/rs-observation-reported-complaint">Road Safety Observation - Reported Complaint</a>
+               <a href="StructureDefinition-rs-observation-reported-complaint.html"
+                  title="StructureDefinition/rs-observation-reported-complaint">Road Safety Observation - Reported Complaint</a>
             </td>
             <td>
 <p>Free-text reported complaint.</p>
@@ -731,7 +799,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-respiratory-rate.html" title="StructureDefinition/rs-observation-respiratory-rate">Road Safety Observation - Respiratory Rate</a>
+               <a href="StructureDefinition-rs-observation-respiratory-rate.html"
+                  title="StructureDefinition/rs-observation-respiratory-rate">Road Safety Observation - Respiratory Rate</a>
             </td>
             <td>
 <p>Respiratory rate in breaths/min.</p>
@@ -739,7 +808,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-safety-accessories.html" title="StructureDefinition/rs-observation-safety-accessories">Road Safety Observation - Safety Accessories</a>
+               <a href="StructureDefinition-rs-observation-safety-accessories.html"
+                  title="StructureDefinition/rs-observation-safety-accessories">Road Safety Observation - Safety Accessories</a>
             </td>
             <td>
 <p>Safety accessories present/used; allow text for 'Others'.</p>
@@ -747,7 +817,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-departed.html" title="StructureDefinition/rs-observation-time-departed">Road Safety Observation - Time Departed Scene</a>
+               <a href="StructureDefinition-rs-observation-time-departed.html"
+                  title="StructureDefinition/rs-observation-time-departed">Road Safety Observation - Time Departed Scene</a>
             </td>
             <td>
 <p>Timestamp unit departed scene.</p>
@@ -755,7 +826,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-enroute.html" title="StructureDefinition/rs-observation-time-enroute">Road Safety Observation - Time Enroute</a>
+               <a href="StructureDefinition-rs-observation-time-enroute.html"
+                  title="StructureDefinition/rs-observation-time-enroute">Road Safety Observation - Time Enroute</a>
             </td>
             <td>
 <p>Timestamp when unit dispatched/began traveling.</p>
@@ -763,7 +835,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-on-scene.html" title="StructureDefinition/rs-observation-time-on-scene">Road Safety Observation - Time On Scene</a>
+               <a href="StructureDefinition-rs-observation-time-on-scene.html"
+                  title="StructureDefinition/rs-observation-time-on-scene">Road Safety Observation - Time On Scene</a>
             </td>
             <td>
 <p>Timestamp crew arrived at scene.</p>
@@ -771,7 +844,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-station-arrival.html" title="StructureDefinition/rs-observation-time-station-arrival">Road Safety Observation - Time of Emergency Station Arrival</a>
+               <a href="StructureDefinition-rs-observation-time-station-arrival.html"
+                  title="StructureDefinition/rs-observation-time-station-arrival">Road Safety Observation - Time of Emergency Station Arrival</a>
             </td>
             <td>
 <p>Timestamp unit returned to base/became available.</p>
@@ -779,7 +853,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-hospital-arrival.html" title="StructureDefinition/rs-observation-time-hospital-arrival">Road Safety Observation - Time of Hospital Arrival</a>
+               <a href="StructureDefinition-rs-observation-time-hospital-arrival.html"
+                  title="StructureDefinition/rs-observation-time-hospital-arrival">Road Safety Observation - Time of Hospital Arrival</a>
             </td>
             <td>
 <p>Timestamp unit arrived at receiving facility.</p>
@@ -787,7 +862,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-transport-vehicular-flag.html" title="StructureDefinition/rs-observation-transport-vehicular-flag">Road Safety Observation - Transport/Vehicular Accident (flag)</a>
+               <a href="StructureDefinition-rs-observation-transport-vehicular-flag.html"
+                  title="StructureDefinition/rs-observation-transport-vehicular-flag">Road Safety Observation - Transport/Vehicular Accident (flag)</a>
             </td>
             <td>
 <p>Boolean flag indicating transport/vehicular accident.</p>
@@ -795,7 +871,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-traumatic-amputation.html" title="StructureDefinition/rs-observation-traumatic-amputation">Road Safety Observation - Traumatic Amputation</a>
+               <a href="StructureDefinition-rs-observation-traumatic-amputation.html"
+                  title="StructureDefinition/rs-observation-traumatic-amputation">Road Safety Observation - Traumatic Amputation</a>
             </td>
             <td>
 <p>Traumatic amputation present; with site and details.</p>
@@ -803,7 +880,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-triage-priority.html" title="StructureDefinition/rs-observation-triage-priority">Road Safety Observation - Triage Priority</a>
+               <a href="StructureDefinition-rs-observation-triage-priority.html"
+                  title="StructureDefinition/rs-observation-triage-priority">Road Safety Observation - Triage Priority</a>
             </td>
             <td>
 <p>Triage category assigned at scene (e.g., Red/Yellow/Green/Black).</p>
@@ -811,7 +889,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-organization.html" title="StructureDefinition/rs-organization">Road Safety Organization</a>
+               <a href="StructureDefinition-rs-organization.html"
+                  title="StructureDefinition/rs-organization">Road Safety Organization</a>
             </td>
             <td>
 <p>Organization profile for EMS providers and receiving facilities involved in road safety encounters.</p>
@@ -819,7 +898,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-patient.html" title="StructureDefinition/rs-patient">Road Safety Patient</a>
+               <a href="StructureDefinition-rs-patient.html"
+                  title="StructureDefinition/rs-patient">Road Safety Patient</a>
             </td>
             <td>
 <p>Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region.</p>
@@ -827,7 +907,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-procedure.html" title="StructureDefinition/rs-procedure">Road Safety Procedure</a>
+               <a href="StructureDefinition-rs-procedure.html"
+                  title="StructureDefinition/rs-procedure">Road Safety Procedure</a>
             </td>
             <td>
 <p>Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions).</p>
@@ -835,7 +916,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-service-request.html" title="StructureDefinition/rs-service-request">Road Safety ServiceRequest</a>
+               <a href="StructureDefinition-rs-service-request.html"
+                  title="StructureDefinition/rs-service-request">Road Safety ServiceRequest</a>
             </td>
             <td>
 <p>Requests or records related to refusal to admit and related workflow signals.</p>
@@ -843,7 +925,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-task.html" title="StructureDefinition/rs-task">Road Safety Task</a>
+               <a href="StructureDefinition-rs-task.html"
+                  title="StructureDefinition/rs-task">Road Safety Task</a>
             </td>
             <td>
 <p>Workflow tracking for report receipt, durations of delay, and sources of delays.</p>
@@ -891,7 +974,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-collision-category.html" title="ValueSet/vs-collision-category">RS VS - Collision Category</a>
+               <a href="ValueSet-vs-collision-category.html"
+                  title="ValueSet/vs-collision-category">RS VS - Collision Category</a>
             </td>
             <td>
 <p>Collision vs non-collision category.</p>
@@ -923,7 +1007,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-level-of-consciousness.html" title="ValueSet/vs-level-of-consciousness">RS VS - Level of Consciousness (AVPU)</a>
+               <a href="ValueSet-vs-level-of-consciousness.html"
+                  title="ValueSet/vs-level-of-consciousness">RS VS - Level of Consciousness (AVPU)</a>
             </td>
             <td>
 <p>AVPU options for level of consciousness (prefer SNOMED CT).</p>
@@ -931,7 +1016,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-mode-of-transport.html" title="ValueSet/vs-mode-of-transport">RS VS - Mode of Transport to Facility</a>
+               <a href="ValueSet-vs-mode-of-transport.html"
+                  title="ValueSet/vs-mode-of-transport">RS VS - Mode of Transport to Facility</a>
             </td>
             <td>
 <p>Mode of transport to the hospital/facility.</p>
@@ -939,7 +1025,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-other-risk-factors.html" title="ValueSet/vs-other-risk-factors">RS VS - Other Risk Factors</a>
+               <a href="ValueSet-vs-other-risk-factors.html"
+                  title="ValueSet/vs-other-risk-factors">RS VS - Other Risk Factors</a>
             </td>
             <td>
 <p>Other risk factors at time of incident (prefer SNOMED CT).</p>
@@ -955,7 +1042,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-patients-vehicle.html" title="ValueSet/vs-patients-vehicle">RS VS - Patient's Vehicle</a>
+               <a href="ValueSet-vs-patients-vehicle.html"
+                  title="ValueSet/vs-patients-vehicle">RS VS - Patient's Vehicle</a>
             </td>
             <td>
 <p>Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC).</p>
@@ -963,7 +1051,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-place-of-occurrence.html" title="ValueSet/vs-place-of-occurrence">RS VS - Place of Occurrence</a>
+               <a href="ValueSet-vs-place-of-occurrence.html"
+                  title="ValueSet/vs-place-of-occurrence">RS VS - Place of Occurrence</a>
             </td>
             <td>
 <p>Place of occurrence (prefer SNOMED CT; use ICD-11 where needed).</p>
@@ -971,7 +1060,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-position-of-patient.html" title="ValueSet/vs-position-of-patient">RS VS - Position of Patient</a>
+               <a href="ValueSet-vs-position-of-patient.html"
+                  title="ValueSet/vs-position-of-patient">RS VS - Position of Patient</a>
             </td>
             <td>
 <p>Position/role of patient in transport incidents (prefer SNOMED CT).</p>
@@ -1003,7 +1093,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-respiratory-rhythm.html" title="ValueSet/vs-respiratory-rhythm">RS VS - Respiratory Rhythm</a>
+               <a href="ValueSet-vs-respiratory-rhythm.html"
+                  title="ValueSet/vs-respiratory-rhythm">RS VS - Respiratory Rhythm</a>
             </td>
             <td>
 <p>Respiratory rhythm options (prefer SNOMED CT).</p>
@@ -1011,7 +1102,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-safety-devices.html" title="ValueSet/vs-safety-devices">RS VS - Safety Devices</a>
+               <a href="ValueSet-vs-safety-devices.html"
+                  title="ValueSet/vs-safety-devices">RS VS - Safety Devices</a>
             </td>
             <td>
 <p>Safety devices present/used (prefer SNOMED CT).</p>
@@ -1027,7 +1119,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ConceptMap-MDSRoadSafety2FHIR.html" title="ConceptMap/MDSRoadSafety2FHIR">MDS Logical Model to FHIR Mapping</a>
+               <a href="ConceptMap-MDSRoadSafety2FHIR.html"
+                  title="ConceptMap/MDSRoadSafety2FHIR">MDS Logical Model to FHIR Mapping</a>
             </td>
             <td>
 <p>Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources.</p>
@@ -1038,22 +1131,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 15, 2025 15:55+0000">2025-10-15</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 15, 2025 16:04+0000">2025-10-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -1062,26 +1155,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+
