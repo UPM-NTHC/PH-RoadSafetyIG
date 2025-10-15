@@ -12,7 +12,7 @@
 | Draft as of 2025-10-15 | *Computable Name*:RSCondition |
 
  
-Condition resource for Road Safety IG. Designed following the TW Core philosophy: a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. Not a copy of TW Core — adapted to Road Safety needs. 
+Condition resource for Road Safety IG. a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "name" : "RSCondition",
   "title" : "Road Safety Condition",
   "status" : "draft",
-  "date" : "2025-10-15T18:32:50+00:00",
+  "date" : "2025-10-15T18:40:48+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
       ]
     }
   ],
-  "description" : "Condition resource for Road Safety IG.  Designed following the TW Core philosophy: a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. Not a copy of TW Core — adapted to Road Safety needs.",
+  "description" : "Condition resource for Road Safety IG.  a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
   "jurisdiction" : [
     {
       "coding" : [

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
   "name" : "RSObsInjuryDateTime",
   "title" : "Road Safety Observation - Date/Time of Injury",
   "status" : "draft",
-  "date" : "2025-10-15T18:32:50+00:00",
+  "date" : "2025-10-15T18:40:48+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

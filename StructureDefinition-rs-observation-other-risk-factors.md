@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherRiskFactors",
   "title" : "Road Safety Observation - Other Risk Factors",
   "status" : "draft",
-  "date" : "2025-10-15T18:32:50+00:00",
+  "date" : "2025-10-15T18:40:48+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

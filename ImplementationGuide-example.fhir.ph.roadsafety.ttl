@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-15T18:32:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-15T18:40:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -945,7 +945,7 @@
          fhir:reference [ fhir:v "StructureDefinition/rs-condition" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Condition" ] ;
-       fhir:description [ fhir:v "Condition resource for Road Safety IG.  Designed following the TW Core philosophy: a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. Not a copy of TW Core — adapted to Road Safety needs." ] ;
+       fhir:description [ fhir:v "Condition resource for Road Safety IG.  a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
