@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ConceptMap/MDSRoadSafety2FHIR | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:MDSRoadSafety2FHIR |
+| Active as of 2025-10-15 | *Computable Name*:MDSRoadSafety2FHIR |
 
  
 Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources. 
@@ -577,7 +577,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
   "title" : "MDS Logical Model to FHIR Mapping",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-09T18:52:26+00:00",
+  "date" : "2025-10-15T05:07:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
