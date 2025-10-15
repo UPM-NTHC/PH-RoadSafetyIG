@@ -408,17 +408,17 @@ Description: "Flag indicating bites/stings."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #782162007
 * code.coding.display = "Bite of nonhuman animal (event)"
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains bitesAgent 0..1
+* component[bitesAgent].code.coding 1..1
+* component[bitesAgent].code.coding.system = $LNC (exactly)
+* component[bitesAgent].code.coding.code = #95376-0
+* component[bitesAgent].code.coding.display = "Type of animal exposed to"
+* component[bitesAgent].valueCodeableConcept 0..1 MS
 
-Profile: RSObsECBitesStingsAgent
-Parent: RSObservation
-Id: rs-observation-ec-bites-stings-agent
-Title: "Road Safety Observation - External Cause: Bites/Stings Agent"
-Description: "Specific animal/insect/plant agent."
-* valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #95376-0
-* code.coding.display = "Type of animal exposed to"
+// (Consolidated into RSObsECBitesStings as component[bitesAgent])
 
 Profile: RSObsECBurns
 Parent: RSObservation
@@ -430,21 +430,15 @@ Description: "Flag indicating burns as external cause."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #242490006
 * code.coding.display = "Burning due to contact with hot substance (event)"
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains burnsAgent 0..1 and burnsOther 0..1
+* component[burnsAgent].valueCodeableConcept 0..1 MS
+* component[burnsAgent].valueCodeableConcept from VSBurnsAgent (preferred)
+* component[burnsOther].valueString 0..1 MS
 
-Profile: RSObsECBurnsAgent
-Parent: RSObservation
-Id: rs-observation-ec-burns-agent
-Title: "Road Safety Observation - External Cause: Burns Agent"
-Description: "Agent causing burn (heat/electric/chemical/etc.)."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSBurnsAgent (preferred)
-
-Profile: RSObsECBurnsOther
-Parent: RSObservation
-Id: rs-observation-ec-burns-other
-Title: "Road Safety Observation - External Cause: Burns (Other specify)"
-Description: "Other text for burn cause."
-* valueString 1..1 MS
+// (Consolidated into RSObsECBurns as components: burnsAgent, burnsOther)
 
 Profile: RSObsECChemical
 Parent: RSObservation
@@ -452,13 +446,13 @@ Id: rs-observation-ec-chemical
 Title: "Road Safety Observation - External Cause: Chemical/Substance"
 Description: "Flag indicating chemical/substance exposure."
 * valueBoolean 1..1 MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains chemicalAgent 0..1
+* component[chemicalAgent].valueCodeableConcept 0..1 MS
 
-Profile: RSObsECChemicalAgent
-Parent: RSObservation
-Id: rs-observation-ec-chemical-agent
-Title: "Road Safety Observation - External Cause: Chemical (Specify)"
-Description: "Specific chemical/substance."
-* valueCodeableConcept 1..1 MS
+// (Consolidated into RSObsECChemical as component: chemicalAgent)
 
 Profile: RSObsECSharpObject
 Parent: RSObservation
@@ -466,13 +460,13 @@ Id: rs-observation-ec-sharp-object
 Title: "Road Safety Observation - External Cause: Contact with Sharp Object"
 Description: "Flag indicating sharp object cause."
 * valueBoolean 1..1 MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains sharpObjectSpecify 0..1
+* component[sharpObjectSpecify].valueString 0..1 MS
 
-Profile: RSObsECSharpObjectSpecify
-Parent: RSObservation
-Id: rs-observation-ec-sharp-object-specify
-Title: "Road Safety Observation - External Cause: Sharp Object (Specify)"
-Description: "Specify object (free text)."
-* valueString 1..1 MS
+// (Consolidated into RSObsECSharpObject as component: sharpObjectSpecify)
 
 Profile: RSObsECDrowning
 Parent: RSObservation
@@ -484,21 +478,15 @@ Description: "Flag indicating drowning."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #40947009
 * code.coding.display = "Drowning (event)"
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains drowningType 0..1 and drowningOther 0..1
+* component[drowningType].valueCodeableConcept 0..1 MS
+* component[drowningType].valueCodeableConcept from VSDrowningType (preferred)
+* component[drowningOther].valueString 0..1 MS
 
-Profile: RSObsECDrowningType
-Parent: RSObservation
-Id: rs-observation-ec-drowning-type
-Title: "Road Safety Observation - External Cause: Drowning Type/Body of Water"
-Description: "Type/body of water."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSDrowningType (preferred)
-
-Profile: RSObsECDrowningOther
-Parent: RSObservation
-Id: rs-observation-ec-drowning-other
-Title: "Road Safety Observation - External Cause: Drowning (Other specify)"
-Description: "Other text for water type."
-* valueString 1..1 MS
+// (Consolidated into RSObsECDrowning as components: drowningType, drowningOther)
 
 Profile: RSObsECForcesOfNature
 Parent: RSObservation
@@ -513,13 +501,13 @@ Id: rs-observation-ec-fall
 Title: "Road Safety Observation - External Cause: Fall"
 Description: "Flag indicating fall."
 * valueBoolean 1..1 MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains fallSpecifics 0..1
+* component[fallSpecifics].valueString 0..1 MS
 
-Profile: RSObsECFallSpecifics
-Parent: RSObservation
-Id: rs-observation-ec-fall-specifics
-Title: "Road Safety Observation - External Cause: Fall (Specifics)"
-Description: "Where/what patient fell from (stairs, ladder, etc.)."
-* valueString 1..1 MS
+// (Consolidated into RSObsECFall as component: fallSpecifics)
 
 Profile: RSObsECFirecracker
 Parent: RSObservation
@@ -527,13 +515,13 @@ Id: rs-observation-ec-firecracker
 Title: "Road Safety Observation - External Cause: Firecracker"
 Description: "Flag indicating firecracker-related cause."
 * valueBoolean 1..1 MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains firecrackerType 0..1
+* component[firecrackerType].valueString 0..1 MS
 
-Profile: RSObsECFirecrackerType
-Parent: RSObservation
-Id: rs-observation-ec-firecracker-type
-Title: "Road Safety Observation - External Cause: Firecracker (Type)"
-Description: "Type of firecracker (text)."
-* valueString 1..1 MS
+// (Consolidated into RSObsECFirecracker as component: firecrackerType)
 
 Profile: RSObsECGunshot
 Parent: RSObservation
@@ -541,13 +529,13 @@ Id: rs-observation-ec-gunshot
 Title: "Road Safety Observation - External Cause: Gunshot"
 Description: "Flag indicating gunshot."
 * valueBoolean 1..1 MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains gunshotWeapon 0..1
+* component[gunshotWeapon].valueString 0..1 MS
 
-Profile: RSObsECGunshotWeapon
-Parent: RSObservation
-Id: rs-observation-ec-gunshot-weapon
-Title: "Road Safety Observation - External Cause: Gunshot (Weapon)"
-Description: "Weapon type (text)."
-* valueString 1..1 MS
+// (Consolidated into RSObsECGunshot as component: gunshotWeapon)
 
 Profile: RSObsECHangingStrangulation
 Parent: RSObservation
@@ -576,13 +564,13 @@ Id: rs-observation-ec-other
 Title: "Road Safety Observation - External Cause: Other"
 Description: "Flag indicating other external cause."
 * valueBoolean 1..1 MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains otherSpecify 0..1
+* component[otherSpecify].valueString 0..1 MS
 
-Profile: RSObsECOtherSpecify
-Parent: RSObservation
-Id: rs-observation-ec-other-specify
-Title: "Road Safety Observation - External Cause: Other (Specify)"
-Description: "Other cause (text)."
-* valueString 1..1 MS
+// (Consolidated into RSObsECOther as component: otherSpecify)
 
 // ---------------- INJURIES ----------------
 Profile: RSObsMultipleInjuries
