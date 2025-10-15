@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-injury-intent"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-injury-intent</b></p><a name="vs-injury-intent"> </a><a name="hcvs-injury-intent"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/242056005">242056005</a></td><td>Accidental injury (disorder)</td></tr><tr><td><a href="http://snomed.info/id/361269008">361269008</a></td><td>Intentional (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/276853009">276853009</a></td><td>Self inflicted injury (disorder)</td></tr><tr><td><a href="http://snomed.info/id/269735005">269735005</a></td><td>Injury undetermined whether accidentally or purposely inflicted (disorder)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent"/>
+  <version value="0.1.0"/>
+  <name value="VSInjuryIntent"/>
+  <title value="RS VS - Injury Intent"/>
+  <status value="draft"/>
+  <date value="2025-10-15T12:05:31+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Injury intent options mapped from ONEISS (prefer SNOMED CT)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="242056005"/>
+        <display value="Accidental injury (disorder)"/>
+      </concept>
+      <concept>
+        <code value="361269008"/>
+        <display value="Intentional (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="276853009"/>
+        <display value="Self inflicted injury (disorder)"/>
+      </concept>
+      <concept>
+        <code value="269735005"/>
+        <display value="Injury undetermined whether accidentally or purposely inflicted (disorder)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

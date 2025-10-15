@@ -53,18 +53,22 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MDSRoadSafety](StructureDefinition-PH-RoadSafetyLogicalModel.md), [MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md)...Show 91 more,[PHRoadSafetyIG](index.md),[RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md),[RSClaim](StructureDefinition-RS-Claim.md),[RSCondition](StructureDefinition-RS-Condition.md),[RSDocumentReference](StructureDefinition-RS-DocumentReference.md),[RSEncounter](StructureDefinition-RS-Encounter.md),[RSLocation](StructureDefinition-RS-Location-Incident.md),[RSMedicationStatement](StructureDefinition-RS-MedicationStatement.md),[RSObsAbrasion](StructureDefinition-RS-Observation-abrasion.md),[RSObsActivityAtIncident](StructureDefinition-RS-Observation-activity-at-incident.md),[RSObsAvulsion](StructureDefinition-RS-Observation-avulsion.md),[RSObsBloodPressure](StructureDefinition-RS-Observation-blood-pressure.md),[RSObsBodyTemperature](StructureDefinition-RS-Observation-body-temperature.md),[RSObsBurn1stDegree](StructureDefinition-RS-Observation-burn-1st.md),[RSObsBurn2ndDegree](StructureDefinition-RS-Observation-burn-2nd.md),[RSObsBurn3rdDegree](StructureDefinition-RS-Observation-burn-3rd.md),[RSObsBurn4thDegree](StructureDefinition-RS-Observation-burn-4th.md),[RSObsCallSource](StructureDefinition-RS-Observation-call-source.md),[RSObsCollisionType](StructureDefinition-RS-Observation-collision-type.md),[RSObsCollisionVsNonCollision](StructureDefinition-RS-Observation-collision-vs-noncollision.md),[RSObsConcussion](StructureDefinition-RS-Observation-concussion.md),[RSObsContusion](StructureDefinition-RS-Observation-contusion.md),[RSObsCyanosis](StructureDefinition-RS-Observation-cyanosis.md),[RSObsDateReceived](StructureDefinition-RS-Observation-date-received.md),[RSObsECBitesStings](StructureDefinition-RS-Observation-ec-bites-stings.md),[RSObsECBitesStingsAgent](StructureDefinition-RS-Observation-ec-bites-stings-agent.md),[RSObsECBurns](StructureDefinition-RS-Observation-ec-burns.md),[RSObsECBurnsAgent](StructureDefinition-RS-Observation-ec-burns-agent.md),[RSObsECBurnsOther](StructureDefinition-RS-Observation-ec-burns-other.md),[RSObsECChemical](StructureDefinition-RS-Observation-ec-chemical.md),[RSObsECChemicalAgent](StructureDefinition-RS-Observation-ec-chemical-agent.md),[RSObsECDrowning](StructureDefinition-RS-Observation-ec-drowning.md),[RSObsECDrowningOther](StructureDefinition-RS-Observation-ec-drowning-other.md),[RSObsECDrowningType](StructureDefinition-RS-Observation-ec-drowning-type.md),[RSObsECFall](StructureDefinition-RS-Observation-ec-fall.md),[RSObsECFallSpecifics](StructureDefinition-RS-Observation-ec-fall-specifics.md),[RSObsECFirecracker](StructureDefinition-RS-Observation-ec-firecracker.md),[RSObsECFirecrackerType](StructureDefinition-RS-Observation-ec-firecracker-type.md),[RSObsECForcesOfNature](StructureDefinition-RS-Observation-ec-forces-of-nature.md),[RSObsECGunshot](StructureDefinition-RS-Observation-ec-gunshot.md),[RSObsECGunshotWeapon](StructureDefinition-RS-Observation-ec-gunshot-weapon.md),[RSObsECHangingStrangulation](StructureDefinition-RS-Observation-ec-hanging-strangulation.md),[RSObsECMaulingAssault](StructureDefinition-RS-Observation-ec-mauling-assault.md),[RSObsECOther](StructureDefinition-RS-Observation-ec-other.md),[RSObsECOtherSpecify](StructureDefinition-RS-Observation-ec-other-specify.md),[RSObsECSexualAssault](StructureDefinition-RS-Observation-ec-sexual-assault.md),[RSObsECSharpObject](StructureDefinition-RS-Observation-ec-sharp-object.md),[RSObsECSharpObjectSpecify](StructureDefinition-RS-Observation-ec-sharp-object-specify.md),[RSObsFractureClosed](StructureDefinition-RS-Observation-fracture-closed.md),[RSObsFractureOpen](StructureDefinition-RS-Observation-fracture-open.md),[RSObsGCS](StructureDefinition-RS-Observation-gcs.md),[RSObsHowManyPatients](StructureDefinition-RS-Observation-how-many-patients.md),[RSObsHowManyVehicles](StructureDefinition-RS-Observation-how-many-vehicles.md),[RSObsInjuryDateTime](StructureDefinition-RS-Observation-injury-datetime.md),[RSObsInjuryIntent](StructureDefinition-RS-Observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-RS-Observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-RS-Observation-mode-of-transport.md),[RSObsMultipleInjuries](StructureDefinition-RS-Observation-multiple-injuries.md),[RSObsOpenWound](StructureDefinition-RS-Observation-open-wound.md),[RSObsOtherInjury](StructureDefinition-RS-Observation-other-injury.md),[RSObsOtherRiskFactors](StructureDefinition-RS-Observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-RS-Observation-other-vehicle.md),[RSObsPatientsVehicle](StructureDefinition-RS-Observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-RS-Observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-RS-Observation-position-of-patient.md),[RSObsPresenceTrafficInvestigator](StructureDefinition-RS-Observation-traffic-investigator.md),[RSObsPulseRate](StructureDefinition-RS-Observation-pulse-rate.md),[RSObsPupils](StructureDefinition-RS-Observation-pupils.md),[RSObsReportedComplaint](StructureDefinition-RS-Observation-reported-complaint.md),[RSObsRespiratoryRate](StructureDefinition-RS-Observation-respiratory-rate.md),[RSObsSafetyAccessories](StructureDefinition-RS-Observation-safety-accessories.md),[RSObsTimeDepartedScene](StructureDefinition-RS-Observation-time-departed.md),[RSObsTimeEnroute](StructureDefinition-RS-Observation-time-enroute.md),[RSObsTimeHospitalArrival](StructureDefinition-RS-Observation-time-hospital-arrival.md),[RSObsTimeOnScene](StructureDefinition-RS-Observation-time-on-scene.md),[RSObsTimeStationArrival](StructureDefinition-RS-Observation-time-station-arrival.md),[RSObsTransportVehicularFlag](StructureDefinition-RS-Observation-transport-vehicular-flag.md),[RSObsTraumaticAmputation](StructureDefinition-RS-Observation-traumatic-amputation.md),[RSObsTriagePriority](StructureDefinition-RS-Observation-triage-priority.md),[RSObsUrgencyLevel](StructureDefinition-RS-Observation-urgency.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSPatient](StructureDefinition-RS-Patient.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSServiceRequest](StructureDefinition-RS-ServiceRequest.md),[VSBreathSounds](ValueSet-VS-breath-sounds.md),[VSCyanosis](ValueSet-VS-cyanosis.md),[VSLevelOfConsciousness](ValueSet-VS-level-of-consciousness.md),[VSPulseQuality](ValueSet-VS-pulse-quality.md),[VSPulseRhythm](ValueSet-VS-pulse-rhythm.md),[VSPupils](ValueSet-VS-pupils.md)and[VSRespiratoryRhythm](ValueSet-VS-respiratory-rhythm.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MDSRoadSafety](StructureDefinition-ph-road-safety-logical-model.md), [MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md)...Show 106 more,[PHRoadSafetyIG](index.md),[RSAllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md),[RSClaim](StructureDefinition-rs-claim.md),[RSCondition](StructureDefinition-rs-condition.md),[RSDocumentReference](StructureDefinition-rs-document-reference.md),[RSEncounter](StructureDefinition-rs-encounter.md),[RSHealthcareService](StructureDefinition-rs-healthcare-service.md),[RSLocation](StructureDefinition-rs-location-incident.md),[RSMedicationStatement](StructureDefinition-rs-medication-statement.md),[RSObsAbrasion](StructureDefinition-rs-observation-abrasion.md),[RSObsActivityAtIncident](StructureDefinition-rs-observation-activity-at-incident.md),[RSObsAvulsion](StructureDefinition-rs-observation-avulsion.md),[RSObsBloodPressure](StructureDefinition-rs-observation-blood-pressure.md),[RSObsBodyTemperature](StructureDefinition-rs-observation-body-temperature.md),[RSObsBurn1stDegree](StructureDefinition-rs-observation-burn-1st.md),[RSObsBurn2ndDegree](StructureDefinition-rs-observation-burn-2nd.md),[RSObsBurn3rdDegree](StructureDefinition-rs-observation-burn-3rd.md),[RSObsBurn4thDegree](StructureDefinition-rs-observation-burn-4th.md),[RSObsCallSource](StructureDefinition-rs-observation-call-source.md),[RSObsCollisionType](StructureDefinition-rs-observation-collision-type.md),[RSObsCollisionVsNonCollision](StructureDefinition-rs-observation-collision-vs-noncollision.md),[RSObsConcussion](StructureDefinition-rs-observation-concussion.md),[RSObsContusion](StructureDefinition-rs-observation-contusion.md),[RSObsCyanosis](StructureDefinition-rs-observation-cyanosis.md),[RSObsDateReceived](StructureDefinition-rs-observation-date-received.md),[RSObsECBitesStings](StructureDefinition-rs-observation-ec-bites-stings.md),[RSObsECBitesStingsAgent](StructureDefinition-rs-observation-ec-bites-stings-agent.md),[RSObsECBurns](StructureDefinition-rs-observation-ec-burns.md),[RSObsECBurnsAgent](StructureDefinition-rs-observation-ec-burns-agent.md),[RSObsECBurnsOther](StructureDefinition-rs-observation-ec-burns-other.md),[RSObsECChemical](StructureDefinition-rs-observation-ec-chemical.md),[RSObsECChemicalAgent](StructureDefinition-rs-observation-ec-chemical-agent.md),[RSObsECDrowning](StructureDefinition-rs-observation-ec-drowning.md),[RSObsECDrowningOther](StructureDefinition-rs-observation-ec-drowning-other.md),[RSObsECDrowningType](StructureDefinition-rs-observation-ec-drowning-type.md),[RSObsECFall](StructureDefinition-rs-observation-ec-fall.md),[RSObsECFallSpecifics](StructureDefinition-rs-observation-ec-fall-specifics.md),[RSObsECFirecracker](StructureDefinition-rs-observation-ec-firecracker.md),[RSObsECFirecrackerType](StructureDefinition-rs-observation-ec-firecracker-type.md),[RSObsECForcesOfNature](StructureDefinition-rs-observation-ec-forces-of-nature.md),[RSObsECGunshot](StructureDefinition-rs-observation-ec-gunshot.md),[RSObsECGunshotWeapon](StructureDefinition-rs-observation-ec-gunshot-weapon.md),[RSObsECHangingStrangulation](StructureDefinition-rs-observation-ec-hanging-strangulation.md),[RSObsECMaulingAssault](StructureDefinition-rs-observation-ec-mauling-assault.md),[RSObsECOther](StructureDefinition-rs-observation-ec-other.md),[RSObsECOtherSpecify](StructureDefinition-rs-observation-ec-other-specify.md),[RSObsECSexualAssault](StructureDefinition-rs-observation-ec-sexual-assault.md),[RSObsECSharpObject](StructureDefinition-rs-observation-ec-sharp-object.md),[RSObsECSharpObjectSpecify](StructureDefinition-rs-observation-ec-sharp-object-specify.md),[RSObsFractureClosed](StructureDefinition-rs-observation-fracture-closed.md),[RSObsFractureOpen](StructureDefinition-rs-observation-fracture-open.md),[RSObsGCS](StructureDefinition-rs-observation-gcs.md),[RSObsHowManyPatients](StructureDefinition-rs-observation-how-many-patients.md),[RSObsHowManyVehicles](StructureDefinition-rs-observation-how-many-vehicles.md),[RSObsInjuryDateTime](StructureDefinition-rs-observation-injury-datetime.md),[RSObsInjuryIntent](StructureDefinition-rs-observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-rs-observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsMultipleInjuries](StructureDefinition-rs-observation-multiple-injuries.md),[RSObsOpenWound](StructureDefinition-rs-observation-open-wound.md),[RSObsOtherInjury](StructureDefinition-rs-observation-other-injury.md),[RSObsOtherRiskFactors](StructureDefinition-rs-observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md),[RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-rs-observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-rs-observation-position-of-patient.md),[RSObsPresenceTrafficInvestigator](StructureDefinition-rs-observation-traffic-investigator.md),[RSObsPulseRate](StructureDefinition-rs-observation-pulse-rate.md),[RSObsPupils](StructureDefinition-rs-observation-pupils.md),[RSObsReportedComplaint](StructureDefinition-rs-observation-reported-complaint.md),[RSObsRespiratoryRate](StructureDefinition-rs-observation-respiratory-rate.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[RSObsTimeDepartedScene](StructureDefinition-rs-observation-time-departed.md),[RSObsTimeEnroute](StructureDefinition-rs-observation-time-enroute.md),[RSObsTimeHospitalArrival](StructureDefinition-rs-observation-time-hospital-arrival.md),[RSObsTimeOnScene](StructureDefinition-rs-observation-time-on-scene.md),[RSObsTimeStationArrival](StructureDefinition-rs-observation-time-station-arrival.md),[RSObsTransportVehicularFlag](StructureDefinition-rs-observation-transport-vehicular-flag.md),[RSObsTraumaticAmputation](StructureDefinition-rs-observation-traumatic-amputation.md),[RSObsTriagePriority](StructureDefinition-rs-observation-triage-priority.md),[RSObsUrgencyLevel](StructureDefinition-rs-observation-urgency.md),[RSObservation](StructureDefinition-rs-observation.md),[RSOrganization](StructureDefinition-rs-organization.md),[RSPatient](StructureDefinition-rs-patient.md),[RSProcedure](StructureDefinition-rs-procedure.md),[RSServiceRequest](StructureDefinition-rs-service-request.md),[RSTask](StructureDefinition-rs-task.md),[VSActivity](ValueSet-vs-activity.md),[VSBreathSounds](ValueSet-vs-breath-sounds.md),[VSBurnsAgent](ValueSet-vs-burns-agent.md),[VSCollisionCategory](ValueSet-vs-collision-category.md),[VSCyanosis](ValueSet-vs-cyanosis.md),[VSDrowningType](ValueSet-vs-drowning-type.md),[VSInjuryIntent](ValueSet-vs-injury-intent.md),[VSLevelOfConsciousness](ValueSet-vs-level-of-consciousness.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md),[VSOtherRiskFactors](ValueSet-vs-other-risk-factors.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md),[VSPlaceOfOccurrence](ValueSet-vs-place-of-occurrence.md),[VSPositionOfPatient](ValueSet-vs-position-of-patient.md),[VSPulseQuality](ValueSet-vs-pulse-quality.md),[VSPulseRhythm](ValueSet-vs-pulse-rhythm.md),[VSPupils](ValueSet-vs-pupils.md),[VSRespiratoryRhythm](ValueSet-vs-respiratory-rhythm.md)and[VSSafetyDevices](ValueSet-vs-safety-devices.md)
+
+
+* The WHO grants a license for "commercial and non-commercial use" of ICD-11CC BY-ND 3.0 IGODetailed information can be found here: [[https://icd.who.int/en/docs/icd11-license.pdf](https://icd.who.int/en/docs/icd11-license.pdf)](https://icd.who.int/en/docs/icd11-license.pdf) Contact licensing@who.int to obtain further information.
+
+* [International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)](http://terminology.hl7.org/6.5.0/CodeSystem-ICD11MMS.html): [RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md), [RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md)...Show 4 more,[RSObsPlaceOfOccurrence](StructureDefinition-rs-observation-place-of-occurrence.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md)and[VSPlaceOfOccurrence](ValueSet-vs-place-of-occurrence.md)
+
+
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [RSObsActivityAtIncident](StructureDefinition-rs-observation-activity-at-incident.md), [RSObsCollisionVsNonCollision](StructureDefinition-rs-observation-collision-vs-noncollision.md)...Show 12 more,[RSObsECDrowningType](StructureDefinition-rs-observation-ec-drowning-type.md),[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md),[RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[VSActivity](ValueSet-vs-activity.md),[VSCollisionCategory](ValueSet-vs-collision-category.md),[VSDrowningType](ValueSet-vs-drowning-type.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md)and[VSSafetyDevices](ValueSet-vs-safety-devices.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md), [RSObsCyanosis](StructureDefinition-RS-Observation-cyanosis.md)...Show 9 more,[RSObsLevelOfConsciousness](StructureDefinition-RS-Observation-level-of-consciousness.md),[RSObsPupils](StructureDefinition-RS-Observation-pupils.md),[VSBreathSounds](ValueSet-VS-breath-sounds.md),[VSCyanosis](ValueSet-VS-cyanosis.md),[VSLevelOfConsciousness](ValueSet-VS-level-of-consciousness.md),[VSPulseQuality](ValueSet-VS-pulse-quality.md),[VSPulseRhythm](ValueSet-VS-pulse-rhythm.md),[VSPupils](ValueSet-VS-pupils.md)and[VSRespiratoryRhythm](ValueSet-VS-respiratory-rhythm.md)
-
-
-* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
-
-* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/6.5.0/CodeSystem-allergyintolerance-clinical.html): [RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md)
-* [AllergyIntolerance Verification Status](http://terminology.hl7.org/6.5.0/CodeSystem-allergyintolerance-verification.html): [RSAllergyIntolerance](StructureDefinition-RS-AllergyIntolerance.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [RSAllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RSObsActivityAtIncident](StructureDefinition-rs-observation-activity-at-incident.md)...Show 31 more,[RSObsCyanosis](StructureDefinition-rs-observation-cyanosis.md),[RSObsECBurnsAgent](StructureDefinition-rs-observation-ec-burns-agent.md),[RSObsECDrowningType](StructureDefinition-rs-observation-ec-drowning-type.md),[RSObsInjuryIntent](StructureDefinition-rs-observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-rs-observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsOtherRiskFactors](StructureDefinition-rs-observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md),[RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-rs-observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-rs-observation-position-of-patient.md),[RSObsPupils](StructureDefinition-rs-observation-pupils.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[VSActivity](ValueSet-vs-activity.md),[VSBreathSounds](ValueSet-vs-breath-sounds.md),[VSBurnsAgent](ValueSet-vs-burns-agent.md),[VSCyanosis](ValueSet-vs-cyanosis.md),[VSDrowningType](ValueSet-vs-drowning-type.md),[VSInjuryIntent](ValueSet-vs-injury-intent.md),[VSLevelOfConsciousness](ValueSet-vs-level-of-consciousness.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md),[VSOtherRiskFactors](ValueSet-vs-other-risk-factors.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md),[VSPlaceOfOccurrence](ValueSet-vs-place-of-occurrence.md),[VSPositionOfPatient](ValueSet-vs-position-of-patient.md),[VSPulseQuality](ValueSet-vs-pulse-quality.md),[VSPulseRhythm](ValueSet-vs-pulse-rhythm.md),[VSPupils](ValueSet-vs-pupils.md),[VSRespiratoryRhythm](ValueSet-vs-respiratory-rhythm.md)and[VSSafetyDevices](ValueSet-vs-safety-devices.md)
 
 
 
@@ -88,7 +92,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T08:26:35+00:00",
+  "date" : "2025-10-15T12:05:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -837,7 +841,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-AllergyIntolerance"
+          "reference" : "StructureDefinition/rs-allergy-intolerance"
         },
         "name" : "Road Safety AllergyIntolerance",
         "description" : "Known allergies, substances and reactions.",
@@ -851,7 +855,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Claim"
+          "reference" : "StructureDefinition/rs-claim"
         },
         "name" : "Road Safety Claim",
         "description" : "Claim information related to cost of care.",
@@ -865,7 +869,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Condition"
+          "reference" : "StructureDefinition/rs-condition"
         },
         "name" : "Road Safety Condition",
         "description" : "Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries.",
@@ -879,7 +883,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-DocumentReference"
+          "reference" : "StructureDefinition/rs-document-reference"
         },
         "name" : "Road Safety DocumentReference (Evidence)",
         "description" : "Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files).",
@@ -893,7 +897,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Encounter"
+          "reference" : "StructureDefinition/rs-encounter"
         },
         "name" : "Road Safety Encounter",
         "description" : "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer.",
@@ -907,7 +911,21 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Location-Incident"
+          "reference" : "StructureDefinition/rs-healthcare-service"
+        },
+        "name" : "Road Safety HealthcareService",
+        "description" : "Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/rs-location-incident"
         },
         "name" : "Road Safety Incident Location",
         "description" : "Location of incident; supports PH-Core address extensions and geolocation.",
@@ -921,7 +939,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-MedicationStatement"
+          "reference" : "StructureDefinition/rs-medication-statement"
         },
         "name" : "Road Safety MedicationStatement",
         "description" : "Current medications as codeable concepts or references where available.",
@@ -935,7 +953,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/PH-RoadSafetyLogicalModel"
+          "reference" : "StructureDefinition/ph-road-safety-logical-model"
         },
         "name" : "Road Safety Minimum Dataset (MDS) Logical Model",
         "description" : "Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling.",
@@ -949,7 +967,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation"
+          "reference" : "StructureDefinition/rs-observation"
         },
         "name" : "Road Safety Observation",
         "description" : "Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns.",
@@ -963,7 +981,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-abrasion"
+          "reference" : "StructureDefinition/rs-observation-abrasion"
         },
         "name" : "Road Safety Observation - Abrasion",
         "description" : "Abrasion present; with optional site and details.",
@@ -977,7 +995,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-activity-at-incident"
+          "reference" : "StructureDefinition/rs-observation-activity-at-incident"
         },
         "name" : "Road Safety Observation - Activity at Time of Incident",
         "description" : "Activity of the patient at time of incident; allow text fallback.",
@@ -991,7 +1009,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-avulsion"
+          "reference" : "StructureDefinition/rs-observation-avulsion"
         },
         "name" : "Road Safety Observation - Avulsion",
         "description" : "Avulsion present; with optional site and details.",
@@ -1005,7 +1023,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-blood-pressure"
+          "reference" : "StructureDefinition/rs-observation-blood-pressure"
         },
         "name" : "Road Safety Observation - Blood Pressure",
         "description" : "Blood pressure using component entries for systolic/diastolic.",
@@ -1019,7 +1037,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-body-temperature"
+          "reference" : "StructureDefinition/rs-observation-body-temperature"
         },
         "name" : "Road Safety Observation - Body Temperature",
         "description" : "Body temperature.",
@@ -1033,7 +1051,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-burn-1st"
+          "reference" : "StructureDefinition/rs-observation-burn-1st"
         },
         "name" : "Road Safety Observation - Burn 1st Degree",
         "description" : "1st degree burn present; with site and details.",
@@ -1047,7 +1065,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-burn-2nd"
+          "reference" : "StructureDefinition/rs-observation-burn-2nd"
         },
         "name" : "Road Safety Observation - Burn 2nd Degree",
         "description" : "2nd degree burn present; with site and details.",
@@ -1061,7 +1079,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-burn-3rd"
+          "reference" : "StructureDefinition/rs-observation-burn-3rd"
         },
         "name" : "Road Safety Observation - Burn 3rd Degree",
         "description" : "3rd degree burn present; with site and details.",
@@ -1075,7 +1093,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-burn-4th"
+          "reference" : "StructureDefinition/rs-observation-burn-4th"
         },
         "name" : "Road Safety Observation - Burn 4th Degree",
         "description" : "4th degree burn present; with site and details.",
@@ -1089,7 +1107,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-call-source"
+          "reference" : "StructureDefinition/rs-observation-call-source"
         },
         "name" : "Road Safety Observation - Call Source",
         "description" : "Call source description (free text).",
@@ -1103,7 +1121,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-collision-type"
+          "reference" : "StructureDefinition/rs-observation-collision-type"
         },
         "name" : "Road Safety Observation - Collision Type",
         "description" : "Collision type (Angle, Head-on, Rear end, Side swipe, etc.).",
@@ -1117,7 +1135,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-collision-vs-noncollision"
+          "reference" : "StructureDefinition/rs-observation-collision-vs-noncollision"
         },
         "name" : "Road Safety Observation - Collision vs Non-Collision",
         "description" : "Indicates whether the incident was collision or non-collision.",
@@ -1131,7 +1149,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-concussion"
+          "reference" : "StructureDefinition/rs-observation-concussion"
         },
         "name" : "Road Safety Observation - Concussion",
         "description" : "Concussion present; with site and details.",
@@ -1145,7 +1163,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-contusion"
+          "reference" : "StructureDefinition/rs-observation-contusion"
         },
         "name" : "Road Safety Observation - Contusion",
         "description" : "Contusion present; with site and details.",
@@ -1159,7 +1177,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-cyanosis"
+          "reference" : "StructureDefinition/rs-observation-cyanosis"
         },
         "name" : "Road Safety Observation - Cyanosis",
         "description" : "Cyanosis assessment.",
@@ -1173,7 +1191,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-injury-datetime"
+          "reference" : "StructureDefinition/rs-observation-injury-datetime"
         },
         "name" : "Road Safety Observation - Date/Time of Injury",
         "description" : "Timestamp of injury occurrence.",
@@ -1187,7 +1205,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-date-received"
+          "reference" : "StructureDefinition/rs-observation-date-received"
         },
         "name" : "Road Safety Observation - Date/Time Received by EMS",
         "description" : "Calendar/timestamp the EMS/dispatch received the request.",
@@ -1201,7 +1219,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-bites-stings"
+          "reference" : "StructureDefinition/rs-observation-ec-bites-stings"
         },
         "name" : "Road Safety Observation - External Cause: Bites/Stings",
         "description" : "Flag indicating bites/stings.",
@@ -1215,7 +1233,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-bites-stings-agent"
+          "reference" : "StructureDefinition/rs-observation-ec-bites-stings-agent"
         },
         "name" : "Road Safety Observation - External Cause: Bites/Stings Agent",
         "description" : "Specific animal/insect/plant agent.",
@@ -1229,7 +1247,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-burns"
+          "reference" : "StructureDefinition/rs-observation-ec-burns"
         },
         "name" : "Road Safety Observation - External Cause: Burns",
         "description" : "Flag indicating burns as external cause.",
@@ -1243,7 +1261,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-burns-other"
+          "reference" : "StructureDefinition/rs-observation-ec-burns-other"
         },
         "name" : "Road Safety Observation - External Cause: Burns (Other specify)",
         "description" : "Other text for burn cause.",
@@ -1257,7 +1275,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-burns-agent"
+          "reference" : "StructureDefinition/rs-observation-ec-burns-agent"
         },
         "name" : "Road Safety Observation - External Cause: Burns Agent",
         "description" : "Agent causing burn (heat/electric/chemical/etc.).",
@@ -1271,7 +1289,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-chemical-agent"
+          "reference" : "StructureDefinition/rs-observation-ec-chemical-agent"
         },
         "name" : "Road Safety Observation - External Cause: Chemical (Specify)",
         "description" : "Specific chemical/substance.",
@@ -1285,7 +1303,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-chemical"
+          "reference" : "StructureDefinition/rs-observation-ec-chemical"
         },
         "name" : "Road Safety Observation - External Cause: Chemical/Substance",
         "description" : "Flag indicating chemical/substance exposure.",
@@ -1299,7 +1317,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-sharp-object"
+          "reference" : "StructureDefinition/rs-observation-ec-sharp-object"
         },
         "name" : "Road Safety Observation - External Cause: Contact with Sharp Object",
         "description" : "Flag indicating sharp object cause.",
@@ -1313,7 +1331,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-drowning"
+          "reference" : "StructureDefinition/rs-observation-ec-drowning"
         },
         "name" : "Road Safety Observation - External Cause: Drowning",
         "description" : "Flag indicating drowning.",
@@ -1327,7 +1345,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-drowning-other"
+          "reference" : "StructureDefinition/rs-observation-ec-drowning-other"
         },
         "name" : "Road Safety Observation - External Cause: Drowning (Other specify)",
         "description" : "Other text for water type.",
@@ -1341,7 +1359,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-drowning-type"
+          "reference" : "StructureDefinition/rs-observation-ec-drowning-type"
         },
         "name" : "Road Safety Observation - External Cause: Drowning Type/Body of Water",
         "description" : "Type/body of water.",
@@ -1355,7 +1373,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-forces-of-nature"
+          "reference" : "StructureDefinition/rs-observation-ec-forces-of-nature"
         },
         "name" : "Road Safety Observation - External Cause: Exposure to Forces of Nature",
         "description" : "Flag indicating exposure to natural disaster/calamity.",
@@ -1369,7 +1387,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-fall"
+          "reference" : "StructureDefinition/rs-observation-ec-fall"
         },
         "name" : "Road Safety Observation - External Cause: Fall",
         "description" : "Flag indicating fall.",
@@ -1383,7 +1401,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-fall-specifics"
+          "reference" : "StructureDefinition/rs-observation-ec-fall-specifics"
         },
         "name" : "Road Safety Observation - External Cause: Fall (Specifics)",
         "description" : "Where/what patient fell from (stairs, ladder, etc.).",
@@ -1397,7 +1415,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-firecracker"
+          "reference" : "StructureDefinition/rs-observation-ec-firecracker"
         },
         "name" : "Road Safety Observation - External Cause: Firecracker",
         "description" : "Flag indicating firecracker-related cause.",
@@ -1411,7 +1429,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-firecracker-type"
+          "reference" : "StructureDefinition/rs-observation-ec-firecracker-type"
         },
         "name" : "Road Safety Observation - External Cause: Firecracker (Type)",
         "description" : "Type of firecracker (text).",
@@ -1425,7 +1443,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-gunshot"
+          "reference" : "StructureDefinition/rs-observation-ec-gunshot"
         },
         "name" : "Road Safety Observation - External Cause: Gunshot",
         "description" : "Flag indicating gunshot.",
@@ -1439,7 +1457,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-gunshot-weapon"
+          "reference" : "StructureDefinition/rs-observation-ec-gunshot-weapon"
         },
         "name" : "Road Safety Observation - External Cause: Gunshot (Weapon)",
         "description" : "Weapon type (text).",
@@ -1453,7 +1471,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-hanging-strangulation"
+          "reference" : "StructureDefinition/rs-observation-ec-hanging-strangulation"
         },
         "name" : "Road Safety Observation - External Cause: Hanging/Strangulation",
         "description" : "Flag indicating hanging/strangulation.",
@@ -1467,7 +1485,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-mauling-assault"
+          "reference" : "StructureDefinition/rs-observation-ec-mauling-assault"
         },
         "name" : "Road Safety Observation - External Cause: Mauling/Assault",
         "description" : "Flag indicating assault.",
@@ -1481,7 +1499,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-other"
+          "reference" : "StructureDefinition/rs-observation-ec-other"
         },
         "name" : "Road Safety Observation - External Cause: Other",
         "description" : "Flag indicating other external cause.",
@@ -1495,7 +1513,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-other-specify"
+          "reference" : "StructureDefinition/rs-observation-ec-other-specify"
         },
         "name" : "Road Safety Observation - External Cause: Other (Specify)",
         "description" : "Other cause (text).",
@@ -1509,7 +1527,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-sexual-assault"
+          "reference" : "StructureDefinition/rs-observation-ec-sexual-assault"
         },
         "name" : "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)",
         "description" : "Flag indicating sexual assault.",
@@ -1523,7 +1541,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-ec-sharp-object-specify"
+          "reference" : "StructureDefinition/rs-observation-ec-sharp-object-specify"
         },
         "name" : "Road Safety Observation - External Cause: Sharp Object (Specify)",
         "description" : "Specify object (free text).",
@@ -1537,7 +1555,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-fracture-closed"
+          "reference" : "StructureDefinition/rs-observation-fracture-closed"
         },
         "name" : "Road Safety Observation - Fracture (Closed)",
         "description" : "Closed fracture present; with site and details.",
@@ -1551,7 +1569,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-fracture-open"
+          "reference" : "StructureDefinition/rs-observation-fracture-open"
         },
         "name" : "Road Safety Observation - Fracture (Open)",
         "description" : "Open fracture present; with site and details.",
@@ -1565,7 +1583,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-gcs"
+          "reference" : "StructureDefinition/rs-observation-gcs"
         },
         "name" : "Road Safety Observation - Glasgow Coma Scale",
         "description" : "GCS with components for eyes, verbal, motor; optional total score as integer.",
@@ -1579,7 +1597,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-how-many-patients"
+          "reference" : "StructureDefinition/rs-observation-how-many-patients"
         },
         "name" : "Road Safety Observation - How Many Patients Involved",
         "description" : "Count of patients involved.",
@@ -1593,7 +1611,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-how-many-vehicles"
+          "reference" : "StructureDefinition/rs-observation-how-many-vehicles"
         },
         "name" : "Road Safety Observation - How Many Vehicles Involved",
         "description" : "Count of vehicles involved.",
@@ -1607,7 +1625,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-injury-intent"
+          "reference" : "StructureDefinition/rs-observation-injury-intent"
         },
         "name" : "Road Safety Observation - Injury Intent",
         "description" : "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined).",
@@ -1621,7 +1639,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-level-of-consciousness"
+          "reference" : "StructureDefinition/rs-observation-level-of-consciousness"
         },
         "name" : "Road Safety Observation - Level of Consciousness (AVPU)",
         "description" : "Level of consciousness (e.g., AVPU).",
@@ -1635,7 +1653,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-mode-of-transport"
+          "reference" : "StructureDefinition/rs-observation-mode-of-transport"
         },
         "name" : "Road Safety Observation - Mode of Transport to Facility",
         "description" : "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'.",
@@ -1649,7 +1667,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-multiple-injuries"
+          "reference" : "StructureDefinition/rs-observation-multiple-injuries"
         },
         "name" : "Road Safety Observation - Multiple Injuries?",
         "description" : "Boolean flag indicating multiple injuries.",
@@ -1663,7 +1681,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-open-wound"
+          "reference" : "StructureDefinition/rs-observation-open-wound"
         },
         "name" : "Road Safety Observation - Open Wound",
         "description" : "Open wound present; with site and details.",
@@ -1677,7 +1695,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-other-risk-factors"
+          "reference" : "StructureDefinition/rs-observation-other-risk-factors"
         },
         "name" : "Road Safety Observation - Other Risk Factors",
         "description" : "Other risk factors at the time of incident; allow text for 'Others'.",
@@ -1691,7 +1709,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-other-injury"
+          "reference" : "StructureDefinition/rs-observation-other-injury"
         },
         "name" : "Road Safety Observation - Other Specified Injury",
         "description" : "Other specified injury present; with site and details.",
@@ -1705,7 +1723,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-other-vehicle"
+          "reference" : "StructureDefinition/rs-observation-other-vehicle"
         },
         "name" : "Road Safety Observation - Other Vehicle/Object Involved",
         "description" : "Other vehicle/object type involved; text for 'Others'.",
@@ -1719,7 +1737,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-patients-vehicle"
+          "reference" : "StructureDefinition/rs-observation-patients-vehicle"
         },
         "name" : "Road Safety Observation - Patient's Vehicle",
         "description" : "Type of vehicle used by patient; text for 'Others'.",
@@ -1733,7 +1751,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-place-of-occurrence"
+          "reference" : "StructureDefinition/rs-observation-place-of-occurrence"
         },
         "name" : "Road Safety Observation - Place of Occurrence",
         "description" : "Place type where injury occurred; name can be carried in note when applicable.",
@@ -1747,7 +1765,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-position-of-patient"
+          "reference" : "StructureDefinition/rs-observation-position-of-patient"
         },
         "name" : "Road Safety Observation - Position of Patient",
         "description" : "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'.",
@@ -1761,7 +1779,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-traffic-investigator"
+          "reference" : "StructureDefinition/rs-observation-traffic-investigator"
         },
         "name" : "Road Safety Observation - Presence of Traffic Investigator",
         "description" : "Boolean presence/absence of traffic investigator.",
@@ -1775,7 +1793,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-urgency"
+          "reference" : "StructureDefinition/rs-observation-urgency"
         },
         "name" : "Road Safety Observation - Priority Level (Urgency)",
         "description" : "System-generated urgency level per CAD/agency rules.",
@@ -1789,7 +1807,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-pulse-rate"
+          "reference" : "StructureDefinition/rs-observation-pulse-rate"
         },
         "name" : "Road Safety Observation - Pulse Rate",
         "description" : "Pulse/heart rate in beats/min.",
@@ -1803,7 +1821,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-pupils"
+          "reference" : "StructureDefinition/rs-observation-pupils"
         },
         "name" : "Road Safety Observation - Pupils",
         "description" : "Pupil size/reactivity summary.",
@@ -1817,7 +1835,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-reported-complaint"
+          "reference" : "StructureDefinition/rs-observation-reported-complaint"
         },
         "name" : "Road Safety Observation - Reported Complaint",
         "description" : "Free-text reported complaint.",
@@ -1831,7 +1849,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-respiratory-rate"
+          "reference" : "StructureDefinition/rs-observation-respiratory-rate"
         },
         "name" : "Road Safety Observation - Respiratory Rate",
         "description" : "Respiratory rate in breaths/min.",
@@ -1845,7 +1863,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-safety-accessories"
+          "reference" : "StructureDefinition/rs-observation-safety-accessories"
         },
         "name" : "Road Safety Observation - Safety Accessories",
         "description" : "Safety accessories present/used; allow text for 'Others'.",
@@ -1859,7 +1877,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-time-departed"
+          "reference" : "StructureDefinition/rs-observation-time-departed"
         },
         "name" : "Road Safety Observation - Time Departed Scene",
         "description" : "Timestamp unit departed scene.",
@@ -1873,7 +1891,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-time-enroute"
+          "reference" : "StructureDefinition/rs-observation-time-enroute"
         },
         "name" : "Road Safety Observation - Time Enroute",
         "description" : "Timestamp when unit dispatched/began traveling.",
@@ -1887,7 +1905,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-time-station-arrival"
+          "reference" : "StructureDefinition/rs-observation-time-station-arrival"
         },
         "name" : "Road Safety Observation - Time of Emergency Station Arrival",
         "description" : "Timestamp unit returned to base/became available.",
@@ -1901,7 +1919,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-time-hospital-arrival"
+          "reference" : "StructureDefinition/rs-observation-time-hospital-arrival"
         },
         "name" : "Road Safety Observation - Time of Hospital Arrival",
         "description" : "Timestamp unit arrived at receiving facility.",
@@ -1915,7 +1933,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-time-on-scene"
+          "reference" : "StructureDefinition/rs-observation-time-on-scene"
         },
         "name" : "Road Safety Observation - Time On Scene",
         "description" : "Timestamp crew arrived at scene.",
@@ -1929,7 +1947,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-transport-vehicular-flag"
+          "reference" : "StructureDefinition/rs-observation-transport-vehicular-flag"
         },
         "name" : "Road Safety Observation - Transport/Vehicular Accident (flag)",
         "description" : "Boolean flag indicating transport/vehicular accident.",
@@ -1943,7 +1961,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-traumatic-amputation"
+          "reference" : "StructureDefinition/rs-observation-traumatic-amputation"
         },
         "name" : "Road Safety Observation - Traumatic Amputation",
         "description" : "Traumatic amputation present; with site and details.",
@@ -1957,7 +1975,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Observation-triage-priority"
+          "reference" : "StructureDefinition/rs-observation-triage-priority"
         },
         "name" : "Road Safety Observation - Triage Priority",
         "description" : "Triage category assigned at scene (e.g., Red/Yellow/Green/Black).",
@@ -1971,7 +1989,21 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Patient"
+          "reference" : "StructureDefinition/rs-organization"
+        },
+        "name" : "Road Safety Organization",
+        "description" : "Organization profile for EMS providers and receiving facilities involved in road safety encounters.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/rs-patient"
         },
         "name" : "Road Safety Patient",
         "description" : "Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region.",
@@ -1985,7 +2017,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-Procedure"
+          "reference" : "StructureDefinition/rs-procedure"
         },
         "name" : "Road Safety Procedure",
         "description" : "Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions).",
@@ -1999,10 +2031,24 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/RS-ServiceRequest"
+          "reference" : "StructureDefinition/rs-service-request"
         },
         "name" : "Road Safety ServiceRequest",
         "description" : "Requests or records related to refusal to admit and related workflow signals.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/rs-task"
+        },
+        "name" : "Road Safety Task",
+        "description" : "Workflow tracking for report receipt, durations of delay, and sources of delays.",
         "exampleBoolean" : false
       },
       {
@@ -2013,7 +2059,21 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/VS-breath-sounds"
+          "reference" : "ValueSet/vs-activity"
+        },
+        "name" : "RS VS - Activity at Time of Incident",
+        "description" : "Activity at time of incident (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-breath-sounds"
         },
         "name" : "RS VS - Breath Sounds",
         "description" : "Breath sounds options (prefer SNOMED CT).",
@@ -2027,7 +2087,35 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/VS-cyanosis"
+          "reference" : "ValueSet/vs-burns-agent"
+        },
+        "name" : "RS VS - Burns Agent",
+        "description" : "Agent causing burn (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-collision-category"
+        },
+        "name" : "RS VS - Collision Category",
+        "description" : "Collision vs non-collision category.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-cyanosis"
         },
         "name" : "RS VS - Cyanosis",
         "description" : "Cyanosis assessment options (prefer SNOMED CT).",
@@ -2041,7 +2129,35 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/VS-level-of-consciousness"
+          "reference" : "ValueSet/vs-drowning-type"
+        },
+        "name" : "RS VS - Drowning Type/Body of Water",
+        "description" : "Type/body of water for drowning incidents.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-injury-intent"
+        },
+        "name" : "RS VS - Injury Intent",
+        "description" : "Injury intent options mapped from ONEISS (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-level-of-consciousness"
         },
         "name" : "RS VS - Level of Consciousness (AVPU)",
         "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
@@ -2055,7 +2171,91 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/VS-pulse-quality"
+          "reference" : "ValueSet/vs-mode-of-transport"
+        },
+        "name" : "RS VS - Mode of Transport to Facility",
+        "description" : "Mode of transport to the hospital/facility.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-other-risk-factors"
+        },
+        "name" : "RS VS - Other Risk Factors",
+        "description" : "Other risk factors at time of incident (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-other-vehicle"
+        },
+        "name" : "RS VS - Other Vehicle in Collision",
+        "description" : "Other vehicle/object involved in collision.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-patients-vehicle"
+        },
+        "name" : "RS VS - Patient's Vehicle",
+        "description" : "Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-place-of-occurrence"
+        },
+        "name" : "RS VS - Place of Occurrence",
+        "description" : "Place of occurrence (prefer SNOMED CT; use ICD-11 where needed).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-position-of-patient"
+        },
+        "name" : "RS VS - Position of Patient",
+        "description" : "Position/role of patient in transport incidents (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-pulse-quality"
         },
         "name" : "RS VS - Pulse Quality",
         "description" : "Pulse quality options (prefer SNOMED CT).",
@@ -2069,7 +2269,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/VS-pulse-rhythm"
+          "reference" : "ValueSet/vs-pulse-rhythm"
         },
         "name" : "RS VS - Pulse Rhythm",
         "description" : "Pulse rhythm options (prefer SNOMED CT).",
@@ -2083,7 +2283,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/VS-pupils"
+          "reference" : "ValueSet/vs-pupils"
         },
         "name" : "RS VS - Pupils",
         "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
@@ -2097,10 +2297,24 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/VS-respiratory-rhythm"
+          "reference" : "ValueSet/vs-respiratory-rhythm"
         },
         "name" : "RS VS - Respiratory Rhythm",
         "description" : "Respiratory rhythm options (prefer SNOMED CT).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-safety-devices"
+        },
+        "name" : "RS VS - Safety Devices",
+        "description" : "Safety devices present/used (prefer SNOMED CT).",
         "exampleBoolean" : false
       }
     ],

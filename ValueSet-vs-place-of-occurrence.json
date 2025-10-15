@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-place-of-occurrence",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-place-of-occurrence</b></p><a name=\"vs-place-of-occurrence\"> </a><a name=\"hcvs-place-of-occurrence\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/264362003\">264362003</a></td><td>Home (environment)</td></tr><tr><td><a href=\"http://snomed.info/id/257698009\">257698009</a></td><td>School (environment)</td></tr><tr><td><a href=\"http://snomed.info/id/272510001\">272510001</a></td><td>Road (environment)</td></tr><tr><td><a href=\"http://snomed.info/id/285141008\">285141008</a></td><td>Work environment (environment)</td></tr><tr><td><a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-ICD11MMS.html\"><code>http://id.who.int/icd/release/11/mms</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>XE67Y2</td><td>Nightclub/restaurant or other commercial place for socialising and recreation</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-place-of-occurrence",
+  "version" : "0.1.0",
+  "name" : "VSPlaceOfOccurrence",
+  "title" : "RS VS - Place of Occurrence",
+  "status" : "draft",
+  "date" : "2025-10-15T12:05:31+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "Place of occurrence (prefer SNOMED CT; use ICD-11 where needed).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "264362003",
+        "display" : "Home (environment)"
+      },
+      {
+        "code" : "257698009",
+        "display" : "School (environment)"
+      },
+      {
+        "code" : "272510001",
+        "display" : "Road (environment)"
+      },
+      {
+        "code" : "285141008",
+        "display" : "Work environment (environment)"
+      },
+      {
+        "code" : "74964007",
+        "display" : "Other (qualifier value)"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown (qualifier value)"
+      }]
+    },
+    {
+      "system" : "http://id.who.int/icd/release/11/mms",
+      "concept" : [{
+        "code" : "XE67Y2",
+        "display" : "Nightclub/restaurant or other commercial place for socialising and recreation"
+      }]
+    }]
+  }
+}

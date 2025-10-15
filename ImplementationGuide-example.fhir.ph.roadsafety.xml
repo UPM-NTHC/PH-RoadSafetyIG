@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-15T08:26:35+00:00"/>
+  <date value="2025-10-15T12:05:31+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -480,7 +480,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-AllergyIntolerance"/>
+        <reference value="StructureDefinition/rs-allergy-intolerance"/>
       </reference>
       <name value="Road Safety AllergyIntolerance"/>
       <description value="Known allergies, substances and reactions."/>
@@ -491,7 +491,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Claim"/>
+        <reference value="StructureDefinition/rs-claim"/>
       </reference>
       <name value="Road Safety Claim"/>
       <description value="Claim information related to cost of care."/>
@@ -502,7 +502,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Condition"/>
+        <reference value="StructureDefinition/rs-condition"/>
       </reference>
       <name value="Road Safety Condition"/>
       <description value="Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries."/>
@@ -513,7 +513,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-DocumentReference"/>
+        <reference value="StructureDefinition/rs-document-reference"/>
       </reference>
       <name value="Road Safety DocumentReference (Evidence)"/>
       <description value="Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files)."/>
@@ -524,7 +524,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Encounter"/>
+        <reference value="StructureDefinition/rs-encounter"/>
       </reference>
       <name value="Road Safety Encounter"/>
       <description value="Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition &amp; transfer."/>
@@ -535,7 +535,18 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Location-Incident"/>
+        <reference value="StructureDefinition/rs-healthcare-service"/>
+      </reference>
+      <name value="Road Safety HealthcareService"/>
+      <description value="Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-location-incident"/>
       </reference>
       <name value="Road Safety Incident Location"/>
       <description value="Location of incident; supports PH-Core address extensions and geolocation."/>
@@ -546,7 +557,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-MedicationStatement"/>
+        <reference value="StructureDefinition/rs-medication-statement"/>
       </reference>
       <name value="Road Safety MedicationStatement"/>
       <description value="Current medications as codeable concepts or references where available."/>
@@ -557,7 +568,7 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PH-RoadSafetyLogicalModel"/>
+        <reference value="StructureDefinition/ph-road-safety-logical-model"/>
       </reference>
       <name value="Road Safety Minimum Dataset (MDS) Logical Model"/>
       <description value="Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."/>
@@ -568,7 +579,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation"/>
+        <reference value="StructureDefinition/rs-observation"/>
       </reference>
       <name value="Road Safety Observation"/>
       <description value="Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns."/>
@@ -579,7 +590,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-abrasion"/>
+        <reference value="StructureDefinition/rs-observation-abrasion"/>
       </reference>
       <name value="Road Safety Observation - Abrasion"/>
       <description value="Abrasion present; with optional site and details."/>
@@ -590,7 +601,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-activity-at-incident"/>
+        <reference value="StructureDefinition/rs-observation-activity-at-incident"/>
       </reference>
       <name value="Road Safety Observation - Activity at Time of Incident"/>
       <description value="Activity of the patient at time of incident; allow text fallback."/>
@@ -601,7 +612,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-avulsion"/>
+        <reference value="StructureDefinition/rs-observation-avulsion"/>
       </reference>
       <name value="Road Safety Observation - Avulsion"/>
       <description value="Avulsion present; with optional site and details."/>
@@ -612,7 +623,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-blood-pressure"/>
+        <reference value="StructureDefinition/rs-observation-blood-pressure"/>
       </reference>
       <name value="Road Safety Observation - Blood Pressure"/>
       <description value="Blood pressure using component entries for systolic/diastolic."/>
@@ -623,7 +634,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-body-temperature"/>
+        <reference value="StructureDefinition/rs-observation-body-temperature"/>
       </reference>
       <name value="Road Safety Observation - Body Temperature"/>
       <description value="Body temperature."/>
@@ -634,7 +645,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-burn-1st"/>
+        <reference value="StructureDefinition/rs-observation-burn-1st"/>
       </reference>
       <name value="Road Safety Observation - Burn 1st Degree"/>
       <description value="1st degree burn present; with site and details."/>
@@ -645,7 +656,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-burn-2nd"/>
+        <reference value="StructureDefinition/rs-observation-burn-2nd"/>
       </reference>
       <name value="Road Safety Observation - Burn 2nd Degree"/>
       <description value="2nd degree burn present; with site and details."/>
@@ -656,7 +667,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-burn-3rd"/>
+        <reference value="StructureDefinition/rs-observation-burn-3rd"/>
       </reference>
       <name value="Road Safety Observation - Burn 3rd Degree"/>
       <description value="3rd degree burn present; with site and details."/>
@@ -667,7 +678,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-burn-4th"/>
+        <reference value="StructureDefinition/rs-observation-burn-4th"/>
       </reference>
       <name value="Road Safety Observation - Burn 4th Degree"/>
       <description value="4th degree burn present; with site and details."/>
@@ -678,7 +689,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-call-source"/>
+        <reference value="StructureDefinition/rs-observation-call-source"/>
       </reference>
       <name value="Road Safety Observation - Call Source"/>
       <description value="Call source description (free text)."/>
@@ -689,7 +700,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-collision-type"/>
+        <reference value="StructureDefinition/rs-observation-collision-type"/>
       </reference>
       <name value="Road Safety Observation - Collision Type"/>
       <description value="Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."/>
@@ -700,7 +711,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-collision-vs-noncollision"/>
+        <reference value="StructureDefinition/rs-observation-collision-vs-noncollision"/>
       </reference>
       <name value="Road Safety Observation - Collision vs Non-Collision"/>
       <description value="Indicates whether the incident was collision or non-collision."/>
@@ -711,7 +722,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-concussion"/>
+        <reference value="StructureDefinition/rs-observation-concussion"/>
       </reference>
       <name value="Road Safety Observation - Concussion"/>
       <description value="Concussion present; with site and details."/>
@@ -722,7 +733,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-contusion"/>
+        <reference value="StructureDefinition/rs-observation-contusion"/>
       </reference>
       <name value="Road Safety Observation - Contusion"/>
       <description value="Contusion present; with site and details."/>
@@ -733,7 +744,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-cyanosis"/>
+        <reference value="StructureDefinition/rs-observation-cyanosis"/>
       </reference>
       <name value="Road Safety Observation - Cyanosis"/>
       <description value="Cyanosis assessment."/>
@@ -744,7 +755,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-injury-datetime"/>
+        <reference value="StructureDefinition/rs-observation-injury-datetime"/>
       </reference>
       <name value="Road Safety Observation - Date/Time of Injury"/>
       <description value="Timestamp of injury occurrence."/>
@@ -755,7 +766,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-date-received"/>
+        <reference value="StructureDefinition/rs-observation-date-received"/>
       </reference>
       <name value="Road Safety Observation - Date/Time Received by EMS"/>
       <description value="Calendar/timestamp the EMS/dispatch received the request."/>
@@ -766,7 +777,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-bites-stings"/>
+        <reference value="StructureDefinition/rs-observation-ec-bites-stings"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Bites/Stings"/>
       <description value="Flag indicating bites/stings."/>
@@ -777,7 +788,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-bites-stings-agent"/>
+        <reference value="StructureDefinition/rs-observation-ec-bites-stings-agent"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Bites/Stings Agent"/>
       <description value="Specific animal/insect/plant agent."/>
@@ -788,7 +799,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-burns"/>
+        <reference value="StructureDefinition/rs-observation-ec-burns"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Burns"/>
       <description value="Flag indicating burns as external cause."/>
@@ -799,7 +810,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-burns-other"/>
+        <reference value="StructureDefinition/rs-observation-ec-burns-other"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Burns (Other specify)"/>
       <description value="Other text for burn cause."/>
@@ -810,7 +821,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-burns-agent"/>
+        <reference value="StructureDefinition/rs-observation-ec-burns-agent"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Burns Agent"/>
       <description value="Agent causing burn (heat/electric/chemical/etc.)."/>
@@ -821,7 +832,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-chemical-agent"/>
+        <reference value="StructureDefinition/rs-observation-ec-chemical-agent"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Chemical (Specify)"/>
       <description value="Specific chemical/substance."/>
@@ -832,7 +843,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-chemical"/>
+        <reference value="StructureDefinition/rs-observation-ec-chemical"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Chemical/Substance"/>
       <description value="Flag indicating chemical/substance exposure."/>
@@ -843,7 +854,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-sharp-object"/>
+        <reference value="StructureDefinition/rs-observation-ec-sharp-object"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Contact with Sharp Object"/>
       <description value="Flag indicating sharp object cause."/>
@@ -854,7 +865,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-drowning"/>
+        <reference value="StructureDefinition/rs-observation-ec-drowning"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Drowning"/>
       <description value="Flag indicating drowning."/>
@@ -865,7 +876,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-drowning-other"/>
+        <reference value="StructureDefinition/rs-observation-ec-drowning-other"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Drowning (Other specify)"/>
       <description value="Other text for water type."/>
@@ -876,7 +887,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-drowning-type"/>
+        <reference value="StructureDefinition/rs-observation-ec-drowning-type"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Drowning Type/Body of Water"/>
       <description value="Type/body of water."/>
@@ -887,7 +898,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-forces-of-nature"/>
+        <reference value="StructureDefinition/rs-observation-ec-forces-of-nature"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Exposure to Forces of Nature"/>
       <description value="Flag indicating exposure to natural disaster/calamity."/>
@@ -898,7 +909,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-fall"/>
+        <reference value="StructureDefinition/rs-observation-ec-fall"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Fall"/>
       <description value="Flag indicating fall."/>
@@ -909,7 +920,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-fall-specifics"/>
+        <reference value="StructureDefinition/rs-observation-ec-fall-specifics"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Fall (Specifics)"/>
       <description value="Where/what patient fell from (stairs, ladder, etc.)."/>
@@ -920,7 +931,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-firecracker"/>
+        <reference value="StructureDefinition/rs-observation-ec-firecracker"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Firecracker"/>
       <description value="Flag indicating firecracker-related cause."/>
@@ -931,7 +942,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-firecracker-type"/>
+        <reference value="StructureDefinition/rs-observation-ec-firecracker-type"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Firecracker (Type)"/>
       <description value="Type of firecracker (text)."/>
@@ -942,7 +953,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-gunshot"/>
+        <reference value="StructureDefinition/rs-observation-ec-gunshot"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Gunshot"/>
       <description value="Flag indicating gunshot."/>
@@ -953,7 +964,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-gunshot-weapon"/>
+        <reference value="StructureDefinition/rs-observation-ec-gunshot-weapon"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Gunshot (Weapon)"/>
       <description value="Weapon type (text)."/>
@@ -964,7 +975,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-hanging-strangulation"/>
+        <reference value="StructureDefinition/rs-observation-ec-hanging-strangulation"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Hanging/Strangulation"/>
       <description value="Flag indicating hanging/strangulation."/>
@@ -975,7 +986,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-mauling-assault"/>
+        <reference value="StructureDefinition/rs-observation-ec-mauling-assault"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Mauling/Assault"/>
       <description value="Flag indicating assault."/>
@@ -986,7 +997,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-other"/>
+        <reference value="StructureDefinition/rs-observation-ec-other"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Other"/>
       <description value="Flag indicating other external cause."/>
@@ -997,7 +1008,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-other-specify"/>
+        <reference value="StructureDefinition/rs-observation-ec-other-specify"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Other (Specify)"/>
       <description value="Other cause (text)."/>
@@ -1008,7 +1019,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-sexual-assault"/>
+        <reference value="StructureDefinition/rs-observation-ec-sexual-assault"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"/>
       <description value="Flag indicating sexual assault."/>
@@ -1019,7 +1030,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-ec-sharp-object-specify"/>
+        <reference value="StructureDefinition/rs-observation-ec-sharp-object-specify"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Sharp Object (Specify)"/>
       <description value="Specify object (free text)."/>
@@ -1030,7 +1041,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-fracture-closed"/>
+        <reference value="StructureDefinition/rs-observation-fracture-closed"/>
       </reference>
       <name value="Road Safety Observation - Fracture (Closed)"/>
       <description value="Closed fracture present; with site and details."/>
@@ -1041,7 +1052,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-fracture-open"/>
+        <reference value="StructureDefinition/rs-observation-fracture-open"/>
       </reference>
       <name value="Road Safety Observation - Fracture (Open)"/>
       <description value="Open fracture present; with site and details."/>
@@ -1052,7 +1063,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-gcs"/>
+        <reference value="StructureDefinition/rs-observation-gcs"/>
       </reference>
       <name value="Road Safety Observation - Glasgow Coma Scale"/>
       <description value="GCS with components for eyes, verbal, motor; optional total score as integer."/>
@@ -1063,7 +1074,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-how-many-patients"/>
+        <reference value="StructureDefinition/rs-observation-how-many-patients"/>
       </reference>
       <name value="Road Safety Observation - How Many Patients Involved"/>
       <description value="Count of patients involved."/>
@@ -1074,7 +1085,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-how-many-vehicles"/>
+        <reference value="StructureDefinition/rs-observation-how-many-vehicles"/>
       </reference>
       <name value="Road Safety Observation - How Many Vehicles Involved"/>
       <description value="Count of vehicles involved."/>
@@ -1085,7 +1096,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-injury-intent"/>
+        <reference value="StructureDefinition/rs-observation-injury-intent"/>
       </reference>
       <name value="Road Safety Observation - Injury Intent"/>
       <description value="Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."/>
@@ -1096,7 +1107,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-level-of-consciousness"/>
+        <reference value="StructureDefinition/rs-observation-level-of-consciousness"/>
       </reference>
       <name value="Road Safety Observation - Level of Consciousness (AVPU)"/>
       <description value="Level of consciousness (e.g., AVPU)."/>
@@ -1107,7 +1118,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-mode-of-transport"/>
+        <reference value="StructureDefinition/rs-observation-mode-of-transport"/>
       </reference>
       <name value="Road Safety Observation - Mode of Transport to Facility"/>
       <description value="Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."/>
@@ -1118,7 +1129,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-multiple-injuries"/>
+        <reference value="StructureDefinition/rs-observation-multiple-injuries"/>
       </reference>
       <name value="Road Safety Observation - Multiple Injuries?"/>
       <description value="Boolean flag indicating multiple injuries."/>
@@ -1129,7 +1140,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-open-wound"/>
+        <reference value="StructureDefinition/rs-observation-open-wound"/>
       </reference>
       <name value="Road Safety Observation - Open Wound"/>
       <description value="Open wound present; with site and details."/>
@@ -1140,7 +1151,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-other-risk-factors"/>
+        <reference value="StructureDefinition/rs-observation-other-risk-factors"/>
       </reference>
       <name value="Road Safety Observation - Other Risk Factors"/>
       <description value="Other risk factors at the time of incident; allow text for 'Others'."/>
@@ -1151,7 +1162,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-other-injury"/>
+        <reference value="StructureDefinition/rs-observation-other-injury"/>
       </reference>
       <name value="Road Safety Observation - Other Specified Injury"/>
       <description value="Other specified injury present; with site and details."/>
@@ -1162,7 +1173,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-other-vehicle"/>
+        <reference value="StructureDefinition/rs-observation-other-vehicle"/>
       </reference>
       <name value="Road Safety Observation - Other Vehicle/Object Involved"/>
       <description value="Other vehicle/object type involved; text for 'Others'."/>
@@ -1173,7 +1184,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-patients-vehicle"/>
+        <reference value="StructureDefinition/rs-observation-patients-vehicle"/>
       </reference>
       <name value="Road Safety Observation - Patient's Vehicle"/>
       <description value="Type of vehicle used by patient; text for 'Others'."/>
@@ -1184,7 +1195,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-place-of-occurrence"/>
+        <reference value="StructureDefinition/rs-observation-place-of-occurrence"/>
       </reference>
       <name value="Road Safety Observation - Place of Occurrence"/>
       <description value="Place type where injury occurred; name can be carried in note when applicable."/>
@@ -1195,7 +1206,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-position-of-patient"/>
+        <reference value="StructureDefinition/rs-observation-position-of-patient"/>
       </reference>
       <name value="Road Safety Observation - Position of Patient"/>
       <description value="Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."/>
@@ -1206,7 +1217,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-traffic-investigator"/>
+        <reference value="StructureDefinition/rs-observation-traffic-investigator"/>
       </reference>
       <name value="Road Safety Observation - Presence of Traffic Investigator"/>
       <description value="Boolean presence/absence of traffic investigator."/>
@@ -1217,7 +1228,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-urgency"/>
+        <reference value="StructureDefinition/rs-observation-urgency"/>
       </reference>
       <name value="Road Safety Observation - Priority Level (Urgency)"/>
       <description value="System-generated urgency level per CAD/agency rules."/>
@@ -1228,7 +1239,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-pulse-rate"/>
+        <reference value="StructureDefinition/rs-observation-pulse-rate"/>
       </reference>
       <name value="Road Safety Observation - Pulse Rate"/>
       <description value="Pulse/heart rate in beats/min."/>
@@ -1239,7 +1250,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-pupils"/>
+        <reference value="StructureDefinition/rs-observation-pupils"/>
       </reference>
       <name value="Road Safety Observation - Pupils"/>
       <description value="Pupil size/reactivity summary."/>
@@ -1250,7 +1261,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-reported-complaint"/>
+        <reference value="StructureDefinition/rs-observation-reported-complaint"/>
       </reference>
       <name value="Road Safety Observation - Reported Complaint"/>
       <description value="Free-text reported complaint."/>
@@ -1261,7 +1272,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-respiratory-rate"/>
+        <reference value="StructureDefinition/rs-observation-respiratory-rate"/>
       </reference>
       <name value="Road Safety Observation - Respiratory Rate"/>
       <description value="Respiratory rate in breaths/min."/>
@@ -1272,7 +1283,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-safety-accessories"/>
+        <reference value="StructureDefinition/rs-observation-safety-accessories"/>
       </reference>
       <name value="Road Safety Observation - Safety Accessories"/>
       <description value="Safety accessories present/used; allow text for 'Others'."/>
@@ -1283,7 +1294,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-time-departed"/>
+        <reference value="StructureDefinition/rs-observation-time-departed"/>
       </reference>
       <name value="Road Safety Observation - Time Departed Scene"/>
       <description value="Timestamp unit departed scene."/>
@@ -1294,7 +1305,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-time-enroute"/>
+        <reference value="StructureDefinition/rs-observation-time-enroute"/>
       </reference>
       <name value="Road Safety Observation - Time Enroute"/>
       <description value="Timestamp when unit dispatched/began traveling."/>
@@ -1305,7 +1316,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-time-station-arrival"/>
+        <reference value="StructureDefinition/rs-observation-time-station-arrival"/>
       </reference>
       <name value="Road Safety Observation - Time of Emergency Station Arrival"/>
       <description value="Timestamp unit returned to base/became available."/>
@@ -1316,7 +1327,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-time-hospital-arrival"/>
+        <reference value="StructureDefinition/rs-observation-time-hospital-arrival"/>
       </reference>
       <name value="Road Safety Observation - Time of Hospital Arrival"/>
       <description value="Timestamp unit arrived at receiving facility."/>
@@ -1327,7 +1338,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-time-on-scene"/>
+        <reference value="StructureDefinition/rs-observation-time-on-scene"/>
       </reference>
       <name value="Road Safety Observation - Time On Scene"/>
       <description value="Timestamp crew arrived at scene."/>
@@ -1338,7 +1349,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-transport-vehicular-flag"/>
+        <reference value="StructureDefinition/rs-observation-transport-vehicular-flag"/>
       </reference>
       <name value="Road Safety Observation - Transport/Vehicular Accident (flag)"/>
       <description value="Boolean flag indicating transport/vehicular accident."/>
@@ -1349,7 +1360,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-traumatic-amputation"/>
+        <reference value="StructureDefinition/rs-observation-traumatic-amputation"/>
       </reference>
       <name value="Road Safety Observation - Traumatic Amputation"/>
       <description value="Traumatic amputation present; with site and details."/>
@@ -1360,7 +1371,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Observation-triage-priority"/>
+        <reference value="StructureDefinition/rs-observation-triage-priority"/>
       </reference>
       <name value="Road Safety Observation - Triage Priority"/>
       <description value="Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."/>
@@ -1371,7 +1382,18 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Patient"/>
+        <reference value="StructureDefinition/rs-organization"/>
+      </reference>
+      <name value="Road Safety Organization"/>
+      <description value="Organization profile for EMS providers and receiving facilities involved in road safety encounters."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-patient"/>
       </reference>
       <name value="Road Safety Patient"/>
       <description value="Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region."/>
@@ -1382,7 +1404,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-Procedure"/>
+        <reference value="StructureDefinition/rs-procedure"/>
       </reference>
       <name value="Road Safety Procedure"/>
       <description value="Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions)."/>
@@ -1393,7 +1415,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RS-ServiceRequest"/>
+        <reference value="StructureDefinition/rs-service-request"/>
       </reference>
       <name value="Road Safety ServiceRequest"/>
       <description value="Requests or records related to refusal to admit and related workflow signals."/>
@@ -1401,10 +1423,32 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-task"/>
+      </reference>
+      <name value="Road Safety Task"/>
+      <description value="Workflow tracking for report receipt, durations of delay, and sources of delays."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-breath-sounds"/>
+        <reference value="ValueSet/vs-activity"/>
+      </reference>
+      <name value="RS VS - Activity at Time of Incident"/>
+      <description value="Activity at time of incident (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-breath-sounds"/>
       </reference>
       <name value="RS VS - Breath Sounds"/>
       <description value="Breath sounds options (prefer SNOMED CT)."/>
@@ -1415,7 +1459,29 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-cyanosis"/>
+        <reference value="ValueSet/vs-burns-agent"/>
+      </reference>
+      <name value="RS VS - Burns Agent"/>
+      <description value="Agent causing burn (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-collision-category"/>
+      </reference>
+      <name value="RS VS - Collision Category"/>
+      <description value="Collision vs non-collision category."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-cyanosis"/>
       </reference>
       <name value="RS VS - Cyanosis"/>
       <description value="Cyanosis assessment options (prefer SNOMED CT)."/>
@@ -1426,7 +1492,29 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-level-of-consciousness"/>
+        <reference value="ValueSet/vs-drowning-type"/>
+      </reference>
+      <name value="RS VS - Drowning Type/Body of Water"/>
+      <description value="Type/body of water for drowning incidents."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-injury-intent"/>
+      </reference>
+      <name value="RS VS - Injury Intent"/>
+      <description value="Injury intent options mapped from ONEISS (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-level-of-consciousness"/>
       </reference>
       <name value="RS VS - Level of Consciousness (AVPU)"/>
       <description value="AVPU options for level of consciousness (prefer SNOMED CT)."/>
@@ -1437,7 +1525,73 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-pulse-quality"/>
+        <reference value="ValueSet/vs-mode-of-transport"/>
+      </reference>
+      <name value="RS VS - Mode of Transport to Facility"/>
+      <description value="Mode of transport to the hospital/facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-other-risk-factors"/>
+      </reference>
+      <name value="RS VS - Other Risk Factors"/>
+      <description value="Other risk factors at time of incident (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-other-vehicle"/>
+      </reference>
+      <name value="RS VS - Other Vehicle in Collision"/>
+      <description value="Other vehicle/object involved in collision."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-patients-vehicle"/>
+      </reference>
+      <name value="RS VS - Patient's Vehicle"/>
+      <description value="Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-place-of-occurrence"/>
+      </reference>
+      <name value="RS VS - Place of Occurrence"/>
+      <description value="Place of occurrence (prefer SNOMED CT; use ICD-11 where needed)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-position-of-patient"/>
+      </reference>
+      <name value="RS VS - Position of Patient"/>
+      <description value="Position/role of patient in transport incidents (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-pulse-quality"/>
       </reference>
       <name value="RS VS - Pulse Quality"/>
       <description value="Pulse quality options (prefer SNOMED CT)."/>
@@ -1448,7 +1602,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-pulse-rhythm"/>
+        <reference value="ValueSet/vs-pulse-rhythm"/>
       </reference>
       <name value="RS VS - Pulse Rhythm"/>
       <description value="Pulse rhythm options (prefer SNOMED CT)."/>
@@ -1459,7 +1613,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-pupils"/>
+        <reference value="ValueSet/vs-pupils"/>
       </reference>
       <name value="RS VS - Pupils"/>
       <description value="Pupil size/reactivity options (prefer SNOMED CT)."/>
@@ -1470,10 +1624,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-respiratory-rhythm"/>
+        <reference value="ValueSet/vs-respiratory-rhythm"/>
       </reference>
       <name value="RS VS - Respiratory Rhythm"/>
       <description value="Respiratory rhythm options (prefer SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-safety-devices"/>
+      </reference>
+      <name value="RS VS - Safety Devices"/>
+      <description value="Safety devices present/used (prefer SNOMED CT)."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -12,7 +12,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-PH-RoadSafetyLogicalModel.html" : "Road Safety Minimum Dataset (MDS) Logical Model"
+      "StructureDefinition-ph-road-safety-logical-model.html" : "Road Safety Minimum Dataset (MDS) Logical Model"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code",
@@ -26,42 +26,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.137"],
       "uses" : {
       },
-      "StructureDefinition-RS-AllergyIntolerance.html" : "Road Safety AllergyIntolerance"
+      "StructureDefinition-rs-allergy-intolerance.html" : "Road Safety AllergyIntolerance"
     },
     {
-      "url" : "http://terminology.hl7.org/ValueSet/allergyintolerance-clinical",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "AllergyIntoleranceClinicalStatusCodes",
-      "title" : "AllergyIntolerance Clinical Status Codes",
-      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-activity",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSActivity",
+      "title" : "RS VS - Activity at Time of Incident",
+      "description" : "Activity at time of incident (prefer SNOMED CT).",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-RS-AllergyIntolerance.html" : "Road Safety AllergyIntolerance"
+      "StructureDefinition-rs-observation-activity-at-incident.html" : "Road Safety Observation - Activity at Time of Incident"
     },
     {
-      "url" : "http://terminology.hl7.org/ValueSet/allergyintolerance-verification",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "AllergyIntoleranceVerificationStatus",
-      "title" : "AllergyIntolerance Verification Status",
-      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
-      "uses" : {
-      },
-      "StructureDefinition-RS-AllergyIntolerance.html" : "Road Safety AllergyIntolerance"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-breath-sounds",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-breath-sounds",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "VSBreathSounds",
@@ -70,31 +50,164 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-cyanosis",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burns-agent",
       "version" : "0.1.0",
       "status" : "draft",
+      "name" : "VSBurnsAgent",
+      "title" : "RS VS - Burns Agent",
+      "description" : "Agent causing burn (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-ec-burns-agent.html" : "Road Safety Observation - External Cause: Burns Agent"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSCollisionCategory",
+      "title" : "RS VS - Collision Category",
+      "description" : "Collision vs non-collision category.",
+      "systems" : ["http://loinc.org", "http://upm-nthc.ph/CodeSystem/rs-local"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-collision-vs-noncollision.html" : "Road Safety Observation - Collision vs Non-Collision"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-cyanosis",
+      "version" : "0.1.0",
+      "status" : "active",
       "name" : "VSCyanosis",
       "title" : "RS VS - Cyanosis",
       "description" : "Cyanosis assessment options (prefer SNOMED CT).",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-RS-Observation-cyanosis.html" : "Road Safety Observation - Cyanosis"
+      "StructureDefinition-rs-observation-cyanosis.html" : "Road Safety Observation - Cyanosis"
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-level-of-consciousness",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-drowning-type",
       "version" : "0.1.0",
       "status" : "draft",
+      "name" : "VSDrowningType",
+      "title" : "RS VS - Drowning Type/Body of Water",
+      "description" : "Type/body of water for drowning incidents.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-ec-drowning-type.html" : "Road Safety Observation - External Cause: Drowning Type/Body of Water"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSInjuryIntent",
+      "title" : "RS VS - Injury Intent",
+      "description" : "Injury intent options mapped from ONEISS (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-injury-intent.html" : "Road Safety Observation - Injury Intent"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-level-of-consciousness",
+      "version" : "0.1.0",
+      "status" : "active",
       "name" : "VSLevelOfConsciousness",
       "title" : "RS VS - Level of Consciousness (AVPU)",
       "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-RS-Observation-level-of-consciousness.html" : "Road Safety Observation - Level of Consciousness (AVPU)"
+      "StructureDefinition-rs-observation-level-of-consciousness.html" : "Road Safety Observation - Level of Consciousness (AVPU)"
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pulse-quality",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-mode-of-transport",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSModeOfTransport",
+      "title" : "RS VS - Mode of Transport to Facility",
+      "description" : "Mode of transport to the hospital/facility.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-mode-of-transport.html" : "Road Safety Observation - Mode of Transport to Facility"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-risk-factors",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSOtherRiskFactors",
+      "title" : "RS VS - Other Risk Factors",
+      "description" : "Other risk factors at time of incident (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-other-risk-factors.html" : "Road Safety Observation - Other Risk Factors"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSOtherVehicle",
+      "title" : "RS VS - Other Vehicle in Collision",
+      "description" : "Other vehicle/object involved in collision.",
+      "systems" : [
+        "http://id.who.int/icd/release/11/mms",
+        "http://upm-nthc.ph/CodeSystem/rs-local",
+        "http://loinc.org",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-other-vehicle.html" : "Road Safety Observation - Other Vehicle/Object Involved"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-patients-vehicle",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPatientsVehicle",
+      "title" : "RS VS - Patient's Vehicle",
+      "description" : "Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC).",
+      "systems" : [
+        "http://id.who.int/icd/release/11/mms",
+        "http://loinc.org",
+        "http://upm-nthc.ph/CodeSystem/rs-local",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-patients-vehicle.html" : "Road Safety Observation - Patient's Vehicle"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-place-of-occurrence",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPlaceOfOccurrence",
+      "title" : "RS VS - Place of Occurrence",
+      "description" : "Place of occurrence (prefer SNOMED CT; use ICD-11 where needed).",
+      "systems" : [
+        "http://id.who.int/icd/release/11/mms",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-place-of-occurrence.html" : "Road Safety Observation - Place of Occurrence"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSPositionOfPatient",
+      "title" : "RS VS - Position of Patient",
+      "description" : "Position/role of patient in transport incidents (prefer SNOMED CT).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-position-of-patient.html" : "Road Safety Observation - Position of Patient"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-quality",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "VSPulseQuality",
@@ -103,7 +216,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pulse-rhythm",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-rhythm",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "VSPulseRhythm",
@@ -112,25 +225,37 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-pupils",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pupils",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "VSPupils",
       "title" : "RS VS - Pupils",
       "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-RS-Observation-pupils.html" : "Road Safety Observation - Pupils"
+      "StructureDefinition-rs-observation-pupils.html" : "Road Safety Observation - Pupils"
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/VS-respiratory-rhythm",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-respiratory-rhythm",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "VSRespiratoryRhythm",
       "title" : "RS VS - Respiratory Rhythm",
       "description" : "Respiratory rhythm options (prefer SNOMED CT).",
       "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-safety-devices",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSSafetyDevices",
+      "title" : "RS VS - Safety Devices",
+      "description" : "Safety devices present/used (prefer SNOMED CT).",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-rs-observation-safety-accessories.html" : "Road Safety Observation - Safety Accessories"
     }
   ]
 }
