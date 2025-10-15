@@ -231,3 +231,12 @@ Description: "Agent causing burn (prefer SNOMED CT)."
 * $SCT#21847005 "Oil (substance)"
 * $SCT#263762005 "Friction (physical force)"
 * $SCT#74964007 "Other (qualifier value)"
+
+// Bites/Stings - specify agent (use existing LOINC if present in MDS)
+ValueSet: VSBitesAgent
+Id: vs-bites-agent
+Title: "RS VS - Bites/Stings Agent"
+Description: "Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings." 
+* ^status = #draft
+* $LNC#95376-0 "Type of animal exposed to"
+
