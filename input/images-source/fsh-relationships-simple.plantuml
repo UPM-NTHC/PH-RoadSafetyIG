@@ -1,0 +1,93 @@
+@startuml
+skinparam ClassFontName Arial
+skinparam ClassFontSize 12
+skinparam ClassAttributeIconSize 0
+skinparam ClassBackgroundColor #F7FBFF
+skinparam ClassBorderColor #4A90E2
+skinparam ArrowColor #6A6A6A
+skinparam ArrowThickness 1
+hide members
+left to right direction
+
+class "RSAllergyIntolerance"
+class "AllergyIntolerance"
+class "RSPatient"
+class "RSBundleEMS"
+class "Bundle"
+class "RSBundleONEISS"
+class "RSClaim"
+class "Claim"
+class "RSCondition"
+class "Condition"
+class "RSEncounter"
+class "RSDocumentReference"
+class "DocumentReference"
+class "PHCoreEncounter"
+class "RSOrganization"
+class "PHCorePractitioner"
+class "RSLocation"
+class "PHCoreLocation"
+class "RSMedicationStatement"
+class "MedicationStatement"
+class "RSObservation"
+class "PHCoreObservation"
+class "PHCoreOrganization"
+class "RSHealthcareService"
+class "HealthcareService"
+class "PHCorePatient"
+class "RSProcedure"
+class "PHCoreProcedure"
+class "RSServiceRequest"
+class "ServiceRequest"
+class "RSTask"
+class "Task"
+class "Obs (RS profiles)"
+
+"RSAllergyIntolerance" --> "RSPatient" : patient
+"RSClaim" --> "RSPatient" : patient
+"RSCondition" --> "RSPatient" : subject
+"RSCondition" --> "RSEncounter" : encounter
+"RSDocumentReference" --> "RSPatient" : subject
+"RSDocumentReference" --> "RSEncounter" : context.encounter
+"RSEncounter" --> "RSOrganization" : serviceProvider
+"RSEncounter" --> "RSOrganization" : hospitalization.origin
+"RSEncounter" --> "PHCorePractitioner" : participant[receivedBy].individual
+"RSEncounter" --> "PHCorePractitioner" : participant[teamLeader].individual
+"RSEncounter" --> "PHCorePractitioner" : participant[treatmentOfficer].individual
+"RSEncounter" --> "PHCorePractitioner" : participant[transportOfficer].individual
+"RSEncounter" --> "PHCorePractitioner" : participant[assistant].individual
+"RSMedicationStatement" --> "RSPatient" : subject
+"RSObservation" --> "RSPatient" : subject
+"RSObservation" --> "RSEncounter" : encounter
+"RSHealthcareService" --> "RSOrganization" : providedBy
+"RSHealthcareService" --> "RSLocation" : location
+"RSProcedure" --> "RSPatient" : subject
+"RSProcedure" --> "RSEncounter" : encounter
+"RSProcedure" --> "PHCorePractitioner" : performer.actor
+"RSServiceRequest" --> "RSHealthcareService" : supportingInfo
+"RSServiceRequest" --> "RSOrganization" : supportingInfo
+"RSServiceRequest" --> "PHCoreOrganization" : supportingInfo
+"RSServiceRequest" --> "PHCorePractitioner" : supportingInfo
+"RSServiceRequest" --> "PHCorePractitioner" : requester
+"RSServiceRequest" --> "RSPatient" : subject
+"RSServiceRequest" --> "RSEncounter" : encounter
+"RSTask" --> "RSPatient" : for
+"RSObservation" --> "Obs (RS profiles)" : profiles
+"RSAllergyIntolerance" --|> "AllergyIntolerance"
+"RSBundleEMS" --|> "Bundle"
+"RSBundleONEISS" --|> "Bundle"
+"RSClaim" --|> "Claim"
+"RSCondition" --|> "Condition"
+"RSDocumentReference" --|> "DocumentReference"
+"RSEncounter" --|> "PHCoreEncounter"
+"RSLocation" --|> "PHCoreLocation"
+"RSMedicationStatement" --|> "MedicationStatement"
+"RSObservation" --|> "PHCoreObservation"
+"RSOrganization" --|> "PHCoreOrganization"
+"RSHealthcareService" --|> "HealthcareService"
+"RSPatient" --|> "PHCorePatient"
+"RSProcedure" --|> "PHCoreProcedure"
+"RSServiceRequest" --|> "ServiceRequest"
+"RSTask" --|> "Task"
+
+@enduml
