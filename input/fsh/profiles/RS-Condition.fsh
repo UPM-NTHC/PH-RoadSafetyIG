@@ -2,7 +2,7 @@ Profile: RSCondition
 Parent: Condition
 Id: rs-condition
 Title: "Road Safety Condition"
-Description: "Condition resource for Road Safety IG.  Designed following the TW Core philosophy: a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. Not a copy of TW Core — adapted to Road Safety needs."
+Description: "Condition resource for Road Safety IG.  a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."
 * ^version = "1.0.0"
 
 /* Core constraints and usage */
