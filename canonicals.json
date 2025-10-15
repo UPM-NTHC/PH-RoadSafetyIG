@@ -28,6 +28,20 @@
     "name" : "RSAllergyIntolerance"
   },
   {
+    "id" : "rs-bundle-ems",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems",
+    "version" : "0.1.0",
+    "name" : "RSBundleEMS"
+  },
+  {
+    "id" : "rs-bundle-oneiss",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss",
+    "version" : "0.1.0",
+    "name" : "RSBundleONEISS"
+  },
+  {
     "id" : "rs-claim",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim",
@@ -203,32 +217,11 @@
     "name" : "RSObsECBitesStings"
   },
   {
-    "id" : "rs-observation-ec-bites-stings-agent",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings-agent",
-    "version" : "0.1.0",
-    "name" : "RSObsECBitesStingsAgent"
-  },
-  {
     "id" : "rs-observation-ec-burns",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns",
     "version" : "0.1.0",
     "name" : "RSObsECBurns"
-  },
-  {
-    "id" : "rs-observation-ec-burns-agent",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns-agent",
-    "version" : "0.1.0",
-    "name" : "RSObsECBurnsAgent"
-  },
-  {
-    "id" : "rs-observation-ec-burns-other",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns-other",
-    "version" : "0.1.0",
-    "name" : "RSObsECBurnsOther"
   },
   {
     "id" : "rs-observation-ec-chemical",
@@ -238,32 +231,11 @@
     "name" : "RSObsECChemical"
   },
   {
-    "id" : "rs-observation-ec-chemical-agent",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical-agent",
-    "version" : "0.1.0",
-    "name" : "RSObsECChemicalAgent"
-  },
-  {
     "id" : "rs-observation-ec-drowning",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning",
     "version" : "0.1.0",
     "name" : "RSObsECDrowning"
-  },
-  {
-    "id" : "rs-observation-ec-drowning-other",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning-other",
-    "version" : "0.1.0",
-    "name" : "RSObsECDrowningOther"
-  },
-  {
-    "id" : "rs-observation-ec-drowning-type",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning-type",
-    "version" : "0.1.0",
-    "name" : "RSObsECDrowningType"
   },
   {
     "id" : "rs-observation-ec-fall",
@@ -273,25 +245,11 @@
     "name" : "RSObsECFall"
   },
   {
-    "id" : "rs-observation-ec-fall-specifics",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall-specifics",
-    "version" : "0.1.0",
-    "name" : "RSObsECFallSpecifics"
-  },
-  {
     "id" : "rs-observation-ec-firecracker",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker",
     "version" : "0.1.0",
     "name" : "RSObsECFirecracker"
-  },
-  {
-    "id" : "rs-observation-ec-firecracker-type",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker-type",
-    "version" : "0.1.0",
-    "name" : "RSObsECFirecrackerType"
   },
   {
     "id" : "rs-observation-ec-forces-of-nature",
@@ -306,13 +264,6 @@
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot",
     "version" : "0.1.0",
     "name" : "RSObsECGunshot"
-  },
-  {
-    "id" : "rs-observation-ec-gunshot-weapon",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot-weapon",
-    "version" : "0.1.0",
-    "name" : "RSObsECGunshotWeapon"
   },
   {
     "id" : "rs-observation-ec-hanging-strangulation",
@@ -336,13 +287,6 @@
     "name" : "RSObsECOther"
   },
   {
-    "id" : "rs-observation-ec-other-specify",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other-specify",
-    "version" : "0.1.0",
-    "name" : "RSObsECOtherSpecify"
-  },
-  {
     "id" : "rs-observation-ec-sexual-assault",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault",
@@ -355,13 +299,6 @@
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object",
     "version" : "0.1.0",
     "name" : "RSObsECSharpObject"
-  },
-  {
-    "id" : "rs-observation-ec-sharp-object-specify",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object-specify",
-    "version" : "0.1.0",
-    "name" : "RSObsECSharpObjectSpecify"
   },
   {
     "id" : "rs-observation-fracture-closed",
@@ -628,6 +565,13 @@
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-activity",
     "version" : "0.1.0",
     "name" : "VSActivity"
+  },
+  {
+    "id" : "vs-bites-agent",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-bites-agent",
+    "version" : "0.1.0",
+    "name" : "VSBitesAgent"
   },
   {
     "id" : "vs-breath-sounds",

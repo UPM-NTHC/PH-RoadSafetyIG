@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-how-m
   "name" : "RSObsHowManyVehicles",
   "title" : "Road Safety Observation - How Many Vehicles Involved",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -118,6 +118,27 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-how-m
       {
         "id" : "Observation",
         "path" : "Observation"
+      },
+      {
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "patternUri" : "http://example.com/silph"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "how-many-vehicles"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "How many vehicles involved"
       },
       {
         "id" : "Observation.value[x]",

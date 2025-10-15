@@ -22,6 +22,8 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [Road Safety AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md) | Known allergies, substances and reactions. |
+| [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) | Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items. |
+| [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) | Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents. |
 | [Road Safety Claim](StructureDefinition-rs-claim.md) | Claim information related to cost of care. |
 | [Road Safety Condition](StructureDefinition-rs-condition.md) | Conditions used for medical history, initial impression, ICD-10 nature/external cause, and final diagnosis entries. |
 | [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md) | Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files). |
@@ -48,29 +50,18 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Date/Time Received by EMS](StructureDefinition-rs-observation-date-received.md) | Calendar/timestamp the EMS/dispatch received the request. |
 | [Road Safety Observation - Date/Time of Injury](StructureDefinition-rs-observation-injury-datetime.md) | Timestamp of injury occurrence. |
 | [Road Safety Observation - External Cause: Bites/Stings](StructureDefinition-rs-observation-ec-bites-stings.md) | Flag indicating bites/stings. |
-| [Road Safety Observation - External Cause: Bites/Stings Agent](StructureDefinition-rs-observation-ec-bites-stings-agent.md) | Specific animal/insect/plant agent. |
 | [Road Safety Observation - External Cause: Burns](StructureDefinition-rs-observation-ec-burns.md) | Flag indicating burns as external cause. |
-| [Road Safety Observation - External Cause: Burns (Other specify)](StructureDefinition-rs-observation-ec-burns-other.md) | Other text for burn cause. |
-| [Road Safety Observation - External Cause: Burns Agent](StructureDefinition-rs-observation-ec-burns-agent.md) | Agent causing burn (heat/electric/chemical/etc.). |
-| [Road Safety Observation - External Cause: Chemical (Specify)](StructureDefinition-rs-observation-ec-chemical-agent.md) | Specific chemical/substance. |
 | [Road Safety Observation - External Cause: Chemical/Substance](StructureDefinition-rs-observation-ec-chemical.md) | Flag indicating chemical/substance exposure. |
 | [Road Safety Observation - External Cause: Contact with Sharp Object](StructureDefinition-rs-observation-ec-sharp-object.md) | Flag indicating sharp object cause. |
 | [Road Safety Observation - External Cause: Drowning](StructureDefinition-rs-observation-ec-drowning.md) | Flag indicating drowning. |
-| [Road Safety Observation - External Cause: Drowning (Other specify)](StructureDefinition-rs-observation-ec-drowning-other.md) | Other text for water type. |
-| [Road Safety Observation - External Cause: Drowning Type/Body of Water](StructureDefinition-rs-observation-ec-drowning-type.md) | Type/body of water. |
 | [Road Safety Observation - External Cause: Exposure to Forces of Nature](StructureDefinition-rs-observation-ec-forces-of-nature.md) | Flag indicating exposure to natural disaster/calamity. |
 | [Road Safety Observation - External Cause: Fall](StructureDefinition-rs-observation-ec-fall.md) | Flag indicating fall. |
-| [Road Safety Observation - External Cause: Fall (Specifics)](StructureDefinition-rs-observation-ec-fall-specifics.md) | Where/what patient fell from (stairs, ladder, etc.). |
 | [Road Safety Observation - External Cause: Firecracker](StructureDefinition-rs-observation-ec-firecracker.md) | Flag indicating firecracker-related cause. |
-| [Road Safety Observation - External Cause: Firecracker (Type)](StructureDefinition-rs-observation-ec-firecracker-type.md) | Type of firecracker (text). |
 | [Road Safety Observation - External Cause: Gunshot](StructureDefinition-rs-observation-ec-gunshot.md) | Flag indicating gunshot. |
-| [Road Safety Observation - External Cause: Gunshot (Weapon)](StructureDefinition-rs-observation-ec-gunshot-weapon.md) | Weapon type (text). |
 | [Road Safety Observation - External Cause: Hanging/Strangulation](StructureDefinition-rs-observation-ec-hanging-strangulation.md) | Flag indicating hanging/strangulation. |
 | [Road Safety Observation - External Cause: Mauling/Assault](StructureDefinition-rs-observation-ec-mauling-assault.md) | Flag indicating assault. |
 | [Road Safety Observation - External Cause: Other](StructureDefinition-rs-observation-ec-other.md) | Flag indicating other external cause. |
-| [Road Safety Observation - External Cause: Other (Specify)](StructureDefinition-rs-observation-ec-other-specify.md) | Other cause (text). |
 | [Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)](StructureDefinition-rs-observation-ec-sexual-assault.md) | Flag indicating sexual assault. |
-| [Road Safety Observation - External Cause: Sharp Object (Specify)](StructureDefinition-rs-observation-ec-sharp-object-specify.md) | Specify object (free text). |
 | [Road Safety Observation - Fracture (Closed)](StructureDefinition-rs-observation-fracture-closed.md) | Closed fracture present; with site and details. |
 | [Road Safety Observation - Fracture (Open)](StructureDefinition-rs-observation-fracture-open.md) | Open fracture present; with site and details. |
 | [Road Safety Observation - Glasgow Coma Scale](StructureDefinition-rs-observation-gcs.md) | GCS with components for eyes, verbal, motor; optional total score as integer. |
@@ -115,6 +106,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [RS VS - Activity at Time of Incident](ValueSet-vs-activity.md) | Activity at time of incident (prefer SNOMED CT). |
+| [RS VS - Bites/Stings Agent](ValueSet-vs-bites-agent.md) | Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings. |
 | [RS VS - Breath Sounds](ValueSet-vs-breath-sounds.md) | Breath sounds options (prefer SNOMED CT). |
 | [RS VS - Burns Agent](ValueSet-vs-burns-agent.md) | Agent causing burn (prefer SNOMED CT). |
 | [RS VS - Collision Category](ValueSet-vs-collision-category.md) | Collision vs non-collision category. |

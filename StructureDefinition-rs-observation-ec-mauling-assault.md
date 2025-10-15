@@ -16,7 +16,7 @@ Flag indicating assault.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-ec-mauling-assault)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ma
   "name" : "RSObsECMaulingAssault",
   "title" : "Road Safety Observation - External Cause: Mauling/Assault",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,8 +116,25 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ma
   "differential" : {
     "element" : [
       {
-        "id" : "Observation",
-        "path" : "Observation"
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "fixedUri" : "http://snomed.info/sct"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "mauling-assault-event"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "Mauling/assault event"
       },
       {
         "id" : "Observation.value[x]",

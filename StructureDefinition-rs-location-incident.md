@@ -16,6 +16,7 @@ Location of incident; supports PH-Core address extensions and geolocation.
 
 **Usages:**
 
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [Road Safety HealthcareService](StructureDefinition-rs-healthcare-service.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-location-incident)
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-incident
   "name" : "RSLocation",
   "title" : "Road Safety Incident Location",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-incident
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Location",
-        "path" : "Location"
-      },
       {
         "id" : "Location.name",
         "path" : "Location.name",

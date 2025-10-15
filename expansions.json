@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "1782d70c-1cba-410f-b1e4-e167f25e965a",
+  "id" : "a58b20f8-6b12-49b5-9ee4-2408f987f66e",
   "meta" : {
-    "lastUpdated" : "2025-10-15T12:06:15.101+00:00"
+    "lastUpdated" : "2025-10-15T14:23:50.211+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "VSActivity",
       "title" : "RS VS - Activity at Time of Incident",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:826cc01b-840e-4975-a35f-817823c26ec6",
-        "timestamp" : "2025-10-15T12:07:56+00:00",
+        "identifier" : "urn:uuid:d4d68eab-0ecb-4009-8f75-e91eea06ab31",
+        "timestamp" : "2025-10-15T14:25:42+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -100,6 +100,68 @@
     }
   },
   {
+    "fullUrl" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-bites-agent",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 1 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-95376-0\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/95376-0/\">95376-0</a></td><td>Type of animal exposed to</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;95376-0&quot;, &quot;display&quot;: &quot;Type of animal exposed to&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;95376-0&quot;&gt;&lt;display value=&quot;Type of animal exposed to&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-bites-agent",
+      "version" : "0.1.0",
+      "name" : "VSBitesAgent",
+      "title" : "RS VS - Bites/Stings Agent",
+      "status" : "draft",
+      "date" : "2025-10-15T14:23:03+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "PH",
+          "display" : "Philippines"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f5bc2493-2c51-4a35-b80a-1750dd90869b",
+        "timestamp" : "2025-10-15T14:25:50+00:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "95376-0",
+          "display" : "Type of animal exposed to"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-breath-sounds",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -112,7 +174,7 @@
       "name" : "VSBreathSounds",
       "title" : "RS VS - Breath Sounds",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -121,8 +183,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f0e96e16-6fa0-4dde-b274-4d9442343f5f",
-        "timestamp" : "2025-10-15T12:08:24+00:00",
+        "identifier" : "urn:uuid:84419e7f-97f5-4036-a0fb-b8215d32c83c",
+        "timestamp" : "2025-10-15T14:26:08+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -180,7 +242,7 @@
       "name" : "VSBurnsAgent",
       "title" : "RS VS - Burns Agent",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -189,8 +251,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c5cddf34-8b02-4bac-b12a-bc80e1b792e8",
-        "timestamp" : "2025-10-15T12:08:05+00:00",
+        "identifier" : "urn:uuid:39742a98-eed2-48c5-9d50-2b7230a0e14b",
+        "timestamp" : "2025-10-15T14:25:50+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -267,7 +329,7 @@
       "name" : "VSCyanosis",
       "title" : "RS VS - Cyanosis",
       "status" : "active",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -276,8 +338,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6d0244b1-f37d-4535-b981-450f73835482",
-        "timestamp" : "2025-10-15T12:08:04+00:00",
+        "identifier" : "urn:uuid:e5a3851b-28d1-4723-8029-cb1785d37905",
+        "timestamp" : "2025-10-15T14:25:47+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -339,7 +401,7 @@
       "name" : "VSDrowningType",
       "title" : "RS VS - Drowning Type/Body of Water",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -348,8 +410,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:31909d0f-fc67-454c-8135-d11a716eeeb3",
-        "timestamp" : "2025-10-15T12:08:07+00:00",
+        "identifier" : "urn:uuid:ac9dab88-537a-4cb9-b58d-2d686e0f67b2",
+        "timestamp" : "2025-10-15T14:25:51+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -438,7 +500,7 @@
       "name" : "VSInjuryIntent",
       "title" : "RS VS - Injury Intent",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -447,8 +509,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c133d09b-ded7-454e-bfe5-a906ec98328c",
-        "timestamp" : "2025-10-15T12:08:12+00:00",
+        "identifier" : "urn:uuid:3c84b35b-ccd1-44d5-b095-ed82eff9a963",
+        "timestamp" : "2025-10-15T14:25:56+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -515,7 +577,7 @@
       "name" : "VSLevelOfConsciousness",
       "title" : "RS VS - Level of Consciousness (AVPU)",
       "status" : "active",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -524,8 +586,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0a180bdc-065e-4930-b5a4-8ad57b155223",
-        "timestamp" : "2025-10-15T12:08:13+00:00",
+        "identifier" : "urn:uuid:38c299f2-3dbd-4982-b5e1-8f5bd7f02b45",
+        "timestamp" : "2025-10-15T14:25:56+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -592,7 +654,7 @@
       "name" : "VSModeOfTransport",
       "title" : "RS VS - Mode of Transport to Facility",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -601,8 +663,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:67f135f4-5b4d-4a7a-a1e3-48d0da960d17",
-        "timestamp" : "2025-10-15T12:08:13+00:00",
+        "identifier" : "urn:uuid:b283ad1e-de25-4a2d-99f5-09841ae9ca6f",
+        "timestamp" : "2025-10-15T14:25:57+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -681,7 +743,7 @@
       "name" : "VSOtherRiskFactors",
       "title" : "RS VS - Other Risk Factors",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -690,8 +752,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:be527ec8-f582-4ea8-9180-9c4e5c42c7ed",
-        "timestamp" : "2025-10-15T12:08:15+00:00",
+        "identifier" : "urn:uuid:f0d374d0-be0c-4413-adc9-9a1dda536a45",
+        "timestamp" : "2025-10-15T14:25:58+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -763,7 +825,7 @@
       "name" : "VSPositionOfPatient",
       "title" : "RS VS - Position of Patient",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -772,8 +834,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f905e9a0-089c-46ab-a944-8970573c4f91",
-        "timestamp" : "2025-10-15T12:08:18+00:00",
+        "identifier" : "urn:uuid:e906c5ce-ed8b-43b1-b97c-1924e99c640e",
+        "timestamp" : "2025-10-15T14:26:02+00:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -860,7 +922,7 @@
       "name" : "VSPulseQuality",
       "title" : "RS VS - Pulse Quality",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -869,8 +931,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8da5709c-fae3-43c3-8084-ad28062a2e7f",
-        "timestamp" : "2025-10-15T12:08:25+00:00",
+        "identifier" : "urn:uuid:ee4a2111-36d8-4957-9e5a-975ff92773ae",
+        "timestamp" : "2025-10-15T14:26:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -932,7 +994,7 @@
       "name" : "VSPulseRhythm",
       "title" : "RS VS - Pulse Rhythm",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -941,8 +1003,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:38ab4e7e-9c7b-432d-b3f2-743077d39971",
-        "timestamp" : "2025-10-15T12:08:25+00:00",
+        "identifier" : "urn:uuid:a961cf03-1425-4ecc-942e-1b09c14ed542",
+        "timestamp" : "2025-10-15T14:26:09+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -999,7 +1061,7 @@
       "name" : "VSPupils",
       "title" : "RS VS - Pupils",
       "status" : "active",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1008,8 +1070,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:020c6ad5-c3d4-43b0-8ffa-732f528932ff",
-        "timestamp" : "2025-10-15T12:08:19+00:00",
+        "identifier" : "urn:uuid:f1315f7e-ef89-48ca-b344-e1207af670a2",
+        "timestamp" : "2025-10-15T14:26:02+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1081,7 +1143,7 @@
       "name" : "VSRespiratoryRhythm",
       "title" : "RS VS - Respiratory Rhythm",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1090,8 +1152,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b0d920f2-5e19-4919-83f7-3a4011a86f09",
-        "timestamp" : "2025-10-15T12:08:25+00:00",
+        "identifier" : "urn:uuid:2691e092-04d3-471c-aa6f-4d51d2787c2c",
+        "timestamp" : "2025-10-15T14:26:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1153,7 +1215,7 @@
       "name" : "VSSafetyDevices",
       "title" : "RS VS - Safety Devices",
       "status" : "draft",
-      "date" : "2025-10-15T12:05:31+00:00",
+      "date" : "2025-10-15T14:23:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1162,8 +1224,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b03ec4bc-8fc8-47c5-bf6e-8e7c9dc4077d",
-        "timestamp" : "2025-10-15T12:08:19+00:00",
+        "identifier" : "urn:uuid:f3124bc3-d498-4bbe-9d4f-c7c57460ca4c",
+        "timestamp" : "2025-10-15T14:26:03+00:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{

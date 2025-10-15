@@ -11,6 +11,16 @@
         "title": "Road Safety AllergyIntolerance"
       }
     ],
+    "Bundle": [
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems",
+        "title": "Road Safety Bundle — EMS Submission"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss",
+        "title": "Road Safety Bundle — ONEISS Submission"
+      }
+    ],
     "Claim": [
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim",
@@ -127,56 +137,24 @@
         "title": "Road Safety Observation - External Cause: Bites/Stings"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings-agent",
-        "title": "Road Safety Observation - External Cause: Bites/Stings Agent"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns",
         "title": "Road Safety Observation - External Cause: Burns"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns-agent",
-        "title": "Road Safety Observation - External Cause: Burns Agent"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns-other",
-        "title": "Road Safety Observation - External Cause: Burns (Other specify)"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical",
         "title": "Road Safety Observation - External Cause: Chemical/Substance"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical-agent",
-        "title": "Road Safety Observation - External Cause: Chemical (Specify)"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning",
         "title": "Road Safety Observation - External Cause: Drowning"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning-other",
-        "title": "Road Safety Observation - External Cause: Drowning (Other specify)"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning-type",
-        "title": "Road Safety Observation - External Cause: Drowning Type/Body of Water"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall",
         "title": "Road Safety Observation - External Cause: Fall"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall-specifics",
-        "title": "Road Safety Observation - External Cause: Fall (Specifics)"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker",
         "title": "Road Safety Observation - External Cause: Firecracker"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker-type",
-        "title": "Road Safety Observation - External Cause: Firecracker (Type)"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature",
@@ -185,10 +163,6 @@
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot",
         "title": "Road Safety Observation - External Cause: Gunshot"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot-weapon",
-        "title": "Road Safety Observation - External Cause: Gunshot (Weapon)"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation",
@@ -203,20 +177,12 @@
         "title": "Road Safety Observation - External Cause: Other"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other-specify",
-        "title": "Road Safety Observation - External Cause: Other (Specify)"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault",
         "title": "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object",
         "title": "Road Safety Observation - External Cause: Contact with Sharp Object"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object-specify",
-        "title": "Road Safety Observation - External Cause: Sharp Object (Specify)"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-closed",

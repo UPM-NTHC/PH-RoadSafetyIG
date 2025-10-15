@@ -16,7 +16,7 @@ Procedures related to incident/report (e.g., coordination with receiving hospita
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-procedure)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure.csv), [
   "name" : "RSProcedure",
   "title" : "Road Safety Procedure",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -105,10 +105,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure.csv), [
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Procedure",
-        "path" : "Procedure"
-      },
       {
         "id" : "Procedure.status",
         "path" : "Procedure.status",

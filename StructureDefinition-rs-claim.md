@@ -16,7 +16,7 @@ Claim information related to cost of care.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-claim)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-claim.csv), [Exce
   "name" : "RSClaim",
   "title" : "Road Safety Claim",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -100,10 +100,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-claim.csv), [Exce
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Claim",
-        "path" : "Claim"
-      },
       {
         "id" : "Claim.patient",
         "path" : "Claim.patient",

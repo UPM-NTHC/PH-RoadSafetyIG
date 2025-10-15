@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -649,6 +649,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-bundle-ems"
+      },
+      "name" : "Road Safety Bundle — EMS Submission",
+      "description" : "Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-bundle-oneiss"
+      },
+      "name" : "Road Safety Bundle — ONEISS Submission",
+      "description" : "Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-claim"
       },
       "name" : "Road Safety Claim",
@@ -973,58 +997,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-bites-stings-agent"
-      },
-      "name" : "Road Safety Observation - External Cause: Bites/Stings Agent",
-      "description" : "Specific animal/insect/plant agent.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-ec-burns"
       },
       "name" : "Road Safety Observation - External Cause: Burns",
       "description" : "Flag indicating burns as external cause.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-burns-other"
-      },
-      "name" : "Road Safety Observation - External Cause: Burns (Other specify)",
-      "description" : "Other text for burn cause.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-burns-agent"
-      },
-      "name" : "Road Safety Observation - External Cause: Burns Agent",
-      "description" : "Agent causing burn (heat/electric/chemical/etc.).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-chemical-agent"
-      },
-      "name" : "Road Safety Observation - External Cause: Chemical (Specify)",
-      "description" : "Specific chemical/substance.",
       "exampleBoolean" : false
     },
     {
@@ -1069,30 +1045,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-drowning-other"
-      },
-      "name" : "Road Safety Observation - External Cause: Drowning (Other specify)",
-      "description" : "Other text for water type.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-drowning-type"
-      },
-      "name" : "Road Safety Observation - External Cause: Drowning Type/Body of Water",
-      "description" : "Type/body of water.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-ec-forces-of-nature"
       },
       "name" : "Road Safety Observation - External Cause: Exposure to Forces of Nature",
@@ -1117,18 +1069,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-fall-specifics"
-      },
-      "name" : "Road Safety Observation - External Cause: Fall (Specifics)",
-      "description" : "Where/what patient fell from (stairs, ladder, etc.).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-ec-firecracker"
       },
       "name" : "Road Safety Observation - External Cause: Firecracker",
@@ -1141,34 +1081,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-firecracker-type"
-      },
-      "name" : "Road Safety Observation - External Cause: Firecracker (Type)",
-      "description" : "Type of firecracker (text).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-ec-gunshot"
       },
       "name" : "Road Safety Observation - External Cause: Gunshot",
       "description" : "Flag indicating gunshot.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-gunshot-weapon"
-      },
-      "name" : "Road Safety Observation - External Cause: Gunshot (Weapon)",
-      "description" : "Weapon type (text).",
       "exampleBoolean" : false
     },
     {
@@ -1213,34 +1129,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-other-specify"
-      },
-      "name" : "Road Safety Observation - External Cause: Other (Specify)",
-      "description" : "Other cause (text).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-ec-sexual-assault"
       },
       "name" : "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)",
       "description" : "Flag indicating sexual assault.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-ec-sharp-object-specify"
-      },
-      "name" : "Road Safety Observation - External Cause: Sharp Object (Specify)",
-      "description" : "Specify object (free text).",
       "exampleBoolean" : false
     },
     {
@@ -1685,6 +1577,18 @@
       },
       "name" : "RS VS - Activity at Time of Incident",
       "description" : "Activity at time of incident (prefer SNOMED CT).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-bites-agent"
+      },
+      "name" : "RS VS - Bites/Stings Agent",
+      "description" : "Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings.",
       "exampleBoolean" : false
     },
     {

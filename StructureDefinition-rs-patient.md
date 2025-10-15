@@ -16,6 +16,7 @@ Patient demographics and identifiers for road safety reporting; reuse PH-Core ad
 
 **Usages:**
 
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Refer to this Profile: [Road Safety AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [Road Safety Claim](StructureDefinition-rs-claim.md), [Road Safety Condition](StructureDefinition-rs-condition.md), [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 5 more,[Road Safety MedicationStatement](StructureDefinition-rs-medication-statement.md),[Road Safety Observation](StructureDefinition-rs-observation.md),[Road Safety Procedure](StructureDefinition-rs-procedure.md),[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)and[Road Safety Task](StructureDefinition-rs-task.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-patient)
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "Road Safety Patient",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -110,10 +111,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Patient",
-        "path" : "Patient"
-      },
       {
         "id" : "Patient.identifier",
         "path" : "Patient.identifier",

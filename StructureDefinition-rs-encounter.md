@@ -16,6 +16,7 @@ Encounter for EMS run report / facility submission context. Captures incident nu
 
 **Usages:**
 
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Refer to this Profile: [Road Safety Condition](StructureDefinition-rs-condition.md), [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md), [Road Safety Observation](StructureDefinition-rs-observation.md), [Road Safety Procedure](StructureDefinition-rs-procedure.md) and [Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "Road Safety Encounter",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -105,10 +106,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Encounter",
-        "path" : "Encounter"
-      },
       {
         "id" : "Encounter.identifier",
         "path" : "Encounter.identifier",

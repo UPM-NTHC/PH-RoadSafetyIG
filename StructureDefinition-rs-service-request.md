@@ -16,7 +16,7 @@ Requests or records related to refusal to admit and related workflow signals.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-service-request)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
   "name" : "RSServiceRequest",
   "title" : "Road Safety ServiceRequest",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -110,10 +110,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "ServiceRequest",
-        "path" : "ServiceRequest"
-      },
       {
         "id" : "ServiceRequest.status",
         "path" : "ServiceRequest.status",

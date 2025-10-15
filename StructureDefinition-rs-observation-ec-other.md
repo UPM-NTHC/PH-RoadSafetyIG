@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ot
   "name" : "RSObsECOther",
   "title" : "Road Safety Observation - External Cause: Other",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,6 +120,27 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ot
         "path" : "Observation"
       },
       {
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "fixedUri" : "http://snomed.info/sct"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "other-external-cause-event"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "Other external cause event"
+      },
+      {
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "slicing" : {
@@ -143,6 +164,74 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ot
         "type" : [
           {
             "code" : "boolean"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "code"
+            }
+          ],
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Observation.component:otherSpecify",
+        "path" : "Observation.component",
+        "sliceName" : "otherSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:otherSpecify.code.coding",
+        "path" : "Observation.component.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:otherSpecify.code.coding.system",
+        "path" : "Observation.component.code.coding.system",
+        "fixedUri" : "http://snomed.info/sct"
+      },
+      {
+        "id" : "Observation.component:otherSpecify.code.coding.code",
+        "path" : "Observation.component.code.coding.code",
+        "patternCode" : "other-external-cause-specify"
+      },
+      {
+        "id" : "Observation.component:otherSpecify.code.coding.display",
+        "path" : "Observation.component.code.coding.display",
+        "patternString" : "Other external cause (specify)"
+      },
+      {
+        "id" : "Observation.component:otherSpecify.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Observation.component:otherSpecify.value[x]:valueString",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueString",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "string"
           }
         ],
         "mustSupport" : true

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
   "name" : "RSOrganization",
   "title" : "Road Safety Organization",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

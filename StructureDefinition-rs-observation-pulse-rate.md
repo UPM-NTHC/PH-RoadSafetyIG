@@ -16,7 +16,7 @@ Pulse/heart rate in beats/min.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-pulse-rate)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "name" : "RSObsPulseRate",
   "title" : "Road Safety Observation - Pulse Rate",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -115,10 +115,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

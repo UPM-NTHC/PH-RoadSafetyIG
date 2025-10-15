@@ -16,7 +16,7 @@ Type of vehicle used by patient; text for 'Others'.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-patients-vehicle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
   "name" : "RSObsPatientsVehicle",
   "title" : "Road Safety Observation - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,8 +116,25 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
   "differential" : {
     "element" : [
       {
-        "id" : "Observation",
-        "path" : "Observation"
+        "id" : "Observation.code.coding",
+        "path" : "Observation.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.code.coding.system",
+        "path" : "Observation.code.coding.system",
+        "patternUri" : "http://example.com/silph"
+      },
+      {
+        "id" : "Observation.code.coding.code",
+        "path" : "Observation.code.coding.code",
+        "patternCode" : "patients-vehicle"
+      },
+      {
+        "id" : "Observation.code.coding.display",
+        "path" : "Observation.code.coding.display",
+        "patternString" : "Patient's vehicle"
       },
       {
         "id" : "Observation.value[x]",

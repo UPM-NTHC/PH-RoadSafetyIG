@@ -16,6 +16,7 @@ Collision vs non-collision category.
 
  **References** 
 
+* [Road Safety Observation - Collision Type](StructureDefinition-rs-observation-collision-type.md)
 * [Road Safety Observation - Collision vs Non-Collision](StructureDefinition-rs-observation-collision-vs-noncollision.md)
 
 ### Logical Definition (CLD)
@@ -52,7 +53,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "VSCollisionCategory",
   "title" : "RS VS - Collision Category",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

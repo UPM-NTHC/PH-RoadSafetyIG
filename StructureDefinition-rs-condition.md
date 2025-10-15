@@ -16,7 +16,7 @@ Conditions used for medical history, initial impression, ICD-10 nature/external 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "name" : "RSCondition",
   "title" : "Road Safety Condition",
   "status" : "draft",
-  "date" : "2025-10-15T12:05:31+00:00",
+  "date" : "2025-10-15T14:23:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -115,10 +115,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Condition",
-        "path" : "Condition"
-      },
       {
         "id" : "Condition.code",
         "path" : "Condition.code",

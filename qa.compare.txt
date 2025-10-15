@@ -1,14 +1,16 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 0, warn = 697, info = 11
+err = 0, warn = 689, info = 29
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
- Build Errors : 913 / 0 / 0
+ Build Errors : 838 / 0 / 0
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 13 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ph-road-safety-logical-model : 0 / 566 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-allergy-intolerance : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-ems : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-oneiss : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-claim : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-document-reference : 0 / 1 / 1
@@ -33,30 +35,19 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-contusion : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-cyanosis : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-date-received : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings-agent : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns-agent : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns-other : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical-agent : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning-other : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning-type : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-fall : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-fall-specifics : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker-type : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-fall : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-forces-of-nature : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot-weapon : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-hanging-strangulation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-mauling-assault : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-other : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-other-specify : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-other : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sexual-assault : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object-specify : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture-closed : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture-open : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-gcs : 0 / 1 / 3
@@ -95,6 +86,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-task : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-activity : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-bites-agent : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-breath-sounds : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-burns-agent : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-collision-category : 0 / 3 / 2
@@ -139,6 +131,24 @@ ERROR: StructureDefinition-rs-allergy-intolerance.profile.history.html#/html/bod
 ERROR: StructureDefinition-rs-allergy-intolerance.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-allergy-intolerance.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-allergy-intolerance.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-ems.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: StructureDefinition-rs-bundle-oneiss.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-claim-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-claim-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-claim-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -347,15 +357,6 @@ ERROR: StructureDefinition-rs-observation-date-received.profile.json.html#/html/
 ERROR: StructureDefinition-rs-observation-date-received.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-date-received.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-bites-stings-agent.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-bites-stings-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-bites-stings-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-bites-stings-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -365,42 +366,15 @@ ERROR: StructureDefinition-rs-observation-ec-bites-stings.profile.history.html#/
 ERROR: StructureDefinition-rs-observation-ec-bites-stings.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-bites-stings.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-bites-stings.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-agent.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-burns-other.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-burns.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-chemical-agent.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-chemical-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-chemical-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-chemical-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -413,25 +387,7 @@ ERROR: StructureDefinition-rs-observation-ec-chemical.profile.xml.html#/html/bod
 ERROR: StructureDefinition-rs-observation-ec-drowning-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-drowning-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-drowning-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-other.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-drowning-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-drowning-type.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-drowning.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-drowning.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-drowning.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -440,15 +396,6 @@ ERROR: StructureDefinition-rs-observation-ec-drowning.profile.xml.html#/html/bod
 ERROR: StructureDefinition-rs-observation-ec-fall-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-fall-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-fall-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-fall-specifics.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-fall-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-fall.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-fall.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -459,15 +406,6 @@ ERROR: StructureDefinition-rs-observation-ec-firecracker-definitions.html#/html/
 ERROR: StructureDefinition-rs-observation-ec-firecracker-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-firecracker-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-firecracker-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-firecracker-type.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-firecracker.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-firecracker.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-firecracker.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -486,15 +424,6 @@ ERROR: StructureDefinition-rs-observation-ec-gunshot-definitions.html#/html/body
 ERROR: StructureDefinition-rs-observation-ec-gunshot-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-gunshot-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-gunshot-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-gunshot-weapon.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-gunshot.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-gunshot.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-gunshot.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -521,15 +450,6 @@ ERROR: StructureDefinition-rs-observation-ec-mauling-assault.profile.xml.html#/h
 ERROR: StructureDefinition-rs-observation-ec-other-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-other-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-other-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-other-specify.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-other-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-other.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-other.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -548,15 +468,6 @@ ERROR: StructureDefinition-rs-observation-ec-sexual-assault.profile.xml.html#/ht
 ERROR: StructureDefinition-rs-observation-ec-sharp-object-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-sharp-object-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-sharp-object-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
-ERROR: StructureDefinition-rs-observation-ec-sharp-object-specify.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-sharp-object-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-sharp-object.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: StructureDefinition-rs-observation-ec-sharp-object.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -910,6 +821,12 @@ ERROR: ValueSet-vs-activity.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at
 ERROR: ValueSet-vs-activity.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: ValueSet-vs-activity.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: ValueSet-vs-activity.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: ValueSet-vs-bites-agent-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: ValueSet-vs-bites-agent.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: ValueSet-vs-bites-agent.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: ValueSet-vs-bites-agent.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: ValueSet-vs-bites-agent.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
+ERROR: ValueSet-vs-bites-agent.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: ValueSet-vs-breath-sounds-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: ValueSet-vs-breath-sounds.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
 ERROR: ValueSet-vs-breath-sounds.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 10: The link 'StructureDefinition-PH-RoadSafetyLogicalModel.html' for "Logical model" cannot be resolved
@@ -1613,6 +1530,10 @@ WARNING: StructureDefinition/ph-road-safety-logical-model: StructureDefinition.d
 == fsh-generated/resources/StructureDefinition-rs-allergy-intolerance.json ==
 INFORMATION: StructureDefinition/rs-allergy-intolerance: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-bundle-ems.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-bundle-oneiss.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-claim.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-condition.json ==
@@ -1639,7 +1560,7 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation-avulsion.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-blood-pressure.json ==
-INFORMATION: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-body-temperature.json ==
@@ -1667,59 +1588,55 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation-date-received.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-bites-stings: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-bites-stings: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings-agent.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings-agent'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-burns.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-burns: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-burns: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-burns-agent.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns-agent'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-burns-other.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns-other'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-chemical: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-chemical: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical-agent.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical-agent'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-drowning: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-drowning: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning-other.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning-other'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning-type.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning-type'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-fall.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-fall: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-fall: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-fall-specifics.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall-specifics'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-firecracker: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-firecracker: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker-type.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker-type'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-forces-of-nature.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-gunshot: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-gunshot: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot-weapon.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot-weapon'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-hanging-strangulation.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-mauling-assault.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-other.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-other: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-other: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-other-specify.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other-specify'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-sexual-assault.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object.json ==
+INFORMATION: StructureDefinition/rs-observation-ec-sharp-object: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-ec-sharp-object: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object-specify.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object-specify'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-fracture-closed.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-closed'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-fracture-open.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-open'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-gcs.json ==
-INFORMATION: StructureDefinition/rs-observation-gcs: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/rs-observation-gcs: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-how-many-patients.json ==
@@ -1795,6 +1712,8 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-vs-activity.json ==
 WARNING: ValueSet/vs-activity: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-vs-bites-agent.json ==
+WARNING: ValueSet/vs-bites-agent: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-vs-breath-sounds.json ==
 WARNING: ValueSet/vs-breath-sounds: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-vs-burns-agent.json ==
