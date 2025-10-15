@@ -268,6 +268,10 @@ Id: rs-observation-triage-priority
 Title: "Road Safety Observation - Triage Priority"
 Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 * valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #triage-priority
+* code.coding.display = "Triage priority"
 
 Profile: RSObsUrgencyLevel
 Parent: RSObservation
@@ -275,6 +279,10 @@ Id: rs-observation-urgency
 Title: "Road Safety Observation - Priority Level (Urgency)"
 Description: "System-generated urgency level per CAD/agency rules."
 * valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #urgency-level
+* code.coding.display = "Urgency level"
 
 Profile: RSObsPlaceOfOccurrence
 Parent: RSObservation
@@ -284,6 +292,10 @@ Description: "Place type where injury occurred; name can be carried in note when
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPlaceOfOccurrence (preferred)
 * note 0..* 
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #place-of-occurrence
+* code.coding.display = "Place of occurrence"
 
 Profile: RSObsActivityAtIncident
 Parent: RSObservation
@@ -293,6 +305,10 @@ Description: "Activity of the patient at time of incident; allow text fallback."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSActivity (preferred)
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #activity-at-incident
+* code.coding.display = "Activity at time of incident"
 
 Profile: RSObsCollisionVsNonCollision
 Parent: RSObservation
@@ -301,6 +317,10 @@ Title: "Road Safety Observation - Collision vs Non-Collision"
 Description: "Indicates whether the incident was collision or non-collision."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCollisionCategory (preferred)
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #collision-category
+* code.coding.display = "Collision category"
 
 Profile: RSObsPatientsVehicle
 Parent: RSObservation
@@ -310,6 +330,10 @@ Description: "Type of vehicle used by patient; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPatientsVehicle (preferred)
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #patients-vehicle
+* code.coding.display = "Patient's vehicle"
 
 Profile: RSObsOtherVehicleInvolved
 Parent: RSObservation
@@ -319,6 +343,10 @@ Description: "Other vehicle/object type involved; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSOtherVehicle (preferred)
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #other-vehicle-involved
+* code.coding.display = "Other vehicle/object involved"
 
 Profile: RSObsPositionOfPatient
 Parent: RSObservation
@@ -328,6 +356,10 @@ Description: "Seat/position (driver/front passenger/rear/pedestrian); text for '
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPositionOfPatient (preferred)
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #position-of-patient
+* code.coding.display = "Position of patient"
 
 Profile: RSObsHowManyVehicles
 Parent: RSObservation
@@ -335,6 +367,10 @@ Id: rs-observation-how-many-vehicles
 Title: "Road Safety Observation - How Many Vehicles Involved"
 Description: "Count of vehicles involved."
 * valueInteger 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #how-many-vehicles
+* code.coding.display = "How many vehicles involved"
 
 Profile: RSObsHowManyPatients
 Parent: RSObservation
@@ -342,6 +378,10 @@ Id: rs-observation-how-many-patients
 Title: "Road Safety Observation - How Many Patients Involved"
 Description: "Count of patients involved."
 * valueInteger 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #how-many-patients
+* code.coding.display = "How many patients involved"
 
 Profile: RSObsCollisionType
 Parent: RSObservation
@@ -349,6 +389,10 @@ Id: rs-observation-collision-type
 Title: "Road Safety Observation - Collision Type"
 Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #collision-type
+* code.coding.display = "Collision type"
 
 Profile: RSObsPresenceTrafficInvestigator
 Parent: RSObservation
@@ -356,6 +400,10 @@ Id: rs-observation-traffic-investigator
 Title: "Road Safety Observation - Presence of Traffic Investigator"
 Description: "Boolean presence/absence of traffic investigator."
 * valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #traffic-investigator-presence
+* code.coding.display = "Presence of traffic investigator"
 
 Profile: RSObsOtherRiskFactors
 Parent: RSObservation
@@ -365,6 +413,10 @@ Description: "Other risk factors at the time of incident; allow text for 'Others
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSOtherRiskFactors (preferred)
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #other-risk-factors
+* code.coding.display = "Other risk factors"
 
 Profile: RSObsSafetyAccessories
 Parent: RSObservation
@@ -374,6 +426,10 @@ Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSSafetyDevices (preferred)
+* code.coding 1..1
+* code.coding.system = $SILPH
+* code.coding.code = #safety-accessories
+* code.coding.display = "Safety accessories"
 
 Profile: RSObsReportedComplaint
 Parent: RSObservation
@@ -434,8 +490,16 @@ Description: "Flag indicating burns as external cause."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains burnsAgent 0..1 and burnsOther 0..1
+* component[burnsAgent].code.coding 1..1
+* component[burnsAgent].code.coding.system = $SILPH (exactly)
+* component[burnsAgent].code.coding.code = #burns-agent
+* component[burnsAgent].code.coding.display = "Burns agent"
 * component[burnsAgent].valueCodeableConcept 0..1 MS
 * component[burnsAgent].valueCodeableConcept from VSBurnsAgent (preferred)
+* component[burnsOther].code.coding 1..1
+* component[burnsOther].code.coding.system = $SILPH (exactly)
+* component[burnsOther].code.coding.code = #burns-other
+* component[burnsOther].code.coding.display = "Burns other (specify)"
 * component[burnsOther].valueString 0..1 MS
 
 // (Consolidated into RSObsECBurns as components: burnsAgent, burnsOther)
@@ -450,6 +514,10 @@ Description: "Flag indicating chemical/substance exposure."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains chemicalAgent 0..1
+* component[chemicalAgent].code.coding 1..1
+* component[chemicalAgent].code.coding.system = $SILPH (exactly)
+* component[chemicalAgent].code.coding.code = #chemical-agent
+* component[chemicalAgent].code.coding.display = "Chemical agent"
 * component[chemicalAgent].valueCodeableConcept 0..1 MS
 
 // (Consolidated into RSObsECChemical as component: chemicalAgent)
@@ -464,6 +532,10 @@ Description: "Flag indicating sharp object cause."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains sharpObjectSpecify 0..1
+* component[sharpObjectSpecify].code.coding 1..1
+* component[sharpObjectSpecify].code.coding.system = $SILPH (exactly)
+* component[sharpObjectSpecify].code.coding.code = #sharp-object-specify
+* component[sharpObjectSpecify].code.coding.display = "Sharp object (specify)"
 * component[sharpObjectSpecify].valueString 0..1 MS
 
 // (Consolidated into RSObsECSharpObject as component: sharpObjectSpecify)
@@ -482,8 +554,16 @@ Description: "Flag indicating drowning."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains drowningType 0..1 and drowningOther 0..1
+* component[drowningType].code.coding 1..1
+* component[drowningType].code.coding.system = $SILPH (exactly)
+* component[drowningType].code.coding.code = #drowning-type
+* component[drowningType].code.coding.display = "Drowning type/body of water"
 * component[drowningType].valueCodeableConcept 0..1 MS
 * component[drowningType].valueCodeableConcept from VSDrowningType (preferred)
+* component[drowningOther].code.coding 1..1
+* component[drowningOther].code.coding.system = $SILPH (exactly)
+* component[drowningOther].code.coding.code = #drowning-other
+* component[drowningOther].code.coding.display = "Drowning other (specify)"
 * component[drowningOther].valueString 0..1 MS
 
 // (Consolidated into RSObsECDrowning as components: drowningType, drowningOther)
@@ -505,6 +585,10 @@ Description: "Flag indicating fall."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains fallSpecifics 0..1
+* component[fallSpecifics].code.coding 1..1
+* component[fallSpecifics].code.coding.system = $SILPH (exactly)
+* component[fallSpecifics].code.coding.code = #fall-specifics
+* component[fallSpecifics].code.coding.display = "Fall specifics"
 * component[fallSpecifics].valueString 0..1 MS
 
 // (Consolidated into RSObsECFall as component: fallSpecifics)
@@ -519,6 +603,10 @@ Description: "Flag indicating firecracker-related cause."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains firecrackerType 0..1
+* component[firecrackerType].code.coding 1..1
+* component[firecrackerType].code.coding.system = $SILPH (exactly)
+* component[firecrackerType].code.coding.code = #firecracker-type
+* component[firecrackerType].code.coding.display = "Firecracker type"
 * component[firecrackerType].valueString 0..1 MS
 
 // (Consolidated into RSObsECFirecracker as component: firecrackerType)
@@ -533,6 +621,10 @@ Description: "Flag indicating gunshot."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains gunshotWeapon 0..1
+* component[gunshotWeapon].code.coding 1..1
+* component[gunshotWeapon].code.coding.system = $SILPH (exactly)
+* component[gunshotWeapon].code.coding.code = #gunshot-weapon
+* component[gunshotWeapon].code.coding.display = "Gunshot weapon"
 * component[gunshotWeapon].valueString 0..1 MS
 
 // (Consolidated into RSObsECGunshot as component: gunshotWeapon)
@@ -568,6 +660,10 @@ Description: "Flag indicating other external cause."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains otherSpecify 0..1
+* component[otherSpecify].code.coding 1..1
+* component[otherSpecify].code.coding.system = $SILPH (exactly)
+* component[otherSpecify].code.coding.code = #other-external-cause-specify
+* component[otherSpecify].code.coding.display = "Other external cause (specify)"
 * component[otherSpecify].valueString 0..1 MS
 
 // (Consolidated into RSObsECOther as component: otherSpecify)
