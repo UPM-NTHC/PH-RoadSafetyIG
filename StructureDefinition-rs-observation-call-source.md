@@ -16,7 +16,7 @@ Call source description (free text).
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-call-source)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-call-
   "name" : "RSObsCallSource",
   "title" : "Road Safety Observation - Call Source",
   "status" : "draft",
-  "date" : "2025-10-15T17:01:16+00:00",
+  "date" : "2025-10-15T17:40:06+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

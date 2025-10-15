@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
   "name" : "RSBundleEMS",
   "title" : "Road Safety Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-15T17:01:16+00:00",
+  "date" : "2025-10-15T17:40:06+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -325,7 +325,8 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis"
             ]
           }
         ]
@@ -350,187 +351,39 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
         ]
       },
       {
-        "id" : "Bundle.entry:observationInjuryDatetime",
+        "id" : "Bundle.entry:observationReportedComplaint",
         "path" : "Bundle.entry",
-        "sliceName" : "observationInjuryDatetime",
+        "sliceName" : "observationReportedComplaint",
         "min" : 0,
         "max" : "1"
       },
       {
-        "id" : "Bundle.entry:observationInjuryDatetime.resource",
+        "id" : "Bundle.entry:observationReportedComplaint.resource",
         "path" : "Bundle.entry.resource",
         "type" : [
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:observationInjuryIntent",
+        "id" : "Bundle.entry:observationCallSource",
         "path" : "Bundle.entry",
-        "sliceName" : "observationInjuryIntent",
+        "sliceName" : "observationCallSource",
         "min" : 0,
         "max" : "1"
       },
       {
-        "id" : "Bundle.entry:observationInjuryIntent.resource",
+        "id" : "Bundle.entry:observationCallSource.resource",
         "path" : "Bundle.entry.resource",
         "type" : [
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationTransportFlag",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationTransportFlag",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Bundle.entry:observationTransportFlag.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-flag"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationModeOfTransport",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationModeOfTransport",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Bundle.entry:observationModeOfTransport.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationTriage",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationTriage",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Bundle.entry:observationTriage.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-triage-priority"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationCollisionType",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationCollisionType",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Bundle.entry:observationCollisionType.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationVehicles",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationVehicles",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Bundle.entry:observationVehicles.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationInjuries",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationInjuries",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Bundle.entry:observationInjuries.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-closed",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-open",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationExternalCauses",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationExternalCauses",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Bundle.entry:observationExternalCauses.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-call-source"
             ]
           }
         ]

@@ -16,7 +16,7 @@ Triage category assigned at scene (e.g., Red/Yellow/Green/Black).
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* This Profile is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-triage-priority)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-triag
   "name" : "RSObsTriagePriority",
   "title" : "Road Safety Observation - Triage Priority",
   "status" : "draft",
-  "date" : "2025-10-15T17:01:16+00:00",
+  "date" : "2025-10-15T17:40:06+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -115,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-triag
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

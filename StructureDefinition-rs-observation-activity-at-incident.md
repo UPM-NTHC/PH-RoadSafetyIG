@@ -16,7 +16,7 @@ Activity of the patient at time of incident; allow text fallback.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-activity-at-incident)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "name" : "RSObsActivityAtIncident",
   "title" : "Road Safety Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-10-15T17:01:16+00:00",
+  "date" : "2025-10-15T17:40:06+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -115,10 +115,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
