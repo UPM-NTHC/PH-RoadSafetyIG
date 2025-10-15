@@ -55,13 +55,13 @@ Description: "A Condition for the Safety of the Roads in the Philippines."
 // ICD-10 Nature of Injury
 * code.coding[icd10NatureOfInjury] ^short = "ICD-10 Nature of Injury"
 * code.coding[icd10NatureOfInjury].system 1..1
-* code.coding[icd10NatureOfInjury].system = "http://hl7.org/fhir/sid/icd-10" (exactly)
+* code.coding[icd10NatureOfInjury].system = $SCT (exactly)
 * code.coding[icd10NatureOfInjury] from ICD10NatureOfInjury (extensible)
 
 // ICD-10 External Cause
 * code.coding[icd10ExternalCause] ^short = "ICD-10 External Cause of Injury"
 * code.coding[icd10ExternalCause].system 1..1
-* code.coding[icd10ExternalCause].system = "http://hl7.org/fhir/sid/icd-10" (exactly)
+* code.coding[icd10ExternalCause].system = $SCT (exactly)
 * code.coding[icd10ExternalCause] from ICD10ExternalCause (extensible)
 
 // Final Diagnosis
@@ -76,15 +76,9 @@ Description: "A Condition for the Safety of the Roads in the Philippines."
 * code.coding[longTermOutcome] ^short = "Long-term outcome of patient"
 * code.coding[longTermOutcome] ^definition = "A code that represents the long-term outcome or prognosis of a patient's condition, including any potential complications or sequelae that may arise as a result of the condition."
 
-* bodySite from SNOMEDCTBodyStructures (example)
-* bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* bodySite ^binding.extension.valueString = "BodySite"
 * subject 1..1 
 * onset[x] only dateTime or Age or Period or Range or string
 * abatement[x] only dateTime or Age or Period or Range or string
 * asserter ^definition = "Individual who is making the condition statement.\r\nInformation source."
 
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
-* stage.summary from http://hl7.org/fhir/ValueSet/condition-stage (extensible)
-* stage.type from http://hl7.org/fhir/ValueSet/condition-stage-type (extensible)
-* evidence.code from http://hl7.org/fhir/ValueSet/manifestation-or-symptom (extensible)
