@@ -9,10 +9,10 @@ Description: "Generic base Observation for road safety data; specialized concept
 * ^version = "1.0.0"
 * status 1..1 MS
 * subject 1..1 MS
-* subject only Reference(RS-Patient or PHCorePatient)
+* subject only Reference(RSPatient)
 * code 1..1 MS
 * encounter 0..1 MS
-* encounter only Reference(RS-Encounter or PHCoreEncounter)
+* encounter only Reference(RSEncounter)
 * effective[x] 0..1 MS
 * performer 0..*
 * value[x] 0..1
@@ -84,6 +84,7 @@ Id: RS-Observation-level-of-consciousness
 Title: "Road Safety Observation - Level of Consciousness (AVPU)"
 Description: "Level of consciousness (e.g., AVPU)."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VS-level-of-consciousness (preferred)
 * code.coding 1..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #67775-7
@@ -95,6 +96,7 @@ Id: RS-Observation-pupils
 Title: "Road Safety Observation - Pupils"
 Description: "Pupil size/reactivity summary."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VS-pupils (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #113147002
@@ -106,6 +108,7 @@ Id: RS-Observation-cyanosis
 Title: "Road Safety Observation - Cyanosis"
 Description: "Cyanosis assessment."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VS-cyanosis (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #3415004
@@ -369,9 +372,9 @@ Title: "Road Safety Observation - Reported Complaint"
 Description: "Free-text reported complaint."
 * valueString 1..1 MS
 * code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #8661-1
-* code.coding.display = "Chief complaint - Reported"
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #1269489004
+* code.coding.display = "Chief complaint (observable entity)"
 
 Profile: RSObsCallSource
 Parent: RS-Observation
@@ -380,9 +383,9 @@ Title: "Road Safety Observation - Call Source"
 Description: "Call source description (free text)."
 * valueString 1..1 MS
 * code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #48766-0
-* code.coding.display = "Information source"
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #397663001
+* code.coding.display = "Referral source (finding)"
 
 // ---------------- EXTERNAL CAUSES ----------------
 Profile: RSObsECBitesStings

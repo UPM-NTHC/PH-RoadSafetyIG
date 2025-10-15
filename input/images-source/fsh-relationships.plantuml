@@ -9,300 +9,413 @@ skinparam ArrowThickness 1
 hide empty methods
 left to right direction
 
-class "CauseOfRoadCrash" {
-  value[x] : CodeableConcept
-}
-class "EDAvailability" {
-  valueBoolean : — [1..1]
-}
-class "ExternalCauseDetailExt" {
-  value[x] : string
-}
-class "FirstAidGiven" {
-  value[x] : CodeableConcept
-}
-class "PartyAtFault" {
-  value[x] : CodeableConcept
-}
-class "RSPatientAge" {
-  value[x] : Age
-}
-class "PHCoreOccupation" {
-  value[x] : CodeableConcept
-}
-class "ReportFormReceived" {
-  value[x] : CodeableConcept
-}
-class "RoadNetworkShapeFile" {
-  value[x] : url
-}
-class "SafetyNotesExt" {
-  valueCodeableConcept : — [0..1]
-  valueString : — [0..1]
-}
-class "SuppliesUsed" {
-  valueCodeableConcept : — [0..1]
-  valueReference : Reference(PHCoreMedication)
-}
-class "PHCoreMedication"
-class "TrafficIncidentManagement" {
-  value[x] : string
-}
-class "TranspoCoordination" {
-  value[x] : CodeableConcept
-}
-class "TransportDetailsExt"
-class "VehicleUsed" {
-  valueCodeableConcept : — [1..1]
-}
-class "VehicleCondition" {
-  value[x] : CodeableConcept
-}
-class "VehicleList" {
-  value[x] : string
-}
-class "RSAllergyIntolerance" {
-  patient : — [1..1]
-  patient : Reference(RSPatient)
-  code : — [1..1]
-  clinicalStatus : — [1..1]
-  verificationStatus : — [1..1]
+class "RSEncounter" {
+  status : — [1..1]
+  class : — [1..1]
+  identifier : — [1..*]
+  period.start : — [1..1]
+  serviceProvider : — [0..1]
+  participant : — [0..*]
+  hospitalization.dischargeDisposition : — [0..1]
+  hospitalization.destination : — [0..1]
 }
 class "RSPatient" {
+  name : — [1..*]
+  name.family : — [0..1]
+  name.given : — [1..*]
+  birthDate : — [0..1]
+  telecom : — [0..*]
   identifier : — [0..*]
-  identifier[hospitalPatientID].type.coding : — [1..1]
-  extension : — [0..1]
-  address : — [0..1]
-  address[permanent] : PHCoreAddress
-  address[temporary] : PHCoreAddress
-  managingOrganization : — [1..1]
-  managingOrganization : Reference(PHCoreOrganization)
+  address : — [0..*]
+  address.line : — [0..*]
+  address.extension : — [0..*]
 }
-class "RSClaim" {
-  total : — [1..1]
+class "RSLocation" {
+  name : — [0..1]
+  address : — [0..1]
+  address.line : — [0..*]
+  address.extension : — [0..*]
+  position.longitude : — [1..1]
+  position.latitude : — [1..1]
 }
 class "RSCondition" {
-  clinicalStatus : — [1..1]
-  verificationStatus : — [1..1]
+  code : — [1..1]
   subject : — [1..1]
-  subject : Reference(RSPatient)
-  code.text : — [1..1]
-  code.coding[icd10NatureOfInjury].system : — [1..1]
-  code.coding[icd10ExternalCause].system : — [1..1]
+  encounter : — [0..1]
+  onset[x] : — [0..1]
+  abatement[x] : — [0..1]
+}
+class "RSMedicationStatement" {
+  medication[x] : — [1..1]
+  subject : — [1..1]
+  effective[x] : — [0..1]
+}
+class "RSAllergyIntolerance" {
+  code : — [0..1]
+  patient : — [1..1]
+  reaction : — [0..*]
 }
 class "RSDocumentReference" {
   status : — [1..1]
   type : — [0..1]
-  category : — [0..*]
-  subject : — [0..1]
-  date : — [0..1]
-  author : — [0..*]
-  custodian : — [0..1]
-  content : — [1..*]
-  category : — [1..1]
-  relatesTo : — [0..*]
-  relatesTo.code : — [1..1]
-  relatesTo.target : Reference(DocumentReference)
-  content : — [0..1]
-  content[roadNetworkFile].attachment : — [1..1]
-  content[roadNetworkFile].attachment.contentType : — [1..1]
-  content[roadNetworkFile].attachment.url : — [0..1]
-  content[roadNetworkFile].attachment.data : — [0..1]
-  content[roadNetworkFile].attachment.title : — [0..1]
-  content[causeOfCrashFile].attachment : — [1..1]
-  content[causeOfCrashFile].attachment.contentType : — [1..1]
-  content[causeOfCrashFile].attachment.url : — [0..1]
-  content[causeOfCrashFile].attachment.data : — [0..1]
-  content[causeOfCrashFile].attachment.title : — [0..1]
-  context.encounter : — [1..1]
+  context.encounter : — [0..1]
   context.encounter : Reference(RSEncounter)
+  content : — [1..*]
+  content.attachment.url : — [1..1]
+  content.format : — [0..1]
 }
-class "DocumentReference"
-class "RSEncounter" {
-  identifier : — [1..*]
-  identifier[hospitalCaseNo].value : — [1..1]
-  identifier[incidentNo].value : — [1..1]
-  class : — [1..1]
-  period : — [1..1]
-  period.start : — [1..1]
-  reasonCode : — [0..*]
-  hospitalization.dischargeDisposition : — [0..1]
-  hospitalization.destination : — [0..1]
-  hospitalization.destination : Reference(PHCoreOrganization)
-  serviceProvider : — [0..1]
-  serviceProvider : Reference(PHCoreOrganization)
-  participant[teamLeader].type : — [1..*]
-  participant[teamLeader].individual : — [1..1]
-  participant[teamLeader].individual : Reference(PHCorePractitioner)
-  participant[treatmentOfficer].type : — [1..*]
-  participant[treatmentOfficer].individual : — [1..1]
-  participant[treatmentOfficer].individual : Reference(PHCorePractitioner)
-  participant[transportOfficer].type : — [1..*]
-  participant[transportOfficer].individual : — [1..1]
-  participant[transportOfficer].individual : Reference(PHCorePractitioner)
-  participant[assistant].type : — [1..*]
-  participant[assistant].individual : — [1..1]
-  participant[assistant].individual : Reference(PHCorePractitioner)
-  participant[receivedBy].type : — [1..*]
-  participant[receivedBy].individual : — [1..1]
-  participant[receivedBy].individual : Reference(PHCorePractitioner)
-  location : — [1..*]
-  location : — [1..1]
-  location : — [0..*]
-  location[scene] : — [1..1]
-  location[scene].location : Reference(PHCoreLocation)
-  location[facility].location : — [1..1]
-  location[facility].location : Reference(PHCoreLocation)
-}
-class "PHCoreOrganization"
-class "PHCorePractitioner"
-class "PHCoreLocation"
-class "RSHealthcareService" {
-  name : — [1..1]
-  category : — [1..1]
-  location : — [1..1]
-  location : Reference(PHCoreLocation)
-  active : — [1..1]
-  extension : — [0..1]
-}
-class "RSMedicationStatement" {
-  status : — [1..1]
-  medicationCodeableConcept : — [1..1]
-  medicationCodeableConcept.text : — [1..1]
-  subject : — [1..1]
-  subject : Reference(RSPatient)
-  effective[x] : — [0..1]
-  dateAsserted : — [0..1]
-  dosage : — [0..*]
+class "RSClaim" {
+  total : — [0..1]
 }
 class "RSObservation" {
   status : — [1..1]
-  category : — [0..*]
-  code : — [1..1]
+  subject : — [1..1]
   subject : Reference(RSPatient)
+  code : — [1..1]
+  encounter : — [0..1]
   encounter : Reference(RSEncounter)
   effective[x] : — [0..1]
-  performer : Reference(PHCorePractitioner)
-  component : — [0..*]
-  component[DateTimeComponent].code : — [1..1]
-  component[DateTimeComponent].value[x] : — [1..1]
+  performer : — [0..*]
+  value[x] : — [0..1]
+}
+class "RSObsRespiratoryRate" {
+  valueQuantity : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsPulseRate" {
+  valueQuantity : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsBloodPressure" {
+  value[x] : — [0..0]
+  component : — [1..1]
+  component[systolic].code : — [1..1]
+  component[systolic].valueQuantity : — [1..1]
+  component[diastolic].code : — [1..1]
+  component[diastolic].valueQuantity : — [1..1]
+  code.coding : — [1..1]
+  component[systolic].code.coding : — [1..1]
+  component[diastolic].code.coding : — [1..1]
+}
+class "RSObsBodyTemperature" {
+  valueQuantity : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsLevelOfConsciousness" {
+  valueCodeableConcept : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsPupils" {
+  valueCodeableConcept : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsCyanosis" {
+  valueCodeableConcept : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsGCS" {
+  valueInteger : — [0..1]
   component : — [0..1]
-  component[SystolicBP].valueQuantity : — [0..1]
-  component[DiastolicBP].valueQuantity : — [0..1]
-  component[HeartRate].valueQuantity : — [0..1]
-  component[RespiratoryRate].valueQuantity : — [0..1]
-  component[Temperature].valueQuantity : — [0..1]
-  component[RespiratoryRhythm].valueCodeableConcept : — [0..1]
-  component[BreathSounds].valueCodeableConcept : — [0..1]
-  component[PulseRhythm].valueCodeableConcept : — [0..1]
-  component[PulseQuality].valueCodeableConcept : — [0..1]
-  component[Pupils].code : — [1..1]
-  component[Pupils].valueCodeableConcept : — [0..1]
-  component[Cyanosis].code : — [1..1]
-  component[Cyanosis].valueCodeableConcept : — [0..1]
-  component[GCS_Eyes].valueCodeableConcept : — [0..1]
-  component[GCS_Verbal].valueCodeableConcept : — [0..1]
-  component[GCS_Motor].valueCodeableConcept : — [0..1]
-  component[GCS_Total].valueInteger : — [0..1]
-  component[AVPU].valueCodeableConcept : — [0..1]
+  component[gcsEyes].code : — [1..1]
+  component[gcsEyes].valueCodeableConcept : — [0..1]
+  component[gcsVerbal].code : — [1..1]
+  component[gcsVerbal].valueCodeableConcept : — [0..1]
+  component[gcsMotor].code : — [1..1]
+  component[gcsMotor].valueCodeableConcept : — [0..1]
+  code.coding : — [1..1]
+  component[gcsEyes].code.coding : — [1..1]
+  component[gcsVerbal].code.coding : — [1..1]
+  component[gcsMotor].code.coding : — [1..1]
+}
+class "RSObsDateReceived" {
+  valueDateTime : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsTimeEnroute" {
+  valueDateTime : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsTimeOnScene" {
+  valueDateTime : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsTimeDepartedScene" {
+  valueDateTime : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsTimeHospitalArrival" {
+  valueDateTime : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsTimeStationArrival" {
+  valueDateTime : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsInjuryDateTime" {
+  valueDateTime : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsInjuryIntent" {
+  valueCodeableConcept : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsTransportVehicularFlag" {
+  valueBoolean : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsModeOfTransport" {
+  valueCodeableConcept : — [1..1]
+  valueCodeableConcept.text : — [0..1]
+  code.coding : — [1..1]
+}
+class "RSObsTriagePriority" {
+  valueCodeableConcept : — [1..1]
+}
+class "RSObsUrgencyLevel" {
+  valueCodeableConcept : — [1..1]
+}
+class "RSObsPlaceOfOccurrence" {
+  valueCodeableConcept : — [1..1]
+  note : — [0..*]
+}
+class "RSObsActivityAtIncident" {
+  valueCodeableConcept : — [1..1]
+  valueCodeableConcept.text : — [0..1]
+}
+class "RSObsCollisionVsNonCollision" {
+  valueCodeableConcept : — [1..1]
+}
+class "RSObsPatientsVehicle" {
+  valueCodeableConcept : — [1..1]
+  valueCodeableConcept.text : — [0..1]
+}
+class "RSObsOtherVehicleInvolved" {
+  valueCodeableConcept : — [1..1]
+  valueCodeableConcept.text : — [0..1]
+}
+class "RSObsPositionOfPatient" {
+  valueCodeableConcept : — [1..1]
+  valueCodeableConcept.text : — [0..1]
+}
+class "RSObsHowManyVehicles" {
+  valueInteger : — [1..1]
+}
+class "RSObsHowManyPatients" {
+  valueInteger : — [1..1]
+}
+class "RSObsCollisionType" {
+  valueCodeableConcept : — [1..1]
+}
+class "RSObsPresenceTrafficInvestigator" {
+  valueBoolean : — [1..1]
+}
+class "RSObsOtherRiskFactors" {
+  valueCodeableConcept : — [1..1]
+  valueCodeableConcept.text : — [0..1]
+}
+class "RSObsSafetyAccessories" {
+  valueCodeableConcept : — [1..1]
+  valueCodeableConcept.text : — [0..1]
+}
+class "RSObsReportedComplaint" {
+  valueString : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsCallSource" {
+  valueString : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsECBitesStings" {
+  valueBoolean : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsECBitesStingsAgent" {
+  valueCodeableConcept : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsECBurns" {
+  valueBoolean : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsECBurnsAgent" {
+  valueCodeableConcept : — [1..1]
+}
+class "RSObsECBurnsOther" {
+  valueString : — [1..1]
+}
+class "RSObsECChemical" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECChemicalAgent" {
+  valueCodeableConcept : — [1..1]
+}
+class "RSObsECSharpObject" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECSharpObjectSpecify" {
+  valueString : — [1..1]
+}
+class "RSObsECDrowning" {
+  valueBoolean : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsECDrowningType" {
+  valueCodeableConcept : — [1..1]
+}
+class "RSObsECDrowningOther" {
+  valueString : — [1..1]
+}
+class "RSObsECForcesOfNature" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECFall" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECFallSpecifics" {
+  valueString : — [1..1]
+}
+class "RSObsECFirecracker" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECFirecrackerType" {
+  valueString : — [1..1]
+}
+class "RSObsECGunshot" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECGunshotWeapon" {
+  valueString : — [1..1]
+}
+class "RSObsECHangingStrangulation" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECMaulingAssault" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECSexualAssault" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECOther" {
+  valueBoolean : — [1..1]
+}
+class "RSObsECOtherSpecify" {
+  valueString : — [1..1]
+}
+class "RSObsMultipleInjuries" {
+  valueBoolean : — [1..1]
+  code.coding : — [1..1]
+}
+class "RSObsAbrasion" {
+  valueBoolean : — [1..1]
   bodySite : — [0..1]
   note : — [0..*]
-  component[ExternalCause].code : — [1..1]
-  component[ExternalCause].value[x] : — [0..1]
-  component[InjuryIntent].code : — [1..1]
-  component[InjuryIntent].valueCodeableConcept : — [0..1]
-  component[DrowningWaterBody].code : — [1..1]
-  component[DrowningWaterBody].valueCodeableConcept : — [0..1]
-  component[Outcome].code : — [1..1]
-  component[ConditionOfPatient].code : — [1..1]
-  component[StatusOnArrival].code : — [1..1]
-  component[TriagePriority].code : — [1..1]
-  component[CollisionType].code : — [1..1]
-  component[PlaceOfOccurrence].code : — [1..1]
-  component[ActivityAtIncident].code : — [1..1]
-  component[TransportVehicularAccidentFlag].code : — [1..1]
-  component[TransportVehicularAccidentFlag].valueBoolean : — [0..1]
-  component[InjuryDateTime].code : — [1..1]
-  component[InjuryDateTime].valueDateTime : — [0..1]
-  component[PresenceOfTrafficInvestigator].code : — [1..1]
-  component[PresenceOfTrafficInvestigator].valueBoolean : — [0..1]
-  component[UrgencyLevel].code : — [1..1]
-  component[UrgencyLevel].valueCodeableConcept : — [0..1]
-  component[CallSource].code : — [1..1]
-  component[CallSource].valueString : — [0..1]
-  component[ReportedComplaint].code : — [1..1]
-  component[ReportedComplaint].valueString : — [0..1]
-  component[MultipleInjuriesFlag].code : — [1..1]
-  component[MultipleInjuriesFlag].valueBoolean : — [0..1]
-  component[ExtentOfInjury].code : — [1..1]
-  component[ExtentOfInjury].valueCodeableConcept : — [0..1]
-  component[CollisionMode].code : — [1..1]
-  component[CollisionMode].valueCodeableConcept : — [0..1]
-  component[PatientsVehicleType].code : — [1..1]
-  component[PatientsVehicleType].valueCodeableConcept : — [0..1]
-  component[OtherVehicleObjectType].code : — [1..1]
-  component[OtherVehicleObjectType].valueCodeableConcept : — [0..1]
-  component[PositionOfPatient].code : — [1..1]
-  component[PositionOfPatient].valueCodeableConcept : — [0..1]
-  component[SafetyAccessories].code : — [1..1]
-  component[SafetyAccessories].valueCodeableConcept : — [0..1]
-  component[OtherRiskFactors].code : — [1..1]
-  component[OtherRiskFactors].valueCodeableConcept : — [0..1]
-  component[BloodAlcoholConcentration].code : — [1..1]
-  component[BloodAlcoholConcentration].valueQuantity : — [0..1]
+  code.coding : — [1..1]
+}
+class "RSObsAvulsion" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsBurn1stDegree" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsBurn2ndDegree" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsBurn3rdDegree" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsBurn4thDegree" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsConcussion" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsContusion" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsFractureClosed" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsFractureOpen" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsOpenWound" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsTraumaticAmputation" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
+}
+class "RSObsOtherInjury" {
+  valueBoolean : — [1..1]
+  bodySite : — [0..1]
+  note : — [0..*]
+  code.coding : — [1..1]
 }
 class "RSProcedure" {
+  status : — [1..1]
+  code : — [0..1]
+  subject : — [1..1]
   subject : Reference(RSPatient)
+  encounter : — [0..1]
+  encounter : Reference(RSEncounter)
   performer : — [0..*]
   performer.actor : Reference(PHCorePractitioner)
-  reasonCode : — [0..*]
-  bodySite : — [0..*]
-  outcome : — [0..1]
   note : — [0..*]
 }
-class "RSQuestionnaire" {
-  status : — [1..1]
-  name : — [1..1]
-  title : — [1..1]
-  item : — [1..1]
-}
+class "PHCorePractitioner"
 class "RSServiceRequest" {
-  encounter : — [1..1]
-  supportingInfo : — [0..1]
-  supportingInfo[hospital] : Reference(PHCoreOrganization)
-  supportingInfo[physician] : Reference(PHCorePractitioner)
-  occurrenceDateTime : — [1..1]
-}
-class "RSTask" {
   status : — [1..1]
-  executionPeriod : — [0..1]
-  note : — [0..*]
-  note.text : — [1..1]
+  occurrenceDateTime : — [0..1]
+  supportingInfo : — [0..*]
+  supportingInfo : Reference(PHCoreOrganization | PHCorePractitioner)
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  encounter : — [0..1]
+  encounter : Reference(RSEncounter)
 }
+class "PHCoreOrganization"
 
-"SuppliesUsed" --> "PHCoreMedication" : valueReference
-"RSAllergyIntolerance" --> "RSPatient" : patient
-"RSCondition" --> "RSPatient" : subject
-"RSDocumentReference" --> "DocumentReference" : relatesTo.target
 "RSDocumentReference" --> "RSEncounter" : context.encounter
-"RSEncounter" --> "PHCoreOrganization" : hospitalization.destination
-"RSEncounter" --> "PHCoreOrganization" : serviceProvider
-"RSEncounter" --> "PHCorePractitioner" : participant[teamLeader].individual
-"RSEncounter" --> "PHCorePractitioner" : participant[treatmentOfficer].individual
-"RSEncounter" --> "PHCorePractitioner" : participant[transportOfficer].individual
-"RSEncounter" --> "PHCorePractitioner" : participant[assistant].individual
-"RSEncounter" --> "PHCorePractitioner" : participant[receivedBy].individual
-"RSEncounter" --> "PHCoreLocation" : location[scene].location
-"RSEncounter" --> "PHCoreLocation" : location[facility].location
-"RSHealthcareService" --> "PHCoreLocation" : location
-"RSMedicationStatement" --> "RSPatient" : subject
 "RSObservation" --> "RSPatient" : subject
 "RSObservation" --> "RSEncounter" : encounter
-"RSObservation" --> "PHCorePractitioner" : performer
-"RSPatient" --> "PHCoreOrganization" : managingOrganization
 "RSProcedure" --> "RSPatient" : subject
+"RSProcedure" --> "RSEncounter" : encounter
 "RSProcedure" --> "PHCorePractitioner" : performer.actor
-"RSServiceRequest" --> "PHCoreOrganization" : supportingInfo[hospital]
-"RSServiceRequest" --> "PHCorePractitioner" : supportingInfo[physician]
+"RSServiceRequest" --> "PHCoreOrganization" : supportingInfo
+"RSServiceRequest" --> "PHCorePractitioner" : supportingInfo
+"RSServiceRequest" --> "RSPatient" : subject
+"RSServiceRequest" --> "RSEncounter" : encounter
 
 @enduml
