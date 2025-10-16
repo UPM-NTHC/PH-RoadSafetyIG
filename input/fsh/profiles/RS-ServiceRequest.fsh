@@ -4,9 +4,6 @@ Id: rs-service-request
 Title: "Road Safety ServiceRequest"
 Description: "Requests or records related to refusal to admit and related workflow signals."
 * ^version = "1.0.0"
-* ^short = "Service request for refusal/workflow"
-* ^definition = "ServiceRequest used to represent workflow signals such as refusal to admit and related supporting information."
-* ^comment = "Used to capture requests or records associated with refusal to admit and supporting workflow data."
 * status 1..1 MS
 * occurrenceDateTime 0..1 MS
 * supportingInfo 0..* MS

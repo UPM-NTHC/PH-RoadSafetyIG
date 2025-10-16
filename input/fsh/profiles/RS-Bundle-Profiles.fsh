@@ -251,7 +251,7 @@ Description: "Composition that organises a Post‑Crash submission. Sections ref
 * subject 1..1 MS
 * subject only Reference(RSPatient)
 * date 1..1 MS
-* author 0..* MS
+* author 1..* MS
 * section 1..* MS
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
