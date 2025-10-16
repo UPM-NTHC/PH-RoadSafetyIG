@@ -1,17 +1,71 @@
+//---------
+// Run Report Bundle
+//---------
+
+Profile: RSCompositionEMS
+Parent: Composition
+Id: rs-composition-ems
+Title: "Road Safety Composition — EMS Submission"
+Description: "Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."
+* ^version = "1.0.0"
+* status 1..1 MS
+* subject 1..1 MS
+* subject only Reference(RSPatient)
+* date 1..1 MS
+* author 1..1 MS
+* section 1..* MS
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.rules = #open
+* section contains
+    workflow 0..1 and
+    incident 0..1 and
+    vitals 0..* and
+    clinical 0..1 and
+    documents 0..* and
+    procedures 0..*
+* section[workflow].title = "Workflow / Timeline"
+* section[workflow].entry 1..* MS
+* section[workflow].entry only Reference(rs-observation-date-received or rs-observation-time-enroute
+    or rs-observation-time-on-scene or rs-observation-time-departed or rs-observation-time-hospital-arrival
+    or rs-observation-time-station-arrival or rs-observation-runreport-comments)
+* section[incident].title = "Incident"
+* section[incident].entry 0..* 
+* section[incident].entry only Reference(rs-observation-injury-datetime or rs-observation-injury-intent 
+    or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport 
+    or rs-observation-place-of-occurrence or RSLocation)
+* section[vitals].title = "Vital signs"
+* section[vitals].entry 0..* 
+* section[vitals].entry only Reference(rs-observation-respiratory-rate or rs-observation-pulse-rate 
+    or rs-observation-blood-pressure or rs-observation-body-temperature or rs-observation-gcs 
+    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm 
+    or rs-observation-pulse-quality or rs-observation-cyanosis)
+* section[clinical].title = "Clinical / Assessment"
+* section[clinical].entry 0..* 
+* section[clinical].entry only Reference(rs-observation-gcs or rs-observation-reported-complaint 
+    or rs-observation-extent-of-injury or RSProcedure or RSCondition)
+* section[documents].title = "Documents / Evidence"
+* section[documents].entry 0..* 
+* section[documents].entry only Reference(RSDocumentReference)
+* section[procedures].title = "Procedures and Workflow Items"
+* section[procedures].entry 0..* 
+* section[procedures].entry only Reference(RSProcedure or RSServiceRequest or RSTask)
+
 Profile: RSBundleEMS
 Parent: Bundle
 Id: rs-bundle-ems
 Title: "Road Safety Bundle — EMS Submission"
-Description: "Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items."
+Description: "Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."
 * ^version = "1.0.0"
 * type 1..1
-* type = #collection (exactly)
+* type = #document (exactly)
 * entry 1..*
 * entry.resource 1..1
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
+    composition 1..1 and
     patient 1..1 and
     encounter 1..1 and
     location 0..1 and
@@ -31,6 +85,7 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
     serviceRequest 0..* and
     procedure 0..* and
     claim 0..1
+* entry[composition].resource only RSCompositionEMS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
 * entry[location].resource only RSLocation
@@ -40,8 +95,10 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
 * entry[observationTimeDeparted].resource only rs-observation-time-departed
 * entry[observationTimeHospitalArrival].resource only rs-observation-time-hospital-arrival
 * entry[observationTimeStationArrival].resource only rs-observation-time-station-arrival
-* entry[observationVitals].resource only rs-observation-respiratory-rate or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature
-    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm or rs-observation-pulse-quality or rs-observation-cyanosis
+* entry[observationVitals].resource only rs-observation-respiratory-rate 
+    or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature
+    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm
+    or rs-observation-pulse-quality or rs-observation-cyanosis
 * entry[observationGCS].resource only rs-observation-gcs
 * entry[observationReportedComplaint].resource only rs-observation-reported-complaint
 * entry[observationCallSource].resource only rs-observation-call-source
@@ -59,20 +116,76 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
 * entry[procedure].resource only RSProcedure
 * entry[claim].resource only rs-claim
 
+
+
+//---------
+// ONEISS Bundle
+//---------
+
+Profile: RSCompositionONEISS
+Parent: Composition
+Id: rs-composition-oneiss
+Title: "Road Safety Composition — ONEISS Submission"
+Description: "Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."
+* ^version = "1.0.0"
+* status 1..1 MS
+* subject 1..1 MS
+* subject only Reference(RSPatient)
+* date 1..1 MS
+* author 1..1 MS
+* section 1..* MS
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.rules = #open
+* section contains
+    patient 0..1 and
+    encounter 0..1 and
+    clinical 0..1 and
+    incident 0..1 and
+    documents 0..*
+* section[patient].title = "Patient"
+* section[patient].entry 1..1 MS
+* section[patient].entry only Reference(RSPatient)
+* section[encounter].title = "Encounter"
+* section[encounter].entry 1..1 MS
+* section[encounter].entry only Reference(RSEncounter)
+* section[clinical].title = "Clinical"
+* section[clinical].entry 0..* 
+* section[clinical].entry only Reference(RSCondition 
+    or rs-observation-blood-alcohol 
+    or rs-observation-other-risk-factors 
+    or rs-observation-condition-of-patient 
+    or rs-observation-outcome-release
+    or rs-observation-outcome-discharge
+    or rs-observation-status-on-arrival
+    )
+* section[incident].title = "Incident"
+* section[incident].entry 0..* 
+* section[incident].entry only Reference(rs-observation-injury-datetime 
+    or rs-observation-injury-intent
+    or rs-observation-transport-vehicular-flag
+    or rs-observation-mode-of-transport
+    or rs-observation-collision-vs-noncollision
+    or RSLocation)
+* section[documents].title = "Documents / Evidence"
+* section[documents].entry 0..* 
+* section[documents].entry only Reference(RSDocumentReference)
+
 Profile: RSBundleONEISS
 Parent: Bundle
 Id: rs-bundle-oneiss
 Title: "Road Safety Bundle — ONEISS Submission"
-Description: "Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents."
+Description: "Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."
 * ^version = "1.0.0"
 * type 1..1
-* type = #collection (exactly)
+* type = #document (exactly)
 * entry 1..*
 * entry.resource 1..1
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
+    composition 1..1 and
     patient 1..1 and
     encounter 1..1 and
     conditionInitial 0..1 and
@@ -86,19 +199,35 @@ Description: "Bundle for Facility ONEISS submission containing patient, encounte
     document 0..* and
     serviceRequest 0..* and
     procedure 0..*
+* entry[composition].resource only RSCompositionONEISS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
 * entry[conditionInitial].resource only rs-condition
 * entry[conditionFinal].resource only rs-condition
-* entry[observationVitals].resource only rs-observation-respiratory-rate or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature or rs-observation-gcs
-    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm or rs-observation-pulse-quality or rs-observation-cyanosis
-* entry[observationClinical].resource only rs-observation-other-risk-factors or rs-observation-condition-of-patient or rs-observation-outcome-release or rs-observation-outcome-discharge or rs-observation-status-on-arrival or rs-observation-status-on-arrival-alive or rs-observation-blood-alcohol
-* entry[observationIncident].resource only rs-observation-injury-datetime or rs-observation-injury-intent or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport or rs-observation-collision-type or rs-observation-collision-vs-noncollision or rs-observation-patients-vehicle or rs-observation-other-vehicle or rs-observation-position-of-patient or rs-observation-how-many-vehicles or rs-observation-how-many-patients or rs-observation-place-of-occurrence or rs-observation-activity-at-incident
+* entry[observationVitals].resource only rs-observation-respiratory-rate 
+    or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature 
+    or rs-observation-gcs or rs-observation-respiratory-rhythm or rs-observation-breath-sounds
+    or rs-observation-pulse-rhythm or rs-observation-pulse-quality or rs-observation-cyanosis
+* entry[observationClinical].resource only rs-observation-other-risk-factors 
+    or rs-observation-condition-of-patient or rs-observation-outcome-release 
+    or rs-observation-outcome-discharge or rs-observation-status-on-arrival 
+    or rs-observation-status-on-arrival-alive or rs-observation-blood-alcohol
+* entry[observationIncident].resource only rs-observation-injury-datetime 
+    or rs-observation-injury-intent or rs-observation-transport-vehicular-flag 
+    or rs-observation-mode-of-transport or rs-observation-collision-type 
+    or rs-observation-collision-vs-noncollision or rs-observation-patients-vehicle 
+    or rs-observation-other-vehicle or rs-observation-position-of-patient 
+    or rs-observation-how-many-vehicles or rs-observation-how-many-patients 
+    or rs-observation-place-of-occurrence or rs-observation-activity-at-incident
 * entry contains observationPostCrash 0..*
-* entry[observationPostCrash].resource only rs-observation-traffic-investigator or rs-observation-other-risk-factors or rs-observation-safety-accessories or rs-observation-vehicle-condition or rs-observation-cctv-available
+* entry[observationPostCrash].resource only rs-observation-traffic-investigator 
+    or rs-observation-other-risk-factors or rs-observation-safety-accessories 
+    or rs-observation-vehicle-condition or rs-observation-cctv-available
 * entry[observationExtentOfInjury].resource only rs-observation-extent-of-injury
 * entry[observationTransferredFromFacility].resource only rs-observation-transferred-from-facility
 * entry[observationReferredByFacility].resource only rs-observation-referred-by-facility
 * entry[document].resource only RSDocumentReference
 * entry[serviceRequest].resource only RSServiceRequest
 * entry[procedure].resource only RSProcedure
+
+
