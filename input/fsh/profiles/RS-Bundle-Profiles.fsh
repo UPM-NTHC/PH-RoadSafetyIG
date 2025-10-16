@@ -33,7 +33,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(rs-observation-injury-datetime or rs-observation-injury-intent 
     or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport 
-    or rs-observation-place-of-occurrence or RSLocation)
+    or RSLocation)
 * section[vitals].title = "Vital signs"
 * section[vitals].entry 0..* 
 * section[vitals].entry only Reference(rs-observation-respiratory-rate or rs-observation-pulse-rate 
@@ -43,7 +43,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 * section[clinical].title = "Clinical / Assessment"
 * section[clinical].entry 0..* 
 * section[clinical].entry only Reference(rs-observation-gcs or rs-observation-reported-complaint 
-    or rs-observation-extent-of-injury or RSProcedure or RSCondition)
+    or RSProcedure or RSCondition)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
 * section[documents].entry only Reference(RSDocumentReference)
@@ -78,7 +78,6 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
     observationVitals 0..* and
     observationGCS 0..1 and
     observationReportedComplaint 0..1 and
-    observationExtentOfInjury 0..1 and
     observationCallSource 0..1 and
     document 0..* and
     task 0..* and
@@ -102,7 +101,6 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[observationGCS].resource only rs-observation-gcs
 * entry[observationReportedComplaint].resource only rs-observation-reported-complaint
 * entry[observationCallSource].resource only rs-observation-call-source
-* entry[observationExtentOfInjury].resource only rs-observation-extent-of-injury
 * entry contains
     observationVehicleUsed 0..1 and
     observationRunReportComments 0..1 and
@@ -166,6 +164,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or rs-observation-transport-vehicular-flag
     or rs-observation-mode-of-transport
     or rs-observation-collision-vs-noncollision
+    or rs-observation-safety-accessories
     or RSLocation)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
@@ -190,10 +189,11 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     encounter 1..1 and
     conditionInitial 0..1 and
     conditionFinal 0..1 and
-    observationVitals 0..* and
+    observationInjuries 0..* and
     observationExtentOfInjury 0..1 and
     observationClinical 0..* and
     observationIncident 0..* and
+    observationExternalCause 0..* and
     observationTransferredFromFacility 0..1 and
     observationReferredByFacility 0..1 and
     document 0..* and
@@ -204,30 +204,100 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * entry[encounter].resource only RSEncounter
 * entry[conditionInitial].resource only rs-condition
 * entry[conditionFinal].resource only rs-condition
-* entry[observationVitals].resource only rs-observation-respiratory-rate 
-    or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature 
-    or rs-observation-gcs or rs-observation-respiratory-rhythm or rs-observation-breath-sounds
-    or rs-observation-pulse-rhythm or rs-observation-pulse-quality or rs-observation-cyanosis
 * entry[observationClinical].resource only rs-observation-other-risk-factors 
     or rs-observation-condition-of-patient or rs-observation-outcome-release 
     or rs-observation-outcome-discharge or rs-observation-status-on-arrival 
     or rs-observation-status-on-arrival-alive or rs-observation-blood-alcohol
 * entry[observationIncident].resource only rs-observation-injury-datetime 
     or rs-observation-injury-intent or rs-observation-transport-vehicular-flag 
-    or rs-observation-mode-of-transport or rs-observation-collision-type 
+    or rs-observation-mode-of-transport 
     or rs-observation-collision-vs-noncollision or rs-observation-patients-vehicle 
     or rs-observation-other-vehicle or rs-observation-position-of-patient 
     or rs-observation-how-many-vehicles or rs-observation-how-many-patients 
     or rs-observation-place-of-occurrence or rs-observation-activity-at-incident
-* entry contains observationPostCrash 0..*
-* entry[observationPostCrash].resource only rs-observation-traffic-investigator 
-    or rs-observation-other-risk-factors or rs-observation-safety-accessories 
-    or rs-observation-vehicle-condition or rs-observation-cctv-available
+    or rs-observation-safety-accessories
+    or rs-observation-triage-priority or rs-observation-urgency
+* entry[observationExternalCause].resource only rs-observation-ec-bites-stings
+    or rs-observation-ec-burns or rs-observation-ec-chemical or rs-observation-ec-sharp-object
+    or rs-observation-ec-drowning or rs-observation-ec-forces-of-nature or rs-observation-ec-fall
+    or rs-observation-ec-firecracker or rs-observation-ec-gunshot or rs-observation-ec-hanging-strangulation
+    or rs-observation-ec-mauling-assault or rs-observation-ec-sexual-assault or rs-observation-ec-other
+* entry[observationInjuries].resource only rs-observation-multiple-injuries
+    or rs-observation-abrasion or rs-observation-avulsion
+    or rs-observation-burn-1st or rs-observation-burn-2nd or rs-observation-burn-3rd or rs-observation-burn-4th
+    or rs-observation-concussion or rs-observation-contusion
+    or rs-observation-fracture-closed or rs-observation-fracture-open
+    or rs-observation-open-wound or rs-observation-traumatic-amputation or rs-observation-other-injury
+// Post-crash concepts have been moved to a separate bundle (see RSBundlePostCrash)
 * entry[observationExtentOfInjury].resource only rs-observation-extent-of-injury
 * entry[observationTransferredFromFacility].resource only rs-observation-transferred-from-facility
 * entry[observationReferredByFacility].resource only rs-observation-referred-by-facility
 * entry[document].resource only RSDocumentReference
 * entry[serviceRequest].resource only RSServiceRequest
 * entry[procedure].resource only RSProcedure
+
+
+//---------
+// POST‑CRASH Bundle (separate submission)
+//---------
+
+Profile: RSCompositionPostCrash
+Parent: Composition
+Id: rs-composition-postcrash
+Title: "Road Safety Composition — Post‑Crash Investigation"
+Description: "Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents)."
+* ^version = "1.0.0"
+* status 1..1 MS
+* subject 1..1 MS
+* subject only Reference(RSPatient)
+* date 1..1 MS
+* author 0..* MS
+* section 1..* MS
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.rules = #open
+* section contains
+    patient 0..1 and
+    incident 0..1 and
+    documents 0..*
+* section[patient].title = "Patient"
+* section[patient].entry 1..1 MS
+* section[patient].entry only Reference(RSPatient)
+* section[incident].title = "Post‑Crash Incident"
+* section[incident].entry 0..* 
+* section[incident].entry only Reference(
+    rs-observation-collision-type or rs-observation-traffic-investigator 
+    or rs-observation-vehicle-condition or rs-observation-cctv-available)
+* section[documents].title = "Evidence / Documents"
+* section[documents].entry 0..*
+* section[documents].entry only Reference(RSDocumentReference)
+
+Profile: RSBundlePostCrash
+Parent: Bundle
+Id: rs-bundle-postcrash
+Title: "Road Safety Bundle — Post‑Crash Investigation"
+Description: "Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences."
+* ^version = "1.0.0"
+* type 1..1
+* type = #document (exactly)
+* entry 1..*
+* entry.resource 1..1
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry contains
+    composition 1..1 and
+    patient 1..1 and
+    encounter 0..1 and
+    observationPostCrash 0..* and
+    document 0..*
+* entry[composition].resource only RSCompositionPostCrash
+* entry[patient].resource only RSPatient
+* entry[encounter].resource only RSEncounter
+* entry[observationPostCrash].resource only rs-observation-collision-type 
+    or rs-observation-traffic-investigator 
+    or rs-observation-vehicle-condition 
+    or rs-observation-cctv-available
+* entry[document].resource only RSDocumentReference
 
 

@@ -4,6 +4,9 @@ Id: rs-organization
 Title: "Road Safety Organization"
 Description: "Organization profile for EMS providers and receiving facilities involved in road safety encounters."
 * ^version = "1.0.0"
+* ^short = "Organization for road safety"
+* ^definition = "Organization representing EMS providers and receiving facilities participating in road safety encounters."
+* ^comment = "Used for organizational identity and contact information in road safety workflows."
 * active 0..1 MS
 * type 0..* MS
 * name 1..1 MS
@@ -17,6 +20,9 @@ Id: rs-healthcare-service
 Title: "Road Safety HealthcareService"
 Description: "Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units)."
 * ^version = "1.0.0"
+* ^short = "Healthcare service"
+* ^definition = "A service offered by an organization, such as an EMS base or receiving facility unit."
+* ^comment = "Used to represent services provided by organizations in road safety contexts."
 * active 0..1 MS
 * type 0..* MS
 * name 0..1 MS

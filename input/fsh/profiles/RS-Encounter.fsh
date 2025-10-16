@@ -4,17 +4,38 @@ Id: rs-encounter
 Title: "Road Safety Encounter"
 Description: "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer."
 * ^version = "1.0.0"
+* ^short = "Encounter for road safety reporting"
+* ^definition = "Encounter representing an EMS run report or facility submission context, including identifiers, timing, participants, disposition and transfers."
+* ^comment = "Used to record encounter-level context for road safety events."
 * status 1..1 MS
+* status ^short = "Encounter status"
 * class 1..1 MS
+* class ^short = "Encounter class/type"
 * identifier 1..* MS
+* identifier ^short = "Encounter identifiers"
 * subject 1..1 MS
+* subject ^short = "Patient subject"
+* subject ^comment = "Reference constrained to the Road Safety Patient profile (`RSPatient`)."
 * subject only Reference(RSPatient)
 * period.start 1..1 MS
+* period.start ^short = "Encounter start"
 * serviceProvider 0..1 MS
+* serviceProvider ^short = "Service provider"
 * serviceProvider only Reference(RSOrganization)
 * participant 0..* MS
 * hospitalization.dischargeDisposition 0..1 MS
 * hospitalization.destination 0..1 MS
+
+/* Incident and Service Locations (Encounter.location slicing) */
+* location ^slicing.discriminator.type = #profile
+* location ^slicing.discriminator.path = "location"
+* location ^slicing.rules = #open
+* location ^slicing.ordered = true
+* location contains accidentSite 0..1 and serviceSite 0..*
+* location[accidentSite].location 1..1 MS
+* location[accidentSite].location only Reference(rs-location-incident)
+* location[serviceSite].location 1..1 MS
+* location[serviceSite].location only Reference(rs-location-service)
 
 /* Identifier slices for ONEISS */
 * identifier ^slicing.discriminator.type = #pattern
