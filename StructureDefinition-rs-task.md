@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-task.csv), [Excel
   "name" : "RSTask",
   "title" : "Road Safety Task",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

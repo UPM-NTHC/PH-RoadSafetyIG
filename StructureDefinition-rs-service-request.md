@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
   "name" : "RSServiceRequest",
   "title" : "Road Safety ServiceRequest",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -218,9 +218,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization",
-              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-organization",
               "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
             ]
           }

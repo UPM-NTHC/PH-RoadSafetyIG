@@ -47,7 +47,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Claim.use","Claim.use","","","",1,1,"","","Y","code {[]} {[]}
 ","claim | preauthorization | predetermination","A code to indicate whether the nature of the request is: to request adjudication of products and services previously rendered; or requesting authorization and adjudication for provision in the future; or requesting the non-binding adjudication of the listed products and services which could be provided in the future.","","This element is required to understand the nature of the request for adjudication.","","","","","","","",,"required","The purpose of the Claim: predetermination, preauthorization, claim.","http://hl7.org/fhir/ValueSet/claim-use|4.0.1","",,,,"Claim.use",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class"
-"Claim.patient","Claim.patient","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient]]}
+"Claim.patient","Claim.patient","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient]]}
 ","The recipient of the products and services","The party to whom the professional services and/or products have been supplied or are being considered and for whom actual or forecast reimbursement is sought.","","The patient must be supplied to the insurer so that confirmation of coverage and service history may be considered as part of the authorization and/or adjudiction.","","","","","","","",,,,,"",,,,"Claim.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
 "Claim.billablePeriod","Claim.billablePeriod","","","",0,1,"","","Y","Period {[]} {[]}
@@ -489,6 +489,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Claim.item.detail.subDetail.udi","Claim.item.detail.subDetail.udi","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device|4.0.1]]}
 ","Unique device identifier","Unique Device Identifiers associated with this line item.","","The UDI code allows the insurer to obtain device level information on the product supplied.","","","","","","","",,,,,"",,,,"Claim.item.detail.subDetail.udi",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Claim.total","Claim.total","","","",0,1,"Y","","","Money {[]} {[]}
+"Claim.total","Claim.total","","","",0,1,"","","","Money {[]} {[]}
 ","Total claim amount","The total value of the all the items in the claim.","","Used for  control total purposes.","","","","","","","",,,,,"",,,,"Claim.total",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

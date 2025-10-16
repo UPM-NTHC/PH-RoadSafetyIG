@@ -33,7 +33,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md) | Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files). |
 | [Road Safety Encounter](StructureDefinition-rs-encounter.md) | Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer. |
 | [Road Safety HealthcareService](StructureDefinition-rs-healthcare-service.md) | Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units). |
-| [Road Safety Incident Location](StructureDefinition-rs-location-incident.md) | Location of incident; supports PH-Core address extensions and geolocation. |
+| [Road Safety Incident Location](StructureDefinition-rs-incident-location-incident.md) | Location of incident; supports PH-Core address extensions and geolocation. |
 | [Road Safety MedicationStatement](StructureDefinition-rs-medication-statement.md) | Current medications as codeable concepts or references where available. |
 | [Road Safety Observation](StructureDefinition-rs-observation.md) | Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns. |
 | [Road Safety Observation - Abrasion](StructureDefinition-rs-observation-abrasion.md) | Abrasion present; with optional site and details. |

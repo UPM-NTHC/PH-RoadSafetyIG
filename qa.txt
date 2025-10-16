@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 0, warn = 739, info = 7
+err = 10, warn = 738, info = 12
 IG Publisher Version: 2.0.21
-Generated Thu Oct 16 07:39:03 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Thu Oct 16 10:20:08 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 11 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
@@ -18,9 +18,9 @@ Generated Thu Oct 16 07:39:03 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-composition-postcrash : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-document-reference : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 0 / 8 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 10 / 7 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-healthcare-service : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-location-incident : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-incident-location-incident : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-location-service : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-medication-statement : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation : 0 / 1 / 1
@@ -754,9 +754,23 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-document-reference.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-encounter.json ==
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[81].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[88].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[95].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[109].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[26].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[81].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[88].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[95].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[109].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'incidentNumber' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'hospitalCaseNo' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'receivedBy' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'teamLeader' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'treatmentOfficer' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'transportOfficer' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
@@ -764,11 +778,11 @@ WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The sli
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-healthcare-service.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-location-incident.json ==
-WARNING: StructureDefinition/rs-location-incident: StructureDefinition.snapshot: The slice 'province' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-WARNING: StructureDefinition/rs-location-incident: StructureDefinition.snapshot: The slice 'cityMunicipality' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-WARNING: StructureDefinition/rs-location-incident: StructureDefinition.snapshot: The slice 'barangay' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-incident'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-incident-location-incident.json ==
+WARNING: StructureDefinition/rs-incident-location-incident: StructureDefinition.snapshot: The slice 'province' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-incident-location-incident: StructureDefinition.snapshot: The slice 'cityMunicipality' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-incident-location-incident: StructureDefinition.snapshot: The slice 'barangay' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-location-service.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-medication-statement.json ==

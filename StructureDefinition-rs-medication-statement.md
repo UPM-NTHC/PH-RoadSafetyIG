@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
   "name" : "RSMedicationStatement",
   "title" : "Road Safety MedicationStatement",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -112,8 +112,36 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
       {
         "id" : "MedicationStatement.medication[x]",
         "path" : "MedicationStatement.medication[x]",
-        "short" : "Medication",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "MedicationStatement.medication[x]:medicationCodeableConcept",
+        "path" : "MedicationStatement.medication[x]",
+        "sliceName" : "medicationCodeableConcept",
+        "short" : "The current medication being taken",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
         "mustSupport" : true
+      },
+      {
+        "id" : "MedicationStatement.medication[x]:medicationCodeableConcept.text",
+        "path" : "MedicationStatement.medication[x].text",
+        "short" : "Name or description of the current medication",
+        "min" : 1
       },
       {
         "id" : "MedicationStatement.subject",

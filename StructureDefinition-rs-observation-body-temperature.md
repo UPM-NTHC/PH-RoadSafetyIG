@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-body-
   "name" : "RSObsBodyTemperature",
   "title" : "Road Safety Observation - Body Temperature",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

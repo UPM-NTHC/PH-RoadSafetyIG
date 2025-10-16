@@ -17,7 +17,7 @@ Encounter for EMS run report / facility submission context. Captures incident nu
 **Usages:**
 
 * Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Condition](StructureDefinition-rs-condition.md), [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md), [Road Safety Observation](StructureDefinition-rs-observation.md)...Show 2 more,[Road Safety Procedure](StructureDefinition-rs-procedure.md)and[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
+* Refer to this Profile: [Road Safety AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Condition](StructureDefinition-rs-condition.md), [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 3 more,[Road Safety Observation](StructureDefinition-rs-observation.md),[Road Safety Procedure](StructureDefinition-rs-procedure.md)and[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "Road Safety Encounter",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -217,7 +217,22 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "path" : "Encounter.participant",
         "sliceName" : "receivedBy",
         "min" : 0,
-        "max" : "1"
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.participant:receivedBy.type",
+        "path" : "Encounter.participant.type",
+        "min" : 1,
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "test",
+              "display" : "Received by"
+            }
+          ]
+        }
       },
       {
         "id" : "Encounter.participant:receivedBy.individual",
@@ -237,7 +252,21 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "path" : "Encounter.participant",
         "sliceName" : "teamLeader",
         "min" : 0,
-        "max" : "1"
+        "max" : "*"
+      },
+      {
+        "id" : "Encounter.participant:teamLeader.type",
+        "path" : "Encounter.participant.type",
+        "min" : 1,
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "test",
+              "display" : "Team Leader"
+            }
+          ]
+        }
       },
       {
         "id" : "Encounter.participant:teamLeader.individual",
@@ -257,7 +286,21 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "path" : "Encounter.participant",
         "sliceName" : "treatmentOfficer",
         "min" : 0,
-        "max" : "1"
+        "max" : "*"
+      },
+      {
+        "id" : "Encounter.participant:treatmentOfficer.type",
+        "path" : "Encounter.participant.type",
+        "min" : 1,
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "test",
+              "display" : "Treatment Officer"
+            }
+          ]
+        }
       },
       {
         "id" : "Encounter.participant:treatmentOfficer.individual",
@@ -277,7 +320,21 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "path" : "Encounter.participant",
         "sliceName" : "transportOfficer",
         "min" : 0,
-        "max" : "1"
+        "max" : "*"
+      },
+      {
+        "id" : "Encounter.participant:transportOfficer.type",
+        "path" : "Encounter.participant.type",
+        "min" : 1,
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "test",
+              "display" : "Transport Officer"
+            }
+          ]
+        }
       },
       {
         "id" : "Encounter.participant:transportOfficer.individual",
@@ -298,6 +355,20 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "sliceName" : "assistant",
         "min" : 0,
         "max" : "*"
+      },
+      {
+        "id" : "Encounter.participant:assistant.type",
+        "path" : "Encounter.participant.type",
+        "min" : 1,
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "test",
+              "display" : "Assistant"
+            }
+          ]
+        }
       },
       {
         "id" : "Encounter.participant:assistant.individual",
@@ -370,21 +441,21 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-incident"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
             ]
           }
         ],
         "mustSupport" : true
       },
       {
-        "id" : "Encounter.location:serviceSite",
+        "id" : "Encounter.location:facility",
         "path" : "Encounter.location",
-        "sliceName" : "serviceSite",
+        "sliceName" : "facility",
         "min" : 0,
         "max" : "*"
       },
       {
-        "id" : "Encounter.location:serviceSite.location",
+        "id" : "Encounter.location:facility.location",
         "path" : "Encounter.location.location",
         "type" : [
           {

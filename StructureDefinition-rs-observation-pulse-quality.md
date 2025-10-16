@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "name" : "RSObsPulseQuality",
   "title" : "Road Safety Observation - Pulse Quality",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

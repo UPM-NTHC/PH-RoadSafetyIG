@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-incident | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:RSLocation |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident | *Version*:0.1.0 |
+| Draft as of 2025-10-16 | *Computable Name*:RSIncidentLocation |
 
  
 Location of incident; supports PH-Core address extensions and geolocation. 
@@ -19,7 +19,7 @@ Location of incident; supports PH-Core address extensions and geolocation.
 * Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Encounter](StructureDefinition-rs-encounter.md) and [Road Safety HealthcareService](StructureDefinition-rs-healthcare-service.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-location-incident)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-incident-location-incident)
 
 ### Formal Views of Profile Content
 
@@ -27,7 +27,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-rs-location-incident.csv), [Excel](StructureDefinition-rs-location-incident.xlsx), [Schematron](StructureDefinition-rs-location-incident.sch) 
+Other representations of profile: [CSV](StructureDefinition-rs-incident-location-incident.csv), [Excel](StructureDefinition-rs-incident-location-incident.xlsx), [Schematron](StructureDefinition-rs-incident-location-incident.sch) 
 
 
 
@@ -36,13 +36,13 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-incident
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "rs-location-incident",
-  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-incident",
+  "id" : "rs-incident-location-incident",
+  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident",
   "version" : "0.1.0",
-  "name" : "RSLocation",
+  "name" : "RSIncidentLocation",
   "title" : "Road Safety Incident Location",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

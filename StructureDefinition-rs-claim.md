@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-claim.csv), [Exce
   "name" : "RSClaim",
   "title" : "Road Safety Claim",
   "status" : "draft",
-  "date" : "2025-10-16T07:32:50+00:00",
+  "date" : "2025-10-16T10:13:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -110,14 +110,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-claim.csv), [Exce
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"
             ]
           }
-        ],
-        "mustSupport" : true
+        ]
       },
       {
         "id" : "Claim.total",
         "path" : "Claim.total",
-        "short" : "Total claim amount",
-        "mustSupport" : true
+        "short" : "Total claim amount"
       }
     ]
   }
