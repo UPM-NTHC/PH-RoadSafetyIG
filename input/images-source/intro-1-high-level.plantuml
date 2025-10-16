@@ -4,15 +4,15 @@ skinparam actorStyle awesome
 skinparam roundcorner 20
 box "Scene to Facility" #White
 actor EMS
-collections Gateway as "Health Data Gateway"
+collections FHIR as "FHIR Server"
 actor EHR as "Facility EHR"
 database ETL as "ONEISS API"
 end box
 participant DPWH as "DPWH/DOTr"
 participant HC as "Health Center"
 
-note over Gateway
-Central gateway (ONEISS / NHDR)
+note over FHIR
+Central FHIR Server (ONEISS / NHDR)
 Routes, checks, and shares records
 Supports Subscription delivery to ETL
 end note
@@ -26,8 +26,8 @@ Scene capture:
 end note
 
 group Scene to EMS Transport Reporting
-EMS -> Gateway : Send Run Report\n(Incident + Patient + Vitals + Attachments)
-Gateway --> EMS : Confirm receipt\n(Incident reference)
+EMS -> FHIR : Send Run Report\n(Incident + Patient + Vitals + Attachments)
+FHIR --> EMS : Confirm receipt\n(Incident reference)
 end
 
 note over EHR
@@ -36,28 +36,28 @@ incident and vitals from EMS
 end note
 
 group Facility [Retrieval]
-    EHR -> Gateway : Retrieve Incident & Patient Summary
-    Gateway --> EHR : Provide Summary\n(Encounter + Patient snapshot)
+    EHR -> FHIR : Retrieve Incident & Patient Summary
+    FHIR --> EHR : Provide Summary\n(Encounter + Patient snapshot)
 else Submission
-    EHR -> Gateway : Share Facility Care Update\n(Triage, diagnoses, procedures)
-    Gateway --> EHR : Update confirmed
+    EHR -> FHIR : Share Facility Care Update\n(Triage, diagnoses, procedures)
+    FHIR --> EHR : Update confirmed
 end
 
 group ONEISS ETL (optional)
-    Gateway -> ETL : Subscription notification (POST /notifications)\n Transform to ONEISS compatible data
+    FHIR -> ETL : Subscription notification (POST /notifications)\n Transform to ONEISS compatible data
 else Alternative
-    Gateway -> ETL : Scheduled push of reports in ONEISS Compatible Data
-    Gateway -> ETL : Or Manual export of reports
+    FHIR -> ETL : Scheduled push of reports in ONEISS Compatible Data
+    FHIR -> ETL : Or Manual export of reports
 end
 
 group Agency Reporting
-DPWH <-> Gateway : Request Agency Report
-Gateway --> DPWH : Provide Report\n(Required reporting fields)
+DPWH <-> FHIR : Request Agency Report
+FHIR --> DPWH : Provide Report\n(Required reporting fields)
 end
 
 group Follow-up Care
-HC -> Gateway : Request Patient/Encounter for follow-up
-Gateway --> HC : Provide Care Continuity Data
+HC -> FHIR : Request Patient/Encounter for follow-up
+FHIR --> HC : Provide Care Continuity Data
 end
 
 legend left

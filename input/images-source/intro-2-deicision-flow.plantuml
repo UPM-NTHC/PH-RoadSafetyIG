@@ -1,7 +1,7 @@
 @startuml
 start
 :EMS POST Bundle.runreport;
-if (Gateway validates?) then (Yes)
+if (FHIR Server validates?) then (Yes)
   :Store Bundle, index by Incident No.;
   if (Does EMS update the run report later?) then (Yes)
     :EMS POST updated Bundle.runreport\nwith same Encounter.identifier;
