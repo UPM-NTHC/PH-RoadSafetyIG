@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 10, warn = 738, info = 12
+err = 10, warn = 740, info = 12
 IG Publisher Version: 2.0.21
-Generated Thu Oct 16 10:20:08 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Thu Oct 16 12:53:42 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 11 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
@@ -104,7 +104,7 @@ Generated Thu Oct 16 10:20:08 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-vehicle-condition : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-vehicle-used : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-organization : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-patient : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-patient : 0 / 6 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-service-request : 0 / 1 / 1
@@ -950,6 +950,8 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-organization.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-patient.json ==
+WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'FirstName' on path 'Patient.name.given' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'MiddleName' on path 'Patient.name.given' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'province' on path 'Patient.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'cityMunicipality' on path 'Patient.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'barangay' on path 'Patient.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true

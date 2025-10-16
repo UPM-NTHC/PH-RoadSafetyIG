@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-burn-
   "name" : "RSObsBurn1stDegree",
   "title" : "Road Safety Observation - Burn 1st Degree",
   "status" : "draft",
-  "date" : "2025-10-16T10:13:43+00:00",
+  "date" : "2025-10-16T12:46:03+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
