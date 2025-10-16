@@ -16,10 +16,11 @@ Description: "Patient demographics and identifiers for road safety reporting; re
 * name.given 1..* MS
 
 * name.given ^short = "Given name"
-* name.given contains FirstName 0..1
-* name.given contains MiddleName 0..1
-* name.given[FirstName] ^short = "First name"
-* name.given[MiddleName] ^short = "Middle name"
+// * name.given contains FirstName 0..1 and MiddleName 0..1
+// * name.given[FirstName] ^short = "First name"
+// * name.given[MiddleName] ^short = "Middle name"
+* name.given 1..2 MS
+* name.given ^short = "Given names (First name = [0], Middle name = [1], in order)"
 
 * birthDate 0..1 MS
 * birthDate ^short = "Birth date"
