@@ -4,7 +4,7 @@ Id: rs-claim
 Title: "Road Safety Claim"
 Description: "Claim information related to cost of care."
 * ^version = "1.0.0"
-* patient 1..1 MS
+* patient 1..1
 * patient only Reference(RSPatient)
-* total 0..1 MS
+* total 0..1
 * total ^short = "Total claim amount"

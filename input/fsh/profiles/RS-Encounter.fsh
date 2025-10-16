@@ -28,11 +28,16 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * location ^slicing.discriminator.path = "location"
 * location ^slicing.rules = #open
 * location ^slicing.ordered = true
-* location contains accidentSite 0..1 and serviceSite 0..*
+* location contains accidentSite 0..1 and facility 0..*
+
+// first slice is the accident site
 * location[accidentSite].location 1..1 MS
-* location[accidentSite].location only Reference(rs-location-incident)
-* location[serviceSite].location 1..1 MS
-* location[serviceSite].location only Reference(rs-location-service)
+* location[accidentSite].location only Reference(RSIncidentLocation)
+
+// second slice is the facility (receiving facility, previous facility, etc)
+* location[facility].location 1..1 MS
+* location[facility].location only Reference(RSServiceLocation)
+* location[facility].location.type 0..1
 
 /* Identifier slices for ONEISS */
 * identifier ^slicing.discriminator.type = #value
@@ -52,14 +57,24 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * participant ^slicing.discriminator.type = #value
 * participant ^slicing.discriminator.path = "type"
 * participant ^slicing.rules = #open
-* participant contains receivedBy 0..1 and teamLeader 0..1 and treatmentOfficer 0..1 and transportOfficer 0..1 and assistant 0..*
+* participant contains receivedBy 0..1 MS and teamLeader 0..* and treatmentOfficer 0..* and transportOfficer 0..* and assistant 0..*
+
 * participant[receivedBy].individual 0..1 MS
 * participant[receivedBy].individual only Reference(PHCorePractitioner)
+* participant[receivedBy].type = $ParticipationType#test "Received by" // for discussion with Terminology team
+
 * participant[teamLeader].individual 0..1 MS
 * participant[teamLeader].individual only Reference(PHCorePractitioner)
+* participant[teamLeader].type = $ParticipationType#test "Team Leader" // for discussion with Terminology team
+
 * participant[treatmentOfficer].individual 0..1 MS
 * participant[treatmentOfficer].individual only Reference(PHCorePractitioner)
+* participant[treatmentOfficer].type = $ParticipationType#test "Treatment Officer" // for discussion with Terminology team
+
 * participant[transportOfficer].individual 0..1 MS
 * participant[transportOfficer].individual only Reference(PHCorePractitioner)
+* participant[transportOfficer].type = $ParticipationType#test "Transport Officer" // for discussion with Terminology team
+
 * participant[assistant].individual 0..1 MS
 * participant[assistant].individual only Reference(PHCorePractitioner)
+* participant[assistant].type = $ParticipationType#test "Assistant" // for discussion with Terminology team

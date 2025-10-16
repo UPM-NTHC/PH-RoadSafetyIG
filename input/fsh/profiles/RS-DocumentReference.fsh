@@ -15,3 +15,10 @@ Description: "Evidence and post-crash documentation linked to the incident (e.g.
 * content.attachment.url ^short = "Document URL"
 * content.format 0..1
 
+/*
+
+1. Resolve at bundle ✅
+2. Define individual Profiles
+3. Slices - see old jaylord work in 04.1 branch
+
+*/

@@ -25,5 +25,5 @@ Description: "Healthcare services offered by organizations (e.g., EMS base, rece
 * providedBy 1..1 MS
 * providedBy only Reference(RSOrganization)
 * location 0..* MS
-* location only Reference(RSLocation)
+* location only Reference(RSIncidentLocation)
 * coverageArea 0..* 

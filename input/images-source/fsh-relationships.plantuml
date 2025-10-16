@@ -13,6 +13,7 @@ class "RSAllergyIntolerance" {
   code : — [0..1]
   patient : — [1..1]
   patient : Reference(RSPatient)
+  encounter : Reference(RSEncounter)
 }
 class "AllergyIntolerance"
 class "RSPatient" {
@@ -26,13 +27,118 @@ class "RSPatient" {
   address.line : — [0..*]
   address.extension : — [0..*]
 }
+class "RSEncounter" {
+  status : — [1..1]
+  class : — [1..1]
+  identifier : — [1..*]
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  period.start : — [1..1]
+  serviceProvider : — [0..1]
+  serviceProvider : Reference(RSOrganization)
+  participant : — [0..*]
+  hospitalization.dischargeDisposition : — [0..1]
+  hospitalization.destination : — [0..1]
+  location : — [0..1]
+  location[accidentSite].location : — [1..1]
+  location[accidentSite].location : Reference(RSIncidentLocation)
+  location[facility].location : — [1..1]
+  location[facility].location : Reference(RSServiceLocation)
+  location[facility].type : — [0..1]
+  identifier : — [0..1]
+  identifier[incidentNumber].type : — [1..1]
+  identifier[incidentNumber].type.coding : — [1..1]
+  identifier[hospitalCaseNo].type : — [1..1]
+  identifier[hospitalCaseNo].type.coding : — [1..1]
+  hospitalization.origin : — [0..1]
+  hospitalization.origin : Reference(RSOrganization)
+  participant : — [0..1]
+  participant[receivedBy].individual : — [0..1]
+  participant[receivedBy].individual : Reference(PHCorePractitioner)
+  participant[teamLeader].individual : — [0..1]
+  participant[teamLeader].individual : Reference(PHCorePractitioner)
+  participant[treatmentOfficer].individual : — [0..1]
+  participant[treatmentOfficer].individual : Reference(PHCorePractitioner)
+  participant[transportOfficer].individual : — [0..1]
+  participant[transportOfficer].individual : Reference(PHCorePractitioner)
+  participant[assistant].individual : — [0..1]
+  participant[assistant].individual : Reference(PHCorePractitioner)
+}
+class "RSCompositionEMS" {
+  status : — [1..1]
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  date : — [1..1]
+  author : — [1..1]
+  section : — [1..*]
+  section[workflow].entry : — [1..*]
+  section[workflow].entry : Reference
+  section[incident].entry : — [0..*]
+  section[incident].entry : Reference
+  section[vitals].entry : — [0..*]
+  section[vitals].entry : Reference
+  section[clinical].entry : — [0..*]
+  section[clinical].entry : Reference
+  section[documents].entry : — [0..*]
+  section[documents].entry : Reference(RSDocumentReference)
+  section[procedures].entry : — [0..*]
+  section[procedures].entry : Reference(RSProcedure | RSServiceRequest | RSTask)
+}
+class "Composition"
+class "RSDocumentReference" {
+  status : — [1..1]
+  type : — [0..1]
+  subject : — [0..1]
+  subject : Reference(RSPatient)
+  context.encounter : — [0..1]
+  context.encounter : Reference(RSEncounter)
+  content : — [1..*]
+  content.attachment.url : — [1..1]
+  content.format : — [0..1]
+}
+class "RSProcedure" {
+  status : — [1..1]
+  code : — [0..1]
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  encounter : — [0..1]
+  encounter : Reference(RSEncounter)
+  performer : — [0..*]
+  performer.actor : Reference(PHCorePractitioner)
+  note : — [0..*]
+}
+class "RSServiceRequest" {
+  status : — [1..1]
+  occurrenceDateTime : — [0..1]
+  supportingInfo : — [0..*]
+  supportingInfo : Reference(RSHealthcareService | RSOrganization | PHCoreOrganization | PHCorePractitioner)
+  requester : — [0..1]
+  requester : Reference(PHCorePractitioner)
+  code : — [1..1]
+  code.coding : — [1..1]
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  encounter : — [0..1]
+  encounter : Reference(RSEncounter)
+}
+class "RSTask" {
+  status : — [1..1]
+  executionPeriod : — [0..1]
+  note : — [0..*]
+  for : — [0..1]
+  for : Reference(RSPatient)
+  focus : — [0..1]
+  input : — [0..*]
+  output : — [0..*]
+}
 class "RSBundleEMS" {
   type : — [1..1]
   entry : — [1..*]
   entry.resource : — [1..1]
+  entry[composition].resource : RSCompositionEMS
   entry[patient].resource : RSPatient
   entry[encounter].resource : RSEncounter
-  entry[location].resource : RSLocation
+  entry[location].resource : RSIncidentLocation
   entry[observationDateReceived].resource : rs
   entry[observationTimeEnroute].resource : rs
   entry[observationTimeOnScene].resource : rs
@@ -53,22 +159,67 @@ class "RSBundleEMS" {
   entry[claim].resource : rs
 }
 class "Bundle"
+class "RSCompositionONEISS" {
+  status : — [1..1]
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  date : — [1..1]
+  author : — [1..1]
+  section : — [1..*]
+  section[patient].entry : — [1..1]
+  section[patient].entry : Reference(RSPatient)
+  section[encounter].entry : — [1..1]
+  section[encounter].entry : Reference(RSEncounter)
+  section[clinical].entry : — [0..*]
+  section[clinical].entry : Reference
+  section[incident].entry : — [0..*]
+  section[incident].entry : Reference
+  section[documents].entry : — [0..*]
+  section[documents].entry : Reference(RSDocumentReference)
+}
 class "RSBundleONEISS" {
   type : — [1..1]
   entry : — [1..*]
   entry.resource : — [1..1]
+  entry[composition].resource : RSCompositionONEISS
   entry[patient].resource : RSPatient
   entry[encounter].resource : RSEncounter
   entry[conditionInitial].resource : rs
   entry[conditionFinal].resource : rs
-  entry[observationVitals].resource : rs
   entry[observationClinical].resource : rs
   entry[observationIncident].resource : rs
-  entry : — [0..*]
-  entry[observationPostCrash].resource : rs
+  entry[observationExternalCause].resource : rs
+  entry[observationInjuries].resource : rs
+  entry[observationExtentOfInjury].resource : rs
+  entry[observationTransferredFromFacility].resource : rs
+  entry[observationReferredByFacility].resource : rs
   entry[document].resource : RSDocumentReference
   entry[serviceRequest].resource : RSServiceRequest
   entry[procedure].resource : RSProcedure
+}
+class "RSCompositionPostCrash" {
+  status : — [1..1]
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  date : — [1..1]
+  author : — [1..*]
+  section : — [1..*]
+  section[patient].entry : — [1..1]
+  section[patient].entry : Reference(RSPatient)
+  section[incident].entry : — [0..*]
+  section[incident].entry : Reference
+  section[documents].entry : — [0..*]
+  section[documents].entry : Reference(RSDocumentReference)
+}
+class "RSBundlePostCrash" {
+  type : — [1..1]
+  entry : — [1..*]
+  entry.resource : — [1..1]
+  entry[composition].resource : RSCompositionPostCrash
+  entry[patient].resource : RSPatient
+  entry[encounter].resource : RSEncounter
+  entry[observationPostCrash].resource : rs
+  entry[document].resource : RSDocumentReference
 }
 class "RSClaim" {
   patient : — [1..1]
@@ -98,48 +249,6 @@ class "RSCondition" {
   note : — [0..*]
 }
 class "Condition"
-class "RSEncounter" {
-  status : — [1..1]
-  class : — [1..1]
-  identifier : — [1..*]
-  subject : — [1..1]
-  subject : Reference(RSPatient)
-  period.start : — [1..1]
-  serviceProvider : — [0..1]
-  serviceProvider : Reference(RSOrganization)
-  participant : — [0..*]
-  hospitalization.dischargeDisposition : — [0..1]
-  hospitalization.destination : — [0..1]
-  identifier : — [0..1]
-  identifier[incidentNumber].type : — [1..1]
-  identifier[incidentNumber].type.coding : — [1..1]
-  identifier[hospitalCaseNo].type : — [1..1]
-  identifier[hospitalCaseNo].type.coding : — [1..1]
-  hospitalization.origin : — [0..1]
-  hospitalization.origin : Reference(RSOrganization)
-  participant : — [0..1]
-  participant[receivedBy].individual : — [0..1]
-  participant[receivedBy].individual : Reference(PHCorePractitioner)
-  participant[teamLeader].individual : — [0..1]
-  participant[teamLeader].individual : Reference(PHCorePractitioner)
-  participant[treatmentOfficer].individual : — [0..1]
-  participant[treatmentOfficer].individual : Reference(PHCorePractitioner)
-  participant[transportOfficer].individual : — [0..1]
-  participant[transportOfficer].individual : Reference(PHCorePractitioner)
-  participant[assistant].individual : — [0..1]
-  participant[assistant].individual : Reference(PHCorePractitioner)
-}
-class "RSDocumentReference" {
-  status : — [1..1]
-  type : — [0..1]
-  subject : — [0..1]
-  subject : Reference(RSPatient)
-  context.encounter : — [0..1]
-  context.encounter : Reference(RSEncounter)
-  content : — [1..*]
-  content.attachment.url : — [1..1]
-  content.format : — [0..1]
-}
 class "DocumentReference"
 class "PHCoreEncounter"
 class "RSOrganization" {
@@ -150,15 +259,21 @@ class "RSOrganization" {
   telecom : — [0..*]
   address : — [0..*]
 }
-class "PHCorePractitioner"
-class "RSLocation" {
+class "RSIncidentLocation" {
   name : — [0..1]
   address : — [0..1]
   address.line : — [0..*]
   address.extension : — [0..*]
+  position : — [0..1]
   position.longitude : — [1..1]
   position.latitude : — [1..1]
 }
+class "RSServiceLocation" {
+  name : — [0..1]
+  address : — [0..1]
+  type : — [0..1]
+}
+class "PHCorePractitioner"
 class "PHCoreLocation"
 class "RSMedicationStatement" {
   medication[x] : — [1..1]
@@ -189,48 +304,17 @@ class "RSHealthcareService" {
   providedBy : — [1..1]
   providedBy : Reference(RSOrganization)
   location : — [0..*]
-  location : Reference(RSLocation)
+  location : Reference(RSIncidentLocation)
   coverageArea : — [0..*]
 }
 class "HealthcareService"
 class "PHCorePatient"
-class "RSProcedure" {
-  status : — [1..1]
-  code : — [0..1]
-  subject : — [1..1]
-  subject : Reference(RSPatient)
-  encounter : — [0..1]
-  encounter : Reference(RSEncounter)
-  performer : — [0..*]
-  performer.actor : Reference(PHCorePractitioner)
-  note : — [0..*]
-}
 class "PHCoreProcedure"
-class "RSServiceRequest" {
-  status : — [1..1]
-  occurrenceDateTime : — [0..1]
-  supportingInfo : — [0..*]
-  supportingInfo : Reference(RSHealthcareService | RSOrganization | PHCoreOrganization | PHCorePractitioner)
-  requester : — [0..1]
-  requester : Reference(PHCorePractitioner)
+class "RSProcedureTransportCoordination" {
   code : — [1..1]
   code.coding : — [1..1]
-  subject : — [1..1]
-  subject : Reference(RSPatient)
-  encounter : — [0..1]
-  encounter : Reference(RSEncounter)
 }
 class "ServiceRequest"
-class "RSTask" {
-  status : — [1..1]
-  executionPeriod : — [0..1]
-  note : — [0..*]
-  for : — [0..1]
-  for : Reference(RSPatient)
-  focus : — [0..1]
-  input : — [0..*]
-  output : — [0..*]
-}
 class "Task"
 class "Obs (RS profiles)" {
   "Road Safety Observation - Respiratory Rate" : Profile
@@ -284,6 +368,9 @@ class "Obs (RS profiles)" {
   "Road Safety Observation - External Cause: Mauling/Assault" : Profile
   "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)" : Profile
   "Road Safety Observation - External Cause: Other" : Profile
+  "Road Safety Observation - Extent of Injury" : Profile
+  "Road Safety Observation - Transferred From Facility" : Profile
+  "Road Safety Observation - Referred By Facility" : Profile
   "Road Safety Observation - Multiple Injuries?" : Profile
   "Road Safety Observation - Abrasion" : Profile
   "Road Safety Observation - Avulsion" : Profile
@@ -312,6 +399,19 @@ class "Obs (RS profiles)" {
 }
 
 "RSAllergyIntolerance" --> "RSPatient" : patient
+"RSAllergyIntolerance" --> "RSEncounter" : encounter
+"RSCompositionEMS" --> "RSPatient" : subject
+"RSCompositionEMS" --> "RSDocumentReference" : section[documents].entry
+"RSCompositionEMS" --> "RSProcedure" : section[procedures].entry
+"RSCompositionEMS" --> "RSServiceRequest" : section[procedures].entry
+"RSCompositionEMS" --> "RSTask" : section[procedures].entry
+"RSCompositionONEISS" --> "RSPatient" : subject
+"RSCompositionONEISS" --> "RSPatient" : section[patient].entry
+"RSCompositionONEISS" --> "RSEncounter" : section[encounter].entry
+"RSCompositionONEISS" --> "RSDocumentReference" : section[documents].entry
+"RSCompositionPostCrash" --> "RSPatient" : subject
+"RSCompositionPostCrash" --> "RSPatient" : section[patient].entry
+"RSCompositionPostCrash" --> "RSDocumentReference" : section[documents].entry
 "RSClaim" --> "RSPatient" : patient
 "RSCondition" --> "RSPatient" : subject
 "RSCondition" --> "RSEncounter" : encounter
@@ -319,6 +419,8 @@ class "Obs (RS profiles)" {
 "RSDocumentReference" --> "RSEncounter" : context.encounter
 "RSEncounter" --> "RSPatient" : subject
 "RSEncounter" --> "RSOrganization" : serviceProvider
+"RSEncounter" --> "RSIncidentLocation" : location[accidentSite].location
+"RSEncounter" --> "RSServiceLocation" : location[facility].location
 "RSEncounter" --> "RSOrganization" : hospitalization.origin
 "RSEncounter" --> "PHCorePractitioner" : participant[receivedBy].individual
 "RSEncounter" --> "PHCorePractitioner" : participant[teamLeader].individual
@@ -329,7 +431,7 @@ class "Obs (RS profiles)" {
 "RSObservation" --> "RSPatient" : subject
 "RSObservation" --> "RSEncounter" : encounter
 "RSHealthcareService" --> "RSOrganization" : providedBy
-"RSHealthcareService" --> "RSLocation" : location
+"RSHealthcareService" --> "RSIncidentLocation" : location
 "RSProcedure" --> "RSPatient" : subject
 "RSProcedure" --> "RSEncounter" : encounter
 "RSProcedure" --> "PHCorePractitioner" : performer.actor
@@ -343,19 +445,25 @@ class "Obs (RS profiles)" {
 "RSTask" --> "RSPatient" : for
 "RSObservation" --> "Obs (RS profiles)" : profiles
 "RSAllergyIntolerance" --|> "AllergyIntolerance"
+"RSCompositionEMS" --|> "Composition"
 "RSBundleEMS" --|> "Bundle"
+"RSCompositionONEISS" --|> "Composition"
 "RSBundleONEISS" --|> "Bundle"
+"RSCompositionPostCrash" --|> "Composition"
+"RSBundlePostCrash" --|> "Bundle"
 "RSClaim" --|> "Claim"
 "RSCondition" --|> "Condition"
 "RSDocumentReference" --|> "DocumentReference"
 "RSEncounter" --|> "PHCoreEncounter"
-"RSLocation" --|> "PHCoreLocation"
+"RSIncidentLocation" --|> "PHCoreLocation"
+"RSServiceLocation" --|> "PHCoreLocation"
 "RSMedicationStatement" --|> "MedicationStatement"
 "RSObservation" --|> "PHCoreObservation"
 "RSOrganization" --|> "PHCoreOrganization"
 "RSHealthcareService" --|> "HealthcareService"
 "RSPatient" --|> "PHCorePatient"
 "RSProcedure" --|> "PHCoreProcedure"
+"RSProcedureTransportCoordination" --|> "RSProcedure"
 "RSServiceRequest" --|> "ServiceRequest"
 "RSTask" --|> "Task"
 

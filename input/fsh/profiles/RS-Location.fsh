@@ -1,6 +1,6 @@
-Profile: RSLocation
+Profile: RSIncidentLocation
 Parent: PHCoreLocation
-Id: rs-location-incident
+Id: rs-incident-location-incident
 Title: "Road Safety Incident Location"
 Description: "Location of incident; supports PH-Core address extensions and geolocation."
 * ^version = "1.0.0"

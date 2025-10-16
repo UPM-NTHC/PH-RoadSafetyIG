@@ -33,7 +33,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(rs-observation-injury-datetime or rs-observation-injury-intent 
     or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport 
-    or RSLocation)
+    or RSIncidentLocation)
 * section[vitals].title = "Vital signs"
 * section[vitals].entry 0..* 
 * section[vitals].entry only Reference(rs-observation-respiratory-rate or rs-observation-pulse-rate 
@@ -87,7 +87,7 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[composition].resource only RSCompositionEMS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
-* entry[location].resource only RSLocation
+* entry[location].resource only RSIncidentLocation
 * entry[observationDateReceived].resource only rs-observation-date-received
 * entry[observationTimeEnroute].resource only rs-observation-time-enroute
 * entry[observationTimeOnScene].resource only rs-observation-time-on-scene
@@ -165,7 +165,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or rs-observation-mode-of-transport
     or rs-observation-collision-vs-noncollision
     or rs-observation-safety-accessories
-    or RSLocation)
+    or RSIncidentLocation)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
 * section[documents].entry only Reference(RSDocumentReference)

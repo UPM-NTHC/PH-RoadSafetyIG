@@ -16,6 +16,10 @@ Description: "Procedures related to incident/report (e.g., coordination with rec
 * performer.actor only Reference(PHCorePractitioner)
 * note 0..* 
 
+/*
+Terminology Profile for each procedure type
+*/
+
 // MDS113 - Transport coordination with receiving hospital
 Profile: RSProcedureTransportCoordination
 Parent: RSProcedure

@@ -16,3 +16,4 @@ Description: "Known allergies, substances and reactions."
 * patient ^definition = "Reference to the patient who is the subject of this allergy/intolerance record."
 * patient ^comment = "Reference constrained to the Road Safety Patient profile (`RSPatient`)."
 * patient only Reference(RSPatient)
+* encounter only Reference(RSEncounter)
