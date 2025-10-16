@@ -1,6 +1,8 @@
 // Road Safety Observation Profiles (TW Core-style by concept)
+// MDS mappings: comments above each profile indicate the corresponding MDS number(s)
 
 // Base profile reused by all Road Safety observations
+// MDS: base/profile - used for many Observation mappings (see Logical Model for specific MDS# per element)
 Profile: RSObservation
 Parent: PHCoreObservation
 Id: rs-observation
@@ -18,6 +20,7 @@ Description: "Generic base Observation for road safety data; specialized concept
 * value[x] 0..1
 
 // ---------------- VITAL SIGNS ----------------
+// MDS70 - Respiratory Rate
 Profile: RSObsRespiratoryRate
 Parent: RSObservation
 Id: rs-observation-respiratory-rate
@@ -29,6 +32,7 @@ Description: "Respiratory rate in breaths/min."
 * code.coding.code = #9279-1
 * code.coding.display = "Respiratory rate"
 
+// MDS73 - Pulse/Heart Rate
 Profile: RSObsPulseRate
 Parent: RSObservation
 Id: rs-observation-pulse-rate
@@ -40,6 +44,7 @@ Description: "Pulse/heart rate in beats/min."
 * code.coding.code = #8889-8
 * code.coding.display = "Heart rate by Pulse oximetry"
 
+// MDS76 (systolic) / MDS77 (diastolic) - Blood Pressure components
 Profile: RSObsBloodPressure
 Parent: RSObservation
 Id: rs-observation-blood-pressure
@@ -67,6 +72,7 @@ Description: "Blood pressure using component entries for systolic/diastolic."
 * component[diastolic].code.coding.code = #8462-4
 * component[diastolic].code.coding.display = "Diastolic blood pressure"
 
+// MDS78 - Body Temperature
 Profile: RSObsBodyTemperature
 Parent: RSObservation
 Id: rs-observation-body-temperature
@@ -78,6 +84,7 @@ Description: "Body temperature."
 * code.coding.code = #8310-5
 * code.coding.display = "Body temperature"
 
+// MDS79 - Level of Consciousness (AVPU)
 Profile: RSObsLevelOfConsciousness
 Parent: RSObservation
 Id: rs-observation-level-of-consciousness
@@ -90,6 +97,7 @@ Description: "Level of consciousness (e.g., AVPU)."
 * code.coding.code = #67775-7
 * code.coding.display = "Level of responsiveness"
 
+// MDS80 - Pupils
 Profile: RSObsPupils
 Parent: RSObservation
 Id: rs-observation-pupils
@@ -102,6 +110,7 @@ Description: "Pupil size/reactivity summary."
 * code.coding.code = #113147002
 * code.coding.display = "Pupil reaction to light (observable entity)"
 
+// MDS81 - Cyanosis
 Profile: RSObsCyanosis
 Parent: RSObservation
 Id: rs-observation-cyanosis
@@ -114,6 +123,7 @@ Description: "Cyanosis assessment."
 * code.coding.code = #3415004
 * code.coding.display = "Cyanosis (finding)"
 
+// MDS83 (eyes), MDS84 (verbal), MDS85 (motor), MDS86 (total) - Glasgow Coma Scale
 Profile: RSObsGCS
 Parent: RSObservation
 Id: rs-observation-gcs
@@ -148,6 +158,7 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 * component[gcsMotor].code.coding.display = "Glasgow coma score motor"
 
 // ---------------- VITALS QUALIFIERS ----------------
+// MDS71 - Respiratory Rhythm
 Profile: RSObsRespiratoryRhythm
 Parent: RSObservation
 Id: rs-observation-respiratory-rhythm
@@ -160,6 +171,7 @@ Description: "Respiratory rhythm (normal/irregular/labored)."
 * code.coding.code = #respiratory-rhythm
 * code.coding.display = "Respiratory rhythm"
 
+// MDS72 - Breath Sounds
 Profile: RSObsBreathSounds
 Parent: RSObservation
 Id: rs-observation-breath-sounds
@@ -172,6 +184,7 @@ Description: "Breath sounds assessment."
 * code.coding.code = #breath-sounds
 * code.coding.display = "Breath sounds"
 
+// MDS74 - Pulse Rhythm
 Profile: RSObsPulseRhythm
 Parent: RSObservation
 Id: rs-observation-pulse-rhythm
@@ -184,6 +197,7 @@ Description: "Pulse rhythm."
 * code.coding.code = #pulse-rhythm
 * code.coding.display = "Pulse rhythm"
 
+// MDS75 - Pulse Quality
 Profile: RSObsPulseQuality
 Parent: RSObservation
 Id: rs-observation-pulse-quality
@@ -197,6 +211,7 @@ Description: "Pulse quality."
 * code.coding.display = "Pulse quality"
 
 // ---------------- TIMELINE (dispatch/transport timestamps) ----------------
+// MDS62 / MDS63 - Date/Time Received by EMS
 Profile: RSObsDateReceived
 Parent: RSObservation
 Id: rs-observation-date-received
@@ -208,6 +223,7 @@ Description: "Calendar/timestamp the EMS/dispatch received the request."
 * code.coding.code = #30976-5
 * code.coding.display = "Date received Form"
 
+// MDS64 - Time Enroute
 Profile: RSObsTimeEnroute
 Parent: RSObservation
 Id: rs-observation-time-enroute
@@ -219,6 +235,7 @@ Description: "Timestamp when unit dispatched/began traveling."
 * code.coding.code = #69472-9
 * code.coding.display = "Unit responded [Date and time] Vehicle"
 
+// MDS65 - Time On Scene
 Profile: RSObsTimeOnScene
 Parent: RSObservation
 Id: rs-observation-time-on-scene
@@ -230,6 +247,7 @@ Description: "Timestamp crew arrived at scene."
 * code.coding.code = #69473-7
 * code.coding.display = "Responding unit arrived on the scene [Date and time] Vehicle"
 
+// MDS66 - Time Departed Scene
 Profile: RSObsTimeDepartedScene
 Parent: RSObservation
 Id: rs-observation-time-departed
@@ -241,6 +259,7 @@ Description: "Timestamp unit departed scene."
 * code.coding.code = #69475-2
 * code.coding.display = "Responding unit left the scene with a patient [Date and time] Vehicle"
 
+// MDS67 - Time of Hospital Arrival
 Profile: RSObsTimeHospitalArrival
 Parent: RSObservation
 Id: rs-observation-time-hospital-arrival
@@ -252,6 +271,7 @@ Description: "Timestamp unit arrived at receiving facility."
 * code.coding.code = #69476-0
 * code.coding.display = "Responding unit arrived with the patient at the destination or transfer point [Date and time] Vehicle"
 
+// MDS68 - Time of Emergency Station Arrival
 Profile: RSObsTimeStationArrival
 Parent: RSObservation
 Id: rs-observation-time-station-arrival
@@ -264,6 +284,7 @@ Description: "Timestamp unit returned to base/became available."
 * code.coding.display = "Arrival time documented"
 
 // ---------------- INCIDENT CONTEXT ----------------
+// MDS158 / MDS159 - Date/Time of Injury
 Profile: RSObsInjuryDateTime
 Parent: RSObservation
 Id: rs-observation-injury-datetime
@@ -275,6 +296,7 @@ Description: "Timestamp of injury occurrence."
 * code.coding.code = #11368-8
 * code.coding.display = "Illness or injury onset date and time"
 
+// MDS18 - Injury Intent
 Profile: RSObsInjuryIntent
 Parent: RSObservation
 Id: rs-observation-injury-intent
@@ -287,6 +309,7 @@ Description: "Intent of injury (Unintentional, Intentional-self, Intentional-vio
 * code.coding.code = #11375-3
 * code.coding.display = "Injury intent"
 
+// MDS41 - Transport/Vehicular Accident (flag)
 Profile: RSObsTransportVehicularFlag
 Parent: RSObservation
 Id: rs-observation-transport-vehicular-flag
@@ -298,6 +321,7 @@ Description: "Boolean flag indicating transport/vehicular accident."
 * code.coding.code = #274215009
 * code.coding.display = "Transport accident (event)"
 
+// MDS118 (Mode of transport to facility) and MDS119 for 'Others' text if used
 Profile: RSObsModeOfTransport
 Parent: RSObservation
 Id: rs-observation-mode-of-transport
@@ -311,6 +335,7 @@ Description: "Mode of transport to the hospital/facility; allow coded value with
 * code.coding.code = #74286-6
 * code.coding.display = "Mode of transport to health facility"
 
+// MDS111 - Triage Priority
 Profile: RSObsTriagePriority
 Parent: RSObservation
 Id: rs-observation-triage-priority
@@ -322,6 +347,7 @@ Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 * code.coding.code = #triage-priority
 * code.coding.display = "Triage priority"
 
+// MDS114 - Priority Level (Urgency)
 Profile: RSObsUrgencyLevel
 Parent: RSObservation
 Id: rs-observation-urgency
@@ -333,6 +359,7 @@ Description: "System-generated urgency level per CAD/agency rules."
 * code.coding.code = #urgency-level
 * code.coding.display = "Urgency level"
 
+// MDS170 - Place of Occurrence
 Profile: RSObsPlaceOfOccurrence
 Parent: RSObservation
 Id: rs-observation-place-of-occurrence
@@ -346,6 +373,7 @@ Description: "Place type where injury occurred; name can be carried in note when
 * code.coding.code = #place-of-occurrence
 * code.coding.display = "Place of occurrence"
 
+// MDS173 - Activity at Time of Incident
 Profile: RSObsActivityAtIncident
 Parent: RSObservation
 Id: rs-observation-activity-at-incident
@@ -359,6 +387,7 @@ Description: "Activity of the patient at time of incident; allow text fallback."
 * code.coding.code = #activity-at-incident
 * code.coding.display = "Activity at time of incident"
 
+// MDS163 - Collision vs Non-Collision
 Profile: RSObsCollisionVsNonCollision
 Parent: RSObservation
 Id: rs-observation-collision-vs-noncollision
@@ -371,6 +400,7 @@ Description: "Indicates whether the incident was collision or non-collision."
 * code.coding.code = #collision-category
 * code.coding.display = "Collision category"
 
+// MDS164 - Patient's Vehicle
 Profile: RSObsPatientsVehicle
 Parent: RSObservation
 Id: rs-observation-patients-vehicle
@@ -384,6 +414,7 @@ Description: "Type of vehicle used by patient; text for 'Others'."
 * code.coding.code = #patients-vehicle
 * code.coding.display = "Patient's vehicle"
 
+// MDS166 - Other Vehicle/Object Involved
 Profile: RSObsOtherVehicleInvolved
 Parent: RSObservation
 Id: rs-observation-other-vehicle
@@ -397,6 +428,7 @@ Description: "Other vehicle/object type involved; text for 'Others'."
 * code.coding.code = #other-vehicle-involved
 * code.coding.display = "Other vehicle/object involved"
 
+// MDS168 - Position of Patient
 Profile: RSObsPositionOfPatient
 Parent: RSObservation
 Id: rs-observation-position-of-patient
@@ -410,6 +442,7 @@ Description: "Seat/position (driver/front passenger/rear/pedestrian); text for '
 * code.coding.code = #position-of-patient
 * code.coding.display = "Position of patient"
 
+// MDS156 - How Many Vehicles Involved
 Profile: RSObsHowManyVehicles
 Parent: RSObservation
 Id: rs-observation-how-many-vehicles
@@ -421,6 +454,7 @@ Description: "Count of vehicles involved."
 * code.coding.code = #how-many-vehicles
 * code.coding.display = "How many vehicles involved"
 
+// MDS157 - How Many Patients Involved
 Profile: RSObsHowManyPatients
 Parent: RSObservation
 Id: rs-observation-how-many-patients
@@ -432,6 +466,7 @@ Description: "Count of patients involved."
 * code.coding.code = #how-many-patients
 * code.coding.display = "How many patients involved"
 
+// MDS218 - Collision Type (post-crash investigation)
 Profile: RSObsCollisionType
 Parent: RSObservation
 Id: rs-observation-collision-type
@@ -444,6 +479,7 @@ Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * code.coding.code = #collision-type
 * code.coding.display = "Collision type"
 
+// MDS219 - Presence of Traffic Investigator
 Profile: RSObsPresenceTrafficInvestigator
 Parent: RSObservation
 Id: rs-observation-traffic-investigator
@@ -455,6 +491,7 @@ Description: "Boolean presence/absence of traffic investigator."
 * code.coding.code = #traffic-investigator-presence
 * code.coding.display = "Presence of traffic investigator"
 
+// MDS230 / MDS231 - Other Risk Factors (and 'Others' text)
 Profile: RSObsOtherRiskFactors
 Parent: RSObservation
 Id: rs-observation-other-risk-factors
@@ -468,6 +505,7 @@ Description: "Other risk factors at the time of incident; allow text for 'Others
 * code.coding.code = #other-risk-factors
 * code.coding.display = "Other risk factors"
 
+// MDS232 / MDS233 - Safety Accessories (and 'Others' text)
 Profile: RSObsSafetyAccessories
 Parent: RSObservation
 Id: rs-observation-safety-accessories
@@ -481,6 +519,7 @@ Description: "Safety accessories present/used; allow text for 'Others'."
 * code.coding.code = #safety-accessories
 * code.coding.display = "Safety accessories"
 
+// MDS149 - Reported Complaint (free text)
 Profile: RSObsReportedComplaint
 Parent: RSObservation
 Id: rs-observation-reported-complaint
@@ -492,6 +531,7 @@ Description: "Free-text reported complaint."
 * code.coding.code = #1269489004
 * code.coding.display = "Chief complaint (observable entity)"
 
+// MDS155 - Call Source
 Profile: RSObsCallSource
 Parent: RSObservation
 Id: rs-observation-call-source
@@ -504,6 +544,7 @@ Description: "Call source description (free text)."
 * code.coding.display = "Referral source (finding)"
 
 // ---------------- EXTERNAL CAUSES ----------------
+// MDS19 (flag) ; MDS20 (specify animal/insect) - External Cause: Bites/Stings
 Profile: RSObsECBitesStings
 Parent: RSObservation
 Id: rs-observation-ec-bites-stings
@@ -527,6 +568,7 @@ Description: "Flag indicating bites/stings."
 
 // (Consolidated into RSObsECBitesStings as component[bitesAgent])
 
+// MDS21 (flag) ; MDS22 (agent code) ; MDS23 (agent other text) - External Cause: Burns
 Profile: RSObsECBurns
 Parent: RSObservation
 Id: rs-observation-ec-burns
@@ -555,6 +597,7 @@ Description: "Flag indicating burns as external cause."
 
 // (Consolidated into RSObsECBurns as components: burnsAgent, burnsOther)
 
+// MDS24 (flag) ; MDS25 (specify) - External Cause: Chemical/Substance
 Profile: RSObsECChemical
 Parent: RSObservation
 Id: rs-observation-ec-chemical
@@ -577,6 +620,7 @@ Description: "Flag indicating chemical/substance exposure."
 
 // (Consolidated into RSObsECChemical as component: chemicalAgent)
 
+// MDS26 (flag) ; MDS27 (specify) - External Cause: Contact with Sharp Object
 Profile: RSObsECSharpObject
 Parent: RSObservation
 Id: rs-observation-ec-sharp-object
@@ -599,6 +643,7 @@ Description: "Flag indicating sharp object cause."
 
 // (Consolidated into RSObsECSharpObject as component: sharpObjectSpecify)
 
+// MDS28 (flag) ; MDS29 (type/body of water) ; MDS30 (other text) - External Cause: Drowning
 Profile: RSObsECDrowning
 Parent: RSObservation
 Id: rs-observation-ec-drowning
@@ -627,6 +672,7 @@ Description: "Flag indicating drowning."
 
 // (Consolidated into RSObsECDrowning as components: drowningType, drowningOther)
 
+// MDS31 - External Cause: Exposure to Forces of Nature
 Profile: RSObsECForcesOfNature
 Parent: RSObservation
 Id: rs-observation-ec-forces-of-nature
@@ -638,6 +684,7 @@ Description: "Flag indicating exposure to natural disaster/calamity."
 * code.coding.code = #forces-of-nature-event
 * code.coding.display = "Exposure to forces of nature (event)"
 
+// MDS32 (flag) ; MDS33 (specifics text) - External Cause: Fall
 Profile: RSObsECFall
 Parent: RSObservation
 Id: rs-observation-ec-fall
@@ -660,6 +707,7 @@ Description: "Flag indicating fall."
 
 // (Consolidated into RSObsECFall as component: fallSpecifics)
 
+// MDS34 (flag) ; MDS35 (specify type) - External Cause: Firecracker
 Profile: RSObsECFirecracker
 Parent: RSObservation
 Id: rs-observation-ec-firecracker
@@ -682,6 +730,7 @@ Description: "Flag indicating firecracker-related cause."
 
 // (Consolidated into RSObsECFirecracker as component: firecrackerType)
 
+// MDS36 (flag) ; MDS37 (weapon/specify) - External Cause: Gunshot
 Profile: RSObsECGunshot
 Parent: RSObservation
 Id: rs-observation-ec-gunshot
@@ -704,6 +753,7 @@ Description: "Flag indicating gunshot."
 
 // (Consolidated into RSObsECGunshot as component: gunshotWeapon)
 
+// MDS38 - External Cause: Hanging/Strangulation
 Profile: RSObsECHangingStrangulation
 Parent: RSObservation
 Id: rs-observation-ec-hanging-strangulation
@@ -715,6 +765,7 @@ Description: "Flag indicating hanging/strangulation."
 * code.coding.code = #hanging-strangulation-event
 * code.coding.display = "Hanging/strangulation event"
 
+// MDS39 - External Cause: Mauling/Assault
 Profile: RSObsECMaulingAssault
 Parent: RSObservation
 Id: rs-observation-ec-mauling-assault
@@ -726,6 +777,7 @@ Description: "Flag indicating assault."
 * code.coding.code = #mauling-assault-event
 * code.coding.display = "Mauling/assault event"
 
+// MDS40 - External Cause: Sexual Assault/Abuse/Rape (Alleged)
 Profile: RSObsECSexualAssault
 Parent: RSObservation
 Id: rs-observation-ec-sexual-assault
@@ -737,6 +789,7 @@ Description: "Flag indicating sexual assault."
 * code.coding.code = #sexual-assault-event
 * code.coding.display = "Sexual assault event"
 
+// MDS42 (flag) ; MDS43 (specify) - External Cause: Other
 Profile: RSObsECOther
 Parent: RSObservation
 Id: rs-observation-ec-other
@@ -760,6 +813,7 @@ Description: "Flag indicating other external cause."
 // (Consolidated into RSObsECOther as component: otherSpecify)
 
 // ---------------- INJURIES ----------------
+// MDS176 - Multiple Injuries?
 Profile: RSObsMultipleInjuries
 Parent: RSObservation
 Id: rs-observation-multiple-injuries
@@ -771,6 +825,7 @@ Description: "Boolean flag indicating multiple injuries."
 * code.coding.code = #262519004
 * code.coding.display = "Multiple injuries (disorder)"
 
+// MDS177 (presence) / MDS178 (site) / MDS179 (details) - Abrasion
 Profile: RSObsAbrasion
 Parent: RSObservation
 Id: rs-observation-abrasion
@@ -784,6 +839,7 @@ Description: "Abrasion present; with optional site and details."
 * code.coding.code = #399963005
 * code.coding.display = "Abrasion (disorder)"
 
+// MDS180 (presence) / MDS181 (site) / MDS182 (details) - Avulsion
 Profile: RSObsAvulsion
 Parent: RSObservation
 Id: rs-observation-avulsion
@@ -797,6 +853,7 @@ Description: "Avulsion present; with optional site and details."
 * code.coding.code = #284554003
 * code.coding.display = "Avulsion - injury (disorder)"
 
+// MDS183 (burn general flag) ; MDS184 (1st degree presence) / MDS185 (1st degree site) / MDS186 (1st degree details)
 Profile: RSObsBurn1stDegree
 Parent: RSObservation
 Id: rs-observation-burn-1st
@@ -810,6 +867,7 @@ Description: "1st degree burn present; with site and details."
 * code.coding.code = #77140003
 * code.coding.display = "First degree burn injury (morphologic abnormality)"
 
+// MDS187 (2nd degree presence) / MDS188 (2nd degree site) / MDS189 (2nd degree details)
 Profile: RSObsBurn2ndDegree
 Parent: RSObservation
 Id: rs-observation-burn-2nd
@@ -823,6 +881,7 @@ Description: "2nd degree burn present; with site and details."
 * code.coding.code = #46541008
 * code.coding.display = "Second degree burn injury (morphologic abnormality)"
 
+// MDS190 (3rd degree presence) / MDS191 (3rd degree site) / MDS192 (3rd degree details)
 Profile: RSObsBurn3rdDegree
 Parent: RSObservation
 Id: rs-observation-burn-3rd
@@ -836,6 +895,7 @@ Description: "3rd degree burn present; with site and details."
 * code.coding.code = #80247002
 * code.coding.display = "Third degree burn injury (morphologic abnormality)"
 
+// MDS193 (4th degree presence) / MDS194 (4th degree site) / MDS195 (4th degree details)
 Profile: RSObsBurn4thDegree
 Parent: RSObservation
 Id: rs-observation-burn-4th
@@ -849,6 +909,7 @@ Description: "4th degree burn present; with site and details."
 * code.coding.code = #770400008
 * code.coding.display = "Fourth degree burn injury (morphologic abnormality)"
 
+// MDS196 (presence) / MDS197 (site) / MDS198 (details) - Concussion
 Profile: RSObsConcussion
 Parent: RSObservation
 Id: rs-observation-concussion
@@ -862,6 +923,7 @@ Description: "Concussion present; with site and details."
 * code.coding.code = #110030002
 * code.coding.display = "Concussion injury of brain (disorder)"
 
+// MDS199 (presence) / MDS200 (site) / MDS201 (details) - Contusion
 Profile: RSObsContusion
 Parent: RSObservation
 Id: rs-observation-contusion
@@ -875,6 +937,7 @@ Description: "Contusion present; with site and details."
 * code.coding.code = #125667009
 * code.coding.display = "Contusion (disorder)"
 
+// MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
 Profile: RSObsFractureClosed
 Parent: RSObservation
 Id: rs-observation-fracture-closed
@@ -888,6 +951,7 @@ Description: "Closed fracture present; with site and details."
 * code.coding.code = #423125000
 * code.coding.display = "Closed fracture of bone (disorder)"
 
+// MDS206 (open presence) / MDS207 (open site) / MDS208 (open details)
 Profile: RSObsFractureOpen
 Parent: RSObservation
 Id: rs-observation-fracture-open
@@ -901,6 +965,7 @@ Description: "Open fracture present; with site and details."
 * code.coding.code = #397181002
 * code.coding.display = "Open fracture (disorder)"
 
+// MDS209 (presence) / MDS210 (site) / MDS211 (details) - Open Wound
 Profile: RSObsOpenWound
 Parent: RSObservation
 Id: rs-observation-open-wound
@@ -914,6 +979,7 @@ Description: "Open wound present; with site and details."
 * code.coding.code = #125643001
 * code.coding.display = "Open wound (disorder)"
 
+// MDS212 (presence) / MDS213 (site) / MDS214 (details) - Traumatic Amputation
 Profile: RSObsTraumaticAmputation
 Parent: RSObservation
 Id: rs-observation-traumatic-amputation
@@ -927,6 +993,7 @@ Description: "Traumatic amputation present; with site and details."
 * code.coding.code = #262595009
 * code.coding.display = "Traumatic amputation (disorder)"
 
+// MDS215 (presence) / MDS216 (site) / MDS217 (details) - Other Specified Injury
 Profile: RSObsOtherInjury
 Parent: RSObservation
 Id: rs-observation-other-injury
@@ -941,6 +1008,7 @@ Description: "Other specified injury present; with site and details."
 * code.coding.display = "Traumatic or non-traumatic injury (disorder)"
 
 // ---------------- ONEISS CLINICAL ----------------
+// MDS175 - Blood Alcohol Concentration
 Profile: RSObsBloodAlcoholConcentration
 Parent: RSObservation
 Id: rs-observation-blood-alcohol
@@ -952,6 +1020,7 @@ Description: "Blood alcohol concentration."
 * code.coding.code = #56425-3
 * code.coding.display = "Ethanol [Mass/volume] in Blood"
 
+// MDS108 - Condition of Patient (overall condition at assessment)
 Profile: RSObsConditionOfPatient
 Parent: RSObservation
 Id: rs-observation-condition-of-patient
@@ -963,6 +1032,7 @@ Description: "Overall condition of patient at assessment."
 * code.coding.code = #condition-of-patient
 * code.coding.display = "Condition of patient"
 
+// MDS53 - Outcome at Release
 Profile: RSObsOutcomeAtRelease
 Parent: RSObservation
 Id: rs-observation-outcome-release
@@ -974,6 +1044,7 @@ Description: "Outcome at release from ER/OPD/RHU."
 * code.coding.code = #outcome-at-release
 * code.coding.display = "Outcome at release"
 
+// MDS58 - Outcome at Discharge
 Profile: RSObsOutcomeAtDischarge
 Parent: RSObservation
 Id: rs-observation-outcome-discharge
@@ -985,6 +1056,7 @@ Description: "Outcome at discharge."
 * code.coding.code = #outcome-at-discharge
 * code.coding.display = "Outcome at discharge"
 
+// MDS116 - Status upon reaching Facility/Hospital
 Profile: RSObsStatusOnArrival
 Parent: RSObservation
 Id: rs-observation-status-on-arrival
@@ -996,6 +1068,7 @@ Description: "Status upon reaching facility/hospital."
 * code.coding.code = #status-on-arrival
 * code.coding.display = "Status on arrival"
 
+// MDS117 - If Alive: Conscious/Unconscious (status on arrival detail)
 Profile: RSObsStatusOnArrivalAliveDetail
 Parent: RSObservation
 Id: rs-observation-status-on-arrival-alive
@@ -1008,6 +1081,7 @@ Description: "If alive on arrival, consciousness detail."
 * code.coding.display = "Status on arrival (alive detail)"
 
 // ---------------- RUN REPORT ADDITIONALS ----------------
+// MDS107 - Vehicle Used (run report)
 Profile: RSObsVehicleUsed
 Parent: RSObservation
 Id: rs-observation-vehicle-used
@@ -1019,6 +1093,7 @@ Description: "Vehicle used during response."
 * code.coding.code = #vehicle-used
 * code.coding.display = "Vehicle used"
 
+// MDS91 - Remarks / Clinical Remarks (run report)
 Profile: RSObsClinicalRemarks
 Parent: RSObservation
 Id: rs-observation-clinical-remarks
@@ -1030,6 +1105,7 @@ Description: "Clinical remarks/notes."
 * code.coding.code = #clinical-remarks
 * code.coding.display = "Clinical remarks"
 
+// MDS61 - Comments (ONEISS / run report comments)
 Profile: RSObsRunReportComments
 Parent: RSObservation
 Id: rs-observation-runreport-comments
@@ -1042,6 +1118,7 @@ Description: "General comments from run report."
 * code.coding.display = "Run report comments"
 
 // ---------------- POST-CRASH ----------------
+// MDS226 - Vehicle Condition (post-crash evidence)
 Profile: RSObsVehicleCondition
 Parent: RSObservation
 Id: rs-observation-vehicle-condition
@@ -1053,6 +1130,7 @@ Description: "Vehicle condition assessment."
 * code.coding.code = #vehicle-condition
 * code.coding.display = "Vehicle condition"
 
+// MDS227 - CCTV available (post-crash)
 Profile: RSObsCCTVAvailable
 Parent: RSObservation
 Id: rs-observation-cctv-available
