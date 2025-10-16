@@ -1,8 +1,8 @@
 // Road Safety Observation Profiles (TW Core-style by concept)
-// MDS mappings: comments above each profile indicate the corresponding MDS number(s)
+// Concept mappings: comments above each profile indicate the mapped concept or clinical measure
 
 // Base profile reused by all Road Safety observations
-// MDS: base/profile - used for many Observation mappings (see Logical Model for specific MDS# per element)
+// Base profile - used for many Observation mappings (see Logical Model for specific element mappings)
 Profile: RSObservation
 Parent: PHCoreObservation
 Id: rs-observation

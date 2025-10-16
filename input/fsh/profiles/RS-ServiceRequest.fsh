@@ -4,6 +4,9 @@ Id: rs-service-request
 Title: "Road Safety ServiceRequest"
 Description: "Requests or records related to refusal to admit and related workflow signals."
 * ^version = "1.0.0"
+* ^short = "Service request for refusal/workflow"
+* ^definition = "ServiceRequest used to represent workflow signals such as refusal to admit and related supporting information."
+* ^comment = "Used to capture requests or records associated with refusal to admit and supporting workflow data."
 * status 1..1 MS
 * occurrenceDateTime 0..1 MS
 * supportingInfo 0..* MS
@@ -15,6 +18,8 @@ Description: "Requests or records related to refusal to admit and related workfl
 * code.coding.system = $SILPH
 * code.coding.code = #refusal-to-admit
 * code.coding.display = "Refusal to admit"
+* code ^short = "Refusal to admit code"
+* code ^definition = "Code identifying a refusal-to-admit service/request."
 * subject 1..1 MS
 * subject only Reference(RSPatient)
 * encounter 0..1 MS
