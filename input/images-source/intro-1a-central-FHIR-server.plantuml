@@ -4,7 +4,7 @@ skinparam actorStyle awesome
 skinparam roundcorner 20
 box "Scene to Facility" #White
 actor EMS
-collections FHIR as "FHIR Gateway"
+collections FHIR as "FHIR Server"
 actor EHR as "Facility EHR"
 database ETL as "ONEISS API"
 end box
@@ -75,7 +75,7 @@ end
 
 legend left
 Key concepts
-- Presence of a ONEISS / NHDR central FHIR gateway
+- Presence of a ONEISS / NHDR central FHIR Server
 - Bundles carry Encounter, Observations, Documents
 - Systems retrieve or submit via standard FHIR endpoints
 - ETL subscribes to transform and normalize data for reporting

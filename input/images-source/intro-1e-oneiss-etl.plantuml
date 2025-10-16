@@ -1,13 +1,13 @@
 @startuml
-title ONEISS ETL — Gateway ↔ ONEISS Subscription Workflow
+title ONEISS ETL — FHIR Server ↔ ONEISS Subscription Workflow
 skinparam actorStyle awesome
 skinparam roundcorner 20
-collections FHIR as "FHIR Gateway"
+collections FHIR as "FHIR Server"
 queue ETL as "ETL Script"
 database ONEISS as "ONEISS API"
 
 note right of FHIR
-Gateway hosts Subscription resources
+FHIR Server hosts Subscription resources
 and delivers notifications to Script Endpoint
 end note
 
@@ -37,7 +37,7 @@ Example interactions:
 
 Operational notes:
 - Secure endpoints (OAuth2 client credentials or mTLS)
-- Support retries, backoff, and dead-letter handling on the Gateway
+- Support retries, backoff, and dead-letter handling on the FHIR Server
 - Agree transformation rules, canonical mappings, and provenance
 endlegend
 
