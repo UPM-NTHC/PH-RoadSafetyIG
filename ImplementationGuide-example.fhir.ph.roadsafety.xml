@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-15T18:40:48+00:00"/>
+  <date value="2025-10-16T02:41:49+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -854,6 +854,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-observation-extent-of-injury"/>
+      </reference>
+      <name value="Road Safety Observation - Extent of Injury"/>
+      <description value="Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-observation-ec-bites-stings"/>
       </reference>
       <name value="Road Safety Observation - External Cause: Bites/Stings"/>
@@ -1272,6 +1283,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-observation-referred-by-facility"/>
+      </reference>
+      <name value="Road Safety Observation - Referred By Facility"/>
+      <description value="Flag indicating patient was referred by another hospital/facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-observation-reported-complaint"/>
       </reference>
       <name value="Road Safety Observation - Reported Complaint"/>
@@ -1393,6 +1415,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-observation-transferred-from-facility"/>
+      </reference>
+      <name value="Road Safety Observation - Transferred From Facility"/>
+      <description value="Flag indicating patient transferred from another hospital/facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-observation-transport-vehicular-flag"/>
       </reference>
       <name value="Road Safety Observation - Transport/Vehicular Accident (flag)"/>
@@ -1474,6 +1507,17 @@
       </reference>
       <name value="Road Safety Procedure"/>
       <description value="Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-procedure-transport-coordination"/>
+      </reference>
+      <name value="Road Safety Procedure - Transport Coordination"/>
+      <description value="Procedure record indicating whether transport coordination with the receiving hospital was done."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

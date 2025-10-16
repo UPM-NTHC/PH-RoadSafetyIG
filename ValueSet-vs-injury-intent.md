@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:VSInjuryIntent |
+| Draft as of 2025-10-16 | *Computable Name*:VSInjuryIntent |
 
  
 Injury intent options mapped from ONEISS (prefer SNOMED CT). 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "VSInjuryIntent",
   "title" : "RS VS - Injury Intent",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

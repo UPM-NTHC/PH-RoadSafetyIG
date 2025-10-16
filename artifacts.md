@@ -54,6 +54,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Cyanosis](StructureDefinition-rs-observation-cyanosis.md) | Cyanosis assessment. |
 | [Road Safety Observation - Date/Time Received by EMS](StructureDefinition-rs-observation-date-received.md) | Calendar/timestamp the EMS/dispatch received the request. |
 | [Road Safety Observation - Date/Time of Injury](StructureDefinition-rs-observation-injury-datetime.md) | Timestamp of injury occurrence. |
+| [Road Safety Observation - Extent of Injury](StructureDefinition-rs-observation-extent-of-injury.md) | Extent / severity estimate or category of injury (e.g., minor, moderate, severe). |
 | [Road Safety Observation - External Cause: Bites/Stings](StructureDefinition-rs-observation-ec-bites-stings.md) | Flag indicating bites/stings. |
 | [Road Safety Observation - External Cause: Burns](StructureDefinition-rs-observation-ec-burns.md) | Flag indicating burns as external cause. |
 | [Road Safety Observation - External Cause: Chemical/Substance](StructureDefinition-rs-observation-ec-chemical.md) | Flag indicating chemical/substance exposure. |
@@ -92,6 +93,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Pulse Rate](StructureDefinition-rs-observation-pulse-rate.md) | Pulse/heart rate in beats/min. |
 | [Road Safety Observation - Pulse Rhythm](StructureDefinition-rs-observation-pulse-rhythm.md) | Pulse rhythm. |
 | [Road Safety Observation - Pupils](StructureDefinition-rs-observation-pupils.md) | Pupil size/reactivity summary. |
+| [Road Safety Observation - Referred By Facility](StructureDefinition-rs-observation-referred-by-facility.md) | Flag indicating patient was referred by another hospital/facility. |
 | [Road Safety Observation - Reported Complaint](StructureDefinition-rs-observation-reported-complaint.md) | Free-text reported complaint. |
 | [Road Safety Observation - Respiratory Rate](StructureDefinition-rs-observation-respiratory-rate.md) | Respiratory rate in breaths/min. |
 | [Road Safety Observation - Respiratory Rhythm](StructureDefinition-rs-observation-respiratory-rhythm.md) | Respiratory rhythm (normal/irregular/labored). |
@@ -103,6 +105,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Observation - Time On Scene](StructureDefinition-rs-observation-time-on-scene.md) | Timestamp crew arrived at scene. |
 | [Road Safety Observation - Time of Emergency Station Arrival](StructureDefinition-rs-observation-time-station-arrival.md) | Timestamp unit returned to base/became available. |
 | [Road Safety Observation - Time of Hospital Arrival](StructureDefinition-rs-observation-time-hospital-arrival.md) | Timestamp unit arrived at receiving facility. |
+| [Road Safety Observation - Transferred From Facility](StructureDefinition-rs-observation-transferred-from-facility.md) | Flag indicating patient transferred from another hospital/facility. |
 | [Road Safety Observation - Transport/Vehicular Accident (flag)](StructureDefinition-rs-observation-transport-vehicular-flag.md) | Boolean flag indicating transport/vehicular accident. |
 | [Road Safety Observation - Traumatic Amputation](StructureDefinition-rs-observation-traumatic-amputation.md) | Traumatic amputation present; with site and details. |
 | [Road Safety Observation - Triage Priority](StructureDefinition-rs-observation-triage-priority.md) | Triage category assigned at scene (e.g., Red/Yellow/Green/Black). |
@@ -111,6 +114,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Road Safety Organization](StructureDefinition-rs-organization.md) | Organization profile for EMS providers and receiving facilities involved in road safety encounters. |
 | [Road Safety Patient](StructureDefinition-rs-patient.md) | Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region. |
 | [Road Safety Procedure](StructureDefinition-rs-procedure.md) | Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions). |
+| [Road Safety Procedure - Transport Coordination](StructureDefinition-rs-procedure-transport-coordination.md) | Procedure record indicating whether transport coordination with the receiving hospital was done. |
 | [Road Safety ServiceRequest](StructureDefinition-rs-service-request.md) | Requests or records related to refusal to admit and related workflow signals. |
 | [Road Safety Task](StructureDefinition-rs-task.md) | Workflow tracking for report receipt, durations of delay, and sources of delays. |
 

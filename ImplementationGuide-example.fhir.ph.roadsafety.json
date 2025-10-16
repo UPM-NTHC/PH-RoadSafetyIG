@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -1045,6 +1045,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-extent-of-injury"
+      },
+      "name" : "Road Safety Observation - Extent of Injury",
+      "description" : "Extent / severity estimate or category of injury (e.g., minor, moderate, severe).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-ec-bites-stings"
       },
       "name" : "Road Safety Observation - External Cause: Bites/Stings",
@@ -1501,6 +1513,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-referred-by-facility"
+      },
+      "name" : "Road Safety Observation - Referred By Facility",
+      "description" : "Flag indicating patient was referred by another hospital/facility.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-reported-complaint"
       },
       "name" : "Road Safety Observation - Reported Complaint",
@@ -1633,6 +1657,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-observation-transferred-from-facility"
+      },
+      "name" : "Road Safety Observation - Transferred From Facility",
+      "description" : "Flag indicating patient transferred from another hospital/facility.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-observation-transport-vehicular-flag"
       },
       "name" : "Road Safety Observation - Transport/Vehicular Accident (flag)",
@@ -1721,6 +1757,18 @@
       },
       "name" : "Road Safety Procedure",
       "description" : "Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-procedure-transport-coordination"
+      },
+      "name" : "Road Safety Procedure - Transport Coordination",
+      "description" : "Procedure record indicating whether transport coordination with the receiving hospital was done.",
       "exampleBoolean" : false
     },
     {

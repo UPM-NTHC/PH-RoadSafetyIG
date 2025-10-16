@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:MDSRoadSafety |
+| Draft as of 2025-10-16 | *Computable Name*:MDSRoadSafety |
 
  
 Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
   "name" : "MDSRoadSafety",
   "title" : "Road Safety Minimum Dataset (MDS) Logical Model",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -1225,6 +1225,19 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         ]
       },
       {
+        "id" : "ph-road-safety-logical-model.oneiss.encounter.hospitalAvailable",
+        "path" : "ph-road-safety-logical-model.oneiss.encounter.hospitalAvailable",
+        "short" : "Hospital Available (MDS110)",
+        "definition" : "Hospital Available (MDS110)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "boolean"
+          }
+        ]
+      },
+      {
         "id" : "ph-road-safety-logical-model.oneiss.encounter.originating",
         "path" : "ph-road-safety-logical-model.oneiss.encounter.originating",
         "short" : "Originating Hospital/Physician (MDS47)",
@@ -1325,6 +1338,19 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         "type" : [
           {
             "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "ph-road-safety-logical-model.oneiss.encounter.transferredFromAnotherFacility",
+        "path" : "ph-road-safety-logical-model.oneiss.encounter.transferredFromAnotherFacility",
+        "short" : "Transferred from another hospital/facility (MDS45)",
+        "definition" : "Transferred from another hospital/facility (MDS45)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "boolean"
           }
         ]
       },
@@ -1468,6 +1494,19 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         "type" : [
           {
             "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "ph-road-safety-logical-model.oneiss.clinical.transportCoordination",
+        "path" : "ph-road-safety-logical-model.oneiss.clinical.transportCoordination",
+        "short" : "Was transport coordinated with receiving hospital? (MDS113)",
+        "definition" : "Was transport coordinated with receiving hospital? (MDS113)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "boolean"
           }
         ]
       },
@@ -1836,6 +1875,19 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         ]
       },
       {
+        "id" : "ph-road-safety-logical-model.oneiss.incident.referredByAnotherFacility",
+        "path" : "ph-road-safety-logical-model.oneiss.incident.referredByAnotherFacility",
+        "short" : "Referred by another Hospital/Facility (MDS46)",
+        "definition" : "Referred by another Hospital/Facility (MDS46)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "boolean"
+          }
+        ]
+      },
+      {
         "id" : "ph-road-safety-logical-model.oneiss.injuries",
         "path" : "ph-road-safety-logical-model.oneiss.injuries",
         "short" : "Injuries",
@@ -1858,6 +1910,19 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         "type" : [
           {
             "code" : "boolean"
+          }
+        ]
+      },
+      {
+        "id" : "ph-road-safety-logical-model.oneiss.injuries.extentOfInjury",
+        "path" : "ph-road-safety-logical-model.oneiss.injuries.extentOfInjury",
+        "short" : "Extent of injury / severity estimate (MDS109)",
+        "definition" : "Extent of injury / severity estimate (MDS109)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
           }
         ]
       },

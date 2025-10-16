@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ImplementationGuide/example.fhir.ph.roadsafety | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:PHRoadSafetyIG |
+| Draft as of 2025-10-16 | *Computable Name*:PHRoadSafetyIG |
 
 # Draft PH Road Safety Implementation Guide
 
@@ -53,7 +53,7 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MDSRoadSafety](StructureDefinition-ph-road-safety-logical-model.md), [MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md)...Show 113 more,[PHRoadSafetyIG](index.md),[RSAllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md),[RSBundleEMS](StructureDefinition-rs-bundle-ems.md),[RSBundleONEISS](StructureDefinition-rs-bundle-oneiss.md),[RSClaim](StructureDefinition-rs-claim.md),[RSCondition](StructureDefinition-rs-condition.md),[RSDocumentReference](StructureDefinition-rs-document-reference.md),[RSEncounter](StructureDefinition-rs-encounter.md),[RSHealthcareService](StructureDefinition-rs-healthcare-service.md),[RSLocation](StructureDefinition-rs-location-incident.md),[RSMedicationStatement](StructureDefinition-rs-medication-statement.md),[RSObsAbrasion](StructureDefinition-rs-observation-abrasion.md),[RSObsActivityAtIncident](StructureDefinition-rs-observation-activity-at-incident.md),[RSObsAvulsion](StructureDefinition-rs-observation-avulsion.md),[RSObsBloodAlcoholConcentration](StructureDefinition-rs-observation-blood-alcohol.md),[RSObsBloodPressure](StructureDefinition-rs-observation-blood-pressure.md),[RSObsBodyTemperature](StructureDefinition-rs-observation-body-temperature.md),[RSObsBreathSounds](StructureDefinition-rs-observation-breath-sounds.md),[RSObsBurn1stDegree](StructureDefinition-rs-observation-burn-1st.md),[RSObsBurn2ndDegree](StructureDefinition-rs-observation-burn-2nd.md),[RSObsBurn3rdDegree](StructureDefinition-rs-observation-burn-3rd.md),[RSObsBurn4thDegree](StructureDefinition-rs-observation-burn-4th.md),[RSObsCCTVAvailable](StructureDefinition-rs-observation-cctv-available.md),[RSObsCallSource](StructureDefinition-rs-observation-call-source.md),[RSObsClinicalRemarks](StructureDefinition-rs-observation-clinical-remarks.md),[RSObsCollisionType](StructureDefinition-rs-observation-collision-type.md),[RSObsCollisionVsNonCollision](StructureDefinition-rs-observation-collision-vs-noncollision.md),[RSObsConcussion](StructureDefinition-rs-observation-concussion.md),[RSObsConditionOfPatient](StructureDefinition-rs-observation-condition-of-patient.md),[RSObsContusion](StructureDefinition-rs-observation-contusion.md),[RSObsCyanosis](StructureDefinition-rs-observation-cyanosis.md),[RSObsDateReceived](StructureDefinition-rs-observation-date-received.md),[RSObsECBitesStings](StructureDefinition-rs-observation-ec-bites-stings.md),[RSObsECBurns](StructureDefinition-rs-observation-ec-burns.md),[RSObsECChemical](StructureDefinition-rs-observation-ec-chemical.md),[RSObsECDrowning](StructureDefinition-rs-observation-ec-drowning.md),[RSObsECFall](StructureDefinition-rs-observation-ec-fall.md),[RSObsECFirecracker](StructureDefinition-rs-observation-ec-firecracker.md),[RSObsECForcesOfNature](StructureDefinition-rs-observation-ec-forces-of-nature.md),[RSObsECGunshot](StructureDefinition-rs-observation-ec-gunshot.md),[RSObsECHangingStrangulation](StructureDefinition-rs-observation-ec-hanging-strangulation.md),[RSObsECMaulingAssault](StructureDefinition-rs-observation-ec-mauling-assault.md),[RSObsECOther](StructureDefinition-rs-observation-ec-other.md),[RSObsECSexualAssault](StructureDefinition-rs-observation-ec-sexual-assault.md),[RSObsECSharpObject](StructureDefinition-rs-observation-ec-sharp-object.md),[RSObsFractureClosed](StructureDefinition-rs-observation-fracture-closed.md),[RSObsFractureOpen](StructureDefinition-rs-observation-fracture-open.md),[RSObsGCS](StructureDefinition-rs-observation-gcs.md),[RSObsHowManyPatients](StructureDefinition-rs-observation-how-many-patients.md),[RSObsHowManyVehicles](StructureDefinition-rs-observation-how-many-vehicles.md),[RSObsInjuryDateTime](StructureDefinition-rs-observation-injury-datetime.md),[RSObsInjuryIntent](StructureDefinition-rs-observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-rs-observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsMultipleInjuries](StructureDefinition-rs-observation-multiple-injuries.md),[RSObsOpenWound](StructureDefinition-rs-observation-open-wound.md),[RSObsOtherInjury](StructureDefinition-rs-observation-other-injury.md),[RSObsOtherRiskFactors](StructureDefinition-rs-observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md),[RSObsOutcomeAtDischarge](StructureDefinition-rs-observation-outcome-discharge.md),[RSObsOutcomeAtRelease](StructureDefinition-rs-observation-outcome-release.md),[RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-rs-observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-rs-observation-position-of-patient.md),[RSObsPresenceTrafficInvestigator](StructureDefinition-rs-observation-traffic-investigator.md),[RSObsPulseQuality](StructureDefinition-rs-observation-pulse-quality.md),[RSObsPulseRate](StructureDefinition-rs-observation-pulse-rate.md),[RSObsPulseRhythm](StructureDefinition-rs-observation-pulse-rhythm.md),[RSObsPupils](StructureDefinition-rs-observation-pupils.md),[RSObsReportedComplaint](StructureDefinition-rs-observation-reported-complaint.md),[RSObsRespiratoryRate](StructureDefinition-rs-observation-respiratory-rate.md),[RSObsRespiratoryRhythm](StructureDefinition-rs-observation-respiratory-rhythm.md),[RSObsRunReportComments](StructureDefinition-rs-observation-runreport-comments.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[RSObsStatusOnArrival](StructureDefinition-rs-observation-status-on-arrival.md),[RSObsStatusOnArrivalAliveDetail](StructureDefinition-rs-observation-status-on-arrival-alive.md),[RSObsTimeDepartedScene](StructureDefinition-rs-observation-time-departed.md),[RSObsTimeEnroute](StructureDefinition-rs-observation-time-enroute.md),[RSObsTimeHospitalArrival](StructureDefinition-rs-observation-time-hospital-arrival.md),[RSObsTimeOnScene](StructureDefinition-rs-observation-time-on-scene.md),[RSObsTimeStationArrival](StructureDefinition-rs-observation-time-station-arrival.md),[RSObsTransportVehicularFlag](StructureDefinition-rs-observation-transport-vehicular-flag.md),[RSObsTraumaticAmputation](StructureDefinition-rs-observation-traumatic-amputation.md),[RSObsTriagePriority](StructureDefinition-rs-observation-triage-priority.md),[RSObsUrgencyLevel](StructureDefinition-rs-observation-urgency.md),[RSObsVehicleCondition](StructureDefinition-rs-observation-vehicle-condition.md),[RSObsVehicleUsed](StructureDefinition-rs-observation-vehicle-used.md),[RSObservation](StructureDefinition-rs-observation.md),[RSOrganization](StructureDefinition-rs-organization.md),[RSPatient](StructureDefinition-rs-patient.md),[RSProcedure](StructureDefinition-rs-procedure.md),[RSServiceRequest](StructureDefinition-rs-service-request.md),[RSTask](StructureDefinition-rs-task.md),[VSActivity](ValueSet-vs-activity.md),[VSBitesAgent](ValueSet-vs-bites-agent.md),[VSBreathSounds](ValueSet-vs-breath-sounds.md),[VSBurnsAgent](ValueSet-vs-burns-agent.md),[VSCollisionCategory](ValueSet-vs-collision-category.md),[VSCyanosis](ValueSet-vs-cyanosis.md),[VSDrowningType](ValueSet-vs-drowning-type.md),[VSInjuryIntent](ValueSet-vs-injury-intent.md),[VSLevelOfConsciousness](ValueSet-vs-level-of-consciousness.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md),[VSOtherRiskFactors](ValueSet-vs-other-risk-factors.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md),[VSPlaceOfOccurrence](ValueSet-vs-place-of-occurrence.md),[VSPositionOfPatient](ValueSet-vs-position-of-patient.md),[VSPulseQuality](ValueSet-vs-pulse-quality.md),[VSPulseRhythm](ValueSet-vs-pulse-rhythm.md),[VSPupils](ValueSet-vs-pupils.md),[VSRespiratoryRhythm](ValueSet-vs-respiratory-rhythm.md)and[VSSafetyDevices](ValueSet-vs-safety-devices.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MDSRoadSafety](StructureDefinition-ph-road-safety-logical-model.md), [MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md)...Show 117 more,[PHRoadSafetyIG](index.md),[RSAllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md),[RSBundleEMS](StructureDefinition-rs-bundle-ems.md),[RSBundleONEISS](StructureDefinition-rs-bundle-oneiss.md),[RSClaim](StructureDefinition-rs-claim.md),[RSCondition](StructureDefinition-rs-condition.md),[RSDocumentReference](StructureDefinition-rs-document-reference.md),[RSEncounter](StructureDefinition-rs-encounter.md),[RSHealthcareService](StructureDefinition-rs-healthcare-service.md),[RSLocation](StructureDefinition-rs-location-incident.md),[RSMedicationStatement](StructureDefinition-rs-medication-statement.md),[RSObsAbrasion](StructureDefinition-rs-observation-abrasion.md),[RSObsActivityAtIncident](StructureDefinition-rs-observation-activity-at-incident.md),[RSObsAvulsion](StructureDefinition-rs-observation-avulsion.md),[RSObsBloodAlcoholConcentration](StructureDefinition-rs-observation-blood-alcohol.md),[RSObsBloodPressure](StructureDefinition-rs-observation-blood-pressure.md),[RSObsBodyTemperature](StructureDefinition-rs-observation-body-temperature.md),[RSObsBreathSounds](StructureDefinition-rs-observation-breath-sounds.md),[RSObsBurn1stDegree](StructureDefinition-rs-observation-burn-1st.md),[RSObsBurn2ndDegree](StructureDefinition-rs-observation-burn-2nd.md),[RSObsBurn3rdDegree](StructureDefinition-rs-observation-burn-3rd.md),[RSObsBurn4thDegree](StructureDefinition-rs-observation-burn-4th.md),[RSObsCCTVAvailable](StructureDefinition-rs-observation-cctv-available.md),[RSObsCallSource](StructureDefinition-rs-observation-call-source.md),[RSObsClinicalRemarks](StructureDefinition-rs-observation-clinical-remarks.md),[RSObsCollisionType](StructureDefinition-rs-observation-collision-type.md),[RSObsCollisionVsNonCollision](StructureDefinition-rs-observation-collision-vs-noncollision.md),[RSObsConcussion](StructureDefinition-rs-observation-concussion.md),[RSObsConditionOfPatient](StructureDefinition-rs-observation-condition-of-patient.md),[RSObsContusion](StructureDefinition-rs-observation-contusion.md),[RSObsCyanosis](StructureDefinition-rs-observation-cyanosis.md),[RSObsDateReceived](StructureDefinition-rs-observation-date-received.md),[RSObsECBitesStings](StructureDefinition-rs-observation-ec-bites-stings.md),[RSObsECBurns](StructureDefinition-rs-observation-ec-burns.md),[RSObsECChemical](StructureDefinition-rs-observation-ec-chemical.md),[RSObsECDrowning](StructureDefinition-rs-observation-ec-drowning.md),[RSObsECFall](StructureDefinition-rs-observation-ec-fall.md),[RSObsECFirecracker](StructureDefinition-rs-observation-ec-firecracker.md),[RSObsECForcesOfNature](StructureDefinition-rs-observation-ec-forces-of-nature.md),[RSObsECGunshot](StructureDefinition-rs-observation-ec-gunshot.md),[RSObsECHangingStrangulation](StructureDefinition-rs-observation-ec-hanging-strangulation.md),[RSObsECMaulingAssault](StructureDefinition-rs-observation-ec-mauling-assault.md),[RSObsECOther](StructureDefinition-rs-observation-ec-other.md),[RSObsECSexualAssault](StructureDefinition-rs-observation-ec-sexual-assault.md),[RSObsECSharpObject](StructureDefinition-rs-observation-ec-sharp-object.md),[RSObsExtentOfInjury](StructureDefinition-rs-observation-extent-of-injury.md),[RSObsFractureClosed](StructureDefinition-rs-observation-fracture-closed.md),[RSObsFractureOpen](StructureDefinition-rs-observation-fracture-open.md),[RSObsGCS](StructureDefinition-rs-observation-gcs.md),[RSObsHowManyPatients](StructureDefinition-rs-observation-how-many-patients.md),[RSObsHowManyVehicles](StructureDefinition-rs-observation-how-many-vehicles.md),[RSObsInjuryDateTime](StructureDefinition-rs-observation-injury-datetime.md),[RSObsInjuryIntent](StructureDefinition-rs-observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-rs-observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsMultipleInjuries](StructureDefinition-rs-observation-multiple-injuries.md),[RSObsOpenWound](StructureDefinition-rs-observation-open-wound.md),[RSObsOtherInjury](StructureDefinition-rs-observation-other-injury.md),[RSObsOtherRiskFactors](StructureDefinition-rs-observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md),[RSObsOutcomeAtDischarge](StructureDefinition-rs-observation-outcome-discharge.md),[RSObsOutcomeAtRelease](StructureDefinition-rs-observation-outcome-release.md),[RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-rs-observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-rs-observation-position-of-patient.md),[RSObsPresenceTrafficInvestigator](StructureDefinition-rs-observation-traffic-investigator.md),[RSObsPulseQuality](StructureDefinition-rs-observation-pulse-quality.md),[RSObsPulseRate](StructureDefinition-rs-observation-pulse-rate.md),[RSObsPulseRhythm](StructureDefinition-rs-observation-pulse-rhythm.md),[RSObsPupils](StructureDefinition-rs-observation-pupils.md),[RSObsReferredByFacility](StructureDefinition-rs-observation-referred-by-facility.md),[RSObsReportedComplaint](StructureDefinition-rs-observation-reported-complaint.md),[RSObsRespiratoryRate](StructureDefinition-rs-observation-respiratory-rate.md),[RSObsRespiratoryRhythm](StructureDefinition-rs-observation-respiratory-rhythm.md),[RSObsRunReportComments](StructureDefinition-rs-observation-runreport-comments.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[RSObsStatusOnArrival](StructureDefinition-rs-observation-status-on-arrival.md),[RSObsStatusOnArrivalAliveDetail](StructureDefinition-rs-observation-status-on-arrival-alive.md),[RSObsTimeDepartedScene](StructureDefinition-rs-observation-time-departed.md),[RSObsTimeEnroute](StructureDefinition-rs-observation-time-enroute.md),[RSObsTimeHospitalArrival](StructureDefinition-rs-observation-time-hospital-arrival.md),[RSObsTimeOnScene](StructureDefinition-rs-observation-time-on-scene.md),[RSObsTimeStationArrival](StructureDefinition-rs-observation-time-station-arrival.md),[RSObsTransferredFromFacility](StructureDefinition-rs-observation-transferred-from-facility.md),[RSObsTransportVehicularFlag](StructureDefinition-rs-observation-transport-vehicular-flag.md),[RSObsTraumaticAmputation](StructureDefinition-rs-observation-traumatic-amputation.md),[RSObsTriagePriority](StructureDefinition-rs-observation-triage-priority.md),[RSObsUrgencyLevel](StructureDefinition-rs-observation-urgency.md),[RSObsVehicleCondition](StructureDefinition-rs-observation-vehicle-condition.md),[RSObsVehicleUsed](StructureDefinition-rs-observation-vehicle-used.md),[RSObservation](StructureDefinition-rs-observation.md),[RSOrganization](StructureDefinition-rs-organization.md),[RSPatient](StructureDefinition-rs-patient.md),[RSProcedure](StructureDefinition-rs-procedure.md),[RSProcedureTransportCoordination](StructureDefinition-rs-procedure-transport-coordination.md),[RSServiceRequest](StructureDefinition-rs-service-request.md),[RSTask](StructureDefinition-rs-task.md),[VSActivity](ValueSet-vs-activity.md),[VSBitesAgent](ValueSet-vs-bites-agent.md),[VSBreathSounds](ValueSet-vs-breath-sounds.md),[VSBurnsAgent](ValueSet-vs-burns-agent.md),[VSCollisionCategory](ValueSet-vs-collision-category.md),[VSCyanosis](ValueSet-vs-cyanosis.md),[VSDrowningType](ValueSet-vs-drowning-type.md),[VSInjuryIntent](ValueSet-vs-injury-intent.md),[VSLevelOfConsciousness](ValueSet-vs-level-of-consciousness.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md),[VSOtherRiskFactors](ValueSet-vs-other-risk-factors.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md),[VSPlaceOfOccurrence](ValueSet-vs-place-of-occurrence.md),[VSPositionOfPatient](ValueSet-vs-position-of-patient.md),[VSPulseQuality](ValueSet-vs-pulse-quality.md),[VSPulseRhythm](ValueSet-vs-pulse-rhythm.md),[VSPupils](ValueSet-vs-pupils.md),[VSRespiratoryRhythm](ValueSet-vs-respiratory-rhythm.md)and[VSSafetyDevices](ValueSet-vs-safety-devices.md)
 
 
 * The WHO grants a license for "commercial and non-commercial use" of ICD-11CC BY-ND 3.0 IGODetailed information can be found here: [[https://icd.who.int/en/docs/icd11-license.pdf](https://icd.who.int/en/docs/icd11-license.pdf)](https://icd.who.int/en/docs/icd11-license.pdf) Contact licensing@who.int to obtain further information.
@@ -92,7 +92,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -1317,6 +1317,20 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/rs-observation-extent-of-injury"
+        },
+        "name" : "Road Safety Observation - Extent of Injury",
+        "description" : "Extent / severity estimate or category of injury (e.g., minor, moderate, severe).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/rs-observation-ec-bites-stings"
         },
         "name" : "Road Safety Observation - External Cause: Bites/Stings",
@@ -1849,6 +1863,20 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/rs-observation-referred-by-facility"
+        },
+        "name" : "Road Safety Observation - Referred By Facility",
+        "description" : "Flag indicating patient was referred by another hospital/facility.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/rs-observation-reported-complaint"
         },
         "name" : "Road Safety Observation - Reported Complaint",
@@ -2003,6 +2031,20 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/rs-observation-transferred-from-facility"
+        },
+        "name" : "Road Safety Observation - Transferred From Facility",
+        "description" : "Flag indicating patient transferred from another hospital/facility.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/rs-observation-transport-vehicular-flag"
         },
         "name" : "Road Safety Observation - Transport/Vehicular Accident (flag)",
@@ -2105,6 +2147,20 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         },
         "name" : "Road Safety Procedure",
         "description" : "Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/rs-procedure-transport-coordination"
+        },
+        "name" : "Road Safety Procedure - Transport Coordination",
+        "description" : "Procedure record indicating whether transport coordination with the receiving hospital was done.",
         "exampleBoolean" : false
       },
       {

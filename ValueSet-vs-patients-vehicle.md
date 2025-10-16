@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-patients-vehicle | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:VSPatientsVehicle |
+| Draft as of 2025-10-16 | *Computable Name*:VSPatientsVehicle |
 
  
 Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC). 
@@ -52,7 +52,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "VSPatientsVehicle",
   "title" : "RS VS - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

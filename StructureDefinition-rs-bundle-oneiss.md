@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:RSBundleONEISS |
+| Draft as of 2025-10-16 | *Computable Name*:RSBundleONEISS |
 
  
 Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
   "name" : "RSBundleONEISS",
   "title" : "Road Safety Bundle — ONEISS Submission",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -238,6 +238,25 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
         ]
       },
       {
+        "id" : "Bundle.entry:observationExtentOfInjury",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationExtentOfInjury",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:observationExtentOfInjury.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "Bundle.entry:observationClinical",
         "path" : "Bundle.entry",
         "sliceName" : "observationClinical",
@@ -289,6 +308,44 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-patients",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:observationTransferredFromFacility",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationTransferredFromFacility",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:observationTransferredFromFacility.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transferred-from-facility"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:observationReferredByFacility",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationReferredByFacility",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:observationReferredByFacility.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-referred-by-facility"
             ]
           }
         ]

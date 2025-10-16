@@ -487,6 +487,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Date/Time of Consultation (MDS16, MDS17)","Date/Time of Consultation (MDS16, MDS17)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.encounter.dateTimeOfConsult",0,1,"",""
 "ph-road-safety-logical-model.oneiss.encounter.serviceProvider","ph-road-safety-logical-model.oneiss.encounter.serviceProvider","","","",0,1,"","","","Reference {[]} {[]}
 ","Medical Facility (MDS104)","Medical Facility (MDS104)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.encounter.serviceProvider",0,1,"",""
+"ph-road-safety-logical-model.oneiss.encounter.hospitalAvailable","ph-road-safety-logical-model.oneiss.encounter.hospitalAvailable","","","",0,1,"","","","boolean {[]} {[]}
+","Hospital Available (MDS110)","Hospital Available (MDS110)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.encounter.hospitalAvailable",0,1,"",""
 "ph-road-safety-logical-model.oneiss.encounter.originating","ph-road-safety-logical-model.oneiss.encounter.originating","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Originating Hospital/Physician (MDS47)","Originating Hospital/Physician (MDS47)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.encounter.originating",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -529,6 +531,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Outcome at release (MDS53)","Outcome at release (MDS53)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.encounter.outcomeAtRelease",0,1,"",""
 "ph-road-safety-logical-model.oneiss.encounter.outcomeAtDischarge","ph-road-safety-logical-model.oneiss.encounter.outcomeAtDischarge","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Outcome at discharge (MDS58)","Outcome at discharge (MDS58)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.encounter.outcomeAtDischarge",0,1,"",""
+"ph-road-safety-logical-model.oneiss.encounter.transferredFromAnotherFacility","ph-road-safety-logical-model.oneiss.encounter.transferredFromAnotherFacility","","","",0,1,"","","","boolean {[]} {[]}
+","Transferred from another hospital/facility (MDS45)","Transferred from another hospital/facility (MDS45)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.encounter.transferredFromAnotherFacility",0,1,"",""
 "ph-road-safety-logical-model.oneiss.clinical","ph-road-safety-logical-model.oneiss.clinical","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Clinical","Clinical","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -565,6 +569,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If alive: Conscious/Unconscious (MDS117)","If alive: Conscious/Unconscious (MDS117)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.statusOnArrivalAliveDetail",0,1,"",""
 "ph-road-safety-logical-model.oneiss.clinical.psychosocialSupport","ph-road-safety-logical-model.oneiss.clinical.psychosocialSupport","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Psychosocial support/condition (MDS223)","Psychosocial support/condition (MDS223)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.psychosocialSupport",0,1,"",""
+"ph-road-safety-logical-model.oneiss.clinical.transportCoordination","ph-road-safety-logical-model.oneiss.clinical.transportCoordination","","","",0,1,"","","","boolean {[]} {[]}
+","Was transport coordinated with receiving hospital? (MDS113)","Was transport coordinated with receiving hospital? (MDS113)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.transportCoordination",0,1,"",""
 "ph-road-safety-logical-model.oneiss.clinical.procedures","ph-road-safety-logical-model.oneiss.clinical.procedures","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Procedures and Interventions","Procedures and Interventions","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.procedures",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -663,6 +669,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","How many vehicles involved (MDS156)","How many vehicles involved (MDS156)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.howManyVehicles",0,1,"",""
 "ph-road-safety-logical-model.oneiss.incident.howManyPatients","ph-road-safety-logical-model.oneiss.incident.howManyPatients","","","",0,1,"","","","integer {[]} {[]}
 ","How many patients involved (MDS157)","How many patients involved (MDS157)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.howManyPatients",0,1,"",""
+"ph-road-safety-logical-model.oneiss.incident.referredByAnotherFacility","ph-road-safety-logical-model.oneiss.incident.referredByAnotherFacility","","","",0,1,"","","","boolean {[]} {[]}
+","Referred by another Hospital/Facility (MDS46)","Referred by another Hospital/Facility (MDS46)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.referredByAnotherFacility",0,1,"",""
 "ph-road-safety-logical-model.oneiss.injuries","ph-road-safety-logical-model.oneiss.injuries","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Injuries","Injuries","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.injuries",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -681,6 +689,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ph-road-safety-logical-model.oneiss.injuries.multipleInjuries","ph-road-safety-logical-model.oneiss.injuries.multipleInjuries","","","",0,1,"","","","boolean {[]} {[]}
 ","Multiple Injury case? (MDS176)","Multiple Injury case? (MDS176)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.injuries.multipleInjuries",0,1,"",""
+"ph-road-safety-logical-model.oneiss.injuries.extentOfInjury","ph-road-safety-logical-model.oneiss.injuries.extentOfInjury","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Extent of injury / severity estimate (MDS109)","Extent of injury / severity estimate (MDS109)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.injuries.extentOfInjury",0,1,"",""
 "ph-road-safety-logical-model.oneiss.injuries.abrasion","ph-road-safety-logical-model.oneiss.injuries.abrasion","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Abrasion (MDS177-179)","Abrasion (MDS177-179)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.injuries.abrasion",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

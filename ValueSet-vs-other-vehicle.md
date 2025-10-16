@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:VSOtherVehicle |
+| Draft as of 2025-10-16 | *Computable Name*:VSOtherVehicle |
 
  
 Other vehicle/object involved in collision. 
@@ -52,7 +52,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "VSOtherVehicle",
   "title" : "RS VS - Other Vehicle in Collision",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

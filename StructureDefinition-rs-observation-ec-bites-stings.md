@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:RSObsECBitesStings |
+| Draft as of 2025-10-16 | *Computable Name*:RSObsECBitesStings |
 
  
 Flag indicating bites/stings. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-bi
   "name" : "RSObsECBitesStings",
   "title" : "Road Safety Observation - External Cause: Bites/Stings",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

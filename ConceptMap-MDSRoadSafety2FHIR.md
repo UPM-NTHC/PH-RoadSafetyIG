@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ConceptMap/MDSRoadSafety2FHIR | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:MDSRoadSafety2FHIR |
+| Active as of 2025-10-16 | *Computable Name*:MDSRoadSafety2FHIR |
 
  
 Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources. 
@@ -133,7 +133,15 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 4**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html)
+**Group 4**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [HealthcareService](http://hl7.org/fhir/R4/healthcareservice.html)
+
+* **Source Code**: MDSRoadSafety.oneiss.encounter.hospitalAvailable
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: HealthcareService.active
+
+-------
+
+**Group 5**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html)
 
 * **Source Code**: MDSRoadSafety.runreport.workflow.refusalToAdmit.flag
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -150,7 +158,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 5**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Procedure](http://hl7.org/fhir/R4/procedure.html)
+**Group 6**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Procedure](http://hl7.org/fhir/R4/procedure.html)
 
 * **Source Code**: MDSRoadSafety.runreport.clinical.procedures.intervention
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -164,10 +172,13 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 * **Source Code**: MDSRoadSafety.oneiss.clinical.psychosocialSupport
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Procedure.code
+* **Source Code**: MDSRoadSafety.oneiss.clinical.transportCoordination
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Procedure.code
 
 -------
 
-**Group 6**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Observation](http://hl7.org/fhir/R4/observation.html)
+**Group 7**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Observation](http://hl7.org/fhir/R4/observation.html)
 
 * **Source Code**: MDSRoadSafety.runreport.workflow.dateReceived
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -250,6 +261,9 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 * **Source Code**: MDSRoadSafety.oneiss.incident.howManyPatients
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueInteger
+* **Source Code**: MDSRoadSafety.oneiss.encounter.transferredFromAnotherFacility
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueBoolean
 * **Source Code**: MDSRoadSafety.postcrash.incident.collisionType
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueCodeableConcept
@@ -274,6 +288,9 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 * **Source Code**: MDSRoadSafety.runreport.incident.callSource
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueString
+* **Source Code**: MDSRoadSafety.oneiss.incident.referredByAnotherFacility
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueBoolean
 * **Source Code**: MDSRoadSafety.runreport.vitals.time
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.effectiveDateTime
@@ -334,11 +351,14 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 7**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Observation](http://hl7.org/fhir/R4/observation.html)
+**Group 8**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Observation](http://hl7.org/fhir/R4/observation.html)
 
 * **Source Code**: MDSRoadSafety.injuries.multipleInjuries
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueBoolean
+* **Source Code**: MDSRoadSafety.injuries.extentOfInjury
+  * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
+  * **Target Code**: Observation.valueCodeableConcept
 * **Source Code**: MDSRoadSafety.injuries.abrasion.present
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
   * **Target Code**: Observation.valueBoolean
@@ -465,7 +485,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 8**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Condition](http://hl7.org/fhir/R4/condition.html)
+**Group 9**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Condition](http://hl7.org/fhir/R4/condition.html)
 
 * **Source Code**: MDSRoadSafety.oneiss.clinical.medicalHistory
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -482,7 +502,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 9**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html)
+**Group 10**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html)
 
 * **Source Code**: MDSRoadSafety.oneiss.clinical.currentMedication
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -490,7 +510,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 10**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [AllergyIntolerance](http://hl7.org/fhir/R4/allergyintolerance.html)
+**Group 11**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [AllergyIntolerance](http://hl7.org/fhir/R4/allergyintolerance.html)
 
 * **Source Code**: MDSRoadSafety.oneiss.clinical.knownAllergies
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -498,7 +518,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 11**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [DocumentReference](http://hl7.org/fhir/R4/documentreference.html)
+**Group 12**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [DocumentReference](http://hl7.org/fhir/R4/documentreference.html)
 
 * **Source Code**: MDSRoadSafety.postcrash.evidence.causeOfCrash
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -524,7 +544,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
 
 -------
 
-**Group 12**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Claim](http://hl7.org/fhir/R4/claim.html)
+**Group 13**Mapping from `https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety` to [Claim](http://hl7.org/fhir/R4/claim.html)
 
 * **Source Code**: MDSRoadSafety.oneiss.finance.costOfCare
   * **Relationship**: [is equivalent to](http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent)
@@ -544,7 +564,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
   "title" : "MDS Logical Model to FHIR Mapping",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -907,6 +927,21 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
     },
     {
       "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
+      "target" : "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+      "element" : [
+        {
+          "code" : "MDSRoadSafety.oneiss.encounter.hospitalAvailable",
+          "target" : [
+            {
+              "code" : "HealthcareService.active",
+              "equivalence" : "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
       "target" : "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
       "element" : [
         {
@@ -980,6 +1015,15 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
         },
         {
           "code" : "MDSRoadSafety.oneiss.clinical.psychosocialSupport",
+          "target" : [
+            {
+              "code" : "Procedure.code",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.clinical.transportCoordination",
           "target" : [
             {
               "code" : "Procedure.code",
@@ -1237,6 +1281,15 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           ]
         },
         {
+          "code" : "MDSRoadSafety.oneiss.encounter.transferredFromAnotherFacility",
+          "target" : [
+            {
+              "code" : "Observation.valueBoolean",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
           "code" : "MDSRoadSafety.postcrash.incident.collisionType",
           "target" : [
             {
@@ -1304,6 +1357,15 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           "target" : [
             {
               "code" : "Observation.valueString",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.oneiss.incident.referredByAnotherFacility",
+          "target" : [
+            {
+              "code" : "Observation.valueBoolean",
               "equivalence" : "equivalent"
             }
           ]
@@ -1490,6 +1552,15 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
           "target" : [
             {
               "code" : "Observation.valueBoolean",
+              "equivalence" : "equivalent"
+            }
+          ]
+        },
+        {
+          "code" : "MDSRoadSafety.injuries.extentOfInjury",
+          "target" : [
+            {
+              "code" : "Observation.valueCodeableConcept",
               "equivalence" : "equivalent"
             }
           ]

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-place-of-occurrence | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:VSPlaceOfOccurrence |
+| Draft as of 2025-10-16 | *Computable Name*:VSPlaceOfOccurrence |
 
  
 Place of occurrence (prefer SNOMED CT; use ICD-11 where needed). 
@@ -52,7 +52,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "VSPlaceOfOccurrence",
   "title" : "RS VS - Place of Occurrence",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

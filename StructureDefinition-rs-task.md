@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:RSTask |
+| Draft as of 2025-10-16 | *Computable Name*:RSTask |
 
  
 Workflow tracking for report receipt, durations of delay, and sources of delays. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-task.csv), [Excel
   "name" : "RSTask",
   "title" : "Road Safety Task",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

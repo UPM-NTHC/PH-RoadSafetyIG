@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:RSObsMultipleInjuries |
+| Draft as of 2025-10-16 | *Computable Name*:RSObsMultipleInjuries |
 
  
 Boolean flag indicating multiple injuries. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-multi
   "name" : "RSObsMultipleInjuries",
   "title" : "Road Safety Observation - Multiple Injuries?",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

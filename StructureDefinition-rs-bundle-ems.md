@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.1.0 |
-| Draft as of 2025-10-15 | *Computable Name*:RSBundleEMS |
+| Draft as of 2025-10-16 | *Computable Name*:RSBundleEMS |
 
  
 Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
   "name" : "RSBundleEMS",
   "title" : "Road Safety Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-15T18:40:48+00:00",
+  "date" : "2025-10-16T02:41:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -365,6 +365,25 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
             "code" : "Observation",
             "profile" : [
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:observationExtentOfInjury",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationExtentOfInjury",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:observationExtentOfInjury.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury"
             ]
           }
         ]
