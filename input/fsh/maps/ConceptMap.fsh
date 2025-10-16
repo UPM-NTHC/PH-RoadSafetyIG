@@ -124,6 +124,13 @@ Usage: #definition
 * group[=].element[=].target.code = #Location.position.latitude
 * group[=].element[=].target.equivalence = #equivalent
 
+// ---------------------- HealthcareService (facility availability) ----------------------
+* group[+].source = "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety"
+* group[=].target = "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+* group[=].element[0].code = #MDSRoadSafety.oneiss.encounter.hospitalAvailable
+* group[=].element[=].target.code = #HealthcareService.active
+* group[=].element[=].target.equivalence = #equivalent
+
 // ---------------------- ServiceRequest (refusal) ----------------------
 * group[+].source = "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety"
 * group[=].target = "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
@@ -153,6 +160,9 @@ Usage: #definition
 * group[=].element[=].target.code = #Procedure.usedReference
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #MDSRoadSafety.oneiss.clinical.psychosocialSupport
+* group[=].element[=].target.code = #Procedure.code
+* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[+].code = #MDSRoadSafety.oneiss.clinical.transportCoordination
 * group[=].element[=].target.code = #Procedure.code
 * group[=].element[=].target.equivalence = #equivalent
 
@@ -242,6 +252,9 @@ Usage: #definition
 * group[=].element[+].code = #MDSRoadSafety.oneiss.incident.howManyPatients
 * group[=].element[=].target.code = #Observation.valueInteger
 * group[=].element[=].target.equivalence = #equivalent
+* group[=].element[+].code = #MDSRoadSafety.oneiss.encounter.transferredFromAnotherFacility
+* group[=].element[=].target.code = #Observation.valueBoolean
+* group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #MDSRoadSafety.postcrash.incident.collisionType
 * group[=].element[=].target.code = #Observation.valueCodeableConcept
 * group[=].element[=].target.equivalence = #equivalent
@@ -265,6 +278,9 @@ Usage: #definition
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #MDSRoadSafety.runreport.incident.callSource
 * group[=].element[=].target.code = #Observation.valueString
+* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[+].code = #MDSRoadSafety.oneiss.incident.referredByAnotherFacility
+* group[=].element[=].target.code = #Observation.valueBoolean
 * group[=].element[=].target.equivalence = #equivalent
 // vitals
 * group[=].element[+].code = #MDSRoadSafety.runreport.vitals.time
@@ -332,6 +348,9 @@ Usage: #definition
 // injuries present/site/details
 * group[=].element[0].code = #MDSRoadSafety.injuries.multipleInjuries
 * group[=].element[=].target.code = #Observation.valueBoolean
+* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[+].code = #MDSRoadSafety.injuries.extentOfInjury
+* group[=].element[=].target.code = #Observation.valueCodeableConcept
 * group[=].element[=].target.equivalence = #equivalent
 // abrasion
 * group[=].element[+].code = #MDSRoadSafety.injuries.abrasion.present

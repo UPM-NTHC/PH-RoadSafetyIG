@@ -24,6 +24,7 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
     observationVitals 0..* and
     observationGCS 0..1 and
     observationReportedComplaint 0..1 and
+    observationExtentOfInjury 0..1 and
     observationCallSource 0..1 and
     document 0..* and
     task 0..* and
@@ -44,6 +45,7 @@ Description: "Bundle for EMS Run Report submission containing core patient, enco
 * entry[observationGCS].resource only rs-observation-gcs
 * entry[observationReportedComplaint].resource only rs-observation-reported-complaint
 * entry[observationCallSource].resource only rs-observation-call-source
+* entry[observationExtentOfInjury].resource only rs-observation-extent-of-injury
 * entry contains
     observationVehicleUsed 0..1 and
     observationRunReportComments 0..1 and
@@ -76,8 +78,11 @@ Description: "Bundle for Facility ONEISS submission containing patient, encounte
     conditionInitial 0..1 and
     conditionFinal 0..1 and
     observationVitals 0..* and
+    observationExtentOfInjury 0..1 and
     observationClinical 0..* and
     observationIncident 0..* and
+    observationTransferredFromFacility 0..1 and
+    observationReferredByFacility 0..1 and
     document 0..* and
     serviceRequest 0..* and
     procedure 0..*
@@ -91,6 +96,9 @@ Description: "Bundle for Facility ONEISS submission containing patient, encounte
 * entry[observationIncident].resource only rs-observation-injury-datetime or rs-observation-injury-intent or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport or rs-observation-collision-type or rs-observation-collision-vs-noncollision or rs-observation-patients-vehicle or rs-observation-other-vehicle or rs-observation-position-of-patient or rs-observation-how-many-vehicles or rs-observation-how-many-patients or rs-observation-place-of-occurrence or rs-observation-activity-at-incident
 * entry contains observationPostCrash 0..*
 * entry[observationPostCrash].resource only rs-observation-traffic-investigator or rs-observation-other-risk-factors or rs-observation-safety-accessories or rs-observation-vehicle-condition or rs-observation-cctv-available
+* entry[observationExtentOfInjury].resource only rs-observation-extent-of-injury
+* entry[observationTransferredFromFacility].resource only rs-observation-transferred-from-facility
+* entry[observationReferredByFacility].resource only rs-observation-referred-by-facility
 * entry[document].resource only RSDocumentReference
 * entry[serviceRequest].resource only RSServiceRequest
 * entry[procedure].resource only RSProcedure

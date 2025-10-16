@@ -812,6 +812,43 @@ Description: "Flag indicating other external cause."
 
 // (Consolidated into RSObsECOther as component: otherSpecify)
 
+
+// MDS109 - Extent of injury (severity estimate/category)
+Profile: RSObsExtentOfInjury
+Parent: RSObservation
+Id: rs-observation-extent-of-injury
+Title: "Road Safety Observation - Extent of Injury"
+Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
+* valueCodeableConcept 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #extent-of-injury
+* code.coding.display = "Extent of injury"
+
+// MDS45 - Transferred from another hospital/facility (flag)
+Profile: RSObsTransferredFromFacility
+Parent: RSObservation
+Id: rs-observation-transferred-from-facility
+Title: "Road Safety Observation - Transferred From Facility"
+Description: "Flag indicating patient transferred from another hospital/facility."
+* valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $LNC (exactly)
+* code.coding.code = #77305-1
+* code.coding.display = "Transferred from facility"
+
+// MDS46 - Referred by another hospital/facility (flag)
+Profile: RSObsReferredByFacility
+Parent: RSObservation
+Id: rs-observation-referred-by-facility
+Title: "Road Safety Observation - Referred By Facility"
+Description: "Flag indicating patient was referred by another hospital/facility."
+* valueBoolean 1..1 MS
+* code.coding 1..1
+* code.coding.system = $LNC (exactly)
+* code.coding.code = #LA6624-6
+* code.coding.display = "Referred (indicator)"
+
 // ---------------- INJURIES ----------------
 // MDS176 - Multiple Injuries?
 Profile: RSObsMultipleInjuries
