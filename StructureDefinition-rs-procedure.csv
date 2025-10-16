@@ -61,7 +61,7 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
 "Procedure.code","Procedure.code","","type
 ","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","A code to identify a specific procedure .","http://hl7.org/fhir/ValueSet/procedure-code|4.0.1","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Procedure code","Code identifying the procedure or coordination activity.","","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","A code to identify a specific procedure .","http://hl7.org/fhir/ValueSet/procedure-code|4.0.1","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".code","FiveWs.what[x]","OBR-44/OBR-45"
 "Procedure.subject","Procedure.subject","","patient
 ","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient]]}

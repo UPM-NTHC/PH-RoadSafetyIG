@@ -52,7 +52,7 @@ con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 ","< 272141005 |Severities|","PRB-26 / ABS-3","Can be pre/post-coordinated into value.  Or ./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""severity""].value","FiveWs.grade","246112005"
 "Condition.code","Condition.code","","type
 ","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Identification of the condition, problem or diagnosis","Identification of the condition, problem or diagnosis.","","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code|4.0.1","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Condition / diagnosis code","Identification of the condition, problem or diagnosis.","","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code|4.0.1","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","code 246090004 |Associated finding| (< 404684003 |Clinical finding| MINUS
 << 420134006 |Propensity to adverse reactions| MINUS 
 << 473010000 |Hypersensitivity condition| MINUS 
@@ -71,7 +71,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Condition.code.coding","Condition.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:$this}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:$this}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22","union(., ./translation)"
 "Condition.code.coding:icd10Nature","Condition.code.coding","icd10Nature","","",0,*,"","","Y","Coding {[]} {[]}

@@ -16,7 +16,8 @@ Evidence and post-crash documentation linked to the incident (e.g., cause of cra
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md) and [Road Safety Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-document-reference)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
   "name" : "RSDocumentReference",
   "title" : "Road Safety DocumentReference (Evidence)",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -151,6 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
       {
         "id" : "DocumentReference.content.attachment.url",
         "path" : "DocumentReference.content.attachment.url",
+        "short" : "Document URL",
         "min" : 1,
         "mustSupport" : true
       },

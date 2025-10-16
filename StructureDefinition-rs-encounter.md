@@ -16,8 +16,8 @@ Encounter for EMS run report / facility submission context. Captures incident nu
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [Road Safety Condition](StructureDefinition-rs-condition.md), [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md), [Road Safety Observation](StructureDefinition-rs-observation.md), [Road Safety Procedure](StructureDefinition-rs-procedure.md) and [Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
+* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Condition](StructureDefinition-rs-condition.md), [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md), [Road Safety Observation](StructureDefinition-rs-observation.md)...Show 2 more,[Road Safety Procedure](StructureDefinition-rs-procedure.md)and[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "Road Safety Encounter",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -112,12 +112,13 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "slicing" : {
           "discriminator" : [
             {
-              "type" : "pattern",
+              "type" : "value",
               "path" : "type"
             }
           ],
           "rules" : "open"
         },
+        "short" : "Encounter identifiers",
         "min" : 1,
         "mustSupport" : true
       },
@@ -172,16 +173,20 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
       {
         "id" : "Encounter.status",
         "path" : "Encounter.status",
+        "short" : "Encounter status",
         "mustSupport" : true
       },
       {
         "id" : "Encounter.class",
         "path" : "Encounter.class",
+        "short" : "Encounter class/type",
         "mustSupport" : true
       },
       {
         "id" : "Encounter.subject",
         "path" : "Encounter.subject",
+        "short" : "Patient subject",
+        "comment" : "Reference constrained to the Road Safety Patient profile (`RSPatient`).",
         "min" : 1,
         "type" : [
           {
@@ -199,7 +204,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "slicing" : {
           "discriminator" : [
             {
-              "type" : "pattern",
+              "type" : "value",
               "path" : "type"
             }
           ],
@@ -310,6 +315,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
       {
         "id" : "Encounter.period.start",
         "path" : "Encounter.period.start",
+        "short" : "Encounter start",
         "min" : 1,
         "mustSupport" : true
       },
@@ -337,8 +343,63 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "mustSupport" : true
       },
       {
+        "id" : "Encounter.location",
+        "path" : "Encounter.location",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "location"
+            }
+          ],
+          "ordered" : true,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Encounter.location:accidentSite",
+        "path" : "Encounter.location",
+        "sliceName" : "accidentSite",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Encounter.location:accidentSite.location",
+        "path" : "Encounter.location.location",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-incident"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.location:serviceSite",
+        "path" : "Encounter.location",
+        "sliceName" : "serviceSite",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Encounter.location:serviceSite.location",
+        "path" : "Encounter.location.location",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
         "id" : "Encounter.serviceProvider",
         "path" : "Encounter.serviceProvider",
+        "short" : "Service provider",
         "type" : [
           {
             "code" : "Reference",

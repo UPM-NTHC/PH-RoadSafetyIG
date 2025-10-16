@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-16T02:41:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-16T07:04:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -891,7 +891,7 @@
          fhir:reference [ fhir:v "StructureDefinition/rs-bundle-ems" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Bundle — EMS Submission" ] ;
-       fhir:description [ fhir:v "Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items." ] ;
+       fhir:description [ fhir:v "Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -909,7 +909,25 @@
          fhir:reference [ fhir:v "StructureDefinition/rs-bundle-oneiss" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Bundle — ONEISS Submission" ] ;
-       fhir:description [ fhir:v "Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents." ] ;
+       fhir:description [ fhir:v "Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-postcrash> ;
+         fhir:reference [ fhir:v "StructureDefinition/rs-bundle-postcrash" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Bundle — Post‑Crash Investigation" ] ;
+       fhir:description [ fhir:v "Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -941,11 +959,65 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems> ;
+         fhir:reference [ fhir:v "StructureDefinition/rs-composition-ems" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Composition — EMS Submission" ] ;
+       fhir:description [ fhir:v "Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss> ;
+         fhir:reference [ fhir:v "StructureDefinition/rs-composition-oneiss" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Composition — ONEISS Submission" ] ;
+       fhir:description [ fhir:v "Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-postcrash> ;
+         fhir:reference [ fhir:v "StructureDefinition/rs-composition-postcrash" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Composition — Post‑Crash Investigation" ] ;
+       fhir:description [ fhir:v "Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/rs-condition" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Condition" ] ;
-       fhir:description [ fhir:v "Condition resource for Road Safety IG.  a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage." ] ;
+       fhir:description [ fhir:v "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2566,6 +2638,24 @@
        ] ;
        fhir:name [ fhir:v "Road Safety Procedure - Transport Coordination" ] ;
        fhir:description [ fhir:v "Procedure record indicating whether transport coordination with the receiving hospital was done." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service> ;
+         fhir:reference [ fhir:v "StructureDefinition/rs-location-service" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Service Location" ] ;
+       fhir:description [ fhir:v "Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

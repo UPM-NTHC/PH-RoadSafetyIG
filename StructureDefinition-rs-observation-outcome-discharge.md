@@ -17,6 +17,7 @@ Outcome at discharge.
 **Usages:**
 
 * Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-outcome-discharge)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-outco
   "name" : "RSObsOutcomeAtDischarge",
   "title" : "Road Safety Observation - Outcome at Discharge",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

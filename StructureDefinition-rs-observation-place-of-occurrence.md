@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-place
   "name" : "RSObsPlaceOfOccurrence",
   "title" : "Road Safety Observation - Place of Occurrence",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

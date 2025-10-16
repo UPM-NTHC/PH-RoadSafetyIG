@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-clini
   "name" : "RSObsClinicalRemarks",
   "title" : "Road Safety Observation - Clinical Remarks",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

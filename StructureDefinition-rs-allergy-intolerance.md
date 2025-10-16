@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
   "name" : "RSAllergyIntolerance",
   "title" : "Road Safety AllergyIntolerance",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -107,6 +107,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
       {
         "id" : "AllergyIntolerance.code",
         "path" : "AllergyIntolerance.code",
+        "short" : "Allergy / intolerance concept",
+        "definition" : "Concept identifying a known allergy or intolerance (substance or agent) documented for the patient.",
+        "comment" : "Targets AllergyIntolerance.code per ConceptMap.",
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
@@ -116,6 +119,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
       {
         "id" : "AllergyIntolerance.patient",
         "path" : "AllergyIntolerance.patient",
+        "short" : "Subject (patient)",
+        "definition" : "Reference to the patient who is the subject of this allergy/intolerance record.",
+        "comment" : "Reference constrained to the Road Safety Patient profile (`RSPatient`).",
         "type" : [
           {
             "code" : "Reference",

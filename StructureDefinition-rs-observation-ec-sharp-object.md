@@ -16,7 +16,7 @@ Flag indicating sharp object cause.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-ec-sharp-object)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-sh
   "name" : "RSObsECSharpObject",
   "title" : "Road Safety Observation - External Cause: Contact with Sharp Object",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,10 +116,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-sh
   "differential" : {
     "element" : [
       {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "min" : 1,
@@ -174,7 +170,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-sh
         "slicing" : {
           "discriminator" : [
             {
-              "type" : "pattern",
+              "type" : "value",
               "path" : "code"
             }
           ],

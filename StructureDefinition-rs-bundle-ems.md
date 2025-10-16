@@ -12,7 +12,7 @@
 | Draft as of 2025-10-16 | *Computable Name*:RSBundleEMS |
 
  
-Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items. 
+Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
   "name" : "RSBundleEMS",
   "title" : "Road Safety Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
       ]
     }
   ],
-  "description" : "Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items.",
+  "description" : "Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).",
   "jurisdiction" : [
     {
       "coding" : [
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
       {
         "id" : "Bundle.type",
         "path" : "Bundle.type",
-        "fixedCode" : "collection"
+        "fixedCode" : "document"
       },
       {
         "id" : "Bundle.entry",
@@ -120,18 +120,37 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
         "slicing" : {
           "discriminator" : [
             {
-              "type" : "profile",
+              "type" : "value",
               "path" : "resource"
             }
           ],
           "rules" : "open"
         },
-        "min" : 3
+        "min" : 4
       },
       {
         "id" : "Bundle.entry.resource",
         "path" : "Bundle.entry.resource",
         "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:composition",
+        "path" : "Bundle.entry",
+        "sliceName" : "composition",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:composition.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Composition",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems"
+            ]
+          }
+        ]
       },
       {
         "id" : "Bundle.entry:patient",
@@ -365,25 +384,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
             "code" : "Observation",
             "profile" : [
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationExtentOfInjury",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationExtentOfInjury",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Bundle.entry:observationExtentOfInjury.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury"
             ]
           }
         ]

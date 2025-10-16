@@ -12,11 +12,12 @@
 | Draft as of 2025-10-16 | *Computable Name*:RSCondition |
 
  
-Condition resource for Road Safety IG. a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
+Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
 
 **Usages:**
 
 * Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "name" : "RSCondition",
   "title" : "Road Safety Condition",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
       ]
     }
   ],
-  "description" : "Condition resource for Road Safety IG.  a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
+  "description" : "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -129,6 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
       {
         "id" : "Condition.code",
         "path" : "Condition.code",
+        "short" : "Condition / diagnosis code",
         "mustSupport" : true
       },
       {
@@ -137,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
         "slicing" : {
           "discriminator" : [
             {
-              "type" : "pattern",
+              "type" : "value",
               "path" : "$this"
             }
           ],

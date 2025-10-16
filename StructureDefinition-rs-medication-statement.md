@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
   "name" : "RSMedicationStatement",
   "title" : "Road Safety MedicationStatement",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -112,6 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
       {
         "id" : "MedicationStatement.medication[x]",
         "path" : "MedicationStatement.medication[x]",
+        "short" : "Medication",
         "mustSupport" : true
       },
       {

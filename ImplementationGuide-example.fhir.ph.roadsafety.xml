@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-16T02:41:49+00:00"/>
+  <date value="2025-10-16T07:04:25+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -494,7 +494,7 @@
         <reference value="StructureDefinition/rs-bundle-ems"/>
       </reference>
       <name value="Road Safety Bundle — EMS Submission"/>
-      <description value="Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items."/>
+      <description value="Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -505,7 +505,18 @@
         <reference value="StructureDefinition/rs-bundle-oneiss"/>
       </reference>
       <name value="Road Safety Bundle — ONEISS Submission"/>
-      <description value="Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents."/>
+      <description value="Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-bundle-postcrash"/>
+      </reference>
+      <name value="Road Safety Bundle — Post‑Crash Investigation"/>
+      <description value="Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -524,10 +535,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-composition-ems"/>
+      </reference>
+      <name value="Road Safety Composition — EMS Submission"/>
+      <description value="Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-composition-oneiss"/>
+      </reference>
+      <name value="Road Safety Composition — ONEISS Submission"/>
+      <description value="Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-composition-postcrash"/>
+      </reference>
+      <name value="Road Safety Composition — Post‑Crash Investigation"/>
+      <description value="Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-condition"/>
       </reference>
       <name value="Road Safety Condition"/>
-      <description value="Condition resource for Road Safety IG.  a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."/>
+      <description value="Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1518,6 +1562,17 @@
       </reference>
       <name value="Road Safety Procedure - Transport Coordination"/>
       <description value="Procedure record indicating whether transport coordination with the receiving hospital was done."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-location-service"/>
+      </reference>
+      <name value="Road Safety Service Location"/>
+      <description value="Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

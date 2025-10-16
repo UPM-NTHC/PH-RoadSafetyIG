@@ -490,5 +490,5 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Unique device identifier","Unique Device Identifiers associated with this line item.","","The UDI code allows the insurer to obtain device level information on the product supplied.","","","","","","","",,,,,"",,,,"Claim.item.detail.subDetail.udi",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Claim.total","Claim.total","","","",0,1,"Y","","","Money {[]} {[]}
-","Total claim cost","The total value of the all the items in the claim.","","Used for  control total purposes.","","","","","","","",,,,,"",,,,"Claim.total",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Total claim amount","The total value of the all the items in the claim.","","Used for  control total purposes.","","","","","","","",,,,,"",,,,"Claim.total",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

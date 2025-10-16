@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
   "name" : "MDSRoadSafety",
   "title" : "Road Safety Minimum Dataset (MDS) Logical Model",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -1589,6 +1589,32 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         ]
       },
       {
+        "id" : "ph-road-safety-logical-model.oneiss.clinical.otherRiskFactors",
+        "path" : "ph-road-safety-logical-model.oneiss.clinical.otherRiskFactors",
+        "short" : "Other risk factors at time of incident (MDS230)",
+        "definition" : "Other risk factors at time of incident (MDS230)",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "ph-road-safety-logical-model.oneiss.clinical.otherRiskFactorsOther",
+        "path" : "ph-road-safety-logical-model.oneiss.clinical.otherRiskFactorsOther",
+        "short" : "Other risk factors - Others (MDS231)",
+        "definition" : "Other risk factors - Others (MDS231)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ]
+      },
+      {
         "id" : "ph-road-safety-logical-model.oneiss.incident",
         "path" : "ph-road-safety-logical-model.oneiss.incident",
         "short" : "Incident",
@@ -1767,6 +1793,32 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         "type" : [
           {
             "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "ph-road-safety-logical-model.oneiss.incident.safetyAccessories",
+        "path" : "ph-road-safety-logical-model.oneiss.incident.safetyAccessories",
+        "short" : "Safety accessories (MDS232)",
+        "definition" : "Safety accessories (MDS232)",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "ph-road-safety-logical-model.oneiss.incident.safetyAccessoriesOther",
+        "path" : "ph-road-safety-logical-model.oneiss.incident.safetyAccessoriesOther",
+        "short" : "Safety - Others (MDS233)",
+        "definition" : "Safety - Others (MDS233)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "string"
           }
         ]
       },
@@ -2768,58 +2820,6 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
         "type" : [
           {
             "code" : "boolean"
-          }
-        ]
-      },
-      {
-        "id" : "ph-road-safety-logical-model.postcrash.incident.otherRiskFactors",
-        "path" : "ph-road-safety-logical-model.postcrash.incident.otherRiskFactors",
-        "short" : "Other risk factors at time of incident (MDS230)",
-        "definition" : "Other risk factors at time of incident (MDS230)",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "ph-road-safety-logical-model.postcrash.incident.otherRiskFactorsOther",
-        "path" : "ph-road-safety-logical-model.postcrash.incident.otherRiskFactorsOther",
-        "short" : "Other risk factors - Others (MDS231)",
-        "definition" : "Other risk factors - Others (MDS231)",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "ph-road-safety-logical-model.postcrash.incident.safetyAccessories",
-        "path" : "ph-road-safety-logical-model.postcrash.incident.safetyAccessories",
-        "short" : "Safety accessories (MDS232)",
-        "definition" : "Safety accessories (MDS232)",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "ph-road-safety-logical-model.postcrash.incident.safetyAccessoriesOther",
-        "path" : "ph-road-safety-logical-model.postcrash.incident.safetyAccessoriesOther",
-        "short" : "Safety - Others (MDS233)",
-        "definition" : "Safety - Others (MDS233)",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
           }
         ]
       }

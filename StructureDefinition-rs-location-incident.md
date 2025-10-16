@@ -17,7 +17,7 @@ Location of incident; supports PH-Core address extensions and geolocation.
 **Usages:**
 
 * Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [Road Safety HealthcareService](StructureDefinition-rs-healthcare-service.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Encounter](StructureDefinition-rs-encounter.md) and [Road Safety HealthcareService](StructureDefinition-rs-healthcare-service.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-location-incident)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-incident
   "name" : "RSLocation",
   "title" : "Road Safety Incident Location",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -99,11 +99,13 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-incident
       {
         "id" : "Location.name",
         "path" : "Location.name",
+        "short" : "Location name",
         "mustSupport" : true
       },
       {
         "id" : "Location.address",
         "path" : "Location.address",
+        "short" : "Location address",
         "mustSupport" : true
       },
       {
@@ -117,13 +119,20 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-incident
         "mustSupport" : true
       },
       {
+        "id" : "Location.position",
+        "path" : "Location.position",
+        "mustSupport" : true
+      },
+      {
         "id" : "Location.position.longitude",
         "path" : "Location.position.longitude",
+        "short" : "Longitude",
         "mustSupport" : true
       },
       {
         "id" : "Location.position.latitude",
         "path" : "Location.position.latitude",
+        "short" : "Latitude",
         "mustSupport" : true
       }
     ]

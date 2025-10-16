@@ -254,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/rs-bundle-ems">Road Safety Bundle — EMS Submission</a>
             </td>
             <td>
-<p>Bundle for EMS Run Report submission containing core patient, encounter, location, observations, documents, and workflow items.</p>
+<p>Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).</p>
 </td>
          </tr>
          <tr>
@@ -263,7 +263,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/rs-bundle-oneiss">Road Safety Bundle — ONEISS Submission</a>
             </td>
             <td>
-<p>Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents.</p>
+<p>Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-bundle-postcrash.html"
+                  title="StructureDefinition/rs-bundle-postcrash">Road Safety Bundle — Post‑Crash Investigation</a>
+            </td>
+            <td>
+<p>Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences.</p>
 </td>
          </tr>
          <tr>
@@ -277,11 +286,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-rs-composition-ems.html"
+                  title="StructureDefinition/rs-composition-ems">Road Safety Composition — EMS Submission</a>
+            </td>
+            <td>
+<p>Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-composition-oneiss.html"
+                  title="StructureDefinition/rs-composition-oneiss">Road Safety Composition — ONEISS Submission</a>
+            </td>
+            <td>
+<p>Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-composition-postcrash.html"
+                  title="StructureDefinition/rs-composition-postcrash">Road Safety Composition — Post‑Crash Investigation</a>
+            </td>
+            <td>
+<p>Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-rs-condition.html"
                   title="StructureDefinition/rs-condition">Road Safety Condition</a>
             </td>
             <td>
-<p>Condition resource for Road Safety IG.  a single, flexible Condition profile that supports multiple coding systems (ICD, SNOMED), textual entries, and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.</p>
+<p>Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.</p>
 </td>
          </tr>
          <tr>
@@ -1087,6 +1123,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-rs-location-service.html"
+                  title="StructureDefinition/rs-location-service">Road Safety Service Location</a>
+            </td>
+            <td>
+<p>Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-rs-service-request.html"
                   title="StructureDefinition/rs-service-request">Road Safety ServiceRequest</a>
             </td>
@@ -1317,7 +1362,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 02:42+0000">2025-10-16</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 07:05+0000">2025-10-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

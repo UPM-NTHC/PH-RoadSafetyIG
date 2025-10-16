@@ -12,7 +12,7 @@
 | Draft as of 2025-10-16 | *Computable Name*:RSBundleONEISS |
 
  
-Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents. 
+Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest). 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
   "name" : "RSBundleONEISS",
   "title" : "Road Safety Bundle — ONEISS Submission",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
       ]
     }
   ],
-  "description" : "Bundle for Facility ONEISS submission containing patient, encounter, conditions, observations, and supporting documents.",
+  "description" : "Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).",
   "jurisdiction" : [
     {
       "coding" : [
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
       {
         "id" : "Bundle.type",
         "path" : "Bundle.type",
-        "fixedCode" : "collection"
+        "fixedCode" : "document"
       },
       {
         "id" : "Bundle.entry",
@@ -120,18 +120,37 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
         "slicing" : {
           "discriminator" : [
             {
-              "type" : "profile",
+              "type" : "value",
               "path" : "resource"
             }
           ],
           "rules" : "open"
         },
-        "min" : 2
+        "min" : 3
       },
       {
         "id" : "Bundle.entry.resource",
         "path" : "Bundle.entry.resource",
         "min" : 1
+      },
+      {
+        "id" : "Bundle.entry:composition",
+        "path" : "Bundle.entry",
+        "sliceName" : "composition",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Bundle.entry:composition.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Composition",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"
+            ]
+          }
+        ]
       },
       {
         "id" : "Bundle.entry:patient",
@@ -210,29 +229,33 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
         ]
       },
       {
-        "id" : "Bundle.entry:observationVitals",
+        "id" : "Bundle.entry:observationInjuries",
         "path" : "Bundle.entry",
-        "sliceName" : "observationVitals",
+        "sliceName" : "observationInjuries",
         "min" : 0,
         "max" : "*"
       },
       {
-        "id" : "Bundle.entry:observationVitals.resource",
+        "id" : "Bundle.entry:observationInjuries.resource",
         "path" : "Bundle.entry.resource",
         "type" : [
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-1st",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-2nd",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-3rd",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-4th",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-contusion",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-closed",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-open",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury"
             ]
           }
         ]
@@ -299,7 +322,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-flag",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle",
@@ -307,7 +329,41 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-patients",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-triage-priority",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-urgency"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:observationExternalCause",
+        "path" : "Bundle.entry",
+        "sliceName" : "observationExternalCause",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:observationExternalCause.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "Observation",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other"
             ]
           }
         ]
@@ -403,29 +459,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
             "code" : "Procedure",
             "profile" : [
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationPostCrash",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationPostCrash",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Bundle.entry:observationPostCrash.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-condition",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available"
             ]
           }
         ]

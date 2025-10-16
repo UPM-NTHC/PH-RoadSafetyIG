@@ -611,6 +611,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If YES, by whom? (Practitioner/Patient/RelatedPerson) (MDS162)","If YES, by whom? (Practitioner/Patient/RelatedPerson) (MDS162)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.procedures.firstAid.byWhom",0,1,"",""
 "ph-road-safety-logical-model.oneiss.clinical.bloodAlcoholConcentration","ph-road-safety-logical-model.oneiss.clinical.bloodAlcoholConcentration","","","",0,1,"","","","Quantity {[]} {[]}
 ","Blood Alcohol Concentration (MDS175)","Blood Alcohol Concentration (MDS175)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.bloodAlcoholConcentration",0,1,"",""
+"ph-road-safety-logical-model.oneiss.clinical.otherRiskFactors","ph-road-safety-logical-model.oneiss.clinical.otherRiskFactors","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Other risk factors at time of incident (MDS230)","Other risk factors at time of incident (MDS230)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.otherRiskFactors",0,*,"",""
+"ph-road-safety-logical-model.oneiss.clinical.otherRiskFactorsOther","ph-road-safety-logical-model.oneiss.clinical.otherRiskFactorsOther","","","",0,1,"","","","string {[]} {[]}
+","Other risk factors - Others (MDS231)","Other risk factors - Others (MDS231)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.clinical.otherRiskFactorsOther",0,1,"",""
 "ph-road-safety-logical-model.oneiss.incident","ph-road-safety-logical-model.oneiss.incident","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Incident","Incident","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -653,6 +657,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Activity - Others (MDS174)","Activity - Others (MDS174)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.activityOther",0,1,"",""
 "ph-road-safety-logical-model.oneiss.incident.collisionVsNonCollision","ph-road-safety-logical-model.oneiss.incident.collisionVsNonCollision","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Collision vs Non-Collision (MDS163)","Collision vs Non-Collision (MDS163)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.collisionVsNonCollision",0,1,"",""
+"ph-road-safety-logical-model.oneiss.incident.safetyAccessories","ph-road-safety-logical-model.oneiss.incident.safetyAccessories","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Safety accessories (MDS232)","Safety accessories (MDS232)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.safetyAccessories",0,*,"",""
+"ph-road-safety-logical-model.oneiss.incident.safetyAccessoriesOther","ph-road-safety-logical-model.oneiss.incident.safetyAccessoriesOther","","","",0,1,"","","","string {[]} {[]}
+","Safety - Others (MDS233)","Safety - Others (MDS233)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.safetyAccessoriesOther",0,1,"",""
 "ph-road-safety-logical-model.oneiss.incident.patientsVehicle","ph-road-safety-logical-model.oneiss.incident.patientsVehicle","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Patient's Vehicle (MDS164)","Patient's Vehicle (MDS164)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.oneiss.incident.patientsVehicle",0,1,"",""
 "ph-road-safety-logical-model.oneiss.incident.patientsVehicleOther","ph-road-safety-logical-model.oneiss.incident.patientsVehicleOther","","","",0,*,"","","","string {[]} {[]}
@@ -1101,11 +1109,3 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Collision type (MDS218)","Collision type (MDS218)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.postcrash.incident.collisionType",0,1,"",""
 "ph-road-safety-logical-model.postcrash.incident.trafficInvestigatorPresent","ph-road-safety-logical-model.postcrash.incident.trafficInvestigatorPresent","","","",0,1,"","","","boolean {[]} {[]}
 ","Presence of traffic investigator (MDS219)","Presence of traffic investigator (MDS219)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.postcrash.incident.trafficInvestigatorPresent",0,1,"",""
-"ph-road-safety-logical-model.postcrash.incident.otherRiskFactors","ph-road-safety-logical-model.postcrash.incident.otherRiskFactors","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Other risk factors at time of incident (MDS230)","Other risk factors at time of incident (MDS230)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.postcrash.incident.otherRiskFactors",0,*,"",""
-"ph-road-safety-logical-model.postcrash.incident.otherRiskFactorsOther","ph-road-safety-logical-model.postcrash.incident.otherRiskFactorsOther","","","",0,1,"","","","string {[]} {[]}
-","Other risk factors - Others (MDS231)","Other risk factors - Others (MDS231)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.postcrash.incident.otherRiskFactorsOther",0,1,"",""
-"ph-road-safety-logical-model.postcrash.incident.safetyAccessories","ph-road-safety-logical-model.postcrash.incident.safetyAccessories","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Safety accessories (MDS232)","Safety accessories (MDS232)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.postcrash.incident.safetyAccessories",0,*,"",""
-"ph-road-safety-logical-model.postcrash.incident.safetyAccessoriesOther","ph-road-safety-logical-model.postcrash.incident.safetyAccessoriesOther","","","",0,1,"","","","string {[]} {[]}
-","Safety - Others (MDS233)","Safety - Others (MDS233)","","","","","","","","","",,,,,"",,,,"ph-road-safety-logical-model.postcrash.incident.safetyAccessoriesOther",0,1,"",""

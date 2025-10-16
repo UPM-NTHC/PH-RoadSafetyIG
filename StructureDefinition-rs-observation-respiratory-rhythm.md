@@ -16,7 +16,8 @@ Respiratory rhythm (normal/irregular/labored).
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-respiratory-rhythm)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "name" : "RSObsRespiratoryRhythm",
   "title" : "Road Safety Observation - Respiratory Rhythm",
   "status" : "draft",
-  "date" : "2025-10-16T02:41:49+00:00",
+  "date" : "2025-10-16T07:04:25+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

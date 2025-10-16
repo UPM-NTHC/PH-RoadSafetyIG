@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 0, warn = 723, info = 35
+err = 0, warn = 742, info = 7
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
@@ -11,19 +11,24 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-allergy-intolerance : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-ems : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-oneiss : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-postcrash : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-claim : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-composition-ems : 0 / 7 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-composition-oneiss : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-composition-postcrash : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-document-reference : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 0 / 8 / 5
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 0 / 8 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-healthcare-service : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-location-incident : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-location-service : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-medication-statement : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-abrasion : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-activity-at-incident : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-avulsion : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-blood-alcohol : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-blood-pressure : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-blood-pressure : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-body-temperature : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-breath-sounds : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-burn-1st : 0 / 1 / 1
@@ -40,23 +45,23 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-contusion : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-cyanosis : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-date-received : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-fall : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-fall : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-forces-of-nature : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-hanging-strangulation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-mauling-assault : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-other : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-other : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sexual-assault : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-extent-of-injury : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture-closed : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture-open : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-gcs : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-gcs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-patients : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime : 0 / 1 / 1
@@ -723,19 +728,35 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-bundle-oneiss.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-bundle-postcrash.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-postcrash'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-claim.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-composition-ems.json ==
+WARNING: StructureDefinition/rs-composition-ems: StructureDefinition.snapshot: The slice 'workflow' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-ems: StructureDefinition.snapshot: The slice 'incident' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-ems: StructureDefinition.snapshot: The slice 'vitals' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-ems: StructureDefinition.snapshot: The slice 'clinical' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-ems: StructureDefinition.snapshot: The slice 'documents' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-ems: StructureDefinition.snapshot: The slice 'procedures' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-composition-oneiss.json ==
+WARNING: StructureDefinition/rs-composition-oneiss: StructureDefinition.snapshot: The slice 'patient' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-oneiss: StructureDefinition.snapshot: The slice 'encounter' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-oneiss: StructureDefinition.snapshot: The slice 'clinical' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-oneiss: StructureDefinition.snapshot: The slice 'incident' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-oneiss: StructureDefinition.snapshot: The slice 'documents' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-composition-postcrash.json ==
+WARNING: StructureDefinition/rs-composition-postcrash: StructureDefinition.snapshot: The slice 'patient' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-postcrash: StructureDefinition.snapshot: The slice 'incident' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-composition-postcrash: StructureDefinition.snapshot: The slice 'documents' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-postcrash'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-condition.json ==
-INFORMATION: StructureDefinition/rs-condition: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-condition: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-document-reference.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-encounter.json ==
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.differential.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[70].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'incidentNumber' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'hospitalCaseNo' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'receivedBy' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
@@ -751,6 +772,8 @@ WARNING: StructureDefinition/rs-location-incident: StructureDefinition.snapshot:
 WARNING: StructureDefinition/rs-location-incident: StructureDefinition.snapshot: The slice 'cityMunicipality' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-location-incident: StructureDefinition.snapshot: The slice 'barangay' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-incident'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-location-service.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-medication-statement.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation.json ==
@@ -764,8 +787,6 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation-blood-alcohol.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-alcohol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-blood-pressure.json ==
-INFORMATION: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-body-temperature.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature'): The Implementation Guide contains no examples for this profile
@@ -800,48 +821,30 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation-date-received.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-bites-stings: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-bites-stings: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-burns.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-burns: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-burns: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-chemical: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-chemical: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-drowning: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-drowning: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-fall.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-fall: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-fall: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-firecracker: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-firecracker: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-forces-of-nature.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-gunshot: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-gunshot: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-hanging-strangulation.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-mauling-assault.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-other.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-other: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-other: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-sexual-assault.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object.json ==
-INFORMATION: StructureDefinition/rs-observation-ec-sharp-object: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-ec-sharp-object: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-extent-of-injury.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury'): The Implementation Guide contains no examples for this profile
@@ -850,8 +853,6 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation-fracture-open.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-open'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-gcs.json ==
-INFORMATION: StructureDefinition/rs-observation-gcs: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot.element[53].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-how-many-patients.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-patients'): The Implementation Guide contains no examples for this profile
