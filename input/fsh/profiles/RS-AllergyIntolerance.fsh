@@ -4,9 +4,6 @@ Id: rs-allergy-intolerance
 Title: "Road Safety AllergyIntolerance"
 Description: "Known allergies, substances and reactions."
 * ^version = "1.0.0"
-* ^short = "Known allergies"
-* ^definition = "Recorded allergies, implicated substances and observed reactions documented for the patient."
-* ^comment = "Represents known patient allergies captured for road safety use."
 
 * code 0..1 MS
 * code ^short = "Allergy / intolerance concept"

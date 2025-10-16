@@ -4,9 +4,6 @@ Id: rs-encounter
 Title: "Road Safety Encounter"
 Description: "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer."
 * ^version = "1.0.0"
-* ^short = "Encounter for road safety reporting"
-* ^definition = "Encounter representing an EMS run report or facility submission context, including identifiers, timing, participants, disposition and transfers."
-* ^comment = "Used to record encounter-level context for road safety events."
 * status 1..1 MS
 * status ^short = "Encounter status"
 * class 1..1 MS

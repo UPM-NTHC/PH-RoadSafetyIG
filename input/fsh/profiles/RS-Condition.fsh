@@ -4,9 +4,6 @@ Id: rs-condition
 Title: "Road Safety Condition"
 Description: "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."
 * ^version = "1.0.0"
-* ^short = "Clinical condition / diagnosis"
-* ^definition = "Clinical condition or diagnosis information recorded for the patient in road safety contexts, supporting multiple coding systems and free-text where needed."
-* ^comment = "Flexible Condition profile for encounter and problem-list use."
 
 /* Core constraints and usage */
 * subject 1..1 MS
