@@ -13,3 +13,15 @@ Description: "Procedures related to incident/report (e.g., coordination with rec
 * performer 0..* 
 * performer.actor only Reference(PHCorePractitioner)
 * note 0..* 
+
+// MDS113 - Transport coordination with receiving hospital
+Profile: RSProcedureTransportCoordination
+Parent: RSProcedure
+Id: rs-procedure-transport-coordination
+Title: "Road Safety Procedure - Transport Coordination"
+Description: "Procedure record indicating whether transport coordination with the receiving hospital was done."
+* code 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT
+* code.coding.code = #referral-transport-coordination
+* code.coding.display = "Transport coordination with receiving hospital"
