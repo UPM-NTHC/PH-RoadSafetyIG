@@ -19,7 +19,7 @@ Description: "Condition resource for Road Safety IG that supports multiple codin
 /* code: flexible approach following TW Core style — prefer coded ICD/SNOMED when available, allow text for free-text entries (medical history, problem text) */
 * code 0..1 MS
 * code ^short = "Condition / diagnosis code"
-* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains

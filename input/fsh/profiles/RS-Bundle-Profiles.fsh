@@ -61,7 +61,7 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * type = #document (exactly)
 * entry 1..*
 * entry.resource 1..1
-* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.type = #value
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
@@ -180,7 +180,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * type = #document (exactly)
 * entry 1..*
 * entry.resource 1..1
-* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.type = #value
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
@@ -282,7 +282,7 @@ Description: "Document Bundle for Post‑Crash investigation submission. The fir
 * type = #document (exactly)
 * entry 1..*
 * entry.resource 1..1
-* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.type = #value
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains

@@ -51,7 +51,7 @@ Id: rs-observation-blood-pressure
 Title: "Road Safety Observation - Blood Pressure"
 Description: "Blood pressure using component entries for systolic/diastolic."
 * value[x] 0..0
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains systolic 1..1 and diastolic 1..1
@@ -130,7 +130,7 @@ Id: rs-observation-gcs
 Title: "Road Safety Observation - Glasgow Coma Scale"
 Description: "GCS with components for eyes, verbal, motor; optional total score as integer."
 * valueInteger 0..1 MS
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains gcsEyes 0..1 and gcsVerbal 0..1 and gcsMotor 0..1
@@ -555,7 +555,7 @@ Description: "Flag indicating bites/stings."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #782162007
 * code.coding.display = "Bite of nonhuman animal (event)"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains bitesAgent 0..1
@@ -579,7 +579,7 @@ Description: "Flag indicating burns as external cause."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #242490006
 * code.coding.display = "Burning due to contact with hot substance (event)"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains burnsAgent 0..1 and burnsOther 0..1
@@ -608,7 +608,7 @@ Description: "Flag indicating chemical/substance exposure."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #chemical-event
 * code.coding.display = "Chemical/substance exposure (event)"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains chemicalAgent 0..1
@@ -631,7 +631,7 @@ Description: "Flag indicating sharp object cause."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #sharp-object-event
 * code.coding.display = "Contact with sharp object (event)"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains sharpObjectSpecify 0..1
@@ -654,7 +654,7 @@ Description: "Flag indicating drowning."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #40947009
 * code.coding.display = "Drowning (event)"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains drowningType 0..1 and drowningOther 0..1
@@ -695,7 +695,7 @@ Description: "Flag indicating fall."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #fall-event
 * code.coding.display = "Fall (event)"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains fallSpecifics 0..1
@@ -718,7 +718,7 @@ Description: "Flag indicating firecracker-related cause."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #firecracker-event
 * code.coding.display = "Firecracker event"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains firecrackerType 0..1
@@ -741,7 +741,7 @@ Description: "Flag indicating gunshot."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #gunshot-event
 * code.coding.display = "Gunshot event"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains gunshotWeapon 0..1
@@ -800,7 +800,7 @@ Description: "Flag indicating other external cause."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #other-external-cause-event
 * code.coding.display = "Other external cause event"
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains otherSpecify 0..1

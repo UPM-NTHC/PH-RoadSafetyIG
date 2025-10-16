@@ -27,7 +27,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * hospitalization.destination 0..1 MS
 
 /* Incident and Service Locations (Encounter.location slicing) */
-* location ^slicing.discriminator.type = #profile
+* location ^slicing.discriminator.type = #value
 * location ^slicing.discriminator.path = "location"
 * location ^slicing.rules = #open
 * location ^slicing.ordered = true
@@ -38,7 +38,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * location[serviceSite].location only Reference(rs-location-service)
 
 /* Identifier slices for ONEISS */
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains incidentNumber 0..1 and hospitalCaseNo 0..1
@@ -52,7 +52,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 /* Originating hospital/practitioner */
 * hospitalization.origin 0..1 MS
 * hospitalization.origin only Reference(RSOrganization)
-* participant ^slicing.discriminator.type = #pattern
+* participant ^slicing.discriminator.type = #value
 * participant ^slicing.discriminator.path = "type"
 * participant ^slicing.rules = #open
 * participant contains receivedBy 0..1 and teamLeader 0..1 and treatmentOfficer 0..1 and transportOfficer 0..1 and assistant 0..*
