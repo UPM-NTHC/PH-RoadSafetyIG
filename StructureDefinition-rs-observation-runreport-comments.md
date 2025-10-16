@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
   "name" : "RSObsRunReportComments",
   "title" : "Road Safety Observation - Run Report Comments",
   "status" : "draft",
-  "date" : "2025-10-16T07:04:25+00:00",
+  "date" : "2025-10-16T07:32:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

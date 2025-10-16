@@ -57,7 +57,7 @@ This value set contains 4 concepts
   "name" : "VSModeOfTransport",
   "title" : "RS VS - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-10-16T07:04:25+00:00",
+  "date" : "2025-10-16T07:32:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

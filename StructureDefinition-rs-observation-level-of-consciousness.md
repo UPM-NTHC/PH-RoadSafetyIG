@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
   "name" : "RSObsLevelOfConsciousness",
   "title" : "Road Safety Observation - Level of Consciousness (AVPU)",
   "status" : "draft",
-  "date" : "2025-10-16T07:04:25+00:00",
+  "date" : "2025-10-16T07:32:50+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
