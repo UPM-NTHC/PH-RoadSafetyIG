@@ -25,7 +25,7 @@ class "DocumentReference"
 class "PHCoreEncounter"
 class "RSOrganization"
 class "PHCorePractitioner"
-class "RSLocation"
+class "RSIncidentLocation"
 class "PHCoreLocation"
 class "RSMedicationStatement"
 class "MedicationStatement"
@@ -61,7 +61,7 @@ class "Obs (RS profiles)"
 "RSObservation" --> "RSPatient" : subject
 "RSObservation" --> "RSEncounter" : encounter
 "RSHealthcareService" --> "RSOrganization" : providedBy
-"RSHealthcareService" --> "RSLocation" : location
+"RSHealthcareService" --> "RSIncidentLocation" : location
 "RSProcedure" --> "RSPatient" : subject
 "RSProcedure" --> "RSEncounter" : encounter
 "RSProcedure" --> "PHCorePractitioner" : performer.actor
@@ -81,7 +81,7 @@ class "Obs (RS profiles)"
 "RSCondition" --|> "Condition"
 "RSDocumentReference" --|> "DocumentReference"
 "RSEncounter" --|> "PHCoreEncounter"
-"RSLocation" --|> "PHCoreLocation"
+"RSIncidentLocation" --|> "PHCoreLocation"
 "RSMedicationStatement" --|> "MedicationStatement"
 "RSObservation" --|> "PHCoreObservation"
 "RSOrganization" --|> "PHCoreOrganization"

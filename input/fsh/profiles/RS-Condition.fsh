@@ -44,3 +44,4 @@ Description: "Condition resource for Road Safety IG that supports multiple codin
 * note 0..* MS
 
 /* guidance: use multiple Condition instances rather than packing unrelated semantics into one resource. Use category to distinguish types (problem-list vs encounter-diagnosis) and use code.coding slices to capture different coding systems. For narrative-only entries (medical history / problem text), prefer code.text and note. */
+// See IPS IG for additional guidance on condition usage.
