@@ -224,9 +224,9 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     or rs-observation-ec-mauling-assault or rs-observation-ec-sexual-assault or rs-observation-ec-other
 * entry[observationInjuries].resource only rs-observation-multiple-injuries
     or rs-observation-abrasion or rs-observation-avulsion
-    or rs-observation-burn-1st or rs-observation-burn-2nd or rs-observation-burn-3rd or rs-observation-burn-4th
+    or rs-observation-burn or rs-observation-burn-agent
     or rs-observation-concussion or rs-observation-contusion
-    or rs-observation-fracture-closed or rs-observation-fracture-open
+    or rs-observation-fracture
     or rs-observation-open-wound or rs-observation-traumatic-amputation or rs-observation-other-injury
 // Post-crash concepts have been moved to a separate bundle (see RSBundlePostCrash)
 * entry[observationExtentOfInjury].resource only rs-observation-extent-of-injury
