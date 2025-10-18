@@ -149,14 +149,17 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 * component[gcsEyes].code.coding.system = $LNC (exactly)
 * component[gcsEyes].code.coding.code = #9267-6
 * component[gcsEyes].code.coding.display = "Glasgow coma score eye opening"
+* component[gcsEyes].valueCodeableConcept from VSGCSEyes (preferred)
 * component[gcsVerbal].code.coding 1..1
 * component[gcsVerbal].code.coding.system = $LNC (exactly)
 * component[gcsVerbal].code.coding.code = #9270-0
 * component[gcsVerbal].code.coding.display = "Glasgow coma score verbal"
+* component[gcsVerbal].valueCodeableConcept from VSGCSVerbal (preferred)
 * component[gcsMotor].code.coding 1..1
 * component[gcsMotor].code.coding.system = $LNC (exactly)
 * component[gcsMotor].code.coding.code = #9268-4
 * component[gcsMotor].code.coding.display = "Glasgow coma score motor"
+* component[gcsMotor].valueCodeableConcept from VSGCSMotor (preferred)
 
 // ---------------- VITALS QUALIFIERS ----------------
 // MDS71 - Respiratory Rhythm
@@ -474,7 +477,6 @@ Id: rs-observation-collision-type
 Title: "Road Safety Observation - Collision Type"
 Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSCollisionCategory (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT
 * code.coding.code = #collision-type
@@ -554,8 +556,8 @@ Description: "Flag indicating bites/stings."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #782162007
-* code.coding.display = "Bite of nonhuman animal (event)"
+* code.coding.code = #242651001
+* code.coding.display = "Injury caused by animal (disorder)"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -606,7 +608,7 @@ Title: "Road Safety Observation - External Cause: Chemical/Substance"
 Description: "Flag indicating chemical/substance exposure."
 * valueBoolean 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SCT (exactly)
+* code.coding.system = "http://upm-nthc.ph/CodeSystem/silph"
 * code.coding.code = #chemical-event
 * code.coding.display = "Chemical/substance exposure (event)"
 * component ^slicing.discriminator.type = #value
@@ -630,7 +632,7 @@ Description: "Flag indicating sharp object cause."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #sharp-object-event
+* code.coding.code = #69129000
 * code.coding.display = "Contact with sharp object (event)"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -683,7 +685,7 @@ Description: "Flag indicating exposure to natural disaster/calamity."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #forces-of-nature-event
+* code.coding.code = #276746005
 * code.coding.display = "Exposure to forces of nature (event)"
 
 // MDS32 (flag) ; MDS33 (specifics text) - External Cause: Fall
@@ -695,7 +697,7 @@ Description: "Flag indicating fall."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #fall-event
+* code.coding.code = #1912002
 * code.coding.display = "Fall (event)"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -718,7 +720,7 @@ Description: "Flag indicating firecracker-related cause."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #firecracker-event
+* code.coding.code = #218100007
 * code.coding.display = "Firecracker event"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -742,7 +744,7 @@ Description: "Flag indicating gunshot."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #gunshot-event
+* code.coding.code = #63409001
 * code.coding.display = "Gunshot event"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -766,7 +768,7 @@ Description: "Flag indicating hanging/strangulation."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #hanging-strangulation-event
+* code.coding.code = #212976008
 * code.coding.display = "Hanging/strangulation event"
 
 // MDS39 - External Cause: Mauling/Assault
@@ -778,7 +780,7 @@ Description: "Flag indicating assault."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #mauling-assault-event
+* code.coding.code = #52684005
 * code.coding.display = "Mauling/assault event"
 
 // MDS40 - External Cause: Sexual Assault/Abuse/Rape (Alleged)
@@ -790,7 +792,7 @@ Description: "Flag indicating sexual assault."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #sexual-assault-event
+* code.coding.code = #248110007
 * code.coding.display = "Sexual assault event"
 
 // MDS42 (flag) ; MDS43 (specify) - External Cause: Other
@@ -802,7 +804,7 @@ Description: "Flag indicating other external cause."
 * valueBoolean 1..1 MS
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #other-external-cause-event
+* code.coding.code = #773760007
 * code.coding.display = "Other external cause event"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -1073,6 +1075,7 @@ Id: rs-observation-outcome-release
 Title: "Road Safety Observation - Outcome at Release"
 Description: "Outcome at release from ER/OPD/RHU."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSOutcome (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT
 * code.coding.code = #outcome-at-release
@@ -1085,6 +1088,7 @@ Id: rs-observation-outcome-discharge
 Title: "Road Safety Observation - Outcome at Discharge"
 Description: "Outcome at discharge."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSOutcome (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT
 * code.coding.code = #outcome-at-discharge
@@ -1097,6 +1101,7 @@ Id: rs-observation-status-on-arrival
 Title: "Road Safety Observation - Status on Arrival"
 Description: "Status upon reaching facility/hospital."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSStatusOnArrival (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT
 * code.coding.code = #status-on-arrival
@@ -1109,6 +1114,7 @@ Id: rs-observation-status-on-arrival-alive
 Title: "Road Safety Observation - If Alive: Conscious/Unconscious"
 Description: "If alive on arrival, consciousness detail."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSStatusAliveDetail (preferred)
 * code.coding 1..1
 * code.coding.system = $SCT
 * code.coding.code = #status-on-arrival-alive
@@ -1160,7 +1166,7 @@ Title: "Road Safety Observation - Vehicle Condition"
 Description: "Vehicle condition assessment."
 * valueCodeableConcept 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = "http://upm-nthc.ph/CodeSystem/silph"
 * code.coding.code = #vehicle-condition
 * code.coding.display = "Vehicle condition"
 
@@ -1172,6 +1178,6 @@ Title: "Road Safety Observation - CCTV Available"
 Description: "Availability of CCTV video."
 * valueBoolean 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SILPH
+* code.coding.system = "http://upm-nthc.ph/CodeSystem/silph"
 * code.coding.code = #cctv-available
 * code.coding.display = "CCTV available"
