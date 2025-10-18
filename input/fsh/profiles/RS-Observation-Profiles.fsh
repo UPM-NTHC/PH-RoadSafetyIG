@@ -18,6 +18,7 @@ Description: "Generic base Observation for road safety data; specialized concept
 * effective[x] 0..1 MS
 * performer 0..*
 * value[x] 0..1
+* note 0..*
 
 // ---------------- VITAL SIGNS ----------------
 // MDS70 - Respiratory Rate
@@ -668,7 +669,8 @@ Description: "Flag indicating drowning."
 * component[drowningOther].code.coding.system = $SCT (exactly)
 * component[drowningOther].code.coding.code = #drowning-other
 * component[drowningOther].code.coding.display = "Drowning other (specify)"
-* component[drowningOther].valueString 0..1 MS
+* component[drowningOther].valueCodeableConcept 0..1 MS
+* component[drowningOther].valueCodeableConcept.text 0..1 MS
 
 // (Consolidated into RSObsECDrowning as components: drowningType, drowningOther)
 
@@ -726,7 +728,8 @@ Description: "Flag indicating firecracker-related cause."
 * component[firecrackerType].code.coding.system = $SCT (exactly)
 * component[firecrackerType].code.coding.code = #firecracker-type
 * component[firecrackerType].code.coding.display = "Firecracker type"
-* component[firecrackerType].valueString 0..1 MS
+* component[firecrackerType].valueCodeableConcept 0..1 MS
+* component[firecrackerType].valueCodeableConcept.text 0..1 MS
 
 // (Consolidated into RSObsECFirecracker as component: firecrackerType)
 
@@ -749,7 +752,8 @@ Description: "Flag indicating gunshot."
 * component[gunshotWeapon].code.coding.system = $SCT (exactly)
 * component[gunshotWeapon].code.coding.code = #gunshot-weapon
 * component[gunshotWeapon].code.coding.display = "Gunshot weapon"
-* component[gunshotWeapon].valueString 0..1 MS
+* component[gunshotWeapon].valueCodeableConcept 0..1 MS
+* component[gunshotWeapon].valueCodeableConcept.text 0..1 MS
 
 // (Consolidated into RSObsECGunshot as component: gunshotWeapon)
 
@@ -808,7 +812,8 @@ Description: "Flag indicating other external cause."
 * component[otherSpecify].code.coding.system = $SCT (exactly)
 * component[otherSpecify].code.coding.code = #other-external-cause-specify
 * component[otherSpecify].code.coding.display = "Other external cause (specify)"
-* component[otherSpecify].valueString 0..1 MS
+* component[otherSpecify].valueCodeableConcept 0..1 MS
+* component[otherSpecify].valueCodeableConcept.text 0..1 MS
 
 // (Consolidated into RSObsECOther as component: otherSpecify)
 
@@ -891,60 +896,48 @@ Description: "Avulsion present; with optional site and details."
 * code.coding.display = "Avulsion - injury (disorder)"
 
 // MDS183 (burn general flag) ; MDS184 (1st degree presence) / MDS185 (1st degree site) / MDS186 (1st degree details)
-Profile: RSObsBurn1stDegree
-Parent: RSObservation
-Id: rs-observation-burn-1st
-Title: "Road Safety Observation - Burn 1st Degree"
-Description: "1st degree burn present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #77140003
-* code.coding.display = "First degree burn injury (morphologic abnormality)"
-
 // MDS187 (2nd degree presence) / MDS188 (2nd degree site) / MDS189 (2nd degree details)
-Profile: RSObsBurn2ndDegree
-Parent: RSObservation
-Id: rs-observation-burn-2nd
-Title: "Road Safety Observation - Burn 2nd Degree"
-Description: "2nd degree burn present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #46541008
-* code.coding.display = "Second degree burn injury (morphologic abnormality)"
-
 // MDS190 (3rd degree presence) / MDS191 (3rd degree site) / MDS192 (3rd degree details)
-Profile: RSObsBurn3rdDegree
-Parent: RSObservation
-Id: rs-observation-burn-3rd
-Title: "Road Safety Observation - Burn 3rd Degree"
-Description: "3rd degree burn present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #80247002
-* code.coding.display = "Third degree burn injury (morphologic abnormality)"
-
 // MDS193 (4th degree presence) / MDS194 (4th degree site) / MDS195 (4th degree details)
-Profile: RSObsBurn4thDegree
+// Consolidated Burn observation (replaces per-degree burn profiles)
+Profile: RSObsBurn
 Parent: RSObservation
-Id: rs-observation-burn-4th
-Title: "Road Safety Observation - Burn 4th Degree"
-Description: "4th degree burn present; with site and details."
-* valueBoolean 1..1 MS
+Id: rs-observation-burn
+Title: "Road Safety Observation - Burn"
+Description: "Burn observation. Record burn degree(s) as coded values (e.g., 1st/2nd/3rd/4th) using component entries; agent and other details available. Sites captured in top-level bodySite and details in note."
+// NOTE: This profile captures the clinical 'Nature of Injury' (burn degrees). Keep separate from External Cause burns (RSObsECBurns).
+// Recommendation: bind component[burnDegree].valueCodeableConcept to a ValueSet of burn degree concepts (SNOMED CT) where available; allow free-text as fallback.
+* value[x] 0..0
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains burnDegree 0..* and burnAgent 0..1 and burnOther 0..1
+* component[burnDegree].code 1..1 MS
+* component[burnDegree].code.coding 1..1
+* component[burnDegree].code.coding.system = $SCT (exactly)
+* component[burnDegree].code.coding.code = #burn-degree
+* component[burnDegree].code.coding.display = "Burn degree"
+* component[burnDegree].valueCodeableConcept 0..1 MS
+* component[burnDegree].valueCodeableConcept.text 0..1 MS
 * bodySite 0..1 MS
-* note 0..* 
+* note 0..*
+
+// Burn agent profile (separate from RSObsBurn and RSObsECBurns)
+// MDS21 (agent code) / MDS23 (agent other text) - Burns agent
+// Recommendation: use SNOMED CT codes for agent where available; bind to VSBurnsAgent.
+Profile: RSObsBurnAgent
+Parent: RSObservation
+Id: rs-observation-burn-agent
+Title: "Road Safety Observation - Burn Agent"
+Description: "Observation capturing the agent causing a burn (e.g., heat, fire, electricity, oil, friction). Use valueCodeableConcept bound to VSBurnsAgent (SNOMED CT preferred)."
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #770400008
-* code.coding.display = "Fourth degree burn injury (morphologic abnormality)"
+* code.coding.code = #burns-agent
+* code.coding.display = "Burns agent"
+// choose which agent
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSBurnsAgent (preferred)
+* valueCodeableConcept.text 0..1 MS
 
 // MDS196 (presence) / MDS197 (site) / MDS198 (details) - Concussion
 Profile: RSObsConcussion
@@ -975,39 +968,31 @@ Description: "Contusion present; with site and details."
 * code.coding.display = "Contusion (disorder)"
 
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
-Profile: RSObsFractureClosed
-Parent: RSObservation
-Id: rs-observation-fracture-closed
-Title: "Road Safety Observation - Fracture (Closed)"
-Description: "Closed fracture present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #423125000
-* code.coding.display = "Closed fracture of bone (disorder)"
-
 // MDS206 (open presence) / MDS207 (open site) / MDS208 (open details)
-Profile: RSObsFractureOpen
+// Consolidated Fracture observation (replaces open/closed profiles)
+Profile: RSObsFracture
 Parent: RSObservation
-Id: rs-observation-fracture-open
-Title: "Road Safety Observation - Fracture (Open)"
-Description: "Open fracture present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
+Id: rs-observation-fracture
+Title: "Road Safety Observation - Fracture"
+Description: "Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note."
+// MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
+// Recommendation: set the Observation.code to a general fracture concept (SNOMED CT) and bind Observation.valueCodeableConcept to a ValueSet enumerating fracture types (open/closed) — use SNOMED CT codes where available.
 * code.coding 1..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #397181002
-* code.coding.display = "Open fracture (disorder)"
+* code.coding.code = #125605004
+* code.coding.display = "Fracture of bone (disorder)"
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+	// Recommended binding: ValueSet of fracture types (e.g., SNOMED codes: 397181002 = Open fracture, 423125000 = Closed fracture). Do not create new ValueSet here unless requested.
+* bodySite 0..1 MS
+* note 0..*
 
 // MDS209 (presence) / MDS210 (site) / MDS211 (details) - Open Wound
 Profile: RSObsOpenWound
 Parent: RSObservation
 Id: rs-observation-open-wound
 Title: "Road Safety Observation - Open Wound"
-Description: "Open wound present; with site and details."
+Description: "Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text)."
 * valueBoolean 1..1 MS
 * bodySite 0..1 MS
 * note 0..* 
@@ -1015,6 +1000,17 @@ Description: "Open wound present; with site and details."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #125643001
 * code.coding.display = "Open wound (disorder)"
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains openWoundMechanism 0..1
+* component[openWoundMechanism].code.coding 1..1
+* component[openWoundMechanism].code.coding.system = $SCT (exactly)
+* component[openWoundMechanism].code.coding.code = #open-wound-mechanism
+* component[openWoundMechanism].code.coding.display = "Open wound mechanism/type"
+* component[openWoundMechanism].valueCodeableConcept 0..1 MS
+* component[openWoundMechanism].valueCodeableConcept.text 0..1 MS
+// Recommendation: use SNOMED CT codes for mechanism where available; allow free-text fallback.
 
 // MDS212 (presence) / MDS213 (site) / MDS214 (details) - Traumatic Amputation
 Profile: RSObsTraumaticAmputation
@@ -1035,8 +1031,9 @@ Profile: RSObsOtherInjury
 Parent: RSObservation
 Id: rs-observation-other-injury
 Title: "Road Safety Observation - Other Specified Injury"
-Description: "Other specified injury present; with site and details."
-* valueBoolean 1..1 MS
+Description: "Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details."
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 0..1 MS
 * bodySite 0..1 MS
 * note 0..* 
 * code.coding 1..1
