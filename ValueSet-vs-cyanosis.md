@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-cyanosis | *Version*:0.1.0 |
-| Active as of 2025-10-16 | *Computable Name*:VSCyanosis |
+| Active as of 2025-10-18 | *Computable Name*:VSCyanosis |
 
  
 Cyanosis assessment options (prefer SNOMED CT). 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "VSCyanosis",
   "title" : "RS VS - Cyanosis",
   "status" : "active",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

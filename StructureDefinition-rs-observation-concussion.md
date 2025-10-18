@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:RSObsConcussion |
+| Draft as of 2025-10-18 | *Computable Name*:RSObsConcussion |
 
  
 Concussion present; with site and details. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-concu
   "name" : "RSObsConcussion",
   "title" : "Road Safety Observation - Concussion",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

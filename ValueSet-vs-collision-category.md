@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:VSCollisionCategory |
+| Draft as of 2025-10-18 | *Computable Name*:VSCollisionCategory |
 
  
 Collision vs non-collision category. 
@@ -53,7 +53,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "VSCollisionCategory",
   "title" : "RS VS - Collision Category",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

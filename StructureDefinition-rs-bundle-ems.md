@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:RSBundleEMS |
+| Draft as of 2025-10-18 | *Computable Name*:RSBundleEMS |
 
  
 Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
   "name" : "RSBundleEMS",
   "title" : "Road Safety Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

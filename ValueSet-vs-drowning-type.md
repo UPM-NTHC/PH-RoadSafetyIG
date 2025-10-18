@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-drowning-type | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:VSDrowningType |
+| Draft as of 2025-10-18 | *Computable Name*:VSDrowningType |
 
  
 Type/body of water for drowning incidents. 
@@ -57,7 +57,7 @@ This value set contains 6 concepts
   "name" : "VSDrowningType",
   "title" : "RS VS - Drowning Type/Body of Water",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

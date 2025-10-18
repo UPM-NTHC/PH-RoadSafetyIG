@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-bites-agent | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:VSBitesAgent |
+| Draft as of 2025-10-18 | *Computable Name*:VSBitesAgent |
 
  
 Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings. 
@@ -54,7 +54,7 @@ This value set contains 1 concepts
   "name" : "VSBitesAgent",
   "title" : "RS VS - Bites/Stings Agent",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

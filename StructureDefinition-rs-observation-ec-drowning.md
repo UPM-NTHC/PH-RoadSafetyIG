@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:RSObsECDrowning |
+| Draft as of 2025-10-18 | *Computable Name*:RSObsECDrowning |
 
  
 Flag indicating drowning. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-dr
   "name" : "RSObsECDrowning",
   "title" : "Road Safety Observation - External Cause: Drowning",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

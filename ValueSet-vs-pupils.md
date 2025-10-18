@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pupils | *Version*:0.1.0 |
-| Active as of 2025-10-16 | *Computable Name*:VSPupils |
+| Active as of 2025-10-18 | *Computable Name*:VSPupils |
 
  
 Pupil size/reactivity options (prefer SNOMED CT). 
@@ -54,7 +54,7 @@ This value set contains 5 concepts
   "name" : "VSPupils",
   "title" : "RS VS - Pupils",
   "status" : "active",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

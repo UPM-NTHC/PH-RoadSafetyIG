@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-postcrash | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:RSBundlePostCrash |
+| Draft as of 2025-10-18 | *Computable Name*:RSBundlePostCrash |
 
  
 Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-postcrash.
   "name" : "RSBundlePostCrash",
   "title" : "Road Safety Bundle — Post‑Crash Investigation",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

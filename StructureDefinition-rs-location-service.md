@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:RSServiceLocation |
+| Draft as of 2025-10-18 | *Computable Name*:RSServiceLocation |
 
  
 Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
   "name" : "RSServiceLocation",
   "title" : "Road Safety Service Location",
   "status" : "draft",
-  "date" : "2025-10-16T12:46:03+00:00",
+  "date" : "2025-10-18T06:53:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
