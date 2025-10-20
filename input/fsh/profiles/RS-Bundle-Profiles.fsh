@@ -28,12 +28,12 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 * section[workflow].entry 1..* MS
 * section[workflow].entry only Reference(RSObsDateReceived or RSObsTimeEnroute
     or RSObsTimeOnScene or RSObsTimeDepartedScene or RSObsTimeHospitalArrival
-    or RSObsTimeStationArrival or RSObsRunReportComments)
+    or RSObsTimeStationArrival or RSObsRunReportComments or RSObsVehicleUsed)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(RSObsInjuryDateTime or RSObsInjuryIntent 
     or RSObsTransportVehicularFlag or RSObsModeOfTransport 
-    or RSIncidentLocation)
+    or RSIncidentLocation or RSObsReportedComplaint or RSObsCallSource)
 * section[vitals].title = "Vital signs"
 * section[vitals].entry 0..* 
 * section[vitals].entry only Reference(RSObsRespiratoryRate or RSObsPulseRate 
@@ -42,8 +42,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
     or RSObsPulseQuality or RSObsCyanosis)
 * section[clinical].title = "Clinical / Assessment"
 * section[clinical].entry 0..* 
-* section[clinical].entry only Reference(RSObsGCS or RSObsReportedComplaint 
-    or RSProcedure or RSCondition)
+* section[clinical].entry only Reference(RSObsClinicalRemarks or RSProcedure or RSCondition)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
 * section[documents].entry only Reference(RSDocumentReference)
@@ -112,7 +111,7 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[task].resource only RSTask
 * entry[serviceRequest].resource only RSServiceRequest
 * entry[procedure].resource only RSProcedure
-* entry[claim].resource only rs-claim
+* entry[claim].resource only RSClaim
 
 
 
@@ -139,6 +138,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     patient 0..1 and
     encounter 0..1 and
     clinical 0..1 and
+    injuries 0..1 and
     incident 0..1 and
     documents 0..*
 * section[patient].title = "Patient"
@@ -156,7 +156,16 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or RSObsOutcomeAtRelease
     or RSObsOutcomeAtDischarge
     or RSObsStatusOnArrival
+    or RSObsStatusOnArrivalAliveDetail
+    or RSObsTransferredFromFacility
+    or RSObsReferredByFacility
     )
+* section[injuries].title = "Injuries"
+* section[injuries].entry 0..* 
+* section[injuries].entry only Reference(
+    RSObsMultipleInjuries or RSObsExtentOfInjury or RSObsAbrasion or RSObsAvulsion
+    or RSObsBurn or RSObsBurnAgent or RSObsConcussion or RSObsContusion or RSObsFracture
+    or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(RSObsInjuryDateTime 
@@ -164,7 +173,16 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or RSObsTransportVehicularFlag
     or RSObsModeOfTransport
     or RSObsCollisionVsNonCollision
+    or RSObsPatientsVehicle
+    or RSObsOtherVehicleInvolved
+    or RSObsPositionOfPatient
+    or RSObsHowManyVehicles
+    or RSObsHowManyPatients
+    or RSObsPlaceOfOccurrence
+    or RSObsActivityAtIncident
     or RSObsSafetyAccessories
+    or RSObsTriagePriority
+    or RSObsUrgencyLevel
     or RSIncidentLocation)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
@@ -202,8 +220,9 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * entry[composition].resource only RSCompositionONEISS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
-* entry[conditionInitial].resource only rs-condition
-* entry[conditionFinal].resource only rs-condition
+// Constrain to the RSCondition profile by name
+* entry[conditionInitial].resource only RSCondition
+* entry[conditionFinal].resource only RSCondition
 * entry[observationClinical].resource only RSObsOtherRiskFactors 
     or RSObsConditionOfPatient or RSObsOutcomeAtRelease 
     or RSObsOutcomeAtDischarge or RSObsStatusOnArrival 
@@ -267,7 +286,7 @@ Description: "Composition that organises a Post‑Crash submission. Sections ref
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(
     RSObsCollisionType or RSObsPresenceTrafficInvestigator 
-    or RSObsVehicleCondition or RSObsCCTVAvailable)
+    or RSObsCCTVAvailable)
 * section[documents].title = "Evidence / Documents"
 * section[documents].entry 0..*
 * section[documents].entry only Reference(RSDocumentReference)
@@ -296,7 +315,6 @@ Description: "Document Bundle for Post‑Crash investigation submission. The fir
 * entry[encounter].resource only RSEncounter
 * entry[observationPostCrash].resource only RSObsCollisionType 
     or RSObsPresenceTrafficInvestigator 
-    or RSObsVehicleCondition 
     or RSObsCCTVAvailable
 * entry[document].resource only RSDocumentReference
 
