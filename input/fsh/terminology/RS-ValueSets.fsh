@@ -269,6 +269,17 @@ Description: "Agent causing burn (prefer SNOMED CT)."
 * $SCT#263762005 "Friction (physical force)"
 * $SCT#74964007 "Other (qualifier value)"
 
+// Burns - degree (1st, 2nd, 3rd, 4th)
+ValueSet: VSBurnDegrees
+Id: vs-burn-degrees
+Title: "RS VS - Burn Degrees"
+Description: "Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT)."
+* ^status = #draft
+* $SCT#77140003 "First degree burn injury (morphologic abnormality)"
+* $SCT#46541008 "Second degree burn injury (morphologic abnormality)"
+* $SCT#80247002 "Third degree burn injury (morphologic abnormality)"
+* $SCT#770400008 "Fourth degree burn injury (morphologic abnormality)"
+
 // Bites/Stings - specify agent (use existing LOINC if present in MDS)
 ValueSet: VSBitesAgent
 Id: vs-bites-agent
