@@ -221,8 +221,9 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
 // Constrain to the RSCondition profile by name
-* entry[conditionInitial].resource only RSCondition
-* entry[conditionFinal].resource only RSCondition
+// Strengthen slices to specific condition profiles
+* entry[conditionInitial].resource only RSConditionInitialImpression
+* entry[conditionFinal].resource only RSConditionFinalDiagnosis
 * entry[observationClinical].resource only RSObsOtherRiskFactors 
     or RSObsConditionOfPatient or RSObsOutcomeAtRelease 
     or RSObsOutcomeAtDischarge or RSObsStatusOnArrival 
