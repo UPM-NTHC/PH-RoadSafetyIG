@@ -55,10 +55,10 @@ Id: rs-condition-problem
 Title: "Road Safety Condition — Problem"
 Description: "Problem (finding) per CSV mapping."
 * code 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #55607006
-* code.coding.display = "Problem (finding)"
+* code.coding[sct] 1..1
+* code.coding[sct].system = $SCT (exactly)
+* code.coding[sct].code = #55607006
+* code.coding[sct].display = "Problem (finding)"
 
 // Initial Impression (CSV: SNOMED CT 148006 Preliminary diagnosis (qualifier value)) — MDS ID: MDS48
 Profile: RSConditionInitialImpression
@@ -67,10 +67,10 @@ Id: rs-condition-initial-impression
 Title: "Road Safety Condition — Initial Impression"
 Description: "Initial impression per CSV mapping."
 * code 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #148006
-* code.coding.display = "Preliminary diagnosis (qualifier value)"
+* code.coding[sct] 1..1
+* code.coding[sct].system = $SCT (exactly)
+* code.coding[sct].code = #148006
+* code.coding[sct].display = "Preliminary diagnosis (qualifier value)"
 
 // Final Diagnosis (CSV: SNOMED CT 89100005 Final diagnosis (discharge)) — MDS ID: MDS54
 Profile: RSConditionFinalDiagnosis
@@ -79,7 +79,7 @@ Id: rs-condition-final-diagnosis
 Title: "Road Safety Condition — Final Diagnosis"
 Description: "Final diagnosis per CSV mapping."
 * code 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #89100005
-* code.coding.display = "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
+* code.coding[sct] 1..1
+* code.coding[sct].system = $SCT (exactly)
+* code.coding[sct].code = #89100005
+* code.coding[sct].display = "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
