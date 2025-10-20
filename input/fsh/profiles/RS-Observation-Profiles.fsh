@@ -309,10 +309,10 @@ Description: "Intent of injury (Unintentional, Intentional-self, Intentional-vio
 * code.coding 0..1
 
 // MDS41 - Transport/Vehicular Accident (flag)
-Profile: RSObsTransportVehicularFlag
+Profile: RSObsTransportVehicularAccident
 Parent: RSObservation
-Id: rs-observation-transport-vehicular-flag
-Title: "Road Safety Observation - Transport/Vehicular Accident (flag)"
+Id: rs-observation-transport-vehicular-accident
+Title: "Road Safety Observation - Transport/Vehicular Accident"
 Description: "Boolean flag indicating transport/vehicular accident."
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
