@@ -1211,19 +1211,6 @@ Description: "General comments from run report."
 * code.coding.code = #77999-1
 * code.coding.display = "Case notification comment"
 
-// ---------------- POST-CRASH ----------------
-// MDS226 - Vehicle Condition (post-crash evidence)
-Profile: RSObsVehicleCondition
-Parent: RSObservation
-Id: rs-observation-vehicle-condition
-Title: "Road Safety Observation - Vehicle Condition"
-Description: "Vehicle condition assessment."
-* valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #278443006
-* code.coding.display = "Cause of accident type (qualifier value)"
-
 // MDS227 - CCTV available (post-crash)
 Profile: RSObsCCTVAvailable
 Parent: RSObservation
