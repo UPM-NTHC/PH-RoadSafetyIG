@@ -164,7 +164,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
 * section[injuries].entry 0..* 
 * section[injuries].entry only Reference(
     RSObsMultipleInjuries or RSObsExtentOfInjury or RSObsAbrasion or RSObsAvulsion
-    or RSObsBurn or RSObsBurnAgent or RSObsConcussion or RSObsContusion or RSObsFracture
+    or RSObsNatureBurns or RSObsECBurns or RSObsConcussion or RSObsContusion or RSObsFracture
     or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
@@ -244,7 +244,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     or RSObsECMaulingAssault or RSObsECSexualAssault or RSObsECOther
 * entry[observationInjuries].resource only RSObsMultipleInjuries
     or RSObsAbrasion or RSObsAvulsion
-    or RSObsBurn or RSObsBurnAgent
+    or RSObsNatureBurns or RSObsECBurns
     or RSObsConcussion or RSObsContusion
     or RSObsFracture
     or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury
