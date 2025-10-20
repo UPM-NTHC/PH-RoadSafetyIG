@@ -45,3 +45,41 @@ Description: "Condition resource for Road Safety IG that supports multiple codin
 
 /* guidance: use multiple Condition instances rather than packing unrelated semantics into one resource. Use category to distinguish types (problem-list vs encounter-diagnosis) and use code.coding slices to capture different coding systems. For narrative-only entries (medical history / problem text), prefer code.text and note. */
 // See IPS IG for additional guidance on condition usage.
+
+// ---------------- Specialized Condition profiles ----------------
+
+// Problem (CSV: SNOMED CT 55607006) — MDS ID: MDS34
+Profile: RSConditionProblem
+Parent: RSCondition
+Id: rs-condition-problem
+Title: "Road Safety Condition — Problem"
+Description: "Problem (finding) per CSV mapping."
+* code 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #55607006
+* code.coding.display = "Problem (finding)"
+
+// Initial Impression (CSV: SNOMED CT 148006 Preliminary diagnosis (qualifier value)) — MDS ID: MDS48
+Profile: RSConditionInitialImpression
+Parent: RSCondition
+Id: rs-condition-initial-impression
+Title: "Road Safety Condition — Initial Impression"
+Description: "Initial impression per CSV mapping."
+* code 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #148006
+* code.coding.display = "Preliminary diagnosis (qualifier value)"
+
+// Final Diagnosis (CSV: SNOMED CT 89100005 Final diagnosis (discharge)) — MDS ID: MDS54
+Profile: RSConditionFinalDiagnosis
+Parent: RSCondition
+Id: rs-condition-final-diagnosis
+Title: "Road Safety Condition — Final Diagnosis"
+Description: "Final diagnosis per CSV mapping."
+* code 1..1 MS
+* code.coding 1..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #89100005
+* code.coding.display = "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
