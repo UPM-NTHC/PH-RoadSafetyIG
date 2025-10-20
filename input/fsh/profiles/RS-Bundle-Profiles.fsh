@@ -32,7 +32,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(RSObsInjuryDateTime or RSObsInjuryIntent 
-    or RSObsTransportVehicularFlag or RSObsModeOfTransport 
+    or RSObsTransportVehicularAccident or RSObsModeOfTransport 
     or RSIncidentLocation or RSObsReportedComplaint or RSObsCallSource)
 * section[vitals].title = "Vital signs"
 * section[vitals].entry 0..* 
@@ -170,7 +170,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(RSObsInjuryDateTime 
     or RSObsInjuryIntent
-    or RSObsTransportVehicularFlag
+    or RSObsTransportVehicularAccident
     or RSObsModeOfTransport
     or RSObsCollisionVsNonCollision
     or RSObsPatientsVehicle
@@ -229,7 +229,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     or RSObsOutcomeAtDischarge or RSObsStatusOnArrival 
     or RSObsStatusOnArrivalAliveDetail or RSObsBloodAlcoholConcentration
 * entry[observationIncident].resource only RSObsInjuryDateTime 
-    or RSObsInjuryIntent or RSObsTransportVehicularFlag 
+    or RSObsInjuryIntent or RSObsTransportVehicularAccident 
     or RSObsModeOfTransport 
     or RSObsCollisionVsNonCollision or RSObsPatientsVehicle 
     or RSObsOtherVehicleInvolved or RSObsPositionOfPatient 
