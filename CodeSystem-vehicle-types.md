@@ -32,7 +32,7 @@ A code system for different types of vehicles used in road safety encounters.
   "title" : "Vehicle Types",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-21T09:02:18+00:00",
+  "date" : "2025-10-21T09:14:28+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

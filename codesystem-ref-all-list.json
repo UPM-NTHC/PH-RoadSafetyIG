@@ -322,8 +322,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.114"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
-      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
     },
     {
       "url" : "http://hl7.org/fhir/request-priority",
@@ -418,9 +418,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes",
       "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -432,42 +432,42 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
       "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "ValueSet-coordination.html" : "Transport Coordination Codes",
       "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "ValueSet-first-aid.html" : "First Aid Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
       "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
       "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "ValueSet-first-aid.html" : "First Aid Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+      "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "ValueSet-coordination.html" : "Transport Coordination Codes",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
       "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes "
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/FDI-surface",
@@ -1019,8 +1019,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
       "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActIncidentCode.html" : "ActIncidentCode",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
       "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
     },
     {
@@ -1069,8 +1069,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -1106,8 +1106,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
-      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
       "url" : "http://unitsofmeasure.org",

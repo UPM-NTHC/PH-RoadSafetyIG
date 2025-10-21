@@ -53,7 +53,7 @@ Example ValueSet capturing triage priorities.
   "title" : "Triage Priority ValueSet (example)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-21T09:02:18+00:00",
+  "date" : "2025-10-21T09:14:28+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

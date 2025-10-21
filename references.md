@@ -17,9 +17,16 @@
 
 ## CSV previews and downloads
 
-Place the CSV files under `input/downloads/` before running the publisher so they are copied to `/downloads/` in the built site. (If you leave them in `input/images/downloads/` they will be available under `/images/downloads/` on the site.)
-
 * L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv
+
+
+  [Download L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv](downloads/L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv)
 * L3 - VALUE SET MAPPING (Main).csv
+
+
+  [Download L3 - VALUE SET MAPPING (Main).csv](downloads/L3 - VALUE SET MAPPING (Main).csv)
 * MDS.csv
+
+
+  [Download MDS.csv](downloads/MDS.csv)
 
