@@ -1,5 +1,21 @@
-# General Data Model - Discussion and integration notes
+<style>
+/* Container centers inline content */
+.svg-wrap {
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center; /* center smaller images without forcing them to grow */
+}
 
+/* Keep intrinsic size (no upscaling), allow downscaling to fit width,
+   but constrain very tall/large images by viewport height so they don't stretch the page. */
+.svg-wrap svg {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;       /* allow downscaling to container width */
+  height: auto !important; 
+  box-sizing: border-box;
+}
+</style>
 - This page gives a high level overview of the mapped FHIR resources from workshops (dot-vote priorities, ONEISS, ONEISS vs NHDR mapping), map MDS fields to FHIR resources (Observation, Encounter, Condition, DocumentReference, Procedure, Patient, Location, etc.) and note areas marked MUST SUPPORT.
 
 Key decisions (high-level)
@@ -10,7 +26,17 @@ Key decisions (high-level)
 - Use Procedure for psychosocial support, coordination tasks, and other performed procedures.
 - Use Patient/Location/Organization references where appropriate for identifiers and facility information.
 
-Mermaid diagram (simplified)
+Generated Plantuml (v0.2)
+<div class="svg-wrap">
+{% include fsh-relationships.svg %}
+</div>
+
+Manually created Plantuml
+<div class="svg-wrap">
+{% include road-safety-ig.svg %}
+</div>
+
+Mermaid diagram (simplified v0.1)
 
 ```mermaid
 flowchart LR

@@ -1,0 +1,100 @@
+@startuml PH Road Safety IG - UML Class Diagram
+' !theme plain
+' skinparam backgroundColor #1B1B1B
+' skinparam classFontColor #FFFFFF
+' skinparam classBackgroundColor #313139
+' skinparam classBorderColor #E7E7E7
+' skinparam arrowColor #E7E7E7
+' skinparam noteFontColor #FFFFFF
+' skinparam noteBackgroundColor #313139
+' skinparam noteBorderColor #E7E7E7
+
+title PH Road Safety IG - UML Class Diagram
+
+class RS_Patient {
+  • identifier
+  • birthDate
+  • address
+  • managingOrganization
+}
+
+class RoadSafetyEncounter {
+  • identifier
+  • status
+  • subject -> RS_Patient
+  • location
+}
+
+class InjuryObservation {
+  • status
+  • category
+  • code
+  • subject -> RS_Patient
+  • encounter -> RoadSafetyEncounter
+  • component
+}
+
+class RoadSafetyClaim {
+  • total
+  • encounter -> RoadSafetyEncounter
+}
+
+class HospitalAvailable {
+  • name
+  • category
+  • location
+  • active
+}
+
+class RoadSafetyDocumentReference {
+  • status
+  • category
+  • relatesTo -> DocumentReference
+  • context.encounter -> RoadSafetyEncounter
+}
+
+class RoadSafetyMedicationStatement {
+  • status
+  • medicationCodeableConcept
+  • subject -> RS_Patient
+}
+
+class RoadSafetyProcedure {
+  • status
+  • code
+  • subject -> RS_Patient
+  • performer -> PHCorePractitioner
+}
+
+class RoadSafetyQuestionnaire {
+  • status
+  • name
+  • title
+  • item
+}
+
+class RoadSafetyServiceRequest {
+  • status = revoked
+  • encounter -> RoadSafetyEncounter
+  • supportingInfo[hospital] -> PHCoreOrganization
+  • supportingInfo[physician] -> PHCorePractitioner
+}
+
+class RoadSafetyTask {
+  • status
+  • executionPeriod
+  • note
+}
+
+RS_Patient "1" --> "0..*" InjuryObservation : has observations
+RS_Patient "1" --> "0..*" RoadSafetyProcedure : undergoes
+RS_Patient "1" --> "0..*" RoadSafetyMedicationStatement : takes
+RS_Patient "1" --> "0..*" RoadSafetyClaim : related claim
+RoadSafetyEncounter "1" --> "1" RS_Patient : subject
+RoadSafetyEncounter "1" --> "0..*" RoadSafetyProcedure : procedures
+RoadSafetyEncounter "1" --> "0..*" InjuryObservation : observations
+RoadSafetyEncounter "1" --> "0..*" RoadSafetyDocumentReference : documents
+RoadSafetyEncounter "1" --> "0..*" RoadSafetyServiceRequest : refusal records
+HospitalAvailable "1" --> "0..*" RoadSafetyServiceRequest : referral context
+
+@enduml
