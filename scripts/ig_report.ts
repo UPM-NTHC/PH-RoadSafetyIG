@@ -107,10 +107,22 @@ async function chooseComparisonBranch(defaultBranch: string): Promise<string | n
   if (candidates.length > 1) {
     console.log('Multiple branches had commits yesterday:');
     candidates.forEach((c, i) => console.log(`${i + 1}) ${c}`));
-    const ans = await askQuestion(`Choose branch to compare against (1-${candidates.length}) [1]: `);
-    const idx = parseInt(ans || '1', 10);
-    if (idx >= 1 && idx <= candidates.length) return candidates[idx - 1];
-    return candidates[0];
+    console.log(`Enter the number to choose, or type 'l' to list all remote branches and choose from them.`);
+    while (true) {
+      const ans = (await askQuestion(`Choose branch to compare against (1-${candidates.length}) [1] or 'l': `)).trim();
+      if (!ans) return candidates[0];
+      if (/^l$/i.test(ans)) {
+        // Show full remote list and let user pick from it
+        all.forEach((c, i) => console.log(`${i + 1}) ${c}`));
+        const pick = await askQuestion(`Choose branch to compare against by number (1-${all.length}) [1]: `);
+        const idx2 = parseInt(pick || '1', 10);
+        if (idx2 >= 1 && idx2 <= all.length) return all[idx2 - 1];
+        return all[0];
+      }
+      const idx = parseInt(ans, 10);
+      if (idx >= 1 && idx <= candidates.length) return candidates[idx - 1];
+      console.log('Invalid selection, try again.');
+    }
   }
   // no candidates found; ask user to choose from remote list
   console.log('No remote branch with commits yesterday detected. Remote branches:');
@@ -320,11 +332,11 @@ async function getFshMetricsAtRev(rev?: string): Promise<FshMetrics> {
   return computeFshMetricsFromFiles(files);
 }
 
-async function getGitChangeSummary(): Promise<GitChangeSummary> {
+async function getGitChangeSummary(overrideBranch?: string): Promise<GitChangeSummary> {
   await runCmd('git fetch origin --prune');
   const defaultBranch = await getDefaultBranch();
   // Choose branch to compare against (branch that had commits yesterday, or prompt)
-  const selectedBranch = await chooseComparisonBranch(defaultBranch);
+  const selectedBranch = overrideBranch ?? await chooseComparisonBranch(defaultBranch);
   // Find yesterday's latest commit on selected branch
   let baseCommitYesterday: string | null = null;
   let baseCommitPretty: string | null = null;
@@ -338,6 +350,18 @@ async function getGitChangeSummary(): Promise<GitChangeSummary> {
     if (baseCommitYesterday) {
       const pretty = await runCmd(`git show -s --format=%h\ %cs\ %s ${baseCommitYesterday}`);
       if (pretty.code === 0) baseCommitPretty = pretty.stdout.trim();
+    }
+    // If we couldn't find a 'yesterday' commit, fall back to previous commit on the branch (tip~1)
+    if (!baseCommitYesterday) {
+      const two = await runCmd(`git rev-list --max-count=2 origin/${selectedBranch}`);
+      if (two.code === 0 && two.stdout.trim()) {
+        const parts = two.stdout.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+        if (parts.length >= 2) {
+          baseCommitYesterday = parts[1];
+          const pretty2 = await runCmd(`git show -s --format=%h %cs %s ${baseCommitYesterday}`);
+          if (pretty2.code === 0) baseCommitPretty = pretty2.stdout.trim();
+        }
+      }
     }
   }
 
@@ -661,7 +685,19 @@ async function main() {
   const owner = ownerRepo?.owner ?? 'UPM-NTHC';
   const repo = ownerRepo?.repo ?? 'PH-RoadSafetyIG';
 
-  const gitChange = await getGitChangeSummary();
+  // CLI override: allow --branch or -b to specify comparison branch non-interactively
+  const argv = process.argv.slice(2);
+  let overrideBranch: string | undefined = undefined;
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === '--branch' || a === '-b') {
+      overrideBranch = argv[i + 1];
+      break;
+    }
+    if (a.startsWith('--branch=')) { overrideBranch = a.split('=')[1]; break; }
+  }
+
+  const gitChange = await getGitChangeSummary(overrideBranch);
 
   // Current metrics
   const nowMetrics = await getFshMetricsAtRev();
