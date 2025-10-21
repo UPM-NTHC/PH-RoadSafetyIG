@@ -33,6 +33,7 @@ type GitChangeSummary = {
   baseCommitYesterday?: string | null;
   baseCommitPretty?: string | null; // short sha + date + subject
   selectedBranch?: string | null; // branch used for comparison
+  selectedBranchLastCommitPretty?: string | null;
   commitsSinceYesterday?: number;
   changedFSH: { added: string[]; modified: string[]; deleted: string[] };
 };
@@ -337,6 +338,7 @@ async function getGitChangeSummary(overrideBranch?: string): Promise<GitChangeSu
   const defaultBranch = await getDefaultBranch();
   // Choose branch to compare against (branch that had commits yesterday, or prompt)
   const selectedBranch = overrideBranch ?? await chooseComparisonBranch(defaultBranch);
+  let selectedBranchLastCommitPretty: string | null = null;
   // Find yesterday's latest commit on selected branch
   let baseCommitYesterday: string | null = null;
   let baseCommitPretty: string | null = null;
@@ -389,7 +391,51 @@ async function getGitChangeSummary(overrideBranch?: string): Promise<GitChangeSu
     if (log.code === 0) commitsSinceYesterday = log.stdout.split(/\r?\n/).filter(Boolean).length;
   }
 
-  return { defaultBranch, baseCommitYesterday, baseCommitPretty, selectedBranch, commitsSinceYesterday, changedFSH };
+  // Also record the latest commit on the selected branch (tip)
+  if (selectedBranch) {
+    // Try git show to get short sha + ISO timestamp
+    let last = await runCmd(`git show -s --format=%h %cI origin/${selectedBranch}`);
+    if (last.code !== 0 || !last.stdout.trim()) {
+      // fallback: try git log -1
+      last = await runCmd(`git log -1 --format=%h %cI origin/${selectedBranch}`);
+    }
+    if ((last.code === 0 || last.stdout.trim()) && last.stdout.trim()) {
+      const out = last.stdout.trim();
+      const parts = out.split(/\s+/);
+      if (parts.length >= 2) {
+        const sha = parts[0];
+        const dateIso = parts.slice(1).join(' ');
+        selectedBranchLastCommitPretty = `${dateIso} (${sha})`;
+      } else {
+        selectedBranchLastCommitPretty = out;
+      }
+    }
+    if (!selectedBranchLastCommitPretty) {
+      console.log(`[WARN] could not determine last commit for branch ${selectedBranch}`);
+      if (process.env.IG_REPORT_DEBUG === '1') console.log(`[DBG] last command output: code=${last.code} stdout=${last.stdout} stderr=${last.stderr}`);
+      // Try GH API fallback: get commit info for origin/<branch> tip
+      try {
+        const repoInfo = await getRepoOwnerRepo();
+        if (repoInfo && await isGhAvailable()) {
+          const rev = await runCmd(`git rev-parse origin/${selectedBranch}`);
+          if (rev.code === 0 && rev.stdout.trim()) {
+            const sha = rev.stdout.trim();
+            const commitRes = await runCmd(`gh api repos/${repoInfo.owner}/${repoInfo.repo}/commits/${sha}`);
+            if (commitRes.code === 0 && commitRes.stdout.trim()) {
+              try {
+                const data = JSON.parse(commitRes.stdout);
+                const date = data?.commit?.author?.date || data?.commit?.committer?.date || null;
+                const short = sha.substring(0,7);
+                if (date) selectedBranchLastCommitPretty = `${date} (${short})`;
+              } catch {}
+            }
+          }
+        }
+      } catch (e) {}
+    }
+  }
+
+  return { defaultBranch, baseCommitYesterday, baseCommitPretty, selectedBranch, selectedBranchLastCommitPretty, commitsSinceYesterday, changedFSH };
 }
 
 async function getGithubMetrics(owner: string, repo: string): Promise<GithubMetrics> {
@@ -455,19 +501,29 @@ async function getGithubMetricsViaGh(owner: string, repo: string): Promise<Githu
       const list = JSON.parse(mergedList.stdout || '[]') as { number: number }[];
       let totalCommits = 0; let countPR = 0; let totalHrs = 0; let turnaroundCount = 0;
       for (const pr of list) {
-        const res = await runCmd(`gh pr view ${pr.number} --json commits,createdAt,mergedAt`);
-        if (res.code === 0) {
-          const data = JSON.parse(res.stdout);
-          const commits: any[] = Array.isArray(data.commits) ? data.commits : [];
-          totalCommits += commits.length;
-          countPR++;
-          if (data.createdAt && data.mergedAt) {
-            const created = new Date(data.createdAt).getTime();
-            const merged = new Date(data.mergedAt).getTime();
-            if (isFinite(created) && isFinite(merged) && merged >= created) {
-              totalHrs += (merged - created) / (1000 * 60 * 60);
-              turnaroundCount++;
-            }
+        // try to use commits field if present
+        if (Array.isArray((pr as any).commits)) {
+          totalCommits += (pr as any).commits.length;
+        } else if (typeof (pr as any).commits === 'number') {
+          totalCommits += (pr as any).commits;
+        } else {
+          // fallback: fetch commits count for this PR only if necessary
+          const pview = await runCmd(`gh pr view ${pr.number} --json commits`);
+          if (pview.code === 0) {
+            try {
+              const pdata = JSON.parse(pview.stdout);
+              const commitsArr = Array.isArray(pdata.commits) ? pdata.commits : [];
+              totalCommits += commitsArr.length;
+            } catch {}
+          }
+        }
+        countPR++;
+        if ((pr as any).createdAt && (pr as any).mergedAt) {
+          const created = new Date((pr as any).createdAt).getTime();
+          const merged = new Date((pr as any).mergedAt).getTime();
+          if (isFinite(created) && isFinite(merged) && merged >= created) {
+            totalHrs += (merged - created) / (1000 * 60 * 60);
+            turnaroundCount++;
           }
         }
       }
@@ -627,7 +683,10 @@ function printMarkdownSummary(
   console.log('');
   console.log('📊 PH-Road Safety IG Daily Metrics');
   console.log('---------------------------------');
-  if (gitChange.selectedBranch) console.log(`Compared against branch: ${gitChange.selectedBranch}`);
+  if (gitChange.selectedBranch) {
+    console.log(`Compared against branch: ${gitChange.selectedBranch}`);
+    if (gitChange.selectedBranchLastCommitPretty) console.log(`Last branch compared commit: ${gitChange.selectedBranchLastCommitPretty}`);
+  }
   if (gitChange.baseCommitPretty) console.log(`Base commit (yesterday tip): ${gitChange.baseCommitPretty}`);
   console.log('');
   console.log(`Profiles: ${now.profiles} ${delta.profiles}`.trim());
