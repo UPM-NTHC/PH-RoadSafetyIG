@@ -18,6 +18,7 @@ Description: "Generic base Observation for road safety data; specialized concept
 * effective[x] 0..1 MS
 * performer 0..*
 * value[x] 0..1
+* note 0..*
 
 // ---------------- VITAL SIGNS ----------------
 // MDS70 - Respiratory Rate
@@ -27,10 +28,10 @@ Id: rs-observation-respiratory-rate
 Title: "Road Safety Observation - Respiratory Rate"
 Description: "Respiratory rate in breaths/min."
 * valueQuantity 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #9279-1
-* code.coding.display = "Respiratory rate"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #86290005
+* code.coding.display = "Respiratory rate (observable entity)"
 
 // MDS73 - Pulse/Heart Rate
 Profile: RSObsPulseRate
@@ -39,10 +40,10 @@ Id: rs-observation-pulse-rate
 Title: "Road Safety Observation - Pulse Rate"
 Description: "Pulse/heart rate in beats/min."
 * valueQuantity 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #8889-8
-* code.coding.display = "Heart rate by Pulse oximetry"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #78564009
+* code.coding.display = "Heart rate measured at systemic artery (observable entity)"
 
 // MDS76 (systolic) / MDS77 (diastolic) - Blood Pressure components
 Profile: RSObsBloodPressure
@@ -50,27 +51,13 @@ Parent: RSObservation
 Id: rs-observation-blood-pressure
 Title: "Road Safety Observation - Blood Pressure"
 Description: "Blood pressure using component entries for systolic/diastolic."
-* value[x] 0..0
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains systolic 1..1 and diastolic 1..1
-* component[systolic].code 1..1 MS
-* component[systolic].valueQuantity 1..1 MS
-* component[diastolic].code 1..1 MS
-* component[diastolic].valueQuantity 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #85354-9
 * code.coding.display = "Blood pressure panel with all children optional"
-* component[systolic].code.coding 1..1
-* component[systolic].code.coding.system = $LNC (exactly)
-* component[systolic].code.coding.code = #8480-6
-* component[systolic].code.coding.display = "Systolic blood pressure"
-* component[diastolic].code.coding 1..1
-* component[diastolic].code.coding.system = $LNC (exactly)
-* component[diastolic].code.coding.code = #8462-4
-* component[diastolic].code.coding.display = "Diastolic blood pressure"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify blood pressure components"
 
 // MDS78 - Body Temperature
 Profile: RSObsBodyTemperature
@@ -79,10 +66,10 @@ Id: rs-observation-body-temperature
 Title: "Road Safety Observation - Body Temperature"
 Description: "Body temperature."
 * valueQuantity 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #8310-5
-* code.coding.display = "Body temperature"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #386725007
+* code.coding.display = "Body temperature (observable entity)"
 
 // MDS79 - Level of Consciousness (AVPU)
 Profile: RSObsLevelOfConsciousness
@@ -92,10 +79,10 @@ Title: "Road Safety Observation - Level of Consciousness (AVPU)"
 Description: "Level of consciousness (e.g., AVPU)."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSLevelOfConsciousness (preferred)
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #67775-7
-* code.coding.display = "Level of responsiveness"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #449159002
+* code.coding.display = "Alert voice pain unresponsive scale (assessment scale)"
 
 // MDS80 - Pupils
 Profile: RSObsPupils
@@ -105,10 +92,10 @@ Title: "Road Safety Observation - Pupils"
 Description: "Pupil size/reactivity summary."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPupils (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #113147002
-* code.coding.display = "Pupil reaction to light (observable entity)"
+* code.coding.code = #271733001
+* code.coding.display = "Pupil reaction (observable entity)"
 
 // MDS81 - Cyanosis
 Profile: RSObsCyanosis
@@ -118,7 +105,7 @@ Title: "Road Safety Observation - Cyanosis"
 Description: "Cyanosis assessment."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCyanosis (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #3415004
 * code.coding.display = "Cyanosis (finding)"
@@ -129,33 +116,13 @@ Parent: RSObservation
 Id: rs-observation-gcs
 Title: "Road Safety Observation - Glasgow Coma Scale"
 Description: "GCS with components for eyes, verbal, motor; optional total score as integer."
-* valueInteger 0..1 MS
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains gcsEyes 0..1 and gcsVerbal 0..1 and gcsMotor 0..1
-* component[gcsEyes].code 1..1 MS
-* component[gcsEyes].valueCodeableConcept 0..1 MS
-* component[gcsVerbal].code 1..1 MS
-* component[gcsVerbal].valueCodeableConcept 0..1 MS
-* component[gcsMotor].code 1..1 MS
-* component[gcsMotor].valueCodeableConcept 0..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #9269-2
-* code.coding.display = "Glasgow coma score total"
-* component[gcsEyes].code.coding 1..1
-* component[gcsEyes].code.coding.system = $LNC (exactly)
-* component[gcsEyes].code.coding.code = #9267-6
-* component[gcsEyes].code.coding.display = "Glasgow coma score eye opening"
-* component[gcsVerbal].code.coding 1..1
-* component[gcsVerbal].code.coding.system = $LNC (exactly)
-* component[gcsVerbal].code.coding.code = #9270-0
-* component[gcsVerbal].code.coding.display = "Glasgow coma score verbal"
-* component[gcsMotor].code.coding 1..1
-* component[gcsMotor].code.coding.system = $LNC (exactly)
-* component[gcsMotor].code.coding.code = #9268-4
-* component[gcsMotor].code.coding.display = "Glasgow coma score motor"
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #248241002
+* code.coding.display = "Glasgow coma score (observable entity)"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify GCS components"
 
 // ---------------- VITALS QUALIFIERS ----------------
 // MDS71 - Respiratory Rhythm
@@ -166,10 +133,10 @@ Title: "Road Safety Observation - Respiratory Rhythm"
 Description: "Respiratory rhythm (normal/irregular/labored)."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSRespiratoryRhythm (preferred)
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #respiratory-rhythm
-* code.coding.display = "Respiratory rhythm"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #248582003
+* code.coding.display = "Rhythm of respiration (observable entity)"
 
 // MDS72 - Breath Sounds
 Profile: RSObsBreathSounds
@@ -179,10 +146,10 @@ Title: "Road Safety Observation - Breath Sounds"
 Description: "Breath sounds assessment."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSBreathSounds (preferred)
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #breath-sounds
-* code.coding.display = "Breath sounds"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #52653008
+* code.coding.display = "Respiratory sounds (observable entity)"
 
 // MDS74 - Pulse Rhythm
 Profile: RSObsPulseRhythm
@@ -192,10 +159,10 @@ Title: "Road Safety Observation - Pulse Rhythm"
 Description: "Pulse rhythm."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPulseRhythm (preferred)
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #pulse-rhythm
-* code.coding.display = "Pulse rhythm"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #364095004
+* code.coding.display = "Pulse rhythm (observable entity)"
 
 // MDS75 - Pulse Quality
 Profile: RSObsPulseQuality
@@ -205,10 +172,10 @@ Title: "Road Safety Observation - Pulse Quality"
 Description: "Pulse quality."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPulseQuality (preferred)
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #pulse-quality
-* code.coding.display = "Pulse quality"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #78564009
+* code.coding.display = "Heart rate measured at systemic artery (observable entity)"
 
 // ---------------- TIMELINE (dispatch/transport timestamps) ----------------
 // MDS62 / MDS63 - Date/Time Received by EMS
@@ -218,10 +185,22 @@ Id: rs-observation-date-received
 Title: "Road Safety Observation - Date/Time Received by EMS"
 Description: "Calendar/timestamp the EMS/dispatch received the request."
 * valueDateTime 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #30976-5
 * code.coding.display = "Date received Form"
+
+// MDS63 - Time Received (CSV uses SNOMED 405796007)
+Profile: RSObsTimeReceived
+Parent: RSObservation
+Id: rs-observation-time-received
+Title: "Road Safety Observation - Time Received"
+Description: "Time the call/request was received by EMS/dispatch."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #405796007
+* code.coding.display = "Time of call for help (observable entity)"
 
 // MDS64 - Time Enroute
 Profile: RSObsTimeEnroute
@@ -230,7 +209,7 @@ Id: rs-observation-time-enroute
 Title: "Road Safety Observation - Time Enroute"
 Description: "Timestamp when unit dispatched/began traveling."
 * valueDateTime 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #69472-9
 * code.coding.display = "Unit responded [Date and time] Vehicle"
@@ -242,10 +221,10 @@ Id: rs-observation-time-on-scene
 Title: "Road Safety Observation - Time On Scene"
 Description: "Timestamp crew arrived at scene."
 * valueDateTime 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #69473-7
-* code.coding.display = "Responding unit arrived on the scene [Date and time] Vehicle"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #405798008
+* code.coding.display = "Time of arrival of emergency services (observable entity)"
 
 // MDS66 - Time Departed Scene
 Profile: RSObsTimeDepartedScene
@@ -254,7 +233,7 @@ Id: rs-observation-time-departed
 Title: "Road Safety Observation - Time Departed Scene"
 Description: "Timestamp unit departed scene."
 * valueDateTime 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #69475-2
 * code.coding.display = "Responding unit left the scene with a patient [Date and time] Vehicle"
@@ -266,10 +245,10 @@ Id: rs-observation-time-hospital-arrival
 Title: "Road Safety Observation - Time of Hospital Arrival"
 Description: "Timestamp unit arrived at receiving facility."
 * valueDateTime 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #69476-0
-* code.coding.display = "Responding unit arrived with the patient at the destination or transfer point [Date and time] Vehicle"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #405799000
+* code.coding.display = "Time of arrival at hospital (observable entity)"
 
 // MDS68 - Time of Emergency Station Arrival
 Profile: RSObsTimeStationArrival
@@ -278,7 +257,7 @@ Id: rs-observation-time-station-arrival
 Title: "Road Safety Observation - Time of Emergency Station Arrival"
 Description: "Timestamp unit returned to base/became available."
 * valueDateTime 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #11288-8
 * code.coding.display = "Arrival time documented"
@@ -291,10 +270,34 @@ Id: rs-observation-injury-datetime
 Title: "Road Safety Observation - Date/Time of Injury"
 Description: "Timestamp of injury occurrence."
 * valueDateTime 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #11368-8
 * code.coding.display = "Illness or injury onset date and time"
+
+// MDS158 - Date of Injury
+Profile: RSObsDateOfInjury
+Parent: RSObservation
+Id: rs-observation-date-of-injury
+Title: "Road Safety Observation - Date of Injury"
+Description: "Date of injury occurrence."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #439771001
+* code.coding.display = "Date of event (observable entity)"
+
+// MDS159 - Time of Injury
+Profile: RSObsTimeOfInjury
+Parent: RSObservation
+Id: rs-observation-time-of-injury
+Title: "Road Safety Observation - Time of Injury"
+Description: "Time of injury occurrence."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #263501003
+* code.coding.display = "Time of onset (observable entity)"
 
 // MDS18 - Injury Intent
 Profile: RSObsInjuryIntent
@@ -302,24 +305,20 @@ Parent: RSObservation
 Id: rs-observation-injury-intent
 Title: "Road Safety Observation - Injury Intent"
 Description: "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSInjuryIntent (preferred)
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #11375-3
-* code.coding.display = "Injury intent"
+* code from VSInjuryIntent (preferred)
+* code.coding 0..1
 
 // MDS41 - Transport/Vehicular Accident (flag)
-Profile: RSObsTransportVehicularFlag
+Profile: RSObsTransportVehicularAccident
 Parent: RSObservation
-Id: rs-observation-transport-vehicular-flag
-Title: "Road Safety Observation - Transport/Vehicular Accident (flag)"
+Id: rs-observation-transport-vehicular-accident
+Title: "Road Safety Observation - Transport/Vehicular Accident"
 Description: "Boolean flag indicating transport/vehicular accident."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #274215009
 * code.coding.display = "Transport accident (event)"
+* valueBoolean 0..1
 
 // MDS118 (Mode of transport to facility) and MDS119 for 'Others' text if used
 Profile: RSObsModeOfTransport
@@ -330,10 +329,33 @@ Description: "Mode of transport to the hospital/facility; allow coded value with
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSModeOfTransport (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #74286-6
 * code.coding.display = "Mode of transport to health facility"
+
+// MDS16/17 - Date/Time of Consultation
+Profile: RSObsDateOfConsultation
+Parent: RSObservation
+Id: rs-observation-date-of-consultation
+Title: "Road Safety Observation - Date of Consultation"
+Description: "Date of consultation at facility."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #406543005
+* code.coding.display = "Date of visit (observable entity)"
+
+Profile: RSObsTimeOfConsultation
+Parent: RSObservation
+Id: rs-observation-time-of-consultation
+Title: "Road Safety Observation - Time of Consultation"
+Description: "Time of consultation at facility."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #406544004
+* code.coding.display = "Time of visit (observable entity)"
 
 // MDS111 - Triage Priority
 Profile: RSObsTriagePriority
@@ -341,11 +363,13 @@ Parent: RSObservation
 Id: rs-observation-triage-priority
 Title: "Road Safety Observation - Triage Priority"
 Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
-* valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #triage-priority
-* code.coding.display = "Triage priority"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #225390008
+* code.coding.display = "Triage (procedure)"
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 1..1 MS
+
 
 // MDS114 - Priority Level (Urgency)
 Profile: RSObsUrgencyLevel
@@ -354,10 +378,10 @@ Id: rs-observation-urgency
 Title: "Road Safety Observation - Priority Level (Urgency)"
 Description: "System-generated urgency level per CAD/agency rules."
 * valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #urgency-level
-* code.coding.display = "Urgency level"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #260870009
+* code.coding.display = "Priority (attribute)"
 
 // MDS170 - Place of Occurrence
 Profile: RSObsPlaceOfOccurrence
@@ -368,7 +392,7 @@ Description: "Place type where injury occurred; name can be carried in note when
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPlaceOfOccurrence (preferred)
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #place-of-occurrence
 * code.coding.display = "Place of occurrence"
@@ -382,10 +406,10 @@ Description: "Activity of the patient at time of incident; allow text fallback."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSActivity (preferred)
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #activity-at-incident
-* code.coding.display = "Activity at time of incident"
+* code.coding 0..1
+* code.coding.system = $LNC (exactly)
+* code.coding.code = #11372-0
+* code.coding.display = "Injury associated activity"
 
 // MDS163 - Collision vs Non-Collision
 Profile: RSObsCollisionVsNonCollision
@@ -395,7 +419,7 @@ Title: "Road Safety Observation - Collision vs Non-Collision"
 Description: "Indicates whether the incident was collision or non-collision."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCollisionCategory (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #collision-category
 * code.coding.display = "Collision category"
@@ -409,7 +433,7 @@ Description: "Type of vehicle used by patient; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPatientsVehicle (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #patients-vehicle
 * code.coding.display = "Patient's vehicle"
@@ -423,7 +447,7 @@ Description: "Other vehicle/object type involved; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSOtherVehicle (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #other-vehicle-involved
 * code.coding.display = "Other vehicle/object involved"
@@ -437,7 +461,7 @@ Description: "Seat/position (driver/front passenger/rear/pedestrian); text for '
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPositionOfPatient (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #position-of-patient
 * code.coding.display = "Position of patient"
@@ -449,7 +473,7 @@ Id: rs-observation-how-many-vehicles
 Title: "Road Safety Observation - How Many Vehicles Involved"
 Description: "Count of vehicles involved."
 * valueInteger 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #how-many-vehicles
 * code.coding.display = "How many vehicles involved"
@@ -461,7 +485,7 @@ Id: rs-observation-how-many-patients
 Title: "Road Safety Observation - How Many Patients Involved"
 Description: "Count of patients involved."
 * valueInteger 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #how-many-patients
 * code.coding.display = "How many patients involved"
@@ -473,8 +497,7 @@ Id: rs-observation-collision-type
 Title: "Road Safety Observation - Collision Type"
 Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSCollisionCategory (preferred)
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #collision-type
 * code.coding.display = "Collision type"
@@ -485,11 +508,11 @@ Parent: RSObservation
 Id: rs-observation-traffic-investigator
 Title: "Road Safety Observation - Presence of Traffic Investigator"
 Description: "Boolean presence/absence of traffic investigator."
-* valueBoolean 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #traffic-investigator-presence
-* code.coding.display = "Presence of traffic investigator"
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #159679004
+* code.coding.display = "Traffic warden (occupation)"
 
 // MDS230 / MDS231 - Other Risk Factors (and 'Others' text)
 Profile: RSObsOtherRiskFactors
@@ -498,12 +521,13 @@ Id: rs-observation-other-risk-factors
 Title: "Road Safety Observation - Other Risk Factors"
 Description: "Other risk factors at the time of incident; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSOtherRiskFactors (preferred)
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #other-risk-factors
-* code.coding.display = "Other risk factors"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text ^short = "Other risk factors"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #80943009
+* code.coding.display = "Risk factor (observable entity)"
 
 // MDS232 / MDS233 - Safety Accessories (and 'Others' text)
 Profile: RSObsSafetyAccessories
@@ -514,10 +538,10 @@ Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSSafetyDevices (preferred)
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #safety-accessories
-* code.coding.display = "Safety accessories"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #386812007
+* code.coding.display = "Safety precautions (procedure)"
 
 // MDS149 - Reported Complaint (free text)
 Profile: RSObsReportedComplaint
@@ -526,7 +550,7 @@ Id: rs-observation-reported-complaint
 Title: "Road Safety Observation - Reported Complaint"
 Description: "Free-text reported complaint."
 * valueString 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #1269489004
 * code.coding.display = "Chief complaint (observable entity)"
@@ -538,7 +562,7 @@ Id: rs-observation-call-source
 Title: "Road Safety Observation - Call Source"
 Description: "Call source description (free text)."
 * valueString 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #397663001
 * code.coding.display = "Referral source (finding)"
@@ -550,50 +574,52 @@ Parent: RSObservation
 Id: rs-observation-ec-bites-stings
 Title: "Road Safety Observation - External Cause: Bites/Stings"
 Description: "Flag indicating bites/stings."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #782162007
-* code.coding.display = "Bite of nonhuman animal (event)"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains bitesAgent 0..1
-* component[bitesAgent].code.coding 1..1
-* component[bitesAgent].code.coding.system = $LNC (exactly)
-* component[bitesAgent].code.coding.code = #95376-0
-* component[bitesAgent].code.coding.display = "Type of animal exposed to"
-* component[bitesAgent].valueCodeableConcept 0..1 MS
-* component[bitesAgent].valueCodeableConcept from VSBitesAgent (preferred)
+* code.coding.code = #242651001
+* code.coding.display = "Injury caused by animal (disorder)"
+* valueBoolean 0..1
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept from VSBitesAgent (preferred)
+* valueCodeableConcept ^short = "Specify animal/insect agent"
 
 // (Consolidated into RSObsECBitesStings as component[bitesAgent])
 
 // MDS21 (flag) ; MDS22 (agent code) ; MDS23 (agent other text) - External Cause: Burns
+// Burn agent profile (separate from RSObsNatureBurns and RSObsECBurns)
+// MDS21 (agent code) / MDS23 (agent other text) - Burns agent
 Profile: RSObsECBurns
 Parent: RSObservation
 Id: rs-observation-ec-burns
 Title: "Road Safety Observation - External Cause: Burns"
 Description: "Flag indicating burns as external cause."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #242490006
 * code.coding.display = "Burning due to contact with hot substance (event)"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains burnsAgent 0..1 and burnsOther 0..1
-* component[burnsAgent].code.coding 1..1
-* component[burnsAgent].code.coding.system = $SCT (exactly)
-* component[burnsAgent].code.coding.code = #burns-agent
-* component[burnsAgent].code.coding.display = "Burns agent"
-* component[burnsAgent].valueCodeableConcept 0..1 MS
-* component[burnsAgent].valueCodeableConcept from VSBurnsAgent (preferred)
-* component[burnsOther].code.coding 1..1
-* component[burnsOther].code.coding.system = $SCT (exactly)
-* component[burnsOther].code.coding.code = #burns-other
-* component[burnsOther].code.coding.display = "Burns other (specify)"
-* component[burnsOther].valueString 0..1 MS
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept from VSBurnsAgent (preferred)
+* valueCodeableConcept ^short = "Specify burns agent"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text = "Burns other (specify)"
+
+Profile: RSObsNatureBurns
+Parent: RSObservation
+Id: rs-observation-nature-burns
+Title: "Road Safety Observation - External Cause: Burns"
+Description: "Flag indicating burns as external cause."
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #125666000
+* code.coding.display = "Burn (disorder)"
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept from VSBurnDegrees (preferred)
+* valueCodeableConcept ^short = "Specify burns agent"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text = "Burns other (specify)"
+
 
 // (Consolidated into RSObsECBurns as components: burnsAgent, burnsOther)
 
@@ -602,21 +628,15 @@ Profile: RSObsECChemical
 Parent: RSObservation
 Id: rs-observation-ec-chemical
 Title: "Road Safety Observation - External Cause: Chemical/Substance"
-Description: "Flag indicating chemical/substance exposure."
-* valueBoolean 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #chemical-event
-* code.coding.display = "Chemical/substance exposure (event)"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains chemicalAgent 0..1
-* component[chemicalAgent].code.coding 1..1
-* component[chemicalAgent].code.coding.system = $SCT (exactly)
-* component[chemicalAgent].code.coding.code = #chemical-agent
-* component[chemicalAgent].code.coding.display = "Chemical agent"
-* component[chemicalAgent].valueCodeableConcept 0..1 MS
+Description: "Observation for chemical/substance exposure."
+* code.coding 0..1
+* code.coding.system = $SCT
+* code.coding.code = #133261000119105
+* code.coding.display = "Exposure to potentially hazardous substance (event)"
+* valueBoolean 0..1
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept ^short = "Specify chemical/substance agent"
+* valueCodeableConcept.text 0..1 MS
 
 // (Consolidated into RSObsECChemical as component: chemicalAgent)
 
@@ -626,20 +646,13 @@ Parent: RSObservation
 Id: rs-observation-ec-sharp-object
 Title: "Road Safety Observation - External Cause: Contact with Sharp Object"
 Description: "Flag indicating sharp object cause."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #sharp-object-event
+* code.coding.code = #69129000
 * code.coding.display = "Contact with sharp object (event)"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains sharpObjectSpecify 0..1
-* component[sharpObjectSpecify].code.coding 1..1
-* component[sharpObjectSpecify].code.coding.system = $SCT (exactly)
-* component[sharpObjectSpecify].code.coding.code = #sharp-object-specify
-* component[sharpObjectSpecify].code.coding.display = "Sharp object (specify)"
-* component[sharpObjectSpecify].valueString 0..1 MS
+* valueBoolean 0..1
+* valueString 0..1 MS
+* valueString ^short = "Specify sharp object"
 
 // (Consolidated into RSObsECSharpObject as component: sharpObjectSpecify)
 
@@ -649,26 +662,16 @@ Parent: RSObservation
 Id: rs-observation-ec-drowning
 Title: "Road Safety Observation - External Cause: Drowning"
 Description: "Flag indicating drowning."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #40947009
 * code.coding.display = "Drowning (event)"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains drowningType 0..1 and drowningOther 0..1
-* component[drowningType].code.coding 1..1
-* component[drowningType].code.coding.system = $SCT (exactly)
-* component[drowningType].code.coding.code = #drowning-type
-* component[drowningType].code.coding.display = "Drowning type/body of water"
-* component[drowningType].valueCodeableConcept 0..1 MS
-* component[drowningType].valueCodeableConcept from VSDrowningType (preferred)
-* component[drowningOther].code.coding 1..1
-* component[drowningOther].code.coding.system = $SCT (exactly)
-* component[drowningOther].code.coding.code = #drowning-other
-* component[drowningOther].code.coding.display = "Drowning other (specify)"
-* component[drowningOther].valueString 0..1 MS
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept from VSDrowningType (preferred)
+* valueCodeableConcept ^short = "Specify type/body of water"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text = "Drowning other (specify)"
 
 // (Consolidated into RSObsECDrowning as components: drowningType, drowningOther)
 
@@ -678,11 +681,11 @@ Parent: RSObservation
 Id: rs-observation-ec-forces-of-nature
 Title: "Road Safety Observation - External Cause: Exposure to Forces of Nature"
 Description: "Flag indicating exposure to natural disaster/calamity."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #forces-of-nature-event
+* code.coding.code = #276746005
 * code.coding.display = "Exposure to forces of nature (event)"
+* valueBoolean 0..1
 
 // MDS32 (flag) ; MDS33 (specifics text) - External Cause: Fall
 Profile: RSObsECFall
@@ -690,20 +693,13 @@ Parent: RSObservation
 Id: rs-observation-ec-fall
 Title: "Road Safety Observation - External Cause: Fall"
 Description: "Flag indicating fall."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #fall-event
+* code.coding.code = #1912002
 * code.coding.display = "Fall (event)"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains fallSpecifics 0..1
-* component[fallSpecifics].code.coding 1..1
-* component[fallSpecifics].code.coding.system = $SCT (exactly)
-* component[fallSpecifics].code.coding.code = #fall-specifics
-* component[fallSpecifics].code.coding.display = "Fall specifics"
-* component[fallSpecifics].valueString 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Fall specifics"
 
 // (Consolidated into RSObsECFall as component: fallSpecifics)
 
@@ -713,20 +709,13 @@ Parent: RSObservation
 Id: rs-observation-ec-firecracker
 Title: "Road Safety Observation - External Cause: Firecracker"
 Description: "Flag indicating firecracker-related cause."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #firecracker-event
+* code.coding.code = #218100007
 * code.coding.display = "Firecracker event"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains firecrackerType 0..1
-* component[firecrackerType].code.coding 1..1
-* component[firecrackerType].code.coding.system = $SCT (exactly)
-* component[firecrackerType].code.coding.code = #firecracker-type
-* component[firecrackerType].code.coding.display = "Firecracker type"
-* component[firecrackerType].valueString 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify firecracker types"
 
 // (Consolidated into RSObsECFirecracker as component: firecrackerType)
 
@@ -736,20 +725,13 @@ Parent: RSObservation
 Id: rs-observation-ec-gunshot
 Title: "Road Safety Observation - External Cause: Gunshot"
 Description: "Flag indicating gunshot."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #gunshot-event
+* code.coding.code = #63409001
 * code.coding.display = "Gunshot event"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains gunshotWeapon 0..1
-* component[gunshotWeapon].code.coding 1..1
-* component[gunshotWeapon].code.coding.system = $SCT (exactly)
-* component[gunshotWeapon].code.coding.code = #gunshot-weapon
-* component[gunshotWeapon].code.coding.display = "Gunshot weapon"
-* component[gunshotWeapon].valueString 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify gunshot weapon"
 
 // (Consolidated into RSObsECGunshot as component: gunshotWeapon)
 
@@ -759,10 +741,10 @@ Parent: RSObservation
 Id: rs-observation-ec-hanging-strangulation
 Title: "Road Safety Observation - External Cause: Hanging/Strangulation"
 Description: "Flag indicating hanging/strangulation."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #hanging-strangulation-event
+* code.coding.code = #212976008
 * code.coding.display = "Hanging/strangulation event"
 
 // MDS39 - External Cause: Mauling/Assault
@@ -771,10 +753,10 @@ Parent: RSObservation
 Id: rs-observation-ec-mauling-assault
 Title: "Road Safety Observation - External Cause: Mauling/Assault"
 Description: "Flag indicating assault."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #mauling-assault-event
+* code.coding.code = #52684005
 * code.coding.display = "Mauling/assault event"
 
 // MDS40 - External Cause: Sexual Assault/Abuse/Rape (Alleged)
@@ -783,10 +765,10 @@ Parent: RSObservation
 Id: rs-observation-ec-sexual-assault
 Title: "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"
 Description: "Flag indicating sexual assault."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #sexual-assault-event
+* code.coding.code = #248110007
 * code.coding.display = "Sexual assault event"
 
 // MDS42 (flag) ; MDS43 (specify) - External Cause: Other
@@ -795,20 +777,13 @@ Parent: RSObservation
 Id: rs-observation-ec-other
 Title: "Road Safety Observation - External Cause: Other"
 Description: "Flag indicating other external cause."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #other-external-cause-event
+* code.coding.code = #773760007
 * code.coding.display = "Other external cause event"
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component contains otherSpecify 0..1
-* component[otherSpecify].code.coding 1..1
-* component[otherSpecify].code.coding.system = $SCT (exactly)
-* component[otherSpecify].code.coding.code = #other-external-cause-specify
-* component[otherSpecify].code.coding.display = "Other external cause (specify)"
-* component[otherSpecify].valueString 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify other external cause"
 
 // (Consolidated into RSObsECOther as component: otherSpecify)
 
@@ -820,10 +795,10 @@ Id: rs-observation-extent-of-injury
 Title: "Road Safety Observation - Extent of Injury"
 Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
 * valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #extent-of-injury
-* code.coding.display = "Extent of injury"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #1255875007
+* code.coding.display = "Injury Severity Score (observable entity)"
 
 // MDS45 - Transferred from another hospital/facility (flag)
 Profile: RSObsTransferredFromFacility
@@ -831,11 +806,11 @@ Parent: RSObservation
 Id: rs-observation-transferred-from-facility
 Title: "Road Safety Observation - Transferred From Facility"
 Description: "Flag indicating patient transferred from another hospital/facility."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $LNC (exactly)
-* code.coding.code = #77305-1
-* code.coding.display = "Transferred from facility"
+* code.coding.code = #74199-1
+* code.coding.display = "Transferred from another acute care facility [NTDS]"
 
 // MDS46 - Referred by another hospital/facility (flag)
 Profile: RSObsReferredByFacility
@@ -843,11 +818,11 @@ Parent: RSObservation
 Id: rs-observation-referred-by-facility
 Title: "Road Safety Observation - Referred By Facility"
 Description: "Flag indicating patient was referred by another hospital/facility."
-* valueBoolean 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #LA6624-6
-* code.coding.display = "Referred (indicator)"
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #307836003
+* code.coding.display = "Referral by establishment (procedure)"
 
 // ---------------- INJURIES ----------------
 // MDS176 - Multiple Injuries?
@@ -856,8 +831,8 @@ Parent: RSObservation
 Id: rs-observation-multiple-injuries
 Title: "Road Safety Observation - Multiple Injuries?"
 Description: "Boolean flag indicating multiple injuries."
-* valueBoolean 1..1 MS
-* code.coding 1..1
+* valueBoolean 0..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #262519004
 * code.coding.display = "Multiple injuries (disorder)"
@@ -868,10 +843,10 @@ Parent: RSObservation
 Id: rs-observation-abrasion
 Title: "Road Safety Observation - Abrasion"
 Description: "Abrasion present; with optional site and details."
-* valueBoolean 1..1 MS
+* valueBoolean 0..1
 * bodySite 0..1 MS
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #399963005
 * code.coding.display = "Abrasion (disorder)"
@@ -882,69 +857,13 @@ Parent: RSObservation
 Id: rs-observation-avulsion
 Title: "Road Safety Observation - Avulsion"
 Description: "Avulsion present; with optional site and details."
-* valueBoolean 1..1 MS
+* valueBoolean 0..1
 * bodySite 0..1 MS
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #284554003
 * code.coding.display = "Avulsion - injury (disorder)"
-
-// MDS183 (burn general flag) ; MDS184 (1st degree presence) / MDS185 (1st degree site) / MDS186 (1st degree details)
-Profile: RSObsBurn1stDegree
-Parent: RSObservation
-Id: rs-observation-burn-1st
-Title: "Road Safety Observation - Burn 1st Degree"
-Description: "1st degree burn present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #77140003
-* code.coding.display = "First degree burn injury (morphologic abnormality)"
-
-// MDS187 (2nd degree presence) / MDS188 (2nd degree site) / MDS189 (2nd degree details)
-Profile: RSObsBurn2ndDegree
-Parent: RSObservation
-Id: rs-observation-burn-2nd
-Title: "Road Safety Observation - Burn 2nd Degree"
-Description: "2nd degree burn present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #46541008
-* code.coding.display = "Second degree burn injury (morphologic abnormality)"
-
-// MDS190 (3rd degree presence) / MDS191 (3rd degree site) / MDS192 (3rd degree details)
-Profile: RSObsBurn3rdDegree
-Parent: RSObservation
-Id: rs-observation-burn-3rd
-Title: "Road Safety Observation - Burn 3rd Degree"
-Description: "3rd degree burn present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #80247002
-* code.coding.display = "Third degree burn injury (morphologic abnormality)"
-
-// MDS193 (4th degree presence) / MDS194 (4th degree site) / MDS195 (4th degree details)
-Profile: RSObsBurn4thDegree
-Parent: RSObservation
-Id: rs-observation-burn-4th
-Title: "Road Safety Observation - Burn 4th Degree"
-Description: "4th degree burn present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #770400008
-* code.coding.display = "Fourth degree burn injury (morphologic abnormality)"
 
 // MDS196 (presence) / MDS197 (site) / MDS198 (details) - Concussion
 Profile: RSObsConcussion
@@ -952,10 +871,10 @@ Parent: RSObservation
 Id: rs-observation-concussion
 Title: "Road Safety Observation - Concussion"
 Description: "Concussion present; with site and details."
-* valueBoolean 1..1 MS
+* valueBoolean 0..1
 * bodySite 0..1 MS
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #110030002
 * code.coding.display = "Concussion injury of brain (disorder)"
@@ -966,55 +885,50 @@ Parent: RSObservation
 Id: rs-observation-contusion
 Title: "Road Safety Observation - Contusion"
 Description: "Contusion present; with site and details."
-* valueBoolean 1..1 MS
+* valueBoolean 0..1
 * bodySite 0..1 MS
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #125667009
 * code.coding.display = "Contusion (disorder)"
 
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
-Profile: RSObsFractureClosed
-Parent: RSObservation
-Id: rs-observation-fracture-closed
-Title: "Road Safety Observation - Fracture (Closed)"
-Description: "Closed fracture present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #423125000
-* code.coding.display = "Closed fracture of bone (disorder)"
-
 // MDS206 (open presence) / MDS207 (open site) / MDS208 (open details)
-Profile: RSObsFractureOpen
+// Consolidated Fracture observation (replaces open/closed profiles)
+Profile: RSObsFracture
 Parent: RSObservation
-Id: rs-observation-fracture-open
-Title: "Road Safety Observation - Fracture (Open)"
-Description: "Open fracture present; with site and details."
-* valueBoolean 1..1 MS
-* bodySite 0..1 MS
-* note 0..* 
-* code.coding 1..1
+Id: rs-observation-fracture
+Title: "Road Safety Observation - Fracture"
+Description: "Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note."
+// MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
+// Recommendation: set the Observation.code to a general fracture concept (SNOMED CT) and bind Observation.valueCodeableConcept to a ValueSet enumerating fracture types (open/closed) — use SNOMED CT codes where available.
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
-* code.coding.code = #397181002
-* code.coding.display = "Open fracture (disorder)"
+* code.coding.code = #125605004
+* code.coding.display = "Fracture of bone (disorder)"
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+	// Recommended binding: ValueSet of fracture types (e.g., SNOMED codes: 397181002 = Open fracture, 423125000 = Closed fracture). Do not create new ValueSet here unless requested.
+* bodySite 0..1 MS
+* note 0..*
 
 // MDS209 (presence) / MDS210 (site) / MDS211 (details) - Open Wound
 Profile: RSObsOpenWound
 Parent: RSObservation
 Id: rs-observation-open-wound
 Title: "Road Safety Observation - Open Wound"
-Description: "Open wound present; with site and details."
-* valueBoolean 1..1 MS
+Description: "Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text)."
+* valueBoolean 0..1
 * bodySite 0..1 MS
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #125643001
 * code.coding.display = "Open wound (disorder)"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify open wound mechanism/type"
+// Recommendation: use SNOMED CT codes for mechanism where available; allow free-text fallback.
 
 // MDS212 (presence) / MDS213 (site) / MDS214 (details) - Traumatic Amputation
 Profile: RSObsTraumaticAmputation
@@ -1022,10 +936,10 @@ Parent: RSObservation
 Id: rs-observation-traumatic-amputation
 Title: "Road Safety Observation - Traumatic Amputation"
 Description: "Traumatic amputation present; with site and details."
-* valueBoolean 1..1 MS
+* valueBoolean 0..1
 * bodySite 0..1 MS
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #262595009
 * code.coding.display = "Traumatic amputation (disorder)"
@@ -1035,11 +949,12 @@ Profile: RSObsOtherInjury
 Parent: RSObservation
 Id: rs-observation-other-injury
 Title: "Road Safety Observation - Other Specified Injury"
-Description: "Other specified injury present; with site and details."
-* valueBoolean 1..1 MS
+Description: "Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details."
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 0..1 MS
 * bodySite 0..1 MS
 * note 0..* 
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #417163006
 * code.coding.display = "Traumatic or non-traumatic injury (disorder)"
@@ -1052,10 +967,10 @@ Id: rs-observation-blood-alcohol
 Title: "Road Safety Observation - Blood Alcohol Concentration"
 Description: "Blood alcohol concentration."
 * valueQuantity 1..1 MS
-* code.coding 1..1
-* code.coding.system = $LNC (exactly)
-* code.coding.code = #56425-3
-* code.coding.display = "Ethanol [Mass/volume] in Blood"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #167009006
+* code.coding.display = "Blood ethanol measurement (procedure)"
 
 // MDS108 - Condition of Patient (overall condition at assessment)
 Profile: RSObsConditionOfPatient
@@ -1063,11 +978,12 @@ Parent: RSObservation
 Id: rs-observation-condition-of-patient
 Title: "Road Safety Observation - Condition of Patient"
 Description: "Overall condition of patient at assessment."
-* valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #condition-of-patient
-* code.coding.display = "Condition of patient"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #12386002
+* code.coding.display = "Patient status determination (procedure)"
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 1..1 MS
 
 // MDS53 - Outcome at Release
 Profile: RSObsOutcomeAtRelease
@@ -1076,10 +992,11 @@ Id: rs-observation-outcome-release
 Title: "Road Safety Observation - Outcome at Release"
 Description: "Outcome at release from ER/OPD/RHU."
 * valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #outcome-at-release
-* code.coding.display = "Outcome at release"
+* valueCodeableConcept from VSOutcome (preferred)
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #418138009
+* code.coding.display = "Patient condition finding (finding)"
 
 // MDS58 - Outcome at Discharge
 Profile: RSObsOutcomeAtDischarge
@@ -1088,10 +1005,11 @@ Id: rs-observation-outcome-discharge
 Title: "Road Safety Observation - Outcome at Discharge"
 Description: "Outcome at discharge."
 * valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #outcome-at-discharge
-* code.coding.display = "Outcome at discharge"
+* valueCodeableConcept from VSOutcome (preferred)
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #418138009
+* code.coding.display = "Patient condition finding (finding)"
 
 // MDS116 - Status upon reaching Facility/Hospital
 Profile: RSObsStatusOnArrival
@@ -1100,7 +1018,8 @@ Id: rs-observation-status-on-arrival
 Title: "Road Safety Observation - Status on Arrival"
 Description: "Status upon reaching facility/hospital."
 * valueCodeableConcept 1..1 MS
-* code.coding 1..1
+* valueCodeableConcept from VSStatusOnArrival (preferred)
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #status-on-arrival
 * code.coding.display = "Status on arrival"
@@ -1112,7 +1031,8 @@ Id: rs-observation-status-on-arrival-alive
 Title: "Road Safety Observation - If Alive: Conscious/Unconscious"
 Description: "If alive on arrival, consciousness detail."
 * valueCodeableConcept 1..1 MS
-* code.coding 1..1
+* valueCodeableConcept from VSStatusAliveDetail (preferred)
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #status-on-arrival-alive
 * code.coding.display = "Status on arrival (alive detail)"
@@ -1125,10 +1045,10 @@ Id: rs-observation-vehicle-used
 Title: "Road Safety Observation - Vehicle Used"
 Description: "Vehicle used during response."
 * valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #vehicle-used
-* code.coding.display = "Vehicle used"
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #36030000
+* code.coding.display = "Transport vehicle, device (physical object)"
 
 // MDS91 - Remarks / Clinical Remarks (run report)
 Profile: RSObsClinicalRemarks
@@ -1137,7 +1057,7 @@ Id: rs-observation-clinical-remarks
 Title: "Road Safety Observation - Clinical Remarks"
 Description: "Clinical remarks/notes."
 * valueString 1..1 MS
-* code.coding 1..1
+* code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #clinical-remarks
 * code.coding.display = "Clinical remarks"
@@ -1149,23 +1069,10 @@ Id: rs-observation-runreport-comments
 Title: "Road Safety Observation - Run Report Comments"
 Description: "General comments from run report."
 * valueString 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #runreport-comments
-* code.coding.display = "Run report comments"
-
-// ---------------- POST-CRASH ----------------
-// MDS226 - Vehicle Condition (post-crash evidence)
-Profile: RSObsVehicleCondition
-Parent: RSObservation
-Id: rs-observation-vehicle-condition
-Title: "Road Safety Observation - Vehicle Condition"
-Description: "Vehicle condition assessment."
-* valueCodeableConcept 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SILPH
-* code.coding.code = #vehicle-condition
-* code.coding.display = "Vehicle condition"
+* code.coding 0..1
+* code.coding.system = $LNC (exactly)
+* code.coding.code = #77999-1
+* code.coding.display = "Case notification comment"
 
 // MDS227 - CCTV available (post-crash)
 Profile: RSObsCCTVAvailable
@@ -1173,8 +1080,8 @@ Parent: RSObservation
 Id: rs-observation-cctv-available
 Title: "Road Safety Observation - CCTV Available"
 Description: "Availability of CCTV video."
-* valueBoolean 1..1 MS
-* code.coding 1..1
-* code.coding.system = $SILPH
-* code.coding.code = #cctv-available
-* code.coding.display = "CCTV available"
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding.system = $SCT (exactly)
+* code.coding.code = #360000005
+* code.coding.display = "Closed circuit television (physical object)"

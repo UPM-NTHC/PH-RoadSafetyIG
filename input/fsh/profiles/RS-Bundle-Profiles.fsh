@@ -26,24 +26,23 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
     procedures 0..*
 * section[workflow].title = "Workflow / Timeline"
 * section[workflow].entry 1..* MS
-* section[workflow].entry only Reference(rs-observation-date-received or rs-observation-time-enroute
-    or rs-observation-time-on-scene or rs-observation-time-departed or rs-observation-time-hospital-arrival
-    or rs-observation-time-station-arrival or rs-observation-runreport-comments)
+* section[workflow].entry only Reference(RSObsDateReceived or RSObsTimeEnroute
+    or RSObsTimeOnScene or RSObsTimeDepartedScene or RSObsTimeHospitalArrival
+    or RSObsTimeStationArrival or RSObsRunReportComments or RSObsVehicleUsed)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
-* section[incident].entry only Reference(rs-observation-injury-datetime or rs-observation-injury-intent 
-    or rs-observation-transport-vehicular-flag or rs-observation-mode-of-transport 
-    or RSIncidentLocation)
+* section[incident].entry only Reference(RSObsInjuryDateTime or RSObsInjuryIntent 
+    or RSObsTransportVehicularAccident or RSObsModeOfTransport 
+    or RSIncidentLocation or RSObsReportedComplaint or RSObsCallSource)
 * section[vitals].title = "Vital signs"
 * section[vitals].entry 0..* 
-* section[vitals].entry only Reference(rs-observation-respiratory-rate or rs-observation-pulse-rate 
-    or rs-observation-blood-pressure or rs-observation-body-temperature or rs-observation-gcs 
-    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm 
-    or rs-observation-pulse-quality or rs-observation-cyanosis)
+* section[vitals].entry only Reference(RSObsRespiratoryRate or RSObsPulseRate 
+    or RSObsBloodPressure or RSObsBodyTemperature or RSObsGCS 
+    or RSObsRespiratoryRhythm or RSObsBreathSounds or RSObsPulseRhythm 
+    or RSObsPulseQuality or RSObsCyanosis)
 * section[clinical].title = "Clinical / Assessment"
 * section[clinical].entry 0..* 
-* section[clinical].entry only Reference(rs-observation-gcs or rs-observation-reported-complaint 
-    or RSProcedure or RSCondition)
+* section[clinical].entry only Reference(RSObsClinicalRemarks or RSProcedure or RSCondition)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
 * section[documents].entry only Reference(RSDocumentReference)
@@ -88,31 +87,31 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
 * entry[location].resource only RSIncidentLocation
-* entry[observationDateReceived].resource only rs-observation-date-received
-* entry[observationTimeEnroute].resource only rs-observation-time-enroute
-* entry[observationTimeOnScene].resource only rs-observation-time-on-scene
-* entry[observationTimeDeparted].resource only rs-observation-time-departed
-* entry[observationTimeHospitalArrival].resource only rs-observation-time-hospital-arrival
-* entry[observationTimeStationArrival].resource only rs-observation-time-station-arrival
-* entry[observationVitals].resource only rs-observation-respiratory-rate 
-    or rs-observation-pulse-rate or rs-observation-blood-pressure or rs-observation-body-temperature
-    or rs-observation-respiratory-rhythm or rs-observation-breath-sounds or rs-observation-pulse-rhythm
-    or rs-observation-pulse-quality or rs-observation-cyanosis
-* entry[observationGCS].resource only rs-observation-gcs
-* entry[observationReportedComplaint].resource only rs-observation-reported-complaint
-* entry[observationCallSource].resource only rs-observation-call-source
+* entry[observationDateReceived].resource only RSObsDateReceived
+* entry[observationTimeEnroute].resource only RSObsTimeEnroute
+* entry[observationTimeOnScene].resource only RSObsTimeOnScene
+* entry[observationTimeDeparted].resource only RSObsTimeDepartedScene
+* entry[observationTimeHospitalArrival].resource only RSObsTimeHospitalArrival
+* entry[observationTimeStationArrival].resource only RSObsTimeStationArrival
+* entry[observationVitals].resource only RSObsRespiratoryRate 
+    or RSObsPulseRate or RSObsBloodPressure or RSObsBodyTemperature
+    or RSObsRespiratoryRhythm or RSObsBreathSounds or RSObsPulseRhythm
+    or RSObsPulseQuality or RSObsCyanosis
+* entry[observationGCS].resource only RSObsGCS
+* entry[observationReportedComplaint].resource only RSObsReportedComplaint
+* entry[observationCallSource].resource only RSObsCallSource
 * entry contains
     observationVehicleUsed 0..1 and
     observationRunReportComments 0..1 and
     observationClinicalRemarks 0..1
-* entry[observationVehicleUsed].resource only rs-observation-vehicle-used
-* entry[observationRunReportComments].resource only rs-observation-runreport-comments
-* entry[observationClinicalRemarks].resource only rs-observation-clinical-remarks
+* entry[observationVehicleUsed].resource only RSObsVehicleUsed
+* entry[observationRunReportComments].resource only RSObsRunReportComments
+* entry[observationClinicalRemarks].resource only RSObsClinicalRemarks
 * entry[document].resource only RSDocumentReference
 * entry[task].resource only RSTask
 * entry[serviceRequest].resource only RSServiceRequest
 * entry[procedure].resource only RSProcedure
-* entry[claim].resource only rs-claim
+* entry[claim].resource only RSClaim
 
 
 
@@ -139,6 +138,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     patient 0..1 and
     encounter 0..1 and
     clinical 0..1 and
+    injuries 0..1 and
     incident 0..1 and
     documents 0..*
 * section[patient].title = "Patient"
@@ -150,21 +150,39 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
 * section[clinical].title = "Clinical"
 * section[clinical].entry 0..* 
 * section[clinical].entry only Reference(RSCondition 
-    or rs-observation-blood-alcohol 
-    or rs-observation-other-risk-factors 
-    or rs-observation-condition-of-patient 
-    or rs-observation-outcome-release
-    or rs-observation-outcome-discharge
-    or rs-observation-status-on-arrival
+    or RSObsBloodAlcoholConcentration 
+    or RSObsOtherRiskFactors 
+    or RSObsConditionOfPatient 
+    or RSObsOutcomeAtRelease
+    or RSObsOutcomeAtDischarge
+    or RSObsStatusOnArrival
+    or RSObsStatusOnArrivalAliveDetail
+    or RSObsTransferredFromFacility
+    or RSObsReferredByFacility
     )
+* section[injuries].title = "Injuries"
+* section[injuries].entry 0..* 
+* section[injuries].entry only Reference(
+    RSObsMultipleInjuries or RSObsExtentOfInjury or RSObsAbrasion or RSObsAvulsion
+    or RSObsNatureBurns or RSObsECBurns or RSObsConcussion or RSObsContusion or RSObsFracture
+    or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
-* section[incident].entry only Reference(rs-observation-injury-datetime 
-    or rs-observation-injury-intent
-    or rs-observation-transport-vehicular-flag
-    or rs-observation-mode-of-transport
-    or rs-observation-collision-vs-noncollision
-    or rs-observation-safety-accessories
+* section[incident].entry only Reference(RSObsInjuryDateTime 
+    or RSObsInjuryIntent
+    or RSObsTransportVehicularAccident
+    or RSObsModeOfTransport
+    or RSObsCollisionVsNonCollision
+    or RSObsPatientsVehicle
+    or RSObsOtherVehicleInvolved
+    or RSObsPositionOfPatient
+    or RSObsHowManyVehicles
+    or RSObsHowManyPatients
+    or RSObsPlaceOfOccurrence
+    or RSObsActivityAtIncident
+    or RSObsSafetyAccessories
+    or RSObsTriagePriority
+    or RSObsUrgencyLevel
     or RSIncidentLocation)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
@@ -202,36 +220,38 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * entry[composition].resource only RSCompositionONEISS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
-* entry[conditionInitial].resource only rs-condition
-* entry[conditionFinal].resource only rs-condition
-* entry[observationClinical].resource only rs-observation-other-risk-factors 
-    or rs-observation-condition-of-patient or rs-observation-outcome-release 
-    or rs-observation-outcome-discharge or rs-observation-status-on-arrival 
-    or rs-observation-status-on-arrival-alive or rs-observation-blood-alcohol
-* entry[observationIncident].resource only rs-observation-injury-datetime 
-    or rs-observation-injury-intent or rs-observation-transport-vehicular-flag 
-    or rs-observation-mode-of-transport 
-    or rs-observation-collision-vs-noncollision or rs-observation-patients-vehicle 
-    or rs-observation-other-vehicle or rs-observation-position-of-patient 
-    or rs-observation-how-many-vehicles or rs-observation-how-many-patients 
-    or rs-observation-place-of-occurrence or rs-observation-activity-at-incident
-    or rs-observation-safety-accessories
-    or rs-observation-triage-priority or rs-observation-urgency
-* entry[observationExternalCause].resource only rs-observation-ec-bites-stings
-    or rs-observation-ec-burns or rs-observation-ec-chemical or rs-observation-ec-sharp-object
-    or rs-observation-ec-drowning or rs-observation-ec-forces-of-nature or rs-observation-ec-fall
-    or rs-observation-ec-firecracker or rs-observation-ec-gunshot or rs-observation-ec-hanging-strangulation
-    or rs-observation-ec-mauling-assault or rs-observation-ec-sexual-assault or rs-observation-ec-other
-* entry[observationInjuries].resource only rs-observation-multiple-injuries
-    or rs-observation-abrasion or rs-observation-avulsion
-    or rs-observation-burn-1st or rs-observation-burn-2nd or rs-observation-burn-3rd or rs-observation-burn-4th
-    or rs-observation-concussion or rs-observation-contusion
-    or rs-observation-fracture-closed or rs-observation-fracture-open
-    or rs-observation-open-wound or rs-observation-traumatic-amputation or rs-observation-other-injury
+// Constrain to the RSCondition profile by name
+// Strengthen slices to specific condition profiles
+* entry[conditionInitial].resource only RSConditionInitialImpression
+* entry[conditionFinal].resource only RSConditionFinalDiagnosis
+* entry[observationClinical].resource only RSObsOtherRiskFactors 
+    or RSObsConditionOfPatient or RSObsOutcomeAtRelease 
+    or RSObsOutcomeAtDischarge or RSObsStatusOnArrival 
+    or RSObsStatusOnArrivalAliveDetail or RSObsBloodAlcoholConcentration
+* entry[observationIncident].resource only RSObsInjuryDateTime 
+    or RSObsInjuryIntent or RSObsTransportVehicularAccident 
+    or RSObsModeOfTransport 
+    or RSObsCollisionVsNonCollision or RSObsPatientsVehicle 
+    or RSObsOtherVehicleInvolved or RSObsPositionOfPatient 
+    or RSObsHowManyVehicles or RSObsHowManyPatients 
+    or RSObsPlaceOfOccurrence or RSObsActivityAtIncident
+    or RSObsSafetyAccessories
+    or RSObsTriagePriority or RSObsUrgencyLevel
+* entry[observationExternalCause].resource only RSObsECBitesStings
+    or RSObsECBurns or RSObsECChemical or RSObsECSharpObject
+    or RSObsECDrowning or RSObsECForcesOfNature or RSObsECFall
+    or RSObsECFirecracker or RSObsECGunshot or RSObsECHangingStrangulation
+    or RSObsECMaulingAssault or RSObsECSexualAssault or RSObsECOther
+* entry[observationInjuries].resource only RSObsMultipleInjuries
+    or RSObsAbrasion or RSObsAvulsion
+    or RSObsNatureBurns or RSObsECBurns
+    or RSObsConcussion or RSObsContusion
+    or RSObsFracture
+    or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury
 // Post-crash concepts have been moved to a separate bundle (see RSBundlePostCrash)
-* entry[observationExtentOfInjury].resource only rs-observation-extent-of-injury
-* entry[observationTransferredFromFacility].resource only rs-observation-transferred-from-facility
-* entry[observationReferredByFacility].resource only rs-observation-referred-by-facility
+* entry[observationExtentOfInjury].resource only RSObsExtentOfInjury
+* entry[observationTransferredFromFacility].resource only RSObsTransferredFromFacility
+* entry[observationReferredByFacility].resource only RSObsReferredByFacility
 * entry[document].resource only RSDocumentReference
 * entry[serviceRequest].resource only RSServiceRequest
 * entry[procedure].resource only RSProcedure
@@ -266,8 +286,8 @@ Description: "Composition that organises a Post‑Crash submission. Sections ref
 * section[incident].title = "Post‑Crash Incident"
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(
-    rs-observation-collision-type or rs-observation-traffic-investigator 
-    or rs-observation-vehicle-condition or rs-observation-cctv-available)
+    RSObsCollisionType or RSObsPresenceTrafficInvestigator 
+    or RSObsCCTVAvailable)
 * section[documents].title = "Evidence / Documents"
 * section[documents].entry 0..*
 * section[documents].entry only Reference(RSDocumentReference)
@@ -294,10 +314,9 @@ Description: "Document Bundle for Post‑Crash investigation submission. The fir
 * entry[composition].resource only RSCompositionPostCrash
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
-* entry[observationPostCrash].resource only rs-observation-collision-type 
-    or rs-observation-traffic-investigator 
-    or rs-observation-vehicle-condition 
-    or rs-observation-cctv-available
+* entry[observationPostCrash].resource only RSObsCollisionType 
+    or RSObsPresenceTrafficInvestigator 
+    or RSObsCCTVAvailable
 * entry[document].resource only RSDocumentReference
 
 

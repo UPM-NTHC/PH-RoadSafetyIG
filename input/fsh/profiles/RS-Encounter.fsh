@@ -8,6 +8,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * status ^short = "Encounter status"
 * class 1..1 MS
 * class ^short = "Encounter class/type"
+* class from VSTypeOfPatient (extensible)
 * identifier 1..* MS
 * identifier ^short = "Encounter identifiers"
 * subject 1..1 MS
