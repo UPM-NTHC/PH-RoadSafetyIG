@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-pulse-rhythm",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-pulse-rhythm</b></p><a name=\"vs-pulse-rhythm\"> </a><a name=\"hcvs-pulse-rhythm\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/271636001\">271636001</a></td><td>Pulse regular (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/61086009\">61086009</a></td><td>Pulse irregular (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-rhythm",
+  "version" : "0.1.0",
+  "name" : "VSPulseRhythm",
+  "title" : "RS VS - Pulse Rhythm",
+  "status" : "draft",
+  "date" : "2025-10-21T14:32:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "Pulse rhythm options (prefer SNOMED CT).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "271636001",
+        "display" : "Pulse regular (finding)"
+      },
+      {
+        "code" : "61086009",
+        "display" : "Pulse irregular (finding)"
+      }]
+    }]
+  }
+}
