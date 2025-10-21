@@ -3,8 +3,8 @@ PHRoadSafetyIG : Validation Results
 
 err = 92, warn = 724, info = 26
 IG Publisher Version: 2.0.21
-Generated Tue Oct 21 02:20:29 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
- Build Errors : 1 / 14 / 0
+Generated Tue Oct 21 04:52:46 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+ Build Errors : 3 / 14 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-activity-cs : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cause-of-crash-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-collision-type-cs : 0 / 4 / 1
@@ -118,6 +118,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/report-form-received-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/priority-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/vehicle-condition-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: references.html#/html/body/div/div/div/div/div/ul/li/a at Line 221, column 8: The link 'ONEISS.pdf' for "Download ONEISS.pdf" cannot be resolved
+ERROR: references.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'Run Report.pdf' for "Download RunReport.pdf" cannot be resolved
 == fsh-generated/resources/CodeSystem-activity-cs.json ==
 WARNING: CodeSystem/activity-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/activity-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
