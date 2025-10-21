@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "party-at-fault-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem party-at-fault-cs</b></p><a name=\"party-at-fault-cs\"> </a><a name=\"hcparty-at-fault-cs\"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">driverA<a name=\"party-at-fault-cs-driverA\"> </a></td><td>Driver of Vehicle A</td></tr><tr><td style=\"white-space:nowrap\">driverB<a name=\"party-at-fault-cs-driverB\"> </a></td><td>Driver of Vehicle B</td></tr><tr><td style=\"white-space:nowrap\">roadAuthority<a name=\"party-at-fault-cs-roadAuthority\"> </a></td><td>Road authority / Infrastructure issue</td></tr><tr><td style=\"white-space:nowrap\">pedestrian<a name=\"party-at-fault-cs-pedestrian\"> </a></td><td>Pedestrian</td></tr><tr><td style=\"white-space:nowrap\">cyclist<a name=\"party-at-fault-cs-cyclist\"> </a></td><td>Cyclist</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"party-at-fault-cs-other\"> </a></td><td>Other</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PartyAtFaultCS"] ; # 
+  fhir:title [ fhir:v "Party at Fault"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-21T02:17:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "driverA" ] ;
+     fhir:display [ fhir:v "Driver of Vehicle A" ]
+  ] [
+     fhir:code [ fhir:v "driverB" ] ;
+     fhir:display [ fhir:v "Driver of Vehicle B" ]
+  ] [
+     fhir:code [ fhir:v "roadAuthority" ] ;
+     fhir:display [ fhir:v "Road authority / Infrastructure issue" ]
+  ] [
+     fhir:code [ fhir:v "pedestrian" ] ;
+     fhir:display [ fhir:v "Pedestrian" ]
+  ] [
+     fhir:code [ fhir:v "cyclist" ] ;
+     fhir:display [ fhir:v "Cyclist" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

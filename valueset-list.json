@@ -1,197 +1,241 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-activity",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "VSActivity",
-      "title" : "RS VS - Activity at Time of Incident",
-      "description" : "Activity at time of incident (prefer SNOMED CT).",
-      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-bites-agent",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSBitesAgent",
-      "title" : "RS VS - Bites/Stings Agent",
-      "description" : "Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings.",
-      "systems" : ["http://loinc.org"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-breath-sounds",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSBreathSounds",
-      "title" : "RS VS - Breath Sounds",
-      "description" : "Breath sounds options (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burns-agent",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSBurnsAgent",
-      "title" : "RS VS - Burns Agent",
-      "description" : "Agent causing burn (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSCollisionCategory",
-      "title" : "RS VS - Collision Category",
-      "description" : "Collision vs non-collision category.",
-      "systems" : ["http://loinc.org", "http://upm-nthc.ph/CodeSystem/rs-local"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-cyanosis",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "VSCyanosis",
-      "title" : "RS VS - Cyanosis",
-      "description" : "Cyanosis assessment options (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-drowning-type",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSDrowningType",
-      "title" : "RS VS - Drowning Type/Body of Water",
-      "description" : "Type/body of water for drowning incidents.",
-      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSInjuryIntent",
-      "title" : "RS VS - Injury Intent",
-      "description" : "Injury intent options mapped from ONEISS (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-level-of-consciousness",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "VSLevelOfConsciousness",
-      "title" : "RS VS - Level of Consciousness (AVPU)",
-      "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-mode-of-transport",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSModeOfTransport",
-      "title" : "RS VS - Mode of Transport to Facility",
-      "description" : "Mode of transport to the hospital/facility.",
-      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-risk-factors",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSOtherRiskFactors",
-      "title" : "RS VS - Other Risk Factors",
-      "description" : "Other risk factors at time of incident (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSOtherVehicle",
-      "title" : "RS VS - Other Vehicle in Collision",
-      "description" : "Other vehicle/object involved in collision.",
+      "name" : "ActivityVS",
+      "title" : "Activity ValueSet (example)",
+      "description" : "Example ValueSet for Activity at time of incident",
       "systems" : [
-        "http://id.who.int/icd/release/11/mms",
-        "http://upm-nthc.ph/CodeSystem/rs-local",
-        "http://loinc.org",
-        "http://snomed.info/sct"
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs"
       ]
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-patients-vehicle",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSPatientsVehicle",
-      "title" : "RS VS - Patient's Vehicle",
-      "description" : "Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC).",
-      "systems" : [
-        "http://id.who.int/icd/release/11/mms",
-        "http://loinc.org",
-        "http://upm-nthc.ph/CodeSystem/rs-local",
-        "http://snomed.info/sct"
-      ]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-place-of-occurrence",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSPlaceOfOccurrence",
-      "title" : "RS VS - Place of Occurrence",
-      "description" : "Place of occurrence (prefer SNOMED CT; use ICD-11 where needed).",
-      "systems" : [
-        "http://id.who.int/icd/release/11/mms",
-        "http://snomed.info/sct"
-      ]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSPositionOfPatient",
-      "title" : "RS VS - Position of Patient",
-      "description" : "Position/role of patient in transport incidents (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-quality",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSPulseQuality",
-      "title" : "RS VS - Pulse Quality",
-      "description" : "Pulse quality options (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-rhythm",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VSPulseRhythm",
-      "title" : "RS VS - Pulse Rhythm",
-      "description" : "Pulse rhythm options (prefer SNOMED CT).",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pupils",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/age-units-vs",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "VSPupils",
-      "title" : "RS VS - Pupils",
-      "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
+      "name" : "AgeUnitsVS",
+      "title" : "Age Units ValueSet",
+      "description" : "Allowed units for Patient Age when Date of Birth is not available.",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-file-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CauseOfCrashFileTypeVS",
+      "title" : "Cause of Crash File Type ValueSet",
+      "description" : "Allowed file types for documents describing the cause of a road crash.",
+      "systems" : ["urn:ietf:bcp:13"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CauseOfCrashVS",
+      "title" : "Cause of Road Crash",
+      "description" : "Defines codes representing the external causes of road traffic crashes",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollisionTypeVS",
+      "title" : "Collision Type ValueSet (example)",
+      "description" : "Types of collision in road traffic incidents",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/coordination",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CoordinationVS",
+      "title" : "Transport Coordination Codes",
+      "description" : "Standard codes for documenting transport coordination.",
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-respiratory-rhythm",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "VSRespiratoryRhythm",
-      "title" : "RS VS - Respiratory Rhythm",
-      "description" : "Respiratory rhythm options (prefer SNOMED CT).",
+      "name" : "ExternalCauseVS",
+      "title" : "External Cause ValueSet (example)",
+      "description" : "Illustrative set of codes representing external causes of injury.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/first-aid",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FirstAidVS",
+      "title" : "First Aid Codes",
+      "description" : "Allowed values for first aid performed.",
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-safety-devices",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "VSSafetyDevices",
-      "title" : "RS VS - Safety Devices",
-      "description" : "Safety devices present/used (prefer SNOMED CT).",
-      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+      "name" : "InjuryNatureVS",
+      "title" : "Nature of Injury ValueSet (example)",
+      "description" : "Demonstration ValueSet capturing the nature of injury.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/intervention",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "InterventionVS",
+      "title" : "Medical Intervention Procedure Codes",
+      "description" : "Procedure codes representing medical interventions.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ModeOfTransportVS",
+      "title" : "Mode of Transport ValueSet (example)",
+      "description" : "Sample ValueSet capturing transport modes.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OutcomeVS",
+      "title" : "Outcome ValueSet (example)",
+      "description" : "Example ValueSet capturing possible outcomes.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/party-at-fault-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PartyAtFaultVS",
+      "title" : "Party at Fault",
+      "description" : "ValueSet indicating the party at fault in an incident.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PlaceOccVS",
+      "title" : "Place of Occurrence ValueSet (example)",
+      "description" : "Example ValueSet capturing places of occurrence.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PriorityVS",
+      "title" : "Triage Priority ValueSet (example)",
+      "description" : "Example ValueSet capturing triage priorities.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/psychosocial-procedure",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PsychosocialProcedureVS",
+      "title" : "Psychosocial Procedure Codes",
+      "description" : "Codes representing psychosocial support interventions.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReportFormReceivedVS",
+      "title" : "Report Form Received",
+      "description" : "ValueSet indicating whether a report form has been received.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/road-network-file-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoadNetworkFileTypeVS",
+      "title" : "Road Network File Type",
+      "description" : "Permitted file types for detailed road network shapefiles or GIS documents.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-hospital-category",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RSHospitalCategoryVS",
+      "title" : "Hospital / EMS Category",
+      "description" : "Categories for hospitals relevant to EMS referral.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-procedure",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RSProcedureVS",
+      "title" : "All Road Safety Procedure Codes",
+      "description" : "Combines medical interventions, first aid, and psychosocial procedures.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RSTaskStatusVS",
+      "title" : "Road Safety Task Status",
+      "description" : "ValueSet for Task.status using custom Road Safety codes.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vehicle-condition-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleConditionVS",
+      "title" : "Vehicle Condition",
+      "description" : "ValueSet indicating the condition of a vehicle.",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VehicleTypeVS",
+      "title" : "ValueSet for Vehicle Used",
+      "description" : "Vehicle types allowed for Road Safety Encounter",
+      "systems" : [
+        "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types"
+      ]
     }
   ]
 }

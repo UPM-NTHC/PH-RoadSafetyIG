@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-18T06:53:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-21T02:17:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -847,6 +847,488 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/Example-RS-Scene-Location> ;
+         fhir:reference [ fhir:v "Location/Example-RS-Scene-Location" ]
+       ] ;
+       fhir:name [ fhir:v "Accident Scene Location" ] ;
+       fhir:description [ fhir:v "Road traffic accident scene for the encounter." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/activity-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Activity at time of incident (example)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/activity-vs> ;
+         fhir:reference [ fhir:v "ValueSet/activity-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Activity ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Example ValueSet for Activity at time of incident" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient-age> ;
+         fhir:reference [ fhir:v "StructureDefinition/rs-patient-age" ]
+       ] ;
+       fhir:name [ fhir:v "Age" ] ;
+       fhir:description [ fhir:v "Patient age, derived from birthDate. Not intended for direct data entry." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/age-units-vs> ;
+         fhir:reference [ fhir:v "ValueSet/age-units-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Age Units ValueSet" ] ;
+       fhir:description [ fhir:v "Allowed units for Patient Age when Date of Birth is not available." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-procedure> ;
+         fhir:reference [ fhir:v "ValueSet/rs-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "All Road Safety Procedure Codes" ] ;
+       fhir:description [ fhir:v "Combines medical interventions, first aid, and psychosocial procedures." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-file-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cause-of-crash-file-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Cause of Crash File Type ValueSet" ] ;
+       fhir:description [ fhir:v "Allowed file types for documents describing the cause of a road crash." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/cause-of-crash-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cause-of-crash-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Cause of Road Crash" ] ;
+       fhir:description [ fhir:v "Defines codes representing the external causes of road traffic crashes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/cause-of-crash-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Cause of Road Crash" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/cause-of-road-crash> ;
+         fhir:reference [ fhir:v "StructureDefinition/cause-of-road-crash" ]
+       ] ;
+       fhir:name [ fhir:v "Cause of Road Crash Incident" ] ;
+       fhir:description [ fhir:v "Cause or contributing factor of the road crash." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/hospital-example> ;
+         fhir:reference [ fhir:v "Organization/hospital-example" ]
+       ] ;
+       fhir:name [ fhir:v "City General Hospital" ] ;
+       fhir:description [ fhir:v "Receiving medical facility for the road safety encounter." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/Example-RS-Hospital-Location> ;
+         fhir:reference [ fhir:v "Location/Example-RS-Hospital-Location" ]
+       ] ;
+       fhir:name [ fhir:v "City General Hospital - Emergency Department" ] ;
+       fhir:description [ fhir:v "ED Location involved in the encounter." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/collision-type-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Collision Type (example)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/collision-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/collision-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Collision Type ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Types of collision in road traffic incidents" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ed-availability> ;
+         fhir:reference [ fhir:v "StructureDefinition/ed-availability" ]
+       ] ;
+       fhir:name [ fhir:v "Emergency Department Availability" ] ;
+       fhir:description [ fhir:v "Indicates if the emergency department is currently accepting patients." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/organization-hospital-ex> ;
+         fhir:reference [ fhir:v "Organization/organization-hospital-ex" ]
+       ] ;
+       fhir:name [ fhir:v "Example Hospital Organization" ] ;
+       fhir:description [ fhir:v "Hospital submitting the road safety patient report." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/external-cause-cs" ]
+       ] ;
+       fhir:name [ fhir:v "External Cause CodeSystem (example)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/external-cause-detail-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/external-cause-detail-ext" ]
+       ] ;
+       fhir:name [ fhir:v "External Cause Detail" ] ;
+       fhir:description [ fhir:v "Additional detail for external cause (e.g., specify animal/insect, weapon, burn type)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/external-cause-vs> ;
+         fhir:reference [ fhir:v "ValueSet/external-cause-vs" ]
+       ] ;
+       fhir:name [ fhir:v "External Cause ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Illustrative set of codes representing external causes of injury." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/first-aid> ;
+         fhir:reference [ fhir:v "ValueSet/first-aid" ]
+       ] ;
+       fhir:name [ fhir:v "First Aid Codes" ] ;
+       fhir:description [ fhir:v "Allowed values for first aid performed." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/first-aid-given> ;
+         fhir:reference [ fhir:v "StructureDefinition/first-aid-given" ]
+       ] ;
+       fhir:name [ fhir:v "First Aid Given" ] ;
+       fhir:description [ fhir:v "Indicates whether first aid was provided to the patient." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-hospital-category> ;
+         fhir:reference [ fhir:v "ValueSet/rs-hospital-category" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital / EMS Category" ] ;
+       fhir:description [ fhir:v "Categories for hospitals relevant to EMS referral." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-HealthcareService> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-HealthcareService" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Available" ] ;
+       fhir:description [ fhir:v "Represents a hospital available for EMS referral, linked to its location." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/NamingSystem/hospital-case-no-ns> ;
+         fhir:reference [ fhir:v "NamingSystem/hospital-case-no-ns" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Case Number System" ] ;
+       fhir:description [ fhir:v "Unique identifier assigned to each hospital case." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/NamingSystem/hospital-patient-id-ns> ;
+         fhir:reference [ fhir:v "NamingSystem/hospital-patient-id-ns" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Patient ID No." ] ;
+       fhir:description [ fhir:v "The permanent and unique number issued by hospitals to individual patients and their dependents." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/NamingSystem/IncidentNoNS> ;
+         fhir:reference [ fhir:v "NamingSystem/IncidentNoNS" ]
+       ] ;
+       fhir:name [ fhir:v "Incident Number System" ] ;
+       fhir:description [ fhir:v "Unique identifier assigned to each incident." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Injury Observation" ] ;
+       fhir:description [ fhir:v "It is intended to support documentation of external causes, nature and extent of injuries, \nvital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ConceptMap"
          ]
        ] ) ;
@@ -854,8 +1336,400 @@
          fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ConceptMap/MDSRoadSafety2FHIR> ;
          fhir:reference [ fhir:v "ConceptMap/MDSRoadSafety2FHIR" ]
        ] ;
-       fhir:name [ fhir:v "MDSRoadSafety Logical Model to FHIR Mapping" ] ;
-       fhir:description [ fhir:v "Maps elements from the logical model to FHIR R4 resources. Generated by scripts/generate-conceptmap.js" ] ;
+       fhir:name [ fhir:v "MDS Logical Model to FHIR Mapping" ] ;
+       fhir:description [ fhir:v "Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/intervention> ;
+         fhir:reference [ fhir:v "ValueSet/intervention" ]
+       ] ;
+       fhir:name [ fhir:v "Medical Intervention Procedure Codes" ] ;
+       fhir:description [ fhir:v "Procedure codes representing medical interventions." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mode-of-transport-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Mode of Transport (example)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/mode-of-transport-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mode-of-transport-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Mode of Transport ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Sample ValueSet capturing transport modes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/NamingSystem/hospital-registry-id-ns> ;
+         fhir:reference [ fhir:v "NamingSystem/hospital-registry-id-ns" ]
+       ] ;
+       fhir:name [ fhir:v "National Health Facility Registry ID" ] ;
+       fhir:description [ fhir:v "The permanent and unique number issued by PhilHealth to individual members and to each and every dependent." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/injury-nature-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Nature of Injury (example)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/injury-nature-vs> ;
+         fhir:reference [ fhir:v "ValueSet/injury-nature-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Nature of Injury ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Demonstration ValueSet capturing the nature of injury." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/outcome-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Outcome (example)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/outcome-vs> ;
+         fhir:reference [ fhir:v "ValueSet/outcome-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Outcome ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Example ValueSet capturing possible outcomes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/party-at-fault> ;
+         fhir:reference [ fhir:v "StructureDefinition/party-at-fault" ]
+       ] ;
+       fhir:name [ fhir:v "Party at Fault" ] ;
+       fhir:description [ fhir:v "Identifies the party considered at fault in the road crash." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/party-at-fault-vs> ;
+         fhir:reference [ fhir:v "ValueSet/party-at-fault-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Party at Fault" ] ;
+       fhir:description [ fhir:v "ValueSet indicating the party at fault in an incident." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/party-at-fault-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Party at Fault" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/patient-jose-dela-cruz> ;
+         fhir:reference [ fhir:v "Patient/patient-jose-dela-cruz" ]
+       ] ;
+       fhir:name [ fhir:v "Patient - Jose Dela Cruz" ] ;
+       fhir:description [ fhir:v "Road crash patient referenced by the ServiceRequest example." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/patient-road-safety-ex> ;
+         fhir:reference [ fhir:v "Patient/patient-road-safety-ex" ]
+       ] ;
+       fhir:name [ fhir:v "patient-road-safety-ex" ] ;
+       fhir:description [ fhir:v "Example patient involved in a road traffic crash, aligned to the RoadSafetyProfile." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-core-occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/ph-core-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "PH Core Occupation (Stub)" ] ;
+       fhir:description [ fhir:v "Temporary local copy of PH Core Occupation extension for Road Safety testing" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/place-occ-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Place of Occurrence (example)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs> ;
+         fhir:reference [ fhir:v "ValueSet/place-occ-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Place of Occurrence ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Example ValueSet capturing places of occurrence." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-ana-cruz> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-ana-cruz" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner - Ana Cruz" ] ;
+       fhir:description [ fhir:v "Team Leader in the Road Safety Encounter (Dr. Ana Cruz leads the medical response team)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-john-lee> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-john-lee" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner - John Lee" ] ;
+       fhir:description [ fhir:v "Assistant in the Road Safety Encounter (Nurse John Lee assists the treatment and transport officers)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-lisa-tan> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-lisa-tan" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner - Lisa Tan" ] ;
+       fhir:description [ fhir:v "Transport Officer in the Road Safety Encounter (Dr. Lisa Tan is responsible for patient transfer and transport decisions)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-maria-santos> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-maria-santos" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner - Maria Santos" ] ;
+       fhir:description [ fhir:v "Received By in the Road Safety Encounter (Clerk Maria Santos logs the patient’s arrival at the receiving facility)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-mark-reyes> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-mark-reyes" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner - Mark Reyes" ] ;
+       fhir:description [ fhir:v "Treatment Officer in the Road Safety Encounter (Dr. Mark Reyes provides primary patient treatment)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/psychosocial-procedure> ;
+         fhir:reference [ fhir:v "ValueSet/psychosocial-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Psychosocial Procedure Codes" ] ;
+       fhir:description [ fhir:v "Codes representing psychosocial support interventions." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -869,11 +1743,155 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-allergy-intolerance" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Servicerequest" ]
+       ] ;
+       fhir:name [ fhir:v "Refusal to Admit Service Request" ] ;
+       fhir:description [ fhir:v "Profile for recording refusal to admit a patient." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ServiceRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ServiceRequest/road-safety-servicerequest-example> ;
+         fhir:reference [ fhir:v "ServiceRequest/road-safety-servicerequest-example" ]
+       ] ;
+       fhir:name [ fhir:v "Refusal to Admit Service Request Example" ] ;
+       fhir:description [ fhir:v "This example records a refusal to admit a road crash patient during a Road Safety Encounter, including the hospital that refused admission and the physician involved." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/report-form-received> ;
+         fhir:reference [ fhir:v "StructureDefinition/report-form-received" ]
+       ] ;
+       fhir:name [ fhir:v "Report Form Received" ] ;
+       fhir:description [ fhir:v "Whether the report form was received as digital or physical." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/report-form-received-vs> ;
+         fhir:reference [ fhir:v "ValueSet/report-form-received-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Report Form Received" ] ;
+       fhir:description [ fhir:v "ValueSet indicating whether a report form has been received." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/report-form-received-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Report Form Received" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/road-network-file-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/road-network-file-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Road Network File Type" ] ;
+       fhir:description [ fhir:v "Permitted file types for detailed road network shapefiles or GIS documents." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/road-network-file-type-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Road Network File Type" ] ;
+       fhir:description [ fhir:v "Allowed file types for detailed road network shapefiles or GIS data." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/road-network-shapefile> ;
+         fhir:reference [ fhir:v "StructureDefinition/road-network-shapefile" ]
+       ] ;
+       fhir:name [ fhir:v "Road Network Shape File" ] ;
+       fhir:description [ fhir:v "Metadata reference to detailed road network shapefile related to the incident." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Allergyintolerance> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Allergyintolerance" ]
        ] ;
        fhir:name [ fhir:v "Road Safety AllergyIntolerance" ] ;
-       fhir:description [ fhir:v "Known allergies, substances and reactions." ] ;
+       fhir:description [ fhir:v "Profile for recording allergy or intolerance information in the Philippine Road Safety IG." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -887,65 +1905,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-bundle-ems" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Bundle — EMS Submission" ] ;
-       fhir:description [ fhir:v "Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-bundle-oneiss" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Bundle — ONEISS Submission" ] ;
-       fhir:description [ fhir:v "Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-postcrash> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-bundle-postcrash" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Bundle — Post‑Crash Investigation" ] ;
-       fhir:description [ fhir:v "Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-claim" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Claim> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Claim" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Claim" ] ;
-       fhir:description [ fhir:v "Claim information related to cost of care." ] ;
+       fhir:description [ fhir:v "A Claim profile for PH Road Safety IG requiring total." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -959,65 +1923,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-composition-ems" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Composition — EMS Submission" ] ;
-       fhir:description [ fhir:v "Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-composition-oneiss" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Composition — ONEISS Submission" ] ;
-       fhir:description [ fhir:v "Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-postcrash> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-composition-postcrash" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Composition — Post‑Crash Investigation" ] ;
-       fhir:description [ fhir:v "Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-condition" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Condition" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Condition" ] ;
-       fhir:description [ fhir:v "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage." ] ;
+       fhir:description [ fhir:v "A Condition for the Safety of the Roads in the Philippines." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1031,11 +1941,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-document-reference" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Documentreference> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Documentreference" ]
        ] ;
-       fhir:name [ fhir:v "Road Safety DocumentReference (Evidence)" ] ;
-       fhir:description [ fhir:v "Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files)." ] ;
+       fhir:name [ fhir:v "Road Safety Document Reference" ] ;
+       fhir:description [ fhir:v "A profile to capture documents related to road safety incidents in the Philippine context." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1049,11 +1959,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-encounter" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Encounter" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Encounter" ] ;
-       fhir:description [ fhir:v "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer." ] ;
+       fhir:description [ fhir:v "Encounter profile for road safety reporting (hospital case no, incident no, transport details, disposition, etc.)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1063,18 +1973,19 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:resource"
+           fhir:v "Encounter"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-healthcare-service" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/road-safety-encounter-example> ;
+         fhir:reference [ fhir:v "Encounter/road-safety-encounter-example" ]
        ] ;
-       fhir:name [ fhir:v "Road Safety HealthcareService" ] ;
-       fhir:description [ fhir:v "Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units)." ] ;
+       fhir:name [ fhir:v "Road Safety Encounter Example" ] ;
+       fhir:description [ fhir:v "Example of a road safety hospital encounter with identifiers, participants, and disposition." ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v false
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter>
        ]
      ] [
        fhir:extension ( [
@@ -1085,29 +1996,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-incident-location-incident" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Incident Location" ] ;
-       fhir:description [ fhir:v "Location of incident; supports PH-Core address extensions and geolocation." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-medication-statement" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Medicationstatement> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Medicationstatement" ]
        ] ;
        fhir:name [ fhir:v "Road Safety MedicationStatement" ] ;
-       fhir:description [ fhir:v "Current medications as codeable concepts or references where available." ] ;
+       fhir:description [ fhir:v "A profile representing a patient's current medication statement for the Philippine health context." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1121,8 +2014,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model> ;
-         fhir:reference [ fhir:v "StructureDefinition/ph-road-safety-logical-model" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/PH-RoadSafetyLogicalModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/PH-RoadSafetyLogicalModel" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Minimum Dataset (MDS) Logical Model" ] ;
        fhir:description [ fhir:v "Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling." ] ;
@@ -1139,1472 +2032,90 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation" ] ;
-       fhir:description [ fhir:v "Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-abrasion" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Abrasion" ] ;
-       fhir:description [ fhir:v "Abrasion present; with optional site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-activity-at-incident" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Activity at Time of Incident" ] ;
-       fhir:description [ fhir:v "Activity of the patient at time of incident; allow text fallback." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-avulsion" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Avulsion" ] ;
-       fhir:description [ fhir:v "Avulsion present; with optional site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-alcohol> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-blood-alcohol" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Blood Alcohol Concentration" ] ;
-       fhir:description [ fhir:v "Blood alcohol concentration." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-blood-pressure" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Blood Pressure" ] ;
-       fhir:description [ fhir:v "Blood pressure using component entries for systolic/diastolic." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-body-temperature" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Body Temperature" ] ;
-       fhir:description [ fhir:v "Body temperature." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-breath-sounds" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Breath Sounds" ] ;
-       fhir:description [ fhir:v "Breath sounds assessment." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-1st> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-burn-1st" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Burn 1st Degree" ] ;
-       fhir:description [ fhir:v "1st degree burn present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-2nd> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-burn-2nd" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Burn 2nd Degree" ] ;
-       fhir:description [ fhir:v "2nd degree burn present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-3rd> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-burn-3rd" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Burn 3rd Degree" ] ;
-       fhir:description [ fhir:v "3rd degree burn present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-burn-4th> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-burn-4th" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Burn 4th Degree" ] ;
-       fhir:description [ fhir:v "4th degree burn present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-call-source> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-call-source" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Call Source" ] ;
-       fhir:description [ fhir:v "Call source description (free text)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-cctv-available" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - CCTV Available" ] ;
-       fhir:description [ fhir:v "Availability of CCTV video." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-clinical-remarks" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Clinical Remarks" ] ;
-       fhir:description [ fhir:v "Clinical remarks/notes." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-collision-type" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Collision Type" ] ;
-       fhir:description [ fhir:v "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-collision-vs-noncollision" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Collision vs Non-Collision" ] ;
-       fhir:description [ fhir:v "Indicates whether the incident was collision or non-collision." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-concussion" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Concussion" ] ;
-       fhir:description [ fhir:v "Concussion present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-condition-of-patient" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Condition of Patient" ] ;
-       fhir:description [ fhir:v "Overall condition of patient at assessment." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-contusion> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-contusion" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Contusion" ] ;
-       fhir:description [ fhir:v "Contusion present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-cyanosis" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Cyanosis" ] ;
-       fhir:description [ fhir:v "Cyanosis assessment." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-injury-datetime" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Date/Time of Injury" ] ;
-       fhir:description [ fhir:v "Timestamp of injury occurrence." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-date-received" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Date/Time Received by EMS" ] ;
-       fhir:description [ fhir:v "Calendar/timestamp the EMS/dispatch received the request." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-extent-of-injury" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Extent of Injury" ] ;
-       fhir:description [ fhir:v "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-bites-stings" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Bites/Stings" ] ;
-       fhir:description [ fhir:v "Flag indicating bites/stings." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-burns" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Burns" ] ;
-       fhir:description [ fhir:v "Flag indicating burns as external cause." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-chemical" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Chemical/Substance" ] ;
-       fhir:description [ fhir:v "Flag indicating chemical/substance exposure." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-sharp-object" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Contact with Sharp Object" ] ;
-       fhir:description [ fhir:v "Flag indicating sharp object cause." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-drowning" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Drowning" ] ;
-       fhir:description [ fhir:v "Flag indicating drowning." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-forces-of-nature" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Exposure to Forces of Nature" ] ;
-       fhir:description [ fhir:v "Flag indicating exposure to natural disaster/calamity." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-fall" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Fall" ] ;
-       fhir:description [ fhir:v "Flag indicating fall." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-firecracker" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Firecracker" ] ;
-       fhir:description [ fhir:v "Flag indicating firecracker-related cause." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-gunshot" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Gunshot" ] ;
-       fhir:description [ fhir:v "Flag indicating gunshot." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-hanging-strangulation" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Hanging/Strangulation" ] ;
-       fhir:description [ fhir:v "Flag indicating hanging/strangulation." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-mauling-assault" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Mauling/Assault" ] ;
-       fhir:description [ fhir:v "Flag indicating assault." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-other" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Other" ] ;
-       fhir:description [ fhir:v "Flag indicating other external cause." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-ec-sexual-assault" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)" ] ;
-       fhir:description [ fhir:v "Flag indicating sexual assault." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-closed> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-fracture-closed" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Fracture (Closed)" ] ;
-       fhir:description [ fhir:v "Closed fracture present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture-open> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-fracture-open" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Fracture (Open)" ] ;
-       fhir:description [ fhir:v "Open fracture present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-gcs" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Glasgow Coma Scale" ] ;
-       fhir:description [ fhir:v "GCS with components for eyes, verbal, motor; optional total score as integer." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-patients> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-how-many-patients" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - How Many Patients Involved" ] ;
-       fhir:description [ fhir:v "Count of patients involved." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-how-many-vehicles" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - How Many Vehicles Involved" ] ;
-       fhir:description [ fhir:v "Count of vehicles involved." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival-alive> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-status-on-arrival-alive" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - If Alive: Conscious/Unconscious" ] ;
-       fhir:description [ fhir:v "If alive on arrival, consciousness detail." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-injury-intent" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Injury Intent" ] ;
-       fhir:description [ fhir:v "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-level-of-consciousness" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Level of Consciousness (AVPU)" ] ;
-       fhir:description [ fhir:v "Level of consciousness (e.g., AVPU)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-mode-of-transport" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Mode of Transport to Facility" ] ;
-       fhir:description [ fhir:v "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-multiple-injuries" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Multiple Injuries?" ] ;
-       fhir:description [ fhir:v "Boolean flag indicating multiple injuries." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-open-wound" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Open Wound" ] ;
-       fhir:description [ fhir:v "Open wound present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-other-risk-factors" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Other Risk Factors" ] ;
-       fhir:description [ fhir:v "Other risk factors at the time of incident; allow text for 'Others'." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-other-injury" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Other Specified Injury" ] ;
-       fhir:description [ fhir:v "Other specified injury present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-other-vehicle" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Other Vehicle/Object Involved" ] ;
-       fhir:description [ fhir:v "Other vehicle/object type involved; text for 'Others'." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-discharge> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-outcome-discharge" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Outcome at Discharge" ] ;
-       fhir:description [ fhir:v "Outcome at discharge." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-outcome-release" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Outcome at Release" ] ;
-       fhir:description [ fhir:v "Outcome at release from ER/OPD/RHU." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-patients-vehicle" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Patient's Vehicle" ] ;
-       fhir:description [ fhir:v "Type of vehicle used by patient; text for 'Others'." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-place-of-occurrence" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Place of Occurrence" ] ;
-       fhir:description [ fhir:v "Place type where injury occurred; name can be carried in note when applicable." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-position-of-patient" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Position of Patient" ] ;
-       fhir:description [ fhir:v "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-traffic-investigator" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Presence of Traffic Investigator" ] ;
-       fhir:description [ fhir:v "Boolean presence/absence of traffic investigator." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-urgency> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-urgency" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Priority Level (Urgency)" ] ;
-       fhir:description [ fhir:v "System-generated urgency level per CAD/agency rules." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-pulse-quality" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Pulse Quality" ] ;
-       fhir:description [ fhir:v "Pulse quality." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-pulse-rate" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Pulse Rate" ] ;
-       fhir:description [ fhir:v "Pulse/heart rate in beats/min." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-pulse-rhythm" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Pulse Rhythm" ] ;
-       fhir:description [ fhir:v "Pulse rhythm." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pupils> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-pupils" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Pupils" ] ;
-       fhir:description [ fhir:v "Pupil size/reactivity summary." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-referred-by-facility> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-referred-by-facility" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Referred By Facility" ] ;
-       fhir:description [ fhir:v "Flag indicating patient was referred by another hospital/facility." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-reported-complaint" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Reported Complaint" ] ;
-       fhir:description [ fhir:v "Free-text reported complaint." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-respiratory-rate" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Respiratory Rate" ] ;
-       fhir:description [ fhir:v "Respiratory rate in breaths/min." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-respiratory-rhythm" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Respiratory Rhythm" ] ;
-       fhir:description [ fhir:v "Respiratory rhythm (normal/irregular/labored)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-runreport-comments" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Run Report Comments" ] ;
-       fhir:description [ fhir:v "General comments from run report." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-safety-accessories" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Safety Accessories" ] ;
-       fhir:description [ fhir:v "Safety accessories present/used; allow text for 'Others'." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-status-on-arrival" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Status on Arrival" ] ;
-       fhir:description [ fhir:v "Status upon reaching facility/hospital." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-departed> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-time-departed" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Time Departed Scene" ] ;
-       fhir:description [ fhir:v "Timestamp unit departed scene." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-enroute> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-time-enroute" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Time Enroute" ] ;
-       fhir:description [ fhir:v "Timestamp when unit dispatched/began traveling." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-station-arrival> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-time-station-arrival" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Time of Emergency Station Arrival" ] ;
-       fhir:description [ fhir:v "Timestamp unit returned to base/became available." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-hospital-arrival> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-time-hospital-arrival" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Time of Hospital Arrival" ] ;
-       fhir:description [ fhir:v "Timestamp unit arrived at receiving facility." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-on-scene> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-time-on-scene" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Time On Scene" ] ;
-       fhir:description [ fhir:v "Timestamp crew arrived at scene." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transferred-from-facility> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-transferred-from-facility" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Transferred From Facility" ] ;
-       fhir:description [ fhir:v "Flag indicating patient transferred from another hospital/facility." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-flag> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-transport-vehicular-flag" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Transport/Vehicular Accident (flag)" ] ;
-       fhir:description [ fhir:v "Boolean flag indicating transport/vehicular accident." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-traumatic-amputation" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Traumatic Amputation" ] ;
-       fhir:description [ fhir:v "Traumatic amputation present; with site and details." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-triage-priority> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-triage-priority" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Triage Priority" ] ;
-       fhir:description [ fhir:v "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-condition> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-vehicle-condition" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Vehicle Condition" ] ;
-       fhir:description [ fhir:v "Vehicle condition assessment." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-used> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-vehicle-used" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Observation - Vehicle Used" ] ;
-       fhir:description [ fhir:v "Vehicle used during response." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-organization" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Organization" ] ;
-       fhir:description [ fhir:v "Organization profile for EMS providers and receiving facilities involved in road safety encounters." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-patient" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Patient" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Patient" ] ;
-       fhir:description [ fhir:v "Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region." ] ;
+       fhir:description [ fhir:v "A profile for Road Safety resource specific to Philippine context." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/patient-road-safety-age2> ;
+         fhir:reference [ fhir:v "Patient/patient-road-safety-age2" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Patient Example - Age Only" ] ;
+       fhir:description [ fhir:v "Example of a patient where only age is known." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/patient-road-safety-age4> ;
+         fhir:reference [ fhir:v "Patient/patient-road-safety-age4" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Patient Example - Elderly" ] ;
+       fhir:description [ fhir:v "Example of an elderly patient with approximate age." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/patient-road-safety-age3> ;
+         fhir:reference [ fhir:v "Patient/patient-road-safety-age3" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Patient Example - Infant Age" ] ;
+       fhir:description [ fhir:v "Example of a pediatric patient with age in months." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/patient-road-safety-two-addresses> ;
+         fhir:reference [ fhir:v "Patient/patient-road-safety-two-addresses" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Patient Example - With Two Addresses" ] ;
+       fhir:description [ fhir:v "A patient with both permanent and temporary addresses." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient>
        ]
      ] [
        fhir:extension ( [
@@ -2615,11 +2126,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-procedure" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Procedure" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Procedure" ] ;
-       fhir:description [ fhir:v "Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions)." ] ;
+       fhir:description [ fhir:v "Procedure profile for road safety and injury surveillance.\n- Captures interventions performed on the patient.\n- Supplies used during the procedure.\n- Coordination with receiving hospital if applicable." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2633,11 +2144,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-procedure-transport-coordination" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Questionnaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-Questionnaire" ]
        ] ;
-       fhir:name [ fhir:v "Road Safety Procedure - Transport Coordination" ] ;
-       fhir:description [ fhir:v "Procedure record indicating whether transport coordination with the receiving hospital was done." ] ;
+       fhir:name [ fhir:v "Road Safety Questionnaire" ] ;
+       fhir:description [ fhir:v "A profile on Questionnaire to capture repeating Vital Signs data (Respiratory Rate, Pulse, Blood Pressure, Temperature, LOC)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2651,47 +2162,137 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-location-service" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety Service Location" ] ;
-       fhir:description [ fhir:v "Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-service-request" ]
-       ] ;
-       fhir:name [ fhir:v "Road Safety ServiceRequest" ] ;
-       fhir:description [ fhir:v "Requests or records related to refusal to admit and related workflow signals." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-task" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-task> ;
+         fhir:reference [ fhir:v "StructureDefinition/RS-task" ]
        ] ;
        fhir:name [ fhir:v "Road Safety Task" ] ;
-       fhir:description [ fhir:v "Workflow tracking for report receipt, durations of delay, and sources of delays." ] ;
+       fhir:description [ fhir:v "A profile for tasks related to road safety, tracking report forms and delays." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Task/task-road-safety-ex> ;
+         fhir:reference [ fhir:v "Task/task-road-safety-ex" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Task Example" ] ;
+       fhir:description [ fhir:v "Example of a road safety task to track report form receipt and delays." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "urn://example.com.ph/StructureDefinition/rs-task"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/urn://example.com.ph/StructureDefinition/rs-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/rs-task-status> ;
+         fhir:reference [ fhir:v "ValueSet/rs-task-status" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Task Status" ] ;
+       fhir:description [ fhir:v "ValueSet for Task.status using custom Road Safety codes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/rs-task-status-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Road Safety Task Status Codes" ] ;
+       fhir:description [ fhir:v "Custom codes for Task.status specific to Road Safety reporting." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/safety-notes-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/safety-notes-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Safety / Other Risk Factors" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/supplies-used> ;
+         fhir:reference [ fhir:v "StructureDefinition/supplies-used" ]
+       ] ;
+       fhir:name [ fhir:v "Supplies Used" ] ;
+       fhir:description [ fhir:v "Records any devices or medications used during the procedure." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/traffic-incident-management> ;
+         fhir:reference [ fhir:v "StructureDefinition/traffic-incident-management" ]
+       ] ;
+       fhir:name [ fhir:v "Traffic Incident Management" ] ;
+       fhir:description [ fhir:v "Documentation or status of traffic incident management." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transpo-coordination> ;
+         fhir:reference [ fhir:v "StructureDefinition/transpo-coordination" ]
+       ] ;
+       fhir:name [ fhir:v "Transport Coordination" ] ;
+       fhir:description [ fhir:v "Indicates if transport to receiving hospital was coordinated." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2705,11 +2306,46 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-activity> ;
-         fhir:reference [ fhir:v "ValueSet/vs-activity" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/coordination> ;
+         fhir:reference [ fhir:v "ValueSet/coordination" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Activity at Time of Incident" ] ;
-       fhir:description [ fhir:v "Activity at time of incident (prefer SNOMED CT)." ] ;
+       fhir:name [ fhir:v "Transport Coordination Codes" ] ;
+       fhir:description [ fhir:v "Standard codes for documenting transport coordination." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/transport-details-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/transport-details-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Transport Details" ] ;
+       fhir:description [ fhir:v "Details about mode of transport, vehicles involved, positions." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/priority-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Triage Priority (example)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2723,11 +2359,65 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-bites-agent> ;
-         fhir:reference [ fhir:v "ValueSet/vs-bites-agent" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/priority-vs> ;
+         fhir:reference [ fhir:v "ValueSet/priority-vs" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Bites/Stings Agent" ] ;
-       fhir:description [ fhir:v "Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings." ] ;
+       fhir:name [ fhir:v "Triage Priority ValueSet (example)" ] ;
+       fhir:description [ fhir:v "Example ValueSet capturing triage priorities." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/organization-uppgh> ;
+         fhir:reference [ fhir:v "Organization/organization-uppgh" ]
+       ] ;
+       fhir:name [ fhir:v "UP Philippine General Hospital (UP-PGH)" ] ;
+       fhir:description [ fhir:v "Hospital referenced in the ServiceRequest example (refused admission)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-rs-vehicle-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rs-vehicle-type" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet for Vehicle Used" ] ;
+       fhir:description [ fhir:v "Vehicle types allowed for Road Safety Encounter" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/vehicle-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Vehicle Condition" ] ;
+       fhir:description [ fhir:v "Condition of the vehicle involved in the incident." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2741,11 +2431,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-breath-sounds> ;
-         fhir:reference [ fhir:v "ValueSet/vs-breath-sounds" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vehicle-condition-vs> ;
+         fhir:reference [ fhir:v "ValueSet/vehicle-condition-vs" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Breath Sounds" ] ;
-       fhir:description [ fhir:v "Breath sounds options (prefer SNOMED CT)." ] ;
+       fhir:name [ fhir:v "Vehicle Condition" ] ;
+       fhir:description [ fhir:v "ValueSet indicating the condition of a vehicle." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2755,15 +2445,14 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burns-agent> ;
-         fhir:reference [ fhir:v "ValueSet/vs-burns-agent" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/vehicle-condition-cs" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Burns Agent" ] ;
-       fhir:description [ fhir:v "Agent causing burn (prefer SNOMED CT)." ] ;
+       fhir:name [ fhir:v "Vehicle Condition" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2773,15 +2462,14 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category> ;
-         fhir:reference [ fhir:v "ValueSet/vs-collision-category" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-list-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/vehicle-list-ext" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Collision Category" ] ;
-       fhir:description [ fhir:v "Collision vs non-collision category." ] ;
+       fhir:name [ fhir:v "Vehicle list" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2791,15 +2479,15 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-cyanosis> ;
-         fhir:reference [ fhir:v "ValueSet/vs-cyanosis" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types> ;
+         fhir:reference [ fhir:v "CodeSystem/vehicle-types" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Cyanosis" ] ;
-       fhir:description [ fhir:v "Cyanosis assessment options (prefer SNOMED CT)." ] ;
+       fhir:name [ fhir:v "Vehicle Types" ] ;
+       fhir:description [ fhir:v "A code system for different types of vehicles used in road safety encounters." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2809,15 +2497,15 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-drowning-type> ;
-         fhir:reference [ fhir:v "ValueSet/vs-drowning-type" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-used> ;
+         fhir:reference [ fhir:v "StructureDefinition/vehicle-used" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Drowning Type/Body of Water" ] ;
-       fhir:description [ fhir:v "Type/body of water for drowning incidents." ] ;
+       fhir:name [ fhir:v "Vehicle Used" ] ;
+       fhir:description [ fhir:v "The type of vehicle used by the patient or involved in the encounter." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2827,234 +2515,37 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "Questionnaire"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent> ;
-         fhir:reference [ fhir:v "ValueSet/vs-injury-intent" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Questionnaire/VitalSignsQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/VitalSignsQuestionnaire" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Injury Intent" ] ;
-       fhir:description [ fhir:v "Injury intent options mapped from ONEISS (prefer SNOMED CT)." ] ;
+       fhir:name [ fhir:v "Vital Signs Questionnaire" ] ;
+       fhir:description [ fhir:v "Example Questionnaire instance to capture repeating sets of Vital Signs." ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v false
+         a fhir:canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Questionnaire"^^xsd:anyURI ;
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Questionnaire>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "QuestionnaireResponse"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-level-of-consciousness> ;
-         fhir:reference [ fhir:v "ValueSet/vs-level-of-consciousness" ]
+         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/QuestionnaireResponse/VitalSignsQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/VitalSignsQuestionnaireResponse" ]
        ] ;
-       fhir:name [ fhir:v "RS VS - Level of Consciousness (AVPU)" ] ;
-       fhir:description [ fhir:v "AVPU options for level of consciousness (prefer SNOMED CT)." ] ;
+       fhir:name [ fhir:v "Vital Signs QuestionnaireResponse Example" ] ;
+       fhir:description [ fhir:v "Example response to the Vital Signs Questionnaire with sample measurements." ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-mode-of-transport> ;
-         fhir:reference [ fhir:v "ValueSet/vs-mode-of-transport" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Mode of Transport to Facility" ] ;
-       fhir:description [ fhir:v "Mode of transport to the hospital/facility." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-risk-factors> ;
-         fhir:reference [ fhir:v "ValueSet/vs-other-risk-factors" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Other Risk Factors" ] ;
-       fhir:description [ fhir:v "Other risk factors at time of incident (prefer SNOMED CT)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle> ;
-         fhir:reference [ fhir:v "ValueSet/vs-other-vehicle" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Other Vehicle in Collision" ] ;
-       fhir:description [ fhir:v "Other vehicle/object involved in collision." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-patients-vehicle> ;
-         fhir:reference [ fhir:v "ValueSet/vs-patients-vehicle" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Patient's Vehicle" ] ;
-       fhir:description [ fhir:v "Vehicle used by patient (prefer SNOMED CT; add Other/Unknown from LOINC)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-place-of-occurrence> ;
-         fhir:reference [ fhir:v "ValueSet/vs-place-of-occurrence" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Place of Occurrence" ] ;
-       fhir:description [ fhir:v "Place of occurrence (prefer SNOMED CT; use ICD-11 where needed)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient> ;
-         fhir:reference [ fhir:v "ValueSet/vs-position-of-patient" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Position of Patient" ] ;
-       fhir:description [ fhir:v "Position/role of patient in transport incidents (prefer SNOMED CT)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-quality> ;
-         fhir:reference [ fhir:v "ValueSet/vs-pulse-quality" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Pulse Quality" ] ;
-       fhir:description [ fhir:v "Pulse quality options (prefer SNOMED CT)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-rhythm> ;
-         fhir:reference [ fhir:v "ValueSet/vs-pulse-rhythm" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Pulse Rhythm" ] ;
-       fhir:description [ fhir:v "Pulse rhythm options (prefer SNOMED CT)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pupils> ;
-         fhir:reference [ fhir:v "ValueSet/vs-pupils" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Pupils" ] ;
-       fhir:description [ fhir:v "Pupil size/reactivity options (prefer SNOMED CT)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-respiratory-rhythm> ;
-         fhir:reference [ fhir:v "ValueSet/vs-respiratory-rhythm" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Respiratory Rhythm" ] ;
-       fhir:description [ fhir:v "Respiratory rhythm options (prefer SNOMED CT)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-safety-devices> ;
-         fhir:reference [ fhir:v "ValueSet/vs-safety-devices" ]
-       ] ;
-       fhir:name [ fhir:v "RS VS - Safety Devices" ] ;
-       fhir:description [ fhir:v "Safety devices present/used (prefer SNOMED CT)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
+         fhir:v true
        ]
      ] ) ;
      fhir:page [

@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "external-cause-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem external-cause-cs</b></p><a name=\"external-cause-cs\"> </a><a name=\"hcexternal-cause-cs\"> </a><p>This  code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">bites-stings<a name=\"external-cause-cs-bites-stings\"> </a></td><td>Bites/stings</td></tr><tr><td style=\"white-space:nowrap\">burns<a name=\"external-cause-cs-burns\"> </a></td><td>Burns</td></tr><tr><td style=\"white-space:nowrap\">chemical<a name=\"external-cause-cs-chemical\"> </a></td><td>Chemical/substance</td></tr><tr><td style=\"white-space:nowrap\">sharp-object<a name=\"external-cause-cs-sharp-object\"> </a></td><td>Contact with sharp object</td></tr><tr><td style=\"white-space:nowrap\">drowning<a name=\"external-cause-cs-drowning\"> </a></td><td>Drowning</td></tr><tr><td style=\"white-space:nowrap\">fall<a name=\"external-cause-cs-fall\"> </a></td><td>Fall</td></tr><tr><td style=\"white-space:nowrap\">firecracker<a name=\"external-cause-cs-firecracker\"> </a></td><td>Firecracker</td></tr><tr><td style=\"white-space:nowrap\">gunshot<a name=\"external-cause-cs-gunshot\"> </a></td><td>Gunshot</td></tr><tr><td style=\"white-space:nowrap\">hanging<a name=\"external-cause-cs-hanging\"> </a></td><td>Hanging/Strangulation</td></tr><tr><td style=\"white-space:nowrap\">assault<a name=\"external-cause-cs-assault\"> </a></td><td>Assault/Mauling</td></tr><tr><td style=\"white-space:nowrap\">sexual-assault<a name=\"external-cause-cs-sexual-assault\"> </a></td><td>Sexual assault</td></tr><tr><td style=\"white-space:nowrap\">transport-accident<a name=\"external-cause-cs-transport-accident\"> </a></td><td>Transport/Vehicular accident</td></tr><tr><td style=\"white-space:nowrap\">exposure-nature<a name=\"external-cause-cs-exposure-nature\"> </a></td><td>Exposure to forces of nature</td></tr><tr><td style=\"white-space:nowrap\">others<a name=\"external-cause-cs-others\"> </a></td><td>Others</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ExternalCauseCS"] ; # 
+  fhir:title [ fhir:v "External Cause CodeSystem (example)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-21T02:17:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "bites-stings" ] ;
+     fhir:display [ fhir:v "Bites/stings" ]
+  ] [
+     fhir:code [ fhir:v "burns" ] ;
+     fhir:display [ fhir:v "Burns" ]
+  ] [
+     fhir:code [ fhir:v "chemical" ] ;
+     fhir:display [ fhir:v "Chemical/substance" ]
+  ] [
+     fhir:code [ fhir:v "sharp-object" ] ;
+     fhir:display [ fhir:v "Contact with sharp object" ]
+  ] [
+     fhir:code [ fhir:v "drowning" ] ;
+     fhir:display [ fhir:v "Drowning" ]
+  ] [
+     fhir:code [ fhir:v "fall" ] ;
+     fhir:display [ fhir:v "Fall" ]
+  ] [
+     fhir:code [ fhir:v "firecracker" ] ;
+     fhir:display [ fhir:v "Firecracker" ]
+  ] [
+     fhir:code [ fhir:v "gunshot" ] ;
+     fhir:display [ fhir:v "Gunshot" ]
+  ] [
+     fhir:code [ fhir:v "hanging" ] ;
+     fhir:display [ fhir:v "Hanging/Strangulation" ]
+  ] [
+     fhir:code [ fhir:v "assault" ] ;
+     fhir:display [ fhir:v "Assault/Mauling" ]
+  ] [
+     fhir:code [ fhir:v "sexual-assault" ] ;
+     fhir:display [ fhir:v "Sexual assault" ]
+  ] [
+     fhir:code [ fhir:v "transport-accident" ] ;
+     fhir:display [ fhir:v "Transport/Vehicular accident" ]
+  ] [
+     fhir:code [ fhir:v "exposure-nature" ] ;
+     fhir:display [ fhir:v "Exposure to forces of nature" ]
+  ] [
+     fhir:code [ fhir:v "others" ] ;
+     fhir:display [ fhir:v "Others" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
