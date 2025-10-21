@@ -18,22 +18,16 @@
 
 ## CSV previews and downloads
 
-Place the CSV files under `input/downloads/` before running the publisher so they are copied to `/downloads/` in the built site. (If you leave them in `input/images/downloads/` they will be available under `/images/downloads/` on the site.)
-
 - L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv
 
-  <object data="downloads/L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv" type="text/csv" width="100%" height="480px">
-    <p>Your browser cannot display CSV files. <a href="downloads/L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv">Download L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv</a> instead.</p>
-  </object>
+  
+  <p><a href="downloads/L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv">Download L3 - ELEMENT TERMINOLOGY STANDARDS (Main).csv</a></p>
 
 - L3 - VALUE SET MAPPING (Main).csv
 
-  <object data="downloads/L3 - VALUE SET MAPPING (Main).csv" type="text/csv" width="100%" height="480px">
-    <p>Your browser cannot display CSV files. <a href="downloads/L3 - VALUE SET MAPPING (Main).csv">Download L3 - VALUE SET MAPPING (Main).csv</a> instead.</p>
-  </object>
+  <p><a href="downloads/L3 - VALUE SET MAPPING (Main).csv">Download L3 - VALUE SET MAPPING (Main).csv</a></p>
 
 - MDS.csv
 
-  <object data="downloads/MDS.csv" type="text/csv" width="100%" height="480px">
-    <p>Your browser cannot display CSV files. <a href="downloads/MDS.csv">Download MDS.csv</a> instead.</p>
-  </object>
+  <p><a href="downloads/MDS.csv">Download MDS.csv</a></p>
+  
