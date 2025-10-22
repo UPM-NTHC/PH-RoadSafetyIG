@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-collision-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-collision-category</b></p><a name="vs-collision-category"> </a><a name="hcvs-collision-category"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA7319-2/">LA7319-2</a></td><td>Collision</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-cs-silph.html"><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-silph.html#cs-silph-NONCOLLISION">NONCOLLISION</a></td><td>Non-Collision</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category"/>
+  <version value="0.1.0"/>
+  <name value="VSCollisionCategory"/>
+  <title value="RS VS - Collision Category"/>
+  <status value="draft"/>
+  <date value="2025-10-22T02:11:18+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Collision vs non-collision category."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA7319-2"/>
+        <display value="Collision"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph"/>
+      <concept>
+        <code value="NONCOLLISION"/>
+        <display value="Non-Collision"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

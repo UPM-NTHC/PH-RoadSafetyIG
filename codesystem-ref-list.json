@@ -13,16 +13,33 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
-      "url" : "http://hl7.org/fhir/task-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "TaskStatus",
-      "title" : "TaskStatus",
-      "description" : "The current status of the task.",
-      "oids" : ["2.16.840.1.113883.4.642.4.791"],
+      "url" : "http://id.who.int/icd/release/11/mms",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ICD11MMS",
+      "title" : "International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)",
+      "description" : "The International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS) is one of the ICD11 linearizations. Information about the ICD Foundation Component and the ICD11 Linearizations can be found in the complete reference guide here: [https://icd.who.int/icd11refguide/en/index.html](https://icd.who.int/icd11refguide/en/index.html)\r\n\r\n\"**The ICD11 Linearizations (Tabular lists)**\r\n\r\nA linearization is a subset of the foundation component, that is:\r\n\r\n1. fit for a particular purpose: reporting mortality, morbidity, primary care or other uses;\r\n\r\n 2. composed of entities that are Mutually Exclusive of each other; \r\n\r\n3. each entity is given a single parent.\r\n\r\nLinearization is similar to the classical print versions of ICD Tabular List (e.g. volume I of ICD-10 or other previous editions). The main linearization of ICD-11 is Mortality and Morbidity Statistics (MMS). Various linearizations could be built at different granularity, use case or other purposes such as for Primary Care, Clinical Care or Research. The linkage from the foundation component to a particular linearization will ensure consistent use of the ICD.\"\r\n\r\nICD-11 for Mortality and Morbidity (ICD-11 MMS) can be downloaded in either print or electronic (spreadsheet) format from the  browser in the Info tab located [here](https://icd.who.int/browse11/l-m/en)",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-task-status.html" : "TaskStatus"
+      "ValueSet-vs-transport-accident-mode.html" : "RS VS - Transport Accident: Land/Water/Air"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-vs-collision-category.html" : "RS VS - Collision Category",
+      "ValueSet-vs-safety-devices.html" : "RS VS - Safety Devices",
+      "ValueSet-vs-bites-agent.html" : "RS VS - Bites/Stings Agent",
+      "ValueSet-vs-mode-of-transport.html" : "RS VS - Mode of Transport to Facility",
+      "ValueSet-vs-gcs-eyes.html" : "RS VS - GCS Eyes",
+      "ValueSet-vs-gcs-motor.html" : "RS VS - GCS Motor",
+      "ValueSet-vs-gcs-verbal.html" : "RS VS - GCS Verbal"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -34,24 +51,32 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-psychosocial-procedure.html" : "Psychosocial Procedure Codes",
-      "ValueSet-coordination.html" : "Transport Coordination Codes",
-      "ValueSet-intervention.html" : "Medical Intervention Procedure Codes",
-      "ValueSet-first-aid.html" : "First Aid Codes",
-      "ValueSet-rs-hospital-category.html" : "Hospital / EMS Category",
-      "ValueSet-rs-procedure.html" : "All Road Safety Procedure Codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "LocationType",
-      "title" : "Location type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+      "ValueSet-vs-burn-degrees.html" : "RS VS - Burn Degrees",
+      "ValueSet-vs-cyanosis.html" : "RS VS - Cyanosis",
+      "ValueSet-vs-position-of-patient.html" : "RS VS - Position of Patient",
+      "ValueSet-vs-type-of-patient.html" : "RS VS - Type of Patient",
+      "ValueSet-vs-level-of-consciousness.html" : "RS VS - Level of Consciousness (AVPU)",
+      "ValueSet-vs-status-on-arrival.html" : "RS VS - Status on Arrival",
+      "ValueSet-vs-pulse-quality.html" : "RS VS - Pulse Quality",
+      "ValueSet-vs-pulse-rhythm.html" : "RS VS - Pulse Rhythm",
+      "ValueSet-vs-burns-agent.html" : "RS VS - Burns Agent",
+      "ValueSet-vs-outcome.html" : "RS VS - Outcome",
+      "ValueSet-vs-activity.html" : "RS VS - Activity at Time of Incident",
+      "ValueSet-vs-patients-vehicle.html" : "RS VS - Patient's Vehicle",
+      "ValueSet-vs-status-alive-detail.html" : "RS VS - Alive Detail (Consciousness)",
+      "ValueSet-vs-safety-devices.html" : "RS VS - Safety Devices",
+      "ValueSet-vs-mode-of-transport.html" : "RS VS - Mode of Transport to Facility",
+      "ValueSet-vs-drowning-type.html" : "RS VS - Drowning Type/Body of Water",
+      "ValueSet-vs-respiratory-rhythm.html" : "RS VS - Respiratory Rhythm",
+      "ValueSet-vs-disposition-ip.html" : "RS VS - Disposition (In-Patient)",
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "ValueSet-vs-disposition-er.html" : "RS VS - Disposition (ER/OPD/BHS/RHU)",
+      "ValueSet-vs-injury-intent.html" : "RS VS - Injury Intent",
+      "ValueSet-vs-other-vehicle.html" : "RS VS - Other Vehicle in Collision",
+      "ValueSet-vs-breath-sounds.html" : "RS VS - Breath Sounds",
+      "ValueSet-vs-pupils.html" : "RS VS - Pupils",
+      "ValueSet-vs-other-risk-factors.html" : "RS VS - Other Risk Factors",
+      "ValueSet-vs-place-of-occurrence.html" : "RS VS - Place of Occurrence"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -66,181 +91,22 @@
       "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
-      "url" : "http://unitsofmeasure.org",
-      "version" : "3.0.1",
-      "status" : "active",
-      "name" : "UCUM",
-      "title" : "Unified Code for Units of Measure (UCUM)",
-      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
-      "oids" : ["2.16.840.1.113883.6.8"],
-      "uses" : {
-      },
-      "ValueSet-age-units-vs.html" : "Age Units ValueSet"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/activity-cs",
+      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "ActivityCS",
-      "title" : "Activity at time of incident (example)",
+      "name" : "SILPH",
+      "title" : "SILPH Local Codes",
       "description" : "",
       "uses" : {
       },
-      "ValueSet-activity-vs.html" : "Activity ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cause-of-crash-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CauseOfCrashCS",
-      "title" : "Cause of Road Crash",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-cause-of-crash-vs.html" : "Cause of Road Crash"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/collision-type-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CollisionTypeCS",
-      "title" : "Collision Type (example)",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-collision-type-vs.html" : "Collision Type ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/external-cause-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ExternalCauseCS",
-      "title" : "External Cause CodeSystem (example)",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-external-cause-vs.html" : "External Cause ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/injury-nature-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "InjuryNatureCS",
-      "title" : "Nature of Injury (example)",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-injury-nature-vs.html" : "Nature of Injury ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ModeOfTransportCS",
-      "title" : "Mode of Transport (example)",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-mode-of-transport-vs.html" : "Mode of Transport ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "OutcomeCS",
-      "title" : "Outcome (example)",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-outcome-vs.html" : "Outcome ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PartyAtFaultCS",
-      "title" : "Party at Fault",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-party-at-fault-vs.html" : "Party at Fault"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PlaceOccCS",
-      "title" : "Place of Occurrence (example)",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-place-occ-vs.html" : "Place of Occurrence ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PriorityCS",
-      "title" : "Triage Priority (example)",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-priority-vs.html" : "Triage Priority ValueSet (example)"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/report-form-received-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ReportFormReceivedCS",
-      "title" : "Report Form Received",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-report-form-received-vs.html" : "Report Form Received"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "RoadNetworkFileTypeCS",
-      "title" : "Road Network File Type",
-      "description" : "Allowed file types for detailed road network shapefiles or GIS data.",
-      "uses" : {
-      },
-      "ValueSet-road-network-file-type-vs.html" : "Road Network File Type"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/rs-task-status-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "RSTaskStatusCS",
-      "title" : "Road Safety Task Status Codes",
-      "description" : "Custom codes for Task.status specific to Road Safety reporting.",
-      "uses" : {
-      },
-      "ValueSet-rs-task-status.html" : "Road Safety Task Status"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VehicleConditionCS",
-      "title" : "Vehicle Condition",
-      "description" : "",
-      "uses" : {
-      },
-      "ValueSet-vehicle-condition-vs.html" : "Vehicle Condition"
-    },
-    {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-types",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VehicleTypeCS",
-      "title" : "Vehicle Types",
-      "description" : "A code system for different types of vehicles used in road safety encounters.",
-      "uses" : {
-      },
-      "ValueSet-vs-rs-vehicle-type.html" : "ValueSet for Vehicle Used"
+      "ValueSet-vs-other-vehicle.html" : "RS VS - Other Vehicle in Collision",
+      "ValueSet-vs-collision-category.html" : "RS VS - Collision Category",
+      "ValueSet-vs-type-of-patient.html" : "RS VS - Type of Patient",
+      "ValueSet-vs-outcome.html" : "RS VS - Outcome",
+      "ValueSet-vs-activity.html" : "RS VS - Activity at Time of Incident",
+      "ValueSet-vs-patients-vehicle.html" : "RS VS - Patient's Vehicle",
+      "ValueSet-vs-injury-intent.html" : "RS VS - Injury Intent",
+      "ValueSet-vs-place-of-occurrence.html" : "RS VS - Place of Occurrence"
     }
   ]
 }

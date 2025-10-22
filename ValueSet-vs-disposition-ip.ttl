@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-disposition-ip"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-disposition-ip</b></p><a name=\"vs-disposition-ip\"> </a><a name=\"hcvs-disposition-ip\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/371827001\">371827001</a></td><td>Patient discharged alive (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/225928004\">225928004</a></td><td>Patient self-discharge against medical advice (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/34596002\">34596002</a></td><td>Patient discharge, elopement (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/183960004\">183960004</a></td><td>Patient refuses hospital admission (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/371828006\">371828006</a></td><td>Patient deceased during stay (discharge status = dead)</td></tr><tr><td><a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/19712007\">19712007</a></td><td>Patient transfer, to another health care facility (procedure)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSDispositionIP"] ; # 
+  fhir:title [ fhir:v "RS VS - Disposition (In-Patient)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-22T02:11:18+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Patient disposition for in-patient cases."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "371827001" ] ;
+         fhir:display [ fhir:v "Patient discharged alive (finding)" ]
+       ] [
+         fhir:code [ fhir:v "225928004" ] ;
+         fhir:display [ fhir:v "Patient self-discharge against medical advice (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "34596002" ] ;
+         fhir:display [ fhir:v "Patient discharge, elopement (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "183960004" ] ;
+         fhir:display [ fhir:v "Patient refuses hospital admission (situation)" ]
+       ] [
+         fhir:code [ fhir:v "371828006" ] ;
+         fhir:display [ fhir:v "Patient deceased during stay (discharge status = dead)" ]
+       ] [
+         fhir:code [ fhir:v "74964007" ] ;
+         fhir:display [ fhir:v "Other (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "19712007" ] ;
+         fhir:display [ fhir:v "Patient transfer, to another health care facility (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

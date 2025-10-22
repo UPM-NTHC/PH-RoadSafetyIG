@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-psgc-barangay"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-psgc-barangay</b></p><a name="vs-psgc-barangay"> </a><a name="hcvs-psgc-barangay"> </a><ul><li>Include all codes defined in <code>https://psa.gov.ph/classification/psgc</code><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-barangay"/>
+  <version value="0.1.0"/>
+  <name value="VSPSGCBarangay"/>
+  <title value="RS VS - PSGC Barangay"/>
+  <status value="draft"/>
+  <date value="2025-10-22T02:11:18+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="PSGC Barangay codes (managed externally)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://psa.gov.ph/classification/psgc"/>
+    </include>
+  </compose>
+</ValueSet>

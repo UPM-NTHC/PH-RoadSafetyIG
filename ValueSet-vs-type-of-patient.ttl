@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-type-of-patient> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-type-of-patient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-type-of-patient</b></p><a name=\"vs-type-of-patient\"> </a><a name=\"hcvs-type-of-patient\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373864002\">373864002</a></td><td>Outpatient (person)</td></tr><tr><td><a href=\"http://snomed.info/id/416800000\">416800000</a></td><td>Inpatient (person)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-cs-silph.html\"><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-silph.html#cs-silph-BHS\">BHS</a></td><td>BHS</td></tr><tr><td><a href=\"CodeSystem-cs-silph.html#cs-silph-RHU\">RHU</a></td><td>RHU</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-type-of-patient"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSTypeOfPatient"] ; # 
+  fhir:title [ fhir:v "RS VS - Type of Patient"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-22T02:11:18+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of patient (ER/OPD/RHU/BHS context)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "373864002" ] ;
+         fhir:display [ fhir:v "Outpatient (person)" ]
+       ] [
+         fhir:code [ fhir:v "416800000" ] ;
+         fhir:display [ fhir:v "Inpatient (person)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "BHS" ] ;
+         fhir:display [ fhir:v "BHS" ]
+       ] [
+         fhir:code [ fhir:v "RHU" ] ;
+         fhir:display [ fhir:v "RHU" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

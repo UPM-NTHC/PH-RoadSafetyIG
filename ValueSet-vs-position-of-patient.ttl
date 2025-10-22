@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-position-of-patient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-position-of-patient</b></p><a name=\"vs-position-of-patient\"> </a><a name=\"hcvs-position-of-patient\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/32906002\">32906002</a></td><td>Victim, pedestrian in vehicular AND/OR traffic accident (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/48084008\">48084008</a></td><td>Driver in vehicular AND/OR traffic accident (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/25636008\">25636008</a></td><td>Driver in watercraft accident (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/41852005\">41852005</a></td><td>Pilot in aircraft accident (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/55062001\">55062001</a></td><td>Front seat passenger in vehicular AND/OR traffic accident (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/69290001\">69290001</a></td><td>Rear seat passenger in vehicular AND/OR traffic accident (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSPositionOfPatient"] ; # 
+  fhir:title [ fhir:v "RS VS - Position of Patient"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-22T02:11:18+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Position/role of patient in transport incidents (prefer SNOMED CT)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "32906002" ] ;
+         fhir:display [ fhir:v "Victim, pedestrian in vehicular AND/OR traffic accident (finding)" ]
+       ] [
+         fhir:code [ fhir:v "48084008" ] ;
+         fhir:display [ fhir:v "Driver in vehicular AND/OR traffic accident (finding)" ]
+       ] [
+         fhir:code [ fhir:v "25636008" ] ;
+         fhir:display [ fhir:v "Driver in watercraft accident (finding)" ]
+       ] [
+         fhir:code [ fhir:v "41852005" ] ;
+         fhir:display [ fhir:v "Pilot in aircraft accident (finding)" ]
+       ] [
+         fhir:code [ fhir:v "55062001" ] ;
+         fhir:display [ fhir:v "Front seat passenger in vehicular AND/OR traffic accident (finding)" ]
+       ] [
+         fhir:code [ fhir:v "69290001" ] ;
+         fhir:display [ fhir:v "Rear seat passenger in vehicular AND/OR traffic accident (finding)" ]
+       ] [
+         fhir:code [ fhir:v "74964007" ] ;
+         fhir:display [ fhir:v "Other (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "261665006" ] ;
+         fhir:display [ fhir:v "Unknown (qualifier value)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

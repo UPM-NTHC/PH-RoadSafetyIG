@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-other-vehicle"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-other-vehicle</b></p><a name=\"vs-other-vehicle\"> </a><a name=\"hcvs-other-vehicle\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/260413007\">260413007</a></td><td>None (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/71783008\">71783008</a></td><td>Automobile, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/224832000\">224832000</a></td><td>Van (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/224830008\">224830008</a></td><td>Coach (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/90748009\">90748009</a></td><td>Motorcycle, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/70224005\">70224005</a></td><td>Bicycle, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/12247004\">12247004</a></td><td>Truck, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-cs-silph.html\"><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-silph.html#cs-silph-TRICYCLE\">TRICYCLE</a></td><td>Tricycle</td></tr><tr><td><a href=\"CodeSystem-cs-silph.html#cs-silph-JEEPNEY\">JEEPNEY</a></td><td>Jeepney</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSOtherVehicle"] ; # 
+  fhir:title [ fhir:v "RS VS - Other Vehicle in Collision"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-22T02:11:18+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Other vehicle/object involved in collision."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "260413007" ] ;
+         fhir:display [ fhir:v "None (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "71783008" ] ;
+         fhir:display [ fhir:v "Automobile, device (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "224832000" ] ;
+         fhir:display [ fhir:v "Van (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "224830008" ] ;
+         fhir:display [ fhir:v "Coach (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "90748009" ] ;
+         fhir:display [ fhir:v "Motorcycle, device (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "70224005" ] ;
+         fhir:display [ fhir:v "Bicycle, device (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "12247004" ] ;
+         fhir:display [ fhir:v "Truck, device (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "74964007" ] ;
+         fhir:display [ fhir:v "Other (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "261665006" ] ;
+         fhir:display [ fhir:v "Unknown (qualifier value)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "TRICYCLE" ] ;
+         fhir:display [ fhir:v "Tricycle" ]
+       ] [
+         fhir:code [ fhir:v "JEEPNEY" ] ;
+         fhir:display [ fhir:v "Jeepney" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
