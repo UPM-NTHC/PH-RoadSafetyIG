@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-date-
   "name" : "RSObsDateOfConsultation",
   "title" : "Road Safety Observation - Date of Consultation",
   "status" : "draft",
-  "date" : "2025-10-22T06:37:55+00:00",
+  "date" : "2025-10-22T07:39:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

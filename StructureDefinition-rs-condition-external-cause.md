@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-externa
   "name" : "RSConditionExternalCause",
   "title" : "Road Safety Condition — External Cause (category)",
   "status" : "draft",
-  "date" : "2025-10-22T06:37:55+00:00",
+  "date" : "2025-10-22T07:39:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

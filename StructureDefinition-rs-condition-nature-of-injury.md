@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-nature-
   "name" : "RSConditionNatureOfInjury",
   "title" : "Road Safety Condition — Nature of Injury (category)",
   "status" : "draft",
-  "date" : "2025-10-22T06:37:55+00:00",
+  "date" : "2025-10-22T07:39:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
