@@ -9,7 +9,7 @@
 
 ## MMDA Run Report Form
 
-- [Download Run Report.pdf]("downloads/Run Report.pdf")
+- [Download Run Report.pdf](downloads/Run Report.pdf)
 - Inline preview:
 
   <object data="downloads/Run Report.pdf" type="application/pdf" width="100%" height="720px">
