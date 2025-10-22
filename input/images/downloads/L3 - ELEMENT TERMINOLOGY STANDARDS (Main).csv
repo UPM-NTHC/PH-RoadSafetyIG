@@ -1,0 +1,263 @@
+L2_ID,FORM,SECTION,DATA ELEMENT,FORM DATA TYPE,FINAL CODESYSTEM,FINAL CODESYSTEM CODE,FINAL CODESYSTEM DESCRIPTION
+1,Run Report Form,,Date Received,Date,LOINC,30976-5,Date received Form
+2,Run Report Form,,TIme Received,Time,SNOMED CT,405796007,Time of call for help (observable entity)
+3,Run Report Form,,Time Enroute,Time,LOINC,,
+4,Run Report Form,,Time On Scene,Time,SNOMED CT,405798008,Time of arrival of emergency services (observable entity)
+5,Run Report Form,,Time Departed,Time,LOINC,69475-2,Responding unit left the scene with a patient [Date and time] Vehicle
+6,Run Report Form,,Time of Hospital Arrival,Time,SNOMED CT,405799000,Time of arrival at hospital (observable entity)
+7,Run Report Form,,Time of Emergency Station Arrival,Time,LOINC,11288-8,Arrival time documented
+8,Run Report Form,,Reported Complaint,String,SNOMED CT,1269489004,Chief complaint (observable entity)
+9.1,Run Report Form,,Incident Location - House No. and Street,String,SNOMED CT,398099009,Street address (observable entity)
+9.2,Run Report Form,,Incident Location - Barangay,CodableConcept,FHIR Element,Location.address.[PHCoreAddress] inherit decisions from above ↑,N/A
+9.3,Run Report Form,,Incident Location - City/Municipality,CodableConcept,FHIR Element,Location.address.[PHCoreAddress] inherit decisions from above ↑,N/A
+9.4,Run Report Form,,Incident Location - Province,CodableConcept,FHIR Element,Location.address.[PHCoreAddress] inherit decisions from above ↑,N/A
+9.5,Run Report Form,,Incident Location - Region,CodableConcept,FHIR Element,Location.address.[PHCoreAddress] inherit decisions from above ↑,N/A
+10,Run Report Form,,Call Source,String,SNOMED CT,397663001,Referral source (finding)
+11.1,Run Report Form,,Patient Name - Last,String,SNOMED CT,184096005,Patient surname (observable entity)
+11.2,Run Report Form,,Patient Name - First,String,SNOMED CT,184095009,"Patient forename (observable entity)
+"
+11.3,Run Report Form,,Patient Name - Middle,String,SNOMED CT,405622006,Patient middle name (observable entity)
+12,Run Report Form,,Age,Integer/Decimal,SNOMED CT,397669002,Age (qualifier value)
+13,Run Report Form,,Sex,CodableConcept,SNOMED CT,184100006,Patient sex (observable entity)
+14.1,Run Report Form,,Address - House No. and Street,String,FHIR Element,Patient.address,N/A
+14.2,Run Report Form,,Address - Barangay,CodableConcept,FHIR Element,Patient.address,N/A
+14.3,Run Report Form,,Address - City/Municipality,CodableConcept,FHIR Element,Patient.address,N/A
+14.4,Run Report Form,,Address - Province,CodableConcept,FHIR Element,Patient.address,N/A
+14.5,Run Report Form,,Address - Region,CodableConcept,FHIR Element,Patient.address,N/A
+15,Run Report Form,,Tel. No.,String,SNOMED CT,734005006,Telephone number (property) (qualifier value)
+16,Run Report Form,,Medical History,String,SNOMED CT,1003642006,"Past medical history section (record artifact)
+"
+17,Run Report Form,,Current Medication,String,SNOMED CT,5.13881E+14,Current medication as reported by patient (observable entity)
+18,Run Report Form,,Known Allergies,String,SNOMED CT,609328004,Allergic disposition (finding)
+19,Run Report Form,Vital Signs,Vital Signs - Time,Time,FHIR Element,Observation.effectiveDateTime,N/A
+20,Run Report Form,Vital Signs,Respiratory Rate,Integer,SNOMED CT,86290005,Respiratory rate (observable entity)
+21,Run Report Form,Vital Signs,Respiratory Rate - Rhythm,CodableConcept,SNOMED CT,248582003,"Rhythm of respiration (observable entity)
+"
+22,Run Report Form,Vital Signs,Respiratory Rate - Breath Sounds,CodableConcept,SNOMED CT,52653008,Respiratory sounds (observable entity)
+23,Run Report Form,Vital Signs,Pulse Rate,Integer,SNOMED CT,78564009,Heart rate measured at systemic artery (observable entity)
+24,Run Report Form,Vital Signs,Pulse Rate - Rhythm,CodableConcept,SNOMED CT,364095004,"Pulse rhythm (observable entity)
+"
+25,Run Report Form,Vital Signs,Pulse Rate - Quality,CodableConcept,SNOMED CT,78564009,Heart rate measured at systemic artery (observable entity)
+26.1,Run Report Form,Vital Signs,Blood Pressure - Systolic,Integer,SNOMED CT,271649006,Systolic blood pressure (observable entity)
+26.2,Run Report Form,Vital Signs,Blood Pressure - Diastolic,Integer,SNOMED CT,271650006,"Diastolic blood pressure (observable entity)
+"
+27,Run Report Form,Vital Signs,Temperature,Decimal,SNOMED CT,386725007,Body temperature (observable entity)
+28,Run Report Form,Vital Signs,Level of Consciousness,CodableConcept,SNOMED CT,449159002,Alert voice pain unresponsive scale (assessment scale)
+29,Run Report Form,Vital Signs,Pupils,CodableConcept,SNOMED CT,271733001,Pupil reaction (observable entity)
+30,Run Report Form,Vital Signs,Cyanosis,CodableConcept,SNOMED CT,3415004,Cyanosis (finding)
+31,Run Report Form,Vital Signs,Add Vital Signs?,Boolean,FHIR Element,"Questionnaire.item[repeats:""true""]",N/A
+32.1,Run Report Form,Glasgow Coma Scale,Eyes,CodableConcept,SNOMED CT,281395000,Glasgow Coma Score eye opening subscore (observable entity)
+32.2,Run Report Form,Glasgow Coma Scale,Verbal,CodableConcept,SNOMED CT,281397008,Glasgow Coma Scale verbal response subscore (observable entity)
+32.3,Run Report Form,Glasgow Coma Scale,Motor,CodableConcept,SNOMED CT,281396004,Glasgow Coma Scale motor response subscore (observable entity)
+32.4,Run Report Form,Glasgow Coma Scale,Score,Integer,SNOMED CT,248241002,Glasgow coma score (observable entity)
+33.1,Run Report Form,Site of Injury or Pain,Front,Image,Local Code,INJURYFRONT,Site of Injury/Pain - Front Part of Body
+33.2,Run Report Form,Site of Injury or Pain,Back,Image,Local Code,INJURYBACK,Site of Injury/Pain - Back Part of Body
+34,Run Report Form,,Problem,String,SNOMED CT,55607006,Problem (finding)
+35,Run Report Form,,Intervention,String,SNOMED CT,119270007,Management procedure (procedure)
+36,Run Report Form,,Remarks,String,Local Code,RRFREMARKS,Run Report Form Remarks
+37,Run Report Form,,Team Leader,String,LOINC,90123-1,Response team leader name
+38,Run Report Form,,Treatment Officer,String,SNOMED CT,397897005,Paramedic (occupation)
+39,Run Report Form,,Transport Officer,String,SNOMED CT,159738005,Ambulanceman (occupation)
+4,Run Report Form,,Assistant,String,SNOMED CT,22515006,Medical Assistant (occupation)
+41,Run Report Form,,Add Assistant?,Boolean,FHIR Element,"Questionnaire.group
+Questionnaire.item[repeats:""true""]",N/A
+42,Run Report Form,Refusal to Admit (RA 8344),Refusal to Admit?,Boolean,FHIR Element,"ServiceRequest.status: ""revoked""
+ServiceRequest.referenceEncounter↓",N/A
+43,Run Report Form,Refusal to Admit (RA 8344),Refusal to Admit - Hospital,String,FHIR Element,ServiceRequest.supportinginfo(Organization),N/A
+44,Run Report Form,Refusal to Admit (RA 8344),Refusal to Admit - Physician,String,FHIR Element,ServiceRequest.supportinginfo(Ref Practitioner),N/A
+45,Run Report Form,Refusal to Admit (RA 8344),Refusal to Admit - Date,Date,FHIR Element,ServiceRequest.occurrenceDateTime,N/A
+46,Run Report Form,Refusal to Admit (RA 8344),Refusal to Admit - Time,Time,FHIR Element,ServiceRequest.occurrenceDateTime ↑ merge with above,N/A
+47,Run Report Form,Refusal to Admit (RA 8344),Add Refusal?,Boolean,FHIR Element,"Questionnaire.item[repeats:""true""]",N/A
+48,Run Report Form,,Received By,String,FHIR Element,"Encounter.participant.type.CodeableConcept = ""Receiver""
+Encounter.participant.individual = Reference(Practitioner.name)",N/A
+49,Run Report Form,,Medical Facility,String,FHIR Element,Encounter.serviceProvider,N/A
+50,Run Report Form,,Supplies Used,CodableConcept,FHIR Element,Procedure.usedCode,N/A
+51,Run Report Form,,Vehicle Used,String,SNOMED CT,36030000,"Transport vehicle, device (physical object)"
+52,ONEISS,,Registry No.,String,FHIR Element,Patient.identifier,N/A
+53,ONEISS,General Data,Name of Reporting Health Facility,String,FHIR Element,Organization.name,N/A
+54,ONEISS,General Data,Hospital Patient ID No.,String,SNOMED CT,184107009,Patient hospital number (observable entity)
+55,ONEISS,General Data,Hospital Registry No.,String,FHIR Element,Patient.identifier,N/A
+56,ONEISS,General Data,Hospital Case No.,String,SNOMED CT,398225001,Medical record number (observable entity)
+57,ONEISS,General Data,Type of Patient,CodableConcept,SNOMED CT,116154003,Patient (person)
+58,ONEISS,General Data,Birth Date,Date,SNOMED CT,184099003,Date of birth (observable entity)
+59.1,ONEISS,General Data,If Date of Birth is not available: Age - Years Unit,String,FHIR Element,N/A,N/A
+59.2,ONEISS,General Data,If Date of Birth is not available: Age - Years,CodableConcept,FHIR Element,N/A,N/A
+59.3,ONEISS,General Data,If Date of Birth is not available: Age - Months Unit,String,FHIR Element,N/A,N/A
+59.4,ONEISS,General Data,If Date of Birth is not available: Age - Months,CodableConcept,FHIR Element,N/A,N/A
+59.5,ONEISS,General Data,If Date of Birth is not available: Age - Days Unit,String,FHIR Element,N/A,N/A
+59.6,ONEISS,General Data,If Date of Birth is not available: Age - Days,CodableConcept,FHIR Element,N/A,N/A
+60.1,ONEISS,General Data,Permanent Address - Region,CodableConcept,FHIR Element,"Patient.address.use = ""home""
+Patient.address.extension[region]",N/A
+60.2,ONEISS,General Data,Permanent Address - Province,CodableConcept,FHIR Element,"Patient.address.use = ""home""
+Patient.address.extension[province]",N/A
+60.3,ONEISS,General Data,Permanent Address - City,CodableConcept,FHIR Element,"Patient.address.use = ""home""
+Patient.address.extension[cityMunicipality]",N/A
+61.1,ONEISS,General Data,Temporary Address - Region,CodableConcept,FHIR Element,"Patient.address.use = ""temp""
+Patient.address.extension[region]",N/A
+61.2,ONEISS,General Data,Temporary Address - Province,CodableConcept,FHIR Element,"Patient.address.use = ""temp""
+Patient.address.extension[province]",N/A
+61.3,ONEISS,General Data,Temporary Address - City,CodableConcept,FHIR Element,"Patient.address.use = ""temp""
+Patient.address.extension[cityMunicipality]",N/A
+64,ONEISS,General Data,PhilHealth # ,String,FHIR Element,Patient.identifier.value,N/A
+65,ONEISS,Pre-Admission Data,Date of Injury,Date,SNOMED CT,439771001,Date of event (observable entity)
+66,ONEISS,Pre-Admission Data,Time of Injury,Time,SNOMED CT,263501003,Time of onset (observable entity)
+67,ONEISS,Pre-Admission Data,Date of Consultation,Date,SNOMED CT,406543005,Date of visit (observable entity)
+68,ONEISS,Pre-Admission Data,Time of Consultation,Time,SNOMED CT,406544004,Time of visit (observable entity)
+69,ONEISS,Pre-Admission Data,Injury Intent,CodableConcept,LOINC,11375-3,"
+Injury intent"
+70,ONEISS,Pre-Admission Data,First Aid Given,Boolean,SNOMED CT,386308007,First aid (procedure)
+71,ONEISS,Pre-Admission Data,"If YES, what? (open ended)",String,FHIR Element,"Procedure.code = ""SCT First aid"" ↑
+Procedure.note.text",N/A
+72,ONEISS,Pre-Admission Data,"If YES, by whom?",String,FHIR Element,"Procedure.code = ""SCT First aid"" ↑
+Procedure.note.text
+Procedure.performer.actor",N/A
+73,ONEISS,Pre-Admission Data,Nature of Injury/ies: Multiple Injury/ies?,Boolean,SNOMED CT,262519004,Multiple injuries (disorder)
+74,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Abrasion,Boolean,SNOMED CT,399963005,Abrasion (disorder)
+75,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Abrasion Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+76,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Abrasion Other Details,String,FHIR Element,Observation.note,N/A
+77,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Avulsion,Boolean,SNOMED CT,284554003,Avulsion - injury (disorder)
+78,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Avulsion Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+79,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Avulsion Other Details,String,FHIR Element,Observation.note,N/A
+80,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn,Boolean,SNOMED CT,125666000,Burn (disorder)
+81,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 1st Degree,Boolean,SNOMED CT,77140003,First degree burn injury (morphologic abnormality)
+82,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 1st Degree Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+83,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 1st Degree Other Details,String,FHIR Element,Observation.note,N/A
+84,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 2nd Degree,Boolean,SNOMED CT,46541008,Second degree burn injury (morphologic abnormality)
+85,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 2nd Degree Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+86,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 2nd Degree Other Details,String,FHIR Element,Observation.note,N/A
+87,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 3rd Degree,Boolean,SNOMED CT,80247002,Third degree burn injury (morphologic abnormality)
+88,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 3rd Degree Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+89,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 3rd Degree Other Details,String,FHIR Element,Observation.note,N/A
+90,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 4th Degree,Boolean,SNOMED CT,770400008,Fourth degree burn injury (morphologic abnormality)
+91,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 4th Degree Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+92,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Burn 4th Degree Other Details,String,FHIR Element,Observation.note,N/A
+93,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Concussion,Boolean,SNOMED CT,110030002,Concussion injury of brain (disorder)
+94,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Concussion Site,String,FHIR Element,Observation.bodySite,N/A
+95,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Concussion Other Details,String,FHIR Element,Observation.note,N/A
+96,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Contusion,Boolean,SNOMED CT,125667009,Contusion (disorder)
+97,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Contusion Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+98,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Contusion Other Details,String,FHIR Element,Observation.note,N/A
+99,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Fracture,Boolean,SNOMED CT,125605004,Fracture of bone (disorder)
+100,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Fracture Closed Type,Boolean,SNOMED CT,423125000,Closed fracture of bone (disorder)
+101,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Fracture Closed Type Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+102,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Fracture Closed Type Other Details,String,FHIR Element,Observation.note,N/A
+103,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Fracture Open Type,Boolean,SNOMED CT,397181002,Open fracture (disorder)
+104,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Fracture Open Type Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+105,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Fracture Open Type Other Details,String,FHIR Element,Observation.note,N/A
+106,ONEISS,Pre-Admission Data,"Nature of Injury/ies: Specific Injury/ies - Open Wound
+ex. hacking, gunshot, stabbing, animal (dog, cat, rat, snake, etc) bites, human bites, insect bites, punctured wound laceration, etc",Boolean,SNOMED CT,125643001,Open wound (disorder)
+107,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Open Wound Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+108,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Open Wound Other Details,String,FHIR Element,Observation.note,N/A
+109,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Traumatic Amputation,Boolean,SNOMED CT,262595009,Traumatic amputation (disorder)
+110,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Traumatic Amputation Site,CodableConcept,FHIR Element,Observation.bodySite,N/A
+111,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Traumatic Amputation Other Details,String,FHIR Element,Observation.note,N/A
+112,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Others,Boolean,SNOMED CT,417163006,Traumatic or non-traumatic injury (disorder)
+113,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Others Site,String,FHIR Element,Observation.bodySite,N/A
+114,ONEISS,Pre-Admission Data,Nature of Injury/ies: Specific Injury/ies - Others Other Details,String,FHIR Element,Observation.note,N/A
+115,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Bites/stings,Boolean,SNOMED CT,242651001,Injury caused by animal (disorder)
+116,ONEISS,Pre-Admission Data,Specify animal/insect,String,LOINC,95376-0,Type of animal exposed to
+117,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Burns,Boolean,SNOMED CT,242490006,Burning due to contact with hot substance (event)
+118,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Burns - Specify,CodableConcept,FHIR Element,↑ Observation.value[valueCodeableConcept.code],N/A
+119,ONEISS,Pre-Admission Data,"External Cause/s of Injury/ies: Burns - Others, specify",String,FHIR Element,↑  Observation.value[valueCodeableConcept.text],N/A
+120,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Chemical/substance,Boolean,SNOMED CT,1.33261E+14,Exposure to potentially hazardous substance (event)
+121,ONEISS,Pre-Admission Data,"External Cause/s of Injury/ies: Chemical/substance, specify",String,FHIR Element,↑ Observation.value[valueCodeableConcept.text],N/A
+122,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Contact with sharp objects,Boolean,SNOMED CT,69129000,Struck by sharp object (event)
+123,ONEISS,Pre-Admission Data,"External Cause/s of Injury/ies: Contact with sharp objects, specify object",String,FHIR Element,↑ Observation.value[valueCodeableConcept.text],N/A
+124,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Drowning,Boolean,SNOMED CT,40947009,Drowning (event)
+125,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Drowning - Type/Body of Water,CodableConcept,FHIR Element,↑ Observation.value[valueCodeableConcept.code],N/A
+126,ONEISS,Pre-Admission Data,"External Cause/s of Injury/ies: Drowning: Others, specify",String,FHIR Element,↑ Observation.value[valueCodeableConcept.text],N/A
+127,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Exposure to forces of nature,Boolean,SNOMED CT,276746005,Environmental event (event)
+128,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Fall,Boolean,SNOMED CT,1912002,Fall (event)
+129,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Fall,String,FHIR Element,Observation.value[valueCodeableConcept.text],N/A
+130,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Firecracker,Boolean,SNOMED CT,218100007,Accident caused by fireworks (event)
+131,ONEISS,Pre-Admission Data,"External Cause/s of Injury/ies: Firecracker, specify type/s (with libraries)",String,FHIR Element,↑ Observation.value[valueCodeableConcept.text],N/A
+132,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Gunshot,Boolean,SNOMED CT,63409001,Struck by firearm discharge (event)
+133,ONEISS,Pre-Admission Data,"External Cause/s of Injury/ies: Gunshot, specify weapon",String,FHIR Element,↑ Observation.value[valueCodeableConcept.text],N/A
+134,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Hanging/Strangulation,Boolean,SNOMED CT,212976008,Asphyxia by strangulation (event)
+135,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Mauling/Assault,Boolean,SNOMED CT,52684005,Assault (event)
+136,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Sexual Assault/ Sexual Abuse/ Rape (Alleged),Boolean,SNOMED CT,248110007,Sexual assault (event)
+137,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Transport /Vehicular Accident,Boolean,SNOMED CT,274215009,Transport accident (event)
+138,ONEISS,Pre-Admission Data,External Cause/s of Injury/ies: Others,Boolean,SNOMED CT,773760007,Traumatic event (event)
+139,ONEISS,Pre-Admission Data,"External Cause/s of Injury/ies: Others, specify",String,FHIR Element,↑ Observation.value[valueCodeableConcept.text],N/A
+140,ONEISS,Pre-Admission Data,"FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Land, Water, Air)",CodableConcept,SNOMED CT,274215009,Transport accident (event)
+141,ONEISS,Pre-Admission Data,FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision),CodableConcept,Local Code,MVA-COLLISION,FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)
+142,ONEISS,Pre-Admission Data,Vehicles Involved: Patient's Vehicle,CodableConcept,Local Code,PATIENTVEHICLE,Vehicles Involved: Patient's Vehicle
+143,ONEISS,Pre-Admission Data,Vehicles Involved: Patient's Vehicle - Others,String,FHIR Element,Observation.code[CodeableConcept.text],N/A
+144,ONEISS,Pre-Admission Data,Other Vehicle/Object Involved (for COLLISION accident ONLY),CodableConcept,Local Code,OTHERVEHICLE,Other Vehicle/Object Involved (for COLLISION accident ONLY)
+145,ONEISS,Pre-Admission Data,Other Vehicle/Object Involved (for COLLISION accident ONLY) - Others,String,FHIR Element,Observation.code[CodeableConcept.text],N/A
+146,ONEISS,Pre-Admission Data,Position of Patient,CodableConcept,Local Code,PATIENTPOSITION,Position of Patient
+147,ONEISS,Pre-Admission Data,Position of Patient - Others,String,FHIR Element,Observation.valueCodeableConcept[CodeableConcept.text],N/A
+148,ONEISS,Pre-Admission Data,Place of Occurrence,CodableConcept,Local Code,PLACEOCCURRENCE,Place of Occurrence
+149,ONEISS,Pre-Admission Data,"Place of Occurrence - Workplace, specify (name of company/office/establishment)",String,FHIR Element,"Observation.valueCodeableConcept - if workplace
+Observation.note[Annotation.text]",N/A
+150,ONEISS,Pre-Admission Data,"Place of Occurrence - Others, specify (ex mall, restaurant)",String,FHIR Element,Observation.valueCodeableConcept.text,N/A
+151,ONEISS,Pre-Admission Data,Activity of the Patient at the time of the incident,CodableConcept,LOINC,11372-0,Injury associated activity
+152,ONEISS,Pre-Admission Data,Activity of the Patient at the time of the incident - Others,String,FHIR Element,Observation.valueCodeableConcept.text,N/A
+153,ONEISS,Pre-Admission Data,Other risk factors at the time of the incident,CodableConcept,SNOMED CT,80943009,Risk factor (observable entity)
+154,ONEISS,Pre-Admission Data,"Other risk factors at the time of the incident - Others
+(e.g. suspected under the influence of substance used)",String,FHIR Element,Observation.valueCodeableConcept [CodeableConcept.text],N/A
+155,ONEISS,Pre-Admission Data,Safety,CodableConcept,SNOMED CT,386812007,"Safety precautions (procedure)"
+156,ONEISS,Pre-Admission Data,Safety - Others,String,FHIR Element,Observation.valueCodeableConcept [CodeableConcept.text],N/A
+157,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Transferred from another hospital/facility,Boolean,LOINC,74199-1,Transferred from another acute care facility [NTDS]
+158,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Referred by another Hospital /Facility for Laboratory and/or other medical procedures,Boolean,SNOMED CT,307836003,Referral by establishment (procedure)
+159,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Name of Originating Hospital/Physician,String,FHIR Element,"Hospital = Encounter.hospitalization.origin(Reference(Organization.name))
+Physician = Encounter.participant.individual(Reference(Practitioner.name))",N/A
+160,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Status upon reaching Facility/Hospital,CodableConcept,SNOMED CT,118223001,Patient status finding (finding)
+161,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,"Status upon reaching Facility/Hospital - If alive,please check if",CodableConcept,SNOMED CT,6942003,Level of consciousness (observable entity)
+162,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Mode of transport to the Hospital/Facility,CodableConcept,LOINC,74286-6,Transport mode to hospital [NTDS]
+163,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,"Mode of transport to the Hospital/Facility - Others, specify",String,FHIR Element,Observation.valueCodeableConcept.text,N/A
+164,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Initial Impression,String,SNOMED CT,148006,Preliminary diagnosis (contextual qualifier) (qualifier value)
+165,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,ICD-10 Code/s: Nature of Injury,CodableConcept,FHIR Element,Value Set for ICD 10,N/A
+166,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,ICD-10 Code/s: External cause of Injury:,CodableConcept,FHIR Element,Value Set for ICD 10,N/A
+167,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Disposition,CodableConcept,FHIR Element,Encounter.hospitalization.dischargeDisposition,N/A
+168,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,"Disposition - Transferred to another facility/hospital, specify",String,FHIR Element,Encounter.hospitalization.destination,N/A
+169,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Outcome,CodableConcept,SNOMED CT,418138009,Patient condition finding (finding)
+170,ONEISS,Hospital/Facility Data: In-Patient,Complete Final Diagnosis,String,SNOMED CT,89100005,Final diagnosis (discharge) (contextual qualifier) (qualifier value)
+171,ONEISS,Hospital/Facility Data: In-Patient,Disposition,CodableConcept,FHIR Element,Encounter.hospitalization.dischargeDisposition,N/A
+172,ONEISS,Hospital/Facility Data: In-Patient,"Disposition - Others, specify",String,FHIR Element,Encounter.hospitalization.dischargeDisposition(CodeableConcept.text),N/A
+173,ONEISS,Hospital/Facility Data: In-Patient,"Disposition - Transferred to another facility/hospital, specify",String,FHIR Element,Encounter.hospitalization.destination,N/A
+174,ONEISS,Hospital/Facility Data: In-Patient,Outcome,CodableConcept,SNOMED CT,418138009,Patient condition finding (finding)
+175,ONEISS,Hospital/Facility Data: In-Patient,ICD-10 Code/s: Nature of Injury,CodableConcept,FHIR Element,Value Set for ICD 10,N/A
+176,ONEISS,Hospital/Facility Data: In-Patient,ICD-10 Code/s: External cause of Injury,CodableConcept,FHIR Element,Value Set for ICD 10,N/A
+177,ONEISS,Hospital/Facility Data: In-Patient,Comments,String,LOINC,77999-1,Case notification comment
+178,Dot-vote Priorities,Scene Station,Condition of Patients,CodableConcept,SNOMED CT,12386002,Patient status determination (procedure)
+179,Dot-vote Priorities,Scene Station,Collision type,CodableConcept,Local Code,COLLISIONTYPE,Collision Type
+180,Dot-vote Priorities,Scene Station,Presence of traffic investigator,Boolean,SNOMED CT,159679004,Traffic warden (occupation)
+181,Dot-vote Priorities,Scene Station,Extent of injury,CodableConcept,SNOMED CT,1255875007,Injury Severity Score (observable entity)
+182,Dot-vote Priorities,Scene Station,How many vehicles involved,Integer,FHIR Element,Observation.valueInteger,N/A
+183,Dot-vote Priorities,Scene Station,How many patients involved,Integer,FHIR Element,Observation.valueInteger,N/A
+184,Dot-vote Priorities,Transport Station,Hospital Available,Boolean,FHIR Element,"ServiceProvider Loc Profile = Location.name
+HealthcareService.category[""EMS Referral Center""]
+HealthcareService.location[reference ServiceProvider Loc]",N/A
+185,Dot-vote Priorities,Transport Station,Priority to Scene (Triage),CodableConcept,SNOMED CT,225390008,Triage (procedure)
+186,Dot-vote Priorities,Transport Station,Incident No.,String,FHIR Element,Encounter.identifier(Identifier.value),N/A
+187,Dot-vote Priorities,Transport Station,Was Transpo Coordinated with Receiving Hospital?,Boolean,Local Code,COORDINATIONDONE,Was Transport Coordinated with Receiving Hospital?
+188,Dot-vote Priorities,Transport Station,Priority Level (Urgency),CodableConcept,SNOMED CT,260870009,Priority (attribute)
+189,Dot-vote Priorities,Transport Station,Cause of Road Crash Incident,CodableConcept,SNOMED CT,278443006,Cause of accident type (qualifier value)
+190,Dot-vote Priorities,Facility Station,Report form received,Boolean,FHIR Element,Task.status,N/A
+191,Dot-vote Priorities,Facility Station,Report form received: digital or physical form,CodableConcept,FHIR Element,DocumentReference.content.format,N/A
+192,Dot-vote Priorities,Facility Station,Cost of care,Money,FHIR Element,Claim.total,N/A
+193,Dot-vote Priorities,Facility Station,Profession of Victim,String,SNOMED CT,364703007,Employment detail (observable entity)
+194,Dot-vote Priorities,Facility Station,Duration of delay,Time,FHIR Element,Task.executionPeriod,N/A
+195,Dot-vote Priorities,Facility Station,Sources of delays,String,SNOMED CT,373786007,Reasons for treatment delay (finding)
+196,Dot-vote Priorities,Post-incident Investigation,Party at fault,String,FHIR Element,"DocumentReference.context.encounter 0..1
+DocumentReference.type 0..1
+DocumentReference.content.attachment = Attachment.url 1..1
+DocumentReference.content.format 0..1 (so system can anticipate if preview is possible. Ex. if non-PDF, but no rendering library, this will just be a link direct to the file)",N/A
+197,Dot-vote Priorities,Post-incident Investigation,Long term outcome of patient,CodableConcept,SNOMED CT,218247007,Late effect of motor vehicle accident (disorder)
+198,Dot-vote Priorities,Post-incident Investigation,Psychosocial support/condition,Boolean,SNOMED CT,408919008,Psychosocial care (regime/therapy)
+199,Dot-vote Priorities,Post-incident Investigation,Documentation of traffic incident management,String,FHIR Element,"DocumentReference.context.encounter 0..1
+DocumentReference.type 0..1
+DocumentReference.content.attachment = Attachment.url 1..1
+DocumentReference.content.format 0..1 (so system can anticipate if preview is possible. Ex. if non-PDF, but no rendering library, this will just be a link direct to the file)",N/A
+200,Dot-vote Priorities,Post-incident Investigation,Detailed road network shape files,URL,FHIR Element,"DocumentReference.context.encounter 0..1
+DocumentReference.type 0..1
+DocumentReference.content.attachment = Attachment.url 1..1
+DocumentReference.content.format 0..1",N/A
+201,Dot-vote Priorities,Post-incident Investigation,Vehicle condition,CodableConcept,FHIR Element,"DocumentReference.context.encounter 0..1
+DocumentReference.type 0..1
+DocumentReference.content.attachment = Attachment.url 1..1
+DocumentReference.content.format 0..1",N/A
+202,Dot-vote Priorities,Post-incident Investigation,"CCTV video, reconstruction of what happened",Boolean,SNOMED CT,360000005,Closed circuit television (physical object)
+203,Workshop Discussion,,Blood Alcohol Concentration,Integer/Decimal,SNOMED CT,167009006,Blood ethanol measurement (procedure)
+204,Workshop Discussion,,PhilSys ID No.,String,FHIR Element,Patient.identifier,N/A
