@@ -3,14 +3,14 @@ title Road Safety Data Exchange - Scene to Facility EHR
 skinparam actorStyle awesome
 skinparam roundcorner 20
 actor EMS
-collections FHIR as "FHIR Gateway"
+collections FHIR as "FHIR Server"
 actor EHR as "Facility EHR"
 database ETL as "ONEISS API"
 
 
 note over FHIR
 ONEISS / NHDR FHIR Server
-(gateway) — supports Subscription delivery to ETL
+FHIR Server — supports Subscription delivery to ETL
 end note
 
 
@@ -48,7 +48,7 @@ end
 
 group ONEISS ETL (Subscription) [Hook based]
     note left of ETL
-    ONEISS ETL subscribes to relevant events on the FHIR Gateway
+    ONEISS ETL subscribes to relevant events on the FHIR Server
     (e.g. Encounter updates, Bundle.facility submissions) and pull
     resources referenced by notification. 
     end note
@@ -73,9 +73,9 @@ end
 
 legend left
 Key concepts
-- EMS submits run reports to ONEISS/NHDR (FHIR Gateway)
+- EMS submits run reports to ONEISS/NHDR (FHIR Server)
 - Facility systems retrieve scene data (Encounters, Observations, Documents)
-- ONEISS ETL subscribes to Gateway notifications and can pull or accept pushed content
+- ONEISS ETL subscribes to FHIR Server notifications and can pull or accept pushed content
 - Use standard FHIR endpoints and Bundles for exchange
 endlegend
 
