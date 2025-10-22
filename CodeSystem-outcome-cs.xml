@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="outcome-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem outcome-cs</b></p><a name="outcome-cs"> </a><a name="hcoutcome-cs"> </a><p>This  code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">alive-stable<a name="outcome-cs-alive-stable"> </a></td><td>Alive - stable</td></tr><tr><td style="white-space:nowrap">alive-unstable<a name="outcome-cs-alive-unstable"> </a></td><td>Alive - unstable</td></tr><tr><td style="white-space:nowrap">dead<a name="outcome-cs-dead"> </a></td><td>Dead</td></tr><tr><td style="white-space:nowrap">transferred<a name="outcome-cs-transferred"> </a></td><td>Transferred</td></tr></table></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/outcome-cs"/>
+  <version value="0.1.0"/>
+  <name value="OutcomeCS"/>
+  <title value="Outcome (example)"/>
+  <status value="draft"/>
+  <date value="2025-10-22T01:50:39+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="alive-stable"/>
+    <display value="Alive - stable"/>
+  </concept>
+  <concept>
+    <code value="alive-unstable"/>
+    <display value="Alive - unstable"/>
+  </concept>
+  <concept>
+    <code value="dead"/>
+    <display value="Dead"/>
+  </concept>
+  <concept>
+    <code value="transferred"/>
+    <display value="Transferred"/>
+  </concept>
+</CodeSystem>

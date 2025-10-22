@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="priority-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem priority-cs</b></p><a name="priority-cs"> </a><a name="hcpriority-cs"> </a><p>This  code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">red<a name="priority-cs-red"> </a></td><td>Red - immediate</td></tr><tr><td style="white-space:nowrap">yellow<a name="priority-cs-yellow"> </a></td><td>Yellow - urgent</td></tr><tr><td style="white-space:nowrap">green<a name="priority-cs-green"> </a></td><td>Green - delayed</td></tr><tr><td style="white-space:nowrap">blue<a name="priority-cs-blue"> </a></td><td>Blue - minimal</td></tr></table></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/priority-cs"/>
+  <version value="0.1.0"/>
+  <name value="PriorityCS"/>
+  <title value="Triage Priority (example)"/>
+  <status value="draft"/>
+  <date value="2025-10-22T01:50:39+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="red"/>
+    <display value="Red - immediate"/>
+  </concept>
+  <concept>
+    <code value="yellow"/>
+    <display value="Yellow - urgent"/>
+  </concept>
+  <concept>
+    <code value="green"/>
+    <display value="Green - delayed"/>
+  </concept>
+  <concept>
+    <code value="blue"/>
+    <display value="Blue - minimal"/>
+  </concept>
+</CodeSystem>

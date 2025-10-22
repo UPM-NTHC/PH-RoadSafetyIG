@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="age-units-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet age-units-vs</b></p><a name="age-units-vs"> </a><a name="hcage-units-vs"> </a><ul><li>Include these codes as defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>a</td><td>years</td></tr><tr><td>mo</td><td>months</td></tr><tr><td>d</td><td>days</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/age-units-vs"/>
+  <version value="0.1.0"/>
+  <name value="AgeUnitsVS"/>
+  <title value="Age Units ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-10-22T01:50:39+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Allowed units for Patient Age when Date of Birth is not available."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+      <concept>
+        <code value="a"/>
+        <display value="years"/>
+      </concept>
+      <concept>
+        <code value="mo"/>
+        <display value="months"/>
+      </concept>
+      <concept>
+        <code value="d"/>
+        <display value="days"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

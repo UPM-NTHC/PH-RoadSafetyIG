@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vehicle-condition-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem vehicle-condition-cs</b></p><a name=\"vehicle-condition-cs\"> </a><a name=\"hcvehicle-condition-cs\"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">intact<a name=\"vehicle-condition-cs-intact\"> </a></td><td>Intact</td><td>Vehicle is in good working condition with no visible damage.</td></tr><tr><td style=\"white-space:nowrap\">minor-damage<a name=\"vehicle-condition-cs-minor-damage\"> </a></td><td>Minor Damage</td><td>Vehicle has cosmetic or small functional damage but is still operable.</td></tr><tr><td style=\"white-space:nowrap\">major-damage<a name=\"vehicle-condition-cs-major-damage\"> </a></td><td>Major Damage</td><td>Vehicle has significant structural or functional damage, may not be safe to drive.</td></tr><tr><td style=\"white-space:nowrap\">total-loss<a name=\"vehicle-condition-cs-total-loss\"> </a></td><td>Total Loss</td><td>Vehicle is beyond economical repair (insurance write-off).</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"vehicle-condition-cs-unknown\"> </a></td><td>Unknown</td><td>Vehicle condition could not be determined at the time of assessment.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/vehicle-condition-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VehicleConditionCS"] ; # 
+  fhir:title [ fhir:v "Vehicle Condition"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-22T01:50:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "intact" ] ;
+     fhir:display [ fhir:v "Intact" ] ;
+     fhir:definition [ fhir:v "Vehicle is in good working condition with no visible damage." ]
+  ] [
+     fhir:code [ fhir:v "minor-damage" ] ;
+     fhir:display [ fhir:v "Minor Damage" ] ;
+     fhir:definition [ fhir:v "Vehicle has cosmetic or small functional damage but is still operable." ]
+  ] [
+     fhir:code [ fhir:v "major-damage" ] ;
+     fhir:display [ fhir:v "Major Damage" ] ;
+     fhir:definition [ fhir:v "Vehicle has significant structural or functional damage, may not be safe to drive." ]
+  ] [
+     fhir:code [ fhir:v "total-loss" ] ;
+     fhir:display [ fhir:v "Total Loss" ] ;
+     fhir:definition [ fhir:v "Vehicle is beyond economical repair (insurance write-off)." ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ] ;
+     fhir:definition [ fhir:v "Vehicle condition could not be determined at the time of assessment." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

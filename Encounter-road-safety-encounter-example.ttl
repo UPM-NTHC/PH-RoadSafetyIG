@@ -1,0 +1,158 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/road-safety-encounter-example> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "road-safety-encounter-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Road Safety Encounter</b></p><p>Case No: HC-2025-0001</p><p>Incident No: INC-2025-045</p><p>Emergency consultation on 15 Sept 2025 for a motor vehicle accident.</p><p>Handled at City General Hospital with disposition: Discharged to home.</p><p>Team: Dr. Ana Cruz (Leader), Dr. Mark Reyes (Treatment), Dr. Lisa Tan (Transport), Nurse John Lee (Assistant), Clerk Maria Santos (Received By).</p><p>Vehicle used: Ambulance</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/vehicle-used"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:7771000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "7771000" ] ;
+         fhir:display [ fhir:v "Ambulance" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://yourhospital.org/hospital-case-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HC-2025-0001" ]
+  ] [
+     fhir:system [ fhir:v "http://yourhospital.org/incident-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "INC-2025-045" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "EMER" ] ;
+     fhir:display [ fhir:v "emergency" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-ana-cruz> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-ana-cruz" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-mark-reyes> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-mark-reyes" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-lisa-tan> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-lisa-tan" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-john-lee> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-john-lee" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/practitioner-maria-santos> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-maria-santos" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-09-15T09:45:00+08:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:22298006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "22298006" ] ;
+       fhir:display [ fhir:v "Motor vehicle accident" ]
+     ] )
+  ] ) ; # 
+  fhir:hospitalization [
+     fhir:destination [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/hospital-example> ;
+       fhir:reference [ fhir:v "Organization/hospital-example" ]
+     ] ;
+     fhir:dischargeDisposition [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/discharge-disposition"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "home" ] ;
+         fhir:display [ fhir:v "Discharged to home" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/Example-RS-Scene-Location> ;
+       fhir:reference [ fhir:v "Location/Example-RS-Scene-Location" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2025-09-15T09:30:00+08:00"^^xsd:dateTime ]
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/Example-RS-Hospital-Location> ;
+       fhir:reference [ fhir:v "Location/Example-RS-Hospital-Location" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2025-09-15T09:50:00+08:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/hospital-example> ;
+     fhir:reference [ fhir:v "Organization/hospital-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

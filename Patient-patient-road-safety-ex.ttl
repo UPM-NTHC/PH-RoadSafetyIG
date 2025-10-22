@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/patient-road-safety-ex> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-road-safety-ex"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Patient:</b> Juan Dela Cruz (Male, 40 years old)</p><p><b>Date of Birth:</b> 15 June 1985</p><p><b>Permanent Address:</b> 123 Mabini Street, Barangay 1, Quezon City, NCR, Philippines (Postal: 1100)</p><p><b>Temporary Address:</b> 456 Rizal Avenue, Barangay 701, City of Manila, NCR, Philippines</p><p><b>Identifier:</b> Hospital Patient Record ID – HOSP-2025-0001</p><p><b>Managing Organization:</b> Example Hospital</p><hr/><p style=\"color:red; font-weight:bold;\">⚠ Road Traffic Crash Involvement</p><p>Juan Dela Cruz was reported as a <b>road traffic crash patient</b> and this record is submitted by Example Hospital under the Road Safety Surveillance Program.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient-age"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Age ;
+       fhir:value [ fhir:v "40"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "years" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "a" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org.ph/fhir/StructureDefinition/indigenousPeople"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://hl7.org/fhir/v3/NullFlavor"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "UNK" ] ;
+       fhir:display [ fhir:v "Unknown" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.example.org/hospital-patient-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HOSP-2025-0001" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Dela Cruz" ] ;
+     fhir:given ( [ fhir:v "Juan" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1985-06-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/barangay"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1380100001" ] ;
+         fhir:display [ fhir:v "Barangay 1" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1380200000" ] ;
+         fhir:display [ fhir:v "City of Las Piñas" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/province"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "0402100000" ] ;
+         fhir:display [ fhir:v "Cavite" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "123 Mabini Street" ] ) ;
+     fhir:city [ fhir:v "Quezon City" ] ;
+     fhir:district [ fhir:v "NCR" ] ;
+     fhir:postalCode [ fhir:v "1100" ] ;
+     fhir:country [ fhir:v "PH" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/barangay"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1389900001" ] ;
+         fhir:display [ fhir:v "Barangay 701" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1339000000" ] ;
+         fhir:display [ fhir:v "City of Manila" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/province"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1339000000" ] ;
+         fhir:display [ fhir:v "Metro Manila" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "temp" ] ;
+     fhir:line ( [ fhir:v "456 Rizal Avenue" ] ) ;
+     fhir:city [ fhir:v "Manila" ] ;
+     fhir:district [ fhir:v "NCR" ] ;
+     fhir:country [ fhir:v "PH" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:link <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/organization-hospital-ex> ;
+     fhir:reference [ fhir:v "Organization/organization-hospital-ex" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

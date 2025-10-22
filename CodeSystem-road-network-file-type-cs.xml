@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="road-network-file-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem road-network-file-type-cs</b></p><a name="road-network-file-type-cs"> </a><a name="hcroad-network-file-type-cs"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">shapefile<a name="road-network-file-type-cs-shapefile"> </a></td><td>ESRI Shapefile (zipped)</td></tr><tr><td style="white-space:nowrap">geojson<a name="road-network-file-type-cs-geojson"> </a></td><td>GeoJSON</td></tr><tr><td style="white-space:nowrap">kml<a name="road-network-file-type-cs-kml"> </a></td><td>Google Earth KML</td></tr><tr><td style="white-space:nowrap">kmz<a name="road-network-file-type-cs-kmz"> </a></td><td>Google Earth KMZ</td></tr><tr><td style="white-space:nowrap">gml<a name="road-network-file-type-cs-gml"> </a></td><td>Geography Markup Language (GML)</td></tr></table></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"/>
+  <version value="0.1.0"/>
+  <name value="RoadNetworkFileTypeCS"/>
+  <title value="Road Network File Type"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-22T01:50:39+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Allowed file types for detailed road network shapefiles or GIS data."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="shapefile"/>
+    <display value="ESRI Shapefile (zipped)"/>
+  </concept>
+  <concept>
+    <code value="geojson"/>
+    <display value="GeoJSON"/>
+  </concept>
+  <concept>
+    <code value="kml"/>
+    <display value="Google Earth KML"/>
+  </concept>
+  <concept>
+    <code value="kmz"/>
+    <display value="Google Earth KMZ"/>
+  </concept>
+  <concept>
+    <code value="gml"/>
+    <display value="Geography Markup Language (GML)"/>
+  </concept>
+</CodeSystem>

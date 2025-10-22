@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "road-network-file-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem road-network-file-type-cs</b></p><a name=\"road-network-file-type-cs\"> </a><a name=\"hcroad-network-file-type-cs\"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">shapefile<a name=\"road-network-file-type-cs-shapefile\"> </a></td><td>ESRI Shapefile (zipped)</td></tr><tr><td style=\"white-space:nowrap\">geojson<a name=\"road-network-file-type-cs-geojson\"> </a></td><td>GeoJSON</td></tr><tr><td style=\"white-space:nowrap\">kml<a name=\"road-network-file-type-cs-kml\"> </a></td><td>Google Earth KML</td></tr><tr><td style=\"white-space:nowrap\">kmz<a name=\"road-network-file-type-cs-kmz\"> </a></td><td>Google Earth KMZ</td></tr><tr><td style=\"white-space:nowrap\">gml<a name=\"road-network-file-type-cs-gml\"> </a></td><td>Geography Markup Language (GML)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/road-network-file-type-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RoadNetworkFileTypeCS"] ; # 
+  fhir:title [ fhir:v "Road Network File Type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-22T01:50:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Allowed file types for detailed road network shapefiles or GIS data."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "shapefile" ] ;
+     fhir:display [ fhir:v "ESRI Shapefile (zipped)" ]
+  ] [
+     fhir:code [ fhir:v "geojson" ] ;
+     fhir:display [ fhir:v "GeoJSON" ]
+  ] [
+     fhir:code [ fhir:v "kml" ] ;
+     fhir:display [ fhir:v "Google Earth KML" ]
+  ] [
+     fhir:code [ fhir:v "kmz" ] ;
+     fhir:display [ fhir:v "Google Earth KMZ" ]
+  ] [
+     fhir:code [ fhir:v "gml" ] ;
+     fhir:display [ fhir:v "Geography Markup Language (GML)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

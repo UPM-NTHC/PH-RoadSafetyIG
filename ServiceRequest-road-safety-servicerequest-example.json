@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "road-safety-servicerequest-example",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest road-safety-servicerequest-example</b></p><a name=\"road-safety-servicerequest-example\"> </a><a name=\"hcroad-safety-servicerequest-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RS-Servicerequest.html\">Refusal to Admit Service Request</a></p></div><p><b>status</b>: Revoked</p><p><b>intent</b>: Order</p><p><b>subject</b>: <a href=\"Patient-patient-jose-dela-cruz.html\">Jose Dela Cruz (official) Male, DoB: 1987-03-12</a></p><p><b>encounter</b>: <a href=\"Encounter-road-safety-encounter-example.html\">Encounter: extension = Ambulance; identifier = http://yourhospital.org/hospital-case-number#HC-2025-0001,http://yourhospital.org/incident-number#IncidentNo#INC-2025-045; status = finished; class = emergency (ActCode#EMER); period = 2025-09-15 09:45:00+0800 --&gt; (ongoing); reasonCode = Motor vehicle accident</a></p><p><b>occurrence</b>: 2025-09-25 14:45:00+0800</p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Organization-organization-uppgh.html\">Organization UP Philippine General Hospital</a></li><li><a href=\"Practitioner-practitioner-ana-cruz.html\">Practitioner Dr. Ana Cruz</a></li></ul></div>"
+  },
+  "status" : "revoked",
+  "intent" : "order",
+  "subject" : {
+    "reference" : "Patient/patient-jose-dela-cruz"
+  },
+  "encounter" : {
+    "reference" : "Encounter/road-safety-encounter-example"
+  },
+  "occurrenceDateTime" : "2025-09-25T14:45:00+08:00",
+  "supportingInfo" : [{
+    "reference" : "Organization/organization-uppgh"
+  },
+  {
+    "reference" : "Practitioner/practitioner-ana-cruz"
+  }]
+}

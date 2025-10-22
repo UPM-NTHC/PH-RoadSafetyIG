@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ImplementationGuide/example.fhir.ph.roadsafety | *Version*:0.1.0 |
-| Draft as of 2025-10-21 | *Computable Name*:PHRoadSafetyIG |
+| Draft as of 2025-10-22 | *Computable Name*:PHRoadSafetyIG |
 
 # Draft PH Road Safety Implementation Guide
 
@@ -53,28 +53,32 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MDSRoadSafety](StructureDefinition-ph-road-safety-logical-model.md), [MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md)...Show 143 more,[PHRoadSafetyIG](index.md),[RSAllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md),[RSBundleEMS](StructureDefinition-rs-bundle-ems.md),[RSBundleONEISS](StructureDefinition-rs-bundle-oneiss.md),[RSBundlePostCrash](StructureDefinition-rs-bundle-postcrash.md),[RSClaim](StructureDefinition-rs-claim.md),[RSCompositionEMS](StructureDefinition-rs-composition-ems.md),[RSCompositionONEISS](StructureDefinition-rs-composition-oneiss.md),[RSCompositionPostCrash](StructureDefinition-rs-composition-postcrash.md),[RSCondition](StructureDefinition-rs-condition.md),[RSConditionExternalCause](StructureDefinition-rs-condition-external-cause.md),[RSConditionFinalDiagnosis](StructureDefinition-rs-condition-final-diagnosis.md),[RSConditionInitialImpression](StructureDefinition-rs-condition-initial-impression.md),[RSConditionNatureOfInjury](StructureDefinition-rs-condition-nature-of-injury.md),[RSConditionProblem](StructureDefinition-rs-condition-problem.md),[RSDocumentReference](StructureDefinition-rs-document-reference.md),[RSEncounter](StructureDefinition-rs-encounter.md),[RSHealthcareService](StructureDefinition-rs-healthcare-service.md),[RSIncidentLocation](StructureDefinition-rs-incident-location-incident.md),[RSMedicationStatement](StructureDefinition-rs-medication-statement.md),[RSObsAbrasion](StructureDefinition-rs-observation-abrasion.md),[RSObsActivityAtIncident](StructureDefinition-rs-observation-activity-at-incident.md),[RSObsAvulsion](StructureDefinition-rs-observation-avulsion.md),[RSObsBloodAlcoholConcentration](StructureDefinition-rs-observation-blood-alcohol.md),[RSObsBloodPressure](StructureDefinition-rs-observation-blood-pressure.md),[RSObsBodyTemperature](StructureDefinition-rs-observation-body-temperature.md),[RSObsBreathSounds](StructureDefinition-rs-observation-breath-sounds.md),[RSObsCCTVAvailable](StructureDefinition-rs-observation-cctv-available.md),[RSObsCallSource](StructureDefinition-rs-observation-call-source.md),[RSObsClinicalRemarks](StructureDefinition-rs-observation-clinical-remarks.md),[RSObsCollisionType](StructureDefinition-rs-observation-collision-type.md),[RSObsCollisionVsNonCollision](StructureDefinition-rs-observation-collision-vs-noncollision.md),[RSObsConcussion](StructureDefinition-rs-observation-concussion.md),[RSObsConditionOfPatient](StructureDefinition-rs-observation-condition-of-patient.md),[RSObsContusion](StructureDefinition-rs-observation-contusion.md),[RSObsCyanosis](StructureDefinition-rs-observation-cyanosis.md),[RSObsDateOfConsultation](StructureDefinition-rs-observation-date-of-consultation.md),[RSObsDateOfInjury](StructureDefinition-rs-observation-date-of-injury.md),[RSObsDateReceived](StructureDefinition-rs-observation-date-received.md),[RSObsECBitesStings](StructureDefinition-rs-observation-ec-bites-stings.md),[RSObsECBurns](StructureDefinition-rs-observation-ec-burns.md),[RSObsECChemical](StructureDefinition-rs-observation-ec-chemical.md),[RSObsECDrowning](StructureDefinition-rs-observation-ec-drowning.md),[RSObsECFall](StructureDefinition-rs-observation-ec-fall.md),[RSObsECFirecracker](StructureDefinition-rs-observation-ec-firecracker.md),[RSObsECForcesOfNature](StructureDefinition-rs-observation-ec-forces-of-nature.md),[RSObsECGunshot](StructureDefinition-rs-observation-ec-gunshot.md),[RSObsECHangingStrangulation](StructureDefinition-rs-observation-ec-hanging-strangulation.md),[RSObsECMaulingAssault](StructureDefinition-rs-observation-ec-mauling-assault.md),[RSObsECOther](StructureDefinition-rs-observation-ec-other.md),[RSObsECSexualAssault](StructureDefinition-rs-observation-ec-sexual-assault.md),[RSObsECSharpObject](StructureDefinition-rs-observation-ec-sharp-object.md),[RSObsExtentOfInjury](StructureDefinition-rs-observation-extent-of-injury.md),[RSObsFracture](StructureDefinition-rs-observation-fracture.md),[RSObsGCS](StructureDefinition-rs-observation-gcs.md),[RSObsHowManyPatients](StructureDefinition-rs-observation-how-many-patients.md),[RSObsHowManyVehicles](StructureDefinition-rs-observation-how-many-vehicles.md),[RSObsInjuryDateTime](StructureDefinition-rs-observation-injury-datetime.md),[RSObsInjuryIntent](StructureDefinition-rs-observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-rs-observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsMultipleInjuries](StructureDefinition-rs-observation-multiple-injuries.md),[RSObsNatureBurns](StructureDefinition-rs-observation-nature-burns.md),[RSObsOpenWound](StructureDefinition-rs-observation-open-wound.md),[RSObsOtherInjury](StructureDefinition-rs-observation-other-injury.md),[RSObsOtherRiskFactors](StructureDefinition-rs-observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md),[RSObsOutcomeAtDischarge](StructureDefinition-rs-observation-outcome-discharge.md),[RSObsOutcomeAtRelease](StructureDefinition-rs-observation-outcome-release.md),[RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-rs-observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-rs-observation-position-of-patient.md),[RSObsPresenceTrafficInvestigator](StructureDefinition-rs-observation-traffic-investigator.md),[RSObsPulseQuality](StructureDefinition-rs-observation-pulse-quality.md),[RSObsPulseRate](StructureDefinition-rs-observation-pulse-rate.md),[RSObsPulseRhythm](StructureDefinition-rs-observation-pulse-rhythm.md),[RSObsPupils](StructureDefinition-rs-observation-pupils.md),[RSObsReferredByFacility](StructureDefinition-rs-observation-referred-by-facility.md),[RSObsReportedComplaint](StructureDefinition-rs-observation-reported-complaint.md),[RSObsRespiratoryRate](StructureDefinition-rs-observation-respiratory-rate.md),[RSObsRespiratoryRhythm](StructureDefinition-rs-observation-respiratory-rhythm.md),[RSObsRunReportComments](StructureDefinition-rs-observation-runreport-comments.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[RSObsStatusOnArrival](StructureDefinition-rs-observation-status-on-arrival.md),[RSObsStatusOnArrivalAliveDetail](StructureDefinition-rs-observation-status-on-arrival-alive.md),[RSObsTimeDepartedScene](StructureDefinition-rs-observation-time-departed.md),[RSObsTimeEnroute](StructureDefinition-rs-observation-time-enroute.md),[RSObsTimeHospitalArrival](StructureDefinition-rs-observation-time-hospital-arrival.md),[RSObsTimeOfConsultation](StructureDefinition-rs-observation-time-of-consultation.md),[RSObsTimeOfInjury](StructureDefinition-rs-observation-time-of-injury.md),[RSObsTimeOnScene](StructureDefinition-rs-observation-time-on-scene.md),[RSObsTimeReceived](StructureDefinition-rs-observation-time-received.md),[RSObsTimeStationArrival](StructureDefinition-rs-observation-time-station-arrival.md),[RSObsTransferredFromFacility](StructureDefinition-rs-observation-transferred-from-facility.md),[RSObsTransportVehicularAccident](StructureDefinition-rs-observation-transport-vehicular-accident.md),[RSObsTraumaticAmputation](StructureDefinition-rs-observation-traumatic-amputation.md),[RSObsTriagePriority](StructureDefinition-rs-observation-triage-priority.md),[RSObsUrgencyLevel](StructureDefinition-rs-observation-urgency.md),[RSObsVehicleUsed](StructureDefinition-rs-observation-vehicle-used.md),[RSObservation](StructureDefinition-rs-observation.md),[RSOrganization](StructureDefinition-rs-organization.md),[RSPatient](StructureDefinition-rs-patient.md),[RSProcedure](StructureDefinition-rs-procedure.md),[RSProcedureTransportCoordination](StructureDefinition-rs-procedure-transport-coordination.md),[RSServiceLocation](StructureDefinition-rs-location-service.md),[RSServiceRequest](StructureDefinition-rs-service-request.md),[RSTask](StructureDefinition-rs-task.md),[SILPH](CodeSystem-cs-silph.md),[VSActivity](ValueSet-vs-activity.md),[VSBitesAgent](ValueSet-vs-bites-agent.md),[VSBreathSounds](ValueSet-vs-breath-sounds.md),[VSBurnDegrees](ValueSet-vs-burn-degrees.md),[VSBurnsAgent](ValueSet-vs-burns-agent.md),[VSCollisionCategory](ValueSet-vs-collision-category.md),[VSCyanosis](ValueSet-vs-cyanosis.md),[VSDispositionER](ValueSet-vs-disposition-er.md),[VSDispositionIP](ValueSet-vs-disposition-ip.md),[VSDrowningType](ValueSet-vs-drowning-type.md),[VSGCSEyes](ValueSet-vs-gcs-eyes.md),[VSGCSMotor](ValueSet-vs-gcs-motor.md),[VSGCSVerbal](ValueSet-vs-gcs-verbal.md),[VSInjuryIntent](ValueSet-vs-injury-intent.md),[VSLevelOfConsciousness](ValueSet-vs-level-of-consciousness.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md),[VSOtherRiskFactors](ValueSet-vs-other-risk-factors.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSOutcome](ValueSet-vs-outcome.md),[VSPSGCBarangay](ValueSet-vs-psgc-barangay.md),[VSPSGCCityMunicipality](ValueSet-vs-psgc-city.md),[VSPSGCProvince](ValueSet-vs-psgc-province.md),[VSPSGCRegion](ValueSet-vs-psgc-region.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md),[VSPlaceOfOccurrence](ValueSet-vs-place-of-occurrence.md),[VSPositionOfPatient](ValueSet-vs-position-of-patient.md),[VSPulseQuality](ValueSet-vs-pulse-quality.md),[VSPulseRhythm](ValueSet-vs-pulse-rhythm.md),[VSPupils](ValueSet-vs-pupils.md),[VSRespiratoryRhythm](ValueSet-vs-respiratory-rhythm.md),[VSSafetyDevices](ValueSet-vs-safety-devices.md),[VSStatusAliveDetail](ValueSet-vs-status-alive-detail.md),[VSStatusOnArrival](ValueSet-vs-status-on-arrival.md),[VSTransportAccidentMode](ValueSet-vs-transport-accident-mode.md)and[VSTypeOfPatient](ValueSet-vs-type-of-patient.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ActivityCS](CodeSystem-activity-cs.md), [ActivityVS](ValueSet-activity-vs.md)...Show 74 more,[AgeUnitsVS](ValueSet-age-units-vs.md),[CauseOfCrashCS](CodeSystem-cause-of-crash-cs.md),[CauseOfCrashFileTypeVS](ValueSet-cause-of-crash-file-type-vs.md),[CauseOfCrashVS](ValueSet-cause-of-crash-vs.md),[CauseOfRoadCrash](StructureDefinition-cause-of-road-crash.md),[CollisionTypeCS](CodeSystem-collision-type-cs.md),[CollisionTypeVS](ValueSet-collision-type-vs.md),[CoordinationVS](ValueSet-coordination.md),[EDAvailability](StructureDefinition-ed-availability.md),[ExternalCauseCS](CodeSystem-external-cause-cs.md),[ExternalCauseDetailExt](StructureDefinition-external-cause-detail-ext.md),[ExternalCauseVS](ValueSet-external-cause-vs.md),[FirstAidGiven](StructureDefinition-first-aid-given.md),[FirstAidVS](ValueSet-first-aid.md),[HospitalCaseNo](NamingSystem-hospital-case-no-ns.md),[HospitalPatientID](NamingSystem-hospital-patient-id-ns.md),[IncidentNo](NamingSystem-IncidentNoNS.md),[InjuryNatureCS](CodeSystem-injury-nature-cs.md),[InjuryNatureVS](ValueSet-injury-nature-vs.md),[InterventionVS](ValueSet-intervention.md),[MDSRoadSafety](StructureDefinition-PH-RoadSafetyLogicalModel.md),[MDSRoadSafety2FHIR](ConceptMap-MDSRoadSafety2FHIR.md),[ModeOfTransportCS](CodeSystem-mode-of-transport-cs.md),[ModeOfTransportVS](ValueSet-mode-of-transport-vs.md),[NHFR](NamingSystem-hospital-registry-id-ns.md),[OutcomeCS](CodeSystem-outcome-cs.md),[OutcomeVS](ValueSet-outcome-vs.md),[PHCoreOccupation](StructureDefinition-ph-core-occupation.md),[PHRoadSafetyIG](index.md),[PartyAtFault](StructureDefinition-party-at-fault.md),[PartyAtFaultCS](CodeSystem-party-at-fault-cs.md),[PartyAtFaultVS](ValueSet-party-at-fault-vs.md),[PlaceOccCS](CodeSystem-place-occ-cs.md),[PlaceOccVS](ValueSet-place-occ-vs.md),[PriorityCS](CodeSystem-priority-cs.md),[PriorityVS](ValueSet-priority-vs.md),[PsychosocialProcedureVS](ValueSet-psychosocial-procedure.md),[RSAllergyIntolerance](StructureDefinition-RS-Allergyintolerance.md),[RSClaim](StructureDefinition-RS-Claim.md),[RSCondition](StructureDefinition-RS-Condition.md),[RSDocumentReference](StructureDefinition-RS-Documentreference.md),[RSEncounter](StructureDefinition-RS-Encounter.md),[RSHealthcareService](StructureDefinition-RS-HealthcareService.md),[RSHospitalCategoryVS](ValueSet-rs-hospital-category.md),[RSMedicationStatement](StructureDefinition-RS-Medicationstatement.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSPatient](StructureDefinition-RS-Patient.md),[RSPatientAge](StructureDefinition-rs-patient-age.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSProcedureVS](ValueSet-rs-procedure.md),[RSQuestionnaire](StructureDefinition-RS-Questionnaire.md),[RSServiceRequest](StructureDefinition-RS-Servicerequest.md),[RSTask](StructureDefinition-RS-task.md),[RSTaskStatusCS](CodeSystem-rs-task-status-cs.md),[RSTaskStatusVS](ValueSet-rs-task-status.md),[ReportFormReceived](StructureDefinition-report-form-received.md),[ReportFormReceivedCS](CodeSystem-report-form-received-cs.md),[ReportFormReceivedVS](ValueSet-report-form-received-vs.md),[RoadNetworkFileTypeCS](CodeSystem-road-network-file-type-cs.md),[RoadNetworkFileTypeVS](ValueSet-road-network-file-type-vs.md),[RoadNetworkShapeFile](StructureDefinition-road-network-shapefile.md),[SafetyNotesExt](StructureDefinition-safety-notes-ext.md),[SuppliesUsed](StructureDefinition-supplies-used.md),[TrafficIncidentManagement](StructureDefinition-traffic-incident-management.md),[TranspoCoordination](StructureDefinition-transpo-coordination.md),[TransportDetailsExt](StructureDefinition-transport-details-ext.md),[VehicleCondition](StructureDefinition-vehicle-condition.md),[VehicleConditionCS](CodeSystem-vehicle-condition-cs.md),[VehicleConditionVS](ValueSet-vehicle-condition-vs.md),[VehicleList](StructureDefinition-vehicle-list-ext.md),[VehicleTypeCS](CodeSystem-vehicle-types.md),[VehicleTypeVS](ValueSet-vs-rs-vehicle-type.md),[VehicleUsed](StructureDefinition-vehicle-used.md)and[VitalSignsQuestionnaire](Questionnaire-VitalSignsQuestionnaire.md)
 
 
-* The WHO grants a license for "commercial and non-commercial use" of ICD-11CC BY-ND 3.0 IGODetailed information can be found here: [[https://icd.who.int/en/docs/icd11-license.pdf](https://icd.who.int/en/docs/icd11-license.pdf)](https://icd.who.int/en/docs/icd11-license.pdf) Contact licensing@who.int to obtain further information.
+* The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)](http://terminology.hl7.org/6.5.0/CodeSystem-ICD11MMS.html): [VSTransportAccidentMode](ValueSet-vs-transport-accident-mode.md)
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [AgeUnitsVS](ValueSet-age-units-vs.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [RSObsCollisionVsNonCollision](StructureDefinition-rs-observation-collision-vs-noncollision.md), [RSObsECBitesStings](StructureDefinition-rs-observation-ec-bites-stings.md)...Show 9 more,[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[VSBitesAgent](ValueSet-vs-bites-agent.md),[VSCollisionCategory](ValueSet-vs-collision-category.md),[VSGCSEyes](ValueSet-vs-gcs-eyes.md),[VSGCSMotor](ValueSet-vs-gcs-motor.md),[VSGCSVerbal](ValueSet-vs-gcs-verbal.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md)and[VSSafetyDevices](ValueSet-vs-safety-devices.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [RSObservation](StructureDefinition-RS-Observation.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [RSAllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RSEncounter](StructureDefinition-rs-encounter.md)...Show 48 more,[RSObsActivityAtIncident](StructureDefinition-rs-observation-activity-at-incident.md),[RSObsBreathSounds](StructureDefinition-rs-observation-breath-sounds.md),[RSObsCyanosis](StructureDefinition-rs-observation-cyanosis.md),[RSObsECBurns](StructureDefinition-rs-observation-ec-burns.md),[RSObsECDrowning](StructureDefinition-rs-observation-ec-drowning.md),[RSObsInjuryIntent](StructureDefinition-rs-observation-injury-intent.md),[RSObsLevelOfConsciousness](StructureDefinition-rs-observation-level-of-consciousness.md),[RSObsModeOfTransport](StructureDefinition-rs-observation-mode-of-transport.md),[RSObsNatureBurns](StructureDefinition-rs-observation-nature-burns.md),[RSObsOtherRiskFactors](StructureDefinition-rs-observation-other-risk-factors.md),[RSObsOtherVehicleInvolved](StructureDefinition-rs-observation-other-vehicle.md),[RSObsOutcomeAtDischarge](StructureDefinition-rs-observation-outcome-discharge.md),[RSObsOutcomeAtRelease](StructureDefinition-rs-observation-outcome-release.md),[RSObsPatientsVehicle](StructureDefinition-rs-observation-patients-vehicle.md),[RSObsPlaceOfOccurrence](StructureDefinition-rs-observation-place-of-occurrence.md),[RSObsPositionOfPatient](StructureDefinition-rs-observation-position-of-patient.md),[RSObsPulseQuality](StructureDefinition-rs-observation-pulse-quality.md),[RSObsPulseRhythm](StructureDefinition-rs-observation-pulse-rhythm.md),[RSObsPupils](StructureDefinition-rs-observation-pupils.md),[RSObsRespiratoryRhythm](StructureDefinition-rs-observation-respiratory-rhythm.md),[RSObsSafetyAccessories](StructureDefinition-rs-observation-safety-accessories.md),[RSObsStatusOnArrival](StructureDefinition-rs-observation-status-on-arrival.md),[RSObsStatusOnArrivalAliveDetail](StructureDefinition-rs-observation-status-on-arrival-alive.md),[VSActivity](ValueSet-vs-activity.md),[VSBreathSounds](ValueSet-vs-breath-sounds.md),[VSBurnDegrees](ValueSet-vs-burn-degrees.md),[VSBurnsAgent](ValueSet-vs-burns-agent.md),[VSCyanosis](ValueSet-vs-cyanosis.md),[VSDispositionER](ValueSet-vs-disposition-er.md),[VSDispositionIP](ValueSet-vs-disposition-ip.md),[VSDrowningType](ValueSet-vs-drowning-type.md),[VSInjuryIntent](ValueSet-vs-injury-intent.md),[VSLevelOfConsciousness](ValueSet-vs-level-of-consciousness.md),[VSModeOfTransport](ValueSet-vs-mode-of-transport.md),[VSOtherRiskFactors](ValueSet-vs-other-risk-factors.md),[VSOtherVehicle](ValueSet-vs-other-vehicle.md),[VSOutcome](ValueSet-vs-outcome.md),[VSPatientsVehicle](ValueSet-vs-patients-vehicle.md),[VSPlaceOfOccurrence](ValueSet-vs-place-of-occurrence.md),[VSPositionOfPatient](ValueSet-vs-position-of-patient.md),[VSPulseQuality](ValueSet-vs-pulse-quality.md),[VSPulseRhythm](ValueSet-vs-pulse-rhythm.md),[VSPupils](ValueSet-vs-pupils.md),[VSRespiratoryRhythm](ValueSet-vs-respiratory-rhythm.md),[VSSafetyDevices](ValueSet-vs-safety-devices.md),[VSStatusAliveDetail](ValueSet-vs-status-alive-detail.md),[VSStatusOnArrival](ValueSet-vs-status-on-arrival.md)and[VSTypeOfPatient](ValueSet-vs-type-of-patient.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [CoordinationVS](ValueSet-coordination.md), [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)...Show 10 more,[FirstAidGiven](StructureDefinition-first-aid-given.md),[FirstAidVS](ValueSet-first-aid.md),[InterventionVS](ValueSet-intervention.md),[PsychosocialProcedureVS](ValueSet-psychosocial-procedure.md),[RSHealthcareService](StructureDefinition-RS-HealthcareService.md),[RSHospitalCategoryVS](ValueSet-rs-hospital-category.md),[RSObservation](StructureDefinition-RS-Observation.md),[RSProcedure](StructureDefinition-RS-Procedure.md),[RSProcedureVS](ValueSet-rs-procedure.md)and[TranspoCoordination](StructureDefinition-transpo-coordination.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [ParticipationType](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ParticipationType.html): [RSEncounter](StructureDefinition-rs-encounter.md)
-* [RoleCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html): [RSServiceLocation](StructureDefinition-rs-location-service.md)
+* [Discharge disposition](http://terminology.hl7.org/6.5.0/CodeSystem-discharge-disposition.html): [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)
+* [Location type](http://terminology.hl7.org/6.5.0/CodeSystem-location-physical-type.html): [RSEncounter](StructureDefinition-RS-Encounter.md)
+* [Organization type](http://terminology.hl7.org/6.5.0/CodeSystem-organization-type.html): [City General Hospital](Organization-hospital-example.md) and [UP Philippine General Hospital](Organization-organization-uppgh.md)
+* [ActCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html): [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md)
+* [ParticipationType](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ParticipationType.html): [Encounter/road-safety-encounter-example](Encounter-road-safety-encounter-example.md) and [RSEncounter](StructureDefinition-RS-Encounter.md)
+* [RoleCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html): [RSEncounter](StructureDefinition-RS-Encounter.md)
 
 
 
@@ -98,7 +102,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-21T14:32:35+00:00",
+  "date" : "2025-10-22T01:50:39+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -829,14 +833,691 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Location"
+          }
+        ],
+        "reference" : {
+          "reference" : "Location/Example-RS-Scene-Location"
+        },
+        "name" : "Accident Scene Location",
+        "description" : "Road traffic accident scene for the encounter.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/activity-cs"
+        },
+        "name" : "Activity at time of incident (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/activity-vs"
+        },
+        "name" : "Activity ValueSet (example)",
+        "description" : "Example ValueSet for Activity at time of incident",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/rs-patient-age"
+        },
+        "name" : "Age",
+        "description" : "Patient age, derived from birthDate. Not intended for direct data entry.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/age-units-vs"
+        },
+        "name" : "Age Units ValueSet",
+        "description" : "Allowed units for Patient Age when Date of Birth is not available.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/rs-procedure"
+        },
+        "name" : "All Road Safety Procedure Codes",
+        "description" : "Combines medical interventions, first aid, and psychosocial procedures.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/cause-of-crash-file-type-vs"
+        },
+        "name" : "Cause of Crash File Type ValueSet",
+        "description" : "Allowed file types for documents describing the cause of a road crash.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/cause-of-crash-vs"
+        },
+        "name" : "Cause of Road Crash",
+        "description" : "Defines codes representing the external causes of road traffic crashes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/cause-of-crash-cs"
+        },
+        "name" : "Cause of Road Crash",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/cause-of-road-crash"
+        },
+        "name" : "Cause of Road Crash Incident",
+        "description" : "Cause or contributing factor of the road crash.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hospital-example"
+        },
+        "name" : "City General Hospital",
+        "description" : "Receiving medical facility for the road safety encounter.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Location"
+          }
+        ],
+        "reference" : {
+          "reference" : "Location/Example-RS-Hospital-Location"
+        },
+        "name" : "City General Hospital - Emergency Department",
+        "description" : "ED Location involved in the encounter.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/collision-type-cs"
+        },
+        "name" : "Collision Type (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/collision-type-vs"
+        },
+        "name" : "Collision Type ValueSet (example)",
+        "description" : "Types of collision in road traffic incidents",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/ed-availability"
+        },
+        "name" : "Emergency Department Availability",
+        "description" : "Indicates if the emergency department is currently accepting patients.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/organization-hospital-ex"
+        },
+        "name" : "Example Hospital Organization",
+        "description" : "Hospital submitting the road safety patient report.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/external-cause-cs"
+        },
+        "name" : "External Cause CodeSystem (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/external-cause-detail-ext"
+        },
+        "name" : "External Cause Detail",
+        "description" : "Additional detail for external cause (e.g., specify animal/insect, weapon, burn type).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/external-cause-vs"
+        },
+        "name" : "External Cause ValueSet (example)",
+        "description" : "Illustrative set of codes representing external causes of injury.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/first-aid"
+        },
+        "name" : "First Aid Codes",
+        "description" : "Allowed values for first aid performed.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/first-aid-given"
+        },
+        "name" : "First Aid Given",
+        "description" : "Indicates whether first aid was provided to the patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/rs-hospital-category"
+        },
+        "name" : "Hospital / EMS Category",
+        "description" : "Categories for hospitals relevant to EMS referral.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/RS-HealthcareService"
+        },
+        "name" : "Hospital Available",
+        "description" : "Represents a hospital available for EMS referral, linked to its location.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "NamingSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "NamingSystem/hospital-case-no-ns"
+        },
+        "name" : "Hospital Case Number System",
+        "description" : "Unique identifier assigned to each hospital case.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "NamingSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "NamingSystem/hospital-patient-id-ns"
+        },
+        "name" : "Hospital Patient ID No.",
+        "description" : "The permanent and unique number issued by hospitals to individual patients and their dependents.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "NamingSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "NamingSystem/IncidentNoNS"
+        },
+        "name" : "Incident Number System",
+        "description" : "Unique identifier assigned to each incident.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/RS-Observation"
+        },
+        "name" : "Injury Observation",
+        "description" : "It is intended to support documentation of external causes, nature and extent of injuries, \nvital signs, Glasgow Coma Scale, and other clinical or scene observations related to road traffic incidents.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ConceptMap"
           }
         ],
         "reference" : {
           "reference" : "ConceptMap/MDSRoadSafety2FHIR"
         },
-        "name" : "MDSRoadSafety Logical Model to FHIR Mapping",
-        "description" : "Maps elements from the logical model to FHIR R4 resources. Generated by scripts/generate-conceptmap.js",
+        "name" : "MDS Logical Model to FHIR Mapping",
+        "description" : "Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/intervention"
+        },
+        "name" : "Medical Intervention Procedure Codes",
+        "description" : "Procedure codes representing medical interventions.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/mode-of-transport-cs"
+        },
+        "name" : "Mode of Transport (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/mode-of-transport-vs"
+        },
+        "name" : "Mode of Transport ValueSet (example)",
+        "description" : "Sample ValueSet capturing transport modes.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "NamingSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "NamingSystem/hospital-registry-id-ns"
+        },
+        "name" : "National Health Facility Registry ID",
+        "description" : "The permanent and unique number issued by PhilHealth to individual members and to each and every dependent.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/injury-nature-cs"
+        },
+        "name" : "Nature of Injury (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/injury-nature-vs"
+        },
+        "name" : "Nature of Injury ValueSet (example)",
+        "description" : "Demonstration ValueSet capturing the nature of injury.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/outcome-cs"
+        },
+        "name" : "Outcome (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/outcome-vs"
+        },
+        "name" : "Outcome ValueSet (example)",
+        "description" : "Example ValueSet capturing possible outcomes.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/party-at-fault"
+        },
+        "name" : "Party at Fault",
+        "description" : "Identifies the party considered at fault in the road crash.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/party-at-fault-vs"
+        },
+        "name" : "Party at Fault",
+        "description" : "ValueSet indicating the party at fault in an incident.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/party-at-fault-cs"
+        },
+        "name" : "Party at Fault",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/patient-jose-dela-cruz"
+        },
+        "name" : "Patient - Jose Dela Cruz",
+        "description" : "Road crash patient referenced by the ServiceRequest example.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/patient-road-safety-ex"
+        },
+        "name" : "patient-road-safety-ex",
+        "description" : "Example patient involved in a road traffic crash, aligned to the RoadSafetyProfile.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/ph-core-occupation"
+        },
+        "name" : "PH Core Occupation (Stub)",
+        "description" : "Temporary local copy of PH Core Occupation extension for Road Safety testing",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/place-occ-cs"
+        },
+        "name" : "Place of Occurrence (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/place-occ-vs"
+        },
+        "name" : "Place of Occurrence ValueSet (example)",
+        "description" : "Example ValueSet capturing places of occurrence.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/practitioner-ana-cruz"
+        },
+        "name" : "Practitioner - Ana Cruz",
+        "description" : "Team Leader in the Road Safety Encounter (Dr. Ana Cruz leads the medical response team).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/practitioner-john-lee"
+        },
+        "name" : "Practitioner - John Lee",
+        "description" : "Assistant in the Road Safety Encounter (Nurse John Lee assists the treatment and transport officers).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/practitioner-lisa-tan"
+        },
+        "name" : "Practitioner - Lisa Tan",
+        "description" : "Transport Officer in the Road Safety Encounter (Dr. Lisa Tan is responsible for patient transfer and transport decisions).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/practitioner-maria-santos"
+        },
+        "name" : "Practitioner - Maria Santos",
+        "description" : "Received By in the Road Safety Encounter (Clerk Maria Santos logs the patient’s arrival at the receiving facility).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/practitioner-mark-reyes"
+        },
+        "name" : "Practitioner - Mark Reyes",
+        "description" : "Treatment Officer in the Road Safety Encounter (Dr. Mark Reyes provides primary patient treatment).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/psychosocial-procedure"
+        },
+        "name" : "Psychosocial Procedure Codes",
+        "description" : "Codes representing psychosocial support interventions.",
         "exampleBoolean" : false
       },
       {
@@ -847,10 +1528,121 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-allergy-intolerance"
+          "reference" : "StructureDefinition/RS-Servicerequest"
+        },
+        "name" : "Refusal to Admit Service Request",
+        "description" : "Profile for recording refusal to admit a patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/road-safety-servicerequest-example"
+        },
+        "name" : "Refusal to Admit Service Request Example",
+        "description" : "This example records a refusal to admit a road crash patient during a Road Safety Encounter, including the hospital that refused admission and the physician involved.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Servicerequest"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/report-form-received"
+        },
+        "name" : "Report Form Received",
+        "description" : "Whether the report form was received as digital or physical.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/report-form-received-vs"
+        },
+        "name" : "Report Form Received",
+        "description" : "ValueSet indicating whether a report form has been received.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/report-form-received-cs"
+        },
+        "name" : "Report Form Received",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/road-network-file-type-vs"
+        },
+        "name" : "Road Network File Type",
+        "description" : "Permitted file types for detailed road network shapefiles or GIS documents.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/road-network-file-type-cs"
+        },
+        "name" : "Road Network File Type",
+        "description" : "Allowed file types for detailed road network shapefiles or GIS data.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/road-network-shapefile"
+        },
+        "name" : "Road Network Shape File",
+        "description" : "Metadata reference to detailed road network shapefile related to the incident.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/RS-Allergyintolerance"
         },
         "name" : "Road Safety AllergyIntolerance",
-        "description" : "Known allergies, substances and reactions.",
+        "description" : "Profile for recording allergy or intolerance information in the Philippine Road Safety IG.",
         "exampleBoolean" : false
       },
       {
@@ -861,52 +1653,10 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-bundle-ems"
-        },
-        "name" : "Road Safety Bundle — EMS Submission",
-        "description" : "Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-bundle-oneiss"
-        },
-        "name" : "Road Safety Bundle — ONEISS Submission",
-        "description" : "Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-bundle-postcrash"
-        },
-        "name" : "Road Safety Bundle — Post‑Crash Investigation",
-        "description" : "Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-claim"
+          "reference" : "StructureDefinition/RS-Claim"
         },
         "name" : "Road Safety Claim",
-        "description" : "Claim information related to cost of care.",
+        "description" : "A Claim profile for PH Road Safety IG requiring total.",
         "exampleBoolean" : false
       },
       {
@@ -917,52 +1667,10 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-composition-ems"
-        },
-        "name" : "Road Safety Composition — EMS Submission",
-        "description" : "Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-composition-oneiss"
-        },
-        "name" : "Road Safety Composition — ONEISS Submission",
-        "description" : "Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-composition-postcrash"
-        },
-        "name" : "Road Safety Composition — Post‑Crash Investigation",
-        "description" : "Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-condition"
+          "reference" : "StructureDefinition/RS-Condition"
         },
         "name" : "Road Safety Condition",
-        "description" : "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
+        "description" : "A Condition for the Safety of the Roads in the Philippines.",
         "exampleBoolean" : false
       },
       {
@@ -973,10 +1681,10 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-condition-external-cause"
+          "reference" : "StructureDefinition/RS-Documentreference"
         },
-        "name" : "Road Safety Condition — External Cause (category)",
-        "description" : "Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code.",
+        "name" : "Road Safety Document Reference",
+        "description" : "A profile to capture documents related to road safety incidents in the Philippine context.",
         "exampleBoolean" : false
       },
       {
@@ -987,95 +1695,25 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-condition-final-diagnosis"
-        },
-        "name" : "Road Safety Condition — Final Diagnosis",
-        "description" : "Final diagnosis per CSV mapping.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-condition-initial-impression"
-        },
-        "name" : "Road Safety Condition — Initial Impression",
-        "description" : "Initial impression per CSV mapping.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-condition-nature-of-injury"
-        },
-        "name" : "Road Safety Condition — Nature of Injury (category)",
-        "description" : "Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-condition-problem"
-        },
-        "name" : "Road Safety Condition — Problem",
-        "description" : "Problem (finding) per CSV mapping.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-document-reference"
-        },
-        "name" : "Road Safety DocumentReference (Evidence)",
-        "description" : "Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-encounter"
+          "reference" : "StructureDefinition/RS-Encounter"
         },
         "name" : "Road Safety Encounter",
-        "description" : "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer.",
+        "description" : "Encounter profile for road safety reporting (hospital case no, incident no, transport details, disposition, etc.)",
         "exampleBoolean" : false
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
+            "valueString" : "Encounter"
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-healthcare-service"
+          "reference" : "Encounter/road-safety-encounter-example"
         },
-        "name" : "Road Safety HealthcareService",
-        "description" : "Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units).",
-        "exampleBoolean" : false
+        "name" : "Road Safety Encounter Example",
+        "description" : "Example of a road safety hospital encounter with identifiers, participants, and disposition.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Encounter"
       },
       {
         "extension" : [
@@ -1085,24 +1723,10 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-incident-location-incident"
-        },
-        "name" : "Road Safety Incident Location",
-        "description" : "Location of incident; supports PH-Core address extensions and geolocation.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-medication-statement"
+          "reference" : "StructureDefinition/RS-Medicationstatement"
         },
         "name" : "Road Safety MedicationStatement",
-        "description" : "Current medications as codeable concepts or references where available.",
+        "description" : "A profile representing a patient's current medication statement for the Philippine health context.",
         "exampleBoolean" : false
       },
       {
@@ -1113,7 +1737,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/ph-road-safety-logical-model"
+          "reference" : "StructureDefinition/PH-RoadSafetyLogicalModel"
         },
         "name" : "Road Safety Minimum Dataset (MDS) Logical Model",
         "description" : "Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling.",
@@ -1127,1145 +1751,67 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-observation"
-        },
-        "name" : "Road Safety Observation",
-        "description" : "Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-abrasion"
-        },
-        "name" : "Road Safety Observation - Abrasion",
-        "description" : "Abrasion present; with optional site and details.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-activity-at-incident"
-        },
-        "name" : "Road Safety Observation - Activity at Time of Incident",
-        "description" : "Activity of the patient at time of incident; allow text fallback.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-avulsion"
-        },
-        "name" : "Road Safety Observation - Avulsion",
-        "description" : "Avulsion present; with optional site and details.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-blood-alcohol"
-        },
-        "name" : "Road Safety Observation - Blood Alcohol Concentration",
-        "description" : "Blood alcohol concentration.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-blood-pressure"
-        },
-        "name" : "Road Safety Observation - Blood Pressure",
-        "description" : "Blood pressure using component entries for systolic/diastolic.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-body-temperature"
-        },
-        "name" : "Road Safety Observation - Body Temperature",
-        "description" : "Body temperature.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-breath-sounds"
-        },
-        "name" : "Road Safety Observation - Breath Sounds",
-        "description" : "Breath sounds assessment.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-call-source"
-        },
-        "name" : "Road Safety Observation - Call Source",
-        "description" : "Call source description (free text).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-cctv-available"
-        },
-        "name" : "Road Safety Observation - CCTV Available",
-        "description" : "Availability of CCTV video.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-clinical-remarks"
-        },
-        "name" : "Road Safety Observation - Clinical Remarks",
-        "description" : "Clinical remarks/notes.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-collision-type"
-        },
-        "name" : "Road Safety Observation - Collision Type",
-        "description" : "Collision type (Angle, Head-on, Rear end, Side swipe, etc.).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-collision-vs-noncollision"
-        },
-        "name" : "Road Safety Observation - Collision vs Non-Collision",
-        "description" : "Indicates whether the incident was collision or non-collision.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-concussion"
-        },
-        "name" : "Road Safety Observation - Concussion",
-        "description" : "Concussion present; with site and details.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-condition-of-patient"
-        },
-        "name" : "Road Safety Observation - Condition of Patient",
-        "description" : "Overall condition of patient at assessment.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-contusion"
-        },
-        "name" : "Road Safety Observation - Contusion",
-        "description" : "Contusion present; with site and details.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-cyanosis"
-        },
-        "name" : "Road Safety Observation - Cyanosis",
-        "description" : "Cyanosis assessment.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-date-of-consultation"
-        },
-        "name" : "Road Safety Observation - Date of Consultation",
-        "description" : "Date of consultation at facility.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-date-of-injury"
-        },
-        "name" : "Road Safety Observation - Date of Injury",
-        "description" : "Date of injury occurrence.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-injury-datetime"
-        },
-        "name" : "Road Safety Observation - Date/Time of Injury",
-        "description" : "Timestamp of injury occurrence.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-date-received"
-        },
-        "name" : "Road Safety Observation - Date/Time Received by EMS",
-        "description" : "Calendar/timestamp the EMS/dispatch received the request.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-extent-of-injury"
-        },
-        "name" : "Road Safety Observation - Extent of Injury",
-        "description" : "Extent / severity estimate or category of injury (e.g., minor, moderate, severe).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-bites-stings"
-        },
-        "name" : "Road Safety Observation - External Cause: Bites/Stings",
-        "description" : "Flag indicating bites/stings.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-burns"
-        },
-        "name" : "Road Safety Observation - External Cause: Burns",
-        "description" : "Flag indicating burns as external cause.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-nature-burns"
-        },
-        "name" : "Road Safety Observation - External Cause: Burns",
-        "description" : "Flag indicating burns as external cause.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-chemical"
-        },
-        "name" : "Road Safety Observation - External Cause: Chemical/Substance",
-        "description" : "Observation for chemical/substance exposure.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-sharp-object"
-        },
-        "name" : "Road Safety Observation - External Cause: Contact with Sharp Object",
-        "description" : "Flag indicating sharp object cause.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-drowning"
-        },
-        "name" : "Road Safety Observation - External Cause: Drowning",
-        "description" : "Flag indicating drowning.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-forces-of-nature"
-        },
-        "name" : "Road Safety Observation - External Cause: Exposure to Forces of Nature",
-        "description" : "Flag indicating exposure to natural disaster/calamity.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-fall"
-        },
-        "name" : "Road Safety Observation - External Cause: Fall",
-        "description" : "Flag indicating fall.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-firecracker"
-        },
-        "name" : "Road Safety Observation - External Cause: Firecracker",
-        "description" : "Flag indicating firecracker-related cause.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-gunshot"
-        },
-        "name" : "Road Safety Observation - External Cause: Gunshot",
-        "description" : "Flag indicating gunshot.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-hanging-strangulation"
-        },
-        "name" : "Road Safety Observation - External Cause: Hanging/Strangulation",
-        "description" : "Flag indicating hanging/strangulation.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-mauling-assault"
-        },
-        "name" : "Road Safety Observation - External Cause: Mauling/Assault",
-        "description" : "Flag indicating assault.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-other"
-        },
-        "name" : "Road Safety Observation - External Cause: Other",
-        "description" : "Flag indicating other external cause.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-ec-sexual-assault"
-        },
-        "name" : "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)",
-        "description" : "Flag indicating sexual assault.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-fracture"
-        },
-        "name" : "Road Safety Observation - Fracture",
-        "description" : "Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-gcs"
-        },
-        "name" : "Road Safety Observation - Glasgow Coma Scale",
-        "description" : "GCS with components for eyes, verbal, motor; optional total score as integer.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-how-many-patients"
-        },
-        "name" : "Road Safety Observation - How Many Patients Involved",
-        "description" : "Count of patients involved.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-how-many-vehicles"
-        },
-        "name" : "Road Safety Observation - How Many Vehicles Involved",
-        "description" : "Count of vehicles involved.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-status-on-arrival-alive"
-        },
-        "name" : "Road Safety Observation - If Alive: Conscious/Unconscious",
-        "description" : "If alive on arrival, consciousness detail.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-injury-intent"
-        },
-        "name" : "Road Safety Observation - Injury Intent",
-        "description" : "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-level-of-consciousness"
-        },
-        "name" : "Road Safety Observation - Level of Consciousness (AVPU)",
-        "description" : "Level of consciousness (e.g., AVPU).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-mode-of-transport"
-        },
-        "name" : "Road Safety Observation - Mode of Transport to Facility",
-        "description" : "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-multiple-injuries"
-        },
-        "name" : "Road Safety Observation - Multiple Injuries?",
-        "description" : "Boolean flag indicating multiple injuries.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-open-wound"
-        },
-        "name" : "Road Safety Observation - Open Wound",
-        "description" : "Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-other-risk-factors"
-        },
-        "name" : "Road Safety Observation - Other Risk Factors",
-        "description" : "Other risk factors at the time of incident; allow text for 'Others'.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-other-injury"
-        },
-        "name" : "Road Safety Observation - Other Specified Injury",
-        "description" : "Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-other-vehicle"
-        },
-        "name" : "Road Safety Observation - Other Vehicle/Object Involved",
-        "description" : "Other vehicle/object type involved; text for 'Others'.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-outcome-discharge"
-        },
-        "name" : "Road Safety Observation - Outcome at Discharge",
-        "description" : "Outcome at discharge.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-outcome-release"
-        },
-        "name" : "Road Safety Observation - Outcome at Release",
-        "description" : "Outcome at release from ER/OPD/RHU.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-patients-vehicle"
-        },
-        "name" : "Road Safety Observation - Patient's Vehicle",
-        "description" : "Type of vehicle used by patient; text for 'Others'.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-place-of-occurrence"
-        },
-        "name" : "Road Safety Observation - Place of Occurrence",
-        "description" : "Place type where injury occurred; name can be carried in note when applicable.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-position-of-patient"
-        },
-        "name" : "Road Safety Observation - Position of Patient",
-        "description" : "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-traffic-investigator"
-        },
-        "name" : "Road Safety Observation - Presence of Traffic Investigator",
-        "description" : "Boolean presence/absence of traffic investigator.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-urgency"
-        },
-        "name" : "Road Safety Observation - Priority Level (Urgency)",
-        "description" : "System-generated urgency level per CAD/agency rules.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-pulse-quality"
-        },
-        "name" : "Road Safety Observation - Pulse Quality",
-        "description" : "Pulse quality.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-pulse-rate"
-        },
-        "name" : "Road Safety Observation - Pulse Rate",
-        "description" : "Pulse/heart rate in beats/min.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-pulse-rhythm"
-        },
-        "name" : "Road Safety Observation - Pulse Rhythm",
-        "description" : "Pulse rhythm.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-pupils"
-        },
-        "name" : "Road Safety Observation - Pupils",
-        "description" : "Pupil size/reactivity summary.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-referred-by-facility"
-        },
-        "name" : "Road Safety Observation - Referred By Facility",
-        "description" : "Flag indicating patient was referred by another hospital/facility.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-reported-complaint"
-        },
-        "name" : "Road Safety Observation - Reported Complaint",
-        "description" : "Free-text reported complaint.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-respiratory-rate"
-        },
-        "name" : "Road Safety Observation - Respiratory Rate",
-        "description" : "Respiratory rate in breaths/min.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-respiratory-rhythm"
-        },
-        "name" : "Road Safety Observation - Respiratory Rhythm",
-        "description" : "Respiratory rhythm (normal/irregular/labored).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-runreport-comments"
-        },
-        "name" : "Road Safety Observation - Run Report Comments",
-        "description" : "General comments from run report.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-safety-accessories"
-        },
-        "name" : "Road Safety Observation - Safety Accessories",
-        "description" : "Safety accessories present/used; allow text for 'Others'.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-status-on-arrival"
-        },
-        "name" : "Road Safety Observation - Status on Arrival",
-        "description" : "Status upon reaching facility/hospital.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-departed"
-        },
-        "name" : "Road Safety Observation - Time Departed Scene",
-        "description" : "Timestamp unit departed scene.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-enroute"
-        },
-        "name" : "Road Safety Observation - Time Enroute",
-        "description" : "Timestamp when unit dispatched/began traveling.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-of-consultation"
-        },
-        "name" : "Road Safety Observation - Time of Consultation",
-        "description" : "Time of consultation at facility.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-station-arrival"
-        },
-        "name" : "Road Safety Observation - Time of Emergency Station Arrival",
-        "description" : "Timestamp unit returned to base/became available.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-hospital-arrival"
-        },
-        "name" : "Road Safety Observation - Time of Hospital Arrival",
-        "description" : "Timestamp unit arrived at receiving facility.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-of-injury"
-        },
-        "name" : "Road Safety Observation - Time of Injury",
-        "description" : "Time of injury occurrence.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-on-scene"
-        },
-        "name" : "Road Safety Observation - Time On Scene",
-        "description" : "Timestamp crew arrived at scene.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-time-received"
-        },
-        "name" : "Road Safety Observation - Time Received",
-        "description" : "Time the call/request was received by EMS/dispatch.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-transferred-from-facility"
-        },
-        "name" : "Road Safety Observation - Transferred From Facility",
-        "description" : "Flag indicating patient transferred from another hospital/facility.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-transport-vehicular-accident"
-        },
-        "name" : "Road Safety Observation - Transport/Vehicular Accident",
-        "description" : "Boolean flag indicating transport/vehicular accident.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-traumatic-amputation"
-        },
-        "name" : "Road Safety Observation - Traumatic Amputation",
-        "description" : "Traumatic amputation present; with site and details.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-triage-priority"
-        },
-        "name" : "Road Safety Observation - Triage Priority",
-        "description" : "Triage category assigned at scene (e.g., Red/Yellow/Green/Black).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-observation-vehicle-used"
-        },
-        "name" : "Road Safety Observation - Vehicle Used",
-        "description" : "Vehicle used during response.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-organization"
-        },
-        "name" : "Road Safety Organization",
-        "description" : "Organization profile for EMS providers and receiving facilities involved in road safety encounters.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-patient"
+          "reference" : "StructureDefinition/RS-Patient"
         },
         "name" : "Road Safety Patient",
-        "description" : "Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region.",
+        "description" : "A profile for Road Safety resource specific to Philippine context.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/patient-road-safety-age2"
+        },
+        "name" : "Road Safety Patient Example - Age Only",
+        "description" : "Example of a patient where only age is known.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/patient-road-safety-age4"
+        },
+        "name" : "Road Safety Patient Example - Elderly",
+        "description" : "Example of an elderly patient with approximate age.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/patient-road-safety-age3"
+        },
+        "name" : "Road Safety Patient Example - Infant Age",
+        "description" : "Example of a pediatric patient with age in months.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/patient-road-safety-two-addresses"
+        },
+        "name" : "Road Safety Patient Example - With Two Addresses",
+        "description" : "A patient with both permanent and temporary addresses.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Patient"
       },
       {
         "extension" : [
@@ -2275,10 +1821,10 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-procedure"
+          "reference" : "StructureDefinition/RS-Procedure"
         },
         "name" : "Road Safety Procedure",
-        "description" : "Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions).",
+        "description" : "Procedure profile for road safety and injury surveillance.\n- Captures interventions performed on the patient.\n- Supplies used during the procedure.\n- Coordination with receiving hospital if applicable.",
         "exampleBoolean" : false
       },
       {
@@ -2289,10 +1835,10 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-procedure-transport-coordination"
+          "reference" : "StructureDefinition/RS-Questionnaire"
         },
-        "name" : "Road Safety Procedure - Transport Coordination",
-        "description" : "Procedure record indicating whether transport coordination with the receiving hospital was done.",
+        "name" : "Road Safety Questionnaire",
+        "description" : "A profile on Questionnaire to capture repeating Vital Signs data (Respiratory Rate, Pulse, Blood Pressure, Temperature, LOC).",
         "exampleBoolean" : false
       },
       {
@@ -2303,39 +1849,25 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/rs-location-service"
-        },
-        "name" : "Road Safety Service Location",
-        "description" : "Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-service-request"
-        },
-        "name" : "Road Safety ServiceRequest",
-        "description" : "Requests or records related to refusal to admit and related workflow signals.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/rs-task"
+          "reference" : "StructureDefinition/RS-task"
         },
         "name" : "Road Safety Task",
-        "description" : "Workflow tracking for report receipt, durations of delay, and sources of delays.",
+        "description" : "A profile for tasks related to road safety, tracking report forms and delays.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Task"
+          }
+        ],
+        "reference" : {
+          "reference" : "Task/task-road-safety-ex"
+        },
+        "name" : "Road Safety Task Example",
+        "description" : "Example of a road safety task to track report form receipt and delays.",
+        "exampleCanonical" : "urn://example.com.ph/StructureDefinition/rs-task"
       },
       {
         "extension" : [
@@ -2345,486 +1877,10 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/vs-activity"
+          "reference" : "ValueSet/rs-task-status"
         },
-        "name" : "RS VS - Activity at Time of Incident",
-        "description" : "Activity at time of incident (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-status-alive-detail"
-        },
-        "name" : "RS VS - Alive Detail (Consciousness)",
-        "description" : "If alive on arrival: conscious vs unconscious.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-bites-agent"
-        },
-        "name" : "RS VS - Bites/Stings Agent",
-        "description" : "Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-breath-sounds"
-        },
-        "name" : "RS VS - Breath Sounds",
-        "description" : "Breath sounds options (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-burn-degrees"
-        },
-        "name" : "RS VS - Burn Degrees",
-        "description" : "Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-burns-agent"
-        },
-        "name" : "RS VS - Burns Agent",
-        "description" : "Agent causing burn (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-collision-category"
-        },
-        "name" : "RS VS - Collision Category",
-        "description" : "Collision vs non-collision category.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-cyanosis"
-        },
-        "name" : "RS VS - Cyanosis",
-        "description" : "Cyanosis assessment options (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-disposition-er"
-        },
-        "name" : "RS VS - Disposition (ER/OPD/BHS/RHU)",
-        "description" : "Patient disposition at ER/OPD/BHS/RHU.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-disposition-ip"
-        },
-        "name" : "RS VS - Disposition (In-Patient)",
-        "description" : "Patient disposition for in-patient cases.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-drowning-type"
-        },
-        "name" : "RS VS - Drowning Type/Body of Water",
-        "description" : "Type/body of water for drowning incidents.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-gcs-eyes"
-        },
-        "name" : "RS VS - GCS Eyes",
-        "description" : "Glasgow Coma Scale eye opening responses (LOINC LA codes).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-gcs-motor"
-        },
-        "name" : "RS VS - GCS Motor",
-        "description" : "Glasgow Coma Scale motor responses (LOINC LA codes).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-gcs-verbal"
-        },
-        "name" : "RS VS - GCS Verbal",
-        "description" : "Glasgow Coma Scale verbal responses (LOINC LA codes).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-injury-intent"
-        },
-        "name" : "RS VS - Injury Intent",
-        "description" : "Injury intent options mapped from ONEISS (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-level-of-consciousness"
-        },
-        "name" : "RS VS - Level of Consciousness (AVPU)",
-        "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-mode-of-transport"
-        },
-        "name" : "RS VS - Mode of Transport to Facility",
-        "description" : "Mode of transport to the hospital/facility.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-other-risk-factors"
-        },
-        "name" : "RS VS - Other Risk Factors",
-        "description" : "Other risk factors at time of incident (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-other-vehicle"
-        },
-        "name" : "RS VS - Other Vehicle in Collision",
-        "description" : "Other vehicle/object involved in collision.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-outcome"
-        },
-        "name" : "RS VS - Outcome",
-        "description" : "Outcome: Improved, Unimproved, Died.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-patients-vehicle"
-        },
-        "name" : "RS VS - Patient's Vehicle",
-        "description" : "Vehicle used by patient (prefer SNOMED CT; local additions where specified).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-place-of-occurrence"
-        },
-        "name" : "RS VS - Place of Occurrence",
-        "description" : "Place of occurrence (prefer SNOMED CT; local additions where specified).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-position-of-patient"
-        },
-        "name" : "RS VS - Position of Patient",
-        "description" : "Position/role of patient in transport incidents (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-psgc-barangay"
-        },
-        "name" : "RS VS - PSGC Barangay",
-        "description" : "PSGC Barangay codes (managed externally).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-psgc-city"
-        },
-        "name" : "RS VS - PSGC City/Municipality",
-        "description" : "PSGC City/Municipality codes (managed externally).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-psgc-province"
-        },
-        "name" : "RS VS - PSGC Province",
-        "description" : "PSGC Province codes (managed externally).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-psgc-region"
-        },
-        "name" : "RS VS - PSGC Region",
-        "description" : "PSGC Region codes (managed externally).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-pulse-quality"
-        },
-        "name" : "RS VS - Pulse Quality",
-        "description" : "Pulse quality options (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-pulse-rhythm"
-        },
-        "name" : "RS VS - Pulse Rhythm",
-        "description" : "Pulse rhythm options (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-pupils"
-        },
-        "name" : "RS VS - Pupils",
-        "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-respiratory-rhythm"
-        },
-        "name" : "RS VS - Respiratory Rhythm",
-        "description" : "Respiratory rhythm options (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-safety-devices"
-        },
-        "name" : "RS VS - Safety Devices",
-        "description" : "Safety devices present/used (prefer SNOMED CT).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-status-on-arrival"
-        },
-        "name" : "RS VS - Status on Arrival",
-        "description" : "Status upon reaching facility/hospital.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-transport-accident-mode"
-        },
-        "name" : "RS VS - Transport Accident: Land/Water/Air",
-        "description" : "Exposure context for transport accident: land, water, air (ICD-11).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/vs-type-of-patient"
-        },
-        "name" : "RS VS - Type of Patient",
-        "description" : "Type of patient (ER/OPD/RHU/BHS context).",
+        "name" : "Road Safety Task Status",
+        "description" : "ValueSet for Task.status using custom Road Safety codes.",
         "exampleBoolean" : false
       },
       {
@@ -2835,10 +1891,259 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/cs-silph"
+          "reference" : "CodeSystem/rs-task-status-cs"
         },
-        "name" : "SILPH Local Codes",
+        "name" : "Road Safety Task Status Codes",
+        "description" : "Custom codes for Task.status specific to Road Safety reporting.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/safety-notes-ext"
+        },
+        "name" : "Safety / Other Risk Factors",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/supplies-used"
+        },
+        "name" : "Supplies Used",
+        "description" : "Records any devices or medications used during the procedure.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/traffic-incident-management"
+        },
+        "name" : "Traffic Incident Management",
+        "description" : "Documentation or status of traffic incident management.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/transpo-coordination"
+        },
+        "name" : "Transport Coordination",
+        "description" : "Indicates if transport to receiving hospital was coordinated.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/coordination"
+        },
+        "name" : "Transport Coordination Codes",
+        "description" : "Standard codes for documenting transport coordination.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/transport-details-ext"
+        },
+        "name" : "Transport Details",
+        "description" : "Details about mode of transport, vehicles involved, positions.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/priority-cs"
+        },
+        "name" : "Triage Priority (example)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/priority-vs"
+        },
+        "name" : "Triage Priority ValueSet (example)",
+        "description" : "Example ValueSet capturing triage priorities.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/organization-uppgh"
+        },
+        "name" : "UP Philippine General Hospital (UP-PGH)",
+        "description" : "Hospital referenced in the ServiceRequest example (refused admission).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vs-rs-vehicle-type"
+        },
+        "name" : "ValueSet for Vehicle Used",
+        "description" : "Vehicle types allowed for Road Safety Encounter",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/vehicle-condition"
+        },
+        "name" : "Vehicle Condition",
+        "description" : "Condition of the vehicle involved in the incident.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/vehicle-condition-vs"
+        },
+        "name" : "Vehicle Condition",
+        "description" : "ValueSet indicating the condition of a vehicle.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/vehicle-condition-cs"
+        },
+        "name" : "Vehicle Condition",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/vehicle-list-ext"
+        },
+        "name" : "Vehicle list",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/vehicle-types"
+        },
+        "name" : "Vehicle Types",
+        "description" : "A code system for different types of vehicles used in road safety encounters.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/vehicle-used"
+        },
+        "name" : "Vehicle Used",
+        "description" : "The type of vehicle used by the patient or involved in the encounter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Questionnaire"
+          }
+        ],
+        "reference" : {
+          "reference" : "Questionnaire/VitalSignsQuestionnaire"
+        },
+        "name" : "Vital Signs Questionnaire",
+        "description" : "Example Questionnaire instance to capture repeating sets of Vital Signs.",
+        "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RS-Questionnaire"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "QuestionnaireResponse"
+          }
+        ],
+        "reference" : {
+          "reference" : "QuestionnaireResponse/VitalSignsQuestionnaireResponse"
+        },
+        "name" : "Vital Signs QuestionnaireResponse Example",
+        "description" : "Example response to the Vital Signs Questionnaire with sample measurements.",
+        "exampleBoolean" : true
       }
     ],
     "page" : {
@@ -2894,6 +2199,17 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           ],
           "nameUrl" : "examples.html",
           "title" : "Examples",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "references.html"
+            }
+          ],
+          "nameUrl" : "references.html",
+          "title" : "References",
           "generation" : "markdown"
         },
         {

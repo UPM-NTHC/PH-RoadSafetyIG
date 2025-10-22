@@ -3,15 +3,15 @@
   "id" : "MDSRoadSafety2FHIR",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap MDSRoadSafety2FHIR</b></p><a name=\"MDSRoadSafety2FHIR\"> </a><a name=\"hcMDSRoadSafety2FHIR\"> </a><p>Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety to http://hl7.org/fhir/R4</p><br/><p><b>Group 1 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.runreport.workflow.receivedBy</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.runreport.workflow.crew.teamLeader</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.runreport.workflow.crew.treatmentOfficer</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.runreport.workflow.crew.transportOfficer</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.runreport.workflow.crew.assistant</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.incidentNumber</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.identifier</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.hospitalCaseNo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.identifier</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.typeOfPatient</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.class</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.dateTimeOfConsult</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.period.start</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.serviceProvider</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.serviceProvider</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.originating.organization</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.origin</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.originating.practitioner</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.disposition</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.dischargeDisposition</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.disposition.text</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.dischargeDisposition.text</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.transferDestination</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.destination</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.oneiss.patient.name.family</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name.family</td></tr><tr><td>MDSRoadSafety.oneiss.patient.name.given</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name.given</td></tr><tr><td>MDSRoadSafety.oneiss.patient.birthDate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>MDSRoadSafety.oneiss.patient.gender</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>MDSRoadSafety.oneiss.patient.telecom</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.telecom</td></tr><tr><td>MDSRoadSafety.oneiss.patient.identifier</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>MDSRoadSafety.oneiss.patient.occupation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.extension:occupation</td></tr><tr><td>MDSRoadSafety.oneiss.patient.address.line</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.line</td></tr><tr><td>MDSRoadSafety.oneiss.patient.address.barangay</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:barangay</td></tr><tr><td>MDSRoadSafety.oneiss.patient.address.cityMunicipality</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:cityMunicipality</td></tr><tr><td>MDSRoadSafety.oneiss.patient.address.province</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:province</td></tr><tr><td>MDSRoadSafety.oneiss.patient.address.region</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:region</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.runreport.incident.location.street</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.line</td></tr><tr><td>MDSRoadSafety.runreport.incident.location.barangay</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:barangay</td></tr><tr><td>MDSRoadSafety.runreport.incident.location.city</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:cityMunicipality</td></tr><tr><td>MDSRoadSafety.runreport.incident.location.province</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:province</td></tr><tr><td>MDSRoadSafety.runreport.incident.location.region</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:region</td></tr><tr><td>MDSRoadSafety.runreport.incident.location.position.longitude</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.position.longitude</td></tr><tr><td>MDSRoadSafety.runreport.incident.location.position.latitude</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.position.latitude</td></tr></table><hr/><p><b>Group 4 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.oneiss.encounter.hospitalAvailable</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HealthcareService.active</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.runreport.workflow.refusalToAdmit.flag</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.status</td></tr><tr><td>MDSRoadSafety.runreport.workflow.refusalToAdmit.hospital</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.supportingInfo</td></tr><tr><td>MDSRoadSafety.runreport.workflow.refusalToAdmit.physician</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.supportingInfo</td></tr><tr><td>MDSRoadSafety.runreport.workflow.refusalToAdmit.dateTime</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.occurrenceDateTime</td></tr></table><hr/><p><b>Group 6 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.runreport.clinical.procedures.intervention</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.code</td></tr><tr><td>MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedCode</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.usedCode</td></tr><tr><td>MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedReference</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.usedReference</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.psychosocialSupport</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.code</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.transportCoordination</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.code</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.procedures.firstAid.given</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.note</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.procedures.firstAid.what</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.note</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.procedures.firstAid.byWhom</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.performer</td></tr></table><hr/><p><b>Group 7 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.runreport.workflow</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.workflow.dateReceived</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.runreport.workflow.timeEnroute</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.runreport.workflow.timeOnScene</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.runreport.workflow.timeDepartedScene</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.runreport.workflow.timeHospitalArrival</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.runreport.workflow.timeStationArrival</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.runreport.workflow.crew</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.workflow.medicalFacility</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.workflow.vehicleUsed</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.workflow.refusalToAdmit</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.incident</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.incident.reportedComplaint</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.incident.callSource</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.incident.location</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.incident.location.position</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.clinical</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.clinical.procedures</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.clinical.procedures.suppliesUsed</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.clinical.remarks</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.vitals</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.vitals.time</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.effectiveDateTime</td></tr><tr><td>MDSRoadSafety.runreport.vitals.respiratoryRate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity</td></tr><tr><td>MDSRoadSafety.runreport.vitals.respiratoryRhythm</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.breathSounds</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.pulseRate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity</td></tr><tr><td>MDSRoadSafety.runreport.vitals.pulseRhythm</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.pulseQuality</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.bloodPressure</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.vitals.bloodPressure.systolic</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:bpSystolic.valueQuantity</td></tr><tr><td>MDSRoadSafety.runreport.vitals.bloodPressure.diastolic</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:bpDiastolic.valueQuantity</td></tr><tr><td>MDSRoadSafety.runreport.vitals.temperature</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity</td></tr><tr><td>MDSRoadSafety.runreport.vitals.levelOfConsciousness</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.pupils</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.gcs</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.vitals.gcs.eyes</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:gcsEyes.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.gcs.verbal</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:gcsVerbal.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.gcs.motor</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:gcsMotor.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.runreport.vitals.gcs.total</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueInteger</td></tr><tr><td>MDSRoadSafety.runreport.vitals.cyanosis</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.runreport.notes</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.patient</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.patient.name</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.patient.identifier.system</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.patient.identifier.value</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.patient.identifier.type</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.patient.address</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.patient.address.use</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.encounter</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.originating</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.outcomeAtRelease</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.outcomeAtDischarge</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.clinical</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.conditionOfPatient</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.outcomeAtRelease</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.outcomeAtDischarge</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.statusOnArrival</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.statusOnArrivalAliveDetail</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.procedures</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.procedures.firstAid</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.bloodAlcoholConcentration</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.otherRiskFactors</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.otherRiskFactorsOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.injuryDateTime</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.oneiss.incident.injuryIntent</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.transportOrVehicular</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.incident.transportModeToFacility</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.transportModeOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.triagePriority</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.urgency</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.placeOfOccurrence</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.placeOfOccurrenceWorkplaceName</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.incident.placeOfOccurrenceOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.activityAtTime</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.activityOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.collisionVsNonCollision</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.safetyAccessories</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.safetyAccessoriesOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.patientsVehicle</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.patientsVehicleOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.otherVehicleOrObject</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.otherVehicleOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.positionOfPatient</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.incident.positionOfPatientOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.incident.howManyVehicles</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueInteger</td></tr><tr><td>MDSRoadSafety.oneiss.incident.howManyPatients</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueInteger</td></tr><tr><td>MDSRoadSafety.oneiss.incident.referredByAnotherFacility</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.encounter.transferredFromAnotherFacility</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.multipleInjuries</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.extentOfInjury</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.abrasion</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.abrasion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.abrasion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.abrasion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.avulsion</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.avulsion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.avulsion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.avulsion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.firstDegree</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.firstDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.firstDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.secondDegree</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.secondDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.secondDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.thirdDegree</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.thirdDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.thirdDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.fourthDegree</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.fourthDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.burn.fourthDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.concussion</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.concussion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.concussion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.concussion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.contusion</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.contusion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.contusion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.contusion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture.closed</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture.closed.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture.closed.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture.open</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture.open.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.fracture.open.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.openWound</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.openWound.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.openWound.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.openWound.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.traumaticAmputation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.traumaticAmputation.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.traumaticAmputation.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.traumaticAmputation.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.otherInjury</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.otherInjury.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.otherInjury.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.oneiss.injuries.otherInjury.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.oneiss.finance</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.postcrash.evidence</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.postcrash.incident</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.postcrash.incident.collisionType</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.postcrash.incident.trafficInvestigatorPresent</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr></table><hr/><p><b>Group 8 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.oneiss.clinical.initialImpression</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.icd10NatureOfInjury</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.icd10ExternalCause</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr><tr><td>MDSRoadSafety.oneiss.clinical.finalDiagnosis</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr></table><hr/><p><b>Group 9 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.postcrash.evidence.causeOfCrash</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.postcrash.evidence.partyAtFault</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.postcrash.evidence.trafficIncidentManagement</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.postcrash.evidence.roadNetworkShapeFiles</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.postcrash.evidence.vehicleCondition</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.postcrash.evidence.cctvReconstruction</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.postcrash.evidence.cctvReconstruction.available</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.postcrash.evidence.cctvReconstruction.link</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr></table><hr/><p><b>Group 10 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/claim.html\">Claim</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.oneiss.finance.costOfCare</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Claim.total</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap MDSRoadSafety2FHIR</b></p><a name=\"MDSRoadSafety2FHIR\"> </a><a name=\"hcMDSRoadSafety2FHIR\"> </a><p>Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety to http://hl7.org/fhir/R4</p><br/><p><b>Group 1 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.encounter.incidentNumber</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.identifier</td></tr><tr><td>MDSRoadSafety.encounter.hospitalCaseNo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.identifier</td></tr><tr><td>MDSRoadSafety.encounter.typeOfPatient</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.class</td></tr><tr><td>MDSRoadSafety.encounter.dateTimeOfConsult</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.period.start</td></tr><tr><td>MDSRoadSafety.encounter.serviceProvider</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.serviceProvider</td></tr><tr><td>MDSRoadSafety.workflow.receivedBy</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.workflow.crew.teamLeader</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.workflow.crew.treatmentOfficer</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.workflow.crew.transportOfficer</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.workflow.crew.assistant</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.encounter.originating.organization</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.origin</td></tr><tr><td>MDSRoadSafety.encounter.originating.practitioner</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.participant.individual</td></tr><tr><td>MDSRoadSafety.encounter.disposition</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.dischargeDisposition</td></tr><tr><td>MDSRoadSafety.encounter.disposition.text</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.dischargeDisposition.text</td></tr><tr><td>MDSRoadSafety.encounter.transferDestination</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter.hospitalization.destination</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.patient.name.family</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name.family</td></tr><tr><td>MDSRoadSafety.patient.name.given</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name.given</td></tr><tr><td>MDSRoadSafety.patient.birthDate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>MDSRoadSafety.patient.gender</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>MDSRoadSafety.patient.telecom</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.telecom</td></tr><tr><td>MDSRoadSafety.patient.identifier</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>MDSRoadSafety.patient.occupation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.extension:occupation</td></tr><tr><td>MDSRoadSafety.patient.address.line</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.line</td></tr><tr><td>MDSRoadSafety.patient.address.extension[barangay]</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:barangay</td></tr><tr><td>MDSRoadSafety.patient.address.extension[cityMunicipality]</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:cityMunicipality</td></tr><tr><td>MDSRoadSafety.patient.address.extension[province]</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:province</td></tr><tr><td>MDSRoadSafety.patient.address.extension[region]</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address.extension:region</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.incident.location.street</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.line</td></tr><tr><td>MDSRoadSafety.incident.location.barangay</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:barangay</td></tr><tr><td>MDSRoadSafety.incident.location.city</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:cityMunicipality</td></tr><tr><td>MDSRoadSafety.incident.location.province</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:province</td></tr><tr><td>MDSRoadSafety.incident.location.region</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.address.extension:region</td></tr><tr><td>MDSRoadSafety.incident.location.position.longitude</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.position.longitude</td></tr><tr><td>MDSRoadSafety.incident.location.position.latitude</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Location.position.latitude</td></tr></table><hr/><p><b>Group 4 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.workflow.refusalToAdmit.flag</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.status</td></tr><tr><td>MDSRoadSafety.workflow.refusalToAdmit.hospital</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.supportingInfo</td></tr><tr><td>MDSRoadSafety.workflow.refusalToAdmit.physician</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.supportingInfo</td></tr><tr><td>MDSRoadSafety.workflow.refusalToAdmit.dateTime</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ServiceRequest.occurrenceDateTime</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.workflow.transportCoordinated</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.code</td></tr><tr><td>MDSRoadSafety.clinical.psychosocialSupport</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.code</td></tr><tr><td>MDSRoadSafety.clinical.intervention</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Procedure.code</td></tr></table><hr/><p><b>Group 6 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.workflow.dateReceived</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.workflow.timeEnroute</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.workflow.timeOnScene</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.workflow.timeDepartedScene</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.workflow.timeHospitalArrival</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.workflow.timeStationArrival</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.incident.injuryDateTime</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueDateTime</td></tr><tr><td>MDSRoadSafety.incident.injuryIntent</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.transportOrVehicular</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.transportModeToFacility</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.transportModeOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.triagePriority</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.urgency</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.placeOfOccurrence</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.placeOfOccurrenceOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.activityAtTime</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.activityOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.collisionVsNonCollision</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.patientsVehicle</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.patientsVehicleOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.otherVehicleOrObject</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.otherVehicleOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.positionOfPatient</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.positionOfPatientOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.howManyVehicles</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueInteger</td></tr><tr><td>MDSRoadSafety.incident.howManyPatients</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueInteger</td></tr><tr><td>MDSRoadSafety.incident.collisionType</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.trafficInvestigatorPresent</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.otherRiskFactors</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.otherRiskFactorsOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.safetyAccessories</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.safetyAccessoriesOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.reportedComplaint</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.incident.callSource</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.vitals.time</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.effectiveDateTime</td></tr><tr><td>MDSRoadSafety.vitals.respiratoryRate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity</td></tr><tr><td>MDSRoadSafety.vitals.respiratoryRhythm</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.breathSounds</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.pulseRate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity</td></tr><tr><td>MDSRoadSafety.vitals.pulseRhythm</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.pulseQuality</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.bloodPressure.systolic</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:bpSystolic.valueQuantity</td></tr><tr><td>MDSRoadSafety.vitals.bloodPressure.diastolic</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:bpDiastolic.valueQuantity</td></tr><tr><td>MDSRoadSafety.vitals.temperature</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity</td></tr><tr><td>MDSRoadSafety.vitals.levelOfConsciousness</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.pupils</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.gcs.eyes</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:gcsEyes.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.gcs.verbal</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:gcsVerbal.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.gcs.motor</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.component:gcsMotor.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.vitals.gcs.total</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueInteger</td></tr></table><hr/><p><b>Group 7 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.injuries.multipleInjuries</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.abrasion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.abrasion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.abrasion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.avulsion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.avulsion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.avulsion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.burn.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.burn.firstDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.burn.firstDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.burn.secondDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.burn.secondDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.burn.thirdDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.burn.thirdDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.burn.fourthDegree.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.burn.fourthDegree.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.concussion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.concussion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.concussion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.contusion.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.contusion.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.contusion.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.fracture.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.fracture.closed.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.fracture.closed.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.fracture.open.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.fracture.open.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.openWound.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.openWound.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.openWound.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.traumaticAmputation.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.traumaticAmputation.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.traumaticAmputation.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.injuries.otherInjury.present</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.injuries.otherInjury.site</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.bodySite</td></tr><tr><td>MDSRoadSafety.injuries.otherInjury.details</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.note</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.bitesStings</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.bitesStingsAgent</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.burns</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.burnsAgent</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.burnsOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.chemicalSubstance</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.chemicalAgent</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.sharpObject</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.sharpObjectSpecify</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.drowning</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.drowningType</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueCodeableConcept</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.drowningOther</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.forcesOfNature</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.fall</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.fallSpecifics</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.firecracker</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.firecrackerType</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.gunshot</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.gunshotWeapon</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.hangingStrangulation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.maulingAssault</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.sexualAssault</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.other</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueBoolean</td></tr><tr><td>MDSRoadSafety.incident.externalCauses.otherSpecify</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueString</td></tr></table><hr/><p><b>Group 8 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.clinical.medicalHistory</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr><tr><td>MDSRoadSafety.clinical.initialImpression</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr><tr><td>MDSRoadSafety.clinical.icd10NatureOfInjury</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr><tr><td>MDSRoadSafety.clinical.icd10ExternalCause</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td></tr></table><hr/><p><b>Group 9 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/medicationstatement.html\">MedicationStatement</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.clinical.currentMedication</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationStatement.medicationCodeableConcept</td></tr></table><hr/><p><b>Group 10 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.clinical.knownAllergies</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>AllergyIntolerance.code</td></tr></table><hr/><p><b>Group 11 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.evidence.causeOfCrash</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.evidence.partyAtFault</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.evidence.trafficIncidentManagement</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.evidence.roadNetworkShapeFiles</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr><tr><td>MDSRoadSafety.evidence.cctvReconstruction.link</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content.attachment.url</td></tr></table><hr/><p><b>Group 12 </b>Mapping from <code>https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety</code> to <a href=\"http://hl7.org/fhir/R4/claim.html\">Claim</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MDSRoadSafety.finance.costOfCare</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Claim.total</td></tr></table></div>"
   },
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ConceptMap/MDSRoadSafety2FHIR",
   "version" : "0.1.0",
   "name" : "MDSRoadSafety2FHIR",
-  "title" : "MDSRoadSafety Logical Model to FHIR Mapping",
+  "title" : "MDS Logical Model to FHIR Mapping",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-21T14:32:35+00:00",
+  "date" : "2025-10-22T01:50:39+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -27,7 +27,7 @@
       "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
     }]
   }],
-  "description" : "Maps elements from the logical model to FHIR R4 resources. Generated by scripts/generate-conceptmap.js",
+  "description" : "Maps elements from the MDSRoadSafety logical model to target FHIR R4 resources.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -41,105 +41,105 @@
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/Encounter",
     "element" : [{
-      "code" : "MDSRoadSafety.runreport.workflow.receivedBy",
-      "target" : [{
-        "code" : "Encounter.participant.individual",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.workflow.crew.teamLeader",
-      "target" : [{
-        "code" : "Encounter.participant.individual",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.workflow.crew.treatmentOfficer",
-      "target" : [{
-        "code" : "Encounter.participant.individual",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.workflow.crew.transportOfficer",
-      "target" : [{
-        "code" : "Encounter.participant.individual",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.workflow.crew.assistant",
-      "target" : [{
-        "code" : "Encounter.participant.individual",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.encounter.incidentNumber",
+      "code" : "MDSRoadSafety.encounter.incidentNumber",
       "target" : [{
         "code" : "Encounter.identifier",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.hospitalCaseNo",
+      "code" : "MDSRoadSafety.encounter.hospitalCaseNo",
       "target" : [{
         "code" : "Encounter.identifier",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.typeOfPatient",
+      "code" : "MDSRoadSafety.encounter.typeOfPatient",
       "target" : [{
         "code" : "Encounter.class",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.dateTimeOfConsult",
+      "code" : "MDSRoadSafety.encounter.dateTimeOfConsult",
       "target" : [{
         "code" : "Encounter.period.start",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.serviceProvider",
+      "code" : "MDSRoadSafety.encounter.serviceProvider",
       "target" : [{
         "code" : "Encounter.serviceProvider",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.originating.organization",
-      "target" : [{
-        "code" : "Encounter.hospitalization.origin",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.encounter.originating.practitioner",
+      "code" : "MDSRoadSafety.workflow.receivedBy",
       "target" : [{
         "code" : "Encounter.participant.individual",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.disposition",
+      "code" : "MDSRoadSafety.workflow.crew.teamLeader",
+      "target" : [{
+        "code" : "Encounter.participant.individual",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.workflow.crew.treatmentOfficer",
+      "target" : [{
+        "code" : "Encounter.participant.individual",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.workflow.crew.transportOfficer",
+      "target" : [{
+        "code" : "Encounter.participant.individual",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.workflow.crew.assistant",
+      "target" : [{
+        "code" : "Encounter.participant.individual",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.encounter.originating.organization",
+      "target" : [{
+        "code" : "Encounter.hospitalization.origin",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.encounter.originating.practitioner",
+      "target" : [{
+        "code" : "Encounter.participant.individual",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.encounter.disposition",
       "target" : [{
         "code" : "Encounter.hospitalization.dischargeDisposition",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.disposition.text",
+      "code" : "MDSRoadSafety.encounter.disposition.text",
       "target" : [{
         "code" : "Encounter.hospitalization.dischargeDisposition.text",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.transferDestination",
+      "code" : "MDSRoadSafety.encounter.transferDestination",
       "target" : [{
         "code" : "Encounter.hospitalization.destination",
         "equivalence" : "equivalent"
@@ -150,84 +150,84 @@
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/Patient",
     "element" : [{
-      "code" : "MDSRoadSafety.oneiss.patient.name.family",
+      "code" : "MDSRoadSafety.patient.name.family",
       "target" : [{
         "code" : "Patient.name.family",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.name.given",
+      "code" : "MDSRoadSafety.patient.name.given",
       "target" : [{
         "code" : "Patient.name.given",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.birthDate",
+      "code" : "MDSRoadSafety.patient.birthDate",
       "target" : [{
         "code" : "Patient.birthDate",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.gender",
+      "code" : "MDSRoadSafety.patient.gender",
       "target" : [{
         "code" : "Patient.gender",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.telecom",
+      "code" : "MDSRoadSafety.patient.telecom",
       "target" : [{
         "code" : "Patient.telecom",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.identifier",
+      "code" : "MDSRoadSafety.patient.identifier",
       "target" : [{
         "code" : "Patient.identifier",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.occupation",
+      "code" : "MDSRoadSafety.patient.occupation",
       "target" : [{
         "code" : "Patient.extension:occupation",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.address.line",
+      "code" : "MDSRoadSafety.patient.address.line",
       "target" : [{
         "code" : "Patient.address.line",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.address.barangay",
+      "code" : "MDSRoadSafety.patient.address.extension[barangay]",
       "target" : [{
         "code" : "Patient.address.extension:barangay",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.address.cityMunicipality",
+      "code" : "MDSRoadSafety.patient.address.extension[cityMunicipality]",
       "target" : [{
         "code" : "Patient.address.extension:cityMunicipality",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.address.province",
+      "code" : "MDSRoadSafety.patient.address.extension[province]",
       "target" : [{
         "code" : "Patient.address.extension:province",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.patient.address.region",
+      "code" : "MDSRoadSafety.patient.address.extension[region]",
       "target" : [{
         "code" : "Patient.address.extension:region",
         "equivalence" : "equivalent"
@@ -238,49 +238,49 @@
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/Location",
     "element" : [{
-      "code" : "MDSRoadSafety.runreport.incident.location.street",
+      "code" : "MDSRoadSafety.incident.location.street",
       "target" : [{
         "code" : "Location.address.line",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.incident.location.barangay",
+      "code" : "MDSRoadSafety.incident.location.barangay",
       "target" : [{
         "code" : "Location.address.extension:barangay",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.incident.location.city",
+      "code" : "MDSRoadSafety.incident.location.city",
       "target" : [{
         "code" : "Location.address.extension:cityMunicipality",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.incident.location.province",
+      "code" : "MDSRoadSafety.incident.location.province",
       "target" : [{
         "code" : "Location.address.extension:province",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.incident.location.region",
+      "code" : "MDSRoadSafety.incident.location.region",
       "target" : [{
         "code" : "Location.address.extension:region",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.incident.location.position.longitude",
+      "code" : "MDSRoadSafety.incident.location.position.longitude",
       "target" : [{
         "code" : "Location.position.longitude",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.incident.location.position.latitude",
+      "code" : "MDSRoadSafety.incident.location.position.latitude",
       "target" : [{
         "code" : "Location.position.latitude",
         "equivalence" : "equivalent"
@@ -289,41 +289,30 @@
   },
   {
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
-    "target" : "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-    "element" : [{
-      "code" : "MDSRoadSafety.oneiss.encounter.hospitalAvailable",
-      "target" : [{
-        "code" : "HealthcareService.active",
-        "equivalence" : "equivalent"
-      }]
-    }]
-  },
-  {
-    "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
     "element" : [{
-      "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.flag",
+      "code" : "MDSRoadSafety.workflow.refusalToAdmit.flag",
       "target" : [{
         "code" : "ServiceRequest.status",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.hospital",
+      "code" : "MDSRoadSafety.workflow.refusalToAdmit.hospital",
       "target" : [{
         "code" : "ServiceRequest.supportingInfo",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.physician",
+      "code" : "MDSRoadSafety.workflow.refusalToAdmit.physician",
       "target" : [{
         "code" : "ServiceRequest.supportingInfo",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit.dateTime",
+      "code" : "MDSRoadSafety.workflow.refusalToAdmit.dateTime",
       "target" : [{
         "code" : "ServiceRequest.occurrenceDateTime",
         "equivalence" : "equivalent"
@@ -334,58 +323,23 @@
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/Procedure",
     "element" : [{
-      "code" : "MDSRoadSafety.runreport.clinical.procedures.intervention",
+      "code" : "MDSRoadSafety.workflow.transportCoordinated",
       "target" : [{
         "code" : "Procedure.code",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedCode",
-      "target" : [{
-        "code" : "Procedure.usedCode",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.clinical.procedures.suppliesUsed.usedReference",
-      "target" : [{
-        "code" : "Procedure.usedReference",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.psychosocialSupport",
+      "code" : "MDSRoadSafety.clinical.psychosocialSupport",
       "target" : [{
         "code" : "Procedure.code",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.clinical.transportCoordination",
+      "code" : "MDSRoadSafety.clinical.intervention",
       "target" : [{
         "code" : "Procedure.code",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.procedures.firstAid.given",
-      "target" : [{
-        "code" : "Procedure.note",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.procedures.firstAid.what",
-      "target" : [{
-        "code" : "Procedure.note",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.procedures.firstAid.byWhom",
-      "target" : [{
-        "code" : "Procedure.performer",
         "equivalence" : "equivalent"
       }]
     }]
@@ -394,1031 +348,776 @@
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/Observation",
     "element" : [{
-      "code" : "MDSRoadSafety.runreport.workflow",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.workflow.dateReceived",
+      "code" : "MDSRoadSafety.workflow.dateReceived",
       "target" : [{
         "code" : "Observation.valueDateTime",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.timeEnroute",
+      "code" : "MDSRoadSafety.workflow.timeEnroute",
       "target" : [{
         "code" : "Observation.valueDateTime",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.timeOnScene",
+      "code" : "MDSRoadSafety.workflow.timeOnScene",
       "target" : [{
         "code" : "Observation.valueDateTime",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.timeDepartedScene",
+      "code" : "MDSRoadSafety.workflow.timeDepartedScene",
       "target" : [{
         "code" : "Observation.valueDateTime",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.timeHospitalArrival",
+      "code" : "MDSRoadSafety.workflow.timeHospitalArrival",
       "target" : [{
         "code" : "Observation.valueDateTime",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.timeStationArrival",
+      "code" : "MDSRoadSafety.workflow.timeStationArrival",
       "target" : [{
         "code" : "Observation.valueDateTime",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.crew",
+      "code" : "MDSRoadSafety.incident.injuryDateTime",
+      "target" : [{
+        "code" : "Observation.valueDateTime",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.injuryIntent",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.transportOrVehicular",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.transportModeToFacility",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.transportModeOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.triagePriority",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.urgency",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.placeOfOccurrence",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.placeOfOccurrenceOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.activityAtTime",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.activityOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.collisionVsNonCollision",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.patientsVehicle",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.patientsVehicleOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.otherVehicleOrObject",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.otherVehicleOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.positionOfPatient",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.positionOfPatientOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.howManyVehicles",
+      "target" : [{
+        "code" : "Observation.valueInteger",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.howManyPatients",
+      "target" : [{
+        "code" : "Observation.valueInteger",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.collisionType",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.trafficInvestigatorPresent",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.otherRiskFactors",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.otherRiskFactorsOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.safetyAccessories",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.safetyAccessoriesOther",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.reportedComplaint",
       "target" : [{
         "code" : "Observation.valueString",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.medicalFacility",
+      "code" : "MDSRoadSafety.incident.callSource",
       "target" : [{
         "code" : "Observation.valueString",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.workflow.vehicleUsed",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.workflow.refusalToAdmit",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.incident",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.incident.reportedComplaint",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.incident.callSource",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.incident.location",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.incident.location.position",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.clinical",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.clinical.procedures",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.clinical.procedures.suppliesUsed",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.clinical.remarks",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.vitals",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.vitals.time",
+      "code" : "MDSRoadSafety.vitals.time",
       "target" : [{
         "code" : "Observation.effectiveDateTime",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.respiratoryRate",
+      "code" : "MDSRoadSafety.vitals.respiratoryRate",
       "target" : [{
         "code" : "Observation.valueQuantity",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.respiratoryRhythm",
+      "code" : "MDSRoadSafety.vitals.respiratoryRhythm",
       "target" : [{
         "code" : "Observation.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.breathSounds",
+      "code" : "MDSRoadSafety.vitals.breathSounds",
       "target" : [{
         "code" : "Observation.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.pulseRate",
+      "code" : "MDSRoadSafety.vitals.pulseRate",
       "target" : [{
         "code" : "Observation.valueQuantity",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.pulseRhythm",
+      "code" : "MDSRoadSafety.vitals.pulseRhythm",
       "target" : [{
         "code" : "Observation.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.pulseQuality",
+      "code" : "MDSRoadSafety.vitals.pulseQuality",
       "target" : [{
         "code" : "Observation.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.bloodPressure",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.vitals.bloodPressure.systolic",
+      "code" : "MDSRoadSafety.vitals.bloodPressure.systolic",
       "target" : [{
         "code" : "Observation.component:bpSystolic.valueQuantity",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.bloodPressure.diastolic",
+      "code" : "MDSRoadSafety.vitals.bloodPressure.diastolic",
       "target" : [{
         "code" : "Observation.component:bpDiastolic.valueQuantity",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.temperature",
+      "code" : "MDSRoadSafety.vitals.temperature",
       "target" : [{
         "code" : "Observation.valueQuantity",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.levelOfConsciousness",
+      "code" : "MDSRoadSafety.vitals.levelOfConsciousness",
       "target" : [{
         "code" : "Observation.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.pupils",
+      "code" : "MDSRoadSafety.vitals.pupils",
       "target" : [{
         "code" : "Observation.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.gcs",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.vitals.gcs.eyes",
+      "code" : "MDSRoadSafety.vitals.gcs.eyes",
       "target" : [{
         "code" : "Observation.component:gcsEyes.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.gcs.verbal",
+      "code" : "MDSRoadSafety.vitals.gcs.verbal",
       "target" : [{
         "code" : "Observation.component:gcsVerbal.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.gcs.motor",
+      "code" : "MDSRoadSafety.vitals.gcs.motor",
       "target" : [{
         "code" : "Observation.component:gcsMotor.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.runreport.vitals.gcs.total",
+      "code" : "MDSRoadSafety.vitals.gcs.total",
       "target" : [{
         "code" : "Observation.valueInteger",
         "equivalence" : "equivalent"
       }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.vitals.cyanosis",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.runreport.notes",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.patient",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.patient.name",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.patient.identifier.system",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.patient.identifier.value",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.patient.identifier.type",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.patient.address",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.patient.address.use",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.encounter",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.encounter.originating",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.encounter.outcomeAtRelease",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.encounter.outcomeAtDischarge",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.conditionOfPatient",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.outcomeAtRelease",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.outcomeAtDischarge",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.statusOnArrival",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.statusOnArrivalAliveDetail",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.procedures",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.procedures.firstAid",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.bloodAlcoholConcentration",
-      "target" : [{
-        "code" : "Observation.valueQuantity",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.otherRiskFactors",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.clinical.otherRiskFactorsOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.injuryDateTime",
-      "target" : [{
-        "code" : "Observation.valueDateTime",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.injuryIntent",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.transportOrVehicular",
+    }]
+  },
+  {
+    "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "element" : [{
+      "code" : "MDSRoadSafety.injuries.multipleInjuries",
       "target" : [{
         "code" : "Observation.valueBoolean",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.incident.transportModeToFacility",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.transportModeOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.triagePriority",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.urgency",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.placeOfOccurrence",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.placeOfOccurrenceWorkplaceName",
-      "target" : [{
-        "code" : "Observation.note",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.placeOfOccurrenceOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.activityAtTime",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.activityOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.collisionVsNonCollision",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.safetyAccessories",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.safetyAccessoriesOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.patientsVehicle",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.patientsVehicleOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.otherVehicleOrObject",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.otherVehicleOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.positionOfPatient",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.positionOfPatientOther",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.howManyVehicles",
-      "target" : [{
-        "code" : "Observation.valueInteger",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.howManyPatients",
-      "target" : [{
-        "code" : "Observation.valueInteger",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.incident.referredByAnotherFacility",
+      "code" : "MDSRoadSafety.injuries.abrasion.present",
       "target" : [{
         "code" : "Observation.valueBoolean",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.encounter.transferredFromAnotherFacility",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.multipleInjuries",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.extentOfInjury",
-      "target" : [{
-        "code" : "Observation.valueCodeableConcept",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.abrasion",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.abrasion.present",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.abrasion.site",
+      "code" : "MDSRoadSafety.injuries.abrasion.site",
       "target" : [{
         "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.abrasion.details",
+      "code" : "MDSRoadSafety.injuries.abrasion.details",
       "target" : [{
         "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.avulsion",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.avulsion.present",
+      "code" : "MDSRoadSafety.injuries.avulsion.present",
       "target" : [{
         "code" : "Observation.valueBoolean",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.avulsion.site",
+      "code" : "MDSRoadSafety.injuries.avulsion.site",
       "target" : [{
         "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.avulsion.details",
+      "code" : "MDSRoadSafety.injuries.avulsion.details",
       "target" : [{
         "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.present",
+      "code" : "MDSRoadSafety.injuries.burn.present",
       "target" : [{
         "code" : "Observation.valueBoolean",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.firstDegree",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.firstDegree.site",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.firstDegree.details",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.secondDegree",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.secondDegree.site",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.secondDegree.details",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.thirdDegree",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.thirdDegree.site",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.thirdDegree.details",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.fourthDegree",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.fourthDegree.site",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.burn.fourthDegree.details",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.concussion",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.concussion.present",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.concussion.site",
+      "code" : "MDSRoadSafety.injuries.burn.firstDegree.site",
       "target" : [{
         "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.concussion.details",
+      "code" : "MDSRoadSafety.injuries.burn.firstDegree.details",
       "target" : [{
         "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.contusion",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.contusion.present",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.contusion.site",
+      "code" : "MDSRoadSafety.injuries.burn.secondDegree.site",
       "target" : [{
         "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.contusion.details",
+      "code" : "MDSRoadSafety.injuries.burn.secondDegree.details",
       "target" : [{
         "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture.present",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture.closed",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture.closed.site",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture.closed.details",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture.open",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture.open.site",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.fracture.open.details",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.openWound",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.openWound.present",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.openWound.site",
+      "code" : "MDSRoadSafety.injuries.burn.thirdDegree.site",
       "target" : [{
         "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.openWound.details",
+      "code" : "MDSRoadSafety.injuries.burn.thirdDegree.details",
       "target" : [{
         "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.traumaticAmputation",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.traumaticAmputation.present",
-      "target" : [{
-        "code" : "Observation.valueBoolean",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.traumaticAmputation.site",
+      "code" : "MDSRoadSafety.injuries.burn.fourthDegree.site",
       "target" : [{
         "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.traumaticAmputation.details",
+      "code" : "MDSRoadSafety.injuries.burn.fourthDegree.details",
       "target" : [{
         "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.otherInjury",
-      "target" : [{
-        "code" : "Observation.valueString",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.oneiss.injuries.otherInjury.present",
+      "code" : "MDSRoadSafety.injuries.concussion.present",
       "target" : [{
         "code" : "Observation.valueBoolean",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.otherInjury.site",
+      "code" : "MDSRoadSafety.injuries.concussion.site",
       "target" : [{
         "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.injuries.otherInjury.details",
+      "code" : "MDSRoadSafety.injuries.concussion.details",
       "target" : [{
         "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.finance",
+      "code" : "MDSRoadSafety.injuries.contusion.present",
       "target" : [{
-        "code" : "Observation.valueString",
+        "code" : "Observation.valueBoolean",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.evidence",
+      "code" : "MDSRoadSafety.injuries.contusion.site",
       "target" : [{
-        "code" : "Observation.valueString",
+        "code" : "Observation.bodySite",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.incident",
+      "code" : "MDSRoadSafety.injuries.contusion.details",
       "target" : [{
-        "code" : "Observation.valueString",
+        "code" : "Observation.note",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.incident.collisionType",
+      "code" : "MDSRoadSafety.injuries.fracture.present",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.fracture.closed.site",
+      "target" : [{
+        "code" : "Observation.bodySite",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.fracture.closed.details",
+      "target" : [{
+        "code" : "Observation.note",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.fracture.open.site",
+      "target" : [{
+        "code" : "Observation.bodySite",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.fracture.open.details",
+      "target" : [{
+        "code" : "Observation.note",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.openWound.present",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.openWound.site",
+      "target" : [{
+        "code" : "Observation.bodySite",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.openWound.details",
+      "target" : [{
+        "code" : "Observation.note",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.traumaticAmputation.present",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.traumaticAmputation.site",
+      "target" : [{
+        "code" : "Observation.bodySite",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.traumaticAmputation.details",
+      "target" : [{
+        "code" : "Observation.note",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.otherInjury.present",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.otherInjury.site",
+      "target" : [{
+        "code" : "Observation.bodySite",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.injuries.otherInjury.details",
+      "target" : [{
+        "code" : "Observation.note",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.bitesStings",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.bitesStingsAgent",
       "target" : [{
         "code" : "Observation.valueCodeableConcept",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.incident.trafficInvestigatorPresent",
+      "code" : "MDSRoadSafety.incident.externalCauses.burns",
       "target" : [{
         "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.burnsAgent",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.burnsOther",
+      "target" : [{
+        "code" : "Observation.valueString",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.chemicalSubstance",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.chemicalAgent",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.sharpObject",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.sharpObjectSpecify",
+      "target" : [{
+        "code" : "Observation.valueString",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.drowning",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.drowningType",
+      "target" : [{
+        "code" : "Observation.valueCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.drowningOther",
+      "target" : [{
+        "code" : "Observation.valueString",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.forcesOfNature",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.fall",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.fallSpecifics",
+      "target" : [{
+        "code" : "Observation.valueString",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.firecracker",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.firecrackerType",
+      "target" : [{
+        "code" : "Observation.valueString",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.gunshot",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.gunshotWeapon",
+      "target" : [{
+        "code" : "Observation.valueString",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.hangingStrangulation",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.maulingAssault",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.sexualAssault",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.other",
+      "target" : [{
+        "code" : "Observation.valueBoolean",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDSRoadSafety.incident.externalCauses.otherSpecify",
+      "target" : [{
+        "code" : "Observation.valueString",
         "equivalence" : "equivalent"
       }]
     }]
@@ -1427,28 +1126,28 @@
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/Condition",
     "element" : [{
-      "code" : "MDSRoadSafety.oneiss.clinical.initialImpression",
+      "code" : "MDSRoadSafety.clinical.medicalHistory",
       "target" : [{
         "code" : "Condition.code",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.clinical.icd10NatureOfInjury",
+      "code" : "MDSRoadSafety.clinical.initialImpression",
       "target" : [{
         "code" : "Condition.code",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.clinical.icd10ExternalCause",
+      "code" : "MDSRoadSafety.clinical.icd10NatureOfInjury",
       "target" : [{
         "code" : "Condition.code",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.oneiss.clinical.finalDiagnosis",
+      "code" : "MDSRoadSafety.clinical.icd10ExternalCause",
       "target" : [{
         "code" : "Condition.code",
         "equivalence" : "equivalent"
@@ -1457,58 +1156,59 @@
   },
   {
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
+    "target" : "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+    "element" : [{
+      "code" : "MDSRoadSafety.clinical.currentMedication",
+      "target" : [{
+        "code" : "MedicationStatement.medicationCodeableConcept",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
+    "target" : "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+    "element" : [{
+      "code" : "MDSRoadSafety.clinical.knownAllergies",
+      "target" : [{
+        "code" : "AllergyIntolerance.code",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/DocumentReference",
     "element" : [{
-      "code" : "MDSRoadSafety.postcrash.evidence.causeOfCrash",
+      "code" : "MDSRoadSafety.evidence.causeOfCrash",
       "target" : [{
         "code" : "DocumentReference.content.attachment.url",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.evidence.partyAtFault",
+      "code" : "MDSRoadSafety.evidence.partyAtFault",
       "target" : [{
         "code" : "DocumentReference.content.attachment.url",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.evidence.trafficIncidentManagement",
+      "code" : "MDSRoadSafety.evidence.trafficIncidentManagement",
       "target" : [{
         "code" : "DocumentReference.content.attachment.url",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.evidence.roadNetworkShapeFiles",
+      "code" : "MDSRoadSafety.evidence.roadNetworkShapeFiles",
       "target" : [{
         "code" : "DocumentReference.content.attachment.url",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "MDSRoadSafety.postcrash.evidence.vehicleCondition",
-      "target" : [{
-        "code" : "DocumentReference.content.attachment.url",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.postcrash.evidence.cctvReconstruction",
-      "target" : [{
-        "code" : "DocumentReference.content.attachment.url",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.postcrash.evidence.cctvReconstruction.available",
-      "target" : [{
-        "code" : "DocumentReference.content.attachment.url",
-        "equivalence" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MDSRoadSafety.postcrash.evidence.cctvReconstruction.link",
+      "code" : "MDSRoadSafety.evidence.cctvReconstruction.link",
       "target" : [{
         "code" : "DocumentReference.content.attachment.url",
         "equivalence" : "equivalent"
@@ -1519,7 +1219,7 @@
     "source" : "https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety",
     "target" : "http://hl7.org/fhir/StructureDefinition/Claim",
     "element" : [{
-      "code" : "MDSRoadSafety.oneiss.finance.costOfCare",
+      "code" : "MDSRoadSafety.finance.costOfCare",
       "target" : [{
         "code" : "Claim.total",
         "equivalence" : "equivalent"

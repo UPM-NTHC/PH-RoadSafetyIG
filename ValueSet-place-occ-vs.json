@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "place-occ-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet place-occ-vs</b></p><a name=\"place-occ-vs\"> </a><a name=\"hcplace-occ-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-place-occ-cs.html\"><code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/place-occ-vs",
+  "version" : "0.1.0",
+  "name" : "PlaceOccVS",
+  "title" : "Place of Occurrence ValueSet (example)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-22T01:50:39+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "Example ValueSet capturing places of occurrence.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/place-occ-cs"
+    }]
+  }
+}

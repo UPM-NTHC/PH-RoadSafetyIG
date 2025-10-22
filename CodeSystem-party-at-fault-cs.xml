@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="party-at-fault-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem party-at-fault-cs</b></p><a name="party-at-fault-cs"> </a><a name="hcparty-at-fault-cs"> </a><p>This case-sensitive code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">driverA<a name="party-at-fault-cs-driverA"> </a></td><td>Driver of Vehicle A</td></tr><tr><td style="white-space:nowrap">driverB<a name="party-at-fault-cs-driverB"> </a></td><td>Driver of Vehicle B</td></tr><tr><td style="white-space:nowrap">roadAuthority<a name="party-at-fault-cs-roadAuthority"> </a></td><td>Road authority / Infrastructure issue</td></tr><tr><td style="white-space:nowrap">pedestrian<a name="party-at-fault-cs-pedestrian"> </a></td><td>Pedestrian</td></tr><tr><td style="white-space:nowrap">cyclist<a name="party-at-fault-cs-cyclist"> </a></td><td>Cyclist</td></tr><tr><td style="white-space:nowrap">other<a name="party-at-fault-cs-other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/party-at-fault-cs"/>
+  <version value="0.1.0"/>
+  <name value="PartyAtFaultCS"/>
+  <title value="Party at Fault"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-22T01:50:39+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="driverA"/>
+    <display value="Driver of Vehicle A"/>
+  </concept>
+  <concept>
+    <code value="driverB"/>
+    <display value="Driver of Vehicle B"/>
+  </concept>
+  <concept>
+    <code value="roadAuthority"/>
+    <display value="Road authority / Infrastructure issue"/>
+  </concept>
+  <concept>
+    <code value="pedestrian"/>
+    <display value="Pedestrian"/>
+  </concept>
+  <concept>
+    <code value="cyclist"/>
+    <display value="Cyclist"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

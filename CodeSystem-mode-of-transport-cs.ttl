@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mode-of-transport-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mode-of-transport-cs</b></p><a name=\"mode-of-transport-cs\"> </a><a name=\"hcmode-of-transport-cs\"> </a><p>This  code system <code>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ambulance<a name=\"mode-of-transport-cs-ambulance\"> </a></td><td>Ambulance</td></tr><tr><td style=\"white-space:nowrap\">private-vehicle<a name=\"mode-of-transport-cs-private-vehicle\"> </a></td><td>Private vehicle</td></tr><tr><td style=\"white-space:nowrap\">police<a name=\"mode-of-transport-cs-police\"> </a></td><td>Police vehicle</td></tr><tr><td style=\"white-space:nowrap\">walk-in<a name=\"mode-of-transport-cs-walk-in\"> </a></td><td>Walk-in</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"mode-of-transport-cs-other\"> </a></td><td>Other</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/mode-of-transport-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ModeOfTransportCS"] ; # 
+  fhir:title [ fhir:v "Mode of Transport (example)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-22T01:50:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ambulance" ] ;
+     fhir:display [ fhir:v "Ambulance" ]
+  ] [
+     fhir:code [ fhir:v "private-vehicle" ] ;
+     fhir:display [ fhir:v "Private vehicle" ]
+  ] [
+     fhir:code [ fhir:v "police" ] ;
+     fhir:display [ fhir:v "Police vehicle" ]
+  ] [
+     fhir:code [ fhir:v "walk-in" ] ;
+     fhir:display [ fhir:v "Walk-in" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
