@@ -699,7 +699,7 @@ Mapping from https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/Structure
   "title" : "MDSRoadSafety Logical Model to FHIR Mapping",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-22T02:11:18+00:00",
+  "date" : "2025-10-22T06:37:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

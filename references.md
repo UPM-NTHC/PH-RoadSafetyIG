@@ -12,7 +12,7 @@
 
 ## MMDA Run Report Form
 
-* [Download Run Report.pdf]("downloads/Run Report.pdf")
+* [Download Run Report.pdf](downloads/Run Report.pdf)
 * Inline preview:
 
 ## CSV previews and downloads
