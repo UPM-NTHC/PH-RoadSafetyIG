@@ -19,4 +19,16 @@ Planned items and roadmap for the PH Road Safety IG.
 	- Goal: Incorporate feedback and learnings from the Connectathon into
 		the public 1.0.0 release.
 
+## [Milestones](https://github.com/UPM-NTHC/PH-RoadSafetyIG/milestones)
+
+| Version  | Goal | Progress |
+|---|---|---|
+| 0.1.0 | Baseline Profiles established (initial authoring). | [✅ Released (v0.1.0)](https://github.com/UPM-NTHC/PH-RoadSafetyIG/releases/tag/v0.1.0) |
+| 0.1.9 | Refined profiles + integrated Questionnaire & Bundle resources. Minimum successful build to guide participants. |  ⌛Ongoing |
+| 0.2.0 | Integrate CodeSystem and ValueSet (.json) files from Terminology Analysts; ensure a successful build. | Planned |
+| 0.3.0 | Implement SME advice and guidance (post-review updates). | Planned |
+| 0.4.0 | Make IG artifacts consumable for Connectathon activities. | Planned |
+| 1.0.0 | Incorporate Connectathon feedback and publish public 1.0.0 release. | Planned |
+
+Track issues and [roadmap items](https://github.com/UPM-NTHC/PH-RoadSafetyIG/milestones) in the repository [Issues](https://github.com/UPM-NTHC/PH-RoadSafetyIG/issues).
 <!-- Contributors: UP-Manila SILab and workshop participants. Track issues and roadmap items in the repository Issues. -->
