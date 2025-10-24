@@ -1095,7 +1095,9 @@ Profile: RSObsRunReportComments
 Parent: RSObservation
 Id: rs-observation-runreport-comments
 Title: "Road Safety Observation - Run Report Comments"
-Description: "General comments from run report."
+Description: "Enter other comment (s) regarding the case"
+// Note: Remember to referenceEncounter resource in the whole observation bundle
+* encounter 0..1 Reference(RSEncounter)
 * valueString 1..1 MS
 * code.coding 0..1
 * code.coding.system = $LNC (exactly)
