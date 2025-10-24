@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burns-agent | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSBurnsAgent |
+| Draft as of 2025-10-24 | *Computable Name*:VSBurnsAgent |
 
  
 Agent causing burn (prefer SNOMED CT). 
 
  **References** 
 
-* [Road Safety Observation - External Cause: Burns](StructureDefinition-rs-observation-ec-burns.md)
+* [RS Observation - External Cause: Burns](StructureDefinition-rs-observation-ec-burns.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 6 concepts
   "name" : "VSBurnsAgent",
   "title" : "RS VS - Burns Agent",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-gcs-verbal | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSGCSVerbal |
+| Draft as of 2025-10-24 | *Computable Name*:VSGCSVerbal |
 
  
 Glasgow Coma Scale verbal responses (LOINC LA codes). 
@@ -54,7 +54,7 @@ This value set contains 5 concepts
   "name" : "VSGCSVerbal",
   "title" : "RS VS - GCS Verbal",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

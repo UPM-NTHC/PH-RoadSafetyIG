@@ -1,23 +1,23 @@
-# Road Safety Observation - Collision vs Non-Collision - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Collision vs Non-Collision - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Collision vs Non-Collision**
+* **RS Observation - Collision vs Non-Collision**
 
-## Resource Profile: Road Safety Observation - Collision vs Non-Collision 
+## Resource Profile: RS Observation - Collision vs Non-Collision 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsCollisionVsNonCollision |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsCollisionVsNonCollision |
 
  
 Indicates whether the incident was collision or non-collision. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-collision-vs-noncollision)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision",
   "version" : "0.1.0",
   "name" : "RSObsCollisionVsNonCollision",
-  "title" : "Road Safety Observation - Collision vs Non-Collision",
+  "title" : "RS Observation - Collision vs Non-Collision",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

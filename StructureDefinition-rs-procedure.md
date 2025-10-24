@@ -1,24 +1,24 @@
-# Road Safety Procedure - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Procedure - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Procedure**
+* **RS Procedure**
 
-## Resource Profile: Road Safety Procedure 
+## Resource Profile: RS Procedure 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSProcedure |
+| Draft as of 2025-10-24 | *Computable Name*:RSProcedure |
 
  
 Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions). 
 
 **Usages:**
 
-* Derived from this Profile: [Road Safety Procedure - Transport Coordination](StructureDefinition-rs-procedure-transport-coordination.md)
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Derived from this Profile: [RS Procedure - Transport Coordination](StructureDefinition-rs-procedure-transport-coordination.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-procedure)
 
@@ -41,9 +41,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure.csv), [
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure",
   "version" : "0.1.0",
   "name" : "RSProcedure",
-  "title" : "Road Safety Procedure",
+  "title" : "RS Procedure",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

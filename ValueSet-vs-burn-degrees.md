@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burn-degrees | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSBurnDegrees |
+| Draft as of 2025-10-24 | *Computable Name*:VSBurnDegrees |
 
  
 Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT). 
 
  **References** 
 
-* [Road Safety Observation - External Cause: Burns](StructureDefinition-rs-observation-nature-burns.md)
+* [RS Observation - External Cause: Burns](StructureDefinition-rs-observation-nature-burns.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "VSBurnDegrees",
   "title" : "RS VS - Burn Degrees",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

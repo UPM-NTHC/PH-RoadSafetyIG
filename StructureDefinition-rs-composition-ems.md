@@ -1,22 +1,22 @@
-# Road Safety Composition — EMS Submission - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Composition — EMS Submission - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Composition — EMS Submission**
+* **RS Composition — EMS Submission**
 
-## Resource Profile: Road Safety Composition — EMS Submission 
+## Resource Profile: RS Composition — EMS Submission 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSCompositionEMS |
+| Draft as of 2025-10-24 | *Computable Name*:RSCompositionEMS |
 
  
 Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-composition-ems)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-composition-ems.c
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems",
   "version" : "0.1.0",
   "name" : "RSCompositionEMS",
-  "title" : "Road Safety Composition — EMS Submission",
+  "title" : "RS Composition — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-city | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSPSGCCityMunicipality |
+| Draft as of 2025-10-24 | *Computable Name*:VSPSGCCityMunicipality |
 
  
 PSGC City/Municipality codes (managed externally). 
@@ -54,7 +54,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "VSPSGCCityMunicipality",
   "title" : "RS VS - PSGC City/Municipality",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

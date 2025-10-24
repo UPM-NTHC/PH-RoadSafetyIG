@@ -1,23 +1,23 @@
-# Road Safety Observation - Cyanosis - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Cyanosis - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Cyanosis**
+* **RS Observation - Cyanosis**
 
-## Resource Profile: Road Safety Observation - Cyanosis 
+## Resource Profile: RS Observation - Cyanosis 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsCyanosis |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsCyanosis |
 
  
 Cyanosis assessment. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-cyanosis)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-cyano
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis",
   "version" : "0.1.0",
   "name" : "RSObsCyanosis",
-  "title" : "Road Safety Observation - Cyanosis",
+  "title" : "RS Observation - Cyanosis",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

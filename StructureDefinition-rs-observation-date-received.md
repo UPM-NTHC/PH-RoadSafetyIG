@@ -1,23 +1,23 @@
-# Road Safety Observation - Date/Time Received by EMS - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Date/Time Received by EMS - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Date/Time Received by EMS**
+* **RS Observation - Date/Time Received by EMS**
 
-## Resource Profile: Road Safety Observation - Date/Time Received by EMS 
+## Resource Profile: RS Observation - Date/Time Received by EMS 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsDateReceived |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsDateReceived |
 
  
 Calendar/timestamp the EMS/dispatch received the request. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-date-received)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-date-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received",
   "version" : "0.1.0",
   "name" : "RSObsDateReceived",
-  "title" : "Road Safety Observation - Date/Time Received by EMS",
+  "title" : "RS Observation - Date/Time Received by EMS",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

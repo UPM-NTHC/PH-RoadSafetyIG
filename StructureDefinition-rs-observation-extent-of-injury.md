@@ -1,23 +1,23 @@
-# Road Safety Observation - Extent of Injury - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Extent of Injury - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Extent of Injury**
+* **RS Observation - Extent of Injury**
 
-## Resource Profile: Road Safety Observation - Extent of Injury 
+## Resource Profile: RS Observation - Extent of Injury 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsExtentOfInjury |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsExtentOfInjury |
 
  
 Extent / severity estimate or category of injury (e.g., minor, moderate, severe). 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-extent-of-injury)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-exten
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury",
   "version" : "0.1.0",
   "name" : "RSObsExtentOfInjury",
-  "title" : "Road Safety Observation - Extent of Injury",
+  "title" : "RS Observation - Extent of Injury",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

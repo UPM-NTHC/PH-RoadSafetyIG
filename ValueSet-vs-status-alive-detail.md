@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-status-alive-detail | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSStatusAliveDetail |
+| Draft as of 2025-10-24 | *Computable Name*:VSStatusAliveDetail |
 
  
 If alive on arrival: conscious vs unconscious. 
 
  **References** 
 
-* [Road Safety Observation - If Alive: Conscious/Unconscious](StructureDefinition-rs-observation-status-on-arrival-alive.md)
+* [RS Observation - If Alive: Conscious/Unconscious](StructureDefinition-rs-observation-status-on-arrival-alive.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "VSStatusAliveDetail",
   "title" : "RS VS - Alive Detail (Consciousness)",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

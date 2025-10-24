@@ -1,23 +1,23 @@
-# Road Safety Observation - Pulse Quality - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Pulse Quality - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Pulse Quality**
+* **RS Observation - Pulse Quality**
 
-## Resource Profile: Road Safety Observation - Pulse Quality 
+## Resource Profile: RS Observation - Pulse Quality 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsPulseQuality |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsPulseQuality |
 
  
 Pulse quality. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-pulse-quality)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality",
   "version" : "0.1.0",
   "name" : "RSObsPulseQuality",
-  "title" : "Road Safety Observation - Pulse Quality",
+  "title" : "RS Observation - Pulse Quality",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

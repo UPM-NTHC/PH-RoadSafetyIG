@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-er | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSDispositionER |
+| Draft as of 2025-10-24 | *Computable Name*:VSDispositionER |
 
  
 Patient disposition at ER/OPD/BHS/RHU. 
@@ -54,7 +54,7 @@ This value set contains 7 concepts
   "name" : "VSDispositionER",
   "title" : "RS VS - Disposition (ER/OPD/BHS/RHU)",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

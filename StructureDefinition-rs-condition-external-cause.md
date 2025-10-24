@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSConditionExternalCause |
+| Draft as of 2025-10-24 | *Computable Name*:RSConditionExternalCause |
 
  
 Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-externa
   "name" : "RSConditionExternalCause",
   "title" : "Road Safety Condition — External Cause (category)",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

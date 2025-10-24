@@ -1,15 +1,15 @@
-# Road Safety Bundle — Post‑Crash Investigation - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Bundle — Post‑Crash Investigation - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Bundle — Post‑Crash Investigation**
+* **RS Bundle — Post‑Crash Investigation**
 
-## Resource Profile: Road Safety Bundle — Post‑Crash Investigation 
+## Resource Profile: RS Bundle — Post‑Crash Investigation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-postcrash | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSBundlePostCrash |
+| Draft as of 2025-10-24 | *Computable Name*:RSBundlePostCrash |
 
  
 Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-postcrash.
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-postcrash",
   "version" : "0.1.0",
   "name" : "RSBundlePostCrash",
-  "title" : "Road Safety Bundle — Post‑Crash Investigation",
+  "title" : "RS Bundle — Post‑Crash Investigation",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

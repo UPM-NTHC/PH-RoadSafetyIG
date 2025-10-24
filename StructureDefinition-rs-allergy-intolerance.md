@@ -1,15 +1,15 @@
-# Road Safety AllergyIntolerance - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS AllergyIntolerance - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety AllergyIntolerance**
+* **RS AllergyIntolerance**
 
-## Resource Profile: Road Safety AllergyIntolerance 
+## Resource Profile: RS AllergyIntolerance 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSAllergyIntolerance |
+| Draft as of 2025-10-24 | *Computable Name*:RSAllergyIntolerance |
 
  
 Known allergies, substances and reactions. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance",
   "version" : "0.1.0",
   "name" : "RSAllergyIntolerance",
-  "title" : "Road Safety AllergyIntolerance",
+  "title" : "RS AllergyIntolerance",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -121,7 +121,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
         "path" : "AllergyIntolerance.patient",
         "short" : "Subject (patient)",
         "definition" : "Reference to the patient who is the subject of this allergy/intolerance record.",
-        "comment" : "Reference constrained to the Road Safety Patient profile (`RSPatient`).",
+        "comment" : "Reference constrained to the RS Patient profile (`RSPatient`).",
         "type" : [
           {
             "code" : "Reference",

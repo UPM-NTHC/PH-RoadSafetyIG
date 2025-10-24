@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-type-of-patient | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSTypeOfPatient |
+| Draft as of 2025-10-24 | *Computable Name*:VSTypeOfPatient |
 
  
 Type of patient (ER/OPD/RHU/BHS context). 
 
  **References** 
 
-* [Road Safety Encounter](StructureDefinition-rs-encounter.md)
+* [RS Encounter](StructureDefinition-rs-encounter.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 4 concepts
   "name" : "VSTypeOfPatient",
   "title" : "RS VS - Type of Patient",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

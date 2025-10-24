@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-pulse-quality | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSPulseQuality |
+| Draft as of 2025-10-24 | *Computable Name*:VSPulseQuality |
 
  
 Pulse quality options (prefer SNOMED CT). 
 
  **References** 
 
-* [Road Safety Observation - Pulse Quality](StructureDefinition-rs-observation-pulse-quality.md)
+* [RS Observation - Pulse Quality](StructureDefinition-rs-observation-pulse-quality.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "VSPulseQuality",
   "title" : "RS VS - Pulse Quality",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

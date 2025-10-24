@@ -1,15 +1,15 @@
-# Road Safety Observation - Level of Consciousness (AVPU) - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Level of Consciousness (AVPU) - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Level of Consciousness (AVPU)**
+* **RS Observation - Level of Consciousness (AVPU)**
 
-## Resource Profile: Road Safety Observation - Level of Consciousness (AVPU) 
+## Resource Profile: RS Observation - Level of Consciousness (AVPU) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsLevelOfConsciousness |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsLevelOfConsciousness |
 
  
 Level of consciousness (e.g., AVPU). 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness",
   "version" : "0.1.0",
   "name" : "RSObsLevelOfConsciousness",
-  "title" : "Road Safety Observation - Level of Consciousness (AVPU)",
+  "title" : "RS Observation - Level of Consciousness (AVPU)",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

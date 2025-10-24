@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-level-of-consciousness | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSLevelOfConsciousness |
+| Draft as of 2025-10-24 | *Computable Name*:VSLevelOfConsciousness |
 
  
 AVPU options for level of consciousness (prefer SNOMED CT). 
 
  **References** 
 
-* [Road Safety Observation - Level of Consciousness (AVPU)](StructureDefinition-rs-observation-level-of-consciousness.md)
+* [RS Observation - Level of Consciousness (AVPU)](StructureDefinition-rs-observation-level-of-consciousness.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "VSLevelOfConsciousness",
   "title" : "RS VS - Level of Consciousness (AVPU)",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

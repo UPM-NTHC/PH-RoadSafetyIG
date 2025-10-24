@@ -1,23 +1,23 @@
-# Road Safety Observation - Collision Type - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Collision Type - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Collision Type**
+* **RS Observation - Collision Type**
 
-## Resource Profile: Road Safety Observation - Collision Type 
+## Resource Profile: RS Observation - Collision Type 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsCollisionType |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsCollisionType |
 
  
 Collision type (Angle, Head-on, Rear end, Side swipe, etc.). 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [Road Safety Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
+* Use this Profile: [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
+* Refer to this Profile: [RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-collision-type)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type",
   "version" : "0.1.0",
   "name" : "RSObsCollisionType",
-  "title" : "Road Safety Observation - Collision Type",
+  "title" : "RS Observation - Collision Type",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

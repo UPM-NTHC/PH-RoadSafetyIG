@@ -1,23 +1,23 @@
-# Road Safety Observation - Outcome at Release - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Outcome at Release - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Outcome at Release**
+* **RS Observation - Outcome at Release**
 
-## Resource Profile: Road Safety Observation - Outcome at Release 
+## Resource Profile: RS Observation - Outcome at Release 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:RSObsOutcomeAtRelease |
+| Draft as of 2025-10-24 | *Computable Name*:RSObsOutcomeAtRelease |
 
  
 Outcome at release from ER/OPD/RHU. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-outcome-release)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-outco
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release",
   "version" : "0.1.0",
   "name" : "RSObsOutcomeAtRelease",
-  "title" : "Road Safety Observation - Outcome at Release",
+  "title" : "RS Observation - Outcome at Release",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

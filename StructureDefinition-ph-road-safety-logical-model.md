@@ -1,18 +1,18 @@
-# Road Safety Minimum Dataset (MDS) Logical Model - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Minimum Dataset (MDS) Logical Model - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Minimum Dataset (MDS) Logical Model**
+* **RS Minimum Dataset (MDS) Logical Model**
 
-## Logical Model: Road Safety Minimum Dataset (MDS) Logical Model 
+## Logical Model: RS Minimum Dataset (MDS) Logical Model 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:MDSRoadSafety |
+| Draft as of 2025-10-24 | *Computable Name*:MDSRoadSafety |
 
  
-Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling. 
+Abstract, sectioned logical model for the PH RS MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling. 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model",
   "version" : "0.1.0",
   "name" : "MDSRoadSafety",
-  "title" : "Road Safety Minimum Dataset (MDS) Logical Model",
+  "title" : "RS Minimum Dataset (MDS) Logical Model",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
       ]
     }
   ],
-  "description" : "Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling.",
+  "description" : "Abstract, sectioned logical model for the PH RS MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -86,8 +86,8 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
       {
         "id" : "ph-road-safety-logical-model",
         "path" : "ph-road-safety-logical-model",
-        "short" : "Road Safety Minimum Dataset (MDS) Logical Model",
-        "definition" : "Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."
+        "short" : "RS Minimum Dataset (MDS) Logical Model",
+        "definition" : "Abstract, sectioned logical model for the PH RS MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."
       },
       {
         "id" : "ph-road-safety-logical-model.runreport",

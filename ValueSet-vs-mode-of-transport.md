@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-mode-of-transport | *Version*:0.1.0 |
-| Draft as of 2025-10-22 | *Computable Name*:VSModeOfTransport |
+| Draft as of 2025-10-24 | *Computable Name*:VSModeOfTransport |
 
  
 Mode of transport to the hospital/facility. 
 
  **References** 
 
-* [Road Safety Observation - Mode of Transport to Facility](StructureDefinition-rs-observation-mode-of-transport.md)
+* [RS Observation - Mode of Transport to Facility](StructureDefinition-rs-observation-mode-of-transport.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 4 concepts
   "name" : "VSModeOfTransport",
   "title" : "RS VS - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-10-22T07:39:41+00:00",
+  "date" : "2025-10-24T06:46:00+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
