@@ -826,24 +826,26 @@ Description: "Extent / severity estimate or category of injury (e.g., minor, mod
 * code.coding.code = #1255875007
 * code.coding.display = "Injury Severity Score (observable entity)"
 
-// MDS45 - Transferred from another hospital/facility (flag)
+// MDS45 - Transferred from another hospital/facility
 Profile: RSObsTransferredFromFacility
 Parent: RSObservation
 Id: rs-observation-transferred-from-facility
 Title: "Road Safety Observation - Transferred From Facility"
 Description: "Flag indicating patient transferred from another hospital/facility."
+// Transferred from another hospital/facility - flag []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $LNC (exactly)
 * code.coding.code = #74199-1
 * code.coding.display = "Transferred from another acute care facility [NTDS]"
 
-// MDS46 - Referred by another hospital/facility (flag)
+// MDS46 - Referred by another hospital/facility
 Profile: RSObsReferredByFacility
 Parent: RSObservation
 Id: rs-observation-referred-by-facility
 Title: "Road Safety Observation - Referred By Facility"
 Description: "Flag indicating patient was referred by another hospital/facility."
+// // Referred by another hospital/facility - Flag []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -1011,8 +1013,8 @@ Description: "Overall condition of patient at assessment."
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
-// MDS53 - Outcome at Release
-Profile: RSObsOutcomeAtRelease
+// MDS53 - Outcome
+Profile: RSObsOutcome
 Parent: RSObservation
 Id: rs-observation-outcome-release
 Title: "Road Safety Observation - Outcome at Release"
@@ -1025,17 +1027,17 @@ Description: "Outcome at release from ER/OPD/RHU."
 * code.coding.display = "Patient condition finding (finding)"
 
 // MDS58 - Outcome at Discharge
-Profile: RSObsOutcomeAtDischarge
-Parent: RSObservation
-Id: rs-observation-outcome-discharge
-Title: "Road Safety Observation - Outcome at Discharge"
-Description: "Outcome at discharge."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSOutcome (preferred)
-* code.coding 0..1
-* code.coding.system = $SCT (exactly)
-* code.coding.code = #418138009
-* code.coding.display = "Patient condition finding (finding)"
+// Profile: RSObsOutcomeAtDischarge
+// Parent: RSObservation
+// Id: rs-observation-outcome-discharge
+// Title: "Road Safety Observation - Outcome at Discharge"
+// Description: "Outcome at discharge."
+// * valueCodeableConcept 1..1 MS
+// * valueCodeableConcept from VSOutcome (preferred)
+// * code.coding 0..1
+// * code.coding.system = $SCT (exactly)
+// * code.coding.code = #418138009
+// * code.coding.display = "Patient condition finding (finding)"
 
 // MDS116 - Status upon reaching Facility/Hospital
 Profile: RSObsStatusOnArrival

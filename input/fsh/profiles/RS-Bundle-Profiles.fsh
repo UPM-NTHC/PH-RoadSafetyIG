@@ -153,8 +153,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or RSObsBloodAlcoholConcentration 
     or RSObsOtherRiskFactors 
     or RSObsConditionOfPatient 
-    or RSObsOutcomeAtRelease
-    or RSObsOutcomeAtDischarge
+    or RSObsOutcome
     or RSObsStatusOnArrival
     or RSObsStatusOnArrivalAliveDetail
     or RSObsTransferredFromFacility
@@ -225,8 +224,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * entry[conditionInitial].resource only RSConditionInitialImpression
 * entry[conditionFinal].resource only RSConditionFinalDiagnosis
 * entry[observationClinical].resource only RSObsOtherRiskFactors 
-    or RSObsConditionOfPatient or RSObsOutcomeAtRelease 
-    or RSObsOutcomeAtDischarge or RSObsStatusOnArrival 
+    or RSObsConditionOfPatient or RSObsOutcome or RSObsStatusOnArrival 
     or RSObsStatusOnArrivalAliveDetail or RSObsBloodAlcoholConcentration
 * entry[observationIncident].resource only RSObsInjuryDateTime 
     or RSObsInjuryIntent or RSObsTransportVehicularAccident 
