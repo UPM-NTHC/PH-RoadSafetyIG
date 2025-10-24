@@ -307,6 +307,9 @@ Title: "Road Safety Observation - Injury Intent"
 Description: "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."
 * code from VSInjuryIntent (preferred)
 * code.coding 0..1
+* code.coding.system = $LNC (exactly)
+* code.coding.code = #11375-3
+* code.coding.display = "Injury intent"
 
 // MDS41 - Transport/Vehicular Accident (flag)
 Profile: RSObsTransportVehicularAccident
@@ -314,11 +317,12 @@ Parent: RSObservation
 Id: rs-observation-transport-vehicular-accident
 Title: "Road Safety Observation - Transport/Vehicular Accident"
 Description: "Boolean flag indicating transport/vehicular accident."
+// External Cause/s of Injury/ies: Transport /Vehicular Accident - Flag []
+* valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #274215009
 * code.coding.display = "Transport accident (event)"
-* valueBoolean 0..1
 
 // MDS118 (Mode of transport to facility) and MDS119 for 'Others' text if used
 Profile: RSObsModeOfTransport
@@ -593,14 +597,17 @@ Parent: RSObservation
 Id: rs-observation-ec-burns
 Title: "Road Safety Observation - External Cause: Burns"
 Description: "Flag indicating burns as external cause."
-* valueBoolean 0..1
+// Burns - flag []
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #242490006
 * code.coding.display = "Burning due to contact with hot substance (event)"
+* valueBoolean 0..1
+// Burns - specify:
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept from VSBurnsAgent (preferred)
 * valueCodeableConcept ^short = "Specify burns agent"
+// Burns - other, specify:
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text = "Burns other (specify)"
 
@@ -629,11 +636,13 @@ Parent: RSObservation
 Id: rs-observation-ec-chemical
 Title: "Road Safety Observation - External Cause: Chemical/Substance"
 Description: "Observation for chemical/substance exposure."
+// External Cause/s of Injury/ies: Chemical/substance - flag []
 * code.coding 0..1
 * code.coding.system = $SCT
 * code.coding.code = #133261000119105
 * code.coding.display = "Exposure to potentially hazardous substance (event)"
 * valueBoolean 0..1
+// External Cause/s of Injury/ies: Chemical/substance, specify
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept ^short = "Specify chemical/substance agent"
 * valueCodeableConcept.text 0..1 MS
@@ -646,10 +655,12 @@ Parent: RSObservation
 Id: rs-observation-ec-sharp-object
 Title: "Road Safety Observation - External Cause: Contact with Sharp Object"
 Description: "Flag indicating sharp object cause."
+// External Cause/s of Injury/ies: Contact with sharp objects - flag []
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #69129000
 * code.coding.display = "Contact with sharp object (event)"
+// External Cause/s of Injury/ies: Contact with sharp objects, specify object
 * valueBoolean 0..1
 * valueString 0..1 MS
 * valueString ^short = "Specify sharp object"
@@ -662,14 +673,17 @@ Parent: RSObservation
 Id: rs-observation-ec-drowning
 Title: "Road Safety Observation - External Cause: Drowning"
 Description: "Flag indicating drowning."
+// External Cause/s of Injury/ies: Drowning - flag []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #40947009
 * code.coding.display = "Drowning (event)"
+// External Cause/s of Injury/ies: Drowning - Type/Body of Water 
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept from VSDrowningType (preferred)
 * valueCodeableConcept ^short = "Specify type/body of water"
+// External Cause/s of Injury/ies: Drowning: Others, specify
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text = "Drowning other (specify)"
 
@@ -685,6 +699,7 @@ Description: "Flag indicating exposure to natural disaster/calamity."
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #276746005
 * code.coding.display = "Exposure to forces of nature (event)"
+// External Cause/s of Injury/ies: Exposure to forces of nature - Flag []
 * valueBoolean 0..1
 
 // MDS32 (flag) ; MDS33 (specifics text) - External Cause: Fall
@@ -693,11 +708,13 @@ Parent: RSObservation
 Id: rs-observation-ec-fall
 Title: "Road Safety Observation - External Cause: Fall"
 Description: "Flag indicating fall."
+// External Cause/s of Injury/ies: Fall - flag []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #1912002
 * code.coding.display = "Fall (event)"
+// External Cause/s of Injury/ies: Fall, specifics
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Fall specifics"
 
@@ -709,11 +726,13 @@ Parent: RSObservation
 Id: rs-observation-ec-firecracker
 Title: "Road Safety Observation - External Cause: Firecracker"
 Description: "Flag indicating firecracker-related cause."
+// External Cause/s of Injury/ies: Firecracker
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #218100007
 * code.coding.display = "Firecracker event"
+// External Cause/s of Injury/ies: Firecracker, specify type/s (with libraries)
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify firecracker types"
 
@@ -725,13 +744,15 @@ Parent: RSObservation
 Id: rs-observation-ec-gunshot
 Title: "Road Safety Observation - External Cause: Gunshot"
 Description: "Flag indicating gunshot."
+// External Cause/s of Injury/ies: Gunshot
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #63409001
 * code.coding.display = "Gunshot event"
+// External Cause/s of Injury/ies: Gunshot, specify weapon
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept ^short = "Specify gunshot weapon"
+* valueCodeableConcept ^short = "Gunshot, specify weapon"
 
 // (Consolidated into RSObsECGunshot as component: gunshotWeapon)
 
@@ -741,6 +762,7 @@ Parent: RSObservation
 Id: rs-observation-ec-hanging-strangulation
 Title: "Road Safety Observation - External Cause: Hanging/Strangulation"
 Description: "Flag indicating hanging/strangulation."
+// External Cause/s of Injury/ies: Hanging/Strangulation - Flag []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -753,6 +775,7 @@ Parent: RSObservation
 Id: rs-observation-ec-mauling-assault
 Title: "Road Safety Observation - External Cause: Mauling/Assault"
 Description: "Flag indicating assault."
+// External Cause/s of Injury/ies: Mauling/Assult - Flag []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -765,6 +788,7 @@ Parent: RSObservation
 Id: rs-observation-ec-sexual-assault
 Title: "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"
 Description: "Flag indicating sexual assault."
+// External Cause/s of Injury/ies: Sexual Assault/ Sexual Abuse/ Rape (Alleged) - []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -777,11 +801,13 @@ Parent: RSObservation
 Id: rs-observation-ec-other
 Title: "Road Safety Observation - External Cause: Other"
 Description: "Flag indicating other external cause."
+// External Cause/s of Injury/ies: Other - flag []
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
 * code.coding.code = #773760007
 * code.coding.display = "Other external cause event"
+// External Cause/s of Injury/ies: Others, specify
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify other external cause"
 
