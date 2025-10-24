@@ -1,7 +1,7 @@
 Profile: RSMedicationStatement
 Parent: MedicationStatement
 Id: rs-medication-statement
-Title: "Road Safety MedicationStatement"
+Title: "RS MedicationStatement"
 Description: "Current medications as codeable concepts or references where available."
 * ^version = "1.0.0"
 * subject 1..1 MS

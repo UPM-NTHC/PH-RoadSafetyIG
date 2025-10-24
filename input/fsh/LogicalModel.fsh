@@ -1,4 +1,4 @@
-// PH Road Safety IG — MDS Logical Models (generated draft)
+// PH RS IG — MDS Logical Models (generated draft)
 // IMPORTANT
 // - This file defines one consolidated Logical Model with structured sections to cover ALL rows from the MDS CSVs.
 // - Followed by a Mapping section that points each element to the intended FHIR Resource.element as indicated in the CSVs.
@@ -10,8 +10,8 @@
 
 Logical: MDSRoadSafety
 Id: ph-road-safety-logical-model
-Title: "Road Safety Minimum Dataset (MDS) Logical Model"
-Description: "Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."
+Title: "RS Minimum Dataset (MDS) Logical Model"
+Description: "Abstract, sectioned logical model for the PH RS MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."
 * ^status = #draft
 * ^publisher = "UP Manila SILab"
 * ^jurisdiction = http://unstats.un.org/unsd/methodology/m49#_608 "Philippines"

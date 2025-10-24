@@ -1,7 +1,7 @@
 Profile: RSClaim
 Parent: Claim
 Id: rs-claim
-Title: "Road Safety Claim"
+Title: "RS Claim"
 Description: "Claim information related to cost of care."
 * ^version = "1.0.0"
 * patient 1..1
