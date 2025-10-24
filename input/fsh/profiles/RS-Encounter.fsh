@@ -1,7 +1,7 @@
 Profile: RSEncounter
 Parent: PHCoreEncounter
 Id: rs-encounter
-Title: "Road Safety Encounter"
+Title: "RS Encounter"
 Description: "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer."
 * ^version = "1.0.0"
 * status 1..1 MS
@@ -13,7 +13,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * identifier ^short = "Encounter identifiers"
 * subject 1..1 MS
 * subject ^short = "Patient subject"
-* subject ^comment = "Reference constrained to the Road Safety Patient profile (`RSPatient`)."
+* subject ^comment = "Reference constrained to the RS Patient profile (`RSPatient`)."
 * subject only Reference(RSPatient)
 * period.start 1..1 MS
 * period.start ^short = "Encounter start"

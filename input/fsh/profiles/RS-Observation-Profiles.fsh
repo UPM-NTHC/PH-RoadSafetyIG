@@ -1,13 +1,13 @@
-// Road Safety Observation Profiles (TW Core-style by concept)
+// RS Observation Profiles (TW Core-style by concept)
 // Concept mappings: comments above each profile indicate the mapped concept or clinical measure
 
-// Base profile reused by all Road Safety observations
+// Base profile reused by all RS observations
 // Base profile - used for many Observation mappings (see Logical Model for specific element mappings)
 Profile: RSObservation
 Parent: PHCoreObservation
 Id: rs-observation
-Title: "Road Safety Observation"
-Description: "Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns."
+Title: "RS Observation"
+Description: "Generic base Observation for RS data; specialized concept profiles below constrain code/value patterns."
 * ^version = "1.0.0"
 * status 1..1 MS
 * subject 1..1 MS
@@ -25,7 +25,7 @@ Description: "Generic base Observation for road safety data; specialized concept
 Profile: RSObsRespiratoryRate
 Parent: RSObservation
 Id: rs-observation-respiratory-rate
-Title: "Road Safety Observation - Respiratory Rate"
+Title: "RS Observation - Respiratory Rate"
 Description: "Respiratory rate in breaths/min."
 * valueQuantity 1..1 MS
 * code.coding 0..1
@@ -37,7 +37,7 @@ Description: "Respiratory rate in breaths/min."
 Profile: RSObsPulseRate
 Parent: RSObservation
 Id: rs-observation-pulse-rate
-Title: "Road Safety Observation - Pulse Rate"
+Title: "RS Observation - Pulse Rate"
 Description: "Pulse/heart rate in beats/min."
 * valueQuantity 1..1 MS
 * code.coding 0..1
@@ -49,7 +49,7 @@ Description: "Pulse/heart rate in beats/min."
 Profile: RSObsBloodPressure
 Parent: RSObservation
 Id: rs-observation-blood-pressure
-Title: "Road Safety Observation - Blood Pressure"
+Title: "RS Observation - Blood Pressure"
 Description: "Blood pressure using component entries for systolic/diastolic."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -63,7 +63,7 @@ Description: "Blood pressure using component entries for systolic/diastolic."
 Profile: RSObsBodyTemperature
 Parent: RSObservation
 Id: rs-observation-body-temperature
-Title: "Road Safety Observation - Body Temperature"
+Title: "RS Observation - Body Temperature"
 Description: "Body temperature."
 * valueQuantity 1..1 MS
 * code.coding 0..1
@@ -75,7 +75,7 @@ Description: "Body temperature."
 Profile: RSObsLevelOfConsciousness
 Parent: RSObservation
 Id: rs-observation-level-of-consciousness
-Title: "Road Safety Observation - Level of Consciousness (AVPU)"
+Title: "RS Observation - Level of Consciousness (AVPU)"
 Description: "Level of consciousness (e.g., AVPU)."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSLevelOfConsciousness (preferred)
@@ -88,7 +88,7 @@ Description: "Level of consciousness (e.g., AVPU)."
 Profile: RSObsPupils
 Parent: RSObservation
 Id: rs-observation-pupils
-Title: "Road Safety Observation - Pupils"
+Title: "RS Observation - Pupils"
 Description: "Pupil size/reactivity summary."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPupils (preferred)
@@ -101,7 +101,7 @@ Description: "Pupil size/reactivity summary."
 Profile: RSObsCyanosis
 Parent: RSObservation
 Id: rs-observation-cyanosis
-Title: "Road Safety Observation - Cyanosis"
+Title: "RS Observation - Cyanosis"
 Description: "Cyanosis assessment."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCyanosis (preferred)
@@ -114,7 +114,7 @@ Description: "Cyanosis assessment."
 Profile: RSObsGCS
 Parent: RSObservation
 Id: rs-observation-gcs
-Title: "Road Safety Observation - Glasgow Coma Scale"
+Title: "RS Observation - Glasgow Coma Scale"
 Description: "GCS with components for eyes, verbal, motor; optional total score as integer."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -129,7 +129,7 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 Profile: RSObsRespiratoryRhythm
 Parent: RSObservation
 Id: rs-observation-respiratory-rhythm
-Title: "Road Safety Observation - Respiratory Rhythm"
+Title: "RS Observation - Respiratory Rhythm"
 Description: "Respiratory rhythm (normal/irregular/labored)."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSRespiratoryRhythm (preferred)
@@ -142,7 +142,7 @@ Description: "Respiratory rhythm (normal/irregular/labored)."
 Profile: RSObsBreathSounds
 Parent: RSObservation
 Id: rs-observation-breath-sounds
-Title: "Road Safety Observation - Breath Sounds"
+Title: "RS Observation - Breath Sounds"
 Description: "Breath sounds assessment."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSBreathSounds (preferred)
@@ -155,7 +155,7 @@ Description: "Breath sounds assessment."
 Profile: RSObsPulseRhythm
 Parent: RSObservation
 Id: rs-observation-pulse-rhythm
-Title: "Road Safety Observation - Pulse Rhythm"
+Title: "RS Observation - Pulse Rhythm"
 Description: "Pulse rhythm."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPulseRhythm (preferred)
@@ -168,7 +168,7 @@ Description: "Pulse rhythm."
 Profile: RSObsPulseQuality
 Parent: RSObservation
 Id: rs-observation-pulse-quality
-Title: "Road Safety Observation - Pulse Quality"
+Title: "RS Observation - Pulse Quality"
 Description: "Pulse quality."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPulseQuality (preferred)
@@ -182,7 +182,7 @@ Description: "Pulse quality."
 Profile: RSObsDateReceived
 Parent: RSObservation
 Id: rs-observation-date-received
-Title: "Road Safety Observation - Date/Time Received by EMS"
+Title: "RS Observation - Date/Time Received by EMS"
 Description: "Calendar/timestamp the EMS/dispatch received the request."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -194,7 +194,7 @@ Description: "Calendar/timestamp the EMS/dispatch received the request."
 Profile: RSObsTimeReceived
 Parent: RSObservation
 Id: rs-observation-time-received
-Title: "Road Safety Observation - Time Received"
+Title: "RS Observation - Time Received"
 Description: "Time the call/request was received by EMS/dispatch."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -206,7 +206,7 @@ Description: "Time the call/request was received by EMS/dispatch."
 Profile: RSObsTimeEnroute
 Parent: RSObservation
 Id: rs-observation-time-enroute
-Title: "Road Safety Observation - Time Enroute"
+Title: "RS Observation - Time Enroute"
 Description: "Timestamp when unit dispatched/began traveling."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -218,7 +218,7 @@ Description: "Timestamp when unit dispatched/began traveling."
 Profile: RSObsTimeOnScene
 Parent: RSObservation
 Id: rs-observation-time-on-scene
-Title: "Road Safety Observation - Time On Scene"
+Title: "RS Observation - Time On Scene"
 Description: "Timestamp crew arrived at scene."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -230,7 +230,7 @@ Description: "Timestamp crew arrived at scene."
 Profile: RSObsTimeDepartedScene
 Parent: RSObservation
 Id: rs-observation-time-departed
-Title: "Road Safety Observation - Time Departed Scene"
+Title: "RS Observation - Time Departed Scene"
 Description: "Timestamp unit departed scene."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -242,7 +242,7 @@ Description: "Timestamp unit departed scene."
 Profile: RSObsTimeHospitalArrival
 Parent: RSObservation
 Id: rs-observation-time-hospital-arrival
-Title: "Road Safety Observation - Time of Hospital Arrival"
+Title: "RS Observation - Time of Hospital Arrival"
 Description: "Timestamp unit arrived at receiving facility."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -254,7 +254,7 @@ Description: "Timestamp unit arrived at receiving facility."
 Profile: RSObsTimeStationArrival
 Parent: RSObservation
 Id: rs-observation-time-station-arrival
-Title: "Road Safety Observation - Time of Emergency Station Arrival"
+Title: "RS Observation - Time of Emergency Station Arrival"
 Description: "Timestamp unit returned to base/became available."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -267,7 +267,7 @@ Description: "Timestamp unit returned to base/became available."
 Profile: RSObsInjuryDateTime
 Parent: RSObservation
 Id: rs-observation-injury-datetime
-Title: "Road Safety Observation - Date/Time of Injury"
+Title: "RS Observation - Date/Time of Injury"
 Description: "Timestamp of injury occurrence."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -279,7 +279,7 @@ Description: "Timestamp of injury occurrence."
 Profile: RSObsDateOfInjury
 Parent: RSObservation
 Id: rs-observation-date-of-injury
-Title: "Road Safety Observation - Date of Injury"
+Title: "RS Observation - Date of Injury"
 Description: "Date of injury occurrence."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -291,7 +291,7 @@ Description: "Date of injury occurrence."
 Profile: RSObsTimeOfInjury
 Parent: RSObservation
 Id: rs-observation-time-of-injury
-Title: "Road Safety Observation - Time of Injury"
+Title: "RS Observation - Time of Injury"
 Description: "Time of injury occurrence."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -303,7 +303,7 @@ Description: "Time of injury occurrence."
 Profile: RSObsInjuryIntent
 Parent: RSObservation
 Id: rs-observation-injury-intent
-Title: "Road Safety Observation - Injury Intent"
+Title: "RS Observation - Injury Intent"
 Description: "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."
 * code from VSInjuryIntent (preferred)
 * code.coding 0..1
@@ -312,7 +312,7 @@ Description: "Intent of injury (Unintentional, Intentional-self, Intentional-vio
 Profile: RSObsTransportVehicularAccident
 Parent: RSObservation
 Id: rs-observation-transport-vehicular-accident
-Title: "Road Safety Observation - Transport/Vehicular Accident"
+Title: "RS Observation - Transport/Vehicular Accident"
 Description: "Boolean flag indicating transport/vehicular accident."
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -324,7 +324,7 @@ Description: "Boolean flag indicating transport/vehicular accident."
 Profile: RSObsModeOfTransport
 Parent: RSObservation
 Id: rs-observation-mode-of-transport
-Title: "Road Safety Observation - Mode of Transport to Facility"
+Title: "RS Observation - Mode of Transport to Facility"
 Description: "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -338,7 +338,7 @@ Description: "Mode of transport to the hospital/facility; allow coded value with
 Profile: RSObsDateOfConsultation
 Parent: RSObservation
 Id: rs-observation-date-of-consultation
-Title: "Road Safety Observation - Date of Consultation"
+Title: "RS Observation - Date of Consultation"
 Description: "Date of consultation at facility."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -349,7 +349,7 @@ Description: "Date of consultation at facility."
 Profile: RSObsTimeOfConsultation
 Parent: RSObservation
 Id: rs-observation-time-of-consultation
-Title: "Road Safety Observation - Time of Consultation"
+Title: "RS Observation - Time of Consultation"
 Description: "Time of consultation at facility."
 * valueDateTime 1..1 MS
 * code.coding 0..1
@@ -361,7 +361,7 @@ Description: "Time of consultation at facility."
 Profile: RSObsTriagePriority
 Parent: RSObservation
 Id: rs-observation-triage-priority
-Title: "Road Safety Observation - Triage Priority"
+Title: "RS Observation - Triage Priority"
 Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -375,7 +375,7 @@ Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 Profile: RSObsUrgencyLevel
 Parent: RSObservation
 Id: rs-observation-urgency
-Title: "Road Safety Observation - Priority Level (Urgency)"
+Title: "RS Observation - Priority Level (Urgency)"
 Description: "System-generated urgency level per CAD/agency rules."
 * valueCodeableConcept 1..1 MS
 * code.coding 0..1
@@ -387,7 +387,7 @@ Description: "System-generated urgency level per CAD/agency rules."
 Profile: RSObsPlaceOfOccurrence
 Parent: RSObservation
 Id: rs-observation-place-of-occurrence
-Title: "Road Safety Observation - Place of Occurrence"
+Title: "RS Observation - Place of Occurrence"
 Description: "Place type where injury occurred; name can be carried in note when applicable."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSPlaceOfOccurrence (preferred)
@@ -401,7 +401,7 @@ Description: "Place type where injury occurred; name can be carried in note when
 Profile: RSObsActivityAtIncident
 Parent: RSObservation
 Id: rs-observation-activity-at-incident
-Title: "Road Safety Observation - Activity at Time of Incident"
+Title: "RS Observation - Activity at Time of Incident"
 Description: "Activity of the patient at time of incident; allow text fallback."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -415,7 +415,7 @@ Description: "Activity of the patient at time of incident; allow text fallback."
 Profile: RSObsCollisionVsNonCollision
 Parent: RSObservation
 Id: rs-observation-collision-vs-noncollision
-Title: "Road Safety Observation - Collision vs Non-Collision"
+Title: "RS Observation - Collision vs Non-Collision"
 Description: "Indicates whether the incident was collision or non-collision."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCollisionCategory (preferred)
@@ -428,7 +428,7 @@ Description: "Indicates whether the incident was collision or non-collision."
 Profile: RSObsPatientsVehicle
 Parent: RSObservation
 Id: rs-observation-patients-vehicle
-Title: "Road Safety Observation - Patient's Vehicle"
+Title: "RS Observation - Patient's Vehicle"
 Description: "Type of vehicle used by patient; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -442,7 +442,7 @@ Description: "Type of vehicle used by patient; text for 'Others'."
 Profile: RSObsOtherVehicleInvolved
 Parent: RSObservation
 Id: rs-observation-other-vehicle
-Title: "Road Safety Observation - Other Vehicle/Object Involved"
+Title: "RS Observation - Other Vehicle/Object Involved"
 Description: "Other vehicle/object type involved; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -456,7 +456,7 @@ Description: "Other vehicle/object type involved; text for 'Others'."
 Profile: RSObsPositionOfPatient
 Parent: RSObservation
 Id: rs-observation-position-of-patient
-Title: "Road Safety Observation - Position of Patient"
+Title: "RS Observation - Position of Patient"
 Description: "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -470,7 +470,7 @@ Description: "Seat/position (driver/front passenger/rear/pedestrian); text for '
 Profile: RSObsHowManyVehicles
 Parent: RSObservation
 Id: rs-observation-how-many-vehicles
-Title: "Road Safety Observation - How Many Vehicles Involved"
+Title: "RS Observation - How Many Vehicles Involved"
 Description: "Count of vehicles involved."
 * valueInteger 1..1 MS
 * code.coding 0..1
@@ -482,7 +482,7 @@ Description: "Count of vehicles involved."
 Profile: RSObsHowManyPatients
 Parent: RSObservation
 Id: rs-observation-how-many-patients
-Title: "Road Safety Observation - How Many Patients Involved"
+Title: "RS Observation - How Many Patients Involved"
 Description: "Count of patients involved."
 * valueInteger 1..1 MS
 * code.coding 0..1
@@ -494,7 +494,7 @@ Description: "Count of patients involved."
 Profile: RSObsCollisionType
 Parent: RSObservation
 Id: rs-observation-collision-type
-Title: "Road Safety Observation - Collision Type"
+Title: "RS Observation - Collision Type"
 Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
 * code.coding 0..1
@@ -506,7 +506,7 @@ Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 Profile: RSObsPresenceTrafficInvestigator
 Parent: RSObservation
 Id: rs-observation-traffic-investigator
-Title: "Road Safety Observation - Presence of Traffic Investigator"
+Title: "RS Observation - Presence of Traffic Investigator"
 Description: "Boolean presence/absence of traffic investigator."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -518,7 +518,7 @@ Description: "Boolean presence/absence of traffic investigator."
 Profile: RSObsOtherRiskFactors
 Parent: RSObservation
 Id: rs-observation-other-risk-factors
-Title: "Road Safety Observation - Other Risk Factors"
+Title: "RS Observation - Other Risk Factors"
 Description: "Other risk factors at the time of incident; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSOtherRiskFactors (preferred)
@@ -533,7 +533,7 @@ Description: "Other risk factors at the time of incident; allow text for 'Others
 Profile: RSObsSafetyAccessories
 Parent: RSObservation
 Id: rs-observation-safety-accessories
-Title: "Road Safety Observation - Safety Accessories"
+Title: "RS Observation - Safety Accessories"
 Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -547,7 +547,7 @@ Description: "Safety accessories present/used; allow text for 'Others'."
 Profile: RSObsReportedComplaint
 Parent: RSObservation
 Id: rs-observation-reported-complaint
-Title: "Road Safety Observation - Reported Complaint"
+Title: "RS Observation - Reported Complaint"
 Description: "Free-text reported complaint."
 * valueString 1..1 MS
 * code.coding 0..1
@@ -559,7 +559,7 @@ Description: "Free-text reported complaint."
 Profile: RSObsCallSource
 Parent: RSObservation
 Id: rs-observation-call-source
-Title: "Road Safety Observation - Call Source"
+Title: "RS Observation - Call Source"
 Description: "Call source description (free text)."
 * valueString 1..1 MS
 * code.coding 0..1
@@ -572,7 +572,7 @@ Description: "Call source description (free text)."
 Profile: RSObsECBitesStings
 Parent: RSObservation
 Id: rs-observation-ec-bites-stings
-Title: "Road Safety Observation - External Cause: Bites/Stings"
+Title: "RS Observation - External Cause: Bites/Stings"
 Description: "Flag indicating bites/stings."
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -591,7 +591,7 @@ Description: "Flag indicating bites/stings."
 Profile: RSObsECBurns
 Parent: RSObservation
 Id: rs-observation-ec-burns
-Title: "Road Safety Observation - External Cause: Burns"
+Title: "RS Observation - External Cause: Burns"
 Description: "Flag indicating burns as external cause."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -607,7 +607,7 @@ Description: "Flag indicating burns as external cause."
 Profile: RSObsNatureBurns
 Parent: RSObservation
 Id: rs-observation-nature-burns
-Title: "Road Safety Observation - External Cause: Burns"
+Title: "RS Observation - External Cause: Burns"
 Description: "Flag indicating burns as external cause."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -627,7 +627,7 @@ Description: "Flag indicating burns as external cause."
 Profile: RSObsECChemical
 Parent: RSObservation
 Id: rs-observation-ec-chemical
-Title: "Road Safety Observation - External Cause: Chemical/Substance"
+Title: "RS Observation - External Cause: Chemical/Substance"
 Description: "Observation for chemical/substance exposure."
 * code.coding 0..1
 * code.coding.system = $SCT
@@ -644,7 +644,7 @@ Description: "Observation for chemical/substance exposure."
 Profile: RSObsECSharpObject
 Parent: RSObservation
 Id: rs-observation-ec-sharp-object
-Title: "Road Safety Observation - External Cause: Contact with Sharp Object"
+Title: "RS Observation - External Cause: Contact with Sharp Object"
 Description: "Flag indicating sharp object cause."
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -660,7 +660,7 @@ Description: "Flag indicating sharp object cause."
 Profile: RSObsECDrowning
 Parent: RSObservation
 Id: rs-observation-ec-drowning
-Title: "Road Safety Observation - External Cause: Drowning"
+Title: "RS Observation - External Cause: Drowning"
 Description: "Flag indicating drowning."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -679,7 +679,7 @@ Description: "Flag indicating drowning."
 Profile: RSObsECForcesOfNature
 Parent: RSObservation
 Id: rs-observation-ec-forces-of-nature
-Title: "Road Safety Observation - External Cause: Exposure to Forces of Nature"
+Title: "RS Observation - External Cause: Exposure to Forces of Nature"
 Description: "Flag indicating exposure to natural disaster/calamity."
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -691,7 +691,7 @@ Description: "Flag indicating exposure to natural disaster/calamity."
 Profile: RSObsECFall
 Parent: RSObservation
 Id: rs-observation-ec-fall
-Title: "Road Safety Observation - External Cause: Fall"
+Title: "RS Observation - External Cause: Fall"
 Description: "Flag indicating fall."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -707,7 +707,7 @@ Description: "Flag indicating fall."
 Profile: RSObsECFirecracker
 Parent: RSObservation
 Id: rs-observation-ec-firecracker
-Title: "Road Safety Observation - External Cause: Firecracker"
+Title: "RS Observation - External Cause: Firecracker"
 Description: "Flag indicating firecracker-related cause."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -723,7 +723,7 @@ Description: "Flag indicating firecracker-related cause."
 Profile: RSObsECGunshot
 Parent: RSObservation
 Id: rs-observation-ec-gunshot
-Title: "Road Safety Observation - External Cause: Gunshot"
+Title: "RS Observation - External Cause: Gunshot"
 Description: "Flag indicating gunshot."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -739,7 +739,7 @@ Description: "Flag indicating gunshot."
 Profile: RSObsECHangingStrangulation
 Parent: RSObservation
 Id: rs-observation-ec-hanging-strangulation
-Title: "Road Safety Observation - External Cause: Hanging/Strangulation"
+Title: "RS Observation - External Cause: Hanging/Strangulation"
 Description: "Flag indicating hanging/strangulation."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -751,7 +751,7 @@ Description: "Flag indicating hanging/strangulation."
 Profile: RSObsECMaulingAssault
 Parent: RSObservation
 Id: rs-observation-ec-mauling-assault
-Title: "Road Safety Observation - External Cause: Mauling/Assault"
+Title: "RS Observation - External Cause: Mauling/Assault"
 Description: "Flag indicating assault."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -763,7 +763,7 @@ Description: "Flag indicating assault."
 Profile: RSObsECSexualAssault
 Parent: RSObservation
 Id: rs-observation-ec-sexual-assault
-Title: "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"
+Title: "RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"
 Description: "Flag indicating sexual assault."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -775,7 +775,7 @@ Description: "Flag indicating sexual assault."
 Profile: RSObsECOther
 Parent: RSObservation
 Id: rs-observation-ec-other
-Title: "Road Safety Observation - External Cause: Other"
+Title: "RS Observation - External Cause: Other"
 Description: "Flag indicating other external cause."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -792,7 +792,7 @@ Description: "Flag indicating other external cause."
 Profile: RSObsExtentOfInjury
 Parent: RSObservation
 Id: rs-observation-extent-of-injury
-Title: "Road Safety Observation - Extent of Injury"
+Title: "RS Observation - Extent of Injury"
 Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
 * valueCodeableConcept 1..1 MS
 * code.coding 0..1
@@ -804,7 +804,7 @@ Description: "Extent / severity estimate or category of injury (e.g., minor, mod
 Profile: RSObsTransferredFromFacility
 Parent: RSObservation
 Id: rs-observation-transferred-from-facility
-Title: "Road Safety Observation - Transferred From Facility"
+Title: "RS Observation - Transferred From Facility"
 Description: "Flag indicating patient transferred from another hospital/facility."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -816,7 +816,7 @@ Description: "Flag indicating patient transferred from another hospital/facility
 Profile: RSObsReferredByFacility
 Parent: RSObservation
 Id: rs-observation-referred-by-facility
-Title: "Road Safety Observation - Referred By Facility"
+Title: "RS Observation - Referred By Facility"
 Description: "Flag indicating patient was referred by another hospital/facility."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -829,7 +829,7 @@ Description: "Flag indicating patient was referred by another hospital/facility.
 Profile: RSObsMultipleInjuries
 Parent: RSObservation
 Id: rs-observation-multiple-injuries
-Title: "Road Safety Observation - Multiple Injuries?"
+Title: "RS Observation - Multiple Injuries?"
 Description: "Boolean flag indicating multiple injuries."
 * valueBoolean 0..1
 * code.coding 0..1
@@ -841,7 +841,7 @@ Description: "Boolean flag indicating multiple injuries."
 Profile: RSObsAbrasion
 Parent: RSObservation
 Id: rs-observation-abrasion
-Title: "Road Safety Observation - Abrasion"
+Title: "RS Observation - Abrasion"
 Description: "Abrasion present; with optional site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
@@ -855,7 +855,7 @@ Description: "Abrasion present; with optional site and details."
 Profile: RSObsAvulsion
 Parent: RSObservation
 Id: rs-observation-avulsion
-Title: "Road Safety Observation - Avulsion"
+Title: "RS Observation - Avulsion"
 Description: "Avulsion present; with optional site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
@@ -869,7 +869,7 @@ Description: "Avulsion present; with optional site and details."
 Profile: RSObsConcussion
 Parent: RSObservation
 Id: rs-observation-concussion
-Title: "Road Safety Observation - Concussion"
+Title: "RS Observation - Concussion"
 Description: "Concussion present; with site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
@@ -883,7 +883,7 @@ Description: "Concussion present; with site and details."
 Profile: RSObsContusion
 Parent: RSObservation
 Id: rs-observation-contusion
-Title: "Road Safety Observation - Contusion"
+Title: "RS Observation - Contusion"
 Description: "Contusion present; with site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
@@ -899,7 +899,7 @@ Description: "Contusion present; with site and details."
 Profile: RSObsFracture
 Parent: RSObservation
 Id: rs-observation-fracture
-Title: "Road Safety Observation - Fracture"
+Title: "RS Observation - Fracture"
 Description: "Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note."
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
 // Recommendation: set the Observation.code to a general fracture concept (SNOMED CT) and bind Observation.valueCodeableConcept to a ValueSet enumerating fracture types (open/closed) — use SNOMED CT codes where available.
@@ -917,7 +917,7 @@ Description: "Fracture observation. Use valueCodeableConcept to indicate fractur
 Profile: RSObsOpenWound
 Parent: RSObservation
 Id: rs-observation-open-wound
-Title: "Road Safety Observation - Open Wound"
+Title: "RS Observation - Open Wound"
 Description: "Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text)."
 * valueBoolean 0..1
 * bodySite 0..1 MS
@@ -934,7 +934,7 @@ Description: "Open wound present; with site and details. Capture mechanism/type 
 Profile: RSObsTraumaticAmputation
 Parent: RSObservation
 Id: rs-observation-traumatic-amputation
-Title: "Road Safety Observation - Traumatic Amputation"
+Title: "RS Observation - Traumatic Amputation"
 Description: "Traumatic amputation present; with site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
@@ -948,7 +948,7 @@ Description: "Traumatic amputation present; with site and details."
 Profile: RSObsOtherInjury
 Parent: RSObservation
 Id: rs-observation-other-injury
-Title: "Road Safety Observation - Other Specified Injury"
+Title: "RS Observation - Other Specified Injury"
 Description: "Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details."
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -964,7 +964,7 @@ Description: "Other specified injury present; capture type as valueCodeableConce
 Profile: RSObsBloodAlcoholConcentration
 Parent: RSObservation
 Id: rs-observation-blood-alcohol
-Title: "Road Safety Observation - Blood Alcohol Concentration"
+Title: "RS Observation - Blood Alcohol Concentration"
 Description: "Blood alcohol concentration."
 * valueQuantity 1..1 MS
 * code.coding 0..1
@@ -976,7 +976,7 @@ Description: "Blood alcohol concentration."
 Profile: RSObsConditionOfPatient
 Parent: RSObservation
 Id: rs-observation-condition-of-patient
-Title: "Road Safety Observation - Condition of Patient"
+Title: "RS Observation - Condition of Patient"
 Description: "Overall condition of patient at assessment."
 * code.coding 0..1
 * code.coding.system = $SCT (exactly)
@@ -989,7 +989,7 @@ Description: "Overall condition of patient at assessment."
 Profile: RSObsOutcomeAtRelease
 Parent: RSObservation
 Id: rs-observation-outcome-release
-Title: "Road Safety Observation - Outcome at Release"
+Title: "RS Observation - Outcome at Release"
 Description: "Outcome at release from ER/OPD/RHU."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSOutcome (preferred)
@@ -1002,7 +1002,7 @@ Description: "Outcome at release from ER/OPD/RHU."
 Profile: RSObsOutcomeAtDischarge
 Parent: RSObservation
 Id: rs-observation-outcome-discharge
-Title: "Road Safety Observation - Outcome at Discharge"
+Title: "RS Observation - Outcome at Discharge"
 Description: "Outcome at discharge."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSOutcome (preferred)
@@ -1015,7 +1015,7 @@ Description: "Outcome at discharge."
 Profile: RSObsStatusOnArrival
 Parent: RSObservation
 Id: rs-observation-status-on-arrival
-Title: "Road Safety Observation - Status on Arrival"
+Title: "RS Observation - Status on Arrival"
 Description: "Status upon reaching facility/hospital."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSStatusOnArrival (preferred)
@@ -1028,7 +1028,7 @@ Description: "Status upon reaching facility/hospital."
 Profile: RSObsStatusOnArrivalAliveDetail
 Parent: RSObservation
 Id: rs-observation-status-on-arrival-alive
-Title: "Road Safety Observation - If Alive: Conscious/Unconscious"
+Title: "RS Observation - If Alive: Conscious/Unconscious"
 Description: "If alive on arrival, consciousness detail."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSStatusAliveDetail (preferred)
@@ -1042,7 +1042,7 @@ Description: "If alive on arrival, consciousness detail."
 Profile: RSObsVehicleUsed
 Parent: RSObservation
 Id: rs-observation-vehicle-used
-Title: "Road Safety Observation - Vehicle Used"
+Title: "RS Observation - Vehicle Used"
 Description: "Vehicle used during response."
 * valueCodeableConcept 1..1 MS
 * code.coding 0..1
@@ -1054,7 +1054,7 @@ Description: "Vehicle used during response."
 Profile: RSObsClinicalRemarks
 Parent: RSObservation
 Id: rs-observation-clinical-remarks
-Title: "Road Safety Observation - Clinical Remarks"
+Title: "RS Observation - Clinical Remarks"
 Description: "Clinical remarks/notes."
 * valueString 1..1 MS
 * code.coding 0..1
@@ -1066,7 +1066,7 @@ Description: "Clinical remarks/notes."
 Profile: RSObsRunReportComments
 Parent: RSObservation
 Id: rs-observation-runreport-comments
-Title: "Road Safety Observation - Run Report Comments"
+Title: "RS Observation - Run Report Comments"
 Description: "General comments from run report."
 * valueString 1..1 MS
 * code.coding 0..1
@@ -1078,7 +1078,7 @@ Description: "General comments from run report."
 Profile: RSObsCCTVAvailable
 Parent: RSObservation
 Id: rs-observation-cctv-available
-Title: "Road Safety Observation - CCTV Available"
+Title: "RS Observation - CCTV Available"
 Description: "Availability of CCTV video."
 * valueBoolean 0..1
 * code.coding 0..1

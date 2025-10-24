@@ -1,7 +1,7 @@
 Profile: RSDocumentReference
 Parent: DocumentReference
 Id: rs-document-reference
-Title: "Road Safety DocumentReference (Evidence)"
+Title: "RS DocumentReference (Evidence)"
 Description: "Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files)."
 * ^version = "1.0.0"
 * status 1..1 MS

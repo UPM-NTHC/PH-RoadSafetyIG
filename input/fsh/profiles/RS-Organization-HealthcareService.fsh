@@ -1,8 +1,8 @@
 Profile: RSOrganization
 Parent: PHCoreOrganization
 Id: rs-organization
-Title: "Road Safety Organization"
-Description: "Organization profile for EMS providers and receiving facilities involved in road safety encounters."
+Title: "RS Organization"
+Description: "Organization profile for EMS providers and receiving facilities involved in RS encounters."
 * ^version = "1.0.0"
 * active 0..1 MS
 * type 0..* MS
@@ -14,7 +14,7 @@ Description: "Organization profile for EMS providers and receiving facilities in
 Profile: RSHealthcareService
 Parent: HealthcareService
 Id: rs-healthcare-service
-Title: "Road Safety HealthcareService"
+Title: "RS HealthcareService"
 Description: "Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units)."
 * ^version = "1.0.0"
 * active 0..1 MS

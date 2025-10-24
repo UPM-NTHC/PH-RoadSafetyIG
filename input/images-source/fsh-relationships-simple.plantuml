@@ -12,20 +12,34 @@ left to right direction
 class "RSAllergyIntolerance"
 class "AllergyIntolerance"
 class "RSPatient"
+class "RSEncounter"
+class "RSCompositionEMS"
+class "Composition"
+class "RSProcedure"
+class "RSCondition"
+class "RSDocumentReference"
+class "RSServiceRequest"
+class "RSTask"
 class "RSBundleEMS"
 class "Bundle"
+class "RSCompositionONEISS"
 class "RSBundleONEISS"
+class "RSCompositionPostCrash"
+class "RSBundlePostCrash"
 class "RSClaim"
 class "Claim"
-class "RSCondition"
 class "Condition"
-class "RSEncounter"
-class "RSDocumentReference"
+class "RSConditionProblem"
+class "RSConditionInitialImpression"
+class "RSConditionFinalDiagnosis"
+class "RSConditionNatureOfInjury"
+class "RSConditionExternalCause"
 class "DocumentReference"
 class "PHCoreEncounter"
 class "RSOrganization"
-class "PHCorePractitioner"
 class "RSIncidentLocation"
+class "RSServiceLocation"
+class "PHCorePractitioner"
 class "PHCoreLocation"
 class "RSMedicationStatement"
 class "MedicationStatement"
@@ -35,15 +49,28 @@ class "PHCoreOrganization"
 class "RSHealthcareService"
 class "HealthcareService"
 class "PHCorePatient"
-class "RSProcedure"
 class "PHCoreProcedure"
-class "RSServiceRequest"
+class "RSProcedureTransportCoordination"
 class "ServiceRequest"
-class "RSTask"
 class "Task"
 class "Obs (RS profiles)"
 
 "RSAllergyIntolerance" --> "RSPatient" : patient
+"RSAllergyIntolerance" --> "RSEncounter" : encounter
+"RSCompositionEMS" --> "RSPatient" : subject
+"RSCompositionEMS" --> "RSProcedure" : section[clinical].entry
+"RSCompositionEMS" --> "RSCondition" : section[clinical].entry
+"RSCompositionEMS" --> "RSDocumentReference" : section[documents].entry
+"RSCompositionEMS" --> "RSProcedure" : section[procedures].entry
+"RSCompositionEMS" --> "RSServiceRequest" : section[procedures].entry
+"RSCompositionEMS" --> "RSTask" : section[procedures].entry
+"RSCompositionONEISS" --> "RSPatient" : subject
+"RSCompositionONEISS" --> "RSPatient" : section[patient].entry
+"RSCompositionONEISS" --> "RSEncounter" : section[encounter].entry
+"RSCompositionONEISS" --> "RSDocumentReference" : section[documents].entry
+"RSCompositionPostCrash" --> "RSPatient" : subject
+"RSCompositionPostCrash" --> "RSPatient" : section[patient].entry
+"RSCompositionPostCrash" --> "RSDocumentReference" : section[documents].entry
 "RSClaim" --> "RSPatient" : patient
 "RSCondition" --> "RSPatient" : subject
 "RSCondition" --> "RSEncounter" : encounter
@@ -51,6 +78,8 @@ class "Obs (RS profiles)"
 "RSDocumentReference" --> "RSEncounter" : context.encounter
 "RSEncounter" --> "RSPatient" : subject
 "RSEncounter" --> "RSOrganization" : serviceProvider
+"RSEncounter" --> "RSIncidentLocation" : location[accidentSite].location
+"RSEncounter" --> "RSServiceLocation" : location[facility].location
 "RSEncounter" --> "RSOrganization" : hospitalization.origin
 "RSEncounter" --> "PHCorePractitioner" : participant[receivedBy].individual
 "RSEncounter" --> "PHCorePractitioner" : participant[teamLeader].individual
@@ -65,9 +94,7 @@ class "Obs (RS profiles)"
 "RSProcedure" --> "RSPatient" : subject
 "RSProcedure" --> "RSEncounter" : encounter
 "RSProcedure" --> "PHCorePractitioner" : performer.actor
-"RSServiceRequest" --> "RSHealthcareService" : supportingInfo
 "RSServiceRequest" --> "RSOrganization" : supportingInfo
-"RSServiceRequest" --> "PHCoreOrganization" : supportingInfo
 "RSServiceRequest" --> "PHCorePractitioner" : supportingInfo
 "RSServiceRequest" --> "PHCorePractitioner" : requester
 "RSServiceRequest" --> "RSPatient" : subject
@@ -75,19 +102,30 @@ class "Obs (RS profiles)"
 "RSTask" --> "RSPatient" : for
 "RSObservation" --> "Obs (RS profiles)" : profiles
 "RSAllergyIntolerance" --|> "AllergyIntolerance"
+"RSCompositionEMS" --|> "Composition"
 "RSBundleEMS" --|> "Bundle"
+"RSCompositionONEISS" --|> "Composition"
 "RSBundleONEISS" --|> "Bundle"
+"RSCompositionPostCrash" --|> "Composition"
+"RSBundlePostCrash" --|> "Bundle"
 "RSClaim" --|> "Claim"
 "RSCondition" --|> "Condition"
+"RSConditionProblem" --|> "RSCondition"
+"RSConditionInitialImpression" --|> "RSCondition"
+"RSConditionFinalDiagnosis" --|> "RSCondition"
+"RSConditionNatureOfInjury" --|> "RSCondition"
+"RSConditionExternalCause" --|> "RSCondition"
 "RSDocumentReference" --|> "DocumentReference"
 "RSEncounter" --|> "PHCoreEncounter"
 "RSIncidentLocation" --|> "PHCoreLocation"
+"RSServiceLocation" --|> "PHCoreLocation"
 "RSMedicationStatement" --|> "MedicationStatement"
 "RSObservation" --|> "PHCoreObservation"
 "RSOrganization" --|> "PHCoreOrganization"
 "RSHealthcareService" --|> "HealthcareService"
 "RSPatient" --|> "PHCorePatient"
 "RSProcedure" --|> "PHCoreProcedure"
+"RSProcedureTransportCoordination" --|> "RSProcedure"
 "RSServiceRequest" --|> "ServiceRequest"
 "RSTask" --|> "Task"
 

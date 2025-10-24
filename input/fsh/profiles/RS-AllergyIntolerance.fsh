@@ -1,7 +1,7 @@
 Profile: RSAllergyIntolerance
 Parent: AllergyIntolerance
 Id: rs-allergy-intolerance
-Title: "Road Safety AllergyIntolerance"
+Title: "RS AllergyIntolerance"
 Description: "Known allergies, substances and reactions."
 * ^version = "1.0.0"
 
@@ -14,6 +14,6 @@ Description: "Known allergies, substances and reactions."
 * patient 1..1 MS
 * patient ^short = "Subject (patient)"
 * patient ^definition = "Reference to the patient who is the subject of this allergy/intolerance record."
-* patient ^comment = "Reference constrained to the Road Safety Patient profile (`RSPatient`)."
+* patient ^comment = "Reference constrained to the RS Patient profile (`RSPatient`)."
 * patient only Reference(RSPatient)
 * encounter only Reference(RSEncounter)
