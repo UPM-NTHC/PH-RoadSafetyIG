@@ -16,7 +16,7 @@ Respiratory rhythm options (prefer SNOMED CT).
 
  **References** 
 
-* [RS Observation - Respiratory Rhythm](StructureDefinition-rs-observation-respiratory-rhythm.md)
+* [Road Safety Observation - Respiratory Rhythm](StructureDefinition-rs-observation-respiratory-rhythm.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "VSRespiratoryRhythm",
   "title" : "RS VS - Respiratory Rhythm",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

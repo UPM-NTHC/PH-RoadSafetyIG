@@ -16,7 +16,7 @@ Position/role of patient in transport incidents (prefer SNOMED CT).
 
  **References** 
 
-* [RS Observation - Position of Patient](StructureDefinition-rs-observation-position-of-patient.md)
+* [Road Safety Observation - Position of Patient](StructureDefinition-rs-observation-position-of-patient.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 8 concepts
   "name" : "VSPositionOfPatient",
   "title" : "RS VS - Position of Patient",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -16,7 +16,7 @@ Vehicle used by patient (prefer SNOMED CT; local additions where specified).
 
  **References** 
 
-* [RS Observation - Patient's Vehicle](StructureDefinition-rs-observation-patients-vehicle.md)
+* [Road Safety Observation - Patient's Vehicle](StructureDefinition-rs-observation-patients-vehicle.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 11 concepts
   "name" : "VSPatientsVehicle",
   "title" : "RS VS - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

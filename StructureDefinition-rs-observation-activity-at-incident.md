@@ -1,10 +1,10 @@
-# RS Observation - Activity at Time of Incident - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Activity at Time of Incident - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Activity at Time of Incident**
+* **Road Safety Observation - Activity at Time of Incident**
 
-## Resource Profile: RS Observation - Activity at Time of Incident 
+## Resource Profile: Road Safety Observation - Activity at Time of Incident 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Activity of the patient at time of incident; allow text fallback.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-activity-at-incident)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident",
   "version" : "0.1.0",
   "name" : "RSObsActivityAtIncident",
-  "title" : "RS Observation - Activity at Time of Incident",
+  "title" : "Road Safety Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

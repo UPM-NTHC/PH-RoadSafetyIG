@@ -16,7 +16,7 @@ Injury intent options mapped from ONEISS (prefer SNOMED CT).
 
  **References** 
 
-* [RS Observation - Injury Intent](StructureDefinition-rs-observation-injury-intent.md)
+* [Road Safety Observation - Injury Intent](StructureDefinition-rs-observation-injury-intent.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 5 concepts
   "name" : "VSInjuryIntent",
   "title" : "RS VS - Injury Intent",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

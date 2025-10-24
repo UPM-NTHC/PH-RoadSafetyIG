@@ -16,8 +16,8 @@ Outcome: Improved, Unimproved, Died.
 
  **References** 
 
-* [RS Observation - Outcome at Discharge](StructureDefinition-rs-observation-outcome-discharge.md)
-* [RS Observation - Outcome at Release](StructureDefinition-rs-observation-outcome-release.md)
+* [Road Safety Observation - Outcome at Discharge](StructureDefinition-rs-observation-outcome-discharge.md)
+* [Road Safety Observation - Outcome at Release](StructureDefinition-rs-observation-outcome-release.md)
 
 ### Logical Definition (CLD)
 
@@ -58,7 +58,7 @@ This value set contains 3 concepts
   "name" : "VSOutcome",
   "title" : "RS VS - Outcome",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

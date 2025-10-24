@@ -1,10 +1,10 @@
-# RS Encounter - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Encounter - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Encounter**
+* **Road Safety Encounter**
 
-## Resource Profile: RS Encounter 
+## Resource Profile: Road Safety Encounter 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Encounter for EMS run report / facility submission context. Captures incident nu
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Condition](StructureDefinition-rs-condition.md), [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 3 more,[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md)and[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
+* Refer to this Profile: [Road Safety AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Condition](StructureDefinition-rs-condition.md), [Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 3 more,[Road Safety Observation](StructureDefinition-rs-observation.md),[Road Safety Procedure](StructureDefinition-rs-procedure.md)and[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter",
   "version" : "0.1.0",
   "name" : "RSEncounter",
-  "title" : "RS Encounter",
+  "title" : "Road Safety Encounter",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -190,7 +190,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "id" : "Encounter.subject",
         "path" : "Encounter.subject",
         "short" : "Patient subject",
-        "comment" : "Reference constrained to the RS Patient profile (`RSPatient`).",
+        "comment" : "Reference constrained to the Road Safety Patient profile (`RSPatient`).",
         "min" : 1,
         "type" : [
           {

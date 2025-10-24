@@ -1,10 +1,10 @@
-# RS Observation - Respiratory Rate - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Respiratory Rate - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Respiratory Rate**
+* **Road Safety Observation - Respiratory Rate**
 
-## Resource Profile: RS Observation - Respiratory Rate 
+## Resource Profile: Road Safety Observation - Respiratory Rate 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Respiratory rate in breaths/min.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-respiratory-rate)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate",
   "version" : "0.1.0",
   "name" : "RSObsRespiratoryRate",
-  "title" : "RS Observation - Respiratory Rate",
+  "title" : "Road Safety Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

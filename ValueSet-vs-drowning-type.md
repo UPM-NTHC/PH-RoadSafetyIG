@@ -16,7 +16,7 @@ Type/body of water for drowning incidents.
 
  **References** 
 
-* [RS Observation - External Cause: Drowning](StructureDefinition-rs-observation-ec-drowning.md)
+* [Road Safety Observation - External Cause: Drowning](StructureDefinition-rs-observation-ec-drowning.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 6 concepts
   "name" : "VSDrowningType",
   "title" : "RS VS - Drowning Type/Body of Water",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

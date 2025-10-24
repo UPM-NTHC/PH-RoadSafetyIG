@@ -16,7 +16,7 @@ Other vehicle/object involved in collision.
 
  **References** 
 
-* [RS Observation - Other Vehicle/Object Involved](StructureDefinition-rs-observation-other-vehicle.md)
+* [Road Safety Observation - Other Vehicle/Object Involved](StructureDefinition-rs-observation-other-vehicle.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 11 concepts
   "name" : "VSOtherVehicle",
   "title" : "RS VS - Other Vehicle in Collision",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

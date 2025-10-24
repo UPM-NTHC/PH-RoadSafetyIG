@@ -1,10 +1,10 @@
-# RS Observation - Vehicle Used - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Vehicle Used - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Vehicle Used**
+* **Road Safety Observation - Vehicle Used**
 
-## Resource Profile: RS Observation - Vehicle Used 
+## Resource Profile: Road Safety Observation - Vehicle Used 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Vehicle used during response.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-vehicle-used)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-vehic
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-used",
   "version" : "0.1.0",
   "name" : "RSObsVehicleUsed",
-  "title" : "RS Observation - Vehicle Used",
+  "title" : "Road Safety Observation - Vehicle Used",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

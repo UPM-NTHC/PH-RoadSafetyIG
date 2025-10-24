@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-24T06:46:00+00:00"/>
+  <date value="2025-10-24T16:06:58+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -480,6 +480,94 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-allergy-intolerance"/>
+      </reference>
+      <name value="Road Safety AllergyIntolerance"/>
+      <description value="Known allergies, substances and reactions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-bundle-ems"/>
+      </reference>
+      <name value="Road Safety Bundle — EMS Submission"/>
+      <description value="Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-bundle-oneiss"/>
+      </reference>
+      <name value="Road Safety Bundle — ONEISS Submission"/>
+      <description value="Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-bundle-postcrash"/>
+      </reference>
+      <name value="Road Safety Bundle — Post‑Crash Investigation"/>
+      <description value="Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-claim"/>
+      </reference>
+      <name value="Road Safety Claim"/>
+      <description value="Claim information related to cost of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-composition-ems"/>
+      </reference>
+      <name value="Road Safety Composition — EMS Submission"/>
+      <description value="Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-composition-oneiss"/>
+      </reference>
+      <name value="Road Safety Composition — ONEISS Submission"/>
+      <description value="Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-composition-postcrash"/>
+      </reference>
+      <name value="Road Safety Composition — Post‑Crash Investigation"/>
+      <description value="Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-condition"/>
       </reference>
       <name value="Road Safety Condition"/>
@@ -546,10 +634,1000 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-document-reference"/>
+      </reference>
+      <name value="Road Safety DocumentReference (Evidence)"/>
+      <description value="Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-encounter"/>
+      </reference>
+      <name value="Road Safety Encounter"/>
+      <description value="Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition &amp; transfer."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-healthcare-service"/>
+      </reference>
+      <name value="Road Safety HealthcareService"/>
+      <description value="Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-incident-location-incident"/>
+      </reference>
+      <name value="Road Safety Incident Location"/>
+      <description value="Location of incident; supports PH-Core address extensions and geolocation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-medication-statement"/>
+      </reference>
+      <name value="Road Safety MedicationStatement"/>
+      <description value="Current medications as codeable concepts or references where available."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ph-road-safety-logical-model"/>
+      </reference>
+      <name value="Road Safety Minimum Dataset (MDS) Logical Model"/>
+      <description value="Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation"/>
+      </reference>
+      <name value="Road Safety Observation"/>
+      <description value="Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-abrasion"/>
+      </reference>
+      <name value="Road Safety Observation - Abrasion"/>
+      <description value="Abrasion present; with optional site and details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-activity-at-incident"/>
+      </reference>
+      <name value="Road Safety Observation - Activity at Time of Incident"/>
+      <description value="Activity of the patient at time of incident; allow text fallback."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-avulsion"/>
+      </reference>
+      <name value="Road Safety Observation - Avulsion"/>
+      <description value="Avulsion present; with optional site and details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-blood-alcohol"/>
+      </reference>
+      <name value="Road Safety Observation - Blood Alcohol Concentration"/>
+      <description value="Blood alcohol concentration."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-blood-pressure"/>
+      </reference>
+      <name value="Road Safety Observation - Blood Pressure"/>
+      <description value="Blood pressure using component entries for systolic/diastolic."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-body-temperature"/>
+      </reference>
+      <name value="Road Safety Observation - Body Temperature"/>
+      <description value="Body temperature."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-breath-sounds"/>
+      </reference>
+      <name value="Road Safety Observation - Breath Sounds"/>
+      <description value="Breath sounds assessment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-call-source"/>
+      </reference>
+      <name value="Road Safety Observation - Call Source"/>
+      <description value="Call source description (free text)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-cctv-available"/>
+      </reference>
+      <name value="Road Safety Observation - CCTV Available"/>
+      <description value="Availability of CCTV video."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-clinical-remarks"/>
+      </reference>
+      <name value="Road Safety Observation - Clinical Remarks"/>
+      <description value="Clinical remarks/notes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-collision-type"/>
+      </reference>
+      <name value="Road Safety Observation - Collision Type"/>
+      <description value="Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-collision-vs-noncollision"/>
+      </reference>
+      <name value="Road Safety Observation - Collision vs Non-Collision"/>
+      <description value="Indicates whether the incident was collision or non-collision."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-concussion"/>
+      </reference>
+      <name value="Road Safety Observation - Concussion"/>
+      <description value="Concussion present; with site and details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-condition-of-patient"/>
+      </reference>
+      <name value="Road Safety Observation - Condition of Patient"/>
+      <description value="Overall condition of patient at assessment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-contusion"/>
+      </reference>
+      <name value="Road Safety Observation - Contusion"/>
+      <description value="Contusion present; with site and details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-cyanosis"/>
+      </reference>
+      <name value="Road Safety Observation - Cyanosis"/>
+      <description value="Cyanosis assessment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-date-of-consultation"/>
+      </reference>
+      <name value="Road Safety Observation - Date of Consultation"/>
+      <description value="Date of consultation at facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-date-of-injury"/>
+      </reference>
+      <name value="Road Safety Observation - Date of Injury"/>
+      <description value="Date of injury occurrence."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-injury-datetime"/>
+      </reference>
+      <name value="Road Safety Observation - Date/Time of Injury"/>
+      <description value="Timestamp of injury occurrence."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-date-received"/>
+      </reference>
+      <name value="Road Safety Observation - Date/Time Received by EMS"/>
+      <description value="Calendar/timestamp the EMS/dispatch received the request."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-extent-of-injury"/>
+      </reference>
+      <name value="Road Safety Observation - Extent of Injury"/>
+      <description value="Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-bites-stings"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Bites/Stings"/>
+      <description value="Flag indicating bites/stings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-burns"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Burns"/>
+      <description value="Flag indicating burns as external cause."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-nature-burns"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Burns"/>
+      <description value="Flag indicating burns as external cause."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-chemical"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Chemical/Substance"/>
+      <description value="Observation for chemical/substance exposure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-sharp-object"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Contact with Sharp Object"/>
+      <description value="Flag indicating sharp object cause."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-drowning"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Drowning"/>
+      <description value="Flag indicating drowning."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-forces-of-nature"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Exposure to Forces of Nature"/>
+      <description value="Flag indicating exposure to natural disaster/calamity."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-fall"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Fall"/>
+      <description value="Flag indicating fall."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-firecracker"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Firecracker"/>
+      <description value="Flag indicating firecracker-related cause."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-gunshot"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Gunshot"/>
+      <description value="Flag indicating gunshot."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-hanging-strangulation"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Hanging/Strangulation"/>
+      <description value="Flag indicating hanging/strangulation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-mauling-assault"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Mauling/Assault"/>
+      <description value="Flag indicating assault."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-other"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Other"/>
+      <description value="Flag indicating other external cause."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-ec-sexual-assault"/>
+      </reference>
+      <name value="Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"/>
+      <description value="Flag indicating sexual assault."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-fracture"/>
+      </reference>
+      <name value="Road Safety Observation - Fracture"/>
+      <description value="Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-gcs"/>
+      </reference>
+      <name value="Road Safety Observation - Glasgow Coma Scale"/>
+      <description value="GCS with components for eyes, verbal, motor; optional total score as integer."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-how-many-patients"/>
+      </reference>
+      <name value="Road Safety Observation - How Many Patients Involved"/>
+      <description value="Count of patients involved."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-how-many-vehicles"/>
+      </reference>
+      <name value="Road Safety Observation - How Many Vehicles Involved"/>
+      <description value="Count of vehicles involved."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-status-on-arrival-alive"/>
+      </reference>
+      <name value="Road Safety Observation - If Alive: Conscious/Unconscious"/>
+      <description value="If alive on arrival, consciousness detail."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-injury-intent"/>
+      </reference>
+      <name value="Road Safety Observation - Injury Intent"/>
+      <description value="Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-level-of-consciousness"/>
+      </reference>
+      <name value="Road Safety Observation - Level of Consciousness (AVPU)"/>
+      <description value="Level of consciousness (e.g., AVPU)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-mode-of-transport"/>
+      </reference>
+      <name value="Road Safety Observation - Mode of Transport to Facility"/>
+      <description value="Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-multiple-injuries"/>
+      </reference>
+      <name value="Road Safety Observation - Multiple Injuries?"/>
+      <description value="Boolean flag indicating multiple injuries."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-open-wound"/>
+      </reference>
+      <name value="Road Safety Observation - Open Wound"/>
+      <description value="Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-other-risk-factors"/>
+      </reference>
+      <name value="Road Safety Observation - Other Risk Factors"/>
+      <description value="Other risk factors at the time of incident; allow text for 'Others'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-other-injury"/>
+      </reference>
+      <name value="Road Safety Observation - Other Specified Injury"/>
+      <description value="Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-other-vehicle"/>
+      </reference>
+      <name value="Road Safety Observation - Other Vehicle/Object Involved"/>
+      <description value="Other vehicle/object type involved; text for 'Others'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-outcome-discharge"/>
+      </reference>
+      <name value="Road Safety Observation - Outcome at Discharge"/>
+      <description value="Outcome at discharge."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-outcome-release"/>
+      </reference>
+      <name value="Road Safety Observation - Outcome at Release"/>
+      <description value="Outcome at release from ER/OPD/RHU."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-patients-vehicle"/>
+      </reference>
+      <name value="Road Safety Observation - Patient's Vehicle"/>
+      <description value="Type of vehicle used by patient; text for 'Others'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-place-of-occurrence"/>
+      </reference>
+      <name value="Road Safety Observation - Place of Occurrence"/>
+      <description value="Place type where injury occurred; name can be carried in note when applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-position-of-patient"/>
+      </reference>
+      <name value="Road Safety Observation - Position of Patient"/>
+      <description value="Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-traffic-investigator"/>
+      </reference>
+      <name value="Road Safety Observation - Presence of Traffic Investigator"/>
+      <description value="Boolean presence/absence of traffic investigator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-urgency"/>
+      </reference>
+      <name value="Road Safety Observation - Priority Level (Urgency)"/>
+      <description value="System-generated urgency level per CAD/agency rules."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-pulse-quality"/>
+      </reference>
+      <name value="Road Safety Observation - Pulse Quality"/>
+      <description value="Pulse quality."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-pulse-rate"/>
+      </reference>
+      <name value="Road Safety Observation - Pulse Rate"/>
+      <description value="Pulse/heart rate in beats/min."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-pulse-rhythm"/>
+      </reference>
+      <name value="Road Safety Observation - Pulse Rhythm"/>
+      <description value="Pulse rhythm."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-pupils"/>
+      </reference>
+      <name value="Road Safety Observation - Pupils"/>
+      <description value="Pupil size/reactivity summary."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-referred-by-facility"/>
+      </reference>
+      <name value="Road Safety Observation - Referred By Facility"/>
+      <description value="Flag indicating patient was referred by another hospital/facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-reported-complaint"/>
+      </reference>
+      <name value="Road Safety Observation - Reported Complaint"/>
+      <description value="Free-text reported complaint."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-respiratory-rate"/>
+      </reference>
+      <name value="Road Safety Observation - Respiratory Rate"/>
+      <description value="Respiratory rate in breaths/min."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-respiratory-rhythm"/>
+      </reference>
+      <name value="Road Safety Observation - Respiratory Rhythm"/>
+      <description value="Respiratory rhythm (normal/irregular/labored)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-runreport-comments"/>
+      </reference>
+      <name value="Road Safety Observation - Run Report Comments"/>
+      <description value="General comments from run report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-safety-accessories"/>
+      </reference>
+      <name value="Road Safety Observation - Safety Accessories"/>
+      <description value="Safety accessories present/used; allow text for 'Others'."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-status-on-arrival"/>
+      </reference>
+      <name value="Road Safety Observation - Status on Arrival"/>
+      <description value="Status upon reaching facility/hospital."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-departed"/>
+      </reference>
+      <name value="Road Safety Observation - Time Departed Scene"/>
+      <description value="Timestamp unit departed scene."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-enroute"/>
+      </reference>
+      <name value="Road Safety Observation - Time Enroute"/>
+      <description value="Timestamp when unit dispatched/began traveling."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-of-consultation"/>
+      </reference>
+      <name value="Road Safety Observation - Time of Consultation"/>
+      <description value="Time of consultation at facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-station-arrival"/>
+      </reference>
+      <name value="Road Safety Observation - Time of Emergency Station Arrival"/>
+      <description value="Timestamp unit returned to base/became available."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-hospital-arrival"/>
+      </reference>
+      <name value="Road Safety Observation - Time of Hospital Arrival"/>
+      <description value="Timestamp unit arrived at receiving facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-of-injury"/>
+      </reference>
+      <name value="Road Safety Observation - Time of Injury"/>
+      <description value="Time of injury occurrence."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-on-scene"/>
+      </reference>
+      <name value="Road Safety Observation - Time On Scene"/>
+      <description value="Timestamp crew arrived at scene."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-time-received"/>
+      </reference>
+      <name value="Road Safety Observation - Time Received"/>
+      <description value="Time the call/request was received by EMS/dispatch."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-transferred-from-facility"/>
+      </reference>
+      <name value="Road Safety Observation - Transferred From Facility"/>
+      <description value="Flag indicating patient transferred from another hospital/facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-transport-vehicular-accident"/>
+      </reference>
+      <name value="Road Safety Observation - Transport/Vehicular Accident"/>
+      <description value="Boolean flag indicating transport/vehicular accident."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-traumatic-amputation"/>
+      </reference>
+      <name value="Road Safety Observation - Traumatic Amputation"/>
+      <description value="Traumatic amputation present; with site and details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-triage-priority"/>
+      </reference>
+      <name value="Road Safety Observation - Triage Priority"/>
+      <description value="Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-vehicle-used"/>
+      </reference>
+      <name value="Road Safety Observation - Vehicle Used"/>
+      <description value="Vehicle used during response."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-organization"/>
+      </reference>
+      <name value="Road Safety Organization"/>
+      <description value="Organization profile for EMS providers and receiving facilities involved in road safety encounters."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-patient"/>
       </reference>
       <name value="Road Safety Patient"/>
       <description value="Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-procedure"/>
+      </reference>
+      <name value="Road Safety Procedure"/>
+      <description value="Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-procedure-transport-coordination"/>
+      </reference>
+      <name value="Road Safety Procedure - Transport Coordination"/>
+      <description value="Procedure record indicating whether transport coordination with the receiving hospital was done."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-location-service"/>
+      </reference>
+      <name value="Road Safety Service Location"/>
+      <description value="Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -572,1084 +1650,6 @@
       </reference>
       <name value="Road Safety Task"/>
       <description value="Workflow tracking for report receipt, durations of delay, and sources of delays."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-allergy-intolerance"/>
-      </reference>
-      <name value="RS AllergyIntolerance"/>
-      <description value="Known allergies, substances and reactions."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-bundle-ems"/>
-      </reference>
-      <name value="RS Bundle — EMS Submission"/>
-      <description value="Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-bundle-oneiss"/>
-      </reference>
-      <name value="RS Bundle — ONEISS Submission"/>
-      <description value="Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-bundle-postcrash"/>
-      </reference>
-      <name value="RS Bundle — Post‑Crash Investigation"/>
-      <description value="Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-claim"/>
-      </reference>
-      <name value="RS Claim"/>
-      <description value="Claim information related to cost of care."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-composition-ems"/>
-      </reference>
-      <name value="RS Composition — EMS Submission"/>
-      <description value="Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-composition-oneiss"/>
-      </reference>
-      <name value="RS Composition — ONEISS Submission"/>
-      <description value="Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-composition-postcrash"/>
-      </reference>
-      <name value="RS Composition — Post‑Crash Investigation"/>
-      <description value="Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-document-reference"/>
-      </reference>
-      <name value="RS DocumentReference (Evidence)"/>
-      <description value="Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-encounter"/>
-      </reference>
-      <name value="RS Encounter"/>
-      <description value="Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition &amp; transfer."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-healthcare-service"/>
-      </reference>
-      <name value="RS HealthcareService"/>
-      <description value="Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-incident-location-incident"/>
-      </reference>
-      <name value="RS Incident Location"/>
-      <description value="Location of incident; supports PH-Core address extensions and geolocation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-medication-statement"/>
-      </reference>
-      <name value="RS MedicationStatement"/>
-      <description value="Current medications as codeable concepts or references where available."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ph-road-safety-logical-model"/>
-      </reference>
-      <name value="RS Minimum Dataset (MDS) Logical Model"/>
-      <description value="Abstract, sectioned logical model for the PH RS MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation"/>
-      </reference>
-      <name value="RS Observation"/>
-      <description value="Generic base Observation for RS data; specialized concept profiles below constrain code/value patterns."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-abrasion"/>
-      </reference>
-      <name value="RS Observation - Abrasion"/>
-      <description value="Abrasion present; with optional site and details."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-activity-at-incident"/>
-      </reference>
-      <name value="RS Observation - Activity at Time of Incident"/>
-      <description value="Activity of the patient at time of incident; allow text fallback."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-avulsion"/>
-      </reference>
-      <name value="RS Observation - Avulsion"/>
-      <description value="Avulsion present; with optional site and details."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-blood-alcohol"/>
-      </reference>
-      <name value="RS Observation - Blood Alcohol Concentration"/>
-      <description value="Blood alcohol concentration."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-blood-pressure"/>
-      </reference>
-      <name value="RS Observation - Blood Pressure"/>
-      <description value="Blood pressure using component entries for systolic/diastolic."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-body-temperature"/>
-      </reference>
-      <name value="RS Observation - Body Temperature"/>
-      <description value="Body temperature."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-breath-sounds"/>
-      </reference>
-      <name value="RS Observation - Breath Sounds"/>
-      <description value="Breath sounds assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-call-source"/>
-      </reference>
-      <name value="RS Observation - Call Source"/>
-      <description value="Call source description (free text)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-cctv-available"/>
-      </reference>
-      <name value="RS Observation - CCTV Available"/>
-      <description value="Availability of CCTV video."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-clinical-remarks"/>
-      </reference>
-      <name value="RS Observation - Clinical Remarks"/>
-      <description value="Clinical remarks/notes."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-collision-type"/>
-      </reference>
-      <name value="RS Observation - Collision Type"/>
-      <description value="Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-collision-vs-noncollision"/>
-      </reference>
-      <name value="RS Observation - Collision vs Non-Collision"/>
-      <description value="Indicates whether the incident was collision or non-collision."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-concussion"/>
-      </reference>
-      <name value="RS Observation - Concussion"/>
-      <description value="Concussion present; with site and details."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-condition-of-patient"/>
-      </reference>
-      <name value="RS Observation - Condition of Patient"/>
-      <description value="Overall condition of patient at assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-contusion"/>
-      </reference>
-      <name value="RS Observation - Contusion"/>
-      <description value="Contusion present; with site and details."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-cyanosis"/>
-      </reference>
-      <name value="RS Observation - Cyanosis"/>
-      <description value="Cyanosis assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-date-of-consultation"/>
-      </reference>
-      <name value="RS Observation - Date of Consultation"/>
-      <description value="Date of consultation at facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-date-of-injury"/>
-      </reference>
-      <name value="RS Observation - Date of Injury"/>
-      <description value="Date of injury occurrence."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-injury-datetime"/>
-      </reference>
-      <name value="RS Observation - Date/Time of Injury"/>
-      <description value="Timestamp of injury occurrence."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-date-received"/>
-      </reference>
-      <name value="RS Observation - Date/Time Received by EMS"/>
-      <description value="Calendar/timestamp the EMS/dispatch received the request."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-extent-of-injury"/>
-      </reference>
-      <name value="RS Observation - Extent of Injury"/>
-      <description value="Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-bites-stings"/>
-      </reference>
-      <name value="RS Observation - External Cause: Bites/Stings"/>
-      <description value="Flag indicating bites/stings."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-burns"/>
-      </reference>
-      <name value="RS Observation - External Cause: Burns"/>
-      <description value="Flag indicating burns as external cause."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-nature-burns"/>
-      </reference>
-      <name value="RS Observation - External Cause: Burns"/>
-      <description value="Flag indicating burns as external cause."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-chemical"/>
-      </reference>
-      <name value="RS Observation - External Cause: Chemical/Substance"/>
-      <description value="Observation for chemical/substance exposure."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-sharp-object"/>
-      </reference>
-      <name value="RS Observation - External Cause: Contact with Sharp Object"/>
-      <description value="Flag indicating sharp object cause."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-drowning"/>
-      </reference>
-      <name value="RS Observation - External Cause: Drowning"/>
-      <description value="Flag indicating drowning."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-forces-of-nature"/>
-      </reference>
-      <name value="RS Observation - External Cause: Exposure to Forces of Nature"/>
-      <description value="Flag indicating exposure to natural disaster/calamity."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-fall"/>
-      </reference>
-      <name value="RS Observation - External Cause: Fall"/>
-      <description value="Flag indicating fall."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-firecracker"/>
-      </reference>
-      <name value="RS Observation - External Cause: Firecracker"/>
-      <description value="Flag indicating firecracker-related cause."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-gunshot"/>
-      </reference>
-      <name value="RS Observation - External Cause: Gunshot"/>
-      <description value="Flag indicating gunshot."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-hanging-strangulation"/>
-      </reference>
-      <name value="RS Observation - External Cause: Hanging/Strangulation"/>
-      <description value="Flag indicating hanging/strangulation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-mauling-assault"/>
-      </reference>
-      <name value="RS Observation - External Cause: Mauling/Assault"/>
-      <description value="Flag indicating assault."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-other"/>
-      </reference>
-      <name value="RS Observation - External Cause: Other"/>
-      <description value="Flag indicating other external cause."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-ec-sexual-assault"/>
-      </reference>
-      <name value="RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)"/>
-      <description value="Flag indicating sexual assault."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-fracture"/>
-      </reference>
-      <name value="RS Observation - Fracture"/>
-      <description value="Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-gcs"/>
-      </reference>
-      <name value="RS Observation - Glasgow Coma Scale"/>
-      <description value="GCS with components for eyes, verbal, motor; optional total score as integer."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-how-many-patients"/>
-      </reference>
-      <name value="RS Observation - How Many Patients Involved"/>
-      <description value="Count of patients involved."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-how-many-vehicles"/>
-      </reference>
-      <name value="RS Observation - How Many Vehicles Involved"/>
-      <description value="Count of vehicles involved."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-status-on-arrival-alive"/>
-      </reference>
-      <name value="RS Observation - If Alive: Conscious/Unconscious"/>
-      <description value="If alive on arrival, consciousness detail."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-injury-intent"/>
-      </reference>
-      <name value="RS Observation - Injury Intent"/>
-      <description value="Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-level-of-consciousness"/>
-      </reference>
-      <name value="RS Observation - Level of Consciousness (AVPU)"/>
-      <description value="Level of consciousness (e.g., AVPU)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-mode-of-transport"/>
-      </reference>
-      <name value="RS Observation - Mode of Transport to Facility"/>
-      <description value="Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-multiple-injuries"/>
-      </reference>
-      <name value="RS Observation - Multiple Injuries?"/>
-      <description value="Boolean flag indicating multiple injuries."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-open-wound"/>
-      </reference>
-      <name value="RS Observation - Open Wound"/>
-      <description value="Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-other-risk-factors"/>
-      </reference>
-      <name value="RS Observation - Other Risk Factors"/>
-      <description value="Other risk factors at the time of incident; allow text for 'Others'."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-other-injury"/>
-      </reference>
-      <name value="RS Observation - Other Specified Injury"/>
-      <description value="Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-other-vehicle"/>
-      </reference>
-      <name value="RS Observation - Other Vehicle/Object Involved"/>
-      <description value="Other vehicle/object type involved; text for 'Others'."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-outcome-discharge"/>
-      </reference>
-      <name value="RS Observation - Outcome at Discharge"/>
-      <description value="Outcome at discharge."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-outcome-release"/>
-      </reference>
-      <name value="RS Observation - Outcome at Release"/>
-      <description value="Outcome at release from ER/OPD/RHU."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-patients-vehicle"/>
-      </reference>
-      <name value="RS Observation - Patient's Vehicle"/>
-      <description value="Type of vehicle used by patient; text for 'Others'."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-place-of-occurrence"/>
-      </reference>
-      <name value="RS Observation - Place of Occurrence"/>
-      <description value="Place type where injury occurred; name can be carried in note when applicable."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-position-of-patient"/>
-      </reference>
-      <name value="RS Observation - Position of Patient"/>
-      <description value="Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-traffic-investigator"/>
-      </reference>
-      <name value="RS Observation - Presence of Traffic Investigator"/>
-      <description value="Boolean presence/absence of traffic investigator."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-urgency"/>
-      </reference>
-      <name value="RS Observation - Priority Level (Urgency)"/>
-      <description value="System-generated urgency level per CAD/agency rules."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-pulse-quality"/>
-      </reference>
-      <name value="RS Observation - Pulse Quality"/>
-      <description value="Pulse quality."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-pulse-rate"/>
-      </reference>
-      <name value="RS Observation - Pulse Rate"/>
-      <description value="Pulse/heart rate in beats/min."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-pulse-rhythm"/>
-      </reference>
-      <name value="RS Observation - Pulse Rhythm"/>
-      <description value="Pulse rhythm."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-pupils"/>
-      </reference>
-      <name value="RS Observation - Pupils"/>
-      <description value="Pupil size/reactivity summary."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-referred-by-facility"/>
-      </reference>
-      <name value="RS Observation - Referred By Facility"/>
-      <description value="Flag indicating patient was referred by another hospital/facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-reported-complaint"/>
-      </reference>
-      <name value="RS Observation - Reported Complaint"/>
-      <description value="Free-text reported complaint."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-respiratory-rate"/>
-      </reference>
-      <name value="RS Observation - Respiratory Rate"/>
-      <description value="Respiratory rate in breaths/min."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-respiratory-rhythm"/>
-      </reference>
-      <name value="RS Observation - Respiratory Rhythm"/>
-      <description value="Respiratory rhythm (normal/irregular/labored)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-runreport-comments"/>
-      </reference>
-      <name value="RS Observation - Run Report Comments"/>
-      <description value="General comments from run report."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-safety-accessories"/>
-      </reference>
-      <name value="RS Observation - Safety Accessories"/>
-      <description value="Safety accessories present/used; allow text for 'Others'."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-status-on-arrival"/>
-      </reference>
-      <name value="RS Observation - Status on Arrival"/>
-      <description value="Status upon reaching facility/hospital."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-departed"/>
-      </reference>
-      <name value="RS Observation - Time Departed Scene"/>
-      <description value="Timestamp unit departed scene."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-enroute"/>
-      </reference>
-      <name value="RS Observation - Time Enroute"/>
-      <description value="Timestamp when unit dispatched/began traveling."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-of-consultation"/>
-      </reference>
-      <name value="RS Observation - Time of Consultation"/>
-      <description value="Time of consultation at facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-station-arrival"/>
-      </reference>
-      <name value="RS Observation - Time of Emergency Station Arrival"/>
-      <description value="Timestamp unit returned to base/became available."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-hospital-arrival"/>
-      </reference>
-      <name value="RS Observation - Time of Hospital Arrival"/>
-      <description value="Timestamp unit arrived at receiving facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-of-injury"/>
-      </reference>
-      <name value="RS Observation - Time of Injury"/>
-      <description value="Time of injury occurrence."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-on-scene"/>
-      </reference>
-      <name value="RS Observation - Time On Scene"/>
-      <description value="Timestamp crew arrived at scene."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-received"/>
-      </reference>
-      <name value="RS Observation - Time Received"/>
-      <description value="Time the call/request was received by EMS/dispatch."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-transferred-from-facility"/>
-      </reference>
-      <name value="RS Observation - Transferred From Facility"/>
-      <description value="Flag indicating patient transferred from another hospital/facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-transport-vehicular-accident"/>
-      </reference>
-      <name value="RS Observation - Transport/Vehicular Accident"/>
-      <description value="Boolean flag indicating transport/vehicular accident."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-traumatic-amputation"/>
-      </reference>
-      <name value="RS Observation - Traumatic Amputation"/>
-      <description value="Traumatic amputation present; with site and details."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-triage-priority"/>
-      </reference>
-      <name value="RS Observation - Triage Priority"/>
-      <description value="Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-vehicle-used"/>
-      </reference>
-      <name value="RS Observation - Vehicle Used"/>
-      <description value="Vehicle used during response."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-organization"/>
-      </reference>
-      <name value="RS Organization"/>
-      <description value="Organization profile for EMS providers and receiving facilities involved in RS encounters."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-procedure"/>
-      </reference>
-      <name value="RS Procedure"/>
-      <description value="Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-procedure-transport-coordination"/>
-      </reference>
-      <name value="RS Procedure - Transport Coordination"/>
-      <description value="Procedure record indicating whether transport coordination with the receiving hospital was done."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-location-service"/>
-      </reference>
-      <name value="RS Service Location"/>
-      <description value="Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

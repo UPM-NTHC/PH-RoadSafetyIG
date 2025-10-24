@@ -16,7 +16,7 @@ Mode of transport to the hospital/facility.
 
  **References** 
 
-* [RS Observation - Mode of Transport to Facility](StructureDefinition-rs-observation-mode-of-transport.md)
+* [Road Safety Observation - Mode of Transport to Facility](StructureDefinition-rs-observation-mode-of-transport.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 4 concepts
   "name" : "VSModeOfTransport",
   "title" : "RS VS - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,10 +1,10 @@
-# RS Organization - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Organization - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Organization**
+* **Road Safety Organization**
 
-## Resource Profile: RS Organization 
+## Resource Profile: Road Safety Organization 
 
 | | |
 | :--- | :--- |
@@ -12,11 +12,11 @@
 | Draft as of 2025-10-24 | *Computable Name*:RSOrganization |
 
  
-Organization profile for EMS providers and receiving facilities involved in RS encounters. 
+Organization profile for EMS providers and receiving facilities involved in road safety encounters. 
 
 **Usages:**
 
-* Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md), [RS HealthcareService](StructureDefinition-rs-healthcare-service.md) and [Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
+* Refer to this Profile: [Road Safety Encounter](StructureDefinition-rs-encounter.md), [Road Safety HealthcareService](StructureDefinition-rs-healthcare-service.md) and [Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-organization)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization",
   "version" : "0.1.0",
   "name" : "RSOrganization",
-  "title" : "RS Organization",
+  "title" : "Road Safety Organization",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
       ]
     }
   ],
-  "description" : "Organization profile for EMS providers and receiving facilities involved in RS encounters.",
+  "description" : "Organization profile for EMS providers and receiving facilities involved in road safety encounters.",
   "jurisdiction" : [
     {
       "coding" : [

@@ -1,10 +1,10 @@
-# RS Observation - Body Temperature - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Body Temperature - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Body Temperature**
+* **Road Safety Observation - Body Temperature**
 
-## Resource Profile: RS Observation - Body Temperature 
+## Resource Profile: Road Safety Observation - Body Temperature 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Body temperature.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-body-temperature)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-body-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature",
   "version" : "0.1.0",
   "name" : "RSObsBodyTemperature",
-  "title" : "RS Observation - Body Temperature",
+  "title" : "Road Safety Observation - Body Temperature",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

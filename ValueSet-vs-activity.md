@@ -16,7 +16,7 @@ Activity at time of incident (prefer SNOMED CT).
 
  **References** 
 
-* [RS Observation - Activity at Time of Incident](StructureDefinition-rs-observation-activity-at-incident.md)
+* [Road Safety Observation - Activity at Time of Incident](StructureDefinition-rs-observation-activity-at-incident.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 5 concepts
   "name" : "VSActivity",
   "title" : "RS VS - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

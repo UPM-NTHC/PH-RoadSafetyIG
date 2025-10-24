@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-problem
   "name" : "RSConditionProblem",
   "title" : "Road Safety Condition — Problem",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,10 +1,10 @@
-# RS Bundle — ONEISS Submission - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Bundle — ONEISS Submission - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Bundle — ONEISS Submission**
+* **Road Safety Bundle — ONEISS Submission**
 
-## Resource Profile: RS Bundle — ONEISS Submission 
+## Resource Profile: Road Safety Bundle — ONEISS Submission 
 
 | | |
 | :--- | :--- |
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-oneiss.csv
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss",
   "version" : "0.1.0",
   "name" : "RSBundleONEISS",
-  "title" : "RS Bundle — ONEISS Submission",
+  "title" : "Road Safety Bundle — ONEISS Submission",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

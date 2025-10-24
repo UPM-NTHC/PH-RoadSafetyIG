@@ -1,10 +1,10 @@
-# RS Observation - Open Wound - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Open Wound - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Open Wound**
+* **Road Safety Observation - Open Wound**
 
-## Resource Profile: RS Observation - Open Wound 
+## Resource Profile: Road Safety Observation - Open Wound 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Open wound present; with site and details. Capture mechanism/type in a structure
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-open-wound)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-open-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound",
   "version" : "0.1.0",
   "name" : "RSObsOpenWound",
-  "title" : "RS Observation - Open Wound",
+  "title" : "Road Safety Observation - Open Wound",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

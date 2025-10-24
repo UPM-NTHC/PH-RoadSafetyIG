@@ -16,7 +16,7 @@ Place of occurrence (prefer SNOMED CT; local additions where specified).
 
  **References** 
 
-* [RS Observation - Place of Occurrence](StructureDefinition-rs-observation-place-of-occurrence.md)
+* [Road Safety Observation - Place of Occurrence](StructureDefinition-rs-observation-place-of-occurrence.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 7 concepts
   "name" : "VSPlaceOfOccurrence",
   "title" : "RS VS - Place of Occurrence",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

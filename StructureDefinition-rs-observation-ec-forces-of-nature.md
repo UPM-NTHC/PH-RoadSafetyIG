@@ -1,10 +1,10 @@
-# RS Observation - External Cause: Exposure to Forces of Nature - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - External Cause: Exposure to Forces of Nature - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - External Cause: Exposure to Forces of Nature**
+* **Road Safety Observation - External Cause: Exposure to Forces of Nature**
 
-## Resource Profile: RS Observation - External Cause: Exposure to Forces of Nature 
+## Resource Profile: Road Safety Observation - External Cause: Exposure to Forces of Nature 
 
 | | |
 | :--- | :--- |
@@ -16,7 +16,7 @@ Flag indicating exposure to natural disaster/calamity.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-ec-forces-of-nature)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fo
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature",
   "version" : "0.1.0",
   "name" : "RSObsECForcesOfNature",
-  "title" : "RS Observation - External Cause: Exposure to Forces of Nature",
+  "title" : "Road Safety Observation - External Cause: Exposure to Forces of Nature",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

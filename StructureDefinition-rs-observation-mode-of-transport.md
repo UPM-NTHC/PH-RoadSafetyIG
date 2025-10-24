@@ -1,10 +1,10 @@
-# RS Observation - Mode of Transport to Facility - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Mode of Transport to Facility - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Mode of Transport to Facility**
+* **Road Safety Observation - Mode of Transport to Facility**
 
-## Resource Profile: RS Observation - Mode of Transport to Facility 
+## Resource Profile: Road Safety Observation - Mode of Transport to Facility 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Mode of transport to the hospital/facility; allow coded value with optional text
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-mode-of-transport)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport",
   "version" : "0.1.0",
   "name" : "RSObsModeOfTransport",
-  "title" : "RS Observation - Mode of Transport to Facility",
+  "title" : "Road Safety Observation - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

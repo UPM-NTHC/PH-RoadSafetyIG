@@ -1,10 +1,10 @@
-# RS Composition — Post‑Crash Investigation - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Composition — Post‑Crash Investigation - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Composition — Post‑Crash Investigation**
+* **Road Safety Composition — Post‑Crash Investigation**
 
-## Resource Profile: RS Composition — Post‑Crash Investigation 
+## Resource Profile: Road Safety Composition — Post‑Crash Investigation 
 
 | | |
 | :--- | :--- |
@@ -16,7 +16,7 @@ Composition that organises a Post‑Crash submission. Sections reference Observa
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
+* Use this Profile: [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-composition-postcrash)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-composition-postc
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-postcrash",
   "version" : "0.1.0",
   "name" : "RSCompositionPostCrash",
-  "title" : "RS Composition — Post‑Crash Investigation",
+  "title" : "Road Safety Composition — Post‑Crash Investigation",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

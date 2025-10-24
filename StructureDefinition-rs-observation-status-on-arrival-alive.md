@@ -1,10 +1,10 @@
-# RS Observation - If Alive: Conscious/Unconscious - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - If Alive: Conscious/Unconscious - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - If Alive: Conscious/Unconscious**
+* **Road Safety Observation - If Alive: Conscious/Unconscious**
 
-## Resource Profile: RS Observation - If Alive: Conscious/Unconscious 
+## Resource Profile: Road Safety Observation - If Alive: Conscious/Unconscious 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ If alive on arrival, consciousness detail.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-status-on-arrival-alive)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-statu
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival-alive",
   "version" : "0.1.0",
   "name" : "RSObsStatusOnArrivalAliveDetail",
-  "title" : "RS Observation - If Alive: Conscious/Unconscious",
+  "title" : "Road Safety Observation - If Alive: Conscious/Unconscious",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

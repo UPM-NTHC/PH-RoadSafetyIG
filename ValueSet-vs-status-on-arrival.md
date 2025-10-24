@@ -16,7 +16,7 @@ Status upon reaching facility/hospital.
 
  **References** 
 
-* [RS Observation - Status on Arrival](StructureDefinition-rs-observation-status-on-arrival.md)
+* [Road Safety Observation - Status on Arrival](StructureDefinition-rs-observation-status-on-arrival.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "VSStatusOnArrival",
   "title" : "RS VS - Status on Arrival",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

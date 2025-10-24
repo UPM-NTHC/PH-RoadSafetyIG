@@ -16,7 +16,7 @@ Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT).
 
  **References** 
 
-* [RS Observation - External Cause: Burns](StructureDefinition-rs-observation-nature-burns.md)
+* [Road Safety Observation - External Cause: Burns](StructureDefinition-rs-observation-nature-burns.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "VSBurnDegrees",
   "title" : "RS VS - Burn Degrees",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

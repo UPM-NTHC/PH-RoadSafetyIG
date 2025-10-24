@@ -1,10 +1,10 @@
-# RS MedicationStatement - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety MedicationStatement - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS MedicationStatement**
+* **Road Safety MedicationStatement**
 
-## Resource Profile: RS MedicationStatement 
+## Resource Profile: Road Safety MedicationStatement 
 
 | | |
 | :--- | :--- |
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement",
   "version" : "0.1.0",
   "name" : "RSMedicationStatement",
-  "title" : "RS MedicationStatement",
+  "title" : "Road Safety MedicationStatement",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

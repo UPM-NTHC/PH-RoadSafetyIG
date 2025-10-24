@@ -231,10 +231,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-ph-road-safety-logical-model.html"
-                  title="StructureDefinition/ph-road-safety-logical-model">RS Minimum Dataset (MDS) Logical Model</a>
+                  title="StructureDefinition/ph-road-safety-logical-model">Road Safety Minimum Dataset (MDS) Logical Model</a>
             </td>
             <td>
-<p>Abstract, sectioned logical model for the PH RS MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling.</p>
+<p>Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling.</p>
 </td>
          </tr>
       </tbody>
@@ -248,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-allergy-intolerance.html"
-                  title="StructureDefinition/rs-allergy-intolerance">RS AllergyIntolerance</a>
+                  title="StructureDefinition/rs-allergy-intolerance">Road Safety AllergyIntolerance</a>
             </td>
             <td>
 <p>Known allergies, substances and reactions.</p>
@@ -257,7 +257,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-bundle-ems.html"
-                  title="StructureDefinition/rs-bundle-ems">RS Bundle — EMS Submission</a>
+                  title="StructureDefinition/rs-bundle-ems">Road Safety Bundle — EMS Submission</a>
             </td>
             <td>
 <p>Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).</p>
@@ -266,7 +266,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-bundle-oneiss.html"
-                  title="StructureDefinition/rs-bundle-oneiss">RS Bundle — ONEISS Submission</a>
+                  title="StructureDefinition/rs-bundle-oneiss">Road Safety Bundle — ONEISS Submission</a>
             </td>
             <td>
 <p>Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).</p>
@@ -275,7 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-bundle-postcrash.html"
-                  title="StructureDefinition/rs-bundle-postcrash">RS Bundle — Post‑Crash Investigation</a>
+                  title="StructureDefinition/rs-bundle-postcrash">Road Safety Bundle — Post‑Crash Investigation</a>
             </td>
             <td>
 <p>Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences.</p>
@@ -284,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-claim.html"
-                  title="StructureDefinition/rs-claim">RS Claim</a>
+                  title="StructureDefinition/rs-claim">Road Safety Claim</a>
             </td>
             <td>
 <p>Claim information related to cost of care.</p>
@@ -293,7 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-composition-ems.html"
-                  title="StructureDefinition/rs-composition-ems">RS Composition — EMS Submission</a>
+                  title="StructureDefinition/rs-composition-ems">Road Safety Composition — EMS Submission</a>
             </td>
             <td>
 <p>Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).</p>
@@ -302,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-composition-oneiss.html"
-                  title="StructureDefinition/rs-composition-oneiss">RS Composition — ONEISS Submission</a>
+                  title="StructureDefinition/rs-composition-oneiss">Road Safety Composition — ONEISS Submission</a>
             </td>
             <td>
 <p>Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).</p>
@@ -311,811 +311,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-composition-postcrash.html"
-                  title="StructureDefinition/rs-composition-postcrash">RS Composition — Post‑Crash Investigation</a>
+                  title="StructureDefinition/rs-composition-postcrash">Road Safety Composition — Post‑Crash Investigation</a>
             </td>
             <td>
 <p>Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-document-reference.html"
-                  title="StructureDefinition/rs-document-reference">RS DocumentReference (Evidence)</a>
-            </td>
-            <td>
-<p>Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-encounter.html"
-                  title="StructureDefinition/rs-encounter">RS Encounter</a>
-            </td>
-            <td>
-<p>Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition &amp; transfer.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-healthcare-service.html"
-                  title="StructureDefinition/rs-healthcare-service">RS HealthcareService</a>
-            </td>
-            <td>
-<p>Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-incident-location-incident.html"
-                  title="StructureDefinition/rs-incident-location-incident">RS Incident Location</a>
-            </td>
-            <td>
-<p>Location of incident; supports PH-Core address extensions and geolocation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-medication-statement.html"
-                  title="StructureDefinition/rs-medication-statement">RS MedicationStatement</a>
-            </td>
-            <td>
-<p>Current medications as codeable concepts or references where available.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation.html"
-                  title="StructureDefinition/rs-observation">RS Observation</a>
-            </td>
-            <td>
-<p>Generic base Observation for RS data; specialized concept profiles below constrain code/value patterns.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-abrasion.html"
-                  title="StructureDefinition/rs-observation-abrasion">RS Observation - Abrasion</a>
-            </td>
-            <td>
-<p>Abrasion present; with optional site and details.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-activity-at-incident.html"
-                  title="StructureDefinition/rs-observation-activity-at-incident">RS Observation - Activity at Time of Incident</a>
-            </td>
-            <td>
-<p>Activity of the patient at time of incident; allow text fallback.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-avulsion.html"
-                  title="StructureDefinition/rs-observation-avulsion">RS Observation - Avulsion</a>
-            </td>
-            <td>
-<p>Avulsion present; with optional site and details.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-blood-alcohol.html"
-                  title="StructureDefinition/rs-observation-blood-alcohol">RS Observation - Blood Alcohol Concentration</a>
-            </td>
-            <td>
-<p>Blood alcohol concentration.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-blood-pressure.html"
-                  title="StructureDefinition/rs-observation-blood-pressure">RS Observation - Blood Pressure</a>
-            </td>
-            <td>
-<p>Blood pressure using component entries for systolic/diastolic.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-body-temperature.html"
-                  title="StructureDefinition/rs-observation-body-temperature">RS Observation - Body Temperature</a>
-            </td>
-            <td>
-<p>Body temperature.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-breath-sounds.html"
-                  title="StructureDefinition/rs-observation-breath-sounds">RS Observation - Breath Sounds</a>
-            </td>
-            <td>
-<p>Breath sounds assessment.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-cctv-available.html"
-                  title="StructureDefinition/rs-observation-cctv-available">RS Observation - CCTV Available</a>
-            </td>
-            <td>
-<p>Availability of CCTV video.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-call-source.html"
-                  title="StructureDefinition/rs-observation-call-source">RS Observation - Call Source</a>
-            </td>
-            <td>
-<p>Call source description (free text).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-clinical-remarks.html"
-                  title="StructureDefinition/rs-observation-clinical-remarks">RS Observation - Clinical Remarks</a>
-            </td>
-            <td>
-<p>Clinical remarks/notes.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-collision-type.html"
-                  title="StructureDefinition/rs-observation-collision-type">RS Observation - Collision Type</a>
-            </td>
-            <td>
-<p>Collision type (Angle, Head-on, Rear end, Side swipe, etc.).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-collision-vs-noncollision.html"
-                  title="StructureDefinition/rs-observation-collision-vs-noncollision">RS Observation - Collision vs Non-Collision</a>
-            </td>
-            <td>
-<p>Indicates whether the incident was collision or non-collision.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-concussion.html"
-                  title="StructureDefinition/rs-observation-concussion">RS Observation - Concussion</a>
-            </td>
-            <td>
-<p>Concussion present; with site and details.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-condition-of-patient.html"
-                  title="StructureDefinition/rs-observation-condition-of-patient">RS Observation - Condition of Patient</a>
-            </td>
-            <td>
-<p>Overall condition of patient at assessment.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-contusion.html"
-                  title="StructureDefinition/rs-observation-contusion">RS Observation - Contusion</a>
-            </td>
-            <td>
-<p>Contusion present; with site and details.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-cyanosis.html"
-                  title="StructureDefinition/rs-observation-cyanosis">RS Observation - Cyanosis</a>
-            </td>
-            <td>
-<p>Cyanosis assessment.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-date-of-consultation.html"
-                  title="StructureDefinition/rs-observation-date-of-consultation">RS Observation - Date of Consultation</a>
-            </td>
-            <td>
-<p>Date of consultation at facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-date-of-injury.html"
-                  title="StructureDefinition/rs-observation-date-of-injury">RS Observation - Date of Injury</a>
-            </td>
-            <td>
-<p>Date of injury occurrence.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-date-received.html"
-                  title="StructureDefinition/rs-observation-date-received">RS Observation - Date/Time Received by EMS</a>
-            </td>
-            <td>
-<p>Calendar/timestamp the EMS/dispatch received the request.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-injury-datetime.html"
-                  title="StructureDefinition/rs-observation-injury-datetime">RS Observation - Date/Time of Injury</a>
-            </td>
-            <td>
-<p>Timestamp of injury occurrence.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-extent-of-injury.html"
-                  title="StructureDefinition/rs-observation-extent-of-injury">RS Observation - Extent of Injury</a>
-            </td>
-            <td>
-<p>Extent / severity estimate or category of injury (e.g., minor, moderate, severe).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-bites-stings.html"
-                  title="StructureDefinition/rs-observation-ec-bites-stings">RS Observation - External Cause: Bites/Stings</a>
-            </td>
-            <td>
-<p>Flag indicating bites/stings.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-burns.html"
-                  title="StructureDefinition/rs-observation-ec-burns">RS Observation - External Cause: Burns</a>
-            </td>
-            <td>
-<p>Flag indicating burns as external cause.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-nature-burns.html"
-                  title="StructureDefinition/rs-observation-nature-burns">RS Observation - External Cause: Burns</a>
-            </td>
-            <td>
-<p>Flag indicating burns as external cause.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-chemical.html"
-                  title="StructureDefinition/rs-observation-ec-chemical">RS Observation - External Cause: Chemical/Substance</a>
-            </td>
-            <td>
-<p>Observation for chemical/substance exposure.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-sharp-object.html"
-                  title="StructureDefinition/rs-observation-ec-sharp-object">RS Observation - External Cause: Contact with Sharp Object</a>
-            </td>
-            <td>
-<p>Flag indicating sharp object cause.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-drowning.html"
-                  title="StructureDefinition/rs-observation-ec-drowning">RS Observation - External Cause: Drowning</a>
-            </td>
-            <td>
-<p>Flag indicating drowning.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-forces-of-nature.html"
-                  title="StructureDefinition/rs-observation-ec-forces-of-nature">RS Observation - External Cause: Exposure to Forces of Nature</a>
-            </td>
-            <td>
-<p>Flag indicating exposure to natural disaster/calamity.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-fall.html"
-                  title="StructureDefinition/rs-observation-ec-fall">RS Observation - External Cause: Fall</a>
-            </td>
-            <td>
-<p>Flag indicating fall.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-firecracker.html"
-                  title="StructureDefinition/rs-observation-ec-firecracker">RS Observation - External Cause: Firecracker</a>
-            </td>
-            <td>
-<p>Flag indicating firecracker-related cause.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-gunshot.html"
-                  title="StructureDefinition/rs-observation-ec-gunshot">RS Observation - External Cause: Gunshot</a>
-            </td>
-            <td>
-<p>Flag indicating gunshot.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-hanging-strangulation.html"
-                  title="StructureDefinition/rs-observation-ec-hanging-strangulation">RS Observation - External Cause: Hanging/Strangulation</a>
-            </td>
-            <td>
-<p>Flag indicating hanging/strangulation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-mauling-assault.html"
-                  title="StructureDefinition/rs-observation-ec-mauling-assault">RS Observation - External Cause: Mauling/Assault</a>
-            </td>
-            <td>
-<p>Flag indicating assault.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-other.html"
-                  title="StructureDefinition/rs-observation-ec-other">RS Observation - External Cause: Other</a>
-            </td>
-            <td>
-<p>Flag indicating other external cause.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-ec-sexual-assault.html"
-                  title="StructureDefinition/rs-observation-ec-sexual-assault">RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)</a>
-            </td>
-            <td>
-<p>Flag indicating sexual assault.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-fracture.html"
-                  title="StructureDefinition/rs-observation-fracture">RS Observation - Fracture</a>
-            </td>
-            <td>
-<p>Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-gcs.html"
-                  title="StructureDefinition/rs-observation-gcs">RS Observation - Glasgow Coma Scale</a>
-            </td>
-            <td>
-<p>GCS with components for eyes, verbal, motor; optional total score as integer.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-how-many-patients.html"
-                  title="StructureDefinition/rs-observation-how-many-patients">RS Observation - How Many Patients Involved</a>
-            </td>
-            <td>
-<p>Count of patients involved.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-how-many-vehicles.html"
-                  title="StructureDefinition/rs-observation-how-many-vehicles">RS Observation - How Many Vehicles Involved</a>
-            </td>
-            <td>
-<p>Count of vehicles involved.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-status-on-arrival-alive.html"
-                  title="StructureDefinition/rs-observation-status-on-arrival-alive">RS Observation - If Alive: Conscious/Unconscious</a>
-            </td>
-            <td>
-<p>If alive on arrival, consciousness detail.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-injury-intent.html"
-                  title="StructureDefinition/rs-observation-injury-intent">RS Observation - Injury Intent</a>
-            </td>
-            <td>
-<p>Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-level-of-consciousness.html"
-                  title="StructureDefinition/rs-observation-level-of-consciousness">RS Observation - Level of Consciousness (AVPU)</a>
-            </td>
-            <td>
-<p>Level of consciousness (e.g., AVPU).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-mode-of-transport.html"
-                  title="StructureDefinition/rs-observation-mode-of-transport">RS Observation - Mode of Transport to Facility</a>
-            </td>
-            <td>
-<p>Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-multiple-injuries.html"
-                  title="StructureDefinition/rs-observation-multiple-injuries">RS Observation - Multiple Injuries?</a>
-            </td>
-            <td>
-<p>Boolean flag indicating multiple injuries.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-open-wound.html"
-                  title="StructureDefinition/rs-observation-open-wound">RS Observation - Open Wound</a>
-            </td>
-            <td>
-<p>Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-other-risk-factors.html"
-                  title="StructureDefinition/rs-observation-other-risk-factors">RS Observation - Other Risk Factors</a>
-            </td>
-            <td>
-<p>Other risk factors at the time of incident; allow text for 'Others'.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-other-injury.html"
-                  title="StructureDefinition/rs-observation-other-injury">RS Observation - Other Specified Injury</a>
-            </td>
-            <td>
-<p>Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-other-vehicle.html"
-                  title="StructureDefinition/rs-observation-other-vehicle">RS Observation - Other Vehicle/Object Involved</a>
-            </td>
-            <td>
-<p>Other vehicle/object type involved; text for 'Others'.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-outcome-discharge.html"
-                  title="StructureDefinition/rs-observation-outcome-discharge">RS Observation - Outcome at Discharge</a>
-            </td>
-            <td>
-<p>Outcome at discharge.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-outcome-release.html"
-                  title="StructureDefinition/rs-observation-outcome-release">RS Observation - Outcome at Release</a>
-            </td>
-            <td>
-<p>Outcome at release from ER/OPD/RHU.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-patients-vehicle.html"
-                  title="StructureDefinition/rs-observation-patients-vehicle">RS Observation - Patient's Vehicle</a>
-            </td>
-            <td>
-<p>Type of vehicle used by patient; text for 'Others'.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-place-of-occurrence.html"
-                  title="StructureDefinition/rs-observation-place-of-occurrence">RS Observation - Place of Occurrence</a>
-            </td>
-            <td>
-<p>Place type where injury occurred; name can be carried in note when applicable.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-position-of-patient.html"
-                  title="StructureDefinition/rs-observation-position-of-patient">RS Observation - Position of Patient</a>
-            </td>
-            <td>
-<p>Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-traffic-investigator.html"
-                  title="StructureDefinition/rs-observation-traffic-investigator">RS Observation - Presence of Traffic Investigator</a>
-            </td>
-            <td>
-<p>Boolean presence/absence of traffic investigator.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-urgency.html"
-                  title="StructureDefinition/rs-observation-urgency">RS Observation - Priority Level (Urgency)</a>
-            </td>
-            <td>
-<p>System-generated urgency level per CAD/agency rules.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pulse-quality.html"
-                  title="StructureDefinition/rs-observation-pulse-quality">RS Observation - Pulse Quality</a>
-            </td>
-            <td>
-<p>Pulse quality.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pulse-rate.html"
-                  title="StructureDefinition/rs-observation-pulse-rate">RS Observation - Pulse Rate</a>
-            </td>
-            <td>
-<p>Pulse/heart rate in beats/min.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pulse-rhythm.html"
-                  title="StructureDefinition/rs-observation-pulse-rhythm">RS Observation - Pulse Rhythm</a>
-            </td>
-            <td>
-<p>Pulse rhythm.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pupils.html"
-                  title="StructureDefinition/rs-observation-pupils">RS Observation - Pupils</a>
-            </td>
-            <td>
-<p>Pupil size/reactivity summary.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-referred-by-facility.html"
-                  title="StructureDefinition/rs-observation-referred-by-facility">RS Observation - Referred By Facility</a>
-            </td>
-            <td>
-<p>Flag indicating patient was referred by another hospital/facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-reported-complaint.html"
-                  title="StructureDefinition/rs-observation-reported-complaint">RS Observation - Reported Complaint</a>
-            </td>
-            <td>
-<p>Free-text reported complaint.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-respiratory-rate.html"
-                  title="StructureDefinition/rs-observation-respiratory-rate">RS Observation - Respiratory Rate</a>
-            </td>
-            <td>
-<p>Respiratory rate in breaths/min.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-respiratory-rhythm.html"
-                  title="StructureDefinition/rs-observation-respiratory-rhythm">RS Observation - Respiratory Rhythm</a>
-            </td>
-            <td>
-<p>Respiratory rhythm (normal/irregular/labored).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-runreport-comments.html"
-                  title="StructureDefinition/rs-observation-runreport-comments">RS Observation - Run Report Comments</a>
-            </td>
-            <td>
-<p>General comments from run report.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-safety-accessories.html"
-                  title="StructureDefinition/rs-observation-safety-accessories">RS Observation - Safety Accessories</a>
-            </td>
-            <td>
-<p>Safety accessories present/used; allow text for 'Others'.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-status-on-arrival.html"
-                  title="StructureDefinition/rs-observation-status-on-arrival">RS Observation - Status on Arrival</a>
-            </td>
-            <td>
-<p>Status upon reaching facility/hospital.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-departed.html"
-                  title="StructureDefinition/rs-observation-time-departed">RS Observation - Time Departed Scene</a>
-            </td>
-            <td>
-<p>Timestamp unit departed scene.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-enroute.html"
-                  title="StructureDefinition/rs-observation-time-enroute">RS Observation - Time Enroute</a>
-            </td>
-            <td>
-<p>Timestamp when unit dispatched/began traveling.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-on-scene.html"
-                  title="StructureDefinition/rs-observation-time-on-scene">RS Observation - Time On Scene</a>
-            </td>
-            <td>
-<p>Timestamp crew arrived at scene.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-received.html"
-                  title="StructureDefinition/rs-observation-time-received">RS Observation - Time Received</a>
-            </td>
-            <td>
-<p>Time the call/request was received by EMS/dispatch.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-of-consultation.html"
-                  title="StructureDefinition/rs-observation-time-of-consultation">RS Observation - Time of Consultation</a>
-            </td>
-            <td>
-<p>Time of consultation at facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-station-arrival.html"
-                  title="StructureDefinition/rs-observation-time-station-arrival">RS Observation - Time of Emergency Station Arrival</a>
-            </td>
-            <td>
-<p>Timestamp unit returned to base/became available.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-hospital-arrival.html"
-                  title="StructureDefinition/rs-observation-time-hospital-arrival">RS Observation - Time of Hospital Arrival</a>
-            </td>
-            <td>
-<p>Timestamp unit arrived at receiving facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-of-injury.html"
-                  title="StructureDefinition/rs-observation-time-of-injury">RS Observation - Time of Injury</a>
-            </td>
-            <td>
-<p>Time of injury occurrence.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-transferred-from-facility.html"
-                  title="StructureDefinition/rs-observation-transferred-from-facility">RS Observation - Transferred From Facility</a>
-            </td>
-            <td>
-<p>Flag indicating patient transferred from another hospital/facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-transport-vehicular-accident.html"
-                  title="StructureDefinition/rs-observation-transport-vehicular-accident">RS Observation - Transport/Vehicular Accident</a>
-            </td>
-            <td>
-<p>Boolean flag indicating transport/vehicular accident.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-traumatic-amputation.html"
-                  title="StructureDefinition/rs-observation-traumatic-amputation">RS Observation - Traumatic Amputation</a>
-            </td>
-            <td>
-<p>Traumatic amputation present; with site and details.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-triage-priority.html"
-                  title="StructureDefinition/rs-observation-triage-priority">RS Observation - Triage Priority</a>
-            </td>
-            <td>
-<p>Triage category assigned at scene (e.g., Red/Yellow/Green/Black).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-vehicle-used.html"
-                  title="StructureDefinition/rs-observation-vehicle-used">RS Observation - Vehicle Used</a>
-            </td>
-            <td>
-<p>Vehicle used during response.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-organization.html"
-                  title="StructureDefinition/rs-organization">RS Organization</a>
-            </td>
-            <td>
-<p>Organization profile for EMS providers and receiving facilities involved in RS encounters.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-procedure.html"
-                  title="StructureDefinition/rs-procedure">RS Procedure</a>
-            </td>
-            <td>
-<p>Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-procedure-transport-coordination.html"
-                  title="StructureDefinition/rs-procedure-transport-coordination">RS Procedure - Transport Coordination</a>
-            </td>
-            <td>
-<p>Procedure record indicating whether transport coordination with the receiving hospital was done.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-location-service.html"
-                  title="StructureDefinition/rs-location-service">RS Service Location</a>
-            </td>
-            <td>
-<p>Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic).</p>
 </td>
          </tr>
          <tr>
@@ -1174,11 +373,812 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-rs-document-reference.html"
+                  title="StructureDefinition/rs-document-reference">Road Safety DocumentReference (Evidence)</a>
+            </td>
+            <td>
+<p>Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-encounter.html"
+                  title="StructureDefinition/rs-encounter">Road Safety Encounter</a>
+            </td>
+            <td>
+<p>Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition &amp; transfer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-healthcare-service.html"
+                  title="StructureDefinition/rs-healthcare-service">Road Safety HealthcareService</a>
+            </td>
+            <td>
+<p>Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-incident-location-incident.html"
+                  title="StructureDefinition/rs-incident-location-incident">Road Safety Incident Location</a>
+            </td>
+            <td>
+<p>Location of incident; supports PH-Core address extensions and geolocation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-medication-statement.html"
+                  title="StructureDefinition/rs-medication-statement">Road Safety MedicationStatement</a>
+            </td>
+            <td>
+<p>Current medications as codeable concepts or references where available.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation.html"
+                  title="StructureDefinition/rs-observation">Road Safety Observation</a>
+            </td>
+            <td>
+<p>Generic base Observation for road safety data; specialized concept profiles below constrain code/value patterns.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-abrasion.html"
+                  title="StructureDefinition/rs-observation-abrasion">Road Safety Observation - Abrasion</a>
+            </td>
+            <td>
+<p>Abrasion present; with optional site and details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-activity-at-incident.html"
+                  title="StructureDefinition/rs-observation-activity-at-incident">Road Safety Observation - Activity at Time of Incident</a>
+            </td>
+            <td>
+<p>Activity of the patient at time of incident; allow text fallback.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-avulsion.html"
+                  title="StructureDefinition/rs-observation-avulsion">Road Safety Observation - Avulsion</a>
+            </td>
+            <td>
+<p>Avulsion present; with optional site and details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-blood-alcohol.html"
+                  title="StructureDefinition/rs-observation-blood-alcohol">Road Safety Observation - Blood Alcohol Concentration</a>
+            </td>
+            <td>
+<p>Blood alcohol concentration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-blood-pressure.html"
+                  title="StructureDefinition/rs-observation-blood-pressure">Road Safety Observation - Blood Pressure</a>
+            </td>
+            <td>
+<p>Blood pressure using component entries for systolic/diastolic.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-body-temperature.html"
+                  title="StructureDefinition/rs-observation-body-temperature">Road Safety Observation - Body Temperature</a>
+            </td>
+            <td>
+<p>Body temperature.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-breath-sounds.html"
+                  title="StructureDefinition/rs-observation-breath-sounds">Road Safety Observation - Breath Sounds</a>
+            </td>
+            <td>
+<p>Breath sounds assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-cctv-available.html"
+                  title="StructureDefinition/rs-observation-cctv-available">Road Safety Observation - CCTV Available</a>
+            </td>
+            <td>
+<p>Availability of CCTV video.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-call-source.html"
+                  title="StructureDefinition/rs-observation-call-source">Road Safety Observation - Call Source</a>
+            </td>
+            <td>
+<p>Call source description (free text).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-clinical-remarks.html"
+                  title="StructureDefinition/rs-observation-clinical-remarks">Road Safety Observation - Clinical Remarks</a>
+            </td>
+            <td>
+<p>Clinical remarks/notes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-collision-type.html"
+                  title="StructureDefinition/rs-observation-collision-type">Road Safety Observation - Collision Type</a>
+            </td>
+            <td>
+<p>Collision type (Angle, Head-on, Rear end, Side swipe, etc.).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-collision-vs-noncollision.html"
+                  title="StructureDefinition/rs-observation-collision-vs-noncollision">Road Safety Observation - Collision vs Non-Collision</a>
+            </td>
+            <td>
+<p>Indicates whether the incident was collision or non-collision.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-concussion.html"
+                  title="StructureDefinition/rs-observation-concussion">Road Safety Observation - Concussion</a>
+            </td>
+            <td>
+<p>Concussion present; with site and details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-condition-of-patient.html"
+                  title="StructureDefinition/rs-observation-condition-of-patient">Road Safety Observation - Condition of Patient</a>
+            </td>
+            <td>
+<p>Overall condition of patient at assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-contusion.html"
+                  title="StructureDefinition/rs-observation-contusion">Road Safety Observation - Contusion</a>
+            </td>
+            <td>
+<p>Contusion present; with site and details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-cyanosis.html"
+                  title="StructureDefinition/rs-observation-cyanosis">Road Safety Observation - Cyanosis</a>
+            </td>
+            <td>
+<p>Cyanosis assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-date-of-consultation.html"
+                  title="StructureDefinition/rs-observation-date-of-consultation">Road Safety Observation - Date of Consultation</a>
+            </td>
+            <td>
+<p>Date of consultation at facility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-date-of-injury.html"
+                  title="StructureDefinition/rs-observation-date-of-injury">Road Safety Observation - Date of Injury</a>
+            </td>
+            <td>
+<p>Date of injury occurrence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-date-received.html"
+                  title="StructureDefinition/rs-observation-date-received">Road Safety Observation - Date/Time Received by EMS</a>
+            </td>
+            <td>
+<p>Calendar/timestamp the EMS/dispatch received the request.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-injury-datetime.html"
+                  title="StructureDefinition/rs-observation-injury-datetime">Road Safety Observation - Date/Time of Injury</a>
+            </td>
+            <td>
+<p>Timestamp of injury occurrence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-extent-of-injury.html"
+                  title="StructureDefinition/rs-observation-extent-of-injury">Road Safety Observation - Extent of Injury</a>
+            </td>
+            <td>
+<p>Extent / severity estimate or category of injury (e.g., minor, moderate, severe).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-bites-stings.html"
+                  title="StructureDefinition/rs-observation-ec-bites-stings">Road Safety Observation - External Cause: Bites/Stings</a>
+            </td>
+            <td>
+<p>Flag indicating bites/stings.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-burns.html"
+                  title="StructureDefinition/rs-observation-ec-burns">Road Safety Observation - External Cause: Burns</a>
+            </td>
+            <td>
+<p>Flag indicating burns as external cause.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-nature-burns.html"
+                  title="StructureDefinition/rs-observation-nature-burns">Road Safety Observation - External Cause: Burns</a>
+            </td>
+            <td>
+<p>Flag indicating burns as external cause.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-chemical.html"
+                  title="StructureDefinition/rs-observation-ec-chemical">Road Safety Observation - External Cause: Chemical/Substance</a>
+            </td>
+            <td>
+<p>Observation for chemical/substance exposure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-sharp-object.html"
+                  title="StructureDefinition/rs-observation-ec-sharp-object">Road Safety Observation - External Cause: Contact with Sharp Object</a>
+            </td>
+            <td>
+<p>Flag indicating sharp object cause.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-drowning.html"
+                  title="StructureDefinition/rs-observation-ec-drowning">Road Safety Observation - External Cause: Drowning</a>
+            </td>
+            <td>
+<p>Flag indicating drowning.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-forces-of-nature.html"
+                  title="StructureDefinition/rs-observation-ec-forces-of-nature">Road Safety Observation - External Cause: Exposure to Forces of Nature</a>
+            </td>
+            <td>
+<p>Flag indicating exposure to natural disaster/calamity.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-fall.html"
+                  title="StructureDefinition/rs-observation-ec-fall">Road Safety Observation - External Cause: Fall</a>
+            </td>
+            <td>
+<p>Flag indicating fall.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-firecracker.html"
+                  title="StructureDefinition/rs-observation-ec-firecracker">Road Safety Observation - External Cause: Firecracker</a>
+            </td>
+            <td>
+<p>Flag indicating firecracker-related cause.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-gunshot.html"
+                  title="StructureDefinition/rs-observation-ec-gunshot">Road Safety Observation - External Cause: Gunshot</a>
+            </td>
+            <td>
+<p>Flag indicating gunshot.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-hanging-strangulation.html"
+                  title="StructureDefinition/rs-observation-ec-hanging-strangulation">Road Safety Observation - External Cause: Hanging/Strangulation</a>
+            </td>
+            <td>
+<p>Flag indicating hanging/strangulation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-mauling-assault.html"
+                  title="StructureDefinition/rs-observation-ec-mauling-assault">Road Safety Observation - External Cause: Mauling/Assault</a>
+            </td>
+            <td>
+<p>Flag indicating assault.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-other.html"
+                  title="StructureDefinition/rs-observation-ec-other">Road Safety Observation - External Cause: Other</a>
+            </td>
+            <td>
+<p>Flag indicating other external cause.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-ec-sexual-assault.html"
+                  title="StructureDefinition/rs-observation-ec-sexual-assault">Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)</a>
+            </td>
+            <td>
+<p>Flag indicating sexual assault.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-fracture.html"
+                  title="StructureDefinition/rs-observation-fracture">Road Safety Observation - Fracture</a>
+            </td>
+            <td>
+<p>Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-gcs.html"
+                  title="StructureDefinition/rs-observation-gcs">Road Safety Observation - Glasgow Coma Scale</a>
+            </td>
+            <td>
+<p>GCS with components for eyes, verbal, motor; optional total score as integer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-how-many-patients.html"
+                  title="StructureDefinition/rs-observation-how-many-patients">Road Safety Observation - How Many Patients Involved</a>
+            </td>
+            <td>
+<p>Count of patients involved.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-how-many-vehicles.html"
+                  title="StructureDefinition/rs-observation-how-many-vehicles">Road Safety Observation - How Many Vehicles Involved</a>
+            </td>
+            <td>
+<p>Count of vehicles involved.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-status-on-arrival-alive.html"
+                  title="StructureDefinition/rs-observation-status-on-arrival-alive">Road Safety Observation - If Alive: Conscious/Unconscious</a>
+            </td>
+            <td>
+<p>If alive on arrival, consciousness detail.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-injury-intent.html"
+                  title="StructureDefinition/rs-observation-injury-intent">Road Safety Observation - Injury Intent</a>
+            </td>
+            <td>
+<p>Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-level-of-consciousness.html"
+                  title="StructureDefinition/rs-observation-level-of-consciousness">Road Safety Observation - Level of Consciousness (AVPU)</a>
+            </td>
+            <td>
+<p>Level of consciousness (e.g., AVPU).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-mode-of-transport.html"
+                  title="StructureDefinition/rs-observation-mode-of-transport">Road Safety Observation - Mode of Transport to Facility</a>
+            </td>
+            <td>
+<p>Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-multiple-injuries.html"
+                  title="StructureDefinition/rs-observation-multiple-injuries">Road Safety Observation - Multiple Injuries?</a>
+            </td>
+            <td>
+<p>Boolean flag indicating multiple injuries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-open-wound.html"
+                  title="StructureDefinition/rs-observation-open-wound">Road Safety Observation - Open Wound</a>
+            </td>
+            <td>
+<p>Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-other-risk-factors.html"
+                  title="StructureDefinition/rs-observation-other-risk-factors">Road Safety Observation - Other Risk Factors</a>
+            </td>
+            <td>
+<p>Other risk factors at the time of incident; allow text for 'Others'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-other-injury.html"
+                  title="StructureDefinition/rs-observation-other-injury">Road Safety Observation - Other Specified Injury</a>
+            </td>
+            <td>
+<p>Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-other-vehicle.html"
+                  title="StructureDefinition/rs-observation-other-vehicle">Road Safety Observation - Other Vehicle/Object Involved</a>
+            </td>
+            <td>
+<p>Other vehicle/object type involved; text for 'Others'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-outcome-discharge.html"
+                  title="StructureDefinition/rs-observation-outcome-discharge">Road Safety Observation - Outcome at Discharge</a>
+            </td>
+            <td>
+<p>Outcome at discharge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-outcome-release.html"
+                  title="StructureDefinition/rs-observation-outcome-release">Road Safety Observation - Outcome at Release</a>
+            </td>
+            <td>
+<p>Outcome at release from ER/OPD/RHU.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-patients-vehicle.html"
+                  title="StructureDefinition/rs-observation-patients-vehicle">Road Safety Observation - Patient's Vehicle</a>
+            </td>
+            <td>
+<p>Type of vehicle used by patient; text for 'Others'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-place-of-occurrence.html"
+                  title="StructureDefinition/rs-observation-place-of-occurrence">Road Safety Observation - Place of Occurrence</a>
+            </td>
+            <td>
+<p>Place type where injury occurred; name can be carried in note when applicable.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-position-of-patient.html"
+                  title="StructureDefinition/rs-observation-position-of-patient">Road Safety Observation - Position of Patient</a>
+            </td>
+            <td>
+<p>Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-traffic-investigator.html"
+                  title="StructureDefinition/rs-observation-traffic-investigator">Road Safety Observation - Presence of Traffic Investigator</a>
+            </td>
+            <td>
+<p>Boolean presence/absence of traffic investigator.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-urgency.html"
+                  title="StructureDefinition/rs-observation-urgency">Road Safety Observation - Priority Level (Urgency)</a>
+            </td>
+            <td>
+<p>System-generated urgency level per CAD/agency rules.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-pulse-quality.html"
+                  title="StructureDefinition/rs-observation-pulse-quality">Road Safety Observation - Pulse Quality</a>
+            </td>
+            <td>
+<p>Pulse quality.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-pulse-rate.html"
+                  title="StructureDefinition/rs-observation-pulse-rate">Road Safety Observation - Pulse Rate</a>
+            </td>
+            <td>
+<p>Pulse/heart rate in beats/min.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-pulse-rhythm.html"
+                  title="StructureDefinition/rs-observation-pulse-rhythm">Road Safety Observation - Pulse Rhythm</a>
+            </td>
+            <td>
+<p>Pulse rhythm.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-pupils.html"
+                  title="StructureDefinition/rs-observation-pupils">Road Safety Observation - Pupils</a>
+            </td>
+            <td>
+<p>Pupil size/reactivity summary.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-referred-by-facility.html"
+                  title="StructureDefinition/rs-observation-referred-by-facility">Road Safety Observation - Referred By Facility</a>
+            </td>
+            <td>
+<p>Flag indicating patient was referred by another hospital/facility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-reported-complaint.html"
+                  title="StructureDefinition/rs-observation-reported-complaint">Road Safety Observation - Reported Complaint</a>
+            </td>
+            <td>
+<p>Free-text reported complaint.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-respiratory-rate.html"
+                  title="StructureDefinition/rs-observation-respiratory-rate">Road Safety Observation - Respiratory Rate</a>
+            </td>
+            <td>
+<p>Respiratory rate in breaths/min.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-respiratory-rhythm.html"
+                  title="StructureDefinition/rs-observation-respiratory-rhythm">Road Safety Observation - Respiratory Rhythm</a>
+            </td>
+            <td>
+<p>Respiratory rhythm (normal/irregular/labored).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-runreport-comments.html"
+                  title="StructureDefinition/rs-observation-runreport-comments">Road Safety Observation - Run Report Comments</a>
+            </td>
+            <td>
+<p>General comments from run report.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-safety-accessories.html"
+                  title="StructureDefinition/rs-observation-safety-accessories">Road Safety Observation - Safety Accessories</a>
+            </td>
+            <td>
+<p>Safety accessories present/used; allow text for 'Others'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-status-on-arrival.html"
+                  title="StructureDefinition/rs-observation-status-on-arrival">Road Safety Observation - Status on Arrival</a>
+            </td>
+            <td>
+<p>Status upon reaching facility/hospital.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-departed.html"
+                  title="StructureDefinition/rs-observation-time-departed">Road Safety Observation - Time Departed Scene</a>
+            </td>
+            <td>
+<p>Timestamp unit departed scene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-enroute.html"
+                  title="StructureDefinition/rs-observation-time-enroute">Road Safety Observation - Time Enroute</a>
+            </td>
+            <td>
+<p>Timestamp when unit dispatched/began traveling.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-on-scene.html"
+                  title="StructureDefinition/rs-observation-time-on-scene">Road Safety Observation - Time On Scene</a>
+            </td>
+            <td>
+<p>Timestamp crew arrived at scene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-received.html"
+                  title="StructureDefinition/rs-observation-time-received">Road Safety Observation - Time Received</a>
+            </td>
+            <td>
+<p>Time the call/request was received by EMS/dispatch.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-of-consultation.html"
+                  title="StructureDefinition/rs-observation-time-of-consultation">Road Safety Observation - Time of Consultation</a>
+            </td>
+            <td>
+<p>Time of consultation at facility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-station-arrival.html"
+                  title="StructureDefinition/rs-observation-time-station-arrival">Road Safety Observation - Time of Emergency Station Arrival</a>
+            </td>
+            <td>
+<p>Timestamp unit returned to base/became available.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-hospital-arrival.html"
+                  title="StructureDefinition/rs-observation-time-hospital-arrival">Road Safety Observation - Time of Hospital Arrival</a>
+            </td>
+            <td>
+<p>Timestamp unit arrived at receiving facility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-time-of-injury.html"
+                  title="StructureDefinition/rs-observation-time-of-injury">Road Safety Observation - Time of Injury</a>
+            </td>
+            <td>
+<p>Time of injury occurrence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-transferred-from-facility.html"
+                  title="StructureDefinition/rs-observation-transferred-from-facility">Road Safety Observation - Transferred From Facility</a>
+            </td>
+            <td>
+<p>Flag indicating patient transferred from another hospital/facility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-transport-vehicular-accident.html"
+                  title="StructureDefinition/rs-observation-transport-vehicular-accident">Road Safety Observation - Transport/Vehicular Accident</a>
+            </td>
+            <td>
+<p>Boolean flag indicating transport/vehicular accident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-traumatic-amputation.html"
+                  title="StructureDefinition/rs-observation-traumatic-amputation">Road Safety Observation - Traumatic Amputation</a>
+            </td>
+            <td>
+<p>Traumatic amputation present; with site and details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-triage-priority.html"
+                  title="StructureDefinition/rs-observation-triage-priority">Road Safety Observation - Triage Priority</a>
+            </td>
+            <td>
+<p>Triage category assigned at scene (e.g., Red/Yellow/Green/Black).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-vehicle-used.html"
+                  title="StructureDefinition/rs-observation-vehicle-used">Road Safety Observation - Vehicle Used</a>
+            </td>
+            <td>
+<p>Vehicle used during response.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-organization.html"
+                  title="StructureDefinition/rs-organization">Road Safety Organization</a>
+            </td>
+            <td>
+<p>Organization profile for EMS providers and receiving facilities involved in road safety encounters.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-rs-patient.html"
                   title="StructureDefinition/rs-patient">Road Safety Patient</a>
             </td>
             <td>
 <p>Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-procedure.html"
+                  title="StructureDefinition/rs-procedure">Road Safety Procedure</a>
+            </td>
+            <td>
+<p>Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-procedure-transport-coordination.html"
+                  title="StructureDefinition/rs-procedure-transport-coordination">Road Safety Procedure - Transport Coordination</a>
+            </td>
+            <td>
+<p>Procedure record indicating whether transport coordination with the receiving hospital was done.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-location-service.html"
+                  title="StructureDefinition/rs-location-service">Road Safety Service Location</a>
+            </td>
+            <td>
+<p>Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic).</p>
 </td>
          </tr>
          <tr>
@@ -1552,7 +1552,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 24, 2025 06:46+0000">2025-10-24</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 24, 2025 16:08+0000">2025-10-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

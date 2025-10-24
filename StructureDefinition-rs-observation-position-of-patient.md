@@ -1,10 +1,10 @@
-# RS Observation - Position of Patient - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Position of Patient - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Position of Patient**
+* **Road Safety Observation - Position of Patient**
 
-## Resource Profile: RS Observation - Position of Patient 
+## Resource Profile: Road Safety Observation - Position of Patient 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-position-of-patient)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-posit
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient",
   "version" : "0.1.0",
   "name" : "RSObsPositionOfPatient",
-  "title" : "RS Observation - Position of Patient",
+  "title" : "Road Safety Observation - Position of Patient",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,10 +1,10 @@
-# RS Observation - CCTV Available - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - CCTV Available - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - CCTV Available**
+* **Road Safety Observation - CCTV Available**
 
-## Resource Profile: RS Observation - CCTV Available 
+## Resource Profile: Road Safety Observation - CCTV Available 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Availability of CCTV video.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
+* Use this Profile: [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
+* Refer to this Profile: [Road Safety Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-cctv-available)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-cctv-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available",
   "version" : "0.1.0",
   "name" : "RSObsCCTVAvailable",
-  "title" : "RS Observation - CCTV Available",
+  "title" : "Road Safety Observation - CCTV Available",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

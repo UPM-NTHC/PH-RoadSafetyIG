@@ -1,10 +1,10 @@
-# RS Observation - Other Vehicle/Object Involved - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Other Vehicle/Object Involved - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **RS Observation - Other Vehicle/Object Involved**
+* **Road Safety Observation - Other Vehicle/Object Involved**
 
-## Resource Profile: RS Observation - Other Vehicle/Object Involved 
+## Resource Profile: Road Safety Observation - Other Vehicle/Object Involved 
 
 | | |
 | :--- | :--- |
@@ -16,8 +16,8 @@ Other vehicle/object type involved; text for 'Others'.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-other-vehicle)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle",
   "version" : "0.1.0",
   "name" : "RSObsOtherVehicleInvolved",
-  "title" : "RS Observation - Other Vehicle/Object Involved",
+  "title" : "Road Safety Observation - Other Vehicle/Object Involved",
   "status" : "draft",
-  "date" : "2025-10-24T06:46:00+00:00",
+  "date" : "2025-10-24T16:06:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
