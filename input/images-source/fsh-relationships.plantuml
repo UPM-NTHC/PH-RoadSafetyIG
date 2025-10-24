@@ -17,12 +17,14 @@ class "RSAllergyIntolerance" {
 }
 class "AllergyIntolerance"
 class "RSPatient" {
+  identifier : — [0..*]
   name : — [1..*]
   name.family : — [0..1]
   name.given : — [1..*]
+  name.given : — [1..2]
+  name.given : — [0..1]
   birthDate : — [0..1]
   telecom : — [0..*]
-  identifier : — [0..*]
   address : — [0..*]
   address.line : — [0..*]
   address.extension : — [0..*]
@@ -44,7 +46,7 @@ class "RSEncounter" {
   location[accidentSite].location : Reference(RSIncidentLocation)
   location[facility].location : — [1..1]
   location[facility].location : Reference(RSServiceLocation)
-  location[facility].type : — [0..1]
+  location[facility].location.type : — [0..1]
   identifier : — [0..1]
   identifier[incidentNumber].type : — [1..1]
   identifier[incidentNumber].type.coding : — [1..1]
@@ -78,24 +80,13 @@ class "RSCompositionEMS" {
   section[vitals].entry : — [0..*]
   section[vitals].entry : Reference
   section[clinical].entry : — [0..*]
-  section[clinical].entry : Reference
+  section[clinical].entry : Reference(RSObsClinicalRemarks | RSProcedure | RSCondition)
   section[documents].entry : — [0..*]
   section[documents].entry : Reference(RSDocumentReference)
   section[procedures].entry : — [0..*]
   section[procedures].entry : Reference(RSProcedure | RSServiceRequest | RSTask)
 }
 class "Composition"
-class "RSDocumentReference" {
-  status : — [1..1]
-  type : — [0..1]
-  subject : — [0..1]
-  subject : Reference(RSPatient)
-  context.encounter : — [0..1]
-  context.encounter : Reference(RSEncounter)
-  content : — [1..*]
-  content.attachment.url : — [1..1]
-  content.format : — [0..1]
-}
 class "RSProcedure" {
   status : — [1..1]
   code : — [0..1]
@@ -107,11 +98,34 @@ class "RSProcedure" {
   performer.actor : Reference(PHCorePractitioner)
   note : — [0..*]
 }
+class "RSCondition" {
+  subject : — [1..1]
+  subject : Reference(RSPatient)
+  encounter : — [0..1]
+  encounter : Reference(RSEncounter)
+  category : — [0..1]
+  severity : — [0..1]
+  code : — [0..1]
+  code.text : — [0..1]
+  onset[x] : — [0..1]
+  note : — [0..*]
+}
+class "RSDocumentReference" {
+  status : — [1..1]
+  type : — [0..1]
+  subject : — [0..1]
+  subject : Reference(RSPatient)
+  context.encounter : — [0..1]
+  context.encounter : Reference(RSEncounter)
+  content : — [1..*]
+  content.attachment.url : — [1..1]
+  content.format : — [0..1]
+}
 class "RSServiceRequest" {
   status : — [1..1]
   occurrenceDateTime : — [0..1]
   supportingInfo : — [0..*]
-  supportingInfo : Reference(RSHealthcareService | RSOrganization | PHCoreOrganization | PHCorePractitioner)
+  supportingInfo : Reference(RSOrganization | PHCorePractitioner)
   requester : — [0..1]
   requester : Reference(PHCorePractitioner)
   code : — [1..1]
@@ -139,24 +153,24 @@ class "RSBundleEMS" {
   entry[patient].resource : RSPatient
   entry[encounter].resource : RSEncounter
   entry[location].resource : RSIncidentLocation
-  entry[observationDateReceived].resource : rs
-  entry[observationTimeEnroute].resource : rs
-  entry[observationTimeOnScene].resource : rs
-  entry[observationTimeDeparted].resource : rs
-  entry[observationTimeHospitalArrival].resource : rs
-  entry[observationTimeStationArrival].resource : rs
-  entry[observationVitals].resource : rs
-  entry[observationGCS].resource : rs
-  entry[observationReportedComplaint].resource : rs
-  entry[observationCallSource].resource : rs
-  entry[observationVehicleUsed].resource : rs
-  entry[observationRunReportComments].resource : rs
-  entry[observationClinicalRemarks].resource : rs
+  entry[observationDateReceived].resource : RSObsDateReceived
+  entry[observationTimeEnroute].resource : RSObsTimeEnroute
+  entry[observationTimeOnScene].resource : RSObsTimeOnScene
+  entry[observationTimeDeparted].resource : RSObsTimeDepartedScene
+  entry[observationTimeHospitalArrival].resource : RSObsTimeHospitalArrival
+  entry[observationTimeStationArrival].resource : RSObsTimeStationArrival
+  entry[observationVitals].resource : RSObsRespiratoryRate
+  entry[observationGCS].resource : RSObsGCS
+  entry[observationReportedComplaint].resource : RSObsReportedComplaint
+  entry[observationCallSource].resource : RSObsCallSource
+  entry[observationVehicleUsed].resource : RSObsVehicleUsed
+  entry[observationRunReportComments].resource : RSObsRunReportComments
+  entry[observationClinicalRemarks].resource : RSObsClinicalRemarks
   entry[document].resource : RSDocumentReference
   entry[task].resource : RSTask
   entry[serviceRequest].resource : RSServiceRequest
   entry[procedure].resource : RSProcedure
-  entry[claim].resource : rs
+  entry[claim].resource : RSClaim
 }
 class "Bundle"
 class "RSCompositionONEISS" {
@@ -172,6 +186,8 @@ class "RSCompositionONEISS" {
   section[encounter].entry : Reference(RSEncounter)
   section[clinical].entry : — [0..*]
   section[clinical].entry : Reference
+  section[injuries].entry : — [0..*]
+  section[injuries].entry : Reference
   section[incident].entry : — [0..*]
   section[incident].entry : Reference
   section[documents].entry : — [0..*]
@@ -184,15 +200,15 @@ class "RSBundleONEISS" {
   entry[composition].resource : RSCompositionONEISS
   entry[patient].resource : RSPatient
   entry[encounter].resource : RSEncounter
-  entry[conditionInitial].resource : rs
-  entry[conditionFinal].resource : rs
-  entry[observationClinical].resource : rs
-  entry[observationIncident].resource : rs
-  entry[observationExternalCause].resource : rs
-  entry[observationInjuries].resource : rs
-  entry[observationExtentOfInjury].resource : rs
-  entry[observationTransferredFromFacility].resource : rs
-  entry[observationReferredByFacility].resource : rs
+  entry[conditionInitial].resource : RSConditionInitialImpression
+  entry[conditionFinal].resource : RSConditionFinalDiagnosis
+  entry[observationClinical].resource : RSObsOtherRiskFactors
+  entry[observationIncident].resource : RSObsInjuryDateTime
+  entry[observationExternalCause].resource : RSObsECBitesStings
+  entry[observationInjuries].resource : RSObsMultipleInjuries
+  entry[observationExtentOfInjury].resource : RSObsExtentOfInjury
+  entry[observationTransferredFromFacility].resource : RSObsTransferredFromFacility
+  entry[observationReferredByFacility].resource : RSObsReferredByFacility
   entry[document].resource : RSDocumentReference
   entry[serviceRequest].resource : RSServiceRequest
   entry[procedure].resource : RSProcedure
@@ -218,7 +234,7 @@ class "RSBundlePostCrash" {
   entry[composition].resource : RSCompositionPostCrash
   entry[patient].resource : RSPatient
   entry[encounter].resource : RSEncounter
-  entry[observationPostCrash].resource : rs
+  entry[observationPostCrash].resource : RSObsCollisionType
   entry[document].resource : RSDocumentReference
 }
 class "RSClaim" {
@@ -227,28 +243,30 @@ class "RSClaim" {
   total : — [0..1]
 }
 class "Claim"
-class "RSCondition" {
-  subject : — [1..1]
-  subject : Reference(RSPatient)
-  encounter : — [0..1]
-  encounter : Reference(RSEncounter)
-  category : — [0..1]
-  severity : — [0..1]
-  code : — [0..1]
-  code.coding[icd10Nature].system : — [0..1]
-  code.coding[icd10Nature].display : — [0..1]
-  code.coding[icd10ExternalCause].system : — [0..1]
-  code.coding[icd10ExternalCause].display : — [0..1]
-  code.coding[sct].system : — [0..1]
-  code.coding[sct].display : — [0..1]
-  code.text : — [0..1]
-  onset[x] : — [0..1]
-  abatement[x] : — [0..1]
-  bodySite : — [0..*]
-  evidence : — [0..*]
-  note : — [0..*]
-}
 class "Condition"
+class "RSConditionProblem" {
+  code : — [0..1]
+  category.coding : — [1..1]
+}
+class "RSConditionInitialImpression" {
+  code : — [0..1]
+  category.coding : — [1..1]
+}
+class "RSConditionFinalDiagnosis" {
+  code : — [0..1]
+}
+class "RSConditionNatureOfInjury" {
+  category : — [0..1]
+  category.coding.system : — [0..1]
+  category.coding.display : — [0..1]
+  code : — [0..1]
+}
+class "RSConditionExternalCause" {
+  category : — [0..1]
+  category.coding.system : — [0..1]
+  category.coding.display : — [0..1]
+  code : — [0..1]
+}
 class "DocumentReference"
 class "PHCoreEncounter"
 class "RSOrganization" {
@@ -276,10 +294,11 @@ class "RSServiceLocation" {
 class "PHCorePractitioner"
 class "PHCoreLocation"
 class "RSMedicationStatement" {
-  medication[x] : — [1..1]
   subject : — [1..1]
   subject : Reference(RSPatient)
   effective[x] : — [0..1]
+  medicationCodeableConcept : — [1..1]
+  medicationCodeableConcept.text : — [1..1]
 }
 class "MedicationStatement"
 class "RSObservation" {
@@ -292,6 +311,7 @@ class "RSObservation" {
   effective[x] : — [0..1]
   performer : — [0..*]
   value[x] : — [0..1]
+  note : — [0..*]
 }
 class "PHCoreObservation"
 class "PHCoreOrganization"
@@ -317,90 +337,92 @@ class "RSProcedureTransportCoordination" {
 class "ServiceRequest"
 class "Task"
 class "Obs (RS profiles)" {
-  "Road Safety Observation - Respiratory Rate" : Profile
-  "Road Safety Observation - Pulse Rate" : Profile
-  "Road Safety Observation - Blood Pressure" : Profile
-  "Road Safety Observation - Body Temperature" : Profile
-  "Road Safety Observation - Level of Consciousness (AVPU)" : Profile
-  "Road Safety Observation - Pupils" : Profile
-  "Road Safety Observation - Cyanosis" : Profile
-  "Road Safety Observation - Glasgow Coma Scale" : Profile
-  "Road Safety Observation - Respiratory Rhythm" : Profile
-  "Road Safety Observation - Breath Sounds" : Profile
-  "Road Safety Observation - Pulse Rhythm" : Profile
-  "Road Safety Observation - Pulse Quality" : Profile
-  "Road Safety Observation - Date/Time Received by EMS" : Profile
-  "Road Safety Observation - Time Enroute" : Profile
-  "Road Safety Observation - Time On Scene" : Profile
-  "Road Safety Observation - Time Departed Scene" : Profile
-  "Road Safety Observation - Time of Hospital Arrival" : Profile
-  "Road Safety Observation - Time of Emergency Station Arrival" : Profile
-  "Road Safety Observation - Date/Time of Injury" : Profile
-  "Road Safety Observation - Injury Intent" : Profile
-  "Road Safety Observation - Transport/Vehicular Accident (flag)" : Profile
-  "Road Safety Observation - Mode of Transport to Facility" : Profile
-  "Road Safety Observation - Triage Priority" : Profile
-  "Road Safety Observation - Priority Level (Urgency)" : Profile
-  "Road Safety Observation - Place of Occurrence" : Profile
-  "Road Safety Observation - Activity at Time of Incident" : Profile
-  "Road Safety Observation - Collision vs Non-Collision" : Profile
-  "Road Safety Observation - Patient's Vehicle" : Profile
-  "Road Safety Observation - Other Vehicle/Object Involved" : Profile
-  "Road Safety Observation - Position of Patient" : Profile
-  "Road Safety Observation - How Many Vehicles Involved" : Profile
-  "Road Safety Observation - How Many Patients Involved" : Profile
-  "Road Safety Observation - Collision Type" : Profile
-  "Road Safety Observation - Presence of Traffic Investigator" : Profile
-  "Road Safety Observation - Other Risk Factors" : Profile
-  "Road Safety Observation - Safety Accessories" : Profile
-  "Road Safety Observation - Reported Complaint" : Profile
-  "Road Safety Observation - Call Source" : Profile
-  "Road Safety Observation - External Cause: Bites/Stings" : Profile
-  "Road Safety Observation - External Cause: Burns" : Profile
-  "Road Safety Observation - External Cause: Chemical/Substance" : Profile
-  "Road Safety Observation - External Cause: Contact with Sharp Object" : Profile
-  "Road Safety Observation - External Cause: Drowning" : Profile
-  "Road Safety Observation - External Cause: Exposure to Forces of Nature" : Profile
-  "Road Safety Observation - External Cause: Fall" : Profile
-  "Road Safety Observation - External Cause: Firecracker" : Profile
-  "Road Safety Observation - External Cause: Gunshot" : Profile
-  "Road Safety Observation - External Cause: Hanging/Strangulation" : Profile
-  "Road Safety Observation - External Cause: Mauling/Assault" : Profile
-  "Road Safety Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)" : Profile
-  "Road Safety Observation - External Cause: Other" : Profile
-  "Road Safety Observation - Extent of Injury" : Profile
-  "Road Safety Observation - Transferred From Facility" : Profile
-  "Road Safety Observation - Referred By Facility" : Profile
-  "Road Safety Observation - Multiple Injuries?" : Profile
-  "Road Safety Observation - Abrasion" : Profile
-  "Road Safety Observation - Avulsion" : Profile
-  "Road Safety Observation - Burn 1st Degree" : Profile
-  "Road Safety Observation - Burn 2nd Degree" : Profile
-  "Road Safety Observation - Burn 3rd Degree" : Profile
-  "Road Safety Observation - Burn 4th Degree" : Profile
-  "Road Safety Observation - Concussion" : Profile
-  "Road Safety Observation - Contusion" : Profile
-  "Road Safety Observation - Fracture (Closed)" : Profile
-  "Road Safety Observation - Fracture (Open)" : Profile
-  "Road Safety Observation - Open Wound" : Profile
-  "Road Safety Observation - Traumatic Amputation" : Profile
-  "Road Safety Observation - Other Specified Injury" : Profile
-  "Road Safety Observation - Blood Alcohol Concentration" : Profile
-  "Road Safety Observation - Condition of Patient" : Profile
-  "Road Safety Observation - Outcome at Release" : Profile
-  "Road Safety Observation - Outcome at Discharge" : Profile
-  "Road Safety Observation - Status on Arrival" : Profile
-  "Road Safety Observation - If Alive: Conscious/Unconscious" : Profile
-  "Road Safety Observation - Vehicle Used" : Profile
-  "Road Safety Observation - Clinical Remarks" : Profile
-  "Road Safety Observation - Run Report Comments" : Profile
-  "Road Safety Observation - Vehicle Condition" : Profile
-  "Road Safety Observation - CCTV Available" : Profile
+  "RS Observation - Respiratory Rate" : Profile
+  "RS Observation - Pulse Rate" : Profile
+  "RS Observation - Blood Pressure" : Profile
+  "RS Observation - Body Temperature" : Profile
+  "RS Observation - Level of Consciousness (AVPU)" : Profile
+  "RS Observation - Pupils" : Profile
+  "RS Observation - Cyanosis" : Profile
+  "RS Observation - Glasgow Coma Scale" : Profile
+  "RS Observation - Respiratory Rhythm" : Profile
+  "RS Observation - Breath Sounds" : Profile
+  "RS Observation - Pulse Rhythm" : Profile
+  "RS Observation - Pulse Quality" : Profile
+  "RS Observation - Date/Time Received by EMS" : Profile
+  "RS Observation - Time Received" : Profile
+  "RS Observation - Time Enroute" : Profile
+  "RS Observation - Time On Scene" : Profile
+  "RS Observation - Time Departed Scene" : Profile
+  "RS Observation - Time of Hospital Arrival" : Profile
+  "RS Observation - Time of Emergency Station Arrival" : Profile
+  "RS Observation - Date/Time of Injury" : Profile
+  "RS Observation - Date of Injury" : Profile
+  "RS Observation - Time of Injury" : Profile
+  "RS Observation - Injury Intent" : Profile
+  "RS Observation - Transport/Vehicular Accident" : Profile
+  "RS Observation - Mode of Transport to Facility" : Profile
+  "RS Observation - Date of Consultation" : Profile
+  "RS Observation - Time of Consultation" : Profile
+  "RS Observation - Triage Priority" : Profile
+  "RS Observation - Priority Level (Urgency)" : Profile
+  "RS Observation - Place of Occurrence" : Profile
+  "RS Observation - Activity at Time of Incident" : Profile
+  "RS Observation - Collision vs Non-Collision" : Profile
+  "RS Observation - Patient's Vehicle" : Profile
+  "RS Observation - Other Vehicle/Object Involved" : Profile
+  "RS Observation - Position of Patient" : Profile
+  "RS Observation - How Many Vehicles Involved" : Profile
+  "RS Observation - How Many Patients Involved" : Profile
+  "RS Observation - Collision Type" : Profile
+  "RS Observation - Presence of Traffic Investigator" : Profile
+  "RS Observation - Other Risk Factors" : Profile
+  "RS Observation - Safety Accessories" : Profile
+  "RS Observation - Reported Complaint" : Profile
+  "RS Observation - Call Source" : Profile
+  "RS Observation - External Cause: Bites/Stings" : Profile
+  "RS Observation - External Cause: Burns" : Profile
+  "RS Observation - External Cause: Burns" : Profile
+  "RS Observation - External Cause: Chemical/Substance" : Profile
+  "RS Observation - External Cause: Contact with Sharp Object" : Profile
+  "RS Observation - External Cause: Drowning" : Profile
+  "RS Observation - External Cause: Exposure to Forces of Nature" : Profile
+  "RS Observation - External Cause: Fall" : Profile
+  "RS Observation - External Cause: Firecracker" : Profile
+  "RS Observation - External Cause: Gunshot" : Profile
+  "RS Observation - External Cause: Hanging/Strangulation" : Profile
+  "RS Observation - External Cause: Mauling/Assault" : Profile
+  "RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)" : Profile
+  "RS Observation - External Cause: Other" : Profile
+  "RS Observation - Extent of Injury" : Profile
+  "RS Observation - Transferred From Facility" : Profile
+  "RS Observation - Referred By Facility" : Profile
+  "RS Observation - Multiple Injuries?" : Profile
+  "RS Observation - Abrasion" : Profile
+  "RS Observation - Avulsion" : Profile
+  "RS Observation - Concussion" : Profile
+  "RS Observation - Contusion" : Profile
+  "RS Observation - Fracture" : Profile
+  "RS Observation - Open Wound" : Profile
+  "RS Observation - Traumatic Amputation" : Profile
+  "RS Observation - Other Specified Injury" : Profile
+  "RS Observation - Blood Alcohol Concentration" : Profile
+  "RS Observation - Condition of Patient" : Profile
+  "RS Observation - Outcome at Release" : Profile
+  "RS Observation - Outcome at Discharge" : Profile
+  "RS Observation - Status on Arrival" : Profile
+  "RS Observation - If Alive: Conscious/Unconscious" : Profile
+  "RS Observation - Vehicle Used" : Profile
+  "RS Observation - Clinical Remarks" : Profile
+  "RS Observation - Run Report Comments" : Profile
+  "RS Observation - CCTV Available" : Profile
 }
 
 "RSAllergyIntolerance" --> "RSPatient" : patient
 "RSAllergyIntolerance" --> "RSEncounter" : encounter
 "RSCompositionEMS" --> "RSPatient" : subject
+"RSCompositionEMS" --> "RSProcedure" : section[clinical].entry
+"RSCompositionEMS" --> "RSCondition" : section[clinical].entry
 "RSCompositionEMS" --> "RSDocumentReference" : section[documents].entry
 "RSCompositionEMS" --> "RSProcedure" : section[procedures].entry
 "RSCompositionEMS" --> "RSServiceRequest" : section[procedures].entry
@@ -435,9 +457,7 @@ class "Obs (RS profiles)" {
 "RSProcedure" --> "RSPatient" : subject
 "RSProcedure" --> "RSEncounter" : encounter
 "RSProcedure" --> "PHCorePractitioner" : performer.actor
-"RSServiceRequest" --> "RSHealthcareService" : supportingInfo
 "RSServiceRequest" --> "RSOrganization" : supportingInfo
-"RSServiceRequest" --> "PHCoreOrganization" : supportingInfo
 "RSServiceRequest" --> "PHCorePractitioner" : supportingInfo
 "RSServiceRequest" --> "PHCorePractitioner" : requester
 "RSServiceRequest" --> "RSPatient" : subject
@@ -453,6 +473,11 @@ class "Obs (RS profiles)" {
 "RSBundlePostCrash" --|> "Bundle"
 "RSClaim" --|> "Claim"
 "RSCondition" --|> "Condition"
+"RSConditionProblem" --|> "RSCondition"
+"RSConditionInitialImpression" --|> "RSCondition"
+"RSConditionFinalDiagnosis" --|> "RSCondition"
+"RSConditionNatureOfInjury" --|> "RSCondition"
+"RSConditionExternalCause" --|> "RSCondition"
 "RSDocumentReference" --|> "DocumentReference"
 "RSEncounter" --|> "PHCoreEncounter"
 "RSIncidentLocation" --|> "PHCoreLocation"

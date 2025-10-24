@@ -1,4 +1,4 @@
-// Road Safety ValueSets (prioritize SNOMED CT per mapping)
+// RS ValueSets (prioritize SNOMED CT per mapping)
 
 // AVPU
 ValueSet: VSLevelOfConsciousness
