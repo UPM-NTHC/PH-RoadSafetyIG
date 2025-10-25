@@ -1,4 +1,4 @@
-# RS VS - Position of Patient - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS VS - Position of Patient - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient | *Version*:0.1.0 |
-| Draft as of 2025-10-24 | *Computable Name*:VSPositionOfPatient |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient | *Version*:0.1.9 |
+| Draft as of 2025-10-25 | *Computable Name*:VSPositionOfPatient |
 
  
 Position/role of patient in transport incidents (prefer SNOMED CT). 
@@ -50,11 +50,11 @@ This value set contains 8 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-position-of-patient",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-position-of-patient",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "VSPositionOfPatient",
   "title" : "RS VS - Position of Patient",
   "status" : "draft",
-  "date" : "2025-10-24T16:06:58+00:00",
+  "date" : "2025-10-25T04:52:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

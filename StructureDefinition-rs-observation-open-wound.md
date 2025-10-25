@@ -1,4 +1,4 @@
-# Road Safety Observation - Open Wound - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Observation - Open Wound - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound | *Version*:0.1.0 |
-| Draft as of 2025-10-24 | *Computable Name*:RSObsOpenWound |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound | *Version*:0.1.9 |
+| Draft as of 2025-10-25 | *Computable Name*:RSObsOpenWound |
 
  
 Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text). 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-open-
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-open-wound",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "RSObsOpenWound",
   "title" : "Road Safety Observation - Open Wound",
   "status" : "draft",
-  "date" : "2025-10-24T16:06:58+00:00",
+  "date" : "2025-10-25T04:52:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

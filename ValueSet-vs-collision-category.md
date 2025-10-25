@@ -1,4 +1,4 @@
-# RS VS - Collision Category - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS VS - Collision Category - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category | *Version*:0.1.0 |
-| Draft as of 2025-10-24 | *Computable Name*:VSCollisionCategory |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category | *Version*:0.1.9 |
+| Draft as of 2025-10-25 | *Computable Name*:VSCollisionCategory |
 
  
 Collision vs non-collision category. 
@@ -27,7 +27,7 @@ Collision vs non-collision category.
 Expansion from tx.fhir.org based on:
 
 * Loinc v2.81
-* [codesystem SILPH Local Codes v0.1.0 (CodeSystem)](CodeSystem-cs-silph.md)
+* [codesystem SILPH Local Codes v0.1.9 (CodeSystem)](CodeSystem-cs-silph.md)
 
 This value set contains 2 concepts
 
@@ -53,11 +53,11 @@ This value set contains 2 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-collision-category",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "VSCollisionCategory",
   "title" : "RS VS - Collision Category",
   "status" : "draft",
-  "date" : "2025-10-24T16:06:58+00:00",
+  "date" : "2025-10-25T04:52:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

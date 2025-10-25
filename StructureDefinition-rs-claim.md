@@ -1,4 +1,4 @@
-# Road Safety Claim - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Claim - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim | *Version*:0.1.0 |
-| Draft as of 2025-10-24 | *Computable Name*:RSClaim |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim | *Version*:0.1.9 |
+| Draft as of 2025-10-25 | *Computable Name*:RSClaim |
 
  
 Claim information related to cost of care. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-claim.csv), [Exce
   "resourceType" : "StructureDefinition",
   "id" : "rs-claim",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "RSClaim",
   "title" : "Road Safety Claim",
   "status" : "draft",
-  "date" : "2025-10-24T16:06:58+00:00",
+  "date" : "2025-10-25T04:52:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
