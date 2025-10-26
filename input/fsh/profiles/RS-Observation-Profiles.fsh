@@ -1,6 +1,3 @@
-// RS Observation Profiles (TW Core-style by concept)
-// Concept mappings: comments above each profile indicate the mapped concept or clinical measure
-
 // Base profile reused by all RS observations
 // Base profile - used for many Observation mappings (see Logical Model for specific element mappings)
 Profile: RSObservation
@@ -20,193 +17,25 @@ Description: "Generic base Observation for RS data; specialized concept profiles
 * value[x] 0..1
 * note 0..*
 
-// ---------------- VITAL SIGNS ----------------
-// MDS70 - Respiratory Rate
-Profile: RSObsRespiratoryRate
+// MDS16/17 - Date/Time of Consultation
+Profile: RSObsDateOfConsultation
 Parent: RSObservation
-Id: rs-observation-respiratory-rate
-Title: "RS Observation - Respiratory Rate"
-Description: "Respiratory rate in breaths/min."
-* valueQuantity 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#86290005 "Respiratory rate (observable entity)" (exactly)
-
-
-// MDS73 - Pulse/Heart Rate
-Profile: RSObsPulseRate
-Parent: RSObservation
-Id: rs-observation-pulse-rate
-Title: "RS Observation - Pulse Rate"
-Description: "Pulse/heart rate in beats/min."
-* valueQuantity 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
-
-
-// MDS76 (systolic) / MDS77 (diastolic) - Blood Pressure components
-Profile: RSObsBloodPressure
-Parent: RSObservation
-Id: rs-observation-blood-pressure
-Title: "RS Observation - Blood Pressure"
-Description: "Blood pressure using component entries for systolic/diastolic."
-* valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $LNC#85354-9 "Blood pressure panel with all children optional" (exactly)
-
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept ^short = "Specify blood pressure components"
-
-// MDS78 - Body Temperature
-Profile: RSObsBodyTemperature
-Parent: RSObservation
-Id: rs-observation-body-temperature
-Title: "RS Observation - Body Temperature"
-Description: "Body temperature."
-* valueQuantity 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#386725007 "Body temperature (observable entity)" (exactly)
-
-
-// MDS79 - Level of Consciousness (AVPU)
-Profile: RSObsLevelOfConsciousness
-Parent: RSObservation
-Id: rs-observation-level-of-consciousness
-Title: "RS Observation - Level of Consciousness (AVPU)"
-Description: "Level of consciousness (e.g., AVPU)."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSLevelOfConsciousness (preferred)
-* code.coding 0..1
-* code.coding = $SCT#449159002 "Alert voice pain unresponsive scale (assessment scale)" (exactly)
-
-
-// MDS80 - Pupils
-Profile: RSObsPupils
-Parent: RSObservation
-Id: rs-observation-pupils
-Title: "RS Observation - Pupils"
-Description: "Pupil size/reactivity summary."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPupils (preferred)
-* code.coding 0..1
-* code.coding = $SCT#271733001 "Pupil reaction (observable entity)" (exactly)
-
-
-// MDS81 - Cyanosis
-Profile: RSObsCyanosis
-Parent: RSObservation
-Id: rs-observation-cyanosis
-Title: "RS Observation - Cyanosis"
-Description: "Cyanosis assessment."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSCyanosis (preferred)
-* code.coding 0..1
-* code.coding = $SCT#3415004 "Cyanosis (finding)" (exactly)
-
-
-// MDS83 (eyes), MDS84 (verbal), MDS85 (motor), MDS86 (total) - Glasgow Coma Scale
-Profile: RSObsGCS
-Parent: RSObservation
-Id: rs-observation-gcs
-Title: "RS Observation - Glasgow Coma Scale"
-Description: "GCS with components for eyes, verbal, motor; optional total score as integer."
-* valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $SCT#248241002 "Glasgow coma score (observable entity)" (exactly)
-
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept ^short = "Specify GCS components"
-
-// ---------------- VITALS QUALIFIERS ----------------
-// MDS71 - Respiratory Rhythm
-Profile: RSObsRespiratoryRhythm
-Parent: RSObservation
-Id: rs-observation-respiratory-rhythm
-Title: "RS Observation - Respiratory Rhythm"
-Description: "Respiratory rhythm (normal/irregular/labored)."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSRespiratoryRhythm (preferred)
-* code.coding 0..1
-* code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)" (exactly)
-
-
-// MDS72 - Breath Sounds
-Profile: RSObsBreathSounds
-Parent: RSObservation
-Id: rs-observation-breath-sounds
-Title: "RS Observation - Breath Sounds"
-Description: "Breath sounds assessment."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSBreathSounds (preferred)
-* code.coding 0..1
-* code.coding = $SCT#52653008 "Respiratory sounds (observable entity)" (exactly)
-
-
-// MDS74 - Pulse Rhythm
-Profile: RSObsPulseRhythm
-Parent: RSObservation
-Id: rs-observation-pulse-rhythm
-Title: "RS Observation - Pulse Rhythm"
-Description: "Pulse rhythm."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPulseRhythm (preferred)
-* code.coding 0..1
-* code.coding = $SCT#364095004 "Pulse rhythm (observable entity)" (exactly)
-
-
-// MDS75 - Pulse Quality
-Profile: RSObsPulseQuality
-Parent: RSObservation
-Id: rs-observation-pulse-quality
-Title: "RS Observation - Pulse Quality"
-Description: "Pulse quality."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPulseQuality (preferred)
-* code.coding 0..1
-* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
-
-
-// ---------------- TIMELINE (dispatch/transport timestamps) ----------------
-// Pattern profile reused by timeline date/time observations; specific codes enforced in bundle profiles.
-Profile: RSObsTimelineDateTime
-Parent: RSObservation
-Id: rs-observation-timeline-datetime
-Title: "RS Observation - Timeline Date/Time"
-Description: "Dispatch and transport timeline events capturing a precise date/time."
-* valueDateTime 1..1 MS
-
-// ---------------- INCIDENT CONTEXT ----------------
-// MDS158 / MDS159 - Date/Time of Injury
-Profile: RSObsInjuryDateTime
-Parent: RSObservation
-Id: rs-observation-injury-datetime
-Title: "RS Observation - Date/Time of Injury"
-Description: "Timestamp of injury occurrence."
+Id: rs-observation-date-of-consultation
+Title: "RS Observation - Date of Consultation"
+Description: "Date of consultation at facility."
 * valueDateTime 1..1 MS
 * code.coding 0..1
-* code.coding = $LNC#11368-8 "Illness or injury onset date and time" (exactly)
+* code.coding = $SCT#406543005 "Date of visit (observable entity)" (exactly)
 
-
-// MDS158 - Date of Injury
-Profile: RSObsDateOfInjury
+// MDS16/17 - Time of Consultation
+Profile: RSObsTimeOfConsultation
 Parent: RSObservation
-Id: rs-observation-date-of-injury
-Title: "RS Observation - Date of Injury"
-Description: "Date of injury occurrence."
+Id: rs-observation-time-of-consultation
+Title: "RS Observation - Time of Consultation"
+Description: "Time of consultation at facility."
 * valueDateTime 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#439771001 "Date of event (observable entity)" (exactly)
-
-
-// MDS159 - Time of Injury
-Profile: RSObsTimeOfInjury
-Parent: RSObservation
-Id: rs-observation-time-of-injury
-Title: "RS Observation - Time of Injury"
-Description: "Time of injury occurrence."
-* valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#263501003 "Time of onset (observable entity)" (exactly)
-
+* code.coding = $SCT#406544004 "Time of visit (observable entity)" (exactly)
 
 // MDS18 - Injury Intent
 Profile: RSObsInjuryIntent
@@ -218,248 +47,6 @@ Description: "Intent of injury (Unintentional, Intentional-self, Intentional-vio
 * code.coding 0..1
 * code.coding = $LNC#11375-3 "Injury intent" (exactly)
 
-
-// MDS41 - Transport/Vehicular Accident (flag)
-Profile: RSObsTransportVehicularAccident
-Parent: RSObservation
-Id: rs-observation-transport-vehicular-accident
-Title: "RS Observation - Transport/Vehicular Accident"
-Description: "Boolean flag indicating transport/vehicular accident."
-// External Cause/s of Injury/ies: Transport /Vehicular Accident - Flag []
-* valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $SCT#274215009 "Transport accident (event)" (exactly)
-
-
-// MDS118 (Mode of transport to facility) and MDS119 for 'Others' text if used
-Profile: RSObsModeOfTransport
-Parent: RSObservation
-Id: rs-observation-mode-of-transport
-Title: "RS Observation - Mode of Transport to Facility"
-Description: "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSModeOfTransport (preferred)
-* code.coding 0..1
-* code.coding = $LNC#74286-6 "Mode of transport to health facility" (exactly)
-
-
-// MDS16/17 - Date/Time of Consultation
-Profile: RSObsDateOfConsultation
-Parent: RSObservation
-Id: rs-observation-date-of-consultation
-Title: "RS Observation - Date of Consultation"
-Description: "Date of consultation at facility."
-* valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#406543005 "Date of visit (observable entity)" (exactly)
-
-
-Profile: RSObsTimeOfConsultation
-Parent: RSObservation
-Id: rs-observation-time-of-consultation
-Title: "RS Observation - Time of Consultation"
-Description: "Time of consultation at facility."
-* valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#406544004 "Time of visit (observable entity)" (exactly)
-
-
-// MDS111 - Triage Priority
-Profile: RSObsTriagePriority
-Parent: RSObservation
-Id: rs-observation-triage-priority
-Title: "RS Observation - Triage Priority"
-Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
-* code.coding 0..1
-* code.coding = $SCT#225390008 "Triage (procedure)" (exactly)
-
-* valueCodeableConcept 0..1 MS
-* valueCodeableConcept.text 1..1 MS
-
-
-// MDS114 - Priority Level (Urgency)
-Profile: RSObsUrgencyLevel
-Parent: RSObservation
-Id: rs-observation-urgency
-Title: "RS Observation - Priority Level (Urgency)"
-Description: "System-generated urgency level per CAD/agency rules."
-* valueCodeableConcept 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#260870009 "Priority (attribute)" (exactly)
-
-
-// MDS170 - Place of Occurrence
-Profile: RSObsPlaceOfOccurrence
-Parent: RSObservation
-Id: rs-observation-place-of-occurrence
-Title: "RS Observation - Place of Occurrence"
-Description: "Place type where injury occurred; name can be carried in note when applicable."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPlaceOfOccurrence (preferred)
-* note 0..* 
-* code.coding 0..1
-* code.coding = $SCT#place-of-occurrence "Place of occurrence"
-
-
-// MDS173 - Activity at Time of Incident
-Profile: RSObsActivityAtIncident
-Parent: RSObservation
-Id: rs-observation-activity-at-incident
-Title: "RS Observation - Activity at Time of Incident"
-Description: "Activity of the patient at time of incident; allow text fallback."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSActivity (preferred)
-* code.coding 0..1
-* code.coding = $LNC#11372-0 "Injury associated activity" (exactly)
-
-
-// MDS163 - Collision vs Non-Collision
-Profile: RSObsCollisionVsNonCollision
-Parent: RSObservation
-Id: rs-observation-collision-vs-noncollision
-Title: "RS Observation - Collision vs Non-Collision"
-Description: "Indicates whether the incident was collision or non-collision."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSCollisionCategory (preferred)
-* code.coding 0..1
-* code.coding = $SCT#collision-category "Collision category"
-
-
-// MDS164 - Patient's Vehicle
-Profile: RSObsPatientsVehicle
-Parent: RSObservation
-Id: rs-observation-patients-vehicle
-Title: "RS Observation - Patient's Vehicle"
-Description: "Type of vehicle used by patient; text for 'Others'."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSPatientsVehicle (preferred)
-* code.coding 0..1
-* code.coding = $SCT#patients-vehicle "Patient's vehicle"
-
-
-// MDS166 - Other Vehicle/Object Involved
-Profile: RSObsOtherVehicleInvolved
-Parent: RSObservation
-Id: rs-observation-other-vehicle
-Title: "RS Observation - Other Vehicle/Object Involved"
-Description: "Other vehicle/object type involved; text for 'Others'."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSOtherVehicle (preferred)
-* code.coding 0..1
-* code.coding = $SCT#other-vehicle-involved "Other vehicle/object involved"
-
-
-// MDS168 - Position of Patient
-Profile: RSObsPositionOfPatient
-Parent: RSObservation
-Id: rs-observation-position-of-patient
-Title: "RS Observation - Position of Patient"
-Description: "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSPositionOfPatient (preferred)
-* code.coding 0..1
-* code.coding = $SCT#position-of-patient "Position of patient"
-
-
-// MDS156 - How Many Vehicles Involved
-Profile: RSObsHowManyVehicles
-Parent: RSObservation
-Id: rs-observation-how-many-vehicles
-Title: "RS Observation - How Many Vehicles Involved"
-Description: "Count of vehicles involved."
-* valueInteger 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#how-many-vehicles "How many vehicles involved"
-
-
-// MDS157 - How Many Patients Involved
-Profile: RSObsHowManyPatients
-Parent: RSObservation
-Id: rs-observation-how-many-patients
-Title: "RS Observation - How Many Patients Involved"
-Description: "Count of patients involved."
-* valueInteger 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#how-many-patients "How many patients involved"
-
-
-// MDS218 - Collision Type (post-crash investigation)
-Profile: RSObsCollisionType
-Parent: RSObservation
-Id: rs-observation-collision-type
-Title: "RS Observation - Collision Type"
-Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
-* valueCodeableConcept 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#collision-type "Collision type"
-
-
-// MDS219 - Presence of Traffic Investigator
-Profile: RSObsPresenceTrafficInvestigator
-Parent: RSObservation
-Id: rs-observation-traffic-investigator
-Title: "RS Observation - Presence of Traffic Investigator"
-Description: "Boolean presence/absence of traffic investigator."
-* valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $SCT#159679004 "Traffic warden (occupation)" (exactly)
-
-
-// MDS230 / MDS231 - Other Risk Factors (and 'Others' text)
-Profile: RSObsOtherRiskFactors
-Parent: RSObservation
-Id: rs-observation-other-risk-factors
-Title: "RS Observation - Other Risk Factors"
-Description: "Other risk factors at the time of incident; allow text for 'Others'."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSOtherRiskFactors (preferred)
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept.text ^short = "Other risk factors"
-* code.coding 0..1
-* code.coding = $SCT#80943009 "Risk factor (observable entity)" (exactly)
-
-
-// MDS232 / MDS233 - Safety Accessories (and 'Others' text)
-Profile: RSObsSafetyAccessories
-Parent: RSObservation
-Id: rs-observation-safety-accessories
-Title: "RS Observation - Safety Accessories"
-Description: "Safety accessories present/used; allow text for 'Others'."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSSafetyDevices (preferred)
-* code.coding 0..1
-* code.coding = $SCT#386812007 "Safety precautions (procedure)" (exactly)
-
-
-// MDS149 - Reported Complaint (free text)
-Profile: RSObsReportedComplaint
-Parent: RSObservation
-Id: rs-observation-reported-complaint
-Title: "RS Observation - Reported Complaint"
-Description: "Free-text reported complaint."
-* valueString 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#1269489004 "Chief complaint (observable entity)" (exactly)
-
-
-// MDS155 - Call Source
-Profile: RSObsCallSource
-Parent: RSObservation
-Id: rs-observation-call-source
-Title: "RS Observation - Call Source"
-Description: "Call source description (free text)."
-* valueString 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#397663001 "Referral source (finding)" (exactly)
-
-
-// ---------------- EXTERNAL CAUSES ----------------
 // MDS19 (flag) ; MDS20 (specify animal/insect) - External Cause: Bites/Stings
 Profile: RSObsECBitesStings
 Parent: RSObservation
@@ -467,14 +54,12 @@ Id: rs-observation-ec-bites-stings
 Title: "RS Observation - External Cause: Bites/Stings"
 Description: "Flag indicating bites/stings."
 * code.coding 0..1
-* code.coding = $SCT#242651001 "Injury caused by animal (disorder)" (exactly)
-
 * valueBoolean 0..1
+* code.coding = $SCT#242651001 "Injury caused by animal (disorder)" (exactly)
+// (Consolidated into RSObsECBitesStings as component[bitesAgent])
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept from VSBitesAgent (preferred)
 * valueCodeableConcept ^short = "Specify animal/insect agent"
-
-// (Consolidated into RSObsECBitesStings as component[bitesAgent])
 
 // MDS21 (flag) ; MDS22 (agent code) ; MDS23 (agent other text) - External Cause: Burns
 // Burn agent profile (separate from RSObsNatureBurns and RSObsECBurns)
@@ -494,21 +79,6 @@ Description: "Flag indicating burns as external cause."
 * valueCodeableConcept from VSBurnsAgent (preferred)
 * valueCodeableConcept ^short = "Specify burns agent"
 // Burns - other, specify:
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept.text = "Burns other (specify)"
-
-Profile: RSObsNatureBurns
-Parent: RSObservation
-Id: rs-observation-nature-burns
-Title: "RS Observation - External Cause: Burns"
-Description: "Flag indicating burns as external cause."
-* valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $SCT#125666000 "Burn (disorder)" (exactly)
-
-* valueCodeableConcept 0..1 MS
-* valueCodeableConcept from VSBurnDegrees (preferred)
-* valueCodeableConcept ^short = "Specify burns agent"
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text = "Burns other (specify)"
 
@@ -645,7 +215,6 @@ Description: "Flag indicating hanging/strangulation."
 * code.coding 0..1
 * code.coding = $SCT#212976008 "Hanging/strangulation event" (exactly)
 
-
 // MDS39 - External Cause: Mauling/Assault
 Profile: RSObsECMaulingAssault
 Parent: RSObservation
@@ -656,7 +225,6 @@ Description: "Flag indicating assault."
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $SCT#52684005 "Mauling/assault event" (exactly)
-
 
 // MDS40 - External Cause: Sexual Assault/Abuse/Rape (Alleged)
 Profile: RSObsECSexualAssault
@@ -669,6 +237,16 @@ Description: "Flag indicating sexual assault."
 * code.coding 0..1
 * code.coding = $SCT#248110007 "Sexual assault event" (exactly)
 
+// MDS41 - Transport/Vehicular Accident (flag)
+Profile: RSObsTransportVehicularAccident
+Parent: RSObservation
+Id: rs-observation-transport-vehicular-accident
+Title: "RS Observation - Transport/Vehicular Accident"
+Description: "Boolean flag indicating transport/vehicular accident."
+// External Cause/s of Injury/ies: Transport /Vehicular Accident - Flag []
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding = $SCT#274215009 "Transport accident (event)" (exactly)
 
 // MDS42 (flag) ; MDS43 (specify) - External Cause: Other
 Profile: RSObsECOther
@@ -685,20 +263,6 @@ Description: "Flag indicating other external cause."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify other external cause"
 
-// (Consolidated into RSObsECOther as component: otherSpecify)
-
-
-// MDS109 - Extent of injury (severity estimate/category)
-Profile: RSObsExtentOfInjury
-Parent: RSObservation
-Id: rs-observation-extent-of-injury
-Title: "RS Observation - Extent of Injury"
-Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
-* valueCodeableConcept 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#1255875007 "Injury Severity Score (observable entity)" (exactly)
-
-
 // MDS45 - Transferred from another hospital/facility
 Profile: RSObsTransferredFromFacility
 Parent: RSObservation
@@ -709,7 +273,6 @@ Description: "Flag indicating patient transferred from another hospital/facility
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $LNC#74199-1 "Transferred from another acute care facility [NTDS]" (exactly)
-
 
 // MDS46 - Referred by another hospital/facility
 Profile: RSObsReferredByFacility
@@ -722,8 +285,436 @@ Description: "Flag indicating patient was referred by another hospital/facility.
 * code.coding 0..1
 * code.coding = $SCT#307836003 "Referral by establishment (procedure)" (exactly)
 
+// (Consolidated into RSObsECOther as component: otherSpecify)
 
-// ---------------- INJURIES ----------------
+// MDS53 - Outcome
+Profile: RSObsOutcome
+Parent: RSObservation
+Id: rs-observation-outcome-release
+Title: "RS Observation - Outcome at Release"
+Description: "Outcome at release from ER/OPD/RHU."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSOutcome (preferred)
+* code.coding 0..1
+* code.coding = $SCT#418138009 "Patient condition finding (finding)" (exactly)
+
+// MDS58 - Outcome at Discharge
+// Profile: RSObsOutcomeAtDischarge
+// Parent: RSObservation
+// Id: rs-observation-outcome-discharge
+// Title: "RS Observation - Outcome at Discharge"
+// Description: "Outcome at discharge."
+// * valueCodeableConcept 1..1 MS
+// * valueCodeableConcept from VSOutcome (preferred)
+// * code.coding 0..1
+// * code.coding.system = $SCT (exactly)
+// * code.coding.code = #418138009
+// * code.coding.display = "Patient condition finding (finding)"
+
+// MDS61 - Comments (ONEISS / run report comments)
+Profile: RSObsRunReportComments
+Parent: RSObservation
+Id: rs-observation-runreport-comments
+Title: "RS Observation - Run Report Comments"
+Description: "Enter other comment (s) regarding the case"
+// Note: Remember to referenceEncounter resource in the whole observation bundle
+* encounter 0..1 
+* encounter only Reference(RSEncounter)
+* valueString 1..1 MS
+* code.coding 0..1
+* code.coding = $LNC#77999-1 "Case notification comment" (exactly)
+
+// Pattern profile reused by timeline date/time observations; specific codes enforced in bundle profiles.
+// MDS62-68 - Response timeline events (Date received through return to station)
+Profile: RSObsTimelineDateTime
+Parent: RSObservation
+Id: rs-observation-timeline-datetime
+Title: "RS Observation - Timeline Date/Time"
+Description: "Dispatch and transport timeline events capturing a precise date/time."
+* valueDateTime 1..1 MS
+
+// MDS70 - Respiratory Rate
+Profile: RSObsRespiratoryRate
+Parent: RSObservation
+Id: rs-observation-respiratory-rate
+Title: "RS Observation - Respiratory Rate"
+Description: "Respiratory rate in breaths/min."
+* valueQuantity 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#86290005 "Respiratory rate (observable entity)" (exactly)
+
+// MDS71 - Respiratory Rhythm
+Profile: RSObsRespiratoryRhythm
+Parent: RSObservation
+Id: rs-observation-respiratory-rhythm
+Title: "RS Observation - Respiratory Rhythm"
+Description: "Respiratory rhythm (normal/irregular/labored)."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSRespiratoryRhythm (preferred)
+* code.coding 0..1
+* code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)" (exactly)
+
+// MDS72 - Breath Sounds
+Profile: RSObsBreathSounds
+Parent: RSObservation
+Id: rs-observation-breath-sounds
+Title: "RS Observation - Breath Sounds"
+Description: "Breath sounds assessment."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSBreathSounds (preferred)
+* code.coding 0..1
+* code.coding = $SCT#52653008 "Respiratory sounds (observable entity)" (exactly)
+
+// MDS73 - Pulse/Heart Rate
+Profile: RSObsPulseRate
+Parent: RSObservation
+Id: rs-observation-pulse-rate
+Title: "RS Observation - Pulse Rate"
+Description: "Pulse/heart rate in beats/min."
+* valueQuantity 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
+
+// MDS74 - Pulse Rhythm
+Profile: RSObsPulseRhythm
+Parent: RSObservation
+Id: rs-observation-pulse-rhythm
+Title: "RS Observation - Pulse Rhythm"
+Description: "Pulse rhythm."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPulseRhythm (preferred)
+* code.coding 0..1
+* code.coding = $SCT#364095004 "Pulse rhythm (observable entity)" (exactly)
+
+// MDS75 - Pulse Quality
+Profile: RSObsPulseQuality
+Parent: RSObservation
+Id: rs-observation-pulse-quality
+Title: "RS Observation - Pulse Quality"
+Description: "Pulse quality."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPulseQuality (preferred)
+* code.coding 0..1
+* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
+
+// MDS76 (systolic) / MDS77 (diastolic) - Blood Pressure components
+Profile: RSObsBloodPressure
+Parent: RSObservation
+Id: rs-observation-blood-pressure
+Title: "RS Observation - Blood Pressure"
+Description: "Blood pressure using component entries for systolic/diastolic."
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding = $LNC#85354-9 "Blood pressure panel with all children optional" (exactly)
+
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify blood pressure components"
+
+// MDS78 - Body Temperature
+Profile: RSObsBodyTemperature
+Parent: RSObservation
+Id: rs-observation-body-temperature
+Title: "RS Observation - Body Temperature"
+Description: "Body temperature."
+* valueQuantity 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#386725007 "Body temperature (observable entity)" (exactly)
+
+// MDS79 - Level of Consciousness (AVPU)
+Profile: RSObsLevelOfConsciousness
+Parent: RSObservation
+Id: rs-observation-level-of-consciousness
+Title: "RS Observation - Level of Consciousness (AVPU)"
+Description: "Level of consciousness (e.g., AVPU)."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSLevelOfConsciousness (preferred)
+* code.coding 0..1
+* code.coding = $SCT#449159002 "Alert voice pain unresponsive scale (assessment scale)" (exactly)
+
+// MDS80 - Pupils
+Profile: RSObsPupils
+Parent: RSObservation
+Id: rs-observation-pupils
+Title: "RS Observation - Pupils"
+Description: "Pupil size/reactivity summary."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPupils (preferred)
+* code.coding 0..1
+* code.coding = $SCT#271733001 "Pupil reaction (observable entity)" (exactly)
+
+// MDS81 - Cyanosis
+Profile: RSObsCyanosis
+Parent: RSObservation
+Id: rs-observation-cyanosis
+Title: "RS Observation - Cyanosis"
+Description: "Cyanosis assessment."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSCyanosis (preferred)
+* code.coding 0..1
+* code.coding = $SCT#3415004 "Cyanosis (finding)" (exactly)
+
+// MDS83 (eyes), MDS84 (verbal), MDS85 (motor), MDS86 (total) - Glasgow Coma Scale
+Profile: RSObsGCS
+Parent: RSObservation
+Id: rs-observation-gcs
+Title: "RS Observation - Glasgow Coma Scale"
+Description: "GCS with components for eyes, verbal, motor; optional total score as integer."
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding = $SCT#248241002 "Glasgow coma score (observable entity)" (exactly)
+
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept ^short = "Specify GCS components"
+
+// MDS91 - Remarks / Clinical Remarks (run report)
+Profile: RSObsClinicalRemarks
+Parent: RSObservation
+Id: rs-observation-clinical-remarks
+Title: "RS Observation - Clinical Remarks"
+Description: "Clinical remarks/notes."
+* valueString 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#clinical-remarks "Clinical remarks"
+
+// MDS107 - Vehicle Used (run report)
+Profile: RSObsVehicleUsed
+Parent: RSObservation
+Id: rs-observation-vehicle-used
+Title: "RS Observation - Vehicle Used"
+Description: "Vehicle used during response."
+* valueCodeableConcept 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#36030000 "Transport vehicle, device (physical object)" (exactly)
+
+// MDS108 - Condition of Patient (overall condition at assessment)
+Profile: RSObsConditionOfPatient
+Parent: RSObservation
+Id: rs-observation-condition-of-patient
+Title: "RS Observation - Condition of Patient"
+Description: "Overall condition of patient at assessment."
+* code.coding 0..1
+* code.coding = $SCT#12386002 "Patient status determination (procedure)" (exactly)
+
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 1..1 MS
+
+// MDS109 - Extent of injury (severity estimate/category)
+Profile: RSObsExtentOfInjury
+Parent: RSObservation
+Id: rs-observation-extent-of-injury
+Title: "RS Observation - Extent of Injury"
+Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
+* valueCodeableConcept 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#1255875007 "Injury Severity Score (observable entity)" (exactly)
+
+// MDS111 - Triage Priority
+Profile: RSObsTriagePriority
+Parent: RSObservation
+Id: rs-observation-triage-priority
+Title: "RS Observation - Triage Priority"
+Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
+* code.coding 0..1
+* code.coding = $SCT#225390008 "Triage (procedure)" (exactly)
+
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept.text 1..1 MS
+
+// MDS114 - Priority Level (Urgency)
+Profile: RSObsUrgencyLevel
+Parent: RSObservation
+Id: rs-observation-urgency
+Title: "RS Observation - Priority Level (Urgency)"
+Description: "System-generated urgency level per CAD/agency rules."
+* valueCodeableConcept 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#260870009 "Priority (attribute)" (exactly)
+
+// MDS116 - Status upon reaching Facility/Hospital
+Profile: RSObsStatusOnArrival
+Parent: RSObservation
+Id: rs-observation-status-on-arrival
+Title: "RS Observation - Status on Arrival"
+Description: "Status upon reaching facility/hospital."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSStatusOnArrival (preferred)
+* code.coding 0..1
+* code.coding = $SCT#status-on-arrival "Status on arrival"
+
+// MDS117 - If Alive: Conscious/Unconscious (status on arrival detail)
+Profile: RSObsStatusOnArrivalAliveDetail
+Parent: RSObservation
+Id: rs-observation-status-on-arrival-alive
+Title: "RS Observation - If Alive: Conscious/Unconscious"
+Description: "If alive on arrival, consciousness detail."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSStatusAliveDetail (preferred)
+* code.coding 0..1
+* code.coding = $SCT#status-on-arrival-alive "Status on arrival (alive detail)"
+
+// MDS118 (Mode of transport to facility) and MDS119 for 'Others' text if used
+Profile: RSObsModeOfTransport
+Parent: RSObservation
+Id: rs-observation-mode-of-transport
+Title: "RS Observation - Mode of Transport to Facility"
+Description: "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSModeOfTransport (preferred)
+* code.coding 0..1
+* code.coding = $LNC#74286-6 "Mode of transport to health facility" (exactly)
+
+// MDS149 - Reported Complaint (free text)
+Profile: RSObsReportedComplaint
+Parent: RSObservation
+Id: rs-observation-reported-complaint
+Title: "RS Observation - Reported Complaint"
+Description: "Free-text reported complaint."
+* valueString 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#1269489004 "Chief complaint (observable entity)" (exactly)
+
+// MDS155 - Call Source
+Profile: RSObsCallSource
+Parent: RSObservation
+Id: rs-observation-call-source
+Title: "RS Observation - Call Source"
+Description: "Call source description (free text)."
+* valueString 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#397663001 "Referral source (finding)" (exactly)
+
+// MDS156 - How Many Vehicles Involved
+Profile: RSObsHowManyVehicles
+Parent: RSObservation
+Id: rs-observation-how-many-vehicles
+Title: "RS Observation - How Many Vehicles Involved"
+Description: "Count of vehicles involved."
+* valueInteger 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#how-many-vehicles "How many vehicles involved"
+
+// MDS157 - How Many Patients Involved
+Profile: RSObsHowManyPatients
+Parent: RSObservation
+Id: rs-observation-how-many-patients
+Title: "RS Observation - How Many Patients Involved"
+Description: "Count of patients involved."
+* valueInteger 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#how-many-patients "How many patients involved"
+
+// MDS158 / MDS159 - Date/Time of Injury
+Profile: RSObsInjuryDateTime
+Parent: RSObservation
+Id: rs-observation-injury-datetime
+Title: "RS Observation - Date/Time of Injury"
+Description: "Timestamp of injury occurrence."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding = $LNC#11368-8 "Illness or injury onset date and time" (exactly)
+
+// MDS158 - Date of Injury
+Profile: RSObsDateOfInjury
+Parent: RSObservation
+Id: rs-observation-date-of-injury
+Title: "RS Observation - Date of Injury"
+Description: "Date of injury occurrence."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#439771001 "Date of event (observable entity)" (exactly)
+
+// MDS159 - Time of Injury
+Profile: RSObsTimeOfInjury
+Parent: RSObservation
+Id: rs-observation-time-of-injury
+Title: "RS Observation - Time of Injury"
+Description: "Time of injury occurrence."
+* valueDateTime 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#263501003 "Time of onset (observable entity)" (exactly)
+
+// MDS163 - Collision vs Non-Collision
+Profile: RSObsCollisionVsNonCollision
+Parent: RSObservation
+Id: rs-observation-collision-vs-noncollision
+Title: "RS Observation - Collision vs Non-Collision"
+Description: "Indicates whether the incident was collision or non-collision."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSCollisionCategory (preferred)
+* code.coding 0..1
+* code.coding = $SCT#collision-category "Collision category"
+
+// MDS164 - Patient's Vehicle
+Profile: RSObsPatientsVehicle
+Parent: RSObservation
+Id: rs-observation-patients-vehicle
+Title: "RS Observation - Patient's Vehicle"
+Description: "Type of vehicle used by patient; text for 'Others'."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSPatientsVehicle (preferred)
+* code.coding 0..1
+* code.coding = $SCT#patients-vehicle "Patient's vehicle"
+
+// MDS166 - Other Vehicle/Object Involved
+Profile: RSObsOtherVehicleInvolved
+Parent: RSObservation
+Id: rs-observation-other-vehicle
+Title: "RS Observation - Other Vehicle/Object Involved"
+Description: "Other vehicle/object type involved; text for 'Others'."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSOtherVehicle (preferred)
+* code.coding 0..1
+* code.coding = $SCT#other-vehicle-involved "Other vehicle/object involved"
+
+// MDS168 - Position of Patient
+Profile: RSObsPositionOfPatient
+Parent: RSObservation
+Id: rs-observation-position-of-patient
+Title: "RS Observation - Position of Patient"
+Description: "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSPositionOfPatient (preferred)
+* code.coding 0..1
+* code.coding = $SCT#position-of-patient "Position of patient"
+
+// MDS170 - Place of Occurrence
+Profile: RSObsPlaceOfOccurrence
+Parent: RSObservation
+Id: rs-observation-place-of-occurrence
+Title: "RS Observation - Place of Occurrence"
+Description: "Place type where injury occurred; name can be carried in note when applicable."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPlaceOfOccurrence (preferred)
+* note 0..* 
+* code.coding 0..1
+* code.coding = $SCT#place-of-occurrence "Place of occurrence"
+
+// MDS173 - Activity at Time of Incident
+Profile: RSObsActivityAtIncident
+Parent: RSObservation
+Id: rs-observation-activity-at-incident
+Title: "RS Observation - Activity at Time of Incident"
+Description: "Activity of the patient at time of incident; allow text fallback."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSActivity (preferred)
+* code.coding 0..1
+* code.coding = $LNC#11372-0 "Injury associated activity" (exactly)
+
+// MDS175 - Blood Alcohol Concentration
+Profile: RSObsBloodAlcoholConcentration
+Parent: RSObservation
+Id: rs-observation-blood-alcohol
+Title: "RS Observation - Blood Alcohol Concentration"
+Description: "Blood alcohol concentration."
+* valueQuantity 1..1 MS
+* code.coding 0..1
+* code.coding = $SCT#167009006 "Blood ethanol measurement (procedure)" (exactly)
+
 // MDS176 - Multiple Injuries?
 Profile: RSObsMultipleInjuries
 Parent: RSObservation
@@ -733,7 +724,6 @@ Description: "Boolean flag indicating multiple injuries."
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $SCT#262519004 "Multiple injuries (disorder)" (exactly)
-
 
 // MDS177 (presence) / MDS178 (site) / MDS179 (details) - Abrasion
 Profile: RSObsAbrasion
@@ -747,7 +737,6 @@ Description: "Abrasion present; with optional site and details."
 * code.coding 0..1
 * code.coding = $SCT#399963005 "Abrasion (disorder)" (exactly)
 
-
 // MDS180 (presence) / MDS181 (site) / MDS182 (details) - Avulsion
 Profile: RSObsAvulsion
 Parent: RSObservation
@@ -760,6 +749,21 @@ Description: "Avulsion present; with optional site and details."
 * code.coding 0..1
 * code.coding = $SCT#284554003 "Avulsion - injury (disorder)" (exactly)
 
+// MDS183-195 - Nature of Injury: Burns (degree, site, details)
+Profile: RSObsNatureBurns
+Parent: RSObservation
+Id: rs-observation-nature-burns
+Title: "RS Observation - External Cause: Burns"
+Description: "Flag indicating burns as external cause."
+* valueBoolean 0..1
+* code.coding 0..1
+* code.coding = $SCT#125666000 "Burn (disorder)" (exactly)
+
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept from VSBurnDegrees (preferred)
+* valueCodeableConcept ^short = "Specify burns agent"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text = "Burns other (specify)"
 
 // MDS196 (presence) / MDS197 (site) / MDS198 (details) - Concussion
 Profile: RSObsConcussion
@@ -773,7 +777,6 @@ Description: "Concussion present; with site and details."
 * code.coding 0..1
 * code.coding = $SCT#110030002 "Concussion injury of brain (disorder)" (exactly)
 
-
 // MDS199 (presence) / MDS200 (site) / MDS201 (details) - Contusion
 Profile: RSObsContusion
 Parent: RSObservation
@@ -785,7 +788,6 @@ Description: "Contusion present; with site and details."
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#125667009 "Contusion (disorder)" (exactly)
-
 
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
 // MDS206 (open presence) / MDS207 (open site) / MDS208 (open details)
@@ -834,7 +836,6 @@ Description: "Traumatic amputation present; with site and details."
 * code.coding 0..1
 * code.coding = $SCT#262595009 "Traumatic amputation (disorder)" (exactly)
 
-
 // MDS215 (presence) / MDS216 (site) / MDS217 (details) - Other Specified Injury
 Profile: RSObsOtherInjury
 Parent: RSObservation
@@ -848,116 +849,25 @@ Description: "Other specified injury present; capture type as valueCodeableConce
 * code.coding 0..1
 * code.coding = $SCT#417163006 "Traumatic or non-traumatic injury (disorder)" (exactly)
 
-
-// ---------------- ONEISS CLINICAL ----------------
-// MDS175 - Blood Alcohol Concentration
-Profile: RSObsBloodAlcoholConcentration
+// MDS218 - Collision Type (post-crash investigation)
+Profile: RSObsCollisionType
 Parent: RSObservation
-Id: rs-observation-blood-alcohol
-Title: "RS Observation - Blood Alcohol Concentration"
-Description: "Blood alcohol concentration."
-* valueQuantity 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#167009006 "Blood ethanol measurement (procedure)" (exactly)
-
-
-// MDS108 - Condition of Patient (overall condition at assessment)
-Profile: RSObsConditionOfPatient
-Parent: RSObservation
-Id: rs-observation-condition-of-patient
-Title: "RS Observation - Condition of Patient"
-Description: "Overall condition of patient at assessment."
-* code.coding 0..1
-* code.coding = $SCT#12386002 "Patient status determination (procedure)" (exactly)
-
-* valueCodeableConcept 0..1 MS
-* valueCodeableConcept.text 1..1 MS
-
-// MDS53 - Outcome
-Profile: RSObsOutcome
-Parent: RSObservation
-Id: rs-observation-outcome-release
-Title: "RS Observation - Outcome at Release"
-Description: "Outcome at release from ER/OPD/RHU."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSOutcome (preferred)
-* code.coding 0..1
-* code.coding = $SCT#418138009 "Patient condition finding (finding)" (exactly)
-
-
-// MDS58 - Outcome at Discharge
-// Profile: RSObsOutcomeAtDischarge
-// Parent: RSObservation
-// Id: rs-observation-outcome-discharge
-// Title: "RS Observation - Outcome at Discharge"
-// Description: "Outcome at discharge."
-// * valueCodeableConcept 1..1 MS
-// * valueCodeableConcept from VSOutcome (preferred)
-// * code.coding 0..1
-// * code.coding.system = $SCT (exactly)
-// * code.coding.code = #418138009
-// * code.coding.display = "Patient condition finding (finding)"
-
-// MDS116 - Status upon reaching Facility/Hospital
-Profile: RSObsStatusOnArrival
-Parent: RSObservation
-Id: rs-observation-status-on-arrival
-Title: "RS Observation - Status on Arrival"
-Description: "Status upon reaching facility/hospital."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSStatusOnArrival (preferred)
-* code.coding 0..1
-* code.coding = $SCT#status-on-arrival "Status on arrival"
-
-
-// MDS117 - If Alive: Conscious/Unconscious (status on arrival detail)
-Profile: RSObsStatusOnArrivalAliveDetail
-Parent: RSObservation
-Id: rs-observation-status-on-arrival-alive
-Title: "RS Observation - If Alive: Conscious/Unconscious"
-Description: "If alive on arrival, consciousness detail."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSStatusAliveDetail (preferred)
-* code.coding 0..1
-* code.coding = $SCT#status-on-arrival-alive "Status on arrival (alive detail)"
-
-
-// ---------------- RUN REPORT ADDITIONALS ----------------
-// MDS107 - Vehicle Used (run report)
-Profile: RSObsVehicleUsed
-Parent: RSObservation
-Id: rs-observation-vehicle-used
-Title: "RS Observation - Vehicle Used"
-Description: "Vehicle used during response."
+Id: rs-observation-collision-type
+Title: "RS Observation - Collision Type"
+Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#36030000 "Transport vehicle, device (physical object)" (exactly)
+* code.coding = $SCT#collision-type "Collision type"
 
-
-// MDS91 - Remarks / Clinical Remarks (run report)
-Profile: RSObsClinicalRemarks
+// MDS219 - Presence of Traffic Investigator
+Profile: RSObsPresenceTrafficInvestigator
 Parent: RSObservation
-Id: rs-observation-clinical-remarks
-Title: "RS Observation - Clinical Remarks"
-Description: "Clinical remarks/notes."
-* valueString 1..1 MS
+Id: rs-observation-traffic-investigator
+Title: "RS Observation - Presence of Traffic Investigator"
+Description: "Boolean presence/absence of traffic investigator."
+* valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#clinical-remarks "Clinical remarks"
-
-
-// MDS61 - Comments (ONEISS / run report comments)
-Profile: RSObsRunReportComments
-Parent: RSObservation
-Id: rs-observation-runreport-comments
-Title: "RS Observation - Run Report Comments"
-Description: "Enter other comment (s) regarding the case"
-// Note: Remember to referenceEncounter resource in the whole observation bundle
-* encounter 0..1 
-* encounter only Reference(RSEncounter)
-* valueString 1..1 MS
-* code.coding 0..1
-* code.coding = $LNC#77999-1 "Case notification comment" (exactly)
-
+* code.coding = $SCT#159679004 "Traffic warden (occupation)" (exactly)
 
 // MDS227 - CCTV available (post-crash)
 Profile: RSObsCCTVAvailable
@@ -969,3 +879,27 @@ Description: "Availability of CCTV video."
 * code.coding 0..1
 * code.coding = $SCT#360000005 "Closed circuit television (physical object)" (exactly)
 
+// MDS230 / MDS231 - Other Risk Factors (and 'Others' text)
+Profile: RSObsOtherRiskFactors
+Parent: RSObservation
+Id: rs-observation-other-risk-factors
+Title: "RS Observation - Other Risk Factors"
+Description: "Other risk factors at the time of incident; allow text for 'Others'."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSOtherRiskFactors (preferred)
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text ^short = "Other risk factors"
+* code.coding 0..1
+* code.coding = $SCT#80943009 "Risk factor (observable entity)" (exactly)
+
+// MDS232 / MDS233 - Safety Accessories (and 'Others' text)
+Profile: RSObsSafetyAccessories
+Parent: RSObservation
+Id: rs-observation-safety-accessories
+Title: "RS Observation - Safety Accessories"
+Description: "Safety accessories present/used; allow text for 'Others'."
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSSafetyDevices (preferred)
+* code.coding 0..1
+* code.coding = $SCT#386812007 "Safety precautions (procedure)" (exactly)
