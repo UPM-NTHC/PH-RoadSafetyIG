@@ -79,3 +79,23 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * participant[assistant].individual 0..1 MS
 * participant[assistant].individual only Reference(PHCorePractitioner)
 * participant[assistant].type = $ParticipationType#test "Assistant" // for discussion with Terminology team
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains RSEncounterVehicleUsed named vehicleUsed 0..*
+* extension[vehicleUsed] ^short = "Identifier and type of transport vehicle."
+* extension[vehicleUsed] ^definition = "Identifier and type of transport vehicle. Multiple entries support transfers across different vehicles."
+* extension[vehicleUsed] ^comment = "Non-medical concept captured via CodeableConcept.text; Device-based fleet tracking can follow when EMS tooling allows."
+
+Extension: RSEncounterVehicleUsed
+Id: rs-encounter-vehicle-used
+Title: "Road Safety Encounter Vehicle Used"
+Description: "Identifier and type of transport vehicle used during an encounter."
+Context: RSEncounter
+* valueCodeableConcept 1..1
+* valueCodeableConcept ^short = "Identifier and type of transport vehicle."
+* valueCodeableConcept ^definition = "Identifier and type of transport vehicle used during the encounter."
+* valueCodeableConcept.text 1..1
+* valueCodeableConcept.text ^short = "Free-text or coded descriptor for the vehicle used."
+* valueCodeableConcept.text ^comment = "Capture free text for current workflows; coded entries may be introduced when terminology support is available."
