@@ -27,9 +27,7 @@ Description: "Condition resource for Road Safety IG that supports multiple codin
 /* guidance: use multiple Condition instances rather than packing unrelated semantics into one resource. Use category to distinguish types (problem-list vs encounter-diagnosis) and use code.coding slices to capture different coding systems. For narrative-only entries (medical history / problem text), prefer code.text and note. */
 // See IPS IG for additional guidance on condition usage.
 
-// ---------------- Specialized Condition profiles ----------------
-
-// Problem (CSV: SNOMED CT 55607006) — MDS ID: MDS34
+// MDS34 Problem (CSV: SNOMED CT 55607006)
 Profile: RSConditionProblem
 Parent: RSCondition
 Id: rs-condition-problem
@@ -39,7 +37,7 @@ Description: "Problem (finding) per CSV mapping."
 * category.coding 1..1
 * category.coding = $SCT#55607006 "Problem (finding)" (exactly)
 
-// Initial Impression (CSV: SNOMED CT 148006 Preliminary diagnosis (qualifier value)) — MDS ID: MDS48
+// MDS48 Initial Impression (CSV: SNOMED CT 148006 Preliminary diagnosis (qualifier value))
 Profile: RSConditionInitialImpression
 Parent: RSCondition
 Id: rs-condition-initial-impression
@@ -49,7 +47,7 @@ Description: "Initial impression per CSV mapping."
 * category.coding 1..1
 * category.coding = $SCT#148006 "Preliminary diagnosis (qualifier value)" (exactly)
 
-// Final Diagnosis (CSV: SNOMED CT 89100005 Final diagnosis (discharge)) — MDS ID: MDS54
+// MDS54 Final Diagnosis (CSV: SNOMED CT 89100005 Final diagnosis (discharge))
 Profile: RSConditionFinalDiagnosis
 Parent: RSCondition
 Id: rs-condition-final-diagnosis
@@ -57,8 +55,6 @@ Title: "Road Safety Condition — Final Diagnosis"
 Description: "Final diagnosis per CSV mapping."
 * code 0..1 MS
 * category.coding = $SCT#89100005 "Final diagnosis (discharge) (contextual qualifier) (qualifier value)" (exactly)
-
-// ---------------- Classification axes as category slices ----------------
 
 // Nature of Injury (ICD-10 'nature' axis) represented as a category slice
 // Use alongside the specific diagnosis in code; this profile only shapes the category
