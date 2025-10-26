@@ -542,14 +542,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
         },
         "effectiveDateTime": "2024-02-01T08:30:00+08:00",
         "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "clinical-remarks",
-              "display": "Clinical remarks"
-            }
-          ],
-          "text": "Clinical remarks"
+          "text": "Road Safety Observation - Clinical Remarks — Clinical remarks/notes."
         },
         "valueString": "Sample observation value"
       }

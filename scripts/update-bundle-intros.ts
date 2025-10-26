@@ -43,8 +43,8 @@ const ALIASES_PATH = path.join(ROOT, "input", "fsh", "aliases.fsh");
 const CANONICAL_BASE = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG";
 
 const BUNDLE_TARGETS: Array<{ profile: string; output: string }> = [
-  { profile: "RSBundleEMS", output: path.join("input", "pagecontent", "RSBundleEMS-intro.md") },
-  { profile: "RSBundleONEISS", output: path.join("input", "pagecontent", "RSBundleONEISS-intro.md") },
+  { profile: "RSBundleEMS", output: path.join("input", "pagecontent", "StructureDefinition-rs-bundle-ems-intro.md") },
+  { profile: "RSBundleONEISS", output: path.join("input", "pagecontent", "StructureDefinition-rs-bundle-oneiss-intro.md") },
 ];
 
 const aliasMap = loadAliasMap();
@@ -399,6 +399,17 @@ function inferResourceType(profileName: string): string {
 
 function sanitizeId(input: string): string {
   return input.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "example";
+}
+
+function profileToId(profileName: string): string {
+  // Split camel/Pascal/ALLCAPS mixed names into word parts and join with hyphens.
+  // Examples: RSBundleEMS -> rs-bundle-ems, RSBundleONEISS -> rs-bundle-oneiss
+  const parts = profileName.match(/[A-Z]+(?=[A-Z][a-z])|[A-Z]?[a-z]+|[A-Z]+|[0-9]+/g);
+  if (parts && parts.length) {
+    return parts.join("-").toLowerCase();
+  }
+  // Fallback: sanitize like before
+  return profileName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "example";
 }
 
 function aliasToSystem(alias: string): string {
@@ -953,8 +964,10 @@ async function main() {
     writeFileSync(introPath, introMarkdown, "utf8");
     console.log(`Updated ${target.output}`);
 
-    const notesMarkdown = generateNotesMarkdown(target.profile, bundleProfile);
-    const notesPath = path.join(ROOT, "input", "pagecontent", `${target.profile}-notes.md`);
+  const notesMarkdown = generateNotesMarkdown(target.profile, bundleProfile);
+  const notesId = profileToId(target.profile);
+  const notesFilename = `StructureDefinition-${notesId}-notes.md`;
+  const notesPath = path.join(ROOT, "input", "pagecontent", notesFilename);
     writeFileSync(notesPath, notesMarkdown, "utf8");
     console.log(`Updated ${path.relative(ROOT, notesPath)}`);
   }
