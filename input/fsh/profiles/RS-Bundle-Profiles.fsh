@@ -26,9 +26,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
     procedures 0..*
 * section[workflow].title = "Workflow / Timeline"
 * section[workflow].entry 1..* MS
-* section[workflow].entry only Reference(RSObsDateReceived or RSObsTimeEnroute
-    or RSObsTimeOnScene or RSObsTimeDepartedScene or RSObsTimeHospitalArrival
-    or RSObsTimeStationArrival or RSObsRunReportComments or RSObsVehicleUsed)
+* section[workflow].entry only Reference(RSObsTimelineDateTime or RSObsRunReportComments or RSObsVehicleUsed)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
 * section[incident].entry only Reference(RSObsInjuryDateTime or RSObsInjuryIntent 
@@ -87,12 +85,24 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
 * entry[location].resource only RSIncidentLocation
-* entry[observationDateReceived].resource only RSObsDateReceived
-* entry[observationTimeEnroute].resource only RSObsTimeEnroute
-* entry[observationTimeOnScene].resource only RSObsTimeOnScene
-* entry[observationTimeDeparted].resource only RSObsTimeDepartedScene
-* entry[observationTimeHospitalArrival].resource only RSObsTimeHospitalArrival
-* entry[observationTimeStationArrival].resource only RSObsTimeStationArrival
+* entry[observationDateReceived].resource only RSObsTimelineDateTime
+* entry[observationDateReceived].resource.code.coding 0..1
+* entry[observationDateReceived].resource.code.coding = $LNC#30976-5 "Date received Form" (exactly)
+* entry[observationTimeEnroute].resource only RSObsTimelineDateTime
+* entry[observationTimeEnroute].resource.code.coding 0..1
+* entry[observationTimeEnroute].resource.code.coding = $LNC#69472-9 "Unit responded [Date and time] Vehicle" (exactly)
+* entry[observationTimeOnScene].resource only RSObsTimelineDateTime
+* entry[observationTimeOnScene].resource.code.coding 0..1
+* entry[observationTimeOnScene].resource.code.coding = $SCT#405798008 "Time of arrival of emergency services (observable entity)" (exactly)
+* entry[observationTimeDeparted].resource only RSObsTimelineDateTime
+* entry[observationTimeDeparted].resource.code.coding 0..1
+* entry[observationTimeDeparted].resource.code.coding = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle" (exactly)
+* entry[observationTimeHospitalArrival].resource only RSObsTimelineDateTime
+* entry[observationTimeHospitalArrival].resource.code.coding 0..1
+* entry[observationTimeHospitalArrival].resource.code.coding = $SCT#405799000 "Time of arrival at hospital (observable entity)" (exactly)
+* entry[observationTimeStationArrival].resource only RSObsTimelineDateTime
+* entry[observationTimeStationArrival].resource.code.coding 0..1
+* entry[observationTimeStationArrival].resource.code.coding = $LNC#11288-8 "Arrival time documented" (exactly)
 * entry[observationVitals].resource only RSObsRespiratoryRate 
     or RSObsPulseRate or RSObsBloodPressure or RSObsBodyTemperature
     or RSObsRespiratoryRhythm or RSObsBreathSounds or RSObsPulseRhythm

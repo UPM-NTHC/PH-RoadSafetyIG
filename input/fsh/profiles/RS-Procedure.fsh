@@ -28,6 +28,4 @@ Title: "RS Procedure - Transport Coordination"
 Description: "Procedure record indicating whether transport coordination with the receiving hospital was done."
 * code 1..1 MS
 * code.coding 1..1
-* code.coding.system = $SCT
-* code.coding.code = #referral-transport-coordination
-* code.coding.display = "Transport coordination with receiving hospital"
+* code.coding = $SCT#referral-transport-coordination "Transport coordination with receiving hospital"
