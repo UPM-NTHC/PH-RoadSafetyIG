@@ -942,13 +942,21 @@ function generateNotesMarkdown(profileName: string, bundle: BundleProfile): stri
     "",
     "Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this profile. Replace identifiers, timestamps, and narrative text before production use.",
     "",
-    "```json",
-    json,
-    "```",
+    "<details>",
+    "<summary>Show example JSON bundle (click to expand)</summary>",
+    "",
+    "<pre style=\"max-height:400px;overflow:auto;white-space:pre;\">",
+    escapeHtml(json),
+    "</pre>",
+    "</details>",
     "",
     "> Reminder: ensure every resource in the document Bundle declares its profile in `meta.profile` and that references resolve within the Bundle.",
     "",
   ].join("\n");
+}
+
+function escapeHtml(input: string): string {
+  return input.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
 async function main() {
