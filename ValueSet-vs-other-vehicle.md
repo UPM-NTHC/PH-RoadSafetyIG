@@ -1,4 +1,4 @@
-# RS VS - Other Vehicle in Collision - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS VS - Other Vehicle in Collision - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:VSOtherVehicle |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:VSOtherVehicle |
 
  
 Other vehicle/object involved in collision. 
@@ -27,7 +27,7 @@ Other vehicle/object involved in collision.
 Expansion from tx.fhir.org based on:
 
 * SNOMED CT International edition 01-Feb 2025
-* [codesystem SILPH Local Codes v0.1.9 (CodeSystem)](CodeSystem-cs-silph.md)
+* [codesystem SILPH Local Codes v0.1.0 (CodeSystem)](CodeSystem-cs-silph.md)
 
 This value set contains 11 concepts
 
@@ -53,11 +53,11 @@ This value set contains 11 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-other-vehicle",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "VSOtherVehicle",
   "title" : "RS VS - Other Vehicle in Collision",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

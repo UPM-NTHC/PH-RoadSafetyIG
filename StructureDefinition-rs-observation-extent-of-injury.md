@@ -1,4 +1,4 @@
-# Road Safety Observation - Extent of Injury - DRAFT PH Road Safety Implementation Guide v0.1.9
+# Road Safety Observation - Extent of Injury - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:RSObsExtentOfInjury |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:RSObsExtentOfInjury |
 
  
 Extent / severity estimate or category of injury (e.g., minor, moderate, severe). 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-exten
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-extent-of-injury",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "RSObsExtentOfInjury",
   "title" : "Road Safety Observation - Extent of Injury",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

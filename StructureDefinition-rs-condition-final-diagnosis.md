@@ -1,4 +1,4 @@
-# Road Safety Condition — Final Diagnosis - DRAFT PH Road Safety Implementation Guide v0.1.9
+# Road Safety Condition — Final Diagnosis - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:RSConditionFinalDiagnosis |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:RSConditionFinalDiagnosis |
 
  
 Final diagnosis per CSV mapping. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-final-d
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition-final-diagnosis",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "RSConditionFinalDiagnosis",
   "title" : "Road Safety Condition — Final Diagnosis",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

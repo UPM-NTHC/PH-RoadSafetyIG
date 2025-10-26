@@ -1,4 +1,4 @@
-# Road Safety Observation - Time of Injury - DRAFT PH Road Safety Implementation Guide v0.1.9
+# Road Safety Observation - Time of Injury - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-injury | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:RSObsTimeOfInjury |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-injury | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:RSObsTimeOfInjury |
 
  
 Time of injury occurrence. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-time-
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-time-of-injury",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-injury",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "RSObsTimeOfInjury",
   "title" : "Road Safety Observation - Time of Injury",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

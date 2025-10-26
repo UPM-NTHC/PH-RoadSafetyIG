@@ -1,4 +1,4 @@
-# RS VS - Transport Accident: Land/Water/Air - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS VS - Transport Accident: Land/Water/Air - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-transport-accident-mode | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:VSTransportAccidentMode |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-transport-accident-mode | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:VSTransportAccidentMode |
 
  
 Exposure context for transport accident: land, water, air (ICD-11). 
@@ -48,11 +48,11 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "vs-transport-accident-mode",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-transport-accident-mode",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "VSTransportAccidentMode",
   "title" : "RS VS - Transport Accident: Land/Water/Air",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

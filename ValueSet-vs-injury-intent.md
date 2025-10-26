@@ -1,4 +1,4 @@
-# RS VS - Injury Intent - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS VS - Injury Intent - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:VSInjuryIntent |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:VSInjuryIntent |
 
  
 Injury intent options mapped from ONEISS (prefer SNOMED CT). 
@@ -27,7 +27,7 @@ Injury intent options mapped from ONEISS (prefer SNOMED CT).
 Expansion from tx.fhir.org based on:
 
 * SNOMED CT International edition 01-Feb 2025
-* [codesystem SILPH Local Codes v0.1.9 (CodeSystem)](CodeSystem-cs-silph.md)
+* [codesystem SILPH Local Codes v0.1.0 (CodeSystem)](CodeSystem-cs-silph.md)
 
 This value set contains 5 concepts
 
@@ -53,11 +53,11 @@ This value set contains 5 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-injury-intent",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "VSInjuryIntent",
   "title" : "RS VS - Injury Intent",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

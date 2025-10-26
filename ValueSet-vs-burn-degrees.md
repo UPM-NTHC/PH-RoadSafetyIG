@@ -1,4 +1,4 @@
-# RS VS - Burn Degrees - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS VS - Burn Degrees - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burn-degrees | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:VSBurnDegrees |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burn-degrees | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:VSBurnDegrees |
 
  
 Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT). 
@@ -50,11 +50,11 @@ This value set contains 4 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-burn-degrees",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-burn-degrees",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "VSBurnDegrees",
   "title" : "RS VS - Burn Degrees",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Road Safety Encounter - DRAFT PH Road Safety Implementation Guide v0.1.9
+# Road Safety Encounter - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:RSEncounter |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:RSEncounter |
 
  
 Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "rs-encounter",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "RSEncounter",
   "title" : "Road Safety Encounter",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

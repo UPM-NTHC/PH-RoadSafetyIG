@@ -1,4 +1,4 @@
-# Road Safety Bundle — EMS Submission - DRAFT PH Road Safety Implementation Guide v0.1.9
+# Road Safety Bundle — EMS Submission - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:RSBundleEMS |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:RSBundleEMS |
 
  
 Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "rs-bundle-ems",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "RSBundleEMS",
   "title" : "Road Safety Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

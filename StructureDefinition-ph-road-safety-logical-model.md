@@ -1,4 +1,4 @@
-# Road Safety Minimum Dataset (MDS) Logical Model - DRAFT PH Road Safety Implementation Guide v0.1.9
+# Road Safety Minimum Dataset (MDS) Logical Model - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model | *Version*:0.1.9 |
-| Draft as of 2025-10-25 | *Computable Name*:MDSRoadSafety |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model | *Version*:0.1.0 |
+| Draft as of 2025-10-26 | *Computable Name*:MDSRoadSafety |
 
  
 Abstract, sectioned logical model for the PH Road Safety MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
   "resourceType" : "StructureDefinition",
   "id" : "ph-road-safety-logical-model",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model",
-  "version" : "0.1.9",
+  "version" : "0.1.0",
   "name" : "MDSRoadSafety",
   "title" : "Road Safety Minimum Dataset (MDS) Logical Model",
   "status" : "draft",
-  "date" : "2025-10-25T04:52:41+00:00",
+  "date" : "2025-10-26T07:34:36+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

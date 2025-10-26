@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Roadmap - DRAFT PH Road Safety Implementation Guide v0.1.9</title>
+    <title>Roadmap - DRAFT PH Road Safety Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">DRAFT PH Road Safety Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.9 - ci-build
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
 
@@ -190,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">DRAFT PH Road Safety Implementation Guide - Local Development build (v0.1.9) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">DRAFT PH Road Safety Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Roadmap</h2>
   
 
@@ -212,90 +212,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h1 id="roadmap">Roadmap</h1>
 
 <p>Planned items and roadmap for the PH Road Safety IG.</p>
+
+<p>Planned milestones</p>
 <ul>
-  <li>✅ <a href="https://github.com/UPM-NTHC/PH-RoadSafetyIG/releases/tag/v0.1.0">Version 0.1.0 — Baseline Profiles established</a>
-    <ul>
-      <li>Goal: Establish baseline profiles (even if not functionally complete) for proper review and guidance</li>
-    </ul>
-  </li>
-  <li>⌛ Version 0.1.9 — Refined Profiles and Integrated Questionnaire &amp; Bundle Resources
-    <ul>
-      <li>Goal: Minimum successful build of Questionnaire &amp; Bundle Resource integrated
-  that will guide participants.</li>
-    </ul>
-  </li>
-  <li>Version 0.2.0 — CodeSystem and ValueSet creation
-    <ul>
-      <li>Goal: Integrate CodeSystem and ValueSets (.json) provided by Terminology
-  Analysts into the Implementation Guide and ensure a successful build.</li>
-      <li>Next steps after baseline 0.2.0: review and refinement of the CS/VS systems
-  that were integrated.</li>
-    </ul>
-  </li>
-  <li>Version 0.3.0 — Updates from SME feedback
-    <ul>
-      <li>Goal: Implement advice and guidance from subject matter experts.</li>
-    </ul>
-  </li>
-  <li>Version 0.4.0 — Connectathon consumption
-    <ul>
-      <li>Goal: Ensure IG artifacts are consumable for Connectathon activities.</li>
-    </ul>
-  </li>
-  <li>Version 1.0.0 — Feedback and Learnings from the Connectathon
-    <ul>
-      <li>Goal: Incorporate feedback and learnings from the Connectathon into
-  the public 1.0.0 release.</li>
-    </ul>
-  </li>
+  <li>0.1.0: Draft FSH profiles, ValueSets, and examples (current)
+&lt;!– - 0.2.0: Phase 1 validation, more examples, CI integration</li>
+  <li>1.0.0: Public release with formal dependencies and canonical package –&gt;</li>
 </ul>
 
-<h2 id="milestones"><a href="https://github.com/UPM-NTHC/PH-RoadSafetyIG/milestones">Milestones</a></h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Version</th>
-      <th>Goal</th>
-      <th>Progress</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0.1.0</td>
-      <td>Baseline Profiles established (initial authoring).</td>
-      <td><a href="https://github.com/UPM-NTHC/PH-RoadSafetyIG/releases/tag/v0.1.0">✅ Released (v0.1.0)</a></td>
-    </tr>
-    <tr>
-      <td>0.1.9</td>
-      <td>Refined profiles + integrated Questionnaire &amp; Bundle resources. Minimum successful build to guide participants.</td>
-      <td>⌛Ongoing</td>
-    </tr>
-    <tr>
-      <td>0.2.0</td>
-      <td>Integrate CodeSystem and ValueSet (.json) files from Terminology Analysts; ensure a successful build.</td>
-      <td>Planned</td>
-    </tr>
-    <tr>
-      <td>0.3.0</td>
-      <td>Implement SME advice and guidance (post-review updates).</td>
-      <td>Planned</td>
-    </tr>
-    <tr>
-      <td>0.4.0</td>
-      <td>Make IG artifacts consumable for Connectathon activities.</td>
-      <td>Planned</td>
-    </tr>
-    <tr>
-      <td>1.0.0</td>
-      <td>Incorporate Connectathon feedback and publish public 1.0.0 release.</td>
-      <td>Planned</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Track issues and <a href="https://github.com/UPM-NTHC/PH-RoadSafetyIG/milestones">roadmap items</a> in the repository <a href="https://github.com/UPM-NTHC/PH-RoadSafetyIG/issues">Issues</a>.
-<!-- Contributors: UP-Manila SILab and workshop participants. Track issues and roadmap items in the repository Issues. --></p>
+<!-- Contributors: UP-Manila SILab and workshop participants. Track issues and roadmap items in the repository Issues. -->
 
 
 
@@ -316,7 +241,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Oct 25, 2025 04:53+0000">2025-10-25</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 26, 2025 07:35+0000">2025-10-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
