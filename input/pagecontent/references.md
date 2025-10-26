@@ -16,7 +16,7 @@
       </p>
       <figure style="margin: 0 0 1rem;">
         <img
-          src="images/oneiss-revise/oneiss-revise-page-01.png"
+          src="oneiss-revise/oneiss-revise-page-01.png"
           alt="ONEISS Crash Investigation Form, page 1"
           style="width: 100%; height: auto;"
           loading="lazy"
@@ -24,7 +24,7 @@
       </figure>
       <figure style="margin: 0 0 1rem;">
         <img
-          src="images/oneiss-revise/oneiss-revise-page-02.png"
+          src="oneiss-revise/oneiss-revise-page-02.png"
           alt="ONEISS Crash Investigation Form, page 2"
           style="width: 100%; height: auto;"
           loading="lazy"
@@ -32,7 +32,7 @@
       </figure>
       <figure style="margin: 0 0 1rem;">
         <img
-          src="images/oneiss-revise/oneiss-revise-page-03.png"
+          src="oneiss-revise/oneiss-revise-page-03.png"
           alt="ONEISS Crash Investigation Form, page 3"
           style="width: 100%; height: auto;"
           loading="lazy"
@@ -40,7 +40,7 @@
       </figure>
       <figure style="margin: 0;">
         <img
-          src="images/oneiss-revise/oneiss-revise-page-04.png"
+          src="oneiss-revise/oneiss-revise-page-04.png"
           alt="ONEISS Crash Investigation Form, page 4"
           style="width: 100%; height: auto;"
           loading="lazy"
@@ -67,7 +67,7 @@
       </p>
       <figure style="margin: 0;">
         <img
-          src="images/run-report/run-report-page-01.png"
+          src="run-report/run-report-page-01.png"
           alt="MMDA Run Report Form, page 1"
           style="width: 100%; height: auto;"
           loading="lazy"
