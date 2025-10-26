@@ -18,24 +18,30 @@ Description: "Generic base Observation for road safety data; specialized concept
 * note 0..*
 
 // MDS16/17 - Date/Time of Consultation
-Profile: RSObsDateOfConsultation
-Parent: RSObservation
-Id: rs-observation-date-of-consultation
-Title: "Road Safety Observation - Date of Consultation"
-Description: "Date of consultation at facility."
-* valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#406543005 "Date of visit (observable entity)" (exactly)
+// Profile: RSObsDateOfConsultation
+// Parent: RSObservation
+// Id: rs-observation-date-of-consultation
+// Title: "Road Safety Observation - Date of Consultation"
+// Description: "Date of consultation at facility."
+// * valueDateTime 1..1 MS
+// * code.coding 0..1
+// * code.coding = $SCT#406543005 "Date of visit (observable entity)" (exactly)
 
 // MDS16/17 - Time of Consultation
-Profile: RSObsTimeOfConsultation
-Parent: RSObservation
-Id: rs-observation-time-of-consultation
-Title: "Road Safety Observation - Time of Consultation"
-Description: "Time of consultation at facility."
-* valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#406544004 "Time of visit (observable entity)" (exactly)
+// Profile: RSObsTimeOfConsultation
+// Parent: RSObservation
+// Id: rs-observation-time-of-consultation
+// Title: "Road Safety Observation - Time of Consultation"
+// Description: "Time of consultation at facility."
+// * valueDateTime 1..1 MS
+// * code.coding 0..1
+// * code.coding = $SCT#406544004 "Time of visit (observable entity)" (exactly)
+
+
+/*
+ These have been identified to be Encounter paths not coded Observations Paths
+ Therefore have been commented out to avoid confusion
+*/
 
 // MDS18 - Injury Intent
 Profile: RSObsInjuryIntent
@@ -72,7 +78,6 @@ Description: "Flag indicating burns as external cause."
 // Burns - flag []
 * code.coding 0..1
 * code.coding = $SCT#242490006 "Burning due to contact with hot substance (event)" (exactly)
-
 * valueBoolean 0..1
 // Burns - specify:
 * valueCodeableConcept 0..1 MS
@@ -94,7 +99,6 @@ Description: "Observation for chemical/substance exposure."
 // External Cause/s of Injury/ies: Chemical/substance - flag []
 * code.coding 0..1
 * code.coding = $SCT#133261000119105 "Exposure to potentially hazardous substance (event)"
-
 * valueBoolean 0..1
 // External Cause/s of Injury/ies: Chemical/substance, specify
 * valueCodeableConcept 0..1 MS
@@ -112,7 +116,6 @@ Description: "Flag indicating sharp object cause."
 // External Cause/s of Injury/ies: Contact with sharp objects - flag []
 * code.coding 0..1
 * code.coding = $SCT#69129000 "Contact with sharp object (event)" (exactly)
-
 // External Cause/s of Injury/ies: Contact with sharp objects, specify object
 * valueBoolean 0..1
 * valueString 0..1 MS
@@ -130,7 +133,6 @@ Description: "Flag indicating drowning."
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $SCT#40947009 "Drowning (event)" (exactly)
-
 // External Cause/s of Injury/ies: Drowning - Type/Body of Water 
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept from VSDrowningType (preferred)
@@ -332,8 +334,14 @@ Id: rs-observation-timeline-datetime
 Title: "Road Safety Observation - Timeline Date/Time"
 Description: "Dispatch and transport timeline events capturing a precise date/time."
 * valueDateTime 1..1 MS
+* code.coding 0..1 MS
 
-// MDS70 - Respiratory Rate
+// MDS69 - Vital Signs - Time
+// This is already designed as part of the 
+// Base RSObservation profile above
+// to require effective[x] element for date/time of observation
+
+// MDS70 - Respiratory Rate, MDS71 - Respiratory Rhythm, MDS72 - Breath Sounds
 Profile: RSObsRespiratoryRate
 Parent: RSObservation
 Id: rs-observation-respiratory-rate
@@ -343,29 +351,22 @@ Description: "Respiratory rate in breaths/min."
 * code.coding 0..1
 * code.coding = $SCT#86290005 "Respiratory rate (observable entity)" (exactly)
 
-// MDS71 - Respiratory Rhythm
-Profile: RSObsRespiratoryRhythm
-Parent: RSObservation
-Id: rs-observation-respiratory-rhythm
-Title: "Road Safety Observation - Respiratory Rhythm"
-Description: "Respiratory rhythm (normal/irregular/labored)."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSRespiratoryRhythm (preferred)
-* code.coding 0..1
-* code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)" (exactly)
+* component 0..* MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains respiratory-rhythm 0..1 and breath-sounds 0..11
+* component[respiratory-rhythm].code.coding 0..1
+* component[respiratory-rhythm].code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)" (exactly)
+* component[respiratory-rhythm].valueCodeableConcept 1..1 MS
+* component[respiratory-rhythm].valueCodeableConcept from VSRespiratoryRhythm (preferred)
 
-// MDS72 - Breath Sounds
-Profile: RSObsBreathSounds
-Parent: RSObservation
-Id: rs-observation-breath-sounds
-Title: "Road Safety Observation - Breath Sounds"
-Description: "Breath sounds assessment."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSBreathSounds (preferred)
-* code.coding 0..1
-* code.coding = $SCT#52653008 "Respiratory sounds (observable entity)" (exactly)
+* component[breath-sounds].code.coding 0..1
+* component[breath-sounds].code.coding = $SCT#52653008 "Respiratory sounds (observable entity)" (exactly)
+* component[breath-sounds].valueCodeableConcept 1..1 MS
+* component[breath-sounds].valueCodeableConcept from VSBreathSounds (preferred)
 
-// MDS73 - Pulse/Heart Rate
+// MDS73 - Pulse/Heart Rate, MDS74 - Pulse Rhythm, MDS75 - Pulse Quality
 Profile: RSObsPulseRate
 Parent: RSObservation
 Id: rs-observation-pulse-rate
@@ -375,27 +376,21 @@ Description: "Pulse/heart rate in beats/min."
 * code.coding 0..1
 * code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
 
-// MDS74 - Pulse Rhythm
-Profile: RSObsPulseRhythm
-Parent: RSObservation
-Id: rs-observation-pulse-rhythm
-Title: "Road Safety Observation - Pulse Rhythm"
-Description: "Pulse rhythm."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPulseRhythm (preferred)
-* code.coding 0..1
-* code.coding = $SCT#364095004 "Pulse rhythm (observable entity)" (exactly)
+* component 0..* MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains pulse-rhythm 0..1 and pulse-quality 0..1
+* component[pulse-rhythm].code.coding 0..1
+* component[pulse-rhythm].code.coding = $SCT#364095004 "Pulse rhythm (observable entity)" (exactly)
+* component[pulse-rhythm].valueCodeableConcept 1..1 MS
+* component[pulse-rhythm].valueCodeableConcept from VSPulseRhythm (preferred)
 
-// MDS75 - Pulse Quality
-Profile: RSObsPulseQuality
-Parent: RSObservation
-Id: rs-observation-pulse-quality
-Title: "Road Safety Observation - Pulse Quality"
-Description: "Pulse quality."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPulseQuality (preferred)
-* code.coding 0..1
-* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
+* component[pulse-quality].code.coding 0..1
+* component[pulse-quality].code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
+* component[pulse-quality].valueCodeableConcept 1..1 MS
+* component[pulse-quality].valueCodeableConcept from VSPulseQuality (preferred)
+
 
 // MDS76 (systolic) / MDS77 (diastolic) - Blood Pressure components
 Profile: RSObsBloodPressure
@@ -403,12 +398,21 @@ Parent: RSObservation
 Id: rs-observation-blood-pressure
 Title: "Road Safety Observation - Blood Pressure"
 Description: "Blood pressure using component entries for systolic/diastolic."
-* valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $LNC#85354-9 "Blood pressure panel with all children optional" (exactly)
-
+// * code.coding 0..1
+// * code.coding = $LNC#85354-9 "Blood pressure panel with all children optional" (exactly)
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify blood pressure components"
+* component 0..* MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains systolic 0..1 and diastolic 0..1
+* component[systolic].code.coding 0..1
+* component[systolic].code.coding = $SCT#271649006 "Systolic blood pressure (observable entity)" (exactly)
+* component[systolic].valueQuantity 1..1 MS
+* component[diastolic].code.coding 0..1
+* component[diastolic].code.coding = $SCT#271650006 "Diastolic blood pressure (observable entity)" (exactly)
+* component[diastolic].valueQuantity 1..1 MS
 
 // MDS78 - Body Temperature
 Profile: RSObsBodyTemperature
@@ -462,9 +466,33 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $SCT#248241002 "Glasgow coma score (observable entity)" (exactly)
+* valueInteger 0..1 MS
+* valueInteger ^short = "Total GCS score"
 
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept ^short = "Specify GCS components"
+* component 0..* MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains gcs-eyes 0..1 and gcs-verbal 0..1 and gcs-motor 0..1 and gcs-total 0..1
+
+* component[gcs-eyes].code.coding 0..1
+* component[gcs-eyes].code.coding = $SCT#281395000 "Glasgow Coma Score eye opening subscore (observable entity)" (exactly)
+* component[gcs-eyes].valueCodeableConcept 1..1 MS
+* component[gcs-eyes].valueCodeableConcept from VSGCSEyes (preferred)
+* component[gcs-eyes].valueCodeableConcept ^short = "Eye opening subscore"
+
+* component[gcs-verbal].code.coding 0..1
+* component[gcs-verbal].code.coding = $SCT#281397008 "Glasgow Coma Scale verbal response subscore (observable entity)" (exactly)
+* component[gcs-verbal].valueCodeableConcept 1..1 MS
+* component[gcs-verbal].valueCodeableConcept from VSGCSVerbal (preferred)
+* component[gcs-verbal].valueCodeableConcept ^short = "Verbal response subscore"
+
+* component[gcs-motor].code.coding 0..1
+* component[gcs-motor].code.coding = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)" (exactly)
+* component[gcs-motor].valueCodeableConcept 1..1 MS
+* component[gcs-motor].valueCodeableConcept from VSGCSMotor (preferred)
+* component[gcs-motor].valueCodeableConcept ^short = "Motor response subscore"
+
 
 // MDS91 - Remarks / Clinical Remarks (run report)
 Profile: RSObsClinicalRemarks
@@ -472,9 +500,11 @@ Parent: RSObservation
 Id: rs-observation-clinical-remarks
 Title: "Road Safety Observation - Clinical Remarks"
 Description: "Clinical remarks/notes."
-* valueString 1..1 MS
+* note 1..1
+* encounter only Reference(RSEncounter)
+* encounter 0..1
 * code.coding 0..1
-* code.coding = $SCT#clinical-remarks "Clinical remarks"
+* code.coding = SILPH#RRFREMARKS "Run Report Form Remarks" (exactly)
 
 // MDS107 - Vehicle Used (run report)
 Profile: RSObsVehicleUsed

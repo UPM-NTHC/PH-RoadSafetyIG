@@ -39,8 +39,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 // MDS #70, #73, #76-81 vital sign observations
 * section[vitals].entry only Reference(RSObsRespiratoryRate or RSObsPulseRate 
     or RSObsBloodPressure or RSObsBodyTemperature or RSObsGCS 
-    or RSObsRespiratoryRhythm or RSObsBreathSounds or RSObsPulseRhythm 
-    or RSObsPulseQuality or RSObsCyanosis)
+    or RSObsCyanosis)
 * section[clinical].title = "Clinical / Assessment"
 * section[clinical].entry 0..* 
 // MDS #91 clinical remarks (procedures/conditions use non-MDS profiles)
@@ -115,9 +114,8 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[observationTimeStationArrival].resource.code.coding = $LNC#11288-8 "Arrival time documented" (exactly)
 // MDS #70, #73, #76-81 - Vital signs cluster
 * entry[observationVitals].resource only RSObsRespiratoryRate 
-    or RSObsPulseRate or RSObsBloodPressure or RSObsBodyTemperature
-    or RSObsRespiratoryRhythm or RSObsBreathSounds or RSObsPulseRhythm
-    or RSObsPulseQuality or RSObsCyanosis
+    or RSObsPulseRate or RSObsBloodPressure 
+    or RSObsBodyTemperature or RSObsCyanosis
 // MDS #83-86 - Glasgow Coma Scale
 * entry[observationGCS].resource only RSObsGCS
 // MDS #149 - Reported Complaint
