@@ -3,7 +3,10 @@
 
 Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this profile. Replace identifiers, timestamps, and narrative text before production use.
 
-```json
+<details>
+<summary>Show example JSON bundle (click to expand)</summary>
+
+<pre style="max-height:400px;overflow:auto;white-space:pre;">
 {
   "resourceType": "Bundle",
   "id": "rsbundleoneiss-bundle-example",
@@ -571,6 +574,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
     }
   ]
 }
-```
+</pre>
+</details>
 
 > Reminder: ensure every resource in the document Bundle declares its profile in `meta.profile` and that references resolve within the Bundle.
