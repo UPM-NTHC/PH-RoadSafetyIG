@@ -23,6 +23,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * participant 0..* MS
 * hospitalization.dischargeDisposition 0..1 MS
 * hospitalization.destination 0..1 MS
+* obeys RSEncounterDischarge
 
 /* Incident and Service Locations (Encounter.location slicing) */
 * location ^slicing.discriminator.type = #value
@@ -87,6 +88,11 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * extension[vehicleUsed] ^short = "Identifier and type of transport vehicle."
 * extension[vehicleUsed] ^definition = "Identifier and type of transport vehicle. Multiple entries support transfers across different vehicles."
 * extension[vehicleUsed] ^comment = "Non-medical concept captured via CodeableConcept.text; Device-based fleet tracking can follow when EMS tooling allows."
+
+Invariant: RSEncounterDischarge
+Description: "Inpatient encounters use in-patient discharge dispositions; ER/OPD/BHS/RHU encounters use the ambulatory disposition list."
+Expression: "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-er')))"
+Severity: #error
 
 Extension: RSEncounterVehicleUsed
 Id: rs-encounter-vehicle-used
