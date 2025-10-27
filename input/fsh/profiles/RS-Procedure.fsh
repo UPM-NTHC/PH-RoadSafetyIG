@@ -1,7 +1,7 @@
 Profile: RSProcedure
 Parent: PHCoreProcedure
 Id: rs-procedure
-Title: "Road Safety Procedure"
+Title: "RS Procedure"
 Description: "Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions)."
 * ^version = "1.0.0"
 * status 1..1 MS
@@ -24,7 +24,7 @@ Terminology Profile for each procedure type
 Profile: RSProcedureTransportCoordination
 Parent: RSProcedure
 Id: rs-procedure-transport-coordination
-Title: "Road Safety Procedure - Transport Coordination"
+Title: "RS Procedure - Transport Coordination"
 Description: "Procedure record indicating whether transport coordination with the receiving hospital was done."
 * code 1..1 MS
 * code.coding 1..1
