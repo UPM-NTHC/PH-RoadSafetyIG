@@ -557,6 +557,8 @@ Id: rs-observation-urgency
 Title: "RS Observation - Priority Level (Urgency)"
 Description: "System-generated urgency level per CAD/agency rules."
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from VSPlaceOfOccurrence (preferred)
+* note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#260870009 "Priority (attribute)" (exactly)
 
@@ -754,6 +756,7 @@ Description: "Boolean flag indicating multiple injuries."
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $SCT#262519004 "Multiple injuries (disorder)" (exactly)
+* code.coding = $SCT#262519004 "Multiple injuries (disorder)" (exactly)
 
 // MDS177 (presence) / MDS178 (site) / MDS179 (details) - Abrasion
 Profile: RSObsAbrasion
@@ -765,6 +768,7 @@ Description: "Abrasion present; with optional site and details."
 * bodySite 0..1 MS
 * note 0..* 
 * code.coding 0..1
+* code.coding = $SCT#399963005 "Abrasion (disorder)" (exactly)
 * code.coding = $SCT#399963005 "Abrasion (disorder)" (exactly)
 
 // MDS180 (presence) / MDS181 (site) / MDS182 (details) - Avulsion
@@ -806,6 +810,7 @@ Description: "Concussion present; with site and details."
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#110030002 "Concussion injury of brain (disorder)" (exactly)
+* code.coding = $SCT#110030002 "Concussion injury of brain (disorder)" (exactly)
 
 // MDS199 (presence) / MDS200 (site) / MDS201 (details) - Contusion
 Profile: RSObsContusion
@@ -817,6 +822,7 @@ Description: "Contusion present; with site and details."
 * bodySite 0..1 MS
 * note 0..* 
 * code.coding 0..1
+* code.coding = $SCT#125667009 "Contusion (disorder)" (exactly)
 * code.coding = $SCT#125667009 "Contusion (disorder)" (exactly)
 
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
@@ -830,6 +836,8 @@ Description: "Fracture observation. Use valueCodeableConcept to indicate fractur
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
 // Recommendation: set the Observation.code to a general fracture concept (SNOMED CT) and bind Observation.valueCodeableConcept to a ValueSet enumerating fracture types (open/closed) — use SNOMED CT codes where available.
 * code.coding 0..1
+* code.coding = $SCT#125605004 "Fracture of bone (disorder)" (exactly)
+
 * code.coding = $SCT#125605004 "Fracture of bone (disorder)" (exactly)
 
 * valueCodeableConcept 0..1 MS
@@ -850,6 +858,8 @@ Description: "Open wound present; with site and details. Capture mechanism/type 
 * code.coding 0..1
 * code.coding = $SCT#125643001 "Open wound (disorder)" (exactly)
 
+* code.coding = $SCT#125643001 "Open wound (disorder)" (exactly)
+
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify open wound mechanism/type"
 // Recommendation: use SNOMED CT codes for mechanism where available; allow free-text fallback.
@@ -865,6 +875,7 @@ Description: "Traumatic amputation present; with site and details."
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#262595009 "Traumatic amputation (disorder)" (exactly)
+* code.coding = $SCT#262595009 "Traumatic amputation (disorder)" (exactly)
 
 // MDS215 (presence) / MDS216 (site) / MDS217 (details) - Other Specified Injury
 Profile: RSObsOtherInjury
@@ -878,7 +889,10 @@ Description: "Other specified injury present; capture type as valueCodeableConce
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#417163006 "Traumatic or non-traumatic injury (disorder)" (exactly)
+* code.coding = $SCT#417163006 "Traumatic or non-traumatic injury (disorder)" (exactly)
 
+// MDS218 - Collision Type (post-crash investigation)
+Profile: RSObsCollisionType
 // MDS218 - Collision Type (post-crash investigation)
 Profile: RSObsCollisionType
 Parent: RSObservation
@@ -888,7 +902,10 @@ Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
 * code.coding 0..1
 * code.coding = $SCT#collision-type "Collision type"
+* code.coding = $SCT#collision-type "Collision type"
 
+// MDS219 - Presence of Traffic Investigator
+Profile: RSObsPresenceTrafficInvestigator
 // MDS219 - Presence of Traffic Investigator
 Profile: RSObsPresenceTrafficInvestigator
 Parent: RSObservation
@@ -898,7 +915,10 @@ Description: "Boolean presence/absence of traffic investigator."
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $SCT#159679004 "Traffic warden (occupation)" (exactly)
+* code.coding = $SCT#159679004 "Traffic warden (occupation)" (exactly)
 
+// MDS227 - CCTV available (post-crash)
+Profile: RSObsCCTVAvailable
 // MDS227 - CCTV available (post-crash)
 Profile: RSObsCCTVAvailable
 Parent: RSObservation
@@ -908,7 +928,10 @@ Description: "Availability of CCTV video."
 * valueBoolean 0..1
 * code.coding 0..1
 * code.coding = $SCT#360000005 "Closed circuit television (physical object)" (exactly)
+* code.coding = $SCT#360000005 "Closed circuit television (physical object)" (exactly)
 
+// MDS230 / MDS231 - Other Risk Factors (and 'Others' text)
+Profile: RSObsOtherRiskFactors
 // MDS230 / MDS231 - Other Risk Factors (and 'Others' text)
 Profile: RSObsOtherRiskFactors
 Parent: RSObservation
@@ -919,9 +942,15 @@ Description: "Other risk factors at the time of incident; allow text for 'Others
 * valueCodeableConcept from VSOtherRiskFactors (preferred)
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text ^short = "Other risk factors"
+* valueCodeableConcept from VSOtherRiskFactors (preferred)
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text ^short = "Other risk factors"
 * code.coding 0..1
 * code.coding = $SCT#80943009 "Risk factor (observable entity)" (exactly)
+* code.coding = $SCT#80943009 "Risk factor (observable entity)" (exactly)
 
+// MDS232 / MDS233 - Safety Accessories (and 'Others' text)
+Profile: RSObsSafetyAccessories
 // MDS232 / MDS233 - Safety Accessories (and 'Others' text)
 Profile: RSObsSafetyAccessories
 Parent: RSObservation
@@ -931,5 +960,8 @@ Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSSafetyDevices (preferred)
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept from VSSafetyDevices (preferred)
 * code.coding 0..1
+* code.coding = $SCT#386812007 "Safety precautions (procedure)" (exactly)
 * code.coding = $SCT#386812007 "Safety precautions (procedure)" (exactly)
