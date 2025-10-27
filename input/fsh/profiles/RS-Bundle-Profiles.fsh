@@ -27,7 +27,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 * section[workflow].title = "Workflow / Timeline"
 * section[workflow].entry 1..* MS
 // MDS #62-68 timeline checkpoints, MDS #61 run report comments, MDS #107 vehicle used
-* section[workflow].entry only Reference(RSObsTimelineDateTime or RSObsRunReportComments or RSObsVehicleUsed)
+* section[workflow].entry only Reference(RSObsTimelineDateTime or RSObsRunReportComments)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
 // MDS #158-159 injury timestamp, #18 intent, #41 transport accident flag, #118 transport mode, #149 complaint, #155 call source (RSIncidentLocation has no MDS tag)
@@ -123,11 +123,8 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 // MDS #155 - Call Source
 * entry[observationCallSource].resource only RSObsCallSource
 * entry contains
-    observationVehicleUsed 0..1 and
     observationRunReportComments 0..1 and
     observationClinicalRemarks 0..1
-// MDS #107 - Vehicle Used
-* entry[observationVehicleUsed].resource only RSObsVehicleUsed
 // MDS #61 - Run Report Comments
 * entry[observationRunReportComments].resource only RSObsRunReportComments
 // MDS #91 - Clinical Remarks

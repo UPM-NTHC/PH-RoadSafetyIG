@@ -506,17 +506,10 @@ Description: "Clinical remarks/notes."
 * code.coding 0..1
 * code.coding = SILPH#RRFREMARKS "Run Report Form Remarks" (exactly)
 
-// MDS107 - Vehicle Used (run report)
-Profile: RSObsVehicleUsed
-Parent: RSObservation
-Id: rs-observation-vehicle-used
-Title: "RS Observation - Vehicle Used"
-Description: "Vehicle used during response."
-* valueCodeableConcept 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#36030000 "Transport vehicle, device (physical object)" (exactly)
-
 // MDS108 - Condition of Patient (overall condition at assessment)
+// Misnomer for ""Condition""
+// This is an assertation based on the assessor, whether Physician/Not
+// Therefore Observation is the best resource that captures the meaning of the element
 Profile: RSObsConditionOfPatient
 Parent: RSObservation
 Id: rs-observation-condition-of-patient
@@ -524,7 +517,6 @@ Title: "RS Observation - Condition of Patient"
 Description: "Overall condition of patient at assessment."
 * code.coding 0..1
 * code.coding = $SCT#12386002 "Patient status determination (procedure)" (exactly)
-
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
@@ -534,9 +526,10 @@ Parent: RSObservation
 Id: rs-observation-extent-of-injury
 Title: "RS Observation - Extent of Injury"
 Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
-* valueCodeableConcept 1..1 MS
 * code.coding 0..1
 * code.coding = $SCT#1255875007 "Injury Severity Score (observable entity)" (exactly)
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 1..1 MS
 
 // MDS111 - Triage Priority
 Profile: RSObsTriagePriority
@@ -546,7 +539,6 @@ Title: "RS Observation - Triage Priority"
 Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 * code.coding 0..1
 * code.coding = $SCT#225390008 "Triage (procedure)" (exactly)
-
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
@@ -556,11 +548,11 @@ Parent: RSObservation
 Id: rs-observation-urgency
 Title: "RS Observation - Priority Level (Urgency)"
 Description: "System-generated urgency level per CAD/agency rules."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPlaceOfOccurrence (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#260870009 "Priority (attribute)" (exactly)
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.text 1..1 MS
 
 // MDS116 - Status upon reaching Facility/Hospital
 Profile: RSObsStatusOnArrival
