@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-activity | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSActivity |
+| Draft as of 2025-10-27 | *Computable Name*:VSActivity |
 
  
 Activity at time of incident (prefer SNOMED CT). 
 
  **References** 
 
-* [Road Safety Observation - Activity at Time of Incident](StructureDefinition-rs-observation-activity-at-incident.md)
+* [RS Observation - Activity at Time of Incident](StructureDefinition-rs-observation-activity-at-incident.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 5 concepts
   "name" : "VSActivity",
   "title" : "RS VS - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

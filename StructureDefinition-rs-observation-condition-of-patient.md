@@ -1,23 +1,23 @@
-# Road Safety Observation - Condition of Patient - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Condition of Patient - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Condition of Patient**
+* **RS Observation - Condition of Patient**
 
-## Resource Profile: Road Safety Observation - Condition of Patient 
+## Resource Profile: RS Observation - Condition of Patient 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsConditionOfPatient |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsConditionOfPatient |
 
  
 Overall condition of patient at assessment. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-condition-of-patient)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-condi
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient",
   "version" : "0.1.0",
   "name" : "RSObsConditionOfPatient",
-  "title" : "Road Safety Observation - Condition of Patient",
+  "title" : "RS Observation - Condition of Patient",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

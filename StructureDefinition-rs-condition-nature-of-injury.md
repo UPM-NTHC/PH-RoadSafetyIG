@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-nature-of-injury | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSConditionNatureOfInjury |
+| Draft as of 2025-10-27 | *Computable Name*:RSConditionNatureOfInjury |
 
  
 Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-nature-
   "name" : "RSConditionNatureOfInjury",
   "title" : "Road Safety Condition — Nature of Injury (category)",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

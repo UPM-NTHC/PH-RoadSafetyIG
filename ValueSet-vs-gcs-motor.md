@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-gcs-motor | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSGCSMotor |
+| Draft as of 2025-10-27 | *Computable Name*:VSGCSMotor |
 
  
 Glasgow Coma Scale motor responses (LOINC LA codes). 
@@ -54,7 +54,7 @@ This value set contains 6 concepts
   "name" : "VSGCSMotor",
   "title" : "RS VS - GCS Motor",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

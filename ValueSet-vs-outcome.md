@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-outcome | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSOutcome |
+| Draft as of 2025-10-27 | *Computable Name*:VSOutcome |
 
  
 Outcome: Improved, Unimproved, Died. 
 
  **References** 
 
-* [Road Safety Observation - Outcome at Discharge](StructureDefinition-rs-observation-outcome-discharge.md)
-* [Road Safety Observation - Outcome at Release](StructureDefinition-rs-observation-outcome-release.md)
+* [RS Observation - Outcome at Discharge](StructureDefinition-rs-observation-outcome-discharge.md)
+* [RS Observation - Outcome at Release](StructureDefinition-rs-observation-outcome-release.md)
 
 ### Logical Definition (CLD)
 
@@ -58,7 +58,7 @@ This value set contains 3 concepts
   "name" : "VSOutcome",
   "title" : "RS VS - Outcome",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

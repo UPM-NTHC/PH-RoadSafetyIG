@@ -1,22 +1,22 @@
-# Road Safety Organization - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Organization - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Organization**
+* **RS Organization**
 
-## Resource Profile: Road Safety Organization 
+## Resource Profile: RS Organization 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSOrganization |
+| Draft as of 2025-10-27 | *Computable Name*:RSOrganization |
 
  
-Organization profile for EMS providers and receiving facilities involved in road safety encounters. 
+Organization profile for EMS providers and receiving facilities involved in RS encounters. 
 
 **Usages:**
 
-* Refer to this Profile: [Road Safety Encounter](StructureDefinition-rs-encounter.md), [Road Safety HealthcareService](StructureDefinition-rs-healthcare-service.md) and [Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
+* Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md), [RS HealthcareService](StructureDefinition-rs-healthcare-service.md) and [Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-organization)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization",
   "version" : "0.1.0",
   "name" : "RSOrganization",
-  "title" : "Road Safety Organization",
+  "title" : "RS Organization",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
       ]
     }
   ],
-  "description" : "Organization profile for EMS providers and receiving facilities involved in road safety encounters.",
+  "description" : "Organization profile for EMS providers and receiving facilities involved in RS encounters.",
   "jurisdiction" : [
     {
       "coding" : [

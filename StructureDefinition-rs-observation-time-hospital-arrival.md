@@ -1,23 +1,23 @@
-# Road Safety Observation - Time of Hospital Arrival - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Time of Hospital Arrival - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Time of Hospital Arrival**
+* **RS Observation - Time of Hospital Arrival**
 
-## Resource Profile: Road Safety Observation - Time of Hospital Arrival 
+## Resource Profile: RS Observation - Time of Hospital Arrival 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-hospital-arrival | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsTimeHospitalArrival |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsTimeHospitalArrival |
 
  
 Timestamp unit arrived at receiving facility. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-time-hospital-arrival)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-time-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-hospital-arrival",
   "version" : "0.1.0",
   "name" : "RSObsTimeHospitalArrival",
-  "title" : "Road Safety Observation - Time of Hospital Arrival",
+  "title" : "RS Observation - Time of Hospital Arrival",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

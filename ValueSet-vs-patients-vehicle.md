@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-patients-vehicle | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSPatientsVehicle |
+| Draft as of 2025-10-27 | *Computable Name*:VSPatientsVehicle |
 
  
 Vehicle used by patient (prefer SNOMED CT; local additions where specified). 
 
  **References** 
 
-* [Road Safety Observation - Patient's Vehicle](StructureDefinition-rs-observation-patients-vehicle.md)
+* [RS Observation - Patient's Vehicle](StructureDefinition-rs-observation-patients-vehicle.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 11 concepts
   "name" : "VSPatientsVehicle",
   "title" : "RS VS - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

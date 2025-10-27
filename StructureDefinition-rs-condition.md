@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSCondition |
+| Draft as of 2025-10-27 | *Computable Name*:RSCondition |
 
  
 Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
@@ -17,7 +17,7 @@ Condition resource for Road Safety IG that supports multiple coding systems, tex
 **Usages:**
 
 * Derived from this Profile: [Road Safety Condition — External Cause (category)](StructureDefinition-rs-condition-external-cause.md), [Road Safety Condition — Final Diagnosis](StructureDefinition-rs-condition-final-diagnosis.md), [Road Safety Condition — Initial Impression](StructureDefinition-rs-condition-initial-impression.md), [Road Safety Condition — Nature of Injury (category)](StructureDefinition-rs-condition-nature-of-injury.md) and [Road Safety Condition — Problem](StructureDefinition-rs-condition-problem.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "name" : "RSCondition",
   "title" : "Road Safety Condition",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

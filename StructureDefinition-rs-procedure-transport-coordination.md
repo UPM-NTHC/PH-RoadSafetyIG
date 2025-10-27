@@ -1,15 +1,15 @@
-# Road Safety Procedure - Transport Coordination - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Procedure - Transport Coordination - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Procedure - Transport Coordination**
+* **RS Procedure - Transport Coordination**
 
-## Resource Profile: Road Safety Procedure - Transport Coordination 
+## Resource Profile: RS Procedure - Transport Coordination 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSProcedureTransportCoordination |
+| Draft as of 2025-10-27 | *Computable Name*:RSProcedureTransportCoordination |
 
  
 Procedure record indicating whether transport coordination with the receiving hospital was done. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure-transpo
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination",
   "version" : "0.1.0",
   "name" : "RSProcedureTransportCoordination",
-  "title" : "Road Safety Procedure - Transport Coordination",
+  "title" : "RS Procedure - Transport Coordination",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

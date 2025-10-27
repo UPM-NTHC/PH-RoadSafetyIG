@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-bites-agent | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSBitesAgent |
+| Draft as of 2025-10-27 | *Computable Name*:VSBitesAgent |
 
  
 Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings. 
 
  **References** 
 
-* [Road Safety Observation - External Cause: Bites/Stings](StructureDefinition-rs-observation-ec-bites-stings.md)
+* [RS Observation - External Cause: Bites/Stings](StructureDefinition-rs-observation-ec-bites-stings.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 1 concepts
   "name" : "VSBitesAgent",
   "title" : "RS VS - Bites/Stings Agent",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

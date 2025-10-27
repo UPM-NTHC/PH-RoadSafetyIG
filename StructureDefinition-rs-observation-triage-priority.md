@@ -1,23 +1,23 @@
-# Road Safety Observation - Triage Priority - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Triage Priority - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Triage Priority**
+* **RS Observation - Triage Priority**
 
-## Resource Profile: Road Safety Observation - Triage Priority 
+## Resource Profile: RS Observation - Triage Priority 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-triage-priority | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsTriagePriority |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsTriagePriority |
 
  
 Triage category assigned at scene (e.g., Red/Yellow/Green/Black). 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-triage-priority)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-triag
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-triage-priority",
   "version" : "0.1.0",
   "name" : "RSObsTriagePriority",
-  "title" : "Road Safety Observation - Triage Priority",
+  "title" : "RS Observation - Triage Priority",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

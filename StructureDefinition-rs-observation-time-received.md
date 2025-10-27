@@ -1,15 +1,15 @@
-# Road Safety Observation - Time Received - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Time Received - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Time Received**
+* **RS Observation - Time Received**
 
-## Resource Profile: Road Safety Observation - Time Received 
+## Resource Profile: RS Observation - Time Received 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-received | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsTimeReceived |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsTimeReceived |
 
  
 Time the call/request was received by EMS/dispatch. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-time-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-received",
   "version" : "0.1.0",
   "name" : "RSObsTimeReceived",
-  "title" : "Road Safety Observation - Time Received",
+  "title" : "RS Observation - Time Received",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

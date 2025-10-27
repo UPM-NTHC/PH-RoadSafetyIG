@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-collision-category | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSCollisionCategory |
+| Draft as of 2025-10-27 | *Computable Name*:VSCollisionCategory |
 
  
 Collision vs non-collision category. 
 
  **References** 
 
-* [Road Safety Observation - Collision vs Non-Collision](StructureDefinition-rs-observation-collision-vs-noncollision.md)
+* [RS Observation - Collision vs Non-Collision](StructureDefinition-rs-observation-collision-vs-noncollision.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 2 concepts
   "name" : "VSCollisionCategory",
   "title" : "RS VS - Collision Category",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

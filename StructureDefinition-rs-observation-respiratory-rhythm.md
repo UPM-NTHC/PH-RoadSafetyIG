@@ -1,23 +1,23 @@
-# Road Safety Observation - Respiratory Rhythm - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Respiratory Rhythm - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Respiratory Rhythm**
+* **RS Observation - Respiratory Rhythm**
 
-## Resource Profile: Road Safety Observation - Respiratory Rhythm 
+## Resource Profile: RS Observation - Respiratory Rhythm 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsRespiratoryRhythm |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsRespiratoryRhythm |
 
  
 Respiratory rhythm (normal/irregular/labored). 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-respiratory-rhythm)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm",
   "version" : "0.1.0",
   "name" : "RSObsRespiratoryRhythm",
-  "title" : "Road Safety Observation - Respiratory Rhythm",
+  "title" : "RS Observation - Respiratory Rhythm",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

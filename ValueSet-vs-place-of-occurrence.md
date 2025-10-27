@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-place-of-occurrence | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSPlaceOfOccurrence |
+| Draft as of 2025-10-27 | *Computable Name*:VSPlaceOfOccurrence |
 
  
 Place of occurrence (prefer SNOMED CT; local additions where specified). 
 
  **References** 
 
-* [Road Safety Observation - Place of Occurrence](StructureDefinition-rs-observation-place-of-occurrence.md)
+* [RS Observation - Place of Occurrence](StructureDefinition-rs-observation-place-of-occurrence.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 7 concepts
   "name" : "VSPlaceOfOccurrence",
   "title" : "RS VS - Place of Occurrence",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

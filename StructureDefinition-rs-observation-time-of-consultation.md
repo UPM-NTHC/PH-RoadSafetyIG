@@ -1,15 +1,15 @@
-# Road Safety Observation - Time of Consultation - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Time of Consultation - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Time of Consultation**
+* **RS Observation - Time of Consultation**
 
-## Resource Profile: Road Safety Observation - Time of Consultation 
+## Resource Profile: RS Observation - Time of Consultation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-consultation | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsTimeOfConsultation |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsTimeOfConsultation |
 
  
 Time of consultation at facility. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-time-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-consultation",
   "version" : "0.1.0",
   "name" : "RSObsTimeOfConsultation",
-  "title" : "Road Safety Observation - Time of Consultation",
+  "title" : "RS Observation - Time of Consultation",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

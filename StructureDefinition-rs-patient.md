@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSPatient |
+| Draft as of 2025-10-27 | *Computable Name*:RSPatient |
 
  
 Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [Road Safety Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [Road Safety AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [Road Safety Claim](StructureDefinition-rs-claim.md), [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [Road Safety Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)...Show 9 more,[Road Safety Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md),[Road Safety Condition](StructureDefinition-rs-condition.md),[Road Safety DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md),[Road Safety Encounter](StructureDefinition-rs-encounter.md),[Road Safety MedicationStatement](StructureDefinition-rs-medication-statement.md),[Road Safety Observation](StructureDefinition-rs-observation.md),[Road Safety Procedure](StructureDefinition-rs-procedure.md),[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)and[Road Safety Task](StructureDefinition-rs-task.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
+* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Claim](StructureDefinition-rs-claim.md), [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)...Show 9 more,[RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md),[Road Safety Condition](StructureDefinition-rs-condition.md),[RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md),[RS Encounter](StructureDefinition-rs-encounter.md),[RS MedicationStatement](StructureDefinition-rs-medication-statement.md),[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md),[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)and[Road Safety Task](StructureDefinition-rs-task.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-patient)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "Road Safety Patient",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

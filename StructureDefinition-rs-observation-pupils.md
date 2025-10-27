@@ -1,15 +1,15 @@
-# Road Safety Observation - Pupils - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Pupils - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Pupils**
+* **RS Observation - Pupils**
 
-## Resource Profile: Road Safety Observation - Pupils 
+## Resource Profile: RS Observation - Pupils 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pupils | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsPupils |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsPupils |
 
  
 Pupil size/reactivity summary. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pupil
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pupils",
   "version" : "0.1.0",
   "name" : "RSObsPupils",
-  "title" : "Road Safety Observation - Pupils",
+  "title" : "RS Observation - Pupils",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

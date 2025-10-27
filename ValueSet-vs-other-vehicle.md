@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:VSOtherVehicle |
+| Draft as of 2025-10-27 | *Computable Name*:VSOtherVehicle |
 
  
 Other vehicle/object involved in collision. 
 
  **References** 
 
-* [Road Safety Observation - Other Vehicle/Object Involved](StructureDefinition-rs-observation-other-vehicle.md)
+* [RS Observation - Other Vehicle/Object Involved](StructureDefinition-rs-observation-other-vehicle.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 11 concepts
   "name" : "VSOtherVehicle",
   "title" : "RS VS - Other Vehicle in Collision",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

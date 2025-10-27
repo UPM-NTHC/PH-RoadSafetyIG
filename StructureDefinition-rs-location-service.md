@@ -1,22 +1,22 @@
-# Road Safety Service Location - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Service Location - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Service Location**
+* **RS Service Location**
 
-## Resource Profile: Road Safety Service Location 
+## Resource Profile: RS Service Location 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSServiceLocation |
+| Draft as of 2025-10-27 | *Computable Name*:RSServiceLocation |
 
  
 Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic). 
 
 **Usages:**
 
-* Refer to this Profile: [Road Safety Encounter](StructureDefinition-rs-encounter.md)
+* Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-location-service)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service",
   "version" : "0.1.0",
   "name" : "RSServiceLocation",
-  "title" : "Road Safety Service Location",
+  "title" : "RS Service Location",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
         "id" : "Location",
         "path" : "Location",
         "short" : "Service / facility location",
-        "definition" : "Location representing a service or facility used in road safety encounters (for example, ER, ward, clinic).",
+        "definition" : "Location representing a service or facility used in RS encounters (for example, ER, ward, clinic).",
         "comment" : "Used for recording facility or service locations related to encounters."
       },
       {

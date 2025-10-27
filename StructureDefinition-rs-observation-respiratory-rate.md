@@ -1,23 +1,23 @@
-# Road Safety Observation - Respiratory Rate - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Respiratory Rate - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Respiratory Rate**
+* **RS Observation - Respiratory Rate**
 
-## Resource Profile: Road Safety Observation - Respiratory Rate 
+## Resource Profile: RS Observation - Respiratory Rate 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsRespiratoryRate |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsRespiratoryRate |
 
  
 Respiratory rate in breaths/min. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [Road Safety Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
+* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-respiratory-rate)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate",
   "version" : "0.1.0",
   "name" : "RSObsRespiratoryRate",
-  "title" : "Road Safety Observation - Respiratory Rate",
+  "title" : "RS Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

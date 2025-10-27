@@ -1,15 +1,15 @@
-# Road Safety Observation - Date of Injury - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - Date of Injury - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - Date of Injury**
+* **RS Observation - Date of Injury**
 
-## Resource Profile: Road Safety Observation - Date of Injury 
+## Resource Profile: RS Observation - Date of Injury 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-of-injury | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsDateOfInjury |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsDateOfInjury |
 
  
 Date of injury occurrence. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-date-
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-of-injury",
   "version" : "0.1.0",
   "name" : "RSObsDateOfInjury",
-  "title" : "Road Safety Observation - Date of Injury",
+  "title" : "RS Observation - Date of Injury",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

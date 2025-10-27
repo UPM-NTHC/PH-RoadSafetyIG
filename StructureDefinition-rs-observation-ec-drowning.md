@@ -1,22 +1,22 @@
-# Road Safety Observation - External Cause: Drowning - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS Observation - External Cause: Drowning - DRAFT PH Road Safety Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Observation - External Cause: Drowning**
+* **RS Observation - External Cause: Drowning**
 
-## Resource Profile: Road Safety Observation - External Cause: Drowning 
+## Resource Profile: RS Observation - External Cause: Drowning 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning | *Version*:0.1.0 |
-| Draft as of 2025-10-26 | *Computable Name*:RSObsECDrowning |
+| Draft as of 2025-10-27 | *Computable Name*:RSObsECDrowning |
 
  
 Flag indicating drowning. 
 
 **Usages:**
 
-* Use this Profile: [Road Safety Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-ec-drowning)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-dr
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning",
   "version" : "0.1.0",
   "name" : "RSObsECDrowning",
-  "title" : "Road Safety Observation - External Cause: Drowning",
+  "title" : "RS Observation - External Cause: Drowning",
   "status" : "draft",
-  "date" : "2025-10-26T07:34:36+00:00",
+  "date" : "2025-10-27T01:54:31+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
