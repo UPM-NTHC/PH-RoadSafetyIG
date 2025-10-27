@@ -1,4 +1,4 @@
-# RS VS - Other Risk Factors - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS VS - Other Risk Factors - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-risk-factors | *Version*:0.1.0 |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-risk-factors | *Version*:0.1.9 |
 | Draft as of 2025-10-27 | *Computable Name*:VSOtherRiskFactors |
 
  
@@ -50,11 +50,11 @@ This value set contains 5 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-other-risk-factors",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-risk-factors",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "VSOtherRiskFactors",
   "title" : "RS VS - Other Risk Factors",
   "status" : "draft",
-  "date" : "2025-10-27T01:54:31+00:00",
+  "date" : "2025-10-27T01:56:04+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

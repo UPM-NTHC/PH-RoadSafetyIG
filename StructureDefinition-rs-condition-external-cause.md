@@ -1,4 +1,4 @@
-# Road Safety Condition — External Cause (category) - DRAFT PH Road Safety Implementation Guide v0.1.0
+# Road Safety Condition — External Cause (category) - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause | *Version*:0.1.0 |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause | *Version*:0.1.9 |
 | Draft as of 2025-10-27 | *Computable Name*:RSConditionExternalCause |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-externa
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition-external-cause",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "RSConditionExternalCause",
   "title" : "Road Safety Condition — External Cause (category)",
   "status" : "draft",
-  "date" : "2025-10-27T01:54:31+00:00",
+  "date" : "2025-10-27T01:56:04+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

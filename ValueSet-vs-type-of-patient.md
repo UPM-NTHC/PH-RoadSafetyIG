@@ -1,4 +1,4 @@
-# RS VS - Type of Patient - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS VS - Type of Patient - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-type-of-patient | *Version*:0.1.0 |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-type-of-patient | *Version*:0.1.9 |
 | Draft as of 2025-10-27 | *Computable Name*:VSTypeOfPatient |
 
  
@@ -27,7 +27,7 @@ Type of patient (ER/OPD/RHU/BHS context).
 Expansion from tx.fhir.org based on:
 
 * SNOMED CT International edition 01-Feb 2025
-* [codesystem SILPH Local Codes v0.1.0 (CodeSystem)](CodeSystem-cs-silph.md)
+* [codesystem SILPH Local Codes v0.1.9 (CodeSystem)](CodeSystem-cs-silph.md)
 
 This value set contains 4 concepts
 
@@ -53,11 +53,11 @@ This value set contains 4 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-type-of-patient",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-type-of-patient",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "VSTypeOfPatient",
   "title" : "RS VS - Type of Patient",
   "status" : "draft",
-  "date" : "2025-10-27T01:54:31+00:00",
+  "date" : "2025-10-27T01:56:04+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

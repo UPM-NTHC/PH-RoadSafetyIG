@@ -1,4 +1,4 @@
-# RS VS - Disposition (In-Patient) - DRAFT PH Road Safety Implementation Guide v0.1.0
+# RS VS - Disposition (In-Patient) - DRAFT PH Road Safety Implementation Guide v0.1.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip | *Version*:0.1.0 |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip | *Version*:0.1.9 |
 | Draft as of 2025-10-27 | *Computable Name*:VSDispositionIP |
 
  
@@ -50,11 +50,11 @@ This value set contains 7 concepts
   "resourceType" : "ValueSet",
   "id" : "vs-disposition-ip",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip",
-  "version" : "0.1.0",
+  "version" : "0.1.9",
   "name" : "VSDispositionIP",
   "title" : "RS VS - Disposition (In-Patient)",
   "status" : "draft",
-  "date" : "2025-10-27T01:54:31+00:00",
+  "date" : "2025-10-27T01:56:04+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
