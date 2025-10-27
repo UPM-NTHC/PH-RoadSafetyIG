@@ -1,7 +1,7 @@
 Profile: RSServiceRequest
 Parent: ServiceRequest
 Id: rs-service-request
-Title: "Road Safety ServiceRequest"
+Title: "RS ServiceRequest"
 Description: "Requests or records related to refusal to admit and related workflow signals."
 * ^version = "1.0.0"
 * status 1..1 MS

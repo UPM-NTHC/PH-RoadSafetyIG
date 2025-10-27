@@ -90,7 +90,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 
 Extension: RSEncounterVehicleUsed
 Id: rs-encounter-vehicle-used
-Title: "Road Safety Encounter Vehicle Used"
+Title: "RS Encounter Vehicle Used"
 Description: "Identifier and type of transport vehicle used during an encounter."
 Context: RSEncounter
 * valueCodeableConcept 1..1
