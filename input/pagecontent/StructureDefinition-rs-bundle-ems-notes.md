@@ -113,9 +113,6 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
                 "reference": "urn:uuid:rsobsrunreportcomments-observationrunreportcomments"
               },
               {
-                "reference": "urn:uuid:rsobsvehicleused-observationvehicleused"
-              },
-              {
                 "reference": "urn:uuid:rsobsrespiratoryrate-observationvitals"
               },
               {
@@ -639,37 +636,6 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
             }
           ],
           "text": "Case notification comment"
-        },
-        "valueString": "Sample observation value"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:rsobsvehicleused-observationvehicleused",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "rsobsvehicleused-observationvehicleused",
-        "meta": {
-          "profile": [
-            "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/RSObsVehicleUsed"
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "urn:uuid:rspatient-patient-example"
-        },
-        "encounter": {
-          "reference": "urn:uuid:rsencounter-encounter-example"
-        },
-        "effectiveDateTime": "2024-02-01T08:30:00+08:00",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "36030000",
-              "display": "Transport vehicle, device (physical object)"
-            }
-          ],
-          "text": "Transport vehicle, device (physical object)"
         },
         "valueString": "Sample observation value"
       }
