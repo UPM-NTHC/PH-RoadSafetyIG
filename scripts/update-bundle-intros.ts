@@ -863,7 +863,7 @@ function createCompositionEntry(
     section: [
       {
         title: "Submission Content",
-        code: { text: "Road Safety submission content" },
+        code: { text: "RS submission content" },
         entry: entryRefs,
       },
     ],

@@ -1,8 +1,8 @@
 Profile: RSPatient
 Parent: PHCorePatient
 Id: rs-patient
-Title: "Road Safety Patient"
-Description: "Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region."
+Title: "RS Patient"
+Description: "Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region."
 * ^version = "1.0.0"
 
 * identifier 0..* MS

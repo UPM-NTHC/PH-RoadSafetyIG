@@ -1,8 +1,8 @@
 Profile: RSCondition
 Parent: Condition
 Id: rs-condition
-Title: "Road Safety Condition"
-Description: "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."
+Title: "RS Condition"
+Description: "Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."
 * ^version = "1.0.0"
 
 /* Core constraints and usage */
@@ -31,7 +31,7 @@ Description: "Condition resource for Road Safety IG that supports multiple codin
 Profile: RSConditionProblem
 Parent: RSCondition
 Id: rs-condition-problem
-Title: "Road Safety Condition — Problem"
+Title: "RS Condition — Problem"
 Description: "Problem (finding) per CSV mapping."
 * code 0..1 MS
 * category.coding 1..1
@@ -41,7 +41,7 @@ Description: "Problem (finding) per CSV mapping."
 Profile: RSConditionInitialImpression
 Parent: RSCondition
 Id: rs-condition-initial-impression
-Title: "Road Safety Condition — Initial Impression"
+Title: "RS Condition — Initial Impression"
 Description: "Initial impression per CSV mapping."
 * code 0..1 MS
 * category.coding 1..1
@@ -51,7 +51,7 @@ Description: "Initial impression per CSV mapping."
 Profile: RSConditionFinalDiagnosis
 Parent: RSCondition
 Id: rs-condition-final-diagnosis
-Title: "Road Safety Condition — Final Diagnosis"
+Title: "RS Condition — Final Diagnosis"
 Description: "Final diagnosis per CSV mapping."
 * code 0..1 MS
 * category.coding = $SCT#89100005 "Final diagnosis (discharge) (contextual qualifier) (qualifier value)" (exactly)
@@ -61,7 +61,7 @@ Description: "Final diagnosis per CSV mapping."
 Profile: RSConditionNatureOfInjury
 Parent: RSCondition
 Id: rs-condition-nature-of-injury
-Title: "Road Safety Condition — Nature of Injury (category)"
+Title: "RS Condition — Nature of Injury (category)"
 Description: "Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code."
 * category 0..1 MS
 * category.coding.system 0..1
@@ -73,7 +73,7 @@ Description: "Captures the ICD-10 nature-of-injury axis as a Condition.category 
 Profile: RSConditionExternalCause
 Parent: RSCondition
 Id: rs-condition-external-cause
-Title: "Road Safety Condition — External Cause (category)"
+Title: "RS Condition — External Cause (category)"
 Description: "Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code."
 * category 0..1 MS
 * category.coding.system 0..1
