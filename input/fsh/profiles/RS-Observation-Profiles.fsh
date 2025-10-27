@@ -670,7 +670,7 @@ Description: "Indicates whether the incident was collision or non-collision."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSCollisionCategory (preferred)
 * code.coding 0..1
-* code.coding = $SCT#collision-category "Collision category"
+* code.coding = SILPH#MVA-COLLISION "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"
 
 // MDS164 - Patient's Vehicle
 Profile: RSObsPatientsVehicle
@@ -682,7 +682,7 @@ Description: "Type of vehicle used by patient; text for 'Others'."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPatientsVehicle (preferred)
 * code.coding 0..1
-* code.coding = $SCT#patients-vehicle "Patient's vehicle"
+* code.coding = SILPH#PATIENTVEHICLE "Vehicles Involved: Patient's Vehicle"
 
 // MDS166 - Other Vehicle/Object Involved
 Profile: RSObsOtherVehicleInvolved
@@ -694,7 +694,7 @@ Description: "Other vehicle/object type involved; text for 'Others'."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSOtherVehicle (preferred)
 * code.coding 0..1
-* code.coding = $SCT#other-vehicle-involved "Other vehicle/object involved"
+* code.coding = SILPH#OTHERVEHICLE "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
 
 // MDS168 - Position of Patient
 Profile: RSObsPositionOfPatient
@@ -706,7 +706,7 @@ Description: "Seat/position (driver/front passenger/rear/pedestrian); text for '
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from VSPositionOfPatient (preferred)
 * code.coding 0..1
-* code.coding = $SCT#position-of-patient "Position of patient"
+* code.coding = SILPH#PATIENTPOSITION "Position of Patient"
 
 // MDS170 - Place of Occurrence
 Profile: RSObsPlaceOfOccurrence
@@ -718,7 +718,7 @@ Description: "Place type where injury occurred; name can be carried in note when
 * valueCodeableConcept from VSPlaceOfOccurrence (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#place-of-occurrence "Place of occurrence"
+* code.coding = SILPH#PLACEOCCURRENCE "Place of occurrence"
 
 // MDS173 - Activity at Time of Incident
 Profile: RSObsActivityAtIncident

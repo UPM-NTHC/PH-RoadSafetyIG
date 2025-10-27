@@ -37,3 +37,18 @@ Title: "SILPH Local Codes"
 
 // MDS91 Run Report Form Remarks
 * #RRFREMARKS "Run Report Form Remarks"
+
+// MDS163
+* #MVA-COLLISION "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"
+
+// MDS164
+* #PATIENTVEHICLE "Vehicles Involved: Patient's Vehicle"
+
+// MDS166 - Other Vehicle/Object Involved
+* #OTHERVEHICLE "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
+
+// MDS168 - Position of Patient
+* #PATIENTPOSITION "Position of Patient"
+
+// MDS170 - Place of Occurrence
+* #PLACEOCCURRENCE "Place of occurrence"
