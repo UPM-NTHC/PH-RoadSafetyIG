@@ -563,7 +563,7 @@ Description: "Status upon reaching facility/hospital."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSStatusOnArrival (preferred)
 * code.coding 0..1
-* code.coding = $SCT#status-on-arrival "Status on arrival"
+* code.coding = $SCT#118223001 "Patient status finding (finding)"
 
 // MDS117 - If Alive: Conscious/Unconscious (status on arrival detail)
 Profile: RSObsStatusOnArrivalAliveDetail
@@ -574,7 +574,7 @@ Description: "If alive on arrival, consciousness detail."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSStatusAliveDetail (preferred)
 * code.coding 0..1
-* code.coding = $SCT#status-on-arrival-alive "Status on arrival (alive detail)"
+* code.coding = $SCT#6942003 "Level of consciousness (observable entity)"
 
 // MDS118 (Mode of transport to facility) and MDS119 for 'Others' text if used
 Profile: RSObsModeOfTransport
@@ -593,7 +593,7 @@ Profile: RSObsReportedComplaint
 Parent: RSObservation
 Id: rs-observation-reported-complaint
 Title: "RS Observation - Reported Complaint"
-Description: "Free-text reported complaint."
+Description: "Free-text reported complaint. May or May not exactly be medical, could point to car crash, not a healthcare concern."
 * valueString 1..1 MS
 * code.coding 0..1
 * code.coding = $SCT#1269489004 "Chief complaint (observable entity)" (exactly)
@@ -633,30 +633,33 @@ Profile: RSObsInjuryDateTime
 Parent: RSObservation
 Id: rs-observation-injury-datetime
 Title: "RS Observation - Date/Time of Injury"
-Description: "Timestamp of injury occurrence."
-* valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $LNC#11368-8 "Illness or injury onset date and time" (exactly)
-
-// MDS158 - Date of Injury
-Profile: RSObsDateOfInjury
-Parent: RSObservation
-Id: rs-observation-date-of-injury
-Title: "RS Observation - Date of Injury"
-Description: "Date of injury occurrence."
+Description: "DateTimestamp patient was seen at the health facility."
 * valueDateTime 1..1 MS
 * code.coding 0..1
 * code.coding = $SCT#439771001 "Date of event (observable entity)" (exactly)
 
+// (for discussion what final SCT code is appropriate for 
+// date/time of injury, for now $SCT#439771001 "Date of event (observable entity)" (exactly) used)
+
+// MDS158 - Date of Injury
+// Profile: RSObsDateOfInjury
+// Parent: RSObservation
+// Id: rs-observation-date-of-injury
+// Title: "RS Observation - Date of Injury"
+// Description: "Date of injury occurrence."
+// * valueDateTime 1..1 MS
+// * code.coding 0..1
+// * code.coding = $SCT#439771001 "Date of event (observable entity)" (exactly)
+
 // MDS159 - Time of Injury
-Profile: RSObsTimeOfInjury
-Parent: RSObservation
-Id: rs-observation-time-of-injury
-Title: "RS Observation - Time of Injury"
-Description: "Time of injury occurrence."
-* valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#263501003 "Time of onset (observable entity)" (exactly)
+// Profile: RSObsTimeOfInjury
+// Parent: RSObservation
+// Id: rs-observation-time-of-injury
+// Title: "RS Observation - Time of Injury"
+// Description: "Time of injury occurrence."
+// * valueDateTime 1..1 MS
+// * code.coding 0..1
+// * code.coding = $SCT#263501003 "Time of onset (observable entity)" (exactly)
 
 // MDS163 - Collision vs Non-Collision
 Profile: RSObsCollisionVsNonCollision

@@ -182,8 +182,8 @@ Title: "RS VS - Mode of Transport to Facility"
 Description: "Mode of transport to the hospital/facility."
 * ^status = #draft
 * $SCT#49122002 "Ambulance, device (physical object)"
-* $LNC#LA9321-6 "Law enforcement transport"
-* $LNC#LA9319-0 "Private transportation"
+* $LNC#LA9321-6 "Walk-in following nonambulance, law enforcement transport"
+* $LNC#LA9319-0 "Walk-in following transport via private transportation"
 * $SCT#74964007 "Other (qualifier value)"
 
 // Other risk factors
