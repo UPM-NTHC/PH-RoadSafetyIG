@@ -5,7 +5,7 @@
 Profile: RSCompositionEMS
 Parent: Composition
 Id: rs-composition-ems
-Title: "Road Safety Composition — EMS Submission"
+Title: "RS Composition — EMS Submission"
 Description: "Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."
 * ^version = "1.0.0"
 * status 1..1 MS
@@ -53,7 +53,7 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
 Profile: RSBundleEMS
 Parent: Bundle
 Id: rs-bundle-ems
-Title: "Road Safety Bundle — EMS Submission"
+Title: "RS Bundle — EMS Submission"
 Description: "Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."
 * ^version = "1.0.0"
 * type 1..1
@@ -122,7 +122,7 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 Profile: RSCompositionONEISS
 Parent: Composition
 Id: rs-composition-oneiss
-Title: "Road Safety Composition — ONEISS Submission"
+Title: "RS Composition — ONEISS Submission"
 Description: "Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."
 * ^version = "1.0.0"
 * status 1..1 MS
@@ -191,7 +191,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
 Profile: RSBundleONEISS
 Parent: Bundle
 Id: rs-bundle-oneiss
-Title: "Road Safety Bundle — ONEISS Submission"
+Title: "RS Bundle — ONEISS Submission"
 Description: "Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."
 * ^version = "1.0.0"
 * type 1..1
@@ -264,7 +264,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 Profile: RSCompositionPostCrash
 Parent: Composition
 Id: rs-composition-postcrash
-Title: "Road Safety Composition — Post‑Crash Investigation"
+Title: "RS Composition — Post‑Crash Investigation"
 Description: "Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents)."
 * ^version = "1.0.0"
 * status 1..1 MS
@@ -295,7 +295,7 @@ Description: "Composition that organises a Post‑Crash submission. Sections ref
 Profile: RSBundlePostCrash
 Parent: Bundle
 Id: rs-bundle-postcrash
-Title: "Road Safety Bundle — Post‑Crash Investigation"
+Title: "RS Bundle — Post‑Crash Investigation"
 Description: "Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences."
 * ^version = "1.0.0"
 * type 1..1
