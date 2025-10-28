@@ -77,6 +77,7 @@ type FshMetrics = {
 
 const REPO_ROOT = process.cwd();
 const FSH_DIR = path.join(REPO_ROOT, 'input', 'fsh');
+const RESOURCES_DIR = path.join(REPO_ROOT, 'input', 'resources');
 const CACHE_DIR = path.join(REPO_ROOT, 'scripts', '.cache');
 const CACHE_FILE = path.join(CACHE_DIR, 'ig_metrics.json');
 const LOG_DIR = path.join(REPO_ROOT, 'scripts', 'logs');
@@ -230,7 +231,42 @@ async function readAllFshFilesFromFs(baseDir: string): Promise<{ path: string; c
   return out;
 }
 
-function computeFshMetricsFromFiles(files: { path: string; content: string }[]): FshMetrics {
+type ResourceArtifact = { path: string; resourceType: string; id?: string };
+
+async function readResourceArtifactsFromFs(baseDir: string): Promise<ResourceArtifact[]> {
+  const out: ResourceArtifact[] = [];
+  async function walk(dir: string) {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    for (const e of entries) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) {
+        await walk(full);
+      } else if (e.isFile() && e.name.toLowerCase().endsWith('.json')) {
+        try {
+          const content = await fs.readFile(full, 'utf8');
+          const parsed = JSON.parse(content);
+          const rt = parsed?.resourceType;
+          if (rt === 'ValueSet' || rt === 'CodeSystem') {
+            out.push({
+              path: path.relative(REPO_ROOT, full).replace(/\\/g, '/'),
+              resourceType: rt,
+              id: parsed?.id,
+            });
+          }
+        } catch {
+          // ignore invalid JSON
+        }
+      }
+    }
+  }
+  if (await pathExists(baseDir)) await walk(baseDir);
+  return out;
+}
+
+function computeFshMetricsFromFiles(
+  files: { path: string; content: string }[],
+  resourceArtifacts: ResourceArtifact[] = []
+): FshMetrics {
   let profiles = 0, extensions = 0, valueSets = 0, codeSystems = 0, logicalModels = 0, instances = 0;
   let reusedFromPHCore = 0;
   const referencedProfilesSet = new Set<string>();
@@ -374,6 +410,12 @@ function computeFshMetricsFromFiles(files: { path: string; content: string }[]):
 
   const percent = (num: number, den: number) => (den > 0 ? Math.round((num / den) * 100) : 0);
 
+  // Include JSON-based ValueSets and CodeSystems
+  for (const artifact of resourceArtifacts) {
+    if (artifact.resourceType === 'ValueSet') valueSets++;
+    else if (artifact.resourceType === 'CodeSystem') codeSystems++;
+  }
+
   const profilesWithBinding = profileInfos.filter(p => p.hasBinding).length;
   const profilesWithSlicing = profileInfos.filter(p => p.hasSlicing).length;
 
@@ -409,9 +451,35 @@ function computeFshMetricsFromFiles(files: { path: string; content: string }[]):
 }
 
 async function getFshMetricsAtRev(rev?: string): Promise<FshMetrics> {
+  const gatherResources = async (): Promise<ResourceArtifact[]> => {
+    if (!rev) {
+      return readResourceArtifactsFromFs(RESOURCES_DIR);
+    }
+    const resourceFiles = await listFilesAtRev(rev, 'input/resources');
+    const artifacts: ResourceArtifact[] = [];
+    for (const rel of resourceFiles.filter(f => f.toLowerCase().endsWith('.json'))) {
+      const content = await readFileAtRev(rev, rel);
+      if (!content) continue;
+      try {
+        const parsed = JSON.parse(content);
+        const rt = parsed?.resourceType;
+        if (rt === 'ValueSet' || rt === 'CodeSystem') {
+          artifacts.push({
+            path: rel,
+            resourceType: rt,
+            id: parsed?.id,
+          });
+        }
+      } catch {
+        // ignore parse failures
+      }
+    }
+    return artifacts;
+  };
+  const resourceArtifacts = await gatherResources();
   if (!rev) {
     const files = await readAllFshFilesFromFs(FSH_DIR);
-    return computeFshMetricsFromFiles(files);
+    return computeFshMetricsFromFiles(files, resourceArtifacts);
   }
   const fileList = await listFilesAtRev(rev, 'input/fsh');
   const files: { path: string; content: string }[] = [];
@@ -419,7 +487,7 @@ async function getFshMetricsAtRev(rev?: string): Promise<FshMetrics> {
     const content = await readFileAtRev(rev, rel);
     if (content != null) files.push({ path: rel, content });
   }
-  return computeFshMetricsFromFiles(files);
+  return computeFshMetricsFromFiles(files, resourceArtifacts);
 }
 
 async function getGitChangeSummary(overrideBranch?: string): Promise<GitChangeSummary> {
