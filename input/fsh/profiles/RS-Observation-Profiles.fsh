@@ -759,6 +759,7 @@ Title: "RS Observation - Abrasion"
 Description: "Abrasion present; with optional site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#399963005 "Abrasion (disorder)" (exactly)
@@ -771,6 +772,7 @@ Title: "RS Observation - Avulsion"
 Description: "Avulsion present; with optional site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#284554003 "Avulsion - injury (disorder)" (exactly)
@@ -799,6 +801,7 @@ Title: "RS Observation - Concussion"
 Description: "Concussion present; with site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#110030002 "Concussion injury of brain (disorder)" (exactly)
@@ -811,6 +814,7 @@ Title: "RS Observation - Contusion"
 Description: "Contusion present; with site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#125667009 "Contusion (disorder)" (exactly)
@@ -832,6 +836,7 @@ Description: "Fracture observation. Use valueCodeableConcept to indicate fractur
 * valueCodeableConcept.text 0..1 MS
 	// Recommended binding: ValueSet of fracture types (e.g., SNOMED codes: 397181002 = Open fracture, 423125000 = Closed fracture). Do not create new ValueSet here unless requested.
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..*
 
 // MDS209 (presence) / MDS210 (site) / MDS211 (details) - Open Wound
@@ -842,6 +847,7 @@ Title: "RS Observation - Open Wound"
 Description: "Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text)."
 * valueBoolean 0..1
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#125643001 "Open wound (disorder)" (exactly)
@@ -858,6 +864,7 @@ Title: "RS Observation - Traumatic Amputation"
 Description: "Traumatic amputation present; with site and details."
 * valueBoolean 0..1
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#262595009 "Traumatic amputation (disorder)" (exactly)
@@ -871,6 +878,7 @@ Description: "Other specified injury present; capture type as valueCodeableConce
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 0..1 MS
 * bodySite 0..1 MS
+* bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#417163006 "Traumatic or non-traumatic injury (disorder)" (exactly)
