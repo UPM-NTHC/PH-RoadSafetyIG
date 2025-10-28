@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:74dad3fa-5483-4c64-94ff-d8384a877819",
+    "timestamp": "2025-10-27T08:29:54+00:00",
+    "total": 2,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "271591004",
+        "display": "Fully conscious"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "418107008",
+        "display": "Unconscious"
+      }
+    ]
+  },
+  "id": "SILPH-StatusifAliveVS",
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive",
+  "name": "SILPH___Status_if_Alive__VS_",
+  "title": "SILPH - Status if Alive (VS)",
+  "version": "1"
+}

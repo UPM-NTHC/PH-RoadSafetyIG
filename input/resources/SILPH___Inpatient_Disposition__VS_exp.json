@@ -1,0 +1,73 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:c898b0e3-d3c7-4207-a350-f08d74fb6dac",
+    "timestamp": "2025-10-27T10:11:59+00:00",
+    "total": 7,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371827001",
+        "display": "Patient discharged alive"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "225928004",
+        "display": "Patient self-discharge against medical advice"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "34596002",
+        "display": "Patient discharge, elopement"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "183960004",
+        "display": "Patient refuses hospital admission"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371828006",
+        "display": "Patient deceased during stay (discharge status = dead)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "74964007",
+        "display": "Other"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "19712007",
+        "display": "Patient transfer, to another health care facility"
+      }
+    ]
+  },
+  "id": "SILPH-InpatientDispositionVS",
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition",
+  "name": "SILPH___Inpatient_Disposition__VS_",
+  "title": "SILPH - Inpatient Disposition (VS)",
+  "version": "1"
+}
