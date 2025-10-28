@@ -91,27 +91,27 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 // MDS #62 - Date Received
 * entry[observationDateReceived].resource only RSObsTimelineDateTime
 * entry[observationDateReceived].resource.code.coding 0..1
-* entry[observationDateReceived].resource.code.coding = $LNC#30976-5 "Date received Form" (exactly)
+* entry[observationDateReceived].resource.code.coding = $LNC#30976-5 "Date received Form"
 // MDS #64 - Time Enroute
 * entry[observationTimeEnroute].resource only RSObsTimelineDateTime
 * entry[observationTimeEnroute].resource.code.coding 0..1
-* entry[observationTimeEnroute].resource.code.coding = $LNC#69472-9 "Unit responded [Date and time] Vehicle" (exactly)
+* entry[observationTimeEnroute].resource.code.coding = $LNC#69472-9 "Unit responded [Date and time] Vehicle"
 // MDS #65 - Time On Scene
 * entry[observationTimeOnScene].resource only RSObsTimelineDateTime
 * entry[observationTimeOnScene].resource.code.coding 0..1
-* entry[observationTimeOnScene].resource.code.coding = $SCT#405798008 "Time of arrival of emergency services (observable entity)" (exactly)
+* entry[observationTimeOnScene].resource.code.coding = $SCT#405798008 "Time of arrival of emergency services (observable entity)"
 // MDS #66 - Time Departed Scene
 * entry[observationTimeDeparted].resource only RSObsTimelineDateTime
 * entry[observationTimeDeparted].resource.code.coding 0..1
-* entry[observationTimeDeparted].resource.code.coding = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle" (exactly)
+* entry[observationTimeDeparted].resource.code.coding = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
 // MDS #67 - Time of Hospital Arrival
 * entry[observationTimeHospitalArrival].resource only RSObsTimelineDateTime
 * entry[observationTimeHospitalArrival].resource.code.coding 0..1
-* entry[observationTimeHospitalArrival].resource.code.coding = $SCT#405799000 "Time of arrival at hospital (observable entity)" (exactly)
+* entry[observationTimeHospitalArrival].resource.code.coding = $SCT#405799000 "Time of arrival at hospital (observable entity)"
 // MDS #68 - Time of Station Availability
 * entry[observationTimeStationArrival].resource only RSObsTimelineDateTime
 * entry[observationTimeStationArrival].resource.code.coding 0..1
-* entry[observationTimeStationArrival].resource.code.coding = $LNC#11288-8 "Arrival time documented" (exactly)
+* entry[observationTimeStationArrival].resource.code.coding = $LNC#11288-8 "Arrival time documented"
 // MDS #70, #73, #76-81 - Vital signs cluster
 * entry[observationVitals].resource only RSObsRespiratoryRate 
     or RSObsPulseRate or RSObsBloodPressure 

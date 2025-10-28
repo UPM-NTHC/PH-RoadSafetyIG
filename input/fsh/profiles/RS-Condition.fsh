@@ -35,7 +35,7 @@ Title: "RS Condition — Initial Impression"
 Description: "Enter the initial impression on the patient’s condition."
 * code 0..1 MS
 * category.coding 1..1
-* category.coding = $SCT#148006 "Preliminary diagnosis (qualifier value)" (exactly)
+* category.coding = $SCT#148006 "Preliminary diagnosis"
 
 // MDS54 Final Diagnosis (CSV: SNOMED CT 89100005 Final diagnosis (discharge))
 Profile: RSConditionFinalDiagnosis
@@ -45,7 +45,7 @@ Title: "RS Condition — Final Diagnosis"
 Description: "Final diagnosis per CSV mapping."
 * code 0..1 MS
 * category.coding 1..1
-* category.coding = $SCT#89100005 "Final diagnosis (discharge) (contextual qualifier) (qualifier value)" (exactly)
+* category.coding = $SCT#89100005 "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
 
 // MDS59 Nature of Injury (ICD-10 'nature' axis) represented as a category slice
 // Use alongside the specific diagnosis in code; this profile only shapes the category
@@ -79,7 +79,7 @@ Title: "RS Condition — Problem"
 Description: "Problem (finding) per CSV mapping."
 * code 0..1 MS
 * category.coding 1..1
-* category.coding = $SCT#55607006 "Problem (finding)" (exactly)
+* category.coding = $SCT#55607006 "Problem (finding)"
 
 // MDS222
 // 222,Long term outcome of patient,Dot-vote Priorities,CodableConcept,Optional,Condition,"Condition.code - if diagnosis

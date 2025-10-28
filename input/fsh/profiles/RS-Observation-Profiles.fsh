@@ -25,7 +25,7 @@ Description: "Generic base Observation for RS data; specialized concept profiles
 // Description: "Date of consultation at facility."
 // * valueDateTime 1..1 MS
 // * code.coding 0..1
-// * code.coding = $SCT#406543005 "Date of visit (observable entity)" (exactly)
+// * code.coding = $SCT#406543005 "Date of visit (observable entity)"
 
 // MDS16/17 - Time of Consultation
 // Profile: RSObsTimeOfConsultation
@@ -35,7 +35,7 @@ Description: "Generic base Observation for RS data; specialized concept profiles
 // Description: "Time of consultation at facility."
 // * valueDateTime 1..1 MS
 // * code.coding 0..1
-// * code.coding = $SCT#406544004 "Time of visit (observable entity)" (exactly)
+// * code.coding = $SCT#406544004 "Time of visit (observable entity)"
 
 
 /*
@@ -51,7 +51,7 @@ Title: "RS Observation - Injury Intent"
 Description: "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."
 * code from SILPH-InjuryIntentVS (preferred)
 * code.coding 0..1
-* code.coding = $LNC#11375-3 "Injury intent" (exactly)
+* code.coding = $LNC#11375-3 "Injury intent"
 
 // MDS19 (flag) ; MDS20 (specify animal/insect) - External Cause: Bites/Stings
 Profile: RSObsECBitesStings
@@ -61,7 +61,7 @@ Title: "RS Observation - External Cause: Bites/Stings"
 Description: "Flag indicating bites/stings."
 * code.coding 0..1
 * valueBoolean 0..1
-* code.coding = $SCT#242651001 "Injury caused by animal (disorder)" (exactly)
+* code.coding = $SCT#242651001 "Injury caused by animal (disorder)"
 // (Consolidated into RSObsECBitesStings as component[bitesAgent])
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text ^short = "Specify animal/insect agent (text)"
@@ -76,7 +76,7 @@ Title: "RS Observation - External Cause: Burns"
 Description: "Flag indicating burns as external cause."
 // Burns - flag []
 * code.coding 0..1
-* code.coding = $SCT#242490006 "Burning due to contact with hot substance (event)" (exactly)
+* code.coding = $SCT#242490006 "Burning due to contact with hot substance (event)"
 * valueBoolean 0..1
 // Burns - specify:
 * valueCodeableConcept 0..1 MS
@@ -114,7 +114,7 @@ Title: "RS Observation - External Cause: Contact with Sharp Object"
 Description: "Flag indicating sharp object cause."
 // External Cause/s of Injury/ies: Contact with sharp objects - flag []
 * code.coding 0..1
-* code.coding = $SCT#69129000 "Contact with sharp object (event)" (exactly)
+* code.coding = $SCT#69129000 "Struck by sharp object"
 // External Cause/s of Injury/ies: Contact with sharp objects, specify object
 * valueBoolean 0..1
 * valueString 0..1 MS
@@ -131,7 +131,7 @@ Description: "Flag indicating drowning."
 // External Cause/s of Injury/ies: Drowning - flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#40947009 "Drowning (event)" (exactly)
+* code.coding = $SCT#40947009 "Drowning (event)"
 // External Cause/s of Injury/ies: Drowning - Type/Body of Water 
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept from SILPH-ExternalCauseofDrowningVS (preferred)
@@ -149,7 +149,7 @@ Id: rs-observation-ec-forces-of-nature
 Title: "RS Observation - External Cause: Exposure to Forces of Nature"
 Description: "Flag indicating exposure to natural disaster/calamity."
 * code.coding 0..1
-* code.coding = $SCT#276746005 "Exposure to forces of nature (event)" (exactly)
+* code.coding = $SCT#276746005 "Environmental event"
 
 // External Cause/s of Injury/ies: Exposure to forces of nature - Flag []
 * valueBoolean 0..1
@@ -163,7 +163,7 @@ Description: "Flag indicating fall."
 // External Cause/s of Injury/ies: Fall - flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#1912002 "Fall (event)" (exactly)
+* code.coding = $SCT#1912002 "Fall (event)"
 
 // External Cause/s of Injury/ies: Fall, specifics
 * valueCodeableConcept.text 0..1 MS
@@ -180,7 +180,7 @@ Description: "Flag indicating firecracker-related cause."
 // External Cause/s of Injury/ies: Firecracker
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#218100007 "Firecracker event" (exactly)
+* code.coding = $SCT#218100007 "Accident caused by fireworks"
 
 // External Cause/s of Injury/ies: Firecracker, specify type/s (with libraries)
 * valueCodeableConcept.text 0..1 MS
@@ -197,11 +197,7 @@ Description: "Flag indicating gunshot."
 // External Cause/s of Injury/ies: Gunshot
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#63409001 "Gunshot event" (exactly)
-
-// External Cause/s of Injury/ies: Gunshot, specify weapon
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept ^short = "Gunshot, specify weapon"
+* code.coding = $SCT#63409001 "Struck by firearm discharge"
 
 // (Consolidated into RSObsECGunshot as component: gunshotWeapon)
 
@@ -214,7 +210,7 @@ Description: "Flag indicating hanging/strangulation."
 // External Cause/s of Injury/ies: Hanging/Strangulation - Flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#212976008 "Hanging/strangulation event" (exactly)
+* code.coding = $SCT#212976008 "Asphyxia by strangulation"
 
 // MDS39 - External Cause: Mauling/Assault
 Profile: RSObsECMaulingAssault
@@ -225,7 +221,7 @@ Description: "Flag indicating assault."
 // External Cause/s of Injury/ies: Mauling/Assult - Flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#52684005 "Mauling/assault event" (exactly)
+* code.coding = $SCT#52684005 "Assault"
 
 // MDS40 - External Cause: Sexual Assault/Abuse/Rape (Alleged)
 Profile: RSObsECSexualAssault
@@ -236,7 +232,7 @@ Description: "Flag indicating sexual assault."
 // External Cause/s of Injury/ies: Sexual Assault/ Sexual Abuse/ Rape (Alleged) - []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#248110007 "Sexual assault event" (exactly)
+* code.coding = $SCT#248110007 "Sexual assault"
 
 // MDS41 - Transport/Vehicular Accident (flag)
 Profile: RSObsTransportVehicularAccident
@@ -247,7 +243,7 @@ Description: "Boolean flag indicating transport/vehicular accident."
 // External Cause/s of Injury/ies: Transport /Vehicular Accident - Flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#274215009 "Transport accident (event)" (exactly)
+* code.coding = $SCT#274215009 "Transport accident (event)"
 
 // MDS42 (flag) ; MDS43 (specify) - External Cause: Other
 Profile: RSObsECOther
@@ -258,7 +254,7 @@ Description: "Flag indicating other external cause."
 // External Cause/s of Injury/ies: Other - flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#773760007 "Other external cause event" (exactly)
+* code.coding = $SCT#773760007 "Traumatic event"
 
 // External Cause/s of Injury/ies: Others, specify
 * valueCodeableConcept.text 0..1 MS
@@ -273,7 +269,7 @@ Description: "Flag indicating patient transferred from another hospital/facility
 // Transferred from another hospital/facility - flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $LNC#74199-1 "Transferred from another acute care facility [NTDS]" (exactly)
+* code.coding = $LNC#74199-1 "Transferred from another acute care facility [NTDS]"
 
 // MDS46 - Referred by another hospital/facility
 Profile: RSObsReferredByFacility
@@ -284,7 +280,7 @@ Description: "Flag indicating patient was referred by another hospital/facility.
 // Referred by another hospital/facility - Flag []
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#307836003 "Referral by establishment (procedure)" (exactly)
+* code.coding = $SCT#307836003 "Referral by establishment (procedure)"
 
 // (Consolidated into RSObsECOther as component: otherSpecify)
 
@@ -297,7 +293,7 @@ Description: "Outcome at release from ER/OPD/RHU."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from SILPH-OutcomeVS (preferred)
 * code.coding 0..1
-* code.coding = $SCT#418138009 "Patient condition finding (finding)" (exactly)
+* code.coding = $SCT#418138009 "Patient condition finding (finding)"
 
 // MDS58 - Outcome at Discharge
 // Profile: RSObsOutcomeAtDischarge
@@ -323,7 +319,7 @@ Description: "Enter other comment (s) regarding the case"
 * encounter only Reference(RSEncounter)
 * valueString 1..1 MS
 * code.coding 0..1
-* code.coding = $LNC#77999-1 "Case notification comment" (exactly)
+* code.coding = $LNC#77999-1 "Case notification comment"
 
 // Pattern profile reused by timeline date/time observations; specific codes enforced in bundle profiles.
 // MDS62-68 - Response timeline events (Date received through return to station)
@@ -348,7 +344,7 @@ Title: "RS Observation - Respiratory Rate"
 Description: "Respiratory rate in breaths/min."
 * valueQuantity 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#86290005 "Respiratory rate (observable entity)" (exactly)
+* code.coding = $SCT#86290005 "Respiratory rate (observable entity)"
 
 * component 0..* MS
 * component ^slicing.discriminator.type = #value
@@ -356,12 +352,12 @@ Description: "Respiratory rate in breaths/min."
 * component ^slicing.rules = #open
 * component contains respiratory-rhythm 0..1 and breath-sounds 0..11
 * component[respiratory-rhythm].code.coding 0..1
-* component[respiratory-rhythm].code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)" (exactly)
+* component[respiratory-rhythm].code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)"
 * component[respiratory-rhythm].valueCodeableConcept 1..1 MS
 * component[respiratory-rhythm].valueCodeableConcept from SILPH-RR-RhythmVS (preferred)
 
 * component[breath-sounds].code.coding 0..1
-* component[breath-sounds].code.coding = $SCT#52653008 "Respiratory sounds (observable entity)" (exactly)
+* component[breath-sounds].code.coding = $SCT#52653008 "Respiratory sounds (observable entity)"
 * component[breath-sounds].valueCodeableConcept 1..1 MS
 * component[breath-sounds].valueCodeableConcept from SILPH-RR-BreathSoundsVS (preferred)
 
@@ -373,7 +369,7 @@ Title: "RS Observation - Pulse Rate"
 Description: "Pulse/heart rate in beats/min."
 * valueQuantity 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
+* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
 
 * component 0..* MS
 * component ^slicing.discriminator.type = #value
@@ -381,12 +377,12 @@ Description: "Pulse/heart rate in beats/min."
 * component ^slicing.rules = #open
 * component contains pulse-rhythm 0..1 and pulse-quality 0..1
 * component[pulse-rhythm].code.coding 0..1
-* component[pulse-rhythm].code.coding = $SCT#364095004 "Pulse rhythm (observable entity)" (exactly)
+* component[pulse-rhythm].code.coding = $SCT#364095004 "Pulse rhythm (observable entity)"
 * component[pulse-rhythm].valueCodeableConcept 1..1 MS
 * component[pulse-rhythm].valueCodeableConcept from SILPH-PR-RhythmVS (preferred)
 
 * component[pulse-quality].code.coding 0..1
-* component[pulse-quality].code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
+* component[pulse-quality].code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
 * component[pulse-quality].valueCodeableConcept 1..1 MS
 * component[pulse-quality].valueCodeableConcept from SILPH-PR-QualityVS (preferred)
 
@@ -398,7 +394,7 @@ Id: rs-observation-blood-pressure
 Title: "RS Observation - Blood Pressure"
 Description: "Blood pressure using component entries for systolic/diastolic."
 // * code.coding 0..1
-// * code.coding = $LNC#85354-9 "Blood pressure panel with all children optional" (exactly)
+// * code.coding = $LNC#85354-9 "Blood pressure panel with all children optional"
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify blood pressure components"
 * component 0..* MS
@@ -407,10 +403,10 @@ Description: "Blood pressure using component entries for systolic/diastolic."
 * component ^slicing.rules = #open
 * component contains systolic 0..1 and diastolic 0..1
 * component[systolic].code.coding 0..1
-* component[systolic].code.coding = $SCT#271649006 "Systolic blood pressure (observable entity)" (exactly)
+* component[systolic].code.coding = $SCT#271649006 "Systolic blood pressure (observable entity)"
 * component[systolic].valueQuantity 1..1 MS
 * component[diastolic].code.coding 0..1
-* component[diastolic].code.coding = $SCT#271650006 "Diastolic blood pressure (observable entity)" (exactly)
+* component[diastolic].code.coding = $SCT#271650006 "Diastolic blood pressure (observable entity)"
 * component[diastolic].valueQuantity 1..1 MS
 
 // MDS78 - Body Temperature
@@ -421,7 +417,7 @@ Title: "RS Observation - Body Temperature"
 Description: "Body temperature."
 * valueQuantity 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#386725007 "Body temperature (observable entity)" (exactly)
+* code.coding = $SCT#386725007 "Body temperature (observable entity)"
 
 // MDS79 - Level of Consciousness (AVPU)
 Profile: RSObsLevelOfConsciousness
@@ -432,7 +428,7 @@ Description: "Level of consciousness (e.g., AVPU)."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from SILPH-LevelofConsciousnessVS (preferred)
 * code.coding 0..1
-* code.coding = $SCT#6942003 "Level of consciousness (observable entity)" (exactly)
+* code.coding = $SCT#6942003 "Level of consciousness (observable entity)"
 
 // MDS80 - Pupils
 Profile: RSObsPupils
@@ -443,7 +439,7 @@ Description: "Pupil size/reactivity summary."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from SILPH-PupilsVS (preferred)
 * code.coding 0..1
-* code.coding = $SCT#271733001 "Pupil reaction (observable entity)" (exactly)
+* code.coding = $SCT#271733001 "Pupil reaction (observable entity)"
 
 // MDS81 - Cyanosis
 Profile: RSObsCyanosis
@@ -454,7 +450,7 @@ Description: "Cyanosis assessment."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from SILPH-Cyanosis (preferred)
 * code.coding 0..1
-* code.coding = $SCT#3415004 "Cyanosis (finding)" (exactly)
+* code.coding = $SCT#3415004 "Cyanosis (finding)"
 
 // MDS83 (eyes), MDS84 (verbal), MDS85 (motor), MDS86 (total) - Glasgow Coma Scale
 Profile: RSObsGCS
@@ -464,7 +460,7 @@ Title: "RS Observation - Glasgow Coma Scale"
 Description: "GCS with components for eyes, verbal, motor; optional total score as integer."
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#248241002 "Glasgow coma score (observable entity)" (exactly)
+* code.coding = $SCT#248241002 "Glasgow coma score (observable entity)"
 * valueInteger 0..1 MS
 * valueInteger ^short = "Total GCS score"
 
@@ -475,19 +471,19 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 * component contains gcs-eyes 0..1 and gcs-verbal 0..1 and gcs-motor 0..1 and gcs-total 0..1
 
 * component[gcs-eyes].code.coding 0..1
-* component[gcs-eyes].code.coding = $SCT#281395000 "Glasgow Coma Score eye opening subscore (observable entity)" (exactly)
+* component[gcs-eyes].code.coding = $SCT#281395000 "Glasgow Coma Score eye opening subscore (observable entity)"
 * component[gcs-eyes].valueCodeableConcept 1..1 MS
 * component[gcs-eyes].valueCodeableConcept from SILPH-GCSEyesVS (preferred)
 * component[gcs-eyes].valueCodeableConcept ^short = "Eye opening subscore"
 
 * component[gcs-verbal].code.coding 0..1
-* component[gcs-verbal].code.coding = $SCT#281397008 "Glasgow Coma Scale verbal response subscore (observable entity)" (exactly)
+* component[gcs-verbal].code.coding = $SCT#281397008 "Glasgow Coma Scale verbal response subscore (observable entity)"
 * component[gcs-verbal].valueCodeableConcept 1..1 MS
 * component[gcs-verbal].valueCodeableConcept from SILPH-GCSVerbalVS (preferred)
 * component[gcs-verbal].valueCodeableConcept ^short = "Verbal response subscore"
 
 * component[gcs-motor].code.coding 0..1
-* component[gcs-motor].code.coding = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)" (exactly)
+* component[gcs-motor].code.coding = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)"
 * component[gcs-motor].valueCodeableConcept 1..1 MS
 * component[gcs-motor].valueCodeableConcept from SILPH-GCSMotorVS (preferred)
 * component[gcs-motor].valueCodeableConcept ^short = "Motor response subscore"
@@ -503,7 +499,7 @@ Description: "Clinical remarks/notes."
 * encounter only Reference(RSEncounter)
 * encounter 0..1
 * code.coding 0..1
-* code.coding = $SILPH#RRFREMARKS "Run Report Form Remarks" (exactly)
+* code.coding = $SILPH#RRFREMARKS "Run Report Form Remarks"
 
 // MDS108 - Condition of Patient (overall condition at assessment)
 // Misnomer for ""Condition""
@@ -515,7 +511,7 @@ Id: rs-observation-condition-of-patient
 Title: "RS Observation - Condition of Patient"
 Description: "Overall condition of patient at assessment."
 * code.coding 0..1
-* code.coding = $SCT#12386002 "Patient status determination (procedure)" (exactly)
+* code.coding = $SCT#12386002 "Patient status determination (procedure)"
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
@@ -526,7 +522,7 @@ Description: "Overall condition of patient at assessment."
 // Title: "RS Observation - Extent of Injury"
 // Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
 // * code.coding 0..1
-// * code.coding = $SCT#1255875007 "Injury Severity Score (observable entity)" (exactly)
+// * code.coding = $SCT#1255875007 "Injury Severity Score (observable entity)"
 // * valueCodeableConcept 1..1 MS
 // * valueCodeableConcept.text 1..1 MS
 
@@ -537,7 +533,7 @@ Id: rs-observation-triage-priority
 Title: "RS Observation - Triage Priority"
 Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 * code.coding 0..1
-* code.coding = $SCT#273887006 "Triage index (assessment scale)" (exactly)
+* code.coding = $SCT#273887006 "Triage index (assessment scale)"
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
@@ -549,7 +545,7 @@ Title: "RS Observation - Priority Level (Urgency)"
 Description: "System-generated urgency level per CAD/agency rules."
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#260870009 "Priority (attribute)" (exactly)
+* code.coding = $SCT#260870009 "Priority (attribute)"
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 1..1 MS
 
@@ -585,7 +581,7 @@ Description: "Mode of transport to the hospital/facility; allow coded value with
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from SILPH-ModeofTransportVS (preferred)
 * code.coding 0..1
-* code.coding = $LNC#74286-6 "Mode of transport to health facility" (exactly)
+* code.coding = $LNC#74286-6 "Transport mode to hospital [NTDS]"
 
 // MDS149 - Reported Complaint (free text)
 Profile: RSObsReportedComplaint
@@ -595,7 +591,7 @@ Title: "RS Observation - Reported Complaint"
 Description: "Free-text reported complaint. May or May not exactly be medical, could point to car crash, not a healthcare concern."
 * valueString 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#1269489004 "Chief complaint (observable entity)" (exactly)
+* code.coding = $SCT#1269489004 "Chief complaint (observable entity)"
 
 // MDS155 - Call Source
 Profile: RSObsCallSource
@@ -605,7 +601,7 @@ Title: "RS Observation - Call Source"
 Description: "Call source description (free text)."
 * valueString 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#397663001 "Referral source (finding)" (exactly)
+* code.coding = $SCT#397663001 "Referral source (finding)"
 
 // MDS156 - How Many Vehicles Involved
 Profile: RSObsHowManyVehicles
@@ -635,10 +631,10 @@ Title: "RS Observation - Date/Time of Injury"
 Description: "DateTimestamp patient was seen at the health facility."
 * valueDateTime 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#439771001 "Date of event (observable entity)" (exactly)
+* code.coding = $SCT#439771001 "Date of event (observable entity)"
 
 // (for discussion what final SCT code is appropriate for 
-// date/time of injury, for now $SCT#439771001 "Date of event (observable entity)" (exactly) used)
+// date/time of injury, for now $SCT#439771001 "Date of event (observable entity)" used)
 
 // MDS158 - Date of Injury
 // Profile: RSObsDateOfInjury
@@ -648,7 +644,7 @@ Description: "DateTimestamp patient was seen at the health facility."
 // Description: "Date of injury occurrence."
 // * valueDateTime 1..1 MS
 // * code.coding 0..1
-// * code.coding = $SCT#439771001 "Date of event (observable entity)" (exactly)
+// * code.coding = $SCT#439771001 "Date of event (observable entity)"
 
 // MDS159 - Time of Injury
 // Profile: RSObsTimeOfInjury
@@ -658,7 +654,7 @@ Description: "DateTimestamp patient was seen at the health facility."
 // Description: "Time of injury occurrence."
 // * valueDateTime 1..1 MS
 // * code.coding 0..1
-// * code.coding = $SCT#263501003 "Time of onset (observable entity)" (exactly)
+// * code.coding = $SCT#263501003 "Time of onset (observable entity)"
 
 // MDS163 - Collision vs Non-Collision
 Profile: RSObsCollisionVsNonCollision
@@ -729,7 +725,7 @@ Description: "Activity of the patient at time of incident; allow text fallback."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from SILPH-ActivityVS (preferred)
 * code.coding 0..1
-* code.coding = $LNC#11372-0 "Injury associated activity" (exactly)
+* code.coding = $LNC#11372-0 "Injury associated activity"
 
 // MDS175 - Blood Alcohol Concentration
 Profile: RSObsBloodAlcoholConcentration
@@ -739,7 +735,7 @@ Title: "RS Observation - Blood Alcohol Concentration"
 Description: "Blood alcohol concentration."
 * valueQuantity 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#167009006 "Blood ethanol measurement (procedure)" (exactly)
+* code.coding = $SCT#167009006 "Blood ethanol measurement (procedure)"
 
 // MDS176 - Multiple Injuries?
 Profile: RSObsMultipleInjuries
@@ -749,7 +745,7 @@ Title: "RS Observation - Multiple Injuries?"
 Description: "Boolean flag indicating multiple injuries."
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#262519004 "Multiple injuries (disorder)" (exactly)
+* code.coding = $SCT#262519004 "Multiple injuries (disorder)"
 
 // MDS177 (presence) / MDS178 (site) / MDS179 (details) - Abrasion
 Profile: RSObsAbrasion
@@ -762,7 +758,7 @@ Description: "Abrasion present; with optional site and details."
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#399963005 "Abrasion (disorder)" (exactly)
+* code.coding = $SCT#399963005 "Abrasion (disorder)"
 
 // MDS180 (presence) / MDS181 (site) / MDS182 (details) - Avulsion
 Profile: RSObsAvulsion
@@ -775,7 +771,7 @@ Description: "Avulsion present; with optional site and details."
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#284554003 "Avulsion - injury (disorder)" (exactly)
+* code.coding = $SCT#284554003 "Avulsion - injury (disorder)"
 
 // MDS183-195 - Nature of Injury: Burns (degree, site, details)
 Profile: RSObsNatureBurns
@@ -785,7 +781,7 @@ Title: "RS Observation - External Cause: Burns"
 Description: "Flag indicating burns as external cause."
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#125666000 "Burn (disorder)" (exactly)
+* code.coding = $SCT#125666000 "Burn (disorder)"
 
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept from SILPH-BurnsVS (preferred)
@@ -804,7 +800,7 @@ Description: "Concussion present; with site and details."
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#110030002 "Concussion injury of brain (disorder)" (exactly)
+* code.coding = $SCT#110030002 "Concussion injury of brain (disorder)"
 
 // MDS199 (presence) / MDS200 (site) / MDS201 (details) - Contusion
 Profile: RSObsContusion
@@ -817,7 +813,7 @@ Description: "Contusion present; with site and details."
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#125667009 "Contusion (disorder)" (exactly)
+* code.coding = $SCT#125667009 "Contusion (disorder)"
 
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
 // MDS206 (open presence) / MDS207 (open site) / MDS208 (open details)
@@ -830,7 +826,7 @@ Description: "Fracture observation. Use valueCodeableConcept to indicate fractur
 // MDS202 (fracture general) / MDS203 (closed presence) / MDS204 (closed site) / MDS205 (closed details)
 // Recommendation: set the Observation.code to a general fracture concept (SNOMED CT) and bind Observation.valueCodeableConcept to a ValueSet enumerating fracture types (open/closed) — use SNOMED CT codes where available.
 * code.coding 0..1
-* code.coding = $SCT#125605004 "Fracture of bone (disorder)" (exactly)
+* code.coding = $SCT#125605004 "Fracture of bone (disorder)"
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept from SILPHFractureTypeVS (preferred)
 * valueCodeableConcept.text 0..1 MS
@@ -850,7 +846,7 @@ Description: "Open wound present; with site and details. Capture mechanism/type 
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#125643001 "Open wound (disorder)" (exactly)
+* code.coding = $SCT#125643001 "Open wound (disorder)"
 
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify open wound mechanism/type"
@@ -867,7 +863,7 @@ Description: "Traumatic amputation present; with site and details."
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#262595009 "Traumatic amputation (disorder)" (exactly)
+* code.coding = $SCT#262595009 "Traumatic amputation (disorder)"
 
 // MDS215 (presence) / MDS216 (site) / MDS217 (details) - Other Specified Injury
 Profile: RSObsOtherInjury
@@ -881,7 +877,7 @@ Description: "Other specified injury present; capture type as valueCodeableConce
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
-* code.coding = $SCT#417163006 "Traumatic or non-traumatic injury (disorder)" (exactly)
+* code.coding = $SCT#417163006 "Traumatic or non-traumatic injury (disorder)"
 
 // MDS218 - Collision Type (post-crash investigation)
 Profile: RSObsCollisionType
@@ -901,7 +897,7 @@ Title: "RS Observation - Presence of Traffic Investigator"
 Description: "Boolean presence/absence of traffic investigator."
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#159679004 "Traffic warden (occupation)" (exactly)
+* code.coding = $SCT#159679004 "Traffic warden (occupation)"
 
 // MDS227 - CCTV available (post-crash)
 Profile: RSObsCCTVAvailable
@@ -911,7 +907,7 @@ Title: "RS Observation - CCTV Available"
 Description: "Availability of CCTV video."
 * valueBoolean 0..1
 * code.coding 0..1
-* code.coding = $SCT#360000005 "Closed circuit television (physical object)" (exactly)
+* code.coding = $SCT#360000005 "Closed circuit television (physical object)"
 
 // MDS230 / MDS231 - Other Risk Factors (and 'Others' text)
 Profile: RSObsOtherRiskFactors
@@ -924,7 +920,7 @@ Description: "Other risk factors at the time of incident; allow text for 'Others
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text ^short = "Other risk factors"
 * code.coding 0..1
-* code.coding = $SCT#80943009 "Risk factor (observable entity)" (exactly)
+* code.coding = $SCT#80943009 "Risk factor (observable entity)"
 
 // MDS232 / MDS233 - Safety Accessories (and 'Others' text)
 Profile: RSObsSafetyAccessories
@@ -936,4 +932,4 @@ Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from SILPH-SafetyDevicesVS (preferred)
 * code.coding 0..1
-* code.coding = $SCT#386812007 "Safety precautions (procedure)" (exactly)
+* code.coding = $SCT#386812007 "Safety precautions (procedure)"
