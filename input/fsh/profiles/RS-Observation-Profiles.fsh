@@ -786,7 +786,7 @@ Description: "Flag indicating burns as external cause."
 * code.coding = $SCT#125666000 "Burn (disorder)" (exactly)
 
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept from VSBurnDegrees (preferred)
+* valueCodeableConcept from SILPH-BurnsVS (preferred)
 * valueCodeableConcept ^short = "Specify burns agent"
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text = "Burns other (specify)"
