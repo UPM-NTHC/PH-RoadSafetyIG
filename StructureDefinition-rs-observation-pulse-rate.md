@@ -1,4 +1,4 @@
-# RS Observation - Pulse Rate - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Pulse Rate - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsPulseRate |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsPulseRate |
 
  
 Pulse/heart rate in beats/min. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-pulse-rate",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsPulseRate",
   "title" : "RS Observation - Pulse Rate",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "78564009"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Heart rate measured at systemic artery (observable entity)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "78564009",
+          "display" : "Heart rate measured at systemic artery (observable entity)"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -163,6 +153,118 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
           }
         ],
         "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "code"
+            }
+          ],
+          "rules" : "open"
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:pulse-rhythm",
+        "path" : "Observation.component",
+        "sliceName" : "pulse-rhythm",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:pulse-rhythm.code.coding",
+        "path" : "Observation.component.code.coding",
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "364095004",
+          "display" : "Pulse rhythm (observable entity)"
+        }
+      },
+      {
+        "id" : "Observation.component:pulse-rhythm.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.component:pulse-rhythm.value[x]:valueCodeableConcept",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueCodeableConcept",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"
+        }
+      },
+      {
+        "id" : "Observation.component:pulse-quality",
+        "path" : "Observation.component",
+        "sliceName" : "pulse-quality",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:pulse-quality.code.coding",
+        "path" : "Observation.component.code.coding",
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "78564009",
+          "display" : "Heart rate measured at systemic artery (observable entity)"
+        }
+      },
+      {
+        "id" : "Observation.component:pulse-quality.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.component:pulse-quality.value[x]:valueCodeableConcept",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueCodeableConcept",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality"
+        }
       }
     ]
   }

@@ -1,4 +1,4 @@
-# RS Bundle — EMS Submission - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Bundle — EMS Submission - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,57 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSBundleEMS |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSBundleEMS |
 
  
 Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). 
+
+# RS Bundle — EMS Submission Overview
+
+Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).
+
+## Required Entries
+
+* `entry[composition]` 1..1 – `RSCompositionEMS`
+* `entry[encounter]` 1..1 – `RSEncounter`
+* `entry[observationDateReceived]` 1..1 – `RSObsTimelineDateTime`
+* `entry[patient]` 1..1 – `RSPatient`
+
+## Slice Reference
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| `entry[claim]` | 0..1 | `RSClaim` | `RSClaim`: RS Claim — Claim information related to cost of care. |
+| `entry[composition]` | 1..1 | `RSCompositionEMS` | `RSCompositionEMS`: RS Composition — EMS Submission — Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). |
+| `entry[document]` | 0..* | `RSDocumentReference` | `RSDocumentReference`: RS DocumentReference (Evidence) — Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files). |
+| `entry[encounter]` | 1..1 | `RSEncounter` | `RSEncounter`: RS Encounter Vehicle Used — Identifier and type of transport vehicle used during an encounter. |
+| `entry[location]` | 0..1 | `RSIncidentLocation` | `RSIncidentLocation`: RS Incident Location — Location of incident; supports PH-Core address extensions and geolocation. |
+| `entry[observationCallSource]` | 0..1 | `RSObsCallSource` | `RSObsCallSource`: RS Observation - Call Source — Call source description (free text). |
+| `entry[observationClinicalRemarks]` | 0..1 | `RSObsClinicalRemarks` | `RSObsClinicalRemarks`: RS Observation - Clinical Remarks — Clinical remarks/notes. |
+| `entry[observationDateReceived]` | 1..1 | `RSObsTimelineDateTime` | `RSObsTimelineDateTime`: RS Observation - Timeline Date/Time — Dispatch and transport timeline events capturing a precise date/time.`http://loinc.org#30976-5`(Date received Form) |
+| `entry[observationGCS]` | 0..1 | `RSObsGCS` | `RSObsGCS`: RS Observation - Glasgow Coma Scale — GCS with components for eyes, verbal, motor; optional total score as integer. |
+| `entry[observationReportedComplaint]` | 0..1 | `RSObsReportedComplaint` | `RSObsReportedComplaint`: RS Observation - Reported Complaint — Free-text reported complaint. May or May not exactly be medical, could point to car crash, not a healthcare concern. |
+| `entry[observationRunReportComments]` | 0..1 | `RSObsRunReportComments` | `RSObsRunReportComments`: RS Observation - Run Report Comments — Enter other comment (s) regarding the case |
+| `entry[observationTimeDeparted]` | 0..1 | `RSObsTimelineDateTime` | `RSObsTimelineDateTime`: RS Observation - Timeline Date/Time — Dispatch and transport timeline events capturing a precise date/time.`http://loinc.org#69475-2`(Responding unit left the scene with a patient [Date and time] Vehicle) |
+| `entry[observationTimeEnroute]` | 0..1 | `RSObsTimelineDateTime` | `RSObsTimelineDateTime`: RS Observation - Timeline Date/Time — Dispatch and transport timeline events capturing a precise date/time.`http://loinc.org#69472-9`(Unit responded [Date and time] Vehicle) |
+| `entry[observationTimeHospitalArrival]` | 0..1 | `RSObsTimelineDateTime` | `RSObsTimelineDateTime`: RS Observation - Timeline Date/Time — Dispatch and transport timeline events capturing a precise date/time.`http://snomed.info/sct#405799000`(Time of arrival at hospital (observable entity)) |
+| `entry[observationTimeOnScene]` | 0..1 | `RSObsTimelineDateTime` | `RSObsTimelineDateTime`: RS Observation - Timeline Date/Time — Dispatch and transport timeline events capturing a precise date/time.`http://snomed.info/sct#405798008`(Time of arrival of emergency services (observable entity)) |
+| `entry[observationTimeStationArrival]` | 0..1 | `RSObsTimelineDateTime` | `RSObsTimelineDateTime`: RS Observation - Timeline Date/Time — Dispatch and transport timeline events capturing a precise date/time.`http://loinc.org#11288-8`(Arrival time documented) |
+| `entry[observationVitals]` | 0..* | `RSObsRespiratoryRate``RSObsPulseRate``RSObsBloodPressure``RSObsBodyTemperature``RSObsCyanosis` | `RSObsRespiratoryRate`: RS Observation - Respiratory Rate — Respiratory rate in breaths/min.`RSObsPulseRate`: RS Observation - Pulse Rate — Pulse/heart rate in beats/min.`RSObsBloodPressure`: RS Observation - Blood Pressure — Blood pressure using component entries for systolic/diastolic.`RSObsBodyTemperature`: RS Observation - Body Temperature — Body temperature.`RSObsCyanosis`: RS Observation - Cyanosis — Cyanosis assessment. |
+| `entry[patient]` | 1..1 | `RSPatient` | `RSPatient`: RS Patient — Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region. |
+| `entry[procedure]` | 0..* | `RSProcedure` | `RSProcedure`: RS Procedure — Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions). |
+| `entry[serviceRequest]` | 0..* | `RSServiceRequest` | `RSServiceRequest`: RS ServiceRequest — Requests or records related to refusal to admit and related workflow signals. |
+| `entry[task]` | 0..* | `RSTask` | `RSTask`: RS Task — Workflow tracking for report receipt, durations of delay, and sources of delays. |
+
+## Implementation Guidance
+
+* Produce an HL7 FHIR R4 JSON Bundle with `Bundle.type = "document"` that declares the matching profile in `meta.profile`.
+* Populate the required entries first (patient, encounter, composition, and any mandatory Observations) before adding optional slices.
+* When adding optional slices, create resources conforming to the allowed profiles and ensure any fixed codes listed above appear in `resource.code`.
+* Reference each resource from the document Composition (`section.entry`) so the Bundle content aligns with slice definitions.
+* After structural changes, run `bun run scripts/update-bundle-intros.ts` (or execute this script with Node) to refresh both overview and notes pages.
+* Follow up with `./_build.sh build` to confirm publisher validation.
 
 **Usages:**
 
@@ -28,6 +74,14 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), [Excel](StructureDefinition-rs-bundle-ems.xlsx), [Schematron](StructureDefinition-rs-bundle-ems.sch) 
 
+### Notes:
+
+# RS Bundle — EMS Submission JSON Notes
+
+Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this profile. Replace identifiers, timestamps, and narrative text before production use.
+
+> Reminder: ensure every resource in the document Bundle declares its profile in`meta.profile`and that references resolve within the Bundle.
+
 
 
 ## Resource Content
@@ -37,11 +91,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "rs-bundle-ems",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSBundleEMS",
   "title" : "RS Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -223,10 +277,19 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
             ]
           }
         ]
+      },
+      {
+        "id" : "Bundle.entry:observationDateReceived.resource.code.coding",
+        "path" : "Bundle.entry.resource.code.coding",
+        "fixedCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "30976-5",
+          "display" : "Date received Form"
+        }
       },
       {
         "id" : "Bundle.entry:observationTimeEnroute",
@@ -242,10 +305,19 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-enroute"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
             ]
           }
         ]
+      },
+      {
+        "id" : "Bundle.entry:observationTimeEnroute.resource.code.coding",
+        "path" : "Bundle.entry.resource.code.coding",
+        "fixedCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "69472-9",
+          "display" : "Unit responded [Date and time] Vehicle"
+        }
       },
       {
         "id" : "Bundle.entry:observationTimeOnScene",
@@ -261,10 +333,19 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-on-scene"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
             ]
           }
         ]
+      },
+      {
+        "id" : "Bundle.entry:observationTimeOnScene.resource.code.coding",
+        "path" : "Bundle.entry.resource.code.coding",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "405798008",
+          "display" : "Time of arrival of emergency services (observable entity)"
+        }
       },
       {
         "id" : "Bundle.entry:observationTimeDeparted",
@@ -280,10 +361,19 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-departed"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
             ]
           }
         ]
+      },
+      {
+        "id" : "Bundle.entry:observationTimeDeparted.resource.code.coding",
+        "path" : "Bundle.entry.resource.code.coding",
+        "fixedCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "69475-2",
+          "display" : "Responding unit left the scene with a patient [Date and time] Vehicle"
+        }
       },
       {
         "id" : "Bundle.entry:observationTimeHospitalArrival",
@@ -299,10 +389,19 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-hospital-arrival"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
             ]
           }
         ]
+      },
+      {
+        "id" : "Bundle.entry:observationTimeHospitalArrival.resource.code.coding",
+        "path" : "Bundle.entry.resource.code.coding",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "405799000",
+          "display" : "Time of arrival at hospital (observable entity)"
+        }
       },
       {
         "id" : "Bundle.entry:observationTimeStationArrival",
@@ -318,10 +417,19 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
           {
             "code" : "Observation",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-station-arrival"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
             ]
           }
         ]
+      },
+      {
+        "id" : "Bundle.entry:observationTimeStationArrival.resource.code.coding",
+        "path" : "Bundle.entry.resource.code.coding",
+        "fixedCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "11288-8",
+          "display" : "Arrival time documented"
+        }
       },
       {
         "id" : "Bundle.entry:observationVitals",
@@ -341,10 +449,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm",
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality",
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis"
             ]
           }
@@ -498,25 +602,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-ems.csv), 
             "code" : "Claim",
             "profile" : [
               "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Bundle.entry:observationVehicleUsed",
-        "path" : "Bundle.entry",
-        "sliceName" : "observationVehicleUsed",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Bundle.entry:observationVehicleUsed.resource",
-        "path" : "Bundle.entry.resource",
-        "type" : [
-          {
-            "code" : "Observation",
-            "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-used"
             ]
           }
         ]

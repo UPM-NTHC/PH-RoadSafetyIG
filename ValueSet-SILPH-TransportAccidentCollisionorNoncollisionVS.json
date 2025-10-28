@@ -1,0 +1,108 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SILPH-TransportAccidentCollisionorNoncollisionVS",
+  "meta" : {
+    "versionId" : "2",
+    "lastUpdated" : "2025-10-27T07:41:10.387+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Transport Accident: Collision or Noncollision (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision</tt><p>SILPH Value Set for Transport Accident if Collision or Noncollision</p></div>"
+  },
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision",
+  "version" : "0.2.0",
+  "name" : "SILPH___Transport_Accident__Collision_or_Noncollision__VS_",
+  "title" : "SILPH - Transport Accident: Collision or Noncollision (VS)",
+  "status" : "draft",
+  "date" : "2025-10-28T15:04:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "SILPH Value Set for Transport Accident if Collision or Noncollision",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.78",
+      "concept" : [{
+        "code" : "LA7319-2",
+        "display" : "Collision"
+      }]
+    },
+    {
+      "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+      "version" : "1",
+      "concept" : [{
+        "code" : "NONCOLLISION",
+        "display" : "Non-Collision"
+      }]
+    }]
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:14333e18-97b6-4d4b-a08c-bb9eb26aa6c0",
+    "timestamp" : "2025-10-27T07:41:36+00:00",
+    "total" : 2,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.78"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.78"
+    },
+    {
+      "name" : "displayLanguage",
+      "valueCode" : "en-US,en;q=0.9"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision|1"
+    },
+    {
+      "name" : "includeDesignations",
+      "valueBoolean" : false
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.78",
+      "code" : "LA7319-2",
+      "display" : "Collision"
+    },
+    {
+      "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+      "version" : "1",
+      "code" : "NONCOLLISION",
+      "display" : "Non-Collision"
+    }]
+  }
+}

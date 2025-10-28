@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-OutpatientERDispositionVS"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2025-10-27T08:03:00.566+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH - Outpatient/ER Disposition (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition</tt><p>SILPH Value Set for Outpatient/ER Visit Disposition</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition"/>
+  <version value="0.2.0"/>
+  <name value="SILPH___Outpatient_ER_Disposition__VS_"/>
+  <title value="SILPH - Outpatient/ER Disposition (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for Outpatient/ER Visit Disposition"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <concept>
+        <code value="32485007"/>
+        <display value="Admitted"/>
+      </concept>
+      <concept>
+        <code value="306689006"/>
+        <display value="Treated and Sent Home"/>
+      </concept>
+      <concept>
+        <code value="225928004"/>
+        <display value="HAMA"/>
+      </concept>
+      <concept>
+        <code value="34596002"/>
+        <display value="Absconded"/>
+      </concept>
+      <concept>
+        <code value="19712007"/>
+        <display value="Transferred to another facility/hospital"/>
+      </concept>
+      <concept>
+        <code value="183960004"/>
+        <display value="Refused Admission"/>
+      </concept>
+      <concept>
+        <code value="18632008"/>
+        <display value="Died"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:3533b294-986f-4296-bf1c-82570f78c655"/>
+    <timestamp value="2025-10-27T08:03:18+00:00"/>
+    <total value="7"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="32485007"/>
+      <display value="Hospital admission"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="306689006"/>
+      <display value="Discharge to home"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="225928004"/>
+      <display value="Patient self-discharge against medical advice"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="34596002"/>
+      <display value="Patient discharge, elopement"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="19712007"/>
+      <display value="Patient transfer, to another health care facility"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="183960004"/>
+      <display value="Patient refuses hospital admission"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="18632008"/>
+      <display value="Patient status determination, deceased"/>
+    </contains>
+  </expansion>
+</ValueSet>

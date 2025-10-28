@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-FractureTypeVS"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2025-10-28T14:11:15.918+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SILPH-FractureTypeVS</b></p><a name="SILPH-FractureTypeVS"> </a><a name="hcSILPH-FractureTypeVS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2025-10-28 14:11:15+0000</p></div><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class="codes"><tr><td><b>System</b></td><td><b>Version</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name="SILPH-FractureTypeVS-http://snomed.info/sct-423125000"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style="white-space:nowrap">  <a href="http://snomed.info/sct/900000000000207008/id/423125000">423125000</a></td><td>Closed fracture of bone (disorder)</td></tr><tr><td><a name="SILPH-FractureTypeVS-http://snomed.info/sct-397181002"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style="white-space:nowrap">  <a href="http://snomed.info/sct/900000000000207008/id/397181002">397181002</a></td><td>Open fracture (disorder)</td></tr></table></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType"/>
+  <version value="0.2.0"/>
+  <name value="SILPHFractureTypeVS"/>
+  <title value="SILPH - Fracture Type (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for fracture type designation (open versus closed)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="423125000"/>
+        <display value="Closed fracture of bone (disorder)"/>
+      </concept>
+      <concept>
+        <code value="397181002"/>
+        <display value="Open fracture (disorder)"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:9e0e5b4e-56af-4574-8ff7-15be6f42406b"/>
+    <timestamp value="2025-10-28T14:11:20.612+00:00"/>
+    <total value="2"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="423125000"/>
+      <display value="Closed fracture of bone (disorder)"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="397181002"/>
+      <display value="Open fracture (disorder)"/>
+    </contains>
+  </expansion>
+</ValueSet>

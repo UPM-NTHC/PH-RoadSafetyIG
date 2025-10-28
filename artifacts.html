@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - DRAFT PH Road Safety Implementation Guide v0.1.9</title>
+    <title>Artifacts Summary - DRAFT PH Road Safety Implementation Guide v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">DRAFT PH Road Safety Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.9 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
 
@@ -190,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">DRAFT PH Road Safety Implementation Guide - Local Development build (v0.1.9) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">DRAFT PH Road Safety Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -208,13 +208,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Terminology: Concept Maps</a>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Concept Maps</a>
       </li>
    </ul>
 </div>
@@ -315,6 +318,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-condition.html"
+                  title="StructureDefinition/rs-condition">RS Condition</a>
+            </td>
+            <td>
+<p>Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-condition-external-cause.html"
+                  title="StructureDefinition/rs-condition-external-cause">RS Condition — External Cause (category)</a>
+            </td>
+            <td>
+<p>Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-condition-final-diagnosis.html"
+                  title="StructureDefinition/rs-condition-final-diagnosis">RS Condition — Final Diagnosis</a>
+            </td>
+            <td>
+<p>Final diagnosis per CSV mapping.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-condition-initial-impression.html"
+                  title="StructureDefinition/rs-condition-initial-impression">RS Condition — Initial Impression</a>
+            </td>
+            <td>
+<p>Enter the initial impression on the patient’s condition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-condition-nature-of-injury.html"
+                  title="StructureDefinition/rs-condition-nature-of-injury">RS Condition — Nature of Injury (category)</a>
+            </td>
+            <td>
+<p>Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-condition-problem.html"
+                  title="StructureDefinition/rs-condition-problem">RS Condition — Problem</a>
+            </td>
+            <td>
+<p>Problem (finding) per CSV mapping.</p>
 </td>
          </tr>
          <tr>
@@ -427,15 +484,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-breath-sounds.html"
-                  title="StructureDefinition/rs-observation-breath-sounds">RS Observation - Breath Sounds</a>
-            </td>
-            <td>
-<p>Breath sounds assessment.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-observation-cctv-available.html"
                   title="StructureDefinition/rs-observation-cctv-available">RS Observation - CCTV Available</a>
             </td>
@@ -517,47 +565,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-date-of-consultation.html"
-                  title="StructureDefinition/rs-observation-date-of-consultation">RS Observation - Date of Consultation</a>
-            </td>
-            <td>
-<p>Date of consultation at facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-date-of-injury.html"
-                  title="StructureDefinition/rs-observation-date-of-injury">RS Observation - Date of Injury</a>
-            </td>
-            <td>
-<p>Date of injury occurrence.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-date-received.html"
-                  title="StructureDefinition/rs-observation-date-received">RS Observation - Date/Time Received by EMS</a>
-            </td>
-            <td>
-<p>Calendar/timestamp the EMS/dispatch received the request.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-observation-injury-datetime.html"
                   title="StructureDefinition/rs-observation-injury-datetime">RS Observation - Date/Time of Injury</a>
             </td>
             <td>
-<p>Timestamp of injury occurrence.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-extent-of-injury.html"
-                  title="StructureDefinition/rs-observation-extent-of-injury">RS Observation - Extent of Injury</a>
-            </td>
-            <td>
-<p>Extent / severity estimate or category of injury (e.g., minor, moderate, severe).</p>
+<p>DateTimestamp patient was seen at the health facility.</p>
 </td>
          </tr>
          <tr>
@@ -724,15 +736,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-status-on-arrival-alive.html"
-                  title="StructureDefinition/rs-observation-status-on-arrival-alive">RS Observation - If Alive: Conscious/Unconscious</a>
-            </td>
-            <td>
-<p>If alive on arrival, consciousness detail.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-observation-injury-intent.html"
                   title="StructureDefinition/rs-observation-injury-intent">RS Observation - Injury Intent</a>
             </td>
@@ -805,15 +808,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-outcome-discharge.html"
-                  title="StructureDefinition/rs-observation-outcome-discharge">RS Observation - Outcome at Discharge</a>
-            </td>
-            <td>
-<p>Outcome at discharge.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-observation-outcome-release.html"
                   title="StructureDefinition/rs-observation-outcome-release">RS Observation - Outcome at Release</a>
             </td>
@@ -868,29 +862,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pulse-quality.html"
-                  title="StructureDefinition/rs-observation-pulse-quality">RS Observation - Pulse Quality</a>
-            </td>
-            <td>
-<p>Pulse quality.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-observation-pulse-rate.html"
                   title="StructureDefinition/rs-observation-pulse-rate">RS Observation - Pulse Rate</a>
             </td>
             <td>
 <p>Pulse/heart rate in beats/min.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-pulse-rhythm.html"
-                  title="StructureDefinition/rs-observation-pulse-rhythm">RS Observation - Pulse Rhythm</a>
-            </td>
-            <td>
-<p>Pulse rhythm.</p>
 </td>
          </tr>
          <tr>
@@ -917,7 +893,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/rs-observation-reported-complaint">RS Observation - Reported Complaint</a>
             </td>
             <td>
-<p>Free-text reported complaint.</p>
+<p>Free-text reported complaint. May or May not exactly be medical, could point to car crash, not a healthcare concern.</p>
 </td>
          </tr>
          <tr>
@@ -931,20 +907,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-respiratory-rhythm.html"
-                  title="StructureDefinition/rs-observation-respiratory-rhythm">RS Observation - Respiratory Rhythm</a>
-            </td>
-            <td>
-<p>Respiratory rhythm (normal/irregular/labored).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-observation-runreport-comments.html"
                   title="StructureDefinition/rs-observation-runreport-comments">RS Observation - Run Report Comments</a>
             </td>
             <td>
-<p>General comments from run report.</p>
+<p>Enter other comment (s) regarding the case</p>
 </td>
          </tr>
          <tr>
@@ -967,74 +934,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-departed.html"
-                  title="StructureDefinition/rs-observation-time-departed">RS Observation - Time Departed Scene</a>
+               <a href="StructureDefinition-rs-observation-timeline-datetime.html"
+                  title="StructureDefinition/rs-observation-timeline-datetime">RS Observation - Timeline Date/Time</a>
             </td>
             <td>
-<p>Timestamp unit departed scene.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-enroute.html"
-                  title="StructureDefinition/rs-observation-time-enroute">RS Observation - Time Enroute</a>
-            </td>
-            <td>
-<p>Timestamp when unit dispatched/began traveling.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-on-scene.html"
-                  title="StructureDefinition/rs-observation-time-on-scene">RS Observation - Time On Scene</a>
-            </td>
-            <td>
-<p>Timestamp crew arrived at scene.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-received.html"
-                  title="StructureDefinition/rs-observation-time-received">RS Observation - Time Received</a>
-            </td>
-            <td>
-<p>Time the call/request was received by EMS/dispatch.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-of-consultation.html"
-                  title="StructureDefinition/rs-observation-time-of-consultation">RS Observation - Time of Consultation</a>
-            </td>
-            <td>
-<p>Time of consultation at facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-station-arrival.html"
-                  title="StructureDefinition/rs-observation-time-station-arrival">RS Observation - Time of Emergency Station Arrival</a>
-            </td>
-            <td>
-<p>Timestamp unit returned to base/became available.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-hospital-arrival.html"
-                  title="StructureDefinition/rs-observation-time-hospital-arrival">RS Observation - Time of Hospital Arrival</a>
-            </td>
-            <td>
-<p>Timestamp unit arrived at receiving facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-time-of-injury.html"
-                  title="StructureDefinition/rs-observation-time-of-injury">RS Observation - Time of Injury</a>
-            </td>
-            <td>
-<p>Time of injury occurrence.</p>
+<p>Dispatch and transport timeline events capturing a precise date/time.</p>
 </td>
          </tr>
          <tr>
@@ -1075,20 +979,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-observation-vehicle-used.html"
-                  title="StructureDefinition/rs-observation-vehicle-used">RS Observation - Vehicle Used</a>
-            </td>
-            <td>
-<p>Vehicle used during response.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-organization.html"
                   title="StructureDefinition/rs-organization">RS Organization</a>
             </td>
             <td>
 <p>Organization profile for EMS providers and receiving facilities involved in RS encounters.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-patient.html"
+                  title="StructureDefinition/rs-patient">RS Patient</a>
+            </td>
+            <td>
+<p>Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region.</p>
 </td>
          </tr>
          <tr>
@@ -1120,71 +1024,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-condition.html"
-                  title="StructureDefinition/rs-condition">Road Safety Condition</a>
-            </td>
-            <td>
-<p>Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-condition-external-cause.html"
-                  title="StructureDefinition/rs-condition-external-cause">Road Safety Condition — External Cause (category)</a>
-            </td>
-            <td>
-<p>Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-condition-final-diagnosis.html"
-                  title="StructureDefinition/rs-condition-final-diagnosis">Road Safety Condition — Final Diagnosis</a>
-            </td>
-            <td>
-<p>Final diagnosis per CSV mapping.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-condition-initial-impression.html"
-                  title="StructureDefinition/rs-condition-initial-impression">Road Safety Condition — Initial Impression</a>
-            </td>
-            <td>
-<p>Initial impression per CSV mapping.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-condition-nature-of-injury.html"
-                  title="StructureDefinition/rs-condition-nature-of-injury">Road Safety Condition — Nature of Injury (category)</a>
-            </td>
-            <td>
-<p>Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-condition-problem.html"
-                  title="StructureDefinition/rs-condition-problem">Road Safety Condition — Problem</a>
-            </td>
-            <td>
-<p>Problem (finding) per CSV mapping.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-patient.html"
-                  title="StructureDefinition/rs-patient">Road Safety Patient</a>
-            </td>
-            <td>
-<p>Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-rs-service-request.html"
-                  title="StructureDefinition/rs-service-request">Road Safety ServiceRequest</a>
+                  title="StructureDefinition/rs-service-request">RS ServiceRequest</a>
             </td>
             <td>
 <p>Requests or records related to refusal to admit and related workflow signals.</p>
@@ -1193,7 +1034,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-rs-task.html"
-                  title="StructureDefinition/rs-task">Road Safety Task</a>
+                  title="StructureDefinition/rs-task">RS Task</a>
             </td>
             <td>
 <p>Workflow tracking for report receipt, durations of delay, and sources of delays.</p>
@@ -1202,178 +1043,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="3"> </a>
-   <h3>Terminology: Value Sets </h3>
-    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-activity.html" title="ValueSet/vs-activity">RS VS - Activity at Time of Incident</a>
+               <a href="StructureDefinition-rs-encounter-vehicle-used.html"
+                  title="StructureDefinition/rs-encounter-vehicle-used">RS Encounter Vehicle Used</a>
             </td>
             <td>
-<p>Activity at time of incident (prefer SNOMED CT).</p>
+<p>Identifier and type of transport vehicle used during an encounter.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-status-alive-detail.html"
-                  title="ValueSet/vs-status-alive-detail">RS VS - Alive Detail (Consciousness)</a>
-            </td>
-            <td>
-<p>If alive on arrival: conscious vs unconscious.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-bites-agent.html" title="ValueSet/vs-bites-agent">RS VS - Bites/Stings Agent</a>
-            </td>
-            <td>
-<p>Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-breath-sounds.html" title="ValueSet/vs-breath-sounds">RS VS - Breath Sounds</a>
-            </td>
-            <td>
-<p>Breath sounds options (prefer SNOMED CT).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-burn-degrees.html" title="ValueSet/vs-burn-degrees">RS VS - Burn Degrees</a>
-            </td>
-            <td>
-<p>Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-burns-agent.html" title="ValueSet/vs-burns-agent">RS VS - Burns Agent</a>
-            </td>
-            <td>
-<p>Agent causing burn (prefer SNOMED CT).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-collision-category.html"
-                  title="ValueSet/vs-collision-category">RS VS - Collision Category</a>
-            </td>
-            <td>
-<p>Collision vs non-collision category.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-cyanosis.html" title="ValueSet/vs-cyanosis">RS VS - Cyanosis</a>
-            </td>
-            <td>
-<p>Cyanosis assessment options (prefer SNOMED CT).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-disposition-er.html"
-                  title="ValueSet/vs-disposition-er">RS VS - Disposition (ER/OPD/BHS/RHU)</a>
-            </td>
-            <td>
-<p>Patient disposition at ER/OPD/BHS/RHU.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-disposition-ip.html"
-                  title="ValueSet/vs-disposition-ip">RS VS - Disposition (In-Patient)</a>
-            </td>
-            <td>
-<p>Patient disposition for in-patient cases.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-drowning-type.html" title="ValueSet/vs-drowning-type">RS VS - Drowning Type/Body of Water</a>
-            </td>
-            <td>
-<p>Type/body of water for drowning incidents.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-gcs-eyes.html" title="ValueSet/vs-gcs-eyes">RS VS - GCS Eyes</a>
-            </td>
-            <td>
-<p>Glasgow Coma Scale eye opening responses (LOINC LA codes).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-gcs-motor.html" title="ValueSet/vs-gcs-motor">RS VS - GCS Motor</a>
-            </td>
-            <td>
-<p>Glasgow Coma Scale motor responses (LOINC LA codes).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-gcs-verbal.html" title="ValueSet/vs-gcs-verbal">RS VS - GCS Verbal</a>
-            </td>
-            <td>
-<p>Glasgow Coma Scale verbal responses (LOINC LA codes).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-injury-intent.html" title="ValueSet/vs-injury-intent">RS VS - Injury Intent</a>
-            </td>
-            <td>
-<p>Injury intent options mapped from ONEISS (prefer SNOMED CT).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-level-of-consciousness.html"
-                  title="ValueSet/vs-level-of-consciousness">RS VS - Level of Consciousness (AVPU)</a>
-            </td>
-            <td>
-<p>AVPU options for level of consciousness (prefer SNOMED CT).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-mode-of-transport.html"
-                  title="ValueSet/vs-mode-of-transport">RS VS - Mode of Transport to Facility</a>
-            </td>
-            <td>
-<p>Mode of transport to the hospital/facility.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-other-risk-factors.html"
-                  title="ValueSet/vs-other-risk-factors">RS VS - Other Risk Factors</a>
-            </td>
-            <td>
-<p>Other risk factors at time of incident (prefer SNOMED CT).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-other-vehicle.html" title="ValueSet/vs-other-vehicle">RS VS - Other Vehicle in Collision</a>
-            </td>
-            <td>
-<p>Other vehicle/object involved in collision.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-vs-outcome.html" title="ValueSet/vs-outcome">RS VS - Outcome</a>
-            </td>
-            <td>
-<p>Outcome: Improved, Unimproved, Died.</p>
-</td>
-         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-vs-psgc-barangay.html" title="ValueSet/vs-psgc-barangay">RS VS - PSGC Barangay</a>
@@ -1408,103 +1099,312 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-patients-vehicle.html"
-                  title="ValueSet/vs-patients-vehicle">RS VS - Patient's Vehicle</a>
+               <a href="ValueSet-SILPH-ActivityVS.html" title="ValueSet/SILPH-ActivityVS">SILPH - Activity (VS)</a>
             </td>
             <td>
-<p>Vehicle used by patient (prefer SNOMED CT; local additions where specified).</p>
+<p>SILPH Value Set for Patient Activity at the Time of Injury/Accident</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-place-of-occurrence.html"
-                  title="ValueSet/vs-place-of-occurrence">RS VS - Place of Occurrence</a>
+               <a href="ValueSet-SILPH-BurnsVS.html" title="ValueSet/SILPH-BurnsVS">SILPH - Burns (VS)</a>
             </td>
             <td>
-<p>Place of occurrence (prefer SNOMED CT; local additions where specified).</p>
+<p>SILPH Value Set for Degree of Burn</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-position-of-patient.html"
-                  title="ValueSet/vs-position-of-patient">RS VS - Position of Patient</a>
+               <a href="ValueSet-SILPH-Cyanosis.html" title="ValueSet/SILPH-Cyanosis">SILPH - Cyanosis (VS)</a>
             </td>
             <td>
-<p>Position/role of patient in transport incidents (prefer SNOMED CT).</p>
+<p>SILPH Value Set for Presence of Cyanosis</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-pulse-quality.html" title="ValueSet/vs-pulse-quality">RS VS - Pulse Quality</a>
+               <a href="ValueSet-SILPH-ExternalCauseofBurnsVS.html"
+                  title="ValueSet/SILPH-ExternalCauseofBurnsVS">SILPH - External Cause of Burns (VS)</a>
             </td>
             <td>
-<p>Pulse quality options (prefer SNOMED CT).</p>
+<p>SILPH Value Set for External Cause of Burns</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-pulse-rhythm.html" title="ValueSet/vs-pulse-rhythm">RS VS - Pulse Rhythm</a>
+               <a href="ValueSet-SILPH-ExternalCauseofDrowningVS.html"
+                  title="ValueSet/SILPH-ExternalCauseofDrowningVS">SILPH - External Cause of Drowning (VS)</a>
             </td>
             <td>
-<p>Pulse rhythm options (prefer SNOMED CT).</p>
+<p>SILPH Value Set for External Cause of Drowning</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-pupils.html" title="ValueSet/vs-pupils">RS VS - Pupils</a>
+               <a href="ValueSet-SILPH-FractureTypeVS.html"
+                  title="ValueSet/SILPH-FractureTypeVS">SILPH - Fracture Type (VS)</a>
             </td>
             <td>
-<p>Pupil size/reactivity options (prefer SNOMED CT).</p>
+<p>SILPH Value Set for fracture type designation (open versus closed).</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-respiratory-rhythm.html"
-                  title="ValueSet/vs-respiratory-rhythm">RS VS - Respiratory Rhythm</a>
+               <a href="ValueSet-SILPH-GCSEyesVS.html" title="ValueSet/SILPH-GCSEyesVS">SILPH - GCS - Eyes (VS)</a>
             </td>
             <td>
-<p>Respiratory rhythm options (prefer SNOMED CT).</p>
+<p>SILPH Value Set for GCS Eye Score</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-safety-devices.html"
-                  title="ValueSet/vs-safety-devices">RS VS - Safety Devices</a>
+               <a href="ValueSet-SILPH-GCSMotorVS.html" title="ValueSet/SILPH-GCSMotorVS">SILPH - GCS - Motor (VS)</a>
             </td>
             <td>
-<p>Safety devices present/used (prefer SNOMED CT).</p>
+<p>SILPH Value Set for GCS Motor Score</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-status-on-arrival.html"
-                  title="ValueSet/vs-status-on-arrival">RS VS - Status on Arrival</a>
+               <a href="ValueSet-SILPH-GCSVerbalVS.html"
+                  title="ValueSet/SILPH-GCSVerbalVS">SILPH - GCS - Verbal (VS)</a>
             </td>
             <td>
-<p>Status upon reaching facility/hospital.</p>
+<p>SILPH Value Set for GCS Verbal Score</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-transport-accident-mode.html"
-                  title="ValueSet/vs-transport-accident-mode">RS VS - Transport Accident: Land/Water/Air</a>
+               <a href="ValueSet-SILPH-GeneralDispositionVS.html"
+                  title="ValueSet/SILPH-GeneralDispositionVS">SILPH - General Disposition (VS)</a>
             </td>
             <td>
-<p>Exposure context for transport accident: land, water, air (ICD-11).</p>
+<p>SILPH Value Set for Inpatient and ER/Outpatient Visit Disposition</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-vs-type-of-patient.html"
-                  title="ValueSet/vs-type-of-patient">RS VS - Type of Patient</a>
+               <a href="ValueSet-SILPH-InjuryIntentVS.html"
+                  title="ValueSet/SILPH-InjuryIntentVS">SILPH - Injury Intent (VS)</a>
             </td>
             <td>
-<p>Type of patient (ER/OPD/RHU/BHS context).</p>
+<p>SILPH Value Set for Injury Intent</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-InpatientDispositionVS.html"
+                  title="ValueSet/SILPH-InpatientDispositionVS">SILPH - Inpatient Disposition (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Inpatient Visit Disposition</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-LevelofConsciousnessVS.html"
+                  title="ValueSet/SILPH-LevelofConsciousnessVS">SILPH - Level of Consciousness (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Level of Consciousness (AVPU) Score</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-ListofBodySitesVS.html"
+                  title="ValueSet/SILPH-ListofBodySitesVS">SILPH - List of Body Sites (VS)</a>
+            </td>
+            <td>
+<p>SILPH List of Body Sites</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-ModeofTransportVS.html"
+                  title="ValueSet/SILPH-ModeofTransportVS">SILPH - Mode of Transport (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Mode of Transport of Patient to Healthcare Facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-OtherVehicleVS.html"
+                  title="ValueSet/SILPH-OtherVehicleVS">SILPH - Other Vehicle in Collision (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Other Vehicle in Collision Accident</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-OutcomeVS.html" title="ValueSet/SILPH-OutcomeVS">SILPH - Outcome (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Outcome</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-OutpatientERDispositionVS.html"
+                  title="ValueSet/SILPH-OutpatientERDispositionVS">SILPH - Outpatient/ER Disposition (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Outpatient/ER Visit Disposition</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-PR-QualityVS.html"
+                  title="ValueSet/SILPH-PR-QualityVS">SILPH - PR - Quality (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Pulse Quality</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-PR-RhythmVS.html"
+                  title="ValueSet/SILPH-PR-RhythmVS">SILPH - PR - Rhythm (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Pulse Rhythm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-PatientsVehicleVS.html"
+                  title="ValueSet/SILPH-PatientsVehicleVS">SILPH - Patient's Vehicle (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Patient's Vehicle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-PlaceofOccurrenceVS.html"
+                  title="ValueSet/SILPH-PlaceofOccurrenceVS">SILPH - Place of Occurrence (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Place of Occurrence of Injury/Accident</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-PositionofPatientVS.html"
+                  title="ValueSet/SILPH-PositionofPatientVS">SILPH - Position of Patient (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Position of Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-PupilsVS.html" title="ValueSet/SILPH-PupilsVS">SILPH - Pupils (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Pupil Reaction</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-RR-BreathSoundsVS.html"
+                  title="ValueSet/SILPH-RR-BreathSoundsVS">SILPH - RR - Breath Sounds (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Breath Sounds</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-RR-RhythmVS.html"
+                  title="ValueSet/SILPH-RR-RhythmVS">SILPH - RR - Rhythm (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Respiratory Rhythm</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-RiskFactorsVS.html"
+                  title="ValueSet/SILPH-RiskFactorsVS">SILPH - Risk Factors (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Risk Factors</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-SafetyDevicesVS.html"
+                  title="ValueSet/SILPH-SafetyDevicesVS">SILPH - Safety Devices (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Safety Devices</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-SexVS.html" title="ValueSet/SILPH-SexVS">SILPH - Sex (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Sex</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-StatusVS.html" title="ValueSet/SILPH-StatusVS">SILPH - Status (VS)</a>
+            </td>
+            <td>
+<p>SILPH ValueSet for Patient Status, if Alive or Dead during Admission</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-StatusifAliveVS.html"
+                  title="ValueSet/SILPH-StatusifAliveVS">SILPH - Status if Alive (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Patient Status, if patient is alive, specify if conscious or unconscious</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-TransportAccidentTypeVS.html"
+                  title="ValueSet/SILPH-TransportAccidentTypeVS">SILPH - Transport Accident Type (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Transport Accident Type (Land, Water or Air)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-TransportAccidentCollisionorNoncollisionVS.html"
+                  title="ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS">SILPH - Transport Accident: Collision or Noncollision (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Transport Accident if Collision or Noncollision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-TriageVS.html" title="ValueSet/SILPH-TriageVS">SILPH - Triage (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Triage at Scene</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SILPH-TypeofPatientVS.html"
+                  title="ValueSet/SILPH-TypeofPatientVS">SILPH - Type of Patient (VS)</a>
+            </td>
+            <td>
+<p>SILPH Value Set for Type of Patient Encounter</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1512,12 +1412,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-cs-silph.html" title="CodeSystem/cs-silph">SILPH Local Codes</a>
+               <a href="CodeSystem-SILPH-LocalCodesCS.html"
+                  title="CodeSystem/SILPH-LocalCodesCS">SILPH Road Safety Local Codes</a>
             </td>
+            <td>
+<p>Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets</p>
+</td>
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -1552,7 +1456,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.1.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 27, 2025 01:56+0000">2025-10-27</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 15:05+0000">2025-10-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,9 +1,22 @@
 {
   "package": "example.fhir.ph.roadsafety",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "PH",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used",
+      "title": "RS Encounter Vehicle Used",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string"
+      ]
+    }
+  ],
   "profiles": {
     "AllergyIntolerance": [
       {
@@ -48,27 +61,27 @@
     "Condition": [
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition",
-        "title": "Road Safety Condition"
+        "title": "RS Condition"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause",
-        "title": "Road Safety Condition — External Cause (category)"
+        "title": "RS Condition — External Cause (category)"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis",
-        "title": "Road Safety Condition — Final Diagnosis"
+        "title": "RS Condition — Final Diagnosis"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression",
-        "title": "Road Safety Condition — Initial Impression"
+        "title": "RS Condition — Initial Impression"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-nature-of-injury",
-        "title": "Road Safety Condition — Nature of Injury (category)"
+        "title": "RS Condition — Nature of Injury (category)"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-problem",
-        "title": "Road Safety Condition — Problem"
+        "title": "RS Condition — Problem"
       }
     ],
     "DocumentReference": [
@@ -135,10 +148,6 @@
         "title": "RS Observation - Body Temperature"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds",
-        "title": "RS Observation - Breath Sounds"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-call-source",
         "title": "RS Observation - Call Source"
       },
@@ -173,18 +182,6 @@
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis",
         "title": "RS Observation - Cyanosis"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-of-consultation",
-        "title": "RS Observation - Date of Consultation"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-of-injury",
-        "title": "RS Observation - Date of Injury"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received",
-        "title": "RS Observation - Date/Time Received by EMS"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings",
@@ -237,10 +234,6 @@
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object",
         "title": "RS Observation - External Cause: Contact with Sharp Object"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury",
-        "title": "RS Observation - Extent of Injury"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture",
@@ -299,10 +292,6 @@
         "title": "RS Observation - Other Vehicle/Object Involved"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-discharge",
-        "title": "RS Observation - Outcome at Discharge"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release",
         "title": "RS Observation - Outcome at Release"
       },
@@ -319,16 +308,8 @@
         "title": "RS Observation - Position of Patient"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality",
-        "title": "RS Observation - Pulse Quality"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate",
         "title": "RS Observation - Pulse Rate"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm",
-        "title": "RS Observation - Pulse Rhythm"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pupils",
@@ -347,10 +328,6 @@
         "title": "RS Observation - Respiratory Rate"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm",
-        "title": "RS Observation - Respiratory Rhythm"
-      },
-      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments",
         "title": "RS Observation - Run Report Comments"
       },
@@ -363,40 +340,8 @@
         "title": "RS Observation - Status on Arrival"
       },
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival-alive",
-        "title": "RS Observation - If Alive: Conscious/Unconscious"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-departed",
-        "title": "RS Observation - Time Departed Scene"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-enroute",
-        "title": "RS Observation - Time Enroute"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-hospital-arrival",
-        "title": "RS Observation - Time of Hospital Arrival"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-consultation",
-        "title": "RS Observation - Time of Consultation"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-injury",
-        "title": "RS Observation - Time of Injury"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-on-scene",
-        "title": "RS Observation - Time On Scene"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-received",
-        "title": "RS Observation - Time Received"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-station-arrival",
-        "title": "RS Observation - Time of Emergency Station Arrival"
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime",
+        "title": "RS Observation - Timeline Date/Time"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator",
@@ -421,10 +366,6 @@
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-urgency",
         "title": "RS Observation - Priority Level (Urgency)"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-used",
-        "title": "RS Observation - Vehicle Used"
       }
     ],
     "Organization": [
@@ -436,7 +377,7 @@
     "Patient": [
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient",
-        "title": "Road Safety Patient"
+        "title": "RS Patient"
       }
     ],
     "Procedure": [
@@ -452,13 +393,13 @@
     "ServiceRequest": [
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request",
-        "title": "Road Safety ServiceRequest"
+        "title": "RS ServiceRequest"
       }
     ],
     "Task": [
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task",
-        "title": "Road Safety Task"
+        "title": "RS Task"
       }
     ]
   },
@@ -511,6 +452,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used": [
+      "Encounter"
     ],
     "urn://example.com/ph-core/fhir/StructureDefinition/barangay": [
       "Location.address",

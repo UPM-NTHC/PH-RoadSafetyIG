@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-RR-RhythmVS"/>
+  <meta>
+    <versionId value="4"/>
+    <lastUpdated value="2025-10-27T06:01:00.327+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH - RR - Rhythm (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm</tt><p>SILPH Value Set for Respiratory Rhythm</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm"/>
+  <version value="0.2.0"/>
+  <name value="SILPH___RR___Rhythm__VS"/>
+  <title value="SILPH - RR - Rhythm (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for Respiratory Rhythm"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <concept>
+        <code value="5467003"/>
+        <display value="Regular"/>
+      </concept>
+      <concept>
+        <code value="248585001"/>
+        <display value="Irregular"/>
+      </concept>
+      <concept>
+        <code value="248549001"/>
+        <display value="Labored"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:aff65127-6ea8-43bf-bca0-1901b48d0314"/>
+    <timestamp value="2025-10-27T06:01:15+00:00"/>
+    <total value="3"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="5467003"/>
+      <display value="Normal respiratory rhythm"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="248585001"/>
+      <display value="Irregular breathing"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="248549001"/>
+      <display value="Labored breathing"/>
+    </contains>
+  </expansion>
+</ValueSet>

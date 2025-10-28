@@ -1,4 +1,4 @@
-# RS Observation - Level of Consciousness (AVPU) - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Level of Consciousness (AVPU) - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsLevelOfConsciousness |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsLevelOfConsciousness |
 
  
 Level of consciousness (e.g., AVPU). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-level-of-consciousness",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsLevelOfConsciousness",
   "title" : "RS Observation - Level of Consciousness (AVPU)",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,22 +122,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "449159002"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Alert voice pain unresponsive scale (assessment scale)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "6942003",
+          "display" : "Level of consciousness (observable entity)"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -168,7 +158,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-level-of-consciousness"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness"
         }
       }
     ]

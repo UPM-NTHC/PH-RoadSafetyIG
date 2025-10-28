@@ -1,15 +1,15 @@
-# Road Safety Condition — Final Diagnosis - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Condition — Final Diagnosis - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Condition — Final Diagnosis**
+* **RS Condition — Final Diagnosis**
 
-## Resource Profile: Road Safety Condition — Final Diagnosis 
+## Resource Profile: RS Condition — Final Diagnosis 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSConditionFinalDiagnosis |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSConditionFinalDiagnosis |
 
  
 Final diagnosis per CSV mapping. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-final-d
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition-final-diagnosis",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSConditionFinalDiagnosis",
-  "title" : "Road Safety Condition — Final Diagnosis",
+  "title" : "RS Condition — Final Diagnosis",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,19 +116,15 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-final-d
   "differential" : {
     "element" : [
       {
-        "id" : "Condition.category.coding.system",
-        "path" : "Condition.category.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Condition.category.coding.code",
-        "path" : "Condition.category.coding.code",
-        "patternCode" : "89100005"
-      },
-      {
-        "id" : "Condition.category.coding.display",
-        "path" : "Condition.category.coding.display",
-        "patternString" : "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
+        "id" : "Condition.category.coding",
+        "path" : "Condition.category.coding",
+        "min" : 1,
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "89100005",
+          "display" : "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
+        }
       }
     ]
   }

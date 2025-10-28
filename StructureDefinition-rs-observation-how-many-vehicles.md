@@ -1,4 +1,4 @@
-# RS Observation - How Many Vehicles Involved - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - How Many Vehicles Involved - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsHowManyVehicles |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsHowManyVehicles |
 
  
 Count of vehicles involved. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-how-m
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-how-many-vehicles",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsHowManyVehicles",
   "title" : "RS Observation - How Many Vehicles Involved",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-how-m
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "patternUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "how-many-vehicles"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "How many vehicles involved"
+        "max" : "1",
+        "patternCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "how-many-vehicles",
+          "display" : "How many vehicles involved"
+        }
       },
       {
         "id" : "Observation.value[x]",

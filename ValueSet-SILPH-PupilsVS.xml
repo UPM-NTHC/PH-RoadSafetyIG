@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-PupilsVS"/>
+  <meta>
+    <versionId value="4"/>
+    <lastUpdated value="2025-10-27T06:03:41.148+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH - Pupils (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils</tt><p>SILPH Value Set for Pupil Reaction</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils"/>
+  <version value="0.2.0"/>
+  <name value="SILPH___Pupils__VS_"/>
+  <title value="SILPH - Pupils (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for Pupil Reaction"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <concept>
+        <code value="386666001"/>
+        <display value="Pupils Equal and Reactive to Light (PEARL)"/>
+      </concept>
+      <concept>
+        <code value="37125009"/>
+        <display value="Dilated"/>
+      </concept>
+      <concept>
+        <code value="301939004"/>
+        <display value="Constricted"/>
+      </concept>
+      <concept>
+        <code value="823998002"/>
+        <display value="Unequal"/>
+      </concept>
+      <concept>
+        <code value="301944006"/>
+        <display value="Non Reactive"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:7a666765-a7b7-4ddc-8aff-114ff6e0e4a2"/>
+    <timestamp value="2025-10-27T06:04:04+00:00"/>
+    <total value="5"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="386666001"/>
+      <display value="Pupils equal and reacting to light"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="37125009"/>
+      <display value="Dilated pupil"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="301939004"/>
+      <display value="Constricted pupil"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="823998002"/>
+      <display value="Unequal reaction of bilateral pupils"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="301944006"/>
+      <display value="No pupillary reaction to light"/>
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,204 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OtherVehicleVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SILPH-OtherVehicleVS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2025-10-27T08:52:11.624+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Other Vehicle in Collision (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle</tt><p>SILPH Value Set for Other Vehicle in Collision Accident</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SILPH___Other_Vehicle_in_Collision__VS_"] ; # 
+  fhir:title [ fhir:v "SILPH - Other Vehicle in Collision (VS)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SILPH Value Set for Other Vehicle in Collision Accident"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "260413007" ] ;
+         fhir:display [ fhir:v "None" ]
+       ] [
+         fhir:code [ fhir:v "71783008" ] ;
+         fhir:display [ fhir:v "Car" ]
+       ] [
+         fhir:code [ fhir:v "224832000" ] ;
+         fhir:display [ fhir:v "Van" ]
+       ] [
+         fhir:code [ fhir:v "224830008" ] ;
+         fhir:display [ fhir:v "Bus" ]
+       ] [
+         fhir:code [ fhir:v "90748009" ] ;
+         fhir:display [ fhir:v "Motorcycle" ]
+       ] [
+         fhir:code [ fhir:v "70224005" ] ;
+         fhir:display [ fhir:v "Bicycle" ]
+       ] [
+         fhir:code [ fhir:v "12247004" ] ;
+         fhir:display [ fhir:v "Truck" ]
+       ] [
+         fhir:code [ fhir:v "74964007" ] ;
+         fhir:display [ fhir:v "Others" ]
+       ] [
+         fhir:code [ fhir:v "261665006" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "TRICYCLE" ] ;
+         fhir:display [ fhir:v "Tricycle" ]
+       ] [
+         fhir:code [ fhir:v "JEEPNEY" ] ;
+         fhir:display [ fhir:v "Jeepney" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:identifier [ fhir:v "urn:uuid:2ba057bb-3f57-45bc-9841-9c1d09d81283"^^xsd:anyURI ] ;
+     fhir:timestamp [ fhir:v "2025-10-27T08:52:26+00:00"^^xsd:dateTime ] ;
+     fhir:total [ fhir:v 11 ] ;
+     fhir:parameter ( [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "displayLanguage" ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "en-US,en;q=0.9"
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "includeDesignations" ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:contains ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "260413007" ] ;
+       fhir:display [ fhir:v "None" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "71783008" ] ;
+       fhir:display [ fhir:v "Automobile" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "224832000" ] ;
+       fhir:display [ fhir:v "Van" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "224830008" ] ;
+       fhir:display [ fhir:v "Coach" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "90748009" ] ;
+       fhir:display [ fhir:v "Motorcycle" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "70224005" ] ;
+       fhir:display [ fhir:v "Bicycle" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "12247004" ] ;
+       fhir:display [ fhir:v "Truck" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "74964007" ] ;
+       fhir:display [ fhir:v "Other" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "261665006" ] ;
+       fhir:display [ fhir:v "Unknown" ]
+     ] [
+       fhir:system [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "TRICYCLE" ] ;
+       fhir:display [ fhir:v "Tricycle" ]
+     ] [
+       fhir:system [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "JEEPNEY" ] ;
+       fhir:display [ fhir:v "Jeepney" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

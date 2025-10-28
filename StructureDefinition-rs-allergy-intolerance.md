@@ -1,4 +1,4 @@
-# RS AllergyIntolerance - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS AllergyIntolerance - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSAllergyIntolerance |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSAllergyIntolerance |
 
  
 Known allergies, substances and reactions. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
   "resourceType" : "StructureDefinition",
   "id" : "rs-allergy-intolerance",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSAllergyIntolerance",
   "title" : "RS AllergyIntolerance",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

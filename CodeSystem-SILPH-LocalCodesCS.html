@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SILPH Road Safety Local Codes - DRAFT PH Road Safety Implementation Guide v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10.130"}
+    h3,h4,h5,h6{--heading-prefix:"10.130"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DRAFT PH Road Safety Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="Philippines flag" src="assets/images/phl.svg" height="16" title="Philippines"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Usecase Guide
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="usecase.html">Use Case navigation</a>
+      </li>
+      <li>
+        <a href="usecase.html#high-level-overview">High Level Flow</a>
+      </li>
+      <li>
+        <a href="usecase.html#ems-decision-flow-submitupdatecancel">EMS decision flow</a>
+      </li>
+      <li>
+        <a href="usecase.html#facility-retrieval-alternatives">Facility retrieval</a>
+      </li>
+      <li>
+        <a href="usecase-ph-core-interoperability.html">PH-CORE Interoperability</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Modelling
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="data-modelling.html">General model</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ph-road-safety-logical-model.html">Logical model</a>
+      </li>
+      <li>
+        <a href="ConceptMap-MDSRoadSafety2FHIR.html">Concept Map</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="roadmap.html">Roadmap</a>
+  </li>
+  <li>
+    <a href="http://hl7.org/fhir/us/example/history.html">History</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SILPH Road Safety Local Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DRAFT PH Road Safety Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-SILPH-LocalCodesCS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SILPH-LocalCodesCS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SILPH-LocalCodesCS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: SILPH Road Safety Local Codes
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://www.roadsafetyph.doh.gov.ph/CodeSystem<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-10-28
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SILPH_Road_Safety_Local_Codes</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-SILPH-ActivityVS.html">SILPH___Activity__VS_</a></li>
+ <li><a href="ValueSet-SILPH-InjuryIntentVS.html">SILPH___Injury_Intent__VS_</a></li>
+ <li><a href="ValueSet-SILPH-OtherVehicleVS.html">SILPH___Other_Vehicle_in_Collision__VS_</a></li>
+ <li><a href="ValueSet-SILPH-OutcomeVS.html">SILPH___Outcome__VS_</a></li>
+ <li><a href="ValueSet-SILPH-PatientsVehicleVS.html">SILPH___Patient_s_Vehicle__VS_</a></li>
+ <li><a href="ValueSet-SILPH-PlaceofOccurrenceVS.html">SILPH___Place_of_Occurrence__VS_</a></li>
+ <li><a href="ValueSet-SILPH-TransportAccidentCollisionorNoncollisionVS.html">SILPH___Transport_Accident__Collision_or_Noncollision__VS_</a></li>
+ <li><a href="ValueSet-SILPH-TransportAccidentTypeVS.html">SILPH___Transport_Accident_Type__VS_</a></li>
+ <li><a href="ValueSet-SILPH-TypeofPatientVS.html">SILPH___Type_of_Patient__VS_</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="SILPH-LocalCodesCS"> </a><a name="hcSILPH-LocalCodesCS"> </a>
+<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 4; Last updated: 2025-10-27 09:50:31+0000</p></div><p>This case-insensitive code system <code>http://www.roadsafetyph.doh.gov.ph/CodeSystem</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">BHS<a name="SILPH-LocalCodesCS-BHS"> </a></td>
+<td>BHS</td>
+<td>BHS</td></tr>
+<tr><td style="white-space:nowrap">RHU<a name="SILPH-LocalCodesCS-RHU"> </a></td>
+<td>RHU</td>
+<td>RHU</td></tr>
+<tr><td style="white-space:nowrap">VAWC<a name="SILPH-LocalCodesCS-VAWC"> </a></td>
+<td>VAWC Patient</td>
+<td>VAWC Patient</td></tr>
+<tr><td style="white-space:nowrap">NONCOLLISION<a name="SILPH-LocalCodesCS-NONCOLLISION"> </a></td>
+<td>Non-Collision</td>
+<td>Non-Collision</td></tr>
+<tr><td style="white-space:nowrap">TRICYCLE<a name="SILPH-LocalCodesCS-TRICYCLE"> </a></td>
+<td>Tricycle</td>
+<td>Tricycle</td></tr>
+<tr><td style="white-space:nowrap">JEEPNEY<a name="SILPH-LocalCodesCS-JEEPNEY"> </a></td>
+<td>Jeepney</td>
+<td>Jeepney</td></tr>
+<tr><td style="white-space:nowrap">VIDEOBAR<a name="SILPH-LocalCodesCS-VIDEOBAR"> </a></td>
+<td>Videoke Bars</td>
+<td>Videoke Bars</td></tr>
+<tr><td style="white-space:nowrap">LEISURE<a name="SILPH-LocalCodesCS-LEISURE"> </a></td>
+<td>Leisure</td>
+<td>Leisure</td></tr>
+<tr><td style="white-space:nowrap">UNIMPROVED<a name="SILPH-LocalCodesCS-UNIMPROVED"> </a></td>
+<td>Unimproved</td>
+<td>Unimproved</td></tr>
+<tr><td style="white-space:nowrap">DIED<a name="SILPH-LocalCodesCS-DIED"> </a></td>
+<td>Died</td>
+<td>Died</td></tr>
+<tr><td style="white-space:nowrap">XE9S7<a name="SILPH-LocalCodesCS-XE9S7"> </a></td>
+<td>Land</td>
+<td>Exposure to water transport injury event</td></tr>
+<tr><td style="white-space:nowrap">XE85L<a name="SILPH-LocalCodesCS-XE85L"> </a></td>
+<td>Water</td>
+<td>Exposure to water transport injury event</td></tr>
+<tr><td style="white-space:nowrap">XE5XH<a name="SILPH-LocalCodesCS-XE5XH"> </a></td>
+<td>Air</td>
+<td>Exposure to air or space transport injury event</td></tr>
+<tr><td style="white-space:nowrap">INJURYFRONT<a name="SILPH-LocalCodesCS-INJURYFRONT"> </a></td>
+<td>Site of Injury/Pain - Front Part of Body</td>
+<td>Data Element: Site of Injury/Pain - Front Part of Body</td></tr>
+<tr><td style="white-space:nowrap">INJURYBACK<a name="SILPH-LocalCodesCS-INJURYBACK"> </a></td>
+<td>Site of Injury/Pain - Back Part of Body</td>
+<td>Data Element: Site of Injury/Pain - Back Part of Body</td></tr>
+<tr><td style="white-space:nowrap">RRFREMARKS<a name="SILPH-LocalCodesCS-RRFREMARKS"> </a></td>
+<td>Run Report Form Remarks</td>
+<td>Data Element: Run Report Form Remarks</td></tr>
+<tr><td style="white-space:nowrap">MVA-COLLISION<a name="SILPH-LocalCodesCS-MVA-COLLISION"> </a></td>
+<td>FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)</td>
+<td>Data Element: FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)</td></tr>
+<tr><td style="white-space:nowrap">PATIENTVEHICLE<a name="SILPH-LocalCodesCS-PATIENTVEHICLE"> </a></td>
+<td>Vehicles Involved: Patient's Vehicle</td>
+<td>Data Element: Vehicles Involved: Patient's Vehicle</td></tr>
+<tr><td style="white-space:nowrap">OTHERVEHICLE<a name="SILPH-LocalCodesCS-OTHERVEHICLE"> </a></td>
+<td>Other Vehicle/Object Involved (for COLLISION accident ONLY)</td>
+<td>Data Element: Other Vehicle/Object Involved (for COLLISION accident ONLY)</td></tr>
+<tr><td style="white-space:nowrap">PATIENTPOSITION<a name="SILPH-LocalCodesCS-PATIENTPOSITION"> </a></td>
+<td>Position of Patient</td>
+<td>Data Element: Position of Patient</td></tr>
+<tr><td style="white-space:nowrap">PLACEOCCURRENCE<a name="SILPH-LocalCodesCS-PLACEOCCURRENCE"> </a></td>
+<td>Place of Occurrence</td>
+<td>Data Element: Place of Occurrence</td></tr>
+<tr><td style="white-space:nowrap">COLLISIONTYPE<a name="SILPH-LocalCodesCS-COLLISIONTYPE"> </a></td>
+<td>Collision Type</td>
+<td>Data Element: Collision Type</td></tr>
+<tr><td style="white-space:nowrap">COORDINATIONDONE<a name="SILPH-LocalCodesCS-COORDINATIONDONE"> </a></td>
+<td>Was Transport Coordinated with Receiving Hospital?</td>
+<td>Data Element: Was Transport Coordinated with Receiving Hospital?</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 15:05+0000">2025-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

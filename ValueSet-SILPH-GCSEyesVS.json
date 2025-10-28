@@ -1,0 +1,108 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SILPH-GCSEyesVS",
+  "meta" : {
+    "versionId" : "2",
+    "lastUpdated" : "2025-10-27T06:13:20.554+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - GCS - Eyes (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes</tt><p>SILPH Value Set for GCS Eye Score</p></div>"
+  },
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes",
+  "version" : "0.2.0",
+  "name" : "SILPH___GCS___Eyes__VS_",
+  "title" : "SILPH - GCS - Eyes (VS)",
+  "status" : "draft",
+  "date" : "2025-10-28T15:04:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "SILPH Value Set for GCS Eye Score",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.78",
+      "concept" : [{
+        "code" : "LA6556-0",
+        "display" : "4 Spontaneous"
+      },
+      {
+        "code" : "LA6555-2",
+        "display" : "3 To command"
+      },
+      {
+        "code" : "LA6554-5",
+        "display" : "2 To pain"
+      },
+      {
+        "code" : "LA6553-7",
+        "display" : "1 None"
+      }]
+    }]
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9",
+    "timestamp" : "2025-10-27T06:13:36+00:00",
+    "total" : 4,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.78"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.78"
+    },
+    {
+      "name" : "displayLanguage",
+      "valueCode" : "en-US,en;q=0.9"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes|1"
+    },
+    {
+      "name" : "includeDesignations",
+      "valueBoolean" : false
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA6556-0",
+      "display" : "Eyes open spontaneously"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA6555-2",
+      "display" : "Eye opening to verbal command"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA6554-5",
+      "display" : "Eye opening to pain"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA6553-7",
+      "display" : "No eye opening"
+    }]
+  }
+}

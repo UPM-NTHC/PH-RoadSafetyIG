@@ -1,4 +1,4 @@
-# RS Observation - Collision Type - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Collision Type - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsCollisionType |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsCollisionType |
 
  
 Collision type (Angle, Head-on, Rear end, Side swipe, etc.). 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-collision-type",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsCollisionType",
   "title" : "RS Observation - Collision Type",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "patternUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "collision-type"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Collision type"
+        "max" : "1",
+        "patternCoding" : {
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "code" : "COLLISIONTYPE",
+          "display" : "Collision type"
+        }
       },
       {
         "id" : "Observation.value[x]",

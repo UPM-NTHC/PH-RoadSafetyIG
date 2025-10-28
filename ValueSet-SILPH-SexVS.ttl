@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SexVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SILPH-SexVS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "3" ] ;
+     fhir:lastUpdated [ fhir:v "2025-10-27T05:59:18.769+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Sex (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex</tt><p>SILPH Value Set for Sex</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SILPH___Sex__VS_"] ; # 
+  fhir:title [ fhir:v "SILPH - Sex (VS)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SILPH Value Set for Sex"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "248153007" ] ;
+         fhir:display [ fhir:v "Male" ]
+       ] [
+         fhir:code [ fhir:v "248152002" ] ;
+         fhir:display [ fhir:v "Female" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:identifier [ fhir:v "urn:uuid:8bd356e8-728d-4f19-96f9-0116a1ac154f"^^xsd:anyURI ] ;
+     fhir:timestamp [ fhir:v "2025-10-27T05:59:39+00:00"^^xsd:dateTime ] ;
+     fhir:total [ fhir:v 2 ] ;
+     fhir:parameter ( [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "displayLanguage" ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "en-US,en;q=0.9"
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "includeDesignations" ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:contains ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "248153007" ] ;
+       fhir:display [ fhir:v "Male" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "248152002" ] ;
+       fhir:display [ fhir:v "Female" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

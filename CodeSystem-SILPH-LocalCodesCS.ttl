@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/SILPH-LocalCodesCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SILPH-LocalCodesCS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "4" ] ;
+     fhir:lastUpdated [ fhir:v "2025-10-27T09:50:31.886+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH Road Safety Local Codes</h2><tt>http://www.roadsafetyph.doh.gov.ph/CodeSystem</tt><p>Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SILPH_Road_Safety_Local_Codes"] ; # 
+  fhir:title [ fhir:v "SILPH Road Safety Local Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:valueSet [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet"^^xsd:anyURI ;
+     fhir:link <http://www.roadsafetyph.doh.gov.ph/ValueSet>
+  ] ; # 
+  fhir:compositional [ fhir:v false] ; # 
+  fhir:versionNeeded [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "23"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BHS" ] ;
+     fhir:display [ fhir:v "BHS" ] ;
+     fhir:definition [ fhir:v "BHS" ]
+  ] [
+     fhir:code [ fhir:v "RHU" ] ;
+     fhir:display [ fhir:v "RHU" ] ;
+     fhir:definition [ fhir:v "RHU" ]
+  ] [
+     fhir:code [ fhir:v "VAWC" ] ;
+     fhir:display [ fhir:v "VAWC Patient" ] ;
+     fhir:definition [ fhir:v "VAWC Patient" ]
+  ] [
+     fhir:code [ fhir:v "NONCOLLISION" ] ;
+     fhir:display [ fhir:v "Non-Collision" ] ;
+     fhir:definition [ fhir:v "Non-Collision" ]
+  ] [
+     fhir:code [ fhir:v "TRICYCLE" ] ;
+     fhir:display [ fhir:v "Tricycle" ] ;
+     fhir:definition [ fhir:v "Tricycle" ]
+  ] [
+     fhir:code [ fhir:v "JEEPNEY" ] ;
+     fhir:display [ fhir:v "Jeepney" ] ;
+     fhir:definition [ fhir:v "Jeepney" ]
+  ] [
+     fhir:code [ fhir:v "VIDEOBAR" ] ;
+     fhir:display [ fhir:v "Videoke Bars" ] ;
+     fhir:definition [ fhir:v "Videoke Bars" ]
+  ] [
+     fhir:code [ fhir:v "LEISURE" ] ;
+     fhir:display [ fhir:v "Leisure" ] ;
+     fhir:definition [ fhir:v "Leisure" ]
+  ] [
+     fhir:code [ fhir:v "UNIMPROVED" ] ;
+     fhir:display [ fhir:v "Unimproved" ] ;
+     fhir:definition [ fhir:v "Unimproved" ]
+  ] [
+     fhir:code [ fhir:v "DIED" ] ;
+     fhir:display [ fhir:v "Died" ] ;
+     fhir:definition [ fhir:v "Died" ]
+  ] [
+     fhir:code [ fhir:v "XE9S7" ] ;
+     fhir:display [ fhir:v "Land" ] ;
+     fhir:definition [ fhir:v "Exposure to water transport injury event" ]
+  ] [
+     fhir:code [ fhir:v "XE85L" ] ;
+     fhir:display [ fhir:v "Water" ] ;
+     fhir:definition [ fhir:v "Exposure to water transport injury event" ]
+  ] [
+     fhir:code [ fhir:v "XE5XH" ] ;
+     fhir:display [ fhir:v "Air" ] ;
+     fhir:definition [ fhir:v "Exposure to air or space transport injury event" ]
+  ] [
+     fhir:code [ fhir:v "INJURYFRONT" ] ;
+     fhir:display [ fhir:v "Site of Injury/Pain - Front Part of Body" ] ;
+     fhir:definition [ fhir:v "Data Element: Site of Injury/Pain - Front Part of Body" ]
+  ] [
+     fhir:code [ fhir:v "INJURYBACK" ] ;
+     fhir:display [ fhir:v "Site of Injury/Pain - Back Part of Body" ] ;
+     fhir:definition [ fhir:v "Data Element: Site of Injury/Pain - Back Part of Body" ]
+  ] [
+     fhir:code [ fhir:v "RRFREMARKS" ] ;
+     fhir:display [ fhir:v "Run Report Form Remarks" ] ;
+     fhir:definition [ fhir:v "Data Element: Run Report Form Remarks" ]
+  ] [
+     fhir:code [ fhir:v "MVA-COLLISION" ] ;
+     fhir:display [ fhir:v "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)" ] ;
+     fhir:definition [ fhir:v "Data Element: FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)" ]
+  ] [
+     fhir:code [ fhir:v "PATIENTVEHICLE" ] ;
+     fhir:display [ fhir:v "Vehicles Involved: Patient's Vehicle" ] ;
+     fhir:definition [ fhir:v "Data Element: Vehicles Involved: Patient's Vehicle" ]
+  ] [
+     fhir:code [ fhir:v "OTHERVEHICLE" ] ;
+     fhir:display [ fhir:v "Other Vehicle/Object Involved (for COLLISION accident ONLY)" ] ;
+     fhir:definition [ fhir:v "Data Element: Other Vehicle/Object Involved (for COLLISION accident ONLY)" ]
+  ] [
+     fhir:code [ fhir:v "PATIENTPOSITION" ] ;
+     fhir:display [ fhir:v "Position of Patient" ] ;
+     fhir:definition [ fhir:v "Data Element: Position of Patient" ]
+  ] [
+     fhir:code [ fhir:v "PLACEOCCURRENCE" ] ;
+     fhir:display [ fhir:v "Place of Occurrence" ] ;
+     fhir:definition [ fhir:v "Data Element: Place of Occurrence" ]
+  ] [
+     fhir:code [ fhir:v "COLLISIONTYPE" ] ;
+     fhir:display [ fhir:v "Collision Type" ] ;
+     fhir:definition [ fhir:v "Data Element: Collision Type" ]
+  ] [
+     fhir:code [ fhir:v "COORDINATIONDONE" ] ;
+     fhir:display [ fhir:v "Was Transport Coordinated with Receiving Hospital?" ] ;
+     fhir:definition [ fhir:v "Data Element: Was Transport Coordinated with Receiving Hospital?" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

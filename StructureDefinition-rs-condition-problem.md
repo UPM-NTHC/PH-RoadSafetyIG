@@ -1,15 +1,15 @@
-# Road Safety Condition — Problem - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Condition — Problem - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Condition — Problem**
+* **RS Condition — Problem**
 
-## Resource Profile: Road Safety Condition — Problem 
+## Resource Profile: RS Condition — Problem 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-problem | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSConditionProblem |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-problem | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSConditionProblem |
 
  
 Problem (finding) per CSV mapping. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-problem
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition-problem",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-problem",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSConditionProblem",
-  "title" : "Road Safety Condition — Problem",
+  "title" : "RS Condition — Problem",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -123,22 +123,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-problem
         "id" : "Condition.category.coding",
         "path" : "Condition.category.coding",
         "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Condition.category.coding.system",
-        "path" : "Condition.category.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Condition.category.coding.code",
-        "path" : "Condition.category.coding.code",
-        "patternCode" : "55607006"
-      },
-      {
-        "id" : "Condition.category.coding.display",
-        "path" : "Condition.category.coding.display",
-        "patternString" : "Problem (finding)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "55607006",
+          "display" : "Problem (finding)"
+        }
       }
     ]
   }

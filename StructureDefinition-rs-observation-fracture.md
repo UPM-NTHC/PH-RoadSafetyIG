@@ -1,4 +1,4 @@
-# RS Observation - Fracture - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Fracture - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsFracture |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsFracture |
 
  
 Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-fract
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-fracture",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsFracture",
   "title" : "RS Observation - Fracture",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-fract
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "125605004"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Fracture of bone (disorder)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "125605004",
+          "display" : "Fracture of bone (disorder)"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -161,7 +151,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-fract
             "code" : "CodeableConcept"
           }
         ],
-        "mustSupport" : true
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType"
+        }
       },
       {
         "id" : "Observation.value[x]:valueCodeableConcept.text",
@@ -172,6 +166,14 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-fract
         "id" : "Observation.bodySite",
         "path" : "Observation.bodySite",
         "mustSupport" : true
+      },
+      {
+        "id" : "Observation.bodySite.coding",
+        "path" : "Observation.bodySite.coding",
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites"
+        }
       }
     ]
   }

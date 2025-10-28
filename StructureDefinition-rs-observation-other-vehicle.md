@@ -1,4 +1,4 @@
-# RS Observation - Other Vehicle/Object Involved - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Other Vehicle/Object Involved - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsOtherVehicleInvolved |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsOtherVehicleInvolved |
 
  
 Other vehicle/object type involved; text for 'Others'. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-other-vehicle",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsOtherVehicleInvolved",
   "title" : "RS Observation - Other Vehicle/Object Involved",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "patternUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "other-vehicle-involved"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Other vehicle/object involved"
+        "max" : "1",
+        "patternCoding" : {
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "code" : "OTHERVEHICLE",
+          "display" : "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -165,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-other-vehicle"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"
         }
       },
       {

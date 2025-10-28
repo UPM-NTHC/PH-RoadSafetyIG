@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SILPH-RR-BreathSoundsVS",
+  "meta" : {
+    "versionId" : "4",
+    "lastUpdated" : "2025-10-27T06:00:17.205+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - RR - Breath Sounds (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds</tt><p>SILPH Value Set for Breath Sounds</p></div>"
+  },
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds",
+  "version" : "0.2.0",
+  "name" : "SILPH___RR___Breath_Sounds__VS_",
+  "title" : "SILPH - RR - Breath Sounds (VS)",
+  "status" : "draft",
+  "date" : "2025-10-28T15:04:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "SILPH Value Set for Breath Sounds",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "concept" : [{
+        "code" : "301708006",
+        "display" : "Clear"
+      },
+      {
+        "code" : "56018004",
+        "display" : "Wheeze"
+      }]
+    }]
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378",
+    "timestamp" : "2025-10-27T06:00:35+00:00",
+    "total" : 2,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "displayLanguage",
+      "valueCode" : "en-US,en;q=0.9"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds|1"
+    },
+    {
+      "name" : "includeDesignations",
+      "valueBoolean" : false
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "301708006",
+      "display" : "Chest clear"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "56018004",
+      "display" : "Wheezing"
+    }]
+  }
+}

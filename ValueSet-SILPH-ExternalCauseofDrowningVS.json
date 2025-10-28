@@ -1,0 +1,126 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SILPH-ExternalCauseofDrowningVS",
+  "meta" : {
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-27T06:10:17.824+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - External Cause of Drowning (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning</tt><p>SILPH Value Set for External Cause of Drowning</p></div>"
+  },
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning",
+  "version" : "0.2.0",
+  "name" : "SILPH___External_Cause_of_Drowning__VS_",
+  "title" : "SILPH - External Cause of Drowning (VS)",
+  "status" : "draft",
+  "date" : "2025-10-28T15:04:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "SILPH Value Set for External Cause of Drowning",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "concept" : [{
+        "code" : "225742004",
+        "display" : "Sea"
+      },
+      {
+        "code" : "420531007",
+        "display" : "River"
+      },
+      {
+        "code" : "421084007",
+        "display" : "Lake"
+      },
+      {
+        "code" : "69297003",
+        "display" : "Pool"
+      },
+      {
+        "code" : "75988000",
+        "display" : "Bath tub"
+      },
+      {
+        "code" : "74964007",
+        "display" : "Others"
+      }]
+    }]
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:92655074-aca1-4bcd-9588-6af3d39ae402",
+    "timestamp" : "2025-10-27T06:10:33+00:00",
+    "total" : 6,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "displayLanguage",
+      "valueCode" : "en-US,en;q=0.9"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning|1"
+    },
+    {
+      "name" : "includeDesignations",
+      "valueBoolean" : false
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225742004",
+      "display" : "Sea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "420531007",
+      "display" : "River"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "421084007",
+      "display" : "Lake"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "69297003",
+      "display" : "Pool"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "75988000",
+      "display" : "Bathtub"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74964007",
+      "display" : "Other"
+    }]
+  }
+}

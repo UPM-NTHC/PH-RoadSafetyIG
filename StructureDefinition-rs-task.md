@@ -1,15 +1,15 @@
-# Road Safety Task - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Task - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Task**
+* **RS Task**
 
-## Resource Profile: Road Safety Task 
+## Resource Profile: RS Task 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSTask |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSTask |
 
  
 Workflow tracking for report receipt, durations of delay, and sources of delays. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-task.csv), [Excel
   "resourceType" : "StructureDefinition",
   "id" : "rs-task",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSTask",
-  "title" : "Road Safety Task",
+  "title" : "RS Task",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

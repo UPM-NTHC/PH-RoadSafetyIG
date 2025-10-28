@@ -1,22 +1,22 @@
-# Road Safety Condition - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Condition - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Condition**
+* **RS Condition**
 
-## Resource Profile: Road Safety Condition 
+## Resource Profile: RS Condition 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSCondition |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSCondition |
 
  
-Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
+Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
 
 **Usages:**
 
-* Derived from this Profile: [Road Safety Condition — External Cause (category)](StructureDefinition-rs-condition-external-cause.md), [Road Safety Condition — Final Diagnosis](StructureDefinition-rs-condition-final-diagnosis.md), [Road Safety Condition — Initial Impression](StructureDefinition-rs-condition-initial-impression.md), [Road Safety Condition — Nature of Injury (category)](StructureDefinition-rs-condition-nature-of-injury.md) and [Road Safety Condition — Problem](StructureDefinition-rs-condition-problem.md)
+* Derived from this Profile: [RS Condition — External Cause (category)](StructureDefinition-rs-condition-external-cause.md), [RS Condition — Final Diagnosis](StructureDefinition-rs-condition-final-diagnosis.md), [RS Condition — Initial Impression](StructureDefinition-rs-condition-initial-impression.md), [RS Condition — Nature of Injury (category)](StructureDefinition-rs-condition-nature-of-injury.md) and [RS Condition — Problem](StructureDefinition-rs-condition-problem.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition)
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSCondition",
-  "title" : "Road Safety Condition",
+  "title" : "RS Condition",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
       ]
     }
   ],
-  "description" : "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
+  "description" : "Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
   "jurisdiction" : [
     {
       "coding" : [

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SILPH-LocalCodesCS"/>
+  <meta>
+    <versionId value="4"/>
+    <lastUpdated value="2025-10-27T09:50:31.886+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH Road Safety Local Codes</h2><tt>http://www.roadsafetyph.doh.gov.ph/CodeSystem</tt><p>Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/>
+  <version value="0.2.0"/>
+  <name value="SILPH_Road_Safety_Local_Codes"/>
+  <title value="SILPH Road Safety Local Codes"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <valueSet value="http://www.roadsafetyph.doh.gov.ph/ValueSet"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <count value="23"/>
+  <concept>
+    <code value="BHS"/>
+    <display value="BHS"/>
+    <definition value="BHS"/>
+  </concept>
+  <concept>
+    <code value="RHU"/>
+    <display value="RHU"/>
+    <definition value="RHU"/>
+  </concept>
+  <concept>
+    <code value="VAWC"/>
+    <display value="VAWC Patient"/>
+    <definition value="VAWC Patient"/>
+  </concept>
+  <concept>
+    <code value="NONCOLLISION"/>
+    <display value="Non-Collision"/>
+    <definition value="Non-Collision"/>
+  </concept>
+  <concept>
+    <code value="TRICYCLE"/>
+    <display value="Tricycle"/>
+    <definition value="Tricycle"/>
+  </concept>
+  <concept>
+    <code value="JEEPNEY"/>
+    <display value="Jeepney"/>
+    <definition value="Jeepney"/>
+  </concept>
+  <concept>
+    <code value="VIDEOBAR"/>
+    <display value="Videoke Bars"/>
+    <definition value="Videoke Bars"/>
+  </concept>
+  <concept>
+    <code value="LEISURE"/>
+    <display value="Leisure"/>
+    <definition value="Leisure"/>
+  </concept>
+  <concept>
+    <code value="UNIMPROVED"/>
+    <display value="Unimproved"/>
+    <definition value="Unimproved"/>
+  </concept>
+  <concept>
+    <code value="DIED"/>
+    <display value="Died"/>
+    <definition value="Died"/>
+  </concept>
+  <concept>
+    <code value="XE9S7"/>
+    <display value="Land"/>
+    <definition value="Exposure to water transport injury event"/>
+  </concept>
+  <concept>
+    <code value="XE85L"/>
+    <display value="Water"/>
+    <definition value="Exposure to water transport injury event"/>
+  </concept>
+  <concept>
+    <code value="XE5XH"/>
+    <display value="Air"/>
+    <definition value="Exposure to air or space transport injury event"/>
+  </concept>
+  <concept>
+    <code value="INJURYFRONT"/>
+    <display value="Site of Injury/Pain - Front Part of Body"/>
+    <definition value="Data Element: Site of Injury/Pain - Front Part of Body"/>
+  </concept>
+  <concept>
+    <code value="INJURYBACK"/>
+    <display value="Site of Injury/Pain - Back Part of Body"/>
+    <definition value="Data Element: Site of Injury/Pain - Back Part of Body"/>
+  </concept>
+  <concept>
+    <code value="RRFREMARKS"/>
+    <display value="Run Report Form Remarks"/>
+    <definition value="Data Element: Run Report Form Remarks"/>
+  </concept>
+  <concept>
+    <code value="MVA-COLLISION"/>
+    <display value="FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"/>
+    <definition value="Data Element: FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"/>
+  </concept>
+  <concept>
+    <code value="PATIENTVEHICLE"/>
+    <display value="Vehicles Involved: Patient's Vehicle"/>
+    <definition value="Data Element: Vehicles Involved: Patient's Vehicle"/>
+  </concept>
+  <concept>
+    <code value="OTHERVEHICLE"/>
+    <display value="Other Vehicle/Object Involved (for COLLISION accident ONLY)"/>
+    <definition value="Data Element: Other Vehicle/Object Involved (for COLLISION accident ONLY)"/>
+  </concept>
+  <concept>
+    <code value="PATIENTPOSITION"/>
+    <display value="Position of Patient"/>
+    <definition value="Data Element: Position of Patient"/>
+  </concept>
+  <concept>
+    <code value="PLACEOCCURRENCE"/>
+    <display value="Place of Occurrence"/>
+    <definition value="Data Element: Place of Occurrence"/>
+  </concept>
+  <concept>
+    <code value="COLLISIONTYPE"/>
+    <display value="Collision Type"/>
+    <definition value="Data Element: Collision Type"/>
+  </concept>
+  <concept>
+    <code value="COORDINATIONDONE"/>
+    <display value="Was Transport Coordinated with Receiving Hospital?"/>
+    <definition value="Data Element: Was Transport Coordinated with Receiving Hospital?"/>
+  </concept>
+</CodeSystem>

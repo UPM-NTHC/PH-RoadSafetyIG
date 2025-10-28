@@ -1,4 +1,4 @@
-# RS Encounter - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Encounter - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSEncounter |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSEncounter |
 
  
 Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer. 
@@ -17,7 +17,7 @@ Encounter for EMS run report / facility submission context. Captures incident nu
 **Usages:**
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [Road Safety Condition](StructureDefinition-rs-condition.md), [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 3 more,[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md)and[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)
+* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [RS Condition](StructureDefinition-rs-condition.md), [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 3 more,[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md)and[RS ServiceRequest](StructureDefinition-rs-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "rs-encounter",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -107,6 +107,50 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "differential" : {
     "element" : [
       {
+        "id" : "Encounter",
+        "path" : "Encounter",
+        "constraint" : [
+          {
+            "key" : "RSEncounterDischarge",
+            "severity" : "error",
+            "human" : "Inpatient encounters use in-patient discharge dispositions; ER/OPD/BHS/RHU encounters use the ambulatory disposition list.",
+            "expression" : "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-er')))",
+            "source" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"
+          }
+        ]
+      },
+      {
+        "id" : "Encounter.extension",
+        "path" : "Encounter.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Encounter.extension:vehicleUsed",
+        "path" : "Encounter.extension",
+        "sliceName" : "vehicleUsed",
+        "short" : "Identifier and type of transport vehicle.",
+        "definition" : "Identifier and type of transport vehicle. Multiple entries support transfers across different vehicles.",
+        "comment" : "Non-medical concept captured via CodeableConcept.text; Device-based fleet tracking can follow when EMS tooling allows.",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "Encounter.identifier",
         "path" : "Encounter.identifier",
         "slicing" : {
@@ -163,12 +207,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "id" : "Encounter.identifier:hospitalCaseNo.type.coding",
         "path" : "Encounter.identifier.type.coding",
         "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Encounter.identifier:hospitalCaseNo.type.coding.display",
-        "path" : "Encounter.identifier.type.coding.display",
-        "patternString" : "Hospital case number"
+        "max" : "1",
+        "patternCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "722248002",
+          "display" : "Patient hospital visit number (observable entity)"
+        }
       },
       {
         "id" : "Encounter.status",
@@ -183,7 +227,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-type-of-patient"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient"
         }
       },
       {

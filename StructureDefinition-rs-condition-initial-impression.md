@@ -1,18 +1,18 @@
-# Road Safety Condition — Initial Impression - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Condition — Initial Impression - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Condition — Initial Impression**
+* **RS Condition — Initial Impression**
 
-## Resource Profile: Road Safety Condition — Initial Impression 
+## Resource Profile: RS Condition — Initial Impression 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSConditionInitialImpression |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSConditionInitialImpression |
 
  
-Initial impression per CSV mapping. 
+Enter the initial impression on the patient’s condition. 
 
 **Usages:**
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-initial
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition-initial-impression",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSConditionInitialImpression",
-  "title" : "Road Safety Condition — Initial Impression",
+  "title" : "RS Condition — Initial Impression",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-initial
       ]
     }
   ],
-  "description" : "Initial impression per CSV mapping.",
+  "description" : "Enter the initial impression on the patient’s condition.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-initial
         "id" : "Condition.category.coding",
         "path" : "Condition.category.coding",
         "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Condition.category.coding.system",
-        "path" : "Condition.category.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Condition.category.coding.code",
-        "path" : "Condition.category.coding.code",
-        "patternCode" : "148006"
-      },
-      {
-        "id" : "Condition.category.coding.display",
-        "path" : "Condition.category.coding.display",
-        "patternString" : "Preliminary diagnosis (qualifier value)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "148006",
+          "display" : "Preliminary diagnosis (qualifier value)"
+        }
       }
     ]
   }

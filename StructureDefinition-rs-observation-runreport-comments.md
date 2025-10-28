@@ -1,4 +1,4 @@
-# RS Observation - Run Report Comments - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Run Report Comments - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsRunReportComments |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsRunReportComments |
 
  
-General comments from run report. 
+Enter other comment (s) regarding the case 
 
 **Usages:**
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-runreport-comments",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsRunReportComments",
   "title" : "RS Observation - Run Report Comments",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
       ]
     }
   ],
-  "description" : "General comments from run report.",
+  "description" : "Enter other comment (s) regarding the case",
   "jurisdiction" : [
     {
       "coding" : [
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://loinc.org"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "77999-1"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Case notification comment"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "77999-1",
+          "display" : "Case notification comment"
+        }
       },
       {
         "id" : "Observation.value[x]",

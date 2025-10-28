@@ -7,11 +7,11 @@
     "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide example.fhir.ph.roadsafety</b></p><a name=\"example.fhir.ph.roadsafety\"> </a><a name=\"hcexample.fhir.ph.roadsafety\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>PHRoadSafetyIG</h2><p>The official URL for this implementation guide is: </p><pre>https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ImplementationGuide/example.fhir.ph.roadsafety</pre><div><p>FHIR IG for road safety and health information in the Philippines</p>\n</div></div>"
   },
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ImplementationGuide/example.fhir.ph.roadsafety",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -637,114 +637,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-condition"
-      },
-      "name" : "Road Safety Condition",
-      "description" : "Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-condition-external-cause"
-      },
-      "name" : "Road Safety Condition — External Cause (category)",
-      "description" : "Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-condition-final-diagnosis"
-      },
-      "name" : "Road Safety Condition — Final Diagnosis",
-      "description" : "Final diagnosis per CSV mapping.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-condition-initial-impression"
-      },
-      "name" : "Road Safety Condition — Initial Impression",
-      "description" : "Initial impression per CSV mapping.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-condition-nature-of-injury"
-      },
-      "name" : "Road Safety Condition — Nature of Injury (category)",
-      "description" : "Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-condition-problem"
-      },
-      "name" : "Road Safety Condition — Problem",
-      "description" : "Problem (finding) per CSV mapping.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-patient"
-      },
-      "name" : "Road Safety Patient",
-      "description" : "Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-service-request"
-      },
-      "name" : "Road Safety ServiceRequest",
-      "description" : "Requests or records related to refusal to admit and related workflow signals.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-task"
-      },
-      "name" : "Road Safety Task",
-      "description" : "Workflow tracking for report receipt, durations of delay, and sources of delays.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-allergy-intolerance"
       },
       "name" : "RS AllergyIntolerance",
@@ -841,6 +733,78 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/rs-condition"
+      },
+      "name" : "RS Condition",
+      "description" : "Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-condition-external-cause"
+      },
+      "name" : "RS Condition — External Cause (category)",
+      "description" : "Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-condition-final-diagnosis"
+      },
+      "name" : "RS Condition — Final Diagnosis",
+      "description" : "Final diagnosis per CSV mapping.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-condition-initial-impression"
+      },
+      "name" : "RS Condition — Initial Impression",
+      "description" : "Enter the initial impression on the patient’s condition.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-condition-nature-of-injury"
+      },
+      "name" : "RS Condition — Nature of Injury (category)",
+      "description" : "Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-condition-problem"
+      },
+      "name" : "RS Condition — Problem",
+      "description" : "Problem (finding) per CSV mapping.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/rs-document-reference"
       },
       "name" : "RS DocumentReference (Evidence)",
@@ -857,6 +821,18 @@
       },
       "name" : "RS Encounter",
       "description" : "Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rs-encounter-vehicle-used"
+      },
+      "name" : "RS Encounter Vehicle Used",
+      "description" : "Identifier and type of transport vehicle used during an encounter.",
       "exampleBoolean" : false
     },
     {
@@ -997,18 +973,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-breath-sounds"
-      },
-      "name" : "RS Observation - Breath Sounds",
-      "description" : "Breath sounds assessment.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-call-source"
       },
       "name" : "RS Observation - Call Source",
@@ -1117,58 +1081,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-date-of-consultation"
-      },
-      "name" : "RS Observation - Date of Consultation",
-      "description" : "Date of consultation at facility.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-date-of-injury"
-      },
-      "name" : "RS Observation - Date of Injury",
-      "description" : "Date of injury occurrence.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-injury-datetime"
       },
       "name" : "RS Observation - Date/Time of Injury",
-      "description" : "Timestamp of injury occurrence.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-date-received"
-      },
-      "name" : "RS Observation - Date/Time Received by EMS",
-      "description" : "Calendar/timestamp the EMS/dispatch received the request.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-extent-of-injury"
-      },
-      "name" : "RS Observation - Extent of Injury",
-      "description" : "Extent / severity estimate or category of injury (e.g., minor, moderate, severe).",
+      "description" : "DateTimestamp patient was seen at the health facility.",
       "exampleBoolean" : false
     },
     {
@@ -1393,18 +1309,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-status-on-arrival-alive"
-      },
-      "name" : "RS Observation - If Alive: Conscious/Unconscious",
-      "description" : "If alive on arrival, consciousness detail.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-injury-intent"
       },
       "name" : "RS Observation - Injury Intent",
@@ -1501,18 +1405,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-outcome-discharge"
-      },
-      "name" : "RS Observation - Outcome at Discharge",
-      "description" : "Outcome at discharge.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-outcome-release"
       },
       "name" : "RS Observation - Outcome at Release",
@@ -1585,34 +1477,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-pulse-quality"
-      },
-      "name" : "RS Observation - Pulse Quality",
-      "description" : "Pulse quality.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-pulse-rate"
       },
       "name" : "RS Observation - Pulse Rate",
       "description" : "Pulse/heart rate in beats/min.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-pulse-rhythm"
-      },
-      "name" : "RS Observation - Pulse Rhythm",
-      "description" : "Pulse rhythm.",
       "exampleBoolean" : false
     },
     {
@@ -1648,7 +1516,7 @@
         "reference" : "StructureDefinition/rs-observation-reported-complaint"
       },
       "name" : "RS Observation - Reported Complaint",
-      "description" : "Free-text reported complaint.",
+      "description" : "Free-text reported complaint. May or May not exactly be medical, could point to car crash, not a healthcare concern.",
       "exampleBoolean" : false
     },
     {
@@ -1669,22 +1537,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-respiratory-rhythm"
-      },
-      "name" : "RS Observation - Respiratory Rhythm",
-      "description" : "Respiratory rhythm (normal/irregular/labored).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/rs-observation-runreport-comments"
       },
       "name" : "RS Observation - Run Report Comments",
-      "description" : "General comments from run report.",
+      "description" : "Enter other comment (s) regarding the case",
       "exampleBoolean" : false
     },
     {
@@ -1717,94 +1573,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-departed"
+        "reference" : "StructureDefinition/rs-observation-timeline-datetime"
       },
-      "name" : "RS Observation - Time Departed Scene",
-      "description" : "Timestamp unit departed scene.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-enroute"
-      },
-      "name" : "RS Observation - Time Enroute",
-      "description" : "Timestamp when unit dispatched/began traveling.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-of-consultation"
-      },
-      "name" : "RS Observation - Time of Consultation",
-      "description" : "Time of consultation at facility.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-station-arrival"
-      },
-      "name" : "RS Observation - Time of Emergency Station Arrival",
-      "description" : "Timestamp unit returned to base/became available.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-hospital-arrival"
-      },
-      "name" : "RS Observation - Time of Hospital Arrival",
-      "description" : "Timestamp unit arrived at receiving facility.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-of-injury"
-      },
-      "name" : "RS Observation - Time of Injury",
-      "description" : "Time of injury occurrence.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-on-scene"
-      },
-      "name" : "RS Observation - Time On Scene",
-      "description" : "Timestamp crew arrived at scene.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/rs-observation-time-received"
-      },
-      "name" : "RS Observation - Time Received",
-      "description" : "Time the call/request was received by EMS/dispatch.",
+      "name" : "RS Observation - Timeline Date/Time",
+      "description" : "Dispatch and transport timeline events capturing a precise date/time.",
       "exampleBoolean" : false
     },
     {
@@ -1861,10 +1633,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-observation-vehicle-used"
+        "reference" : "StructureDefinition/rs-organization"
       },
-      "name" : "RS Observation - Vehicle Used",
-      "description" : "Vehicle used during response.",
+      "name" : "RS Organization",
+      "description" : "Organization profile for EMS providers and receiving facilities involved in RS encounters.",
       "exampleBoolean" : false
     },
     {
@@ -1873,10 +1645,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/rs-organization"
+        "reference" : "StructureDefinition/rs-patient"
       },
-      "name" : "RS Organization",
-      "description" : "Organization profile for EMS providers and receiving facilities involved in RS encounters.",
+      "name" : "RS Patient",
+      "description" : "Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region.",
       "exampleBoolean" : false
     },
     {
@@ -1918,277 +1690,25 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-activity"
+        "reference" : "StructureDefinition/rs-service-request"
       },
-      "name" : "RS VS - Activity at Time of Incident",
-      "description" : "Activity at time of incident (prefer SNOMED CT).",
+      "name" : "RS ServiceRequest",
+      "description" : "Requests or records related to refusal to admit and related workflow signals.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-status-alive-detail"
+        "reference" : "StructureDefinition/rs-task"
       },
-      "name" : "RS VS - Alive Detail (Consciousness)",
-      "description" : "If alive on arrival: conscious vs unconscious.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-bites-agent"
-      },
-      "name" : "RS VS - Bites/Stings Agent",
-      "description" : "Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-breath-sounds"
-      },
-      "name" : "RS VS - Breath Sounds",
-      "description" : "Breath sounds options (prefer SNOMED CT).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-burn-degrees"
-      },
-      "name" : "RS VS - Burn Degrees",
-      "description" : "Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-burns-agent"
-      },
-      "name" : "RS VS - Burns Agent",
-      "description" : "Agent causing burn (prefer SNOMED CT).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-collision-category"
-      },
-      "name" : "RS VS - Collision Category",
-      "description" : "Collision vs non-collision category.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-cyanosis"
-      },
-      "name" : "RS VS - Cyanosis",
-      "description" : "Cyanosis assessment options (prefer SNOMED CT).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-disposition-er"
-      },
-      "name" : "RS VS - Disposition (ER/OPD/BHS/RHU)",
-      "description" : "Patient disposition at ER/OPD/BHS/RHU.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-disposition-ip"
-      },
-      "name" : "RS VS - Disposition (In-Patient)",
-      "description" : "Patient disposition for in-patient cases.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-drowning-type"
-      },
-      "name" : "RS VS - Drowning Type/Body of Water",
-      "description" : "Type/body of water for drowning incidents.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-gcs-eyes"
-      },
-      "name" : "RS VS - GCS Eyes",
-      "description" : "Glasgow Coma Scale eye opening responses (LOINC LA codes).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-gcs-motor"
-      },
-      "name" : "RS VS - GCS Motor",
-      "description" : "Glasgow Coma Scale motor responses (LOINC LA codes).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-gcs-verbal"
-      },
-      "name" : "RS VS - GCS Verbal",
-      "description" : "Glasgow Coma Scale verbal responses (LOINC LA codes).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-injury-intent"
-      },
-      "name" : "RS VS - Injury Intent",
-      "description" : "Injury intent options mapped from ONEISS (prefer SNOMED CT).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-level-of-consciousness"
-      },
-      "name" : "RS VS - Level of Consciousness (AVPU)",
-      "description" : "AVPU options for level of consciousness (prefer SNOMED CT).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-mode-of-transport"
-      },
-      "name" : "RS VS - Mode of Transport to Facility",
-      "description" : "Mode of transport to the hospital/facility.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-other-risk-factors"
-      },
-      "name" : "RS VS - Other Risk Factors",
-      "description" : "Other risk factors at time of incident (prefer SNOMED CT).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-other-vehicle"
-      },
-      "name" : "RS VS - Other Vehicle in Collision",
-      "description" : "Other vehicle/object involved in collision.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-outcome"
-      },
-      "name" : "RS VS - Outcome",
-      "description" : "Outcome: Improved, Unimproved, Died.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-patients-vehicle"
-      },
-      "name" : "RS VS - Patient's Vehicle",
-      "description" : "Vehicle used by patient (prefer SNOMED CT; local additions where specified).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-place-of-occurrence"
-      },
-      "name" : "RS VS - Place of Occurrence",
-      "description" : "Place of occurrence (prefer SNOMED CT; local additions where specified).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-position-of-patient"
-      },
-      "name" : "RS VS - Position of Patient",
-      "description" : "Position/role of patient in transport incidents (prefer SNOMED CT).",
+      "name" : "RS Task",
+      "description" : "Workflow tracking for report receipt, durations of delay, and sources of delays.",
       "exampleBoolean" : false
     },
     {
@@ -2245,10 +1765,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-pulse-quality"
+        "reference" : "ValueSet/SILPH-ActivityVS"
       },
-      "name" : "RS VS - Pulse Quality",
-      "description" : "Pulse quality options (prefer SNOMED CT).",
+      "name" : "SILPH - Activity (VS)",
+      "description" : "SILPH Value Set for Patient Activity at the Time of Injury/Accident",
       "exampleBoolean" : false
     },
     {
@@ -2257,10 +1777,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-pulse-rhythm"
+        "reference" : "ValueSet/SILPH-BurnsVS"
       },
-      "name" : "RS VS - Pulse Rhythm",
-      "description" : "Pulse rhythm options (prefer SNOMED CT).",
+      "name" : "SILPH - Burns (VS)",
+      "description" : "SILPH Value Set for Degree of Burn",
       "exampleBoolean" : false
     },
     {
@@ -2269,10 +1789,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-pupils"
+        "reference" : "ValueSet/SILPH-Cyanosis"
       },
-      "name" : "RS VS - Pupils",
-      "description" : "Pupil size/reactivity options (prefer SNOMED CT).",
+      "name" : "SILPH - Cyanosis (VS)",
+      "description" : "SILPH Value Set for Presence of Cyanosis",
       "exampleBoolean" : false
     },
     {
@@ -2281,10 +1801,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-respiratory-rhythm"
+        "reference" : "ValueSet/SILPH-ExternalCauseofBurnsVS"
       },
-      "name" : "RS VS - Respiratory Rhythm",
-      "description" : "Respiratory rhythm options (prefer SNOMED CT).",
+      "name" : "SILPH - External Cause of Burns (VS)",
+      "description" : "SILPH Value Set for External Cause of Burns",
       "exampleBoolean" : false
     },
     {
@@ -2293,10 +1813,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-safety-devices"
+        "reference" : "ValueSet/SILPH-ExternalCauseofDrowningVS"
       },
-      "name" : "RS VS - Safety Devices",
-      "description" : "Safety devices present/used (prefer SNOMED CT).",
+      "name" : "SILPH - External Cause of Drowning (VS)",
+      "description" : "SILPH Value Set for External Cause of Drowning",
       "exampleBoolean" : false
     },
     {
@@ -2305,10 +1825,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-status-on-arrival"
+        "reference" : "ValueSet/SILPH-FractureTypeVS"
       },
-      "name" : "RS VS - Status on Arrival",
-      "description" : "Status upon reaching facility/hospital.",
+      "name" : "SILPH - Fracture Type (VS)",
+      "description" : "SILPH Value Set for fracture type designation (open versus closed).",
       "exampleBoolean" : false
     },
     {
@@ -2317,10 +1837,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-transport-accident-mode"
+        "reference" : "ValueSet/SILPH-GCSEyesVS"
       },
-      "name" : "RS VS - Transport Accident: Land/Water/Air",
-      "description" : "Exposure context for transport accident: land, water, air (ICD-11).",
+      "name" : "SILPH - GCS - Eyes (VS)",
+      "description" : "SILPH Value Set for GCS Eye Score",
       "exampleBoolean" : false
     },
     {
@@ -2329,10 +1849,334 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-type-of-patient"
+        "reference" : "ValueSet/SILPH-GCSMotorVS"
       },
-      "name" : "RS VS - Type of Patient",
-      "description" : "Type of patient (ER/OPD/RHU/BHS context).",
+      "name" : "SILPH - GCS - Motor (VS)",
+      "description" : "SILPH Value Set for GCS Motor Score",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-GCSVerbalVS"
+      },
+      "name" : "SILPH - GCS - Verbal (VS)",
+      "description" : "SILPH Value Set for GCS Verbal Score",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-GeneralDispositionVS"
+      },
+      "name" : "SILPH - General Disposition (VS)",
+      "description" : "SILPH Value Set for Inpatient and ER/Outpatient Visit Disposition",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-InjuryIntentVS"
+      },
+      "name" : "SILPH - Injury Intent (VS)",
+      "description" : "SILPH Value Set for Injury Intent",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-InpatientDispositionVS"
+      },
+      "name" : "SILPH - Inpatient Disposition (VS)",
+      "description" : "SILPH Value Set for Inpatient Visit Disposition",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-LevelofConsciousnessVS"
+      },
+      "name" : "SILPH - Level of Consciousness (VS)",
+      "description" : "SILPH Value Set for Level of Consciousness (AVPU) Score",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-ListofBodySitesVS"
+      },
+      "name" : "SILPH - List of Body Sites (VS)",
+      "description" : "SILPH List of Body Sites",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-ModeofTransportVS"
+      },
+      "name" : "SILPH - Mode of Transport (VS)",
+      "description" : "SILPH Value Set for Mode of Transport of Patient to Healthcare Facility",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-OtherVehicleVS"
+      },
+      "name" : "SILPH - Other Vehicle in Collision (VS)",
+      "description" : "SILPH Value Set for Other Vehicle in Collision Accident",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-OutcomeVS"
+      },
+      "name" : "SILPH - Outcome (VS)",
+      "description" : "SILPH Value Set for Outcome",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-OutpatientERDispositionVS"
+      },
+      "name" : "SILPH - Outpatient/ER Disposition (VS)",
+      "description" : "SILPH Value Set for Outpatient/ER Visit Disposition",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-PatientsVehicleVS"
+      },
+      "name" : "SILPH - Patient's Vehicle (VS)",
+      "description" : "SILPH Value Set for Patient's Vehicle",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-PlaceofOccurrenceVS"
+      },
+      "name" : "SILPH - Place of Occurrence (VS)",
+      "description" : "SILPH Value Set for Place of Occurrence of Injury/Accident",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-PositionofPatientVS"
+      },
+      "name" : "SILPH - Position of Patient (VS)",
+      "description" : "SILPH Value Set for Position of Patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-PR-QualityVS"
+      },
+      "name" : "SILPH - PR - Quality (VS)",
+      "description" : "SILPH Value Set for Pulse Quality",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-PR-RhythmVS"
+      },
+      "name" : "SILPH - PR - Rhythm (VS)",
+      "description" : "SILPH Value Set for Pulse Rhythm",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-PupilsVS"
+      },
+      "name" : "SILPH - Pupils (VS)",
+      "description" : "SILPH Value Set for Pupil Reaction",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-RiskFactorsVS"
+      },
+      "name" : "SILPH - Risk Factors (VS)",
+      "description" : "SILPH Value Set for Risk Factors",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-RR-BreathSoundsVS"
+      },
+      "name" : "SILPH - RR - Breath Sounds (VS)",
+      "description" : "SILPH Value Set for Breath Sounds",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-RR-RhythmVS"
+      },
+      "name" : "SILPH - RR - Rhythm (VS)",
+      "description" : "SILPH Value Set for Respiratory Rhythm",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-SafetyDevicesVS"
+      },
+      "name" : "SILPH - Safety Devices (VS)",
+      "description" : "SILPH Value Set for Safety Devices",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-SexVS"
+      },
+      "name" : "SILPH - Sex (VS)",
+      "description" : "SILPH Value Set for Sex",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-StatusVS"
+      },
+      "name" : "SILPH - Status (VS)",
+      "description" : "SILPH ValueSet for Patient Status, if Alive or Dead during Admission",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-StatusifAliveVS"
+      },
+      "name" : "SILPH - Status if Alive (VS)",
+      "description" : "SILPH Value Set for Patient Status, if patient is alive, specify if conscious or unconscious",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-TransportAccidentTypeVS"
+      },
+      "name" : "SILPH - Transport Accident Type (VS)",
+      "description" : "SILPH Value Set for Transport Accident Type (Land, Water or Air)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS"
+      },
+      "name" : "SILPH - Transport Accident: Collision or Noncollision (VS)",
+      "description" : "SILPH Value Set for Transport Accident if Collision or Noncollision",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-TriageVS"
+      },
+      "name" : "SILPH - Triage (VS)",
+      "description" : "SILPH Value Set for Triage at Scene",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-TypeofPatientVS"
+      },
+      "name" : "SILPH - Type of Patient (VS)",
+      "description" : "SILPH Value Set for Type of Patient Encounter",
       "exampleBoolean" : false
     },
     {
@@ -2341,9 +2185,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/cs-silph"
+        "reference" : "CodeSystem/SILPH-LocalCodesCS"
       },
-      "name" : "SILPH Local Codes",
+      "name" : "SILPH Road Safety Local Codes",
+      "description" : "Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets",
       "exampleBoolean" : false
     }],
     "page" : {

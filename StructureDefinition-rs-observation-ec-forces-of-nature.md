@@ -1,4 +1,4 @@
-# RS Observation - External Cause: Exposure to Forces of Nature - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - External Cause: Exposure to Forces of Nature - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsECForcesOfNature |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsECForcesOfNature |
 
  
 Flag indicating exposure to natural disaster/calamity. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fo
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-ec-forces-of-nature",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsECForcesOfNature",
   "title" : "RS Observation - External Cause: Exposure to Forces of Nature",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -118,22 +118,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fo
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "276746005"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Exposure to forces of nature (event)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "276746005",
+          "display" : "Exposure to forces of nature (event)"
+        }
       },
       {
         "id" : "Observation.value[x]",

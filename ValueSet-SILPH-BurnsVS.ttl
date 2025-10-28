@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-BurnsVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SILPH-BurnsVS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "2" ] ;
+     fhir:lastUpdated [ fhir:v "2025-10-28T13:08:39.160+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Burns (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns</tt><p>SILPH Value Set for Degree of Burn</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SILPH___Burns__VS_"] ; # 
+  fhir:title [ fhir:v "SILPH - Burns (VS)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SILPH Value Set for Degree of Burn"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "77140003" ] ;
+         fhir:display [ fhir:v "1st Degree Burn" ]
+       ] [
+         fhir:code [ fhir:v "46541008" ] ;
+         fhir:display [ fhir:v "2nd Degree Burn" ]
+       ] [
+         fhir:code [ fhir:v "80247002" ] ;
+         fhir:display [ fhir:v "3rd Degree Burn" ]
+       ] [
+         fhir:code [ fhir:v "770400008" ] ;
+         fhir:display [ fhir:v "4th Degree Burn" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:identifier [ fhir:v "urn:uuid:c9cb0057-cc61-4128-8f8b-4fa0f643ad24"^^xsd:anyURI ] ;
+     fhir:timestamp [ fhir:v "2025-10-28T13:08:46+00:00"^^xsd:dateTime ] ;
+     fhir:total [ fhir:v 4 ] ;
+     fhir:parameter ( [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "displayLanguage" ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "en-US,en;q=0.9"
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "includeDesignations" ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:contains ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77140003" ] ;
+       fhir:display [ fhir:v "First degree burn injury" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "46541008" ] ;
+       fhir:display [ fhir:v "Second degree burn injury" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80247002" ] ;
+       fhir:display [ fhir:v "Third degree burn injury" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "770400008" ] ;
+       fhir:display [ fhir:v "Fourth degree burn injury" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

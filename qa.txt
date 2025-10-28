@@ -1,16 +1,15 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 10, warn = 767, info = 8
-IG Publisher Version: 2.0.22
-Generated Mon Oct 27 02:02:28 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.1.9 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
- Build Errors : 0 / 1 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-cs-silph : 0 / 3 / 1
+err = 115, warn = 866, info = 67
+IG Publisher Version: 2.0.22 Out of date - current version is 2.0.23
+Generated Tue Oct 28 15:12:11 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+ Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 11 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ph-road-safety-logical-model : 0 / 573 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-allergy-intolerance : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-ems : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-ems : 0 / 7 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-oneiss : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-bundle-postcrash : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-claim : 0 / 1 / 1
@@ -19,144 +18,127 @@ Generated Mon Oct 27 02:02:28 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-composition-postcrash : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-external-cause : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-final-diagnosis : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-initial-impression : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-final-diagnosis : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-initial-impression : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-nature-of-injury : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-problem : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-problem : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-document-reference : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 10 / 7 / 6
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-healthcare-service : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-incident-location-incident : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-location-service : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-medication-statement : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-abrasion : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-activity-at-incident : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-avulsion : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-blood-alcohol : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-blood-pressure : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-body-temperature : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-breath-sounds : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-call-source : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-cctv-available : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-clinical-remarks : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-type : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-vs-noncollision : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-concussion : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-condition-of-patient : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-contusion : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-cyanosis : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-date-of-consultation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-date-of-injury : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-date-received : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-abrasion : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-activity-at-incident : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-avulsion : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-blood-alcohol : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-blood-pressure : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-body-temperature : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-call-source : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-cctv-available : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-clinical-remarks : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-type : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-vs-noncollision : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-concussion : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-condition-of-patient : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-contusion : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-cyanosis : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-burns : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-fall : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-forces-of-nature : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-hanging-strangulation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-mauling-assault : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-other : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sexual-assault : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-extent-of-injury : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-gcs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-patients : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-intent : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-level-of-consciousness : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-mode-of-transport : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-multiple-injuries : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-nature-burns : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-open-wound : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-injury : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-risk-factors : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-vehicle : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-outcome-discharge : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-outcome-release : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-patients-vehicle : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-place-of-occurrence : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-position-of-patient : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pulse-quality : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pulse-rate : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pulse-rhythm : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pupils : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-referred-by-facility : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-reported-complaint : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-respiratory-rate : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-respiratory-rhythm : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-runreport-comments : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-safety-accessories : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-fall : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-forces-of-nature : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-hanging-strangulation : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-mauling-assault : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-other : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sexual-assault : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-gcs : 0 / 9 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-patients : 2 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles : 2 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-intent : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-level-of-consciousness : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-mode-of-transport : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-multiple-injuries : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-nature-burns : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-open-wound : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-injury : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-risk-factors : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-vehicle : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-outcome-release : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-patients-vehicle : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-place-of-occurrence : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-position-of-patient : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pulse-rate : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pupils : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-referred-by-facility : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-reported-complaint : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-respiratory-rate : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-runreport-comments : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-safety-accessories : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-status-on-arrival : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-status-on-arrival-alive : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-departed : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-enroute : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-hospital-arrival : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-of-consultation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-of-injury : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-on-scene : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-received : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-time-station-arrival : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-traffic-investigator : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-transferred-from-facility : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-transport-vehicular-accident : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-traumatic-amputation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-triage-priority : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-urgency : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-vehicle-used : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-timeline-datetime : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-traffic-investigator : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-transferred-from-facility : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-transport-vehicular-accident : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-traumatic-amputation : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-triage-priority : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-urgency : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-organization : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-patient : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-patient : 2 / 8 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination : 2 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-task : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-activity : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-bites-agent : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-breath-sounds : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-burn-degrees : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-burns-agent : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-collision-category : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-cyanosis : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-disposition-er : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-disposition-ip : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/ValueSet-vs-drowning-type : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-gcs-eyes : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-gcs-motor : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-gcs-verbal : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-injury-intent : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-level-of-consciousness : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-mode-of-transport : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-other-risk-factors : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-other-vehicle : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-outcome : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-patients-vehicle : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-place-of-occurrence : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-position-of-patient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-barangay : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-city : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-province : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-region : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-pulse-quality : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-pulse-rhythm : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-pupils : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-respiratory-rhythm : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-safety-devices : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-status-alive-detail : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-status-on-arrival : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-transport-accident-mode : 0 / 2 / 2
- /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-patient : 0 / 1 / 1
+ /github/workspace/input/resources/SILPH_Road_Safety_Local_Codes : 2 / 2 / 1
+ /github/workspace/input/resources/SILPH___Activity__VS_def : 3 / 2 / 3
+ /github/workspace/input/resources/SILPH___Burns__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Cyanosis__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___GCS___Motor__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___General_Disposition__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Injury_Intent__VS_def : 3 / 2 / 3
+ /github/workspace/input/resources/SILPH___Inpatient_Disposition__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Level_of_Consciousness__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___List_of_Body_Sites__VS_def : 3 / 2 / 3
+ /github/workspace/input/resources/SILPH___Mode_of_Transport__VS_def : 2 / 2 / 3
+ /github/workspace/input/resources/SILPH___Other_Vehicle_in_Collision__VS_def : 2 / 2 / 3
+ /github/workspace/input/resources/SILPH___Outcome__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Outpatient_ER_Disposition__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___PR___Quality__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___PR___Rhythm__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Patient_s_Vehicle__VS_def : 2 / 2 / 3
+ /github/workspace/input/resources/SILPH___Place_of_Occurrence__VS_def : 3 / 2 / 3
+ /github/workspace/input/resources/SILPH___Position_of_Patient__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Pupils__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___RR___Breath_Sounds__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___RR___Rhythm__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Risk_Factors__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Safety_Devices__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Sex__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Status__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Status_if_Alive__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Transport_Accident_Type__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def : 2 / 3 / 1
+ /github/workspace/input/resources/SILPH___Triage__VS_def : 2 / 2 / 2
+ /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def : 2 / 2 / 2
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-silph.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-== fsh-generated/resources/CodeSystem-cs-silph.json ==
-WARNING: CodeSystem/cs-silph: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/cs-silph: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/cs-silph: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR.json ==
 WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.source.ofType(uri): No definition could be found for URL value 'https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety'
 WARNING: ConceptMap/MDSRoadSafety2FHIR: ConceptMap.group[0].source: No definition could be found for URL value 'https://build.fhir.org/ig/UP-Manila-SILab/PH-RoadSafetyIG/StructureDefinition/MDSRoadSafety'
@@ -748,6 +730,12 @@ WARNING: StructureDefinition/ph-road-safety-logical-model: StructureDefinition.d
 INFORMATION: StructureDefinition/rs-allergy-intolerance: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-bundle-ems.json ==
+WARNING: StructureDefinition/rs-bundle-ems: StructureDefinition.snapshot.element[198].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-bundle-ems: StructureDefinition.snapshot.element[284].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-bundle-ems: StructureDefinition.snapshot.element[370].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-bundle-ems: StructureDefinition.snapshot.element[456].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-bundle-ems: StructureDefinition.snapshot.element[542].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-bundle-ems: StructureDefinition.snapshot.element[628].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-bundle-oneiss.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss'): The Implementation Guide contains no examples for this profile
@@ -781,31 +769,36 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-condition-external-cause.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-condition-final-diagnosis.json ==
+WARNING: StructureDefinition/rs-condition-final-diagnosis: StructureDefinition.snapshot.element[15].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-condition-initial-impression.json ==
+ERROR: StructureDefinition/rs-condition-initial-impression: StructureDefinition.snapshot.element[15].fixed.ofType(Coding).display: Wrong Display Name 'Preliminary diagnosis (qualifier value)' for http://snomed.info/sct#148006. Valid display is one of 6 choices: 'Preliminary diagnosis' (en), 'PDX' (en), 'Provisional diagnosis' (en), 'Temporary diagnosis' (en), 'Preliminary diagnosis (contextual qualifier) (qualifier value)' (en) or 'Preliminary diagnosis (contextual qualifier)' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-condition-initial-impression: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Preliminary diagnosis (qualifier value)' for http://snomed.info/sct#148006. Valid display is one of 6 choices: 'Preliminary diagnosis' (en), 'PDX' (en), 'Provisional diagnosis' (en), 'Temporary diagnosis' (en), 'Preliminary diagnosis (contextual qualifier) (qualifier value)' (en) or 'Preliminary diagnosis (contextual qualifier)' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-condition-initial-impression: StructureDefinition.snapshot.element[15].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-condition-nature-of-injury.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-nature-of-injury'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-condition-problem.json ==
+WARNING: StructureDefinition/rs-condition-problem: StructureDefinition.snapshot.element[15].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-problem'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-document-reference.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-encounter.json ==
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[81].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[88].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[95].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[109].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[26].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[81].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[88].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[95].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[109].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[75].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[82].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[96].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[25].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: StructureDefinition/rs-encounter: StructureDefinition.differential.element[28].pattern.ofType(CodeableConcept).coding[0].code: Unknown code 'test' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[75].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[82].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[96].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'incidentNumber' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'hospitalCaseNo' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'teamLeader' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
@@ -813,6 +806,9 @@ WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The sli
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'transportOfficer' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'assistant' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used.json ==
+ERROR: StructureDefinition/rs-encounter-vehicle-used: StructureDefinition.context[0]: The element https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter#Encounter is not valid
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-rs-healthcare-service.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-incident-location-incident.json ==
@@ -827,166 +823,243 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-abrasion.json ==
+WARNING: StructureDefinition/rs-observation-abrasion: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-activity-at-incident.json ==
+WARNING: StructureDefinition/rs-observation-activity-at-incident: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-avulsion.json ==
+WARNING: StructureDefinition/rs-observation-avulsion: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-blood-alcohol.json ==
+WARNING: StructureDefinition/rs-observation-blood-alcohol: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-alcohol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-blood-pressure.json ==
+WARNING: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.snapshot.element[62].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.snapshot.element[76].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.snapshot: The slice 'systolic' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-observation-blood-pressure: StructureDefinition.snapshot: The slice 'diastolic' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-body-temperature.json ==
+WARNING: StructureDefinition/rs-observation-body-temperature: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-breath-sounds.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-breath-sounds'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-call-source.json ==
+WARNING: StructureDefinition/rs-observation-call-source: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-call-source'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-cctv-available.json ==
+WARNING: StructureDefinition/rs-observation-cctv-available: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-clinical-remarks.json ==
+INFORMATION: StructureDefinition/rs-observation-clinical-remarks: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-clinical-remarks: StructureDefinition.differential.element[0].fixed.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+WARNING: StructureDefinition/rs-observation-clinical-remarks: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-collision-type.json ==
+INFORMATION: StructureDefinition/rs-observation-collision-type: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-collision-type: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-collision-vs-noncollision.json ==
+INFORMATION: StructureDefinition/rs-observation-collision-vs-noncollision: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-collision-vs-noncollision: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-concussion.json ==
+WARNING: StructureDefinition/rs-observation-concussion: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-condition-of-patient.json ==
+WARNING: StructureDefinition/rs-observation-condition-of-patient: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-contusion.json ==
+WARNING: StructureDefinition/rs-observation-contusion: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-contusion'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-cyanosis.json ==
+WARNING: StructureDefinition/rs-observation-cyanosis: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-date-of-consultation.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-of-consultation'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-date-of-injury.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-of-injury'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-date-received.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-date-received'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-bites-stings.json ==
+WARNING: StructureDefinition/rs-observation-ec-bites-stings: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-burns.json ==
+WARNING: StructureDefinition/rs-observation-ec-burns: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-chemical.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-drowning.json ==
+WARNING: StructureDefinition/rs-observation-ec-drowning: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-fall.json ==
+WARNING: StructureDefinition/rs-observation-ec-fall: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-firecracker.json ==
+ERROR: StructureDefinition/rs-observation-ec-firecracker: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Firecracker event' for http://snomed.info/sct#218100007. Valid display is one of 2 choices: 'Accident caused by fireworks' (en) or 'Accident caused by fireworks (event)' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-firecracker: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Firecracker event' for http://snomed.info/sct#218100007. Valid display is one of 2 choices: 'Accident caused by fireworks' (en) or 'Accident caused by fireworks (event)' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-firecracker: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-forces-of-nature.json ==
+ERROR: StructureDefinition/rs-observation-ec-forces-of-nature: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Exposure to forces of nature (event)' for http://snomed.info/sct#276746005. Valid display is one of 3 choices: 'Environmental events' (en), 'Environmental event (event)' (en) or 'Environmental event' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-forces-of-nature: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Exposure to forces of nature (event)' for http://snomed.info/sct#276746005. Valid display is one of 3 choices: 'Environmental events' (en), 'Environmental event (event)' (en) or 'Environmental event' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-forces-of-nature: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-gunshot.json ==
+ERROR: StructureDefinition/rs-observation-ec-gunshot: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Gunshot event' for http://snomed.info/sct#63409001. Valid display is one of 3 choices: 'Struck by firearm discharge' (en), 'Struck by firearm discharge (event)' (en) or 'Struck by projectile from firearm' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-gunshot: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Gunshot event' for http://snomed.info/sct#63409001. Valid display is one of 3 choices: 'Struck by firearm discharge' (en), 'Struck by firearm discharge (event)' (en) or 'Struck by projectile from firearm' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-gunshot: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-hanging-strangulation.json ==
+ERROR: StructureDefinition/rs-observation-ec-hanging-strangulation: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Hanging/strangulation event' for http://snomed.info/sct#212976008. Valid display is one of 3 choices: 'Suffocation by strangulation' (en), 'Asphyxia by strangulation' (en) or 'Asphyxia by strangulation (event)' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-hanging-strangulation: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Hanging/strangulation event' for http://snomed.info/sct#212976008. Valid display is one of 3 choices: 'Suffocation by strangulation' (en), 'Asphyxia by strangulation' (en) or 'Asphyxia by strangulation (event)' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-hanging-strangulation: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-mauling-assault.json ==
+ERROR: StructureDefinition/rs-observation-ec-mauling-assault: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Mauling/assault event' for http://snomed.info/sct#52684005. Valid display is one of 2 choices: 'Assault' (en) or 'Assault (event)' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-mauling-assault: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Mauling/assault event' for http://snomed.info/sct#52684005. Valid display is one of 2 choices: 'Assault' (en) or 'Assault (event)' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-mauling-assault: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-other.json ==
+ERROR: StructureDefinition/rs-observation-ec-other: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Other external cause event' for http://snomed.info/sct#773760007. Valid display is one of 2 choices: 'Traumatic event (event)' (en) or 'Traumatic event' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-other: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Other external cause event' for http://snomed.info/sct#773760007. Valid display is one of 2 choices: 'Traumatic event (event)' (en) or 'Traumatic event' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-other: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-sexual-assault.json ==
+ERROR: StructureDefinition/rs-observation-ec-sexual-assault: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Sexual assault event' for http://snomed.info/sct#248110007. Valid display is one of 2 choices: 'Sexual assault' (en) or 'Sexual assault (event)' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-sexual-assault: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Sexual assault event' for http://snomed.info/sct#248110007. Valid display is one of 2 choices: 'Sexual assault' (en) or 'Sexual assault (event)' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-sexual-assault: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object.json ==
+ERROR: StructureDefinition/rs-observation-ec-sharp-object: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Contact with sharp object (event)' for http://snomed.info/sct#69129000. Valid display is one of 2 choices: 'Struck by sharp object' (en) or 'Struck by sharp object (event)' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-ec-sharp-object: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Contact with sharp object (event)' for http://snomed.info/sct#69129000. Valid display is one of 2 choices: 'Struck by sharp object' (en) or 'Struck by sharp object (event)' (en) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-ec-sharp-object: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-extent-of-injury.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-extent-of-injury'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-fracture.json ==
+WARNING: StructureDefinition/rs-observation-fracture: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-gcs.json ==
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot.element[63].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot.element[77].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot.element[91].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: The slice 'gcs-eyes' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: The slice 'gcs-verbal' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: The slice 'gcs-motor' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: The slice 'gcs-total' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-how-many-patients.json ==
+ERROR: StructureDefinition/rs-observation-how-many-patients: StructureDefinition.snapshot.element[17].pattern.ofType(Coding).code: Unknown code 'how-many-patients' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/rs-observation-how-many-patients: StructureDefinition.snapshot.element[17].pattern.ofType(Coding).code: Code how-many-patients is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "h", in "how-many-patients") at character 1)
+ERROR: StructureDefinition/rs-observation-how-many-patients: StructureDefinition.differential.element[0].pattern.ofType(Coding).code: Unknown code 'how-many-patients' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/rs-observation-how-many-patients: StructureDefinition.differential.element[0].pattern.ofType(Coding).code: Code how-many-patients is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "h", in "how-many-patients") at character 1)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-patients'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles.json ==
+ERROR: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.snapshot.element[17].pattern.ofType(Coding).code: Unknown code 'how-many-vehicles' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.snapshot.element[17].pattern.ofType(Coding).code: Code how-many-vehicles is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "h", in "how-many-vehicles") at character 1)
+ERROR: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.differential.element[0].pattern.ofType(Coding).code: Unknown code 'how-many-vehicles' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.differential.element[0].pattern.ofType(Coding).code: Code how-many-vehicles is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "h", in "how-many-vehicles") at character 1)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime.json ==
+WARNING: StructureDefinition/rs-observation-injury-datetime: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-injury-intent.json ==
+WARNING: StructureDefinition/rs-observation-injury-intent: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-level-of-consciousness.json ==
+WARNING: StructureDefinition/rs-observation-level-of-consciousness: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-mode-of-transport.json ==
+ERROR: StructureDefinition/rs-observation-mode-of-transport: StructureDefinition.snapshot.element[17].fixed.ofType(Coding).display: Wrong Display Name 'Mode of transport to health facility' for http://loinc.org#74286-6. Valid display is one of 3 choices: 'Transport mode to hospital [NTDS]' (en-US), 'Transport mode to hospital [NTDS]' (en-US) or 'Hospital transport [NTDS]' (en-US) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-observation-mode-of-transport: StructureDefinition.differential.element[0].fixed.ofType(Coding).display: Wrong Display Name 'Mode of transport to health facility' for http://loinc.org#74286-6. Valid display is one of 3 choices: 'Transport mode to hospital [NTDS]' (en-US), 'Transport mode to hospital [NTDS]' (en-US) or 'Hospital transport [NTDS]' (en-US) (for the language(s) 'en')
+WARNING: StructureDefinition/rs-observation-mode-of-transport: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-multiple-injuries.json ==
+WARNING: StructureDefinition/rs-observation-multiple-injuries: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-nature-burns.json ==
+WARNING: StructureDefinition/rs-observation-nature-burns: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-nature-burns'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-open-wound.json ==
+WARNING: StructureDefinition/rs-observation-open-wound: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-other-injury.json ==
+WARNING: StructureDefinition/rs-observation-other-injury: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-other-risk-factors.json ==
+WARNING: StructureDefinition/rs-observation-other-risk-factors: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-other-vehicle.json ==
+INFORMATION: StructureDefinition/rs-observation-other-vehicle: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-other-vehicle: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-outcome-discharge.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-discharge'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-outcome-release.json ==
+WARNING: StructureDefinition/rs-observation-outcome-release: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-patients-vehicle.json ==
+INFORMATION: StructureDefinition/rs-observation-patients-vehicle: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-patients-vehicle: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-place-of-occurrence.json ==
+INFORMATION: StructureDefinition/rs-observation-place-of-occurrence: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-place-of-occurrence: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-position-of-patient.json ==
+INFORMATION: StructureDefinition/rs-observation-position-of-patient: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-position-of-patient: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-pulse-quality.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-quality'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-pulse-rate.json ==
+WARNING: StructureDefinition/rs-observation-pulse-rate: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-pulse-rate: StructureDefinition.snapshot.element[62].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-pulse-rate: StructureDefinition.snapshot.element[76].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-pulse-rate: StructureDefinition.snapshot: The slice 'pulse-rhythm' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-observation-pulse-rate: StructureDefinition.snapshot: The slice 'pulse-quality' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-pulse-rhythm.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rhythm'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-pupils.json ==
+WARNING: StructureDefinition/rs-observation-pupils: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pupils'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-referred-by-facility.json ==
+WARNING: StructureDefinition/rs-observation-referred-by-facility: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-referred-by-facility'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-reported-complaint.json ==
+WARNING: StructureDefinition/rs-observation-reported-complaint: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-respiratory-rate.json ==
+WARNING: StructureDefinition/rs-observation-respiratory-rate: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-respiratory-rate: StructureDefinition.snapshot.element[62].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-respiratory-rate: StructureDefinition.snapshot.element[76].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-observation-respiratory-rate: StructureDefinition.snapshot: The slice 'respiratory-rhythm' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/rs-observation-respiratory-rate: StructureDefinition.snapshot: The slice 'breath-sounds' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-respiratory-rhythm.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rhythm'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-runreport-comments.json ==
+WARNING: StructureDefinition/rs-observation-runreport-comments: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-safety-accessories.json ==
+WARNING: StructureDefinition/rs-observation-safety-accessories: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-status-on-arrival.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-status-on-arrival-alive.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival-alive'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-departed.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-departed'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-enroute.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-enroute'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-hospital-arrival.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-hospital-arrival'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-of-consultation.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-consultation'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-of-injury.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-of-injury'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-on-scene.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-on-scene'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-received.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-received'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-time-station-arrival.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-time-station-arrival'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-rs-observation-timeline-datetime.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-traffic-investigator.json ==
+WARNING: StructureDefinition/rs-observation-traffic-investigator: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-transferred-from-facility.json ==
+WARNING: StructureDefinition/rs-observation-transferred-from-facility: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transferred-from-facility'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-transport-vehicular-accident.json ==
+WARNING: StructureDefinition/rs-observation-transport-vehicular-accident: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-traumatic-amputation.json ==
+WARNING: StructureDefinition/rs-observation-traumatic-amputation: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-triage-priority.json ==
+WARNING: StructureDefinition/rs-observation-triage-priority: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-triage-priority'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-urgency.json ==
+WARNING: StructureDefinition/rs-observation-urgency: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-urgency'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-rs-observation-vehicle-used.json ==
-WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-vehicle-used'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-organization.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-patient.json ==
+ERROR: StructureDefinition/rs-patient: StructureDefinition.snapshot.element[64].fixed.ofType(Coding).display: Wrong Display Name 'Patient hospital visit number (observable entity)' for http://snomed.info/sct#184107009. Valid display is one of 2 choices: 'Patient hospital number' (en) or 'Patient hospital number (observable entity)' (en) (for the language(s) 'en')
+ERROR: StructureDefinition/rs-patient: StructureDefinition.differential.element[2].fixed.ofType(Coding).display: Wrong Display Name 'Patient hospital visit number (observable entity)' for http://snomed.info/sct#184107009. Valid display is one of 2 choices: 'Patient hospital number' (en) or 'Patient hospital number (observable entity)' (en) (for the language(s) 'en')
+INFORMATION: StructureDefinition/rs-patient: StructureDefinition.snapshot.element[64].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot.element[64].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'patientHospitalID' on path 'Patient.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'FirstName' on path 'Patient.name.given' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'MiddleName' on path 'Patient.name.given' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-patient: StructureDefinition.snapshot: The slice 'province' on path 'Patient.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
@@ -996,56 +1069,20 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-procedure.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination.json ==
+ERROR: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.snapshot.element[20].pattern.ofType(Coding).code: Unknown code 'referral-transport-coordination' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.snapshot.element[20].pattern.ofType(Coding).code: Code referral-transport-coordination is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "r", in "referral-transport-coordination") at character 1)
+ERROR: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.differential.element[2].pattern.ofType(Coding).code: Unknown code 'referral-transport-coordination' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.differential.element[2].pattern.ofType(Coding).code: Code referral-transport-coordination is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "r", in "referral-transport-coordination") at character 1)
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-service-request.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-task.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/ValueSet-vs-activity.json ==
-WARNING: ValueSet/vs-activity: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-bites-agent.json ==
-WARNING: ValueSet/vs-bites-agent: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-breath-sounds.json ==
-WARNING: ValueSet/vs-breath-sounds: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-burn-degrees.json ==
-WARNING: ValueSet/vs-burn-degrees: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-burns-agent.json ==
-WARNING: ValueSet/vs-burns-agent: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-collision-category.json ==
-WARNING: ValueSet/vs-collision-category: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-cyanosis.json ==
-WARNING: ValueSet/vs-cyanosis: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-disposition-er.json ==
-WARNING: ValueSet/vs-disposition-er: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-disposition-ip.json ==
-INFORMATION: ValueSet/vs-disposition-ip: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Patient discharged alive (finding), Patient self-discharge against medical advice (procedure), Patient discharge, elopement (procedure), Patient refuses hospital admission (situation), Other (qualifier value)] and examples for no FSN: [Patient deceased during stay (discharge status = dead)])
-WARNING: ValueSet/vs-disposition-ip: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-drowning-type.json ==
-WARNING: ValueSet/vs-drowning-type: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-gcs-eyes.json ==
-WARNING: ValueSet/vs-gcs-eyes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-gcs-motor.json ==
-WARNING: ValueSet/vs-gcs-motor: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-gcs-verbal.json ==
-WARNING: ValueSet/vs-gcs-verbal: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-injury-intent.json ==
-WARNING: ValueSet/vs-injury-intent: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-level-of-consciousness.json ==
-WARNING: ValueSet/vs-level-of-consciousness: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-mode-of-transport.json ==
-WARNING: ValueSet/vs-mode-of-transport: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-other-risk-factors.json ==
-WARNING: ValueSet/vs-other-risk-factors: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-other-vehicle.json ==
-WARNING: ValueSet/vs-other-vehicle: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-outcome.json ==
-WARNING: ValueSet/vs-outcome: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-patients-vehicle.json ==
-WARNING: ValueSet/vs-patients-vehicle: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-place-of-occurrence.json ==
-WARNING: ValueSet/vs-place-of-occurrence: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-position-of-patient.json ==
-WARNING: ValueSet/vs-position-of-patient: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-SILPH-FractureTypeVS.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-FractureTypeVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:9e0e5b4e-56af-4574-8ff7-15be6f42406b'
+WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-FractureTypeVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType
 == fsh-generated/resources/ValueSet-vs-psgc-barangay.json ==
 WARNING: ValueSet/vs-psgc-barangay: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://psa.gov.ph/classification/psgc'
 WARNING: ValueSet/vs-psgc-barangay: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -1062,23 +1099,223 @@ WARNING: ValueSet.where(id = 'vs-psgc-province'): Error from https://tx.fhir.org
 WARNING: ValueSet/vs-psgc-region: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://psa.gov.ph/classification/psgc'
 WARNING: ValueSet/vs-psgc-region: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'vs-psgc-region'): Error from https://tx.fhir.org/r4: Unable to provide support for code system https://psa.gov.ph/classification/psgc
-== fsh-generated/resources/ValueSet-vs-pulse-quality.json ==
-WARNING: ValueSet/vs-pulse-quality: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-pulse-rhythm.json ==
-WARNING: ValueSet/vs-pulse-rhythm: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-pupils.json ==
-WARNING: ValueSet/vs-pupils: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-respiratory-rhythm.json ==
-WARNING: ValueSet/vs-respiratory-rhythm: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-safety-devices.json ==
-WARNING: ValueSet/vs-safety-devices: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-status-alive-detail.json ==
-WARNING: ValueSet/vs-status-alive-detail: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-status-on-arrival.json ==
-WARNING: ValueSet/vs-status-on-arrival: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vs-transport-accident-mode.json ==
-INFORMATION: ValueSet/vs-transport-accident-mode: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
-WARNING: ValueSet/vs-transport-accident-mode: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'vs-transport-accident-mode'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd/release/11/mms
-== fsh-generated/resources/ValueSet-vs-type-of-patient.json ==
-WARNING: ValueSet/vs-type-of-patient: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== input/resources/SILPH_Road_Safety_Local_Codes.json ==
+ERROR: CodeSystem.where(url = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem'): Conformance resource /github/workspace/input/resources/SILPH_Road_Safety_Local_Codes.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/SILPH-LocalCodesCS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/CodeSystem). Use the special-url parameter if you really mean for it not to match
+WARNING: CodeSystem/SILPH-LocalCodesCS: CodeSystem.valueSet: A definition could not be found for Canonical URL 'http://www.roadsafetyph.doh.gov.ph/ValueSet'
+WARNING: CodeSystem/SILPH-LocalCodesCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH_Road_Safety_Local_Codes: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/SILPH-LocalCodesCS vs http://www.roadsafetyph.doh.gov.ph/CodeSystem
+== input/resources/SILPH___Activity__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity'): Conformance resource /github/workspace/input/resources/SILPH___Activity__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ActivityVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-ActivityVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:b2f7ed30-9db1-4137-97ec-bdc9a896e464'
+INFORMATION: ValueSet/SILPH-ActivityVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/SILPH-ActivityVS: ValueSet.compose.include[1].concept[0]: The code 'LEISURE' is not valid in the system http://www.roadsafetyph.doh.gov.ph/CodeSystem version 1 (LEISURE)
+INFORMATION: ValueSet/SILPH-ActivityVS: ValueSet.compose.include[1].concept[0]: Cannot invoke "String.length()" because "prefix" is null
+WARNING: ValueSet/SILPH-ActivityVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Activity__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ActivityVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity
+== input/resources/SILPH___Burns__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns'): Conformance resource /github/workspace/input/resources/SILPH___Burns__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-BurnsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-BurnsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:c9cb0057-cc61-4128-8f8b-4fa0f643ad24'
+INFORMATION: ValueSet/SILPH-BurnsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-BurnsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Burns__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-BurnsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns
+== input/resources/SILPH___Cyanosis__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis'): Conformance resource /github/workspace/input/resources/SILPH___Cyanosis__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-Cyanosis: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:27b5ce63-8aed-4888-8c70-c52fe721674c'
+INFORMATION: ValueSet/SILPH-Cyanosis: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-Cyanosis: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Cyanosis__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis
+== input/resources/SILPH___External_Cause_of_Burns__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns'): Conformance resource /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofBurnsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:3f74e1a3-1fda-4f3a-9899-4155a383b3c9'
+INFORMATION: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofBurnsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns
+== input/resources/SILPH___External_Cause_of_Drowning__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning'): Conformance resource /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofDrowningVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:92655074-aca1-4bcd-9588-6af3d39ae402'
+INFORMATION: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofDrowningVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning
+== input/resources/SILPH___GCS___Eyes__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes'): Conformance resource /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSEyesVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-GCSEyesVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9'
+INFORMATION: ValueSet/SILPH-GCSEyesVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-GCSEyesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSEyesVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes
+== input/resources/SILPH___GCS___Motor__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor'): Conformance resource /github/workspace/input/resources/SILPH___GCS___Motor__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSMotorVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-GCSMotorVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:24d6b298-554c-42b0-8fa4-f8b7de48a670'
+INFORMATION: ValueSet/SILPH-GCSMotorVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-GCSMotorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___GCS___Motor__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSMotorVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor
+== input/resources/SILPH___GCS___Verbal__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal'): Conformance resource /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSVerbalVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-GCSVerbalVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:42fea67f-4d4a-41b0-a796-3ecbb4395389'
+INFORMATION: ValueSet/SILPH-GCSVerbalVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-GCSVerbalVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSVerbalVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal
+== input/resources/SILPH___General_Disposition__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition'): Conformance resource /github/workspace/input/resources/SILPH___General_Disposition__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GeneralDispositionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-GeneralDispositionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:22da2e2e-ed76-4fba-a45d-52c5d7ae595a'
+INFORMATION: ValueSet/SILPH-GeneralDispositionVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-GeneralDispositionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___General_Disposition__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GeneralDispositionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition
+== input/resources/SILPH___Injury_Intent__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent'): Conformance resource /github/workspace/input/resources/SILPH___Injury_Intent__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InjuryIntentVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-InjuryIntentVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:2742d181-6d13-4fbb-9ff8-40cc5a2b27f4'
+INFORMATION: ValueSet/SILPH-InjuryIntentVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/SILPH-InjuryIntentVS: ValueSet.compose.include[1].concept[0]: The code 'VAWC' is not valid in the system http://www.roadsafetyph.doh.gov.ph/CodeSystem version 1 (VAWC)
+INFORMATION: ValueSet/SILPH-InjuryIntentVS: ValueSet.compose.include[1].concept[0]: Cannot invoke "String.length()" because "prefix" is null
+WARNING: ValueSet/SILPH-InjuryIntentVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Injury_Intent__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InjuryIntentVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent
+== input/resources/SILPH___Inpatient_Disposition__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition'): Conformance resource /github/workspace/input/resources/SILPH___Inpatient_Disposition__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InpatientDispositionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-InpatientDispositionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:c898b0e3-d3c7-4207-a350-f08d74fb6dac'
+INFORMATION: ValueSet/SILPH-InpatientDispositionVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-InpatientDispositionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Inpatient_Disposition__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InpatientDispositionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition
+== input/resources/SILPH___Level_of_Consciousness__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness'): Conformance resource /github/workspace/input/resources/SILPH___Level_of_Consciousness__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-LevelofConsciousnessVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-LevelofConsciousnessVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:1c4b192c-7d93-43bb-8e37-20194c6297a7'
+INFORMATION: ValueSet/SILPH-LevelofConsciousnessVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-LevelofConsciousnessVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Level_of_Consciousness__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-LevelofConsciousnessVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness
+== input/resources/SILPH___List_of_Body_Sites__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites'): Conformance resource /github/workspace/input/resources/SILPH___List_of_Body_Sites__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ListofBodySitesVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-ListofBodySitesVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:69ef6f5e-314c-4da2-aacf-35155fd4f85d'
+ERROR: ValueSet/SILPH-ListofBodySitesVS: ValueSet.expansion.contains[421]: Constraint failed: vsd-10: 'Must have a system if a code is present (code.empty() or system.exists())'
+INFORMATION: ValueSet/SILPH-ListofBodySitesVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-ListofBodySitesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+INFORMATION: ValueSet.where(id = 'SILPH-ListofBodySitesVS'): The value set expansion is too large, and only a subset has been displayed
+ERROR: /github/workspace/input/resources/SILPH___List_of_Body_Sites__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ListofBodySitesVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites
+== input/resources/SILPH___Mode_of_Transport__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport'): Conformance resource /github/workspace/input/resources/SILPH___Mode_of_Transport__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ModeofTransportVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-ModeofTransportVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:290d95e4-0fd6-473c-839c-0a3ba7f34a98'
+INFORMATION: ValueSet/SILPH-ModeofTransportVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+INFORMATION: ValueSet/SILPH-ModeofTransportVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-ModeofTransportVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Mode_of_Transport__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ModeofTransportVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport
+== input/resources/SILPH___Other_Vehicle_in_Collision__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle'): Conformance resource /github/workspace/input/resources/SILPH___Other_Vehicle_in_Collision__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OtherVehicleVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-OtherVehicleVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:2ba057bb-3f57-45bc-9841-9c1d09d81283'
+INFORMATION: ValueSet/SILPH-OtherVehicleVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+INFORMATION: ValueSet/SILPH-OtherVehicleVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-OtherVehicleVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Other_Vehicle_in_Collision__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OtherVehicleVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle
+== input/resources/SILPH___Outcome__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome'): Conformance resource /github/workspace/input/resources/SILPH___Outcome__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutcomeVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-OutcomeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:d4d60644-7d0c-4f0d-840c-de4b48051ce0'
+INFORMATION: ValueSet/SILPH-OutcomeVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-OutcomeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Outcome__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutcomeVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome
+== input/resources/SILPH___Outpatient_ER_Disposition__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition'): Conformance resource /github/workspace/input/resources/SILPH___Outpatient_ER_Disposition__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutpatientERDispositionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-OutpatientERDispositionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:3533b294-986f-4296-bf1c-82570f78c655'
+INFORMATION: ValueSet/SILPH-OutpatientERDispositionVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-OutpatientERDispositionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Outpatient_ER_Disposition__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutpatientERDispositionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition
+== input/resources/SILPH___PR___Quality__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality'): Conformance resource /github/workspace/input/resources/SILPH___PR___Quality__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-QualityVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-PR-QualityVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:1174edc6-6244-4543-8239-91cf2bee1deb'
+INFORMATION: ValueSet/SILPH-PR-QualityVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-PR-QualityVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___PR___Quality__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-QualityVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality
+== input/resources/SILPH___PR___Rhythm__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm'): Conformance resource /github/workspace/input/resources/SILPH___PR___Rhythm__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-RhythmVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-PR-RhythmVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:89e4fc30-9f66-4e0d-a438-7f46d8011553'
+INFORMATION: ValueSet/SILPH-PR-RhythmVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-PR-RhythmVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___PR___Rhythm__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-RhythmVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm
+== input/resources/SILPH___Patient_s_Vehicle__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle'): Conformance resource /github/workspace/input/resources/SILPH___Patient_s_Vehicle__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PatientsVehicleVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-PatientsVehicleVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:615772b2-b26b-4dce-8939-b61c6ae9f73d'
+INFORMATION: ValueSet/SILPH-PatientsVehicleVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+INFORMATION: ValueSet/SILPH-PatientsVehicleVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-PatientsVehicleVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Patient_s_Vehicle__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PatientsVehicleVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle
+== input/resources/SILPH___Place_of_Occurrence__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence'): Conformance resource /github/workspace/input/resources/SILPH___Place_of_Occurrence__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PlaceofOccurrenceVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:dea85e79-440d-45cf-82f5-504593f06306'
+INFORMATION: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.compose.include[1].concept[0]: The code 'VIDEOBAR' is not valid in the system http://www.roadsafetyph.doh.gov.ph/CodeSystem version 1 (VIDEOBAR)
+INFORMATION: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.compose.include[1].concept[0]: Cannot invoke "String.length()" because "prefix" is null
+WARNING: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Place_of_Occurrence__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PlaceofOccurrenceVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence
+== input/resources/SILPH___Position_of_Patient__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient'): Conformance resource /github/workspace/input/resources/SILPH___Position_of_Patient__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PositionofPatientVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-PositionofPatientVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:398b3054-549e-42ab-a8ab-b5dd94dc953f'
+INFORMATION: ValueSet/SILPH-PositionofPatientVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-PositionofPatientVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Position_of_Patient__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PositionofPatientVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient
+== input/resources/SILPH___Pupils__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils'): Conformance resource /github/workspace/input/resources/SILPH___Pupils__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PupilsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-PupilsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:7a666765-a7b7-4ddc-8aff-114ff6e0e4a2'
+INFORMATION: ValueSet/SILPH-PupilsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-PupilsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Pupils__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PupilsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils
+== input/resources/SILPH___RR___Breath_Sounds__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds'): Conformance resource /github/workspace/input/resources/SILPH___RR___Breath_Sounds__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-BreathSoundsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-RR-BreathSoundsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378'
+INFORMATION: ValueSet/SILPH-RR-BreathSoundsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-RR-BreathSoundsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___RR___Breath_Sounds__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-BreathSoundsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds
+== input/resources/SILPH___RR___Rhythm__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm'): Conformance resource /github/workspace/input/resources/SILPH___RR___Rhythm__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-RhythmVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-RR-RhythmVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:aff65127-6ea8-43bf-bca0-1901b48d0314'
+INFORMATION: ValueSet/SILPH-RR-RhythmVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-RR-RhythmVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___RR___Rhythm__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-RhythmVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm
+== input/resources/SILPH___Risk_Factors__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors'): Conformance resource /github/workspace/input/resources/SILPH___Risk_Factors__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RiskFactorsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-RiskFactorsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:25622628-05ac-4e70-800f-3c041370b121'
+INFORMATION: ValueSet/SILPH-RiskFactorsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-RiskFactorsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Risk_Factors__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RiskFactorsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors
+== input/resources/SILPH___Safety_Devices__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices'): Conformance resource /github/workspace/input/resources/SILPH___Safety_Devices__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SafetyDevicesVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-SafetyDevicesVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:616bde4b-e75b-4ac2-a6b9-7fef3eafe186'
+INFORMATION: ValueSet/SILPH-SafetyDevicesVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-SafetyDevicesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Safety_Devices__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SafetyDevicesVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices
+== input/resources/SILPH___Sex__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex'): Conformance resource /github/workspace/input/resources/SILPH___Sex__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SexVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-SexVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:8bd356e8-728d-4f19-96f9-0116a1ac154f'
+INFORMATION: ValueSet/SILPH-SexVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-SexVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Sex__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SexVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex
+== input/resources/SILPH___Status__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status'): Conformance resource /github/workspace/input/resources/SILPH___Status__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-StatusVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:e6be3982-2aa7-4dc6-be22-1b0a559faaaa'
+INFORMATION: ValueSet/SILPH-StatusVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-StatusVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Status__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status
+== input/resources/SILPH___Status_if_Alive__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive'): Conformance resource /github/workspace/input/resources/SILPH___Status_if_Alive__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusifAliveVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-StatusifAliveVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:74dad3fa-5483-4c64-94ff-d8384a877819'
+INFORMATION: ValueSet/SILPH-StatusifAliveVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-StatusifAliveVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Status_if_Alive__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusifAliveVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive
+== input/resources/SILPH___Transport_Accident_Type__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType'): Conformance resource /github/workspace/input/resources/SILPH___Transport_Accident_Type__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentTypeVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-TransportAccidentTypeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:85800e40-7a30-4415-989b-6dee74273417'
+INFORMATION: ValueSet/SILPH-TransportAccidentTypeVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-TransportAccidentTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Transport_Accident_Type__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentTypeVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType
+== input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision'): Conformance resource /github/workspace/input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:14333e18-97b6-4d4b-a08c-bb9eb26aa6c0'
+WARNING: ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS: ValueSet.compose.include[1]: Unknown System/Version 'http://www.roadsafetyph.doh.gov.ph/CodeSystem#1' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://www.roadsafetyph.doh.gov.ph/CodeSystem' version '1' could not be found, so the code cannot be validated. No versions of this code system are known)
+WARNING: ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision
+== input/resources/SILPH___Triage__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage'): Conformance resource /github/workspace/input/resources/SILPH___Triage__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TriageVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-TriageVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:4c8a4350-cb21-41e2-a60c-57660c05e609'
+INFORMATION: ValueSet/SILPH-TriageVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-TriageVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Triage__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TriageVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage
+== input/resources/SILPH___Type_of_Patient__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient'): Conformance resource /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TypeofPatientVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-TypeofPatientVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:895e21f5-f1cb-4a0e-b3c3-564fcd970299'
+INFORMATION: ValueSet/SILPH-TypeofPatientVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-TypeofPatientVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TypeofPatientVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient

@@ -1,4 +1,4 @@
-# RS Observation - Injury Intent - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Injury Intent - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsInjuryIntent |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsInjuryIntent |
 
  
 Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined). 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-injury-intent",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsInjuryIntent",
   "title" : "RS Observation - Injury Intent",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -121,13 +121,18 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
         "path" : "Observation.code",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-injury-intent"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent"
         }
       },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "11375-3",
+          "display" : "Injury intent"
+        }
       }
     ]
   }

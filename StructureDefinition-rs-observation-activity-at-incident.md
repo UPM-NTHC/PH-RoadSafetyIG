@@ -1,4 +1,4 @@
-# RS Observation - Activity at Time of Incident - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Activity at Time of Incident - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsActivityAtIncident |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsActivityAtIncident |
 
  
 Activity of the patient at time of incident; allow text fallback. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-activity-at-incident",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsActivityAtIncident",
   "title" : "RS Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://loinc.org"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "11372-0"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Injury associated activity"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://loinc.org",
+          "code" : "11372-0",
+          "display" : "Injury associated activity"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -165,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-activity"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity"
         }
       },
       {

@@ -1,0 +1,99 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SILPH-RR-RhythmVS",
+  "meta" : {
+    "versionId" : "4",
+    "lastUpdated" : "2025-10-27T06:01:00.327+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - RR - Rhythm (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm</tt><p>SILPH Value Set for Respiratory Rhythm</p></div>"
+  },
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm",
+  "version" : "0.2.0",
+  "name" : "SILPH___RR___Rhythm__VS",
+  "title" : "SILPH - RR - Rhythm (VS)",
+  "status" : "draft",
+  "date" : "2025-10-28T15:04:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "SILPH Value Set for Respiratory Rhythm",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "concept" : [{
+        "code" : "5467003",
+        "display" : "Regular"
+      },
+      {
+        "code" : "248585001",
+        "display" : "Irregular"
+      },
+      {
+        "code" : "248549001",
+        "display" : "Labored"
+      }]
+    }]
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:aff65127-6ea8-43bf-bca0-1901b48d0314",
+    "timestamp" : "2025-10-27T06:01:15+00:00",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "displayLanguage",
+      "valueCode" : "en-US,en;q=0.9"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm|1"
+    },
+    {
+      "name" : "includeDesignations",
+      "valueBoolean" : false
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "5467003",
+      "display" : "Normal respiratory rhythm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "248585001",
+      "display" : "Irregular breathing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "248549001",
+      "display" : "Labored breathing"
+    }]
+  }
+}

@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PlaceofOccurrenceVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SILPH-PlaceofOccurrenceVS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "2" ] ;
+     fhir:lastUpdated [ fhir:v "2025-10-27T09:53:21.802+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Place of Occurrence (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence</tt><p>SILPH Value Set for Place of Occurrence of Injury/Accident</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SILPH___Place_of_Occurrence__VS_"] ; # 
+  fhir:title [ fhir:v "SILPH - Place of Occurrence (VS)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SILPH Value Set for Place of Occurrence of Injury/Accident"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "264362003" ] ;
+         fhir:display [ fhir:v "Home" ]
+       ] [
+         fhir:code [ fhir:v "257698009" ] ;
+         fhir:display [ fhir:v "School" ]
+       ] [
+         fhir:code [ fhir:v "272510001" ] ;
+         fhir:display [ fhir:v "Road" ]
+       ] [
+         fhir:code [ fhir:v "285141008" ] ;
+         fhir:display [ fhir:v "Workplace" ]
+       ] [
+         fhir:code [ fhir:v "74964007" ] ;
+         fhir:display [ fhir:v "Others" ]
+       ] [
+         fhir:code [ fhir:v "261665006" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "VIDEOBAR" ] ;
+         fhir:display [ fhir:v "Videoke Bars" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:identifier [ fhir:v "urn:uuid:dea85e79-440d-45cf-82f5-504593f06306"^^xsd:anyURI ] ;
+     fhir:timestamp [ fhir:v "2025-10-27T09:53:27+00:00"^^xsd:dateTime ] ;
+     fhir:total [ fhir:v 7 ] ;
+     fhir:parameter ( [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "displayLanguage" ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "en-US,en;q=0.9"
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence|1"^^xsd:anyURI
+       ]
+     ] [
+       fhir:name [ fhir:v "includeDesignations" ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:contains ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "264362003" ] ;
+       fhir:display [ fhir:v "Home" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "257698009" ] ;
+       fhir:display [ fhir:v "School" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "272510001" ] ;
+       fhir:display [ fhir:v "Road" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "285141008" ] ;
+       fhir:display [ fhir:v "Work environment" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "74964007" ] ;
+       fhir:display [ fhir:v "Other" ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "261665006" ] ;
+       fhir:display [ fhir:v "Unknown" ]
+     ] [
+       fhir:system [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "VIDEOBAR" ] ;
+       fhir:display [ fhir:v "Videoke Bars" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

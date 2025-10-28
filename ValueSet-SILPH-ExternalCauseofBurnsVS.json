@@ -1,0 +1,126 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SILPH-ExternalCauseofBurnsVS",
+  "meta" : {
+    "versionId" : "2",
+    "lastUpdated" : "2025-10-27T06:09:04.816+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - External Cause of Burns (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns</tt><p>SILPH Value Set for External Cause of Burns</p></div>"
+  },
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns",
+  "version" : "0.2.0",
+  "name" : "SILPH___External_Cause_of_Burns__VS_",
+  "title" : "SILPH - External Cause of Burns (VS)",
+  "status" : "draft",
+  "date" : "2025-10-28T15:04:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "SILPH Value Set for External Cause of Burns",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "concept" : [{
+        "code" : "88999006",
+        "display" : "Heat"
+      },
+      {
+        "code" : "80032004",
+        "display" : "Fire"
+      },
+      {
+        "code" : "18213006",
+        "display" : "Electricity"
+      },
+      {
+        "code" : "21847005",
+        "display" : "Oil"
+      },
+      {
+        "code" : "263762005",
+        "display" : "Friction"
+      },
+      {
+        "code" : "74964007",
+        "display" : "Others"
+      }]
+    }]
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:3f74e1a3-1fda-4f3a-9899-4155a383b3c9",
+    "timestamp" : "2025-10-27T06:09:20+00:00",
+    "total" : 6,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "displayLanguage",
+      "valueCode" : "en-US,en;q=0.9"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns|1"
+    },
+    {
+      "name" : "includeDesignations",
+      "valueBoolean" : false
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "88999006",
+      "display" : "Heat"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "80032004",
+      "display" : "Fire"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "18213006",
+      "display" : "Electricity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "21847005",
+      "display" : "Oil"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "263762005",
+      "display" : "Friction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74964007",
+      "display" : "Other"
+    }]
+  }
+}

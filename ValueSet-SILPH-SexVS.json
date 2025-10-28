@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SILPH-SexVS",
+  "meta" : {
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-27T05:59:18.769+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Sex (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex</tt><p>SILPH Value Set for Sex</p></div>"
+  },
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex",
+  "version" : "0.2.0",
+  "name" : "SILPH___Sex__VS_",
+  "title" : "SILPH - Sex (VS)",
+  "status" : "draft",
+  "date" : "2025-10-28T15:04:35+00:00",
+  "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
+  "contact" : [{
+    "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  },
+  {
+    "name" : "PH Road Safety IG Repository",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+    }]
+  }],
+  "description" : "SILPH Value Set for Sex",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PH",
+      "display" : "Philippines"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "concept" : [{
+        "code" : "248153007",
+        "display" : "Male"
+      },
+      {
+        "code" : "248152002",
+        "display" : "Female"
+      }]
+    }]
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:8bd356e8-728d-4f19-96f9-0116a1ac154f",
+    "timestamp" : "2025-10-27T05:59:39+00:00",
+    "total" : 2,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "displayLanguage",
+      "valueCode" : "en-US,en;q=0.9"
+    },
+    {
+      "name" : "warning-draft",
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex|1"
+    },
+    {
+      "name" : "includeDesignations",
+      "valueBoolean" : false
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "248153007",
+      "display" : "Male"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "248152002",
+      "display" : "Female"
+    }]
+  }
+}

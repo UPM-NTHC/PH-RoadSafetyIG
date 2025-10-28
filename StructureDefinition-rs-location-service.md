@@ -1,4 +1,4 @@
-# RS Service Location - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Service Location - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSServiceLocation |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSServiceLocation |
 
  
 Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
   "resourceType" : "StructureDefinition",
   "id" : "rs-location-service",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSServiceLocation",
   "title" : "RS Service Location",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

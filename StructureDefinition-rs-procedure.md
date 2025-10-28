@@ -1,4 +1,4 @@
-# RS Procedure - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Procedure - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSProcedure |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSProcedure |
 
  
 Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions). 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "rs-procedure",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSProcedure",
   "title" : "RS Procedure",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

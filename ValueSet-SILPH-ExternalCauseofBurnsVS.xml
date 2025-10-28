@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-ExternalCauseofBurnsVS"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2025-10-27T06:09:04.816+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH - External Cause of Burns (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns</tt><p>SILPH Value Set for External Cause of Burns</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns"/>
+  <version value="0.2.0"/>
+  <name value="SILPH___External_Cause_of_Burns__VS_"/>
+  <title value="SILPH - External Cause of Burns (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for External Cause of Burns"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <concept>
+        <code value="88999006"/>
+        <display value="Heat"/>
+      </concept>
+      <concept>
+        <code value="80032004"/>
+        <display value="Fire"/>
+      </concept>
+      <concept>
+        <code value="18213006"/>
+        <display value="Electricity"/>
+      </concept>
+      <concept>
+        <code value="21847005"/>
+        <display value="Oil"/>
+      </concept>
+      <concept>
+        <code value="263762005"/>
+        <display value="Friction"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Others"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:3f74e1a3-1fda-4f3a-9899-4155a383b3c9"/>
+    <timestamp value="2025-10-27T06:09:20+00:00"/>
+    <total value="6"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="88999006"/>
+      <display value="Heat"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="80032004"/>
+      <display value="Fire"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="18213006"/>
+      <display value="Electricity"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="21847005"/>
+      <display value="Oil"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="263762005"/>
+      <display value="Friction"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <code value="74964007"/>
+      <display value="Other"/>
+    </contains>
+  </expansion>
+</ValueSet>

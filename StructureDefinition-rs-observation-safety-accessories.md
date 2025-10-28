@@ -1,4 +1,4 @@
-# RS Observation - Safety Accessories - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Safety Accessories - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsSafetyAccessories |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsSafetyAccessories |
 
  
 Safety accessories present/used; allow text for 'Others'. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-safet
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-safety-accessories",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsSafetyAccessories",
   "title" : "RS Observation - Safety Accessories",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-safet
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "386812007"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Safety precautions (procedure)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "386812007",
+          "display" : "Safety precautions (procedure)"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -165,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-safet
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-safety-devices"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices"
         }
       },
       {

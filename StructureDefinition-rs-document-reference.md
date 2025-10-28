@@ -1,4 +1,4 @@
-# RS DocumentReference (Evidence) - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS DocumentReference (Evidence) - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSDocumentReference |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSDocumentReference |
 
  
 Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files). 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
   "resourceType" : "StructureDefinition",
   "id" : "rs-document-reference",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSDocumentReference",
   "title" : "RS DocumentReference (Evidence)",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

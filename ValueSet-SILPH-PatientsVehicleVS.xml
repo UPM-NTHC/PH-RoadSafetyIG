@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-PatientsVehicleVS"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2025-10-27T08:47:16.552+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH - Patient's Vehicle (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle</tt><p>SILPH Value Set for Patient's Vehicle</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"/>
+  <version value="0.2.0"/>
+  <name value="SILPH___Patient_s_Vehicle__VS_"/>
+  <title value="SILPH - Patient's Vehicle (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for Patient's Vehicle"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <concept>
+        <code value="257518000"/>
+        <display value="None (Pedestrian)"/>
+      </concept>
+      <concept>
+        <code value="71783008"/>
+        <display value="Car"/>
+      </concept>
+      <concept>
+        <code value="224832000"/>
+        <display value="Van"/>
+      </concept>
+      <concept>
+        <code value="224830008"/>
+        <display value="Bus"/>
+      </concept>
+      <concept>
+        <code value="90748009"/>
+        <display value="Motorcycle"/>
+      </concept>
+      <concept>
+        <code value="70224005"/>
+        <display value="Bicycle"/>
+      </concept>
+      <concept>
+        <code value="12247004"/>
+        <display value="Truck"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Others"/>
+      </concept>
+      <concept>
+        <code value="261665006"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/>
+      <version value="1"/>
+      <concept>
+        <code value="TRICYCLE"/>
+        <display value="Tricycle"/>
+      </concept>
+      <concept>
+        <code value="JEEPNEY"/>
+        <display value="Jeepney"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:615772b2-b26b-4dce-8939-b61c6ae9f73d"/>
+    <timestamp value="2025-10-27T08:47:31+00:00"/>
+    <total value="11"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle|1"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="257518000"/>
+      <display value="Pedestrian"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="71783008"/>
+      <display value="Automobile"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="224832000"/>
+      <display value="Van"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="224830008"/>
+      <display value="Coach"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="90748009"/>
+      <display value="Motorcycle"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="70224005"/>
+      <display value="Bicycle"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="12247004"/>
+      <display value="Truck"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="74964007"/>
+      <display value="Other"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="261665006"/>
+      <display value="Unknown"/>
+    </contains>
+    <contains>
+      <system value="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/>
+      <version value="1"/>
+      <code value="TRICYCLE"/>
+      <display value="Tricycle"/>
+    </contains>
+    <contains>
+      <system value="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/>
+      <version value="1"/>
+      <code value="JEEPNEY"/>
+      <display value="Jeepney"/>
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,4 +1,4 @@
-# RS Observation - Place of Occurrence - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Place of Occurrence - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsPlaceOfOccurrence |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsPlaceOfOccurrence |
 
  
 Place type where injury occurred; name can be carried in note when applicable. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-place
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-place-of-occurrence",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsPlaceOfOccurrence",
   "title" : "RS Observation - Place of Occurrence",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-place
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "patternUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "place-of-occurrence"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Place of occurrence"
+        "max" : "1",
+        "patternCoding" : {
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "code" : "PLACEOCCURRENCE",
+          "display" : "Place of occurrence"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -165,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-place
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-place-of-occurrence"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"
         }
       }
     ]

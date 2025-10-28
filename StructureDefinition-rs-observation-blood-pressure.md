@@ -1,4 +1,4 @@
-# RS Observation - Blood Pressure - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Blood Pressure - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsBloodPressure |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsBloodPressure |
 
  
 Blood pressure using component entries for systolic/diastolic. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-blood-pressure",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsBloodPressure",
   "title" : "RS Observation - Blood Pressure",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -117,26 +117,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
   "differential" : {
     "element" : [
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://loinc.org"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "85354-9"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Blood pressure panel with all children optional"
-      },
-      {
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "slicing" : {
@@ -149,18 +129,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
           "ordered" : false,
           "rules" : "open"
         }
-      },
-      {
-        "id" : "Observation.value[x]:valueBoolean",
-        "path" : "Observation.value[x]",
-        "sliceName" : "valueBoolean",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
       },
       {
         "id" : "Observation.value[x]:valueCodeableConcept",
@@ -178,6 +146,110 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
       {
         "id" : "Observation.value[x]:valueCodeableConcept.text",
         "path" : "Observation.value[x].text",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "code"
+            }
+          ],
+          "rules" : "open"
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:systolic",
+        "path" : "Observation.component",
+        "sliceName" : "systolic",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:systolic.code.coding",
+        "path" : "Observation.component.code.coding",
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "271649006",
+          "display" : "Systolic blood pressure (observable entity)"
+        }
+      },
+      {
+        "id" : "Observation.component:systolic.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.component:systolic.value[x]:valueQuantity",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueQuantity",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Quantity"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:diastolic",
+        "path" : "Observation.component",
+        "sliceName" : "diastolic",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:diastolic.code.coding",
+        "path" : "Observation.component.code.coding",
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "271650006",
+          "display" : "Diastolic blood pressure (observable entity)"
+        }
+      },
+      {
+        "id" : "Observation.component:diastolic.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.component:diastolic.value[x]:valueQuantity",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueQuantity",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Quantity"
+          }
+        ],
         "mustSupport" : true
       }
     ]

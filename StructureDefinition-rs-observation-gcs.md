@@ -1,4 +1,4 @@
-# RS Observation - Glasgow Coma Scale - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Glasgow Coma Scale - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsGCS |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsGCS |
 
  
 GCS with components for eyes, verbal, motor; optional total score as integer. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-gcs",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsGCS",
   "title" : "RS Observation - Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "248241002"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Glasgow coma score (observable entity)"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "248241002",
+          "display" : "Glasgow coma score (observable entity)"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -163,22 +153,189 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         ]
       },
       {
-        "id" : "Observation.value[x]:valueCodeableConcept",
+        "id" : "Observation.value[x]:valueInteger",
         "path" : "Observation.value[x]",
-        "sliceName" : "valueCodeableConcept",
-        "short" : "Specify GCS components",
+        "sliceName" : "valueInteger",
+        "short" : "Total GCS score",
         "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "integer"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "code"
+            }
+          ],
+          "rules" : "open"
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:gcs-eyes",
+        "path" : "Observation.component",
+        "sliceName" : "gcs-eyes",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:gcs-eyes.code.coding",
+        "path" : "Observation.component.code.coding",
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "281395000",
+          "display" : "Glasgow Coma Score eye opening subscore (observable entity)"
+        }
+      },
+      {
+        "id" : "Observation.component:gcs-eyes.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.component:gcs-eyes.value[x]:valueCodeableConcept",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueCodeableConcept",
+        "short" : "Eye opening subscore",
+        "min" : 1,
         "max" : "1",
         "type" : [
           {
             "code" : "CodeableConcept"
           }
-        ]
+        ],
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"
+        }
       },
       {
-        "id" : "Observation.value[x]:valueCodeableConcept.text",
-        "path" : "Observation.value[x].text",
-        "mustSupport" : true
+        "id" : "Observation.component:gcs-verbal",
+        "path" : "Observation.component",
+        "sliceName" : "gcs-verbal",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:gcs-verbal.code.coding",
+        "path" : "Observation.component.code.coding",
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "281397008",
+          "display" : "Glasgow Coma Scale verbal response subscore (observable entity)"
+        }
+      },
+      {
+        "id" : "Observation.component:gcs-verbal.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.component:gcs-verbal.value[x]:valueCodeableConcept",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueCodeableConcept",
+        "short" : "Verbal response subscore",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal"
+        }
+      },
+      {
+        "id" : "Observation.component:gcs-motor",
+        "path" : "Observation.component",
+        "sliceName" : "gcs-motor",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:gcs-motor.code.coding",
+        "path" : "Observation.component.code.coding",
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "281396004",
+          "display" : "Glasgow Coma Scale motor response subscore (observable entity)"
+        }
+      },
+      {
+        "id" : "Observation.component:gcs-motor.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.component:gcs-motor.value[x]:valueCodeableConcept",
+        "path" : "Observation.component.value[x]",
+        "sliceName" : "valueCodeableConcept",
+        "short" : "Motor response subscore",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "preferred",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"
+        }
+      },
+      {
+        "id" : "Observation.component:gcs-total",
+        "path" : "Observation.component",
+        "sliceName" : "gcs-total",
+        "min" : 0,
+        "max" : "1"
       }
     ]
   }

@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ImplementationGuide/example.fhir.ph.roadsafety"/>
-  <version value="0.1.9"/>
+  <version value="0.2.0"/>
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-27T01:56:04+00:00"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -480,105 +480,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-condition"/>
-      </reference>
-      <name value="Road Safety Condition"/>
-      <description value="Condition resource for Road Safety IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-condition-external-cause"/>
-      </reference>
-      <name value="Road Safety Condition — External Cause (category)"/>
-      <description value="Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-condition-final-diagnosis"/>
-      </reference>
-      <name value="Road Safety Condition — Final Diagnosis"/>
-      <description value="Final diagnosis per CSV mapping."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-condition-initial-impression"/>
-      </reference>
-      <name value="Road Safety Condition — Initial Impression"/>
-      <description value="Initial impression per CSV mapping."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-condition-nature-of-injury"/>
-      </reference>
-      <name value="Road Safety Condition — Nature of Injury (category)"/>
-      <description value="Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-condition-problem"/>
-      </reference>
-      <name value="Road Safety Condition — Problem"/>
-      <description value="Problem (finding) per CSV mapping."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-patient"/>
-      </reference>
-      <name value="Road Safety Patient"/>
-      <description value="Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-service-request"/>
-      </reference>
-      <name value="Road Safety ServiceRequest"/>
-      <description value="Requests or records related to refusal to admit and related workflow signals."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-task"/>
-      </reference>
-      <name value="Road Safety Task"/>
-      <description value="Workflow tracking for report receipt, durations of delay, and sources of delays."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/rs-allergy-intolerance"/>
       </reference>
       <name value="RS AllergyIntolerance"/>
@@ -667,6 +568,72 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-condition"/>
+      </reference>
+      <name value="RS Condition"/>
+      <description value="Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-condition-external-cause"/>
+      </reference>
+      <name value="RS Condition — External Cause (category)"/>
+      <description value="Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-condition-final-diagnosis"/>
+      </reference>
+      <name value="RS Condition — Final Diagnosis"/>
+      <description value="Final diagnosis per CSV mapping."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-condition-initial-impression"/>
+      </reference>
+      <name value="RS Condition — Initial Impression"/>
+      <description value="Enter the initial impression on the patient’s condition."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-condition-nature-of-injury"/>
+      </reference>
+      <name value="RS Condition — Nature of Injury (category)"/>
+      <description value="Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-condition-problem"/>
+      </reference>
+      <name value="RS Condition — Problem"/>
+      <description value="Problem (finding) per CSV mapping."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-document-reference"/>
       </reference>
       <name value="RS DocumentReference (Evidence)"/>
@@ -682,6 +649,17 @@
       </reference>
       <name value="RS Encounter"/>
       <description value="Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition &amp; transfer."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-encounter-vehicle-used"/>
+      </reference>
+      <name value="RS Encounter Vehicle Used"/>
+      <description value="Identifier and type of transport vehicle used during an encounter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -810,17 +788,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-breath-sounds"/>
-      </reference>
-      <name value="RS Observation - Breath Sounds"/>
-      <description value="Breath sounds assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/rs-observation-call-source"/>
       </reference>
       <name value="RS Observation - Call Source"/>
@@ -920,54 +887,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-date-of-consultation"/>
-      </reference>
-      <name value="RS Observation - Date of Consultation"/>
-      <description value="Date of consultation at facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-date-of-injury"/>
-      </reference>
-      <name value="RS Observation - Date of Injury"/>
-      <description value="Date of injury occurrence."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/rs-observation-injury-datetime"/>
       </reference>
       <name value="RS Observation - Date/Time of Injury"/>
-      <description value="Timestamp of injury occurrence."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-date-received"/>
-      </reference>
-      <name value="RS Observation - Date/Time Received by EMS"/>
-      <description value="Calendar/timestamp the EMS/dispatch received the request."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-extent-of-injury"/>
-      </reference>
-      <name value="RS Observation - Extent of Injury"/>
-      <description value="Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."/>
+      <description value="DateTimestamp patient was seen at the health facility."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1173,17 +1096,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-status-on-arrival-alive"/>
-      </reference>
-      <name value="RS Observation - If Alive: Conscious/Unconscious"/>
-      <description value="If alive on arrival, consciousness detail."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/rs-observation-injury-intent"/>
       </reference>
       <name value="RS Observation - Injury Intent"/>
@@ -1272,17 +1184,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-outcome-discharge"/>
-      </reference>
-      <name value="RS Observation - Outcome at Discharge"/>
-      <description value="Outcome at discharge."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/rs-observation-outcome-release"/>
       </reference>
       <name value="RS Observation - Outcome at Release"/>
@@ -1349,32 +1250,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-pulse-quality"/>
-      </reference>
-      <name value="RS Observation - Pulse Quality"/>
-      <description value="Pulse quality."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/rs-observation-pulse-rate"/>
       </reference>
       <name value="RS Observation - Pulse Rate"/>
       <description value="Pulse/heart rate in beats/min."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-pulse-rhythm"/>
-      </reference>
-      <name value="RS Observation - Pulse Rhythm"/>
-      <description value="Pulse rhythm."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1407,7 +1286,7 @@
         <reference value="StructureDefinition/rs-observation-reported-complaint"/>
       </reference>
       <name value="RS Observation - Reported Complaint"/>
-      <description value="Free-text reported complaint."/>
+      <description value="Free-text reported complaint. May or May not exactly be medical, could point to car crash, not a healthcare concern."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1426,21 +1305,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-respiratory-rhythm"/>
-      </reference>
-      <name value="RS Observation - Respiratory Rhythm"/>
-      <description value="Respiratory rhythm (normal/irregular/labored)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/rs-observation-runreport-comments"/>
       </reference>
       <name value="RS Observation - Run Report Comments"/>
-      <description value="General comments from run report."/>
+      <description value="Enter other comment (s) regarding the case"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1470,87 +1338,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-time-departed"/>
+        <reference value="StructureDefinition/rs-observation-timeline-datetime"/>
       </reference>
-      <name value="RS Observation - Time Departed Scene"/>
-      <description value="Timestamp unit departed scene."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-enroute"/>
-      </reference>
-      <name value="RS Observation - Time Enroute"/>
-      <description value="Timestamp when unit dispatched/began traveling."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-of-consultation"/>
-      </reference>
-      <name value="RS Observation - Time of Consultation"/>
-      <description value="Time of consultation at facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-station-arrival"/>
-      </reference>
-      <name value="RS Observation - Time of Emergency Station Arrival"/>
-      <description value="Timestamp unit returned to base/became available."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-hospital-arrival"/>
-      </reference>
-      <name value="RS Observation - Time of Hospital Arrival"/>
-      <description value="Timestamp unit arrived at receiving facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-of-injury"/>
-      </reference>
-      <name value="RS Observation - Time of Injury"/>
-      <description value="Time of injury occurrence."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-on-scene"/>
-      </reference>
-      <name value="RS Observation - Time On Scene"/>
-      <description value="Timestamp crew arrived at scene."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-observation-time-received"/>
-      </reference>
-      <name value="RS Observation - Time Received"/>
-      <description value="Time the call/request was received by EMS/dispatch."/>
+      <name value="RS Observation - Timeline Date/Time"/>
+      <description value="Dispatch and transport timeline events capturing a precise date/time."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1602,10 +1393,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-observation-vehicle-used"/>
+        <reference value="StructureDefinition/rs-organization"/>
       </reference>
-      <name value="RS Observation - Vehicle Used"/>
-      <description value="Vehicle used during response."/>
+      <name value="RS Organization"/>
+      <description value="Organization profile for EMS providers and receiving facilities involved in RS encounters."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1613,10 +1404,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-organization"/>
+        <reference value="StructureDefinition/rs-patient"/>
       </reference>
-      <name value="RS Organization"/>
-      <description value="Organization profile for EMS providers and receiving facilities involved in RS encounters."/>
+      <name value="RS Patient"/>
+      <description value="Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1654,255 +1445,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-activity"/>
+        <reference value="StructureDefinition/rs-service-request"/>
       </reference>
-      <name value="RS VS - Activity at Time of Incident"/>
-      <description value="Activity at time of incident (prefer SNOMED CT)."/>
+      <name value="RS ServiceRequest"/>
+      <description value="Requests or records related to refusal to admit and related workflow signals."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-status-alive-detail"/>
+        <reference value="StructureDefinition/rs-task"/>
       </reference>
-      <name value="RS VS - Alive Detail (Consciousness)"/>
-      <description value="If alive on arrival: conscious vs unconscious."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-bites-agent"/>
-      </reference>
-      <name value="RS VS - Bites/Stings Agent"/>
-      <description value="Type of animal/insect/plant causing bite or sting; use LOINC code where provided in mappings."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-breath-sounds"/>
-      </reference>
-      <name value="RS VS - Breath Sounds"/>
-      <description value="Breath sounds options (prefer SNOMED CT)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-burn-degrees"/>
-      </reference>
-      <name value="RS VS - Burn Degrees"/>
-      <description value="Burn degree/severity (1st, 2nd, 3rd, 4th) as mapped from ONEISS/CSV (SNOMED CT)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-burns-agent"/>
-      </reference>
-      <name value="RS VS - Burns Agent"/>
-      <description value="Agent causing burn (prefer SNOMED CT)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-collision-category"/>
-      </reference>
-      <name value="RS VS - Collision Category"/>
-      <description value="Collision vs non-collision category."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-cyanosis"/>
-      </reference>
-      <name value="RS VS - Cyanosis"/>
-      <description value="Cyanosis assessment options (prefer SNOMED CT)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-disposition-er"/>
-      </reference>
-      <name value="RS VS - Disposition (ER/OPD/BHS/RHU)"/>
-      <description value="Patient disposition at ER/OPD/BHS/RHU."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-disposition-ip"/>
-      </reference>
-      <name value="RS VS - Disposition (In-Patient)"/>
-      <description value="Patient disposition for in-patient cases."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-drowning-type"/>
-      </reference>
-      <name value="RS VS - Drowning Type/Body of Water"/>
-      <description value="Type/body of water for drowning incidents."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-gcs-eyes"/>
-      </reference>
-      <name value="RS VS - GCS Eyes"/>
-      <description value="Glasgow Coma Scale eye opening responses (LOINC LA codes)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-gcs-motor"/>
-      </reference>
-      <name value="RS VS - GCS Motor"/>
-      <description value="Glasgow Coma Scale motor responses (LOINC LA codes)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-gcs-verbal"/>
-      </reference>
-      <name value="RS VS - GCS Verbal"/>
-      <description value="Glasgow Coma Scale verbal responses (LOINC LA codes)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-injury-intent"/>
-      </reference>
-      <name value="RS VS - Injury Intent"/>
-      <description value="Injury intent options mapped from ONEISS (prefer SNOMED CT)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-level-of-consciousness"/>
-      </reference>
-      <name value="RS VS - Level of Consciousness (AVPU)"/>
-      <description value="AVPU options for level of consciousness (prefer SNOMED CT)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-mode-of-transport"/>
-      </reference>
-      <name value="RS VS - Mode of Transport to Facility"/>
-      <description value="Mode of transport to the hospital/facility."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-other-risk-factors"/>
-      </reference>
-      <name value="RS VS - Other Risk Factors"/>
-      <description value="Other risk factors at time of incident (prefer SNOMED CT)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-other-vehicle"/>
-      </reference>
-      <name value="RS VS - Other Vehicle in Collision"/>
-      <description value="Other vehicle/object involved in collision."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-outcome"/>
-      </reference>
-      <name value="RS VS - Outcome"/>
-      <description value="Outcome: Improved, Unimproved, Died."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-patients-vehicle"/>
-      </reference>
-      <name value="RS VS - Patient's Vehicle"/>
-      <description value="Vehicle used by patient (prefer SNOMED CT; local additions where specified)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-place-of-occurrence"/>
-      </reference>
-      <name value="RS VS - Place of Occurrence"/>
-      <description value="Place of occurrence (prefer SNOMED CT; local additions where specified)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-position-of-patient"/>
-      </reference>
-      <name value="RS VS - Position of Patient"/>
-      <description value="Position/role of patient in transport incidents (prefer SNOMED CT)."/>
+      <name value="RS Task"/>
+      <description value="Workflow tracking for report receipt, durations of delay, and sources of delays."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1954,10 +1514,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-pulse-quality"/>
+        <reference value="ValueSet/SILPH-ActivityVS"/>
       </reference>
-      <name value="RS VS - Pulse Quality"/>
-      <description value="Pulse quality options (prefer SNOMED CT)."/>
+      <name value="SILPH - Activity (VS)"/>
+      <description value="SILPH Value Set for Patient Activity at the Time of Injury/Accident"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1965,10 +1525,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-pulse-rhythm"/>
+        <reference value="ValueSet/SILPH-BurnsVS"/>
       </reference>
-      <name value="RS VS - Pulse Rhythm"/>
-      <description value="Pulse rhythm options (prefer SNOMED CT)."/>
+      <name value="SILPH - Burns (VS)"/>
+      <description value="SILPH Value Set for Degree of Burn"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1976,10 +1536,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-pupils"/>
+        <reference value="ValueSet/SILPH-Cyanosis"/>
       </reference>
-      <name value="RS VS - Pupils"/>
-      <description value="Pupil size/reactivity options (prefer SNOMED CT)."/>
+      <name value="SILPH - Cyanosis (VS)"/>
+      <description value="SILPH Value Set for Presence of Cyanosis"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1987,10 +1547,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-respiratory-rhythm"/>
+        <reference value="ValueSet/SILPH-ExternalCauseofBurnsVS"/>
       </reference>
-      <name value="RS VS - Respiratory Rhythm"/>
-      <description value="Respiratory rhythm options (prefer SNOMED CT)."/>
+      <name value="SILPH - External Cause of Burns (VS)"/>
+      <description value="SILPH Value Set for External Cause of Burns"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1998,10 +1558,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-safety-devices"/>
+        <reference value="ValueSet/SILPH-ExternalCauseofDrowningVS"/>
       </reference>
-      <name value="RS VS - Safety Devices"/>
-      <description value="Safety devices present/used (prefer SNOMED CT)."/>
+      <name value="SILPH - External Cause of Drowning (VS)"/>
+      <description value="SILPH Value Set for External Cause of Drowning"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2009,10 +1569,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-status-on-arrival"/>
+        <reference value="ValueSet/SILPH-FractureTypeVS"/>
       </reference>
-      <name value="RS VS - Status on Arrival"/>
-      <description value="Status upon reaching facility/hospital."/>
+      <name value="SILPH - Fracture Type (VS)"/>
+      <description value="SILPH Value Set for fracture type designation (open versus closed)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2020,10 +1580,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-transport-accident-mode"/>
+        <reference value="ValueSet/SILPH-GCSEyesVS"/>
       </reference>
-      <name value="RS VS - Transport Accident: Land/Water/Air"/>
-      <description value="Exposure context for transport accident: land, water, air (ICD-11)."/>
+      <name value="SILPH - GCS - Eyes (VS)"/>
+      <description value="SILPH Value Set for GCS Eye Score"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2031,10 +1591,307 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-type-of-patient"/>
+        <reference value="ValueSet/SILPH-GCSMotorVS"/>
       </reference>
-      <name value="RS VS - Type of Patient"/>
-      <description value="Type of patient (ER/OPD/RHU/BHS context)."/>
+      <name value="SILPH - GCS - Motor (VS)"/>
+      <description value="SILPH Value Set for GCS Motor Score"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-GCSVerbalVS"/>
+      </reference>
+      <name value="SILPH - GCS - Verbal (VS)"/>
+      <description value="SILPH Value Set for GCS Verbal Score"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-GeneralDispositionVS"/>
+      </reference>
+      <name value="SILPH - General Disposition (VS)"/>
+      <description value="SILPH Value Set for Inpatient and ER/Outpatient Visit Disposition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-InjuryIntentVS"/>
+      </reference>
+      <name value="SILPH - Injury Intent (VS)"/>
+      <description value="SILPH Value Set for Injury Intent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-InpatientDispositionVS"/>
+      </reference>
+      <name value="SILPH - Inpatient Disposition (VS)"/>
+      <description value="SILPH Value Set for Inpatient Visit Disposition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-LevelofConsciousnessVS"/>
+      </reference>
+      <name value="SILPH - Level of Consciousness (VS)"/>
+      <description value="SILPH Value Set for Level of Consciousness (AVPU) Score"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-ListofBodySitesVS"/>
+      </reference>
+      <name value="SILPH - List of Body Sites (VS)"/>
+      <description value="SILPH List of Body Sites"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-ModeofTransportVS"/>
+      </reference>
+      <name value="SILPH - Mode of Transport (VS)"/>
+      <description value="SILPH Value Set for Mode of Transport of Patient to Healthcare Facility"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-OtherVehicleVS"/>
+      </reference>
+      <name value="SILPH - Other Vehicle in Collision (VS)"/>
+      <description value="SILPH Value Set for Other Vehicle in Collision Accident"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-OutcomeVS"/>
+      </reference>
+      <name value="SILPH - Outcome (VS)"/>
+      <description value="SILPH Value Set for Outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-OutpatientERDispositionVS"/>
+      </reference>
+      <name value="SILPH - Outpatient/ER Disposition (VS)"/>
+      <description value="SILPH Value Set for Outpatient/ER Visit Disposition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-PatientsVehicleVS"/>
+      </reference>
+      <name value="SILPH - Patient's Vehicle (VS)"/>
+      <description value="SILPH Value Set for Patient's Vehicle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-PlaceofOccurrenceVS"/>
+      </reference>
+      <name value="SILPH - Place of Occurrence (VS)"/>
+      <description value="SILPH Value Set for Place of Occurrence of Injury/Accident"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-PositionofPatientVS"/>
+      </reference>
+      <name value="SILPH - Position of Patient (VS)"/>
+      <description value="SILPH Value Set for Position of Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-PR-QualityVS"/>
+      </reference>
+      <name value="SILPH - PR - Quality (VS)"/>
+      <description value="SILPH Value Set for Pulse Quality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-PR-RhythmVS"/>
+      </reference>
+      <name value="SILPH - PR - Rhythm (VS)"/>
+      <description value="SILPH Value Set for Pulse Rhythm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-PupilsVS"/>
+      </reference>
+      <name value="SILPH - Pupils (VS)"/>
+      <description value="SILPH Value Set for Pupil Reaction"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-RiskFactorsVS"/>
+      </reference>
+      <name value="SILPH - Risk Factors (VS)"/>
+      <description value="SILPH Value Set for Risk Factors"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-RR-BreathSoundsVS"/>
+      </reference>
+      <name value="SILPH - RR - Breath Sounds (VS)"/>
+      <description value="SILPH Value Set for Breath Sounds"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-RR-RhythmVS"/>
+      </reference>
+      <name value="SILPH - RR - Rhythm (VS)"/>
+      <description value="SILPH Value Set for Respiratory Rhythm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-SafetyDevicesVS"/>
+      </reference>
+      <name value="SILPH - Safety Devices (VS)"/>
+      <description value="SILPH Value Set for Safety Devices"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-SexVS"/>
+      </reference>
+      <name value="SILPH - Sex (VS)"/>
+      <description value="SILPH Value Set for Sex"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-StatusVS"/>
+      </reference>
+      <name value="SILPH - Status (VS)"/>
+      <description value="SILPH ValueSet for Patient Status, if Alive or Dead during Admission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-StatusifAliveVS"/>
+      </reference>
+      <name value="SILPH - Status if Alive (VS)"/>
+      <description value="SILPH Value Set for Patient Status, if patient is alive, specify if conscious or unconscious"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-TransportAccidentTypeVS"/>
+      </reference>
+      <name value="SILPH - Transport Accident Type (VS)"/>
+      <description value="SILPH Value Set for Transport Accident Type (Land, Water or Air)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS"/>
+      </reference>
+      <name value="SILPH - Transport Accident: Collision or Noncollision (VS)"/>
+      <description value="SILPH Value Set for Transport Accident if Collision or Noncollision"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-TriageVS"/>
+      </reference>
+      <name value="SILPH - Triage (VS)"/>
+      <description value="SILPH Value Set for Triage at Scene"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-TypeofPatientVS"/>
+      </reference>
+      <name value="SILPH - Type of Patient (VS)"/>
+      <description value="SILPH Value Set for Type of Patient Encounter"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2042,9 +1899,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-silph"/>
+        <reference value="CodeSystem/SILPH-LocalCodesCS"/>
       </reference>
-      <name value="SILPH Local Codes"/>
+      <name value="SILPH Road Safety Local Codes"/>
+      <description value="Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

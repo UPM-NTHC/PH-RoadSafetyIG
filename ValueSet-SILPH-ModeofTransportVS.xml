@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-ModeofTransportVS"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2025-10-27T10:08:32.970+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH - Mode of Transport (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport</tt><p>SILPH Value Set for Mode of Transport of Patient to Healthcare Facility</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport"/>
+  <version value="0.2.0"/>
+  <name value="SILPH___Mode_of_Transport__VS_"/>
+  <title value="SILPH - Mode of Transport (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for Mode of Transport of Patient to Healthcare Facility"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <concept>
+        <code value="49122002"/>
+        <display value="Ambulance"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Others"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.78"/>
+      <concept>
+        <code value="LA9321-6"/>
+        <display value="Police vehicle"/>
+      </concept>
+      <concept>
+        <code value="LA9319-0"/>
+        <display value="Private vehicle"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:290d95e4-0fd6-473c-839c-0a3ba7f34a98"/>
+    <timestamp value="2025-10-27T10:08:41+00:00"/>
+    <total value="4"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
+    </parameter>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://loinc.org|2.78"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://loinc.org|2.78"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="49122002"/>
+      <display value="Ambulance"/>
+    </contains>
+    <contains>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="74964007"/>
+      <display value="Other"/>
+    </contains>
+    <contains>
+      <system value="http://loinc.org"/>
+      <version value="2.78"/>
+      <code value="LA9321-6"/>
+      <display value="Walk-in following nonambulance, law enforcement transport"/>
+    </contains>
+    <contains>
+      <system value="http://loinc.org"/>
+      <version value="2.78"/>
+      <code value="LA9319-0"/>
+      <display value="Walk-in following transport via private transportation"/>
+    </contains>
+  </expansion>
+</ValueSet>

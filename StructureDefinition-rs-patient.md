@@ -1,23 +1,23 @@
-# Road Safety Patient - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Patient - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Road Safety Patient**
+* **RS Patient**
 
-## Resource Profile: Road Safety Patient 
+## Resource Profile: RS Patient 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSPatient |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSPatient |
 
  
-Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region. 
+Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region. 
 
 **Usages:**
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Claim](StructureDefinition-rs-claim.md), [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)...Show 9 more,[RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md),[Road Safety Condition](StructureDefinition-rs-condition.md),[RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md),[RS Encounter](StructureDefinition-rs-encounter.md),[RS MedicationStatement](StructureDefinition-rs-medication-statement.md),[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md),[Road Safety ServiceRequest](StructureDefinition-rs-service-request.md)and[Road Safety Task](StructureDefinition-rs-task.md)
+* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Claim](StructureDefinition-rs-claim.md), [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)...Show 9 more,[RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md),[RS Condition](StructureDefinition-rs-condition.md),[RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md),[RS Encounter](StructureDefinition-rs-encounter.md),[RS MedicationStatement](StructureDefinition-rs-medication-statement.md),[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md),[RS ServiceRequest](StructureDefinition-rs-service-request.md)and[RS Task](StructureDefinition-rs-task.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-patient)
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "resourceType" : "StructureDefinition",
   "id" : "rs-patient",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSPatient",
-  "title" : "Road Safety Patient",
+  "title" : "RS Patient",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
       ]
     }
   ],
-  "description" : "Patient demographics and identifiers for road safety reporting; reuse PH-Core address extensions for barangay/city/province/region.",
+  "description" : "Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -116,6 +116,24 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
         "path" : "Patient.identifier",
         "short" : "Identifiers",
         "mustSupport" : true
+      },
+      {
+        "id" : "Patient.identifier:patientHospitalID",
+        "path" : "Patient.identifier",
+        "sliceName" : "patientHospitalID",
+        "short" : "Hospital Patient ID No.",
+        "definition" : "Write the hospital-based issued I.D. or number to uniquely identify the patient.",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Patient.identifier:patientHospitalID.type.coding",
+        "path" : "Patient.identifier.type.coding",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "184107009",
+          "display" : "Patient hospital visit number (observable entity)"
+        }
       },
       {
         "id" : "Patient.name",

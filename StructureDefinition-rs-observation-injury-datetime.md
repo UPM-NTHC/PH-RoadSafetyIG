@@ -1,4 +1,4 @@
-# RS Observation - Date/Time of Injury - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Date/Time of Injury - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsInjuryDateTime |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsInjuryDateTime |
 
  
-Timestamp of injury occurrence. 
+DateTimestamp patient was seen at the health facility. 
 
 **Usages:**
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-injury-datetime",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsInjuryDateTime",
   "title" : "RS Observation - Date/Time of Injury",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
       ]
     }
   ],
-  "description" : "Timestamp of injury occurrence.",
+  "description" : "DateTimestamp patient was seen at the health facility.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://loinc.org"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "11368-8"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Illness or injury onset date and time"
+        "max" : "1",
+        "fixedCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "439771001",
+          "display" : "Date of event (observable entity)"
+        }
       },
       {
         "id" : "Observation.value[x]",

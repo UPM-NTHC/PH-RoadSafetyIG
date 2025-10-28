@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SILPH-GCSEyesVS"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2025-10-27T06:13:20.554+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SILPH - GCS - Eyes (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes</tt><p>SILPH Value Set for GCS Eye Score</p></div>
+  </text>
+  <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"/>
+  <version value="0.2.0"/>
+  <name value="SILPH___GCS___Eyes__VS_"/>
+  <title value="SILPH - GCS - Eyes (VS)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T15:04:35+00:00"/>
+  <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+  <contact>
+    <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PH Road Safety IG Repository"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/UPM-NTHC/PH-RoadSafetyIG"/>
+    </telecom>
+  </contact>
+  <description value="SILPH Value Set for GCS Eye Score"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PH"/>
+      <display value="Philippines"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.78"/>
+      <concept>
+        <code value="LA6556-0"/>
+        <display value="4 Spontaneous"/>
+      </concept>
+      <concept>
+        <code value="LA6555-2"/>
+        <display value="3 To command"/>
+      </concept>
+      <concept>
+        <code value="LA6554-5"/>
+        <display value="2 To pain"/>
+      </concept>
+      <concept>
+        <code value="LA6553-7"/>
+        <display value="1 None"/>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9"/>
+    <timestamp value="2025-10-27T06:13:36+00:00"/>
+    <total value="4"/>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="http://loinc.org|2.78"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="http://loinc.org|2.78"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueCode value="en-US,en;q=0.9"/>
+    </parameter>
+    <parameter>
+      <name value="warning-draft"/>
+      <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes|1"/>
+    </parameter>
+    <parameter>
+      <name value="includeDesignations"/>
+      <valueBoolean value="false"/>
+    </parameter>
+    <contains>
+      <system value="http://loinc.org"/>
+      <code value="LA6556-0"/>
+      <display value="Eyes open spontaneously"/>
+    </contains>
+    <contains>
+      <system value="http://loinc.org"/>
+      <code value="LA6555-2"/>
+      <display value="Eye opening to verbal command"/>
+    </contains>
+    <contains>
+      <system value="http://loinc.org"/>
+      <code value="LA6554-5"/>
+      <display value="Eye opening to pain"/>
+    </contains>
+    <contains>
+      <system value="http://loinc.org"/>
+      <code value="LA6553-7"/>
+      <display value="No eye opening"/>
+    </contains>
+  </expansion>
+</ValueSet>

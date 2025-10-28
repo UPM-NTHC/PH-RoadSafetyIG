@@ -1,4 +1,4 @@
-# RS Observation - Status on Arrival - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Status on Arrival - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsStatusOnArrival |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsStatusOnArrival |
 
  
 Status upon reaching facility/hospital. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-statu
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-status-on-arrival",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsStatusOnArrival",
   "title" : "RS Observation - Status on Arrival",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-statu
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "patternUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "status-on-arrival"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Status on arrival"
+        "max" : "1",
+        "patternCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "118223001",
+          "display" : "Patient status finding (finding)"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -165,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-statu
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-status-on-arrival"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status"
         }
       }
     ]

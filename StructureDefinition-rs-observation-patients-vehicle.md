@@ -1,4 +1,4 @@
-# RS Observation - Patient's Vehicle - DRAFT PH Road Safety Implementation Guide v0.1.9
+# RS Observation - Patient's Vehicle - DRAFT PH Road Safety Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle | *Version*:0.1.9 |
-| Draft as of 2025-10-27 | *Computable Name*:RSObsPatientsVehicle |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle | *Version*:0.2.0 |
+| Draft as of 2025-10-28 | *Computable Name*:RSObsPatientsVehicle |
 
  
 Type of vehicle used by patient; text for 'Others'. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-patients-vehicle",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle",
-  "version" : "0.1.9",
+  "version" : "0.2.0",
   "name" : "RSObsPatientsVehicle",
   "title" : "RS Observation - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-10-27T01:56:04+00:00",
+  "date" : "2025-10-28T15:04:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,22 +119,12 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding.system",
-        "path" : "Observation.code.coding.system",
-        "patternUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding.code",
-        "path" : "Observation.code.coding.code",
-        "patternCode" : "patients-vehicle"
-      },
-      {
-        "id" : "Observation.code.coding.display",
-        "path" : "Observation.code.coding.display",
-        "patternString" : "Patient's vehicle"
+        "max" : "1",
+        "patternCoding" : {
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "code" : "PATIENTVEHICLE",
+          "display" : "Vehicles Involved: Patient's Vehicle"
+        }
       },
       {
         "id" : "Observation.value[x]",
@@ -165,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-patients-vehicle"
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"
         }
       },
       {
