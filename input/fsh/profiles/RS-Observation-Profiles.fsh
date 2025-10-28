@@ -618,14 +618,14 @@ Description: "Count of vehicles involved."
 * code.coding = $SCT#how-many-vehicles "How many vehicles involved"
 
 // MDS157 - How Many Patients Involved
-Profile: RSObsHowManyPatients
-Parent: RSObservation
-Id: rs-observation-how-many-patients
-Title: "RS Observation - How Many Patients Involved"
-Description: "Count of patients involved."
-* valueInteger 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#how-many-patients "How many patients involved"
+// Profile: RSObsHowManyPatients
+// Parent: RSObservation
+// Id: rs-observation-how-many-patients
+// Title: "RS Observation - How Many Patients Involved"
+// Description: "Count of patients involved."
+// * valueInteger 1..1 MS
+// * code.coding 0..1
+// * code.coding = $SCT#how-many-patients "How many patients involved"
 
 // MDS158 / MDS159 - Date/Time of Injury
 Profile: RSObsInjuryDateTime
