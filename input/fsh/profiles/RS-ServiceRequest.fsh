@@ -12,7 +12,7 @@ Description: "Requests or records related to refusal to admit and related workfl
 * requester only Reference(PHCorePractitioner)
 * code 1..1 MS
 * code.coding 1..1
-* code.coding.code = SILPH#refusal-to-admit
+* code.coding.code = $SILPH#refusal-to-admit
 * code.coding.display = "Refusal to admit"
 * code ^short = "Refusal to admit code"
 * code ^definition = "Code identifying a refusal-to-admit service/request."
