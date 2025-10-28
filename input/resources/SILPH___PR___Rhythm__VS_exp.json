@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:89e4fc30-9f66-4e0d-a438-7f46d8011553",
+    "timestamp": "2025-10-27T07:57:33+00:00",
+    "total": 2,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "271636001",
+        "display": "Pulse regular"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "61086009",
+        "display": "Pulse irregular"
+      }
+    ]
+  },
+  "id": "SILPH-PR-RhythmVS",
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm",
+  "name": "SILPH___PR___Rhythm__VS_",
+  "title": "SILPH - PR - Rhythm (VS)",
+  "version": "1"
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:4c8a4350-cb21-41e2-a60c-57660c05e609",
+    "timestamp": "2025-10-27T10:38:14+00:00",
+    "total": 5,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://loinc.org|2.78"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://loinc.org|2.78"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "LA17696-8",
+        "display": "Critical (red)"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "LA17695-0",
+        "display": "Emergent (yellow)"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "LA17694-3",
+        "display": "Lower acuity (green)"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "LA17697-6",
+        "display": "Dead without resuscitation efforts (black)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001",
+        "code": "261665006",
+        "display": "Unknown"
+      }
+    ]
+  },
+  "id": "SILPH-TriageVS",
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage",
+  "name": "SILPH___Triage__VS_",
+  "title": "SILPH - Triage (VS)",
+  "version": "1"
+}

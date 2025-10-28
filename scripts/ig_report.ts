@@ -242,6 +242,7 @@ async function readResourceArtifactsFromFs(baseDir: string): Promise<ResourceArt
       if (e.isDirectory()) {
         await walk(full);
       } else if (e.isFile() && e.name.toLowerCase().endsWith('.json')) {
+        if (/_exp\.json$/i.test(e.name)) continue; // skip expansion snapshots
         try {
           const content = await fs.readFile(full, 'utf8');
           const parsed = JSON.parse(content);
@@ -458,6 +459,7 @@ async function getFshMetricsAtRev(rev?: string): Promise<FshMetrics> {
     const resourceFiles = await listFilesAtRev(rev, 'input/resources');
     const artifacts: ResourceArtifact[] = [];
     for (const rel of resourceFiles.filter(f => f.toLowerCase().endsWith('.json'))) {
+      if (/_exp\.json$/i.test(rel)) continue; // skip expansion snapshots
       const content = await readFileAtRev(rev, rel);
       if (!content) continue;
       try {
