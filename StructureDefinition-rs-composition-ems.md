@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-composition-ems.c
   "name" : "RSCompositionEMS",
   "title" : "RS Composition — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-28T15:40:43+00:00",
+  "date" : "2025-10-28T15:55:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

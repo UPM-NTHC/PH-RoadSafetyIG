@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-urgen
   "name" : "RSObsUrgencyLevel",
   "title" : "RS Observation - Priority Level (Urgency)",
   "status" : "draft",
-  "date" : "2025-10-28T15:40:43+00:00",
+  "date" : "2025-10-28T15:55:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

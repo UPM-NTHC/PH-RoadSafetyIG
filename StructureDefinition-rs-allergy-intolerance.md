@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
   "name" : "RSAllergyIntolerance",
   "title" : "RS AllergyIntolerance",
   "status" : "draft",
-  "date" : "2025-10-28T15:40:43+00:00",
+  "date" : "2025-10-28T15:55:35+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -108,7 +108,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
         "id" : "AllergyIntolerance.code",
         "path" : "AllergyIntolerance.code",
         "short" : "Allergy / intolerance concept",
-        "definition" : "Concept identifying a known allergy or intolerance (substance or agent) documented for the patient.",
         "comment" : "Targets AllergyIntolerance.code per ConceptMap.",
         "mustSupport" : true,
         "binding" : {
@@ -120,7 +119,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
         "id" : "AllergyIntolerance.patient",
         "path" : "AllergyIntolerance.patient",
         "short" : "Subject (patient)",
-        "definition" : "Reference to the patient who is the subject of this allergy/intolerance record.",
         "comment" : "Reference constrained to the RS Patient profile (`RSPatient`).",
         "type" : [
           {

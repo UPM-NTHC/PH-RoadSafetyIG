@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:55:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -2458,27 +2458,6 @@
        ] ;
        fhir:name [ fhir:v "RS Observation - Glasgow Coma Scale" ] ;
        fhir:description [ fhir:v "GCS with components for eyes, verbal, motor; optional total score as integer." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-patients> ;
-         fhir:reference [ fhir:v "StructureDefinition/rs-observation-how-many-patients" ]
-       ] ;
-       fhir:name [ fhir:v "RS Observation - How Many Patients Involved" ] ;
-       fhir:description [ fhir:v "Count of patients involved." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
