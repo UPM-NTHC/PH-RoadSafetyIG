@@ -21,6 +21,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * serviceProvider ^short = "Service provider"
 * serviceProvider only Reference(RSOrganization)
 * participant 0..* MS
+* participant.type from SILPHEncounterParticipantRoleVS (extensible)
 * hospitalization.dischargeDisposition 0..1 MS
 * hospitalization.destination 0..1 MS
 * obeys RSEncounterDischarge
@@ -63,23 +64,23 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 
 * participant[receivedBy].individual 0..1 MS
 * participant[receivedBy].individual only Reference(PHCorePractitioner)
-* participant[receivedBy].type = $ParticipationType#test "Received by" // for discussion with Terminology team
+* participant[receivedBy].type = $ParticipationType#REF "Received by" // for discussion with Terminology team
 
 * participant[teamLeader].individual 0..1 MS
 * participant[teamLeader].individual only Reference(PHCorePractitioner)
-* participant[teamLeader].type = $ParticipationType#test "Team Leader" // for discussion with Terminology team
+* participant[teamLeader].type = $LNC#90123-1 "Response team leader name" // Run Report Form ID 37
 
 * participant[treatmentOfficer].individual 0..1 MS
 * participant[treatmentOfficer].individual only Reference(PHCorePractitioner)
-* participant[treatmentOfficer].type = $ParticipationType#test "Treatment Officer" // for discussion with Terminology team
+* participant[treatmentOfficer].type = $SCT#397897005 "Paramedic (occupation)" // Run Report Form ID 38
 
 * participant[transportOfficer].individual 0..1 MS
 * participant[transportOfficer].individual only Reference(PHCorePractitioner)
-* participant[transportOfficer].type = $ParticipationType#test "Transport Officer" // for discussion with Terminology team
+* participant[transportOfficer].type = $SCT#159738005 "Ambulanceman (occupation)" // Run Report Form ID 39
 
 * participant[assistant].individual 0..1 MS
 * participant[assistant].individual only Reference(PHCorePractitioner)
-* participant[assistant].type = $ParticipationType#test "Assistant" // for discussion with Terminology team
+* participant[assistant].type = $SCT#22515006 "Medical assistant (occupation)" // Run Report Form ID 4
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
