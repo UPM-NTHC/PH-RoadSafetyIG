@@ -832,7 +832,7 @@ Description: "Fracture observation. Use valueCodeableConcept to indicate fractur
 * code.coding 0..1
 * code.coding = $SCT#125605004 "Fracture of bone (disorder)" (exactly)
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept from SILPH-FractureTypeVS (preferred)
+* valueCodeableConcept from SILPHFractureTypeVS (preferred)
 * valueCodeableConcept.text 0..1 MS
 	// Recommended binding: ValueSet of fracture types (e.g., SNOMED codes: 397181002 = Open fracture, 423125000 = Closed fracture). Do not create new ValueSet here unless requested.
 * bodySite 0..1 MS
@@ -891,7 +891,7 @@ Title: "RS Observation - Collision Type"
 Description: "Collision type (Angle, Head-on, Rear end, Side swipe, etc.)."
 * valueCodeableConcept 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#collision-type "Collision type"
+* code.coding = $SILPH#COLLISIONTYPE "Collision type"
 
 // MDS219 - Presence of Traffic Investigator
 Profile: RSObsPresenceTrafficInvestigator
