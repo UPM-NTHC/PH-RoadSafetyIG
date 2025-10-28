@@ -131,6 +131,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [SILPH - Activity (VS)](ValueSet-SILPH-ActivityVS.md) | SILPH Value Set for Patient Activity at the Time of Injury/Accident |
 | [SILPH - Burns (VS)](ValueSet-SILPH-BurnsVS.md) | SILPH Value Set for Degree of Burn |
 | [SILPH - Cyanosis (VS)](ValueSet-SILPH-Cyanosis.md) | SILPH Value Set for Presence of Cyanosis |
+| [SILPH - Encounter Participant Role (VS)](ValueSet-SILPH-EncounterParticipantRoleVS.md) | SILPH Value Set for EMS encounter participant roles documented on the run report. |
 | [SILPH - External Cause of Burns (VS)](ValueSet-SILPH-ExternalCauseofBurnsVS.md) | SILPH Value Set for External Cause of Burns |
 | [SILPH - External Cause of Drowning (VS)](ValueSet-SILPH-ExternalCauseofDrowningVS.md) | SILPH Value Set for External Cause of Drowning |
 | [SILPH - Fracture Type (VS)](ValueSet-SILPH-FractureTypeVS.md) | SILPH Value Set for fracture type designation (open versus closed). |

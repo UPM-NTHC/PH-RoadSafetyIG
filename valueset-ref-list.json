@@ -82,6 +82,22 @@
       "StructureDefinition-rs-observation-cyanosis.html" : "RS Observation - Cyanosis"
     },
     {
+      "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "SILPHEncounterParticipantRoleVS",
+      "title" : "SILPH - Encounter Participant Role (VS)",
+      "description" : "SILPH Value Set for EMS encounter participant roles documented on the run report.",
+      "systems" : [
+        "http://loinc.org",
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-rs-encounter.html" : "RS Encounter"
+    },
+    {
       "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns",
       "version" : "0.2.0",
       "status" : "draft",
@@ -208,14 +224,14 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-rs-observation-avulsion.html" : "RS Observation - Avulsion",
-      "StructureDefinition-rs-observation-open-wound.html" : "RS Observation - Open Wound",
+      "StructureDefinition-rs-observation-other-injury.html" : "RS Observation - Other Specified Injury",
       "StructureDefinition-rs-observation-traumatic-amputation.html" : "RS Observation - Traumatic Amputation",
+      "StructureDefinition-rs-observation-fracture.html" : "RS Observation - Fracture",
       "StructureDefinition-rs-observation-abrasion.html" : "RS Observation - Abrasion",
       "StructureDefinition-rs-observation-concussion.html" : "RS Observation - Concussion",
-      "StructureDefinition-rs-observation-contusion.html" : "RS Observation - Contusion",
-      "StructureDefinition-rs-observation-fracture.html" : "RS Observation - Fracture",
-      "StructureDefinition-rs-observation-other-injury.html" : "RS Observation - Other Specified Injury"
+      "StructureDefinition-rs-observation-avulsion.html" : "RS Observation - Avulsion",
+      "StructureDefinition-rs-observation-open-wound.html" : "RS Observation - Open Wound",
+      "StructureDefinition-rs-observation-contusion.html" : "RS Observation - Contusion"
     },
     {
       "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport",

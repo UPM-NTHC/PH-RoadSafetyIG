@@ -15,14 +15,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Risk Factors (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors</tt><p>SILPH Value Set for Risk Factors</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Risk Factors (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors</tt><p>SILPH Value Set for Risk Factors</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "SILPH___Risk_Factors__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - Risk Factors (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -40,14 +43,20 @@
   fhir:description [ fhir:v "SILPH Value Set for Risk Factors"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "PH" ] ;
        fhir:display [ fhir:v "Philippines" ]
      ] )
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "704197006" ] ;
@@ -68,58 +77,79 @@
      ] )
   ] ; # 
   fhir:expansion [
-     fhir:identifier [ fhir:v "urn:uuid:25622628-05ac-4e70-800f-3c041370b121"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:v "urn:uuid:25622628-05ac-4e70-800f-3c041370b121"^^xsd:anyURI ;
+       fhir:l <urn:uuid:25622628-05ac-4e70-800f-3c041370b121>
+     ] ;
      fhir:timestamp [ fhir:v "2025-10-27T10:00:44+00:00"^^xsd:dateTime ] ;
      fhir:total [ fhir:v 5 ] ;
      fhir:parameter ( [
        fhir:name [ fhir:v "used-codesystem" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "version" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "displayLanguage" ] ;
        fhir:value [
-         a fhir:code ;
+         a fhir:Code ;
          fhir:v "en-US,en;q=0.9"
        ]
      ] [
        fhir:name [ fhir:v "warning-draft" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors?version=1>
        ]
      ] [
        fhir:name [ fhir:v "includeDesignations" ] ;
        fhir:value [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] ) ;
      fhir:contains ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "704197006" ] ;
        fhir:display [ fhir:v "Admits alcohol use" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "719363002" ] ;
        fhir:display [ fhir:v "Does use high technology communication device" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "271782001" ] ;
        fhir:display [ fhir:v "Drowsy" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "365982000" ] ;
        fhir:display [ fhir:v "Tobacco smoking consumption - finding" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "74964007" ] ;
        fhir:display [ fhir:v "Other" ]
      ] )

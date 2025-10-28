@@ -15,14 +15,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Place of Occurrence (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence</tt><p>SILPH Value Set for Place of Occurrence of Injury/Accident</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Place of Occurrence (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence</tt><p>SILPH Value Set for Place of Occurrence of Injury/Accident</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "SILPH___Place_of_Occurrence__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - Place of Occurrence (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -40,14 +43,20 @@
   fhir:description [ fhir:v "SILPH Value Set for Place of Occurrence of Injury/Accident"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "PH" ] ;
        fhir:display [ fhir:v "Philippines" ]
      ] )
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "264362003" ] ;
@@ -69,7 +78,10 @@
          fhir:display [ fhir:v "Unknown" ]
        ] )
      ] [
-       fhir:system [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
        fhir:version [ fhir:v "1" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "VIDEOBAR" ] ;
@@ -78,90 +90,120 @@
      ] )
   ] ; # 
   fhir:expansion [
-     fhir:identifier [ fhir:v "urn:uuid:dea85e79-440d-45cf-82f5-504593f06306"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:v "urn:uuid:dea85e79-440d-45cf-82f5-504593f06306"^^xsd:anyURI ;
+       fhir:l <urn:uuid:dea85e79-440d-45cf-82f5-504593f06306>
+     ] ;
      fhir:timestamp [ fhir:v "2025-10-27T09:53:27+00:00"^^xsd:dateTime ] ;
      fhir:total [ fhir:v 7 ] ;
      fhir:parameter ( [
        fhir:name [ fhir:v "used-codesystem" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "version" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "used-codesystem" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1>
        ]
      ] [
        fhir:name [ fhir:v "version" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1>
        ]
      ] [
        fhir:name [ fhir:v "displayLanguage" ] ;
        fhir:value [
-         a fhir:code ;
+         a fhir:Code ;
          fhir:v "en-US,en;q=0.9"
        ]
      ] [
        fhir:name [ fhir:v "warning-draft" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1>
        ]
      ] [
        fhir:name [ fhir:v "warning-draft" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence?version=1>
        ]
      ] [
        fhir:name [ fhir:v "includeDesignations" ] ;
        fhir:value [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] ) ;
      fhir:contains ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:code [ fhir:v "264362003" ] ;
        fhir:display [ fhir:v "Home" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:code [ fhir:v "257698009" ] ;
        fhir:display [ fhir:v "School" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:code [ fhir:v "272510001" ] ;
        fhir:display [ fhir:v "Road" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:code [ fhir:v "285141008" ] ;
        fhir:display [ fhir:v "Work environment" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:code [ fhir:v "74964007" ] ;
        fhir:display [ fhir:v "Other" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:code [ fhir:v "261665006" ] ;
        fhir:display [ fhir:v "Unknown" ]
      ] [
-       fhir:system [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
        fhir:version [ fhir:v "1" ] ;
        fhir:code [ fhir:v "VIDEOBAR" ] ;
        fhir:display [ fhir:v "Videoke Bars" ]

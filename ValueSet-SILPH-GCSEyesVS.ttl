@@ -15,14 +15,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - GCS - Eyes (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes</tt><p>SILPH Value Set for GCS Eye Score</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - GCS - Eyes (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes</tt><p>SILPH Value Set for GCS Eye Score</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "SILPH___GCS___Eyes__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - GCS - Eyes (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -40,14 +43,20 @@
   fhir:description [ fhir:v "SILPH Value Set for GCS Eye Score"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "PH" ] ;
        fhir:display [ fhir:v "Philippines" ]
      ] )
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:version [ fhir:v "2.78" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "LA6556-0" ] ;
@@ -65,54 +74,72 @@
      ] )
   ] ; # 
   fhir:expansion [
-     fhir:identifier [ fhir:v "urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:v "urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9"^^xsd:anyURI ;
+       fhir:l <urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9>
+     ] ;
      fhir:timestamp [ fhir:v "2025-10-27T06:13:36+00:00"^^xsd:dateTime ] ;
      fhir:total [ fhir:v 4 ] ;
      fhir:parameter ( [
        fhir:name [ fhir:v "used-codesystem" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://loinc.org|2.78"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://loinc.org|2.78"^^xsd:anyURI ;
+         fhir:l <http://loinc.org?version=2.78>
        ]
      ] [
        fhir:name [ fhir:v "version" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://loinc.org|2.78"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://loinc.org|2.78"^^xsd:anyURI ;
+         fhir:l <http://loinc.org?version=2.78>
        ]
      ] [
        fhir:name [ fhir:v "displayLanguage" ] ;
        fhir:value [
-         a fhir:code ;
+         a fhir:Code ;
          fhir:v "en-US,en;q=0.9"
        ]
      ] [
        fhir:name [ fhir:v "warning-draft" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes?version=1>
        ]
      ] [
        fhir:name [ fhir:v "includeDesignations" ] ;
        fhir:value [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] ) ;
      fhir:contains ( [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "LA6556-0" ] ;
        fhir:display [ fhir:v "Eyes open spontaneously" ]
      ] [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "LA6555-2" ] ;
        fhir:display [ fhir:v "Eye opening to verbal command" ]
      ] [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "LA6554-5" ] ;
        fhir:display [ fhir:v "Eye opening to pain" ]
      ] [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "LA6553-7" ] ;
        fhir:display [ fhir:v "No eye opening" ]
      ] )

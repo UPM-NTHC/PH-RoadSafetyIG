@@ -1,0 +1,168 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-EncounterParticipantRoleVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SILPH-EncounterParticipantRoleVS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2024-06-08T00:00:00.000+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-EncounterParticipantRoleVS</b></p><a name=\"SILPH-EncounterParticipantRoleVS\"> </a><a name=\"hcSILPH-EncounterParticipantRoleVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2024-06-08 00:00:00+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td><b>Version</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td></tr><tr><td><a name=\"SILPH-EncounterParticipantRoleVS-http://loinc.org-90123-1\"> </a><code>http://loinc.org</code></td><td/><td style=\"white-space:nowrap\">  <a href=\"https://loinc.org/90123-1/\">90123-1</a></td><td>Team Leader</td></tr><tr><td><a name=\"SILPH-EncounterParticipantRoleVS-http://snomed.info/sct-397897005\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/397897005\">397897005</a></td><td>Treatment Officer</td></tr><tr><td><a name=\"SILPH-EncounterParticipantRoleVS-http://snomed.info/sct-159738005\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/159738005\">159738005</a></td><td>Transport Officer</td></tr><tr><td><a name=\"SILPH-EncounterParticipantRoleVS-http://snomed.info/sct-22515006\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/22515006\">22515006</a></td><td>Assistant</td></tr><tr><td><a name=\"SILPH-EncounterParticipantRoleVS-http://hl7.org/fhir-REF\"> </a><code>http://hl7.org/fhir</code></td><td>5.0.0</td><td style=\"white-space:nowrap\">  REF</td><td>Received by</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole>
+  ] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SILPHEncounterParticipantRoleVS"] ; # 
+  fhir:title [ fhir:v "SILPH - Encounter Participant Role (VS)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SILPH Value Set for EMS encounter participant roles documented on the run report."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "90123-1" ] ;
+         fhir:display [ fhir:v "Response team leader name" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "397897005" ] ;
+         fhir:display [ fhir:v "Paramedic (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159738005" ] ;
+         fhir:display [ fhir:v "Ambulanceman (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "22515006" ] ;
+         fhir:display [ fhir:v "Medical assistant (occupation)" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "REF" ] ;
+         fhir:display [ fhir:v "Received by" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:identifier [
+       fhir:v "urn:uuid:3f2e4cbb-5b60-4d85-a15f-3ba8d0f2f7b2"^^xsd:anyURI ;
+       fhir:l <urn:uuid:3f2e4cbb-5b60-4d85-a15f-3ba8d0f2f7b2>
+     ] ;
+     fhir:timestamp [ fhir:v "2024-06-08T00:00:05.000+00:00"^^xsd:dateTime ] ;
+     fhir:total [ fhir:v 5 ] ;
+     fhir:parameter ( [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ]
+     ] [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
+       ]
+     ] [
+       fhir:name [ fhir:v "displayLanguage" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "en"
+       ]
+     ] [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://hl7.org/fhir/"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/>
+       ]
+     ] ) ;
+     fhir:contains ( [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "90123-1" ] ;
+       fhir:display [ fhir:v "Team Leader" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "397897005" ] ;
+       fhir:display [ fhir:v "Treatment Officer" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "159738005" ] ;
+       fhir:display [ fhir:v "Transport Officer" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "22515006" ] ;
+       fhir:display [ fhir:v "Assistant" ]
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir>
+       ] ;
+       fhir:version [ fhir:v "5.0.0" ] ;
+       fhir:code [ fhir:v "REF" ] ;
+       fhir:display [ fhir:v "Received by" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

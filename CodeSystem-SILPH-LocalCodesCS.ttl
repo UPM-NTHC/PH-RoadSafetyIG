@@ -15,14 +15,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH Road Safety Local Codes</h2><tt>http://www.roadsafetyph.doh.gov.ph/CodeSystem</tt><p>Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH Road Safety Local Codes</h2><tt>http://www.roadsafetyph.doh.gov.ph/CodeSystem</tt><p>Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "SILPH_Road_Safety_Local_Codes"] ; # 
   fhir:title [ fhir:v "SILPH Road Safety Local Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -40,7 +43,10 @@
   fhir:description [ fhir:v "Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "PH" ] ;
        fhir:display [ fhir:v "Philippines" ]
      ] )
@@ -48,7 +54,7 @@
   fhir:caseSensitive [ fhir:v false] ; # 
   fhir:valueSet [
      fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet"^^xsd:anyURI ;
-     fhir:link <http://www.roadsafetyph.doh.gov.ph/ValueSet>
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet>
   ] ; # 
   fhir:compositional [ fhir:v false] ; # 
   fhir:versionNeeded [ fhir:v true] ; # 

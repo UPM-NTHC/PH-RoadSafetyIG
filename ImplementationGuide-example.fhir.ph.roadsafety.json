@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-28T15:04:35+00:00",
+  "date" : "2025-10-28T15:40:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -1793,6 +1793,18 @@
       },
       "name" : "SILPH - Cyanosis (VS)",
       "description" : "SILPH Value Set for Presence of Cyanosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-EncounterParticipantRoleVS"
+      },
+      "name" : "SILPH - Encounter Participant Role (VS)",
+      "description" : "SILPH Value Set for EMS encounter participant roles documented on the run report.",
       "exampleBoolean" : false
     },
     {

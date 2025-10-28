@@ -15,14 +15,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - RR - Breath Sounds (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds</tt><p>SILPH Value Set for Breath Sounds</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - RR - Breath Sounds (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds</tt><p>SILPH Value Set for Breath Sounds</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "SILPH___RR___Breath_Sounds__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - RR - Breath Sounds (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -40,14 +43,20 @@
   fhir:description [ fhir:v "SILPH Value Set for Breath Sounds"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "PH" ] ;
        fhir:display [ fhir:v "Philippines" ]
      ] )
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "301708006" ] ;
@@ -59,46 +68,58 @@
      ] )
   ] ; # 
   fhir:expansion [
-     fhir:identifier [ fhir:v "urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:v "urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378"^^xsd:anyURI ;
+       fhir:l <urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378>
+     ] ;
      fhir:timestamp [ fhir:v "2025-10-27T06:00:35+00:00"^^xsd:dateTime ] ;
      fhir:total [ fhir:v 2 ] ;
      fhir:parameter ( [
        fhir:name [ fhir:v "used-codesystem" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "version" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "displayLanguage" ] ;
        fhir:value [
-         a fhir:code ;
+         a fhir:Code ;
          fhir:v "en-US,en;q=0.9"
        ]
      ] [
        fhir:name [ fhir:v "warning-draft" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds?version=1>
        ]
      ] [
        fhir:name [ fhir:v "includeDesignations" ] ;
        fhir:value [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] ) ;
      fhir:contains ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "301708006" ] ;
        fhir:display [ fhir:v "Chest clear" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "56018004" ] ;
        fhir:display [ fhir:v "Wheezing" ]
      ] )

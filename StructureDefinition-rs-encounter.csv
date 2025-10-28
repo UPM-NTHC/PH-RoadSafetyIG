@@ -232,7 +232,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Encounter.participant.type","Encounter.participant.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","","","","",,"extensible","","http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -259,10 +259,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""test""/>
+    <code value=""REF""/>
     <display value=""Received by""/>
   </coding>
-</valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant:receivedBy.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -288,11 +288,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.participant:teamLeader.type","Encounter.participant.type","","","",1,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""test""/>
-    <display value=""Team Leader""/>
+    <system value=""http://loinc.org""/>
+    <code value=""90123-1""/>
+    <display value=""Response team leader name""/>
   </coding>
-</valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant:teamLeader.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -318,11 +318,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.participant:treatmentOfficer.type","Encounter.participant.type","","","",1,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""test""/>
-    <display value=""Treatment Officer""/>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""397897005""/>
+    <display value=""Paramedic (occupation)""/>
   </coding>
-</valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant:treatmentOfficer.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -348,11 +348,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.participant:transportOfficer.type","Encounter.participant.type","","","",1,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""test""/>
-    <display value=""Transport Officer""/>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""159738005""/>
+    <display value=""Ambulanceman (occupation)""/>
   </coding>
-</valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant:transportOfficer.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -378,11 +378,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.participant:assistant.type","Encounter.participant.type","","","",1,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/v3-ParticipationType""/>
-    <code value=""test""/>
-    <display value=""Assistant""/>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""22515006""/>
+    <display value=""Medical assistant (occupation)""/>
   </coding>
-</valueCodeableConcept>","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole","",,,,"Encounter.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".functionCode","ROL-3 (or maybe PRT-4)"
 "Encounter.participant:assistant.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

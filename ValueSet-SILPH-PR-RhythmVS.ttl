@@ -15,14 +15,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - PR - Rhythm (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm</tt><p>SILPH Value Set for Pulse Rhythm</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - PR - Rhythm (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm</tt><p>SILPH Value Set for Pulse Rhythm</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "SILPH___PR___Rhythm__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - PR - Rhythm (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T15:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:40:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -40,14 +43,20 @@
   fhir:description [ fhir:v "SILPH Value Set for Pulse Rhythm"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "PH" ] ;
        fhir:display [ fhir:v "Philippines" ]
      ] )
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "271636001" ] ;
@@ -59,46 +68,58 @@
      ] )
   ] ; # 
   fhir:expansion [
-     fhir:identifier [ fhir:v "urn:uuid:89e4fc30-9f66-4e0d-a438-7f46d8011553"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:v "urn:uuid:89e4fc30-9f66-4e0d-a438-7f46d8011553"^^xsd:anyURI ;
+       fhir:l <urn:uuid:89e4fc30-9f66-4e0d-a438-7f46d8011553>
+     ] ;
      fhir:timestamp [ fhir:v "2025-10-27T07:57:33+00:00"^^xsd:dateTime ] ;
      fhir:total [ fhir:v 2 ] ;
      fhir:parameter ( [
        fhir:name [ fhir:v "used-codesystem" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "version" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
        ]
      ] [
        fhir:name [ fhir:v "displayLanguage" ] ;
        fhir:value [
-         a fhir:code ;
+         a fhir:Code ;
          fhir:v "en-US,en;q=0.9"
        ]
      ] [
        fhir:name [ fhir:v "warning-draft" ] ;
        fhir:value [
-         a fhir:uri ;
-         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm|1"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm?version=1>
        ]
      ] [
        fhir:name [ fhir:v "includeDesignations" ] ;
        fhir:value [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] ) ;
      fhir:contains ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "271636001" ] ;
        fhir:display [ fhir:v "Pulse regular" ]
      ] [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "61086009" ] ;
        fhir:display [ fhir:v "Pulse irregular" ]
      ] )

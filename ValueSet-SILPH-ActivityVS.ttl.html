@@ -274,14 +274,17 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;SILPH - Activity (VS)&lt;/h2&gt;&lt;tt&gt;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity&lt;/tt&gt;&lt;p&gt;SILPH Value Set for Patient Activity at the Time of Injury/Accident&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;SILPH - Activity (VS)&lt;/h2&gt;&lt;tt&gt;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity&lt;/tt&gt;&lt;p&gt;SILPH Value Set for Patient Activity at the Time of Injury/Accident&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity&gt;
+  ] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.2.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SILPH___Activity__VS_&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SILPH - Activity (VS)&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-28T15:04:35+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-28T15:40:43+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;UP Manila - National Institutes of Health - National Telehealth Center&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;UP Manila - National Institutes of Health - National Telehealth Center&quot; ] ;
@@ -297,13 +300,17 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;SILPH Value Set for Patient Activity at the Time of Injury/Accident&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">fhir:jurisdiction</a> ( [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;PH&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Philippines&quot; ]     ] )
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:compose</a> [
     ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:include</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/900000000000207008/version/20241001&quot; ] ;
       ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;443786003&quot; ] ;
@@ -314,67 +321,87 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Others&quot; ]       ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;261665006&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unknown&quot; ]       ] )     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://www.roadsafetyph.doh.gov.ph/CodeSystem&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
       ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;LEISURE&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Leisure&quot; ]       ] )     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion">fhir:expansion</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.identifier">fhir:identifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:b2f7ed30-9db1-4137-97ec-bdc9a896e464&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:b2f7ed30-9db1-4137-97ec-bdc9a896e464&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:uuid:b2f7ed30-9db1-4137-97ec-bdc9a896e464&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.timestamp">fhir:timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-27T09:56:50+00:00&quot;^^xsd:dateTime ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.total">fhir:total</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 5 ] ;
     ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter">fhir:parameter</a> [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;used-codesystem&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:uri ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001&quot;^^xsd:anyURI       ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:Uri ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001&gt;       ]     ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;version&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:uri ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001&quot;^^xsd:anyURI       ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:Uri ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001&gt;       ]     ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;used-codesystem&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:uri ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem|1&quot;^^xsd:anyURI       ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:Uri ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem|1&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1&gt;       ]     ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;version&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:uri ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem|1&quot;^^xsd:anyURI       ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:Uri ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem|1&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1&gt;       ]     ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;displayLanguage&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-US,en;q=0.9&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;warning-draft&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:uri ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity|1&quot;^^xsd:anyURI       ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:Uri ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity|1&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity?version=1&gt;       ]     ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;warning-draft&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:uri ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem|1&quot;^^xsd:anyURI       ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">a</a> fhir:Uri ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem|1&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1&gt;       ]     ] [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;includeDesignations&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.parameter.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:Boolean ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false       ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">fhir:contains</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/900000000000207008/version/20241001&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;443786003&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Injury while engaged in sports activity&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/900000000000207008/version/20241001&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;17542004&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Accident while engaged in work-related activity&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/900000000000207008/version/20241001&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;74964007&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Other&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://snomed.info/sct&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/900000000000207008/version/20241001&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;261665006&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unknown&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.roadsafetyph.doh.gov.ph/CodeSystem&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://www.roadsafetyph.doh.gov.ph/CodeSystem&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;LEISURE&quot; ] ;
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Leisure&quot; ]     ] )
@@ -405,7 +432,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 15:05+0000">2025-10-28</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 15:40+0000">2025-10-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

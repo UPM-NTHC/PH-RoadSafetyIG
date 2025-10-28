@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-10-28T15:04:35+00:00",
+  "date" : "2025-10-28T15:40:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -261,6 +261,14 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "mustSupport" : true
       },
       {
+        "id" : "Encounter.participant.type",
+        "path" : "Encounter.participant.type",
+        "binding" : {
+          "strength" : "extensible",
+          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole"
+        }
+      },
+      {
         "id" : "Encounter.participant:receivedBy",
         "path" : "Encounter.participant",
         "sliceName" : "receivedBy",
@@ -276,7 +284,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           "coding" : [
             {
               "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-              "code" : "test",
+              "code" : "REF",
               "display" : "Received by"
             }
           ]
@@ -309,9 +317,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-              "code" : "test",
-              "display" : "Team Leader"
+              "system" : "http://loinc.org",
+              "code" : "90123-1",
+              "display" : "Response team leader name"
             }
           ]
         }
@@ -343,9 +351,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-              "code" : "test",
-              "display" : "Treatment Officer"
+              "system" : "http://snomed.info/sct",
+              "code" : "397897005",
+              "display" : "Paramedic (occupation)"
             }
           ]
         }
@@ -377,9 +385,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-              "code" : "test",
-              "display" : "Transport Officer"
+              "system" : "http://snomed.info/sct",
+              "code" : "159738005",
+              "display" : "Ambulanceman (occupation)"
             }
           ]
         }
@@ -411,9 +419,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-              "code" : "test",
-              "display" : "Assistant"
+              "system" : "http://snomed.info/sct",
+              "code" : "22515006",
+              "display" : "Medical assistant (occupation)"
             }
           ]
         }
