@@ -8,7 +8,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * status ^short = "Encounter status"
 * class 1..1 MS
 * class ^short = "Encounter class/type"
-* class from VSTypeOfPatient (extensible)
+* class from SILPH-TypeofPatientVS (extensible)
 * identifier 1..* MS
 * identifier ^short = "Encounter identifiers"
 * subject 1..1 MS
@@ -51,7 +51,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * identifier[incidentNumber].type.coding.display = "Incident number"
 * identifier[hospitalCaseNo].type 1..1 MS
 * identifier[hospitalCaseNo].type.coding 1..1
-* identifier[hospitalCaseNo].type.coding.display = "Hospital case number"
+* identifier[hospitalCaseNo].type.coding = $SCT#722248002 "Patient hospital visit number (observable entity)"
 
 /* Originating hospital/practitioner */
 * hospitalization.origin 0..1 MS

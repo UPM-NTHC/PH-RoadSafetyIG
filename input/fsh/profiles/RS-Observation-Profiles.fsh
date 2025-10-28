@@ -49,7 +49,7 @@ Parent: RSObservation
 Id: rs-observation-injury-intent
 Title: "RS Observation - Injury Intent"
 Description: "Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined)."
-* code from VSInjuryIntent (preferred)
+* code from SILPH-InjuryIntentVS (preferred)
 * code.coding 0..1
 * code.coding = $LNC#11375-3 "Injury intent" (exactly)
 
@@ -63,9 +63,8 @@ Description: "Flag indicating bites/stings."
 * valueBoolean 0..1
 * code.coding = $SCT#242651001 "Injury caused by animal (disorder)" (exactly)
 // (Consolidated into RSObsECBitesStings as component[bitesAgent])
-* valueCodeableConcept 0..1 MS
-* valueCodeableConcept from VSBitesAgent (preferred)
-* valueCodeableConcept ^short = "Specify animal/insect agent"
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept.text ^short = "Specify animal/insect agent (text)"
 
 // MDS21 (flag) ; MDS22 (agent code) ; MDS23 (agent other text) - External Cause: Burns
 // Burn agent profile (separate from RSObsNatureBurns and RSObsECBurns)
@@ -81,7 +80,7 @@ Description: "Flag indicating burns as external cause."
 * valueBoolean 0..1
 // Burns - specify:
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept from VSBurnsAgent (preferred)
+* valueCodeableConcept from SILPH-ExternalCauseofBurnsVS (preferred)
 * valueCodeableConcept ^short = "Specify burns agent"
 // Burns - other, specify:
 * valueCodeableConcept.text 0..1 MS
@@ -135,7 +134,7 @@ Description: "Flag indicating drowning."
 * code.coding = $SCT#40947009 "Drowning (event)" (exactly)
 // External Cause/s of Injury/ies: Drowning - Type/Body of Water 
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept from VSDrowningType (preferred)
+* valueCodeableConcept from SILPH-ExternalCauseofDrowningVS (preferred)
 * valueCodeableConcept ^short = "Specify type/body of water"
 // External Cause/s of Injury/ies: Drowning: Others, specify
 * valueCodeableConcept.text 0..1 MS
@@ -296,7 +295,7 @@ Id: rs-observation-outcome-release
 Title: "RS Observation - Outcome at Release"
 Description: "Outcome at release from ER/OPD/RHU."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSOutcome (preferred)
+* valueCodeableConcept from SILPH-OutcomeVS (preferred)
 * code.coding 0..1
 * code.coding = $SCT#418138009 "Patient condition finding (finding)" (exactly)
 
@@ -307,7 +306,7 @@ Description: "Outcome at release from ER/OPD/RHU."
 // Title: "RS Observation - Outcome at Discharge"
 // Description: "Outcome at discharge."
 // * valueCodeableConcept 1..1 MS
-// * valueCodeableConcept from VSOutcome (preferred)
+// * valueCodeableConcept from SILPH-OutcomeVS (preferred)
 // * code.coding 0..1
 // * code.coding.system = $SCT (exactly)
 // * code.coding.code = #418138009
@@ -359,12 +358,12 @@ Description: "Respiratory rate in breaths/min."
 * component[respiratory-rhythm].code.coding 0..1
 * component[respiratory-rhythm].code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)" (exactly)
 * component[respiratory-rhythm].valueCodeableConcept 1..1 MS
-* component[respiratory-rhythm].valueCodeableConcept from VSRespiratoryRhythm (preferred)
+* component[respiratory-rhythm].valueCodeableConcept from SILPH-RR-RhythmVS (preferred)
 
 * component[breath-sounds].code.coding 0..1
 * component[breath-sounds].code.coding = $SCT#52653008 "Respiratory sounds (observable entity)" (exactly)
 * component[breath-sounds].valueCodeableConcept 1..1 MS
-* component[breath-sounds].valueCodeableConcept from VSBreathSounds (preferred)
+* component[breath-sounds].valueCodeableConcept from SILPH-RR-BreathSoundsVS (preferred)
 
 // MDS73 - Pulse/Heart Rate, MDS74 - Pulse Rhythm, MDS75 - Pulse Quality
 Profile: RSObsPulseRate
@@ -384,12 +383,12 @@ Description: "Pulse/heart rate in beats/min."
 * component[pulse-rhythm].code.coding 0..1
 * component[pulse-rhythm].code.coding = $SCT#364095004 "Pulse rhythm (observable entity)" (exactly)
 * component[pulse-rhythm].valueCodeableConcept 1..1 MS
-* component[pulse-rhythm].valueCodeableConcept from VSPulseRhythm (preferred)
+* component[pulse-rhythm].valueCodeableConcept from SILPH-PR-RhythmVS (preferred)
 
 * component[pulse-quality].code.coding 0..1
 * component[pulse-quality].code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)" (exactly)
 * component[pulse-quality].valueCodeableConcept 1..1 MS
-* component[pulse-quality].valueCodeableConcept from VSPulseQuality (preferred)
+* component[pulse-quality].valueCodeableConcept from SILPH-PR-QualityVS (preferred)
 
 
 // MDS76 (systolic) / MDS77 (diastolic) - Blood Pressure components
@@ -431,9 +430,9 @@ Id: rs-observation-level-of-consciousness
 Title: "RS Observation - Level of Consciousness (AVPU)"
 Description: "Level of consciousness (e.g., AVPU)."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSLevelOfConsciousness (preferred)
+* valueCodeableConcept from SILPH-LevelofConsciousnessVS (preferred)
 * code.coding 0..1
-* code.coding = $SCT#449159002 "Alert voice pain unresponsive scale (assessment scale)" (exactly)
+* code.coding = $SCT#6942003 "Level of consciousness (observable entity)" (exactly)
 
 // MDS80 - Pupils
 Profile: RSObsPupils
@@ -442,7 +441,7 @@ Id: rs-observation-pupils
 Title: "RS Observation - Pupils"
 Description: "Pupil size/reactivity summary."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPupils (preferred)
+* valueCodeableConcept from SILPH-PupilsVS (preferred)
 * code.coding 0..1
 * code.coding = $SCT#271733001 "Pupil reaction (observable entity)" (exactly)
 
@@ -453,7 +452,7 @@ Id: rs-observation-cyanosis
 Title: "RS Observation - Cyanosis"
 Description: "Cyanosis assessment."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSCyanosis (preferred)
+* valueCodeableConcept from SILPH-Cyanosis (preferred)
 * code.coding 0..1
 * code.coding = $SCT#3415004 "Cyanosis (finding)" (exactly)
 
@@ -478,19 +477,19 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 * component[gcs-eyes].code.coding 0..1
 * component[gcs-eyes].code.coding = $SCT#281395000 "Glasgow Coma Score eye opening subscore (observable entity)" (exactly)
 * component[gcs-eyes].valueCodeableConcept 1..1 MS
-* component[gcs-eyes].valueCodeableConcept from VSGCSEyes (preferred)
+* component[gcs-eyes].valueCodeableConcept from SILPH-GCSEyesVS (preferred)
 * component[gcs-eyes].valueCodeableConcept ^short = "Eye opening subscore"
 
 * component[gcs-verbal].code.coding 0..1
 * component[gcs-verbal].code.coding = $SCT#281397008 "Glasgow Coma Scale verbal response subscore (observable entity)" (exactly)
 * component[gcs-verbal].valueCodeableConcept 1..1 MS
-* component[gcs-verbal].valueCodeableConcept from VSGCSVerbal (preferred)
+* component[gcs-verbal].valueCodeableConcept from SILPH-GCSVerbalVS (preferred)
 * component[gcs-verbal].valueCodeableConcept ^short = "Verbal response subscore"
 
 * component[gcs-motor].code.coding 0..1
 * component[gcs-motor].code.coding = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)" (exactly)
 * component[gcs-motor].valueCodeableConcept 1..1 MS
-* component[gcs-motor].valueCodeableConcept from VSGCSMotor (preferred)
+* component[gcs-motor].valueCodeableConcept from SILPH-GCSMotorVS (preferred)
 * component[gcs-motor].valueCodeableConcept ^short = "Motor response subscore"
 
 
@@ -521,15 +520,15 @@ Description: "Overall condition of patient at assessment."
 * valueCodeableConcept.text 1..1 MS
 
 // MDS109 - Extent of injury (severity estimate/category)
-Profile: RSObsExtentOfInjury
-Parent: RSObservation
-Id: rs-observation-extent-of-injury
-Title: "RS Observation - Extent of Injury"
-Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
-* code.coding 0..1
-* code.coding = $SCT#1255875007 "Injury Severity Score (observable entity)" (exactly)
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.text 1..1 MS
+// Profile: RSObsExtentOfInjury
+// Parent: RSObservation
+// Id: rs-observation-extent-of-injury
+// Title: "RS Observation - Extent of Injury"
+// Description: "Extent / severity estimate or category of injury (e.g., minor, moderate, severe)."
+// * code.coding 0..1
+// * code.coding = $SCT#1255875007 "Injury Severity Score (observable entity)" (exactly)
+// * valueCodeableConcept 1..1 MS
+// * valueCodeableConcept.text 1..1 MS
 
 // MDS111 - Triage Priority
 Profile: RSObsTriagePriority
@@ -538,7 +537,7 @@ Id: rs-observation-triage-priority
 Title: "RS Observation - Triage Priority"
 Description: "Triage category assigned at scene (e.g., Red/Yellow/Green/Black)."
 * code.coding 0..1
-* code.coding = $SCT#225390008 "Triage (procedure)" (exactly)
+* code.coding = $SCT#273887006 "Triage index (assessment scale)" (exactly)
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
@@ -561,20 +560,20 @@ Id: rs-observation-status-on-arrival
 Title: "RS Observation - Status on Arrival"
 Description: "Status upon reaching facility/hospital."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSStatusOnArrival (preferred)
+* valueCodeableConcept from SILPH-StatusVS (preferred)
 * code.coding 0..1
 * code.coding = $SCT#118223001 "Patient status finding (finding)"
 
 // MDS117 - If Alive: Conscious/Unconscious (status on arrival detail)
-Profile: RSObsStatusOnArrivalAliveDetail
-Parent: RSObservation
-Id: rs-observation-status-on-arrival-alive
-Title: "RS Observation - If Alive: Conscious/Unconscious"
-Description: "If alive on arrival, consciousness detail."
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSStatusAliveDetail (preferred)
-* code.coding 0..1
-* code.coding = $SCT#6942003 "Level of consciousness (observable entity)"
+// Profile: RSObsStatusOnArrivalAliveDetail
+// Parent: RSObservation
+// Id: rs-observation-status-on-arrival-alive
+// Title: "RS Observation - If Alive: Conscious/Unconscious"
+// Description: "If alive on arrival, consciousness detail."
+// * valueCodeableConcept 1..1 MS
+// * valueCodeableConcept from SILPH-StatusifAliveVS (preferred)
+// * code.coding 0..1
+// * code.coding = $SCT#6942003 "Level of consciousness (observable entity)"
 
 // MDS118 (Mode of transport to facility) and MDS119 for 'Others' text if used
 Profile: RSObsModeOfTransport
@@ -584,7 +583,7 @@ Title: "RS Observation - Mode of Transport to Facility"
 Description: "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSModeOfTransport (preferred)
+* valueCodeableConcept from SILPH-ModeofTransportVS (preferred)
 * code.coding 0..1
 * code.coding = $LNC#74286-6 "Mode of transport to health facility" (exactly)
 
@@ -668,7 +667,7 @@ Id: rs-observation-collision-vs-noncollision
 Title: "RS Observation - Collision vs Non-Collision"
 Description: "Indicates whether the incident was collision or non-collision."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSCollisionCategory (preferred)
+* valueCodeableConcept from SILPH-TransportAccidentCollisionorNoncollisionVS (preferred)
 * code.coding 0..1
 * code.coding = SILPH#MVA-COLLISION "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"
 
@@ -680,7 +679,7 @@ Title: "RS Observation - Patient's Vehicle"
 Description: "Type of vehicle used by patient; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSPatientsVehicle (preferred)
+* valueCodeableConcept from SILPH-PatientsVehicleVS (preferred)
 * code.coding 0..1
 * code.coding = SILPH#PATIENTVEHICLE "Vehicles Involved: Patient's Vehicle"
 
@@ -692,7 +691,7 @@ Title: "RS Observation - Other Vehicle/Object Involved"
 Description: "Other vehicle/object type involved; text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSOtherVehicle (preferred)
+* valueCodeableConcept from SILPH-OtherVehicleVS (preferred)
 * code.coding 0..1
 * code.coding = SILPH#OTHERVEHICLE "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
 
@@ -704,7 +703,7 @@ Title: "RS Observation - Position of Patient"
 Description: "Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSPositionOfPatient (preferred)
+* valueCodeableConcept from SILPH-PositionofPatientVS (preferred)
 * code.coding 0..1
 * code.coding = SILPH#PATIENTPOSITION "Position of Patient"
 
@@ -715,7 +714,7 @@ Id: rs-observation-place-of-occurrence
 Title: "RS Observation - Place of Occurrence"
 Description: "Place type where injury occurred; name can be carried in note when applicable."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSPlaceOfOccurrence (preferred)
+* valueCodeableConcept from SILPH-PlaceofOccurrenceVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = SILPH#PLACEOCCURRENCE "Place of occurrence"
@@ -728,7 +727,7 @@ Title: "RS Observation - Activity at Time of Incident"
 Description: "Activity of the patient at time of incident; allow text fallback."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSActivity (preferred)
+* valueCodeableConcept from SILPH-ActivityVS (preferred)
 * code.coding 0..1
 * code.coding = $LNC#11372-0 "Injury associated activity" (exactly)
 
@@ -913,7 +912,7 @@ Id: rs-observation-other-risk-factors
 Title: "RS Observation - Other Risk Factors"
 Description: "Other risk factors at the time of incident; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from VSOtherRiskFactors (preferred)
+* valueCodeableConcept from SILPH-RiskFactorsVS (preferred)
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept.text ^short = "Other risk factors"
 * code.coding 0..1
@@ -927,6 +926,6 @@ Title: "RS Observation - Safety Accessories"
 Description: "Safety accessories present/used; allow text for 'Others'."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept from VSSafetyDevices (preferred)
+* valueCodeableConcept from SILPH-SafetyDevicesVS (preferred)
 * code.coding 0..1
 * code.coding = $SCT#386812007 "Safety precautions (procedure)" (exactly)
