@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-10-27T10:11:50.343+00:00"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition",
+  "version": "1",
+  "title": "SILPH - Inpatient Disposition (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "371827001",
+            "display": "Discharged"
+          },
+          {
+            "code": "225928004",
+            "display": "HAMA"
+          },
+          {
+            "code": "34596002",
+            "display": "Absconded"
+          },
+          {
+            "code": "183960004",
+            "display": "Refused Admission"
+          },
+          {
+            "code": "371828006",
+            "display": "Died"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          },
+          {
+            "code": "19712007",
+            "display": "Transferred to another facility/hospital"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Inpatient Disposition (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition</tt><p>SILPH Value Set for Inpatient Visit Disposition</p></div>"
+  },
+  "name": "SILPH___Inpatient_Disposition__VS_",
+  "id": "SILPH-InpatientDispositionVS",
+  "description": "SILPH Value Set for Inpatient Visit Disposition"
+}

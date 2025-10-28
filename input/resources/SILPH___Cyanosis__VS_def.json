@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-Cyanosis",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-10-27T06:07:40.698+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Cyanosis (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis</tt><p>SILPH Value Set for Presence of Cyanosis</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis",
+  "version": "1",
+  "name": "SILPH___Cyanosis__VS_",
+  "title": "SILPH - Cyanosis (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "54622005",
+            "display": "Negative"
+          },
+          {
+            "code": "95837007",
+            "display": "General"
+          },
+          {
+            "code": "95442007",
+            "display": "Peripheral"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Presence of Cyanosis"
+}

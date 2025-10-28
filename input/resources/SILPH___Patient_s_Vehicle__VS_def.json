@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-27T08:47:16.552+00:00"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle",
+  "version": "1",
+  "title": "SILPH - Patient's Vehicle (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "257518000",
+            "display": "None (Pedestrian)"
+          },
+          {
+            "code": "71783008",
+            "display": "Car"
+          },
+          {
+            "code": "224832000",
+            "display": "Van"
+          },
+          {
+            "code": "224830008",
+            "display": "Bus"
+          },
+          {
+            "code": "90748009",
+            "display": "Motorcycle"
+          },
+          {
+            "code": "70224005",
+            "display": "Bicycle"
+          },
+          {
+            "code": "12247004",
+            "display": "Truck"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "concept": [
+          {
+            "code": "TRICYCLE",
+            "display": "Tricycle"
+          },
+          {
+            "code": "JEEPNEY",
+            "display": "Jeepney"
+          }
+        ],
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "version": "1"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Patient's Vehicle (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle</tt><p>SILPH Value Set for Patient's Vehicle</p></div>"
+  },
+  "name": "SILPH___Patient_s_Vehicle__VS_",
+  "description": "SILPH Value Set for Patient's Vehicle",
+  "id": "SILPH-PatientsVehicleVS"
+}

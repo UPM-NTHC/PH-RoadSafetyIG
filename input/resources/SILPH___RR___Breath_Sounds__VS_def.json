@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-RR-BreathSoundsVS",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2025-10-27T06:00:17.205+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - RR - Breath Sounds (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds</tt><p>SILPH Value Set for Breath Sounds</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds",
+  "version": "1",
+  "name": "SILPH___RR___Breath_Sounds__VS_",
+  "title": "SILPH - RR - Breath Sounds (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "301708006",
+            "display": "Clear"
+          },
+          {
+            "code": "56018004",
+            "display": "Wheeze"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Breath Sounds"
+}

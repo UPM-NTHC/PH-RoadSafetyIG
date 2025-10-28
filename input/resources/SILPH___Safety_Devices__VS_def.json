@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-27T10:04:09.765+00:00"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices",
+  "version": "1",
+  "title": "SILPH - Safety Devices (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "260413007",
+            "display": "None"
+          },
+          {
+            "code": "427850003",
+            "display": "Life vest/Lifejacket/Floatation device (for drowning)"
+          },
+          {
+            "code": "102384007",
+            "display": "Airbag"
+          },
+          {
+            "code": "60054005",
+            "display": "Seatbelt"
+          },
+          {
+            "code": "285695004",
+            "display": "Helmet"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "concept": [
+          {
+            "code": "LA9389-3",
+            "display": "Childseat"
+          }
+        ],
+        "system": "http://loinc.org",
+        "version": "2.78"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Safety Devices (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices</tt><p>SILPH Value Set for Safety Devices</p></div>"
+  },
+  "description": "SILPH Value Set for Safety Devices",
+  "name": "SILPH___Safety_Devices__VS_",
+  "id": "SILPH-SafetyDevicesVS"
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-PupilsVS",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2025-10-27T06:03:41.148+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Pupils (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils</tt><p>SILPH Value Set for Pupil Reaction</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils",
+  "version": "1",
+  "name": "SILPH___Pupils__VS_",
+  "title": "SILPH - Pupils (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "386666001",
+            "display": "Pupils Equal and Reactive to Light (PEARL)"
+          },
+          {
+            "code": "37125009",
+            "display": "Dilated"
+          },
+          {
+            "code": "301939004",
+            "display": "Constricted"
+          },
+          {
+            "code": "823998002",
+            "display": "Unequal"
+          },
+          {
+            "code": "301944006",
+            "display": "Non Reactive"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Pupil Reaction"
+}

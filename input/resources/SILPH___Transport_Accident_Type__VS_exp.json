@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:85800e40-7a30-4415-989b-6dee74273417",
+    "timestamp": "2025-10-27T06:41:35+00:00",
+    "total": 3,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType|1"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "code": "XE9S7",
+        "display": "Land"
+      },
+      {
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "code": "XE85L",
+        "display": "Water"
+      },
+      {
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "code": "XE5XH",
+        "display": "Air"
+      }
+    ]
+  }
+}

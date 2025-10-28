@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-GCSMotorVS",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-10-27T06:15:31.467+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - GCS - Motor (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor</tt><p>SILPH Value Set for GCS Motor Score</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor",
+  "version": "1",
+  "name": "SILPH___GCS___Motor__VS_",
+  "title": "SILPH - GCS - Motor (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6567-7",
+            "display": "6 To command"
+          },
+          {
+            "code": "LA6566-9",
+            "display": "5 Localizes pain"
+          },
+          {
+            "code": "LA6565-1",
+            "display": "6 Withdraws from pain"
+          },
+          {
+            "code": "LA6564-4",
+            "display": "3 Abnormal flexion"
+          },
+          {
+            "code": "LA6563-6",
+            "display": "2 Abnormal extension"
+          },
+          {
+            "code": "LA6562-8",
+            "display": "1 None"
+          }
+        ],
+        "version": "2.78"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for GCS Motor Score"
+}

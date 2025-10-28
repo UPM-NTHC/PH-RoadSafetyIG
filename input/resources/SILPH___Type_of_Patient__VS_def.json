@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-TypeofPatientVS",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2025-10-27T09:52:11.009+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Type of Patient (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient</tt><p>SILPH Value Set for Type of Patient Encounter</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient",
+  "version": "1",
+  "name": "SILPH___Type_of_Patient__VS_",
+  "title": "SILPH - Type of Patient (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA10268-3",
+            "display": "ER"
+          },
+          {
+            "code": "LA21424-9",
+            "display": "OPD"
+          },
+          {
+            "code": "LA21427-2",
+            "display": "Inpatient"
+          }
+        ]
+      },
+      {
+        "concept": [
+          {
+            "code": "BHS",
+            "display": "BHS"
+          },
+          {
+            "code": "RHU",
+            "display": "RHU"
+          }
+        ],
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "version": "1"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Type of Patient Encounter"
+}

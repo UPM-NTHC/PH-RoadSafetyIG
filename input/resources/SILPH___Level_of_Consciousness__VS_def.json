@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-LevelofConsciousnessVS",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2025-10-27T06:18:21.545+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Level of Consciousness (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness</tt><p>SILPH Value Set for Level of Consciousness (AVPU) Score</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness",
+  "version": "1",
+  "name": "SILPH___Level_of_Consciousness__VS_",
+  "title": "SILPH - Level of Consciousness (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "248234008",
+            "display": "Alert"
+          },
+          {
+            "code": "300202002",
+            "display": "Voice"
+          },
+          {
+            "code": "450847001",
+            "display": "Pain"
+          },
+          {
+            "code": "422768004",
+            "display": "Unresponsive"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Level of Consciousness (AVPU) Score"
+}

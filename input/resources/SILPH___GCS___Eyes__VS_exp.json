@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9",
+    "timestamp": "2025-10-27T06:13:36+00:00",
+    "total": 4,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://loinc.org|2.78"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://loinc.org|2.78"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA6556-0",
+        "display": "Eyes open spontaneously"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA6555-2",
+        "display": "Eye opening to verbal command"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA6554-5",
+        "display": "Eye opening to pain"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA6553-7",
+        "display": "No eye opening"
+      }
+    ]
+  }
+}

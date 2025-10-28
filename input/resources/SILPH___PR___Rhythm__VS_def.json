@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-PR-RhythmVS",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2025-10-27T07:57:17.620+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - PR - Rhythm (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm</tt><p>SILPH Value Set for Pulse Rhythm</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm",
+  "version": "1",
+  "name": "SILPH___PR___Rhythm__VS_",
+  "title": "SILPH - PR - Rhythm (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "271636001",
+            "display": "Regular"
+          },
+          {
+            "code": "61086009",
+            "display": "Irregular"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Pulse Rhythm"
+}

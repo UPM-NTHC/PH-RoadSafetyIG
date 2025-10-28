@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-10-27T09:53:21.802+00:00"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence",
+  "version": "1",
+  "title": "SILPH - Place of Occurrence (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "264362003",
+            "display": "Home"
+          },
+          {
+            "code": "257698009",
+            "display": "School"
+          },
+          {
+            "code": "272510001",
+            "display": "Road"
+          },
+          {
+            "code": "285141008",
+            "display": "Workplace"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "concept": [
+          {
+            "code": "VIDEOBAR",
+            "display": "Videoke Bars"
+          }
+        ],
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "version": "1"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Place of Occurrence (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence</tt><p>SILPH Value Set for Place of Occurrence of Injury/Accident</p></div>"
+  },
+  "name": "SILPH___Place_of_Occurrence__VS_",
+  "id": "SILPH-PlaceofOccurrenceVS",
+  "description": "SILPH Value Set for Place of Occurrence of Injury/Accident"
+}

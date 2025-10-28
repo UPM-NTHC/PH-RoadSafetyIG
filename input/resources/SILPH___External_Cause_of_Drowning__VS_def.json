@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-ExternalCauseofDrowningVS",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2025-10-27T06:10:17.824+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - External Cause of Drowning (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning</tt><p>SILPH Value Set for External Cause of Drowning</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning",
+  "version": "1",
+  "name": "SILPH___External_Cause_of_Drowning__VS_",
+  "title": "SILPH - External Cause of Drowning (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "225742004",
+            "display": "Sea"
+          },
+          {
+            "code": "420531007",
+            "display": "River"
+          },
+          {
+            "code": "421084007",
+            "display": "Lake"
+          },
+          {
+            "code": "69297003",
+            "display": "Pool"
+          },
+          {
+            "code": "75988000",
+            "display": "Bath tub"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for External Cause of Drowning"
+}
