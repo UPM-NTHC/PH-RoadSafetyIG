@@ -202,7 +202,6 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or RSObsOtherVehicleInvolved
     or RSObsPositionOfPatient
     or RSObsHowManyVehicles
-    or RSObsHowManyPatients
     or RSObsPlaceOfOccurrence
     or RSObsActivityAtIncident
     or RSObsSafetyAccessories
@@ -260,7 +259,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     or RSObsModeOfTransport 
     or RSObsCollisionVsNonCollision or RSObsPatientsVehicle 
     or RSObsOtherVehicleInvolved or RSObsPositionOfPatient 
-    or RSObsHowManyVehicles or RSObsHowManyPatients 
+    or RSObsHowManyVehicles 
     or RSObsPlaceOfOccurrence or RSObsActivityAtIncident
     or RSObsSafetyAccessories
     or RSObsTriagePriority or RSObsUrgencyLevel
