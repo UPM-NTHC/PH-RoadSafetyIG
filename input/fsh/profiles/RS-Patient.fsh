@@ -45,7 +45,7 @@ Description: "Patient demographics and identifiers for RS reporting; reuse PH-Co
 * identifier contains patientHospitalID 0..1
 * identifier[patientHospitalID] ^short = "Hospital Patient ID No."
 * identifier[patientHospitalID] ^definition = "Write the hospital-based issued I.D. or number to uniquely identify the patient."
-* identifier[patientHospitalID].type.coding = $SCT#184107009 "Patient hospital visit number (observable entity)" (exactly)
+* identifier[patientHospitalID].type.coding = $SCT#184107009 "Patient hospital number"
 
 
 /* Patient.extension:sex vs HL7 Administrative gender - For decision point

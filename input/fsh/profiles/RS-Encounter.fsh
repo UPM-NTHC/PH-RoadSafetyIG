@@ -64,7 +64,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 
 * participant[receivedBy].individual 0..1 MS
 * participant[receivedBy].individual only Reference(PHCorePractitioner)
-* participant[receivedBy].type = $ParticipationType#RCV "receiver" // for discussion with Terminology team
+* participant[receivedBy].type = $ParticipationType#REF "referrer" // align display with HL7 ParticipationType preferred term
 
 * participant[teamLeader].individual 0..1 MS
 * participant[teamLeader].individual only Reference(PHCorePractitioner)
