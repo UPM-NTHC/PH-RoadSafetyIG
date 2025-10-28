@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-10-27T06:41:09.321+00:00"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType",
+  "version": "1",
+  "title": "SILPH - Transport Accident Type (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "concept": [
+          {
+            "code": "XE9S7",
+            "display": "Land"
+          },
+          {
+            "code": "XE85L",
+            "display": "Water"
+          },
+          {
+            "code": "XE5XH",
+            "display": "Air"
+          }
+        ],
+        "version": "1"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Transport Accident Type (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType</tt><p>SILPH Value Set for Transport Accident Type (Land, Water or Air)</p></div>"
+  },
+  "description": "SILPH Value Set for Transport Accident Type (Land, Water or Air)",
+  "id": "SILPH-TransportAccidentTypeVS",
+  "name": "SILPH___Transport_Accident_Type__VS_"
+}

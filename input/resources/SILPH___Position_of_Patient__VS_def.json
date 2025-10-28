@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-27T09:42:28.314+00:00"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient",
+  "version": "1",
+  "title": "SILPH - Position of Patient (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "32906002",
+            "display": "Pedestrian"
+          },
+          {
+            "code": "48084008",
+            "display": "Driver"
+          },
+          {
+            "code": "25636008",
+            "display": "Captain"
+          },
+          {
+            "code": "41852005",
+            "display": "Pilot"
+          },
+          {
+            "code": "55062001",
+            "display": "Front passenger"
+          },
+          {
+            "code": "69290001",
+            "display": "Rear passenger"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Position of Patient (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient</tt><p>SILPH Value Set for Position of Patient</p></div>"
+  },
+  "name": "SILPH___Position_of_Patient__VS_",
+  "id": "SILPH-PositionofPatientVS",
+  "description": "SILPH Value Set for Position of Patient"
+}

@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:3f74e1a3-1fda-4f3a-9899-4155a383b3c9",
+    "timestamp": "2025-10-27T06:09:20+00:00",
+    "total": 6,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "88999006",
+        "display": "Heat"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "80032004",
+        "display": "Fire"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "18213006",
+        "display": "Electricity"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "21847005",
+        "display": "Oil"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "263762005",
+        "display": "Friction"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "74964007",
+        "display": "Other"
+      }
+    ]
+  }
+}

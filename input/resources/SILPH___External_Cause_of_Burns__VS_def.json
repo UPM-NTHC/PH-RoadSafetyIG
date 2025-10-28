@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-ExternalCauseofBurnsVS",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-10-27T06:09:04.816+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - External Cause of Burns (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns</tt><p>SILPH Value Set for External Cause of Burns</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns",
+  "version": "1",
+  "name": "SILPH___External_Cause_of_Burns__VS_",
+  "title": "SILPH - External Cause of Burns (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "88999006",
+            "display": "Heat"
+          },
+          {
+            "code": "80032004",
+            "display": "Fire"
+          },
+          {
+            "code": "18213006",
+            "display": "Electricity"
+          },
+          {
+            "code": "21847005",
+            "display": "Oil"
+          },
+          {
+            "code": "263762005",
+            "display": "Friction"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for External Cause of Burns"
+}

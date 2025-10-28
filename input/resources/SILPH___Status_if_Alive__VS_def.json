@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-StatusifAliveVS",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2025-10-27T08:29:40.757+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Status if Alive (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive</tt><p>SILPH Value Set for Patient Status, if patient is alive, specify if conscious or unconscious</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive",
+  "version": "1",
+  "name": "SILPH___Status_if_Alive__VS_",
+  "title": "SILPH - Status if Alive (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "271591004",
+            "display": "Conscious"
+          },
+          {
+            "code": "418107008",
+            "display": "Unconscious"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Patient Status, if patient is alive, specify if conscious or unconscious"
+}

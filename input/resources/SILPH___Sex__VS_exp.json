@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:8bd356e8-728d-4f19-96f9-0116a1ac154f",
+    "timestamp": "2025-10-27T05:59:39+00:00",
+    "total": 2,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "248153007",
+        "display": "Male"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "248152002",
+        "display": "Female"
+      }
+    ]
+  }
+}

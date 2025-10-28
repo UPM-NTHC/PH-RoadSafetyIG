@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-27T08:52:11.624+00:00"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle",
+  "version": "1",
+  "title": "SILPH - Other Vehicle in Collision (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "260413007",
+            "display": "None"
+          },
+          {
+            "code": "71783008",
+            "display": "Car"
+          },
+          {
+            "display": "Van",
+            "code": "224832000"
+          },
+          {
+            "code": "224830008",
+            "display": "Bus"
+          },
+          {
+            "code": "90748009",
+            "display": "Motorcycle"
+          },
+          {
+            "code": "70224005",
+            "display": "Bicycle"
+          },
+          {
+            "code": "12247004",
+            "display": "Truck"
+          },
+          {
+            "code": "74964007",
+            "display": "Others"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "concept": [
+          {
+            "code": "TRICYCLE",
+            "display": "Tricycle"
+          },
+          {
+            "code": "JEEPNEY",
+            "display": "Jeepney"
+          }
+        ],
+        "system": "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "version": "1"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Other Vehicle in Collision (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle</tt><p>SILPH Value Set for Other Vehicle in Collision Accident</p></div>"
+  },
+  "name": "SILPH___Other_Vehicle_in_Collision__VS_",
+  "id": "SILPH-OtherVehicleVS",
+  "description": "SILPH Value Set for Other Vehicle in Collision Accident"
+}

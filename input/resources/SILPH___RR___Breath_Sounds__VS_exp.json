@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "expansion": {
+    "identifier": "urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378",
+    "timestamp": "2025-10-27T06:00:35+00:00",
+    "total": 2,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "301708006",
+        "display": "Chest clear"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "56018004",
+        "display": "Wheezing"
+      }
+    ]
+  }
+}

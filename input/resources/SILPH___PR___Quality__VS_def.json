@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SILPH-PR-QualityVS",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2025-10-27T07:55:31.763+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - PR - Quality (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality</tt><p>SILPH Value Set for Pulse Quality</p></div>"
+  },
+  "url": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality",
+  "version": "1",
+  "name": "SILPH___PR___Quality__VS_",
+  "title": "SILPH - PR - Quality (VS)",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "12146004",
+            "display": "Normal"
+          },
+          {
+            "code": "64661000",
+            "display": "Thready"
+          },
+          {
+            "code": "271640005",
+            "display": "Bounding"
+          }
+        ],
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001"
+      }
+    ]
+  },
+  "description": "SILPH Value Set for Pulse Quality"
+}
