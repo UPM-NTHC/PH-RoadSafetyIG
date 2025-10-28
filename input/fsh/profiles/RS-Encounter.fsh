@@ -64,7 +64,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 
 * participant[receivedBy].individual 0..1 MS
 * participant[receivedBy].individual only Reference(PHCorePractitioner)
-* participant[receivedBy].type = $ParticipationType#REF "Received by" // for discussion with Terminology team
+* participant[receivedBy].type = $ParticipationType#RCV "receiver" // for discussion with Terminology team
 
 * participant[teamLeader].individual 0..1 MS
 * participant[teamLeader].individual only Reference(PHCorePractitioner)
@@ -92,7 +92,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 
 Invariant: RSEncounterDischarge
 Description: "Inpatient encounters use in-patient discharge dispositions; ER/OPD/BHS/RHU encounters use the ambulatory disposition list."
-Expression: "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-disposition-er')))"
+Expression: "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-er')))"
 Severity: #error
 
 Extension: RSEncounterVehicleUsed

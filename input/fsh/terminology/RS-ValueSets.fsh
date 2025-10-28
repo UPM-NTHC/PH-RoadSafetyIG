@@ -80,7 +80,7 @@ Description: "SILPH Value Set for EMS encounter participant roles documented on 
 * $SCT#397897005 "Paramedic (occupation)"
 * $SCT#159738005 "Ambulanceman (occupation)"
 * $SCT#22515006 "Medical assistant (occupation)"
-* $ParticipationType#REF "Received by" 
+* $ParticipationType#RCV "receiver" 
 * ^expansion.identifier = "urn:uuid:3f2e4cbb-5b60-4d85-a15f-3ba8d0f2f7b2"
 * ^expansion.timestamp = "2024-06-08T00:00:05.000+00:00"
 * ^expansion.total = 5
@@ -109,5 +109,5 @@ Description: "SILPH Value Set for EMS encounter participant roles documented on 
 * ^expansion.contains[=].display = "Assistant"
 * ^expansion.contains[+].system = "http://hl7.org/fhir"
 * ^expansion.contains[=].version = "5.0.0"
-* ^expansion.contains[=].code = #REF
-* ^expansion.contains[=].display = "Received by"
+* ^expansion.contains[=].code = #RCV
+* ^expansion.contains[=].display = "receiver"
