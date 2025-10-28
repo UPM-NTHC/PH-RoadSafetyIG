@@ -358,14 +358,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
         },
         "effectiveDateTime": "2024-02-01T08:30:00+08:00",
         "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1255875007",
-              "display": "Injury Severity Score (observable entity)"
-            }
-          ],
-          "text": "Injury Severity Score (observable entity)"
+          "text": "Observation"
         },
         "valueString": "Sample observation value"
       }
@@ -422,12 +415,12 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "11368-8",
-              "display": "Illness or injury onset date and time"
+              "system": "http://snomed.info/sct",
+              "code": "439771001",
+              "display": "Date of event (observable entity)"
             }
           ],
-          "text": "Illness or injury onset date and time"
+          "text": "Date of event (observable entity)"
         },
         "valueDateTime": "2024-02-01T08:35:00+08:00"
       }

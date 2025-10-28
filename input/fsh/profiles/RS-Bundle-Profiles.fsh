@@ -179,7 +179,6 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or RSObsConditionOfPatient 
     or RSObsOutcome
     or RSObsStatusOnArrival
-    or RSObsStatusOnArrivalAliveDetail
     or RSObsTransferredFromFacility
     or RSObsReferredByFacility
     )
@@ -187,7 +186,7 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
 * section[injuries].entry 0..* 
 // MDS #109, #176-217 injury detail observations (multiple injuries, extent, abrasions, burns, fractures, wounds)
 * section[injuries].entry only Reference(
-    RSObsMultipleInjuries or RSObsExtentOfInjury or RSObsAbrasion or RSObsAvulsion
+    RSObsMultipleInjuries or RSObsAbrasion or RSObsAvulsion
     or RSObsNatureBurns or RSObsECBurns or RSObsConcussion or RSObsContusion or RSObsFracture
     or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury)
 * section[incident].title = "Incident"
@@ -234,7 +233,6 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     conditionInitial 0..1 and
     conditionFinal 0..1 and
     observationInjuries 0..* and
-    observationExtentOfInjury 0..1 and
     observationClinical 0..* and
     observationIncident 0..* and
     observationExternalCause 0..* and
@@ -253,7 +251,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 // MDS #230-231 risk factors, #108 condition status, #53 outcome, #116-117 arrival status, #175 alcohol test
 * entry[observationClinical].resource only RSObsOtherRiskFactors 
     or RSObsConditionOfPatient or RSObsOutcome or RSObsStatusOnArrival 
-    or RSObsStatusOnArrivalAliveDetail or RSObsBloodAlcoholConcentration
+    or RSObsBloodAlcoholConcentration
 // MDS #158-159 injury time, #18 intent, #41 transport, #118 transport mode,
 // MDS #163-168 collision context, #156-157 counts, #170 place, #173 activity,
 // MDS #232-233 safety accessories, #111 triage, #114 urgency
@@ -281,7 +279,6 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury
 // Post-crash concepts have been moved to a separate bundle (see RSBundlePostCrash)
 // MDS #109 - Extent of Injury severity band
-* entry[observationExtentOfInjury].resource only RSObsExtentOfInjury
 // MDS #45 - Transferred from facility
 * entry[observationTransferredFromFacility].resource only RSObsTransferredFromFacility
 // MDS #46 - Referred by facility

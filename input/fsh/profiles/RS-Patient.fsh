@@ -36,6 +36,18 @@ Description: "Patient demographics and identifiers for RS reporting; reuse PH-Co
 * address.line 0..* MS
 * address.extension 0..* MS
 
+
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slicing based on identifier system"
+* identifier ^slicing.ordered = false
+* identifier contains patientHospitalID 0..1
+* identifier[patientHospitalID] ^short = "Hospital Patient ID No."
+* identifier[patientHospitalID] ^definition = "Write the hospital-based issued I.D. or number to uniquely identify the patient."
+* identifier[patientHospitalID].type.coding = $SCT#184107009 "Patient hospital visit number (observable entity)" (exactly)
+
+
 /* Patient.extension:sex vs HL7 Administrative gender - For decision point
     PH-core uses Administrative Gender - http://hl7.org/fhir/ValueSet/administrative-gender
     while NHDR uses both Administrative Gender and an extension Patient.extension:sex

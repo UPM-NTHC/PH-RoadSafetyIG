@@ -66,6 +66,7 @@ export type CSIndex = { [systemKey: string]: Set<string> };
 
 const workspace = process.cwd();
 const fshRoot = join(workspace, "input", "fsh");
+const resourcesRoot = join(workspace, "input", "resources");
 const vsMappingCsv = join(workspace, "diagram-sil", "L3 - VALUE SET MAPPING (Main).csv");
 const outPath = (() => {
   const i = process.argv.indexOf("--report");
@@ -80,6 +81,7 @@ const systemAliases: Record<string, string> = {
 
 const localSystemNames = new Set([
   "http://upm-nthc.ph/CodeSystem/silph",
+  "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
   "SILPH", // used in some ValueSets
 ]);
 
@@ -157,39 +159,76 @@ function buildFSHIndexes(): { vs: VSIndex; cs: CSIndex; allFiles: string[]; file
       }
     }
   }
+  const resourceFiles = walk(resourcesRoot).filter(f => extname(f).toLowerCase() === ".json");
+  files.push(...resourceFiles);
+  for (const file of resourceFiles) {
+    const text = readFileSync(file, "utf8");
+    fileText[file] = text;
+    let data: any;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      continue;
+    }
+    if (!data || data.resourceType !== "ValueSet" || !data.id) continue;
+    const compose = data.compose ?? {};
+    const includes: any[] = Array.isArray(compose.include) ? compose.include : [];
+    const codes: { system: string; code: string }[] = [];
+    const includesSystems: string[] = [];
+    for (const include of includes) {
+      const system: string | undefined = include.system;
+      const concepts: any[] = Array.isArray(include.concept) ? include.concept : [];
+      if (concepts.length && system) {
+        for (const concept of concepts) {
+          if (concept && concept.code) {
+            codes.push({ system, code: concept.code });
+          }
+        }
+      }
+      if ((!concepts.length || include.filter) && system) {
+        includesSystems.push(system);
+      }
+    }
+    vs[data.id] = {
+      title: data.title ?? data.name ?? "",
+      file,
+      codes,
+      includesSystems,
+    };
+  }
   return { vs, cs, allFiles: files, fileText };
 }
 
 // Map CSV Value Set names to FSH ValueSet IDs
 const vsNameToId: Record<string, string> = {
-  "SILPH - RR - Rhythm": "VSRespiratoryRhythm",
-  "SILPH - RR - Breath Sounds": "VSBreathSounds",
-  "SILPH - PR - Rhythm": "VSPulseRhythm",
-  "SILPH - PR - Quality": "VSPulseQuality",
-  "SILPH - Level of Consciousness": "VSLevelOfConsciousness",
-  "SILPH - Pupils": "VSPupils",
-  "SILPH - Cyanosis": "VSCyanosis",
-  "SILPH - GCS - Eyes": "VSGCSEyes",
-  "SILPH - GCS - Verbal": "VSGCSVerbal",
-  "SILPH - GCS - Motor": "VSGCSMotor",
-  "SILPH - Type of Patient": "VSTypeOfPatient",
+  "SILPH - RR - Rhythm": "SILPH-RR-RhythmVS",
+  "SILPH - RR - Breath Sounds": "SILPH-RR-BreathSoundsVS",
+  "SILPH - PR - Rhythm": "SILPH-PR-RhythmVS",
+  "SILPH - PR - Quality": "SILPH-PR-QualityVS",
+  "SILPH - Level of Consciousness": "SILPH-LevelofConsciousnessVS",
+  "SILPH - Pupils": "SILPH-PupilsVS",
+  "SILPH - Cyanosis": "SILPH-Cyanosis",
+  "SILPH - GCS - Eyes": "SILPH-GCSEyesVS",
+  "SILPH - GCS - Verbal": "SILPH-GCSVerbalVS",
+  "SILPH - GCS - Motor": "SILPH-GCSMotorVS",
+  "SILPH - Type of Patient": "SILPH-TypeofPatientVS",
   "PSGC - Region": "VSPSGCRegion",
   "PSGC - Province": "VSPSGCProvince",
   "PSGC - City/Municipality": "VSPSGCCityMunicipality",
   "PSGC - Barangay": "VSPSGCBarangay",
-  "SILPH - Patient's Vehicle": "VSPatientsVehicle",
-  "SILPH - Other Vehicle in Collision": "VSOtherVehicle",
-  "SILPH - Position of Patient": "VSPositionOfPatient",
-  "SILPH - Place of  Occurrence": "VSPlaceOfOccurrence",
-  "SILPH - Place of Occurrence": "VSPlaceOfOccurrence",
-  "SILPH - Activity": "VSActivity",
-  "SILPH - Risk Factors": "VSOtherRiskFactors",
-  "SILPH - Safety Devices": "VSSafetyDevices",
-  "SILPH - External Cause of Burns": "VSBurnsAgent",
-  "SILPH - External Cause of Drowning": "VSDrowningType",
-  "SILPH - Transport Accident: Collision/Noncollision": "VSCollisionCategory",
-  "SILPH - Transport Accident: Land/Water/Air": "VSTransportAccidentMode",
-  "SILPH - Injury Intent": "VSInjuryIntent",
+  "SILPH - Patient's Vehicle": "SILPH-PatientsVehicleVS",
+  "SILPH - Other Vehicle in Collision": "SILPH-OtherVehicleVS",
+  "SILPH - Position of Patient": "SILPH-PositionofPatientVS",
+  "SILPH - Place of  Occurrence": "SILPH-PlaceofOccurrenceVS",
+  "SILPH - Place of Occurrence": "SILPH-PlaceofOccurrenceVS",
+  "SILPH - Activity": "SILPH-ActivityVS",
+  "SILPH - Risk Factors": "SILPH-RiskFactorsVS",
+  "SILPH - Safety Devices": "SILPH-SafetyDevicesVS",
+  "SILPH - External Cause of Burns": "SILPH-ExternalCauseofBurnsVS",
+  "SILPH - External Cause of Drowning": "SILPH-ExternalCauseofDrowningVS",
+  "SILPH - Transport Accident: Collision/Noncollision": "SILPH-TransportAccidentCollisionorNoncollisionVS",
+  "SILPH - Transport Accident: Land/Water/Air": "SILPH-TransportAccidentTypeVS",
+  "SILPH - Injury Intent": "SILPH-InjuryIntentVS",
 };
 
 function searchCodeEverywhere(code: string, fileText: Record<string, string>): string[] {
@@ -205,18 +244,36 @@ function main() {
   const records = toRecords(parseCSV(csvText));
   const { vs, cs, fileText } = buildFSHIndexes();
 
+  const fshUsedValueSetIds = new Set<string>();
+  for (const [file, text] of Object.entries(fileText)) {
+    if (!file.endsWith(".fsh")) continue;
+    const lines = text.split(/\r?\n/);
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith("//")) continue;
+      const regex = /from\s+\$([A-Za-z0-9\-_]+)/g;
+      let match: RegExpExecArray | null;
+      while ((match = regex.exec(line))) {
+        fshUsedValueSetIds.add(match[1]);
+      }
+    }
+  }
+
+  const usedValueSetIds = new Set<string>();
+
   const headers = [
     "Form",
     "Section",
     "Data Element",
-    "Option",
-    "CSV ValueSet",
-    "FSH ValueSet Id",
-    "Final CodeSystem",
-    "Final Code",
-    "Status",
-    "Details",
-  ];
+  "Option",
+  "CSV ValueSet",
+  "FSH ValueSet Id",
+  "Final CodeSystem",
+  "Final Code",
+  "Status",
+  "Details",
+  "Notes",
+];
   const outRows: string[][] = [headers];
 
   for (const row of records) {
@@ -230,13 +287,13 @@ function main() {
 
     // Skip if clearly N/A
     if (!csvVSName && (!finalCS || finalCS.toUpperCase().includes("N/A"))) {
-      outRows.push([form, section, dataElement, option, csvVSName, "", finalCS, finalCode, "SKIPPED_NA", "No ValueSet and N/A code system."]);
+      outRows.push([form, section, dataElement, option, csvVSName, "", finalCS, finalCode, "SKIPPED_NA", "No ValueSet and N/A code system.", ""]);
       continue;
     }
 
     // Special-case: Sex -> FHIR administrative gender, not a SNOMED ValueSet
     if (/^sex$/i.test(dataElement || "")) {
-      outRows.push([form, section, dataElement, option, csvVSName, "(FHIR administrative gender)", finalCS, finalCode, "SKIPPED_GENDER_ADMIN", "Uses Patient.gender (male|female|other|unknown). CSV SNOMED rows informational only."]);
+      outRows.push([form, section, dataElement, option, csvVSName, "(FHIR administrative gender)", finalCS, finalCode, "SKIPPED_GENDER_ADMIN", "Uses Patient.gender (male|female|other|unknown). CSV SNOMED rows informational only.", ""]);
       continue;
     }
 
@@ -255,19 +312,20 @@ function main() {
   else if (d === "outcome") vsId = "VSOutcome";
     }
     if (!vsId) {
-      outRows.push([form, section, dataElement, option, csvVSName, "", finalCS, finalCode, "NO_MAPPING_RULE", "Add mapping for this CSV Value Set name."]);
+      outRows.push([form, section, dataElement, option, csvVSName, "", finalCS, finalCode, "NO_MAPPING_RULE", "Add mapping for this CSV Value Set name.", ""]);
       continue;
     }
+    usedValueSetIds.add(vsId);
 
     const vsDef = vs[vsId];
     if (!vsDef) {
-      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "MISSING_VALUESET", "ValueSet not found in input/fsh."]);
+      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "MISSING_VALUESET", "ValueSet not found in input/fsh/resources.", ""]);
       continue;
     }
 
     // If no code present, we still can check the ValueSet exists
     if (!finalCode || finalCode.toUpperCase() === "N/A") {
-      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "OK_VALUESET_ONLY", "No code to check (N/A)"]);
+      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "OK_VALUESET_ONLY", "No code to check (N/A)", ""]);
       continue;
     }
 
@@ -301,22 +359,33 @@ function main() {
     }
 
     if (vsHasCode) {
-      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "OK", "Code present in ValueSet."]);
+      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "OK", "Code present in ValueSet.", ""]);
       continue;
     }
 
     if (targetIsLocal && csHasCode) {
-      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "WARN_NOT_IN_VS", "Code present in local CodeSystem but not included in ValueSet."]);
+      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "WARN_NOT_IN_VS", "Code present in local CodeSystem but not included in ValueSet.", ""]);
       continue;
     }
 
     // Search anywhere in FSH as a fallback
     const hitFiles = searchCodeEverywhere(finalCode, fileText);
     if (hitFiles.length) {
-      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "WARN_FOUND_ELSEWHERE", `Code found in: ${hitFiles.map(h => h.replace(workspace+"/", '')).join("|")}`]);
+      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "WARN_FOUND_ELSEWHERE", `Code found in: ${hitFiles.map(h => h.replace(workspace+"/", '')).join("|")}`, ""]);
     } else {
-      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "MISSING_CODE", "Code not found in VS or CodeSystem or anywhere in FSH."]);
+      outRows.push([form, section, dataElement, option, csvVSName, vsId, finalCS, finalCode, "MISSING_CODE", "Code not found in VS or CodeSystem or anywhere in FSH.", ""]);
     }
+  }
+
+  const unusedJson = [];
+  const referencedValueSetIds = new Set<string>([...usedValueSetIds, ...fshUsedValueSetIds]);
+  for (const [vsId, vsDef] of Object.entries(vs)) {
+    if (vsDef.file.endsWith(".json") && !referencedValueSetIds.has(vsId)) {
+      unusedJson.push(vsDef.file.replace(workspace + "/", ""));
+    }
+  }
+  if (unusedJson.length) {
+    outRows.push(["", "", "", "", "", "", "", "", "INFO_UNUSED_JSON", `Unused JSON ValueSet definitions: ${unusedJson.join("|")}`, ""]);
   }
 
   // Write report
