@@ -25,8 +25,7 @@ L2_ID,FORM,SECTION,DATA ELEMENT,FORM DATA TYPE,FINAL CODESYSTEM,FINAL CODESYSTEM
 14.4,Run Report Form,,Address - Province,CodableConcept,FHIR Element,Patient.address,N/A
 14.5,Run Report Form,,Address - Region,CodableConcept,FHIR Element,Patient.address,N/A
 15,Run Report Form,,Tel. No.,String,SNOMED CT,734005006,Telephone number (property) (qualifier value)
-16,Run Report Form,,Medical History,String,SNOMED CT,1003642006,"Past medical history section (record artifact)
-"
+16,Run Report Form,,Medical History,String,SNOMED CT,417662000,History of clinical finding in subject (situation)
 17,Run Report Form,,Current Medication,String,SNOMED CT,5.13881E+14,Current medication as reported by patient (observable entity)
 18,Run Report Form,,Known Allergies,String,SNOMED CT,609328004,Allergic disposition (finding)
 19,Run Report Form,Vital Signs,Vital Signs - Time,Time,FHIR Element,Observation.effectiveDateTime,N/A
@@ -42,7 +41,7 @@ L2_ID,FORM,SECTION,DATA ELEMENT,FORM DATA TYPE,FINAL CODESYSTEM,FINAL CODESYSTEM
 26.2,Run Report Form,Vital Signs,Blood Pressure - Diastolic,Integer,SNOMED CT,271650006,"Diastolic blood pressure (observable entity)
 "
 27,Run Report Form,Vital Signs,Temperature,Decimal,SNOMED CT,386725007,Body temperature (observable entity)
-28,Run Report Form,Vital Signs,Level of Consciousness,CodableConcept,SNOMED CT,449159002,Alert voice pain unresponsive scale (assessment scale)
+28,Run Report Form,Vital Signs,Level of Consciousness,CodableConcept,SNOMED CT,6942003,Level of consciousness (observable entity)
 29,Run Report Form,Vital Signs,Pupils,CodableConcept,SNOMED CT,271733001,Pupil reaction (observable entity)
 30,Run Report Form,Vital Signs,Cyanosis,CodableConcept,SNOMED CT,3415004,Cyanosis (finding)
 31,Run Report Form,Vital Signs,Add Vital Signs?,Boolean,FHIR Element,"Questionnaire.item[repeats:""true""]",N/A
@@ -77,7 +76,7 @@ Encounter.participant.individual = Reference(Practitioner.name)",N/A
 53,ONEISS,General Data,Name of Reporting Health Facility,String,FHIR Element,Organization.name,N/A
 54,ONEISS,General Data,Hospital Patient ID No.,String,SNOMED CT,184107009,Patient hospital number (observable entity)
 55,ONEISS,General Data,Hospital Registry No.,String,FHIR Element,Patient.identifier,N/A
-56,ONEISS,General Data,Hospital Case No.,String,SNOMED CT,398225001,Medical record number (observable entity)
+56,ONEISS,General Data,Hospital Case No.,String,SNOMED CT,722248002,Patient hospital visit number (observable entity)
 57,ONEISS,General Data,Type of Patient,CodableConcept,SNOMED CT,116154003,Patient (person)
 58,ONEISS,General Data,Birth Date,Date,SNOMED CT,184099003,Date of birth (observable entity)
 59.1,ONEISS,General Data,If Date of Birth is not available: Age - Years Unit,String,FHIR Element,N/A,N/A
@@ -203,7 +202,7 @@ Observation.note[Annotation.text]",N/A
 159,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Name of Originating Hospital/Physician,String,FHIR Element,"Hospital = Encounter.hospitalization.origin(Reference(Organization.name))
 Physician = Encounter.participant.individual(Reference(Practitioner.name))",N/A
 160,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Status upon reaching Facility/Hospital,CodableConcept,SNOMED CT,118223001,Patient status finding (finding)
-161,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,"Status upon reaching Facility/Hospital - If alive,please check if",CodableConcept,SNOMED CT,6942003,Level of consciousness (observable entity)
+161,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,"Status upon reaching Facility/Hospital - If alive,please check if",CodableConcept,SNOMED CT,106167005,Consciousness related finding (finding)
 162,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Mode of transport to the Hospital/Facility,CodableConcept,LOINC,74286-6,Transport mode to hospital [NTDS]
 163,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,"Mode of transport to the Hospital/Facility - Others, specify",String,FHIR Element,Observation.valueCodeableConcept.text,N/A
 164,ONEISS,Hospital/Facility Data: ER/OPD/BHS/RHU,Initial Impression,String,SNOMED CT,148006,Preliminary diagnosis (contextual qualifier) (qualifier value)
@@ -220,16 +219,16 @@ Physician = Encounter.participant.individual(Reference(Practitioner.name))",N/A
 175,ONEISS,Hospital/Facility Data: In-Patient,ICD-10 Code/s: Nature of Injury,CodableConcept,FHIR Element,Value Set for ICD 10,N/A
 176,ONEISS,Hospital/Facility Data: In-Patient,ICD-10 Code/s: External cause of Injury,CodableConcept,FHIR Element,Value Set for ICD 10,N/A
 177,ONEISS,Hospital/Facility Data: In-Patient,Comments,String,LOINC,77999-1,Case notification comment
-178,Dot-vote Priorities,Scene Station,Condition of Patients,CodableConcept,SNOMED CT,12386002,Patient status determination (procedure)
+178,Dot-vote Priorities,Scene Station,Condition of Patients,CodableConcept,VETO,12386002,Patient status determination (procedure)
 179,Dot-vote Priorities,Scene Station,Collision type,CodableConcept,Local Code,COLLISIONTYPE,Collision Type
 180,Dot-vote Priorities,Scene Station,Presence of traffic investigator,Boolean,SNOMED CT,159679004,Traffic warden (occupation)
-181,Dot-vote Priorities,Scene Station,Extent of injury,CodableConcept,SNOMED CT,1255875007,Injury Severity Score (observable entity)
+181,Dot-vote Priorities,Scene Station,Extent of injury,CodableConcept,VETO,1255875007,Injury Severity Score (observable entity)
 182,Dot-vote Priorities,Scene Station,How many vehicles involved,Integer,FHIR Element,Observation.valueInteger,N/A
 183,Dot-vote Priorities,Scene Station,How many patients involved,Integer,FHIR Element,Observation.valueInteger,N/A
 184,Dot-vote Priorities,Transport Station,Hospital Available,Boolean,FHIR Element,"ServiceProvider Loc Profile = Location.name
 HealthcareService.category[""EMS Referral Center""]
 HealthcareService.location[reference ServiceProvider Loc]",N/A
-185,Dot-vote Priorities,Transport Station,Priority to Scene (Triage),CodableConcept,SNOMED CT,225390008,Triage (procedure)
+185,Dot-vote Priorities,Transport Station,Priority to Scene (Triage),CodableConcept,SNOMED CT,273887006,Triage index (assessment scale)
 186,Dot-vote Priorities,Transport Station,Incident No.,String,FHIR Element,Encounter.identifier(Identifier.value),N/A
 187,Dot-vote Priorities,Transport Station,Was Transpo Coordinated with Receiving Hospital?,Boolean,Local Code,COORDINATIONDONE,Was Transport Coordinated with Receiving Hospital?
 188,Dot-vote Priorities,Transport Station,Priority Level (Urgency),CodableConcept,SNOMED CT,260870009,Priority (attribute)
