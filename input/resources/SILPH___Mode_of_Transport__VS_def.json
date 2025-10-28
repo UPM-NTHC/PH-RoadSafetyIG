@@ -55,5 +55,66 @@
   },
   "name": "SILPH___Mode_of_Transport__VS_",
   "id": "SILPH-ModeofTransportVS",
-  "description": "SILPH Value Set for Mode of Transport of Patient to Healthcare Facility"
+  "description": "SILPH Value Set for Mode of Transport of Patient to Healthcare Facility",
+  "expansion": {
+    "identifier": "urn:uuid:290d95e4-0fd6-473c-839c-0a3ba7f34a98",
+    "timestamp": "2025-10-27T10:08:41+00:00",
+    "total": 4,
+    "parameter": [
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+      },
+      {
+        "name": "used-codesystem",
+        "valueUri": "http://loinc.org|2.78"
+      },
+      {
+        "name": "version",
+        "valueUri": "http://loinc.org|2.78"
+      },
+      {
+        "name": "displayLanguage",
+        "valueCode": "en-US,en;q=0.9"
+      },
+      {
+        "name": "warning-draft",
+        "valueUri": "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport|1"
+      },
+      {
+        "name": "includeDesignations",
+        "valueBoolean": false
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001",
+        "code": "49122002",
+        "display": "Ambulance"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241001",
+        "code": "74964007",
+        "display": "Other"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "LA9321-6",
+        "display": "Walk-in following nonambulance, law enforcement transport"
+      },
+      {
+        "system": "http://loinc.org",
+        "version": "2.78",
+        "code": "LA9319-0",
+        "display": "Walk-in following transport via private transportation"
+      }
+    ]
+  }
 }
