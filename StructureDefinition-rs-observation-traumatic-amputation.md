@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traum
   "name" : "RSObsTraumaticAmputation",
   "title" : "RS Observation - Traumatic Amputation",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traum
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "262595009",
           "display" : "Traumatic amputation (disorder)"

@@ -95,7 +95,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
   "name" : "RSBundleEMS",
   "title" : "RS Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -285,7 +285,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
       {
         "id" : "Bundle.entry:observationDateReceived.resource.code.coding",
         "path" : "Bundle.entry.resource.code.coding",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://loinc.org",
           "code" : "30976-5",
           "display" : "Date received Form"
@@ -313,7 +313,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
       {
         "id" : "Bundle.entry:observationTimeEnroute.resource.code.coding",
         "path" : "Bundle.entry.resource.code.coding",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://loinc.org",
           "code" : "69472-9",
           "display" : "Unit responded [Date and time] Vehicle"
@@ -341,7 +341,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
       {
         "id" : "Bundle.entry:observationTimeOnScene.resource.code.coding",
         "path" : "Bundle.entry.resource.code.coding",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "405798008",
           "display" : "Time of arrival of emergency services (observable entity)"
@@ -369,7 +369,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
       {
         "id" : "Bundle.entry:observationTimeDeparted.resource.code.coding",
         "path" : "Bundle.entry.resource.code.coding",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://loinc.org",
           "code" : "69475-2",
           "display" : "Responding unit left the scene with a patient [Date and time] Vehicle"
@@ -397,7 +397,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
       {
         "id" : "Bundle.entry:observationTimeHospitalArrival.resource.code.coding",
         "path" : "Bundle.entry.resource.code.coding",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "405799000",
           "display" : "Time of arrival at hospital (observable entity)"
@@ -425,7 +425,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
       {
         "id" : "Bundle.entry:observationTimeStationArrival.resource.code.coding",
         "path" : "Bundle.entry.resource.code.coding",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://loinc.org",
           "code" : "11288-8",
           "display" : "Arrival time documented"

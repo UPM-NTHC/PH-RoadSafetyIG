@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "RS Patient",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -129,10 +129,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
       {
         "id" : "Patient.identifier:patientHospitalID.type.coding",
         "path" : "Patient.identifier.type.coding",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "184107009",
-          "display" : "Patient hospital visit number (observable entity)"
+          "display" : "Patient hospital number"
         }
       },
       {

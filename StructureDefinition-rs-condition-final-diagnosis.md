@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-final-d
   "name" : "RSConditionFinalDiagnosis",
   "title" : "RS Condition — Final Diagnosis",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-final-d
         "path" : "Condition.category.coding",
         "min" : 1,
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "89100005",
           "display" : "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"

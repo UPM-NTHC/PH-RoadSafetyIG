@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "name" : "RSObsActivityAtIncident",
   "title" : "RS Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://loinc.org",
           "code" : "11372-0",
           "display" : "Injury associated activity"

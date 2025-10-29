@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "name" : "RSObsRespiratoryRate",
   "title" : "RS Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "86290005",
           "display" : "Respiratory rate (observable entity)"
@@ -179,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "id" : "Observation.component:respiratory-rhythm.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "248582003",
           "display" : "Rhythm of respiration (observable entity)"
@@ -228,7 +228,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "id" : "Observation.component:breath-sounds.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "52653008",
           "display" : "Respiratory sounds (observable entity)"

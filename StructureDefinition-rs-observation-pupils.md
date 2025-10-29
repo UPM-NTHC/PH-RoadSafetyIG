@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pupil
   "name" : "RSObsPupils",
   "title" : "RS Observation - Pupils",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -123,7 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pupil
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "271733001",
           "display" : "Pupil reaction (observable entity)"

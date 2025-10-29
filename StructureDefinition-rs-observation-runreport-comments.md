@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
   "name" : "RSObsRunReportComments",
   "title" : "RS Observation - Run Report Comments",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://loinc.org",
           "code" : "77999-1",
           "display" : "Case notification comment"

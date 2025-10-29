@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-fract
   "name" : "RSObsFracture",
   "title" : "RS Observation - Fracture",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-fract
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "125605004",
           "display" : "Fracture of bone (disorder)"

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "name" : "RSObsPulseRate",
   "title" : "RS Observation - Pulse Rate",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "78564009",
           "display" : "Heart rate measured at systemic artery (observable entity)"
@@ -179,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
         "id" : "Observation.component:pulse-rhythm.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "364095004",
           "display" : "Pulse rhythm (observable entity)"
@@ -228,7 +228,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
         "id" : "Observation.component:pulse-quality.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "78564009",
           "display" : "Heart rate measured at systemic artery (observable entity)"

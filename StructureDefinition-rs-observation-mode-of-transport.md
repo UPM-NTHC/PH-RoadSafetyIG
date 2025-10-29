@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "name" : "RSObsModeOfTransport",
   "title" : "RS Observation - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,10 +120,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://loinc.org",
           "code" : "74286-6",
-          "display" : "Mode of transport to health facility"
+          "display" : "Transport mode to hospital [NTDS]"
         }
       },
       {

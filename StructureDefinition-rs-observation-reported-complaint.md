@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-repor
   "name" : "RSObsReportedComplaint",
   "title" : "RS Observation - Reported Complaint",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-repor
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "1269489004",
           "display" : "Chief complaint (observable entity)"

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-gu
   "name" : "RSObsECGunshot",
   "title" : "RS Observation - External Cause: Gunshot",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,10 +119,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-gu
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "63409001",
-          "display" : "Gunshot event"
+          "display" : "Struck by firearm discharge"
         }
       },
       {
@@ -150,24 +150,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-gu
             "code" : "boolean"
           }
         ]
-      },
-      {
-        "id" : "Observation.value[x]:valueCodeableConcept",
-        "path" : "Observation.value[x]",
-        "sliceName" : "valueCodeableConcept",
-        "short" : "Gunshot, specify weapon",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x]:valueCodeableConcept.text",
-        "path" : "Observation.value[x].text",
-        "mustSupport" : true
       }
     ]
   }

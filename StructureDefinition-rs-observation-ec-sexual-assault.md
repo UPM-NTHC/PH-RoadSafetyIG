@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-se
   "name" : "RSObsECSexualAssault",
   "title" : "RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,10 +119,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-se
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "248110007",
-          "display" : "Sexual assault event"
+          "display" : "Sexual assault"
         }
       },
       {

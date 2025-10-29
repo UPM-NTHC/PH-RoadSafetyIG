@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
   "name" : "RSObsBloodPressure",
   "title" : "RS Observation - Blood Pressure",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -173,7 +173,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
         "id" : "Observation.component:systolic.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "271649006",
           "display" : "Systolic blood pressure (observable entity)"
@@ -218,7 +218,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
         "id" : "Observation.component:diastolic.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "271650006",
           "display" : "Diastolic blood pressure (observable entity)"

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
   "name" : "RSObsGCS",
   "title" : "RS Observation - Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "248241002",
           "display" : "Glasgow coma score (observable entity)"
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "id" : "Observation.component:gcs-eyes.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "281395000",
           "display" : "Glasgow Coma Score eye opening subscore (observable entity)"
@@ -241,7 +241,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "id" : "Observation.component:gcs-verbal.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "281397008",
           "display" : "Glasgow Coma Scale verbal response subscore (observable entity)"
@@ -291,7 +291,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "id" : "Observation.component:gcs-motor.code.coding",
         "path" : "Observation.component.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "281396004",
           "display" : "Glasgow Coma Scale motor response subscore (observable entity)"

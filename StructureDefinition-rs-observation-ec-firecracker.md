@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fi
   "name" : "RSObsECFirecracker",
   "title" : "RS Observation - External Cause: Firecracker",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,10 +119,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fi
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "218100007",
-          "display" : "Firecracker event"
+          "display" : "Accident caused by fireworks"
         }
       },
       {

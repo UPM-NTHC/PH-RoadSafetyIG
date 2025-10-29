@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-bi
   "name" : "RSObsECBitesStings",
   "title" : "RS Observation - External Cause: Bites/Stings",
   "status" : "draft",
-  "date" : "2025-10-28T15:55:35+00:00",
+  "date" : "2025-10-28T23:57:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-bi
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
         "max" : "1",
-        "fixedCoding" : {
+        "patternCoding" : {
           "system" : "http://snomed.info/sct",
           "code" : "242651001",
           "display" : "Injury caused by animal (disorder)"
