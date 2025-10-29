@@ -99,7 +99,6 @@ Extension: RSEncounterVehicleUsed
 Id: rs-encounter-vehicle-used
 Title: "RS Encounter Vehicle Used"
 Description: "Identifier and type of transport vehicle used during an encounter."
-Context: RSEncounter
 * valueCodeableConcept 1..1
 * valueCodeableConcept ^short = "Identifier and type of transport vehicle."
 * valueCodeableConcept ^definition = "Identifier and type of transport vehicle used during the encounter."
