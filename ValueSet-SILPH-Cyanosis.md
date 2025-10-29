@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis | *Version*:0.2.0 |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis | *Version*:0.2.0 |
 | Draft as of 2025-10-29 | *Computable Name*:SILPH___Cyanosis__VS_ |
 
  
@@ -49,12 +49,12 @@ SILPH Value Set for Presence of Cyanosis
     "versionId" : "2",
     "lastUpdated" : "2025-10-27T06:07:40.698+00:00"
   },
-  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis",
+  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis",
   "version" : "0.2.0",
   "name" : "SILPH___Cyanosis__VS_",
   "title" : "SILPH - Cyanosis (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -92,7 +92,6 @@ SILPH Value Set for Presence of Cyanosis
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "54622005",

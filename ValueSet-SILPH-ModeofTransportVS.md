@@ -56,7 +56,7 @@ This value set contains 4 concepts
   "name" : "SILPH___Mode_of_Transport__VS_",
   "title" : "SILPH - Mode of Transport (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -94,7 +94,6 @@ This value set contains 4 concepts
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "49122002",
@@ -108,7 +107,6 @@ This value set contains 4 concepts
       },
       {
         "system" : "http://loinc.org",
-        "version" : "2.78",
         "concept" : [
           {
             "code" : "LA9321-6",

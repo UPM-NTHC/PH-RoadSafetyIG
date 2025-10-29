@@ -61,7 +61,7 @@ SILPH List of Body Sites
   "name" : "SILPH___List_of_Body_Sites__VS_",
   "title" : "SILPH - List of Body Sites (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -99,7 +99,6 @@ SILPH List of Body Sites
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "818983003",
@@ -1074,24 +1073,12 @@ SILPH List of Body Sites
             "display" : "Occipital Bone, Basilar Part"
           },
           {
-            "code" : "31065004",
-            "display" : "Occipital Lobe (Cerebrum)"
-          },
-          {
             "code" : "56193007",
             "display" : "Oculomotor Nerve"
           },
           {
-            "code" : "1172006",
-            "display" : "Odontoid Process"
-          },
-          {
             "code" : "47166007",
             "display" : "Olfactory System"
-          },
-          {
-            "code" : "113346000",
-            "display" : "Omental Bursa (Lesser Sac)"
           },
           {
             "code" : "27398004",
@@ -1458,10 +1445,6 @@ SILPH List of Body Sites
             "display" : "Sphenoid Sinus"
           },
           {
-            "code" : "15119000",
-            "display" : "Spinal Accessory Nerve"
-          },
-          {
             "code" : "2748008",
             "display" : "Spinal Cord"
           },
@@ -1562,16 +1545,8 @@ SILPH List of Body Sites
             "display" : "Tear Duct"
           },
           {
-            "code" : "60911003",
-            "display" : "Temporal Bone"
-          },
-          {
             "code" : "39206008",
             "display" : "Temporal Fascia"
-          },
-          {
-            "code" : "78277001",
-            "display" : "Temporal Lobe (Cerebrum)"
           },
           {
             "code" : "53620006",

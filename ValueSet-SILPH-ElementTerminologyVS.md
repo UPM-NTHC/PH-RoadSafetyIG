@@ -56,7 +56,7 @@ This value set contains 114 concepts
   "name" : "SILPH___Element_Terminology__VS_",
   "title" : "SILPH - Element Terminology (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -94,7 +94,6 @@ This value set contains 114 concepts
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "405796007",
@@ -175,10 +174,6 @@ This value set contains 114 concepts
           {
             "code" : "364095004",
             "display" : "Pulse Rate - Rhythm"
-          },
-          {
-            "code" : "78564009",
-            "display" : "Pulse Rate - Quality"
           },
           {
             "code" : "271649006",
@@ -401,10 +396,6 @@ This value set contains 114 concepts
             "display" : "External Cause/s of Injury/ies: Others"
           },
           {
-            "code" : "274215009",
-            "display" : "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Land, Water, Air)"
-          },
-          {
             "code" : "80943009",
             "display" : "Other risk factors at the time of the incident"
           },
@@ -435,10 +426,6 @@ This value set contains 114 concepts
           {
             "code" : "89100005",
             "display" : "Complete Final Diagnosis"
-          },
-          {
-            "code" : "418138009",
-            "display" : "Outcome"
           },
           {
             "code" : "159679004",
@@ -484,7 +471,6 @@ This value set contains 114 concepts
       },
       {
         "system" : "http://loinc.org",
-        "version" : "2.78",
         "concept" : [
           {
             "code" : "30976-5",
@@ -534,7 +520,6 @@ This value set contains 114 concepts
       },
       {
         "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-        "version" : "1",
         "concept" : [
           {
             "code" : "INJURYFRONT",

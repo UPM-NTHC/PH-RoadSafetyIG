@@ -54,7 +54,7 @@ SILPH ValueSet for Patient Status, if Alive or Dead during Admission
   "name" : "SILPH___Status__VS_",
   "title" : "SILPH - Status (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -92,7 +92,6 @@ SILPH ValueSet for Patient Status, if Alive or Dead during Admission
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "63238001",

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-bu
   "name" : "RSObsECBurns",
   "title" : "RS Observation - External Cause: Burns",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

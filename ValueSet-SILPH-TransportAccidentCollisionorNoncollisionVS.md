@@ -56,7 +56,7 @@ This value set contains 2 concepts
   "name" : "SILPH___Transport_Accident__Collision_or_Noncollision__VS_",
   "title" : "SILPH - Transport Accident: Collision or Noncollision (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -94,7 +94,6 @@ This value set contains 2 concepts
     "include" : [
       {
         "system" : "http://loinc.org",
-        "version" : "2.78",
         "concept" : [
           {
             "code" : "LA7319-2",
@@ -104,7 +103,6 @@ This value set contains 2 concepts
       },
       {
         "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-        "version" : "1",
         "concept" : [
           {
             "code" : "NONCOLLISION",

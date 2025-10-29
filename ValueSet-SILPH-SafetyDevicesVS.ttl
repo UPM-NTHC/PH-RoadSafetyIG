@@ -15,7 +15,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Safety Devices (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices</tt><p>SILPH Value Set for Safety Devices</p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-SafetyDevicesVS</b></p><a name=\"SILPH-SafetyDevicesVS\"> </a><a name=\"hcSILPH-SafetyDevicesVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2025-10-27 10:04:09+0000</p></div><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on:</p><ul><li>Loinc v2.78</li><li>SNOMED CT International edition 01-Oct 2024</li></ul></div><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td><b>Version</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://snomed.info/sct-260413007\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/260413007\">260413007</a></td><td>None</td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://snomed.info/sct-427850003\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/427850003\">427850003</a></td><td>Life preserver flotation device</td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://snomed.info/sct-102384007\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/102384007\">102384007</a></td><td>Motor vehicle airbag</td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://snomed.info/sct-60054005\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/60054005\">60054005</a></td><td>Seat belt</td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://snomed.info/sct-285695004\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/285695004\">285695004</a></td><td>Helmet</td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://snomed.info/sct-74964007\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/74964007\">74964007</a></td><td>Other</td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://snomed.info/sct-261665006\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/261665006\">261665006</a></td><td>Unknown</td></tr><tr><td><a name=\"SILPH-SafetyDevicesVS-http://loinc.org-LA9389-3\"> </a><code>http://loinc.org</code></td><td>2.78</td><td style=\"white-space:nowrap\">  <a href=\"https://loinc.org/LA9389-3/\">LA9389-3</a></td><td>Child safety seat</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices"^^xsd:anyURI ;
@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "SILPH___Safety_Devices__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - Safety Devices (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-29T03:19:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-29T04:24:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -57,7 +57,6 @@
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "260413007" ] ;
          fhir:display [ fhir:v "None" ]
@@ -85,7 +84,6 @@
          fhir:v "http://loinc.org"^^xsd:anyURI ;
          fhir:l <http://loinc.org>
        ] ;
-       fhir:version [ fhir:v "2.78" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "LA9389-3" ] ;
          fhir:display [ fhir:v "Childseat" ]

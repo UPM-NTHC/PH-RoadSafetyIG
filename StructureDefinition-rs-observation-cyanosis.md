@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-cyano
   "name" : "RSObsCyanosis",
   "title" : "RS Observation - Cyanosis",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -155,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-cyano
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis"
+          "valueSet" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis"
         }
       }
     ]

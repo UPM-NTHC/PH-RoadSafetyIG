@@ -56,7 +56,7 @@ This value set contains 11 concepts
   "name" : "SILPH___Other_Vehicle_in_Collision__VS_",
   "title" : "SILPH - Other Vehicle in Collision (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -94,7 +94,6 @@ This value set contains 11 concepts
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "260413007",
@@ -136,7 +135,6 @@ This value set contains 11 concepts
       },
       {
         "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-        "version" : "1",
         "concept" : [
           {
             "code" : "TRICYCLE",

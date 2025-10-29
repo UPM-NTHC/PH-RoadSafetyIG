@@ -54,7 +54,7 @@ SILPH Value Set for GCS Eye Score
   "name" : "SILPH___GCS___Eyes__VS_",
   "title" : "SILPH - GCS - Eyes (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -92,7 +92,6 @@ SILPH Value Set for GCS Eye Score
     "include" : [
       {
         "system" : "http://loinc.org",
-        "version" : "2.78",
         "concept" : [
           {
             "code" : "LA6556-0",

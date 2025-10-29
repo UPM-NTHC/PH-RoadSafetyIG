@@ -15,7 +15,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Injury Intent (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent</tt><p>SILPH Value Set for Injury Intent</p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-InjuryIntentVS</b></p><a name=\"SILPH-InjuryIntentVS\"> </a><a name=\"hcSILPH-InjuryIntentVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 5; Last updated: 2025-10-27 09:51:26+0000</p></div><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on:</p><ul><li>SNOMED CT International edition 01-Oct 2024</li><li>codesystem SILPH Road Safety Local Codes version 1</li></ul></div><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td><b>Version</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-InjuryIntentVS-http://snomed.info/sct-242056005\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/242056005\">242056005</a></td><td>Accidental injury</td></tr><tr><td><a name=\"SILPH-InjuryIntentVS-http://snomed.info/sct-361269008\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/361269008\">361269008</a></td><td>Intentional</td></tr><tr><td><a name=\"SILPH-InjuryIntentVS-http://snomed.info/sct-276853009\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/276853009\">276853009</a></td><td>Self inflicted injury</td></tr><tr><td><a name=\"SILPH-InjuryIntentVS-http://snomed.info/sct-269735005\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">  <a href=\"http://snomed.info/sct/900000000000207008/id/269735005\">269735005</a></td><td>Injury undetermined whether accidentally or purposely inflicted</td></tr><tr><td><a name=\"SILPH-InjuryIntentVS-http://www.roadsafetyph.doh.gov.ph/CodeSystem-VAWC\"> </a><code>http://www.roadsafetyph.doh.gov.ph/CodeSystem</code></td><td>1</td><td style=\"white-space:nowrap\">  VAWC</td><td>VAWC Patient</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent"^^xsd:anyURI ;
@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "SILPH___Injury_Intent__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - Injury Intent (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-29T03:19:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-29T04:24:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -57,7 +57,6 @@
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "242056005" ] ;
          fhir:display [ fhir:v "Unintentional/Accidental" ]
@@ -76,7 +75,6 @@
          fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
          fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
        ] ;
-       fhir:version [ fhir:v "1" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "VAWC" ] ;
          fhir:display [ fhir:v "VAWC Patient" ]

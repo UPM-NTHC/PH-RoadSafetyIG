@@ -56,7 +56,7 @@ This value set contains 7 concepts
   "name" : "SILPH___Place_of_Occurrence__VS_",
   "title" : "SILPH - Place of Occurrence (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -94,7 +94,6 @@ This value set contains 7 concepts
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "264362003",
@@ -124,7 +123,6 @@ This value set contains 7 concepts
       },
       {
         "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-        "version" : "1",
         "concept" : [
           {
             "code" : "VIDEOBAR",

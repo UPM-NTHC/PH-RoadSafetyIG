@@ -7,14 +7,14 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - General Disposition (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition</tt><p>SILPH Value Set for Inpatient and ER/Outpatient Visit Disposition</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-GeneralDispositionVS</b></p><a name=\"SILPH-GeneralDispositionVS\"> </a><a name=\"hcSILPH-GeneralDispositionVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2025-10-27 10:19:37+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 10 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-371827001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/371827001\">371827001</a></td><td>Patient discharged alive</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-225928004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/225928004\">225928004</a></td><td>Patient self-discharge against medical advice</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-34596002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/34596002\">34596002</a></td><td>Patient discharge, elopement</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-183960004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/183960004\">183960004</a></td><td>Patient refuses hospital admission</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-371828006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/371828006\">371828006</a></td><td>Patient deceased during stay (discharge status = dead)</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-74964007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>Other</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-19712007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/19712007\">19712007</a></td><td>Patient transfer, to another health care facility</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-32485007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/32485007\">32485007</a></td><td>Hospital admission</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-306689006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/306689006\">306689006</a></td><td>Discharge to home</td></tr><tr><td><a name=\"SILPH-GeneralDispositionVS-http://snomed.info/sct-18632008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/18632008\">18632008</a></td><td>Patient status determination, deceased</td></tr></table></div>"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition",
   "version" : "0.2.0",
   "name" : "SILPH___General_Disposition__VS_",
   "title" : "SILPH - General Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -41,7 +41,6 @@
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
       "concept" : [{
         "code" : "371827001",
         "display" : "Inpatient: Discharged"
@@ -77,22 +76,6 @@
       {
         "code" : "306689006",
         "display" : "Outpatient/ER: Treated and Sent Home"
-      },
-      {
-        "code" : "225928004",
-        "display" : "Outpatient/ER: HAMA"
-      },
-      {
-        "code" : "34596002",
-        "display" : "Outpatient/ER: Absconded"
-      },
-      {
-        "code" : "19712007",
-        "display" : "Outpatient/ER: Transferred to another facility/hospital"
-      },
-      {
-        "code" : "183960004",
-        "display" : "Outpatient/ER: Refused Admission"
       },
       {
         "code" : "18632008",

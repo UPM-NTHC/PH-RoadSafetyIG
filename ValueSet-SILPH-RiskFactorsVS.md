@@ -54,7 +54,7 @@ SILPH Value Set for Risk Factors
   "name" : "SILPH___Risk_Factors__VS_",
   "title" : "SILPH - Risk Factors (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -92,7 +92,6 @@ SILPH Value Set for Risk Factors
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "704197006",

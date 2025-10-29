@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
   "name" : "RSServiceRequest",
   "title" : "RS ServiceRequest",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -129,11 +129,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
         "path" : "ServiceRequest.code.coding",
         "min" : 1,
         "max" : "1"
-      },
-      {
-        "id" : "ServiceRequest.code.coding.code",
-        "path" : "ServiceRequest.code.coding.code",
-        "patternCode" : "refusal-to-admit"
       },
       {
         "id" : "ServiceRequest.code.coding.display",

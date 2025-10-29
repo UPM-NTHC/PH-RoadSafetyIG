@@ -56,7 +56,7 @@ This value set contains 5 concepts
   "name" : "SILPH___Type_of_Patient__VS_",
   "title" : "SILPH - Type of Patient (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -111,7 +111,6 @@ This value set contains 5 concepts
       },
       {
         "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-        "version" : "1",
         "concept" : [
           {
             "code" : "BHS",

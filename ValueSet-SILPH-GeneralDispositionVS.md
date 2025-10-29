@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___General_Disposition__VS_",
   "title" : "SILPH - General Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T03:19:57+00:00",
+  "date" : "2025-10-29T04:24:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -92,7 +92,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "include" : [
       {
         "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "371827001",
@@ -129,22 +128,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
           {
             "code" : "306689006",
             "display" : "Outpatient/ER: Treated and Sent Home"
-          },
-          {
-            "code" : "225928004",
-            "display" : "Outpatient/ER: HAMA"
-          },
-          {
-            "code" : "34596002",
-            "display" : "Outpatient/ER: Absconded"
-          },
-          {
-            "code" : "19712007",
-            "display" : "Outpatient/ER: Transferred to another facility/hospital"
-          },
-          {
-            "code" : "183960004",
-            "display" : "Outpatient/ER: Refused Admission"
           },
           {
             "code" : "18632008",
