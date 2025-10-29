@@ -33,9 +33,34 @@ function prioritiseFile(fileName: string): number {
   return 1;
 }
 
+function getCanonicalId(json: any): string | undefined {
+  if (typeof json?.url === "string" && json.url.trim().length > 0) {
+    return json.url;
+  }
+  if (typeof json?.id === "string" && json.id.trim().length > 0) {
+    return json.id;
+  }
+  return undefined;
+}
+
+function getBaseKey(fileName: string): string {
+  const withoutExt = fileName.replace(/\.json$/i, "");
+  const withoutVersion = withoutExt.replace(/\s+v[0-9.]+$/i, "");
+  return withoutVersion
+    .replace(/(__VS)(?:_|-)?(def|exp|definition)$/gi, "$1")
+    .replace(/(-VS)(?:_|-)?(def|exp|definition)$/gi, "$1")
+    .toLowerCase();
+}
+
+type ParsedValueSet = {
+  file: ValueSetFile;
+  baseKey: string;
+  canonical?: string;
+};
+
 async function loadValueSets(): Promise<Map<string, ValueSetFile[]>> {
   const entries = await fs.readdir(resourcesDir);
-  const grouped = new Map<string, ValueSetFile[]>();
+  const parsed: ParsedValueSet[] = [];
 
   for (const fileName of entries) {
     if (fileName.startsWith(".")) continue;
@@ -60,23 +85,69 @@ async function loadValueSets(): Promise<Map<string, ValueSetFile[]>> {
 
     if (json?.resourceType !== "ValueSet") continue;
 
-    const id = (json.id ?? json.url) as string | undefined;
-    if (!id) {
-      console.warn(`⚠️  ${fileName} has no id/url; skipping.`);
-      continue;
-    }
-
     const record: ValueSetFile = {
       filePath,
       fileName,
       priority: prioritiseFile(fileName),
     };
 
-    const existing = grouped.get(id);
+    parsed.push({
+      file: record,
+      baseKey: getBaseKey(fileName),
+      canonical: getCanonicalId(json),
+    });
+  }
+
+  const baseKeyToCanonical = new Map<
+    string,
+    { canonical: string; priority: number; source: string }
+  >();
+
+  for (const record of parsed) {
+    if (!record.canonical) continue;
+    const existing = baseKeyToCanonical.get(record.baseKey);
+    if (
+      !existing ||
+      record.file.priority < existing.priority ||
+      (record.file.priority === existing.priority &&
+        existing.canonical !== record.canonical)
+    ) {
+      if (
+        existing &&
+        existing.canonical !== record.canonical &&
+        record.file.priority === existing.priority
+      ) {
+        console.warn(
+          `⚠️  Conflicting canonical identifiers for ValueSet files sharing base '${record.baseKey}'; keeping ${existing.source}`
+        );
+        continue;
+      }
+      baseKeyToCanonical.set(record.baseKey, {
+        canonical: record.canonical,
+        priority: record.file.priority,
+        source: record.file.fileName,
+      });
+    }
+  }
+
+  const grouped = new Map<string, ValueSetFile[]>();
+
+  for (const record of parsed) {
+    const fallback = baseKeyToCanonical.get(record.baseKey);
+    const canonical = fallback?.canonical ?? record.canonical;
+
+    if (!canonical) {
+      console.warn(
+        `⚠️  ${record.file.fileName} has no id/url and no matching _def counterpart; skipping.`
+      );
+      continue;
+    }
+
+    const existing = grouped.get(canonical);
     if (!existing) {
-      grouped.set(id, [record]);
+      grouped.set(canonical, [record.file]);
     } else {
-      existing.push(record);
+      existing.push(record.file);
     }
   }
 
