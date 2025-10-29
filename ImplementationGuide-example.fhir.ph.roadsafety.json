@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-29T01:19:27+00:00",
+  "date" : "2025-10-29T02:00:22+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -2603,6 +2603,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/SILPH-ElementTerminologyVS"
+      },
+      "name" : "SILPH - Element Terminology (VS)",
+      "description" : "SILPH Value Set for Element Terminology",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/SILPH-EncounterParticipantRoleVS"
       },
       "name" : "SILPH - Encounter Participant Role (VS)",
@@ -2642,7 +2654,7 @@
         "reference" : "ValueSet/SILPH-FractureTypeVS"
       },
       "name" : "SILPH - Fracture Type (VS)",
-      "description" : "SILPH Value Set for fracture type designation (open versus closed).",
+      "description" : "SILPH Value Set for fracture type designation (open versus closed)",
       "exampleBoolean" : false
     },
     {

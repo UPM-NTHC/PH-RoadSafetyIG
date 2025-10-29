@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-initial
   "name" : "RSConditionInitialImpression",
   "title" : "RS Condition — Initial Impression",
   "status" : "draft",
-  "date" : "2025-10-29T01:19:27+00:00",
+  "date" : "2025-10-29T02:00:22+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

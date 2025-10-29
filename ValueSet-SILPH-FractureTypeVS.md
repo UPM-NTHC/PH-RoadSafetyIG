@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:SILPHFractureTypeVS |
+| Draft as of 2025-10-29 | *Computable Name*:SILPH___Fracture_Type__VS_ |
 
  
-SILPH Value Set for fracture type designation (open versus closed). 
+SILPH Value Set for fracture type designation (open versus closed) 
 
  **References** 
 
@@ -47,14 +47,14 @@ SILPH Value Set for fracture type designation (open versus closed).
   "id" : "SILPH-FractureTypeVS",
   "meta" : {
     "versionId" : "1",
-    "lastUpdated" : "2025-10-28T14:11:15.918+00:00"
+    "lastUpdated" : "2025-10-29T01:26:51.434+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType",
   "version" : "0.2.0",
-  "name" : "SILPHFractureTypeVS",
+  "name" : "SILPH___Fracture_Type__VS_",
   "title" : "SILPH - Fracture Type (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T01:19:27+00:00",
+  "date" : "2025-10-29T02:00:22+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -76,7 +76,7 @@ SILPH Value Set for fracture type designation (open versus closed).
       ]
     }
   ],
-  "description" : "SILPH Value Set for fracture type designation (open versus closed).",
+  "description" : "SILPH Value Set for fracture type designation (open versus closed)",
   "jurisdiction" : [
     {
       "coding" : [
@@ -92,14 +92,15 @@ SILPH Value Set for fracture type designation (open versus closed).
     "include" : [
       {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "423125000",
-            "display" : "Closed fracture of bone (disorder)"
+            "display" : "Closed fracture"
           },
           {
             "code" : "397181002",
-            "display" : "Open fracture (disorder)"
+            "display" : "Open fracture"
           }
         ]
       }

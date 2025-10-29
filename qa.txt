@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 27, warn = 800, info = 48
+err = 29, warn = 802, info = 52
 IG Publisher Version: 2.0.24
-Generated Wed Oct 29 01:27:52 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Wed Oct 29 02:06:48 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 11 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
@@ -97,7 +97,6 @@ Generated Wed Oct 29 01:27:52 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-task : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-SILPH-EncounterParticipantRoleVS : 2 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-barangay : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-city : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-province : 0 / 3 / 1
@@ -106,8 +105,10 @@ Generated Wed Oct 29 01:27:52 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/input/resources/SILPH___Activity__VS_def : 1 / 2 / 3
  /github/workspace/input/resources/SILPH___Burns__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___Cyanosis__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Element_Terminology__VS_def : 2 / 2 / 4
  /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Fracture_Type__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___GCS___Motor__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def : 0 / 2 / 2
@@ -973,9 +974,6 @@ WARNING: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet.expansion.identifie
 ERROR: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet.expansion.parameter[3].value.ofType(uri): No definition could be found for URL value 'http://hl7.org/fhir/'
 ERROR: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet.expansion.contains[4].system: No definition could be found for URL value 'http://hl7.org/fhir'
 WARNING: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-SILPH-FractureTypeVS.json ==
-WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:9e0e5b4e-56af-4574-8ff7-15be6f42406b'
-WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-vs-psgc-barangay.json ==
 WARNING: ValueSet/vs-psgc-barangay: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://psa.gov.ph/classification/psgc'
 WARNING: ValueSet/vs-psgc-barangay: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -1009,6 +1007,14 @@ WARNING: ValueSet/SILPH-BurnsVS: ValueSet: Published value sets SHOULD conform t
 WARNING: ValueSet/SILPH-Cyanosis: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:27b5ce63-8aed-4888-8c70-c52fe721674c'
 INFORMATION: ValueSet/SILPH-Cyanosis: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-Cyanosis: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== input/resources/SILPH___Element_Terminology__VS_def.json ==
+ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology'): Conformance resource /github/workspace/input/resources/SILPH___Element_Terminology__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/SILPH-ElementTerminologyVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:86fbc18b-6763-438a-8612-a2b74dcb32c0'
+INFORMATION: ValueSet/SILPH-ElementTerminologyVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+INFORMATION: ValueSet/SILPH-ElementTerminologyVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+INFORMATION: ValueSet/SILPH-ElementTerminologyVS: ValueSet.compose.include[2]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-ElementTerminologyVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/SILPH___Element_Terminology__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology
 == input/resources/SILPH___External_Cause_of_Burns__VS_def.json ==
 WARNING: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:3f74e1a3-1fda-4f3a-9899-4155a383b3c9'
 INFORMATION: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
@@ -1017,6 +1023,10 @@ WARNING: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet: Published value sets S
 WARNING: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:92655074-aca1-4bcd-9588-6af3d39ae402'
 INFORMATION: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== input/resources/SILPH___Fracture_Type__VS_def.json ==
+WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:c5518392-9254-4ae2-9554-fd3c530265a7'
+INFORMATION: ValueSet/SILPH-FractureTypeVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == input/resources/SILPH___GCS___Eyes__VS_def.json ==
 WARNING: ValueSet/SILPH-GCSEyesVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9'
 INFORMATION: ValueSet/SILPH-GCSEyesVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it

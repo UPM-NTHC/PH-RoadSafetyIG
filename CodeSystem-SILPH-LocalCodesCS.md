@@ -17,6 +17,7 @@ Compilation of local codes for SILPH Road Safety Project. Includes local codes f
  This Code system is referenced in the content logical definition of the following value sets: 
 
 * [SILPH___Activity__VS_](ValueSet-SILPH-ActivityVS.md)
+* [SILPH___Element_Terminology__VS_](ValueSet-SILPH-ElementTerminologyVS.md)
 * [SILPH___Injury_Intent__VS_](ValueSet-SILPH-InjuryIntentVS.md)
 * [SILPH___Other_Vehicle_in_Collision__VS_](ValueSet-SILPH-OtherVehicleVS.md)
 * [SILPH___Outcome__VS_](ValueSet-SILPH-OutcomeVS.md)
@@ -43,7 +44,7 @@ Compilation of local codes for SILPH Road Safety Project. Includes local codes f
   "name" : "SILPH_Road_Safety_Local_Codes",
   "title" : "SILPH Road Safety Local Codes",
   "status" : "draft",
-  "date" : "2025-10-29T01:19:27+00:00",
+  "date" : "2025-10-29T02:00:22+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

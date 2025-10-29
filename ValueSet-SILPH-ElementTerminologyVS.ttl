@@ -1,0 +1,1421 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SILPH-ElementTerminologyVS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2025-10-29T01:15:19.727+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SILPH - Element Terminology (VS)</h2><tt>http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology</tt><p>SILPH Value Set for Element Terminology</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology"^^xsd:anyURI ;
+     fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology>
+  ] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "SILPH___Element_Terminology__VS_"] ; # 
+  fhir:title [ fhir:v "SILPH - Element Terminology (VS)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-29T02:00:22+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "PH Road Safety IG Repository" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/UPM-NTHC/PH-RoadSafetyIG" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SILPH Value Set for Element Terminology"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PH" ] ;
+       fhir:display [ fhir:v "Philippines" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "405796007" ] ;
+         fhir:display [ fhir:v "TIme Received" ]
+       ] [
+         fhir:code [ fhir:v "405798008" ] ;
+         fhir:display [ fhir:v "Time On Scene" ]
+       ] [
+         fhir:code [ fhir:v "405799000" ] ;
+         fhir:display [ fhir:v "Time of Hospital Arrival" ]
+       ] [
+         fhir:code [ fhir:v "1269489004" ] ;
+         fhir:display [ fhir:v "Reported Complaint" ]
+       ] [
+         fhir:code [ fhir:v "398099009" ] ;
+         fhir:display [ fhir:v "Incident Location - House No. and Street" ]
+       ] [
+         fhir:code [ fhir:v "397663001" ] ;
+         fhir:display [ fhir:v "Call Source" ]
+       ] [
+         fhir:code [ fhir:v "184096005" ] ;
+         fhir:display [ fhir:v "Patient Name - Last" ]
+       ] [
+         fhir:code [ fhir:v "184095009" ] ;
+         fhir:display [ fhir:v "Patient Name - First" ]
+       ] [
+         fhir:code [ fhir:v "405622006" ] ;
+         fhir:display [ fhir:v "Patient Name - Middle" ]
+       ] [
+         fhir:code [ fhir:v "397669002" ] ;
+         fhir:display [ fhir:v "Age" ]
+       ] [
+         fhir:code [ fhir:v "184100006" ] ;
+         fhir:display [ fhir:v "Sex" ]
+       ] [
+         fhir:code [ fhir:v "734005006" ] ;
+         fhir:display [ fhir:v "Tel. No." ]
+       ] [
+         fhir:code [ fhir:v "417662000" ] ;
+         fhir:display [ fhir:v "Medical History" ]
+       ] [
+         fhir:code [ fhir:v "513881000000106" ] ;
+         fhir:display [ fhir:v "Current Medication" ]
+       ] [
+         fhir:code [ fhir:v "609328004" ] ;
+         fhir:display [ fhir:v "Known Allergies" ]
+       ] [
+         fhir:code [ fhir:v "86290005" ] ;
+         fhir:display [ fhir:v "Respiratory Rate" ]
+       ] [
+         fhir:code [ fhir:v "248582003" ] ;
+         fhir:display [ fhir:v "Respiratory Rate - Rhythm" ]
+       ] [
+         fhir:code [ fhir:v "52653008" ] ;
+         fhir:display [ fhir:v "Respiratory Rate - Breath Sounds" ]
+       ] [
+         fhir:code [ fhir:v "78564009" ] ;
+         fhir:display [ fhir:v "Pulse Rate" ]
+       ] [
+         fhir:code [ fhir:v "364095004" ] ;
+         fhir:display [ fhir:v "Pulse Rate - Rhythm" ]
+       ] [
+         fhir:code [ fhir:v "78564009" ] ;
+         fhir:display [ fhir:v "Pulse Rate - Quality" ]
+       ] [
+         fhir:code [ fhir:v "271649006" ] ;
+         fhir:display [ fhir:v "Blood Pressure - Systolic" ]
+       ] [
+         fhir:code [ fhir:v "271650006" ] ;
+         fhir:display [ fhir:v "Blood Pressure - Diastolic" ]
+       ] [
+         fhir:code [ fhir:v "386725007" ] ;
+         fhir:display [ fhir:v "Temperature" ]
+       ] [
+         fhir:code [ fhir:v "6942003" ] ;
+         fhir:display [ fhir:v "Level of Consciousness" ]
+       ] [
+         fhir:code [ fhir:v "271733001" ] ;
+         fhir:display [ fhir:v "Pupils" ]
+       ] [
+         fhir:code [ fhir:v "3415004" ] ;
+         fhir:display [ fhir:v "Cyanosis" ]
+       ] [
+         fhir:code [ fhir:v "281395000" ] ;
+         fhir:display [ fhir:v "Eyes" ]
+       ] [
+         fhir:code [ fhir:v "281397008" ] ;
+         fhir:display [ fhir:v "Verbal" ]
+       ] [
+         fhir:code [ fhir:v "281396004" ] ;
+         fhir:display [ fhir:v "Motor" ]
+       ] [
+         fhir:code [ fhir:v "248241002" ] ;
+         fhir:display [ fhir:v "Score" ]
+       ] [
+         fhir:code [ fhir:v "55607006" ] ;
+         fhir:display [ fhir:v "Problem" ]
+       ] [
+         fhir:code [ fhir:v "119270007" ] ;
+         fhir:display [ fhir:v "Intervention" ]
+       ] [
+         fhir:code [ fhir:v "397897005" ] ;
+         fhir:display [ fhir:v "Treatment Officer" ]
+       ] [
+         fhir:code [ fhir:v "159738005" ] ;
+         fhir:display [ fhir:v "Transport Officer" ]
+       ] [
+         fhir:code [ fhir:v "22515006" ] ;
+         fhir:display [ fhir:v "Assistant" ]
+       ] [
+         fhir:code [ fhir:v "36030000" ] ;
+         fhir:display [ fhir:v "Vehicle Used" ]
+       ] [
+         fhir:code [ fhir:v "184107009" ] ;
+         fhir:display [ fhir:v "Hospital Patient ID No." ]
+       ] [
+         fhir:code [ fhir:v "722248002" ] ;
+         fhir:display [ fhir:v "Hospital Case No." ]
+       ] [
+         fhir:code [ fhir:v "116154003" ] ;
+         fhir:display [ fhir:v "Type of Patient" ]
+       ] [
+         fhir:code [ fhir:v "184099003" ] ;
+         fhir:display [ fhir:v "Birth Date" ]
+       ] [
+         fhir:code [ fhir:v "439771001" ] ;
+         fhir:display [ fhir:v "Date of Injury" ]
+       ] [
+         fhir:code [ fhir:v "263501003" ] ;
+         fhir:display [ fhir:v "Time of Injury" ]
+       ] [
+         fhir:code [ fhir:v "406543005" ] ;
+         fhir:display [ fhir:v "Date of Consultation" ]
+       ] [
+         fhir:code [ fhir:v "406544004" ] ;
+         fhir:display [ fhir:v "Time of Consultation" ]
+       ] [
+         fhir:code [ fhir:v "386308007" ] ;
+         fhir:display [ fhir:v "First Aid Given" ]
+       ] [
+         fhir:code [ fhir:v "262519004" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Multiple Injury/ies?" ]
+       ] [
+         fhir:code [ fhir:v "399963005" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Abrasion" ]
+       ] [
+         fhir:code [ fhir:v "284554003" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Avulsion" ]
+       ] [
+         fhir:code [ fhir:v "125666000" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Burn" ]
+       ] [
+         fhir:code [ fhir:v "77140003" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Burn 1st Degree" ]
+       ] [
+         fhir:code [ fhir:v "46541008" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Burn 2nd Degree" ]
+       ] [
+         fhir:code [ fhir:v "80247002" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Burn 3rd Degree" ]
+       ] [
+         fhir:code [ fhir:v "770400008" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Burn 4th Degree" ]
+       ] [
+         fhir:code [ fhir:v "110030002" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Concussion" ]
+       ] [
+         fhir:code [ fhir:v "125667009" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Contusion" ]
+       ] [
+         fhir:code [ fhir:v "125605004" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Fracture" ]
+       ] [
+         fhir:code [ fhir:v "423125000" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Fracture Closed Type" ]
+       ] [
+         fhir:code [ fhir:v "397181002" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Fracture Open Type" ]
+       ] [
+         fhir:code [ fhir:v "125643001" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Open Wound\nex. hacking, gunshot, stabbing, animal (dog, cat, rat, snake, etc) bites, human bites, insect bites, punctured wound laceration, etc" ]
+       ] [
+         fhir:code [ fhir:v "262595009" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Traumatic Amputation" ]
+       ] [
+         fhir:code [ fhir:v "417163006" ] ;
+         fhir:display [ fhir:v "Nature of Injury/ies: Specific Injury/ies - Others" ]
+       ] [
+         fhir:code [ fhir:v "242651001" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Bites/stings" ]
+       ] [
+         fhir:code [ fhir:v "242490006" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Burns" ]
+       ] [
+         fhir:code [ fhir:v "133261000119105" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Chemical/substance" ]
+       ] [
+         fhir:code [ fhir:v "69129000" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Contact with sharp objects" ]
+       ] [
+         fhir:code [ fhir:v "40947009" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Drowning" ]
+       ] [
+         fhir:code [ fhir:v "276746005" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Exposure to forces of nature" ]
+       ] [
+         fhir:code [ fhir:v "1912002" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Fall" ]
+       ] [
+         fhir:code [ fhir:v "218100007" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Firecracker" ]
+       ] [
+         fhir:code [ fhir:v "63409001" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Gunshot" ]
+       ] [
+         fhir:code [ fhir:v "212976008" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Hanging/Strangulation" ]
+       ] [
+         fhir:code [ fhir:v "52684005" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Mauling/Assault" ]
+       ] [
+         fhir:code [ fhir:v "248110007" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Sexual Assault/ Sexual Abuse/ Rape (Alleged)" ]
+       ] [
+         fhir:code [ fhir:v "274215009" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Transport /Vehicular Accident" ]
+       ] [
+         fhir:code [ fhir:v "773760007" ] ;
+         fhir:display [ fhir:v "External Cause/s of Injury/ies: Others" ]
+       ] [
+         fhir:code [ fhir:v "274215009" ] ;
+         fhir:display [ fhir:v "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Land, Water, Air)" ]
+       ] [
+         fhir:code [ fhir:v "80943009" ] ;
+         fhir:display [ fhir:v "Other risk factors at the time of the incident" ]
+       ] [
+         fhir:code [ fhir:v "386812007" ] ;
+         fhir:display [ fhir:v "Safety" ]
+       ] [
+         fhir:code [ fhir:v "307836003" ] ;
+         fhir:display [ fhir:v "Referred by another Hospital /Facility for Laboratory and/or other medical procedures" ]
+       ] [
+         fhir:code [ fhir:v "118223001" ] ;
+         fhir:display [ fhir:v "Status upon reaching Facility/Hospital" ]
+       ] [
+         fhir:code [ fhir:v "106167005" ] ;
+         fhir:display [ fhir:v "Status upon reaching Facility/Hospital - If alive,please check if" ]
+       ] [
+         fhir:code [ fhir:v "148006" ] ;
+         fhir:display [ fhir:v "Initial Impression" ]
+       ] [
+         fhir:code [ fhir:v "418138009" ] ;
+         fhir:display [ fhir:v "Outcome" ]
+       ] [
+         fhir:code [ fhir:v "89100005" ] ;
+         fhir:display [ fhir:v "Complete Final Diagnosis" ]
+       ] [
+         fhir:code [ fhir:v "418138009" ] ;
+         fhir:display [ fhir:v "Outcome" ]
+       ] [
+         fhir:code [ fhir:v "159679004" ] ;
+         fhir:display [ fhir:v "Presence of traffic investigator" ]
+       ] [
+         fhir:code [ fhir:v "273887006" ] ;
+         fhir:display [ fhir:v "Priority to Scene (Triage)" ]
+       ] [
+         fhir:code [ fhir:v "260870009" ] ;
+         fhir:display [ fhir:v "Priority Level (Urgency)" ]
+       ] [
+         fhir:code [ fhir:v "278443006" ] ;
+         fhir:display [ fhir:v "Cause of Road Crash Incident" ]
+       ] [
+         fhir:code [ fhir:v "364703007" ] ;
+         fhir:display [ fhir:v "Profession of Victim" ]
+       ] [
+         fhir:code [ fhir:v "373786007" ] ;
+         fhir:display [ fhir:v "Sources of delays" ]
+       ] [
+         fhir:code [ fhir:v "218247007" ] ;
+         fhir:display [ fhir:v "Long term outcome of patient" ]
+       ] [
+         fhir:code [ fhir:v "408919008" ] ;
+         fhir:display [ fhir:v "Psychosocial support/condition" ]
+       ] [
+         fhir:code [ fhir:v "360000005" ] ;
+         fhir:display [ fhir:v "CCTV video, reconstruction of what happened" ]
+       ] [
+         fhir:code [ fhir:v "167009006" ] ;
+         fhir:display [ fhir:v "Blood Alcohol Concentration" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "30976-5" ] ;
+         fhir:display [ fhir:v "Date Received" ]
+       ] [
+         fhir:code [ fhir:v "69472-9" ] ;
+         fhir:display [ fhir:v "Time Enroute" ]
+       ] [
+         fhir:code [ fhir:v "69475-2" ] ;
+         fhir:display [ fhir:v "Time Departed" ]
+       ] [
+         fhir:code [ fhir:v "11288-8" ] ;
+         fhir:display [ fhir:v "Time of Emergency Station Arrival" ]
+       ] [
+         fhir:code [ fhir:v "90123-1" ] ;
+         fhir:display [ fhir:v "Team Leader" ]
+       ] [
+         fhir:code [ fhir:v "11375-3" ] ;
+         fhir:display [ fhir:v "Injury Intent" ]
+       ] [
+         fhir:code [ fhir:v "95376-0" ] ;
+         fhir:display [ fhir:v "Specify animal/insect" ]
+       ] [
+         fhir:code [ fhir:v "11372-0" ] ;
+         fhir:display [ fhir:v "Activity of the Patient at the time of the incident" ]
+       ] [
+         fhir:code [ fhir:v "74199-1" ] ;
+         fhir:display [ fhir:v "Transferred from another hospital/facility" ]
+       ] [
+         fhir:code [ fhir:v "74286-6" ] ;
+         fhir:display [ fhir:v "Mode of transport to the Hospital/Facility" ]
+       ] [
+         fhir:code [ fhir:v "77999-1" ] ;
+         fhir:display [ fhir:v "Comments" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "INJURYFRONT" ] ;
+         fhir:display [ fhir:v "Front" ]
+       ] [
+         fhir:code [ fhir:v "INJURYBACK" ] ;
+         fhir:display [ fhir:v "Back" ]
+       ] [
+         fhir:code [ fhir:v "RRFREMARKS" ] ;
+         fhir:display [ fhir:v "Remarks" ]
+       ] [
+         fhir:code [ fhir:v "MVA-COLLISION" ] ;
+         fhir:display [ fhir:v "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)" ]
+       ] [
+         fhir:code [ fhir:v "PATIENTVEHICLE" ] ;
+         fhir:display [ fhir:v "Vehicles Involved: Patient's Vehicle" ]
+       ] [
+         fhir:code [ fhir:v "OTHERVEHICLE" ] ;
+         fhir:display [ fhir:v "Other Vehicle/Object Involved (for COLLISION accident ONLY)" ]
+       ] [
+         fhir:code [ fhir:v "PATIENTPOSITION" ] ;
+         fhir:display [ fhir:v "Position of Patient" ]
+       ] [
+         fhir:code [ fhir:v "PLACEOCCURRENCE" ] ;
+         fhir:display [ fhir:v "Place of Occurrence" ]
+       ] [
+         fhir:code [ fhir:v "COLLISIONTYPE" ] ;
+         fhir:display [ fhir:v "Collision type" ]
+       ] [
+         fhir:code [ fhir:v "COORDINATIONDONE" ] ;
+         fhir:display [ fhir:v "Was Transpo Coordinated with Receiving Hospital?" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:identifier [
+       fhir:v "urn:uuid:86fbc18b-6763-438a-8612-a2b74dcb32c0"^^xsd:anyURI ;
+       fhir:l <urn:uuid:86fbc18b-6763-438a-8612-a2b74dcb32c0>
+     ] ;
+     fhir:timestamp [ fhir:v "2025-10-29T01:15:25+00:00"^^xsd:dateTime ] ;
+     fhir:total [ fhir:v 114 ] ;
+     fhir:parameter ( [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/900000000000207008/version/20241001>
+       ]
+     ] [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1>
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1>
+       ]
+     ] [
+       fhir:name [ fhir:v "used-codesystem" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://loinc.org|2.78"^^xsd:anyURI ;
+         fhir:l <http://loinc.org?version=2.78>
+       ]
+     ] [
+       fhir:name [ fhir:v "version" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://loinc.org|2.78"^^xsd:anyURI ;
+         fhir:l <http://loinc.org?version=2.78>
+       ]
+     ] [
+       fhir:name [ fhir:v "displayLanguage" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "en-US,en;q=0.9"
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology?version=0.1.0>
+       ]
+     ] [
+       fhir:name [ fhir:v "warning-draft" ] ;
+       fhir:value [
+         a fhir:Uri ;
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem?version=1>
+       ]
+     ] [
+       fhir:name [ fhir:v "includeDesignations" ] ;
+       fhir:value [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:contains ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "405796007" ] ;
+       fhir:display [ fhir:v "Time of call for help" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "405798008" ] ;
+       fhir:display [ fhir:v "Time of arrival of emergency services" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "405799000" ] ;
+       fhir:display [ fhir:v "Time of arrival at hospital" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "1269489004" ] ;
+       fhir:display [ fhir:v "Chief complaint" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "398099009" ] ;
+       fhir:display [ fhir:v "Street address" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "397663001" ] ;
+       fhir:display [ fhir:v "Referral source" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "184096005" ] ;
+       fhir:display [ fhir:v "Patient surname" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "184095009" ] ;
+       fhir:display [ fhir:v "Patient forename" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "405622006" ] ;
+       fhir:display [ fhir:v "Patient middle name" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "397669002" ] ;
+       fhir:display [ fhir:v "Age" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "184100006" ] ;
+       fhir:display [ fhir:v "Patient sex" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "734005006" ] ;
+       fhir:display [ fhir:v "Telephone number" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "417662000" ] ;
+       fhir:display [ fhir:v "History of clinical finding in subject" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "513881000000106" ] ;
+       fhir:display [ fhir:v "Current medication as reported by patient" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "609328004" ] ;
+       fhir:display [ fhir:v "Allergic disposition" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "86290005" ] ;
+       fhir:display [ fhir:v "Respiratory rate" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "248582003" ] ;
+       fhir:display [ fhir:v "Rhythm of respiration" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "52653008" ] ;
+       fhir:display [ fhir:v "Respiratory sounds" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "78564009" ] ;
+       fhir:display [ fhir:v "Pulse rate" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "364095004" ] ;
+       fhir:display [ fhir:v "Pulse rhythm" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "271649006" ] ;
+       fhir:display [ fhir:v "Systolic blood pressure" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "271650006" ] ;
+       fhir:display [ fhir:v "Diastolic blood pressure" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "386725007" ] ;
+       fhir:display [ fhir:v "Body temperature" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "6942003" ] ;
+       fhir:display [ fhir:v "Level of consciousness" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "271733001" ] ;
+       fhir:display [ fhir:v "Pupil reaction" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "3415004" ] ;
+       fhir:display [ fhir:v "Cyanosis" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "281395000" ] ;
+       fhir:display [ fhir:v "Glasgow Coma Score eye opening subscore" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "281397008" ] ;
+       fhir:display [ fhir:v "Glasgow Coma Scale verbal response subscore" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "281396004" ] ;
+       fhir:display [ fhir:v "Glasgow Coma Scale motor response subscore" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "248241002" ] ;
+       fhir:display [ fhir:v "Glasgow coma score" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "55607006" ] ;
+       fhir:display [ fhir:v "Problem" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "119270007" ] ;
+       fhir:display [ fhir:v "Management procedure" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "397897005" ] ;
+       fhir:display [ fhir:v "Paramedic" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "159738005" ] ;
+       fhir:display [ fhir:v "Ambulanceman" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "22515006" ] ;
+       fhir:display [ fhir:v "Medical assistant" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "36030000" ] ;
+       fhir:display [ fhir:v "Transport vehicle" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "184107009" ] ;
+       fhir:display [ fhir:v "Patient hospital number" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "722248002" ] ;
+       fhir:display [ fhir:v "Patient hospital visit number" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "116154003" ] ;
+       fhir:display [ fhir:v "Patient" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "184099003" ] ;
+       fhir:display [ fhir:v "Date of birth" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "439771001" ] ;
+       fhir:display [ fhir:v "Date of event" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "263501003" ] ;
+       fhir:display [ fhir:v "Time of onset" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "406543005" ] ;
+       fhir:display [ fhir:v "Date of visit" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "406544004" ] ;
+       fhir:display [ fhir:v "Time of visit" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "386308007" ] ;
+       fhir:display [ fhir:v "First aid" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "262519004" ] ;
+       fhir:display [ fhir:v "Multiple injuries" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "399963005" ] ;
+       fhir:display [ fhir:v "Abrasion" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "284554003" ] ;
+       fhir:display [ fhir:v "Avulsion - injury" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "125666000" ] ;
+       fhir:display [ fhir:v "Burn" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "77140003" ] ;
+       fhir:display [ fhir:v "First degree burn injury" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "46541008" ] ;
+       fhir:display [ fhir:v "Second degree burn injury" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "80247002" ] ;
+       fhir:display [ fhir:v "Third degree burn injury" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "770400008" ] ;
+       fhir:display [ fhir:v "Fourth degree burn injury" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "110030002" ] ;
+       fhir:display [ fhir:v "Concussion injury of brain" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "125667009" ] ;
+       fhir:display [ fhir:v "Contusion" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "125605004" ] ;
+       fhir:display [ fhir:v "Fracture of bone" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "423125000" ] ;
+       fhir:display [ fhir:v "Closed fracture" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "397181002" ] ;
+       fhir:display [ fhir:v "Open fracture" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "125643001" ] ;
+       fhir:display [ fhir:v "Open wound" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "262595009" ] ;
+       fhir:display [ fhir:v "Traumatic amputation" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "417163006" ] ;
+       fhir:display [ fhir:v "Traumatic or non-traumatic injury" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "242651001" ] ;
+       fhir:display [ fhir:v "Injury caused by animal" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "242490006" ] ;
+       fhir:display [ fhir:v "Burning due to contact with hot substance" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "133261000119105" ] ;
+       fhir:display [ fhir:v "Exposure to potentially hazardous substance" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "69129000" ] ;
+       fhir:display [ fhir:v "Struck by sharp object" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "40947009" ] ;
+       fhir:display [ fhir:v "Drowning" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "276746005" ] ;
+       fhir:display [ fhir:v "Environmental event" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "1912002" ] ;
+       fhir:display [ fhir:v "Fall" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "218100007" ] ;
+       fhir:display [ fhir:v "Accident caused by fireworks" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "63409001" ] ;
+       fhir:display [ fhir:v "Struck by firearm discharge" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "212976008" ] ;
+       fhir:display [ fhir:v "Asphyxia by strangulation" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "52684005" ] ;
+       fhir:display [ fhir:v "Assault" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "248110007" ] ;
+       fhir:display [ fhir:v "Sexual assault" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "274215009" ] ;
+       fhir:display [ fhir:v "Transport accident" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "773760007" ] ;
+       fhir:display [ fhir:v "Traumatic event" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "80943009" ] ;
+       fhir:display [ fhir:v "Risk factor" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "386812007" ] ;
+       fhir:display [ fhir:v "Safety precautions" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "307836003" ] ;
+       fhir:display [ fhir:v "Referral by establishment" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "118223001" ] ;
+       fhir:display [ fhir:v "Patient status finding" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "106167005" ] ;
+       fhir:display [ fhir:v "Consciousness related finding" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "148006" ] ;
+       fhir:display [ fhir:v "Preliminary diagnosis" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "418138009" ] ;
+       fhir:display [ fhir:v "Patient condition finding" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "89100005" ] ;
+       fhir:display [ fhir:v "Final diagnosis (discharge)" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "159679004" ] ;
+       fhir:display [ fhir:v "Traffic warden" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "273887006" ] ;
+       fhir:display [ fhir:v "Triage index" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "260870009" ] ;
+       fhir:display [ fhir:v "Priority" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "278443006" ] ;
+       fhir:display [ fhir:v "Cause of accident type" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "364703007" ] ;
+       fhir:display [ fhir:v "Employment detail" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "373786007" ] ;
+       fhir:display [ fhir:v "Reasons for treatment delay" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "218247007" ] ;
+       fhir:display [ fhir:v "Late effect of motor vehicle accident" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "408919008" ] ;
+       fhir:display [ fhir:v "Psychosocial care" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "360000005" ] ;
+       fhir:display [ fhir:v "Closed circuit television" ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+       fhir:code [ fhir:v "167009006" ] ;
+       fhir:display [ fhir:v "Blood ethanol measurement" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "30976-5" ] ;
+       fhir:display [ fhir:v "Date received Form" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "69472-9" ] ;
+       fhir:display [ fhir:v "Unit responded [Date and time] Vehicle" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "69475-2" ] ;
+       fhir:display [ fhir:v "Responding unit left the scene with a patient [Date and time] Vehicle" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "11288-8" ] ;
+       fhir:display [ fhir:v "Arrival time documented" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "90123-1" ] ;
+       fhir:display [ fhir:v "Response team leader name" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "11375-3" ] ;
+       fhir:display [ fhir:v "Injury intent" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "95376-0" ] ;
+       fhir:display [ fhir:v "Type of animal exposed to" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "11372-0" ] ;
+       fhir:display [ fhir:v "Injury associated activity" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "74199-1" ] ;
+       fhir:display [ fhir:v "Transferred from another acute care facility [NTDS]" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "74286-6" ] ;
+       fhir:display [ fhir:v "Transport mode to hospital [NTDS]" ]
+     ] [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.78" ] ;
+       fhir:code [ fhir:v "77999-1" ] ;
+       fhir:display [ fhir:v "Case notification comment" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "INJURYFRONT" ] ;
+       fhir:display [ fhir:v "Site of Injury/Pain - Front Part of Body" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "INJURYBACK" ] ;
+       fhir:display [ fhir:v "Site of Injury/Pain - Back Part of Body" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "RRFREMARKS" ] ;
+       fhir:display [ fhir:v "Run Report Form Remarks" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "MVA-COLLISION" ] ;
+       fhir:display [ fhir:v "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "PATIENTVEHICLE" ] ;
+       fhir:display [ fhir:v "Vehicles Involved: Patient's Vehicle" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "OTHERVEHICLE" ] ;
+       fhir:display [ fhir:v "Other Vehicle/Object Involved (for COLLISION accident ONLY)" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "PATIENTPOSITION" ] ;
+       fhir:display [ fhir:v "Position of Patient" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "PLACEOCCURRENCE" ] ;
+       fhir:display [ fhir:v "Place of Occurrence" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "COLLISIONTYPE" ] ;
+       fhir:display [ fhir:v "Collision Type" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.roadsafetyph.doh.gov.ph/CodeSystem"^^xsd:anyURI ;
+         fhir:l <http://www.roadsafetyph.doh.gov.ph/CodeSystem>
+       ] ;
+       fhir:version [ fhir:v "1" ] ;
+       fhir:code [ fhir:v "COORDINATIONDONE" ] ;
+       fhir:display [ fhir:v "Was Transport Coordinated with Receiving Hospital?" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
