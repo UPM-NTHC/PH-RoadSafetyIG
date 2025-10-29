@@ -611,7 +611,7 @@ Title: "RS Observation - How Many Vehicles Involved"
 Description: "Count of vehicles involved."
 * valueInteger 1..1 MS
 * code.coding 0..1
-* code.coding = $SCT#how-many-vehicles "How many vehicles involved"
+* code.coding = $SILPH#PATIENTVEHICLE "Vehicles Involved: Patient's Vehicle"
 
 // MDS157 - How Many Patients Involved
 // Profile: RSObsHowManyPatients
