@@ -27,5 +27,5 @@ Description: "SILPH ValueSet for Patient Status, if Alive or Dead during Admissi
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #438949009
 * ^expansion.contains[=].display = "Alive"
-* SNOMED_CT#63238001 "Dead on arrival at hospital"
+* SNOMED_CT#63238001 "Dead on Arrival"
 * SNOMED_CT#438949009 "Alive"

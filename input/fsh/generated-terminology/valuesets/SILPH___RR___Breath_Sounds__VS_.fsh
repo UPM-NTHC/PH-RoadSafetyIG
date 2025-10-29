@@ -27,5 +27,5 @@ Description: "SILPH Value Set for Breath Sounds"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #56018004
 * ^expansion.contains[=].display = "Wheezing"
-* SNOMED_CT#301708006 "Chest clear"
-* SNOMED_CT#56018004 "Wheezing"
+* SNOMED_CT#301708006 "Clear"
+* SNOMED_CT#56018004 "Wheeze"
