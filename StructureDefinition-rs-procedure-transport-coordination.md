@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSProcedureTransportCoordination |
+| Draft as of 2025-10-29 | *Computable Name*:RSProcedureTransportCoordination |
 
  
 Procedure record indicating whether transport coordination with the receiving hospital was done. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure-transpo
   "name" : "RSProcedureTransportCoordination",
   "title" : "RS Procedure - Transport Coordination",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,9 +120,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure-transpo
         "min" : 1,
         "max" : "1",
         "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "code" : "referral-transport-coordination",
-          "display" : "Transport coordination with receiving hospital"
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "code" : "COORDINATIONDONE",
+          "display" : "Was Transport Coordinated with Receiving Hospital?"
         }
       }
     ]

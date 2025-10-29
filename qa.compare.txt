@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 122, warn = 799, info = 66
+err = 118, warn = 799, info = 66
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
@@ -60,7 +60,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-gcs : 0 / 5 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles : 2 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-intent : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-level-of-consciousness : 0 / 1 / 1
@@ -93,7 +93,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-organization : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-patient : 0 / 7 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination : 2 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-task : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-SILPH-EncounterParticipantRoleVS : 5 / 2 / 1
@@ -874,10 +874,8 @@ WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: T
 WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: The slice 'gcs-total' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles.json ==
-ERROR: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.snapshot.element[17].pattern.ofType(Coding).code: Unknown code 'how-many-vehicles' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.snapshot.element[17].pattern.ofType(Coding).code: Code how-many-vehicles is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "h", in "how-many-vehicles") at character 1)
-ERROR: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.differential.element[0].pattern.ofType(Coding).code: Unknown code 'how-many-vehicles' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.differential.element[0].pattern.ofType(Coding).code: Code how-many-vehicles is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "h", in "how-many-vehicles") at character 1)
+INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime'): The Implementation Guide contains no examples for this profile
@@ -963,10 +961,8 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-procedure.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination.json ==
-ERROR: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.snapshot.element[20].pattern.ofType(Coding).code: Unknown code 'referral-transport-coordination' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.snapshot.element[20].pattern.ofType(Coding).code: Code referral-transport-coordination is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "r", in "referral-transport-coordination") at character 1)
-ERROR: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.differential.element[2].pattern.ofType(Coding).code: Unknown code 'referral-transport-coordination' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.differential.element[2].pattern.ofType(Coding).code: Code referral-transport-coordination is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept not found (next char = "r", in "referral-transport-coordination") at character 1)
+INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.snapshot.element[20].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.differential.element[2].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-service-request.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request'): The Implementation Guide contains no examples for this profile

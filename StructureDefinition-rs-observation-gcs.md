@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSObsGCS |
+| Draft as of 2025-10-29 | *Computable Name*:RSObsGCS |
 
  
 GCS with components for eyes, verbal, motor; optional total score as integer. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
   "name" : "RSObsGCS",
   "title" : "RS Observation - Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

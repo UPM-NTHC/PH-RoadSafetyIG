@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSServiceRequest |
+| Draft as of 2025-10-29 | *Computable Name*:RSServiceRequest |
 
  
 Requests or records related to refusal to admit and related workflow signals. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
   "name" : "RSServiceRequest",
   "title" : "RS ServiceRequest",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

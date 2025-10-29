@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSDocumentReference |
+| Draft as of 2025-10-29 | *Computable Name*:RSDocumentReference |
 
  
 Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files). 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
   "name" : "RSDocumentReference",
   "title" : "RS DocumentReference (Evidence)",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

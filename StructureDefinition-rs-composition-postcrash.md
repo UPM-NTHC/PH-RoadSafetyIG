@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-postcrash | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSCompositionPostCrash |
+| Draft as of 2025-10-29 | *Computable Name*:RSCompositionPostCrash |
 
  
 Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-composition-postc
   "name" : "RSCompositionPostCrash",
   "title" : "RS Composition — Post‑Crash Investigation",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

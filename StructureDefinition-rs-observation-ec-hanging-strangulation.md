@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSObsECHangingStrangulation |
+| Draft as of 2025-10-29 | *Computable Name*:RSObsECHangingStrangulation |
 
  
 Flag indicating hanging/strangulation. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ha
   "name" : "RSObsECHangingStrangulation",
   "title" : "RS Observation - External Cause: Hanging/Strangulation",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

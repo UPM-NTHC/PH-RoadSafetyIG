@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSHealthcareService |
+| Draft as of 2025-10-29 | *Computable Name*:RSHealthcareService |
 
  
 Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-healthcare-servic
   "name" : "RSHealthcareService",
   "title" : "RS HealthcareService",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSObsHowManyVehicles |
+| Draft as of 2025-10-29 | *Computable Name*:RSObsHowManyVehicles |
 
  
 Count of vehicles involved. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-how-m
   "name" : "RSObsHowManyVehicles",
   "title" : "RS Observation - How Many Vehicles Involved",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -121,9 +121,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-how-m
         "path" : "Observation.code.coding",
         "max" : "1",
         "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "code" : "how-many-vehicles",
-          "display" : "How many vehicles involved"
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "code" : "PATIENTVEHICLE",
+          "display" : "Vehicles Involved: Patient's Vehicle"
         }
       },
       {

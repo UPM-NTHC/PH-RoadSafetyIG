@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSObsTimelineDateTime |
+| Draft as of 2025-10-29 | *Computable Name*:RSObsTimelineDateTime |
 
  
 Dispatch and transport timeline events capturing a precise date/time. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineDateTime",
   "title" : "RS Observation - Timeline Date/Time",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

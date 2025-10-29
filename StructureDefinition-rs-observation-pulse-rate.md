@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate | *Version*:0.2.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RSObsPulseRate |
+| Draft as of 2025-10-29 | *Computable Name*:RSObsPulseRate |
 
  
 Pulse/heart rate in beats/min. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "name" : "RSObsPulseRate",
   "title" : "RS Observation - Pulse Rate",
   "status" : "draft",
-  "date" : "2025-10-28T23:57:44+00:00",
+  "date" : "2025-10-29T00:11:30+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
