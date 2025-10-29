@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___General_Disposition__VS_",
   "title" : "SILPH - General Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,43 +95,43 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "concept" : [
           {
             "code" : "371827001",
-            "display" : "Inpatient: Discharged"
+            "display" : "Patient discharged alive"
           },
           {
             "code" : "225928004",
-            "display" : "Inpatient: HAMA"
+            "display" : "Patient self-discharge against medical advice"
           },
           {
             "code" : "34596002",
-            "display" : "Inpatient: Absconded"
+            "display" : "Patient discharge, elopement"
           },
           {
             "code" : "183960004",
-            "display" : "Inpatient: Refused Admission"
+            "display" : "Patient refuses hospital admission"
           },
           {
             "code" : "371828006",
-            "display" : "Inpatient: Died"
+            "display" : "Patient deceased during stay (discharge status = dead)"
           },
           {
             "code" : "74964007",
-            "display" : "Inpatient: Others"
+            "display" : "Other"
           },
           {
             "code" : "19712007",
-            "display" : "Inpatient: Transferred to another facility/hospital"
+            "display" : "Patient transfer, to another health care facility"
           },
           {
             "code" : "32485007",
-            "display" : "Outpatient/ER: Admitted"
+            "display" : "Hospital admission"
           },
           {
             "code" : "306689006",
-            "display" : "Outpatient/ER: Treated and Sent Home"
+            "display" : "Discharge to home"
           },
           {
             "code" : "18632008",
-            "display" : "Outpatient/ER: Died"
+            "display" : "Patient status determination, deceased"
           }
         ]
       }

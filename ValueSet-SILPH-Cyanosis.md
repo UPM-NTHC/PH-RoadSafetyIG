@@ -54,7 +54,7 @@ SILPH Value Set for Presence of Cyanosis
   "name" : "SILPH___Cyanosis__VS_",
   "title" : "SILPH - Cyanosis (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,15 +95,15 @@ SILPH Value Set for Presence of Cyanosis
         "concept" : [
           {
             "code" : "54622005",
-            "display" : "Negative"
+            "display" : "Normal oxygen supply"
           },
           {
             "code" : "95837007",
-            "display" : "General"
+            "display" : "Central cyanosis"
           },
           {
             "code" : "95442007",
-            "display" : "Peripheral"
+            "display" : "Peripheral cyanosis"
           }
         ]
       }

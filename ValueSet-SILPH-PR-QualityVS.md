@@ -54,7 +54,7 @@ SILPH Value Set for Pulse Quality
   "name" : "SILPH___PR___Quality__VS_",
   "title" : "SILPH - PR - Quality (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,15 +95,15 @@ SILPH Value Set for Pulse Quality
         "concept" : [
           {
             "code" : "12146004",
-            "display" : "Normal"
+            "display" : "Normal pulse"
           },
           {
             "code" : "64661000",
-            "display" : "Thready"
+            "display" : "Thready pulse"
           },
           {
             "code" : "271640005",
-            "display" : "Bounding"
+            "display" : "Bounding pulse"
           }
         ]
       }

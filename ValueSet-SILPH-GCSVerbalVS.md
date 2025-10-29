@@ -54,7 +54,7 @@ SILPH Value Set for GCS Verbal Score
   "name" : "SILPH___GCS___Verbal__VS_",
   "title" : "SILPH - GCS - Verbal (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,23 +95,23 @@ SILPH Value Set for GCS Verbal Score
         "concept" : [
           {
             "code" : "LA6561-0",
-            "display" : "5 Oriented"
+            "display" : "Oriented"
           },
           {
             "code" : "LA6560-2",
-            "display" : "4 Confused"
+            "display" : "Confused"
           },
           {
             "code" : "LA6559-4",
-            "display" : "3 Inappropriate words"
+            "display" : "Inappropriate words"
           },
           {
             "code" : "LA6558-6",
-            "display" : "2 Incomprehensible words"
+            "display" : "Incomprehensible sounds"
           },
           {
             "code" : "LA6557-8",
-            "display" : "1 None"
+            "display" : "No verbal response (>2 yrs); no vocal response (<=2 yrs)"
           }
         ]
       }

@@ -56,7 +56,7 @@ This value set contains 8 concepts
   "name" : "SILPH___Safety_Devices__VS_",
   "title" : "SILPH - Safety Devices (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -101,15 +101,15 @@ This value set contains 8 concepts
           },
           {
             "code" : "427850003",
-            "display" : "Life vest/Lifejacket/Floatation device (for drowning)"
+            "display" : "Life preserver flotation device"
           },
           {
             "code" : "102384007",
-            "display" : "Airbag"
+            "display" : "Motor vehicle airbag"
           },
           {
             "code" : "60054005",
-            "display" : "Seatbelt"
+            "display" : "Seat belt"
           },
           {
             "code" : "285695004",
@@ -117,7 +117,7 @@ This value set contains 8 concepts
           },
           {
             "code" : "74964007",
-            "display" : "Others"
+            "display" : "Other"
           },
           {
             "code" : "261665006",
@@ -130,7 +130,7 @@ This value set contains 8 concepts
         "concept" : [
           {
             "code" : "LA9389-3",
-            "display" : "Childseat"
+            "display" : "Child safety seat"
           }
         ]
       }

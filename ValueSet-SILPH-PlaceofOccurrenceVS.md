@@ -56,7 +56,7 @@ This value set contains 7 concepts
   "name" : "SILPH___Place_of_Occurrence__VS_",
   "title" : "SILPH - Place of Occurrence (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -109,11 +109,11 @@ This value set contains 7 concepts
           },
           {
             "code" : "285141008",
-            "display" : "Workplace"
+            "display" : "Work environment"
           },
           {
             "code" : "74964007",
-            "display" : "Others"
+            "display" : "Other"
           },
           {
             "code" : "261665006",

@@ -56,7 +56,7 @@ This value set contains 11 concepts
   "name" : "SILPH___Patient_s_Vehicle__VS_",
   "title" : "SILPH - Patient's Vehicle (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,11 +97,11 @@ This value set contains 11 concepts
         "concept" : [
           {
             "code" : "257518000",
-            "display" : "None (Pedestrian)"
+            "display" : "Pedestrian"
           },
           {
             "code" : "71783008",
-            "display" : "Car"
+            "display" : "Automobile"
           },
           {
             "code" : "224832000",
@@ -109,7 +109,7 @@ This value set contains 11 concepts
           },
           {
             "code" : "224830008",
-            "display" : "Bus"
+            "display" : "Coach"
           },
           {
             "code" : "90748009",
@@ -125,7 +125,7 @@ This value set contains 11 concepts
           },
           {
             "code" : "74964007",
-            "display" : "Others"
+            "display" : "Other"
           },
           {
             "code" : "261665006",

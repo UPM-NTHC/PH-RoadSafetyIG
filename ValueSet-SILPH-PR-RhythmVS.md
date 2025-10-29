@@ -54,7 +54,7 @@ SILPH Value Set for Pulse Rhythm
   "name" : "SILPH___PR___Rhythm__VS_",
   "title" : "SILPH - PR - Rhythm (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,11 +95,11 @@ SILPH Value Set for Pulse Rhythm
         "concept" : [
           {
             "code" : "271636001",
-            "display" : "Regular"
+            "display" : "Pulse regular"
           },
           {
             "code" : "61086009",
-            "display" : "Irregular"
+            "display" : "Pulse irregular"
           }
         ]
       }

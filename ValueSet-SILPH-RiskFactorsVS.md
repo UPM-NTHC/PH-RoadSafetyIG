@@ -54,7 +54,7 @@ SILPH Value Set for Risk Factors
   "name" : "SILPH___Risk_Factors__VS_",
   "title" : "SILPH - Risk Factors (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,23 +95,23 @@ SILPH Value Set for Risk Factors
         "concept" : [
           {
             "code" : "704197006",
-            "display" : "Alcohol/liquor"
+            "display" : "Admits alcohol use"
           },
           {
             "code" : "719363002",
-            "display" : "Using mobile phone"
+            "display" : "Does use high technology communication device"
           },
           {
             "code" : "271782001",
-            "display" : "Sleepy"
+            "display" : "Drowsy"
           },
           {
             "code" : "365982000",
-            "display" : "Smoking"
+            "display" : "Tobacco smoking consumption - finding"
           },
           {
             "code" : "74964007",
-            "display" : "Others"
+            "display" : "Other"
           }
         ]
       }

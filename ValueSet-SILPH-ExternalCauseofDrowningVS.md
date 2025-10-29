@@ -54,7 +54,7 @@ SILPH Value Set for External Cause of Drowning
   "name" : "SILPH___External_Cause_of_Drowning__VS_",
   "title" : "SILPH - External Cause of Drowning (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -111,11 +111,11 @@ SILPH Value Set for External Cause of Drowning
           },
           {
             "code" : "75988000",
-            "display" : "Bath tub"
+            "display" : "Bathtub"
           },
           {
             "code" : "74964007",
-            "display" : "Others"
+            "display" : "Other"
           }
         ]
       }

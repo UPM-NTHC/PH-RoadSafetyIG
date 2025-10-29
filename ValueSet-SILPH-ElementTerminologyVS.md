@@ -56,7 +56,7 @@ This value set contains 114 concepts
   "name" : "SILPH___Element_Terminology__VS_",
   "title" : "SILPH - Element Terminology (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,39 +97,39 @@ This value set contains 114 concepts
         "concept" : [
           {
             "code" : "405796007",
-            "display" : "TIme Received"
+            "display" : "Time of call for help"
           },
           {
             "code" : "405798008",
-            "display" : "Time On Scene"
+            "display" : "Time of arrival of emergency services"
           },
           {
             "code" : "405799000",
-            "display" : "Time of Hospital Arrival"
+            "display" : "Time of arrival at hospital"
           },
           {
             "code" : "1269489004",
-            "display" : "Reported Complaint"
+            "display" : "Chief complaint"
           },
           {
             "code" : "398099009",
-            "display" : "Incident Location - House No. and Street"
+            "display" : "Street address"
           },
           {
             "code" : "397663001",
-            "display" : "Call Source"
+            "display" : "Referral source"
           },
           {
             "code" : "184096005",
-            "display" : "Patient Name - Last"
+            "display" : "Patient surname"
           },
           {
             "code" : "184095009",
-            "display" : "Patient Name - First"
+            "display" : "Patient forename"
           },
           {
             "code" : "405622006",
-            "display" : "Patient Name - Middle"
+            "display" : "Patient middle name"
           },
           {
             "code" : "397669002",
@@ -137,63 +137,63 @@ This value set contains 114 concepts
           },
           {
             "code" : "184100006",
-            "display" : "Sex"
+            "display" : "Patient sex"
           },
           {
             "code" : "734005006",
-            "display" : "Tel. No."
+            "display" : "Telephone number"
           },
           {
             "code" : "417662000",
-            "display" : "Medical History"
+            "display" : "History of clinical finding in subject"
           },
           {
             "code" : "513881000000106",
-            "display" : "Current Medication"
+            "display" : "Current medication as reported by patient"
           },
           {
             "code" : "609328004",
-            "display" : "Known Allergies"
+            "display" : "Allergic disposition"
           },
           {
             "code" : "86290005",
-            "display" : "Respiratory Rate"
+            "display" : "Respiratory rate"
           },
           {
             "code" : "248582003",
-            "display" : "Respiratory Rate - Rhythm"
+            "display" : "Rhythm of respiration"
           },
           {
             "code" : "52653008",
-            "display" : "Respiratory Rate - Breath Sounds"
+            "display" : "Respiratory sounds"
           },
           {
             "code" : "78564009",
-            "display" : "Pulse Rate"
+            "display" : "Pulse rate"
           },
           {
             "code" : "364095004",
-            "display" : "Pulse Rate - Rhythm"
+            "display" : "Pulse rhythm"
           },
           {
             "code" : "271649006",
-            "display" : "Blood Pressure - Systolic"
+            "display" : "Systolic blood pressure"
           },
           {
             "code" : "271650006",
-            "display" : "Blood Pressure - Diastolic"
+            "display" : "Diastolic blood pressure"
           },
           {
             "code" : "386725007",
-            "display" : "Temperature"
+            "display" : "Body temperature"
           },
           {
             "code" : "6942003",
-            "display" : "Level of Consciousness"
+            "display" : "Level of consciousness"
           },
           {
             "code" : "271733001",
-            "display" : "Pupils"
+            "display" : "Pupil reaction"
           },
           {
             "code" : "3415004",
@@ -201,19 +201,19 @@ This value set contains 114 concepts
           },
           {
             "code" : "281395000",
-            "display" : "Eyes"
+            "display" : "Glasgow Coma Score eye opening subscore"
           },
           {
             "code" : "281397008",
-            "display" : "Verbal"
+            "display" : "Glasgow Coma Scale verbal response subscore"
           },
           {
             "code" : "281396004",
-            "display" : "Motor"
+            "display" : "Glasgow Coma Scale motor response subscore"
           },
           {
             "code" : "248241002",
-            "display" : "Score"
+            "display" : "Glasgow coma score"
           },
           {
             "code" : "55607006",
@@ -221,251 +221,251 @@ This value set contains 114 concepts
           },
           {
             "code" : "119270007",
-            "display" : "Intervention"
+            "display" : "Management procedure"
           },
           {
             "code" : "397897005",
-            "display" : "Treatment Officer"
+            "display" : "Paramedic"
           },
           {
             "code" : "159738005",
-            "display" : "Transport Officer"
+            "display" : "Ambulanceman"
           },
           {
             "code" : "22515006",
-            "display" : "Assistant"
+            "display" : "Medical assistant"
           },
           {
             "code" : "36030000",
-            "display" : "Vehicle Used"
+            "display" : "Transport vehicle"
           },
           {
             "code" : "184107009",
-            "display" : "Hospital Patient ID No."
+            "display" : "Patient hospital number"
           },
           {
             "code" : "722248002",
-            "display" : "Hospital Case No."
+            "display" : "Patient hospital visit number"
           },
           {
             "code" : "116154003",
-            "display" : "Type of Patient"
+            "display" : "Patient"
           },
           {
             "code" : "184099003",
-            "display" : "Birth Date"
+            "display" : "Date of birth"
           },
           {
             "code" : "439771001",
-            "display" : "Date of Injury"
+            "display" : "Date of event"
           },
           {
             "code" : "263501003",
-            "display" : "Time of Injury"
+            "display" : "Time of onset"
           },
           {
             "code" : "406543005",
-            "display" : "Date of Consultation"
+            "display" : "Date of visit"
           },
           {
             "code" : "406544004",
-            "display" : "Time of Consultation"
+            "display" : "Time of visit"
           },
           {
             "code" : "386308007",
-            "display" : "First Aid Given"
+            "display" : "First aid"
           },
           {
             "code" : "262519004",
-            "display" : "Nature of Injury/ies: Multiple Injury/ies?"
+            "display" : "Multiple injuries"
           },
           {
             "code" : "399963005",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Abrasion"
+            "display" : "Abrasion"
           },
           {
             "code" : "284554003",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Avulsion"
+            "display" : "Avulsion - injury"
           },
           {
             "code" : "125666000",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Burn"
+            "display" : "Burn"
           },
           {
             "code" : "77140003",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Burn 1st Degree"
+            "display" : "First degree burn injury"
           },
           {
             "code" : "46541008",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Burn 2nd Degree"
+            "display" : "Second degree burn injury"
           },
           {
             "code" : "80247002",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Burn 3rd Degree"
+            "display" : "Third degree burn injury"
           },
           {
             "code" : "770400008",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Burn 4th Degree"
+            "display" : "Fourth degree burn injury"
           },
           {
             "code" : "110030002",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Concussion"
+            "display" : "Concussion injury of brain"
           },
           {
             "code" : "125667009",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Contusion"
+            "display" : "Contusion"
           },
           {
             "code" : "125605004",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Fracture"
+            "display" : "Fracture of bone"
           },
           {
             "code" : "423125000",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Fracture Closed Type"
+            "display" : "Closed fracture"
           },
           {
             "code" : "397181002",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Fracture Open Type"
+            "display" : "Open fracture"
           },
           {
             "code" : "125643001",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Open Wound\nex. hacking, gunshot, stabbing, animal (dog, cat, rat, snake, etc) bites, human bites, insect bites, punctured wound laceration, etc"
+            "display" : "Open wound"
           },
           {
             "code" : "262595009",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Traumatic Amputation"
+            "display" : "Traumatic amputation"
           },
           {
             "code" : "417163006",
-            "display" : "Nature of Injury/ies: Specific Injury/ies - Others"
+            "display" : "Traumatic or non-traumatic injury"
           },
           {
             "code" : "242651001",
-            "display" : "External Cause/s of Injury/ies: Bites/stings"
+            "display" : "Injury caused by animal"
           },
           {
             "code" : "242490006",
-            "display" : "External Cause/s of Injury/ies: Burns"
+            "display" : "Burning due to contact with hot substance"
           },
           {
             "code" : "133261000119105",
-            "display" : "External Cause/s of Injury/ies: Chemical/substance"
+            "display" : "Exposure to potentially hazardous substance"
           },
           {
             "code" : "69129000",
-            "display" : "External Cause/s of Injury/ies: Contact with sharp objects"
+            "display" : "Struck by sharp object"
           },
           {
             "code" : "40947009",
-            "display" : "External Cause/s of Injury/ies: Drowning"
+            "display" : "Drowning"
           },
           {
             "code" : "276746005",
-            "display" : "External Cause/s of Injury/ies: Exposure to forces of nature"
+            "display" : "Environmental event"
           },
           {
             "code" : "1912002",
-            "display" : "External Cause/s of Injury/ies: Fall"
+            "display" : "Fall"
           },
           {
             "code" : "218100007",
-            "display" : "External Cause/s of Injury/ies: Firecracker"
+            "display" : "Accident caused by fireworks"
           },
           {
             "code" : "63409001",
-            "display" : "External Cause/s of Injury/ies: Gunshot"
+            "display" : "Struck by firearm discharge"
           },
           {
             "code" : "212976008",
-            "display" : "External Cause/s of Injury/ies: Hanging/Strangulation"
+            "display" : "Asphyxia by strangulation"
           },
           {
             "code" : "52684005",
-            "display" : "External Cause/s of Injury/ies: Mauling/Assault"
+            "display" : "Assault"
           },
           {
             "code" : "248110007",
-            "display" : "External Cause/s of Injury/ies: Sexual Assault/ Sexual Abuse/ Rape (Alleged)"
+            "display" : "Sexual assault"
           },
           {
             "code" : "274215009",
-            "display" : "External Cause/s of Injury/ies: Transport /Vehicular Accident"
+            "display" : "Transport accident"
           },
           {
             "code" : "773760007",
-            "display" : "External Cause/s of Injury/ies: Others"
+            "display" : "Traumatic event"
           },
           {
             "code" : "80943009",
-            "display" : "Other risk factors at the time of the incident"
+            "display" : "Risk factor"
           },
           {
             "code" : "386812007",
-            "display" : "Safety"
+            "display" : "Safety precautions"
           },
           {
             "code" : "307836003",
-            "display" : "Referred by another Hospital /Facility for Laboratory and/or other medical procedures"
+            "display" : "Referral by establishment"
           },
           {
             "code" : "118223001",
-            "display" : "Status upon reaching Facility/Hospital"
+            "display" : "Patient status finding"
           },
           {
             "code" : "106167005",
-            "display" : "Status upon reaching Facility/Hospital - If alive,please check if"
+            "display" : "Consciousness related finding"
           },
           {
             "code" : "148006",
-            "display" : "Initial Impression"
+            "display" : "Preliminary diagnosis"
           },
           {
             "code" : "418138009",
-            "display" : "Outcome"
+            "display" : "Patient condition finding"
           },
           {
             "code" : "89100005",
-            "display" : "Complete Final Diagnosis"
+            "display" : "Final diagnosis (discharge)"
           },
           {
             "code" : "159679004",
-            "display" : "Presence of traffic investigator"
+            "display" : "Traffic warden"
           },
           {
             "code" : "273887006",
-            "display" : "Priority to Scene (Triage)"
+            "display" : "Triage index"
           },
           {
             "code" : "260870009",
-            "display" : "Priority Level (Urgency)"
+            "display" : "Priority"
           },
           {
             "code" : "278443006",
-            "display" : "Cause of Road Crash Incident"
+            "display" : "Cause of accident type"
           },
           {
             "code" : "364703007",
-            "display" : "Profession of Victim"
+            "display" : "Employment detail"
           },
           {
             "code" : "373786007",
-            "display" : "Sources of delays"
+            "display" : "Reasons for treatment delay"
           },
           {
             "code" : "218247007",
-            "display" : "Long term outcome of patient"
+            "display" : "Late effect of motor vehicle accident"
           },
           {
             "code" : "408919008",
-            "display" : "Psychosocial support/condition"
+            "display" : "Psychosocial care"
           },
           {
             "code" : "360000005",
-            "display" : "CCTV video, reconstruction of what happened"
+            "display" : "Closed circuit television"
           },
           {
             "code" : "167009006",
-            "display" : "Blood Alcohol Concentration"
+            "display" : "Blood ethanol measurement"
           }
         ]
       },
@@ -474,47 +474,47 @@ This value set contains 114 concepts
         "concept" : [
           {
             "code" : "30976-5",
-            "display" : "Date Received"
+            "display" : "Date received Form"
           },
           {
             "code" : "69472-9",
-            "display" : "Time Enroute"
+            "display" : "Unit responded [Date and time] Vehicle"
           },
           {
             "code" : "69475-2",
-            "display" : "Time Departed"
+            "display" : "Responding unit left the scene with a patient [Date and time] Vehicle"
           },
           {
             "code" : "11288-8",
-            "display" : "Time of Emergency Station Arrival"
+            "display" : "Arrival time documented"
           },
           {
             "code" : "90123-1",
-            "display" : "Team Leader"
+            "display" : "Response team leader name"
           },
           {
             "code" : "11375-3",
-            "display" : "Injury Intent"
+            "display" : "Injury intent"
           },
           {
             "code" : "95376-0",
-            "display" : "Specify animal/insect"
+            "display" : "Type of animal exposed to"
           },
           {
             "code" : "11372-0",
-            "display" : "Activity of the Patient at the time of the incident"
+            "display" : "Injury associated activity"
           },
           {
             "code" : "74199-1",
-            "display" : "Transferred from another hospital/facility"
+            "display" : "Transferred from another acute care facility [NTDS]"
           },
           {
             "code" : "74286-6",
-            "display" : "Mode of transport to the Hospital/Facility"
+            "display" : "Transport mode to hospital [NTDS]"
           },
           {
             "code" : "77999-1",
-            "display" : "Comments"
+            "display" : "Case notification comment"
           }
         ]
       },
@@ -523,15 +523,15 @@ This value set contains 114 concepts
         "concept" : [
           {
             "code" : "INJURYFRONT",
-            "display" : "Front"
+            "display" : "Site of Injury/Pain - Front Part of Body"
           },
           {
             "code" : "INJURYBACK",
-            "display" : "Back"
+            "display" : "Site of Injury/Pain - Back Part of Body"
           },
           {
             "code" : "RRFREMARKS",
-            "display" : "Remarks"
+            "display" : "Run Report Form Remarks"
           },
           {
             "code" : "MVA-COLLISION",
@@ -555,11 +555,11 @@ This value set contains 114 concepts
           },
           {
             "code" : "COLLISIONTYPE",
-            "display" : "Collision type"
+            "display" : "Collision Type"
           },
           {
             "code" : "COORDINATIONDONE",
-            "display" : "Was Transpo Coordinated with Receiving Hospital?"
+            "display" : "Was Transport Coordinated with Receiving Hospital?"
           }
         ]
       }

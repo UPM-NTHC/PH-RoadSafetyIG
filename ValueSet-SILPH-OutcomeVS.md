@@ -56,7 +56,7 @@ This value set contains 3 concepts
   "name" : "SILPH___Outcome__VS_",
   "title" : "SILPH - Outcome (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,7 +97,7 @@ This value set contains 3 concepts
         "concept" : [
           {
             "code" : "268910001",
-            "display" : "Improved"
+            "display" : "Patient's condition improved"
           }
         ]
       },

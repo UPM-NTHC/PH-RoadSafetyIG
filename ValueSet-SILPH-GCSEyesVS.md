@@ -54,7 +54,7 @@ SILPH Value Set for GCS Eye Score
   "name" : "SILPH___GCS___Eyes__VS_",
   "title" : "SILPH - GCS - Eyes (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,19 +95,19 @@ SILPH Value Set for GCS Eye Score
         "concept" : [
           {
             "code" : "LA6556-0",
-            "display" : "4 Spontaneous"
+            "display" : "Eyes open spontaneously"
           },
           {
             "code" : "LA6555-2",
-            "display" : "3 To command"
+            "display" : "Eye opening to verbal command"
           },
           {
             "code" : "LA6554-5",
-            "display" : "2 To pain"
+            "display" : "Eye opening to pain"
           },
           {
             "code" : "LA6553-7",
-            "display" : "1 None"
+            "display" : "No eye opening"
           }
         ]
       }

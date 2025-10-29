@@ -54,7 +54,7 @@ SILPH Value Set for Position of Patient
   "name" : "SILPH___Position_of_Patient__VS_",
   "title" : "SILPH - Position of Patient (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,31 +95,31 @@ SILPH Value Set for Position of Patient
         "concept" : [
           {
             "code" : "32906002",
-            "display" : "Pedestrian"
+            "display" : "Victim, pedestrian in vehicular AND/OR traffic accident"
           },
           {
             "code" : "48084008",
-            "display" : "Driver"
+            "display" : "Driver in vehicular AND/OR traffic accident"
           },
           {
             "code" : "25636008",
-            "display" : "Captain"
+            "display" : "Driver in watercraft accident"
           },
           {
             "code" : "41852005",
-            "display" : "Pilot"
+            "display" : "Pilot in aircraft accident"
           },
           {
             "code" : "55062001",
-            "display" : "Front passenger"
+            "display" : "Front seat passenger in vehicular AND/OR traffic accident"
           },
           {
             "code" : "69290001",
-            "display" : "Rear passenger"
+            "display" : "Rear seat passenger in vehicular AND/OR traffic accident"
           },
           {
             "code" : "74964007",
-            "display" : "Others"
+            "display" : "Other"
           },
           {
             "code" : "261665006",

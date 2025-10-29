@@ -56,7 +56,7 @@ This value set contains 5 concepts
   "name" : "SILPH___Activity__VS_",
   "title" : "SILPH - Activity (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,15 +97,15 @@ This value set contains 5 concepts
         "concept" : [
           {
             "code" : "443786003",
-            "display" : "Sports"
+            "display" : "Injury while engaged in sports activity"
           },
           {
             "code" : "17542004",
-            "display" : "Work related"
+            "display" : "Accident while engaged in work-related activity"
           },
           {
             "code" : "74964007",
-            "display" : "Others"
+            "display" : "Other"
           },
           {
             "code" : "261665006",

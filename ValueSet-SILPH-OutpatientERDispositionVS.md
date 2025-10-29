@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___Outpatient_ER_Disposition__VS_",
   "title" : "SILPH - Outpatient/ER Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,31 +95,31 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "concept" : [
           {
             "code" : "32485007",
-            "display" : "Admitted"
+            "display" : "Hospital admission"
           },
           {
             "code" : "306689006",
-            "display" : "Treated and Sent Home"
+            "display" : "Discharge to home"
           },
           {
             "code" : "225928004",
-            "display" : "HAMA"
+            "display" : "Patient self-discharge against medical advice"
           },
           {
             "code" : "34596002",
-            "display" : "Absconded"
+            "display" : "Patient discharge, elopement"
           },
           {
             "code" : "19712007",
-            "display" : "Transferred to another facility/hospital"
+            "display" : "Patient transfer, to another health care facility"
           },
           {
             "code" : "183960004",
-            "display" : "Refused Admission"
+            "display" : "Patient refuses hospital admission"
           },
           {
             "code" : "18632008",
-            "display" : "Died"
+            "display" : "Patient status determination, deceased"
           }
         ]
       }

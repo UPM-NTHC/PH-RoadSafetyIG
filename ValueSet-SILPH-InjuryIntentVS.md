@@ -56,7 +56,7 @@ This value set contains 5 concepts
   "name" : "SILPH___Injury_Intent__VS_",
   "title" : "SILPH - Injury Intent (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,19 +97,19 @@ This value set contains 5 concepts
         "concept" : [
           {
             "code" : "242056005",
-            "display" : "Unintentional/Accidental"
+            "display" : "Accidental injury"
           },
           {
             "code" : "361269008",
-            "display" : "Intentional(violence)"
+            "display" : "Intentional"
           },
           {
             "code" : "276853009",
-            "display" : "Intentional(self-inflicted)"
+            "display" : "Self inflicted injury"
           },
           {
             "code" : "269735005",
-            "display" : "Undetermined"
+            "display" : "Injury undetermined whether accidentally or purposely inflicted"
           }
         ]
       },

@@ -54,7 +54,7 @@ SILPH Value Set for GCS Motor Score
   "name" : "SILPH___GCS___Motor__VS_",
   "title" : "SILPH - GCS - Motor (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,27 +95,27 @@ SILPH Value Set for GCS Motor Score
         "concept" : [
           {
             "code" : "LA6567-7",
-            "display" : "6 To command"
+            "display" : "Obeys commands"
           },
           {
             "code" : "LA6566-9",
-            "display" : "5 Localizes pain"
+            "display" : "Localizing pain"
           },
           {
             "code" : "LA6565-1",
-            "display" : "6 Withdraws from pain"
+            "display" : "Withdrawal from pain"
           },
           {
             "code" : "LA6564-4",
-            "display" : "3 Abnormal flexion"
+            "display" : "Flexion to pain"
           },
           {
             "code" : "LA6563-6",
-            "display" : "2 Abnormal extension"
+            "display" : "Extension to pain"
           },
           {
             "code" : "LA6562-8",
-            "display" : "1 None"
+            "display" : "No motor response"
           }
         ]
       }

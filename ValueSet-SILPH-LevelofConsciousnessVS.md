@@ -54,7 +54,7 @@ SILPH Value Set for Level of Consciousness (AVPU) Score
   "name" : "SILPH___Level_of_Consciousness__VS_",
   "title" : "SILPH - Level of Consciousness (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,15 +95,15 @@ SILPH Value Set for Level of Consciousness (AVPU) Score
         "concept" : [
           {
             "code" : "248234008",
-            "display" : "Alert"
+            "display" : "Mentally alert"
           },
           {
             "code" : "300202002",
-            "display" : "Voice"
+            "display" : "Responds to voice"
           },
           {
             "code" : "450847001",
-            "display" : "Pain"
+            "display" : "Responds to pain"
           },
           {
             "code" : "422768004",

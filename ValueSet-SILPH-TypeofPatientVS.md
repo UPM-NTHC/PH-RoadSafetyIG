@@ -56,7 +56,7 @@ This value set contains 5 concepts
   "name" : "SILPH___Type_of_Patient__VS_",
   "title" : "SILPH - Type of Patient (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,15 +97,15 @@ This value set contains 5 concepts
         "concept" : [
           {
             "code" : "LA10268-3",
-            "display" : "ER"
+            "display" : "Emergency Department"
           },
           {
             "code" : "LA21424-9",
-            "display" : "OPD"
+            "display" : "Ambulatory Visit"
           },
           {
             "code" : "LA21427-2",
-            "display" : "Inpatient"
+            "display" : "Inpatient hospital"
           }
         ]
       },

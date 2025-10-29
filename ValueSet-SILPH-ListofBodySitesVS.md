@@ -61,7 +61,7 @@ SILPH List of Body Sites
   "name" : "SILPH___List_of_Body_Sites__VS_",
   "title" : "SILPH - List of Body Sites (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -106,7 +106,7 @@ SILPH List of Body Sites
           },
           {
             "code" : "118634008",
-            "display" : "Abdominal Arteries"
+            "display" : "Structure of artery of abdomen"
           }
         ]
       }

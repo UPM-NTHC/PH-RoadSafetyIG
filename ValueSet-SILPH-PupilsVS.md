@@ -54,7 +54,7 @@ SILPH Value Set for Pupil Reaction
   "name" : "SILPH___Pupils__VS_",
   "title" : "SILPH - Pupils (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,23 +95,23 @@ SILPH Value Set for Pupil Reaction
         "concept" : [
           {
             "code" : "386666001",
-            "display" : "Pupils Equal and Reactive to Light (PEARL)"
+            "display" : "Pupils equal and reacting to light"
           },
           {
             "code" : "37125009",
-            "display" : "Dilated"
+            "display" : "Dilated pupil"
           },
           {
             "code" : "301939004",
-            "display" : "Constricted"
+            "display" : "Constricted pupil"
           },
           {
             "code" : "823998002",
-            "display" : "Unequal"
+            "display" : "Unequal reaction of bilateral pupils"
           },
           {
             "code" : "301944006",
-            "display" : "Non Reactive"
+            "display" : "No pupillary reaction to light"
           }
         ]
       }

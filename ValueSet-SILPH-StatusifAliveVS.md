@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___Status_if_Alive__VS_",
   "title" : "SILPH - Status if Alive (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:13:56+00:00",
+  "date" : "2025-10-29T05:50:12+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,7 +95,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "concept" : [
           {
             "code" : "271591004",
-            "display" : "Conscious"
+            "display" : "Fully conscious"
           },
           {
             "code" : "418107008",
