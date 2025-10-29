@@ -39,6 +39,6 @@ Description: "SILPH Value Set for Outcome"
 * ^expansion.contains[=].version = "1"
 * ^expansion.contains[=].code = #DIED
 * ^expansion.contains[=].display = "Died"
-* SNOMED_CT#268910001 "Improved"
+* SNOMED_CT#268910001 "Patient's condition improved"
 * SILPH_Road_Safety_Local_Codes#UNIMPROVED "Unimproved"
 * SILPH_Road_Safety_Local_Codes#DIED "Died"

@@ -42,6 +42,6 @@ Description: "SILPH Value Set for Mode of Transport of Patient to Healthcare Fac
 * ^expansion.contains[=].code = #LA9319-0
 * ^expansion.contains[=].display = "Walk-in following transport via private transportation"
 * SNOMED_CT#49122002 "Ambulance"
-* SNOMED_CT#74964007 "Others"
-* LOINC#LA9321-6 "Police vehicle"
-* LOINC#LA9319-0 "Private vehicle"
+* SNOMED_CT#74964007 "Other"
+* LOINC#LA9321-6 "Walk-in following nonambulance, law enforcement transport"
+* LOINC#LA9319-0 "Walk-in following transport via private transportation"
