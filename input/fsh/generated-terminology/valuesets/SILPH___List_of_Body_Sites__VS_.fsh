@@ -28,4 +28,4 @@ Description: "SILPH List of Body Sites"
 * ^expansion.contains[=].code = #118634008
 * ^expansion.contains[=].display = "Structure of artery of abdomen"
 * SNOMED_CT#818983003 "Abdomen"
-* SNOMED_CT#118634008 "Abdominal Arteries"
+* SNOMED_CT#118634008 "Structure of artery of abdomen"
