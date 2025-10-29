@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ma
   "name" : "RSObsECMaulingAssault",
   "title" : "RS Observation - External Cause: Mauling/Assault",
   "status" : "draft",
-  "date" : "2025-10-29T04:24:57+00:00",
+  "date" : "2025-10-29T05:09:17+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

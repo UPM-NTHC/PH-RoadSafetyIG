@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherVehicleInvolved",
   "title" : "RS Observation - Other Vehicle/Object Involved",
   "status" : "draft",
-  "date" : "2025-10-29T04:24:57+00:00",
+  "date" : "2025-10-29T05:09:17+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

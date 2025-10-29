@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "RS Patient",
   "status" : "draft",
-  "date" : "2025-10-29T04:24:57+00:00",
+  "date" : "2025-10-29T05:09:17+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
