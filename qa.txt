@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 118, warn = 799, info = 66
+err = 28, warn = 799, info = 48
 IG Publisher Version: 2.0.24
-Generated Wed Oct 29 00:19:31 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Wed Oct 29 00:40:43 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR : 0 / 11 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
@@ -38,9 +38,9 @@ Generated Wed Oct 29 00:19:31 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-body-temperature : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-call-source : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-cctv-available : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-clinical-remarks : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-type : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-vs-noncollision : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-clinical-remarks : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-type : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-collision-vs-noncollision : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-concussion : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-condition-of-patient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-contusion : 0 / 1 / 1
@@ -60,7 +60,7 @@ Generated Wed Oct 29 00:19:31 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-ec-sharp-object : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-fracture : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-gcs : 0 / 5 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-injury-intent : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-level-of-consciousness : 0 / 1 / 1
@@ -70,11 +70,11 @@ Generated Wed Oct 29 00:19:31 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-open-wound : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-injury : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-risk-factors : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-vehicle : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-other-vehicle : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-outcome-release : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-patients-vehicle : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-place-of-occurrence : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-position-of-patient : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-patients-vehicle : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-place-of-occurrence : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-position-of-patient : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pulse-rate : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-pupils : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-observation-referred-by-facility : 0 / 1 / 1
@@ -93,50 +93,50 @@ Generated Wed Oct 29 00:19:31 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-organization : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-patient : 0 / 7 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-task : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-SILPH-EncounterParticipantRoleVS : 5 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS : 3 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-SILPH-EncounterParticipantRoleVS : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-barangay : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-city : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-province : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-psgc-region : 0 / 3 / 1
- /github/workspace/input/resources/SILPH_Road_Safety_Local_Codes : 3 / 2 / 1
- /github/workspace/input/resources/SILPH___Activity__VS_def : 4 / 2 / 3
- /github/workspace/input/resources/SILPH___Burns__VS_def : 3 / 2 / 2
+ /github/workspace/input/resources/SILPH_Road_Safety_Local_Codes : 0 / 2 / 1
+ /github/workspace/input/resources/SILPH___Activity__VS_def : 1 / 2 / 3
+ /github/workspace/input/resources/SILPH___Burns__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___Cyanosis__VS_def : 0 / 2 / 2
- /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___GCS___Motor__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___General_Disposition__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Injury_Intent__VS_def : 4 / 2 / 3
- /github/workspace/input/resources/SILPH___Inpatient_Disposition__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Level_of_Consciousness__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___List_of_Body_Sites__VS_def : 4 / 2 / 3
- /github/workspace/input/resources/SILPH___Mode_of_Transport__VS_def : 3 / 2 / 3
- /github/workspace/input/resources/SILPH___Other_Vehicle_in_Collision__VS_def : 3 / 2 / 3
- /github/workspace/input/resources/SILPH___Outcome__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Outpatient_ER_Disposition__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___PR___Quality__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___PR___Rhythm__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Patient_s_Vehicle__VS_def : 3 / 2 / 3
- /github/workspace/input/resources/SILPH___Place_of_Occurrence__VS_def : 4 / 2 / 3
- /github/workspace/input/resources/SILPH___Position_of_Patient__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Pupils__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___RR___Breath_Sounds__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___RR___Rhythm__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Risk_Factors__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Safety_Devices__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Sex__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Status__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Status_if_Alive__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Transport_Accident_Type__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def : 3 / 3 / 1
- /github/workspace/input/resources/SILPH___Triage__VS_def : 3 / 2 / 2
- /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def : 6 / 2 / 3
+ /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___GCS___Motor__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___General_Disposition__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Injury_Intent__VS_def : 1 / 2 / 3
+ /github/workspace/input/resources/SILPH___Inpatient_Disposition__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Level_of_Consciousness__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___List_of_Body_Sites__VS_def : 1 / 2 / 3
+ /github/workspace/input/resources/SILPH___Mode_of_Transport__VS_def : 0 / 2 / 3
+ /github/workspace/input/resources/SILPH___Other_Vehicle_in_Collision__VS_def : 0 / 2 / 3
+ /github/workspace/input/resources/SILPH___Outcome__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Outpatient_ER_Disposition__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___PR___Quality__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___PR___Rhythm__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Patient_s_Vehicle__VS_def : 0 / 2 / 3
+ /github/workspace/input/resources/SILPH___Place_of_Occurrence__VS_def : 1 / 2 / 3
+ /github/workspace/input/resources/SILPH___Position_of_Patient__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Pupils__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___RR___Breath_Sounds__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___RR___Rhythm__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Risk_Factors__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Safety_Devices__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Sex__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Status__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Status_if_Alive__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Transport_Accident_Type__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def : 0 / 3 / 1
+ /github/workspace/input/resources/SILPH___Triage__VS_def : 0 / 2 / 2
+ /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def : 3 / 2 / 3
 </table>
 == n/a ==
 == fsh-generated/resources/ConceptMap-MDSRoadSafety2FHIR.json ==
@@ -820,16 +820,16 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation-cctv-available.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-clinical-remarks.json ==
-INFORMATION: StructureDefinition/rs-observation-clinical-remarks: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-clinical-remarks: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-clinical-remarks: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-clinical-remarks: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-collision-type.json ==
-INFORMATION: StructureDefinition/rs-observation-collision-type: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-collision-type: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-collision-type: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-collision-type: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-collision-vs-noncollision.json ==
-INFORMATION: StructureDefinition/rs-observation-collision-vs-noncollision: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-collision-vs-noncollision: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-collision-vs-noncollision: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-collision-vs-noncollision: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-concussion.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion'): The Implementation Guide contains no examples for this profile
@@ -874,8 +874,8 @@ WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: T
 WARNING: StructureDefinition/rs-observation-gcs: StructureDefinition.snapshot: The slice 'gcs-total' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-how-many-vehicles.json ==
-INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-how-many-vehicles: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-injury-datetime.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime'): The Implementation Guide contains no examples for this profile
@@ -896,22 +896,22 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-observation-other-risk-factors.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-other-vehicle.json ==
-INFORMATION: StructureDefinition/rs-observation-other-vehicle: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-other-vehicle: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-other-vehicle: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-other-vehicle: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-outcome-release.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-patients-vehicle.json ==
-INFORMATION: StructureDefinition/rs-observation-patients-vehicle: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-patients-vehicle: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-patients-vehicle: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-patients-vehicle: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-place-of-occurrence.json ==
-INFORMATION: StructureDefinition/rs-observation-place-of-occurrence: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-place-of-occurrence: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-place-of-occurrence: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-place-of-occurrence: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-position-of-patient.json ==
-INFORMATION: StructureDefinition/rs-observation-position-of-patient: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-observation-position-of-patient: StructureDefinition.differential.element[0].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-observation-position-of-patient: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-observation-position-of-patient: StructureDefinition.differential.element[0].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-observation-pulse-rate.json ==
 WARNING: StructureDefinition/rs-observation-pulse-rate: StructureDefinition.snapshot: The slice 'pulse-rhythm' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
@@ -961,27 +961,21 @@ WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-
 == fsh-generated/resources/StructureDefinition-rs-procedure.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-procedure-transport-coordination.json ==
-INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.snapshot.element[20].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
-INFORMATION: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.differential.element[2].pattern.ofType(Coding): Reference to draft CodeSystem http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
+ERROR: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.snapshot.element[20].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
+ERROR: StructureDefinition/rs-procedure-transport-coordination: StructureDefinition.differential.element[2].pattern.ofType(Coding): Unexpected internal condition - unsupported code system could be supported? (url = {0})
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-service-request.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-task.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-SILPH-EncounterParticipantRoleVS.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-SILPH-EncounterParticipantRoleVS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-EncounterParticipantRoleVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-EncounterParticipantRoleVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole
 WARNING: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:3f2e4cbb-5b60-4d85-a15f-3ba8d0f2f7b2'
 ERROR: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet.expansion.parameter[3].value.ofType(uri): No definition could be found for URL value 'http://hl7.org/fhir/'
 ERROR: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet.expansion.contains[4].system: No definition could be found for URL value 'http://hl7.org/fhir'
 WARNING: ValueSet/SILPH-EncounterParticipantRoleVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-SILPH-EncounterParticipantRoleVS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-EncounterParticipantRoleVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole
 == fsh-generated/resources/ValueSet-SILPH-FractureTypeVS.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-FractureTypeVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-FractureTypeVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType
 WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:9e0e5b4e-56af-4574-8ff7-15be6f42406b'
 WARNING: ValueSet/SILPH-FractureTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-SILPH-FractureTypeVS: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-FractureTypeVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType
 == fsh-generated/resources/ValueSet-vs-psgc-barangay.json ==
 WARNING: ValueSet/vs-psgc-barangay: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://psa.gov.ph/classification/psgc'
 WARNING: ValueSet/vs-psgc-barangay: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -999,253 +993,152 @@ WARNING: ValueSet/vs-psgc-region: ValueSet.compose.include[0].system: No definit
 WARNING: ValueSet/vs-psgc-region: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'vs-psgc-region'): Error from https://tx.fhir.org/r4: Unable to provide support for code system https://psa.gov.ph/classification/psgc
 == input/resources/SILPH_Road_Safety_Local_Codes.json ==
-ERROR: CodeSystem.where(url = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem'): Conformance resource /github/workspace/input/resources/SILPH_Road_Safety_Local_Codes.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/SILPH-LocalCodesCS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/CodeSystem). Use the special-url parameter if you really mean for it not to match
-ERROR: CodeSystem.url: Resource id/url mismatch: SILPH-LocalCodesCS/http://www.roadsafetyph.doh.gov.ph/CodeSystem
 WARNING: CodeSystem/SILPH-LocalCodesCS: CodeSystem.valueSet: A definition could not be found for Canonical URL 'http://www.roadsafetyph.doh.gov.ph/ValueSet'
 WARNING: CodeSystem/SILPH-LocalCodesCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH_Road_Safety_Local_Codes: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/CodeSystem/SILPH-LocalCodesCS vs http://www.roadsafetyph.doh.gov.ph/CodeSystem
 == input/resources/SILPH___Activity__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity'): Conformance resource /github/workspace/input/resources/SILPH___Activity__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ActivityVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-ActivityVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity
 WARNING: ValueSet/SILPH-ActivityVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:b2f7ed30-9db1-4137-97ec-bdc9a896e464'
 INFORMATION: ValueSet/SILPH-ActivityVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 ERROR: ValueSet/SILPH-ActivityVS: ValueSet.compose.include[1].concept[0]: The code 'LEISURE' is not valid in the system http://www.roadsafetyph.doh.gov.ph/CodeSystem version 1 (LEISURE)
 INFORMATION: ValueSet/SILPH-ActivityVS: ValueSet.compose.include[1].concept[0]: Cannot invoke "String.length()" because "prefix" is null
 WARNING: ValueSet/SILPH-ActivityVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Activity__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ActivityVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity
 == input/resources/SILPH___Burns__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns'): Conformance resource /github/workspace/input/resources/SILPH___Burns__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-BurnsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-BurnsVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns
 WARNING: ValueSet/SILPH-BurnsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:c9cb0057-cc61-4128-8f8b-4fa0f643ad24'
 INFORMATION: ValueSet/SILPH-BurnsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-BurnsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Burns__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-BurnsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns
 == input/resources/SILPH___Cyanosis__VS_def.json ==
 WARNING: ValueSet/SILPH-Cyanosis: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:27b5ce63-8aed-4888-8c70-c52fe721674c'
 INFORMATION: ValueSet/SILPH-Cyanosis: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-Cyanosis: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == input/resources/SILPH___External_Cause_of_Burns__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns'): Conformance resource /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofBurnsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-ExternalCauseofBurnsVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns
 WARNING: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:3f74e1a3-1fda-4f3a-9899-4155a383b3c9'
 INFORMATION: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofBurnsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns
 == input/resources/SILPH___External_Cause_of_Drowning__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning'): Conformance resource /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofDrowningVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-ExternalCauseofDrowningVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning
 WARNING: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:92655074-aca1-4bcd-9588-6af3d39ae402'
 INFORMATION: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-ExternalCauseofDrowningVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ExternalCauseofDrowningVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning
 == input/resources/SILPH___GCS___Eyes__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes'): Conformance resource /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSEyesVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-GCSEyesVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes
 WARNING: ValueSet/SILPH-GCSEyesVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:ea740c6b-167c-43b1-9a03-be2332c203b9'
 INFORMATION: ValueSet/SILPH-GCSEyesVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-GCSEyesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___GCS___Eyes__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSEyesVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes
 == input/resources/SILPH___GCS___Motor__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor'): Conformance resource /github/workspace/input/resources/SILPH___GCS___Motor__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSMotorVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-GCSMotorVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor
 WARNING: ValueSet/SILPH-GCSMotorVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:24d6b298-554c-42b0-8fa4-f8b7de48a670'
 INFORMATION: ValueSet/SILPH-GCSMotorVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-GCSMotorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___GCS___Motor__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSMotorVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor
 == input/resources/SILPH___GCS___Verbal__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal'): Conformance resource /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSVerbalVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-GCSVerbalVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal
 WARNING: ValueSet/SILPH-GCSVerbalVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:42fea67f-4d4a-41b0-a796-3ecbb4395389'
 INFORMATION: ValueSet/SILPH-GCSVerbalVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-GCSVerbalVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___GCS___Verbal__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GCSVerbalVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal
 == input/resources/SILPH___General_Disposition__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition'): Conformance resource /github/workspace/input/resources/SILPH___General_Disposition__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GeneralDispositionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-GeneralDispositionVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition
 WARNING: ValueSet/SILPH-GeneralDispositionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:22da2e2e-ed76-4fba-a45d-52c5d7ae595a'
 INFORMATION: ValueSet/SILPH-GeneralDispositionVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-GeneralDispositionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___General_Disposition__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-GeneralDispositionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition
 == input/resources/SILPH___Injury_Intent__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent'): Conformance resource /github/workspace/input/resources/SILPH___Injury_Intent__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InjuryIntentVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-InjuryIntentVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent
 WARNING: ValueSet/SILPH-InjuryIntentVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:2742d181-6d13-4fbb-9ff8-40cc5a2b27f4'
 INFORMATION: ValueSet/SILPH-InjuryIntentVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 ERROR: ValueSet/SILPH-InjuryIntentVS: ValueSet.compose.include[1].concept[0]: The code 'VAWC' is not valid in the system http://www.roadsafetyph.doh.gov.ph/CodeSystem version 1 (VAWC)
 INFORMATION: ValueSet/SILPH-InjuryIntentVS: ValueSet.compose.include[1].concept[0]: Cannot invoke "String.length()" because "prefix" is null
 WARNING: ValueSet/SILPH-InjuryIntentVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Injury_Intent__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InjuryIntentVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent
 == input/resources/SILPH___Inpatient_Disposition__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition'): Conformance resource /github/workspace/input/resources/SILPH___Inpatient_Disposition__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InpatientDispositionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-InpatientDispositionVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition
 WARNING: ValueSet/SILPH-InpatientDispositionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:c898b0e3-d3c7-4207-a350-f08d74fb6dac'
 INFORMATION: ValueSet/SILPH-InpatientDispositionVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-InpatientDispositionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Inpatient_Disposition__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InpatientDispositionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition
 == input/resources/SILPH___Level_of_Consciousness__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness'): Conformance resource /github/workspace/input/resources/SILPH___Level_of_Consciousness__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-LevelofConsciousnessVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-LevelofConsciousnessVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness
 WARNING: ValueSet/SILPH-LevelofConsciousnessVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:1c4b192c-7d93-43bb-8e37-20194c6297a7'
 INFORMATION: ValueSet/SILPH-LevelofConsciousnessVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-LevelofConsciousnessVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Level_of_Consciousness__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-LevelofConsciousnessVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness
 == input/resources/SILPH___List_of_Body_Sites__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites'): Conformance resource /github/workspace/input/resources/SILPH___List_of_Body_Sites__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ListofBodySitesVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-ListofBodySitesVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites
 WARNING: ValueSet/SILPH-ListofBodySitesVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:69ef6f5e-314c-4da2-aacf-35155fd4f85d'
 ERROR: ValueSet/SILPH-ListofBodySitesVS: ValueSet.expansion.contains[421]: Constraint failed: vsd-10: 'Must have a system if a code is present (code.empty() or system.exists())'
 INFORMATION: ValueSet/SILPH-ListofBodySitesVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-ListofBodySitesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 INFORMATION: ValueSet.where(id = 'SILPH-ListofBodySitesVS'): The value set expansion is too large, and only a subset has been displayed
-ERROR: /github/workspace/input/resources/SILPH___List_of_Body_Sites__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ListofBodySitesVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites
 == input/resources/SILPH___Mode_of_Transport__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport'): Conformance resource /github/workspace/input/resources/SILPH___Mode_of_Transport__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ModeofTransportVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-ModeofTransportVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport
 WARNING: ValueSet/SILPH-ModeofTransportVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:290d95e4-0fd6-473c-839c-0a3ba7f34a98'
 INFORMATION: ValueSet/SILPH-ModeofTransportVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 INFORMATION: ValueSet/SILPH-ModeofTransportVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-ModeofTransportVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Mode_of_Transport__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ModeofTransportVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport
 == input/resources/SILPH___Other_Vehicle_in_Collision__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle'): Conformance resource /github/workspace/input/resources/SILPH___Other_Vehicle_in_Collision__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OtherVehicleVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-OtherVehicleVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle
 WARNING: ValueSet/SILPH-OtherVehicleVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:2ba057bb-3f57-45bc-9841-9c1d09d81283'
 INFORMATION: ValueSet/SILPH-OtherVehicleVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 INFORMATION: ValueSet/SILPH-OtherVehicleVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-OtherVehicleVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Other_Vehicle_in_Collision__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OtherVehicleVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle
 == input/resources/SILPH___Outcome__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome'): Conformance resource /github/workspace/input/resources/SILPH___Outcome__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutcomeVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-OutcomeVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome
 WARNING: ValueSet/SILPH-OutcomeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:d4d60644-7d0c-4f0d-840c-de4b48051ce0'
 INFORMATION: ValueSet/SILPH-OutcomeVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-OutcomeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Outcome__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutcomeVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome
 == input/resources/SILPH___Outpatient_ER_Disposition__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition'): Conformance resource /github/workspace/input/resources/SILPH___Outpatient_ER_Disposition__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutpatientERDispositionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-OutpatientERDispositionVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition
 WARNING: ValueSet/SILPH-OutpatientERDispositionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:3533b294-986f-4296-bf1c-82570f78c655'
 INFORMATION: ValueSet/SILPH-OutpatientERDispositionVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-OutpatientERDispositionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Outpatient_ER_Disposition__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-OutpatientERDispositionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition
 == input/resources/SILPH___PR___Quality__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality'): Conformance resource /github/workspace/input/resources/SILPH___PR___Quality__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-QualityVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-PR-QualityVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality
 WARNING: ValueSet/SILPH-PR-QualityVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:1174edc6-6244-4543-8239-91cf2bee1deb'
 INFORMATION: ValueSet/SILPH-PR-QualityVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-PR-QualityVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___PR___Quality__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-QualityVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality
 == input/resources/SILPH___PR___Rhythm__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm'): Conformance resource /github/workspace/input/resources/SILPH___PR___Rhythm__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-RhythmVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-PR-RhythmVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm
 WARNING: ValueSet/SILPH-PR-RhythmVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:89e4fc30-9f66-4e0d-a438-7f46d8011553'
 INFORMATION: ValueSet/SILPH-PR-RhythmVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-PR-RhythmVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___PR___Rhythm__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PR-RhythmVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm
 == input/resources/SILPH___Patient_s_Vehicle__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle'): Conformance resource /github/workspace/input/resources/SILPH___Patient_s_Vehicle__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PatientsVehicleVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-PatientsVehicleVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle
 WARNING: ValueSet/SILPH-PatientsVehicleVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:615772b2-b26b-4dce-8939-b61c6ae9f73d'
 INFORMATION: ValueSet/SILPH-PatientsVehicleVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 INFORMATION: ValueSet/SILPH-PatientsVehicleVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-PatientsVehicleVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Patient_s_Vehicle__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PatientsVehicleVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle
 == input/resources/SILPH___Place_of_Occurrence__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence'): Conformance resource /github/workspace/input/resources/SILPH___Place_of_Occurrence__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PlaceofOccurrenceVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-PlaceofOccurrenceVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence
 WARNING: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:dea85e79-440d-45cf-82f5-504593f06306'
 INFORMATION: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 ERROR: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.compose.include[1].concept[0]: The code 'VIDEOBAR' is not valid in the system http://www.roadsafetyph.doh.gov.ph/CodeSystem version 1 (VIDEOBAR)
 INFORMATION: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet.compose.include[1].concept[0]: Cannot invoke "String.length()" because "prefix" is null
 WARNING: ValueSet/SILPH-PlaceofOccurrenceVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Place_of_Occurrence__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PlaceofOccurrenceVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence
 == input/resources/SILPH___Position_of_Patient__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient'): Conformance resource /github/workspace/input/resources/SILPH___Position_of_Patient__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PositionofPatientVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-PositionofPatientVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient
 WARNING: ValueSet/SILPH-PositionofPatientVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:398b3054-549e-42ab-a8ab-b5dd94dc953f'
 INFORMATION: ValueSet/SILPH-PositionofPatientVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-PositionofPatientVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Position_of_Patient__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PositionofPatientVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient
 == input/resources/SILPH___Pupils__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils'): Conformance resource /github/workspace/input/resources/SILPH___Pupils__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PupilsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-PupilsVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils
 WARNING: ValueSet/SILPH-PupilsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:7a666765-a7b7-4ddc-8aff-114ff6e0e4a2'
 INFORMATION: ValueSet/SILPH-PupilsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-PupilsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Pupils__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-PupilsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils
 == input/resources/SILPH___RR___Breath_Sounds__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds'): Conformance resource /github/workspace/input/resources/SILPH___RR___Breath_Sounds__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-BreathSoundsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-RR-BreathSoundsVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds
 WARNING: ValueSet/SILPH-RR-BreathSoundsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378'
 INFORMATION: ValueSet/SILPH-RR-BreathSoundsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-RR-BreathSoundsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___RR___Breath_Sounds__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-BreathSoundsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds
 == input/resources/SILPH___RR___Rhythm__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm'): Conformance resource /github/workspace/input/resources/SILPH___RR___Rhythm__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-RhythmVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-RR-RhythmVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm
 WARNING: ValueSet/SILPH-RR-RhythmVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:aff65127-6ea8-43bf-bca0-1901b48d0314'
 INFORMATION: ValueSet/SILPH-RR-RhythmVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-RR-RhythmVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___RR___Rhythm__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RR-RhythmVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm
 == input/resources/SILPH___Risk_Factors__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors'): Conformance resource /github/workspace/input/resources/SILPH___Risk_Factors__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RiskFactorsVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-RiskFactorsVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors
 WARNING: ValueSet/SILPH-RiskFactorsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:25622628-05ac-4e70-800f-3c041370b121'
 INFORMATION: ValueSet/SILPH-RiskFactorsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-RiskFactorsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Risk_Factors__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-RiskFactorsVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors
 == input/resources/SILPH___Safety_Devices__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices'): Conformance resource /github/workspace/input/resources/SILPH___Safety_Devices__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SafetyDevicesVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-SafetyDevicesVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices
 WARNING: ValueSet/SILPH-SafetyDevicesVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:616bde4b-e75b-4ac2-a6b9-7fef3eafe186'
 INFORMATION: ValueSet/SILPH-SafetyDevicesVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-SafetyDevicesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Safety_Devices__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SafetyDevicesVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices
 == input/resources/SILPH___Sex__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex'): Conformance resource /github/workspace/input/resources/SILPH___Sex__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SexVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-SexVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex
 WARNING: ValueSet/SILPH-SexVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:8bd356e8-728d-4f19-96f9-0116a1ac154f'
 INFORMATION: ValueSet/SILPH-SexVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-SexVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Sex__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-SexVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex
 == input/resources/SILPH___Status__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status'): Conformance resource /github/workspace/input/resources/SILPH___Status__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-StatusVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status
 WARNING: ValueSet/SILPH-StatusVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:e6be3982-2aa7-4dc6-be22-1b0a559faaaa'
 INFORMATION: ValueSet/SILPH-StatusVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-StatusVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Status__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status
 == input/resources/SILPH___Status_if_Alive__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive'): Conformance resource /github/workspace/input/resources/SILPH___Status_if_Alive__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusifAliveVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-StatusifAliveVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive
 WARNING: ValueSet/SILPH-StatusifAliveVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:74dad3fa-5483-4c64-94ff-d8384a877819'
 INFORMATION: ValueSet/SILPH-StatusifAliveVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-StatusifAliveVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Status_if_Alive__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-StatusifAliveVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive
 == input/resources/SILPH___Transport_Accident_Type__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType'): Conformance resource /github/workspace/input/resources/SILPH___Transport_Accident_Type__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentTypeVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-TransportAccidentTypeVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType
 WARNING: ValueSet/SILPH-TransportAccidentTypeVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:85800e40-7a30-4415-989b-6dee74273417'
 INFORMATION: ValueSet/SILPH-TransportAccidentTypeVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-TransportAccidentTypeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Transport_Accident_Type__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentTypeVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType
 == input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision'): Conformance resource /github/workspace/input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-TransportAccidentCollisionorNoncollisionVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision
 WARNING: ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:14333e18-97b6-4d4b-a08c-bb9eb26aa6c0'
 WARNING: ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS: ValueSet.compose.include[1]: Unknown System/Version 'http://www.roadsafetyph.doh.gov.ph/CodeSystem#1' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://www.roadsafetyph.doh.gov.ph/CodeSystem' version '1' could not be found, so the code cannot be validated. No versions of this code system are known)
 WARNING: ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Transport_Accident__Collision_or_Noncollision__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TransportAccidentCollisionorNoncollisionVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision
 == input/resources/SILPH___Triage__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage'): Conformance resource /github/workspace/input/resources/SILPH___Triage__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TriageVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-TriageVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage
 WARNING: ValueSet/SILPH-TriageVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:4c8a4350-cb21-41e2-a60c-57660c05e609'
 INFORMATION: ValueSet/SILPH-TriageVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-TriageVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Triage__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TriageVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage
 == input/resources/SILPH___Type_of_Patient__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient'): Conformance resource /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TypeofPatientVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: SILPH-TypeofPatientVS/http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient
 WARNING: ValueSet/SILPH-TypeofPatientVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:895e21f5-f1cb-4a0e-b3c3-564fcd970299'
 ERROR: ValueSet/SILPH-TypeofPatientVS: ValueSet.compose.include[0].concept[0]: The code 'LA10268-3' is not valid in the system http://loinc.org (Wrong Display Name 'ER' for http://loinc.org#LA10268-3. Valid display is 'Emergency Department' (en-US) (for the language(s) 'en, en-US'))
 INFORMATION: ValueSet/SILPH-TypeofPatientVS: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'ER' for http://loinc.org#LA10268-3. Valid display is 'Emergency Department' (en-US) (for the language(s) 'en, en-US')
@@ -1253,4 +1146,3 @@ ERROR: ValueSet/SILPH-TypeofPatientVS: ValueSet.compose.include[0].concept[1]: T
 ERROR: ValueSet/SILPH-TypeofPatientVS: ValueSet.compose.include[0].concept[2]: The code 'LA21427-2' is not valid in the system http://loinc.org (Wrong Display Name 'Inpatient' for http://loinc.org#LA21427-2. Valid display is 'Inpatient Hospital' (en-US) (for the language(s) 'en, en-US'))
 INFORMATION: ValueSet/SILPH-TypeofPatientVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-TypeofPatientVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-TypeofPatientVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient

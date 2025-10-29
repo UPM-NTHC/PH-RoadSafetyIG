@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fa
   "name" : "RSObsECFall",
   "title" : "RS Observation - External Cause: Fall",
   "status" : "draft",
-  "date" : "2025-10-29T00:11:30+00:00",
+  "date" : "2025-10-29T00:33:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

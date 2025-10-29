@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-29T00:11:30+00:00",
+  "date" : "2025-10-29T00:33:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -90,11 +90,407 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "special-url-base"
+        "valueString" : "special-url"
       },
       {
         "url" : "value",
-        "valueString" : "http://www.roadsafetyph.doh.gov.ph"
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -380,11 +776,407 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "special-url-base"
+        "valueCode" : "special-url"
       },
       {
         "url" : "value",
-        "valueString" : "http://www.roadsafetyph.doh.gov.ph"
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

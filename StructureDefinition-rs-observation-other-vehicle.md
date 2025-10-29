@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherVehicleInvolved",
   "title" : "RS Observation - Other Vehicle/Object Involved",
   "status" : "draft",
-  "date" : "2025-10-29T00:11:30+00:00",
+  "date" : "2025-10-29T00:33:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
         "max" : "1",
         "patternCoding" : {
           "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "version" : "1",
           "code" : "OTHERVEHICLE",
           "display" : "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
         }

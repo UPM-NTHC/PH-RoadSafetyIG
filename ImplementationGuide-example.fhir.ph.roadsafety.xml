@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-29T00:11:30+00:00"/>
+  <date value="2025-10-29T00:33:44+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -79,10 +79,298 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="special-url-base"/>
+        <valueString value="special-url"/>
       </extension>
       <extension url="value">
-        <valueString value="http://www.roadsafetyph.doh.gov.ph"/>
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -290,10 +578,298 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="special-url-base"/>
+        <valueCode value="special-url"/>
       </extension>
       <extension url="value">
-        <valueString value="http://www.roadsafetyph.doh.gov.ph"/>
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

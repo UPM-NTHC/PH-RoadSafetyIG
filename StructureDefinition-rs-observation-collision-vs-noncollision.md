@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "name" : "RSObsCollisionVsNonCollision",
   "title" : "RS Observation - Collision vs Non-Collision",
   "status" : "draft",
-  "date" : "2025-10-29T00:11:30+00:00",
+  "date" : "2025-10-29T00:33:44+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
         "max" : "1",
         "patternCoding" : {
           "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "version" : "1",
           "code" : "MVA-COLLISION",
           "display" : "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"
         }
