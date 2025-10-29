@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ch
   "name" : "RSObsECChemical",
   "title" : "RS Observation - External Cause: Chemical/Substance",
   "status" : "draft",
-  "date" : "2025-10-29T02:25:56+00:00",
+  "date" : "2025-10-29T03:19:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
