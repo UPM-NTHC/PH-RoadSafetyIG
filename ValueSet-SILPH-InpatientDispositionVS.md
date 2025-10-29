@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___Inpatient_Disposition__VS_",
   "title" : "SILPH - Inpatient Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,31 +95,31 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "concept" : [
           {
             "code" : "371827001",
-            "display" : "Patient discharged alive"
+            "display" : "Discharged"
           },
           {
             "code" : "225928004",
-            "display" : "Patient self-discharge against medical advice"
+            "display" : "HAMA"
           },
           {
             "code" : "34596002",
-            "display" : "Patient discharge, elopement"
+            "display" : "Absconded"
           },
           {
             "code" : "183960004",
-            "display" : "Patient refuses hospital admission"
+            "display" : "Refused Admission"
           },
           {
             "code" : "371828006",
-            "display" : "Patient deceased during stay (discharge status = dead)"
+            "display" : "Died"
           },
           {
             "code" : "74964007",
-            "display" : "Other"
+            "display" : "Others"
           },
           {
             "code" : "19712007",
-            "display" : "Patient transfer, to another health care facility"
+            "display" : "Transferred to another facility/hospital"
           }
         ]
       }

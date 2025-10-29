@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-29T13:28:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-29T15:51:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -5369,6 +5369,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ICD10ExternalCauseofInjuryVS> ;
+         fhir:reference [ fhir:v "ValueSet/SILPH-ICD10ExternalCauseofInjuryVS" ]
+       ] ;
+       fhir:name [ fhir:v "SILPH - ICD10 External Cause of Injury (VS)" ] ;
+       fhir:description [ fhir:v "SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes from Chapter XX - V01-Y36, Y85-Y87, and Y89)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ICD10NatureofInjuryVS> ;
+         fhir:reference [ fhir:v "ValueSet/SILPH-ICD10NatureofInjuryVS" ]
+       ] ;
+       fhir:name [ fhir:v "SILPH - ICD10 Nature of Injury (VS)" ] ;
+       fhir:description [ fhir:v "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-InjuryIntentVS> ;
          fhir:reference [ fhir:v "ValueSet/SILPH-InjuryIntentVS" ]
        ] ;
@@ -5437,6 +5479,27 @@
        ] ;
        fhir:name [ fhir:v "SILPH - List of Body Sites (VS)" ] ;
        fhir:description [ fhir:v "SILPH List of Body Sites" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-LocalCodesVS> ;
+         fhir:reference [ fhir:v "ValueSet/SILPH-LocalCodesVS" ]
+       ] ;
+       fhir:name [ fhir:v "SILPH - Local Codes (VS)" ] ;
+       fhir:description [ fhir:v "SILPH Value Set for containing all Road Safety Local Codes (data element terminology codes and codes for value sets)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

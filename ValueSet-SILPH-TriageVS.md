@@ -56,7 +56,7 @@ This value set contains 5 concepts
   "name" : "SILPH___Triage__VS_",
   "title" : "SILPH - Triage (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,19 +97,19 @@ This value set contains 5 concepts
         "concept" : [
           {
             "code" : "LA17696-8",
-            "display" : "Critical (red)"
+            "display" : "Red"
           },
           {
             "code" : "LA17695-0",
-            "display" : "Emergent (yellow)"
+            "display" : "Yellow"
           },
           {
             "code" : "LA17694-3",
-            "display" : "Lower acuity (green)"
+            "display" : "Green"
           },
           {
             "code" : "LA17697-6",
-            "display" : "Dead without resuscitation efforts (black)"
+            "display" : "Black"
           }
         ]
       },

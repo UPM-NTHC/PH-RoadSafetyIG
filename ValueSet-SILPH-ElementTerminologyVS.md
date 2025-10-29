@@ -24,7 +24,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-This value set contains 114 concepts
+This value set contains 47 concepts
 
 -------
 
@@ -48,15 +48,15 @@ This value set contains 114 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-ElementTerminologyVS",
   "meta" : {
-    "versionId" : "1",
-    "lastUpdated" : "2025-10-29T01:15:19.727+00:00"
+    "versionId" : "2",
+    "lastUpdated" : "2025-10-29T06:57:32.782+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology",
   "version" : "0.2.0",
   "name" : "SILPH___Element_Terminology__VS_",
   "title" : "SILPH - Element Terminology (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -93,379 +93,436 @@ This value set contains 114 concepts
   "compose" : {
     "include" : [
       {
+        "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+        "concept" : [
+          {
+            "code" : "INJURYFRONT",
+            "display" : "Site of Injury/Pain - Front Part of Body"
+          },
+          {
+            "code" : "INJURYBACK",
+            "display" : "Site of Injury/Pain - Back Part of Body"
+          },
+          {
+            "code" : "RRFREMARKS",
+            "display" : "Run Report Form Remarks"
+          },
+          {
+            "code" : "MVA-COLLISION",
+            "display" : "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"
+          },
+          {
+            "code" : "PATIENTVEHICLE",
+            "display" : "Vehicles Involved: Patient's Vehicle"
+          },
+          {
+            "code" : "OTHERVEHICLE",
+            "display" : "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
+          },
+          {
+            "code" : "PATIENTPOSITION",
+            "display" : "Position of Patient"
+          },
+          {
+            "code" : "PLACEOCCURRENCE",
+            "display" : "Place of Occurrence"
+          },
+          {
+            "code" : "ER_OUTPATIENT_OUTCOME",
+            "display" : "ER/Outpatient Outcome"
+          },
+          {
+            "code" : "INPATIENT_OUTCOME",
+            "display" : "Inpatient Outcome"
+          },
+          {
+            "code" : "COLLISIONTYPE",
+            "display" : "Collision Type"
+          },
+          {
+            "code" : "COORDINATIONDONE",
+            "display" : "Was Transport Coordinated with Receiving Hospital?"
+          }
+        ]
+      },
+      {
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
             "code" : "405796007",
-            "display" : "Time of call for help"
+            "display" : "Time of call for help (observable entity)"
           },
           {
             "code" : "405798008",
-            "display" : "Time of arrival of emergency services"
+            "display" : "Time of arrival of emergency services (observable entity)"
           },
           {
             "code" : "405799000",
-            "display" : "Time of arrival at hospital"
+            "display" : "Time of arrival at hospital (observable entity)"
           },
           {
             "code" : "1269489004",
-            "display" : "Chief complaint"
+            "display" : "Chief complaint (observable entity)"
           },
           {
             "code" : "398099009",
-            "display" : "Street address"
+            "display" : "Street address (observable entity)"
           },
           {
             "code" : "397663001",
-            "display" : "Referral source"
+            "display" : "Referral source (finding)"
           },
           {
             "code" : "184096005",
-            "display" : "Patient surname"
+            "display" : "Patient surname (observable entity)"
           },
           {
             "code" : "184095009",
-            "display" : "Patient forename"
+            "display" : "Patient forename (observable entity)"
           },
           {
             "code" : "405622006",
-            "display" : "Patient middle name"
+            "display" : "Patient middle name (observable entity)"
           },
           {
             "code" : "397669002",
-            "display" : "Age"
+            "display" : "Age (qualifier value)"
           },
           {
             "code" : "184100006",
-            "display" : "Patient sex"
+            "display" : "Patient sex (observable entity)"
           },
           {
             "code" : "734005006",
-            "display" : "Telephone number"
+            "display" : "Telephone number (property) (qualifier value)"
           },
           {
             "code" : "417662000",
-            "display" : "History of clinical finding in subject"
+            "display" : "History of clinical finding in subject (situation)"
           },
           {
             "code" : "513881000000106",
-            "display" : "Current medication as reported by patient"
+            "display" : "Current medication as reported by patient (observable entity)"
           },
           {
             "code" : "609328004",
-            "display" : "Allergic disposition"
+            "display" : "Allergic disposition (finding)"
           },
           {
             "code" : "86290005",
-            "display" : "Respiratory rate"
+            "display" : "Respiratory rate (observable entity)"
           },
           {
             "code" : "248582003",
-            "display" : "Rhythm of respiration"
+            "display" : "Rhythm of respiration (observable entity)"
           },
           {
             "code" : "52653008",
-            "display" : "Respiratory sounds"
+            "display" : "Respiratory sounds (observable entity)"
           },
           {
             "code" : "78564009",
-            "display" : "Pulse rate"
+            "display" : "Heart rate measured at systemic artery (observable entity)"
           },
           {
             "code" : "364095004",
-            "display" : "Pulse rhythm"
+            "display" : "Pulse rhythm (observable entity)"
+          },
+          {
+            "code" : "366201008",
+            "display" : "Finding of pulse volume (finding)"
           },
           {
             "code" : "271649006",
-            "display" : "Systolic blood pressure"
+            "display" : "Systolic blood pressure (observable entity)"
           },
           {
             "code" : "271650006",
-            "display" : "Diastolic blood pressure"
+            "display" : "Diastolic blood pressure (observable entity)"
           },
           {
             "code" : "386725007",
-            "display" : "Body temperature"
+            "display" : "Body temperature (observable entity)"
           },
           {
             "code" : "6942003",
-            "display" : "Level of consciousness"
+            "display" : "Level of consciousness (observable entity)"
           },
           {
             "code" : "271733001",
-            "display" : "Pupil reaction"
+            "display" : "Pupil reaction (observable entity)"
           },
           {
             "code" : "3415004",
-            "display" : "Cyanosis"
+            "display" : "Cyanosis (finding)"
           },
           {
             "code" : "281395000",
-            "display" : "Glasgow Coma Score eye opening subscore"
+            "display" : "Glasgow Coma Score eye opening subscore (observable entity)"
           },
           {
             "code" : "281397008",
-            "display" : "Glasgow Coma Scale verbal response subscore"
+            "display" : "Glasgow Coma Scale verbal response subscore (observable entity)"
           },
           {
             "code" : "281396004",
-            "display" : "Glasgow Coma Scale motor response subscore"
+            "display" : "Glasgow Coma Scale motor response subscore (observable entity)"
           },
           {
             "code" : "248241002",
-            "display" : "Glasgow coma score"
+            "display" : "Glasgow coma score (observable entity)"
           },
           {
             "code" : "55607006",
-            "display" : "Problem"
+            "display" : "Problem (finding)"
           },
           {
             "code" : "119270007",
-            "display" : "Management procedure"
+            "display" : "Management procedure (procedure)"
           },
           {
             "code" : "397897005",
-            "display" : "Paramedic"
+            "display" : "Paramedic (occupation)"
           },
           {
             "code" : "159738005",
-            "display" : "Ambulanceman"
+            "display" : "Ambulanceman (occupation)"
           },
           {
             "code" : "22515006",
-            "display" : "Medical assistant"
+            "display" : "Medical Assistant (occupation)"
           },
           {
             "code" : "36030000",
-            "display" : "Transport vehicle"
+            "display" : "Transport vehicle, device (physical object)"
           },
           {
             "code" : "184107009",
-            "display" : "Patient hospital number"
+            "display" : "Patient hospital number (observable entity)"
           },
           {
             "code" : "722248002",
-            "display" : "Patient hospital visit number"
+            "display" : "Patient hospital visit number (observable entity)"
           },
           {
             "code" : "116154003",
-            "display" : "Patient"
+            "display" : "Patient (person)"
           },
           {
             "code" : "184099003",
-            "display" : "Date of birth"
+            "display" : "Date of birth (observable entity)"
           },
           {
             "code" : "439771001",
-            "display" : "Date of event"
+            "display" : "Date of event (observable entity)"
           },
           {
             "code" : "263501003",
-            "display" : "Time of onset"
+            "display" : "Time of onset (observable entity)"
           },
           {
             "code" : "406543005",
-            "display" : "Date of visit"
+            "display" : "Date of visit (observable entity)"
           },
           {
             "code" : "406544004",
-            "display" : "Time of visit"
+            "display" : "Time of visit (observable entity)"
           },
           {
             "code" : "386308007",
-            "display" : "First aid"
+            "display" : "First aid (procedure)"
           },
           {
             "code" : "262519004",
-            "display" : "Multiple injuries"
+            "display" : "Multiple injuries (disorder)"
           },
           {
             "code" : "399963005",
-            "display" : "Abrasion"
+            "display" : "Abrasion (disorder)"
           },
           {
             "code" : "284554003",
-            "display" : "Avulsion - injury"
+            "display" : "Avulsion - injury (disorder)"
           },
           {
             "code" : "125666000",
-            "display" : "Burn"
+            "display" : "Burn (disorder)"
           },
           {
             "code" : "77140003",
-            "display" : "First degree burn injury"
+            "display" : "First degree burn injury (morphologic abnormality)"
           },
           {
             "code" : "46541008",
-            "display" : "Second degree burn injury"
+            "display" : "Second degree burn injury (morphologic abnormality)"
           },
           {
             "code" : "80247002",
-            "display" : "Third degree burn injury"
+            "display" : "Third degree burn injury (morphologic abnormality)"
           },
           {
             "code" : "770400008",
-            "display" : "Fourth degree burn injury"
+            "display" : "Fourth degree burn injury (morphologic abnormality)"
           },
           {
             "code" : "110030002",
-            "display" : "Concussion injury of brain"
+            "display" : "Concussion injury of brain (disorder)"
           },
           {
             "code" : "125667009",
-            "display" : "Contusion"
+            "display" : "Contusion (disorder)"
           },
           {
             "code" : "125605004",
-            "display" : "Fracture of bone"
+            "display" : "Fracture of bone (disorder)"
           },
           {
             "code" : "423125000",
-            "display" : "Closed fracture"
+            "display" : "Closed fracture of bone (disorder)"
           },
           {
             "code" : "397181002",
-            "display" : "Open fracture"
+            "display" : "Open fracture (disorder)"
           },
           {
             "code" : "125643001",
-            "display" : "Open wound"
+            "display" : "Open wound (disorder)"
           },
           {
             "code" : "262595009",
-            "display" : "Traumatic amputation"
+            "display" : "Traumatic amputation (disorder)"
           },
           {
             "code" : "417163006",
-            "display" : "Traumatic or non-traumatic injury"
+            "display" : "Traumatic or non-traumatic injury (disorder)"
           },
           {
             "code" : "242651001",
-            "display" : "Injury caused by animal"
+            "display" : "Injury caused by animal (disorder)"
           },
           {
             "code" : "242490006",
-            "display" : "Burning due to contact with hot substance"
+            "display" : "Burning due to contact with hot substance (event)"
           },
           {
             "code" : "133261000119105",
-            "display" : "Exposure to potentially hazardous substance"
+            "display" : "Exposure to potentially hazardous substance (event)"
           },
           {
             "code" : "69129000",
-            "display" : "Struck by sharp object"
+            "display" : "Struck by sharp object (event)"
           },
           {
             "code" : "40947009",
-            "display" : "Drowning"
+            "display" : "Drowning (event)"
           },
           {
             "code" : "276746005",
-            "display" : "Environmental event"
+            "display" : "Environmental event (event)"
           },
           {
             "code" : "1912002",
-            "display" : "Fall"
+            "display" : "Fall (event)"
           },
           {
             "code" : "218100007",
-            "display" : "Accident caused by fireworks"
+            "display" : "Accident caused by fireworks (event)"
           },
           {
             "code" : "63409001",
-            "display" : "Struck by firearm discharge"
+            "display" : "Struck by firearm discharge (event)"
           },
           {
             "code" : "212976008",
-            "display" : "Asphyxia by strangulation"
+            "display" : "Asphyxia by strangulation (event)"
           },
           {
             "code" : "52684005",
-            "display" : "Assault"
+            "display" : "Assault (event)"
           },
           {
             "code" : "248110007",
-            "display" : "Sexual assault"
+            "display" : "Sexual assault (event)"
           },
           {
-            "code" : "274215009",
-            "display" : "Transport accident"
+            "code" : "418161006",
+            "display" : "Vehicle accident (event)"
           },
           {
             "code" : "773760007",
-            "display" : "Traumatic event"
+            "display" : "Traumatic event (event)"
+          },
+          {
+            "code" : "274215009",
+            "display" : "Transport accident (event)"
           },
           {
             "code" : "80943009",
-            "display" : "Risk factor"
+            "display" : "Risk factor (observable entity)"
           },
           {
             "code" : "386812007",
-            "display" : "Safety precautions"
+            "display" : "Safety precautions (procedure)"
           },
           {
             "code" : "307836003",
-            "display" : "Referral by establishment"
+            "display" : "Referral by establishment (procedure)"
           },
           {
             "code" : "118223001",
-            "display" : "Patient status finding"
+            "display" : "Patient status finding (finding)"
           },
           {
             "code" : "106167005",
-            "display" : "Consciousness related finding"
+            "display" : "Consciousness related finding (finding)"
           },
           {
             "code" : "148006",
-            "display" : "Preliminary diagnosis"
-          },
-          {
-            "code" : "418138009",
-            "display" : "Patient condition finding"
+            "display" : "Preliminary diagnosis (contextual qualifier) (qualifier value)"
           },
           {
             "code" : "89100005",
-            "display" : "Final diagnosis (discharge)"
+            "display" : "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
           },
           {
             "code" : "159679004",
-            "display" : "Traffic warden"
+            "display" : "Traffic warden (occupation)"
           },
           {
             "code" : "273887006",
-            "display" : "Triage index"
+            "display" : "Triage index (assessment scale)"
           },
           {
             "code" : "260870009",
-            "display" : "Priority"
+            "display" : "Priority (attribute)"
           },
           {
             "code" : "278443006",
-            "display" : "Cause of accident type"
+            "display" : "Cause of accident type (qualifier value)"
           },
           {
             "code" : "364703007",
-            "display" : "Employment detail"
+            "display" : "Employment detail (observable entity)"
           },
           {
             "code" : "373786007",
-            "display" : "Reasons for treatment delay"
+            "display" : "Reasons for treatment delay (finding)"
           },
           {
             "code" : "218247007",
-            "display" : "Late effect of motor vehicle accident"
+            "display" : "Late effect of motor vehicle accident (disorder)"
           },
           {
             "code" : "408919008",
-            "display" : "Psychosocial care"
+            "display" : "Psychosocial care (regime/therapy)"
           },
           {
             "code" : "360000005",
-            "display" : "Closed circuit television"
+            "display" : "Closed circuit television (physical object)"
           },
           {
             "code" : "167009006",
-            "display" : "Blood ethanol measurement"
+            "display" : "Blood ethanol measurement (procedure)"
           }
         ]
       },
@@ -515,51 +572,6 @@ This value set contains 114 concepts
           {
             "code" : "77999-1",
             "display" : "Case notification comment"
-          }
-        ]
-      },
-      {
-        "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-        "concept" : [
-          {
-            "code" : "INJURYFRONT",
-            "display" : "Site of Injury/Pain - Front Part of Body"
-          },
-          {
-            "code" : "INJURYBACK",
-            "display" : "Site of Injury/Pain - Back Part of Body"
-          },
-          {
-            "code" : "RRFREMARKS",
-            "display" : "Run Report Form Remarks"
-          },
-          {
-            "code" : "MVA-COLLISION",
-            "display" : "FOR TRANSPORT/VEHICULAR ACCIDENT ONLY (Collision; Non-Collision)"
-          },
-          {
-            "code" : "PATIENTVEHICLE",
-            "display" : "Vehicles Involved: Patient's Vehicle"
-          },
-          {
-            "code" : "OTHERVEHICLE",
-            "display" : "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
-          },
-          {
-            "code" : "PATIENTPOSITION",
-            "display" : "Position of Patient"
-          },
-          {
-            "code" : "PLACEOCCURRENCE",
-            "display" : "Place of Occurrence"
-          },
-          {
-            "code" : "COLLISIONTYPE",
-            "display" : "Collision Type"
-          },
-          {
-            "code" : "COORDINATIONDONE",
-            "display" : "Was Transport Coordinated with Receiving Hospital?"
           }
         ]
       }

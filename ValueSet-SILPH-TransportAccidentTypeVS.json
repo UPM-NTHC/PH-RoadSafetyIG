@@ -2,19 +2,19 @@
   "resourceType" : "ValueSet",
   "id" : "SILPH-TransportAccidentTypeVS",
   "meta" : {
-    "versionId" : "2",
-    "lastUpdated" : "2025-10-27T06:41:09.321+00:00"
+    "versionId" : "4",
+    "lastUpdated" : "2025-10-29T07:07:33.807+00:00"
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-TransportAccidentTypeVS</b></p><a name=\"SILPH-TransportAccidentTypeVS\"> </a><a name=\"hcSILPH-TransportAccidentTypeVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 2; Last updated: 2025-10-27 06:41:09+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on codesystem SILPH Road Safety Local Codes version 1</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-TransportAccidentTypeVS-http://www.roadsafetyph.doh.gov.ph/CodeSystem-XE9S7\"> </a><code>http://www.roadsafetyph.doh.gov.ph/CodeSystem</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-SILPH-LocalCodesCS.html#SILPH-LocalCodesCS-XE9S7\">XE9S7</a></td><td>Land</td></tr><tr><td><a name=\"SILPH-TransportAccidentTypeVS-http://www.roadsafetyph.doh.gov.ph/CodeSystem-XE85L\"> </a><code>http://www.roadsafetyph.doh.gov.ph/CodeSystem</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-SILPH-LocalCodesCS.html#SILPH-LocalCodesCS-XE85L\">XE85L</a></td><td>Water</td></tr><tr><td><a name=\"SILPH-TransportAccidentTypeVS-http://www.roadsafetyph.doh.gov.ph/CodeSystem-XE5XH\"> </a><code>http://www.roadsafetyph.doh.gov.ph/CodeSystem</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-SILPH-LocalCodesCS.html#SILPH-LocalCodesCS-XE5XH\">XE5XH</a></td><td>Air</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-TransportAccidentTypeVS</b></p><a name=\"SILPH-TransportAccidentTypeVS\"> </a><a name=\"hcSILPH-TransportAccidentTypeVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 4; Last updated: 2025-10-29 07:07:33+0000</p></div><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on:</p><ul><li>SNOMED CT International edition 01-Oct 2024</li><li><a href=\"CodeSystem-SILPH-LocalCodesCS.html\">codesystem SILPH Road Safety Local Codes v0.2.0 (CodeSystem)</a></li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td><b>Version</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-TransportAccidentTypeVS-http://www.roadsafetyph.doh.gov.ph/CodeSystem-LAND\"> </a><code>http://www.roadsafetyph.doh.gov.ph/CodeSystem</code></td><td>0.2.0</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-SILPH-LocalCodesCS.html#SILPH-LocalCodesCS-LAND\">LAND</a></td><td>Land</td></tr><tr><td><a name=\"SILPH-TransportAccidentTypeVS-http://snomed.info/sct-215414001\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/sct/900000000000207008/id/215414001\">215414001</a></td><td>Water transport accident</td></tr><tr><td><a name=\"SILPH-TransportAccidentTypeVS-http://snomed.info/sct-386679005\"> </a><code>http://snomed.info/sct</code></td><td>http://snomed.info/sct/900000000000207008/version/20241001</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/sct/900000000000207008/id/386679005\">386679005</a></td><td>Air and space transport accident</td></tr></table></div>"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType",
   "version" : "0.2.0",
   "name" : "SILPH___Transport_Accident_Type__VS_",
   "title" : "SILPH - Transport Accident Type (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -42,30 +42,41 @@
     "include" : [{
       "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
       "concept" : [{
-        "code" : "XE9S7",
+        "code" : "LAND",
         "display" : "Land"
-      },
-      {
-        "code" : "XE85L",
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "215414001",
         "display" : "Water"
       },
       {
-        "code" : "XE5XH",
+        "code" : "386679005",
         "display" : "Air"
       }]
     }]
   },
   "expansion" : {
-    "identifier" : "urn:uuid:85800e40-7a30-4415-989b-6dee74273417",
-    "timestamp" : "2025-10-27T06:41:35+00:00",
+    "identifier" : "urn:uuid:9aa79cf8-0ac4-4b4c-a057-df87acd18706",
+    "timestamp" : "2025-10-29T07:07:38+00:00",
     "total" : 3,
     "parameter" : [{
       "name" : "used-codesystem",
-      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
     },
     {
       "name" : "version",
-      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
     },
     {
       "name" : "displayLanguage",
@@ -73,11 +84,11 @@
     },
     {
       "name" : "warning-draft",
-      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType|1"
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
     },
     {
       "name" : "warning-draft",
-      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem|1"
+      "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType|0.1.2"
     },
     {
       "name" : "includeDesignations",
@@ -85,18 +96,21 @@
     }],
     "contains" : [{
       "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-      "code" : "XE9S7",
+      "version" : "0.2.0",
+      "code" : "LAND",
       "display" : "Land"
     },
     {
-      "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-      "code" : "XE85L",
-      "display" : "Water"
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "code" : "215414001",
+      "display" : "Water transport accident"
     },
     {
-      "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
-      "code" : "XE5XH",
-      "display" : "Air"
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "code" : "386679005",
+      "display" : "Air and space transport accident"
     }]
   }
 }

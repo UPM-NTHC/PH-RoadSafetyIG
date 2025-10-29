@@ -48,15 +48,15 @@ This value set contains 11 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-PatientsVehicleVS",
   "meta" : {
-    "versionId" : "1",
-    "lastUpdated" : "2025-10-27T08:47:16.552+00:00"
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-29T07:12:41.388+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle",
   "version" : "0.2.0",
   "name" : "SILPH___Patient_s_Vehicle__VS_",
   "title" : "SILPH - Patient's Vehicle (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,11 +97,11 @@ This value set contains 11 concepts
         "concept" : [
           {
             "code" : "257518000",
-            "display" : "Pedestrian"
+            "display" : "None (Pedestrian)"
           },
           {
             "code" : "71783008",
-            "display" : "Automobile"
+            "display" : "Car"
           },
           {
             "code" : "224832000",
@@ -109,7 +109,7 @@ This value set contains 11 concepts
           },
           {
             "code" : "224830008",
-            "display" : "Coach"
+            "display" : "Bus"
           },
           {
             "code" : "90748009",
@@ -125,7 +125,7 @@ This value set contains 11 concepts
           },
           {
             "code" : "74964007",
-            "display" : "Other"
+            "display" : "Others"
           },
           {
             "code" : "261665006",

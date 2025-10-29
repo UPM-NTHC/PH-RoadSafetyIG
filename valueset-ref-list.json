@@ -43,6 +43,15 @@
       "StructureDefinition-rs-location-service.html" : "RS Service Location"
     },
     {
+      "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "SILPH___Local_Codes__VS_",
+      "title" : "SILPH - Local Codes (VS)",
+      "description" : "SILPH Value Set for containing all Road Safety Local Codes (data element terminology codes and codes for value sets)",
+      "systems" : ["http://www.roadsafetyph.doh.gov.ph/CodeSystem"]
+    },
+    {
       "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity",
       "version" : "0.2.0",
       "status" : "draft",
@@ -178,6 +187,24 @@
       "title" : "SILPH - General Disposition (VS)",
       "description" : "SILPH Value Set for Inpatient and ER/Outpatient Visit Disposition",
       "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10ExternalCauseofInjury",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "SILPH___ICD10_External_Cause_of_Injury__VS_",
+      "title" : "SILPH - ICD10 External Cause of Injury (VS)",
+      "description" : "SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes from Chapter XX - V01-Y36, Y85-Y87, and Y89)",
+      "systems" : ["http://hl7.org/fhir/sid/icd102019en"]
+    },
+    {
+      "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10NatureofInjury",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "SILPH___ICD10_Nature_of_Injury__VS_",
+      "title" : "SILPH - ICD10 Nature of Injury (VS)",
+      "description" : "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98)",
+      "systems" : ["http://hl7.org/fhir/sid/icd102019en"]
     },
     {
       "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent",
@@ -463,7 +490,10 @@
       "name" : "SILPH___Transport_Accident_Type__VS_",
       "title" : "SILPH - Transport Accident Type (VS)",
       "description" : "SILPH Value Set for Transport Accident Type (Land, Water or Air)",
-      "systems" : ["http://www.roadsafetyph.doh.gov.ph/CodeSystem"]
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
+      ]
     },
     {
       "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage",

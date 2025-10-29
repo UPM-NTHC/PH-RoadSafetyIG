@@ -139,10 +139,13 @@ These define sets of codes used by systems conforming to this implementation gui
 | [SILPH - GCS - Motor (VS)](ValueSet-SILPH-GCSMotorVS.md) | SILPH Value Set for GCS Motor Score |
 | [SILPH - GCS - Verbal (VS)](ValueSet-SILPH-GCSVerbalVS.md) | SILPH Value Set for GCS Verbal Score |
 | [SILPH - General Disposition (VS)](ValueSet-SILPH-GeneralDispositionVS.md) | SILPH Value Set for Inpatient and ER/Outpatient Visit Disposition |
+| [SILPH - ICD10 External Cause of Injury (VS)](ValueSet-SILPH-ICD10ExternalCauseofInjuryVS.md) | SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes from Chapter XX - V01-Y36, Y85-Y87, and Y89) |
+| [SILPH - ICD10 Nature of Injury (VS)](ValueSet-SILPH-ICD10NatureofInjuryVS.md) | SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98) |
 | [SILPH - Injury Intent (VS)](ValueSet-SILPH-InjuryIntentVS.md) | SILPH Value Set for Injury Intent |
 | [SILPH - Inpatient Disposition (VS)](ValueSet-SILPH-InpatientDispositionVS.md) | SILPH Value Set for Inpatient Visit Disposition |
 | [SILPH - Level of Consciousness (VS)](ValueSet-SILPH-LevelofConsciousnessVS.md) | SILPH Value Set for Level of Consciousness (AVPU) Score |
 | [SILPH - List of Body Sites (VS)](ValueSet-SILPH-ListofBodySitesVS.md) | SILPH List of Body Sites |
+| [SILPH - Local Codes (VS)](ValueSet-SILPH-LocalCodesVS.md) | SILPH Value Set for containing all Road Safety Local Codes (data element terminology codes and codes for value sets) |
 | [SILPH - Mode of Transport (VS)](ValueSet-SILPH-ModeofTransportVS.md) | SILPH Value Set for Mode of Transport of Patient to Healthcare Facility |
 | [SILPH - Other Vehicle in Collision (VS)](ValueSet-SILPH-OtherVehicleVS.md) | SILPH Value Set for Other Vehicle in Collision Accident |
 | [SILPH - Outcome (VS)](ValueSet-SILPH-OutcomeVS.md) | SILPH Value Set for Outcome |

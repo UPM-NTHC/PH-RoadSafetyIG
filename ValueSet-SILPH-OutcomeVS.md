@@ -48,15 +48,15 @@ This value set contains 3 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-OutcomeVS",
   "meta" : {
-    "versionId" : "1",
-    "lastUpdated" : "2025-10-27T08:56:31.402+00:00"
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-29T07:15:27.653+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome",
   "version" : "0.2.0",
   "name" : "SILPH___Outcome__VS_",
   "title" : "SILPH - Outcome (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,7 +97,7 @@ This value set contains 3 concepts
         "concept" : [
           {
             "code" : "268910001",
-            "display" : "Patient's condition improved"
+            "display" : "Improved"
           }
         ]
       },

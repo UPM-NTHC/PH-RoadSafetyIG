@@ -48,15 +48,15 @@ This value set contains 11 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-OtherVehicleVS",
   "meta" : {
-    "versionId" : "1",
-    "lastUpdated" : "2025-10-27T08:52:11.624+00:00"
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-29T07:13:27.876+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle",
   "version" : "0.2.0",
   "name" : "SILPH___Other_Vehicle_in_Collision__VS_",
   "title" : "SILPH - Other Vehicle in Collision (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -101,7 +101,7 @@ This value set contains 11 concepts
           },
           {
             "code" : "71783008",
-            "display" : "Automobile"
+            "display" : "Car"
           },
           {
             "code" : "224832000",
@@ -109,7 +109,7 @@ This value set contains 11 concepts
           },
           {
             "code" : "224830008",
-            "display" : "Coach"
+            "display" : "Bus"
           },
           {
             "code" : "90748009",
@@ -125,7 +125,7 @@ This value set contains 11 concepts
           },
           {
             "code" : "74964007",
-            "display" : "Other"
+            "display" : "Others"
           },
           {
             "code" : "261665006",

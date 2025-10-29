@@ -24,6 +24,8 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
+This value set contains 3 concepts
+
 -------
 
  Explanation of the columns that may appear on this page: 
@@ -46,15 +48,15 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SILPH-TransportAccidentTypeVS",
   "meta" : {
-    "versionId" : "2",
-    "lastUpdated" : "2025-10-27T06:41:09.321+00:00"
+    "versionId" : "4",
+    "lastUpdated" : "2025-10-29T07:07:33.807+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType",
   "version" : "0.2.0",
   "name" : "SILPH___Transport_Accident_Type__VS_",
   "title" : "SILPH - Transport Accident Type (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -94,15 +96,20 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
         "concept" : [
           {
-            "code" : "XE9S7",
+            "code" : "LAND",
             "display" : "Land"
-          },
+          }
+        ]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
           {
-            "code" : "XE85L",
+            "code" : "215414001",
             "display" : "Water"
           },
           {
-            "code" : "XE5XH",
+            "code" : "386679005",
             "display" : "Air"
           }
         ]

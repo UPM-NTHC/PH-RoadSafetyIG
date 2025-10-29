@@ -48,15 +48,15 @@ This value set contains 5 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-TypeofPatientVS",
   "meta" : {
-    "versionId" : "5",
-    "lastUpdated" : "2025-10-27T09:52:11.009+00:00"
+    "versionId" : "7",
+    "lastUpdated" : "2025-10-29T07:09:09.621+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient",
   "version" : "0.2.0",
   "name" : "SILPH___Type_of_Patient__VS_",
   "title" : "SILPH - Type of Patient (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,15 +97,15 @@ This value set contains 5 concepts
         "concept" : [
           {
             "code" : "LA10268-3",
-            "display" : "Emergency Department"
+            "display" : "ER"
           },
           {
             "code" : "LA21424-9",
-            "display" : "Ambulatory Visit"
+            "display" : "OPD"
           },
           {
             "code" : "LA21427-2",
-            "display" : "Inpatient hospital"
+            "display" : "Inpatient"
           }
         ]
       },

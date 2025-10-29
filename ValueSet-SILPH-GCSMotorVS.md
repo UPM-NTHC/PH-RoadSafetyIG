@@ -46,15 +46,15 @@ SILPH Value Set for GCS Motor Score
   "resourceType" : "ValueSet",
   "id" : "SILPH-GCSMotorVS",
   "meta" : {
-    "versionId" : "2",
-    "lastUpdated" : "2025-10-27T06:15:31.467+00:00"
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-29T07:43:40.402+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor",
   "version" : "0.2.0",
   "name" : "SILPH___GCS___Motor__VS_",
   "title" : "SILPH - GCS - Motor (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,27 +95,27 @@ SILPH Value Set for GCS Motor Score
         "concept" : [
           {
             "code" : "LA6567-7",
-            "display" : "Obeys commands"
+            "display" : "6 To command"
           },
           {
             "code" : "LA6566-9",
-            "display" : "Localizing pain"
+            "display" : "5 Localizes pain"
           },
           {
             "code" : "LA6565-1",
-            "display" : "Withdrawal from pain"
+            "display" : "4 Withdraws from pain"
           },
           {
             "code" : "LA6564-4",
-            "display" : "Flexion to pain"
+            "display" : "3 Abnormal flexion"
           },
           {
             "code" : "LA6563-6",
-            "display" : "Extension to pain"
+            "display" : "2 Abnormal extension"
           },
           {
             "code" : "LA6562-8",
-            "display" : "No motor response"
+            "display" : "1 None"
           }
         ]
       }

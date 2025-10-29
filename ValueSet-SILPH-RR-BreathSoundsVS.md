@@ -54,7 +54,7 @@ SILPH Value Set for Breath Sounds
   "name" : "SILPH___RR___Breath_Sounds__VS_",
   "title" : "SILPH - RR - Breath Sounds (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,11 +95,11 @@ SILPH Value Set for Breath Sounds
         "concept" : [
           {
             "code" : "301708006",
-            "display" : "Chest clear"
+            "display" : "Clear"
           },
           {
             "code" : "56018004",
-            "display" : "Wheezing"
+            "display" : "Wheeze"
           }
         ]
       }

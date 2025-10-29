@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-10-29T13:28:47+00:00"/>
+  <date value="2025-10-29T15:51:20+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -2243,6 +2243,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/SILPH-ICD10ExternalCauseofInjuryVS"/>
+      </reference>
+      <name value="SILPH - ICD10 External Cause of Injury (VS)"/>
+      <description value="SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes from Chapter XX - V01-Y36, Y85-Y87, and Y89)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-ICD10NatureofInjuryVS"/>
+      </reference>
+      <name value="SILPH - ICD10 Nature of Injury (VS)"/>
+      <description value="SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/SILPH-InjuryIntentVS"/>
       </reference>
       <name value="SILPH - Injury Intent (VS)"/>
@@ -2280,6 +2302,17 @@
       </reference>
       <name value="SILPH - List of Body Sites (VS)"/>
       <description value="SILPH List of Body Sites"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SILPH-LocalCodesVS"/>
+      </reference>
+      <name value="SILPH - Local Codes (VS)"/>
+      <description value="SILPH Value Set for containing all Road Safety Local Codes (data element terminology codes and codes for value sets)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

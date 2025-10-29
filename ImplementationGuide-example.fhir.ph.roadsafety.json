@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -2733,6 +2733,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/SILPH-ICD10ExternalCauseofInjuryVS"
+      },
+      "name" : "SILPH - ICD10 External Cause of Injury (VS)",
+      "description" : "SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes from Chapter XX - V01-Y36, Y85-Y87, and Y89)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-ICD10NatureofInjuryVS"
+      },
+      "name" : "SILPH - ICD10 Nature of Injury (VS)",
+      "description" : "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/SILPH-InjuryIntentVS"
       },
       "name" : "SILPH - Injury Intent (VS)",
@@ -2773,6 +2797,18 @@
       },
       "name" : "SILPH - List of Body Sites (VS)",
       "description" : "SILPH List of Body Sites",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SILPH-LocalCodesVS"
+      },
+      "name" : "SILPH - Local Codes (VS)",
+      "description" : "SILPH Value Set for containing all Road Safety Local Codes (data element terminology codes and codes for value sets)",
       "exampleBoolean" : false
     },
     {

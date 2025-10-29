@@ -48,15 +48,15 @@ This value set contains 7 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-PlaceofOccurrenceVS",
   "meta" : {
-    "versionId" : "2",
-    "lastUpdated" : "2025-10-27T09:53:21.802+00:00"
+    "versionId" : "4",
+    "lastUpdated" : "2025-10-29T07:14:29.664+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence",
   "version" : "0.2.0",
   "name" : "SILPH___Place_of_Occurrence__VS_",
   "title" : "SILPH - Place of Occurrence (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -109,11 +109,11 @@ This value set contains 7 concepts
           },
           {
             "code" : "285141008",
-            "display" : "Work environment"
+            "display" : "Workplace"
           },
           {
             "code" : "74964007",
-            "display" : "Other"
+            "display" : "Others"
           },
           {
             "code" : "261665006",

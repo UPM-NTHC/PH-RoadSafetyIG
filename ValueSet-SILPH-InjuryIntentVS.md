@@ -48,15 +48,15 @@ This value set contains 5 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-InjuryIntentVS",
   "meta" : {
-    "versionId" : "5",
-    "lastUpdated" : "2025-10-27T09:51:26.362+00:00"
+    "versionId" : "7",
+    "lastUpdated" : "2025-10-29T07:10:16.393+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent",
   "version" : "0.2.0",
   "name" : "SILPH___Injury_Intent__VS_",
   "title" : "SILPH - Injury Intent (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -97,19 +97,19 @@ This value set contains 5 concepts
         "concept" : [
           {
             "code" : "242056005",
-            "display" : "Accidental injury"
+            "display" : "Unintentional/Accidental"
           },
           {
             "code" : "361269008",
-            "display" : "Intentional"
+            "display" : "Intentional(violence)"
           },
           {
             "code" : "276853009",
-            "display" : "Self inflicted injury"
+            "display" : "Intentional(self-inflicted)"
           },
           {
             "code" : "269735005",
-            "display" : "Injury undetermined whether accidentally or purposely inflicted"
+            "display" : "Undetermined"
           }
         ]
       },

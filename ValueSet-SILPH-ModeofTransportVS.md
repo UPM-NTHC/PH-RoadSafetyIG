@@ -56,7 +56,7 @@ This value set contains 4 concepts
   "name" : "SILPH___Mode_of_Transport__VS_",
   "title" : "SILPH - Mode of Transport (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -101,7 +101,7 @@ This value set contains 4 concepts
           },
           {
             "code" : "74964007",
-            "display" : "Other"
+            "display" : "Others"
           }
         ]
       },
@@ -110,11 +110,11 @@ This value set contains 4 concepts
         "concept" : [
           {
             "code" : "LA9321-6",
-            "display" : "Walk-in following nonambulance, law enforcement transport"
+            "display" : "Police vehicle"
           },
           {
             "code" : "LA9319-0",
-            "display" : "Walk-in following transport via private transportation"
+            "display" : "Private vehicle"
           }
         ]
       }

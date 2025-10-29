@@ -54,7 +54,7 @@ SILPH Value Set for External Cause of Burns
   "name" : "SILPH___External_Cause_of_Burns__VS_",
   "title" : "SILPH - External Cause of Burns (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -115,7 +115,7 @@ SILPH Value Set for External Cause of Burns
           },
           {
             "code" : "74964007",
-            "display" : "Other"
+            "display" : "Others"
           }
         ]
       }

@@ -16,6 +16,7 @@ Compilation of local codes for SILPH Road Safety Project. Includes local codes f
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
+* [SILPH___Local_Codes__VS_](ValueSet-SILPH-LocalCodesVS.md)
 * [SILPH___Activity__VS_](ValueSet-SILPH-ActivityVS.md)
 * [SILPH___Element_Terminology__VS_](ValueSet-SILPH-ElementTerminologyVS.md)
 * [SILPH___Injury_Intent__VS_](ValueSet-SILPH-InjuryIntentVS.md)
@@ -36,15 +37,15 @@ Compilation of local codes for SILPH Road Safety Project. Includes local codes f
   "resourceType" : "CodeSystem",
   "id" : "SILPH-LocalCodesCS",
   "meta" : {
-    "versionId" : "4",
-    "lastUpdated" : "2025-10-27T09:50:31.886+00:00"
+    "versionId" : "6",
+    "lastUpdated" : "2025-10-29T06:31:10.825+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
   "version" : "0.2.0",
   "name" : "SILPH_Road_Safety_Local_Codes",
   "title" : "SILPH Road Safety Local Codes",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -136,19 +137,9 @@ Compilation of local codes for SILPH Road Safety Project. Includes local codes f
       "definition" : "Died"
     },
     {
-      "code" : "XE9S7",
+      "code" : "LAND",
       "display" : "Land",
       "definition" : "Exposure to water transport injury event"
-    },
-    {
-      "code" : "XE85L",
-      "display" : "Water",
-      "definition" : "Exposure to water transport injury event"
-    },
-    {
-      "code" : "XE5XH",
-      "display" : "Air",
-      "definition" : "Exposure to air or space transport injury event"
     },
     {
       "code" : "INJURYFRONT",
@@ -199,6 +190,16 @@ Compilation of local codes for SILPH Road Safety Project. Includes local codes f
       "code" : "COORDINATIONDONE",
       "display" : "Was Transport Coordinated with Receiving Hospital?",
       "definition" : "Data Element: Was Transport Coordinated with Receiving Hospital?"
+    },
+    {
+      "code" : "ER_OUTPATIENT_OUTCOME",
+      "display" : "Outcome",
+      "definition" : "Data Element: ER/Outpatient Outcome"
+    },
+    {
+      "code" : "INPATIENT_OUTCOME",
+      "display" : "Outcome",
+      "definition" : "Data Element: Inpatient Outcome"
     }
   ]
 }

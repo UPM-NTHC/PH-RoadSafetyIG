@@ -54,7 +54,7 @@ SILPH Value Set for Degree of Burn
   "name" : "SILPH___Burns__VS_",
   "title" : "SILPH - Burns (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,19 +95,19 @@ SILPH Value Set for Degree of Burn
         "concept" : [
           {
             "code" : "77140003",
-            "display" : "First degree burn injury"
+            "display" : "1st Degree Burn"
           },
           {
             "code" : "46541008",
-            "display" : "Second degree burn injury"
+            "display" : "2nd Degree Burn"
           },
           {
             "code" : "80247002",
-            "display" : "Third degree burn injury"
+            "display" : "3rd Degree Burn"
           },
           {
             "code" : "770400008",
-            "display" : "Fourth degree burn injury"
+            "display" : "4th Degree Burn"
           }
         ]
       }

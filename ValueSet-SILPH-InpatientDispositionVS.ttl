@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "SILPH___Inpatient_Disposition__VS_"] ; # 
   fhir:title [ fhir:v "SILPH - Inpatient Disposition (VS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-29T13:28:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-29T15:51:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -59,25 +59,25 @@
        ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "371827001" ] ;
-         fhir:display [ fhir:v "Patient discharged alive" ]
+         fhir:display [ fhir:v "Discharged" ]
        ] [
          fhir:code [ fhir:v "225928004" ] ;
-         fhir:display [ fhir:v "Patient self-discharge against medical advice" ]
+         fhir:display [ fhir:v "HAMA" ]
        ] [
          fhir:code [ fhir:v "34596002" ] ;
-         fhir:display [ fhir:v "Patient discharge, elopement" ]
+         fhir:display [ fhir:v "Absconded" ]
        ] [
          fhir:code [ fhir:v "183960004" ] ;
-         fhir:display [ fhir:v "Patient refuses hospital admission" ]
+         fhir:display [ fhir:v "Refused Admission" ]
        ] [
          fhir:code [ fhir:v "371828006" ] ;
-         fhir:display [ fhir:v "Patient deceased during stay (discharge status = dead)" ]
+         fhir:display [ fhir:v "Died" ]
        ] [
          fhir:code [ fhir:v "74964007" ] ;
-         fhir:display [ fhir:v "Other" ]
+         fhir:display [ fhir:v "Others" ]
        ] [
          fhir:code [ fhir:v "19712007" ] ;
-         fhir:display [ fhir:v "Patient transfer, to another health care facility" ]
+         fhir:display [ fhir:v "Transferred to another facility/hospital" ]
        ] )
      ] )
   ] ; # 

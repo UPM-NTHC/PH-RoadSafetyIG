@@ -54,7 +54,7 @@ SILPH ValueSet for Patient Status, if Alive or Dead during Admission
   "name" : "SILPH___Status__VS_",
   "title" : "SILPH - Status (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T13:28:47+00:00",
+  "date" : "2025-10-29T15:51:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,7 +95,7 @@ SILPH ValueSet for Patient Status, if Alive or Dead during Admission
         "concept" : [
           {
             "code" : "63238001",
-            "display" : "Dead on arrival at hospital"
+            "display" : "Dead on Arrival"
           },
           {
             "code" : "438949009",
