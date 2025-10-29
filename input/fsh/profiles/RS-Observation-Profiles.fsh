@@ -828,7 +828,7 @@ Description: "Fracture observation. Use valueCodeableConcept to indicate fractur
 * code.coding 0..1
 * code.coding = $SCT#125605004 "Fracture of bone (disorder)"
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept from SILPHFractureTypeVS (preferred)
+* valueCodeableConcept from SILPH-FractureType (preferred)
 * valueCodeableConcept.text 0..1 MS
 	// Recommended binding: ValueSet of fracture types (e.g., SNOMED codes: 397181002 = Open fracture, 423125000 = Closed fracture). Do not create new ValueSet here unless requested.
 * bodySite 0..1 MS
