@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 28, warn = 799, info = 48
+err = 27, warn = 800, info = 48
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
@@ -24,7 +24,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-problem : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-document-reference : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 0 / 7 / 6
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-healthcare-service : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-incident-location-incident : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-location-service : 0 / 1 / 1
@@ -786,7 +786,7 @@ WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The sli
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'assistant' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used.json ==
-ERROR: StructureDefinition/rs-encounter-vehicle-used: StructureDefinition.context[0]: The element https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter#Encounter is not valid
+WARNING: StructureDefinition/rs-encounter-vehicle-used: StructureDefinition.context[0]: Review the extension type for rs-encounter-vehicle-used: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-rs-healthcare-service.json ==
 WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service'): The Implementation Guide contains no examples for this profile

@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter-vehicle
   "name" : "RSEncounterVehicleUsed",
   "title" : "RS Encounter Vehicle Used",
   "status" : "draft",
-  "date" : "2025-10-29T00:33:44+00:00",
+  "date" : "2025-10-29T01:19:27+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -93,7 +93,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter-vehicle
   "context" : [
     {
       "type" : "element",
-      "expression" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter#Encounter"
+      "expression" : "Element"
     }
   ],
   "type" : "Extension",

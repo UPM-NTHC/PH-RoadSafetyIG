@@ -628,7 +628,7 @@ PHRoadSafetyIG
 /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter.json: line 1, col 345604, Warning - The slice 'transportOfficer' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true (INVALID)
 /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter.json: line 1, col 345604, Warning - The slice 'assistant' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true (INVALID)
 /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
-/github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used.json: line 0, col 0, Error - The element https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter#Encounter is not valid (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used.json: line 0, col 0, Warning - Review the extension type for rs-encounter-vehicle-used: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-rs-healthcare-service.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-rs-incident-location-incident.json: line 1, col 82345, Warning - The slice 'province' on path 'Location.address.extension' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true (INVALID)
@@ -877,5 +877,5 @@ PHRoadSafetyIG
 /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def.json: line 1, col 1470, Info - The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it (BUSINESSRULE)
 /github/workspace/input/resources/SILPH___Type_of_Patient__VS_def.json: line 1, col 2702, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 
-err = 28, warn = 799, info = 48
+err = 27, warn = 800, info = 48
 IG Publisher Version: 2.0.24
