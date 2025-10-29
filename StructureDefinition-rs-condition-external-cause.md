@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-externa
   "name" : "RSConditionExternalCause",
   "title" : "RS Condition — External Cause (category)",
   "status" : "draft",
-  "date" : "2025-10-29T05:50:12+00:00",
+  "date" : "2025-10-29T13:28:47+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

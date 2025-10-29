@@ -54,7 +54,7 @@ SILPH Value Set for GCS Motor Score
   "name" : "SILPH___GCS___Motor__VS_",
   "title" : "SILPH - GCS - Motor (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T05:50:12+00:00",
+  "date" : "2025-10-29T13:28:47+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
