@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 29, warn = 802, info = 52-->
+<!-- broken links = 0, errors = 27, warn = 802, info = 52-->
 <head>
   <title>PHRoadSafetyIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PHRoadSafetyIG</h1>
- <p>Generated Wed Oct 29 02:06:48 UTC 2025, FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = <a href="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG">https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG</a> (<a href="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Wed Oct 29 02:34:28 UTC 2025, FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = <a href="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG">https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG</a> (<a href="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.24</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = example.fhir.ph.roadsafety, Canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG</td></tr>
@@ -262,7 +262,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 29, warn = 802, info = 52, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 27, warn = 802, info = 52, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -568,8 +568,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_input_resources_SILPH___Cyanosis__VS_def"><b>/github/workspace/input/resources/SILPH___Cyanosis__VS_def</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_input_resources_SILPH___Element_Terminology__VS_def"><b>/github/workspace/input/resources/SILPH___Element_Terminology__VS_def</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>3</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_resources_SILPH___Element_Terminology__VS_def"><b>/github/workspace/input/resources/SILPH___Element_Terminology__VS_def</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_input_resources_SILPH___External_Cause_of_Burns__VS_def"><b>/github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
@@ -3974,9 +3974,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/www&#8203;.roadsafetyph&#8203;.doh&#8203;.gov&#8203;.ph&#8203;/ValueSet&#8203;/SILPH-ElementTerminology')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/resources/SILPH___Element_Terminology__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.expansion&#8203;.identifier (l1&#8203;/c9065)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'urn:uuid:86fbc18b-6763-438a-8612-a2b74dcb32c0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
@@ -3991,9 +3988,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet (l1/c27345)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>input&#8203;/resources&#8203;/SILPH___Element_Terminology__VS_def</b></td><td><b>error</b></td><td><b>URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
@@ -4661,14 +4655,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  <table class="grid">
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-rs-allergy-intolerance.html">fsh-generated/resources/StructureDefinition-rs-allergy-intolerance.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
-<h2>RESOURCE_CANONICAL_MISMATCH</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="ValueSet-SILPH-ElementTerminologyVS.html">input/resources/SILPH___Element_Terminology__VS_def.json</a></td><td><b>Conformance resource /github/workspace/input/resources/SILPH___Element_Terminology__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology). Use the special-url parameter if you really mean for it not to match</b></td>
    </tr>
 </table>
 <hr/>

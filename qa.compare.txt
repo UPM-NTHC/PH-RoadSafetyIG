@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 29, warn = 802, info = 52
+err = 27, warn = 802, info = 52
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 0 / 0 / 0
@@ -105,7 +105,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/input/resources/SILPH___Activity__VS_def : 1 / 2 / 3
  /github/workspace/input/resources/SILPH___Burns__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___Cyanosis__VS_def : 0 / 2 / 2
- /github/workspace/input/resources/SILPH___Element_Terminology__VS_def : 2 / 2 / 4
+ /github/workspace/input/resources/SILPH___Element_Terminology__VS_def : 0 / 2 / 4
  /github/workspace/input/resources/SILPH___External_Cause_of_Burns__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___External_Cause_of_Drowning__VS_def : 0 / 2 / 2
  /github/workspace/input/resources/SILPH___Fracture_Type__VS_def : 0 / 2 / 2
@@ -1008,13 +1008,11 @@ WARNING: ValueSet/SILPH-Cyanosis: ValueSet.expansion.identifier: No definition c
 INFORMATION: ValueSet/SILPH-Cyanosis: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-Cyanosis: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == input/resources/SILPH___Element_Terminology__VS_def.json ==
-ERROR: ValueSet.where(url = 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology'): Conformance resource /github/workspace/input/resources/SILPH___Element_Terminology__VS_def.json - the canonical URL (https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS) does not match the URL (http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/SILPH-ElementTerminologyVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:86fbc18b-6763-438a-8612-a2b74dcb32c0'
 INFORMATION: ValueSet/SILPH-ElementTerminologyVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 INFORMATION: ValueSet/SILPH-ElementTerminologyVS: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 INFORMATION: ValueSet/SILPH-ElementTerminologyVS: ValueSet.compose.include[2]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/SILPH-ElementTerminologyVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: /github/workspace/input/resources/SILPH___Element_Terminology__VS_def: URL Mismatch https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-ElementTerminologyVS vs http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology
 == input/resources/SILPH___External_Cause_of_Burns__VS_def.json ==
 WARNING: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.expansion.identifier: No definition could be found for URL value 'urn:uuid:3f74e1a3-1fda-4f3a-9899-4155a383b3c9'
 INFORMATION: ValueSet/SILPH-ExternalCauseofBurnsVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it

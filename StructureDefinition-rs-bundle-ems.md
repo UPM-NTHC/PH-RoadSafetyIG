@@ -95,7 +95,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
   "name" : "RSBundleEMS",
   "title" : "RS Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-29T02:00:22+00:00",
+  "date" : "2025-10-29T02:25:56+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -93,7 +93,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-29T02:00:22+00:00",
+  "date" : "2025-10-29T02:25:56+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -186,6 +186,19 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           {
             "url" : "value",
             "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "special-url"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -996,6 +1009,19 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           {
             "url" : "value",
             "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "special-url"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
