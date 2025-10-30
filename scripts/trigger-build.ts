@@ -129,7 +129,7 @@ async function main() {
 
     // Ask for the webhook endpoint to POST to. Default is the auto-ig-builder function used in docs.
     const defaultWebhook = 'https://us-central1-fhir-org-starter-project.cloudfunctions.net/ig-commit-trigger';
-    const webhook = (await prompt(`Webhook URL to POST to [${defaultWebhook}]: `)).trim() || defaultWebhook;
+    const webhook = defaultWebhook; //(await prompt(`Webhook URL to POST to [${defaultWebhook}]: `)).trim() || defaultWebhook;
 
     const payload = {
       ref: `refs/heads/${branch}`,
