@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation.csv),
   "name" : "RSObservation",
   "title" : "RS Observation",
   "status" : "draft",
-  "date" : "2025-10-30T01:53:15+00:00",
+  "date" : "2025-10-30T02:40:54+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
