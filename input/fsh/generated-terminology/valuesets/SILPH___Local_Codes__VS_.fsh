@@ -2,28 +2,27 @@ ValueSet: SILPH___Local_Codes__VS_
 Id: SILPH-LocalCodesVS
 Title: "SILPH - Local Codes (VS)"
 Description: "SILPH Value Set for containing all Road Safety Local Codes (data element terminology codes and codes for value sets)"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2025-10-29T06:36:34.178+00:00"
+* ^meta.versionId = "3"
+* ^meta.lastUpdated = "2025-10-30T00:34:05.052+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/ValueSet"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:f78633a2-18df-4ead-8046-269554b20b65"
-* ^expansion.timestamp = "2025-10-29T06:36:40+00:00"
+* ^expansion.identifier = "urn:uuid:1ec81ede-6b35-4b7f-934a-91328a96acae"
+* ^expansion.timestamp = "2025-10-29T23:49:34+00:00"
 * ^expansion.total = 23
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "version"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en-US,en;q=0.9
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/ValueSet|0.1.0"
-* ^expansion.parameter[+].name = "includeDesignations"
-* ^expansion.parameter[=].valueBoolean = false
 * ^expansion.contains[0].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
+* ^expansion.contains[=].code = #XE5XH
+* ^expansion.contains[=].display = "Air"
+* ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^expansion.contains[=].code = #BHS
 * ^expansion.contains[=].display = "BHS"
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
@@ -39,7 +38,7 @@ Description: "SILPH Value Set for containing all Road Safety Local Codes (data e
 * ^expansion.contains[=].code = #JEEPNEY
 * ^expansion.contains[=].display = "Jeepney"
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
-* ^expansion.contains[=].code = #LAND
+* ^expansion.contains[=].code = #XE9S7
 * ^expansion.contains[=].display = "Land"
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^expansion.contains[=].code = #LEISURE
@@ -50,12 +49,6 @@ Description: "SILPH Value Set for containing all Road Safety Local Codes (data e
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^expansion.contains[=].code = #OTHERVEHICLE
 * ^expansion.contains[=].display = "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
-* ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
-* ^expansion.contains[=].code = #ER_OUTPATIENT_OUTCOME
-* ^expansion.contains[=].display = "Outcome"
-* ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
-* ^expansion.contains[=].code = #INPATIENT_OUTCOME
-* ^expansion.contains[=].display = "Outcome"
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^expansion.contains[=].code = #PLACEOCCURRENCE
 * ^expansion.contains[=].display = "Place of Occurrence"
@@ -92,4 +85,7 @@ Description: "SILPH Value Set for containing all Road Safety Local Codes (data e
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^expansion.contains[=].code = #COORDINATIONDONE
 * ^expansion.contains[=].display = "Was Transport Coordinated with Receiving Hospital?"
+* ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
+* ^expansion.contains[=].code = #XE85L
+* ^expansion.contains[=].display = "Water"
 * include codes from system http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0
