@@ -24,7 +24,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-This value set contains 3 concepts
+This value set contains 2 concepts
 
 -------
 
@@ -48,15 +48,15 @@ This value set contains 3 concepts
   "resourceType" : "ValueSet",
   "id" : "SILPH-TransportAccidentTypeVS",
   "meta" : {
-    "versionId" : "4",
-    "lastUpdated" : "2025-10-29T07:07:33.807+00:00"
+    "versionId" : "6",
+    "lastUpdated" : "2025-10-30T00:34:08.125+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType",
   "version" : "0.2.0",
   "name" : "SILPH___Transport_Accident_Type__VS_",
   "title" : "SILPH - Transport Accident Type (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

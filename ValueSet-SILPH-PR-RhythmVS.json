@@ -2,19 +2,19 @@
   "resourceType" : "ValueSet",
   "id" : "SILPH-PR-RhythmVS",
   "meta" : {
-    "versionId" : "3",
-    "lastUpdated" : "2025-10-27T07:57:17.620+00:00"
+    "versionId" : "5",
+    "lastUpdated" : "2025-10-30T00:34:06.033+00:00"
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-PR-RhythmVS</b></p><a name=\"SILPH-PR-RhythmVS\"> </a><a name=\"hcSILPH-PR-RhythmVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 3; Last updated: 2025-10-27 07:57:17+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-PR-RhythmVS-http://snomed.info/sct-271636001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/271636001\">271636001</a></td><td>Pulse regular</td></tr><tr><td><a name=\"SILPH-PR-RhythmVS-http://snomed.info/sct-61086009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/61086009\">61086009</a></td><td>Pulse irregular</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-PR-RhythmVS</b></p><a name=\"SILPH-PR-RhythmVS\"> </a><a name=\"hcSILPH-PR-RhythmVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 5; Last updated: 2025-10-30 00:34:06+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"SILPH-PR-RhythmVS-http://snomed.info/sct-271636001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/271636001\">271636001</a></td><td>Regular</td></tr><tr><td><a name=\"SILPH-PR-RhythmVS-http://snomed.info/sct-61086009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/61086009\">61086009</a></td><td>Irregular</td></tr></table></div>"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm",
   "version" : "0.2.0",
   "name" : "SILPH___PR___Rhythm__VS_",
   "title" : "SILPH - PR - Rhythm (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -52,8 +52,8 @@
     }]
   },
   "expansion" : {
-    "identifier" : "urn:uuid:89e4fc30-9f66-4e0d-a438-7f46d8011553",
-    "timestamp" : "2025-10-27T07:57:33+00:00",
+    "identifier" : "urn:uuid:422319b5-9133-4f0e-b00b-1afd49b40121",
+    "timestamp" : "2025-10-29T23:49:30+00:00",
     "total" : 2,
     "parameter" : [{
       "name" : "used-codesystem",
@@ -64,26 +64,18 @@
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
     },
     {
-      "name" : "displayLanguage",
-      "valueCode" : "en-US,en;q=0.9"
-    },
-    {
       "name" : "warning-draft",
       "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm|1"
-    },
-    {
-      "name" : "includeDesignations",
-      "valueBoolean" : false
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "271636001",
-      "display" : "Pulse regular"
+      "display" : "Regular"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "61086009",
-      "display" : "Pulse irregular"
+      "display" : "Irregular"
     }]
   }
 }

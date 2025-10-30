@@ -46,15 +46,15 @@ SILPH Value Set for GCS Verbal Score
   "resourceType" : "ValueSet",
   "id" : "SILPH-GCSVerbalVS",
   "meta" : {
-    "versionId" : "1",
-    "lastUpdated" : "2025-10-27T11:14:11.690+00:00"
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-30T00:34:01.955+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal",
   "version" : "0.2.0",
   "name" : "SILPH___GCS___Verbal__VS_",
   "title" : "SILPH - GCS - Verbal (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

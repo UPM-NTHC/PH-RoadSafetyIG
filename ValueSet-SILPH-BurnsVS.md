@@ -46,15 +46,15 @@ SILPH Value Set for Degree of Burn
   "resourceType" : "ValueSet",
   "id" : "SILPH-BurnsVS",
   "meta" : {
-    "versionId" : "2",
-    "lastUpdated" : "2025-10-28T13:08:39.160+00:00"
+    "versionId" : "4",
+    "lastUpdated" : "2025-10-30T00:34:00.619+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns",
   "version" : "0.2.0",
   "name" : "SILPH___Burns__VS_",
   "title" : "SILPH - Burns (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

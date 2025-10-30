@@ -46,15 +46,15 @@ SILPH Value Set for Breath Sounds
   "resourceType" : "ValueSet",
   "id" : "SILPH-RR-BreathSoundsVS",
   "meta" : {
-    "versionId" : "4",
-    "lastUpdated" : "2025-10-27T06:00:17.205+00:00"
+    "versionId" : "6",
+    "lastUpdated" : "2025-10-30T00:34:06.820+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds",
   "version" : "0.2.0",
   "name" : "SILPH___RR___Breath_Sounds__VS_",
   "title" : "SILPH - RR - Breath Sounds (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

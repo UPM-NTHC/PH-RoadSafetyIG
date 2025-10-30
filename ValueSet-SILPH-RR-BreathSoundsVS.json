@@ -2,19 +2,19 @@
   "resourceType" : "ValueSet",
   "id" : "SILPH-RR-BreathSoundsVS",
   "meta" : {
-    "versionId" : "4",
-    "lastUpdated" : "2025-10-27T06:00:17.205+00:00"
+    "versionId" : "6",
+    "lastUpdated" : "2025-10-30T00:34:06.820+00:00"
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-RR-BreathSoundsVS</b></p><a name=\"SILPH-RR-BreathSoundsVS\"> </a><a name=\"hcSILPH-RR-BreathSoundsVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 4; Last updated: 2025-10-27 06:00:17+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-RR-BreathSoundsVS-http://snomed.info/sct-301708006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/301708006\">301708006</a></td><td>Chest clear</td></tr><tr><td><a name=\"SILPH-RR-BreathSoundsVS-http://snomed.info/sct-56018004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/56018004\">56018004</a></td><td>Wheezing</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-RR-BreathSoundsVS</b></p><a name=\"SILPH-RR-BreathSoundsVS\"> </a><a name=\"hcSILPH-RR-BreathSoundsVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 6; Last updated: 2025-10-30 00:34:06+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"SILPH-RR-BreathSoundsVS-http://snomed.info/sct-301708006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/301708006\">301708006</a></td><td>Clear</td></tr><tr><td><a name=\"SILPH-RR-BreathSoundsVS-http://snomed.info/sct-56018004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/56018004\">56018004</a></td><td>Wheeze</td></tr></table></div>"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds",
   "version" : "0.2.0",
   "name" : "SILPH___RR___Breath_Sounds__VS_",
   "title" : "SILPH - RR - Breath Sounds (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -52,8 +52,8 @@
     }]
   },
   "expansion" : {
-    "identifier" : "urn:uuid:a2637bd8-5b88-4c45-8522-47d912db6378",
-    "timestamp" : "2025-10-27T06:00:35+00:00",
+    "identifier" : "urn:uuid:14ff9d5d-4542-4fc7-bb01-d6256dfd88c2",
+    "timestamp" : "2025-10-29T23:49:27+00:00",
     "total" : 2,
     "parameter" : [{
       "name" : "used-codesystem",
@@ -64,26 +64,18 @@
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
     },
     {
-      "name" : "displayLanguage",
-      "valueCode" : "en-US,en;q=0.9"
-    },
-    {
       "name" : "warning-draft",
       "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds|1"
-    },
-    {
-      "name" : "includeDesignations",
-      "valueBoolean" : false
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "301708006",
-      "display" : "Chest clear"
+      "display" : "Clear"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "56018004",
-      "display" : "Wheezing"
+      "display" : "Wheeze"
     }]
   }
 }

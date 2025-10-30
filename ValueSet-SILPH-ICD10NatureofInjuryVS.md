@@ -46,15 +46,15 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SILPH-ICD10NatureofInjuryVS",
   "meta" : {
-    "versionId" : "1",
-    "lastUpdated" : "2025-10-29T09:38:12.179+00:00"
+    "versionId" : "3",
+    "lastUpdated" : "2025-10-30T00:34:03.869+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10NatureofInjury",
   "version" : "0.2.0",
   "name" : "SILPH___ICD10_Nature_of_Injury__VS_",
   "title" : "SILPH - ICD10 Nature of Injury (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -2,19 +2,19 @@
   "resourceType" : "ValueSet",
   "id" : "SILPH-RR-RhythmVS",
   "meta" : {
-    "versionId" : "4",
-    "lastUpdated" : "2025-10-27T06:01:00.327+00:00"
+    "versionId" : "6",
+    "lastUpdated" : "2025-10-30T00:34:06.983+00:00"
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-RR-RhythmVS</b></p><a name=\"SILPH-RR-RhythmVS\"> </a><a name=\"hcSILPH-RR-RhythmVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 4; Last updated: 2025-10-27 06:01:00+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-RR-RhythmVS-http://snomed.info/sct-5467003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/5467003\">5467003</a></td><td>Normal respiratory rhythm</td></tr><tr><td><a name=\"SILPH-RR-RhythmVS-http://snomed.info/sct-248585001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/248585001\">248585001</a></td><td>Irregular breathing</td></tr><tr><td><a name=\"SILPH-RR-RhythmVS-http://snomed.info/sct-248549001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/248549001\">248549001</a></td><td>Labored breathing</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-RR-RhythmVS</b></p><a name=\"SILPH-RR-RhythmVS\"> </a><a name=\"hcSILPH-RR-RhythmVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 6; Last updated: 2025-10-30 00:34:06+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"SILPH-RR-RhythmVS-http://snomed.info/sct-5467003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/5467003\">5467003</a></td><td>Regular</td></tr><tr><td><a name=\"SILPH-RR-RhythmVS-http://snomed.info/sct-248585001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/248585001\">248585001</a></td><td>Irregular</td></tr><tr><td><a name=\"SILPH-RR-RhythmVS-http://snomed.info/sct-248549001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/248549001\">248549001</a></td><td>Labored</td></tr></table></div>"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm",
   "version" : "0.2.0",
   "name" : "SILPH___RR___Rhythm__VS",
   "title" : "SILPH - RR - Rhythm (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -56,8 +56,8 @@
     }]
   },
   "expansion" : {
-    "identifier" : "urn:uuid:aff65127-6ea8-43bf-bca0-1901b48d0314",
-    "timestamp" : "2025-10-27T06:01:15+00:00",
+    "identifier" : "urn:uuid:75679bbd-52a1-4caa-b310-9ae281b01e7e",
+    "timestamp" : "2025-10-29T23:49:27+00:00",
     "total" : 3,
     "parameter" : [{
       "name" : "used-codesystem",
@@ -68,31 +68,23 @@
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
     },
     {
-      "name" : "displayLanguage",
-      "valueCode" : "en-US,en;q=0.9"
-    },
-    {
       "name" : "warning-draft",
       "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm|1"
-    },
-    {
-      "name" : "includeDesignations",
-      "valueBoolean" : false
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "5467003",
-      "display" : "Normal respiratory rhythm"
+      "display" : "Regular"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "248585001",
-      "display" : "Irregular breathing"
+      "display" : "Irregular"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "248549001",
-      "display" : "Labored breathing"
+      "display" : "Labored"
     }]
   }
 }

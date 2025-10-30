@@ -2,19 +2,19 @@
   "resourceType" : "ValueSet",
   "id" : "SILPH-Cyanosis",
   "meta" : {
-    "versionId" : "2",
-    "lastUpdated" : "2025-10-27T06:07:40.698+00:00"
+    "versionId" : "4",
+    "lastUpdated" : "2025-10-30T00:34:00.769+00:00"
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-Cyanosis</b></p><a name=\"SILPH-Cyanosis\"> </a><a name=\"hcSILPH-Cyanosis\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 2; Last updated: 2025-10-27 06:07:40+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-Cyanosis-http://snomed.info/sct-54622005\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/54622005\">54622005</a></td><td>Normal oxygen supply</td></tr><tr><td><a name=\"SILPH-Cyanosis-http://snomed.info/sct-95837007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/95837007\">95837007</a></td><td>Central cyanosis</td></tr><tr><td><a name=\"SILPH-Cyanosis-http://snomed.info/sct-95442007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/95442007\">95442007</a></td><td>Peripheral cyanosis</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-Cyanosis</b></p><a name=\"SILPH-Cyanosis\"> </a><a name=\"hcSILPH-Cyanosis\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 4; Last updated: 2025-10-30 00:34:00+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"SILPH-Cyanosis-http://snomed.info/sct-54622005\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/54622005\">54622005</a></td><td>Negative</td></tr><tr><td><a name=\"SILPH-Cyanosis-http://snomed.info/sct-95837007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/95837007\">95837007</a></td><td>General</td></tr><tr><td><a name=\"SILPH-Cyanosis-http://snomed.info/sct-95442007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/95442007\">95442007</a></td><td>Peripheral</td></tr></table></div>"
   },
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis",
   "version" : "0.2.0",
   "name" : "SILPH___Cyanosis__VS_",
   "title" : "SILPH - Cyanosis (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -56,8 +56,8 @@
     }]
   },
   "expansion" : {
-    "identifier" : "urn:uuid:27b5ce63-8aed-4888-8c70-c52fe721674c",
-    "timestamp" : "2025-10-27T06:07:56+00:00",
+    "identifier" : "urn:uuid:fc5f7a9b-868b-4f9f-a80a-b88160bec17f",
+    "timestamp" : "2025-10-29T23:49:28+00:00",
     "total" : 3,
     "parameter" : [{
       "name" : "used-codesystem",
@@ -68,31 +68,23 @@
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
     },
     {
-      "name" : "displayLanguage",
-      "valueCode" : "en-US,en;q=0.9"
-    },
-    {
       "name" : "warning-draft",
       "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis|1"
-    },
-    {
-      "name" : "includeDesignations",
-      "valueBoolean" : false
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "54622005",
-      "display" : "Normal oxygen supply"
+      "display" : "Negative"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "95837007",
-      "display" : "Central cyanosis"
+      "display" : "General"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "95442007",
-      "display" : "Peripheral cyanosis"
+      "display" : "Peripheral"
     }]
   }
 }

@@ -2,19 +2,19 @@
   "resourceType" : "ValueSet",
   "id" : "SILPH-StatusVS",
   "meta" : {
-    "versionId" : "3",
-    "lastUpdated" : "2025-10-27T08:30:31.742+00:00"
+    "versionId" : "5",
+    "lastUpdated" : "2025-10-30T00:34:07.622+00:00"
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-StatusVS</b></p><a name=\"SILPH-StatusVS\"> </a><a name=\"hcSILPH-StatusVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 3; Last updated: 2025-10-27 08:30:31+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name=\"SILPH-StatusVS-http://snomed.info/sct-63238001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/63238001\">63238001</a></td><td>Dead on arrival at hospital</td></tr><tr><td><a name=\"SILPH-StatusVS-http://snomed.info/sct-438949009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/438949009\">438949009</a></td><td>Alive</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SILPH-StatusVS</b></p><a name=\"SILPH-StatusVS\"> </a><a name=\"hcSILPH-StatusVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 5; Last updated: 2025-10-30 00:34:07+0000</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"SILPH-StatusVS-http://snomed.info/sct-63238001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/63238001\">63238001</a></td><td>Dead on Arrival</td></tr><tr><td><a name=\"SILPH-StatusVS-http://snomed.info/sct-438949009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/438949009\">438949009</a></td><td>Alive</td></tr></table></div>"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status",
   "version" : "0.2.0",
   "name" : "SILPH___Status__VS_",
   "title" : "SILPH - Status (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -52,8 +52,8 @@
     }]
   },
   "expansion" : {
-    "identifier" : "urn:uuid:e6be3982-2aa7-4dc6-be22-1b0a559faaaa",
-    "timestamp" : "2025-10-27T08:30:50+00:00",
+    "identifier" : "urn:uuid:8ff24ead-5d64-4125-9a07-123667fc7522",
+    "timestamp" : "2025-10-29T23:49:31+00:00",
     "total" : 2,
     "parameter" : [{
       "name" : "used-codesystem",
@@ -64,21 +64,13 @@
       "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
     },
     {
-      "name" : "displayLanguage",
-      "valueCode" : "en-US,en;q=0.9"
-    },
-    {
       "name" : "warning-draft",
       "valueUri" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status|1"
-    },
-    {
-      "name" : "includeDesignations",
-      "valueBoolean" : false
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "63238001",
-      "display" : "Dead on arrival at hospital"
+      "display" : "Dead on Arrival"
     },
     {
       "system" : "http://snomed.info/sct",

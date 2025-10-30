@@ -46,15 +46,15 @@ SILPH Value Set for Pulse Quality
   "resourceType" : "ValueSet",
   "id" : "SILPH-PR-QualityVS",
   "meta" : {
-    "versionId" : "4",
-    "lastUpdated" : "2025-10-27T07:55:31.763+00:00"
+    "versionId" : "6",
+    "lastUpdated" : "2025-10-30T00:34:05.861+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality",
   "version" : "0.2.0",
   "name" : "SILPH___PR___Quality__VS_",
   "title" : "SILPH - PR - Quality (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T02:40:54+00:00",
+  "date" : "2025-10-30T03:27:09+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

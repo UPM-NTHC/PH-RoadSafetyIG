@@ -3,18 +3,18 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="SILPH-StatusifAliveVS"/>
   <meta>
-    <versionId value="3"/>
-    <lastUpdated value="2025-10-27T08:29:40.757+00:00"/>
+    <versionId value="5"/>
+    <lastUpdated value="2025-10-30T00:34:07.788+00:00"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SILPH-StatusifAliveVS</b></p><a name="SILPH-StatusifAliveVS"> </a><a name="hcSILPH-StatusifAliveVS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 3; Last updated: 2025-10-27 08:29:40+0000</p></div><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class="codes"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en-US,en;q=0.9)</b></td></tr><tr><td><a name="SILPH-StatusifAliveVS-http://snomed.info/sct-271591004"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/271591004">271591004</a></td><td>Fully conscious</td></tr><tr><td><a name="SILPH-StatusifAliveVS-http://snomed.info/sct-418107008"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/418107008">418107008</a></td><td>Unconscious</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SILPH-StatusifAliveVS</b></p><a name="SILPH-StatusifAliveVS"> </a><a name="hcSILPH-StatusifAliveVS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 5; Last updated: 2025-10-30 00:34:07+0000</p></div><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Oct 2024</p><p>This value set contains 2 concepts</p><table class="codes"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="SILPH-StatusifAliveVS-http://snomed.info/sct-271591004"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/271591004">271591004</a></td><td>Conscious</td></tr><tr><td><a name="SILPH-StatusifAliveVS-http://snomed.info/sct-418107008"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/418107008">418107008</a></td><td>Unconscious</td></tr></table></div>
   </text>
   <url value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive"/>
   <version value="0.2.0"/>
   <name value="SILPH___Status_if_Alive__VS_"/>
   <title value="SILPH - Status if Alive (VS)"/>
   <status value="draft"/>
-  <date value="2025-10-30T02:40:54+00:00"/>
+  <date value="2025-10-30T03:27:09+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -52,8 +52,8 @@
     </include>
   </compose>
   <expansion>
-    <identifier value="urn:uuid:74dad3fa-5483-4c64-94ff-d8384a877819"/>
-    <timestamp value="2025-10-27T08:29:54+00:00"/>
+    <identifier value="urn:uuid:cff7d924-76c7-42e8-8bd7-062a07effcdf"/>
+    <timestamp value="2025-10-29T23:49:30+00:00"/>
     <total value="2"/>
     <parameter>
       <name value="used-codesystem"/>
@@ -64,21 +64,13 @@
       <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"/>
     </parameter>
     <parameter>
-      <name value="displayLanguage"/>
-      <valueCode value="en-US,en;q=0.9"/>
-    </parameter>
-    <parameter>
       <name value="warning-draft"/>
       <valueUri value="http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive|1"/>
-    </parameter>
-    <parameter>
-      <name value="includeDesignations"/>
-      <valueBoolean value="false"/>
     </parameter>
     <contains>
       <system value="http://snomed.info/sct"/>
       <code value="271591004"/>
-      <display value="Fully conscious"/>
+      <display value="Conscious"/>
     </contains>
     <contains>
       <system value="http://snomed.info/sct"/>
