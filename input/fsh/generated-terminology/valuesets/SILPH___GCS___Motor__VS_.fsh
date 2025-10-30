@@ -2,43 +2,39 @@ ValueSet: SILPH___GCS___Motor__VS_
 Id: SILPH-GCSMotorVS
 Title: "SILPH - GCS - Motor (VS)"
 Description: "SILPH Value Set for GCS Motor Score"
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2025-10-29T07:43:40.402+00:00"
+* ^meta.versionId = "5"
+* ^meta.lastUpdated = "2025-10-30T00:34:01.792+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"
 * ^version = "0.1.1"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:bdb122e2-d27f-4fb0-a14a-f5656cc3ca25"
-* ^expansion.timestamp = "2025-10-29T07:43:46+00:00"
+* ^expansion.identifier = "urn:uuid:c7439f17-b180-4823-862e-0819941b3658"
+* ^expansion.timestamp = "2025-10-29T23:49:38+00:00"
 * ^expansion.total = 6
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://loinc.org|2.78"
 * ^expansion.parameter[+].name = "version"
 * ^expansion.parameter[=].valueUri = "http://loinc.org|2.78"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en-US,en;q=0.9
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor|0.1.1"
-* ^expansion.parameter[+].name = "includeDesignations"
-* ^expansion.parameter[=].valueBoolean = false
 * ^expansion.contains[0].system = "http://loinc.org"
 * ^expansion.contains[=].code = #LA6567-7
-* ^expansion.contains[=].display = "Obeys commands"
+* ^expansion.contains[=].display = "6 To command"
 * ^expansion.contains[+].system = "http://loinc.org"
 * ^expansion.contains[=].code = #LA6566-9
-* ^expansion.contains[=].display = "Localizing pain"
+* ^expansion.contains[=].display = "5 Localizes pain"
 * ^expansion.contains[+].system = "http://loinc.org"
 * ^expansion.contains[=].code = #LA6565-1
-* ^expansion.contains[=].display = "Withdrawal from pain"
+* ^expansion.contains[=].display = "4 Withdraws from pain"
 * ^expansion.contains[+].system = "http://loinc.org"
 * ^expansion.contains[=].code = #LA6564-4
-* ^expansion.contains[=].display = "Flexion to pain"
+* ^expansion.contains[=].display = "3 Abnormal flexion"
 * ^expansion.contains[+].system = "http://loinc.org"
 * ^expansion.contains[=].code = #LA6563-6
-* ^expansion.contains[=].display = "Extension to pain"
+* ^expansion.contains[=].display = "2 Abnormal extension"
 * ^expansion.contains[+].system = "http://loinc.org"
 * ^expansion.contains[=].code = #LA6562-8
-* ^expansion.contains[=].display = "No motor response"
+* ^expansion.contains[=].display = "1 None"
 * LOINC#LA6567-7 "6 To command"
 * LOINC#LA6566-9 "5 Localizes pain"
 * LOINC#LA6565-1 "4 Withdraws from pain"

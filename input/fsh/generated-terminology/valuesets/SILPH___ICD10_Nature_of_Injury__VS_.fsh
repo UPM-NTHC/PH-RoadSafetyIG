@@ -2,27 +2,23 @@ ValueSet: SILPH___ICD10_Nature_of_Injury__VS_
 Id: SILPH-ICD10NatureofInjuryVS
 Title: "SILPH - ICD10 Nature of Injury (VS)"
 Description: "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98)"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2025-10-29T09:38:12.179+00:00"
+* ^meta.versionId = "3"
+* ^meta.lastUpdated = "2025-10-30T00:34:03.869+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10NatureofInjury"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:6ebfdaa2-f4d3-4cf3-a34e-cd8d52df5b1b"
-* ^expansion.timestamp = "2025-10-29T09:38:19+00:00"
+* ^expansion.identifier = "urn:uuid:f252e4d0-fe04-40e8-84ef-7f5f35fe0437"
+* ^expansion.timestamp = "2025-10-29T23:49:38+00:00"
 * ^expansion.total = 1483
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/sid/icd102019en|2019-covid-expanded"
 * ^expansion.parameter[+].name = "version"
 * ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/sid/icd102019en|2019-covid-expanded"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en-US,en;q=0.9
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10NatureofInjury|0.1.0"
 * ^expansion.parameter[+].name = "warning-experimental"
 * ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/sid/icd102019en|2019-covid-expanded"
-* ^expansion.parameter[+].name = "includeDesignations"
-* ^expansion.parameter[=].valueBoolean = false
 * ^expansion.contains[0].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #S00
 * ^expansion.contains[=].display = "Superficial injury of head"
@@ -3049,457 +3045,457 @@ Description: "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX
 * ^expansion.contains[=].display = "Poisoning by drugs, medicaments and biological substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.0
-* ^expansion.contains[=].display = "Penicillins"
+* ^expansion.contains[=].display = "Poisoning: Penicillins"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.1
-* ^expansion.contains[=].display = "Cefalosporins and other beta-lactam antibiotics"
+* ^expansion.contains[=].display = "Poisoning: Cefalosporins and other beta-lactam antibiotics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.2
-* ^expansion.contains[=].display = "Chloramphenicol group"
+* ^expansion.contains[=].display = "Poisoning: Chloramphenicol group"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.3
-* ^expansion.contains[=].display = "Macrolides"
+* ^expansion.contains[=].display = "Poisoning: Macrolides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.4
-* ^expansion.contains[=].display = "Tetracyclines"
+* ^expansion.contains[=].display = "Poisoning: Tetracyclines"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.5
-* ^expansion.contains[=].display = "Aminoglycosides"
+* ^expansion.contains[=].display = "Poisoning: Aminoglycosides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.6
-* ^expansion.contains[=].display = "Rifamycins"
+* ^expansion.contains[=].display = "Poisoning: Rifamycins"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.7
-* ^expansion.contains[=].display = "Antifungal antibiotics, systemically used"
+* ^expansion.contains[=].display = "Poisoning: Antifungal antibiotics, systemically used"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.8
-* ^expansion.contains[=].display = "Other systemic antibiotics"
+* ^expansion.contains[=].display = "Poisoning: Other systemic antibiotics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T36.9
-* ^expansion.contains[=].display = "Systemic antibiotic, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Systemic antibiotic, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37
 * ^expansion.contains[=].display = "Poisoning by other systemic anti-infectives and antiparasitics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.0
-* ^expansion.contains[=].display = "Sulfonamides"
+* ^expansion.contains[=].display = "Poisoning: Sulfonamides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.1
-* ^expansion.contains[=].display = "Antimycobacterial drugs"
+* ^expansion.contains[=].display = "Poisoning: Antimycobacterial drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.2
-* ^expansion.contains[=].display = "Antimalarials and drugs acting on other blood protozoa"
+* ^expansion.contains[=].display = "Poisoning: Antimalarials and drugs acting on other blood protozoa"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.3
-* ^expansion.contains[=].display = "Other antiprotozoal drugs"
+* ^expansion.contains[=].display = "Poisoning: Other antiprotozoal drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.4
-* ^expansion.contains[=].display = "Anthelminthics"
+* ^expansion.contains[=].display = "Poisoning: Anthelminthics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.5
-* ^expansion.contains[=].display = "Antiviral drugs"
+* ^expansion.contains[=].display = "Poisoning: Antiviral drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.8
-* ^expansion.contains[=].display = "Other specified systemic anti-infectives and antiparasitics"
+* ^expansion.contains[=].display = "Poisoning: Other specified systemic anti-infectives and antiparasitics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T37.9
-* ^expansion.contains[=].display = "Systemic anti-infective and antiparasitic, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Systemic anti-infective and antiparasitic, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38
 * ^expansion.contains[=].display = "Poisoning by hormones and their synthetic substitutes and antagonists, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.0
-* ^expansion.contains[=].display = "Glucocorticoids and synthetic analogues"
+* ^expansion.contains[=].display = "Poisoning: Glucocorticoids and synthetic analogues"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.1
-* ^expansion.contains[=].display = "Thyroid hormones and substitutes"
+* ^expansion.contains[=].display = "Poisoning: Thyroid hormones and substitutes"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.2
-* ^expansion.contains[=].display = "Antithyroid drugs"
+* ^expansion.contains[=].display = "Poisoning: Antithyroid drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.3
-* ^expansion.contains[=].display = "Insulin and oral hypoglycaemic [antidiabetic] drugs"
+* ^expansion.contains[=].display = "Poisoning: Insulin and oral hypoglycaemic [antidiabetic] drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.4
-* ^expansion.contains[=].display = "Oral contraceptives"
+* ^expansion.contains[=].display = "Poisoning: Oral contraceptives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.5
-* ^expansion.contains[=].display = "Other estrogens and progestogens"
+* ^expansion.contains[=].display = "Poisoning: Other estrogens and progestogens"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.6
-* ^expansion.contains[=].display = "Antigonadotrophins, antiestrogens, antiandrogens, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Antigonadotrophins, antiestrogens, antiandrogens, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.7
-* ^expansion.contains[=].display = "Androgens and anabolic congeners"
+* ^expansion.contains[=].display = "Poisoning: Androgens and anabolic congeners"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.8
-* ^expansion.contains[=].display = "Other and unspecified hormones and their synthetic substitutes"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified hormones and their synthetic substitutes"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T38.9
-* ^expansion.contains[=].display = "Other and unspecified hormone antagonists"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified hormone antagonists"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39
 * ^expansion.contains[=].display = "Poisoning by nonopioid analgesics, antipyretics and antirheumatics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39.0
-* ^expansion.contains[=].display = "Salicylates"
+* ^expansion.contains[=].display = "Poisoning: Salicylates"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39.1
-* ^expansion.contains[=].display = "4-Aminophenol derivatives"
+* ^expansion.contains[=].display = "Poisoning: 4-Aminophenol derivatives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39.2
-* ^expansion.contains[=].display = "Pyrazolone derivatives"
+* ^expansion.contains[=].display = "Poisoning: Pyrazolone derivatives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39.3
-* ^expansion.contains[=].display = "Other nonsteroidal anti-inflammatory drugs [NSAID]"
+* ^expansion.contains[=].display = "Poisoning: Other nonsteroidal anti-inflammatory drugs [NSAID]"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39.4
-* ^expansion.contains[=].display = "Antirheumatics, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Antirheumatics, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39.8
-* ^expansion.contains[=].display = "Other nonopioid analgesics and antipyretics, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Other nonopioid analgesics and antipyretics, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T39.9
-* ^expansion.contains[=].display = "Nonopioid analgesic, antipyretic and antirheumatic, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Nonopioid analgesic, antipyretic and antirheumatic, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40
 * ^expansion.contains[=].display = "Poisoning by narcotics and psychodysleptics [hallucinogens]"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.0
-* ^expansion.contains[=].display = "Opium"
+* ^expansion.contains[=].display = "Poisoning: Opium"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.1
-* ^expansion.contains[=].display = "Heroin"
+* ^expansion.contains[=].display = "Poisoning: Heroin"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.2
-* ^expansion.contains[=].display = "Other opioids"
+* ^expansion.contains[=].display = "Poisoning: Other opioids"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.3
-* ^expansion.contains[=].display = "Methadone"
+* ^expansion.contains[=].display = "Poisoning: Methadone"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.4
-* ^expansion.contains[=].display = "Other synthetic narcotics"
+* ^expansion.contains[=].display = "Poisoning: Other synthetic narcotics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.5
-* ^expansion.contains[=].display = "Cocaine"
+* ^expansion.contains[=].display = "Poisoning: Cocaine"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.6
-* ^expansion.contains[=].display = "Other and unspecified narcotics"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified narcotics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.7
-* ^expansion.contains[=].display = "Cannabis (derivatives)"
+* ^expansion.contains[=].display = "Poisoning: Cannabis (derivatives)"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.8
-* ^expansion.contains[=].display = "Lysergide [LSD]"
+* ^expansion.contains[=].display = "Poisoning: Lysergide [LSD]"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T40.9
-* ^expansion.contains[=].display = "Other and unspecified psychodysleptics [hallucinogens]"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified psychodysleptics [hallucinogens]"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T41
 * ^expansion.contains[=].display = "Poisoning by anaesthetics and therapeutic gases"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T41.0
-* ^expansion.contains[=].display = "Inhaled anaesthetics"
+* ^expansion.contains[=].display = "Poisoning: Inhaled anaesthetics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T41.1
-* ^expansion.contains[=].display = "Intravenous anaesthetics"
+* ^expansion.contains[=].display = "Poisoning: Intravenous anaesthetics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T41.2
-* ^expansion.contains[=].display = "Other and unspecified general anaesthetics"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified general anaesthetics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T41.3
-* ^expansion.contains[=].display = "Local anaesthetics"
+* ^expansion.contains[=].display = "Poisoning: Local anaesthetics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T41.4
-* ^expansion.contains[=].display = "Anaesthetic, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Anaesthetic, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T41.5
-* ^expansion.contains[=].display = "Therapeutic gases"
+* ^expansion.contains[=].display = "Poisoning: Therapeutic gases"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42
 * ^expansion.contains[=].display = "Poisoning by antiepileptic, sedative-hypnotic and antiparkinsonism drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.0
-* ^expansion.contains[=].display = "Hydantoin derivatives"
+* ^expansion.contains[=].display = "Poisoning: Hydantoin derivatives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.1
-* ^expansion.contains[=].display = "Iminostilbenes"
+* ^expansion.contains[=].display = "Poisoning: Iminostilbenes"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.2
-* ^expansion.contains[=].display = "Succinimides and oxazolidinediones"
+* ^expansion.contains[=].display = "Poisoning: Succinimides and oxazolidinediones"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.3
-* ^expansion.contains[=].display = "Barbiturates"
+* ^expansion.contains[=].display = "Poisoning: Barbiturates"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.4
-* ^expansion.contains[=].display = "Benzodiazepines"
+* ^expansion.contains[=].display = "Poisoning: Benzodiazepines"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.5
-* ^expansion.contains[=].display = "Mixed antiepileptics, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Mixed antiepileptics, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.6
-* ^expansion.contains[=].display = "Other antiepileptic and sedative-hypnotic drugs"
+* ^expansion.contains[=].display = "Poisoning: Other antiepileptic and sedative-hypnotic drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.7
-* ^expansion.contains[=].display = "Antiepileptic and sedative-hypnotic drugs, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Antiepileptic and sedative-hypnotic drugs, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T42.8
-* ^expansion.contains[=].display = "Antiparkinsonism drugs and other central muscle-tone depressants"
+* ^expansion.contains[=].display = "Poisoning: Antiparkinsonism drugs and other central muscle-tone depressants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43
 * ^expansion.contains[=].display = "Poisoning by psychotropic drugs, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.0
-* ^expansion.contains[=].display = "Tricyclic and tetracyclic antidepressants"
+* ^expansion.contains[=].display = "Poisoning: Tricyclic and tetracyclic antidepressants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.1
-* ^expansion.contains[=].display = "Monoamine-oxidase-inhibitor antidepressants"
+* ^expansion.contains[=].display = "Poisoning: Monoamine-oxidase-inhibitor antidepressants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.2
-* ^expansion.contains[=].display = "Other and unspecified antidepressants"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified antidepressants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.3
-* ^expansion.contains[=].display = "Phenothiazine antipsychotics and neuroleptics"
+* ^expansion.contains[=].display = "Poisoning: Phenothiazine antipsychotics and neuroleptics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.4
-* ^expansion.contains[=].display = "Butyrophenone and thioxanthene neuroleptics"
+* ^expansion.contains[=].display = "Poisoning: Butyrophenone and thioxanthene neuroleptics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.5
-* ^expansion.contains[=].display = "Other and unspecified antipsychotics and neuroleptics"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified antipsychotics and neuroleptics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.6
-* ^expansion.contains[=].display = "Psychostimulants with abuse potential"
+* ^expansion.contains[=].display = "Poisoning: Psychostimulants with abuse potential"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.8
-* ^expansion.contains[=].display = "Other psychotropic drugs, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Other psychotropic drugs, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T43.9
-* ^expansion.contains[=].display = "Psychotropic drug, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Psychotropic drug, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44
 * ^expansion.contains[=].display = "Poisoning by drugs primarily affecting the autonomic nervous system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.0
-* ^expansion.contains[=].display = "Anticholinesterase agents"
+* ^expansion.contains[=].display = "Poisoning: Anticholinesterase agents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.1
-* ^expansion.contains[=].display = "Other parasympathomimetics [cholinergics]"
+* ^expansion.contains[=].display = "Poisoning: Other parasympathomimetics [cholinergics]"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.2
-* ^expansion.contains[=].display = "Ganglionic blocking drugs, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Ganglionic blocking drugs, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.3
-* ^expansion.contains[=].display = "Other parasympatholytics [anticholinergics and antimuscarinics] and spasmolytics, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Other parasympatholytics [anticholinergics and antimuscarinics] and spasmolytics, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.4
-* ^expansion.contains[=].display = "Predominantly alpha-adrenoreceptor agonists, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Predominantly alpha-adrenoreceptor agonists, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.5
-* ^expansion.contains[=].display = "Predominantly beta-adrenoreceptor agonists, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Predominantly beta-adrenoreceptor agonists, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.6
-* ^expansion.contains[=].display = "Alpha-adrenoreceptor antagonists, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Alpha-adrenoreceptor antagonists, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.7
-* ^expansion.contains[=].display = "Beta-adrenoreceptor antagonists, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Beta-adrenoreceptor antagonists, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.8
-* ^expansion.contains[=].display = "Centrally acting and adrenergic-neuron-blocking agents, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Centrally acting and adrenergic-neuron-blocking agents, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T44.9
-* ^expansion.contains[=].display = "Other and unspecified drugs primarily affecting the autonomic nervous system"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified drugs primarily affecting the autonomic nervous system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45
 * ^expansion.contains[=].display = "Poisoning by primarily systemic and haematological agents, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.0
-* ^expansion.contains[=].display = "Antiallergic and antiemetic drugs"
+* ^expansion.contains[=].display = "Poisoning: Antiallergic and antiemetic drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.1
-* ^expansion.contains[=].display = "Antineoplastic and immunosuppressive drugs"
+* ^expansion.contains[=].display = "Poisoning: Antineoplastic and immunosuppressive drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.2
-* ^expansion.contains[=].display = "Vitamins, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Vitamins, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.3
-* ^expansion.contains[=].display = "Enzymes, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Enzymes, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.4
-* ^expansion.contains[=].display = "Iron and its compounds"
+* ^expansion.contains[=].display = "Poisoning: Iron and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.5
-* ^expansion.contains[=].display = "Anticoagulants"
+* ^expansion.contains[=].display = "Poisoning: Anticoagulants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.6
-* ^expansion.contains[=].display = "Fibrinolysis-affecting drugs"
+* ^expansion.contains[=].display = "Poisoning: Fibrinolysis-affecting drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.7
-* ^expansion.contains[=].display = "Anticoagulant antagonists, vitamin K and other coagulants"
+* ^expansion.contains[=].display = "Poisoning: Anticoagulant antagonists, vitamin K and other coagulants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.8
-* ^expansion.contains[=].display = "Other primarily systemic and haematological agents"
+* ^expansion.contains[=].display = "Poisoning: Other primarily systemic and haematological agents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T45.9
-* ^expansion.contains[=].display = "Primarily systemic and haematological agent, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Primarily systemic and haematological agent, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46
 * ^expansion.contains[=].display = "Poisoning by agents primarily affecting the cardiovascular system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.0
-* ^expansion.contains[=].display = "Cardiac-stimulant glycosides and drugs of similar action"
+* ^expansion.contains[=].display = "Poisoning: Cardiac-stimulant glycosides and drugs of similar action"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.1
-* ^expansion.contains[=].display = "Calcium-channel blockers"
+* ^expansion.contains[=].display = "Poisoning: Calcium-channel blockers"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.2
-* ^expansion.contains[=].display = "Other antidysrhythmic drugs, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Other antidysrhythmic drugs, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.3
-* ^expansion.contains[=].display = "Coronary vasodilators, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Coronary vasodilators, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.4
-* ^expansion.contains[=].display = "Angiotensin-converting-enzyme inhibitors"
+* ^expansion.contains[=].display = "Poisoning: Angiotensin-converting-enzyme inhibitors"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.5
-* ^expansion.contains[=].display = "Other antihypertensive drugs, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Other antihypertensive drugs, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.6
-* ^expansion.contains[=].display = "Antihyperlipidaemic and antiarteriosclerotic drugs"
+* ^expansion.contains[=].display = "Poisoning: Antihyperlipidaemic and antiarteriosclerotic drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.7
-* ^expansion.contains[=].display = "Peripheral vasodilators"
+* ^expansion.contains[=].display = "Poisoning: Peripheral vasodilators"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.8
-* ^expansion.contains[=].display = "Antivaricose drugs, including sclerosing agents"
+* ^expansion.contains[=].display = "Poisoning: Antivaricose drugs, including sclerosing agents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T46.9
-* ^expansion.contains[=].display = "Other and unspecified agents primarily affecting the cardiovascular system"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified agents primarily affecting the cardiovascular system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47
 * ^expansion.contains[=].display = "Poisoning by agents primarily affecting the gastrointestinal system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.0
-* ^expansion.contains[=].display = "Histamine H\n_2\n-receptor antagonists"
+* ^expansion.contains[=].display = "Poisoning: Histamine H 2 -receptor antagonists"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.1
-* ^expansion.contains[=].display = "Other antacids and anti-gastric-secretion drugs"
+* ^expansion.contains[=].display = "Poisoning: Other antacids and anti-gastric-secretion drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.2
-* ^expansion.contains[=].display = "Stimulant laxatives"
+* ^expansion.contains[=].display = "Poisoning: Stimulant laxatives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.3
-* ^expansion.contains[=].display = "Saline and osmotic laxatives"
+* ^expansion.contains[=].display = "Poisoning: Saline and osmotic laxatives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.4
-* ^expansion.contains[=].display = "Other laxatives"
+* ^expansion.contains[=].display = "Poisoning: Other laxatives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.5
-* ^expansion.contains[=].display = "Digestants"
+* ^expansion.contains[=].display = "Poisoning: Digestants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.6
-* ^expansion.contains[=].display = "Antidiarrhoeal drugs"
+* ^expansion.contains[=].display = "Poisoning: Antidiarrhoeal drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.7
-* ^expansion.contains[=].display = "Emetics"
+* ^expansion.contains[=].display = "Poisoning: Emetics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.8
-* ^expansion.contains[=].display = "Other agents primarily affecting the gastrointestinal system"
+* ^expansion.contains[=].display = "Poisoning: Other agents primarily affecting the gastrointestinal system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T47.9
-* ^expansion.contains[=].display = "Agent primarily affecting the gastrointestinal system, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Agent primarily affecting the gastrointestinal system, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48
 * ^expansion.contains[=].display = "Poisoning by agents primarily acting on smooth and skeletal muscles and the respiratory system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.0
-* ^expansion.contains[=].display = "Oxytocic drugs"
+* ^expansion.contains[=].display = "Poisoning: Oxytocic drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.1
-* ^expansion.contains[=].display = "Skeletal muscle relaxants [neuromuscular blocking agents]"
+* ^expansion.contains[=].display = "Poisoning: Skeletal muscle relaxants [neuromuscular blocking agents]"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.2
-* ^expansion.contains[=].display = "Other and unspecified agents primarily acting on muscles"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified agents primarily acting on muscles"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.3
-* ^expansion.contains[=].display = "Antitussives"
+* ^expansion.contains[=].display = "Poisoning: Antitussives"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.4
-* ^expansion.contains[=].display = "Expectorants"
+* ^expansion.contains[=].display = "Poisoning: Expectorants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.5
-* ^expansion.contains[=].display = "Anti-common-cold drugs"
+* ^expansion.contains[=].display = "Poisoning: Anti-common-cold drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.6
-* ^expansion.contains[=].display = "Antiasthmatics, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Antiasthmatics, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T48.7
-* ^expansion.contains[=].display = "Other and unspecified agents primarily acting on the respiratory system"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified agents primarily acting on the respiratory system"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49
 * ^expansion.contains[=].display = "Poisoning by topical agents primarily affecting skin and mucous membrane and by ophthalmological, otorhinolaryngological and dental drugs"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.0
-* ^expansion.contains[=].display = "Local antifungal, anti-infective and anti-inflammatory drugs, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Local antifungal, anti-infective and anti-inflammatory drugs, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.1
-* ^expansion.contains[=].display = "Antipruritics"
+* ^expansion.contains[=].display = "Poisoning: Antipruritics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.2
-* ^expansion.contains[=].display = "Local astringents and local detergents"
+* ^expansion.contains[=].display = "Poisoning: Local astringents and local detergents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.3
-* ^expansion.contains[=].display = "Emollients, demulcents and protectants"
+* ^expansion.contains[=].display = "Poisoning: Emollients, demulcents and protectants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.4
-* ^expansion.contains[=].display = "Keratolytics, keratoplastics and other hair treatment drugs and preparations"
+* ^expansion.contains[=].display = "Poisoning: Keratolytics, keratoplastics and other hair treatment drugs and preparations"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.5
-* ^expansion.contains[=].display = "Ophthalmological drugs and preparations"
+* ^expansion.contains[=].display = "Poisoning: Ophthalmological drugs and preparations"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.6
-* ^expansion.contains[=].display = "Otorhinolaryngological drugs and preparations"
+* ^expansion.contains[=].display = "Poisoning: Otorhinolaryngological drugs and preparations"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.7
-* ^expansion.contains[=].display = "Dental drugs, topically applied"
+* ^expansion.contains[=].display = "Poisoning: Dental drugs, topically applied"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.8
-* ^expansion.contains[=].display = "Other topical agents"
+* ^expansion.contains[=].display = "Poisoning: Other topical agents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T49.9
-* ^expansion.contains[=].display = "Topical agent, unspecified"
+* ^expansion.contains[=].display = "Poisoning: Topical agent, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50
 * ^expansion.contains[=].display = "Poisoning by diuretics and other and unspecified drugs, medicaments and biological substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.0
-* ^expansion.contains[=].display = "Mineralocorticoids and their antagonists"
+* ^expansion.contains[=].display = "Poisoning: Mineralocorticoids and their antagonists"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.1
-* ^expansion.contains[=].display = "Loop [high-ceiling] diuretics"
+* ^expansion.contains[=].display = "Poisoning: Loop [high-ceiling] diuretics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.2
-* ^expansion.contains[=].display = "Carbonic-anhydrase inhibitors, benzothiadiazides and other diuretics"
+* ^expansion.contains[=].display = "Poisoning: Carbonic-anhydrase inhibitors, benzothiadiazides and other diuretics"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.3
-* ^expansion.contains[=].display = "Electrolytic, caloric and water-balance agents"
+* ^expansion.contains[=].display = "Poisoning: Electrolytic, caloric and water-balance agents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.4
-* ^expansion.contains[=].display = "Drugs affecting uric acid metabolism"
+* ^expansion.contains[=].display = "Poisoning: Drugs affecting uric acid metabolism"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.5
-* ^expansion.contains[=].display = "Appetite depressants"
+* ^expansion.contains[=].display = "Poisoning: Appetite depressants"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.6
-* ^expansion.contains[=].display = "Antidotes and chelating agents, not elsewhere classified"
+* ^expansion.contains[=].display = "Poisoning: Antidotes and chelating agents, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.7
-* ^expansion.contains[=].display = "Analeptics and opioid receptor antagonists"
+* ^expansion.contains[=].display = "Poisoning: Analeptics and opioid receptor antagonists"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.8
-* ^expansion.contains[=].display = "Diagnostic agents"
+* ^expansion.contains[=].display = "Poisoning: Diagnostic agents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T50.9
-* ^expansion.contains[=].display = "Other and unspecified drugs, medicaments and biological substances"
+* ^expansion.contains[=].display = "Poisoning: Other and unspecified drugs, medicaments and biological substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T51
 * ^expansion.contains[=].display = "Toxic effect of alcohol"
@@ -3508,94 +3504,94 @@ Description: "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX
 * ^expansion.contains[=].display = "Toxic effects of substances chiefly nonmedicinal as to source"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T51.0
-* ^expansion.contains[=].display = "Ethanol"
+* ^expansion.contains[=].display = "Toxic effect: Ethanol"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T51.1
-* ^expansion.contains[=].display = "Methanol"
+* ^expansion.contains[=].display = "Toxic effect: Methanol"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T51.2
-* ^expansion.contains[=].display = "2-Propanol"
+* ^expansion.contains[=].display = "Toxic effect: 2-Propanol"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T51.3
-* ^expansion.contains[=].display = "Fusel oil"
+* ^expansion.contains[=].display = "Toxic effect: Fusel oil"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T51.8
-* ^expansion.contains[=].display = "Other alcohols"
+* ^expansion.contains[=].display = "Toxic effect: Other alcohols"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T51.9
-* ^expansion.contains[=].display = "Alcohol, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Alcohol, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52
 * ^expansion.contains[=].display = "Toxic effect of organic solvents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52.0
-* ^expansion.contains[=].display = "Petroleum products"
+* ^expansion.contains[=].display = "Toxic effect: Petroleum products"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52.1
-* ^expansion.contains[=].display = "Benzene"
+* ^expansion.contains[=].display = "Toxic effect: Benzene"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52.2
-* ^expansion.contains[=].display = "Homologues of benzene"
+* ^expansion.contains[=].display = "Toxic effect: Homologues of benzene"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52.3
-* ^expansion.contains[=].display = "Glycols"
+* ^expansion.contains[=].display = "Toxic effect: Glycols"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52.4
-* ^expansion.contains[=].display = "Ketones"
+* ^expansion.contains[=].display = "Toxic effect: Ketones"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52.8
-* ^expansion.contains[=].display = "Other organic solvents"
+* ^expansion.contains[=].display = "Toxic effect: Other organic solvents"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T52.9
-* ^expansion.contains[=].display = "Organic solvent, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Organic solvent, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53
 * ^expansion.contains[=].display = "Toxic effect of halogen derivatives of aliphatic and aromatic hydrocarbons"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.0
-* ^expansion.contains[=].display = "Carbon tetrachloride"
+* ^expansion.contains[=].display = "Toxic effect: Carbon tetrachloride"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.1
-* ^expansion.contains[=].display = "Chloroform"
+* ^expansion.contains[=].display = "Toxic effect: Chloroform"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.2
-* ^expansion.contains[=].display = "Trichloroethylene"
+* ^expansion.contains[=].display = "Toxic effect: Trichloroethylene"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.3
-* ^expansion.contains[=].display = "Tetrachloroethylene"
+* ^expansion.contains[=].display = "Toxic effect: Tetrachloroethylene"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.4
-* ^expansion.contains[=].display = "Dichloromethane"
+* ^expansion.contains[=].display = "Toxic effect: Dichloromethane"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.5
-* ^expansion.contains[=].display = "Chlorofluorocarbons"
+* ^expansion.contains[=].display = "Toxic effect: Chlorofluorocarbons"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.6
-* ^expansion.contains[=].display = "Other halogen derivatives of aliphatic hydrocarbons"
+* ^expansion.contains[=].display = "Toxic effect: Other halogen derivatives of aliphatic hydrocarbons"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.7
-* ^expansion.contains[=].display = "Other halogen derivatives of aromatic hydrocarbons"
+* ^expansion.contains[=].display = "Toxic effect: Other halogen derivatives of aromatic hydrocarbons"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T53.9
-* ^expansion.contains[=].display = "Halogen derivative of aliphatic and aromatic hydrocarbons, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Halogen derivative of aliphatic and aromatic hydrocarbons, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T54
 * ^expansion.contains[=].display = "Toxic effect of corrosive substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T54.0
-* ^expansion.contains[=].display = "Phenol and phenol homologues"
+* ^expansion.contains[=].display = "Toxic effect: Phenol and phenol homologues"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T54.1
-* ^expansion.contains[=].display = "Other corrosive organic compounds"
+* ^expansion.contains[=].display = "Toxic effect: Other corrosive organic compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T54.2
-* ^expansion.contains[=].display = "Corrosive acids and acid-like substances"
+* ^expansion.contains[=].display = "Toxic effect: Corrosive acids and acid-like substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T54.3
-* ^expansion.contains[=].display = "Corrosive alkalis and alkali-like substances"
+* ^expansion.contains[=].display = "Toxic effect: Corrosive alkalis and alkali-like substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T54.9
-* ^expansion.contains[=].display = "Corrosive substance, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Corrosive substance, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T55
 * ^expansion.contains[=].display = "Toxic effect of soaps and detergents"
@@ -3604,55 +3600,55 @@ Description: "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX
 * ^expansion.contains[=].display = "Toxic effect of metals"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.0
-* ^expansion.contains[=].display = "Lead and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Lead and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.1
-* ^expansion.contains[=].display = "Mercury and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Mercury and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.2
-* ^expansion.contains[=].display = "Chromium and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Chromium and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.3
-* ^expansion.contains[=].display = "Cadmium and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Cadmium and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.4
-* ^expansion.contains[=].display = "Copper and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Copper and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.5
-* ^expansion.contains[=].display = "Zinc and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Zinc and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.6
-* ^expansion.contains[=].display = "Tin and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Tin and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.7
-* ^expansion.contains[=].display = "Beryllium and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Beryllium and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.8
-* ^expansion.contains[=].display = "Other metals"
+* ^expansion.contains[=].display = "Toxic effect: Other metals"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T56.9
-* ^expansion.contains[=].display = "Metal, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Metal, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T57
 * ^expansion.contains[=].display = "Toxic effect of other inorganic substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T57.0
-* ^expansion.contains[=].display = "Arsenic and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Arsenic and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T57.1
-* ^expansion.contains[=].display = "Phosphorus and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Phosphorus and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T57.2
-* ^expansion.contains[=].display = "Manganese and its compounds"
+* ^expansion.contains[=].display = "Toxic effect: Manganese and its compounds"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T57.3
-* ^expansion.contains[=].display = "Hydrogen cyanide"
+* ^expansion.contains[=].display = "Toxic effect: Hydrogen cyanide"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T57.8
-* ^expansion.contains[=].display = "Other specified inorganic substances"
+* ^expansion.contains[=].display = "Toxic effect: Other specified inorganic substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T57.9
-* ^expansion.contains[=].display = "Inorganic substance, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Inorganic substance, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T58
 * ^expansion.contains[=].display = "Toxic effect of carbon monoxide"
@@ -3661,124 +3657,124 @@ Description: "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX
 * ^expansion.contains[=].display = "Toxic effect of other gases, fumes and vapours"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.0
-* ^expansion.contains[=].display = "Nitrogen oxides"
+* ^expansion.contains[=].display = "Toxic effect: Nitrogen oxides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.1
-* ^expansion.contains[=].display = "Sulfur dioxide"
+* ^expansion.contains[=].display = "Toxic effect: Sulfur dioxide"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.2
-* ^expansion.contains[=].display = "Formaldehyde"
+* ^expansion.contains[=].display = "Toxic effect: Formaldehyde"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.3
-* ^expansion.contains[=].display = "Lacrimogenic gas"
+* ^expansion.contains[=].display = "Toxic effect: Lacrimogenic gas"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.4
-* ^expansion.contains[=].display = "Chlorine gas"
+* ^expansion.contains[=].display = "Toxic effect: Chlorine gas"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.5
-* ^expansion.contains[=].display = "Fluorine gas and hydrogen fluoride"
+* ^expansion.contains[=].display = "Toxic effect: Fluorine gas and hydrogen fluoride"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.6
-* ^expansion.contains[=].display = "Hydrogen sulfide"
+* ^expansion.contains[=].display = "Toxic effect: Hydrogen sulfide"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.7
-* ^expansion.contains[=].display = "Carbon dioxide"
+* ^expansion.contains[=].display = "Toxic effect: Carbon dioxide"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.8
-* ^expansion.contains[=].display = "Other specified gases, fumes and vapours"
+* ^expansion.contains[=].display = "Toxic effect: Other specified gases, fumes and vapours"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T59.9
-* ^expansion.contains[=].display = "Gases, fumes and vapours, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Gases, fumes and vapours, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60
 * ^expansion.contains[=].display = "Toxic effect of pesticides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60.0
-* ^expansion.contains[=].display = "Organophosphate and carbamate insecticides"
+* ^expansion.contains[=].display = "Toxic effect: Organophosphate and carbamate insecticides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60.1
-* ^expansion.contains[=].display = "Halogenated insecticides"
+* ^expansion.contains[=].display = "Toxic effect: Halogenated insecticides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60.2
-* ^expansion.contains[=].display = "Other and unspecified insecticides"
+* ^expansion.contains[=].display = "Toxic effect: Other and unspecified insecticides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60.3
-* ^expansion.contains[=].display = "Herbicides and fungicides"
+* ^expansion.contains[=].display = "Toxic effect: Herbicides and fungicides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60.4
-* ^expansion.contains[=].display = "Rodenticides"
+* ^expansion.contains[=].display = "Toxic effect: Rodenticides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60.8
-* ^expansion.contains[=].display = "Other pesticides"
+* ^expansion.contains[=].display = "Toxic effect: Other pesticides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T60.9
-* ^expansion.contains[=].display = "Pesticide, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Pesticide, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T61
 * ^expansion.contains[=].display = "Toxic effect of noxious substances eaten as seafood"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T61.0
-* ^expansion.contains[=].display = "Ciguatera fish poisoning"
+* ^expansion.contains[=].display = "Toxic effect: Ciguatera fish poisoning"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T61.1
-* ^expansion.contains[=].display = "Scombroid fish poisoning"
+* ^expansion.contains[=].display = "Toxic effect: Scombroid fish poisoning"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T61.2
-* ^expansion.contains[=].display = "Other fish and shellfish poisoning"
+* ^expansion.contains[=].display = "Toxic effect: Other fish and shellfish poisoning"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T61.8
-* ^expansion.contains[=].display = "Toxic effect of other seafoods"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of other seafoods"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T61.9
-* ^expansion.contains[=].display = "Toxic effect of unspecified seafood"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of unspecified seafood"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T62
 * ^expansion.contains[=].display = "Toxic effect of other noxious substances eaten as food"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T62.0
-* ^expansion.contains[=].display = "Ingested mushrooms"
+* ^expansion.contains[=].display = "Toxic effect: Ingested mushrooms"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T62.1
-* ^expansion.contains[=].display = "Ingested berries"
+* ^expansion.contains[=].display = "Toxic effect: Ingested berries"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T62.2
-* ^expansion.contains[=].display = "Other ingested (parts of) plant(s)"
+* ^expansion.contains[=].display = "Toxic effect: Other ingested (parts of) plant(s)"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T62.8
-* ^expansion.contains[=].display = "Other specified noxious substances eaten as food"
+* ^expansion.contains[=].display = "Toxic effect: Other specified noxious substances eaten as food"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T62.9
-* ^expansion.contains[=].display = "Noxious substance eaten as food, unspecified"
+* ^expansion.contains[=].display = "Toxic effect: Noxious substance eaten as food, unspecified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63
 * ^expansion.contains[=].display = "Toxic effect of contact with venomous animals"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.0
-* ^expansion.contains[=].display = "Snake venom"
+* ^expansion.contains[=].display = "Toxic effect: Snake venom"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.1
-* ^expansion.contains[=].display = "Venom of other reptiles"
+* ^expansion.contains[=].display = "Toxic effect: Venom of other reptiles"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.2
-* ^expansion.contains[=].display = "Venom of scorpion"
+* ^expansion.contains[=].display = "Toxic effect: Venom of scorpion"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.3
-* ^expansion.contains[=].display = "Venom of spider"
+* ^expansion.contains[=].display = "Toxic effect: Venom of spider"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.4
-* ^expansion.contains[=].display = "Venom of other arthropods"
+* ^expansion.contains[=].display = "Toxic effect: Venom of other arthropods"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.5
-* ^expansion.contains[=].display = "Toxic effect of contact with fish"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of contact with fish"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.6
-* ^expansion.contains[=].display = "Toxic effect of contact with other marine animals"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of contact with other marine animals"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.8
-* ^expansion.contains[=].display = "Toxic effect of contact with other venomous animals"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of contact with other venomous animals"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T63.9
-* ^expansion.contains[=].display = "Toxic effect of contact with unspecified venomous animal"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of contact with unspecified venomous animal"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T64
 * ^expansion.contains[=].display = "Toxic effect of aflatoxin and other mycotoxin food contaminants"
@@ -3787,31 +3783,31 @@ Description: "SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX
 * ^expansion.contains[=].display = "Toxic effect of other and unspecified substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.0
-* ^expansion.contains[=].display = "Cyanides"
+* ^expansion.contains[=].display = "Toxic effect: Cyanides"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.1
-* ^expansion.contains[=].display = "Strychnine and its salts"
+* ^expansion.contains[=].display = "Toxic effect: Strychnine and its salts"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.2
-* ^expansion.contains[=].display = "Tobacco and nicotine"
+* ^expansion.contains[=].display = "Toxic effect: Tobacco and nicotine"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.3
-* ^expansion.contains[=].display = "Nitroderivatives and aminoderivatives of benzene and its homologues"
+* ^expansion.contains[=].display = "Toxic effect: Nitroderivatives and aminoderivatives of benzene and its homologues"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.4
-* ^expansion.contains[=].display = "Carbon disulfide"
+* ^expansion.contains[=].display = "Toxic effect: Carbon disulfide"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.5
-* ^expansion.contains[=].display = "Nitroglycerin and other nitric acids and esters"
+* ^expansion.contains[=].display = "Toxic effect: Nitroglycerin and other nitric acids and esters"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.6
-* ^expansion.contains[=].display = "Paints and dyes, not elsewhere classified"
+* ^expansion.contains[=].display = "Toxic effect: Paints and dyes, not elsewhere classified"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.8
-* ^expansion.contains[=].display = "Toxic effect of other specified substances"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of other specified substances"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T65.9
-* ^expansion.contains[=].display = "Toxic effect of unspecified substance"
+* ^expansion.contains[=].display = "Toxic effect: Toxic effect of unspecified substance"
 * ^expansion.contains[+].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #T66
 * ^expansion.contains[=].display = "Unspecified effects of radiation"

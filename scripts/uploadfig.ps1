@@ -1,7 +1,9 @@
 UploadFIG `
- -d "https://tx.fhirlab.net/fhir" `
- -s "https://upm-nthc.github.io/PH-RoadSafetyIG/package.r4.tgz" `
- -r StructureDefinition 
+-d "https://tx.fhirlab.net/fhir" `
+-s "https://upm-nthc.github.io/PH-RoadSafetyIG/package.r4.tgz" `
+-r "StructureDefinition|Questionnaire|SearchParameter|StructureMap|Library" `
+# -ets "https://tx.fhirlab.net/fhir"
+#  -ip "example.fhir.ph.core|current" `
 #  -reg "https://cdr.fhir.net/fhir/" `
  #  -r StructureDefinition `
  #  -s "https://build.fhir.org/ig/UP-Manila-SILab/ph-core/package.r4.tgz" `

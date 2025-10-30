@@ -2,17 +2,24 @@ CodeSystem: SILPH_Road_Safety_Local_Codes
 Id: SILPH-LocalCodesCS
 Title: "SILPH Road Safety Local Codes"
 Description: "Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets"
-* ^meta.versionId = "6"
-* ^meta.lastUpdated = "2025-10-29T06:31:10.825+00:00"
+* ^meta.versionId = "14"
+* ^meta.lastUpdated = "2025-10-30T02:55:08.266+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^version = "0.2.0"
 * ^status = #draft
-* ^contact.telecom.system = #email
-* ^compositional = false
-* ^content = #complete
-* ^valueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet"
+* ^publisher = "UP Manila - National Institutes of Health - National Telehealth Center"
+* ^contact[0].name = "UP Manila - National Institutes of Health - National Telehealth Center"
+* ^contact[=].telecom.system = #url
+* ^contact[=].telecom.value = "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+* ^contact[+].name = "PH Road Safety IG Repository"
+* ^contact[=].telecom.system = #url
+* ^contact[=].telecom.value = "https://github.com/UPM-NTHC/PH-RoadSafetyIG"
+* ^jurisdiction = urn:iso:std:iso:3166#PH "Philippines"
 * ^caseSensitive = false
+* ^valueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet"
+* ^compositional = false
 * ^versionNeeded = true
+* ^content = #complete
 * ^count = 23
 * #BHS "BHS" "BHS"
 * #RHU "RHU" "RHU"
