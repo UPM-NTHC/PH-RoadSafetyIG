@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/ph-road-safety-logical-model | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:MDSRoadSafety |
+| Draft as of 2025-10-30 | *Computable Name*:MDSRoadSafety |
 
  
 Abstract, sectioned logical model for the PH RS MDS covering incident, patient, encounter, clinical, vitals, injuries, evidence/documents, workflow, and finance. Elements mirror the CSV rows; mappings point to target FHIR elements for subsequent profiling. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
   "name" : "MDSRoadSafety",
   "title" : "RS Minimum Dataset (MDS) Logical Model",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

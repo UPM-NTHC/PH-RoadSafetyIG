@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:RSObsCollisionVsNonCollision |
+| Draft as of 2025-10-30 | *Computable Name*:RSObsCollisionVsNonCollision |
 
  
 Indicates whether the incident was collision or non-collision. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "name" : "RSObsCollisionVsNonCollision",
   "title" : "RS Observation - Collision vs Non-Collision",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

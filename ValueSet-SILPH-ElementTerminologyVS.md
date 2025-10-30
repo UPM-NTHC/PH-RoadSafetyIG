@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:SILPH___Element_Terminology__VS_ |
+| Draft as of 2025-10-30 | *Computable Name*:SILPH___Element_Terminology__VS_ |
 
  
 SILPH Value Set for Element Terminology 
@@ -56,7 +56,7 @@ This value set contains 47 concepts
   "name" : "SILPH___Element_Terminology__VS_",
   "title" : "SILPH - Element Terminology (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

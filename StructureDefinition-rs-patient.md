@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:RSPatient |
+| Draft as of 2025-10-30 | *Computable Name*:RSPatient |
 
  
 Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "RS Patient",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -151,35 +151,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
       {
         "id" : "Patient.name.given",
         "path" : "Patient.name.given",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "$this"
-            }
-          ],
-          "rules" : "open"
-        },
         "short" : "Given names (First name = [0], Middle name = [1], in order)",
+        "comment" : "Index 0 = first name; index 1 = middle name. See DOH-PHIC-JAO-No-2021-002.",
+        "requirements" : "DOH-PHIC-JAO-No-2021-002: Patient.name.given[0] is expected to be the first name(s); Patient.name.given[1] (if present) is expected to be middle name(s).",
         "min" : 1,
-        "max" : "2",
         "mustSupport" : true
-      },
-      {
-        "id" : "Patient.name.given:FirstName",
-        "path" : "Patient.name.given",
-        "sliceName" : "FirstName",
-        "short" : "First name",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Patient.name.given:MiddleName",
-        "path" : "Patient.name.given",
-        "sliceName" : "MiddleName",
-        "short" : "Middle name",
-        "min" : 0,
-        "max" : "1"
       },
       {
         "id" : "Patient.telecom",

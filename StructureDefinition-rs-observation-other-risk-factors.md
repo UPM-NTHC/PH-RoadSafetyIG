@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:RSObsOtherRiskFactors |
+| Draft as of 2025-10-30 | *Computable Name*:RSObsOtherRiskFactors |
 
  
 Other risk factors at the time of incident; allow text for 'Others'. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherRiskFactors",
   "title" : "RS Observation - Other Risk Factors",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

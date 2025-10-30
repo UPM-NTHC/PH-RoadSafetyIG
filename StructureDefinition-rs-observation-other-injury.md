@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:RSObsOtherInjury |
+| Draft as of 2025-10-30 | *Computable Name*:RSObsOtherInjury |
 
  
 Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherInjury",
   "title" : "RS Observation - Other Specified Injury",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

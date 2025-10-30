@@ -261,17 +261,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Family name","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./part[partType = FAM]","XPN.1/FN.1"
 "Patient.name.given","Patient.name.given","","first name
-middle name","",1,2,"Y","","Y","string {[]} {[]}
-","Given names (First name = [0], Middle name = [1], in order)","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"","value:$this}
-","",,"open","HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = GIV]","XPN.2 + XPN.3"
-"Patient.name.given:FirstName","Patient.name.given","FirstName","first name
-middle name","",0,1,"","","Y","string {[]} {[]}
-","First name","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = GIV]","XPN.2 + XPN.3"
-"Patient.name.given:MiddleName","Patient.name.given","MiddleName","first name
-middle name","",0,1,"","","Y","string {[]} {[]}
-","Middle name","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+middle name","",1,*,"Y","","Y","string {[]} {[]}
+","Given names (First name = [0], Middle name = [1], in order)","Given name.","Index 0 = first name; index 1 = middle name. See DOH-PHIC-JAO-No-2021-002.","DOH-PHIC-JAO-No-2021-002: Patient.name.given[0] is expected to be the first name(s); Patient.name.given[1] (if present) is expected to be middle name(s).","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./part[partType = GIV]","XPN.2 + XPN.3"
 "Patient.name.prefix","Patient.name.prefix","","","",0,*,"","","Y","string {[]} {[]}
 ","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

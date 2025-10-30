@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pupils | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:RSObsPupils |
+| Draft as of 2025-10-30 | *Computable Name*:RSObsPupils |
 
  
 Pupil size/reactivity summary. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pupil
   "name" : "RSObsPupils",
   "title" : "RS Observation - Pupils",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

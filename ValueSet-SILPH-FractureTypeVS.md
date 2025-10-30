@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:SILPH___Fracture_Type__VS_ |
+| Draft as of 2025-10-30 | *Computable Name*:SILPH___Fracture_Type__VS_ |
 
  
 SILPH Value Set for fracture type designation (open versus closed) 
@@ -54,7 +54,7 @@ SILPH Value Set for fracture type designation (open versus closed)
   "name" : "SILPH___Fracture_Type__VS_",
   "title" : "SILPH - Fracture Type (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:SILPH___Outpatient_ER_Disposition__VS_ |
+| Draft as of 2025-10-30 | *Computable Name*:SILPH___Outpatient_ER_Disposition__VS_ |
 
  
 SILPH Value Set for Outpatient/ER Visit Disposition 
@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___Outpatient_ER_Disposition__VS_",
   "title" : "SILPH - Outpatient/ER Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient | *Version*:0.2.0 |
-| Draft as of 2025-10-29 | *Computable Name*:RSObsPositionOfPatient |
+| Draft as of 2025-10-30 | *Computable Name*:RSObsPositionOfPatient |
 
  
 Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-posit
   "name" : "RSObsPositionOfPatient",
   "title" : "RS Observation - Position of Patient",
   "status" : "draft",
-  "date" : "2025-10-29T15:51:20+00:00",
+  "date" : "2025-10-30T01:53:15+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
