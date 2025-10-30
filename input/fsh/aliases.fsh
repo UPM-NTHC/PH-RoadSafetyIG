@@ -1,4 +1,4 @@
-Alias: $SCT = http://snomed.info/sct
+Alias: $SCT = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001
 Alias: $LNC = http://loinc.org
 Alias: $ICD11 = http://id.who.int/icd/release/11/mms
 Alias: $PSGC = urn://example.com/ph-core/fhir/CodeSystem/PSGC
