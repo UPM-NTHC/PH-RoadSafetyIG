@@ -15,15 +15,10 @@ Description: "Patient demographics and identifiers for RS reporting; reuse PH-Co
 * name.family ^short = "Family name"
 
 * name.given 1..* MS
-
-* name.given ^slicing.discriminator[0].type = #value
-* name.given ^slicing.discriminator[0].path = "$this"
-* name.given ^slicing.rules = #open
-* name.given 1..2 MS
 * name.given ^short = "Given names (First name = [0], Middle name = [1], in order)"
-* name.given contains FirstName 0..1 and MiddleName 0..1
-* name.given[FirstName] ^short = "First name"
-* name.given[MiddleName] ^short = "Middle name"
+* name.given ^requirements = "DOH-PHIC-JAO-No-2021-002: Patient.name.given[0] is expected to be the first name(s); Patient.name.given[1] (if present) is expected to be middle name(s)."
+* name.given ^comment = "Index 0 = first name; index 1 = middle name. See DOH-PHIC-JAO-No-2021-002."
+
 
 * birthDate 0..1 MS
 * birthDate ^short = "Birth date"
@@ -47,6 +42,21 @@ Description: "Patient demographics and identifiers for RS reporting; reuse PH-Co
 * identifier[patientHospitalID] ^definition = "Write the hospital-based issued I.D. or number to uniquely identify the patient."
 * identifier[patientHospitalID].type.coding = $SCT#184107009 "Patient hospital number"
 
+Invariant: rs-name-given-order
+Description: "Index 0 of name.given is the patient's first name; index 1 (if present) is the patient's middle name. This is a modelling convention; follow it when populating the given array."
+* severity = #warning
+* expression = "name.given.count() = 2"
+* xpath = "count(f:name/f:given) = 2"
+
+/*
+I no longer sliced name.given to enforce exactly 2 entries because of at the end of the day the server could not Evaluate it properly.
+SLICING_CANNOT_BE_EVALUATED
+``Slicing cannot be evaluated: Could not match discriminator (1) for 
+slice $this in profile 
+Patient.name.given:FirstName - the discriminator 
+https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient|0.2.0 
+does not have fixed value, binding or existence assertions```
+*/
 
 /* Patient.extension:sex vs HL7 Administrative gender - For decision point
     PH-core uses Administrative Gender - http://hl7.org/fhir/ValueSet/administrative-gender
