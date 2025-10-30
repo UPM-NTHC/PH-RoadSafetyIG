@@ -2,7 +2,7 @@
 Profile: RSTask
 Parent: Task
 Id: rs-task
-Title: "Road Safety Task"
+Title: "RS Task"
 Description: "Workflow tracking for report receipt, durations of delay, and sources of delays."
 * ^version = "1.0.0"
 * status 1..1 MS
