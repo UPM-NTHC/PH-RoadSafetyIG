@@ -43,6 +43,16 @@ type ProfileInfo = {
   parent?: string;
   hasBinding: boolean;
   hasSlicing: boolean;
+  invariants: string[];
+};
+
+type InvariantsByArtifact = {
+  profiles: Record<string, string[]>;
+  extensions: Record<string, string[]>;
+  valueSets: Record<string, string[]>;
+  codeSystems: Record<string, string[]>;
+  logicalModels: Record<string, string[]>;
+  instances: Record<string, string[]>;
 };
 
 type FshMetrics = {
@@ -61,12 +71,17 @@ type FshMetrics = {
   ratioValueSetsToCodeSystems: string; // computed like "12:3"
   orphanedProfiles: string[];
   profileInfos: ProfileInfo[];
+  invariantsByArtifact: InvariantsByArtifact;
+  invariantOrigins?: Record<string, string[]>;
 };
 
 const REPO_ROOT = process.cwd();
 const FSH_DIR = path.join(REPO_ROOT, 'input', 'fsh');
+const RESOURCES_DIR = path.join(REPO_ROOT, 'input', 'resources');
 const CACHE_DIR = path.join(REPO_ROOT, 'scripts', '.cache');
 const CACHE_FILE = path.join(CACHE_DIR, 'ig_metrics.json');
+const LOG_DIR = path.join(REPO_ROOT, 'scripts', 'logs');
+const LOG_FILE = path.join(LOG_DIR, 'ig_report.log');
 
 async function runCmd(cmd: string, cwd: string = REPO_ROOT): Promise<{ stdout: string; stderr: string; code: number }> {
   const VERBOSE = process.env.IG_REPORT_DEBUG !== '0';
@@ -104,34 +119,42 @@ async function chooseComparisonBranch(defaultBranch: string): Promise<string | n
     const res = await runCmd(`git log origin/${b} --since="yesterday" --until="today" -n 1 --pretty=%H`);
     if (res.code === 0 && res.stdout.trim()) candidates.push(b);
   }
-  if (candidates.length === 1) return candidates[0];
-  if (candidates.length > 1) {
-    console.log('Multiple branches had commits yesterday:');
-    candidates.forEach((c, i) => console.log(`${i + 1}) ${c}`));
-    console.log(`Enter the number to choose, or type 'l' to list all remote branches and choose from them.`);
-    while (true) {
-      const ans = (await askQuestion(`Choose branch to compare against (1-${candidates.length}) [1] or 'l': `)).trim();
-      if (!ans) return candidates[0];
-      if (/^l$/i.test(ans)) {
-        // Show full remote list and let user pick from it
-        all.forEach((c, i) => console.log(`${i + 1}) ${c}`));
-        const pick = await askQuestion(`Choose branch to compare against by number (1-${all.length}) [1]: `);
-        const idx2 = parseInt(pick || '1', 10);
-        if (idx2 >= 1 && idx2 <= all.length) return all[idx2 - 1];
-        return all[0];
-      }
-      const idx = parseInt(ans, 10);
-      if (idx >= 1 && idx <= candidates.length) return candidates[idx - 1];
-      console.log('Invalid selection, try again.');
-    }
+
+  const interactive = Boolean(process.stdin.isTTY && process.stdout.isTTY);
+  const suggested = candidates[0] ?? defaultBranch;
+  if (!interactive) return suggested;
+
+  const showList = (list: string[], heading: string) => {
+    if (!list.length) return;
+    console.log(heading);
+    list.forEach((c, i) => console.log(`${i + 1}) ${c}`));
+  };
+
+  if (candidates.length) {
+    showList(candidates, 'Branches with activity in the last day:');
+    console.log(`Press Enter to use ${suggested}, type a number or branch name, or 'l' to list all remote branches.`);
+  } else {
+    showList(all.slice(0, 50), 'Remote branches (first 50):');
+    console.log(`Press Enter to use ${defaultBranch}, type a number or branch name, or 'l' to list all remote branches.`);
   }
-  // no candidates found; ask user to choose from remote list
-  console.log('No remote branch with commits yesterday detected. Remote branches:');
-  all.slice(0, 200).forEach((c, i) => console.log(`${i + 1}) ${c}`));
-  const ans = await askQuestion(`Choose branch to compare against by number (or press Enter to use ${defaultBranch}): `);
-  const idx = parseInt(ans || '', 10);
-  if (isFinite(idx) && idx >= 1 && idx <= all.length) return all[idx - 1];
-  return defaultBranch;
+
+  while (true) {
+    const ans = (await askQuestion(`Compare against branch [${suggested}]: `)).trim();
+    if (!ans) return suggested;
+    if (/^l$/i.test(ans)) {
+      showList(all.slice(0, 200), 'Remote branches (first 200):');
+      continue;
+    }
+    const idx = parseInt(ans, 10);
+    if (!Number.isNaN(idx)) {
+      if (idx >= 1 && idx <= candidates.length) return candidates[idx - 1];
+      if (idx >= 1 && idx <= all.length) return all[idx - 1];
+      console.log('Selection out of range.');
+      continue;
+    }
+    if (all.includes(ans)) return ans;
+    console.log(`Unknown branch '${ans}'. Try again, or press Enter for ${suggested}.`);
+  }
 }
 
 async function pathExists(p: string) {
@@ -208,22 +231,100 @@ async function readAllFshFilesFromFs(baseDir: string): Promise<{ path: string; c
   return out;
 }
 
-function computeFshMetricsFromFiles(files: { path: string; content: string }[]): FshMetrics {
+type ResourceArtifact = { path: string; resourceType: string; id?: string };
+
+async function readResourceArtifactsFromFs(baseDir: string): Promise<ResourceArtifact[]> {
+  const out: ResourceArtifact[] = [];
+  async function walk(dir: string) {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    for (const e of entries) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) {
+        await walk(full);
+      } else if (e.isFile() && e.name.toLowerCase().endsWith('.json')) {
+        if (/_exp\.json$/i.test(e.name)) continue; // skip expansion snapshots
+        try {
+          const content = await fs.readFile(full, 'utf8');
+          const parsed = JSON.parse(content);
+          const rt = parsed?.resourceType;
+          if (rt === 'ValueSet' || rt === 'CodeSystem') {
+            out.push({
+              path: path.relative(REPO_ROOT, full).replace(/\\/g, '/'),
+              resourceType: rt,
+              id: parsed?.id,
+            });
+          }
+        } catch {
+          // ignore invalid JSON
+        }
+      }
+    }
+  }
+  if (await pathExists(baseDir)) await walk(baseDir);
+  return out;
+}
+
+function computeFshMetricsFromFiles(
+  files: { path: string; content: string }[],
+  resourceArtifacts: ResourceArtifact[] = []
+): FshMetrics {
   let profiles = 0, extensions = 0, valueSets = 0, codeSystems = 0, logicalModels = 0, instances = 0;
   let reusedFromPHCore = 0;
   const referencedProfilesSet = new Set<string>();
   let referencedProfilesCount = 0;
   const profileInfos: ProfileInfo[] = [];
+  const invariantsByArtifact: InvariantsByArtifact = {
+    profiles: {},
+    extensions: {},
+    valueSets: {},
+    codeSystems: {},
+    logicalModels: {},
+    instances: {},
+  };
+  const invariantOrigins = DEBUG_INVARIANTS ? new Map<string, Set<string>>() : null;
 
   // Collect instanceOf references to detect orphaned profiles
   const instanceOfRefs = new Set<string>();
 
-  const TOP_LEVEL_START = /^(Profile|Extension|ValueSet|CodeSystem|Instance|Logical)\s*:/;
+  const TOP_LEVEL_START = /^(Profile|Extension|ValueSet|CodeSystem|Instance|Logical|Invariant)\s*:/;
   for (const file of files) {
     const lines = file.content.split(/\r?\n/);
 
     let currentBlock: { kind: string; name: string } | null = null;
     let currentProfile: ProfileInfo | null = null;
+    let currentBlockInvariants = new Set<string>();
+
+    const finalizeCurrentBlock = () => {
+      if (!currentBlock) return;
+      const invariants = Array.from(currentBlockInvariants).sort();
+      switch (currentBlock.kind) {
+        case 'Profile':
+          if (currentProfile) {
+            currentProfile.invariants = invariants;
+            profileInfos.push(currentProfile);
+            currentProfile = null;
+          }
+          if (invariants.length) invariantsByArtifact.profiles[currentBlock.name] = invariants;
+          break;
+        case 'Extension':
+          if (invariants.length) invariantsByArtifact.extensions[currentBlock.name] = invariants;
+          break;
+        case 'ValueSet':
+          if (invariants.length) invariantsByArtifact.valueSets[currentBlock.name] = invariants;
+          break;
+        case 'CodeSystem':
+          if (invariants.length) invariantsByArtifact.codeSystems[currentBlock.name] = invariants;
+          break;
+        case 'Logical':
+          if (invariants.length) invariantsByArtifact.logicalModels[currentBlock.name] = invariants;
+          break;
+        case 'Instance':
+          if (invariants.length) invariantsByArtifact.instances[currentBlock.name] = invariants;
+          break;
+      }
+      currentBlock = null;
+      currentBlockInvariants = new Set<string>();
+    };
 
     for (let rawLine of lines) {
       const line = rawLine.replace(/\t/g, '\t').trim();
@@ -231,14 +332,11 @@ function computeFshMetricsFromFiles(files: { path: string; content: string }[]):
 
       const mStart = line.match(/^(Profile|Extension|ValueSet|CodeSystem|Instance|Logical)\s*:\s*(.+)$/);
       if (mStart) {
-        // finalize previous profile
-        if (currentProfile) {
-          profileInfos.push(currentProfile);
-          currentProfile = null;
-        }
+        finalizeCurrentBlock();
         currentBlock = { kind: mStart[1], name: mStart[2].trim() };
+        currentBlockInvariants = new Set<string>();
         switch (currentBlock.kind) {
-          case 'Profile': profiles++; currentProfile = { name: currentBlock.name, hasBinding: false, hasSlicing: false }; break;
+          case 'Profile': profiles++; currentProfile = { name: currentBlock.name, hasBinding: false, hasSlicing: false, invariants: [] }; break;
           case 'Extension': extensions++; break;
           case 'ValueSet': valueSets++; break;
           case 'CodeSystem': codeSystems++; break;
@@ -273,6 +371,31 @@ function computeFshMetricsFromFiles(files: { path: string; content: string }[]):
         }
       }
 
+      if (currentBlock) {
+        const withoutComment = rawLine.split('//')[0] ?? rawLine;
+        const obeyMatch = withoutComment.match(/^\s*\*[^"]*\bobeys\b(.*)$/i);
+        if (obeyMatch) {
+          const remainder = obeyMatch[1].trim();
+          if (remainder) {
+            const normalized = remainder.replace(/\s+and\s+/gi, ',').replace(/\s+or\s+/gi, ',');
+            const parts = normalized.split(',').map(s => s.trim()).filter(Boolean);
+            for (const part of parts) {
+              const token = part.split(/\s+/)[0] ?? '';
+              const name = token.replace(/[^A-Za-z0-9\-_]/g, '').trim();
+              if (name) {
+                currentBlockInvariants.add(name);
+                if (invariantOrigins && currentBlock) {
+                  const location = `${file.path} (${currentBlock.kind}:${currentBlock.name})`;
+                  const existing = invariantOrigins.get(name) ?? new Set<string>();
+                  existing.add(location);
+                  invariantOrigins.set(name, existing);
+                }
+              }
+            }
+          }
+        }
+      }
+
       if (currentBlock?.kind === 'Instance') {
         const instOf = line.match(/^InstanceOf\s*:\s*(.+)$/);
         if (instOf) instanceOfRefs.add(instOf[1].trim());
@@ -283,11 +406,16 @@ function computeFshMetricsFromFiles(files: { path: string; content: string }[]):
         // handled above, but keep guard if missed
       }
     }
-    // finalize last profile in file
-    if (currentProfile) profileInfos.push(currentProfile);
+    finalizeCurrentBlock();
   }
 
   const percent = (num: number, den: number) => (den > 0 ? Math.round((num / den) * 100) : 0);
+
+  // Include JSON-based ValueSets and CodeSystems
+  for (const artifact of resourceArtifacts) {
+    if (artifact.resourceType === 'ValueSet') valueSets++;
+    else if (artifact.resourceType === 'CodeSystem') codeSystems++;
+  }
 
   const profilesWithBinding = profileInfos.filter(p => p.hasBinding).length;
   const profilesWithSlicing = profileInfos.filter(p => p.hasSlicing).length;
@@ -315,14 +443,45 @@ function computeFshMetricsFromFiles(files: { path: string; content: string }[]):
     ratioValueSetsToCodeSystems: `${valueSets}:${codeSystems}`,
     orphanedProfiles,
     profileInfos,
+    invariantsByArtifact,
+    invariantOrigins: invariantOrigins
+      ? Object.fromEntries(Array.from(invariantOrigins.entries()).map(([inv, locations]) => [inv, Array.from(locations).sort()]))
+      : undefined,
   };
   return f;
 }
 
 async function getFshMetricsAtRev(rev?: string): Promise<FshMetrics> {
+  const gatherResources = async (): Promise<ResourceArtifact[]> => {
+    if (!rev) {
+      return readResourceArtifactsFromFs(RESOURCES_DIR);
+    }
+    const resourceFiles = await listFilesAtRev(rev, 'input/resources');
+    const artifacts: ResourceArtifact[] = [];
+    for (const rel of resourceFiles.filter(f => f.toLowerCase().endsWith('.json'))) {
+      if (/_exp\.json$/i.test(rel)) continue; // skip expansion snapshots
+      const content = await readFileAtRev(rev, rel);
+      if (!content) continue;
+      try {
+        const parsed = JSON.parse(content);
+        const rt = parsed?.resourceType;
+        if (rt === 'ValueSet' || rt === 'CodeSystem') {
+          artifacts.push({
+            path: rel,
+            resourceType: rt,
+            id: parsed?.id,
+          });
+        }
+      } catch {
+        // ignore parse failures
+      }
+    }
+    return artifacts;
+  };
+  const resourceArtifacts = await gatherResources();
   if (!rev) {
     const files = await readAllFshFilesFromFs(FSH_DIR);
-    return computeFshMetricsFromFiles(files);
+    return computeFshMetricsFromFiles(files, resourceArtifacts);
   }
   const fileList = await listFilesAtRev(rev, 'input/fsh');
   const files: { path: string; content: string }[] = [];
@@ -330,7 +489,7 @@ async function getFshMetricsAtRev(rev?: string): Promise<FshMetrics> {
     const content = await readFileAtRev(rev, rel);
     if (content != null) files.push({ path: rel, content });
   }
-  return computeFshMetricsFromFiles(files);
+  return computeFshMetricsFromFiles(files, resourceArtifacts);
 }
 
 async function getGitChangeSummary(overrideBranch?: string): Promise<GitChangeSummary> {
@@ -620,6 +779,53 @@ function fmtNum(n: number | undefined): string { return typeof n === 'number' &&
 function fmtPct(n: number | undefined | null): string { return typeof n === 'number' && isFinite(n) ? `${Math.round(n)}%` : 'n/a'; }
 function fmtHrs(h: number | undefined | null): string { return typeof h === 'number' && isFinite(h) ? `${h.toFixed(1)} h` : 'n/a'; }
 
+const DEBUG_INVARIANTS = (process.env.IG_REPORT_DEBUG || '').toLowerCase().includes('invariant');
+
+const INVARIANT_CATEGORY_LABELS: Record<keyof InvariantsByArtifact, string> = {
+  profiles: 'profiles',
+  extensions: 'extensions',
+  valueSets: 'value sets',
+  codeSystems: 'code systems',
+  logicalModels: 'logical models',
+  instances: 'instances',
+};
+
+type InvariantSummary = {
+  totalUnique: number;
+  categories: Array<{ key: keyof InvariantsByArtifact; label: string; unique: number }>;
+};
+
+function summarizeAllInvariants(all: InvariantsByArtifact | undefined | null): InvariantSummary {
+  const perInvariant = new Map<string, Set<keyof InvariantsByArtifact>>();
+  if (all) {
+    (Object.keys(INVARIANT_CATEGORY_LABELS) as (keyof InvariantsByArtifact)[]).forEach((key) => {
+      const map = (all[key] ?? {}) as Record<string, string[]>;
+      for (const invariants of Object.values(map)) {
+        for (const raw of invariants) {
+          const name = raw.trim();
+          if (!name) continue;
+          let entry = perInvariant.get(name);
+          if (!entry) {
+            entry = new Set();
+            perInvariant.set(name, entry);
+          }
+          entry.add(key);
+        }
+      }
+    });
+  }
+
+  const categories = (Object.keys(INVARIANT_CATEGORY_LABELS) as (keyof InvariantsByArtifact)[]).map((key) => {
+    let count = 0;
+    for (const categoriesSet of perInvariant.values()) {
+      if (categoriesSet.has(key)) count++;
+    }
+    return { key, label: INVARIANT_CATEGORY_LABELS[key], unique: count };
+  });
+
+  return { totalUnique: perInvariant.size, categories };
+}
+
 async function getYesterdayFshMetricsFromGit(baseCommitYesterday?: string | null): Promise<FshMetrics | null> {
   if (!baseCommitYesterday) return null;
   try { return await getFshMetricsAtRev(baseCommitYesterday); } catch { return null; }
@@ -668,7 +874,7 @@ function printMarkdownSummary(
   gitChange: GitChangeSummary,
   commitsPerContributor: Record<string, number>,
   avgCommitsPerDay7: number
-) {
+): string {
   const delta = {
     profiles: diffDelta(now.profiles, prev?.profiles),
     extensions: diffDelta(now.extensions, prev?.extensions),
@@ -680,63 +886,102 @@ function printMarkdownSummary(
 
   const reusedLine = `${now.reusedFromPHCore} (${now.percentReused}%)`;
 
-  console.log('');
-  console.log('📊 PH-Road Safety IG Daily Metrics');
-  console.log('---------------------------------');
+  const lines: string[] = [];
+
+  lines.push('');
+  lines.push('📊 PH-Road Safety IG Daily Metrics');
+  lines.push('---------------------------------');
   if (gitChange.selectedBranch) {
-    console.log(`Compared against branch: ${gitChange.selectedBranch}`);
-    if (gitChange.selectedBranchLastCommitPretty) console.log(`Last branch compared commit: ${gitChange.selectedBranchLastCommitPretty}`);
+    lines.push(`Compared against branch: ${gitChange.selectedBranch}`);
+    if (gitChange.selectedBranchLastCommitPretty) lines.push(`Last branch compared commit: ${gitChange.selectedBranchLastCommitPretty}`);
   }
-  if (gitChange.baseCommitPretty) console.log(`Base commit (yesterday tip): ${gitChange.baseCommitPretty}`);
-  console.log('');
-  console.log(`Profiles: ${now.profiles} ${delta.profiles}`.trim());
-  console.log(`Extensions: ${now.extensions} ${delta.extensions}`.trim());
-  console.log(`ValueSets: ${now.valueSets} ${delta.valueSets}`.trim());
-  console.log(`CodeSystems: ${now.codeSystems} ${delta.codeSystems}`.trim());
-  console.log(`LogicalModels: ${now.logicalModels} ${delta.logicalModels}`.trim());
-  console.log(`Instances: ${now.instances} ${delta.instances}`.trim());
-  console.log('');
-  console.log(`Reused (PH-CORE): ${reusedLine}`);
-  console.log(`Profiles with bindings: ${now.percentProfilesWithBinding}%`);
-  console.log(`Profiles with slicing: ${now.percentProfilesWithSlicing}%`);
-  console.log(`ValueSets:CodeSystems ratio: ${now.ratioValueSetsToCodeSystems}`);
-  console.log('');
+  if (gitChange.baseCommitPretty) lines.push(`Base commit (yesterday tip): ${gitChange.baseCommitPretty}`);
+  lines.push('');
+  lines.push(`Profiles: ${`${now.profiles} ${delta.profiles}`.trim()}`);
+  lines.push(`Extensions: ${`${now.extensions} ${delta.extensions}`.trim()}`);
+  lines.push(`ValueSets: ${`${now.valueSets} ${delta.valueSets}`.trim()}`);
+  lines.push(`CodeSystems: ${`${now.codeSystems} ${delta.codeSystems}`.trim()}`);
+  lines.push(`LogicalModels: ${`${now.logicalModels} ${delta.logicalModels}`.trim()}`);
+  lines.push(`Instances: ${`${now.instances} ${delta.instances}`.trim()}`);
 
-  console.log('💡 GitHub Metrics');
-  console.log(`Issues (open/closed): ${fmtNum(gh.issuesOpen)} / ${fmtNum(gh.issuesClosed)}`);
-  console.log(`PRs (open/merged): ${fmtNum(gh.prsOpen)} / ${fmtNum(gh.prsMerged)}`);
-  console.log(`Branches: ${fmtNum(gh.branches)}`);
-  console.log(`Commits since yesterday: ${fmtNum(gitChange.commitsSinceYesterday)}`);
-  console.log(`Active contributors: ${gh.contributors ? gh.contributors.length : 'n/a'}`);
-  console.log(`Avg commits/PR (recent): ${gh.avgCommitsPerPR != null ? gh.avgCommitsPerPR.toFixed(1) : 'n/a'}`);
-  console.log(`Avg PR turnaround: ${fmtHrs(gh.avgPrTurnaroundHrs)}`);
-  console.log('');
+  const nowInvariantSummary = summarizeAllInvariants(now.invariantsByArtifact);
+  const prevInvariantSummary = prev ? summarizeAllInvariants(prev.invariantsByArtifact) : null;
+  if (nowInvariantSummary.totalUnique > 0) {
+    const invDelta = prevInvariantSummary ? diffDelta(nowInvariantSummary.totalUnique, prevInvariantSummary.totalUnique) : '';
+    const totalText = `${nowInvariantSummary.totalUnique}${invDelta ? ` ${invDelta}` : ''}`.trim();
+    const categoryBreakdown = nowInvariantSummary.categories
+      .filter((cat) => cat.unique > 0)
+      .map((cat) => `${cat.label}: ${cat.unique}`)
+      .join(', ');
+    const breakdownText = categoryBreakdown ? ` (${categoryBreakdown})` : '';
+    lines.push(`Invariants: ${totalText} unique${breakdownText}`);
+  }
+  if (DEBUG_INVARIANTS && now.invariantOrigins) {
+    lines.push('');
+    lines.push('Invariant debug (current run):');
+    for (const [name, locations] of Object.entries(now.invariantOrigins)) {
+      lines.push(`- ${name}`);
+      for (const loc of locations) lines.push(`  - ${loc}`);
+    }
+  }
+  lines.push('');
+  lines.push(`Reused (PH-CORE): ${reusedLine}`);
+  lines.push(`Profiles with bindings: ${now.percentProfilesWithBinding}%`);
+  lines.push(`Profiles with slicing: ${now.percentProfilesWithSlicing}%`);
+  lines.push(`ValueSets:CodeSystems ratio: ${now.ratioValueSetsToCodeSystems}`);
+  lines.push('');
 
-  console.log('🔁 Change Summary');
-  console.log(`- Added: ${gitChange.changedFSH.added.length} FSH`);
-  console.log(`- Modified: ${gitChange.changedFSH.modified.length} FSH`);
-  console.log(`- Deleted: ${gitChange.changedFSH.deleted.length} FSH`);
-  console.log('');
+  lines.push('💡 GitHub Metrics');
+  lines.push(`Issues (open/closed): ${fmtNum(gh.issuesOpen)} / ${fmtNum(gh.issuesClosed)}`);
+  lines.push(`PRs (open/merged): ${fmtNum(gh.prsOpen)} / ${fmtNum(gh.prsMerged)}`);
+  lines.push(`Branches: ${fmtNum(gh.branches)}`);
+  lines.push(`Commits since yesterday: ${fmtNum(gitChange.commitsSinceYesterday)}`);
+  lines.push(`Active contributors: ${gh.contributors ? gh.contributors.length : 'n/a'}`);
+  lines.push(`Avg commits/PR (recent): ${gh.avgCommitsPerPR != null ? gh.avgCommitsPerPR.toFixed(1) : 'n/a'}`);
+  lines.push(`Avg PR turnaround: ${fmtHrs(gh.avgPrTurnaroundHrs)}`);
+  lines.push('');
+
+  lines.push('🔁 Change Summary');
+  lines.push(`- Added: ${gitChange.changedFSH.added.length} FSH`);
+  lines.push(`- Modified: ${gitChange.changedFSH.modified.length} FSH`);
+  lines.push(`- Deleted: ${gitChange.changedFSH.deleted.length} FSH`);
+  lines.push('');
 
   // Orphaned profiles (up to 5)
   const orphanShow = now.orphanedProfiles.slice(0, 5);
   if (orphanShow.length) {
-    console.log('🧭 Orphaned Profiles (up to 5):');
-    for (const n of orphanShow) console.log(`- ${n}`);
-    if (now.orphanedProfiles.length > orphanShow.length) console.log(`- ... and ${now.orphanedProfiles.length - orphanShow.length} more`);
-    console.log('');
+    lines.push('🧭 Orphaned Profiles (up to 5):');
+    for (const n of orphanShow) lines.push(`- ${n}`);
+    if (now.orphanedProfiles.length > orphanShow.length) lines.push(`- ... and ${now.orphanedProfiles.length - orphanShow.length} more`);
+    lines.push('');
   }
 
   // Commits per contributor (last 30 days)
   const entries = Object.entries(commitsPerContributor).sort((a,b) => b[1] - a[1]);
   if (entries.length) {
-    console.log('👥 Commits per contributor (last 30 days):');
-    for (const [name, count] of entries) console.log(`- ${padRight(name, 20)} ${count}`);
-    console.log('');
+    lines.push('👥 Commits per contributor (last 30 days):');
+    for (const [name, count] of entries) lines.push(`- ${padRight(name, 20)} ${count}`);
+    lines.push('');
   }
 
-  console.log(`📈 Avg commits/day (last 7 days): ${avgCommitsPerDay7.toFixed(2)}`);
-  console.log('');
+  lines.push(`📈 Avg commits/day (last 7 days): ${avgCommitsPerDay7.toFixed(2)}`);
+  lines.push('');
+
+  const summary = lines.join('\n');
+  console.log(summary);
+  return summary;
+}
+
+async function appendSummaryLog(summary: string) {
+  try {
+    await fs.mkdir(LOG_DIR, { recursive: true });
+    const timestamp = new Date().toISOString();
+    const sanitized = summary.trimEnd();
+    const entry = `=== ${timestamp} ===\n${sanitized}\n\n`;
+    await fs.appendFile(LOG_FILE, entry);
+  } catch (err: any) {
+    console.error(`[WARN] Failed to write summary log: ${err?.message ?? err}`);
+  }
 }
 
 async function main() {
@@ -772,7 +1017,10 @@ async function main() {
   const commitsPerContributor = await getCommitsPerContributor(30);
   const avgCommitsPerDay7 = await getAverageCommitsPerDay(7);
 
-  printMarkdownSummary(nowMetrics, prevMetrics, ghMetrics, gitChange, commitsPerContributor, avgCommitsPerDay7);
+  const summaryText = printMarkdownSummary(nowMetrics, prevMetrics, ghMetrics, gitChange, commitsPerContributor, avgCommitsPerDay7);
+  await appendSummaryLog(summaryText);
+  const logRelativePath = path.relative(REPO_ROOT, LOG_FILE);
+  console.log(`Summary saved to ${logRelativePath}`);
 
   // Update cache for next run
   if (gitChange.baseCommitYesterday) await cacheWrite('yesterdayMetrics', prevMetrics ?? nowMetrics);

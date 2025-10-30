@@ -26,22 +26,23 @@ Description: "Composition that organises an EMS run report. Sections MUST refere
     procedures 0..*
 * section[workflow].title = "Workflow / Timeline"
 * section[workflow].entry 1..* MS
-* section[workflow].entry only Reference(RSObsDateReceived or RSObsTimeEnroute
-    or RSObsTimeOnScene or RSObsTimeDepartedScene or RSObsTimeHospitalArrival
-    or RSObsTimeStationArrival or RSObsRunReportComments or RSObsVehicleUsed)
+// MDS #62-68 timeline checkpoints, MDS #61 run report comments, MDS #107 vehicle used
+* section[workflow].entry only Reference(RSObsTimelineDateTime or RSObsRunReportComments)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
+// MDS #158-159 injury timestamp, #18 intent, #41 transport accident flag, #118 transport mode, #149 complaint, #155 call source (RSIncidentLocation has no MDS tag)
 * section[incident].entry only Reference(RSObsInjuryDateTime or RSObsInjuryIntent 
     or RSObsTransportVehicularAccident or RSObsModeOfTransport 
     or RSIncidentLocation or RSObsReportedComplaint or RSObsCallSource)
 * section[vitals].title = "Vital signs"
 * section[vitals].entry 0..* 
+// MDS #70, #73, #76-81 vital sign observations
 * section[vitals].entry only Reference(RSObsRespiratoryRate or RSObsPulseRate 
     or RSObsBloodPressure or RSObsBodyTemperature or RSObsGCS 
-    or RSObsRespiratoryRhythm or RSObsBreathSounds or RSObsPulseRhythm 
-    or RSObsPulseQuality or RSObsCyanosis)
+    or RSObsCyanosis)
 * section[clinical].title = "Clinical / Assessment"
 * section[clinical].entry 0..* 
+// MDS #91 clinical remarks (procedures/conditions use non-MDS profiles)
 * section[clinical].entry only Reference(RSObsClinicalRemarks or RSProcedure or RSCondition)
 * section[documents].title = "Documents / Evidence"
 * section[documents].entry 0..* 
@@ -87,25 +88,46 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
 * entry[location].resource only RSIncidentLocation
-* entry[observationDateReceived].resource only RSObsDateReceived
-* entry[observationTimeEnroute].resource only RSObsTimeEnroute
-* entry[observationTimeOnScene].resource only RSObsTimeOnScene
-* entry[observationTimeDeparted].resource only RSObsTimeDepartedScene
-* entry[observationTimeHospitalArrival].resource only RSObsTimeHospitalArrival
-* entry[observationTimeStationArrival].resource only RSObsTimeStationArrival
+// MDS #62 - Date Received
+* entry[observationDateReceived].resource only RSObsTimelineDateTime
+* entry[observationDateReceived].resource.code.coding 0..1
+* entry[observationDateReceived].resource.code.coding = $LNC#30976-5 "Date received Form"
+// MDS #64 - Time Enroute
+* entry[observationTimeEnroute].resource only RSObsTimelineDateTime
+* entry[observationTimeEnroute].resource.code.coding 0..1
+* entry[observationTimeEnroute].resource.code.coding = $LNC#69472-9 "Unit responded [Date and time] Vehicle"
+// MDS #65 - Time On Scene
+* entry[observationTimeOnScene].resource only RSObsTimelineDateTime
+* entry[observationTimeOnScene].resource.code.coding 0..1
+* entry[observationTimeOnScene].resource.code.coding = $SCT#405798008 "Time of arrival of emergency services (observable entity)"
+// MDS #66 - Time Departed Scene
+* entry[observationTimeDeparted].resource only RSObsTimelineDateTime
+* entry[observationTimeDeparted].resource.code.coding 0..1
+* entry[observationTimeDeparted].resource.code.coding = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
+// MDS #67 - Time of Hospital Arrival
+* entry[observationTimeHospitalArrival].resource only RSObsTimelineDateTime
+* entry[observationTimeHospitalArrival].resource.code.coding 0..1
+* entry[observationTimeHospitalArrival].resource.code.coding = $SCT#405799000 "Time of arrival at hospital (observable entity)"
+// MDS #68 - Time of Station Availability
+* entry[observationTimeStationArrival].resource only RSObsTimelineDateTime
+* entry[observationTimeStationArrival].resource.code.coding 0..1
+* entry[observationTimeStationArrival].resource.code.coding = $LNC#11288-8 "Arrival time documented"
+// MDS #70, #73, #76-81 - Vital signs cluster
 * entry[observationVitals].resource only RSObsRespiratoryRate 
-    or RSObsPulseRate or RSObsBloodPressure or RSObsBodyTemperature
-    or RSObsRespiratoryRhythm or RSObsBreathSounds or RSObsPulseRhythm
-    or RSObsPulseQuality or RSObsCyanosis
+    or RSObsPulseRate or RSObsBloodPressure 
+    or RSObsBodyTemperature or RSObsCyanosis
+// MDS #83-86 - Glasgow Coma Scale
 * entry[observationGCS].resource only RSObsGCS
+// MDS #149 - Reported Complaint
 * entry[observationReportedComplaint].resource only RSObsReportedComplaint
+// MDS #155 - Call Source
 * entry[observationCallSource].resource only RSObsCallSource
 * entry contains
-    observationVehicleUsed 0..1 and
     observationRunReportComments 0..1 and
     observationClinicalRemarks 0..1
-* entry[observationVehicleUsed].resource only RSObsVehicleUsed
+// MDS #61 - Run Report Comments
 * entry[observationRunReportComments].resource only RSObsRunReportComments
+// MDS #91 - Clinical Remarks
 * entry[observationClinicalRemarks].resource only RSObsClinicalRemarks
 * entry[document].resource only RSDocumentReference
 * entry[task].resource only RSTask
@@ -149,25 +171,28 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
 * section[encounter].entry only Reference(RSEncounter)
 * section[clinical].title = "Clinical"
 * section[clinical].entry 0..* 
+// MDS #175 alcohol concentration, #230-231 other risk factors, #108 condition status,
+// MDS #53 outcome, #116-117 arrival status, #45 transfer flag, #46 referral flag
 * section[clinical].entry only Reference(RSCondition 
     or RSObsBloodAlcoholConcentration 
     or RSObsOtherRiskFactors 
     or RSObsConditionOfPatient 
-    or RSObsOutcomeAtRelease
-    or RSObsOutcomeAtDischarge
+    or RSObsOutcome
     or RSObsStatusOnArrival
-    or RSObsStatusOnArrivalAliveDetail
     or RSObsTransferredFromFacility
     or RSObsReferredByFacility
     )
 * section[injuries].title = "Injuries"
 * section[injuries].entry 0..* 
+// MDS #109, #176-217 injury detail observations (multiple injuries, extent, abrasions, burns, fractures, wounds)
 * section[injuries].entry only Reference(
-    RSObsMultipleInjuries or RSObsExtentOfInjury or RSObsAbrasion or RSObsAvulsion
+    RSObsMultipleInjuries or RSObsAbrasion or RSObsAvulsion
     or RSObsNatureBurns or RSObsECBurns or RSObsConcussion or RSObsContusion or RSObsFracture
     or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury)
 * section[incident].title = "Incident"
 * section[incident].entry 0..* 
+// MDS #158-159 injury time, #18 intent, #41 transport, #118 transport mode, #163-168 collision context,
+// MDS #156-157 counts, #170 place, #173 activity, #232-233 safety accessories, #111 triage, #114 urgency (RSIncidentLocation has no MDS tag)
 * section[incident].entry only Reference(RSObsInjuryDateTime 
     or RSObsInjuryIntent
     or RSObsTransportVehicularAccident
@@ -177,7 +202,6 @@ Description: "Composition that organises a facility (ONEISS) submission. Section
     or RSObsOtherVehicleInvolved
     or RSObsPositionOfPatient
     or RSObsHowManyVehicles
-    or RSObsHowManyPatients
     or RSObsPlaceOfOccurrence
     or RSObsActivityAtIncident
     or RSObsSafetyAccessories
@@ -208,7 +232,6 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     conditionInitial 0..1 and
     conditionFinal 0..1 and
     observationInjuries 0..* and
-    observationExtentOfInjury 0..1 and
     observationClinical 0..* and
     observationIncident 0..* and
     observationExternalCause 0..* and
@@ -224,24 +247,29 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 // Strengthen slices to specific condition profiles
 * entry[conditionInitial].resource only RSConditionInitialImpression
 * entry[conditionFinal].resource only RSConditionFinalDiagnosis
+// MDS #230-231 risk factors, #108 condition status, #53 outcome, #116-117 arrival status, #175 alcohol test
 * entry[observationClinical].resource only RSObsOtherRiskFactors 
-    or RSObsConditionOfPatient or RSObsOutcomeAtRelease 
-    or RSObsOutcomeAtDischarge or RSObsStatusOnArrival 
-    or RSObsStatusOnArrivalAliveDetail or RSObsBloodAlcoholConcentration
+    or RSObsConditionOfPatient or RSObsOutcome or RSObsStatusOnArrival 
+    or RSObsBloodAlcoholConcentration
+// MDS #158-159 injury time, #18 intent, #41 transport, #118 transport mode,
+// MDS #163-168 collision context, #156-157 counts, #170 place, #173 activity,
+// MDS #232-233 safety accessories, #111 triage, #114 urgency
 * entry[observationIncident].resource only RSObsInjuryDateTime 
     or RSObsInjuryIntent or RSObsTransportVehicularAccident 
     or RSObsModeOfTransport 
     or RSObsCollisionVsNonCollision or RSObsPatientsVehicle 
     or RSObsOtherVehicleInvolved or RSObsPositionOfPatient 
-    or RSObsHowManyVehicles or RSObsHowManyPatients 
+    or RSObsHowManyVehicles 
     or RSObsPlaceOfOccurrence or RSObsActivityAtIncident
     or RSObsSafetyAccessories
     or RSObsTriagePriority or RSObsUrgencyLevel
+// MDS #19-43 external cause flags and details
 * entry[observationExternalCause].resource only RSObsECBitesStings
     or RSObsECBurns or RSObsECChemical or RSObsECSharpObject
     or RSObsECDrowning or RSObsECForcesOfNature or RSObsECFall
     or RSObsECFirecracker or RSObsECGunshot or RSObsECHangingStrangulation
     or RSObsECMaulingAssault or RSObsECSexualAssault or RSObsECOther
+// MDS #109, #176-217 injury catalogue (multiple injuries, abrasions, burns, fractures, wounds)
 * entry[observationInjuries].resource only RSObsMultipleInjuries
     or RSObsAbrasion or RSObsAvulsion
     or RSObsNatureBurns or RSObsECBurns
@@ -249,8 +277,10 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
     or RSObsFracture
     or RSObsOpenWound or RSObsTraumaticAmputation or RSObsOtherInjury
 // Post-crash concepts have been moved to a separate bundle (see RSBundlePostCrash)
-* entry[observationExtentOfInjury].resource only RSObsExtentOfInjury
+// MDS #109 - Extent of Injury severity band
+// MDS #45 - Transferred from facility
 * entry[observationTransferredFromFacility].resource only RSObsTransferredFromFacility
+// MDS #46 - Referred by facility
 * entry[observationReferredByFacility].resource only RSObsReferredByFacility
 * entry[document].resource only RSDocumentReference
 * entry[serviceRequest].resource only RSServiceRequest
@@ -285,6 +315,7 @@ Description: "Composition that organises a Post‑Crash submission. Sections ref
 * section[patient].entry only Reference(RSPatient)
 * section[incident].title = "Post‑Crash Incident"
 * section[incident].entry 0..* 
+// MDS #218 collision type, #219 investigator presence, #227 CCTV availability
 * section[incident].entry only Reference(
     RSObsCollisionType or RSObsPresenceTrafficInvestigator 
     or RSObsCCTVAvailable)
@@ -314,6 +345,7 @@ Description: "Document Bundle for Post‑Crash investigation submission. The fir
 * entry[composition].resource only RSCompositionPostCrash
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
+// MDS #218 collision type, #219 investigator presence, #227 CCTV availability
 * entry[observationPostCrash].resource only RSObsCollisionType 
     or RSObsPresenceTrafficInvestigator 
     or RSObsCCTVAvailable

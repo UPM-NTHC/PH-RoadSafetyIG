@@ -9,7 +9,7 @@ name: PH-RoadSafetyIG
 title: DRAFT PH Road Safety Implementation Guide
 description: FHIR IG for road safety and health information in the Philippines
 status: draft # draft | active | retired | unknown
-version: 0.1.9
+version: 0.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -27,7 +27,49 @@ contact:
 
 # Dependencies (IG.dependsOn) — reference PH‑CORE draft branch on build.fhir.org
 dependencies:
-  example.fhir.ph.core: current #dev if local ~/.fhir/ | #current if build.fhir.org/
+  example.fhir.ph.core: current 
+#dev if local ~/.fhir/ | #current if build.fhir.org/
+
+parameters:
+  special-url:
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-EncounterParticipantRole"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-FractureType"
+    - "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Activity"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Burns"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofBurns"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Eyes"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Verbal"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GeneralDisposition"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ModeofTransport"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Quality"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PR-Rhythm"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PlaceofOccurrence"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PositionofPatient"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Pupils"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-BreathSounds"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RR-Rhythm"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Sex"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-StatusifAlive"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage"
+    - "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TypeofPatient"
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -70,10 +112,6 @@ dependencies:
 # http://build.fhir.org/codesystem-guide-parameter-code.html
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
-#
-# parameters:
-#   excludettl: true
-#   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
