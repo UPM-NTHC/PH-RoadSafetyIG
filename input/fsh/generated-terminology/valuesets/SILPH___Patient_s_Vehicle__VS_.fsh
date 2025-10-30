@@ -2,14 +2,14 @@ ValueSet: SILPH___Patient_s_Vehicle__VS_
 Id: SILPH-PatientsVehicleVS
 Title: "SILPH - Patient's Vehicle (VS)"
 Description: "SILPH Value Set for Patient's Vehicle"
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2025-10-29T07:12:41.388+00:00"
+* ^meta.versionId = "5"
+* ^meta.lastUpdated = "2025-10-30T00:34:06.184+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle"
 * ^version = "0.1.2"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:324e46b4-3e2a-4c67-9767-f5463cf6e024"
-* ^expansion.timestamp = "2025-10-29T07:12:46+00:00"
+* ^expansion.identifier = "urn:uuid:2c401834-2a91-4213-a403-8f70b34f2f1c"
+* ^expansion.timestamp = "2025-10-29T23:49:36+00:00"
 * ^expansion.total = 11
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
@@ -19,22 +19,18 @@ Description: "SILPH Value Set for Patient's Vehicle"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "version"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en-US,en;q=0.9
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-PatientsVehicle|0.1.2"
-* ^expansion.parameter[+].name = "includeDesignations"
-* ^expansion.parameter[=].valueBoolean = false
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #257518000
-* ^expansion.contains[=].display = "Pedestrian"
+* ^expansion.contains[=].display = "None (Pedestrian)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #71783008
-* ^expansion.contains[=].display = "Automobile"
+* ^expansion.contains[=].display = "Car"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #224832000
@@ -42,7 +38,7 @@ Description: "SILPH Value Set for Patient's Vehicle"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #224830008
-* ^expansion.contains[=].display = "Coach"
+* ^expansion.contains[=].display = "Bus"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #90748009
@@ -58,7 +54,7 @@ Description: "SILPH Value Set for Patient's Vehicle"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #74964007
-* ^expansion.contains[=].display = "Other"
+* ^expansion.contains[=].display = "Others"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #261665006
