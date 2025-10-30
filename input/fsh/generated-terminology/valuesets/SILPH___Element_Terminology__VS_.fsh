@@ -2,15 +2,15 @@ ValueSet: SILPH___Element_Terminology__VS_
 Id: SILPH-ElementTerminologyVS
 Title: "SILPH - Element Terminology (VS)"
 Description: "SILPH Value Set for Element Terminology"
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2025-10-29T06:57:32.782+00:00"
+* ^meta.versionId = "4"
+* ^meta.lastUpdated = "2025-10-30T00:34:00.984+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:3dd6f1df-4154-431f-b739-7c68590ff6b3"
-* ^expansion.timestamp = "2025-10-29T06:57:38+00:00"
-* ^expansion.total = 47
+* ^expansion.identifier = "urn:uuid:81c2a382-b060-45c2-a691-1753f17a10e4"
+* ^expansion.timestamp = "2025-10-29T23:49:35+00:00"
+* ^expansion.total = 45
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "version"
@@ -23,14 +23,10 @@ Description: "SILPH Value Set for Element Terminology"
 * ^expansion.parameter[=].valueUri = "http://loinc.org|2.78"
 * ^expansion.parameter[+].name = "version"
 * ^expansion.parameter[=].valueUri = "http://loinc.org|2.78"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en-US,en;q=0.9
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology|0.1.0"
-* ^expansion.parameter[+].name = "includeDesignations"
-* ^expansion.parameter[=].valueBoolean = false
 * ^expansion.contains[0].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^expansion.contains[=].version = "0.2.0"
 * ^expansion.contains[=].code = #INJURYFRONT
@@ -65,14 +61,6 @@ Description: "SILPH Value Set for Element Terminology"
 * ^expansion.contains[=].display = "Place of Occurrence"
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
 * ^expansion.contains[=].version = "0.2.0"
-* ^expansion.contains[=].code = #ER_OUTPATIENT_OUTCOME
-* ^expansion.contains[=].display = "Outcome"
-* ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
-* ^expansion.contains[=].version = "0.2.0"
-* ^expansion.contains[=].code = #INPATIENT_OUTCOME
-* ^expansion.contains[=].display = "Outcome"
-* ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
-* ^expansion.contains[=].version = "0.2.0"
 * ^expansion.contains[=].code = #COLLISIONTYPE
 * ^expansion.contains[=].display = "Collision Type"
 * ^expansion.contains[+].system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem"
@@ -82,99 +70,99 @@ Description: "SILPH Value Set for Element Terminology"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #609328004
-* ^expansion.contains[=].display = "Allergic disposition"
+* ^expansion.contains[=].display = "Allergic disposition (finding)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #386725007
-* ^expansion.contains[=].display = "Body temperature"
+* ^expansion.contains[=].display = "Body temperature (observable entity)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #6942003
-* ^expansion.contains[=].display = "Level of consciousness"
+* ^expansion.contains[=].display = "Level of consciousness (observable entity)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #3415004
-* ^expansion.contains[=].display = "Cyanosis"
+* ^expansion.contains[=].display = "Cyanosis (finding)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #55607006
-* ^expansion.contains[=].display = "Problem"
+* ^expansion.contains[=].display = "Problem (finding)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #116154003
-* ^expansion.contains[=].display = "Patient"
+* ^expansion.contains[=].display = "Patient (person)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #399963005
-* ^expansion.contains[=].display = "Abrasion"
+* ^expansion.contains[=].display = "Abrasion (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #125666000
-* ^expansion.contains[=].display = "Burn"
+* ^expansion.contains[=].display = "Burn (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #46541008
-* ^expansion.contains[=].display = "Second degree burn injury"
+* ^expansion.contains[=].display = "Second degree burn injury (morphologic abnormality)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #110030002
-* ^expansion.contains[=].display = "Concussion injury of brain"
+* ^expansion.contains[=].display = "Concussion injury of brain (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #125667009
-* ^expansion.contains[=].display = "Contusion"
+* ^expansion.contains[=].display = "Contusion (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #125605004
-* ^expansion.contains[=].display = "Fracture of bone"
+* ^expansion.contains[=].display = "Fracture of bone (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #423125000
-* ^expansion.contains[=].display = "Closed fracture"
+* ^expansion.contains[=].display = "Closed fracture of bone (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #125643001
-* ^expansion.contains[=].display = "Open wound"
+* ^expansion.contains[=].display = "Open wound (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #417163006
-* ^expansion.contains[=].display = "Traumatic or non-traumatic injury"
+* ^expansion.contains[=].display = "Traumatic or non-traumatic injury (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #242651001
-* ^expansion.contains[=].display = "Injury caused by animal"
+* ^expansion.contains[=].display = "Injury caused by animal (disorder)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #1912002
-* ^expansion.contains[=].display = "Fall"
+* ^expansion.contains[=].display = "Fall (event)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #63409001
-* ^expansion.contains[=].display = "Struck by firearm discharge"
+* ^expansion.contains[=].display = "Struck by firearm discharge (event)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #52684005
-* ^expansion.contains[=].display = "Assault"
+* ^expansion.contains[=].display = "Assault (event)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #248110007
-* ^expansion.contains[=].display = "Sexual assault"
+* ^expansion.contains[=].display = "Sexual assault (event)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #773760007
-* ^expansion.contains[=].display = "Traumatic event"
+* ^expansion.contains[=].display = "Traumatic event (event)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #260870009
-* ^expansion.contains[=].display = "Priority"
+* ^expansion.contains[=].display = "Priority (attribute)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #364703007
-* ^expansion.contains[=].display = "Employment detail"
+* ^expansion.contains[=].display = "Employment detail (observable entity)"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/999991001000101/version/20240701"
 * ^expansion.contains[=].code = #218247007
-* ^expansion.contains[=].display = "Late effect of motor vehicle accident"
+* ^expansion.contains[=].display = "Late effect of motor vehicle accident (disorder)"
 * ^expansion.contains[+].system = "http://loinc.org"
 * ^expansion.contains[=].version = "2.78"
 * ^expansion.contains[=].code = #30976-5

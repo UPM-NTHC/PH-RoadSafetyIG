@@ -2,14 +2,14 @@ ValueSet: SILPH___Other_Vehicle_in_Collision__VS_
 Id: SILPH-OtherVehicleVS
 Title: "SILPH - Other Vehicle in Collision (VS)"
 Description: "SILPH Value Set for Other Vehicle in Collision Accident"
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2025-10-29T07:13:27.876+00:00"
+* ^meta.versionId = "5"
+* ^meta.lastUpdated = "2025-10-30T00:34:05.382+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle"
 * ^version = "0.1.2"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:7aafa3e3-efd3-4960-9d2a-674d533ab337"
-* ^expansion.timestamp = "2025-10-29T07:13:32+00:00"
+* ^expansion.identifier = "urn:uuid:c5bbec0b-eacb-4ddd-9f25-6fa6343511ca"
+* ^expansion.timestamp = "2025-10-29T23:49:36+00:00"
 * ^expansion.total = 11
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
@@ -19,14 +19,10 @@ Description: "SILPH Value Set for Other Vehicle in Collision Accident"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "version"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en-US,en;q=0.9
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/CodeSystem|0.2.0"
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle|0.1.2"
-* ^expansion.parameter[+].name = "includeDesignations"
-* ^expansion.parameter[=].valueBoolean = false
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #260413007
@@ -34,7 +30,7 @@ Description: "SILPH Value Set for Other Vehicle in Collision Accident"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #71783008
-* ^expansion.contains[=].display = "Automobile"
+* ^expansion.contains[=].display = "Car"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #224832000
@@ -42,7 +38,7 @@ Description: "SILPH Value Set for Other Vehicle in Collision Accident"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #224830008
-* ^expansion.contains[=].display = "Coach"
+* ^expansion.contains[=].display = "Bus"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #90748009
@@ -58,7 +54,7 @@ Description: "SILPH Value Set for Other Vehicle in Collision Accident"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #74964007
-* ^expansion.contains[=].display = "Other"
+* ^expansion.contains[=].display = "Others"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
 * ^expansion.contains[=].code = #261665006

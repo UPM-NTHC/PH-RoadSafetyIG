@@ -2,27 +2,23 @@ ValueSet: SILPH___ICD10_External_Cause_of_Injury__VS_
 Id: SILPH-ICD10ExternalCauseofInjuryVS
 Title: "SILPH - ICD10 External Cause of Injury (VS)"
 Description: "SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes from Chapter XX - V01-Y36, Y85-Y87, and Y89)"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2025-10-29T10:13:39.129+00:00"
+* ^meta.versionId = "3"
+* ^meta.lastUpdated = "2025-10-30T00:34:02.692+00:00"
 * ^url = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10ExternalCauseofInjury"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:e813a3dc-9f36-42b8-afd1-54a2f94d184f"
-* ^expansion.timestamp = "2025-10-29T10:13:44+00:00"
+* ^expansion.identifier = "urn:uuid:e6141d19-b0ce-4ebd-9ecf-decbf1f32870"
+* ^expansion.timestamp = "2025-10-29T23:49:38+00:00"
 * ^expansion.total = 604
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/sid/icd102019en|2019-covid-expanded"
 * ^expansion.parameter[+].name = "version"
 * ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/sid/icd102019en|2019-covid-expanded"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en-US,en;q=0.9
 * ^expansion.parameter[+].name = "warning-experimental"
 * ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/sid/icd102019en|2019-covid-expanded"
 * ^expansion.parameter[+].name = "warning-draft"
 * ^expansion.parameter[=].valueUri = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10ExternalCauseofInjury|0.1.0"
-* ^expansion.parameter[+].name = "includeDesignations"
-* ^expansion.parameter[=].valueBoolean = false
 * ^expansion.contains[0].system = "http://hl7.org/fhir/sid/icd102019en"
 * ^expansion.contains[=].code = #V01
 * ^expansion.contains[=].display = "Pedestrian injured in collision with pedal cycle"
