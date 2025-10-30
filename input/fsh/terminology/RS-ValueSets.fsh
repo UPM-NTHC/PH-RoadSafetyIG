@@ -81,33 +81,33 @@ Description: "SILPH Value Set for EMS encounter participant roles documented on 
 * $SCT#159738005 "Ambulanceman (occupation)"
 * $SCT#22515006 "Medical assistant (occupation)"
 * $ParticipationType#RCV "receiver" 
-* ^expansion.identifier = "urn:uuid:3f2e4cbb-5b60-4d85-a15f-3ba8d0f2f7b2"
-* ^expansion.timestamp = "2024-06-08T00:00:05.000+00:00"
-* ^expansion.total = 5
-* ^expansion.parameter[0].name = "used-codesystem"
-* ^expansion.parameter[=].valueUri = "http://loinc.org"
-* ^expansion.parameter[+].name = "used-codesystem"
-* ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
-* ^expansion.parameter[+].name = "displayLanguage"
-* ^expansion.parameter[=].valueCode = #en
-* ^expansion.parameter[+].name = "used-codesystem"
-* ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/"
-* ^expansion.contains[0].system = "http://loinc.org"
-* ^expansion.contains[=].code = #90123-1
-* ^expansion.contains[=].display = "Team Leader"
-* ^expansion.contains[+].system = "http://snomed.info/sct"
-* ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
-* ^expansion.contains[=].code = #397897005
-* ^expansion.contains[=].display = "Treatment Officer"
-* ^expansion.contains[+].system = "http://snomed.info/sct"
-* ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
-* ^expansion.contains[=].code = #159738005
-* ^expansion.contains[=].display = "Transport Officer"
-* ^expansion.contains[+].system = "http://snomed.info/sct"
-* ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
-* ^expansion.contains[=].code = #22515006
-* ^expansion.contains[=].display = "Assistant"
-* ^expansion.contains[+].system = "http://hl7.org/fhir"
-* ^expansion.contains[=].version = "5.0.0"
-* ^expansion.contains[=].code = #RCV
-* ^expansion.contains[=].display = "receiver"
+// * ^expansion.identifier = "urn:uuid:3f2e4cbb-5b60-4d85-a15f-3ba8d0f2f7b2"
+// * ^expansion.timestamp = "2024-06-08T00:00:05.000+00:00"
+// * ^expansion.total = 5
+// * ^expansion.parameter[0].name = "used-codesystem"
+// * ^expansion.parameter[=].valueUri = "http://loinc.org"
+// * ^expansion.parameter[+].name = "used-codesystem"
+// * ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
+// * ^expansion.parameter[+].name = "displayLanguage"
+// * ^expansion.parameter[=].valueCode = #en
+// * ^expansion.parameter[+].name = "used-codesystem"
+// * ^expansion.parameter[=].valueUri = "http://hl7.org/fhir/"
+// * ^expansion.contains[0].system = "http://loinc.org"
+// * ^expansion.contains[=].code = #90123-1
+// * ^expansion.contains[=].display = "Team Leader"
+// * ^expansion.contains[+].system = "http://snomed.info/sct"
+// * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
+// * ^expansion.contains[=].code = #397897005
+// * ^expansion.contains[=].display = "Treatment Officer"
+// * ^expansion.contains[+].system = "http://snomed.info/sct"
+// * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
+// * ^expansion.contains[=].code = #159738005
+// * ^expansion.contains[=].display = "Transport Officer"
+// * ^expansion.contains[+].system = "http://snomed.info/sct"
+// * ^expansion.contains[=].version = "http://snomed.info/sct/900000000000207008/version/20241001"
+// * ^expansion.contains[=].code = #22515006
+// * ^expansion.contains[=].display = "Assistant"
+// * ^expansion.contains[+].system = "http://hl7.org/fhir"
+// * ^expansion.contains[=].version = "5.0.0"
+// * ^expansion.contains[=].code = #RCV
+// * ^expansion.contains[=].display = "receiver"
