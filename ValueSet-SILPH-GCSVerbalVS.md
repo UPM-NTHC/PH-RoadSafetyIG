@@ -54,7 +54,7 @@ SILPH Value Set for GCS Verbal Score
   "name" : "SILPH___GCS___Verbal__VS_",
   "title" : "SILPH - GCS - Verbal (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T03:27:09+00:00",
+  "date" : "2025-10-30T05:39:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

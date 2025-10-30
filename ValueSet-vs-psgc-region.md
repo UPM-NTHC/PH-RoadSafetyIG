@@ -26,7 +26,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -54,7 +54,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "VSPSGCRegion",
   "title" : "RS VS - PSGC Region",
   "status" : "draft",
-  "date" : "2025-10-30T03:27:09+00:00",
+  "date" : "2025-10-30T05:39:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

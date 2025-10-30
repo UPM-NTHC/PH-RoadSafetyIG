@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fi
   "name" : "RSObsECFirecracker",
   "title" : "RS Observation - External Cause: Firecracker",
   "status" : "draft",
-  "date" : "2025-10-30T03:27:09+00:00",
+  "date" : "2025-10-30T05:39:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
