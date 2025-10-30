@@ -8,6 +8,7 @@ Description: "Patient demographics and identifiers for RS reporting; reuse PH-Co
 * identifier 0..* MS
 * identifier ^short = "Identifiers"
 
+* obeys rs-name-given-order
 * name 1..* MS
 * name ^short = "Patient name"
 
@@ -30,7 +31,6 @@ Description: "Patient demographics and identifiers for RS reporting; reuse PH-Co
 * address ^short = "Addresses"
 * address.line 0..* MS
 * address.extension 0..* MS
-
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -57,6 +57,43 @@ Patient.name.given:FirstName - the discriminator
 https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient|0.2.0 
 does not have fixed value, binding or existence assertions```
 */
+
+// Example Instance, this was developed with FSH School, 
+// so I had to explicitly use urls to easily move around without Alias issues.
+Instance: rs-example-patient
+InstanceOf: Patient
+Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>RS-Example Patient: Thomas Niccolo Filamor Reyes, male, born 1990-01-01. Address: 123 Sampaloc Street, Manila 1008, PH. Phone: +63-912-345-6789; Email: thomas.reyes@example.com</div>"
+* meta.profile = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"
+* active = true
+* name.use = #official
+* name.family = "Reyes"
+* name.given[0] = "Thomas Niccolo"
+* name.given[1] = "Filamor"
+* gender = #male
+* birthDate = "1990-01-01"
+* address.use = #home
+* address.line = "123 Sampaloc Street"
+* address.city = "Manila"
+* address.postalCode = "1008"
+* address.country = "PH"
+* address.extension[+].url = "urn://example.com/ph-core/fhir/StructureDefinition/province"
+* address.extension[=].valueCoding = urn://example.com/ph-core/fhir/CodeSystem/PSGC#0402100000 "Cavite"
+* address.extension[+].url = "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality"
+* address.extension[=].valueCoding = urn://example.com/ph-core/fhir/CodeSystem/PSGC#1380100000 "City of Caloocan"
+* address.extension[+].url = "urn://example.com/ph-core/fhir/StructureDefinition/barangay"
+* address.extension[=].valueCoding = urn://example.com/ph-core/fhir/CodeSystem/PSGC#1380100001 "Barangay 1"
+* extension.url = "urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people"
+* extension.valueBoolean = false
+* telecom[0].system = #phone
+* telecom[=].value = "+63-912-345-6789"
+* telecom[=].use = #mobile
+* telecom[+].system = #email
+* telecom[=].value = "thomas.reyes@example.com"
+* telecom[=].use = #home
+
+
 
 /* Patient.extension:sex vs HL7 Administrative gender - For decision point
     PH-core uses Administrative Gender - http://hl7.org/fhir/ValueSet/administrative-gender

@@ -1,7 +1,7 @@
 Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
 Alias: $ICD11 = http://id.who.int/icd/release/11/mms
-Alias: $PSGC = https://psa.gov.ph/classification/psgc
+Alias: $PSGC = urn://example.com/ph-core/fhir/CodeSystem/PSGC
 Alias: $SILPH = http://www.roadsafetyph.doh.gov.ph/CodeSystem|1
 
 Alias: $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
