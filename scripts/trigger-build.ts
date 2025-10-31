@@ -83,6 +83,9 @@ function postWebhook(urlString: string, body: any): Promise<{ statusCode: number
 
 async function main() {
   try {
+    const args = process.argv.slice(2);
+    const autoMode = args.includes('-auto') || args.includes('--auto');
+
     // Ensure we are in a git repo
     let remoteUrl = '';
     try {
@@ -116,16 +119,31 @@ async function main() {
     }
 
     console.log(`Remote repository: ${owner}/${repo}`);
-    console.log('Remote branches:');
-    branches.forEach((b, i) => console.log(`  [${i + 1}] ${b}`));
+    let branch = '';
+    if (autoMode) {
+      const currentBranch = runGit('git rev-parse --abbrev-ref HEAD').trim();
+      if (!currentBranch || currentBranch === 'HEAD') {
+        console.error('Unable to determine the current branch (detached HEAD?). Use interactive mode instead.');
+        process.exit(1);
+      }
+      if (!branches.includes(currentBranch)) {
+        console.error(`Branch "${currentBranch}" not found on origin. Push it first or use interactive selection.`);
+        process.exit(1);
+      }
+      branch = currentBranch;
+      console.log(`Auto mode enabled. Triggering branch: ${branch}`);
+    } else {
+      console.log('Remote branches:');
+      branches.forEach((b, i) => console.log(`  [${i + 1}] ${b}`));
 
-    const pickRaw = await prompt(`Select branch to trigger (1-${branches.length}) [1]: `);
-    const pickIdx = (pickRaw.trim() === '') ? 0 : (parseInt(pickRaw.trim(), 10) - 1);
-    if (isNaN(pickIdx) || pickIdx < 0 || pickIdx >= branches.length) {
-      console.error('Invalid selection');
-      process.exit(1);
+      const pickRaw = await prompt(`Select branch to trigger (1-${branches.length}) [1]: `);
+      const pickIdx = (pickRaw.trim() === '') ? 0 : (parseInt(pickRaw.trim(), 10) - 1);
+      if (isNaN(pickIdx) || pickIdx < 0 || pickIdx >= branches.length) {
+        console.error('Invalid selection');
+        process.exit(1);
+      }
+      branch = branches[pickIdx];
     }
-    const branch = branches[pickIdx];
 
     // Ask for the webhook endpoint to POST to. Default is the auto-ig-builder function used in docs.
     const defaultWebhook = 'https://us-central1-fhir-org-starter-project.cloudfunctions.net/ig-commit-trigger';
