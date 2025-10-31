@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -1458,6 +1458,1158 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-blood-pressure"
+      },
+      "name" : "Blood Pressure",
+      "description" : "Blood pressure measurement captured on scene.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-body-temperature"
+      },
+      "name" : "Body Temperature",
+      "description" : "Temperature measured upon hospital arrival.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-call-source"
+      },
+      "name" : "Call Source",
+      "description" : "Source of the EMS activation.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-call-source"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-clinical-remarks"
+      },
+      "name" : "Clinical Remarks",
+      "description" : "Clinical notes summarizing care provided.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/rs-bundle-example-documentreference"
+      },
+      "name" : "Crash Scene Photo",
+      "description" : "Scene photograph captured by EMS crew to support referral.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/rs-bundle-example-incident-location"
+      },
+      "name" : "Crash Site",
+      "description" : "Intersection incident location recorded during EMS response.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-cyanosis"
+      },
+      "name" : "Cyanosis",
+      "description" : "Cyanosis assessment recorded during transport.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-injury-datetime"
+      },
+      "name" : "Date/Time of Injury",
+      "description" : "Timestamp of collision reported by onsite responders.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/rs-bundle-example-encounter"
+      },
+      "name" : "EMS Encounter for Reyes",
+      "description" : "Encounter covering EMS transport from crash scene to DOH Central ER on 2025-10-31.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/rs-bundle-example-bundle-ems"
+      },
+      "name" : "EMS Referral Bundle – Reyes",
+      "description" : "Document bundle delivering the EMS referral for Thomas Reyes with all supporting resources embedded.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/rs-bundle-example-composition-ems"
+      },
+      "name" : "EMS Run Report – Reyes 2025-10-31",
+      "description" : "Composition summarizing the EMS referral story for Thomas Reyes.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/rs-bundle-example-practitioner-teamlead"
+      },
+      "name" : "EMS Team Lead",
+      "description" : "Team lead coordinating transport for the EMS episode.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Claim"
+      }],
+      "reference" : {
+        "reference" : "Claim/rs-bundle-example-claim"
+      },
+      "name" : "EMS Transport Claim",
+      "description" : "Billing record for EMS referral transport.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/rs-practitioner-teamlead"
+      },
+      "name" : "Example EMS Team Leader",
+      "description" : "Response team leader overseeing transport in rs-example-encounter.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/rs-example-incident-location"
+      },
+      "name" : "Example Incident Location",
+      "description" : "Road traffic collision site at EDSA and Ayala Avenue used in rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/rs-organization-single-ex"
+      },
+      "name" : "Example PH Core Organization",
+      "description" : "An example instance of a PH Core Organization conforming to the Philippine localization profile.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/rs-example-service-location-er"
+      },
+      "name" : "Example Receiving Facility Location",
+      "description" : "Emergency room location for Department of Health - Central Office receiving rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/rs-practitioner-receivedby"
+      },
+      "name" : "Example Receiving Practitioner",
+      "description" : "Practitioner who received rs-example-patient at the DOH Central ER.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/rs-example-allergy"
+      },
+      "name" : "Example RS Allergy",
+      "description" : "Peanut allergy record for rs-example-patient with active clinical status and unconfirmed verification.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Claim"
+      }],
+      "reference" : {
+        "reference" : "Claim/rs-example-claim"
+      },
+      "name" : "Example RS Claim",
+      "description" : "Claim for rs-example-patient with PHP 1500 reimbursement submitted by rs-organization-single-ex.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Coverage"
+      }],
+      "reference" : {
+        "reference" : "Coverage/rs-example-coverage"
+      },
+      "name" : "Example RS Coverage",
+      "description" : "Coverage held by rs-example-patient with rs-organization-single-ex as payor for 2025 policy year.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/rs-example-documentreference"
+      },
+      "name" : "Example RS DocumentReference",
+      "description" : "Crash scene photograph for rs-example-patient captured during rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/rs-example-encounter"
+      },
+      "name" : "Example RS ER Encounter",
+      "description" : "Emergency encounter for rs-example-patient documenting transport from incident scene to DOH Central ER on 2025-10-31.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "HealthcareService"
+      }],
+      "reference" : {
+        "reference" : "HealthcareService/rs-example-healthcare-service"
+      },
+      "name" : "Example RS HealthcareService",
+      "description" : "Emergency medical service offered by rs-organization-single-ex for rs-example-encounter support.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/rs-example-incident-location-basic"
+      },
+      "name" : "Example RS Incident Location",
+      "description" : "Collision site with barangay address and GPS coordinates for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/rs-example-medication-statement"
+      },
+      "name" : "Example RS MedicationStatement",
+      "description" : "Active metformin therapy documented for rs-example-patient prior to the incident.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-abrasion"
+      },
+      "name" : "Example RS Observation - Abrasion",
+      "description" : "Abrasion details documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-activity-at-incident"
+      },
+      "name" : "Example RS Observation - Activity at Incident",
+      "description" : "Activity at time of incident for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-avulsion"
+      },
+      "name" : "Example RS Observation - Avulsion",
+      "description" : "Avulsion injury captured for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-base"
+      },
+      "name" : "Example RS Observation - Base",
+      "description" : "Generic observation captured during rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-blood-alcohol"
+      },
+      "name" : "Example RS Observation - Blood Alcohol Concentration",
+      "description" : "Blood alcohol concentration measured for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-alcohol"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-blood-pressure"
+      },
+      "name" : "Example RS Observation - Blood Pressure",
+      "description" : "Blood pressure measurement with systolic and diastolic components.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-body-temperature"
+      },
+      "name" : "Example RS Observation - Body Temperature",
+      "description" : "Body temperature documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-call-source"
+      },
+      "name" : "Example RS Observation - Call Source",
+      "description" : "Call source narrative captured for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-call-source"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-cctv"
+      },
+      "name" : "Example RS Observation - CCTV Available",
+      "description" : "CCTV availability captured for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-clinical-remarks"
+      },
+      "name" : "Example RS Observation - Clinical Remarks",
+      "description" : "Clinical remarks documented for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-collision-type"
+      },
+      "name" : "Example RS Observation - Collision Type",
+      "description" : "Collision type recorded for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-collision-vs-noncollision"
+      },
+      "name" : "Example RS Observation - Collision vs Non-Collision",
+      "description" : "Collision classification captured for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-concussion"
+      },
+      "name" : "Example RS Observation - Concussion",
+      "description" : "Concussion findings documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-condition"
+      },
+      "name" : "Example RS Observation - Condition of Patient",
+      "description" : "Overall patient condition captured during rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-contusion"
+      },
+      "name" : "Example RS Observation - Contusion",
+      "description" : "Contusion details captured for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-contusion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-cyanosis"
+      },
+      "name" : "Example RS Observation - Cyanosis",
+      "description" : "Cyanosis assessment documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-injury-datetime"
+      },
+      "name" : "Example RS Observation - Date/Time of Injury",
+      "description" : "Date and time of injury logged for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-bites"
+      },
+      "name" : "Example RS Observation - External Cause: Bites/Stings",
+      "description" : "Bite/sting external cause flagged for rs-example-patient with specified animal agent.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-bites-stings"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-burns"
+      },
+      "name" : "Example RS Observation - External Cause: Burns",
+      "description" : "Burns external cause captured for rs-example-patient with fire agent specified.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-chemical"
+      },
+      "name" : "Example RS Observation - External Cause: Chemical/Substance",
+      "description" : "Chemical exposure flagged for rs-example-patient with specific substance noted.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-chemical"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-drowning"
+      },
+      "name" : "Example RS Observation - External Cause: Drowning",
+      "description" : "Drowning external cause recorded for rs-example-patient with body of water specified.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-drowning"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-fall"
+      },
+      "name" : "Example RS Observation - External Cause: Fall",
+      "description" : "Fall external cause flagged for rs-example-patient with specifics noted.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-fall"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-firecracker"
+      },
+      "name" : "Example RS Observation - External Cause: Firecracker",
+      "description" : "Firecracker-related external cause identified for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-firecracker"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-forces"
+      },
+      "name" : "Example RS Observation - External Cause: Forces of Nature",
+      "description" : "Exposure to forces of nature captured for rs-example-patient during the incident.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-gunshot"
+      },
+      "name" : "Example RS Observation - External Cause: Gunshot",
+      "description" : "Gunshot external cause flagged for rs-example-patient with weapon context provided.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-hanging"
+      },
+      "name" : "Example RS Observation - External Cause: Hanging/Strangulation",
+      "description" : "Hanging/strangulation risk identified during rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-hanging-strangulation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-mauling"
+      },
+      "name" : "Example RS Observation - External Cause: Mauling/Assault",
+      "description" : "Assault noted as contributing external cause for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-other"
+      },
+      "name" : "Example RS Observation - External Cause: Other",
+      "description" : "Other external cause documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-sexual-assault"
+      },
+      "name" : "Example RS Observation - External Cause: Sexual Assault",
+      "description" : "Sexual assault recorded in rs-example-encounter context.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-ec-sharp"
+      },
+      "name" : "Example RS Observation - External Cause: Sharp Object",
+      "description" : "Sharp object injury flagged for rs-example-patient with object detail provided.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-fracture"
+      },
+      "name" : "Example RS Observation - Fracture",
+      "description" : "Fracture classification recorded for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-gcs"
+      },
+      "name" : "Example RS Observation - Glasgow Coma Scale",
+      "description" : "GCS subscores and total recorded for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-how-many-vehicles"
+      },
+      "name" : "Example RS Observation - How Many Vehicles",
+      "description" : "Count of vehicles involved in rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-how-many-vehicles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-injury-intent"
+      },
+      "name" : "Example RS Observation - Injury Intent",
+      "description" : "Injury intent recorded as unintentional for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-level-consciousness"
+      },
+      "name" : "Example RS Observation - Level of Consciousness",
+      "description" : "AVPU assessment recorded as alert for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-mode-transport"
+      },
+      "name" : "Example RS Observation - Mode of Transport",
+      "description" : "Mode of transport to facility documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-multiple-injuries"
+      },
+      "name" : "Example RS Observation - Multiple Injuries",
+      "description" : "Multiple injuries flag recorded for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-nature-burns"
+      },
+      "name" : "Example RS Observation - Nature of Burns",
+      "description" : "Burn severity captured for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-nature-burns"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-open-wound"
+      },
+      "name" : "Example RS Observation - Open Wound",
+      "description" : "Open wound details noted for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-other-injury"
+      },
+      "name" : "Example RS Observation - Other Injury",
+      "description" : "Other specified injury captured for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-risk-factors"
+      },
+      "name" : "Example RS Observation - Other Risk Factors",
+      "description" : "Risk factors noted during rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-other-vehicle"
+      },
+      "name" : "Example RS Observation - Other Vehicle Involved",
+      "description" : "Other vehicle involved in collision recorded for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-outcome"
+      },
+      "name" : "Example RS Observation - Outcome",
+      "description" : "Outcome at release documented using SILPH Outcome value set.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-patients-vehicle"
+      },
+      "name" : "Example RS Observation - Patient's Vehicle",
+      "description" : "Vehicle type used by rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-place-of-occurrence"
+      },
+      "name" : "Example RS Observation - Place of Occurrence",
+      "description" : "Place of occurrence documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-position-of-patient"
+      },
+      "name" : "Example RS Observation - Position of Patient",
+      "description" : "Patient position in vehicle captured for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-traffic-investigator"
+      },
+      "name" : "Example RS Observation - Presence of Traffic Investigator",
+      "description" : "Traffic investigator presence noted for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-urgency"
+      },
+      "name" : "Example RS Observation - Priority Level",
+      "description" : "Computer-aided dispatch urgency captured for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-urgency"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-pulse-rate"
+      },
+      "name" : "Example RS Observation - Pulse Rate",
+      "description" : "Pulse rate with rhythm and quality documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-pupils"
+      },
+      "name" : "Example RS Observation - Pupils",
+      "description" : "Pupil assessment recorded as PEARL for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pupils"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-referred"
+      },
+      "name" : "Example RS Observation - Referred By Facility",
+      "description" : "Referral from neighboring facility noted for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-referred-by-facility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-reported-complaint"
+      },
+      "name" : "Example RS Observation - Reported Complaint",
+      "description" : "Reported complaint captured from caller for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-respiratory-rate"
+      },
+      "name" : "Example RS Observation - Respiratory Rate",
+      "description" : "Respiratory rate with rhythm and breath sound components for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-runreport-comments"
+      },
+      "name" : "Example RS Observation - Run Report Comments",
+      "description" : "Free-text run report comments associated with rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-safety-accessories"
+      },
+      "name" : "Example RS Observation - Safety Accessories",
+      "description" : "Safety accessory usage recorded for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-status-on-arrival"
+      },
+      "name" : "Example RS Observation - Status on Arrival",
+      "description" : "Patient status upon reaching facility documented for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-timeline"
+      },
+      "name" : "Example RS Observation - Timeline Date/Time",
+      "description" : "Transport timeline milestone recorded for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-transferred"
+      },
+      "name" : "Example RS Observation - Transferred From Facility",
+      "description" : "Patient transferred from another facility prior to rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transferred-from-facility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-transport-accident"
+      },
+      "name" : "Example RS Observation - Transport/Vehicular Accident",
+      "description" : "Transport accident flag asserted for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-traumatic-amputation"
+      },
+      "name" : "Example RS Observation - Traumatic Amputation",
+      "description" : "Traumatic amputation documented for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-example-observation-triage"
+      },
+      "name" : "Example RS Observation - Triage Priority",
+      "description" : "Triage priority assigned at scene for rs-example-patient.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-triage-priority"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/rs-example-patient"
+      },
+      "name" : "Example RS Patient",
+      "description" : "Adult male patient referenced across RS examples with Manila home address and telecom details.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/rs-example-procedure"
+      },
+      "name" : "Example RS Procedure",
+      "description" : "Post-crash counselling documented for rs-example-patient during rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/rs-example-procedure-transport"
+      },
+      "name" : "Example RS Procedure - Transport Coordination",
+      "description" : "Transport coordination with receiving hospital recorded for rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/rs-example-service-location-basic"
+      },
+      "name" : "Example RS Service Location",
+      "description" : "Emergency room location for rs-organization-single-ex used in rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/rs-example-service-request"
+      },
+      "name" : "Example RS ServiceRequest",
+      "description" : "Refusal-to-admit notification raised for rs-example-patient during rs-example-encounter.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/rs-example-task"
+      },
+      "name" : "Example RS Task",
+      "description" : "Tracking refusal-to-admit follow-up for rs-example-patient including coordination timelines.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/rs-practitioner-treatment"
+      },
+      "name" : "Example Treatment Officer",
+      "description" : "EMS treatment officer providing care during rs-example-encounter.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-gcs"
+      },
+      "name" : "Glasgow Coma Scale",
+      "description" : "Neurologic assessment performed in ambulance.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-injury-intent"
+      },
+      "name" : "Injury Intent",
+      "description" : "Intent recorded as unintentional vehicular crash.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
       }],
       "reference" : {
@@ -1466,6 +2618,126 @@
       "name" : "MDSRoadSafety Logical Model to FHIR Mapping",
       "description" : "Maps elements from the logical model to FHIR R4 resources. Generated by scripts/generate-conceptmap.js",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-mode-transport"
+      },
+      "name" : "Mode of Transport",
+      "description" : "Ambulance transport to receiving facility.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Coverage"
+      }],
+      "reference" : {
+        "reference" : "Coverage/rs-bundle-example-coverage"
+      },
+      "name" : "Patient Coverage",
+      "description" : "Coverage record supporting claim for EMS transport.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/rs-bundle-example-procedure-education"
+      },
+      "name" : "Patient Education",
+      "description" : "Post-crash counseling delivered by EMS team lead.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/rs-bundle-example-patient"
+      },
+      "name" : "Patient Thomas Reyes",
+      "description" : "Adult male patient transported following a vehicular collision.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-pulse-rate"
+      },
+      "name" : "Pulse Rate",
+      "description" : "Pulse assessment recorded during transport.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/rs-bundle-example-practitioner-receiver"
+      },
+      "name" : "Receiving ER Physician",
+      "description" : "Physician coordinating acceptance at DOH Central ER.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/rs-bundle-example-service-location"
+      },
+      "name" : "Receiving Facility Location",
+      "description" : "Emergency room of DOH Central where the patient was referred.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/rs-bundle-example-service-request"
+      },
+      "name" : "Refusal-to-Admit Signal",
+      "description" : "Service request tracking refusal-to-admit escalation.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-reported-complaint"
+      },
+      "name" : "Reported Complaint",
+      "description" : "Caller-reported complaint captured during dispatch.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-respiratory-rate"
+      },
+      "name" : "Respiratory Rate",
+      "description" : "Respiratory assessment recorded en route.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate"
     },
     {
       "extension" : [{
@@ -1646,6 +2918,18 @@
       "name" : "RS DocumentReference (Evidence)",
       "description" : "Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files).",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/rs-bundle-example-organization"
+      },
+      "name" : "RS EMS Provider Organization",
+      "description" : "MetroCare EMS providing transport for the referral episode.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"
     },
     {
       "extension" : [{
@@ -2454,6 +3738,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/RSOneissQuestionnaire"
+      },
+      "name" : "RS ONEISS Questionnaire",
+      "description" : "Structured Data Capture questionnaire for the DOH ONEISS Patient Injury form. Captures patient demographics, encounter information, clinical findings, incident context, injuries, and financial data mapped to RS profiles, supporting SDC $extract.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2497,6 +3793,18 @@
       },
       "name" : "RS Procedure - Transport Coordination",
       "description" : "Procedure record indicating whether transport coordination with the receiving hospital was done.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/RSRunReportQuestionnaire"
+      },
+      "name" : "RS Run Report Questionnaire",
+      "description" : "Structured Data Capture questionnaire for the MMDA run report form. Captures workflow, incident, clinical, and vital sign data aligned with RS profiles so SDC $extract can populate Encounter, Observation, Location, Procedure, and ServiceRequest resources.",
       "exampleBoolean" : false
     },
     {
@@ -2586,6 +3894,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-runreport-comments"
+      },
+      "name" : "Run Report Comments",
+      "description" : "Narrative remarks recorded by EMS crew.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2637,7 +3957,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/SILPH-EncounterParticipantRoleVS"
+        "reference" : "ValueSet/a451137e-f7ff-4fb3-af03-e2bae290ea22"
       },
       "name" : "SILPH - Encounter Participant Role (VS)",
       "description" : "SILPH Value Set for EMS encounter participant roles documented on the run report.",
@@ -3074,6 +4394,114 @@
       "name" : "SILPH Road Safety Local Codes",
       "description" : "Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-timeline-time-on-scene"
+      },
+      "name" : "Timeline - Arrived On Scene",
+      "description" : "Crew arrival at collision site.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-timeline-time-station"
+      },
+      "name" : "Timeline - Back In Service",
+      "description" : "Unit available after drop-off and debrief.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-timeline-date-received"
+      },
+      "name" : "Timeline - Date Received",
+      "description" : "Call received by dispatch for the incident.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-timeline-time-departed"
+      },
+      "name" : "Timeline - Departed Scene",
+      "description" : "Transport initiated with patient on board.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-timeline-time-hospital"
+      },
+      "name" : "Timeline - Hospital Arrival",
+      "description" : "Arrival at DOH Central ER bay.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-timeline-time-enroute"
+      },
+      "name" : "Timeline - Unit En Route",
+      "description" : "EMS unit dispatched toward the scene.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/rs-bundle-example-task"
+      },
+      "name" : "Track Refusal Escalation",
+      "description" : "Task monitoring refusal-to-admit follow-up until hospital acceptance confirmed.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-bundle-example-observation-transport-accident"
+      },
+      "name" : "Transport Accident Flag",
+      "description" : "Transport accident identified as precipitating factor.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/rs-bundle-example-procedure-transport"
+      },
+      "name" : "Transport Coordination",
+      "description" : "Call confirming bed availability at DOH Central ER.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination"
     }],
     "page" : {
       "extension" : [{

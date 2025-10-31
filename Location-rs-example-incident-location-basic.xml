@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="rs-example-incident-location-basic"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Incident location recorded at the corner of EDSA and Ayala Avenue, Makati City with coordinates 14.5513, 121.0225.</div>
+  </text>
+  <name value="EDSA &amp; Ayala Intersection"/>
+  <address>
+    <use value="work"/>
+    <line value="Epifanio de los Santos Ave"/>
+    <city value="Makati City"/>
+    <state value="NCR"/>
+    <postalCode value="1223"/>
+    <country value="PH"/>
+  </address>
+  <position>
+    <longitude value="121.0225"/>
+    <latitude value="14.5513"/>
+  </position>
+</Location>

@@ -31,6 +31,15 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "SILPH___Cyanosis__VS_",
+      "title" : "SILPH - Cyanosis (VS)",
+      "description" : "SILPH Value Set for Presence of Cyanosis",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ElementTerminology",
       "version" : "0.2.0",
       "status" : "draft",
@@ -387,22 +396,13 @@
       ]
     },
     {
-      "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "SILPH___Cyanosis__VS_",
-      "title" : "SILPH - Cyanosis (VS)",
-      "description" : "SILPH Value Set for Presence of Cyanosis",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-barangay",
       "version" : "0.2.0",
       "status" : "draft",
       "name" : "VSPSGCBarangay",
       "title" : "RS VS - PSGC Barangay",
       "description" : "PSGC Barangay codes (managed externally).",
-      "systems" : ["https://psa.gov.ph/classification/psgc"]
+      "systems" : ["urn://example.com/ph-core/fhir/CodeSystem/PSGC"]
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-city",
@@ -411,7 +411,7 @@
       "name" : "VSPSGCCityMunicipality",
       "title" : "RS VS - PSGC City/Municipality",
       "description" : "PSGC City/Municipality codes (managed externally).",
-      "systems" : ["https://psa.gov.ph/classification/psgc"]
+      "systems" : ["urn://example.com/ph-core/fhir/CodeSystem/PSGC"]
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-province",
@@ -420,7 +420,7 @@
       "name" : "VSPSGCProvince",
       "title" : "RS VS - PSGC Province",
       "description" : "PSGC Province codes (managed externally).",
-      "systems" : ["https://psa.gov.ph/classification/psgc"]
+      "systems" : ["urn://example.com/ph-core/fhir/CodeSystem/PSGC"]
     },
     {
       "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-region",
@@ -429,7 +429,7 @@
       "name" : "VSPSGCRegion",
       "title" : "RS VS - PSGC Region",
       "description" : "PSGC Region codes (managed externally).",
-      "systems" : ["https://psa.gov.ph/classification/psgc"]
+      "systems" : ["urn://example.com/ph-core/fhir/CodeSystem/PSGC"]
     }
   ]
 }

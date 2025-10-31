@@ -1,0 +1,182 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-example-encounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-encounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example RS Encounter for rs-example-patient covering an ER visit on 2025-10-31 following a vehicular incident.</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "Ambulance RS-Unit-02 (Type II van)" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "Back-up Ambulance RS-Unit-05 (Type I)" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "AN" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://www.roadsafetyph.doh.gov.ph/identifier/incident"^^xsd:anyURI ;
+       fhir:l <http://www.roadsafetyph.doh.gov.ph/identifier/incident>
+     ] ;
+     fhir:value [ fhir:v "INC-2025-0007" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:722248002 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+         fhir:code [ fhir:v "722248002" ] ;
+         fhir:display [ fhir:v "Patient hospital visit number (observable entity)" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"^^xsd:anyURI ;
+       fhir:l <http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case>
+     ] ;
+     fhir:value [ fhir:v "HCN-2025-0459" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     a loinc:LA10268-3 ;
+     fhir:system [
+       fhir:v "http://loinc.org"^^xsd:anyURI ;
+       fhir:l <http://loinc.org>
+     ] ;
+     fhir:code [ fhir:v "LA10268-3" ] ;
+     fhir:display [ fhir:v "ER" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-example-patient" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+         ] ;
+         fhir:code [ fhir:v "REF" ] ;
+         fhir:display [ fhir:v "referrer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-practitioner-receivedby> ;
+       fhir:reference [ fhir:v "Practitioner/rs-practitioner-receivedby" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         a loinc:90123-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "90123-1" ] ;
+         fhir:display [ fhir:v "Response team leader name" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-practitioner-teamlead> ;
+       fhir:reference [ fhir:v "Practitioner/rs-practitioner-teamlead" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         a sct:397897005 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
+         fhir:code [ fhir:v "397897005" ] ;
+         fhir:display [ fhir:v "Paramedic (occupation)" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-practitioner-treatment> ;
+       fhir:reference [ fhir:v "Practitioner/rs-practitioner-treatment" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-10-31T13:45:00+08:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-10-31T16:30:00+08:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:hospitalization [
+     fhir:origin [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-organization-single-ex> ;
+       fhir:reference [ fhir:v "Organization/rs-organization-single-ex" ]
+     ] ;
+     fhir:destination [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/rs-example-service-location-er> ;
+       fhir:reference [ fhir:v "Location/rs-example-service-location-er" ]
+     ] ;
+     fhir:dischargeDisposition [
+       fhir:coding ( [
+         a sct:19712007 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "19712007" ] ;
+         fhir:display [ fhir:v "Transferred to another facility/hospital" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/rs-example-incident-location> ;
+       fhir:reference [ fhir:v "Location/rs-example-incident-location" ]
+     ]
+  ] [
+     fhir:location [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/rs-example-service-location-er> ;
+       fhir:reference [ fhir:v "Location/rs-example-service-location-er" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-organization-single-ex> ;
+     fhir:reference [ fhir:v "Organization/rs-organization-single-ex" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

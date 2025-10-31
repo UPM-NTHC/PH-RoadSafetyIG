@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/rs-example-incident-location-basic> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-incident-location-basic"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Incident location recorded at the corner of EDSA and Ayala Avenue, Makati City with coordinates 14.5513, 121.0225.</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:name [ fhir:v "EDSA & Ayala Intersection"] ; # 
+  fhir:address [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [ fhir:v "Epifanio de los Santos Ave" ] ) ;
+     fhir:city [ fhir:v "Makati City" ] ;
+     fhir:state [ fhir:v "NCR" ] ;
+     fhir:postalCode [ fhir:v "1223" ] ;
+     fhir:country [ fhir:v "PH" ]
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v 121.0225 ] ;
+     fhir:latitude [ fhir:v 14.5513 ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

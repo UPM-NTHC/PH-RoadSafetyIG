@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Task/rs-bundle-example-task> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-bundle-example-task"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task rs-bundle-example-task</b></p><a name=\"rs-bundle-example-task\"> </a><a name=\"hcrs-bundle-example-task\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-task.html\">RS Task</a></p></div><p><b>status</b>: In Progress</p><p><b>intent</b>: plan</p><p><b>focus</b>: <a href=\"ServiceRequest-rs-bundle-example-service-request.html\">ServiceRequest </a></p><p><b>for</b>: <a href=\"Patient-rs-bundle-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>executionPeriod</b>: 2025-10-31 15:48:00+0800 --&gt; 2025-10-31 16:15:00+0800</p><p><b>owner</b>: <a href=\"Practitioner-rs-bundle-example-practitioner-teamlead.html\">Practitioner Joel Rivera (official)</a></p><p><b>note</b>: </p><blockquote><div><p>Coordinated ambulance standby until ER confirmed acceptance.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:focus [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ServiceRequest/rs-bundle-example-service-request> ;
+     fhir:reference [ fhir:v "ServiceRequest/rs-bundle-example-service-request" ]
+  ] ; # 
+  fhir:for [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-bundle-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-bundle-example-patient" ]
+  ] ; # 
+  fhir:executionPeriod [
+     fhir:start [ fhir:v "2025-10-31T15:48:00+08:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-10-31T16:15:00+08:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:owner [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-bundle-example-practitioner-teamlead> ;
+     fhir:reference [ fhir:v "Practitioner/rs-bundle-example-practitioner-teamlead" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Coordinated ambulance standby until ER confirmed acceptance." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

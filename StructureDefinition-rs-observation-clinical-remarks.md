@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsClinicalRemarks |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsClinicalRemarks |
 
  
 Clinical remarks/notes. 
@@ -18,6 +18,7 @@ Clinical remarks/notes.
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [Observation/rs-bundle-example-observation-clinical-remarks](Observation-rs-bundle-example-observation-clinical-remarks.md) and [Observation/rs-example-observation-clinical-remarks](Observation-rs-example-observation-clinical-remarks.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-clinical-remarks)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-clini
   "name" : "RSObsClinicalRemarks",
   "title" : "RS Observation - Clinical Remarks",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

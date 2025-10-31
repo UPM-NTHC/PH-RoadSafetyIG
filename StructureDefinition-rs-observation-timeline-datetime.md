@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsTimelineDateTime |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsTimelineDateTime |
 
  
 Dispatch and transport timeline events capturing a precise date/time. 
@@ -18,6 +18,7 @@ Dispatch and transport timeline events capturing a precise date/time.
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [Observation/rs-bundle-example-timeline-date-received](Observation-rs-bundle-example-timeline-date-received.md), [Observation/rs-bundle-example-timeline-time-departed](Observation-rs-bundle-example-timeline-time-departed.md), [Observation/rs-bundle-example-timeline-time-enroute](Observation-rs-bundle-example-timeline-time-enroute.md), [Observation/rs-bundle-example-timeline-time-hospital](Observation-rs-bundle-example-timeline-time-hospital.md)...Show 3 more,[Observation/rs-bundle-example-timeline-time-on-scene](Observation-rs-bundle-example-timeline-time-on-scene.md),[Observation/rs-bundle-example-timeline-time-station](Observation-rs-bundle-example-timeline-time-station.md)and[Observation/rs-example-observation-timeline](Observation-rs-example-observation-timeline.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-timeline-datetime)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineDateTime",
   "title" : "RS Observation - Timeline Date/Time",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

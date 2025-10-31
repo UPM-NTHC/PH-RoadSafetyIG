@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSOrganization |
+| Draft as of 2025-10-31 | *Computable Name*:RSOrganization |
 
  
 Organization profile for EMS providers and receiving facilities involved in RS encounters. 
@@ -17,6 +17,7 @@ Organization profile for EMS providers and receiving facilities involved in RS e
 **Usages:**
 
 * Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md), [RS HealthcareService](StructureDefinition-rs-healthcare-service.md) and [RS ServiceRequest](StructureDefinition-rs-service-request.md)
+* Examples for this Profile: [MetroCare EMS](Organization-rs-bundle-example-organization.md) and [Department of Health - Central Office](Organization-rs-organization-single-ex.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-organization)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
   "name" : "RSOrganization",
   "title" : "RS Organization",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

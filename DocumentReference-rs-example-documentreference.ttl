@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/DocumentReference/rs-example-documentreference> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-documentreference"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:18748-4 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "18748-4" ] ;
+       fhir:display [ fhir:v "Document image" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-example-patient" ]
+  ] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "image/jpeg" ] ;
+       fhir:url [
+         fhir:v "https://example.org/fhir/Binary/rs-crash-photo"^^xsd:anyURI ;
+         fhir:l <https://example.org/fhir/Binary/rs-crash-photo>
+       ] ;
+       fhir:title [ fhir:v "Crash scene photograph" ]
+     ] ;
+     fhir:format [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/formatcodes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/formatcodes>
+       ] ;
+       fhir:code [ fhir:v "urn:ihe:pcc:dsr:2016" ]
+     ]
+  ] ) ; # 
+  fhir:context [
+     fhir:encounter ( [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-example-encounter> ;
+       fhir:reference [ fhir:v "Encounter/rs-example-encounter" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

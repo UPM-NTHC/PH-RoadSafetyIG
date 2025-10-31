@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Triage | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:SILPH___Triage__VS_ |
+| Draft as of 2025-10-31 | *Computable Name*:SILPH___Triage__VS_ |
 
  
 SILPH Value Set for Triage at Scene 
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [RS ONEISS Questionnaire](Questionnaire-RSOneissQuestionnaire.md)
 
 ### Logical Definition (CLD)
 
@@ -56,7 +56,7 @@ This value set contains 5 concepts
   "name" : "SILPH___Triage__VS_",
   "title" : "SILPH - Triage (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

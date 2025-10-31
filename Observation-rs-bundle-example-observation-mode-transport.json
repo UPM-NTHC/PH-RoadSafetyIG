@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Observation",
+  "id" : "rs-bundle-example-observation-mode-transport",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-bundle-example-observation-mode-transport</b></p><a name=\"rs-bundle-example-observation-mode-transport\"> </a><a name=\"hcrs-bundle-example-observation-mode-transport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-mode-of-transport.html\">RS Observation - Mode of Transport to Facility</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 74286-6}\">Transport mode to hospital [NTDS]</span></p><p><b>subject</b>: <a href=\"Patient-rs-bundle-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>effective</b>: 2025-10-31 15:24:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 49122002}\">Ambulance</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "74286-6",
+      "display" : "Transport mode to hospital [NTDS]"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/rs-bundle-example-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/rs-bundle-example-encounter"
+  },
+  "effectiveDateTime" : "2025-10-31T15:24:00+08:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "code" : "49122002",
+      "display" : "Ambulance"
+    }]
+  }
+}

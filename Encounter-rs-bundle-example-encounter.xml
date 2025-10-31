@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="rs-bundle-example-encounter"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter rs-bundle-example-encounter</b></p><a name="rs-bundle-example-encounter"> </a><a name="hcrs-bundle-example-encounter"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-encounter.html">RS Encounter</a></p></div><p><b>identifier</b>: Incident number/INC-2025-0102, Patient hospital visit number (observable entity)/HCN-2025-1120</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="https://loinc.org/LA10268-3">LOINC: LA10268-3</a> (ER)</p><p><b>subject</b>: <a href="Patient-rs-bundle-example-patient.html">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes:{http://loinc.org 90123-1}">Response team leader name</span></p><p><b>individual</b>: <a href="Practitioner-rs-bundle-example-practitioner-teamlead.html">Practitioner Joel Rivera (official)</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType REF}">referrer</span></p><p><b>individual</b>: <a href="Practitioner-rs-bundle-example-practitioner-receiver.html">Practitioner Maria Cristina Santos (official)</a></p></blockquote><p><b>period</b>: 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Destination</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-rs-bundle-example-service-location.html">Location DOH Central ER</a></td></tr></table><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Location-rs-bundle-example-incident-location.html">Location EDSA corner Ayala Ave</a></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Location-rs-bundle-example-service-location.html">Location DOH Central ER</a></p></blockquote><p><b>serviceProvider</b>: <a href="Organization-rs-bundle-example-organization.html">Organization MetroCare EMS</a></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://www.roadsafetyph.doh.gov.ph/CodeSystem/identifier-type"/>
+        <code value="incident-number"/>
+        <display value="Incident number"/>
+      </coding>
+    </type>
+    <system value="http://www.roadsafetyph.doh.gov.ph/identifier/incident"/>
+    <value value="INC-2025-0102"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+        <code value="722248002"/>
+        <display value="Patient hospital visit number (observable entity)"/>
+      </coding>
+    </type>
+    <system value="http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"/>
+    <value value="HCN-2025-1120"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://loinc.org"/>
+    <code value="LA10268-3"/>
+    <display value="ER"/>
+  </class>
+  <subject>
+    <reference value="Patient/rs-bundle-example-patient"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="90123-1"/>
+        <display value="Response team leader name"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/rs-bundle-example-practitioner-teamlead"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="REF"/>
+        <display value="referrer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/rs-bundle-example-practitioner-receiver"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2025-10-31T15:18:00+08:00"/>
+    <end value="2025-10-31T16:30:00+08:00"/>
+  </period>
+  <hospitalization>
+    <destination>
+      <reference value="Location/rs-bundle-example-service-location"/>
+    </destination>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/rs-bundle-example-incident-location"/>
+    </location>
+  </location>
+  <location>
+    <location>
+      <reference value="Location/rs-bundle-example-service-location"/>
+    </location>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/rs-bundle-example-organization"/>
+  </serviceProvider>
+</Encounter>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsPlaceOfOccurrence |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsPlaceOfOccurrence |
 
  
 Place type where injury occurred; name can be carried in note when applicable. 
@@ -18,6 +18,7 @@ Place type where injury occurred; name can be carried in note when applicable.
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Examples for this Profile: [Observation/rs-example-observation-place-of-occurrence](Observation-rs-example-observation-place-of-occurrence.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-place-of-occurrence)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-place
   "name" : "RSObsPlaceOfOccurrence",
   "title" : "RS Observation - Place of Occurrence",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

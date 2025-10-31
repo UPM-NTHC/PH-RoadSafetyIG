@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="rs-example-healthcare-service"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Emergency medical response service provided by Department of Health - Central Office.</div>
+  </text>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/rs-organization-single-ex"/>
+  </providedBy>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+      <code value="1150"/>
+      <display value="Emergency response service"/>
+    </coding>
+  </type>
+  <location>
+    <reference value="Location/rs-example-service-location-basic"/>
+  </location>
+  <name value="DOH Emergency Medical Response"/>
+</HealthcareService>

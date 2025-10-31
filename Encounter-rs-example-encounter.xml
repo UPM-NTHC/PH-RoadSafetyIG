@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="rs-example-encounter"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Example RS Encounter for rs-example-patient covering an ER visit on 2025-10-31 following a vehicular incident.</div>
+  </text>
+  <extension url="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used">
+    <valueCodeableConcept>
+      <text value="Ambulance RS-Unit-02 (Type II van)"/>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used">
+    <valueCodeableConcept>
+      <text value="Back-up Ambulance RS-Unit-05 (Type I)"/>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="AN"/>
+      </coding>
+    </type>
+    <system value="http://www.roadsafetyph.doh.gov.ph/identifier/incident"/>
+    <value value="INC-2025-0007"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+        <code value="722248002"/>
+        <display value="Patient hospital visit number (observable entity)"/>
+      </coding>
+    </type>
+    <system value="http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"/>
+    <value value="HCN-2025-0459"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://loinc.org"/>
+    <code value="LA10268-3"/>
+    <display value="ER"/>
+  </class>
+  <subject>
+    <reference value="Patient/rs-example-patient"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="REF"/>
+        <display value="referrer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/rs-practitioner-receivedby"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="90123-1"/>
+        <display value="Response team leader name"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/rs-practitioner-teamlead"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+        <code value="397897005"/>
+        <display value="Paramedic (occupation)"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/rs-practitioner-treatment"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2025-10-31T13:45:00+08:00"/>
+    <end value="2025-10-31T16:30:00+08:00"/>
+  </period>
+  <hospitalization>
+    <origin>
+      <reference value="Organization/rs-organization-single-ex"/>
+    </origin>
+    <destination>
+      <reference value="Location/rs-example-service-location-er"/>
+    </destination>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="19712007"/>
+        <display value="Transferred to another facility/hospital"/>
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/rs-example-incident-location"/>
+    </location>
+  </location>
+  <location>
+    <location>
+      <reference value="Location/rs-example-service-location-er"/>
+    </location>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/rs-organization-single-ex"/>
+  </serviceProvider>
+</Encounter>

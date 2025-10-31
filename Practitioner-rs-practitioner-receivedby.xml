@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="rs-practitioner-receivedby"/>
+  <meta>
+    <profile value="urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Dr. Maria Cristina Santos received the patient at the DOH Central ER.</div>
+  </text>
+  <name>
+    <use value="official"/>
+    <family value="Santos"/>
+    <given value="Maria Cristina"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+63-917-555-0101"/>
+  </telecom>
+</Practitioner>

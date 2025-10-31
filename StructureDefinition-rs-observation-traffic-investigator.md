@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsPresenceTrafficInvestigator |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsPresenceTrafficInvestigator |
 
  
 Boolean presence/absence of traffic investigator. 
@@ -18,6 +18,7 @@ Boolean presence/absence of traffic investigator.
 
 * Use this Profile: [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
 * Refer to this Profile: [RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
+* Examples for this Profile: [Observation/rs-example-observation-traffic-investigator](Observation-rs-example-observation-traffic-investigator.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-traffic-investigator)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traff
   "name" : "RSObsPresenceTrafficInvestigator",
   "title" : "RS Observation - Presence of Traffic Investigator",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traff
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "159679004",
           "display" : "Traffic warden (occupation)"
         }

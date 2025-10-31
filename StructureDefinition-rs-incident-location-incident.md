@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSIncidentLocation |
+| Draft as of 2025-10-31 | *Computable Name*:RSIncidentLocation |
 
  
 Location of incident; supports PH-Core address extensions and geolocation. 
@@ -18,16 +18,16 @@ Location of incident; supports PH-Core address extensions and geolocation.
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [RS Encounter](StructureDefinition-rs-encounter.md) and [RS HealthcareService](StructureDefinition-rs-healthcare-service.md)
-
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-incident-location-incident)
+* Examples for this Profile: [EDSA corner Ayala Ave](Location-rs-bundle-example-incident-location.md), [EDSA & Ayala Intersection/a> and[EDSA - Ayala Southbound](Location-rs-example-incident-location.md)
+You can also check for[usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-incident-location-incident)
 
 ### Formal Views of Profile Content
 
- [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
-
+[Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions).
  
+Other representations of profile:[CSV](StructureDefinition-rs-incident-location-incident.csv),[Excel](StructureDefinition-rs-incident-location-incident.xlsx),[Schematron](StructureDefinition-rs-incident-location-incident.sch)
 
-Other representations of profile: [CSV](StructureDefinition-rs-incident-location-incident.csv), [Excel](StructureDefinition-rs-incident-location-incident.xlsx), [Schematron](StructureDefinition-rs-incident-location-incident.sch) 
+](Location-rs-example-incident-location-basic.md)
 
 
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-incident-location
   "name" : "RSIncidentLocation",
   "title" : "RS Incident Location",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

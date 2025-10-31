@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSProcedure |
+| Draft as of 2025-10-31 | *Computable Name*:RSProcedure |
 
  
 Procedures related to incident/report (e.g., coordination with receiving hospital, psychosocial support, interventions). 
@@ -19,6 +19,7 @@ Procedures related to incident/report (e.g., coordination with receiving hospita
 * Derived from this Profile: [RS Procedure - Transport Coordination](StructureDefinition-rs-procedure-transport-coordination.md)
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [Procedure/rs-bundle-example-procedure-education](Procedure-rs-bundle-example-procedure-education.md) and [Procedure/rs-example-procedure](Procedure-rs-example-procedure.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-procedure)
 
@@ -43,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure.csv), [
   "name" : "RSProcedure",
   "title" : "RS Procedure",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:SILPH___Risk_Factors__VS_ |
+| Draft as of 2025-10-31 | *Computable Name*:SILPH___Risk_Factors__VS_ |
 
  
 SILPH Value Set for Risk Factors 
@@ -17,6 +17,7 @@ SILPH Value Set for Risk Factors
  **References** 
 
 * [RS Observation - Other Risk Factors](StructureDefinition-rs-observation-other-risk-factors.md)
+* [RS ONEISS Questionnaire](Questionnaire-RSOneissQuestionnaire.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +55,7 @@ SILPH Value Set for Risk Factors
   "name" : "SILPH___Risk_Factors__VS_",
   "title" : "SILPH - Risk Factors (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsECBurns |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsECBurns |
 
  
 Flag indicating burns as external cause. 
@@ -18,6 +18,7 @@ Flag indicating burns as external cause.
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Examples for this Profile: [Observation/rs-example-observation-ec-burns](Observation-rs-example-observation-ec-burns.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-ec-burns)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-bu
   "name" : "RSObsECBurns",
   "title" : "RS Observation - External Cause: Burns",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-bu
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "242490006",
           "display" : "Burning due to contact with hot substance (event)"
         }

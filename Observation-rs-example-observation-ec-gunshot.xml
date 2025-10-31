@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="rs-example-observation-ec-gunshot"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-gunshot"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation rs-example-observation-ec-gunshot</b></p><a name="rs-example-observation-ec-gunshot"> </a><a name="hcrs-example-observation-ec-gunshot"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-ec-gunshot.html">RS Observation - External Cause: Gunshot</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 63409001}">Struck by firearm discharge</span></p><p><b>subject</b>: <a href="Patient-rs-example-patient.html">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Encounter-rs-example-encounter.html">Encounter: extension = ,; identifier = Account number,Patient hospital visit number (observable entity): HCN-2025-0459; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 13:45:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>effective</b>: 2025-10-31 16:18:00+0800</p><p><b>value</b>: true</p><p><b>note</b>: </p><blockquote><div><p>Handgun involved in altercation</p>
+</div></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="63409001"/>
+      <display value="Struck by firearm discharge"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/rs-example-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/rs-example-encounter"/>
+  </encounter>
+  <effectiveDateTime value="2025-10-31T16:18:00+08:00"/>
+  <valueBoolean value="true"/>
+  <note>
+    <text value="Handgun involved in altercation"/>
+  </note>
+</Observation>

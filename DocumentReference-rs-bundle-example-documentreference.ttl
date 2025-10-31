@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/DocumentReference/rs-bundle-example-documentreference> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-bundle-example-documentreference"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference rs-bundle-example-documentreference</b></p><a name=\"rs-bundle-example-documentreference\"> </a><a name=\"hcrs-bundle-example-documentreference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-document-reference.html\">RS DocumentReference (Evidence)</a></p></div><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18748-4}\">Document image</span></p><p><b>subject</b>: <a href=\"Patient-rs-bundle-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><a href=\"https://example.org/fhir/Binary/ems-crash-photo\">https://example.org/fhir/Binary/ems-crash-photo</a></td><td>Intersection scene photo</td></tr></table><p><b>format</b>: formatcodes: urn:ihe:pcc:dsr:2016 (urn:ihe:pcc:dsr:2016)</p></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:18748-4 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "18748-4" ] ;
+       fhir:display [ fhir:v "Document image" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-bundle-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-bundle-example-patient" ]
+  ] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "image/jpeg" ] ;
+       fhir:url [
+         fhir:v "https://example.org/fhir/Binary/ems-crash-photo"^^xsd:anyURI ;
+         fhir:l <https://example.org/fhir/Binary/ems-crash-photo>
+       ] ;
+       fhir:title [ fhir:v "Intersection scene photo" ]
+     ] ;
+     fhir:format [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/formatcodes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/formatcodes>
+       ] ;
+       fhir:code [ fhir:v "urn:ihe:pcc:dsr:2016" ]
+     ]
+  ] ) ; # 
+  fhir:context [
+     fhir:encounter ( [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-bundle-example-encounter> ;
+       fhir:reference [ fhir:v "Encounter/rs-bundle-example-encounter" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

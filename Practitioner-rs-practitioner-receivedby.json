@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "rs-practitioner-receivedby",
+  "meta" : {
+    "profile" : ["urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr. Maria Cristina Santos received the patient at the DOH Central ER.</div>"
+  },
+  "name" : [{
+    "use" : "official",
+    "family" : "Santos",
+    "given" : ["Maria Cristina"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+63-917-555-0101"
+  }]
+}

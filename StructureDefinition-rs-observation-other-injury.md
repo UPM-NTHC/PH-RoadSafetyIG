@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsOtherInjury |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsOtherInjury |
 
  
 Other specified injury present; capture type as valueCodeableConcept (text allowed) with optional site and details. 
@@ -18,6 +18,7 @@ Other specified injury present; capture type as valueCodeableConcept (text allow
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
+* Examples for this Profile: [Observation/rs-example-observation-other-injury](Observation-rs-example-observation-other-injury.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-other-injury)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherInjury",
   "title" : "RS Observation - Other Specified Injury",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "417163006",
           "display" : "Traumatic or non-traumatic injury (disorder)"
         }

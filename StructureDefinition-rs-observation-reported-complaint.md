@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsReportedComplaint |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsReportedComplaint |
 
  
 Free-text reported complaint. May or May not exactly be medical, could point to car crash, not a healthcare concern. 
@@ -18,6 +18,7 @@ Free-text reported complaint. May or May not exactly be medical, could point to 
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [Observation/rs-bundle-example-observation-reported-complaint](Observation-rs-bundle-example-observation-reported-complaint.md) and [Observation/rs-example-observation-reported-complaint](Observation-rs-example-observation-reported-complaint.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-reported-complaint)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-repor
   "name" : "RSObsReportedComplaint",
   "title" : "RS Observation - Reported Complaint",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-repor
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "1269489004",
           "display" : "Chief complaint (observable entity)"
         }

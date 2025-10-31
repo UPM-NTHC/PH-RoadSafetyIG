@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSTask |
+| Draft as of 2025-10-31 | *Computable Name*:RSTask |
 
  
 Workflow tracking for report receipt, durations of delay, and sources of delays. 
@@ -18,6 +18,7 @@ Workflow tracking for report receipt, durations of delay, and sources of delays.
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [Task/rs-bundle-example-task](Task-rs-bundle-example-task.md) and [Task/rs-example-task](Task-rs-example-task.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-task)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-task.csv), [Excel
   "name" : "RSTask",
   "title" : "RS Task",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

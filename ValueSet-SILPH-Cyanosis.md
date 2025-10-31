@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:SILPH___Cyanosis__VS_ |
+| *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis | *Version*:0.2.0 |
+| Draft as of 2025-10-31 | *Computable Name*:SILPH___Cyanosis__VS_ |
 
  
 SILPH Value Set for Presence of Cyanosis 
@@ -17,6 +17,7 @@ SILPH Value Set for Presence of Cyanosis
  **References** 
 
 * [RS Observation - Cyanosis](StructureDefinition-rs-observation-cyanosis.md)
+* [RS Run Report Questionnaire](Questionnaire-RSRunReportQuestionnaire.md)
 
 ### Logical Definition (CLD)
 
@@ -49,12 +50,12 @@ SILPH Value Set for Presence of Cyanosis
     "versionId" : "4",
     "lastUpdated" : "2025-10-30T00:34:00.769+00:00"
   },
-  "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/SILPH-Cyanosis",
+  "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Cyanosis",
   "version" : "0.2.0",
   "name" : "SILPH___Cyanosis__VS_",
   "title" : "SILPH - Cyanosis (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

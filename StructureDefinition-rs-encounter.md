@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSEncounter |
+| Draft as of 2025-10-31 | *Computable Name*:RSEncounter |
 
  
 Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer. 
@@ -18,6 +18,7 @@ Encounter for EMS run report / facility submission context. Captures incident nu
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
 * Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [RS Condition](StructureDefinition-rs-condition.md), [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 3 more,[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md)and[RS ServiceRequest](StructureDefinition-rs-service-request.md)
+* Examples for this Profile: [Encounter/rs-bundle-example-encounter](Encounter-rs-bundle-example-encounter.md) and [Encounter/rs-example-encounter](Encounter-rs-example-encounter.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -210,6 +211,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "722248002",
           "display" : "Patient hospital visit number (observable entity)"
         }
@@ -352,6 +354,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           "coding" : [
             {
               "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
               "code" : "397897005",
               "display" : "Paramedic (occupation)"
             }
@@ -386,6 +389,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           "coding" : [
             {
               "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
               "code" : "159738005",
               "display" : "Ambulanceman (occupation)"
             }
@@ -420,6 +424,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           "coding" : [
             {
               "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
               "code" : "22515006",
               "display" : "Medical assistant (occupation)"
             }

@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "vs-psgc-region"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-psgc-region</b></p><a name=\"vs-psgc-region\"> </a><a name=\"hcvs-psgc-region\"> </a><ul><li>Include all codes defined in <code>https://psa.gov.ph/classification/psgc</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-psgc-region</b></p><a name=\"vs-psgc-region\"> </a><a name=\"hcvs-psgc-region\"> </a><ul><li>Include all codes defined in <a href=\"https://build.fhir.org/ig/UP-Manila-SILab/ph-core/CodeSystem-PSGC.html\"><code>urn://example.com/ph-core/fhir/CodeSystem/PSGC</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 0.1.0, the version found through the package references\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-region"^^xsd:anyURI ;
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "VSPSGCRegion"] ; # 
   fhir:title [ fhir:v "RS VS - PSGC Region"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-30T05:39:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-31T16:32:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -50,8 +50,8 @@
   fhir:compose [
      fhir:include ( [
        fhir:system [
-         fhir:v "https://psa.gov.ph/classification/psgc"^^xsd:anyURI ;
-         fhir:l <https://psa.gov.ph/classification/psgc>
+         fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ;
+         fhir:l <urn://example.com/ph-core/fhir/CodeSystem/PSGC>
        ]
      ] )
   ] . # 

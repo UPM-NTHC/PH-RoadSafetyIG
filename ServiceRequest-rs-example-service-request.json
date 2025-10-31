@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "rs-example-service-request",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">ServiceRequest documenting refusal to admit for rs-example-patient with supporting organization and practitioner contacts.</div>"
+  },
+  "status" : "revoked",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/rs-example-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/rs-example-encounter"
+  },
+  "occurrenceDateTime" : "2025-10-31T16:10:00+08:00",
+  "supportingInfo" : [{
+    "reference" : "Organization/rs-organization-single-ex"
+  },
+  {
+    "reference" : "Practitioner/rs-practitioner-receivedby"
+  }]
+}

@@ -128,6 +128,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.identifier:hospitalCaseNo.type.coding","Encounter.identifier.type.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
+  <version value=""http://snomed.info/sct/900000000000207008/version/20241001""/>
   <code value=""722248002""/>
   <display value=""Patient hospital visit number (observable entity)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -319,6 +320,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://snomed.info/sct""/>
+    <version value=""http://snomed.info/sct/900000000000207008/version/20241001""/>
     <code value=""397897005""/>
     <display value=""Paramedic (occupation)""/>
   </coding>
@@ -349,6 +351,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://snomed.info/sct""/>
+    <version value=""http://snomed.info/sct/900000000000207008/version/20241001""/>
     <code value=""159738005""/>
     <display value=""Ambulanceman (occupation)""/>
   </coding>
@@ -379,6 +382,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Role of participant in encounter","Role of participant in encounter.","The participant type indicates how an individual participates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://snomed.info/sct""/>
+    <version value=""http://snomed.info/sct/900000000000207008/version/20241001""/>
     <code value=""22515006""/>
     <display value=""Medical assistant (occupation)""/>
   </coding>

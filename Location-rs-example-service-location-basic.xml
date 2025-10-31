@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="rs-example-service-location-basic"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Emergency Room of Department of Health - Central Office, Manila.</div>
+  </text>
+  <name value="DOH Central ER"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ServiceDeliveryLocationRoleType"/>
+      <code value="ER"/>
+      <display value="Emergency room"/>
+    </coding>
+  </type>
+  <address>
+    <line value="San Lazaro Compound"/>
+    <line value="Rizal Avenue"/>
+    <city value="Manila"/>
+    <state value="NCR"/>
+    <postalCode value="1003"/>
+    <country value="PH"/>
+  </address>
+</Location>

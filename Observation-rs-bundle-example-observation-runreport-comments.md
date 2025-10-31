@@ -1,0 +1,56 @@
+# Run Report Comments - DRAFT PH Road Safety Implementation Guide v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Run Report Comments**
+
+## Example Observation: Run Report Comments
+
+Profile: [RS Observation - Run Report Comments](StructureDefinition-rs-observation-runreport-comments.md)
+
+**status**: Final
+
+**code**: Case notification comment
+
+**subject**: [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-bundle-example-patient.md)
+
+**encounter**: [Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --> 2025-10-31 16:30:00+0800](Encounter-rs-bundle-example-encounter.md)
+
+**effective**: 2025-10-31 16:40:00+0800
+
+**value**: Patient stabilized in transit; receiving ER alerted 15 minutes prior to arrival.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "rs-bundle-example-observation-runreport-comments",
+  "meta" : {
+    "profile" : [
+      "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments"
+    ]
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "code" : "77999-1",
+        "display" : "Case notification comment"
+      }
+    ]
+  },
+  "subject" : {
+    "reference" : "Patient/rs-bundle-example-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/rs-bundle-example-encounter"
+  },
+  "effectiveDateTime" : "2025-10-31T16:40:00+08:00",
+  "valueString" : "Patient stabilized in transit; receiving ER alerted 15 minutes prior to arrival."
+}
+
+```

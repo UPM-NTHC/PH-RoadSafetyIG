@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSAllergyIntolerance |
+| Draft as of 2025-10-31 | *Computable Name*:RSAllergyIntolerance |
 
  
 Known allergies, substances and reactions. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [AllergyIntolerance/rs-example-allergy](AllergyIntolerance-rs-example-allergy.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-allergy-intolerance)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
   "name" : "RSAllergyIntolerance",
   "title" : "RS AllergyIntolerance",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -105,15 +105,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
         "path" : "AllergyIntolerance"
       },
       {
-        "id" : "AllergyIntolerance.code",
-        "path" : "AllergyIntolerance.code",
+        "id" : "AllergyIntolerance.code.text",
+        "path" : "AllergyIntolerance.code.text",
         "short" : "Allergy / intolerance concept",
-        "comment" : "Targets AllergyIntolerance.code per ConceptMap.",
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code"
-        }
+        "mustSupport" : true
       },
       {
         "id" : "AllergyIntolerance.patient",
@@ -133,6 +128,8 @@ Other representations of profile: [CSV](StructureDefinition-rs-allergy-intoleran
       {
         "id" : "AllergyIntolerance.encounter",
         "path" : "AllergyIntolerance.encounter",
+        "short" : "Event (Encounter)",
+        "comment" : "Reference constrained to the RS Encounter (`RSEncounter`).",
         "type" : [
           {
             "code" : "Reference",

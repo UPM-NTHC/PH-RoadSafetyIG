@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="rs-example-procedure-transport"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Coordination call placed to DOH Central ER confirming bed availability.</div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://www.roadsafetyph.doh.gov.ph/CodeSystem"/>
+      <version value="1"/>
+      <code value="COORDINATIONDONE"/>
+      <display value="Was Transport Coordinated with Receiving Hospital?"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/rs-example-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/rs-example-encounter"/>
+  </encounter>
+  <performedDateTime value="2025-10-31T16:05:00+08:00"/>
+  <note>
+    <text value="EMS team leader confirmed transfer acceptance at DOH Central ER prior to transport."/>
+  </note>
+</Procedure>

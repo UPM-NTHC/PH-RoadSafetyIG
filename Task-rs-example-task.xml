@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="rs-example-task"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Task monitoring completion of refusal-to-admit follow-up actions for rs-example-patient.</div>
+  </text>
+  <status value="in-progress"/>
+  <intent value="plan"/>
+  <focus>
+    <reference value="ServiceRequest/rs-example-service-request"/>
+  </focus>
+  <for>
+    <reference value="Patient/rs-example-patient"/>
+  </for>
+  <executionPeriod>
+    <start value="2025-10-31T16:15:00+08:00"/>
+    <end value="2025-10-31T18:45:00+08:00"/>
+  </executionPeriod>
+  <owner>
+    <reference value="Practitioner/rs-practitioner-receivedby"/>
+  </owner>
+  <note>
+    <text value="Coordinating ambulance standby while awaiting receiving facility confirmation."/>
+  </note>
+</Task>

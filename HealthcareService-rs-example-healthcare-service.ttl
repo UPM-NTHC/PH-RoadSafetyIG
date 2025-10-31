@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/HealthcareService/rs-example-healthcare-service> a fhir:HealthcareService ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-healthcare-service"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Emergency medical response service provided by Department of Health - Central Office.</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:providedBy [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-organization-single-ex> ;
+     fhir:reference [ fhir:v "Organization/rs-organization-single-ex" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/service-type>
+       ] ;
+       fhir:code [ fhir:v "1150" ] ;
+       fhir:display [ fhir:v "Emergency response service" ]
+     ] )
+  ] ) ; # 
+  fhir:location ( [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Location/rs-example-service-location-basic> ;
+     fhir:reference [ fhir:v "Location/rs-example-service-location-basic" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "DOH Emergency Medical Response"] . # 
+
+# -------------------------------------------------------------------------------------
+

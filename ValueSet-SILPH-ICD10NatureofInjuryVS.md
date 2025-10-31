@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10NatureofInjury | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:SILPH___ICD10_Nature_of_Injury__VS_ |
+| Draft as of 2025-10-31 | *Computable Name*:SILPH___ICD10_Nature_of_Injury__VS_ |
 
  
 SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98) 
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [RS ONEISS Questionnaire](Questionnaire-RSOneissQuestionnaire.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___ICD10_Nature_of_Injury__VS_",
   "title" : "SILPH - ICD10 Nature of Injury (VS)",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

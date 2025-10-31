@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="rs-example-procedure"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Post-crash psychosocial counselling provided to rs-example-patient.</div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="710818009"/>
+      <display value="Patient education (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/rs-example-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/rs-example-encounter"/>
+  </encounter>
+  <performedDateTime value="2025-11-01T09:30:00+08:00"/>
+  <performer>
+    <actor>
+      <reference value="Practitioner/rs-practitioner-teamlead"/>
+    </actor>
+  </performer>
+  <note>
+    <text value="Discussed post-crash support resources with patient and family."/>
+  </note>
+</Procedure>

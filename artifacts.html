@@ -205,19 +205,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#3">Structures: Extension Definitions</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Terminology: Concept Maps</a>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -243,6 +249,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-RSOneissQuestionnaire.html"
+                  title="Questionnaire/RSOneissQuestionnaire">RS ONEISS Questionnaire</a>
+            </td>
+            <td>
+<p>Structured Data Capture questionnaire for the DOH ONEISS Patient Injury form. Captures patient demographics, encounter information, clinical findings, incident context, injuries, and financial data mapped to RS profiles, supporting SDC $extract.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-RSRunReportQuestionnaire.html"
+                  title="Questionnaire/RSRunReportQuestionnaire">RS Run Report Questionnaire</a>
+            </td>
+            <td>
+<p>Structured Data Capture questionnaire for the MMDA run report form. Captures workflow, incident, clinical, and vital sign data aligned with RS profiles so SDC $extract can populate Encounter, Observation, Location, Procedure, and ServiceRequest resources.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1033,7 +1065,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1050,7 +1082,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1123,8 +1155,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-SILPH-EncounterParticipantRoleVS.html"
-                  title="ValueSet/SILPH-EncounterParticipantRoleVS">SILPH - Encounter Participant Role (VS)</a>
+               <a href="ValueSet-a451137e-f7ff-4fb3-af03-e2bae290ea22.html"
+                  title="ValueSet/a451137e-f7ff-4fb3-af03-e2bae290ea22">SILPH - Encounter Participant Role (VS)</a>
             </td>
             <td>
 <p>SILPH Value Set for EMS encounter participant roles documented on the run report.</p>
@@ -1440,7 +1472,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1457,7 +1489,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -1470,6 +1502,1065 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Maps elements from the logical model to FHIR R4 resources. Generated by scripts/generate-conceptmap.js</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-blood-pressure.html"
+                  title="Observation/rs-bundle-example-observation-blood-pressure">Blood Pressure</a>
+            </td>
+            <td>
+<p>Blood pressure measurement captured on scene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-body-temperature.html"
+                  title="Observation/rs-bundle-example-observation-body-temperature">Body Temperature</a>
+            </td>
+            <td>
+<p>Temperature measured upon hospital arrival.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-call-source.html"
+                  title="Observation/rs-bundle-example-observation-call-source">Call Source</a>
+            </td>
+            <td>
+<p>Source of the EMS activation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-clinical-remarks.html"
+                  title="Observation/rs-bundle-example-observation-clinical-remarks">Clinical Remarks</a>
+            </td>
+            <td>
+<p>Clinical notes summarizing care provided.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-rs-bundle-example-documentreference.html"
+                  title="DocumentReference/rs-bundle-example-documentreference">Crash Scene Photo</a>
+            </td>
+            <td>
+<p>Scene photograph captured by EMS crew to support referral.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-rs-bundle-example-incident-location.html"
+                  title="Location/rs-bundle-example-incident-location">Crash Site</a>
+            </td>
+            <td>
+<p>Intersection incident location recorded during EMS response.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-cyanosis.html"
+                  title="Observation/rs-bundle-example-observation-cyanosis">Cyanosis</a>
+            </td>
+            <td>
+<p>Cyanosis assessment recorded during transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-injury-datetime.html"
+                  title="Observation/rs-bundle-example-observation-injury-datetime">Date/Time of Injury</a>
+            </td>
+            <td>
+<p>Timestamp of collision reported by onsite responders.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-rs-bundle-example-encounter.html"
+                  title="Encounter/rs-bundle-example-encounter">EMS Encounter for Reyes</a>
+            </td>
+            <td>
+<p>Encounter covering EMS transport from crash scene to DOH Central ER on 2025-10-31.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-rs-bundle-example-bundle-ems.html"
+                  title="Bundle/rs-bundle-example-bundle-ems">EMS Referral Bundle – Reyes</a>
+            </td>
+            <td>
+<p>Document bundle delivering the EMS referral for Thomas Reyes with all supporting resources embedded.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-rs-bundle-example-composition-ems.html"
+                  title="Composition/rs-bundle-example-composition-ems">EMS Run Report – Reyes 2025-10-31</a>
+            </td>
+            <td>
+<p>Composition summarizing the EMS referral story for Thomas Reyes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-rs-bundle-example-practitioner-teamlead.html"
+                  title="Practitioner/rs-bundle-example-practitioner-teamlead">EMS Team Lead</a>
+            </td>
+            <td>
+<p>Team lead coordinating transport for the EMS episode.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Claim-rs-bundle-example-claim.html"
+                  title="Claim/rs-bundle-example-claim">EMS Transport Claim</a>
+            </td>
+            <td>
+<p>Billing record for EMS referral transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-rs-practitioner-teamlead.html"
+                  title="Practitioner/rs-practitioner-teamlead">Example EMS Team Leader</a>
+            </td>
+            <td>
+<p>Response team leader overseeing transport in rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-rs-example-incident-location.html"
+                  title="Location/rs-example-incident-location">Example Incident Location</a>
+            </td>
+            <td>
+<p>Road traffic collision site at EDSA and Ayala Avenue used in rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-rs-organization-single-ex.html"
+                  title="Organization/rs-organization-single-ex">Example PH Core Organization</a>
+            </td>
+            <td>
+<p>An example instance of a PH Core Organization conforming to the Philippine localization profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-rs-example-allergy.html"
+                  title="AllergyIntolerance/rs-example-allergy">Example RS Allergy</a>
+            </td>
+            <td>
+<p>Peanut allergy record for rs-example-patient with active clinical status and unconfirmed verification.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Claim-rs-example-claim.html" title="Claim/rs-example-claim">Example RS Claim</a>
+            </td>
+            <td>
+<p>Claim for rs-example-patient with PHP 1500 reimbursement submitted by rs-organization-single-ex.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Coverage-rs-example-coverage.html"
+                  title="Coverage/rs-example-coverage">Example RS Coverage</a>
+            </td>
+            <td>
+<p>Coverage held by rs-example-patient with rs-organization-single-ex as payor for 2025 policy year.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-rs-example-documentreference.html"
+                  title="DocumentReference/rs-example-documentreference">Example RS DocumentReference</a>
+            </td>
+            <td>
+<p>Crash scene photograph for rs-example-patient captured during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-rs-example-encounter.html"
+                  title="Encounter/rs-example-encounter">Example RS ER Encounter</a>
+            </td>
+            <td>
+<p>Emergency encounter for rs-example-patient documenting transport from incident scene to DOH Central ER on 2025-10-31.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="HealthcareService-rs-example-healthcare-service.html"
+                  title="HealthcareService/rs-example-healthcare-service">Example RS HealthcareService</a>
+            </td>
+            <td>
+<p>Emergency medical service offered by rs-organization-single-ex for rs-example-encounter support.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-rs-example-incident-location-basic.html"
+                  title="Location/rs-example-incident-location-basic">Example RS Incident Location</a>
+            </td>
+            <td>
+<p>Collision site with barangay address and GPS coordinates for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationStatement-rs-example-medication-statement.html"
+                  title="MedicationStatement/rs-example-medication-statement">Example RS MedicationStatement</a>
+            </td>
+            <td>
+<p>Active metformin therapy documented for rs-example-patient prior to the incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-abrasion.html"
+                  title="Observation/rs-example-observation-abrasion">Example RS Observation - Abrasion</a>
+            </td>
+            <td>
+<p>Abrasion details documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-activity-at-incident.html"
+                  title="Observation/rs-example-observation-activity-at-incident">Example RS Observation - Activity at Incident</a>
+            </td>
+            <td>
+<p>Activity at time of incident for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-avulsion.html"
+                  title="Observation/rs-example-observation-avulsion">Example RS Observation - Avulsion</a>
+            </td>
+            <td>
+<p>Avulsion injury captured for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-base.html"
+                  title="Observation/rs-example-observation-base">Example RS Observation - Base</a>
+            </td>
+            <td>
+<p>Generic observation captured during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-blood-alcohol.html"
+                  title="Observation/rs-example-observation-blood-alcohol">Example RS Observation - Blood Alcohol Concentration</a>
+            </td>
+            <td>
+<p>Blood alcohol concentration measured for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-blood-pressure.html"
+                  title="Observation/rs-example-observation-blood-pressure">Example RS Observation - Blood Pressure</a>
+            </td>
+            <td>
+<p>Blood pressure measurement with systolic and diastolic components.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-body-temperature.html"
+                  title="Observation/rs-example-observation-body-temperature">Example RS Observation - Body Temperature</a>
+            </td>
+            <td>
+<p>Body temperature documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-cctv.html"
+                  title="Observation/rs-example-observation-cctv">Example RS Observation - CCTV Available</a>
+            </td>
+            <td>
+<p>CCTV availability captured for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-call-source.html"
+                  title="Observation/rs-example-observation-call-source">Example RS Observation - Call Source</a>
+            </td>
+            <td>
+<p>Call source narrative captured for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-clinical-remarks.html"
+                  title="Observation/rs-example-observation-clinical-remarks">Example RS Observation - Clinical Remarks</a>
+            </td>
+            <td>
+<p>Clinical remarks documented for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-collision-type.html"
+                  title="Observation/rs-example-observation-collision-type">Example RS Observation - Collision Type</a>
+            </td>
+            <td>
+<p>Collision type recorded for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-collision-vs-noncollision.html"
+                  title="Observation/rs-example-observation-collision-vs-noncollision">Example RS Observation - Collision vs Non-Collision</a>
+            </td>
+            <td>
+<p>Collision classification captured for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-concussion.html"
+                  title="Observation/rs-example-observation-concussion">Example RS Observation - Concussion</a>
+            </td>
+            <td>
+<p>Concussion findings documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-condition.html"
+                  title="Observation/rs-example-observation-condition">Example RS Observation - Condition of Patient</a>
+            </td>
+            <td>
+<p>Overall patient condition captured during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-contusion.html"
+                  title="Observation/rs-example-observation-contusion">Example RS Observation - Contusion</a>
+            </td>
+            <td>
+<p>Contusion details captured for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-cyanosis.html"
+                  title="Observation/rs-example-observation-cyanosis">Example RS Observation - Cyanosis</a>
+            </td>
+            <td>
+<p>Cyanosis assessment documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-injury-datetime.html"
+                  title="Observation/rs-example-observation-injury-datetime">Example RS Observation - Date/Time of Injury</a>
+            </td>
+            <td>
+<p>Date and time of injury logged for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-bites.html"
+                  title="Observation/rs-example-observation-ec-bites">Example RS Observation - External Cause: Bites/Stings</a>
+            </td>
+            <td>
+<p>Bite/sting external cause flagged for rs-example-patient with specified animal agent.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-burns.html"
+                  title="Observation/rs-example-observation-ec-burns">Example RS Observation - External Cause: Burns</a>
+            </td>
+            <td>
+<p>Burns external cause captured for rs-example-patient with fire agent specified.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-chemical.html"
+                  title="Observation/rs-example-observation-ec-chemical">Example RS Observation - External Cause: Chemical/Substance</a>
+            </td>
+            <td>
+<p>Chemical exposure flagged for rs-example-patient with specific substance noted.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-drowning.html"
+                  title="Observation/rs-example-observation-ec-drowning">Example RS Observation - External Cause: Drowning</a>
+            </td>
+            <td>
+<p>Drowning external cause recorded for rs-example-patient with body of water specified.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-fall.html"
+                  title="Observation/rs-example-observation-ec-fall">Example RS Observation - External Cause: Fall</a>
+            </td>
+            <td>
+<p>Fall external cause flagged for rs-example-patient with specifics noted.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-firecracker.html"
+                  title="Observation/rs-example-observation-ec-firecracker">Example RS Observation - External Cause: Firecracker</a>
+            </td>
+            <td>
+<p>Firecracker-related external cause identified for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-forces.html"
+                  title="Observation/rs-example-observation-ec-forces">Example RS Observation - External Cause: Forces of Nature</a>
+            </td>
+            <td>
+<p>Exposure to forces of nature captured for rs-example-patient during the incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-gunshot.html"
+                  title="Observation/rs-example-observation-ec-gunshot">Example RS Observation - External Cause: Gunshot</a>
+            </td>
+            <td>
+<p>Gunshot external cause flagged for rs-example-patient with weapon context provided.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-hanging.html"
+                  title="Observation/rs-example-observation-ec-hanging">Example RS Observation - External Cause: Hanging/Strangulation</a>
+            </td>
+            <td>
+<p>Hanging/strangulation risk identified during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-mauling.html"
+                  title="Observation/rs-example-observation-ec-mauling">Example RS Observation - External Cause: Mauling/Assault</a>
+            </td>
+            <td>
+<p>Assault noted as contributing external cause for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-other.html"
+                  title="Observation/rs-example-observation-ec-other">Example RS Observation - External Cause: Other</a>
+            </td>
+            <td>
+<p>Other external cause documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-sexual-assault.html"
+                  title="Observation/rs-example-observation-ec-sexual-assault">Example RS Observation - External Cause: Sexual Assault</a>
+            </td>
+            <td>
+<p>Sexual assault recorded in rs-example-encounter context.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-ec-sharp.html"
+                  title="Observation/rs-example-observation-ec-sharp">Example RS Observation - External Cause: Sharp Object</a>
+            </td>
+            <td>
+<p>Sharp object injury flagged for rs-example-patient with object detail provided.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-fracture.html"
+                  title="Observation/rs-example-observation-fracture">Example RS Observation - Fracture</a>
+            </td>
+            <td>
+<p>Fracture classification recorded for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-gcs.html"
+                  title="Observation/rs-example-observation-gcs">Example RS Observation - Glasgow Coma Scale</a>
+            </td>
+            <td>
+<p>GCS subscores and total recorded for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-how-many-vehicles.html"
+                  title="Observation/rs-example-observation-how-many-vehicles">Example RS Observation - How Many Vehicles</a>
+            </td>
+            <td>
+<p>Count of vehicles involved in rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-injury-intent.html"
+                  title="Observation/rs-example-observation-injury-intent">Example RS Observation - Injury Intent</a>
+            </td>
+            <td>
+<p>Injury intent recorded as unintentional for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-level-consciousness.html"
+                  title="Observation/rs-example-observation-level-consciousness">Example RS Observation - Level of Consciousness</a>
+            </td>
+            <td>
+<p>AVPU assessment recorded as alert for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-mode-transport.html"
+                  title="Observation/rs-example-observation-mode-transport">Example RS Observation - Mode of Transport</a>
+            </td>
+            <td>
+<p>Mode of transport to facility documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-multiple-injuries.html"
+                  title="Observation/rs-example-observation-multiple-injuries">Example RS Observation - Multiple Injuries</a>
+            </td>
+            <td>
+<p>Multiple injuries flag recorded for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-nature-burns.html"
+                  title="Observation/rs-example-observation-nature-burns">Example RS Observation - Nature of Burns</a>
+            </td>
+            <td>
+<p>Burn severity captured for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-open-wound.html"
+                  title="Observation/rs-example-observation-open-wound">Example RS Observation - Open Wound</a>
+            </td>
+            <td>
+<p>Open wound details noted for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-other-injury.html"
+                  title="Observation/rs-example-observation-other-injury">Example RS Observation - Other Injury</a>
+            </td>
+            <td>
+<p>Other specified injury captured for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-risk-factors.html"
+                  title="Observation/rs-example-observation-risk-factors">Example RS Observation - Other Risk Factors</a>
+            </td>
+            <td>
+<p>Risk factors noted during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-other-vehicle.html"
+                  title="Observation/rs-example-observation-other-vehicle">Example RS Observation - Other Vehicle Involved</a>
+            </td>
+            <td>
+<p>Other vehicle involved in collision recorded for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-outcome.html"
+                  title="Observation/rs-example-observation-outcome">Example RS Observation - Outcome</a>
+            </td>
+            <td>
+<p>Outcome at release documented using SILPH Outcome value set.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-patients-vehicle.html"
+                  title="Observation/rs-example-observation-patients-vehicle">Example RS Observation - Patient's Vehicle</a>
+            </td>
+            <td>
+<p>Vehicle type used by rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-place-of-occurrence.html"
+                  title="Observation/rs-example-observation-place-of-occurrence">Example RS Observation - Place of Occurrence</a>
+            </td>
+            <td>
+<p>Place of occurrence documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-position-of-patient.html"
+                  title="Observation/rs-example-observation-position-of-patient">Example RS Observation - Position of Patient</a>
+            </td>
+            <td>
+<p>Patient position in vehicle captured for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-traffic-investigator.html"
+                  title="Observation/rs-example-observation-traffic-investigator">Example RS Observation - Presence of Traffic Investigator</a>
+            </td>
+            <td>
+<p>Traffic investigator presence noted for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-urgency.html"
+                  title="Observation/rs-example-observation-urgency">Example RS Observation - Priority Level</a>
+            </td>
+            <td>
+<p>Computer-aided dispatch urgency captured for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-pulse-rate.html"
+                  title="Observation/rs-example-observation-pulse-rate">Example RS Observation - Pulse Rate</a>
+            </td>
+            <td>
+<p>Pulse rate with rhythm and quality documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-pupils.html"
+                  title="Observation/rs-example-observation-pupils">Example RS Observation - Pupils</a>
+            </td>
+            <td>
+<p>Pupil assessment recorded as PEARL for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-referred.html"
+                  title="Observation/rs-example-observation-referred">Example RS Observation - Referred By Facility</a>
+            </td>
+            <td>
+<p>Referral from neighboring facility noted for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-reported-complaint.html"
+                  title="Observation/rs-example-observation-reported-complaint">Example RS Observation - Reported Complaint</a>
+            </td>
+            <td>
+<p>Reported complaint captured from caller for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-respiratory-rate.html"
+                  title="Observation/rs-example-observation-respiratory-rate">Example RS Observation - Respiratory Rate</a>
+            </td>
+            <td>
+<p>Respiratory rate with rhythm and breath sound components for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-runreport-comments.html"
+                  title="Observation/rs-example-observation-runreport-comments">Example RS Observation - Run Report Comments</a>
+            </td>
+            <td>
+<p>Free-text run report comments associated with rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-safety-accessories.html"
+                  title="Observation/rs-example-observation-safety-accessories">Example RS Observation - Safety Accessories</a>
+            </td>
+            <td>
+<p>Safety accessory usage recorded for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-status-on-arrival.html"
+                  title="Observation/rs-example-observation-status-on-arrival">Example RS Observation - Status on Arrival</a>
+            </td>
+            <td>
+<p>Patient status upon reaching facility documented for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-timeline.html"
+                  title="Observation/rs-example-observation-timeline">Example RS Observation - Timeline Date/Time</a>
+            </td>
+            <td>
+<p>Transport timeline milestone recorded for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-transferred.html"
+                  title="Observation/rs-example-observation-transferred">Example RS Observation - Transferred From Facility</a>
+            </td>
+            <td>
+<p>Patient transferred from another facility prior to rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-transport-accident.html"
+                  title="Observation/rs-example-observation-transport-accident">Example RS Observation - Transport/Vehicular Accident</a>
+            </td>
+            <td>
+<p>Transport accident flag asserted for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-traumatic-amputation.html"
+                  title="Observation/rs-example-observation-traumatic-amputation">Example RS Observation - Traumatic Amputation</a>
+            </td>
+            <td>
+<p>Traumatic amputation documented for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-example-observation-triage.html"
+                  title="Observation/rs-example-observation-triage">Example RS Observation - Triage Priority</a>
+            </td>
+            <td>
+<p>Triage priority assigned at scene for rs-example-patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-rs-example-patient.html"
+                  title="Patient/rs-example-patient">Example RS Patient</a>
+            </td>
+            <td>
+<p>Adult male patient referenced across RS examples with Manila home address and telecom details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-rs-example-procedure.html"
+                  title="Procedure/rs-example-procedure">Example RS Procedure</a>
+            </td>
+            <td>
+<p>Post-crash counselling documented for rs-example-patient during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-rs-example-procedure-transport.html"
+                  title="Procedure/rs-example-procedure-transport">Example RS Procedure - Transport Coordination</a>
+            </td>
+            <td>
+<p>Transport coordination with receiving hospital recorded for rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-rs-example-service-location-basic.html"
+                  title="Location/rs-example-service-location-basic">Example RS Service Location</a>
+            </td>
+            <td>
+<p>Emergency room location for rs-organization-single-ex used in rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-rs-example-service-request.html"
+                  title="ServiceRequest/rs-example-service-request">Example RS ServiceRequest</a>
+            </td>
+            <td>
+<p>Refusal-to-admit notification raised for rs-example-patient during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-rs-example-task.html" title="Task/rs-example-task">Example RS Task</a>
+            </td>
+            <td>
+<p>Tracking refusal-to-admit follow-up for rs-example-patient including coordination timelines.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-rs-example-service-location-er.html"
+                  title="Location/rs-example-service-location-er">Example Receiving Facility Location</a>
+            </td>
+            <td>
+<p>Emergency room location for Department of Health - Central Office receiving rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-rs-practitioner-receivedby.html"
+                  title="Practitioner/rs-practitioner-receivedby">Example Receiving Practitioner</a>
+            </td>
+            <td>
+<p>Practitioner who received rs-example-patient at the DOH Central ER.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-rs-practitioner-treatment.html"
+                  title="Practitioner/rs-practitioner-treatment">Example Treatment Officer</a>
+            </td>
+            <td>
+<p>EMS treatment officer providing care during rs-example-encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-gcs.html"
+                  title="Observation/rs-bundle-example-observation-gcs">Glasgow Coma Scale</a>
+            </td>
+            <td>
+<p>Neurologic assessment performed in ambulance.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-injury-intent.html"
+                  title="Observation/rs-bundle-example-observation-injury-intent">Injury Intent</a>
+            </td>
+            <td>
+<p>Intent recorded as unintentional vehicular crash.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-mode-transport.html"
+                  title="Observation/rs-bundle-example-observation-mode-transport">Mode of Transport</a>
+            </td>
+            <td>
+<p>Ambulance transport to receiving facility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Coverage-rs-bundle-example-coverage.html"
+                  title="Coverage/rs-bundle-example-coverage">Patient Coverage</a>
+            </td>
+            <td>
+<p>Coverage record supporting claim for EMS transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-rs-bundle-example-procedure-education.html"
+                  title="Procedure/rs-bundle-example-procedure-education">Patient Education</a>
+            </td>
+            <td>
+<p>Post-crash counseling delivered by EMS team lead.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-rs-bundle-example-patient.html"
+                  title="Patient/rs-bundle-example-patient">Patient Thomas Reyes</a>
+            </td>
+            <td>
+<p>Adult male patient transported following a vehicular collision.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-pulse-rate.html"
+                  title="Observation/rs-bundle-example-observation-pulse-rate">Pulse Rate</a>
+            </td>
+            <td>
+<p>Pulse assessment recorded during transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-rs-bundle-example-organization.html"
+                  title="Organization/rs-bundle-example-organization">RS EMS Provider Organization</a>
+            </td>
+            <td>
+<p>MetroCare EMS providing transport for the referral episode.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-rs-bundle-example-practitioner-receiver.html"
+                  title="Practitioner/rs-bundle-example-practitioner-receiver">Receiving ER Physician</a>
+            </td>
+            <td>
+<p>Physician coordinating acceptance at DOH Central ER.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-rs-bundle-example-service-location.html"
+                  title="Location/rs-bundle-example-service-location">Receiving Facility Location</a>
+            </td>
+            <td>
+<p>Emergency room of DOH Central where the patient was referred.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-rs-bundle-example-service-request.html"
+                  title="ServiceRequest/rs-bundle-example-service-request">Refusal-to-Admit Signal</a>
+            </td>
+            <td>
+<p>Service request tracking refusal-to-admit escalation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-reported-complaint.html"
+                  title="Observation/rs-bundle-example-observation-reported-complaint">Reported Complaint</a>
+            </td>
+            <td>
+<p>Caller-reported complaint captured during dispatch.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-respiratory-rate.html"
+                  title="Observation/rs-bundle-example-observation-respiratory-rate">Respiratory Rate</a>
+            </td>
+            <td>
+<p>Respiratory assessment recorded en route.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-runreport-comments.html"
+                  title="Observation/rs-bundle-example-observation-runreport-comments">Run Report Comments</a>
+            </td>
+            <td>
+<p>Narrative remarks recorded by EMS crew.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-timeline-time-on-scene.html"
+                  title="Observation/rs-bundle-example-timeline-time-on-scene">Timeline - Arrived On Scene</a>
+            </td>
+            <td>
+<p>Crew arrival at collision site.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-timeline-time-station.html"
+                  title="Observation/rs-bundle-example-timeline-time-station">Timeline - Back In Service</a>
+            </td>
+            <td>
+<p>Unit available after drop-off and debrief.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-timeline-date-received.html"
+                  title="Observation/rs-bundle-example-timeline-date-received">Timeline - Date Received</a>
+            </td>
+            <td>
+<p>Call received by dispatch for the incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-timeline-time-departed.html"
+                  title="Observation/rs-bundle-example-timeline-time-departed">Timeline - Departed Scene</a>
+            </td>
+            <td>
+<p>Transport initiated with patient on board.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-timeline-time-hospital.html"
+                  title="Observation/rs-bundle-example-timeline-time-hospital">Timeline - Hospital Arrival</a>
+            </td>
+            <td>
+<p>Arrival at DOH Central ER bay.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-timeline-time-enroute.html"
+                  title="Observation/rs-bundle-example-timeline-time-enroute">Timeline - Unit En Route</a>
+            </td>
+            <td>
+<p>EMS unit dispatched toward the scene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-rs-bundle-example-task.html"
+                  title="Task/rs-bundle-example-task">Track Refusal Escalation</a>
+            </td>
+            <td>
+<p>Task monitoring refusal-to-admit follow-up until hospital acceptance confirmed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-rs-bundle-example-observation-transport-accident.html"
+                  title="Observation/rs-bundle-example-observation-transport-accident">Transport Accident Flag</a>
+            </td>
+            <td>
+<p>Transport accident identified as precipitating factor.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-rs-bundle-example-procedure-transport.html"
+                  title="Procedure/rs-bundle-example-procedure-transport">Transport Coordination</a>
+            </td>
+            <td>
+<p>Call confirming bed availability at DOH Central ER.</p>
 </td>
          </tr>
       </tbody>
@@ -1492,7 +2583,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 30, 2025 05:39+0000">2025-10-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 31, 2025 16:32+0000">2025-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

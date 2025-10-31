@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSHealthcareService |
+| Draft as of 2025-10-31 | *Computable Name*:RSHealthcareService |
 
  
 Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units). 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [DOH Emergency Medical Response](HealthcareService-rs-example-healthcare-service.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-healthcare-service)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-healthcare-servic
   "name" : "RSHealthcareService",
   "title" : "RS HealthcareService",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

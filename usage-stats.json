@@ -449,6 +449,21 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext": [
+      "Questionnaire.item.item",
+      "Questionnaire.item.item.item",
+      "Questionnaire.item.item.item.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile": [
+      "Questionnaire.item.item",
+      "Questionnaire.item.item.item",
+      "Questionnaire.item.item.item.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot": [
+      "Questionnaire.item.item",
+      "Questionnaire.item.item.item",
+      "Questionnaire.item.item.item.item"
+    ],
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used": [
       "Encounter"
     ],
@@ -467,6 +482,7 @@
       "Patient"
     ],
     "urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "urn://example.com/ph-core/fhir/StructureDefinition/occupation": [
@@ -478,6 +494,9 @@
     ],
     "urn://example.com/ph-core/fhir/StructureDefinition/race": [
       "Patient"
+    ],
+    "urn://example.com/ph-core/fhir/StructureDefinition/region": [
+      "Organization.address"
     ]
   }
 }

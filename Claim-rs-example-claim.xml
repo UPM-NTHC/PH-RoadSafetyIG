@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="rs-example-claim"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Example RS Claim for patient rs-example-patient. Total: PHP 1500.00</div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="professional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/rs-example-patient"/>
+  </patient>
+  <created value="2025-10-31"/>
+  <provider>
+    <reference value="Organization/rs-organization-single-ex"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <reference value="Coverage/rs-example-coverage"/>
+    </coverage>
+  </insurance>
+  <total>
+    <value value="1500"/>
+    <currency value="PHP"/>
+  </total>
+</Claim>

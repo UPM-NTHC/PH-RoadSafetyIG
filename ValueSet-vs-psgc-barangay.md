@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-barangay | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:VSPSGCBarangay |
+| Draft as of 2025-10-31 | *Computable Name*:VSPSGCBarangay |
 
  
 PSGC Barangay codes (managed externally). 
@@ -20,13 +20,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in `https://psa.gov.ph/classification/psgc`version Not Stated (use latest from terminology server)
+* Include all codes defined in [`urn://example.com/ph-core/fhir/CodeSystem/PSGC`](https://build.fhir.org/ig/UP-Manila-SILab/ph-core/CodeSystem-PSGC.html)version 📦0.1.0
 
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -54,7 +52,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "VSPSGCBarangay",
   "title" : "RS VS - PSGC Barangay",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -91,7 +89,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "compose" : {
     "include" : [
       {
-        "system" : "https://psa.gov.ph/classification/psgc"
+        "system" : "urn://example.com/ph-core/fhir/CodeSystem/PSGC"
       }
     ]
   }

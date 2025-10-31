@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSServiceRequest |
+| Draft as of 2025-10-31 | *Computable Name*:RSServiceRequest |
 
  
 Requests or records related to refusal to admit and related workflow signals. 
@@ -18,6 +18,7 @@ Requests or records related to refusal to admit and related workflow signals.
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [ServiceRequest/rs-bundle-example-service-request](ServiceRequest-rs-bundle-example-service-request.md) and [ServiceRequest/rs-example-service-request](ServiceRequest-rs-example-service-request.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-service-request)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
   "name" : "RSServiceRequest",
   "title" : "RS ServiceRequest",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -114,30 +115,16 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
       {
         "id" : "ServiceRequest.status",
         "path" : "ServiceRequest.status",
+        "short" : "Refusal-to-admit request is revoked",
+        "definition" : "Indicates the refusal-to-admit request has been revoked in accordance with the run report form response.",
+        "patternCode" : "revoked",
         "mustSupport" : true
-      },
-      {
-        "id" : "ServiceRequest.code",
-        "path" : "ServiceRequest.code",
-        "short" : "Refusal to admit code",
-        "definition" : "Code identifying a refusal-to-admit service/request.",
-        "min" : 1,
-        "mustSupport" : true
-      },
-      {
-        "id" : "ServiceRequest.code.coding",
-        "path" : "ServiceRequest.code.coding",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "ServiceRequest.code.coding.display",
-        "path" : "ServiceRequest.code.coding.display",
-        "patternString" : "Refusal to admit"
       },
       {
         "id" : "ServiceRequest.subject",
         "path" : "ServiceRequest.subject",
+        "short" : "Patient associated with the refusal-to-admit record",
+        "definition" : "Identifies the patient involved in the encounter where refusal to admit was reported.",
         "type" : [
           {
             "code" : "Reference",
@@ -151,6 +138,8 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
       {
         "id" : "ServiceRequest.encounter",
         "path" : "ServiceRequest.encounter",
+        "short" : "Encounter linked to the refusal-to-admit workflow",
+        "definition" : "Reference to the encounter associated with the refusal-to-admit request as captured on the run report form.",
         "type" : [
           {
             "code" : "Reference",
@@ -179,6 +168,8 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
         "id" : "ServiceRequest.occurrence[x]:occurrenceDateTime",
         "path" : "ServiceRequest.occurrence[x]",
         "sliceName" : "occurrenceDateTime",
+        "short" : "Date of refusal-to-admit record",
+        "definition" : "Date recorded on the run report form when the refusal-to-admit decision was logged.",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -189,31 +180,55 @@ Other representations of profile: [CSV](StructureDefinition-rs-service-request.c
         "mustSupport" : true
       },
       {
-        "id" : "ServiceRequest.requester",
-        "path" : "ServiceRequest.requester",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
-            ]
-          }
-        ],
+        "id" : "ServiceRequest.supportingInfo",
+        "path" : "ServiceRequest.supportingInfo",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "profile",
+              "path" : "$this.resolve()"
+            }
+          ],
+          "rules" : "open"
+        },
+        "short" : "Context references for refusal-to-admit decision",
+        "definition" : "Supporting references, including the hospital and physician noted on the run report form.",
+        "min" : 2,
         "mustSupport" : true
       },
       {
-        "id" : "ServiceRequest.supportingInfo",
+        "id" : "ServiceRequest.supportingInfo:reportingOrganization",
         "path" : "ServiceRequest.supportingInfo",
+        "sliceName" : "reportingOrganization",
+        "short" : "Hospital noted on the run report form",
+        "definition" : "Reference to the organization (hospital) listed under 'Refusal to Admit - Hospital'.",
+        "min" : 1,
+        "max" : "1",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization",
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "ServiceRequest.supportingInfo:contactPractitioner",
+        "path" : "ServiceRequest.supportingInfo",
+        "sliceName" : "contactPractitioner",
+        "short" : "Physician noted on the run report form",
+        "definition" : "Reference to the practitioner listed under 'Refusal to Admit - Physician'.",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
               "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"
             ]
           }
-        ],
-        "mustSupport" : true
+        ]
       }
     ]
   }

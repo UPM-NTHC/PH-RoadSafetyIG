@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSBundleEMS |
+| Draft as of 2025-10-31 | *Computable Name*:RSBundleEMS |
 
  
 Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). 
@@ -62,7 +62,7 @@ Document Bundle for EMS Run Report submission. The first entry MUST be a Composi
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Bundle/rs-bundle-example-bundle-ems](Bundle-rs-bundle-example-bundle-ems.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-bundle-ems)
 
@@ -95,7 +95,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
   "name" : "RSBundleEMS",
   "title" : "RS Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -343,6 +343,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
         "path" : "Bundle.entry.resource.code.coding",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "405798008",
           "display" : "Time of arrival of emergency services (observable entity)"
         }
@@ -399,6 +400,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
         "path" : "Bundle.entry.resource.code.coding",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "405799000",
           "display" : "Time of arrival at hospital (observable entity)"
         }

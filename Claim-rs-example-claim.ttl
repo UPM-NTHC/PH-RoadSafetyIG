@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Claim/rs-example-claim> a fhir:Claim ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-claim"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example RS Claim for patient rs-example-patient. Total: PHP 1500.00</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
+       fhir:code [ fhir:v "professional" ]
+     ] )
+  ] ; # 
+  fhir:use [ fhir:v "claim"] ; # 
+  fhir:patient [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-example-patient" ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:provider [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-organization-single-ex> ;
+     fhir:reference [ fhir:v "Organization/rs-organization-single-ex" ]
+  ] ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/processpriority"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/processpriority>
+       ] ;
+       fhir:code [ fhir:v "normal" ]
+     ] )
+  ] ; # 
+  fhir:insurance ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:focal [ fhir:v true ] ;
+     fhir:coverage [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Coverage/rs-example-coverage> ;
+       fhir:reference [ fhir:v "Coverage/rs-example-coverage" ]
+     ]
+  ] ) ; # 
+  fhir:total [
+     fhir:value [ fhir:v "1500"^^xsd:decimal ] ;
+     fhir:currency [ fhir:v "PHP" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

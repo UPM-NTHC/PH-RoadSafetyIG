@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsCollisionType |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsCollisionType |
 
  
 Collision type (Angle, Head-on, Rear end, Side swipe, etc.). 
@@ -18,6 +18,7 @@ Collision type (Angle, Head-on, Rear end, Side swipe, etc.).
 
 * Use this Profile: [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
 * Refer to this Profile: [RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
+* Examples for this Profile: [Observation/rs-example-observation-collision-type](Observation-rs-example-observation-collision-type.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-collision-type)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "name" : "RSObsCollisionType",
   "title" : "RS Observation - Collision Type",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

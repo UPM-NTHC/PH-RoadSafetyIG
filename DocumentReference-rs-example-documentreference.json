@@ -1,0 +1,38 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "rs-example-documentreference",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.</div>"
+  },
+  "status" : "current",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "18748-4",
+      "display" : "Document image"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/rs-example-patient"
+  },
+  "content" : [{
+    "attachment" : {
+      "contentType" : "image/jpeg",
+      "url" : "https://example.org/fhir/Binary/rs-crash-photo",
+      "title" : "Crash scene photograph"
+    },
+    "format" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/formatcodes",
+      "code" : "urn:ihe:pcc:dsr:2016"
+    }
+  }],
+  "context" : {
+    "encounter" : [{
+      "reference" : "Encounter/rs-example-encounter"
+    }]
+  }
+}

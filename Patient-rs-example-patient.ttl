@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-patient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">RS-Example Patient: Thomas Niccolo Filamor Reyes, male, born 1990-01-01. Address: 123 Sampaloc Street, Manila 1008, PH. Phone: +63-912-345-6789; Email: thomas.reyes@example.com</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people"^^xsd:anyURI ;
+       fhir:l <urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Reyes" ] ;
+     fhir:given ( [ fhir:v "Thomas Niccolo" ] [ fhir:v "Filamor" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+63-912-345-6789" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "thomas.reyes@example.com" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1990-01-01"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/province"^^xsd:anyURI ;
+         fhir:l <urn://example.com/ph-core/fhir/StructureDefinition/province>
+       ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [
+           fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ;
+           fhir:l <urn://example.com/ph-core/fhir/CodeSystem/PSGC>
+         ] ;
+         fhir:code [ fhir:v "0402100000" ] ;
+         fhir:display [ fhir:v "Cavite" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality"^^xsd:anyURI ;
+         fhir:l <urn://example.com/ph-core/fhir/StructureDefinition/city-municipality>
+       ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [
+           fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ;
+           fhir:l <urn://example.com/ph-core/fhir/CodeSystem/PSGC>
+         ] ;
+         fhir:code [ fhir:v "1380100000" ] ;
+         fhir:display [ fhir:v "City of Caloocan" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/barangay"^^xsd:anyURI ;
+         fhir:l <urn://example.com/ph-core/fhir/StructureDefinition/barangay>
+       ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [
+           fhir:v "urn://example.com/ph-core/fhir/CodeSystem/PSGC"^^xsd:anyURI ;
+           fhir:l <urn://example.com/ph-core/fhir/CodeSystem/PSGC>
+         ] ;
+         fhir:code [ fhir:v "1380100001" ] ;
+         fhir:display [ fhir:v "Barangay 1" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "123 Sampaloc Street" ] ) ;
+     fhir:city [ fhir:v "Manila" ] ;
+     fhir:postalCode [ fhir:v "1008" ] ;
+     fhir:country [ fhir:v "PH" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

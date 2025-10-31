@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="rs-example-documentreference"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.</div>
+  </text>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18748-4"/>
+      <display value="Document image"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/rs-example-patient"/>
+  </subject>
+  <content>
+    <attachment>
+      <contentType value="image/jpeg"/>
+      <url value="https://example.org/fhir/Binary/rs-crash-photo"/>
+      <title value="Crash scene photograph"/>
+    </attachment>
+    <format>
+      <system value="http://terminology.hl7.org/CodeSystem/formatcodes"/>
+      <code value="urn:ihe:pcc:dsr:2016"/>
+    </format>
+  </content>
+  <context>
+    <encounter>
+      <reference value="Encounter/rs-example-encounter"/>
+    </encounter>
+  </context>
+</DocumentReference>

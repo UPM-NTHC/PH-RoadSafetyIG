@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="rs-example-medication-statement"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Metformin 500 mg tablet taken twice daily by rs-example-patient.</div>
+  </text>
+  <status value="active"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="A10BA02"/>
+      <display value="metformin"/>
+    </coding>
+    <text value="Metformin 500 mg tablet"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/rs-example-patient"/>
+  </subject>
+  <effectiveDateTime value="2025-10-30"/>
+</MedicationStatement>

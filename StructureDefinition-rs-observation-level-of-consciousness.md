@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsLevelOfConsciousness |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsLevelOfConsciousness |
 
  
 Level of consciousness (e.g., AVPU). 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/rs-example-observation-level-consciousness](Observation-rs-example-observation-level-consciousness.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-level-of-consciousness)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
   "name" : "RSObsLevelOfConsciousness",
   "title" : "RS Observation - Level of Consciousness (AVPU)",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -125,6 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "6942003",
           "display" : "Level of consciousness (observable entity)"
         }

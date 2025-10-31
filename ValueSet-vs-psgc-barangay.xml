@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-psgc-barangay"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-psgc-barangay</b></p><a name="vs-psgc-barangay"> </a><a name="hcvs-psgc-barangay"> </a><ul><li>Include all codes defined in <code>https://psa.gov.ph/classification/psgc</code><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-psgc-barangay</b></p><a name="vs-psgc-barangay"> </a><a name="hcvs-psgc-barangay"> </a><ul><li>Include all codes defined in <a href="https://build.fhir.org/ig/UP-Manila-SILab/ph-core/CodeSystem-PSGC.html"><code>urn://example.com/ph-core/fhir/CodeSystem/PSGC</code></a><span title="Version is not explicitly stated, which means it is fixed to 0.1.0, the version found through the package references"> version &#x1F4E6;0.1.0</span></li></ul></div>
   </text>
   <url value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-barangay"/>
   <version value="0.2.0"/>
   <name value="VSPSGCBarangay"/>
   <title value="RS VS - PSGC Barangay"/>
   <status value="draft"/>
-  <date value="2025-10-30T05:39:55+00:00"/>
+  <date value="2025-10-31T16:32:57+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -36,7 +36,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://psa.gov.ph/classification/psgc"/>
+      <system value="urn://example.com/ph-core/fhir/CodeSystem/PSGC"/>
     </include>
   </compose>
 </ValueSet>

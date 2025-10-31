@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsGCS |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsGCS |
 
  
 GCS with components for eyes, verbal, motor; optional total score as integer. 
@@ -18,6 +18,7 @@ GCS with components for eyes, verbal, motor; optional total score as integer.
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [Observation/rs-bundle-example-observation-gcs](Observation-rs-bundle-example-observation-gcs.md) and [Observation/rs-example-observation-gcs](Observation-rs-example-observation-gcs.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-gcs)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
   "name" : "RSObsGCS",
   "title" : "RS Observation - Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "248241002",
           "display" : "Glasgow coma score (observable entity)"
         }
@@ -193,6 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "281395000",
           "display" : "Glasgow Coma Score eye opening subscore (observable entity)"
         }
@@ -243,6 +246,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "281397008",
           "display" : "Glasgow Coma Scale verbal response subscore (observable entity)"
         }
@@ -293,6 +297,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "281396004",
           "display" : "Glasgow Coma Scale motor response subscore (observable entity)"
         }

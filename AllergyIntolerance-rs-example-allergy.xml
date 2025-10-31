@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="rs-example-allergy"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Example AllergyIntolerance: peanut allergy (SNOMED CT 91935009) confirmed for patient rs-example-patient; severe urticaria reaction recorded.</div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="unconfirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <text value="Allergy to peanuts"/>
+  </code>
+  <patient>
+    <reference value="Patient/rs-example-patient"/>
+  </patient>
+</AllergyIntolerance>

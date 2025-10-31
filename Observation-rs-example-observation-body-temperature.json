@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Observation",
+  "id" : "rs-example-observation-body-temperature",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-example-observation-body-temperature</b></p><a name=\"rs-example-observation-body-temperature\"> </a><a name=\"hcrs-example-observation-body-temperature\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-body-temperature.html\">RS Observation - Body Temperature</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386725007}\">Body temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-rs-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-rs-example-encounter.html\">Encounter: extension = ,; identifier = Account number,Patient hospital visit number (observable entity): HCN-2025-0459; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 13:45:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>effective</b>: 2025-10-31 16:46:00+0800</p><p><b>value</b>: 37.2 degC<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "code" : "386725007",
+      "display" : "Body temperature (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/rs-example-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/rs-example-encounter"
+  },
+  "effectiveDateTime" : "2025-10-31T16:46:00+08:00",
+  "valueQuantity" : {
+    "value" : 37.2,
+    "unit" : "degC",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "Cel"
+  }
+}

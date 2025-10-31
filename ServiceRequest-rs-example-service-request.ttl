@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ServiceRequest/rs-example-service-request> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-service-request"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">ServiceRequest documenting refusal to admit for rs-example-patient with supporting organization and practitioner contacts.</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "revoked"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-example-patient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-example-encounter> ;
+     fhir:reference [ fhir:v "Encounter/rs-example-encounter" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:DateTime ;
+     fhir:v "2025-10-31T16:10:00+08:00"^^xsd:dateTime
+  ] ; # 
+  fhir:supportingInfo ( [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-organization-single-ex> ;
+     fhir:reference [ fhir:v "Organization/rs-organization-single-ex" ]
+  ] [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-practitioner-receivedby> ;
+     fhir:reference [ fhir:v "Practitioner/rs-practitioner-receivedby" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

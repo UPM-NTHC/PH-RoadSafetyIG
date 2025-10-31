@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Procedure/rs-example-procedure> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-example-procedure"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Post-crash psychosocial counselling provided to rs-example-patient.</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:710818009 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "710818009" ] ;
+       fhir:display [ fhir:v "Patient education (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-example-patient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-example-encounter> ;
+     fhir:reference [ fhir:v "Encounter/rs-example-encounter" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:DateTime ;
+     fhir:v "2025-11-01T09:30:00+08:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-practitioner-teamlead> ;
+       fhir:reference [ fhir:v "Practitioner/rs-practitioner-teamlead" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Discussed post-crash support resources with patient and family." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

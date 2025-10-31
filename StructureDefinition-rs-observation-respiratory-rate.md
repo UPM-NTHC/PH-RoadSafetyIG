@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSObsRespiratoryRate |
+| Draft as of 2025-10-31 | *Computable Name*:RSObsRespiratoryRate |
 
  
 Respiratory rate in breaths/min. 
@@ -18,6 +18,7 @@ Respiratory rate in breaths/min.
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 * Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
+* Examples for this Profile: [Observation/rs-bundle-example-observation-respiratory-rate](Observation-rs-bundle-example-observation-respiratory-rate.md) and [Observation/rs-example-observation-respiratory-rate](Observation-rs-example-observation-respiratory-rate.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-respiratory-rate)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "name" : "RSObsRespiratoryRate",
   "title" : "RS Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -122,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "86290005",
           "display" : "Respiratory rate (observable entity)"
         }
@@ -181,6 +183,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "248582003",
           "display" : "Rhythm of respiration (observable entity)"
         }
@@ -230,6 +233,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "max" : "1",
         "patternCoding" : {
           "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
           "code" : "52653008",
           "display" : "Respiratory sounds (observable entity)"
         }

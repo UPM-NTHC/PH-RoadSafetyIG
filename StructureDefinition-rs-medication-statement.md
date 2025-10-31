@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement | *Version*:0.2.0 |
-| Draft as of 2025-10-30 | *Computable Name*:RSMedicationStatement |
+| Draft as of 2025-10-31 | *Computable Name*:RSMedicationStatement |
 
  
 Current medications as codeable concepts or references where available. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [MedicationStatement/rs-example-medication-statement](MedicationStatement-rs-example-medication-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-medication-statement)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
   "name" : "RSMedicationStatement",
   "title" : "RS MedicationStatement",
   "status" : "draft",
-  "date" : "2025-10-30T05:39:55+00:00",
+  "date" : "2025-10-31T16:32:57+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

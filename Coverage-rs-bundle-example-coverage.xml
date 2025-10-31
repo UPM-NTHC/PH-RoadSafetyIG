@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="rs-bundle-example-coverage"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Coverage rs-bundle-example-coverage</b></p><a name="rs-bundle-example-coverage"> </a><a name="hcrs-bundle-example-coverage"> </a><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode EHCPOL}">extended healthcare</span></p><p><b>beneficiary</b>: <a href="Patient-rs-bundle-example-patient.html">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>payor</b>: <a href="Organization-rs-bundle-example-organization.html">Organization MetroCare EMS</a></p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="EHCPOL"/>
+      <display value="extended healthcare"/>
+    </coding>
+  </type>
+  <beneficiary>
+    <reference value="Patient/rs-bundle-example-patient"/>
+  </beneficiary>
+  <period>
+    <start value="2025-01-01"/>
+    <end value="2025-12-31"/>
+  </period>
+  <payor>
+    <reference value="Organization/rs-bundle-example-organization"/>
+  </payor>
+</Coverage>

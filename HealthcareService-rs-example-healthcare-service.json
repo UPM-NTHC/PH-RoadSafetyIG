@@ -1,0 +1,26 @@
+{
+  "resourceType" : "HealthcareService",
+  "id" : "rs-example-healthcare-service",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Emergency medical response service provided by Department of Health - Central Office.</div>"
+  },
+  "active" : true,
+  "providedBy" : {
+    "reference" : "Organization/rs-organization-single-ex"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+      "code" : "1150",
+      "display" : "Emergency response service"
+    }]
+  }],
+  "location" : [{
+    "reference" : "Location/rs-example-service-location-basic"
+  }],
+  "name" : "DOH Emergency Medical Response"
+}

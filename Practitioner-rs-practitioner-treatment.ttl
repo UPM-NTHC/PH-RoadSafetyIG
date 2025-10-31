@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-practitioner-treatment> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-practitioner-treatment"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner"^^xsd:anyURI ;
+       fhir:l <urn://example.com/ph-core/fhir/StructureDefinition/ph-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Treatment Officer: Paramedic Lea Dominguez.</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Dominguez" ] ;
+     fhir:given ( [ fhir:v "Lea" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+63-917-555-0190" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
