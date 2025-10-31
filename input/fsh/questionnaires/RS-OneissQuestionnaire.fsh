@@ -870,3 +870,176 @@ Description: "Structured Data Capture questionnaire for the DOH ONEISS Patient I
 * item[=].item[=].item[=].item[=].text = "Other injury details"
 * item[=].item[=].item[=].item[=].type = #text
 * item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury#Observation.note.text"
+* item[=].item[+].linkId = "oneiss-clinical-outcome-release"
+* item[=].item[=].text = "Outcome at release"
+* item[=].item[=].type = #group
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].extension[=].valueExpression.expression = "Observation"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[+].linkId = "oneiss-clinical-outcome-release-status"
+* item[=].item[=].item[=].text = "Outcome at release"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome"
+* item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome#Observation.valueCodeableConcept"
+
+* item[=].item[+].linkId = "oneiss-clinical-outcome-discharge"
+* item[=].item[=].text = "Outcome at discharge"
+* item[=].item[=].type = #group
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].extension[=].valueExpression.expression = "Observation"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[+].linkId = "oneiss-clinical-outcome-discharge-status"
+* item[=].item[=].item[=].text = "Outcome at discharge"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Outcome"
+* item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome#Observation.valueCodeableConcept"
+
+* item[=].item[+].linkId = "oneiss-postcrash"
+* item[=].item[=].text = "Post-crash Investigation"
+* item[=].item[=].type = #group
+* item[=].item[=].item[+].linkId = "oneiss-postcrash-collision-type"
+* item[=].item[=].item[=].text = "Collision type"
+* item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].item[=].extension[=].valueExpression.expression = "Observation"
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type"
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-collision-type-value"
+* item[=].item[=].item[=].item[=].text = "Collision type"
+* item[=].item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].item[=].answerValueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-CollisionType"
+* item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type#Observation.valueCodeableConcept"
+
+* item[=].item[=].item[+].linkId = "oneiss-postcrash-traffic-investigator"
+* item[=].item[=].item[=].text = "Traffic investigator present?"
+* item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].item[=].extension[=].valueExpression.expression = "Observation"
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator"
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-traffic-investigator-flag"
+* item[=].item[=].item[=].item[=].text = "Traffic investigator present?"
+* item[=].item[=].item[=].item[=].type = #boolean
+* item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator#Observation.valueBoolean"
+
+* item[=].item[=].item[+].linkId = "oneiss-postcrash-cctv"
+* item[=].item[=].item[=].text = "CCTV availability"
+* item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].item[=].extension[=].valueExpression.expression = "Observation"
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available"
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-cctv-available"
+* item[=].item[=].item[=].item[=].text = "CCTV available?"
+* item[=].item[=].item[=].item[=].type = #boolean
+* item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cctv-available#Observation.valueBoolean"
+
+* item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence"
+* item[=].item[=].item[=].text = "Post-crash evidence documents"
+* item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-cause"
+* item[=].item[=].item[=].item[=].text = "Cause of crash document"
+* item[=].item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.expression = "DocumentReference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-cause-url"
+* item[=].item[=].item[=].item[=].item[=].text = "Document URL"
+* item[=].item[=].item[=].item[=].item[=].type = #url
+* item[=].item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference#DocumentReference.content.attachment.url"
+
+* item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-fault"
+* item[=].item[=].item[=].item[=].text = "Party at fault document"
+* item[=].item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.expression = "DocumentReference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-fault-url"
+* item[=].item[=].item[=].item[=].item[=].text = "Document URL"
+* item[=].item[=].item[=].item[=].item[=].type = #url
+* item[=].item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference#DocumentReference.content.attachment.url"
+
+* item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-traffic-management"
+* item[=].item[=].item[=].item[=].text = "Traffic incident management log"
+* item[=].item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.expression = "DocumentReference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-traffic-management-url"
+* item[=].item[=].item[=].item[=].item[=].text = "Document URL"
+* item[=].item[=].item[=].item[=].item[=].type = #url
+* item[=].item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference#DocumentReference.content.attachment.url"
+
+* item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-road-network"
+* item[=].item[=].item[=].item[=].text = "Road network shape files"
+* item[=].item[=].item[=].item[=].type = #group
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].item[=].item[=].extension[=].valueExpression.expression = "DocumentReference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
+* item[=].item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-evidence-road-network-url"
+* item[=].item[=].item[=].item[=].item[=].text = "Document URL"
+* item[=].item[=].item[=].item[=].item[=].type = #url
+* item[=].item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference#DocumentReference.content.attachment.url"
+
+* item[=].item[+].linkId = "oneiss-finance"
+* item[=].item[=].text = "Finance"
+* item[=].item[=].type = #group
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].extension[=].valueExpression.expression = "Claim"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[+].linkId = "oneiss-finance-cost"
+* item[=].item[=].item[=].text = "Cost of care"
+* item[=].item[=].item[=].type = #decimal
+* item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim#Claim.total.value"
+
+* item[=].item[+].linkId = "oneiss-comments"
+* item[=].item[=].text = "Comments"
+* item[=].item[=].type = #group
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
+* item[=].item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].item[=].extension[=].valueExpression.expression = "Observation"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile"
+* item[=].item[=].extension[=].valueCanonical = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot"
+* item[=].item[=].extension[=].valueBoolean = true
+* item[=].item[=].item[+].linkId = "oneiss-comments-text"
+* item[=].item[=].item[=].text = "Comments"
+* item[=].item[=].item[=].type = #text
+* item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments#Observation.valueString"
