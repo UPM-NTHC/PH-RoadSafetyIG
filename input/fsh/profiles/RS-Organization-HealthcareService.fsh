@@ -59,3 +59,17 @@ Description: "An example instance of a PH Core Organization conforming to the Ph
 * address.extension.valueCoding = PSGC#0102800000  "Ilocos Norte"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">The Department of Health - Central Office is a PH Core Organization located at San Lazaro Compound, Rizal Avenue, Manila, NCR, 1003, Philippines. The organization can be contacted through its health facility contact at +63-2-8651-7800. The regional designation is Ilocos Norte.</div>"
+
+Instance: rs-example-healthcare-service
+InstanceOf: RSHealthcareService
+Usage: #example
+Title: "Example RS HealthcareService"
+Description: "Emergency medical service offered by rs-organization-single-ex for rs-example-encounter support."
+* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Emergency medical response service provided by Department of Health - Central Office.</div>"
+* active = true
+* providedBy = Reference(rs-organization-single-ex)
+* name = "DOH Emergency Medical Response"
+* type[0] = http://terminology.hl7.org/CodeSystem/service-type#1150 "Emergency response service"
+* location[0] = Reference(rs-example-service-location-basic)
