@@ -105,3 +105,96 @@ Description: "Identifier and type of transport vehicle used during an encounter.
 * valueCodeableConcept.text 1..1
 * valueCodeableConcept.text ^short = "Free-text or coded descriptor for the vehicle used."
 * valueCodeableConcept.text ^comment = "Capture free text for current workflows; coded entries may be introduced when terminology support is available."
+
+Instance: rs-example-encounter
+InstanceOf: RSEncounter
+Usage: #example
+* meta.profile = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Example RS Encounter for rs-example-patient covering an ER visit on 2025-10-31 following a vehicular incident.</div>"
+* status = #finished
+* class.system = "http://loinc.org"
+* class.code = #LA10268-3
+* class.display = "ER"
+* identifier[incidentNumber].system = "http://www.roadsafetyph.doh.gov.ph/identifier/incident"
+* identifier[incidentNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[incidentNumber].type.coding.code = #AN
+* identifier[incidentNumber].value = "INC-2025-0007"
+* identifier[hospitalCaseNo].system = "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"
+* identifier[hospitalCaseNo].value = "HCN-2025-0459"
+* subject = Reference(rs-example-patient)
+* period.start = "2025-10-31T13:45:00+08:00"
+* period.end = "2025-10-31T16:30:00+08:00"
+* serviceProvider = Reference(rs-organization-single-ex)
+* location[accidentSite].location = Reference(rs-example-incident-location)
+* location[facility].location = Reference(rs-example-service-location-er)
+* participant[receivedBy].individual = Reference(rs-practitioner-receivedby)
+* participant[teamLeader].individual = Reference(rs-practitioner-teamlead)
+* participant[treatmentOfficer].individual = Reference(rs-practitioner-treatment)
+* hospitalization.origin = Reference(rs-organization-single-ex)
+* hospitalization.destination = Reference(rs-example-service-location-er)
+* hospitalization.dischargeDisposition = http://snomed.info/sct#19712007 "Transferred to another facility/hospital"
+* extension[vehicleUsed][0].valueCodeableConcept.text = "Ambulance RS-Unit-02 (Type II van)"
+* extension[vehicleUsed][+].valueCodeableConcept.text = "Back-up Ambulance RS-Unit-05 (Type I)"
+
+Instance: rs-example-incident-location
+InstanceOf: RSIncidentLocation
+Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Collision site along Epifanio de los Santos Avenue near Ayala Avenue, Makati City.</div>"
+* name = "EDSA - Ayala Southbound"
+* address.use = #work
+* address.line = "Epifanio de los Santos Ave"
+* address.district = "Barangay San Lorenzo"
+* address.city = "Makati City"
+* address.state = "NCR"
+* address.postalCode = "1223"
+* address.country = "PH"
+* position.longitude = 121.0225
+* position.latitude = 14.5513
+
+Instance: rs-example-service-location-er
+InstanceOf: RSServiceLocation
+Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Emergency Room, Department of Health - Central Office.</div>"
+* name = "DOH Central ER"
+* type = http://terminology.hl7.org/CodeSystem/v3-ServiceDeliveryLocationRoleType#ER "Emergency room"
+* address.line = "San Lazaro Compound, Rizal Avenue"
+* address.city = "Manila"
+* address.state = "NCR"
+* address.postalCode = "1003"
+* address.country = "PH"
+
+Instance: rs-practitioner-receivedby
+InstanceOf: PHCorePractitioner
+Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Maria Cristina Santos received the patient at the DOH Central ER.</div>"
+* name.use = #official
+* name.family = "Santos"
+* name.given = "Maria Cristina"
+* telecom.system = #phone
+* telecom.value = "+63-917-555-0101"
+
+Instance: rs-practitioner-teamlead
+InstanceOf: PHCorePractitioner
+Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>EMS Team Leader: Paramedic Joel Rivera.</div>"
+* name.use = #official
+* name.family = "Rivera"
+* name.given = "Joel"
+* telecom.system = #phone
+* telecom.value = "+63-917-555-0155"
+
+Instance: rs-practitioner-treatment
+InstanceOf: PHCorePractitioner
+Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Treatment Officer: Paramedic Lea Dominguez.</div>"
+* name.use = #official
+* name.family = "Dominguez"
+* name.given = "Lea"
+* telecom.system = #phone
+* telecom.value = "+63-917-555-0190"
