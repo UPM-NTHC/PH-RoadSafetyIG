@@ -8,3 +8,37 @@ Description: "Claim information related to cost of care."
 * patient only Reference(RSPatient)
 * total 0..1
 * total ^short = "Total claim amount"
+
+Instance: rs-example-claim
+InstanceOf: RSClaim
+Usage: #example
+* meta.profile = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Example RS Claim for patient rs-example-patient. Total: PHP 1500.00</div>"
+* status = http://terminology.hl7.org/CodeSystem/claim-status#active
+* type.coding = http://terminology.hl7.org/CodeSystem/claim-type#professional
+* use = #claim
+* patient = Reference(rs-example-patient)
+* provider = Reference(rs-organization-single-ex)
+* created = "2025-10-31"
+* total.value = 1500
+* total.currency = #PHP
+* priority.coding = http://terminology.hl7.org/CodeSystem/processpriority#normal
+* insurance[0].sequence = 1
+* insurance[0].focal = true
+* insurance[0].coverage = Reference(rs-example-coverage)
+
+Instance: rs-example-coverage
+InstanceOf: Coverage
+Usage: #example
+* status = #active
+* type.coding = http://terminology.hl7.org/CodeSystem/v3-ActCode#EHCPOL
+* beneficiary = Reference(rs-example-patient)
+* subscriber = Reference(rs-example-patient)
+* payor[0] = Reference(rs-organization-single-ex)
+* period.start = "2025-01-01"
+* period.end = "2025-12-31"
+* class[0].type = http://terminology.hl7.org/CodeSystem/coverage-class#group
+* class[0].value = "RS-GRP-001"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Example coverage for rs-example-patient referencing rs-organization-single-ex as payor.</div>"
