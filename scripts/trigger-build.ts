@@ -161,9 +161,11 @@ async function main() {
     if (res.statusCode >= 200 && res.statusCode < 300) {
       console.log(`Webhook POST successful. HTTP ${res.statusCode}`);
       console.log(res.body || 'No response body');
+      console.log('See Build status here: https://chat.fhir.org/#narrow/channel/179297-committers.2Fnotification/topic/ig-build/');
     } else {
       console.error(`Failed to POST webhook. HTTP ${res.statusCode}`);
       console.error(res.body);
+      console.log('See Build status here: https://chat.fhir.org/#narrow/channel/179297-committers.2Fnotification/topic/ig-build/');
       process.exit(1);
     }
 
