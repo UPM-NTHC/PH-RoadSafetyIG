@@ -8,8 +8,8 @@ Description: "SILPH Value Set for Inpatient and ER/Outpatient Visit Disposition"
 * ^version = "0.1.1"
 * ^status = #draft
 * ^contact.telecom.system = #email
-* ^expansion.identifier = "urn:uuid:9f41c464-3e26-4a1b-80d8-c09be4db6507"
-* ^expansion.timestamp = "2025-10-30T03:02:30+00:00"
+* ^expansion.identifier = "urn:uuid:22c68574-61e4-4053-8928-5505cd36f7d2"
+* ^expansion.timestamp = "2025-10-31T01:58:21+00:00"
 * ^expansion.total = 10
 * ^expansion.parameter[0].name = "used-codesystem"
 * ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001"
