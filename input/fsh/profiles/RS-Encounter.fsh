@@ -109,6 +109,8 @@ Description: "Identifier and type of transport vehicle used during an encounter.
 Instance: rs-example-encounter
 InstanceOf: RSEncounter
 Usage: #example
+Title: "Example RS ER Encounter"
+Description: "Emergency encounter for rs-example-patient documenting transport from incident scene to DOH Central ER on 2025-10-31."
 * meta.profile = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Example RS Encounter for rs-example-patient covering an ER visit on 2025-10-31 following a vehicular incident.</div>"
@@ -140,6 +142,8 @@ Usage: #example
 Instance: rs-example-incident-location
 InstanceOf: RSIncidentLocation
 Usage: #example
+Title: "Example Incident Location"
+Description: "Road traffic collision site at EDSA and Ayala Avenue used in rs-example-encounter."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Collision site along Epifanio de los Santos Avenue near Ayala Avenue, Makati City.</div>"
 * name = "EDSA - Ayala Southbound"
@@ -156,6 +160,8 @@ Usage: #example
 Instance: rs-example-service-location-er
 InstanceOf: RSServiceLocation
 Usage: #example
+Title: "Example Receiving Facility Location"
+Description: "Emergency room location for Department of Health - Central Office receiving rs-example-encounter."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Emergency Room, Department of Health - Central Office.</div>"
 * name = "DOH Central ER"
@@ -169,6 +175,8 @@ Usage: #example
 Instance: rs-practitioner-receivedby
 InstanceOf: PHCorePractitioner
 Usage: #example
+Title: "Example Receiving Practitioner"
+Description: "Practitioner who received rs-example-patient at the DOH Central ER."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Maria Cristina Santos received the patient at the DOH Central ER.</div>"
 * name.use = #official
@@ -180,6 +188,8 @@ Usage: #example
 Instance: rs-practitioner-teamlead
 InstanceOf: PHCorePractitioner
 Usage: #example
+Title: "Example EMS Team Leader"
+Description: "Response team leader overseeing transport in rs-example-encounter."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>EMS Team Leader: Paramedic Joel Rivera.</div>"
 * name.use = #official
@@ -191,6 +201,8 @@ Usage: #example
 Instance: rs-practitioner-treatment
 InstanceOf: PHCorePractitioner
 Usage: #example
+Title: "Example Treatment Officer"
+Description: "EMS treatment officer providing care during rs-example-encounter."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Treatment Officer: Paramedic Lea Dominguez.</div>"
 * name.use = #official
