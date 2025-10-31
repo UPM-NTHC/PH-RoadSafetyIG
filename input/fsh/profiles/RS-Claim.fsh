@@ -12,6 +12,8 @@ Description: "Claim information related to cost of care."
 Instance: rs-example-claim
 InstanceOf: RSClaim
 Usage: #example
+Title: "Example RS Claim"
+Description: "Claim for rs-example-patient with PHP 1500 reimbursement submitted by rs-organization-single-ex."
 * meta.profile = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Example RS Claim for patient rs-example-patient. Total: PHP 1500.00</div>"
@@ -31,6 +33,8 @@ Usage: #example
 Instance: rs-example-coverage
 InstanceOf: Coverage
 Usage: #example
+Title: "Example RS Coverage"
+Description: "Coverage held by rs-example-patient with rs-organization-single-ex as payor for 2025 policy year."
 * status = #active
 * type.coding = http://terminology.hl7.org/CodeSystem/v3-ActCode#EHCPOL
 * beneficiary = Reference(rs-example-patient)

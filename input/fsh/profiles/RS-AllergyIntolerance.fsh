@@ -22,6 +22,8 @@ Description: "Known allergies, substances and reactions."
 Instance: rs-example-allergy
 InstanceOf: AllergyIntolerance
 Usage: #example
+Title: "Example RS Allergy"
+Description: "Peanut allergy record for rs-example-patient with active clinical status and unconfirmed verification."
 * meta.profile = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Example AllergyIntolerance: peanut allergy (SNOMED CT 91935009) confirmed for patient rs-example-patient; severe urticaria reaction recorded.</div>"
 * text.status = #generated

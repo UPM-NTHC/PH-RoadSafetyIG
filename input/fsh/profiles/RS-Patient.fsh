@@ -63,6 +63,8 @@ does not have fixed value, binding or existence assertions```
 Instance: rs-example-patient
 InstanceOf: Patient
 Usage: #example
+Title: "Example RS Patient"
+Description: "Adult male patient referenced across RS examples with Manila home address and telecom details."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>RS-Example Patient: Thomas Niccolo Filamor Reyes, male, born 1990-01-01. Address: 123 Sampaloc Street, Manila 1008, PH. Phone: +63-912-345-6789; Email: thomas.reyes@example.com</div>"
 * meta.profile = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"
