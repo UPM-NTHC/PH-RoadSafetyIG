@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-11-01T03:08:11+00:00"/>
+  <date value="2025-11-01T11:24:55+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -2108,6 +2108,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/rs-bundle-example-condition-final-diagnosis"/>
+      </reference>
+      <name value="Final Diagnosis – Reyes"/>
+      <description value="Final diagnosis entered on discharge for Thomas Reyes."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -2116,6 +2127,17 @@
       <name value="Glasgow Coma Scale"/>
       <description value="Neurologic assessment performed in ambulance."/>
       <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/rs-bundle-example-condition-initial-impression"/>
+      </reference>
+      <name value="Initial Impression – Reyes"/>
+      <description value="Initial impression documented at DOH Central ER for Thomas Reyes."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2149,6 +2171,28 @@
       <name value="Mode of Transport"/>
       <description value="Ambulance transport to receiving facility."/>
       <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/rs-bundle-example-bundle-oneiss"/>
+      </reference>
+      <name value="ONEISS Bundle – Reyes"/>
+      <description value="Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/rs-bundle-example-composition-oneiss"/>
+      </reference>
+      <name value="ONEISS Facility Submission – Reyes"/>
+      <description value="Composition organising the ONEISS facility submission for Thomas Reyes."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

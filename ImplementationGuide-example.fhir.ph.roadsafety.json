@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-11-01T03:08:11+00:00",
+  "date" : "2025-11-01T11:24:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -2586,6 +2586,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/rs-bundle-example-condition-final-diagnosis"
+      },
+      "name" : "Final Diagnosis – Reyes",
+      "description" : "Final diagnosis entered on discharge for Thomas Reyes.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -2594,6 +2606,18 @@
       "name" : "Glasgow Coma Scale",
       "description" : "Neurologic assessment performed in ambulance.",
       "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/rs-bundle-example-condition-initial-impression"
+      },
+      "name" : "Initial Impression – Reyes",
+      "description" : "Initial impression documented at DOH Central ER for Thomas Reyes.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"
     },
     {
       "extension" : [{
@@ -2630,6 +2654,30 @@
       "name" : "Mode of Transport",
       "description" : "Ambulance transport to receiving facility.",
       "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/rs-bundle-example-bundle-oneiss"
+      },
+      "name" : "ONEISS Bundle – Reyes",
+      "description" : "Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/rs-bundle-example-composition-oneiss"
+      },
+      "name" : "ONEISS Facility Submission – Reyes",
+      "description" : "Composition organising the ONEISS facility submission for Thomas Reyes.",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"
     },
     {
       "extension" : [{

@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-01T03:08:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-01T11:24:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -5202,6 +5202,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Condition/rs-bundle-example-condition-final-diagnosis> ;
+         fhir:reference [ fhir:v "Condition/rs-bundle-example-condition-final-diagnosis" ]
+       ] ;
+       fhir:name [ fhir:v "Final Diagnosis – Reyes" ] ;
+       fhir:description [ fhir:v "Final diagnosis entered on discharge for Thomas Reyes." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Observation"
          ]
        ] ) ;
@@ -5215,6 +5237,28 @@
          a fhir:Canonical ;
          fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"^^xsd:anyURI ;
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Condition/rs-bundle-example-condition-initial-impression> ;
+         fhir:reference [ fhir:v "Condition/rs-bundle-example-condition-initial-impression" ]
+       ] ;
+       fhir:name [ fhir:v "Initial Impression – Reyes" ] ;
+       fhir:description [ fhir:v "Initial impression documented at DOH Central ER for Thomas Reyes." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression>
        ]
      ] [
        fhir:extension ( [
@@ -5280,6 +5324,50 @@
          a fhir:Canonical ;
          fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"^^xsd:anyURI ;
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Bundle/rs-bundle-example-bundle-oneiss> ;
+         fhir:reference [ fhir:v "Bundle/rs-bundle-example-bundle-oneiss" ]
+       ] ;
+       fhir:name [ fhir:v "ONEISS Bundle – Reyes" ] ;
+       fhir:description [ fhir:v "Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Composition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Composition/rs-bundle-example-composition-oneiss> ;
+         fhir:reference [ fhir:v "Composition/rs-bundle-example-composition-oneiss" ]
+       ] ;
+       fhir:name [ fhir:v "ONEISS Facility Submission – Reyes" ] ;
+       fhir:description [ fhir:v "Composition organising the ONEISS facility submission for Thomas Reyes." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss>
        ]
      ] [
        fhir:extension ( [

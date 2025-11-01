@@ -17,6 +17,7 @@ Composition that organises a facility (ONEISS) submission. Sections MUST referen
 **Usages:**
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Examples for this Profile: [Composition/rs-bundle-example-composition-oneiss](Composition-rs-bundle-example-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-composition-oneiss)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-composition-oneis
   "name" : "RSCompositionONEISS",
   "title" : "RS Composition — ONEISS Submission",
   "status" : "draft",
-  "date" : "2025-11-01T03:08:11+00:00",
+  "date" : "2025-11-01T11:24:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

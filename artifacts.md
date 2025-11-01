@@ -293,9 +293,13 @@ These are example instances that show what data produced and consumed by systems
 | [Example Receiving Facility Location](Location-rs-example-service-location-er.md) | Emergency room location for Department of Health - Central Office receiving rs-example-encounter. |
 | [Example Receiving Practitioner](Practitioner-rs-practitioner-receivedby.md) | Practitioner who received rs-example-patient at the DOH Central ER. |
 | [Example Treatment Officer](Practitioner-rs-practitioner-treatment.md) | EMS treatment officer providing care during rs-example-encounter. |
+| [Final Diagnosis – Reyes](Condition-rs-bundle-example-condition-final-diagnosis.md) | Final diagnosis entered on discharge for Thomas Reyes. |
 | [Glasgow Coma Scale](Observation-rs-bundle-example-observation-gcs.md) | Neurologic assessment performed in ambulance. |
+| [Initial Impression – Reyes](Condition-rs-bundle-example-condition-initial-impression.md) | Initial impression documented at DOH Central ER for Thomas Reyes. |
 | [Injury Intent](Observation-rs-bundle-example-observation-injury-intent.md) | Intent recorded as unintentional vehicular crash. |
 | [Mode of Transport](Observation-rs-bundle-example-observation-mode-transport.md) | Ambulance transport to receiving facility. |
+| [ONEISS Bundle – Reyes](Bundle-rs-bundle-example-bundle-oneiss.md) | Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded. |
+| [ONEISS Facility Submission – Reyes](Composition-rs-bundle-example-composition-oneiss.md) | Composition organising the ONEISS facility submission for Thomas Reyes. |
 | [Patient Coverage](Coverage-rs-bundle-example-coverage.md) | Coverage record supporting claim for EMS transport. |
 | [Patient Education](Procedure-rs-bundle-example-procedure-education.md) | Post-crash counseling delivered by EMS team lead. |
 | [Patient Thomas Reyes](Patient-rs-bundle-example-patient.md) | Adult male patient transported following a vehicular collision. |

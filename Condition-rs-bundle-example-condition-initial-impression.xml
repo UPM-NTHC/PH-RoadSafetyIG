@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="rs-bundle-example-condition-initial-impression"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition rs-bundle-example-condition-initial-impression</b></p><a name="rs-bundle-example-condition-initial-impression"> </a><a name="hcrs-bundle-example-condition-initial-impression"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-condition-initial-impression.html">RS Condition — Initial Impression</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 148006}">Preliminary diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 125605004}">Injury of multiple body regions (disorder)</span></p><p><b>subject</b>: <a href="Patient-rs-example-patient.html">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Encounter-rs-example-encounter.html">Encounter: extension = ,; identifier = Account number,Patient hospital visit number (observable entity): HCN-2025-0459; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 13:45:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>onset</b>: 2025-10-31 15:55:00+0800</p><p><b>note</b>: </p><blockquote><div><p>Polytrauma following multi-vehicle collision; hemodynamics stabilised upon arrival.</p>
+</div></blockquote></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="provisional"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="148006"/>
+      <display value="Preliminary diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="125605004"/>
+      <display value="Injury of multiple body regions (disorder)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/rs-example-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/rs-example-encounter"/>
+  </encounter>
+  <onsetDateTime value="2025-10-31T15:55:00+08:00"/>
+  <note>
+    <text value="Polytrauma following multi-vehicle collision; hemodynamics stabilised upon arrival."/>
+  </note>
+</Condition>

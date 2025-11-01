@@ -55,7 +55,7 @@ Document Bundle for Facility ONEISS submission. The first entry MUST be a Compos
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Bundle/rs-bundle-example-bundle-oneiss](Bundle-rs-bundle-example-bundle-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-bundle-oneiss)
 
@@ -88,7 +88,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
   "name" : "RSBundleONEISS",
   "title" : "RS Bundle — ONEISS Submission",
   "status" : "draft",
-  "date" : "2025-11-01T03:08:11+00:00",
+  "date" : "2025-11-01T11:24:55+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
