@@ -653,3 +653,237 @@ Description: "Respiratory assessment recorded en route."
 * component[respiratory-rhythm].valueCodeableConcept = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#5467003 "Regular"
 * component[breath-sounds].code = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#52653008 "Respiratory sounds (observable entity)"
 * component[breath-sounds].valueCodeableConcept = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#301708006 "Clear"
+
+// ONEISS facility submission bundle example leveraging shared rs-example-* resources.
+
+Instance: rs-bundle-example-condition-initial-impression
+InstanceOf: RSConditionInitialImpression
+Usage: #example
+Title: "Initial Impression – Reyes"
+Description: "Initial impression documented at DOH Central ER for Thomas Reyes."
+* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
+* code = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#125605004 "Injury of multiple body regions (disorder)"
+* subject = Reference(rs-example-patient)
+* encounter = Reference(rs-example-encounter)
+* onsetDateTime = "2025-10-31T15:55:00+08:00"
+* note[0].text = "Polytrauma following multi-vehicle collision; hemodynamics stabilised upon arrival."
+
+Instance: rs-bundle-example-condition-final-diagnosis
+InstanceOf: RSConditionFinalDiagnosis
+Usage: #example
+Title: "Final Diagnosis – Reyes"
+Description: "Final diagnosis entered on discharge for Thomas Reyes."
+* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* code = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#29718003 "Closed fracture of shaft of femur (disorder)"
+* subject = Reference(rs-example-patient)
+* encounter = Reference(rs-example-encounter)
+* recordedDate = "2025-11-01T09:00:00+08:00"
+* note[0].text = "Closed mid-shaft femur fracture confirmed via radiograph; scheduled for operative fixation."
+
+Instance: rs-bundle-example-composition-oneiss
+InstanceOf: RSCompositionONEISS
+Usage: #example
+Title: "ONEISS Facility Submission – Reyes"
+Description: "Composition organising the ONEISS facility submission for Thomas Reyes."
+* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"
+* status = #final
+* type = http://loinc.org#11348-0 "Emergency department note"
+* date = "2025-11-01T10:00:00+08:00"
+* subject = Reference(rs-example-patient)
+* encounter = Reference(rs-example-encounter)
+* author = Reference(rs-practitioner-receivedby)
+* title = "DOH Central ER – ONEISS Submission"
+* section[patient].entry[0] = Reference(rs-example-patient)
+* section[encounter].entry[0] = Reference(rs-example-encounter)
+* section[clinical].code = http://loinc.org#8648-8 "Emergency department clinical impressions"
+* section[clinical].entry[+] = Reference(rs-bundle-example-condition-initial-impression)
+* section[clinical].entry[+] = Reference(rs-bundle-example-condition-final-diagnosis)
+* section[clinical].entry[+] = Reference(rs-example-observation-risk-factors)
+* section[clinical].entry[+] = Reference(rs-example-observation-blood-alcohol)
+* section[clinical].entry[+] = Reference(rs-example-observation-condition)
+* section[clinical].entry[+] = Reference(rs-example-observation-status-on-arrival)
+* section[clinical].entry[+] = Reference(rs-example-observation-outcome)
+* section[clinical].entry[+] = Reference(rs-example-observation-transferred)
+* section[clinical].entry[+] = Reference(rs-example-observation-referred)
+* section[injuries].code = http://loinc.org#11337-3 "Hospital admission history and physical note"
+* section[injuries].entry[+] = Reference(rs-example-observation-multiple-injuries)
+* section[injuries].entry[+] = Reference(rs-example-observation-abrasion)
+* section[injuries].entry[+] = Reference(rs-example-observation-avulsion)
+* section[injuries].entry[+] = Reference(rs-example-observation-nature-burns)
+* section[injuries].entry[+] = Reference(rs-example-observation-concussion)
+* section[injuries].entry[+] = Reference(rs-example-observation-contusion)
+* section[injuries].entry[+] = Reference(rs-example-observation-fracture)
+* section[injuries].entry[+] = Reference(rs-example-observation-open-wound)
+* section[injuries].entry[+] = Reference(rs-example-observation-traumatic-amputation)
+* section[injuries].entry[+] = Reference(rs-example-observation-other-injury)
+* section[incident].code = http://loinc.org#11307-9 "Injury history narrative"
+* section[incident].entry[+] = Reference(rs-example-incident-location)
+* section[incident].entry[+] = Reference(rs-example-observation-injury-datetime)
+* section[incident].entry[+] = Reference(rs-example-observation-injury-intent)
+* section[incident].entry[+] = Reference(rs-example-observation-transport-accident)
+* section[incident].entry[+] = Reference(rs-example-observation-mode-transport)
+* section[incident].entry[+] = Reference(rs-example-observation-collision-vs-noncollision)
+* section[incident].entry[+] = Reference(rs-example-observation-patients-vehicle)
+* section[incident].entry[+] = Reference(rs-example-observation-other-vehicle)
+* section[incident].entry[+] = Reference(rs-example-observation-position-of-patient)
+* section[incident].entry[+] = Reference(rs-example-observation-how-many-vehicles)
+* section[incident].entry[+] = Reference(rs-example-observation-place-of-occurrence)
+* section[incident].entry[+] = Reference(rs-example-observation-activity-at-incident)
+* section[incident].entry[+] = Reference(rs-example-observation-safety-accessories)
+* section[incident].entry[+] = Reference(rs-example-observation-triage)
+* section[incident].entry[+] = Reference(rs-example-observation-urgency)
+* section[documents].code = http://loinc.org#55109-3 "Clinical attachments"
+* section[documents].entry[+] = Reference(rs-example-documentreference)
+* section[+].code = http://loinc.org#11346-6 "External cause of injury narrative"
+* section[=].title = "External Causes"
+* section[=].entry[+] = Reference(rs-example-observation-ec-bites)
+* section[=].entry[+] = Reference(rs-example-observation-ec-burns)
+* section[=].entry[+] = Reference(rs-example-observation-ec-chemical)
+* section[=].entry[+] = Reference(rs-example-observation-ec-sharp)
+* section[=].entry[+] = Reference(rs-example-observation-ec-drowning)
+* section[=].entry[+] = Reference(rs-example-observation-ec-forces)
+* section[=].entry[+] = Reference(rs-example-observation-ec-fall)
+* section[=].entry[+] = Reference(rs-example-observation-ec-firecracker)
+* section[=].entry[+] = Reference(rs-example-observation-ec-gunshot)
+* section[=].entry[+] = Reference(rs-example-observation-ec-hanging)
+* section[=].entry[+] = Reference(rs-example-observation-ec-mauling)
+* section[=].entry[+] = Reference(rs-example-observation-ec-sexual-assault)
+* section[=].entry[+] = Reference(rs-example-observation-ec-other)
+* section[+].code = http://loinc.org#8714-3 "Procedures"
+* section[=].title = "Procedures and Workflow"
+* section[=].entry[+] = Reference(rs-example-procedure)
+* section[=].entry[+] = Reference(rs-example-procedure-transport)
+* section[=].entry[+] = Reference(rs-example-service-request)
+
+Instance: rs-bundle-example-bundle-oneiss
+InstanceOf: RSBundleONEISS
+Usage: #example
+Title: "ONEISS Bundle – Reyes"
+Description: "Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded."
+* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss"
+* identifier.system = "urn:fdc:roadsafetyph.doh.gov.ph:bundle"
+* identifier.value = "ONEISS-20251031-001"
+* type = #document
+* timestamp = "2025-11-01T10:05:00+08:00"
+* entry[composition].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111101"
+* entry[composition].resource = rs-bundle-example-composition-oneiss
+* entry[patient].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111102"
+* entry[patient].resource = rs-example-patient
+* entry[encounter].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111103"
+* entry[encounter].resource = rs-example-encounter
+* entry[conditionInitial].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111104"
+* entry[conditionInitial].resource = rs-bundle-example-condition-initial-impression
+* entry[conditionFinal].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111105"
+* entry[conditionFinal].resource = rs-bundle-example-condition-final-diagnosis
+* entry[observationClinical][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111106"
+* entry[observationClinical][=].resource = rs-example-observation-risk-factors
+* entry[observationClinical][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111107"
+* entry[observationClinical][=].resource = rs-example-observation-blood-alcohol
+* entry[observationClinical][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111108"
+* entry[observationClinical][=].resource = rs-example-observation-condition
+* entry[observationClinical][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111109"
+* entry[observationClinical][=].resource = rs-example-observation-status-on-arrival
+* entry[observationClinical][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111110"
+* entry[observationClinical][=].resource = rs-example-observation-outcome
+* entry[observationTransferredFromFacility].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111111"
+* entry[observationTransferredFromFacility].resource = rs-example-observation-transferred
+* entry[observationReferredByFacility].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111112"
+* entry[observationReferredByFacility].resource = rs-example-observation-referred
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111113"
+* entry[observationInjuries][=].resource = rs-example-observation-multiple-injuries
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111114"
+* entry[observationInjuries][=].resource = rs-example-observation-abrasion
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111115"
+* entry[observationInjuries][=].resource = rs-example-observation-avulsion
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111116"
+* entry[observationInjuries][=].resource = rs-example-observation-nature-burns
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111117"
+* entry[observationInjuries][=].resource = rs-example-observation-concussion
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111118"
+* entry[observationInjuries][=].resource = rs-example-observation-contusion
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111119"
+* entry[observationInjuries][=].resource = rs-example-observation-fracture
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111120"
+* entry[observationInjuries][=].resource = rs-example-observation-open-wound
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111121"
+* entry[observationInjuries][=].resource = rs-example-observation-traumatic-amputation
+* entry[observationInjuries][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111122"
+* entry[observationInjuries][=].resource = rs-example-observation-other-injury
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111123"
+* entry[observationIncident][=].resource = rs-example-observation-injury-datetime
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111124"
+* entry[observationIncident][=].resource = rs-example-observation-injury-intent
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111125"
+* entry[observationIncident][=].resource = rs-example-observation-transport-accident
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111126"
+* entry[observationIncident][=].resource = rs-example-observation-mode-transport
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111127"
+* entry[observationIncident][=].resource = rs-example-observation-collision-vs-noncollision
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111128"
+* entry[observationIncident][=].resource = rs-example-observation-patients-vehicle
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111129"
+* entry[observationIncident][=].resource = rs-example-observation-other-vehicle
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111130"
+* entry[observationIncident][=].resource = rs-example-observation-position-of-patient
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111131"
+* entry[observationIncident][=].resource = rs-example-observation-how-many-vehicles
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111132"
+* entry[observationIncident][=].resource = rs-example-observation-place-of-occurrence
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111133"
+* entry[observationIncident][=].resource = rs-example-observation-activity-at-incident
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111134"
+* entry[observationIncident][=].resource = rs-example-observation-safety-accessories
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111135"
+* entry[observationIncident][=].resource = rs-example-observation-triage
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111136"
+* entry[observationIncident][=].resource = rs-example-observation-urgency
+* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111137"
+* entry[observationIncident][=].resource = rs-example-incident-location
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111138"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-bites
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111139"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-burns
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111140"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-chemical
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111141"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-sharp
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111142"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-drowning
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111143"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-forces
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111144"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-fall
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111145"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-firecracker
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111146"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-gunshot
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111147"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-hanging
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111148"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-mauling
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111149"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-sexual-assault
+* entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111150"
+* entry[observationExternalCause][=].resource = rs-example-observation-ec-other
+* entry[document][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111151"
+* entry[document][0].resource = rs-example-documentreference
+* entry[serviceRequest][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111152"
+* entry[serviceRequest][0].resource = rs-example-service-request
+* entry[procedure][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111153"
+* entry[procedure][0].resource = rs-example-procedure
+* entry[procedure][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111154"
+* entry[procedure][=].resource = rs-example-procedure-transport
+* entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111155"
+* entry[=].resource = rs-organization-single-ex
+* entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111156"
+* entry[=].resource = rs-practitioner-receivedby
+* entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111157"
+* entry[=].resource = rs-practitioner-teamlead
+* entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111158"
+* entry[=].resource = rs-practitioner-treatment
+* entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111159"
+* entry[=].resource = rs-example-service-location-er
