@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-postcrash.
   "name" : "RSBundlePostCrash",
   "title" : "RS Bundle — Post‑Crash Investigation",
   "status" : "draft",
-  "date" : "2025-11-01T02:32:07+00:00",
+  "date" : "2025-11-01T03:00:46+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

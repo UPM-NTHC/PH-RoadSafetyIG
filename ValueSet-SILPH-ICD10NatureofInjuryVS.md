@@ -54,7 +54,7 @@ SILPH Value Set for ICD 10 Codes for Nature of Injury (Chapter XIX - S00-T98)
   "name" : "SILPH___ICD10_Nature_of_Injury__VS_",
   "title" : "SILPH - ICD10 Nature of Injury (VS)",
   "status" : "draft",
-  "date" : "2025-11-01T02:32:07+00:00",
+  "date" : "2025-11-01T03:00:46+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

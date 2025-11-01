@@ -1,9 +1,9 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 3886, warn = 984, info = 383
+err = 3886, warn = 983, info = 383
 IG Publisher Version: 2.0.25
-Generated Sat Nov 01 02:40:51 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
+Generated Sat Nov 01 03:11:15 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.roadsafety#0.2.0 (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 142 / 0 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-rs-example-allergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-rs-bundle-example-bundle-ems : 965 / 144 / 83
@@ -121,7 +121,7 @@ Generated Sat Nov 01 02:40:51 UTC 2025. FHIR version 4.0.1 for example.fhir.ph.r
  /github/workspace/fsh-generated/resources/Procedure-rs-bundle-example-procedure-transport : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Procedure-rs-example-procedure : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Procedure-rs-example-procedure-transport : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-RSOneissQuestionnaire : 373 / 10 / 7
+ /github/workspace/fsh-generated/resources/Questionnaire-RSOneissQuestionnaire : 373 / 9 / 7
  /github/workspace/fsh-generated/resources/Questionnaire-RSRunReportQuestionnaire : 225 / 1 / 5
  /github/workspace/fsh-generated/resources/ServiceRequest-rs-bundle-example-service-request : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-rs-example-service-request : 0 / 0 / 1
@@ -2123,7 +2123,6 @@ ERROR: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[8
 ERROR: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[8].extension[1].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile'
 ERROR: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[8].extension[2]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot could not be found so is not allowed here
 ERROR: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[8].extension[2].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionRoot'
-WARNING: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[8].item[0].answerValueSet: A definition could not be found for Canonical URL 'http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollisionorNoncollision'
 ERROR: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[9].extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext could not be found so is not allowed here
 ERROR: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[9].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext'
 ERROR: Questionnaire/RSOneissQuestionnaire: Questionnaire.item[0].item[3].item[9].extension[1]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContextProfile could not be found so is not allowed here
