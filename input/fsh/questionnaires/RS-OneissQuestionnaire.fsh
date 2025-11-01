@@ -558,7 +558,7 @@ Description: "Structured Data Capture questionnaire for the DOH ONEISS Patient I
 * item[=].item[=].item[=].item[+].linkId = "oneiss-incident-collision-type-value"
 * item[=].item[=].item[=].item[=].text = "Collision classification"
 * item[=].item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollisionorNoncollision"
+* item[=].item[=].item[=].item[=].answerValueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentCollision"
 * item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision#Observation.valueCodeableConcept"
 
 * item[=].item[=].item[+].linkId = "oneiss-incident-patient-vehicle"
