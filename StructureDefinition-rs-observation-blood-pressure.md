@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure | *Version*:0.2.0 |
-| Draft as of 2025-10-31 | *Computable Name*:RSObsBloodPressure |
+| Draft as of 2025-11-01 | *Computable Name*:RSObsBloodPressure |
 
  
 Blood pressure using component entries for systolic/diastolic. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
   "name" : "RSObsBloodPressure",
   "title" : "RS Observation - Blood Pressure",
   "status" : "draft",
-  "date" : "2025-10-31T16:32:57+00:00",
+  "date" : "2025-11-01T02:32:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

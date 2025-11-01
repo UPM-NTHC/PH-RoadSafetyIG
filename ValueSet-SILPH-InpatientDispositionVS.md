@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition | *Version*:0.2.0 |
-| Draft as of 2025-10-31 | *Computable Name*:SILPH___Inpatient_Disposition__VS_ |
+| Draft as of 2025-11-01 | *Computable Name*:SILPH___Inpatient_Disposition__VS_ |
 
  
 SILPH Value Set for Inpatient Visit Disposition 
@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "SILPH___Inpatient_Disposition__VS_",
   "title" : "SILPH - Inpatient Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-10-31T16:32:57+00:00",
+  "date" : "2025-11-01T02:32:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

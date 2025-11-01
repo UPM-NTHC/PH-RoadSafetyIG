@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-Status | *Version*:0.2.0 |
-| Draft as of 2025-10-31 | *Computable Name*:SILPH___Status__VS_ |
+| Draft as of 2025-11-01 | *Computable Name*:SILPH___Status__VS_ |
 
  
 SILPH ValueSet for Patient Status, if Alive or Dead during Admission 
@@ -55,7 +55,7 @@ SILPH ValueSet for Patient Status, if Alive or Dead during Admission
   "name" : "SILPH___Status__VS_",
   "title" : "SILPH - Status (VS)",
   "status" : "draft",
-  "date" : "2025-10-31T16:32:57+00:00",
+  "date" : "2025-11-01T02:32:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient | *Version*:0.2.0 |
-| Draft as of 2025-10-31 | *Computable Name*:RSPatient |
+| Draft as of 2025-11-01 | *Computable Name*:RSPatient |
 
  
 Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "RS Patient",
   "status" : "draft",
-  "date" : "2025-10-31T16:32:57+00:00",
+  "date" : "2025-11-01T02:32:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

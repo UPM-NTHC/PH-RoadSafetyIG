@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ICD10ExternalCauseofInjury | *Version*:0.2.0 |
-| Draft as of 2025-10-31 | *Computable Name*:SILPH___ICD10_External_Cause_of_Injury__VS_ |
+| Draft as of 2025-11-01 | *Computable Name*:SILPH___ICD10_External_Cause_of_Injury__VS_ |
 
  
 SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes from Chapter XX - V01-Y36, Y85-Y87, and Y89) 
@@ -54,7 +54,7 @@ SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes fr
   "name" : "SILPH___ICD10_External_Cause_of_Injury__VS_",
   "title" : "SILPH - ICD10 External Cause of Injury (VS)",
   "status" : "draft",
-  "date" : "2025-10-31T16:32:57+00:00",
+  "date" : "2025-11-01T02:32:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
