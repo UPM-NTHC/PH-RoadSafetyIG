@@ -92,7 +92,7 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 
 Invariant: RSEncounterDischarge
 Description: "Inpatient encounters use in-patient discharge dispositions; ER/OPD/BHS/RHU encounters use the ambulatory disposition list."
-Expression: "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-er')))"
+Expression: "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition')))"
 Severity: #error
 
 Extension: RSEncounterVehicleUsed
