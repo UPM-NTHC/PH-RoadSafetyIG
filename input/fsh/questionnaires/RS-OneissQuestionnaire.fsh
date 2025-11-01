@@ -917,9 +917,8 @@ Description: "Structured Data Capture questionnaire for the DOH ONEISS Patient I
 * item[=].item[=].item[=].extension[=].valueBoolean = true
 * item[=].item[=].item[=].item[+].linkId = "oneiss-postcrash-collision-type-value"
 * item[=].item[=].item[=].item[=].text = "Collision type"
-* item[=].item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-CollisionType"
-* item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type#Observation.valueCodeableConcept"
+* item[=].item[=].item[=].item[=].type = #string
+* item[=].item[=].item[=].item[=].definition = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type#Observation.valueCodeableConcept.text"
 
 * item[=].item[=].item[+].linkId = "oneiss-postcrash-traffic-investigator"
 * item[=].item[=].item[=].text = "Traffic investigator present?"
