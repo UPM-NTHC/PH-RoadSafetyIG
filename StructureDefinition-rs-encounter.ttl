@@ -23,7 +23,7 @@
   fhir:name [ fhir:v "RSEncounter"] ; # 
   fhir:title [ fhir:v "RS Encounter"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-01T03:00:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-01T03:08:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -187,7 +187,7 @@
          fhir:key [ fhir:v "RSEncounterDischarge" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Inpatient encounters use in-patient discharge dispositions; ER/OPD/BHS/RHU encounters use the ambulatory disposition list." ] ;
-         fhir:expression [ fhir:v "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-er')))" ] ;
+         fhir:expression [ fhir:v "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition')))" ] ;
          fhir:source [
            fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"^^xsd:anyURI ;
            fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter>
@@ -7683,7 +7683,7 @@
          fhir:key [ fhir:v "RSEncounterDischarge" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Inpatient encounters use in-patient discharge dispositions; ER/OPD/BHS/RHU encounters use the ambulatory disposition list." ] ;
-         fhir:expression [ fhir:v "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-er')))" ] ;
+         fhir:expression [ fhir:v "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition')))" ] ;
          fhir:source [
            fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"^^xsd:anyURI ;
            fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter>

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-sh
   "name" : "RSObsECSharpObject",
   "title" : "RS Observation - External Cause: Contact with Sharp Object",
   "status" : "draft",
-  "date" : "2025-11-01T03:00:46+00:00",
+  "date" : "2025-11-01T03:08:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

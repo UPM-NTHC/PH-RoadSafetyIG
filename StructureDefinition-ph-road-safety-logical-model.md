@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ph-road-safety-logic
   "name" : "MDSRoadSafety",
   "title" : "RS Minimum Dataset (MDS) Logical Model",
   "status" : "draft",
-  "date" : "2025-11-01T03:00:46+00:00",
+  "date" : "2025-11-01T03:08:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

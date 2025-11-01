@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-11-01T03:00:46+00:00",
+  "date" : "2025-11-01T03:08:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
             "key" : "RSEncounterDischarge",
             "severity" : "error",
             "human" : "Inpatient encounters use in-patient discharge dispositions; ER/OPD/BHS/RHU encounters use the ambulatory disposition list.",
-            "expression" : "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-ip'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/vs-disposition-er')))",
+            "expression" : "((class.system = 'http://snomed.info/sct' and class.code = '416800000') implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition'))) and (((class.system = 'http://snomed.info/sct' and class.code = '373864002') or (class.system = 'http://www.roadsafetyph.doh.gov.ph/CodeSystem/cs-silph' and (class.code = 'BHS' or class.code = 'RHU'))) implies (hospitalization.dischargeDisposition.empty() or hospitalization.dischargeDisposition.memberOf('http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OutpatientERDisposition')))",
             "source" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"
           }
         ]
