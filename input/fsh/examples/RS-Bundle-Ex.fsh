@@ -664,6 +664,7 @@ Description: "Initial impression documented at DOH Central ER for Thomas Reyes."
 * meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
+* category.coding = $SCT#148006 "Preliminary diagnosis"
 * code = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#125605004 "Injury of multiple body regions (disorder)"
 * subject = Reference(rs-example-patient)
 * encounter = Reference(rs-example-encounter)
@@ -693,13 +694,15 @@ Description: "Composition organising the ONEISS facility submission for Thomas R
 * status = #final
 * type = http://loinc.org#11348-0 "Emergency department note"
 * date = "2025-11-01T10:00:00+08:00"
-* subject = Reference(rs-example-patient)
-* encounter = Reference(rs-example-encounter)
-* author = Reference(rs-practitioner-receivedby)
+* subject = Reference(rs-bundle-example-patient)
+* subject = Reference(rs-bundle-example-patient)
+* encounter = Reference(rs-bundle-example-encounter)
+* author = Reference(rs-bundle-example-practitioner-receiver)
 * title = "DOH Central ER – ONEISS Submission"
-* section[patient].entry[0] = Reference(rs-example-patient)
-* section[encounter].entry[0] = Reference(rs-example-encounter)
+* section[patient].entry[0] = Reference(rs-bundle-example-patient)
+* section[encounter].entry[0] = Reference(rs-bundle-example-encounter)
 * section[clinical].code = http://loinc.org#8648-8 "Emergency department clinical impressions"
+* section[clinical].title = "Clinical"
 * section[clinical].entry[+] = Reference(rs-bundle-example-condition-initial-impression)
 * section[clinical].entry[+] = Reference(rs-bundle-example-condition-final-diagnosis)
 * section[clinical].entry[+] = Reference(rs-example-observation-risk-factors)
@@ -710,6 +713,7 @@ Description: "Composition organising the ONEISS facility submission for Thomas R
 * section[clinical].entry[+] = Reference(rs-example-observation-transferred)
 * section[clinical].entry[+] = Reference(rs-example-observation-referred)
 * section[injuries].code = http://loinc.org#11337-3 "Hospital admission history and physical note"
+* section[injuries].title = "Injuries"
 * section[injuries].entry[+] = Reference(rs-example-observation-multiple-injuries)
 * section[injuries].entry[+] = Reference(rs-example-observation-abrasion)
 * section[injuries].entry[+] = Reference(rs-example-observation-avulsion)
@@ -721,7 +725,8 @@ Description: "Composition organising the ONEISS facility submission for Thomas R
 * section[injuries].entry[+] = Reference(rs-example-observation-traumatic-amputation)
 * section[injuries].entry[+] = Reference(rs-example-observation-other-injury)
 * section[incident].code = http://loinc.org#11307-9 "Injury history narrative"
-* section[incident].entry[+] = Reference(rs-example-incident-location)
+* section[incident].title = "Incident"
+
 * section[incident].entry[+] = Reference(rs-example-observation-injury-datetime)
 * section[incident].entry[+] = Reference(rs-example-observation-injury-intent)
 * section[incident].entry[+] = Reference(rs-example-observation-transport-accident)
@@ -737,7 +742,8 @@ Description: "Composition organising the ONEISS facility submission for Thomas R
 * section[incident].entry[+] = Reference(rs-example-observation-triage)
 * section[incident].entry[+] = Reference(rs-example-observation-urgency)
 * section[documents].code = http://loinc.org#55109-3 "Clinical attachments"
-* section[documents].entry[+] = Reference(rs-example-documentreference)
+* section[documents].title = "Documents / Evidence"
+* section[documents].entry[+] = Reference(rs-bundle-example-documentreference)
 * section[+].code = http://loinc.org#11346-6 "External cause of injury narrative"
 * section[=].title = "External Causes"
 * section[=].entry[+] = Reference(rs-example-observation-ec-bites)
@@ -755,9 +761,9 @@ Description: "Composition organising the ONEISS facility submission for Thomas R
 * section[=].entry[+] = Reference(rs-example-observation-ec-other)
 * section[+].code = http://loinc.org#8714-3 "Procedures"
 * section[=].title = "Procedures and Workflow"
-* section[=].entry[+] = Reference(rs-example-procedure)
-* section[=].entry[+] = Reference(rs-example-procedure-transport)
-* section[=].entry[+] = Reference(rs-example-service-request)
+* section[=].entry[+] = Reference(rs-bundle-example-procedure-education)
+* section[=].entry[+] = Reference(rs-bundle-example-procedure-transport)
+* section[=].entry[+] = Reference(rs-bundle-example-service-request)
 
 Instance: rs-bundle-example-bundle-oneiss
 InstanceOf: RSBundleONEISS
@@ -841,8 +847,7 @@ Description: "Document bundle delivering the facility ONEISS submission for Thom
 * entry[observationIncident][=].resource = rs-example-observation-triage
 * entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111136"
 * entry[observationIncident][=].resource = rs-example-observation-urgency
-* entry[observationIncident][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111137"
-* entry[observationIncident][=].resource = rs-example-incident-location
+
 * entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111138"
 * entry[observationExternalCause][=].resource = rs-example-observation-ec-bites
 * entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111139"
@@ -874,16 +879,15 @@ Description: "Document bundle delivering the facility ONEISS submission for Thom
 * entry[serviceRequest][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111152"
 * entry[serviceRequest][0].resource = rs-example-service-request
 * entry[procedure][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111153"
-* entry[procedure][0].resource = rs-example-procedure
+* entry[procedure][0].resource = rs-bundle-example-procedure-education
 * entry[procedure][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111154"
-* entry[procedure][=].resource = rs-example-procedure-transport
+* entry[procedure][=].resource = rs-bundle-example-procedure-transport
 * entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111155"
-* entry[=].resource = rs-organization-single-ex
+* entry[=].resource = rs-bundle-example-organization
 * entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111156"
-* entry[=].resource = rs-practitioner-receivedby
+* entry[=].resource = rs-bundle-example-practitioner-receiver
 * entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111157"
-* entry[=].resource = rs-practitioner-teamlead
-* entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111158"
-* entry[=].resource = rs-practitioner-treatment
+* entry[=].resource = rs-bundle-example-practitioner-teamlead
+
 * entry[+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111159"
-* entry[=].resource = rs-example-service-location-er
+* entry[=].resource = rs-bundle-example-service-location
