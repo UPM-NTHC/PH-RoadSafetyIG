@@ -40,6 +40,23 @@ To run the container once:
 docker run --rm -v $(pwd):/app ph-roadsafety-ig
 ```
 
+## Running with Helper Scripts
+
+For convenience, helper scripts `docker_genonce.bat` (for Windows) and `docker_genonce.sh` (for Linux/macOS) are provided to build and run the Docker container once. These scripts execute the command `docker-compose up --build --abort-on-container-exit`.
+
+To use them:
+
+*   **On Windows:**
+    ```bash
+    docker_genonce.bat
+    ```
+*   **On Linux/macOS:**
+    ```bash
+    ./docker_genonce.sh
+    ```
+
+These scripts will build the Docker image (if it's not up-to-date) and then run the FHIR IG Publisher. The container will exit automatically once the generation is complete, and the output will be available in your local `output/` directory.
+
 ## Understanding Ignore Files: `.dockerignore` vs. `_config.yml` (exclude)
 
 It's important to understand the different roles of ignore files in this project:
