@@ -10,8 +10,10 @@ RUN git config --global --add safe.directory /app
 # Copy the entire project
 COPY . .
 
-# Download the latest publisher
-RUN curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+# Download the latest publisher if it doesn't exist
+RUN if [ ! -f "./input-cache/publisher.jar" ]; then \
+    curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs; \
+    fi
 
 # Run the publisher
 CMD ["java", "-jar", "./input-cache/publisher.jar", "publisher", "-ig", ".", "-no-tx", "-no-update"]
