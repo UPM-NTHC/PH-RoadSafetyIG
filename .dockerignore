@@ -1,0 +1,46 @@
+# Files and directories from .gitignore that should also be excluded from Docker build context
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node modules (if they exist)
+node_modules/
+
+# FSH-generated files (will be recreated)
+# fsh-generated/
+
+# Input cache (publisher jar, will be handled in container)
+# input-cache/
+
+# Output directory (will be generated)
+# /output
+
+# Temporary directories (not needed for build)
+/temp
+/template
+
+# External repositories (not needed for this build)
+/ph-core
+/diagram-sil
+/smart-ig-starter-kit
+/MOHW_TWCoreIG
+
+# Bun files
+bun.lockb
+bun.lock
+
+# Other specific files/directories from gitignore that aren't needed for the build
+AGENTS.md
+GEMINI.md
+QWEN.md
+
+# Scripts and log files not needed in the container
+scripts/
+.github/
+.git/
+
+diagram-siil/
+ph-core/
+smart-ig-starter-kit/
+MOHW_TWCoreIG/

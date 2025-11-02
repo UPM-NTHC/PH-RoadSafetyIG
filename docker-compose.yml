@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  fhir-ig-generator:
+    build: .
+    container_name: ph-roadsafety-ig-generator
+    volumes:
+      # Map the entire project directory to preserve all generated files
+      - .:/app
+    working_dir: /app
+    environment:
+      - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+      - LC_ALL=C.UTF-8
+      - LANG=C.UTF-8
