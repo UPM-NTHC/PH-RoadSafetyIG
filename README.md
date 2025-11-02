@@ -1,4 +1,4 @@
-<p align="center"> <img src="input/includes/disclaimer.svg" alt="This is still under development and not yet for public consumption. Content data models and implementation details are subject to change" width="100%"> </p>
+<p align="center"> <img src="input/includes/rsdisclaimer.svg" alt="This is still under development and not yet for public consumption. Content data models and implementation details are subject to change" width="100%"> </p>
 
 # Draft PH Road Safety Implementation Guide
 
