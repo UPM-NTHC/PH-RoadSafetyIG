@@ -30,3 +30,38 @@ Description: "Facility/service delivery location. Type bound to HL7 v3 ServiceDe
 * address 0..1 MS
 * type 0..1 MS
 * type from http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType (extensible)
+
+Instance: rs-example-incident-location-basic
+InstanceOf: RSIncidentLocation
+Usage: #example
+Title: "Example RS Incident Location"
+Description: "Collision site with barangay address and GPS coordinates for rs-example-encounter."
+* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Incident location recorded at the corner of EDSA and Ayala Avenue, Makati City with coordinates 14.5513, 121.0225.</div>"
+* name = "EDSA & Ayala Intersection"
+* address.use = #work
+* address.line = "Epifanio de los Santos Ave"
+* address.city = "Makati City"
+* address.state = "NCR"
+* address.postalCode = "1223"
+* address.country = "PH"
+* position.latitude = 14.5513
+* position.longitude = 121.0225
+
+Instance: rs-example-service-location-basic
+InstanceOf: RSServiceLocation
+Usage: #example
+Title: "Example RS Service Location"
+Description: "Emergency room location for rs-organization-single-ex used in rs-example-encounter."
+* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Emergency Room of Department of Health - Central Office, Manila.</div>"
+* name = "DOH Central ER"
+* type = http://terminology.hl7.org/CodeSystem/v3-ServiceDeliveryLocationRoleType#ER "Emergency room"
+* address.line = "San Lazaro Compound"
+* address.line[+] = "Rizal Avenue"
+* address.city = "Manila"
+* address.state = "NCR"
+* address.postalCode = "1003"
+* address.country = "PH"

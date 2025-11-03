@@ -62,6 +62,7 @@ type FshMetrics = {
   codeSystems: number;
   logicalModels: number;
   instances: number;
+  examples: number;
   reusedFromPHCore: number;
   referencedProfilesCount: number; // total occurrences in rules
   referencedProfilesUnique: number; // unique referenced profile types
@@ -268,7 +269,7 @@ function computeFshMetricsFromFiles(
   files: { path: string; content: string }[],
   resourceArtifacts: ResourceArtifact[] = []
 ): FshMetrics {
-  let profiles = 0, extensions = 0, valueSets = 0, codeSystems = 0, logicalModels = 0, instances = 0;
+  let profiles = 0, extensions = 0, valueSets = 0, codeSystems = 0, logicalModels = 0, instances = 0, examples = 0;
   let reusedFromPHCore = 0;
   const referencedProfilesSet = new Set<string>();
   let referencedProfilesCount = 0;
@@ -286,13 +287,14 @@ function computeFshMetricsFromFiles(
   // Collect instanceOf references to detect orphaned profiles
   const instanceOfRefs = new Set<string>();
 
-  const TOP_LEVEL_START = /^(Profile|Extension|ValueSet|CodeSystem|Instance|Logical|Invariant)\s*:/;
+  const TOP_LEVEL_START = /^(Profile|Extension|ValueSet|CodeSystem|Instance|Logical|Invariant|Example)\s*:/;
   for (const file of files) {
     const lines = file.content.split(/\r?\n/);
 
     let currentBlock: { kind: string; name: string } | null = null;
     let currentProfile: ProfileInfo | null = null;
     let currentBlockInvariants = new Set<string>();
+    let currentInstanceIsExample = false;
 
     const finalizeCurrentBlock = () => {
       if (!currentBlock) return;
@@ -320,27 +322,34 @@ function computeFshMetricsFromFiles(
           break;
         case 'Instance':
           if (invariants.length) invariantsByArtifact.instances[currentBlock.name] = invariants;
+          if (currentInstanceIsExample) examples++;
           break;
       }
       currentBlock = null;
       currentBlockInvariants = new Set<string>();
+      currentInstanceIsExample = false;
     };
 
     for (let rawLine of lines) {
       const line = rawLine.replace(/\t/g, '\t').trim();
       if (!line || line.startsWith('//')) continue;
 
-      const mStart = line.match(/^(Profile|Extension|ValueSet|CodeSystem|Instance|Logical)\s*:\s*(.+)$/);
+      const mStart = line.match(/^(Profile|Extension|ValueSet|CodeSystem|Instance|Logical|Example)\s*:\s*(.+)$/);
       if (mStart) {
         finalizeCurrentBlock();
-        currentBlock = { kind: mStart[1], name: mStart[2].trim() };
+        const rawKind = mStart[1];
+        const normalizedKind = rawKind === 'Example' ? 'Instance' : rawKind;
+        currentBlock = { kind: normalizedKind, name: mStart[2].trim() };
         currentBlockInvariants = new Set<string>();
         switch (currentBlock.kind) {
           case 'Profile': profiles++; currentProfile = { name: currentBlock.name, hasBinding: false, hasSlicing: false, invariants: [] }; break;
           case 'Extension': extensions++; break;
           case 'ValueSet': valueSets++; break;
           case 'CodeSystem': codeSystems++; break;
-          case 'Instance': instances++; break;
+          case 'Instance':
+            instances++;
+            currentInstanceIsExample = rawKind === 'Example';
+            break;
           case 'Logical': logicalModels++; break;
         }
         continue;
@@ -399,6 +408,8 @@ function computeFshMetricsFromFiles(
       if (currentBlock?.kind === 'Instance') {
         const instOf = line.match(/^InstanceOf\s*:\s*(.+)$/);
         if (instOf) instanceOfRefs.add(instOf[1].trim());
+        const usageMatch = line.match(/^Usage\s*:\s*#([A-Za-z0-9\-_]+)/i);
+        if (usageMatch) currentInstanceIsExample = usageMatch[1].toLowerCase() === 'example';
       }
 
       // detect new top-level start by heuristic
@@ -434,6 +445,7 @@ function computeFshMetricsFromFiles(
     codeSystems,
     logicalModels,
     instances,
+    examples,
     reusedFromPHCore,
     referencedProfilesCount,
     referencedProfilesUnique: referencedProfilesSet.size,
@@ -882,6 +894,7 @@ function printMarkdownSummary(
     codeSystems: diffDelta(now.codeSystems, prev?.codeSystems),
     logicalModels: diffDelta(now.logicalModels, prev?.logicalModels),
     instances: diffDelta(now.instances, prev?.instances),
+    examples: diffDelta(now.examples, prev?.examples),
   };
 
   const reusedLine = `${now.reusedFromPHCore} (${now.percentReused}%)`;
@@ -903,6 +916,7 @@ function printMarkdownSummary(
   lines.push(`CodeSystems: ${`${now.codeSystems} ${delta.codeSystems}`.trim()}`);
   lines.push(`LogicalModels: ${`${now.logicalModels} ${delta.logicalModels}`.trim()}`);
   lines.push(`Instances: ${`${now.instances} ${delta.instances}`.trim()}`);
+  lines.push(`Examples: ${`${now.examples} ${delta.examples}`.trim()}`);
 
   const nowInvariantSummary = summarizeAllInvariants(now.invariantsByArtifact);
   const prevInvariantSummary = prev ? summarizeAllInvariants(prev.invariantsByArtifact) : null;
