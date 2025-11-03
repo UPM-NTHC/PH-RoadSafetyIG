@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-se
   "name" : "RSObsECSexualAssault",
   "title" : "RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)",
   "status" : "draft",
-  "date" : "2025-11-03T06:02:43+00:00",
+  "date" : "2025-11-03T09:29:05+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
