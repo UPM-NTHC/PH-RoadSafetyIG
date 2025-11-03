@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion | *Version*:0.2.0 |
-| Draft as of 2025-11-01 | *Computable Name*:RSObsAbrasion |
+| Draft as of 2025-11-03 | *Computable Name*:RSObsAbrasion |
 
  
 Abrasion present; with optional site and details. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-abras
   "name" : "RSObsAbrasion",
   "title" : "RS Observation - Abrasion",
   "status" : "draft",
-  "date" : "2025-11-01T11:24:55+00:00",
+  "date" : "2025-11-03T06:02:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

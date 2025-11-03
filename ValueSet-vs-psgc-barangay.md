@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-barangay | *Version*:0.2.0 |
-| Draft as of 2025-11-01 | *Computable Name*:VSPSGCBarangay |
+| Draft as of 2025-11-03 | *Computable Name*:VSPSGCBarangay |
 
  
 PSGC Barangay codes (managed externally). 
@@ -52,7 +52,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "VSPSGCBarangay",
   "title" : "RS VS - PSGC Barangay",
   "status" : "draft",
-  "date" : "2025-11-01T11:24:55+00:00",
+  "date" : "2025-11-03T06:02:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

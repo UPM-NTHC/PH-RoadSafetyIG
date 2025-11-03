@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident | *Version*:0.2.0 |
-| Draft as of 2025-11-01 | *Computable Name*:RSObsActivityAtIncident |
+| Draft as of 2025-11-03 | *Computable Name*:RSObsActivityAtIncident |
 
  
 Activity of the patient at time of incident; allow text fallback. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "name" : "RSObsActivityAtIncident",
   "title" : "RS Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-11-01T11:24:55+00:00",
+  "date" : "2025-11-03T06:02:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization | *Version*:0.2.0 |
-| Draft as of 2025-11-01 | *Computable Name*:RSOrganization |
+| Draft as of 2025-11-03 | *Computable Name*:RSOrganization |
 
  
 Organization profile for EMS providers and receiving facilities involved in RS encounters. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
   "name" : "RSOrganization",
   "title" : "RS Organization",
   "status" : "draft",
-  "date" : "2025-11-01T11:24:55+00:00",
+  "date" : "2025-11-03T06:02:43+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
