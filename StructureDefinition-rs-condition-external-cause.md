@@ -1,4 +1,4 @@
-# RS Condition — External Cause (category) - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Condition — External Cause (category) - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSConditionExternalCause |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSConditionExternalCause |
 
  
 Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-externa
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition-external-cause",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSConditionExternalCause",
   "title" : "RS Condition — External Cause (category)",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

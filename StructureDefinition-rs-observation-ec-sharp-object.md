@@ -1,4 +1,4 @@
-# RS Observation - External Cause: Contact with Sharp Object - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Observation - External Cause: Contact with Sharp Object - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSObsECSharpObject |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSObsECSharpObject |
 
  
 Flag indicating sharp object cause. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-sh
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-ec-sharp-object",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sharp-object",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSObsECSharpObject",
   "title" : "RS Observation - External Cause: Contact with Sharp Object",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

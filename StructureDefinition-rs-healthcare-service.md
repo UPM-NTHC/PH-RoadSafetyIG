@@ -1,4 +1,4 @@
-# RS HealthcareService - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS HealthcareService - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSHealthcareService |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSHealthcareService |
 
  
 Healthcare services offered by organizations (e.g., EMS base, receiving facility clinics/units). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-healthcare-servic
   "resourceType" : "StructureDefinition",
   "id" : "rs-healthcare-service",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-healthcare-service",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSHealthcareService",
   "title" : "RS HealthcareService",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

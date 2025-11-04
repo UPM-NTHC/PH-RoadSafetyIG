@@ -1,4 +1,4 @@
-# RS Condition - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Condition - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSCondition |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSCondition |
 
  
 Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "rs-condition",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSCondition",
   "title" : "RS Condition",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

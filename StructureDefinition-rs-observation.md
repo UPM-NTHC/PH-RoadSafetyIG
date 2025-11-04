@@ -1,4 +1,4 @@
-# RS Observation - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Observation - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSObservation |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSObservation |
 
  
 Generic base Observation for RS data; specialized concept profiles below constrain code/value patterns. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation.csv),
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSObservation",
   "title" : "RS Observation",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

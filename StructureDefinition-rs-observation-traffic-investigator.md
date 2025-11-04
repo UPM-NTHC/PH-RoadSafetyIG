@@ -1,4 +1,4 @@
-# RS Observation - Presence of Traffic Investigator - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Observation - Presence of Traffic Investigator - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSObsPresenceTrafficInvestigator |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSObsPresenceTrafficInvestigator |
 
  
 Boolean presence/absence of traffic investigator. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traff
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-traffic-investigator",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSObsPresenceTrafficInvestigator",
   "title" : "RS Observation - Presence of Traffic Investigator",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

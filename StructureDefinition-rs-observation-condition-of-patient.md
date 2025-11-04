@@ -1,4 +1,4 @@
-# RS Observation - Condition of Patient - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Observation - Condition of Patient - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSObsConditionOfPatient |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSObsConditionOfPatient |
 
  
 Overall condition of patient at assessment. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-condi
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-condition-of-patient",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSObsConditionOfPatient",
   "title" : "RS Observation - Condition of Patient",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

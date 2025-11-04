@@ -1,4 +1,4 @@
-# SILPH - Inpatient Disposition (VS) - DRAFT PH Road Safety Implementation Guide v0.2.0
+# SILPH - Inpatient Disposition (VS) - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:SILPH___Inpatient_Disposition__VS_ |
+| *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:SILPH___Inpatient_Disposition__VS_ |
 
  
 SILPH Value Set for Inpatient Visit Disposition 
@@ -50,11 +50,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "lastUpdated" : "2025-10-30T00:34:04.391+00:00"
   },
   "url" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InpatientDisposition",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "SILPH___Inpatient_Disposition__VS_",
   "title" : "SILPH - Inpatient Disposition (VS)",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# RS Observation - External Cause: Other - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Observation - External Cause: Other - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSObsECOther |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSObsECOther |
 
  
 Flag indicating other external cause. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ot
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-ec-other",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-other",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSObsECOther",
   "title" : "RS Observation - External Cause: Other",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# RS Observation - Fracture - DRAFT PH Road Safety Implementation Guide v0.2.0
+# RS Observation - Fracture - DRAFT PH Road Safety Implementation Guide v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture | *Version*:0.2.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RSObsFracture |
+| *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture | *Version*:0.3.0 |
+| Draft as of 2025-11-04 | *Computable Name*:RSObsFracture |
 
  
 Fracture observation. Use valueCodeableConcept to indicate fracture type (e.g., open or closed). Sites captured in top-level bodySite and details in note. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-fract
   "resourceType" : "StructureDefinition",
   "id" : "rs-observation-fracture",
   "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "RSObsFracture",
   "title" : "RS Observation - Fracture",
   "status" : "draft",
-  "date" : "2025-11-03T09:29:05+00:00",
+  "date" : "2025-11-04T05:19:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
