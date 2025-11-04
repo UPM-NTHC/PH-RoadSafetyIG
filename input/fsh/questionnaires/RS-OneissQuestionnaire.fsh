@@ -12,6 +12,12 @@ Description: "Structured Data Capture questionnaire for the DOH ONEISS Patient I
 * publisher = "UP Manila SILab"
 * subjectType[0] = #Patient
 * meta.profile[0] = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
+* extension[=].valueUrl = "https://tx.fhirlab.net/fhir"
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-templateExtract"
+* extension[=].valueBoolean = true
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+* extension[=].valueBoolean = true
 
 * item[+].linkId = "oneiss"
 * item[=].text = "ONEISS Patient Injury Form"

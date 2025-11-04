@@ -12,6 +12,12 @@ Description: "Structured Data Capture questionnaire for the MMDA run report form
 * publisher = "UP Manila SILab"
 * subjectType[0] = #Patient
 * meta.profile[0] = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
+* extension[=].valueUrl = "https://tx.fhirlab.net/fhir"
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-templateExtract"
+* extension[=].valueBoolean = true
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+* extension[=].valueBoolean = true
 
 * item[+].linkId = "runreport"
 * item[=].text = "Run Report Form"
