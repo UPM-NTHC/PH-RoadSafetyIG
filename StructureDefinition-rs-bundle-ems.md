@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:RSBundleEMS |
+| Draft as of 2025-11-05 | *Computable Name*:RSBundleEMS |
 
  
 Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). 
@@ -95,7 +95,7 @@ Sample HL7 FHIR R4 Bundle payload illustrating how clients can populate this pro
   "name" : "RSBundleEMS",
   "title" : "RS Bundle — EMS Submission",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

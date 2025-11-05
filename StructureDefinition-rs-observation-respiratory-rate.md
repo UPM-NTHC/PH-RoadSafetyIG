@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:RSObsRespiratoryRate |
+| Draft as of 2025-11-05 | *Computable Name*:RSObsRespiratoryRate |
 
  
 Respiratory rate in breaths/min. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "name" : "RSObsRespiratoryRate",
   "title" : "RS Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

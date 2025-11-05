@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:RSEncounterVehicleUsed |
+| Draft as of 2025-11-05 | *Computable Name*:RSEncounterVehicleUsed |
 
 Identifier and type of transport vehicle used during an encounter.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter-vehicle
   "name" : "RSEncounterVehicleUsed",
   "title" : "RS Encounter Vehicle Used",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

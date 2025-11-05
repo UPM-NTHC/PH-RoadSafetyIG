@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:RSObsOtherVehicleInvolved |
+| Draft as of 2025-11-05 | *Computable Name*:RSObsOtherVehicleInvolved |
 
  
 Other vehicle/object type involved; text for 'Others'. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherVehicleInvolved",
   "title" : "RS Observation - Other Vehicle/Object Involved",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

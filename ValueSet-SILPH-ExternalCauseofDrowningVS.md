@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ExternalCauseofDrowning | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:SILPH___External_Cause_of_Drowning__VS_ |
+| Draft as of 2025-11-05 | *Computable Name*:SILPH___External_Cause_of_Drowning__VS_ |
 
  
 SILPH Value Set for External Cause of Drowning 
@@ -54,7 +54,7 @@ SILPH Value Set for External Cause of Drowning
   "name" : "SILPH___External_Cause_of_Drowning__VS_",
   "title" : "SILPH - External Cause of Drowning (VS)",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

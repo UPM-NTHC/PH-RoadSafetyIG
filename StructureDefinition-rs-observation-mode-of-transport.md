@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:RSObsModeOfTransport |
+| Draft as of 2025-11-05 | *Computable Name*:RSObsModeOfTransport |
 
  
 Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "name" : "RSObsModeOfTransport",
   "title" : "RS Observation - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

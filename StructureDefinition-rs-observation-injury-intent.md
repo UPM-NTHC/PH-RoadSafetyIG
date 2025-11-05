@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:RSObsInjuryIntent |
+| Draft as of 2025-11-05 | *Computable Name*:RSObsInjuryIntent |
 
  
 Intent of injury (Unintentional, Intentional-self, Intentional-violence, Undetermined). 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
   "name" : "RSObsInjuryIntent",
   "title" : "RS Observation - Injury Intent",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

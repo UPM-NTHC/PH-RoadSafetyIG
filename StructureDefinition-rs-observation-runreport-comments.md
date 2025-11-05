@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments | *Version*:0.3.0 |
-| Draft as of 2025-11-04 | *Computable Name*:RSObsRunReportComments |
+| Draft as of 2025-11-05 | *Computable Name*:RSObsRunReportComments |
 
  
 Enter other comment (s) regarding the case 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
   "name" : "RSObsRunReportComments",
   "title" : "RS Observation - Run Report Comments",
   "status" : "draft",
-  "date" : "2025-11-04T05:19:01+00:00",
+  "date" : "2025-11-05T05:21:38+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
