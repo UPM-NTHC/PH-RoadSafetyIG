@@ -341,57 +341,57 @@ Description: "Billing record for EMS referral transport."
 * total.value = 1500
 * total.currency = #PHP
 
-Instance: rs-bundle-example-composition-ems
-InstanceOf: RSCompositionEMS
-Usage: #example
-Title: "EMS Run Report – Reyes 2025-10-31"
-Description: "Composition summarizing the EMS referral story for Thomas Reyes."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems"
-* status = #final
-* type = http://loinc.org#92519-4 "Emergency medical services patient care report"
-* date = "2025-10-31T17:15:00+08:00"
-* subject = Reference(rs-bundle-example-patient)
-* encounter = Reference(rs-bundle-example-encounter)
-* author = Reference(rs-bundle-example-practitioner-teamlead)
-* title = "EMS Referral to DOH Central ER"
-* section[workflow].code = http://loinc.org#55110-1 "Emergency medical services response narrative"
-* section[workflow].title = "Workflow / Timeline"
-* section[workflow].entry[+] = Reference(rs-bundle-example-timeline-date-received)
-* section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-enroute)
-* section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-on-scene)
-* section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-departed)
-* section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-hospital)
-* section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-station)
-* section[workflow].entry[+] = Reference(rs-bundle-example-observation-runreport-comments)
-* section[incident].code = http://loinc.org#11307-9 "Injury history narrative"
-* section[incident].title = "Incident"
-* section[incident].entry[+] = Reference(rs-bundle-example-incident-location)
-* section[incident].entry[+] = Reference(rs-bundle-example-observation-injury-datetime)
-* section[incident].entry[+] = Reference(rs-bundle-example-observation-injury-intent)
-* section[incident].entry[+] = Reference(rs-bundle-example-observation-transport-accident)
-* section[incident].entry[+] = Reference(rs-bundle-example-observation-mode-transport)
-* section[incident].entry[+] = Reference(rs-bundle-example-observation-reported-complaint)
-* section[incident].entry[+] = Reference(rs-bundle-example-observation-call-source)
-* section[vitals].code = http://loinc.org#8716-3 "Vital signs"
-* section[vitals].title = "Vital signs"
-* section[vitals].entry[+] = Reference(rs-bundle-example-observation-respiratory-rate)
-* section[vitals].entry[+] = Reference(rs-bundle-example-observation-pulse-rate)
-* section[vitals].entry[+] = Reference(rs-bundle-example-observation-blood-pressure)
-* section[vitals].entry[+] = Reference(rs-bundle-example-observation-body-temperature)
-* section[vitals].entry[+] = Reference(rs-bundle-example-observation-cyanosis)
-* section[vitals].entry[+] = Reference(rs-bundle-example-observation-gcs)
-* section[clinical].code = http://loinc.org#8648-8 "Emergency department clinical impressions"
-* section[clinical].title = "Clinical / Assessment"
-* section[clinical].entry[+] = Reference(rs-bundle-example-observation-clinical-remarks)
-* section[clinical].entry[+] = Reference(rs-bundle-example-procedure-education)
-* section[documents].code = http://loinc.org#55109-3 "Clinical attachments"
-* section[documents].title = "Documents / Evidence"
-* section[documents].entry[+] = Reference(rs-bundle-example-documentreference)
-* section[procedures].code = http://loinc.org#8714-3 "Procedures"
-* section[procedures].title = "Procedures and Workflow Items"
-* section[procedures].entry[+] = Reference(rs-bundle-example-service-request)
-* section[procedures].entry[+] = Reference(rs-bundle-example-task)
-* section[procedures].entry[+] = Reference(rs-bundle-example-procedure-transport)
+// Instance: rs-bundle-example-composition-ems
+// InstanceOf: RSCompositionEMS
+// Usage: #example
+// Title: "EMS Run Report – Reyes 2025-10-31"
+// Description: "Composition summarizing the EMS referral story for Thomas Reyes."
+// * meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems"
+// * status = #final
+// * type = http://loinc.org#92519-4 "Emergency medical services patient care report"
+// * date = "2025-10-31T17:15:00+08:00"
+// * subject = Reference(rs-bundle-example-patient)
+// * encounter = Reference(rs-bundle-example-encounter)
+// * author = Reference(rs-bundle-example-practitioner-teamlead)
+// * title = "EMS Referral to DOH Central ER"
+// * section[workflow].code = http://loinc.org#55110-1 "Emergency medical services response narrative"
+// * section[workflow].title = "Workflow / Timeline"
+// * section[workflow].entry[+] = Reference(rs-bundle-example-timeline-date-received)
+// * section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-enroute)
+// * section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-on-scene)
+// * section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-departed)
+// * section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-hospital)
+// * section[workflow].entry[+] = Reference(rs-bundle-example-timeline-time-station)
+// * section[workflow].entry[+] = Reference(rs-bundle-example-observation-runreport-comments)
+// * section[incident].code = http://loinc.org#11307-9 "Injury history narrative"
+// * section[incident].title = "Incident"
+// * section[incident].entry[+] = Reference(rs-bundle-example-incident-location)
+// * section[incident].entry[+] = Reference(rs-bundle-example-observation-injury-datetime)
+// * section[incident].entry[+] = Reference(rs-bundle-example-observation-injury-intent)
+// * section[incident].entry[+] = Reference(rs-bundle-example-observation-transport-accident)
+// * section[incident].entry[+] = Reference(rs-bundle-example-observation-mode-transport)
+// * section[incident].entry[+] = Reference(rs-bundle-example-observation-reported-complaint)
+// * section[incident].entry[+] = Reference(rs-bundle-example-observation-call-source)
+// * section[vitals].code = http://loinc.org#8716-3 "Vital signs"
+// * section[vitals].title = "Vital signs"
+// * section[vitals].entry[+] = Reference(rs-bundle-example-observation-respiratory-rate)
+// * section[vitals].entry[+] = Reference(rs-bundle-example-observation-pulse-rate)
+// * section[vitals].entry[+] = Reference(rs-bundle-example-observation-blood-pressure)
+// * section[vitals].entry[+] = Reference(rs-bundle-example-observation-body-temperature)
+// * section[vitals].entry[+] = Reference(rs-bundle-example-observation-cyanosis)
+// * section[vitals].entry[+] = Reference(rs-bundle-example-observation-gcs)
+// * section[clinical].code = http://loinc.org#8648-8 "Emergency department clinical impressions"
+// * section[clinical].title = "Clinical / Assessment"
+// * section[clinical].entry[+] = Reference(rs-bundle-example-observation-clinical-remarks)
+// * section[clinical].entry[+] = Reference(rs-bundle-example-procedure-education)
+// * section[documents].code = http://loinc.org#55109-3 "Clinical attachments"
+// * section[documents].title = "Documents / Evidence"
+// * section[documents].entry[+] = Reference(rs-bundle-example-documentreference)
+// * section[procedures].code = http://loinc.org#8714-3 "Procedures"
+// * section[procedures].title = "Procedures and Workflow Items"
+// * section[procedures].entry[+] = Reference(rs-bundle-example-service-request)
+// * section[procedures].entry[+] = Reference(rs-bundle-example-task)
+// * section[procedures].entry[+] = Reference(rs-bundle-example-procedure-transport)
 
 Instance: rs-bundle-example-bundle-ems
 InstanceOf: RSBundleEMS
@@ -401,10 +401,10 @@ Description: "Document bundle delivering the EMS referral for Thomas Reyes with 
 * meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems"
 * identifier.system = "urn:fdc:roadsafetyph.doh.gov.ph:bundle"
 * identifier.value = "EMS-REF-20251031-001"
-* type = #document
+* type = #transaction
 * timestamp = "2025-10-31T18:00:00+08:00"
-* entry[composition].fullUrl = "urn:uuid:5902c040-96a2-4e46-8d17-13a667d4bcfa"
-* entry[composition].resource = rs-bundle-example-composition-ems
+// * entry[composition].fullUrl = "urn:uuid:5902c040-96a2-4e46-8d17-13a667d4bcfa"
+// * entry[composition].resource = rs-bundle-example-composition-ems
 * entry[patient].fullUrl = "urn:uuid:b09b54f6-5c21-46c9-9d03-35bb941a9eef"
 * entry[patient].resource = rs-bundle-example-patient
 * entry[encounter].fullUrl = "urn:uuid:c4e1aa15-b495-46f3-8c9c-7f1d9c3bb6f1"
@@ -685,85 +685,84 @@ Description: "Final diagnosis entered on discharge for Thomas Reyes."
 * recordedDate = "2025-11-01T09:00:00+08:00"
 * note[0].text = "Closed mid-shaft femur fracture confirmed via radiograph; scheduled for operative fixation."
 
-Instance: rs-bundle-example-composition-oneiss
-InstanceOf: RSCompositionONEISS
-Usage: #example
-Title: "ONEISS Facility Submission – Reyes"
-Description: "Composition organising the ONEISS facility submission for Thomas Reyes."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"
-* status = #final
-* type = http://loinc.org#11348-0 "Emergency department note"
-* date = "2025-11-01T10:00:00+08:00"
-* subject = Reference(rs-bundle-example-patient)
-* subject = Reference(rs-bundle-example-patient)
-* encounter = Reference(rs-bundle-example-encounter)
-* author = Reference(rs-bundle-example-practitioner-receiver)
-* title = "DOH Central ER – ONEISS Submission"
-* section[patient].entry[0] = Reference(rs-bundle-example-patient)
-* section[encounter].entry[0] = Reference(rs-bundle-example-encounter)
-* section[clinical].code = http://loinc.org#8648-8 "Emergency department clinical impressions"
-* section[clinical].title = "Clinical"
-* section[clinical].entry[+] = Reference(rs-bundle-example-condition-initial-impression)
-* section[clinical].entry[+] = Reference(rs-bundle-example-condition-final-diagnosis)
-* section[clinical].entry[+] = Reference(rs-example-observation-risk-factors)
-* section[clinical].entry[+] = Reference(rs-example-observation-blood-alcohol)
-* section[clinical].entry[+] = Reference(rs-example-observation-condition)
-* section[clinical].entry[+] = Reference(rs-example-observation-status-on-arrival)
-* section[clinical].entry[+] = Reference(rs-example-observation-outcome)
-* section[clinical].entry[+] = Reference(rs-example-observation-transferred)
-* section[clinical].entry[+] = Reference(rs-example-observation-referred)
-* section[injuries].code = http://loinc.org#11337-3 "Hospital admission history and physical note"
-* section[injuries].title = "Injuries"
-* section[injuries].entry[+] = Reference(rs-example-observation-multiple-injuries)
-* section[injuries].entry[+] = Reference(rs-example-observation-abrasion)
-* section[injuries].entry[+] = Reference(rs-example-observation-avulsion)
-* section[injuries].entry[+] = Reference(rs-example-observation-nature-burns)
-* section[injuries].entry[+] = Reference(rs-example-observation-concussion)
-* section[injuries].entry[+] = Reference(rs-example-observation-contusion)
-* section[injuries].entry[+] = Reference(rs-example-observation-fracture)
-* section[injuries].entry[+] = Reference(rs-example-observation-open-wound)
-* section[injuries].entry[+] = Reference(rs-example-observation-traumatic-amputation)
-* section[injuries].entry[+] = Reference(rs-example-observation-other-injury)
-* section[incident].code = http://loinc.org#11307-9 "Injury history narrative"
-* section[incident].title = "Incident"
+// Instance: rs-bundle-example-composition-oneiss
+// InstanceOf: RSCompositionONEISS
+// Usage: #example
+// Title: "ONEISS Facility Submission – Reyes"
+// Description: "Composition organising the ONEISS facility submission for Thomas Reyes."
+// * meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"
+// * status = #final
+// * type = http://loinc.org#11348-0 "Emergency department note"
+// * date = "2025-11-01T10:00:00+08:00"
+// * subject = Reference(rs-example-patient)
+// * encounter = Reference(rs-example-encounter)
+// * author = Reference(rs-bundle-example-practitioner-receiver)
+// * title = "DOH Central ER – ONEISS Submission"
+// * section[patient].entry[0] = Reference(rs-bundle-example-patient)
+// //* section[encounter].entry[0] = Reference(rs-bundle-example-encounter)
+// * section[clinical].code = http://loinc.org#8648-8 "Emergency department clinical impressions"
+// * section[clinical].title = "Clinical"
+// * section[clinical].entry[+] = Reference(rs-bundle-example-condition-initial-impression)
+// * section[clinical].entry[+] = Reference(rs-bundle-example-condition-final-diagnosis)
+// * section[clinical].entry[+] = Reference(rs-example-observation-risk-factors)
+// * section[clinical].entry[+] = Reference(rs-example-observation-blood-alcohol)
+// * section[clinical].entry[+] = Reference(rs-example-observation-condition)
+// * section[clinical].entry[+] = Reference(rs-example-observation-status-on-arrival)
+// * section[clinical].entry[+] = Reference(rs-example-observation-outcome)
+// * section[clinical].entry[+] = Reference(rs-example-observation-transferred)
+// * section[clinical].entry[+] = Reference(rs-example-observation-referred)
+// * section[injuries].code = http://loinc.org#11337-3 "Hospital admission history and physical note"
+// * section[injuries].title = "Injuries"
+// * section[injuries].entry[+] = Reference(rs-example-observation-multiple-injuries)
+// * section[injuries].entry[+] = Reference(rs-example-observation-abrasion)
+// * section[injuries].entry[+] = Reference(rs-example-observation-avulsion)
+// * section[injuries].entry[+] = Reference(rs-example-observation-nature-burns)
+// * section[injuries].entry[+] = Reference(rs-example-observation-concussion)
+// * section[injuries].entry[+] = Reference(rs-example-observation-contusion)
+// * section[injuries].entry[+] = Reference(rs-example-observation-fracture)
+// * section[injuries].entry[+] = Reference(rs-example-observation-open-wound)
+// * section[injuries].entry[+] = Reference(rs-example-observation-traumatic-amputation)
+// * section[injuries].entry[+] = Reference(rs-example-observation-other-injury)
+// * section[incident].code = http://loinc.org#11307-9 "Injury history narrative"
+// * section[incident].title = "Incident"
 
-* section[incident].entry[+] = Reference(rs-example-observation-injury-datetime)
-* section[incident].entry[+] = Reference(rs-example-observation-injury-intent)
-* section[incident].entry[+] = Reference(rs-example-observation-transport-accident)
-* section[incident].entry[+] = Reference(rs-example-observation-mode-transport)
-* section[incident].entry[+] = Reference(rs-example-observation-collision-vs-noncollision)
-* section[incident].entry[+] = Reference(rs-example-observation-patients-vehicle)
-* section[incident].entry[+] = Reference(rs-example-observation-other-vehicle)
-* section[incident].entry[+] = Reference(rs-example-observation-position-of-patient)
-* section[incident].entry[+] = Reference(rs-example-observation-how-many-vehicles)
-* section[incident].entry[+] = Reference(rs-example-observation-place-of-occurrence)
-* section[incident].entry[+] = Reference(rs-example-observation-activity-at-incident)
-* section[incident].entry[+] = Reference(rs-example-observation-safety-accessories)
-* section[incident].entry[+] = Reference(rs-example-observation-triage)
-* section[incident].entry[+] = Reference(rs-example-observation-urgency)
-* section[documents].code = http://loinc.org#55109-3 "Clinical attachments"
-* section[documents].title = "Documents / Evidence"
-* section[documents].entry[+] = Reference(rs-bundle-example-documentreference)
-* section[+].code = http://loinc.org#11346-6 "External cause of injury narrative"
-* section[=].title = "External Causes"
-* section[=].entry[+] = Reference(rs-example-observation-ec-bites)
-* section[=].entry[+] = Reference(rs-example-observation-ec-burns)
-* section[=].entry[+] = Reference(rs-example-observation-ec-chemical)
-* section[=].entry[+] = Reference(rs-example-observation-ec-sharp)
-* section[=].entry[+] = Reference(rs-example-observation-ec-drowning)
-* section[=].entry[+] = Reference(rs-example-observation-ec-forces)
-* section[=].entry[+] = Reference(rs-example-observation-ec-fall)
-* section[=].entry[+] = Reference(rs-example-observation-ec-firecracker)
-* section[=].entry[+] = Reference(rs-example-observation-ec-gunshot)
-* section[=].entry[+] = Reference(rs-example-observation-ec-hanging)
-* section[=].entry[+] = Reference(rs-example-observation-ec-mauling)
-* section[=].entry[+] = Reference(rs-example-observation-ec-sexual-assault)
-* section[=].entry[+] = Reference(rs-example-observation-ec-other)
-* section[+].code = http://loinc.org#8714-3 "Procedures"
-* section[=].title = "Procedures and Workflow"
-* section[=].entry[+] = Reference(rs-bundle-example-procedure-education)
-* section[=].entry[+] = Reference(rs-bundle-example-procedure-transport)
-* section[=].entry[+] = Reference(rs-bundle-example-service-request)
+// * section[incident].entry[+] = Reference(rs-example-observation-injury-datetime)
+// * section[incident].entry[+] = Reference(rs-example-observation-injury-intent)
+// * section[incident].entry[+] = Reference(rs-example-observation-transport-accident)
+// * section[incident].entry[+] = Reference(rs-example-observation-mode-transport)
+// * section[incident].entry[+] = Reference(rs-example-observation-collision-vs-noncollision)
+// * section[incident].entry[+] = Reference(rs-example-observation-patients-vehicle)
+// * section[incident].entry[+] = Reference(rs-example-observation-other-vehicle)
+// * section[incident].entry[+] = Reference(rs-example-observation-position-of-patient)
+// * section[incident].entry[+] = Reference(rs-example-observation-how-many-vehicles)
+// * section[incident].entry[+] = Reference(rs-example-observation-place-of-occurrence)
+// * section[incident].entry[+] = Reference(rs-example-observation-activity-at-incident)
+// * section[incident].entry[+] = Reference(rs-example-observation-safety-accessories)
+// * section[incident].entry[+] = Reference(rs-example-observation-triage)
+// * section[incident].entry[+] = Reference(rs-example-observation-urgency)
+// * section[documents].code = http://loinc.org#55109-3 "Clinical attachments"
+// * section[documents].title = "Documents / Evidence"
+// * section[documents].entry[+] = Reference(rs-bundle-example-documentreference)
+// * section[+].code = http://loinc.org#11346-6 "External cause of injury narrative"
+// * section[=].title = "External Causes"
+// * section[=].entry[+] = Reference(rs-example-observation-ec-bites)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-burns)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-chemical)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-sharp)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-drowning)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-forces)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-fall)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-firecracker)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-gunshot)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-hanging)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-mauling)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-sexual-assault)
+// * section[=].entry[+] = Reference(rs-example-observation-ec-other)
+// * section[+].code = http://loinc.org#8714-3 "Procedures"
+// * section[=].title = "Procedures and Workflow"
+// * section[=].entry[+] = Reference(rs-bundle-example-procedure-education)
+// * section[=].entry[+] = Reference(rs-bundle-example-procedure-transport)
+// * section[=].entry[+] = Reference(rs-bundle-example-service-request)
 
 Instance: rs-bundle-example-bundle-oneiss
 InstanceOf: RSBundleONEISS
@@ -773,10 +772,8 @@ Description: "Document bundle delivering the facility ONEISS submission for Thom
 * meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss"
 * identifier.system = "urn:fdc:roadsafetyph.doh.gov.ph:bundle"
 * identifier.value = "ONEISS-20251031-001"
-* type = #document
+* type = #transaction
 * timestamp = "2025-11-01T10:05:00+08:00"
-* entry[composition].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111101"
-* entry[composition].resource = rs-bundle-example-composition-oneiss
 * entry[patient].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111102"
 * entry[patient].resource = rs-example-patient
 * entry[encounter].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111103"
@@ -875,9 +872,9 @@ Description: "Document bundle delivering the facility ONEISS submission for Thom
 * entry[observationExternalCause][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111150"
 * entry[observationExternalCause][=].resource = rs-example-observation-ec-other
 * entry[document][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111151"
-* entry[document][0].resource = rs-example-documentreference
+* entry[document][0].resource = rs-bundle-example-documentreference
 * entry[serviceRequest][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111152"
-* entry[serviceRequest][0].resource = rs-example-service-request
+* entry[serviceRequest][0].resource = rs-bundle-example-service-request
 * entry[procedure][0].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111153"
 * entry[procedure][0].resource = rs-bundle-example-procedure-education
 * entry[procedure][+].fullUrl = "urn:uuid:11111111-1111-1111-1111-111111111154"
