@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSPatient |
+| Draft as of 2025-11-06 | *Computable Name*:RSPatient |
 
  
 Patient demographics and identifiers for RS reporting; reuse PH-Core address extensions for barangay/city/province/region. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Claim](StructureDefinition-rs-claim.md), [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)...Show 9 more,[RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md),[RS Condition](StructureDefinition-rs-condition.md),[RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md),[RS Encounter](StructureDefinition-rs-encounter.md),[RS MedicationStatement](StructureDefinition-rs-medication-statement.md),[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md),[RS ServiceRequest](StructureDefinition-rs-service-request.md)and[RS Task](StructureDefinition-rs-task.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Claim](StructureDefinition-rs-claim.md), [RS Condition](StructureDefinition-rs-condition.md), [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)...Show 6 more,[RS Encounter](StructureDefinition-rs-encounter.md),[RS MedicationStatement](StructureDefinition-rs-medication-statement.md),[RS Observation](StructureDefinition-rs-observation.md),[RS Procedure](StructureDefinition-rs-procedure.md),[RS ServiceRequest](StructureDefinition-rs-service-request.md)and[RS Task](StructureDefinition-rs-task.md)
 * Examples for this Profile: [Patient/rs-bundle-example-patient](Patient-rs-bundle-example-patient.md) and [Patient/rs-example-patient](Patient-rs-example-patient.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-patient)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-patient.csv), [Ex
   "name" : "RSPatient",
   "title" : "RS Patient",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10.237"}
-    h3,h4,h5,h6{--heading-prefix:"10.237"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.232"}
+    h3,h4,h5,h6{--heading-prefix:"10.232"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -252,294 +252,8 @@
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:fdc:roadsafetyph.doh.gov.ph:bundle&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ONEISS-20251031-001&quot;/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;document&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;transaction&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2025-11-01T10:05:00+08:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:uuid:11111111-1111-1111-1111-111111111101&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition">Composition</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rs-bundle-example-composition-oneiss&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">meta</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">meta</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Composition_rs-bundle-example-composition-oneiss&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Composition rs-bundle-example-composition-oneiss&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;rs-bundle-example-composition-oneiss&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcrs-bundle-example-composition-oneiss&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-rs-composition-oneiss.html&quot;&gt;RS Composition — ONEISS Submission&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://loinc.org 11348-0}&quot;&gt;Emergency department note&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=&quot;Encounter-rs-bundle-example-encounter.html&quot;&gt;Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&amp;gt; 2025-10-31 16:30:00+0800&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2025-11-01 10:00:00+0800&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=&quot;Practitioner-rs-bundle-example-practitioner-receiver.html&quot;&gt;Practitioner Maria Cristina Santos (official)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: DOH Central ER – ONEISS Submission&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11348-0&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Emergency department note&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.type">type</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">subject</a>&gt;<a href="Patient-rs-bundle-example-patient.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/rs-bundle-example-patient&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">subject</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.encounter">encounter</a>&gt;<a href="Encounter-rs-bundle-example-encounter.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/rs-bundle-example-encounter&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.encounter">encounter</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-11-01T10:00:00+08:00&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>&gt;<a href="Practitioner-rs-bundle-example-practitioner-receiver.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practitioner/rs-bundle-example-practitioner-receiver&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DOH Central ER – ONEISS Submission&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Patient-rs-bundle-example-patient.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/rs-bundle-example-patient&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Encounter-rs-bundle-example-encounter.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/rs-bundle-example-encounter&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Clinical&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;8648-8&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Emergency department clinical impressions&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Condition-rs-bundle-example-condition-initial-impression.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Condition/rs-bundle-example-condition-initial-impression&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Condition-rs-bundle-example-condition-final-diagnosis.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Condition/rs-bundle-example-condition-final-diagnosis&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-risk-factors.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-risk-factors&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-blood-alcohol.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-blood-alcohol&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-condition.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-condition&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-status-on-arrival.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-status-on-arrival&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-outcome.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-outcome&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-transferred.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-transferred&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-referred.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-referred&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Injuries&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11337-3&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hospital admission history and physical note&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-multiple-injuries.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-multiple-injuries&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-abrasion.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-abrasion&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-avulsion.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-avulsion&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-nature-burns.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-nature-burns&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-concussion.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-concussion&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-contusion.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-contusion&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-fracture.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-fracture&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-open-wound.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-open-wound&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-traumatic-amputation.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-traumatic-amputation&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-other-injury.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-other-injury&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Incident&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11307-9&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Injury history narrative&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-injury-datetime.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-injury-datetime&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-injury-intent.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-injury-intent&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-transport-accident.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-transport-accident&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-mode-transport.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-mode-transport&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-collision-vs-noncollision.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-collision-vs-noncollision&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-patients-vehicle.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-patients-vehicle&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-other-vehicle.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-other-vehicle&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-position-of-patient.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-position-of-patient&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-how-many-vehicles.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-how-many-vehicles&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-place-of-occurrence.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-place-of-occurrence&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-activity-at-incident.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-activity-at-incident&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-safety-accessories.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-safety-accessories&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-triage.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-triage&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-urgency.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-urgency&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Documents / Evidence&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;55109-3&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Clinical attachments&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="DocumentReference-rs-bundle-example-documentreference.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference/rs-bundle-example-documentreference&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;External Causes&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11346-6&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;External cause of injury narrative&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-bites.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-bites&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-burns.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-burns&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-chemical.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-chemical&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-sharp.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-sharp&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-drowning.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-drowning&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-forces.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-forces&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-fall.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-fall&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-firecracker.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-firecracker&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-gunshot.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-gunshot&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-hanging.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-hanging&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-mauling.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-mauling&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-sexual-assault.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-sexual-assault&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Observation-rs-example-observation-ec-other.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/rs-example-observation-ec-other&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Procedures and Workflow&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;8714-3&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Procedures&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Procedure-rs-bundle-example-procedure-education.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Procedure/rs-bundle-example-procedure-education&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="Procedure-rs-bundle-example-procedure-transport.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Procedure/rs-bundle-example-procedure-transport&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;<a href="ServiceRequest-rs-bundle-example-service-request.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ServiceRequest/rs-bundle-example-service-request&quot;/&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
-      &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition">Composition</a>&gt;
-    &lt;/resource&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:uuid:11111111-1111-1111-1111-111111111102&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>&gt;
@@ -551,7 +265,7 @@
         &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Patient_rs-example-patient&quot;&gt; &lt;/a&gt;RS-Example Patient: Thomas Niccolo Filamor Reyes, male, born 1990-01-01. Address: 123 Sampaloc Street, Manila 1008, PH. Phone: +63-912-345-6789; Email: thomas.reyes@example.com&lt;/div&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Patient_rs-example-patient&quot;&gt; &lt;/a&gt;RS-Example Patient: Thomas Niccolo Filamor Reyes, male, born 1990-01-01. Address: 123 Sampaloc Street, Manila 1008, PH. Phone: +63-912-345-6789; Email: thomas.reyes@example.com&lt;/div&gt;<a name="end-xhtml"></a>
         &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;urn://example.com/ph-core/fhir/StructureDefinition/indigenous-people&quot;&gt;
@@ -2618,14 +2332,14 @@
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:uuid:11111111-1111-1111-1111-111111111151&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">DocumentReference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rs-example-documentreference&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rs-bundle-example-documentreference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.meta">meta</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">text</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;DocumentReference_rs-example-documentreference&quot;&gt; &lt;/a&gt;Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.&lt;/div&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;DocumentReference_rs-bundle-example-documentreference&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference rs-bundle-example-documentreference&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;rs-bundle-example-documentreference&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcrs-bundle-example-documentreference&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-rs-document-reference.html&quot;&gt;RS DocumentReference (Evidence)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://loinc.org 18748-4}&quot;&gt;Document image&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-rs-bundle-example-patient.html&quot;&gt;Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;image/jpeg&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://example.org/fhir/Binary/ems-crash-photo&quot;&gt;https://example.org/fhir/Binary/ems-crash-photo&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intersection scene photo&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;format&lt;/b&gt;: formatcodes: urn:ihe:pcc:dsr:2016 (urn:ihe:pcc:dsr:2016)&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Contexts&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Encounter&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Encounter-rs-bundle-example-encounter.html&quot;&gt;Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&amp;gt; 2025-10-31 16:30:00+0800&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;current&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.type">type</a>&gt;
@@ -2635,14 +2349,14 @@
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Document image&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.type">type</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.subject">subject</a>&gt;<a href="Patient-rs-example-patient.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/rs-example-patient&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.subject">subject</a>&gt;<a href="Patient-rs-bundle-example-patient.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/rs-bundle-example-patient&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.subject">subject</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">content</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">attachment</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;image/jpeg&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#url">value</a>=&quot;https://example.org/fhir/Binary/rs-crash-photo&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Crash scene photograph&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#url">value</a>=&quot;https://example.org/fhir/Binary/ems-crash-photo&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Intersection scene photo&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">attachment</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.format">format</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
@@ -2651,8 +2365,8 @@
           &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.format">format</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">content</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.context">context</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.context.encounter">encounter</a>&gt;<a href="Encounter-rs-example-encounter.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/rs-example-encounter&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.context.encounter">encounter</a>&gt;<a href="Encounter-rs-bundle-example-encounter.html" style="color: Maroon">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/rs-bundle-example-encounter&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.context.encounter">encounter</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.context">context</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">DocumentReference</a>&gt;
@@ -2662,29 +2376,33 @@
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:uuid:11111111-1111-1111-1111-111111111152&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">ServiceRequest</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rs-example-service-request&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rs-bundle-example-service-request&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.meta">meta</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;ServiceRequest_rs-example-service-request&quot;&gt; &lt;/a&gt;ServiceRequest documenting refusal to admit for rs-example-patient with supporting organization and practitioner contacts.&lt;/div&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;ServiceRequest_rs-bundle-example-service-request&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ServiceRequest rs-bundle-example-service-request&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;rs-bundle-example-service-request&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcrs-bundle-example-service-request&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-rs-service-request.html&quot;&gt;RS ServiceRequest&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Revoked&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Refusal to admit&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-rs-bundle-example-patient.html&quot;&gt;Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=&quot;Encounter-rs-bundle-example-encounter.html&quot;&gt;Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&amp;gt; 2025-10-31 16:30:00+0800&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2025-10-31 15:50:00+0800&lt;/p&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;Organization-rs-bundle-example-organization.html&quot;&gt;Organization MetroCare EMS&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Practitioner-rs-bundle-example-practitioner-receiver.html&quot;&gt;Practitioner Maria Cristina Santos (official)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;revoked&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">intent</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;plan&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>&gt;<a href="Patient-rs-example-patient.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/rs-example-patient&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Refusal to admit&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>&gt;<a href="Patient-rs-bundle-example-patient.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/rs-bundle-example-patient&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.encounter">encounter</a>&gt;<a href="Encounter-rs-example-encounter.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/rs-example-encounter&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.encounter">encounter</a>&gt;<a href="Encounter-rs-bundle-example-encounter.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/rs-bundle-example-encounter&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.encounter">encounter</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.occurrence[x]">occurrenceDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-10-31T16:10:00+08:00&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">supportingInfo</a>&gt;<a href="Organization-rs-organization-single-ex.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/rs-organization-single-ex&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.occurrence[x]">occurrenceDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-10-31T15:50:00+08:00&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">supportingInfo</a>&gt;<a href="Organization-rs-bundle-example-organization.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/rs-bundle-example-organization&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">supportingInfo</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">supportingInfo</a>&gt;<a href="Practitioner-rs-practitioner-receivedby.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practitioner/rs-practitioner-receivedby&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">supportingInfo</a>&gt;<a href="Practitioner-rs-bundle-example-practitioner-receiver.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practitioner/rs-bundle-example-practitioner-receiver&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">supportingInfo</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">ServiceRequest</a>&gt;
     &lt;/resource&gt;
@@ -2911,7 +2629,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 5, 2025 05:21+0000">2025-11-05</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 6, 2025 11:55+0000">2025-11-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

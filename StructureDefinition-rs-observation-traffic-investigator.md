@@ -9,15 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObsPresenceTrafficInvestigator |
+| Draft as of 2025-11-06 | *Computable Name*:RSObsPresenceTrafficInvestigator |
 
  
 Boolean presence/absence of traffic investigator. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
 * Examples for this Profile: [Observation/rs-example-observation-traffic-investigator](Observation-rs-example-observation-traffic-investigator.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-traffic-investigator)
@@ -43,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traff
   "name" : "RSObsPresenceTrafficInvestigator",
   "title" : "RS Observation - Presence of Traffic Investigator",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -117,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traff
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

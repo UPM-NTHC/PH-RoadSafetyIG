@@ -33,11 +33,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md) | Known allergies, substances and reactions. |
 | [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) | Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). |
 | [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) | Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest). |
-| [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md) | Document Bundle for Post‑Crash investigation submission. The first entry MUST be a Composition that organizes and references post‑crash Observations and supporting DocumentReferences. |
 | [RS Claim](StructureDefinition-rs-claim.md) | Claim information related to cost of care. |
-| [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) | Composition that organises an EMS run report. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). |
-| [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md) | Composition that organises a facility (ONEISS) submission. Sections MUST reference the other resources present in the corresponding document Bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest). |
-| [RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md) | Composition that organises a Post‑Crash submission. Sections reference Observations and Documents related to post‑crash investigation (collision type, investigator presence, other risk factors, safety accessories, vehicle condition, CCTV, evidence documents). |
 | [RS Condition](StructureDefinition-rs-condition.md) | Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. |
 | [RS Condition — External Cause (category)](StructureDefinition-rs-condition-external-cause.md) | Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code. |
 | [RS Condition — Final Diagnosis](StructureDefinition-rs-condition-final-diagnosis.md) | Final diagnosis per CSV mapping. |
@@ -209,7 +205,6 @@ These are example instances that show what data produced and consumed by systems
 | [Date/Time of Injury](Observation-rs-bundle-example-observation-injury-datetime.md) | Timestamp of collision reported by onsite responders. |
 | [EMS Encounter for Reyes](Encounter-rs-bundle-example-encounter.md) | Encounter covering EMS transport from crash scene to DOH Central ER on 2025-10-31. |
 | [EMS Referral Bundle – Reyes](Bundle-rs-bundle-example-bundle-ems.md) | Document bundle delivering the EMS referral for Thomas Reyes with all supporting resources embedded. |
-| [EMS Run Report – Reyes 2025-10-31](Composition-rs-bundle-example-composition-ems.md) | Composition summarizing the EMS referral story for Thomas Reyes. |
 | [EMS Team Lead](Practitioner-rs-bundle-example-practitioner-teamlead.md) | Team lead coordinating transport for the EMS episode. |
 | [EMS Transport Claim](Claim-rs-bundle-example-claim.md) | Billing record for EMS referral transport. |
 | [Example EMS Team Leader](Practitioner-rs-practitioner-teamlead.md) | Response team leader overseeing transport in rs-example-encounter. |
@@ -299,7 +294,6 @@ These are example instances that show what data produced and consumed by systems
 | [Injury Intent](Observation-rs-bundle-example-observation-injury-intent.md) | Intent recorded as unintentional vehicular crash. |
 | [Mode of Transport](Observation-rs-bundle-example-observation-mode-transport.md) | Ambulance transport to receiving facility. |
 | [ONEISS Bundle – Reyes](Bundle-rs-bundle-example-bundle-oneiss.md) | Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded. |
-| [ONEISS Facility Submission – Reyes](Composition-rs-bundle-example-composition-oneiss.md) | Composition organising the ONEISS facility submission for Thomas Reyes. |
 | [Patient Coverage](Coverage-rs-bundle-example-coverage.md) | Coverage record supporting claim for EMS transport. |
 | [Patient Education](Procedure-rs-bundle-example-procedure-education.md) | Post-crash counseling delivered by EMS team lead. |
 | [Patient Thomas Reyes](Patient-rs-bundle-example-patient.md) | Adult male patient transported following a vehicular collision. |

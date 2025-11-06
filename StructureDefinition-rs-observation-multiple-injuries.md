@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObsMultipleInjuries |
+| Draft as of 2025-11-06 | *Computable Name*:RSObsMultipleInjuries |
 
  
 Boolean flag indicating multiple injuries. 
@@ -17,7 +17,6 @@ Boolean flag indicating multiple injuries.
 **Usages:**
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 * Examples for this Profile: [Observation/rs-example-observation-multiple-injuries](Observation-rs-example-observation-multiple-injuries.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-multiple-injuries)
@@ -43,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-multi
   "name" : "RSObsMultipleInjuries",
   "title" : "RS Observation - Multiple Injuries?",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSIncidentLocation |
+| Draft as of 2025-11-06 | *Computable Name*:RSIncidentLocation |
 
  
 Location of incident; supports PH-Core address extensions and geolocation. 
@@ -17,7 +17,7 @@ Location of incident; supports PH-Core address extensions and geolocation.
 **Usages:**
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md), [RS Encounter](StructureDefinition-rs-encounter.md) and [RS HealthcareService](StructureDefinition-rs-healthcare-service.md)
+* Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md) and [RS HealthcareService](StructureDefinition-rs-healthcare-service.md)
 * Examples for this Profile: [EDSA corner Ayala Ave](Location-rs-bundle-example-incident-location.md), [EDSA & Ayala Intersection/a> and[EDSA - Ayala Southbound](Location-rs-example-incident-location.md)
 You can also check for[usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-incident-location-incident)
 
@@ -42,7 +42,7 @@ Other representations of profile:[CSV](StructureDefinition-rs-incident-location-
   "name" : "RSIncidentLocation",
   "title" : "RS Incident Location",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

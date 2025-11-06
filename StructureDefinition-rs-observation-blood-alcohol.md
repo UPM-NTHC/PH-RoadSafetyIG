@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-alcohol | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObsBloodAlcoholConcentration |
+| Draft as of 2025-11-06 | *Computable Name*:RSObsBloodAlcoholConcentration |
 
  
 Blood alcohol concentration. 
@@ -17,7 +17,6 @@ Blood alcohol concentration.
 **Usages:**
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 * Examples for this Profile: [Observation/rs-example-observation-blood-alcohol](Observation-rs-example-observation-blood-alcohol.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-blood-alcohol)
@@ -43,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
   "name" : "RSObsBloodAlcoholConcentration",
   "title" : "RS Observation - Blood Alcohol Concentration",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

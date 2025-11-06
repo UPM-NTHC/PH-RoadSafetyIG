@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSClaim |
+| Draft as of 2025-11-06 | *Computable Name*:RSClaim |
 
  
 Claim information related to cost of care. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-claim.csv), [Exce
   "name" : "RSClaim",
   "title" : "RS Claim",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

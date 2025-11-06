@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObsConcussion |
+| Draft as of 2025-11-06 | *Computable Name*:RSObsConcussion |
 
  
 Concussion present; with site and details. 
@@ -17,7 +17,6 @@ Concussion present; with site and details.
 **Usages:**
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 * Examples for this Profile: [Observation/rs-example-observation-concussion](Observation-rs-example-observation-concussion.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-concussion)
@@ -43,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-concu
   "name" : "RSObsConcussion",
   "title" : "RS Observation - Concussion",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

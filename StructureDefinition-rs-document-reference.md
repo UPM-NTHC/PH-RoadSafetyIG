@@ -9,15 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSDocumentReference |
+| Draft as of 2025-11-06 | *Computable Name*:RSDocumentReference |
 
  
 Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files). 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md), [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) and [RS Bundle — Post‑Crash Investigation](StructureDefinition-rs-bundle-postcrash.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md), [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md) and [RS Composition — Post‑Crash Investigation](StructureDefinition-rs-composition-postcrash.md)
+* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Examples for this Profile: [DocumentReference/rs-bundle-example-documentreference](DocumentReference-rs-bundle-example-documentreference.md) and [DocumentReference/rs-example-documentreference](DocumentReference-rs-example-documentreference.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-document-reference)
@@ -43,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
   "name" : "RSDocumentReference",
   "title" : "RS DocumentReference (Evidence)",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

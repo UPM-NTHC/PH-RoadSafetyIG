@@ -24,15 +24,9 @@
      ] ;
      fhir:value [ fhir:v "ONEISS-20251031-001" ]
   ] ; # 
-  fhir:type [ fhir:v "document"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
   fhir:timestamp [ fhir:v "2025-11-01T10:05:00+08:00"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [
-       fhir:v "urn:uuid:11111111-1111-1111-1111-111111111101"^^xsd:anyURI ;
-       fhir:l <urn:uuid:11111111-1111-1111-1111-111111111101>
-     ] ;
-     fhir:resource ( <urn:uuid:11111111-1111-1111-1111-111111111101> )
-  ] [
      fhir:fullUrl [
        fhir:v "urn:uuid:11111111-1111-1111-1111-111111111102"^^xsd:anyURI ;
        fhir:l <urn:uuid:11111111-1111-1111-1111-111111111102>
@@ -368,290 +362,6 @@
        fhir:l <urn:uuid:11111111-1111-1111-1111-111111111159>
      ] ;
      fhir:resource ( <urn:uuid:11111111-1111-1111-1111-111111111159> )
-  ] ) . # 
-
-<urn:uuid:11111111-1111-1111-1111-111111111101> a fhir:Composition ;
-  fhir:id [ fhir:v "rs-bundle-example-composition-oneiss"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"^^xsd:anyURI ;
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_rs-bundle-example-composition-oneiss\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition rs-bundle-example-composition-oneiss</b></p><a name=\"rs-bundle-example-composition-oneiss\"> </a><a name=\"hcrs-bundle-example-composition-oneiss\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-composition-oneiss.html\">RS Composition — ONEISS Submission</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11348-0}\">Emergency department note</span></p><p><b>encounter</b>: <a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>date</b>: 2025-11-01 10:00:00+0800</p><p><b>author</b>: <a href=\"Practitioner-rs-bundle-example-practitioner-receiver.html\">Practitioner Maria Cristina Santos (official)</a></p><p><b>title</b>: DOH Central ER – ONEISS Submission</p></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:status [ fhir:v "final"] ; # 
-  fhir:type [
-     fhir:coding ( [
-       a loinc:11348-0 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:code [ fhir:v "11348-0" ] ;
-       fhir:display [ fhir:v "Emergency department note" ]
-     ] )
-  ] ; # 
-  fhir:subject [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-bundle-example-patient> ;
-     fhir:reference [ fhir:v "Patient/rs-bundle-example-patient" ]
-  ] ; # 
-  fhir:encounter [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-bundle-example-encounter> ;
-     fhir:reference [ fhir:v "Encounter/rs-bundle-example-encounter" ]
-  ] ; # 
-  fhir:date [ fhir:v "2025-11-01T10:00:00+08:00"^^xsd:dateTime] ; # 
-  fhir:author ( [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-bundle-example-practitioner-receiver> ;
-     fhir:reference [ fhir:v "Practitioner/rs-bundle-example-practitioner-receiver" ]
-  ] ) ; # 
-  fhir:title [ fhir:v "DOH Central ER – ONEISS Submission"] ; # 
-  fhir:section ( [
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-bundle-example-patient> ;
-       fhir:reference [ fhir:v "Patient/rs-bundle-example-patient" ]
-     ] )
-  ] [
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-bundle-example-encounter> ;
-       fhir:reference [ fhir:v "Encounter/rs-bundle-example-encounter" ]
-     ] )
-  ] [
-     fhir:title [ fhir:v "Clinical" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:8648-8 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
-         fhir:code [ fhir:v "8648-8" ] ;
-         fhir:display [ fhir:v "Emergency department clinical impressions" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Condition/rs-bundle-example-condition-initial-impression> ;
-       fhir:reference [ fhir:v "Condition/rs-bundle-example-condition-initial-impression" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Condition/rs-bundle-example-condition-final-diagnosis> ;
-       fhir:reference [ fhir:v "Condition/rs-bundle-example-condition-final-diagnosis" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-risk-factors> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-risk-factors" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-blood-alcohol> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-blood-alcohol" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-condition> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-condition" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-status-on-arrival> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-status-on-arrival" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-outcome> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-outcome" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-transferred> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-transferred" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-referred> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-referred" ]
-     ] )
-  ] [
-     fhir:title [ fhir:v "Injuries" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:11337-3 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
-         fhir:code [ fhir:v "11337-3" ] ;
-         fhir:display [ fhir:v "Hospital admission history and physical note" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-multiple-injuries> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-multiple-injuries" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-abrasion> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-abrasion" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-avulsion> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-avulsion" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-nature-burns> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-nature-burns" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-concussion> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-concussion" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-contusion> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-contusion" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-fracture> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-fracture" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-open-wound> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-open-wound" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-traumatic-amputation> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-traumatic-amputation" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-other-injury> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-other-injury" ]
-     ] )
-  ] [
-     fhir:title [ fhir:v "Incident" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:11307-9 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
-         fhir:code [ fhir:v "11307-9" ] ;
-         fhir:display [ fhir:v "Injury history narrative" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-injury-datetime> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-injury-datetime" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-injury-intent> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-injury-intent" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-transport-accident> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-transport-accident" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-mode-transport> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-mode-transport" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-collision-vs-noncollision> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-collision-vs-noncollision" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-patients-vehicle> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-patients-vehicle" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-other-vehicle> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-other-vehicle" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-position-of-patient> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-position-of-patient" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-how-many-vehicles> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-how-many-vehicles" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-place-of-occurrence> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-place-of-occurrence" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-activity-at-incident> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-activity-at-incident" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-safety-accessories> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-safety-accessories" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-triage> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-triage" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-urgency> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-urgency" ]
-     ] )
-  ] [
-     fhir:title [ fhir:v "Documents / Evidence" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:55109-3 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
-         fhir:code [ fhir:v "55109-3" ] ;
-         fhir:display [ fhir:v "Clinical attachments" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/DocumentReference/rs-bundle-example-documentreference> ;
-       fhir:reference [ fhir:v "DocumentReference/rs-bundle-example-documentreference" ]
-     ] )
-  ] [
-     fhir:title [ fhir:v "External Causes" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:11346-6 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
-         fhir:code [ fhir:v "11346-6" ] ;
-         fhir:display [ fhir:v "External cause of injury narrative" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-bites> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-bites" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-burns> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-burns" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-chemical> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-chemical" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-sharp> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-sharp" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-drowning> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-drowning" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-forces> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-forces" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-fall> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-fall" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-firecracker> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-firecracker" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-gunshot> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-gunshot" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-hanging> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-hanging" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-mauling> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-mauling" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-sexual-assault> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-sexual-assault" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-example-observation-ec-other> ;
-       fhir:reference [ fhir:v "Observation/rs-example-observation-ec-other" ]
-     ] )
-  ] [
-     fhir:title [ fhir:v "Procedures and Workflow" ] ;
-     fhir:code [
-       fhir:coding ( [
-         a loinc:8714-3 ;
-         fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
-         ] ;
-         fhir:code [ fhir:v "8714-3" ] ;
-         fhir:display [ fhir:v "Procedures" ]
-       ] )
-     ] ;
-     fhir:entry ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Procedure/rs-bundle-example-procedure-education> ;
-       fhir:reference [ fhir:v "Procedure/rs-bundle-example-procedure-education" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Procedure/rs-bundle-example-procedure-transport> ;
-       fhir:reference [ fhir:v "Procedure/rs-bundle-example-procedure-transport" ]
-     ] [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ServiceRequest/rs-bundle-example-service-request> ;
-       fhir:reference [ fhir:v "ServiceRequest/rs-bundle-example-service-request" ]
-     ] )
   ] ) . # 
 
 <urn:uuid:11111111-1111-1111-1111-111111111102> a fhir:Patient ;
@@ -3161,7 +2871,7 @@
   ] ) . # 
 
 <urn:uuid:11111111-1111-1111-1111-111111111151> a fhir:DocumentReference ;
-  fhir:id [ fhir:v "rs-example-documentreference"] ; # 
+  fhir:id [ fhir:v "rs-bundle-example-documentreference"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"^^xsd:anyURI ;
@@ -3170,7 +2880,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_rs-example-documentreference\"> </a>Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.</div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_rs-bundle-example-documentreference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference rs-bundle-example-documentreference</b></p><a name=\"rs-bundle-example-documentreference\"> </a><a name=\"hcrs-bundle-example-documentreference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-document-reference.html\">RS DocumentReference (Evidence)</a></p></div><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18748-4}\">Document image</span></p><p><b>subject</b>: <a href=\"Patient-rs-bundle-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><a href=\"https://example.org/fhir/Binary/ems-crash-photo\">https://example.org/fhir/Binary/ems-crash-photo</a></td><td>Intersection scene photo</td></tr></table><p><b>format</b>: formatcodes: urn:ihe:pcc:dsr:2016 (urn:ihe:pcc:dsr:2016)</p></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "current"] ; # 
   fhir:type [
@@ -3185,17 +2895,17 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> ;
-     fhir:reference [ fhir:v "Patient/rs-example-patient" ]
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-bundle-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-bundle-example-patient" ]
   ] ; # 
   fhir:content ( [
      fhir:attachment [
        fhir:contentType [ fhir:v "image/jpeg" ] ;
        fhir:url [
-         fhir:v "https://example.org/fhir/Binary/rs-crash-photo"^^xsd:anyURI ;
-         fhir:l <https://example.org/fhir/Binary/rs-crash-photo>
+         fhir:v "https://example.org/fhir/Binary/ems-crash-photo"^^xsd:anyURI ;
+         fhir:l <https://example.org/fhir/Binary/ems-crash-photo>
        ] ;
-       fhir:title [ fhir:v "Crash scene photograph" ]
+       fhir:title [ fhir:v "Intersection scene photo" ]
      ] ;
      fhir:format [
        fhir:system [
@@ -3207,13 +2917,13 @@
   ] ) ; # 
   fhir:context [
      fhir:encounter ( [
-       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-example-encounter> ;
-       fhir:reference [ fhir:v "Encounter/rs-example-encounter" ]
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-bundle-example-encounter> ;
+       fhir:reference [ fhir:v "Encounter/rs-bundle-example-encounter" ]
      ] )
   ] . # 
 
 <urn:uuid:11111111-1111-1111-1111-111111111152> a fhir:ServiceRequest ;
-  fhir:id [ fhir:v "rs-example-service-request"] ; # 
+  fhir:id [ fhir:v "rs-bundle-example-service-request"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request"^^xsd:anyURI ;
@@ -3222,28 +2932,31 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_rs-example-service-request\"> </a>ServiceRequest documenting refusal to admit for rs-example-patient with supporting organization and practitioner contacts.</div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_rs-bundle-example-service-request\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest rs-bundle-example-service-request</b></p><a name=\"rs-bundle-example-service-request\"> </a><a name=\"hcrs-bundle-example-service-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-service-request.html\">RS ServiceRequest</a></p></div><p><b>status</b>: Revoked</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes:\">Refusal to admit</span></p><p><b>subject</b>: <a href=\"Patient-rs-bundle-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>occurrence</b>: 2025-10-31 15:50:00+0800</p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Organization-rs-bundle-example-organization.html\">Organization MetroCare EMS</a></li><li><a href=\"Practitioner-rs-bundle-example-practitioner-receiver.html\">Practitioner Maria Cristina Santos (official)</a></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "revoked"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Refusal to admit" ]
+  ] ; # 
   fhir:subject [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-example-patient> ;
-     fhir:reference [ fhir:v "Patient/rs-example-patient" ]
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-bundle-example-patient> ;
+     fhir:reference [ fhir:v "Patient/rs-bundle-example-patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-example-encounter> ;
-     fhir:reference [ fhir:v "Encounter/rs-example-encounter" ]
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/rs-bundle-example-encounter> ;
+     fhir:reference [ fhir:v "Encounter/rs-bundle-example-encounter" ]
   ] ; # 
   fhir:occurrence [
      a fhir:DateTime ;
-     fhir:v "2025-10-31T16:10:00+08:00"^^xsd:dateTime
+     fhir:v "2025-10-31T15:50:00+08:00"^^xsd:dateTime
   ] ; # 
   fhir:supportingInfo ( [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-organization-single-ex> ;
-     fhir:reference [ fhir:v "Organization/rs-organization-single-ex" ]
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-bundle-example-organization> ;
+     fhir:reference [ fhir:v "Organization/rs-bundle-example-organization" ]
   ] [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-practitioner-receivedby> ;
-     fhir:reference [ fhir:v "Practitioner/rs-practitioner-receivedby" ]
+     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Practitioner/rs-bundle-example-practitioner-receiver> ;
+     fhir:reference [ fhir:v "Practitioner/rs-bundle-example-practitioner-receiver" ]
   ] ) . # 
 
 <urn:uuid:11111111-1111-1111-1111-111111111153> a fhir:Procedure ;

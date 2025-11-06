@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObsInjuryDateTime |
+| Draft as of 2025-11-06 | *Computable Name*:RSObsInjuryDateTime |
 
  
 DateTimestamp patient was seen at the health facility. 
@@ -17,7 +17,6 @@ DateTimestamp patient was seen at the health facility.
 **Usages:**
 
 * Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 * Examples for this Profile: [Observation/rs-bundle-example-observation-injury-datetime](Observation-rs-bundle-example-observation-injury-datetime.md) and [Observation/rs-example-observation-injury-datetime](Observation-rs-example-observation-injury-datetime.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-injury-datetime)
@@ -43,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
   "name" : "RSObsInjuryDateTime",
   "title" : "RS Observation - Date/Time of Injury",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

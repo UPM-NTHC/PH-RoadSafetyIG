@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10.237"}
-    h3,h4,h5,h6{--heading-prefix:"10.237"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.232"}
+    h3,h4,h5,h6{--heading-prefix:"10.232"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -266,14 +266,9 @@
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:fdc:roadsafetyph.doh.gov.ph:bundle&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ONEISS-20251031-001&quot; ]
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;document&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;transaction&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">fhir:timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2025-11-01T10:05:00+08:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:entry</a> ( [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:11111111-1111-1111-1111-111111111101&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:uuid:11111111-1111-1111-1111-111111111101&gt;     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition">fhir:resource</a> &lt;urn:uuid:11111111-1111-1111-1111-111111111101&gt; )
-  ] [
 <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:11111111-1111-1111-1111-111111111102&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:uuid:11111111-1111-1111-1111-111111111102&gt;     ] ;
@@ -553,217 +548,6 @@
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:11111111-1111-1111-1111-111111111159&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:uuid:11111111-1111-1111-1111-111111111159&gt;     ] ;
     ( <a href="http://hl7.org/fhir/R4/location.html#Location">fhir:resource</a> &lt;urn:uuid:11111111-1111-1111-1111-111111111159&gt; )
-  ] ) . # 
-
-&lt;urn:uuid:11111111-1111-1111-1111-111111111101&gt; <a href="http://hl7.org/fhir/R4/composition.html">a</a> fhir:Composition ;
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rs-bundle-example-composition-oneiss&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:l</a> &lt;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Composition_rs-bundle-example-composition-oneiss\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Composition rs-bundle-example-composition-oneiss&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;rs-bundle-example-composition-oneiss\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcrs-bundle-example-composition-oneiss\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-rs-composition-oneiss.html\&quot;&gt;RS Composition — ONEISS Submission&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 11348-0}\&quot;&gt;Emergency department note&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-rs-bundle-example-encounter.html\&quot;&gt;Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&amp;gt; 2025-10-31 16:30:00+0800&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2025-11-01 10:00:00+0800&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-rs-bundle-example-practitioner-receiver.html\&quot;&gt;Practitioner Maria Cristina Santos (official)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: DOH Central ER – ONEISS Submission&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.type">fhir:type</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:11348-0 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;       ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;11348-0&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Emergency department note&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/rs-bundle-example-patient ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/rs-bundle-example-patient&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.encounter">fhir:encounter</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Encounter/rs-bundle-example-encounter ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/rs-bundle-example-encounter&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-11-01T10:00:00+08:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.author">fhir:author</a> ( [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Practitioner/rs-bundle-example-practitioner-receiver ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/rs-bundle-example-practitioner-receiver&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DOH Central ER – ONEISS Submission&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.section">fhir:section</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/rs-bundle-example-patient ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/rs-bundle-example-patient&quot; ]     ] )
-  ] [
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Encounter/rs-bundle-example-encounter ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/rs-bundle-example-encounter&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Clinical&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:8648-8 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;         ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;8648-8&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Emergency department clinical impressions&quot; ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Condition/rs-bundle-example-condition-initial-impression ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/rs-bundle-example-condition-initial-impression&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Condition/rs-bundle-example-condition-final-diagnosis ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/rs-bundle-example-condition-final-diagnosis&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-risk-factors ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-risk-factors&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-blood-alcohol ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-blood-alcohol&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-condition ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-condition&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-status-on-arrival ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-status-on-arrival&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-outcome ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-outcome&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-transferred ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-transferred&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-referred ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-referred&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Injuries&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:11337-3 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;         ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;11337-3&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hospital admission history and physical note&quot; ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-multiple-injuries ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-multiple-injuries&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-abrasion ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-abrasion&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-avulsion ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-avulsion&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-nature-burns ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-nature-burns&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-concussion ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-concussion&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-contusion ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-contusion&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-fracture ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-fracture&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-open-wound ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-open-wound&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-traumatic-amputation ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-traumatic-amputation&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-other-injury ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-other-injury&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Incident&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:11307-9 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;         ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;11307-9&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Injury history narrative&quot; ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-injury-datetime ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-injury-datetime&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-injury-intent ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-injury-intent&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-transport-accident ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-transport-accident&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-mode-transport ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-mode-transport&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-collision-vs-noncollision ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-collision-vs-noncollision&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-patients-vehicle ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-patients-vehicle&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-other-vehicle ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-other-vehicle&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-position-of-patient ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-position-of-patient&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-how-many-vehicles ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-how-many-vehicles&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-place-of-occurrence ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-place-of-occurrence&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-activity-at-incident ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-activity-at-incident&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-safety-accessories ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-safety-accessories&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-triage ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-triage&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-urgency ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-urgency&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Documents / Evidence&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:55109-3 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;         ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;55109-3&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Clinical attachments&quot; ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:DocumentReference/rs-bundle-example-documentreference ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/rs-bundle-example-documentreference&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;External Causes&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:11346-6 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;         ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;11346-6&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;External cause of injury narrative&quot; ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-bites ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-bites&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-burns ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-burns&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-chemical ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-chemical&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-sharp ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-sharp&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-drowning ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-drowning&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-forces ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-forces&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-fall ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-fall&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-firecracker ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-firecracker&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-gunshot ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-gunshot&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-hanging ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-hanging&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-mauling ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-mauling&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-sexual-assault ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-sexual-assault&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Observation/rs-example-observation-ec-other ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/rs-example-observation-ec-other&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedures and Workflow&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:8714-3 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://loinc.org&gt;         ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;8714-3&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedures&quot; ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Procedure/rs-bundle-example-procedure-education ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/rs-bundle-example-procedure-education&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Procedure/rs-bundle-example-procedure-transport ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/rs-bundle-example-procedure-transport&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:ServiceRequest/rs-bundle-example-service-request ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ServiceRequest/rs-bundle-example-service-request&quot; ]     ] )
   ] ) . # 
 
 &lt;urn:uuid:11111111-1111-1111-1111-111111111102&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
@@ -3030,7 +2814,7 @@ a sct:773760007 ;
   ] ) . # 
 
 &lt;urn:uuid:11111111-1111-1111-1111-111111111151&gt; <a href="http://hl7.org/fhir/R4/documentreference.html">a</a> fhir:DocumentReference ;
-  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rs-example-documentreference&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rs-bundle-example-documentreference&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference&quot;^^xsd:anyURI ;
@@ -3038,7 +2822,7 @@ a sct:773760007 ;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;DocumentReference_rs-example-documentreference\&quot;&gt; &lt;/a&gt;Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;DocumentReference_rs-bundle-example-documentreference\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference rs-bundle-example-documentreference&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;rs-bundle-example-documentreference\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcrs-bundle-example-documentreference\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-rs-document-reference.html\&quot;&gt;RS DocumentReference (Evidence)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 18748-4}\&quot;&gt;Document image&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-rs-bundle-example-patient.html\&quot;&gt;Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;image/jpeg&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://example.org/fhir/Binary/ems-crash-photo\&quot;&gt;https://example.org/fhir/Binary/ems-crash-photo&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intersection scene photo&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;format&lt;/b&gt;: formatcodes: urn:ihe:pcc:dsr:2016 (urn:ihe:pcc:dsr:2016)&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Contexts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Encounter&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Encounter-rs-bundle-example-encounter.html\&quot;&gt;Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&amp;gt; 2025-10-31 16:30:00+0800&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;current&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.type">fhir:type</a> [
@@ -3051,16 +2835,16 @@ a loinc:18748-4 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Document image&quot; ]     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/rs-example-patient ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/rs-example-patient&quot; ]
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/rs-bundle-example-patient ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/rs-bundle-example-patient&quot; ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">fhir:content</a> ( [
 <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">fhir:attachment</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">fhir:contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;image/jpeg&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">fhir:url</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;https://example.org/fhir/Binary/rs-crash-photo&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:l</a> &lt;https://example.org/fhir/Binary/rs-crash-photo&gt;       ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Crash scene photograph&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;https://example.org/fhir/Binary/ems-crash-photo&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:l</a> &lt;https://example.org/fhir/Binary/ems-crash-photo&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Intersection scene photo&quot; ]     ] ;
 <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.format">fhir:format</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/formatcodes&quot;^^xsd:anyURI ;
@@ -3069,12 +2853,12 @@ a loinc:18748-4 ;
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.context">fhir:context</a> [
     ( <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.context.encounter">fhir:encounter</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Encounter/rs-example-encounter ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/rs-example-encounter&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Encounter/rs-bundle-example-encounter ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/rs-bundle-example-encounter&quot; ]     ] )
   ] . # 
 
 &lt;urn:uuid:11111111-1111-1111-1111-111111111152&gt; <a href="http://hl7.org/fhir/R4/servicerequest.html">a</a> fhir:ServiceRequest ;
-  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rs-example-service-request&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rs-bundle-example-service-request&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request&quot;^^xsd:anyURI ;
@@ -3082,28 +2866,31 @@ a loinc:18748-4 ;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;ServiceRequest_rs-example-service-request\&quot;&gt; &lt;/a&gt;ServiceRequest documenting refusal to admit for rs-example-patient with supporting organization and practitioner contacts.&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;ServiceRequest_rs-bundle-example-service-request\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ServiceRequest rs-bundle-example-service-request&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;rs-bundle-example-service-request\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcrs-bundle-example-service-request\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-rs-service-request.html\&quot;&gt;RS ServiceRequest&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Revoked&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Refusal to admit&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-rs-bundle-example-patient.html\&quot;&gt;Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-rs-bundle-example-encounter.html\&quot;&gt;Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&amp;gt; 2025-10-31 16:30:00+0800&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2025-10-31 15:50:00+0800&lt;/p&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Organization-rs-bundle-example-organization.html\&quot;&gt;Organization MetroCare EMS&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Practitioner-rs-bundle-example-practitioner-receiver.html\&quot;&gt;Practitioner Maria Cristina Santos (official)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;revoked&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">fhir:intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;plan&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Refusal to admit&quot; ]
+  ] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/rs-example-patient ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/rs-example-patient&quot; ]
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Patient/rs-bundle-example-patient ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/rs-bundle-example-patient&quot; ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.encounter">fhir:encounter</a> [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Encounter/rs-example-encounter ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/rs-example-encounter&quot; ]
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Encounter/rs-bundle-example-encounter ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/rs-bundle-example-encounter&quot; ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.occurrence[x]">fhir:occurrence</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-31T16:10:00+08:00&quot;^^xsd:dateTime
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-31T15:50:00+08:00&quot;^^xsd:dateTime
   ] ; # 
   <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">fhir:supportingInfo</a> ( [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Organization/rs-organization-single-ex ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Organization/rs-organization-single-ex&quot; ]
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Organization/rs-bundle-example-organization ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Organization/rs-bundle-example-organization&quot; ]
   ] [
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Practitioner/rs-practitioner-receivedby ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/rs-practitioner-receivedby&quot; ]
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> fhir:Practitioner/rs-bundle-example-practitioner-receiver ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/rs-bundle-example-practitioner-receiver&quot; ]
   ] ) . # 
 
 &lt;urn:uuid:11111111-1111-1111-1111-111111111153&gt; <a href="http://hl7.org/fhir/R4/procedure.html">a</a> fhir:Procedure ;
@@ -3313,7 +3100,7 @@ a sct:710818009 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 5, 2025 05:21+0000">2025-11-05</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 6, 2025 11:55+0000">2025-11-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

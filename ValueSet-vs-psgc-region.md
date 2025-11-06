@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ValueSet/vs-psgc-region | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:VSPSGCRegion |
+| Draft as of 2025-11-06 | *Computable Name*:VSPSGCRegion |
 
  
 PSGC Region codes (managed externally). 
@@ -52,7 +52,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "VSPSGCRegion",
   "title" : "RS VS - PSGC Region",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

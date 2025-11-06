@@ -6,45 +6,13 @@
 
 ## Example Bundle: EMS Referral Bundle – Reyes
 
-**Document Details**
-
 Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
 
-Final Document at 2025-10-31 17:15:00+0800 by [Practitioner Joel Rivera (official)](Practitioner-rs-bundle-example-practitioner-teamlead.md) for [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-bundle-example-patient.md) in encounter [Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --> 2025-10-31 16:30:00+0800](Encounter-rs-bundle-example-encounter.md)
+Bundle rs-bundle-example-bundle-ems of type transaction
 
 -------
 
-**Document Subject**
-
-Profile: [RS Patient](StructureDefinition-rs-patient.md)
-
-Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01
-
--------
-
--------
-
-**Document Content**
-
-## Workflow / Timeline
-
-## Incident
-
-## Vital signs
-
-## Clinical / Assessment
-
-## Documents / Evidence
-
-## Procedures and Workflow Items
-
--------
-
-## Additional Resources Included in Document
-
--------
-
-Entry 2 - fullUrl = urn:uuid:b09b54f6-5c21-46c9-9d03-35bb941a9eef
+Entry 1 - fullUrl = urn:uuid:b09b54f6-5c21-46c9-9d03-35bb941a9eef
 
 Resource Patient:
 
@@ -57,7 +25,7 @@ Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01
 
 -------
 
-Entry 3 - fullUrl = urn:uuid:c4e1aa15-b495-46f3-8c9c-7f1d9c3bb6f1
+Entry 2 - fullUrl = urn:uuid:c4e1aa15-b495-46f3-8c9c-7f1d9c3bb6f1
 
 Resource Encounter:
 
@@ -76,7 +44,7 @@ Profile: [RS Encounter](StructureDefinition-rs-encounter.md)
 
 -------
 
-Entry 4 - fullUrl = urn:uuid:6a6a58ed-1a83-4d30-a9a4-4aa97d708c03
+Entry 3 - fullUrl = urn:uuid:6a6a58ed-1a83-4d30-a9a4-4aa97d708c03
 
 Resource Location:
 
@@ -96,7 +64,7 @@ Profile: [RS Incident Location](StructureDefinition-rs-incident-location-inciden
 
 -------
 
-Entry 5 - fullUrl = urn:uuid:c5d713cf-8f6a-4e54-9f19-611998c2e8c4
+Entry 4 - fullUrl = urn:uuid:c5d713cf-8f6a-4e54-9f19-611998c2e8c4
 
 Resource Observation:
 
@@ -108,7 +76,7 @@ Profile: [RS Observation - Timeline Date/Time](StructureDefinition-rs-observatio
 
 -------
 
-Entry 6 - fullUrl = urn:uuid:d76f6795-22fa-4a6b-bd38-6b21c41a9282
+Entry 5 - fullUrl = urn:uuid:d76f6795-22fa-4a6b-bd38-6b21c41a9282
 
 Resource Observation:
 
@@ -120,7 +88,7 @@ Profile: [RS Observation - Timeline Date/Time](StructureDefinition-rs-observatio
 
 -------
 
-Entry 7 - fullUrl = urn:uuid:5d7f30dd-4c13-477f-b7ce-19b2dcaf53c3
+Entry 6 - fullUrl = urn:uuid:5d7f30dd-4c13-477f-b7ce-19b2dcaf53c3
 
 Resource Observation:
 
@@ -132,7 +100,7 @@ Profile: [RS Observation - Timeline Date/Time](StructureDefinition-rs-observatio
 
 -------
 
-Entry 8 - fullUrl = urn:uuid:4a4ca5bf-6b1f-478e-9d95-6022139b9392
+Entry 7 - fullUrl = urn:uuid:4a4ca5bf-6b1f-478e-9d95-6022139b9392
 
 Resource Observation:
 
@@ -144,7 +112,7 @@ Profile: [RS Observation - Timeline Date/Time](StructureDefinition-rs-observatio
 
 -------
 
-Entry 9 - fullUrl = urn:uuid:0aa8d46d-45b2-40fa-9a27-76f0b5ce0d8f
+Entry 8 - fullUrl = urn:uuid:0aa8d46d-45b2-40fa-9a27-76f0b5ce0d8f
 
 Resource Observation:
 
@@ -156,7 +124,7 @@ Profile: [RS Observation - Timeline Date/Time](StructureDefinition-rs-observatio
 
 -------
 
-Entry 10 - fullUrl = urn:uuid:1b7da0ae-0d87-4a77-9b22-0b6d4c1f8c4d
+Entry 9 - fullUrl = urn:uuid:1b7da0ae-0d87-4a77-9b22-0b6d4c1f8c4d
 
 Resource Observation:
 
@@ -168,7 +136,7 @@ Profile: [RS Observation - Timeline Date/Time](StructureDefinition-rs-observatio
 
 -------
 
-Entry 11 - fullUrl = urn:uuid:6f8a4a51-6f31-4d6f-9b45-4cb41ffac7aa
+Entry 10 - fullUrl = urn:uuid:6f8a4a51-6f31-4d6f-9b45-4cb41ffac7aa
 
 Resource Observation:
 
@@ -183,7 +151,7 @@ Profile: [RS Observation - Respiratory Rate](StructureDefinition-rs-observation-
 
 -------
 
-Entry 12 - fullUrl = urn:uuid:0f30446d-ac8e-4e0b-8fd9-158f2f6c3c36
+Entry 11 - fullUrl = urn:uuid:0f30446d-ac8e-4e0b-8fd9-158f2f6c3c36
 
 Resource Observation:
 
@@ -198,7 +166,7 @@ Profile: [RS Observation - Pulse Rate](StructureDefinition-rs-observation-pulse-
 
 -------
 
-Entry 13 - fullUrl = urn:uuid:1d4a7752-8285-4c31-ae11-6d8fb1b9a19a
+Entry 12 - fullUrl = urn:uuid:1d4a7752-8285-4c31-ae11-6d8fb1b9a19a
 
 Resource Observation:
 
@@ -213,7 +181,7 @@ Profile: [RS Observation - Blood Pressure](StructureDefinition-rs-observation-bl
 
 -------
 
-Entry 14 - fullUrl = urn:uuid:6ba8cb59-ec66-4357-9d98-f1a540d7ad6f
+Entry 13 - fullUrl = urn:uuid:6ba8cb59-ec66-4357-9d98-f1a540d7ad6f
 
 Resource Observation:
 
@@ -225,7 +193,7 @@ Profile: [RS Observation - Body Temperature](StructureDefinition-rs-observation-
 
 -------
 
-Entry 15 - fullUrl = urn:uuid:7df8e891-4e9f-40a1-968d-71da4bc22e03
+Entry 14 - fullUrl = urn:uuid:7df8e891-4e9f-40a1-968d-71da4bc22e03
 
 Resource Observation:
 
@@ -237,7 +205,7 @@ Profile: [RS Observation - Cyanosis](StructureDefinition-rs-observation-cyanosis
 
 -------
 
-Entry 16 - fullUrl = urn:uuid:c0a6ff6b-6aef-4faf-8564-0f7b5c95c791
+Entry 15 - fullUrl = urn:uuid:c0a6ff6b-6aef-4faf-8564-0f7b5c95c791
 
 Resource Observation:
 
@@ -254,7 +222,7 @@ Profile: [RS Observation - Glasgow Coma Scale](StructureDefinition-rs-observatio
 
 -------
 
-Entry 17 - fullUrl = urn:uuid:f7db9e5d-5342-4cb4-b6f5-6c29ed7a1c97
+Entry 16 - fullUrl = urn:uuid:f7db9e5d-5342-4cb4-b6f5-6c29ed7a1c97
 
 Resource Observation:
 
@@ -266,7 +234,7 @@ Profile: [RS Observation - Reported Complaint](StructureDefinition-rs-observatio
 
 -------
 
-Entry 18 - fullUrl = urn:uuid:9ed7a1b8-e6f4-4f8f-824c-7f24d2f51a5b
+Entry 17 - fullUrl = urn:uuid:9ed7a1b8-e6f4-4f8f-824c-7f24d2f51a5b
 
 Resource Observation:
 
@@ -278,7 +246,7 @@ Profile: [RS Observation - Call Source](StructureDefinition-rs-observation-call-
 
 -------
 
-Entry 19 - fullUrl = urn:uuid:ed5e8a6c-12d1-4f4a-a3aa-9f81f42dbb6c
+Entry 18 - fullUrl = urn:uuid:ed5e8a6c-12d1-4f4a-a3aa-9f81f42dbb6c
 
 Resource Observation:
 
@@ -290,7 +258,7 @@ Profile: [RS Observation - Run Report Comments](StructureDefinition-rs-observati
 
 -------
 
-Entry 20 - fullUrl = urn:uuid:c7c9728e-3a43-4b77-8ad5-3ec7fd3b0dae
+Entry 19 - fullUrl = urn:uuid:c7c9728e-3a43-4b77-8ad5-3ec7fd3b0dae
 
 Resource Observation:
 
@@ -307,7 +275,7 @@ Chest discomfort resolved after oxygen and immobilization; advised repeat vitals
 
 -------
 
-Entry 21 - fullUrl = urn:uuid:2df6a37d-8935-4f5c-a5f4-d0a6623e2c83
+Entry 20 - fullUrl = urn:uuid:2df6a37d-8935-4f5c-a5f4-d0a6623e2c83
 
 Resource DocumentReference:
 
@@ -331,7 +299,7 @@ Profile: [RS DocumentReference (Evidence)](StructureDefinition-rs-document-refer
 
 -------
 
-Entry 22 - fullUrl = urn:uuid:1f3977bc-5227-4cf4-9b2f-0f66d0d5d9f2
+Entry 21 - fullUrl = urn:uuid:1f3977bc-5227-4cf4-9b2f-0f66d0d5d9f2
 
 Resource Task:
 
@@ -348,7 +316,7 @@ Coordinated ambulance standby until ER confirmed acceptance.
 
 -------
 
-Entry 23 - fullUrl = urn:uuid:6f4dfd82-70f5-4b0d-9af6-2fc626c88e50
+Entry 22 - fullUrl = urn:uuid:6f4dfd82-70f5-4b0d-9af6-2fc626c88e50
 
 Resource ServiceRequest:
 
@@ -362,7 +330,7 @@ Profile: [RS ServiceRequest](StructureDefinition-rs-service-request.md)
 
 -------
 
-Entry 24 - fullUrl = urn:uuid:eaaf0f0d-f9e7-4f6f-8121-583a75f1aa3a
+Entry 23 - fullUrl = urn:uuid:eaaf0f0d-f9e7-4f6f-8121-583a75f1aa3a
 
 Resource Procedure:
 
@@ -388,7 +356,7 @@ Discussed signs of delayed chest trauma and when to return to ER.
 
 -------
 
-Entry 25 - fullUrl = urn:uuid:49e2f35c-2ae1-4a2b-a5fa-1bb409775888
+Entry 24 - fullUrl = urn:uuid:49e2f35c-2ae1-4a2b-a5fa-1bb409775888
 
 Resource Procedure:
 
@@ -405,7 +373,7 @@ Coordination established with ER charge nurse prior to departure.
 
 -------
 
-Entry 26 - fullUrl = urn:uuid:5b8f8b0a-7ae1-4fd3-a57f-32ec4f353c6d
+Entry 25 - fullUrl = urn:uuid:5b8f8b0a-7ae1-4fd3-a57f-32ec4f353c6d
 
 Resource Claim:
 
@@ -432,7 +400,7 @@ Profile: [RS Claim](StructureDefinition-rs-claim.md)
 
 -------
 
-Entry 27 - fullUrl = urn:uuid:8a9de1d2-1df6-4ac6-9c5f-424c3c2de2d3
+Entry 26 - fullUrl = urn:uuid:8a9de1d2-1df6-4ac6-9c5f-424c3c2de2d3
 
 Resource Organization:
 
@@ -452,7 +420,7 @@ Profile: [RS Organization](StructureDefinition-rs-organization.md)
 
 -------
 
-Entry 28 - fullUrl = urn:uuid:aa255a9c-0e1a-4d44-8167-915736b2c0d2
+Entry 27 - fullUrl = urn:uuid:aa255a9c-0e1a-4d44-8167-915736b2c0d2
 
 Resource Location:
 
@@ -464,7 +432,7 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
 
 -------
 
-Entry 29 - fullUrl = urn:uuid:0ce99d5d-5f77-469c-af50-7edfb0ec61fb
+Entry 28 - fullUrl = urn:uuid:0ce99d5d-5f77-469c-af50-7edfb0ec61fb
 
 Resource Practitioner:
 
@@ -476,7 +444,7 @@ Profile: [PH Core Practitioner](https://build.fhir.org/ig/UP-Manila-SILab/ph-cor
 
 -------
 
-Entry 30 - fullUrl = urn:uuid:0b2244ac-9ee1-470d-857a-d27b83175f6f
+Entry 29 - fullUrl = urn:uuid:0b2244ac-9ee1-470d-857a-d27b83175f6f
 
 Resource Practitioner:
 
@@ -488,7 +456,7 @@ Profile: [PH Core Practitioner](https://build.fhir.org/ig/UP-Manila-SILab/ph-cor
 
 -------
 
-Entry 31 - fullUrl = urn:uuid:0d4b77fa-4517-40f9-8b6f-3449b8ce1e74
+Entry 30 - fullUrl = urn:uuid:0d4b77fa-4517-40f9-8b6f-3449b8ce1e74
 
 Resource Observation:
 
@@ -500,7 +468,7 @@ Profile: [RS Observation - Injury Intent](StructureDefinition-rs-observation-inj
 
 -------
 
-Entry 32 - fullUrl = urn:uuid:1a0a1cf3-613a-4553-a5c5-2d4691a19fcd
+Entry 31 - fullUrl = urn:uuid:1a0a1cf3-613a-4553-a5c5-2d4691a19fcd
 
 Resource Observation:
 
@@ -512,7 +480,7 @@ Profile: [RS Observation - Date/Time of Injury](StructureDefinition-rs-observati
 
 -------
 
-Entry 33 - fullUrl = urn:uuid:2d7a9f05-1c31-421a-87fb-e919a962f84a
+Entry 32 - fullUrl = urn:uuid:2d7a9f05-1c31-421a-87fb-e919a962f84a
 
 Resource Observation:
 
@@ -524,7 +492,7 @@ Profile: [RS Observation - Transport/Vehicular Accident](StructureDefinition-rs-
 
 -------
 
-Entry 34 - fullUrl = urn:uuid:43ec94f2-1ebb-4b46-9252-127a5c5d9c40
+Entry 33 - fullUrl = urn:uuid:43ec94f2-1ebb-4b46-9252-127a5c5d9c40
 
 Resource Observation:
 
@@ -536,7 +504,7 @@ Profile: [RS Observation - Mode of Transport to Facility](StructureDefinition-rs
 
 -------
 
-Entry 35 - fullUrl = urn:uuid:6cc6c44d-b57b-4cc2-b6ff-07bc5d01d6ab
+Entry 34 - fullUrl = urn:uuid:6cc6c44d-b57b-4cc2-b6ff-07bc5d01d6ab
 
 Resource Coverage:
 
@@ -559,212 +527,9 @@ Resource Coverage:
     "system" : "urn:fdc:roadsafetyph.doh.gov.ph:bundle",
     "value" : "EMS-REF-20251031-001"
   },
-  "type" : "document",
+  "type" : "transaction",
   "timestamp" : "2025-10-31T18:00:00+08:00",
   "entry" : [
-    {
-      "fullUrl" : "urn:uuid:5902c040-96a2-4e46-8d17-13a667d4bcfa",
-      "resource" : {
-        "resourceType" : "Composition",
-        "id" : "rs-bundle-example-composition-ems",
-        "meta" : {
-          "profile" : [
-            "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-ems"
-          ]
-        },
-        "text" : {
-          "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_rs-bundle-example-composition-ems\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition rs-bundle-example-composition-ems</b></p><a name=\"rs-bundle-example-composition-ems\"> </a><a name=\"hcrs-bundle-example-composition-ems\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-composition-ems.html\">RS Composition — EMS Submission</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 92519-4}\">Emergency medical services patient care report</span></p><p><b>encounter</b>: <a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>date</b>: 2025-10-31 17:15:00+0800</p><p><b>author</b>: <a href=\"Practitioner-rs-bundle-example-practitioner-teamlead.html\">Practitioner Joel Rivera (official)</a></p><p><b>title</b>: EMS Referral to DOH Central ER</p></div>"
-        },
-        "status" : "final",
-        "type" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "92519-4",
-              "display" : "Emergency medical services patient care report"
-            }
-          ]
-        },
-        "subject" : {
-          "reference" : "Patient/rs-bundle-example-patient"
-        },
-        "encounter" : {
-          "reference" : "Encounter/rs-bundle-example-encounter"
-        },
-        "date" : "2025-10-31T17:15:00+08:00",
-        "author" : [
-          {
-            "reference" : "Practitioner/rs-bundle-example-practitioner-teamlead"
-          }
-        ],
-        "title" : "EMS Referral to DOH Central ER",
-        "section" : [
-          {
-            "title" : "Workflow / Timeline",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "55110-1",
-                  "display" : "Emergency medical services response narrative"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Observation/rs-bundle-example-timeline-date-received"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-timeline-time-enroute"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-timeline-time-on-scene"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-timeline-time-departed"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-timeline-time-hospital"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-timeline-time-station"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-runreport-comments"
-              }
-            ]
-          },
-          {
-            "title" : "Incident",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "11307-9",
-                  "display" : "Injury history narrative"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Location/rs-bundle-example-incident-location"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-injury-datetime"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-injury-intent"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-transport-accident"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-mode-transport"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-reported-complaint"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-call-source"
-              }
-            ]
-          },
-          {
-            "title" : "Vital signs",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "8716-3",
-                  "display" : "Vital signs"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Observation/rs-bundle-example-observation-respiratory-rate"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-pulse-rate"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-blood-pressure"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-body-temperature"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-cyanosis"
-              },
-              {
-                "reference" : "Observation/rs-bundle-example-observation-gcs"
-              }
-            ]
-          },
-          {
-            "title" : "Clinical / Assessment",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "8648-8",
-                  "display" : "Emergency department clinical impressions"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Observation/rs-bundle-example-observation-clinical-remarks"
-              },
-              {
-                "reference" : "Procedure/rs-bundle-example-procedure-education"
-              }
-            ]
-          },
-          {
-            "title" : "Documents / Evidence",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "55109-3",
-                  "display" : "Clinical attachments"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "DocumentReference/rs-bundle-example-documentreference"
-              }
-            ]
-          },
-          {
-            "title" : "Procedures and Workflow Items",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "8714-3",
-                  "display" : "Procedures"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "ServiceRequest/rs-bundle-example-service-request"
-              },
-              {
-                "reference" : "Task/rs-bundle-example-task"
-              },
-              {
-                "reference" : "Procedure/rs-bundle-example-procedure-transport"
-              }
-            ]
-          }
-        ]
-      }
-    },
     {
       "fullUrl" : "urn:uuid:b09b54f6-5c21-46c9-9d03-35bb941a9eef",
       "resource" : {

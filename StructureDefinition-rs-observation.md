@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObservation |
+| Draft as of 2025-11-06 | *Computable Name*:RSObservation |
 
  
 Generic base Observation for RS data; specialized concept profiles below constrain code/value patterns. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation.csv),
   "name" : "RSObservation",
   "title" : "RS Observation",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

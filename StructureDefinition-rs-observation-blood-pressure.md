@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObsBloodPressure |
+| Draft as of 2025-11-06 | *Computable Name*:RSObsBloodPressure |
 
  
 Blood pressure using component entries for systolic/diastolic. 
@@ -17,7 +17,6 @@ Blood pressure using component entries for systolic/diastolic.
 **Usages:**
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 * Examples for this Profile: [Observation/rs-bundle-example-observation-blood-pressure](Observation-rs-bundle-example-observation-blood-pressure.md) and [Observation/rs-example-observation-blood-pressure](Observation-rs-example-observation-blood-pressure.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-blood-pressure)
@@ -43,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
   "name" : "RSObsBloodPressure",
   "title" : "RS Observation - Blood Pressure",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

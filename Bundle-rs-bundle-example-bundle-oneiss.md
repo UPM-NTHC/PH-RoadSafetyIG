@@ -6,41 +6,13 @@
 
 ## Example Bundle: ONEISS Bundle – Reyes
 
-**Document Details**
-
 Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 
-Final Document at 2025-11-01 10:00:00+0800 by [Practitioner Maria Cristina Santos (official)](Practitioner-rs-bundle-example-practitioner-receiver.md) for [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-bundle-example-patient.md) in encounter [Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --> 2025-10-31 16:30:00+0800](Encounter-rs-bundle-example-encounter.md)
+Bundle rs-bundle-example-bundle-oneiss of type transaction
 
 -------
 
-**Document Subject**
-
-**Unable to resolve subject ''**
-
--------
-
-**Document Content**
-
-## Clinical
-
-## Injuries
-
-## Incident
-
-## Documents / Evidence
-
-## External Causes
-
-## Procedures and Workflow
-
--------
-
-## Additional Resources Included in Document
-
--------
-
-Entry 2 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111102
+Entry 1 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111102
 
 Resource Patient:
 
@@ -48,7 +20,7 @@ Resource Patient:
 
 -------
 
-Entry 3 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111103
+Entry 2 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111103
 
 Resource Encounter:
 
@@ -56,7 +28,7 @@ Resource Encounter:
 
 -------
 
-Entry 4 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111104
+Entry 3 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111104
 
 Resource Condition:
 
@@ -73,7 +45,7 @@ Polytrauma following multi-vehicle collision; hemodynamics stabilised upon arriv
 
 -------
 
-Entry 5 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111105
+Entry 4 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111105
 
 Resource Condition:
 
@@ -90,7 +62,7 @@ Closed mid-shaft femur fracture confirmed via radiograph; scheduled for operativ
 
 -------
 
-Entry 6 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111106
+Entry 5 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111106
 
 Resource Observation:
 
@@ -102,7 +74,7 @@ Profile: [RS Observation - Other Risk Factors](StructureDefinition-rs-observatio
 
 -------
 
-Entry 7 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111107
+Entry 6 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111107
 
 Resource Observation:
 
@@ -114,7 +86,7 @@ Profile: [RS Observation - Blood Alcohol Concentration](StructureDefinition-rs-o
 
 -------
 
-Entry 8 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111108
+Entry 7 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111108
 
 Resource Observation:
 
@@ -126,7 +98,7 @@ Profile: [RS Observation - Condition of Patient](StructureDefinition-rs-observat
 
 -------
 
-Entry 9 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111109
+Entry 8 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111109
 
 Resource Observation:
 
@@ -138,7 +110,7 @@ Profile: [RS Observation - Status on Arrival](StructureDefinition-rs-observation
 
 -------
 
-Entry 10 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111110
+Entry 9 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111110
 
 Resource Observation:
 
@@ -150,7 +122,7 @@ Profile: [RS Observation - Outcome at Release](StructureDefinition-rs-observatio
 
 -------
 
-Entry 11 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111111
+Entry 10 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111111
 
 Resource Observation:
 
@@ -162,7 +134,7 @@ Profile: [RS Observation - Transferred From Facility](StructureDefinition-rs-obs
 
 -------
 
-Entry 12 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111112
+Entry 11 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111112
 
 Resource Observation:
 
@@ -174,7 +146,7 @@ Profile: [RS Observation - Referred By Facility](StructureDefinition-rs-observat
 
 -------
 
-Entry 13 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111113
+Entry 12 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111113
 
 Resource Observation:
 
@@ -186,7 +158,7 @@ Profile: [RS Observation - Multiple Injuries?](StructureDefinition-rs-observatio
 
 -------
 
-Entry 14 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111114
+Entry 13 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111114
 
 Resource Observation:
 
@@ -204,7 +176,7 @@ Superficial abrasion on left forearm
 
 -------
 
-Entry 15 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111115
+Entry 14 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111115
 
 Resource Observation:
 
@@ -222,7 +194,7 @@ Partial nail avulsion on right index finger
 
 -------
 
-Entry 16 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111116
+Entry 15 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111116
 
 Resource Observation:
 
@@ -239,7 +211,7 @@ Mild burn on right forearm
 
 -------
 
-Entry 17 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111117
+Entry 16 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111117
 
 Resource Observation:
 
@@ -257,7 +229,7 @@ Brief loss of consciousness reported
 
 -------
 
-Entry 18 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111118
+Entry 17 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111118
 
 Resource Observation:
 
@@ -275,7 +247,7 @@ Bruising on left thigh
 
 -------
 
-Entry 19 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111119
+Entry 18 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111119
 
 Resource Observation:
 
@@ -293,7 +265,7 @@ Closed fracture of left radius
 
 -------
 
-Entry 20 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111120
+Entry 19 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111120
 
 Resource Observation:
 
@@ -305,7 +277,7 @@ Profile: [RS Observation - Open Wound](StructureDefinition-rs-observation-open-w
 
 -------
 
-Entry 21 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111121
+Entry 20 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111121
 
 Resource Observation:
 
@@ -322,7 +294,7 @@ No amputation observed
 
 -------
 
-Entry 22 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111122
+Entry 21 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111122
 
 Resource Observation:
 
@@ -334,7 +306,7 @@ Profile: [RS Observation - Other Specified Injury](StructureDefinition-rs-observ
 
 -------
 
-Entry 23 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111123
+Entry 22 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111123
 
 Resource Observation:
 
@@ -346,7 +318,7 @@ Profile: [RS Observation - Date/Time of Injury](StructureDefinition-rs-observati
 
 -------
 
-Entry 24 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111124
+Entry 23 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111124
 
 Resource Observation:
 
@@ -358,7 +330,7 @@ Profile: [RS Observation - Injury Intent](StructureDefinition-rs-observation-inj
 
 -------
 
-Entry 25 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111125
+Entry 24 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111125
 
 Resource Observation:
 
@@ -370,7 +342,7 @@ Profile: [RS Observation - Transport/Vehicular Accident](StructureDefinition-rs-
 
 -------
 
-Entry 26 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111126
+Entry 25 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111126
 
 Resource Observation:
 
@@ -382,7 +354,7 @@ Profile: [RS Observation - Mode of Transport to Facility](StructureDefinition-rs
 
 -------
 
-Entry 27 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111127
+Entry 26 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111127
 
 Resource Observation:
 
@@ -394,7 +366,7 @@ Profile: [RS Observation - Collision vs Non-Collision](StructureDefinition-rs-ob
 
 -------
 
-Entry 28 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111128
+Entry 27 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111128
 
 Resource Observation:
 
@@ -406,7 +378,7 @@ Profile: [RS Observation - Patient's Vehicle](StructureDefinition-rs-observation
 
 -------
 
-Entry 29 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111129
+Entry 28 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111129
 
 Resource Observation:
 
@@ -418,7 +390,7 @@ Profile: [RS Observation - Other Vehicle/Object Involved](StructureDefinition-rs
 
 -------
 
-Entry 30 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111130
+Entry 29 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111130
 
 Resource Observation:
 
@@ -430,7 +402,7 @@ Profile: [RS Observation - Position of Patient](StructureDefinition-rs-observati
 
 -------
 
-Entry 31 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111131
+Entry 30 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111131
 
 Resource Observation:
 
@@ -442,7 +414,7 @@ Profile: [RS Observation - How Many Vehicles Involved](StructureDefinition-rs-ob
 
 -------
 
-Entry 32 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111132
+Entry 31 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111132
 
 Resource Observation:
 
@@ -459,7 +431,7 @@ Incident occurred along residential frontage
 
 -------
 
-Entry 33 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111133
+Entry 32 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111133
 
 Resource Observation:
 
@@ -471,7 +443,7 @@ Profile: [RS Observation - Activity at Time of Incident](StructureDefinition-rs-
 
 -------
 
-Entry 34 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111134
+Entry 33 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111134
 
 Resource Observation:
 
@@ -483,7 +455,7 @@ Profile: [RS Observation - Safety Accessories](StructureDefinition-rs-observatio
 
 -------
 
-Entry 35 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111135
+Entry 34 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111135
 
 Resource Observation:
 
@@ -495,7 +467,7 @@ Profile: [RS Observation - Triage Priority](StructureDefinition-rs-observation-t
 
 -------
 
-Entry 36 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111136
+Entry 35 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111136
 
 Resource Observation:
 
@@ -507,7 +479,7 @@ Profile: [RS Observation - Priority Level (Urgency)](StructureDefinition-rs-obse
 
 -------
 
-Entry 37 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111138
+Entry 36 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111138
 
 Resource Observation:
 
@@ -524,7 +496,7 @@ Bite from stray dog at roadside
 
 -------
 
-Entry 38 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111139
+Entry 37 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111139
 
 Resource Observation:
 
@@ -541,7 +513,7 @@ Burns caused by kitchen grease fire
 
 -------
 
-Entry 39 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111140
+Entry 38 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111140
 
 Resource Observation:
 
@@ -558,7 +530,7 @@ Exposure to industrial bleach
 
 -------
 
-Entry 40 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111141
+Entry 39 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111141
 
 Resource Observation:
 
@@ -575,7 +547,7 @@ Laceration from broken windshield glass
 
 -------
 
-Entry 41 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111142
+Entry 40 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111142
 
 Resource Observation:
 
@@ -592,7 +564,7 @@ Vehicle submerged in flooded underpass
 
 -------
 
-Entry 42 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111143
+Entry 41 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111143
 
 Resource Observation:
 
@@ -604,7 +576,7 @@ Profile: [RS Observation - External Cause: Exposure to Forces of Nature](Structu
 
 -------
 
-Entry 43 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111144
+Entry 42 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111144
 
 Resource Observation:
 
@@ -621,7 +593,7 @@ Slipped on oil at crash site
 
 -------
 
-Entry 44 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111145
+Entry 43 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111145
 
 Resource Observation:
 
@@ -638,7 +610,7 @@ Improvised piccolo firecracker
 
 -------
 
-Entry 45 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111146
+Entry 44 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111146
 
 Resource Observation:
 
@@ -655,7 +627,7 @@ Handgun involved in altercation
 
 -------
 
-Entry 46 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111147
+Entry 45 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111147
 
 Resource Observation:
 
@@ -667,7 +639,7 @@ Profile: [RS Observation - External Cause: Hanging/Strangulation](StructureDefin
 
 -------
 
-Entry 47 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111148
+Entry 46 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111148
 
 Resource Observation:
 
@@ -679,7 +651,7 @@ Profile: [RS Observation - External Cause: Mauling/Assault](StructureDefinition-
 
 -------
 
-Entry 48 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111149
+Entry 47 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111149
 
 Resource Observation:
 
@@ -691,7 +663,7 @@ Profile: [RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)](
 
 -------
 
-Entry 49 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111150
+Entry 48 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111150
 
 Resource Observation:
 
@@ -708,23 +680,45 @@ Falling debris from construction site
 
 -------
 
-Entry 50 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111151
+Entry 49 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111151
 
 Resource DocumentReference:
 
-> Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.
+> 
+
+Profile: [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md)
+
+**status**: Current**type**:Document image**subject**:[Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-bundle-example-patient.md)
+> **context**[Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --> 2025-10-31 16:30:00+0800](Encounter-rs-bundle-example-encounter.md)
+
+> **content**
+
+### Attachments
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **ContentType** | **Url** | **Title** |
+| * | image/jpeg | [https://example.org/fhir/Binary/ems-crash-photo](https://example.org/fhir/Binary/ems-crash-photo) | Intersection scene photo |
+
+
 
 -------
 
-Entry 51 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111152
+Entry 50 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111152
 
 Resource ServiceRequest:
 
-> ServiceRequest documenting refusal to admit for rs-example-patient with supporting organization and practitioner contacts.
+> 
+
+Profile: [RS ServiceRequest](StructureDefinition-rs-service-request.md)
+
+**status**: Revoked**intent**: Plan**code**: No display for ServiceRequest.code (concept: )**subject**:[Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-bundle-example-patient.md)**encounter**:[Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --> 2025-10-31 16:30:00+0800](Encounter-rs-bundle-example-encounter.md)**occurrence**: 2025-10-31 15:50:00+0800**supportingInfo**:
+* No display for ServiceRequest.supportingInfo (reference: ->Organization MetroCare EMS)
+* No display for ServiceRequest.supportingInfo (reference: ->Practitioner Maria Cristina Santos (official))
 
 -------
 
-Entry 52 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111153
+Entry 51 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111153
 
 Resource Procedure:
 
@@ -750,7 +744,7 @@ Discussed signs of delayed chest trauma and when to return to ER.
 
 -------
 
-Entry 53 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111154
+Entry 52 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111154
 
 Resource Procedure:
 
@@ -767,7 +761,7 @@ Coordination established with ER charge nurse prior to departure.
 
 -------
 
-Entry 54 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111155
+Entry 53 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111155
 
 Resource Organization:
 
@@ -787,7 +781,7 @@ Profile: [RS Organization](StructureDefinition-rs-organization.md)
 
 -------
 
-Entry 55 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111156
+Entry 54 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111156
 
 Resource Practitioner:
 
@@ -799,7 +793,7 @@ Profile: [PH Core Practitioner](https://build.fhir.org/ig/UP-Manila-SILab/ph-cor
 
 -------
 
-Entry 56 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111157
+Entry 55 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111157
 
 Resource Practitioner:
 
@@ -811,7 +805,7 @@ Profile: [PH Core Practitioner](https://build.fhir.org/ig/UP-Manila-SILab/ph-cor
 
 -------
 
-Entry 57 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111159
+Entry 56 - fullUrl = urn:uuid:11111111-1111-1111-1111-111111111159
 
 Resource Location:
 
@@ -838,298 +832,9 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
     "system" : "urn:fdc:roadsafetyph.doh.gov.ph:bundle",
     "value" : "ONEISS-20251031-001"
   },
-  "type" : "document",
+  "type" : "transaction",
   "timestamp" : "2025-11-01T10:05:00+08:00",
   "entry" : [
-    {
-      "fullUrl" : "urn:uuid:11111111-1111-1111-1111-111111111101",
-      "resource" : {
-        "resourceType" : "Composition",
-        "id" : "rs-bundle-example-composition-oneiss",
-        "meta" : {
-          "profile" : [
-            "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-composition-oneiss"
-          ]
-        },
-        "text" : {
-          "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_rs-bundle-example-composition-oneiss\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition rs-bundle-example-composition-oneiss</b></p><a name=\"rs-bundle-example-composition-oneiss\"> </a><a name=\"hcrs-bundle-example-composition-oneiss\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-composition-oneiss.html\">RS Composition — ONEISS Submission</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11348-0}\">Emergency department note</span></p><p><b>encounter</b>: <a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>date</b>: 2025-11-01 10:00:00+0800</p><p><b>author</b>: <a href=\"Practitioner-rs-bundle-example-practitioner-receiver.html\">Practitioner Maria Cristina Santos (official)</a></p><p><b>title</b>: DOH Central ER – ONEISS Submission</p></div>"
-        },
-        "status" : "final",
-        "type" : {
-          "coding" : [
-            {
-              "system" : "http://loinc.org",
-              "code" : "11348-0",
-              "display" : "Emergency department note"
-            }
-          ]
-        },
-        "subject" : {
-          "reference" : "Patient/rs-bundle-example-patient"
-        },
-        "encounter" : {
-          "reference" : "Encounter/rs-bundle-example-encounter"
-        },
-        "date" : "2025-11-01T10:00:00+08:00",
-        "author" : [
-          {
-            "reference" : "Practitioner/rs-bundle-example-practitioner-receiver"
-          }
-        ],
-        "title" : "DOH Central ER – ONEISS Submission",
-        "section" : [
-          {
-            "entry" : [
-              {
-                "reference" : "Patient/rs-bundle-example-patient"
-              }
-            ]
-          },
-          {
-            "entry" : [
-              {
-                "reference" : "Encounter/rs-bundle-example-encounter"
-              }
-            ]
-          },
-          {
-            "title" : "Clinical",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "8648-8",
-                  "display" : "Emergency department clinical impressions"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Condition/rs-bundle-example-condition-initial-impression"
-              },
-              {
-                "reference" : "Condition/rs-bundle-example-condition-final-diagnosis"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-risk-factors"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-blood-alcohol"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-condition"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-status-on-arrival"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-outcome"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-transferred"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-referred"
-              }
-            ]
-          },
-          {
-            "title" : "Injuries",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "11337-3",
-                  "display" : "Hospital admission history and physical note"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Observation/rs-example-observation-multiple-injuries"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-abrasion"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-avulsion"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-nature-burns"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-concussion"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-contusion"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-fracture"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-open-wound"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-traumatic-amputation"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-other-injury"
-              }
-            ]
-          },
-          {
-            "title" : "Incident",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "11307-9",
-                  "display" : "Injury history narrative"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Observation/rs-example-observation-injury-datetime"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-injury-intent"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-transport-accident"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-mode-transport"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-collision-vs-noncollision"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-patients-vehicle"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-other-vehicle"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-position-of-patient"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-how-many-vehicles"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-place-of-occurrence"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-activity-at-incident"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-safety-accessories"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-triage"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-urgency"
-              }
-            ]
-          },
-          {
-            "title" : "Documents / Evidence",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "55109-3",
-                  "display" : "Clinical attachments"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "DocumentReference/rs-bundle-example-documentreference"
-              }
-            ]
-          },
-          {
-            "title" : "External Causes",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "11346-6",
-                  "display" : "External cause of injury narrative"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Observation/rs-example-observation-ec-bites"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-burns"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-chemical"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-sharp"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-drowning"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-forces"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-fall"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-firecracker"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-gunshot"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-hanging"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-mauling"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-sexual-assault"
-              },
-              {
-                "reference" : "Observation/rs-example-observation-ec-other"
-              }
-            ]
-          },
-          {
-            "title" : "Procedures and Workflow",
-            "code" : {
-              "coding" : [
-                {
-                  "system" : "http://loinc.org",
-                  "code" : "8714-3",
-                  "display" : "Procedures"
-                }
-              ]
-            },
-            "entry" : [
-              {
-                "reference" : "Procedure/rs-bundle-example-procedure-education"
-              },
-              {
-                "reference" : "Procedure/rs-bundle-example-procedure-transport"
-              },
-              {
-                "reference" : "ServiceRequest/rs-bundle-example-service-request"
-              }
-            ]
-          }
-        ]
-      }
-    },
     {
       "fullUrl" : "urn:uuid:11111111-1111-1111-1111-111111111102",
       "resource" : {
@@ -3336,7 +3041,7 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
       "fullUrl" : "urn:uuid:11111111-1111-1111-1111-111111111151",
       "resource" : {
         "resourceType" : "DocumentReference",
-        "id" : "rs-example-documentreference",
+        "id" : "rs-bundle-example-documentreference",
         "meta" : {
           "profile" : [
             "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
@@ -3344,7 +3049,7 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_rs-example-documentreference\"> </a>Crash scene photograph associated with rs-example-encounter for patient rs-example-patient.</div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_rs-bundle-example-documentreference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference rs-bundle-example-documentreference</b></p><a name=\"rs-bundle-example-documentreference\"> </a><a name=\"hcrs-bundle-example-documentreference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-document-reference.html\">RS DocumentReference (Evidence)</a></p></div><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18748-4}\">Document image</span></p><p><b>subject</b>: <a href=\"Patient-rs-bundle-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><a href=\"https://example.org/fhir/Binary/ems-crash-photo\">https://example.org/fhir/Binary/ems-crash-photo</a></td><td>Intersection scene photo</td></tr></table><p><b>format</b>: formatcodes: urn:ihe:pcc:dsr:2016 (urn:ihe:pcc:dsr:2016)</p></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></td></tr></table></div>"
         },
         "status" : "current",
         "type" : {
@@ -3357,14 +3062,14 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
           ]
         },
         "subject" : {
-          "reference" : "Patient/rs-example-patient"
+          "reference" : "Patient/rs-bundle-example-patient"
         },
         "content" : [
           {
             "attachment" : {
               "contentType" : "image/jpeg",
-              "url" : "https://example.org/fhir/Binary/rs-crash-photo",
-              "title" : "Crash scene photograph"
+              "url" : "https://example.org/fhir/Binary/ems-crash-photo",
+              "title" : "Intersection scene photo"
             },
             "format" : {
               "system" : "http://terminology.hl7.org/CodeSystem/formatcodes",
@@ -3375,7 +3080,7 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
         "context" : {
           "encounter" : [
             {
-              "reference" : "Encounter/rs-example-encounter"
+              "reference" : "Encounter/rs-bundle-example-encounter"
             }
           ]
         }
@@ -3385,7 +3090,7 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
       "fullUrl" : "urn:uuid:11111111-1111-1111-1111-111111111152",
       "resource" : {
         "resourceType" : "ServiceRequest",
-        "id" : "rs-example-service-request",
+        "id" : "rs-bundle-example-service-request",
         "meta" : {
           "profile" : [
             "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request"
@@ -3393,23 +3098,26 @@ Profile: [RS Service Location](StructureDefinition-rs-location-service.md)
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_rs-example-service-request\"> </a>ServiceRequest documenting refusal to admit for rs-example-patient with supporting organization and practitioner contacts.</div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_rs-bundle-example-service-request\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest rs-bundle-example-service-request</b></p><a name=\"rs-bundle-example-service-request\"> </a><a name=\"hcrs-bundle-example-service-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-service-request.html\">RS ServiceRequest</a></p></div><p><b>status</b>: Revoked</p><p><b>intent</b>: Plan</p><p><b>code</b>: <span title=\"Codes:\">Refusal to admit</span></p><p><b>subject</b>: <a href=\"Patient-rs-bundle-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-rs-bundle-example-encounter.html\">Encounter: identifier = Incident number: INC-2025-0102,Patient hospital visit number (observable entity): HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-10-31 15:18:00+0800 --&gt; 2025-10-31 16:30:00+0800</a></p><p><b>occurrence</b>: 2025-10-31 15:50:00+0800</p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Organization-rs-bundle-example-organization.html\">Organization MetroCare EMS</a></li><li><a href=\"Practitioner-rs-bundle-example-practitioner-receiver.html\">Practitioner Maria Cristina Santos (official)</a></li></ul></div>"
         },
         "status" : "revoked",
         "intent" : "plan",
+        "code" : {
+          "text" : "Refusal to admit"
+        },
         "subject" : {
-          "reference" : "Patient/rs-example-patient"
+          "reference" : "Patient/rs-bundle-example-patient"
         },
         "encounter" : {
-          "reference" : "Encounter/rs-example-encounter"
+          "reference" : "Encounter/rs-bundle-example-encounter"
         },
-        "occurrenceDateTime" : "2025-10-31T16:10:00+08:00",
+        "occurrenceDateTime" : "2025-10-31T15:50:00+08:00",
         "supportingInfo" : [
           {
-            "reference" : "Organization/rs-organization-single-ex"
+            "reference" : "Organization/rs-bundle-example-organization"
           },
           {
-            "reference" : "Practitioner/rs-practitioner-receivedby"
+            "reference" : "Practitioner/rs-bundle-example-practitioner-receiver"
           }
         ]
       }

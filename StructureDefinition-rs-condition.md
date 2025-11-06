@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSCondition |
+| Draft as of 2025-11-06 | *Computable Name*:RSCondition |
 
  
 Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
@@ -17,7 +17,6 @@ Condition resource for RS IG that supports multiple coding systems, textual entr
 **Usages:**
 
 * Derived from this Profile: [RS Condition — External Cause (category)](StructureDefinition-rs-condition-external-cause.md), [RS Condition — Final Diagnosis](StructureDefinition-rs-condition-final-diagnosis.md), [RS Condition — Initial Impression](StructureDefinition-rs-condition-initial-impression.md), [RS Condition — Nature of Injury (category)](StructureDefinition-rs-condition-nature-of-injury.md) and [RS Condition — Problem](StructureDefinition-rs-condition-problem.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md) and [RS Composition — ONEISS Submission](StructureDefinition-rs-composition-oneiss.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition)
 
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "name" : "RSCondition",
   "title" : "RS Condition",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate | *Version*:0.3.0 |
-| Draft as of 2025-11-05 | *Computable Name*:RSObsPulseRate |
+| Draft as of 2025-11-06 | *Computable Name*:RSObsPulseRate |
 
  
 Pulse/heart rate in beats/min. 
@@ -17,7 +17,6 @@ Pulse/heart rate in beats/min.
 **Usages:**
 
 * Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Refer to this Profile: [RS Composition — EMS Submission](StructureDefinition-rs-composition-ems.md)
 * Examples for this Profile: [Observation/rs-bundle-example-observation-pulse-rate](Observation-rs-bundle-example-observation-pulse-rate.md) and [Observation/rs-example-observation-pulse-rate](Observation-rs-example-observation-pulse-rate.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-pulse-rate)
@@ -43,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "name" : "RSObsPulseRate",
   "title" : "RS Observation - Pulse Rate",
   "status" : "draft",
-  "date" : "2025-11-05T05:21:38+00:00",
+  "date" : "2025-11-06T11:55:20+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
