@@ -65,7 +65,7 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
-    composition 1..1 and
+    //composition 1..1 and
     patient 1..1 and
     encounter 1..1 and
     location 0..1 and
@@ -226,7 +226,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
-    composition 1..1 and
+    // composition 1..1 and
     patient 1..1 and
     encounter 1..1 and
     conditionInitial 0..1 and
