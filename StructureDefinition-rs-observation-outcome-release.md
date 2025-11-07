@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release | *Version*:0.3.0 |
-| Draft as of 2025-11-06 | *Computable Name*:RSObsOutcome |
+| Draft as of 2025-11-07 | *Computable Name*:RSObsOutcome |
 
  
 Outcome at release from ER/OPD/RHU. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-outco
   "name" : "RSObsOutcome",
   "title" : "RS Observation - Outcome at Release",
   "status" : "draft",
-  "date" : "2025-11-06T11:55:20+00:00",
+  "date" : "2025-11-07T10:27:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories | *Version*:0.3.0 |
-| Draft as of 2025-11-06 | *Computable Name*:RSObsSafetyAccessories |
+| Draft as of 2025-11-07 | *Computable Name*:RSObsSafetyAccessories |
 
  
 Safety accessories present/used; allow text for 'Others'. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-safet
   "name" : "RSObsSafetyAccessories",
   "title" : "RS Observation - Safety Accessories",
   "status" : "draft",
-  "date" : "2025-11-06T11:55:20+00:00",
+  "date" : "2025-11-07T10:27:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

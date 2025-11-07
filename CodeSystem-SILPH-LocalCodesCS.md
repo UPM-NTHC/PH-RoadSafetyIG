@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/CodeSystem | *Version*:0.3.0 |
-| Draft as of 2025-11-06 | *Computable Name*:SILPH_Road_Safety_Local_Codes |
+| Draft as of 2025-11-07 | *Computable Name*:SILPH_Road_Safety_Local_Codes |
 
  
 Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets 
@@ -45,7 +45,7 @@ Compilation of local codes for SILPH Road Safety Project. Includes local codes f
   "name" : "SILPH_Road_Safety_Local_Codes",
   "title" : "SILPH Road Safety Local Codes",
   "status" : "draft",
-  "date" : "2025-11-06T11:55:20+00:00",
+  "date" : "2025-11-07T10:27:49+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
