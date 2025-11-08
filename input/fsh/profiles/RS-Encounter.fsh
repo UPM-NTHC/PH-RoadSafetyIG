@@ -9,8 +9,6 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * class 1..1 MS
 * class ^short = "Encounter class/type"
 * class from SILPH-TypeofPatientVS (extensible)
-* identifier 1..* MS
-* identifier ^short = "Encounter identifiers"
 * subject 1..1 MS
 * subject ^short = "Patient subject"
 * subject ^comment = "Reference constrained to the RS Patient profile (`RSPatient`)."
@@ -43,16 +41,24 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * location[facility].location.type 0..1
 
 /* Identifier slices for ONEISS */
+* identifier 1..* MS
+* identifier ^short = "Encounter identifiers"
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains incidentNumber 0..1 and hospitalCaseNo 0..1
-* identifier[incidentNumber].type 1..1 MS
-* identifier[incidentNumber].type.coding 1..1
-* identifier[incidentNumber].type.coding.display = "Incident number"
-* identifier[hospitalCaseNo].type 1..1 MS
-* identifier[hospitalCaseNo].type.coding 1..1
-* identifier[hospitalCaseNo].type.coding = $SCT#722248002 "Patient hospital visit number (observable entity)"
+* identifier[incidentNumber].system = "http://doh.incident.system/"
+* identifier[hospitalCaseNo].system = "http://doh.hospitalno.system/"
+
+// * identifier[incidentNumber].type 1..1 MS
+// * identifier[incidentNumber].type.coding 1..1
+// * identifier[incidentNumber].type.coding.display = "Incident number"
+
+// * identifier[hospitalCaseNo].type 1..1 MS
+// * identifier[hospitalCaseNo].type.coding 1..1
+// * identifier[hospitalCaseNo].type.coding = $SCT#722248002 "Patient hospital visit number (observable entity)"
+
+// IDENTIFIERS SHOULD BE BOUND BY SYSTEM not code
 
 /* Originating hospital/practitioner */
 * hospitalization.origin 0..1 MS
@@ -118,12 +124,16 @@ Description: "Emergency encounter for rs-example-patient documenting transport f
 * class.system = "http://loinc.org"
 * class.code = #LA10268-3
 * class.display = "ER"
-* identifier[incidentNumber].system = "http://www.roadsafetyph.doh.gov.ph/identifier/incident"
-* identifier[incidentNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier[incidentNumber].type.coding.code = #AN
+* identifier[incidentNumber].system = "http://doh.incident.system/"
 * identifier[incidentNumber].value = "INC-2025-0007"
-* identifier[hospitalCaseNo].system = "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"
+* identifier[hospitalCaseNo].system = "http://doh.hospitalno.system/"
 * identifier[hospitalCaseNo].value = "HCN-2025-0459"
+// * identifier[incidentNumber].system = "http://www.roadsafetyph.doh.gov.ph/identifier/incident"
+// * identifier[incidentNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+// * identifier[incidentNumber].type.coding.code = #AN
+// * identifier[incidentNumber].value = "INC-2025-0007"
+// * identifier[hospitalCaseNo].system = "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"
+// * identifier[hospitalCaseNo].value = "HCN-2025-0459"
 * subject = Reference(rs-example-patient)
 * period.start = "2025-10-31T13:45:00+08:00"
 * period.end = "2025-10-31T16:30:00+08:00"
