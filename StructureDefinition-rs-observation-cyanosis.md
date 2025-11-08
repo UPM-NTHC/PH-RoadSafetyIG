@@ -9,15 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsCyanosis |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsCyanosis |
 
  
 Cyanosis assessment. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Examples for this Profile: [Observation/rs-bundle-example-observation-cyanosis](Observation-rs-bundle-example-observation-cyanosis.md) and [Observation/rs-example-observation-cyanosis](Observation-rs-example-observation-cyanosis.md)
+* Examples for this Profile: [Observation/rs-example-observation-cyanosis](Observation-rs-example-observation-cyanosis.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-cyanosis)
 
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-cyano
   "name" : "RSObsCyanosis",
   "title" : "RS Observation - Cyanosis",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-cyano
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

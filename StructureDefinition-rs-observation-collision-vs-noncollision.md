@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-vs-noncollision | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsCollisionVsNonCollision |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsCollisionVsNonCollision |
 
  
 Indicates whether the incident was collision or non-collision. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Examples for this Profile: [Observation/rs-example-observation-collision-vs-noncollision](Observation-rs-example-observation-collision-vs-noncollision.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-collision-vs-noncollision)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "name" : "RSObsCollisionVsNonCollision",
   "title" : "RS Observation - Collision vs Non-Collision",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

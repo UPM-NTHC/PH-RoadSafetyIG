@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsPatientsVehicle |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsPatientsVehicle |
 
  
 Type of vehicle used by patient; text for 'Others'. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Examples for this Profile: [Observation/rs-example-observation-patients-vehicle](Observation-rs-example-observation-patients-vehicle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-patients-vehicle)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
   "name" : "RSObsPatientsVehicle",
   "title" : "RS Observation - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

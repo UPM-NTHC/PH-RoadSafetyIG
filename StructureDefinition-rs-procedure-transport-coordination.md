@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSProcedureTransportCoordination |
+| Draft as of 2025-11-08 | *Computable Name*:RSProcedureTransportCoordination |
 
  
 Procedure record indicating whether transport coordination with the receiving hospital was done. 
 
 **Usages:**
 
-* Examples for this Profile: [Procedure/rs-bundle-example-procedure-transport](Procedure-rs-bundle-example-procedure-transport.md) and [Procedure/rs-example-procedure-transport](Procedure-rs-example-procedure-transport.md)
+* Examples for this Profile: [Procedure/rs-example-procedure-transport](Procedure-rs-example-procedure-transport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-procedure-transport-coordination)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-procedure-transpo
   "name" : "RSProcedureTransportCoordination",
   "title" : "RS Procedure - Transport Coordination",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

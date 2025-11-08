@@ -9,15 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsStatusOnArrival |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsStatusOnArrival |
 
  
 Status upon reaching facility/hospital. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Examples for this Profile: [Observation/rs-example-observation-status-on-arrival](Observation-rs-example-observation-status-on-arrival.md)
+* Examples for this Profile: [Observation/rs-example-observation-status-on-arrival](Observation-rs-example-observation-status-on-arrival.md) and [Observation/rs-minimum-example-observation-disposition](Observation-rs-minimum-example-observation-disposition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-status-on-arrival)
 
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-statu
   "name" : "RSObsStatusOnArrival",
   "title" : "RS Observation - Status on Arrival",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -117,14 +116,21 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-statu
   "differential" : {
     "element" : [
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "118223001",
-          "display" : "Patient status finding (finding)"
+        "id" : "Observation",
+        "path" : "Observation"
+      },
+      {
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "118223001",
+              "display" : "Patient status finding (finding)"
+            }
+          ]
         }
       },
       {

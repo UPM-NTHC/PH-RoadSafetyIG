@@ -37,29 +37,11 @@ Example RS Encounter for rs-example-patient covering an ER visit on 2025-10-31 f
   ],
   "identifier" : [
     {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "AN"
-          }
-        ]
-      },
-      "system" : "http://www.roadsafetyph.doh.gov.ph/identifier/incident",
+      "system" : "http://doh.incident.system/",
       "value" : "INC-2025-0007"
     },
     {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-            "code" : "722248002",
-            "display" : "Patient hospital visit number (observable entity)"
-          }
-        ]
-      },
-      "system" : "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case",
+      "system" : "http://doh.hospitalno.system/",
       "value" : "HCN-2025-0459"
     }
   ],

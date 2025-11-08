@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSEncounter |
+| Draft as of 2025-11-08 | *Computable Name*:RSEncounter |
 
  
 Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) and [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
+* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
 * Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Condition](StructureDefinition-rs-condition.md), [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md), [RS Observation](StructureDefinition-rs-observation.md)...Show 2 more,[RS Procedure](StructureDefinition-rs-procedure.md)and[RS ServiceRequest](StructureDefinition-rs-service-request.md)
-* Examples for this Profile: [Encounter/rs-bundle-example-encounter](Encounter-rs-bundle-example-encounter.md) and [Encounter/rs-example-encounter](Encounter-rs-example-encounter.md)
+* Examples for this Profile: [Encounter/rs-example-encounter](Encounter-rs-example-encounter.md) and [Encounter/rs-minimum-example-encounter](Encounter-rs-minimum-example-encounter.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -158,7 +158,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           "discriminator" : [
             {
               "type" : "value",
-              "path" : "type"
+              "path" : "system"
             }
           ],
           "rules" : "open"
@@ -175,21 +175,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "max" : "1"
       },
       {
-        "id" : "Encounter.identifier:incidentNumber.type",
-        "path" : "Encounter.identifier.type",
+        "id" : "Encounter.identifier:incidentNumber.system",
+        "path" : "Encounter.identifier.system",
         "min" : 1,
-        "mustSupport" : true
-      },
-      {
-        "id" : "Encounter.identifier:incidentNumber.type.coding",
-        "path" : "Encounter.identifier.type.coding",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Encounter.identifier:incidentNumber.type.coding.display",
-        "path" : "Encounter.identifier.type.coding.display",
-        "patternString" : "Incident number"
+        "patternUri" : "http://doh.incident.system/"
       },
       {
         "id" : "Encounter.identifier:hospitalCaseNo",
@@ -199,22 +188,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "max" : "1"
       },
       {
-        "id" : "Encounter.identifier:hospitalCaseNo.type",
-        "path" : "Encounter.identifier.type",
+        "id" : "Encounter.identifier:hospitalCaseNo.system",
+        "path" : "Encounter.identifier.system",
         "min" : 1,
-        "mustSupport" : true
-      },
-      {
-        "id" : "Encounter.identifier:hospitalCaseNo.type.coding",
-        "path" : "Encounter.identifier.type.coding",
-        "min" : 1,
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "722248002",
-          "display" : "Patient hospital visit number (observable entity)"
-        }
+        "patternUri" : "http://doh.hospitalno.system/"
       },
       {
         "id" : "Encounter.status",

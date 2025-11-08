@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-nature-of-injury | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSConditionNatureOfInjury |
+| Draft as of 2025-11-08 | *Computable Name*:RSConditionNatureOfInjury |
 
  
 Captures the ICD-10 nature-of-injury axis as a Condition.category slice. Use in addition to the specific diagnosis code. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Condition/rs-minimum-example-condition-nature-of-injury](Condition-rs-minimum-example-condition-nature-of-injury.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition-nature-of-injury)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-nature-
   "name" : "RSConditionNatureOfInjury",
   "title" : "RS Condition — Nature of Injury (category)",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

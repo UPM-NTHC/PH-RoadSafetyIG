@@ -291,20 +291,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-rs-bundle-ems.html"
-                  title="StructureDefinition/rs-bundle-ems">RS Bundle — EMS Submission</a>
+               <a href="StructureDefinition-rs-bundle-minimum.html"
+                  title="StructureDefinition/rs-bundle-minimum">RS Bundle — Minimum Data Set</a>
             </td>
             <td>
-<p>Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-rs-bundle-oneiss.html"
-                  title="StructureDefinition/rs-bundle-oneiss">RS Bundle — ONEISS Submission</a>
-            </td>
-            <td>
-<p>Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest).</p>
+<p>Document Bundle for Minimum Data Set submission containing only the essential elements from Minimum-MS-1.csv. This bundle includes: Patient (demographics, identifiers), Encounter (type, timing, identifiers), Condition (initial impression, final diagnosis with ICD-10 codes), and key Observations (injury datetime, transport accident flag, mode of transport, outcome, disposition).</p>
 </td>
          </tr>
          <tr>
@@ -921,11 +912,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-timeline-date-received.html"
+                  title="StructureDefinition/rs-observation-timeline-date-received">RS Observation - Timeline Date Received</a>
+            </td>
+            <td>
+<p>Date/time call received by dispatch for the incident.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-rs-observation-timeline-datetime.html"
                   title="StructureDefinition/rs-observation-timeline-datetime">RS Observation - Timeline Date/Time</a>
             </td>
             <td>
 <p>Dispatch and transport timeline events capturing a precise date/time.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-timeline-time-departed.html"
+                  title="StructureDefinition/rs-observation-timeline-time-departed">RS Observation - Timeline Time Departed</a>
+            </td>
+            <td>
+<p>Time unit/personnel departed scene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-timeline-time-enroute.html"
+                  title="StructureDefinition/rs-observation-timeline-time-enroute">RS Observation - Timeline Time Enroute</a>
+            </td>
+            <td>
+<p>Time unit/personnel went enroute to scene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-timeline-time-hospital-arrival.html"
+                  title="StructureDefinition/rs-observation-timeline-time-hospital-arrival">RS Observation - Timeline Time Hospital Arrival</a>
+            </td>
+            <td>
+<p>Time patient arrived at hospital/facility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-timeline-time-on-scene.html"
+                  title="StructureDefinition/rs-observation-timeline-time-on-scene">RS Observation - Timeline Time On Scene</a>
+            </td>
+            <td>
+<p>Time unit/personnel arrived on scene.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rs-observation-timeline-time-station-arrival.html"
+                  title="StructureDefinition/rs-observation-timeline-time-station-arrival">RS Observation - Timeline Time Station Arrival</a>
+            </td>
+            <td>
+<p>Time unit/personnel arrived back at station.</p>
 </td>
          </tr>
          <tr>
@@ -1476,114 +1521,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-blood-pressure.html"
-                  title="Observation/rs-bundle-example-observation-blood-pressure">Blood Pressure</a>
-            </td>
-            <td>
-<p>Blood pressure measurement captured on scene.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-body-temperature.html"
-                  title="Observation/rs-bundle-example-observation-body-temperature">Body Temperature</a>
-            </td>
-            <td>
-<p>Temperature measured upon hospital arrival.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-call-source.html"
-                  title="Observation/rs-bundle-example-observation-call-source">Call Source</a>
-            </td>
-            <td>
-<p>Source of the EMS activation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-clinical-remarks.html"
-                  title="Observation/rs-bundle-example-observation-clinical-remarks">Clinical Remarks</a>
-            </td>
-            <td>
-<p>Clinical notes summarizing care provided.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DocumentReference-rs-bundle-example-documentreference.html"
-                  title="DocumentReference/rs-bundle-example-documentreference">Crash Scene Photo</a>
-            </td>
-            <td>
-<p>Scene photograph captured by EMS crew to support referral.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-rs-bundle-example-incident-location.html"
-                  title="Location/rs-bundle-example-incident-location">Crash Site</a>
-            </td>
-            <td>
-<p>Intersection incident location recorded during EMS response.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-cyanosis.html"
-                  title="Observation/rs-bundle-example-observation-cyanosis">Cyanosis</a>
-            </td>
-            <td>
-<p>Cyanosis assessment recorded during transport.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-injury-datetime.html"
-                  title="Observation/rs-bundle-example-observation-injury-datetime">Date/Time of Injury</a>
-            </td>
-            <td>
-<p>Timestamp of collision reported by onsite responders.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Encounter-rs-bundle-example-encounter.html"
-                  title="Encounter/rs-bundle-example-encounter">EMS Encounter for Reyes</a>
-            </td>
-            <td>
-<p>Encounter covering EMS transport from crash scene to DOH Central ER on 2025-10-31.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-rs-bundle-example-bundle-ems.html"
-                  title="Bundle/rs-bundle-example-bundle-ems">EMS Referral Bundle – Reyes</a>
-            </td>
-            <td>
-<p>Document bundle delivering the EMS referral for Thomas Reyes with all supporting resources embedded.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-rs-bundle-example-practitioner-teamlead.html"
-                  title="Practitioner/rs-bundle-example-practitioner-teamlead">EMS Team Lead</a>
-            </td>
-            <td>
-<p>Team lead coordinating transport for the EMS episode.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Claim-rs-bundle-example-claim.html"
-                  title="Claim/rs-bundle-example-claim">EMS Transport Claim</a>
-            </td>
-            <td>
-<p>Billing record for EMS referral transport.</p>
-</td>
-         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Practitioner-rs-practitioner-teamlead.html"
@@ -2313,236 +2250,110 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Condition-rs-bundle-example-condition-final-diagnosis.html"
-                  title="Condition/rs-bundle-example-condition-final-diagnosis">Final Diagnosis – Reyes</a>
+               <a href="Bundle-rs-minimum-example-bundle.html"
+                  title="Bundle/rs-minimum-example-bundle">Minimum Data Set Bundle</a>
             </td>
             <td>
-<p>Final diagnosis entered on discharge for Thomas Reyes.</p>
+<p>Example bundle containing only the minimum required elements from Minimum-MS-1.csv.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-gcs.html"
-                  title="Observation/rs-bundle-example-observation-gcs">Glasgow Coma Scale</a>
+               <a href="Observation-rs-minimum-example-observation-disposition.html"
+                  title="Observation/rs-minimum-example-observation-disposition">Minimum Data Set Disposition</a>
             </td>
             <td>
-<p>Neurologic assessment performed in ambulance.</p>
+<p>Patient disposition for minimum data set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Condition-rs-bundle-example-condition-initial-impression.html"
-                  title="Condition/rs-bundle-example-condition-initial-impression">Initial Impression – Reyes</a>
+               <a href="Encounter-rs-minimum-example-encounter.html"
+                  title="Encounter/rs-minimum-example-encounter">Minimum Data Set Encounter</a>
             </td>
             <td>
-<p>Initial impression documented at DOH Central ER for Thomas Reyes.</p>
+<p>Encounter example with minimum required fields for Minimum Data Set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-injury-intent.html"
-                  title="Observation/rs-bundle-example-observation-injury-intent">Injury Intent</a>
+               <a href="Condition-rs-minimum-example-condition-external-cause.html"
+                  title="Condition/rs-minimum-example-condition-external-cause">Minimum Data Set External Cause (ICD-10)</a>
             </td>
             <td>
-<p>Intent recorded as unintentional vehicular crash.</p>
+<p>ICD-10 External Cause code for minimum data set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-mode-transport.html"
-                  title="Observation/rs-bundle-example-observation-mode-transport">Mode of Transport</a>
+               <a href="Condition-rs-minimum-example-condition-final.html"
+                  title="Condition/rs-minimum-example-condition-final">Minimum Data Set Final Diagnosis</a>
             </td>
             <td>
-<p>Ambulance transport to receiving facility.</p>
+<p>Final diagnosis for minimum data set example.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Bundle-rs-bundle-example-bundle-oneiss.html"
-                  title="Bundle/rs-bundle-example-bundle-oneiss">ONEISS Bundle – Reyes</a>
+               <a href="Condition-rs-minimum-example-condition-initial.html"
+                  title="Condition/rs-minimum-example-condition-initial">Minimum Data Set Initial Impression</a>
             </td>
             <td>
-<p>Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded.</p>
+<p>Initial impression for minimum data set example.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Coverage-rs-bundle-example-coverage.html"
-                  title="Coverage/rs-bundle-example-coverage">Patient Coverage</a>
+               <a href="Observation-rs-minimum-example-observation-injury-datetime.html"
+                  title="Observation/rs-minimum-example-observation-injury-datetime">Minimum Data Set Injury Date/Time</a>
             </td>
             <td>
-<p>Coverage record supporting claim for EMS transport.</p>
+<p>Date and time of injury for minimum data set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Procedure-rs-bundle-example-procedure-education.html"
-                  title="Procedure/rs-bundle-example-procedure-education">Patient Education</a>
+               <a href="Observation-rs-minimum-example-observation-mode-transport.html"
+                  title="Observation/rs-minimum-example-observation-mode-transport">Minimum Data Set Mode of Transport</a>
             </td>
             <td>
-<p>Post-crash counseling delivered by EMS team lead.</p>
+<p>Mode of transport to hospital for minimum data set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-rs-bundle-example-patient.html"
-                  title="Patient/rs-bundle-example-patient">Patient Thomas Reyes</a>
+               <a href="Condition-rs-minimum-example-condition-nature-of-injury.html"
+                  title="Condition/rs-minimum-example-condition-nature-of-injury">Minimum Data Set Nature of Injury (ICD-10)</a>
             </td>
             <td>
-<p>Adult male patient transported following a vehicular collision.</p>
+<p>ICD-10 Nature of Injury code for minimum data set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-pulse-rate.html"
-                  title="Observation/rs-bundle-example-observation-pulse-rate">Pulse Rate</a>
+               <a href="Observation-rs-minimum-example-observation-outcome.html"
+                  title="Observation/rs-minimum-example-observation-outcome">Minimum Data Set Outcome</a>
             </td>
             <td>
-<p>Pulse assessment recorded during transport.</p>
+<p>Patient outcome for minimum data set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-rs-bundle-example-organization.html"
-                  title="Organization/rs-bundle-example-organization">RS EMS Provider Organization</a>
+               <a href="Patient-rs-minimum-example-patient.html"
+                  title="Patient/rs-minimum-example-patient">Minimum Data Set Patient</a>
             </td>
             <td>
-<p>MetroCare EMS providing transport for the referral episode.</p>
+<p>Patient example with minimum required demographics and identifiers for Minimum Data Set.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Practitioner-rs-bundle-example-practitioner-receiver.html"
-                  title="Practitioner/rs-bundle-example-practitioner-receiver">Receiving ER Physician</a>
+               <a href="Observation-rs-minimum-example-observation-transport-accident.html"
+                  title="Observation/rs-minimum-example-observation-transport-accident">Minimum Data Set Transport Accident</a>
             </td>
             <td>
-<p>Physician coordinating acceptance at DOH Central ER.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-rs-bundle-example-service-location.html"
-                  title="Location/rs-bundle-example-service-location">Receiving Facility Location</a>
-            </td>
-            <td>
-<p>Emergency room of DOH Central where the patient was referred.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-rs-bundle-example-service-request.html"
-                  title="ServiceRequest/rs-bundle-example-service-request">Refusal-to-Admit Signal</a>
-            </td>
-            <td>
-<p>Service request tracking refusal-to-admit escalation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-reported-complaint.html"
-                  title="Observation/rs-bundle-example-observation-reported-complaint">Reported Complaint</a>
-            </td>
-            <td>
-<p>Caller-reported complaint captured during dispatch.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-respiratory-rate.html"
-                  title="Observation/rs-bundle-example-observation-respiratory-rate">Respiratory Rate</a>
-            </td>
-            <td>
-<p>Respiratory assessment recorded en route.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-runreport-comments.html"
-                  title="Observation/rs-bundle-example-observation-runreport-comments">Run Report Comments</a>
-            </td>
-            <td>
-<p>Narrative remarks recorded by EMS crew.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-timeline-time-on-scene.html"
-                  title="Observation/rs-bundle-example-timeline-time-on-scene">Timeline - Arrived On Scene</a>
-            </td>
-            <td>
-<p>Crew arrival at collision site.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-timeline-time-station.html"
-                  title="Observation/rs-bundle-example-timeline-time-station">Timeline - Back In Service</a>
-            </td>
-            <td>
-<p>Unit available after drop-off and debrief.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-timeline-date-received.html"
-                  title="Observation/rs-bundle-example-timeline-date-received">Timeline - Date Received</a>
-            </td>
-            <td>
-<p>Call received by dispatch for the incident.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-timeline-time-departed.html"
-                  title="Observation/rs-bundle-example-timeline-time-departed">Timeline - Departed Scene</a>
-            </td>
-            <td>
-<p>Transport initiated with patient on board.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-timeline-time-hospital.html"
-                  title="Observation/rs-bundle-example-timeline-time-hospital">Timeline - Hospital Arrival</a>
-            </td>
-            <td>
-<p>Arrival at DOH Central ER bay.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-timeline-time-enroute.html"
-                  title="Observation/rs-bundle-example-timeline-time-enroute">Timeline - Unit En Route</a>
-            </td>
-            <td>
-<p>EMS unit dispatched toward the scene.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Task-rs-bundle-example-task.html"
-                  title="Task/rs-bundle-example-task">Track Refusal Escalation</a>
-            </td>
-            <td>
-<p>Task monitoring refusal-to-admit follow-up until hospital acceptance confirmed.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-rs-bundle-example-observation-transport-accident.html"
-                  title="Observation/rs-bundle-example-observation-transport-accident">Transport Accident Flag</a>
-            </td>
-            <td>
-<p>Transport accident identified as precipitating factor.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Procedure-rs-bundle-example-procedure-transport.html"
-                  title="Procedure/rs-bundle-example-procedure-transport">Transport Coordination</a>
-            </td>
-            <td>
-<p>Call confirming bed availability at DOH Central ER.</p>
+<p>Transport/vehicular accident flag for minimum data set.</p>
 </td>
          </tr>
       </tbody>
@@ -2565,7 +2376,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 7, 2025 10:27+0000">2025-11-07</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/UPM-NTHC/PH-RoadSafetyIG">UP Manila - National Institutes of Health - National Telehealth Center</a>.  Package example.fhir.ph.roadsafety#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 8, 2025 13:50+0000">2025-11-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

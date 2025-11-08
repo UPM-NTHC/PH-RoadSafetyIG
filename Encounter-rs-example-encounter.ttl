@@ -41,36 +41,15 @@
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
-         ] ;
-         fhir:code [ fhir:v "AN" ]
-       ] )
-     ] ;
      fhir:system [
-       fhir:v "http://www.roadsafetyph.doh.gov.ph/identifier/incident"^^xsd:anyURI ;
-       fhir:l <http://www.roadsafetyph.doh.gov.ph/identifier/incident>
+       fhir:v "http://doh.incident.system/"^^xsd:anyURI ;
+       fhir:l <http://doh.incident.system/>
      ] ;
      fhir:value [ fhir:v "INC-2025-0007" ]
   ] [
-     fhir:type [
-       fhir:coding ( [
-         a sct:722248002 ;
-         fhir:system [
-           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-           fhir:l <http://snomed.info/sct>
-         ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20241001" ] ;
-         fhir:code [ fhir:v "722248002" ] ;
-         fhir:display [ fhir:v "Patient hospital visit number (observable entity)" ]
-       ] )
-     ] ;
      fhir:system [
-       fhir:v "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"^^xsd:anyURI ;
-       fhir:l <http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case>
+       fhir:v "http://doh.hospitalno.system/"^^xsd:anyURI ;
+       fhir:l <http://doh.hospitalno.system/>
      ] ;
      fhir:value [ fhir:v "HCN-2025-0459" ]
   ] ) ; # 

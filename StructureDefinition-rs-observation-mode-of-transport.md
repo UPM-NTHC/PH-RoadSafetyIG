@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsModeOfTransport |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsModeOfTransport |
 
  
 Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Examples for this Profile: [Observation/rs-bundle-example-observation-mode-transport](Observation-rs-bundle-example-observation-mode-transport.md) and [Observation/rs-example-observation-mode-transport](Observation-rs-example-observation-mode-transport.md)
+* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
+* Examples for this Profile: [Observation/rs-example-observation-mode-transport](Observation-rs-example-observation-mode-transport.md) and [Observation/rs-minimum-example-observation-mode-transport](Observation-rs-minimum-example-observation-mode-transport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-mode-of-transport)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "name" : "RSObsModeOfTransport",
   "title" : "RS Observation - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

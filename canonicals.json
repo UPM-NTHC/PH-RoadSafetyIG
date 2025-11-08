@@ -329,18 +329,11 @@
     "name" : "RSAllergyIntolerance"
   },
   {
-    "id" : "rs-bundle-ems",
+    "id" : "rs-bundle-minimum",
     "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-minimum",
     "version" : "0.3.0",
-    "name" : "RSBundleEMS"
-  },
-  {
-    "id" : "rs-bundle-oneiss",
-    "type" : "StructureDefinition",
-    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss",
-    "version" : "0.3.0",
-    "name" : "RSBundleONEISS"
+    "name" : "RSBundleMinimum"
   },
   {
     "id" : "rs-claim",
@@ -819,11 +812,53 @@
     "name" : "RSObsStatusOnArrival"
   },
   {
+    "id" : "rs-observation-timeline-date-received",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-date-received",
+    "version" : "0.3.0",
+    "name" : "RSObsTimelineDateReceived"
+  },
+  {
     "id" : "rs-observation-timeline-datetime",
     "type" : "StructureDefinition",
     "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime",
     "version" : "0.3.0",
     "name" : "RSObsTimelineDateTime"
+  },
+  {
+    "id" : "rs-observation-timeline-time-departed",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-departed",
+    "version" : "0.3.0",
+    "name" : "RSObsTimelineTimeDeparted"
+  },
+  {
+    "id" : "rs-observation-timeline-time-enroute",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-enroute",
+    "version" : "0.3.0",
+    "name" : "RSObsTimelineTimeEnroute"
+  },
+  {
+    "id" : "rs-observation-timeline-time-hospital-arrival",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-hospital-arrival",
+    "version" : "0.3.0",
+    "name" : "RSObsTimelineTimeHospitalArrival"
+  },
+  {
+    "id" : "rs-observation-timeline-time-on-scene",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-on-scene",
+    "version" : "0.3.0",
+    "name" : "RSObsTimelineTimeOnScene"
+  },
+  {
+    "id" : "rs-observation-timeline-time-station-arrival",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-station-arrival",
+    "version" : "0.3.0",
+    "name" : "RSObsTimelineTimeStationArrival"
   },
   {
     "id" : "rs-observation-traffic-investigator",

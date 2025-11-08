@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-11-07T10:27:49+00:00"/>
+  <date value="2025-11-08T13:50:02+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -1074,138 +1074,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-blood-pressure"/>
-      </reference>
-      <name value="Blood Pressure"/>
-      <description value="Blood pressure measurement captured on scene."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-body-temperature"/>
-      </reference>
-      <name value="Body Temperature"/>
-      <description value="Temperature measured upon hospital arrival."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-call-source"/>
-      </reference>
-      <name value="Call Source"/>
-      <description value="Source of the EMS activation."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-call-source"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-clinical-remarks"/>
-      </reference>
-      <name value="Clinical Remarks"/>
-      <description value="Clinical notes summarizing care provided."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-clinical-remarks"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DocumentReference"/>
-      </extension>
-      <reference>
-        <reference value="DocumentReference/rs-bundle-example-documentreference"/>
-      </reference>
-      <name value="Crash Scene Photo"/>
-      <description value="Scene photograph captured by EMS crew to support referral."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/rs-bundle-example-incident-location"/>
-      </reference>
-      <name value="Crash Site"/>
-      <description value="Intersection incident location recorded during EMS response."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-cyanosis"/>
-      </reference>
-      <name value="Cyanosis"/>
-      <description value="Cyanosis assessment recorded during transport."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-cyanosis"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-injury-datetime"/>
-      </reference>
-      <name value="Date/Time of Injury"/>
-      <description value="Timestamp of collision reported by onsite responders."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/rs-bundle-example-encounter"/>
-      </reference>
-      <name value="EMS Encounter for Reyes"/>
-      <description value="Encounter covering EMS transport from crash scene to DOH Central ER on 2025-10-31."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/rs-bundle-example-bundle-ems"/>
-      </reference>
-      <name value="EMS Referral Bundle – Reyes"/>
-      <description value="Document bundle delivering the EMS referral for Thomas Reyes with all supporting resources embedded."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/rs-bundle-example-practitioner-teamlead"/>
-      </reference>
-      <name value="EMS Team Lead"/>
-      <description value="Team lead coordinating transport for the EMS episode."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Claim"/>
-      </extension>
-      <reference>
-        <reference value="Claim/rs-bundle-example-claim"/>
-      </reference>
-      <name value="EMS Transport Claim"/>
-      <description value="Billing record for EMS referral transport."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-claim"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -2097,50 +1965,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/rs-bundle-example-condition-final-diagnosis"/>
-      </reference>
-      <name value="Final Diagnosis – Reyes"/>
-      <description value="Final diagnosis entered on discharge for Thomas Reyes."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-gcs"/>
-      </reference>
-      <name value="Glasgow Coma Scale"/>
-      <description value="Neurologic assessment performed in ambulance."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/rs-bundle-example-condition-initial-impression"/>
-      </reference>
-      <name value="Initial Impression – Reyes"/>
-      <description value="Initial impression documented at DOH Central ER for Thomas Reyes."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-injury-intent"/>
-      </reference>
-      <name value="Injury Intent"/>
-      <description value="Intent recorded as unintentional vehicular crash."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-intent"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
@@ -2152,57 +1976,123 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/rs-minimum-example-bundle"/>
+      </reference>
+      <name value="Minimum Data Set Bundle"/>
+      <description value="Example bundle containing only the minimum required elements from Minimum-MS-1.csv."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-minimum"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/rs-bundle-example-observation-mode-transport"/>
+        <reference value="Observation/rs-minimum-example-observation-disposition"/>
       </reference>
-      <name value="Mode of Transport"/>
-      <description value="Ambulance transport to receiving facility."/>
+      <name value="Minimum Data Set Disposition"/>
+      <description value="Patient disposition for minimum data set."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/rs-minimum-example-encounter"/>
+      </reference>
+      <name value="Minimum Data Set Encounter"/>
+      <description value="Encounter example with minimum required fields for Minimum Data Set."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/rs-minimum-example-condition-external-cause"/>
+      </reference>
+      <name value="Minimum Data Set External Cause (ICD-10)"/>
+      <description value="ICD-10 External Cause code for minimum data set."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-external-cause"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/rs-minimum-example-condition-final"/>
+      </reference>
+      <name value="Minimum Data Set Final Diagnosis"/>
+      <description value="Final diagnosis for minimum data set example."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/rs-minimum-example-condition-initial"/>
+      </reference>
+      <name value="Minimum Data Set Initial Impression"/>
+      <description value="Initial impression for minimum data set example."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/rs-minimum-example-observation-injury-datetime"/>
+      </reference>
+      <name value="Minimum Data Set Injury Date/Time"/>
+      <description value="Date and time of injury for minimum data set."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/rs-minimum-example-observation-mode-transport"/>
+      </reference>
+      <name value="Minimum Data Set Mode of Transport"/>
+      <description value="Mode of transport to hospital for minimum data set."/>
       <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Bundle/rs-bundle-example-bundle-oneiss"/>
+        <reference value="Condition/rs-minimum-example-condition-nature-of-injury"/>
       </reference>
-      <name value="ONEISS Bundle – Reyes"/>
-      <description value="Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss"/>
+      <name value="Minimum Data Set Nature of Injury (ICD-10)"/>
+      <description value="ICD-10 Nature of Injury code for minimum data set."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-nature-of-injury"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Coverage"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Coverage/rs-bundle-example-coverage"/>
+        <reference value="Observation/rs-minimum-example-observation-outcome"/>
       </reference>
-      <name value="Patient Coverage"/>
-      <description value="Coverage record supporting claim for EMS transport."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/rs-bundle-example-procedure-education"/>
-      </reference>
-      <name value="Patient Education"/>
-      <description value="Post-crash counseling delivered by EMS team lead."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure"/>
+      <name value="Minimum Data Set Outcome"/>
+      <description value="Patient outcome for minimum data set."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/rs-bundle-example-patient"/>
+        <reference value="Patient/rs-minimum-example-patient"/>
       </reference>
-      <name value="Patient Thomas Reyes"/>
-      <description value="Adult male patient transported following a vehicular collision."/>
+      <name value="Minimum Data Set Patient"/>
+      <description value="Patient example with minimum required demographics and identifiers for Minimum Data Set."/>
       <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"/>
     </resource>
     <resource>
@@ -2210,66 +2100,11 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/rs-bundle-example-observation-pulse-rate"/>
+        <reference value="Observation/rs-minimum-example-observation-transport-accident"/>
       </reference>
-      <name value="Pulse Rate"/>
-      <description value="Pulse assessment recorded during transport."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/rs-bundle-example-practitioner-receiver"/>
-      </reference>
-      <name value="Receiving ER Physician"/>
-      <description value="Physician coordinating acceptance at DOH Central ER."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/rs-bundle-example-service-location"/>
-      </reference>
-      <name value="Receiving Facility Location"/>
-      <description value="Emergency room of DOH Central where the patient was referred."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/rs-bundle-example-service-request"/>
-      </reference>
-      <name value="Refusal-to-Admit Signal"/>
-      <description value="Service request tracking refusal-to-admit escalation."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-service-request"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-reported-complaint"/>
-      </reference>
-      <name value="Reported Complaint"/>
-      <description value="Caller-reported complaint captured during dispatch."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-respiratory-rate"/>
-      </reference>
-      <name value="Respiratory Rate"/>
-      <description value="Respiratory assessment recorded en route."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate"/>
+      <name value="Minimum Data Set Transport Accident"/>
+      <description value="Transport/vehicular accident flag for minimum data set."/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2287,21 +2122,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/rs-bundle-ems"/>
+        <reference value="StructureDefinition/rs-bundle-minimum"/>
       </reference>
-      <name value="RS Bundle — EMS Submission"/>
-      <description value="Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/rs-bundle-oneiss"/>
-      </reference>
-      <name value="RS Bundle — ONEISS Submission"/>
-      <description value="Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest)."/>
+      <name value="RS Bundle — Minimum Data Set"/>
+      <description value="Document Bundle for Minimum Data Set submission containing only the essential elements from Minimum-MS-1.csv. This bundle includes: Patient (demographics, identifiers), Encounter (type, timing, identifiers), Condition (initial impression, final diagnosis with ICD-10 codes), and key Observations (injury datetime, transport accident flag, mode of transport, outcome, disposition)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2391,17 +2215,6 @@
       <name value="RS DocumentReference (Evidence)"/>
       <description value="Evidence and post-crash documentation linked to the incident (e.g., cause of crash, party at fault, incident management logs, CCTV, shape files)."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/rs-bundle-example-organization"/>
-      </reference>
-      <name value="RS EMS Provider Organization"/>
-      <description value="MetroCare EMS providing transport for the referral episode."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -3090,10 +2903,76 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/rs-observation-timeline-date-received"/>
+      </reference>
+      <name value="RS Observation - Timeline Date Received"/>
+      <description value="Date/time call received by dispatch for the incident."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/rs-observation-timeline-datetime"/>
       </reference>
       <name value="RS Observation - Timeline Date/Time"/>
       <description value="Dispatch and transport timeline events capturing a precise date/time."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-timeline-time-departed"/>
+      </reference>
+      <name value="RS Observation - Timeline Time Departed"/>
+      <description value="Time unit/personnel departed scene."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-timeline-time-enroute"/>
+      </reference>
+      <name value="RS Observation - Timeline Time Enroute"/>
+      <description value="Time unit/personnel went enroute to scene."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-timeline-time-hospital-arrival"/>
+      </reference>
+      <name value="RS Observation - Timeline Time Hospital Arrival"/>
+      <description value="Time patient arrived at hospital/facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-timeline-time-on-scene"/>
+      </reference>
+      <name value="RS Observation - Timeline Time On Scene"/>
+      <description value="Time unit/personnel arrived on scene."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rs-observation-timeline-time-station-arrival"/>
+      </reference>
+      <name value="RS Observation - Timeline Time Station Arrival"/>
+      <description value="Time unit/personnel arrived back at station."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3282,17 +3161,6 @@
       <name value="RS VS - PSGC Region"/>
       <description value="PSGC Region codes (managed externally)."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-runreport-comments"/>
-      </reference>
-      <name value="Run Report Comments"/>
-      <description value="Narrative remarks recorded by EMS crew."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -3744,105 +3612,6 @@
       <name value="SILPH Road Safety Local Codes"/>
       <description value="Compilation of local codes for SILPH Road Safety Project. Includes local codes for data element terminology mapping and local codes for value sets"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-timeline-time-on-scene"/>
-      </reference>
-      <name value="Timeline - Arrived On Scene"/>
-      <description value="Crew arrival at collision site."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-timeline-time-station"/>
-      </reference>
-      <name value="Timeline - Back In Service"/>
-      <description value="Unit available after drop-off and debrief."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-timeline-date-received"/>
-      </reference>
-      <name value="Timeline - Date Received"/>
-      <description value="Call received by dispatch for the incident."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-timeline-time-departed"/>
-      </reference>
-      <name value="Timeline - Departed Scene"/>
-      <description value="Transport initiated with patient on board."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-timeline-time-hospital"/>
-      </reference>
-      <name value="Timeline - Hospital Arrival"/>
-      <description value="Arrival at DOH Central ER bay."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-timeline-time-enroute"/>
-      </reference>
-      <name value="Timeline - Unit En Route"/>
-      <description value="EMS unit dispatched toward the scene."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/rs-bundle-example-task"/>
-      </reference>
-      <name value="Track Refusal Escalation"/>
-      <description value="Task monitoring refusal-to-admit follow-up until hospital acceptance confirmed."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/rs-bundle-example-observation-transport-accident"/>
-      </reference>
-      <name value="Transport Accident Flag"/>
-      <description value="Transport accident identified as precipitating factor."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/rs-bundle-example-procedure-transport"/>
-      </reference>
-      <name value="Transport Coordination"/>
-      <description value="Call confirming bed availability at DOH Central ER."/>
-      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-procedure-transport-coordination"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

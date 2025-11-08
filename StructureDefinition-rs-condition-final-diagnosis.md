@@ -9,15 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSConditionFinalDiagnosis |
+| Draft as of 2025-11-08 | *Computable Name*:RSConditionFinalDiagnosis |
 
  
 Final diagnosis per CSV mapping. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
-* Examples for this Profile: [Condition/rs-bundle-example-condition-final-diagnosis](Condition-rs-bundle-example-condition-final-diagnosis.md)
+* Examples for this Profile: [Condition/rs-minimum-example-condition-final](Condition-rs-minimum-example-condition-final.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition-final-diagnosis)
 
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-final-d
   "name" : "RSConditionFinalDiagnosis",
   "title" : "RS Condition — Final Diagnosis",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-final-d
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Condition",
+        "path" : "Condition"
+      },
       {
         "id" : "Condition.category.coding",
         "path" : "Condition.category.coding",

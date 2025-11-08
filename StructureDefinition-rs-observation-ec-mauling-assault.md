@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-mauling-assault | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsECMaulingAssault |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsECMaulingAssault |
 
  
 Flag indicating assault. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Examples for this Profile: [Observation/rs-example-observation-ec-mauling](Observation-rs-example-observation-ec-mauling.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-ec-mauling-assault)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ma
   "name" : "RSObsECMaulingAssault",
   "title" : "RS Observation - External Cause: Mauling/Assault",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-ma
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

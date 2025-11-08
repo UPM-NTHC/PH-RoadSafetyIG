@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-activity-at-incident | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsActivityAtIncident |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsActivityAtIncident |
 
  
 Activity of the patient at time of incident; allow text fallback. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md)
 * Examples for this Profile: [Observation/rs-example-observation-activity-at-incident](Observation-rs-example-observation-activity-at-incident.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-activity-at-incident)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "name" : "RSObsActivityAtIncident",
   "title" : "RS Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

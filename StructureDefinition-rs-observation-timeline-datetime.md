@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsTimelineDateTime |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsTimelineDateTime |
 
  
 Dispatch and transport timeline events capturing a precise date/time. 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Examples for this Profile: [Observation/rs-bundle-example-timeline-date-received](Observation-rs-bundle-example-timeline-date-received.md), [Observation/rs-bundle-example-timeline-time-departed](Observation-rs-bundle-example-timeline-time-departed.md), [Observation/rs-bundle-example-timeline-time-enroute](Observation-rs-bundle-example-timeline-time-enroute.md), [Observation/rs-bundle-example-timeline-time-hospital](Observation-rs-bundle-example-timeline-time-hospital.md)...Show 3 more,[Observation/rs-bundle-example-timeline-time-on-scene](Observation-rs-bundle-example-timeline-time-on-scene.md),[Observation/rs-bundle-example-timeline-time-station](Observation-rs-bundle-example-timeline-time-station.md)and[Observation/rs-example-observation-timeline](Observation-rs-example-observation-timeline.md)
+* Derived from this Profile: [RS Observation - Timeline Date Received](StructureDefinition-rs-observation-timeline-date-received.md), [RS Observation - Timeline Time Departed](StructureDefinition-rs-observation-timeline-time-departed.md), [RS Observation - Timeline Time Enroute](StructureDefinition-rs-observation-timeline-time-enroute.md), [RS Observation - Timeline Time Hospital Arrival](StructureDefinition-rs-observation-timeline-time-hospital-arrival.md)...Show 2 more,[RS Observation - Timeline Time On Scene](StructureDefinition-rs-observation-timeline-time-on-scene.md)and[RS Observation - Timeline Time Station Arrival](StructureDefinition-rs-observation-timeline-time-station-arrival.md)
+* Examples for this Profile: [Observation/rs-example-observation-timeline](Observation-rs-example-observation-timeline.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-timeline-datetime)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineDateTime",
   "title" : "RS Observation - Timeline Date/Time",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +116,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",

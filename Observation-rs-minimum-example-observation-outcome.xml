@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="rs-minimum-example-observation-outcome"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation rs-minimum-example-observation-outcome</b></p><a name="rs-minimum-example-observation-outcome"> </a><a name="hcrs-minimum-example-observation-outcome"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-outcome-release.html">RS Observation - Outcome at Release</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 418138009}">Patient condition finding (finding)</span></p><p><b>subject</b>: <a href="Patient-rs-minimum-example-patient.html">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Encounter-rs-minimum-example-encounter.html">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 16:45:00+0800</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 268910001}">Improved</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="418138009"/>
+      <display value="Patient condition finding (finding)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/rs-minimum-example-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/rs-minimum-example-encounter"/>
+  </encounter>
+  <effectiveDateTime value="2025-11-08T16:45:00+08:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="268910001"/>
+      <display value="Improved"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

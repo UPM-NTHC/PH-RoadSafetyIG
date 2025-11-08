@@ -19,25 +19,11 @@
     </valueCodeableConcept>
   </extension>
   <identifier>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="AN"/>
-      </coding>
-    </type>
-    <system value="http://www.roadsafetyph.doh.gov.ph/identifier/incident"/>
+    <system value="http://doh.incident.system/"/>
     <value value="INC-2025-0007"/>
   </identifier>
   <identifier>
-    <type>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
-        <code value="722248002"/>
-        <display value="Patient hospital visit number (observable entity)"/>
-      </coding>
-    </type>
-    <system value="http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"/>
+    <system value="http://doh.hospitalno.system/"/>
     <value value="HCN-2025-0459"/>
   </identifier>
   <status value="finished"/>

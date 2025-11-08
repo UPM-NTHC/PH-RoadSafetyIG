@@ -31,8 +31,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md) | Known allergies, substances and reactions. |
-| [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md) | Document Bundle for EMS Run Report submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Location, Observations, DocumentReference, Procedure, ServiceRequest, Task, Claim). |
-| [RS Bundle — ONEISS Submission](StructureDefinition-rs-bundle-oneiss.md) | Document Bundle for Facility ONEISS submission. The first entry MUST be a Composition that organizes and references the other resources in the bundle (Patient, Encounter, Condition, Observations, DocumentReference, Procedure, ServiceRequest). |
+| [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md) | Document Bundle for Minimum Data Set submission containing only the essential elements from Minimum-MS-1.csv. This bundle includes: Patient (demographics, identifiers), Encounter (type, timing, identifiers), Condition (initial impression, final diagnosis with ICD-10 codes), and key Observations (injury datetime, transport accident flag, mode of transport, outcome, disposition). |
 | [RS Claim](StructureDefinition-rs-claim.md) | Claim information related to cost of care. |
 | [RS Condition](StructureDefinition-rs-condition.md) | Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. |
 | [RS Condition — External Cause (category)](StructureDefinition-rs-condition-external-cause.md) | Captures the ICD-10 external cause axis as a Condition.category slice. Use in addition to the specific diagnosis code. |
@@ -101,7 +100,13 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [RS Observation - Run Report Comments](StructureDefinition-rs-observation-runreport-comments.md) | Enter other comment (s) regarding the case |
 | [RS Observation - Safety Accessories](StructureDefinition-rs-observation-safety-accessories.md) | Safety accessories present/used; allow text for 'Others'. |
 | [RS Observation - Status on Arrival](StructureDefinition-rs-observation-status-on-arrival.md) | Status upon reaching facility/hospital. |
+| [RS Observation - Timeline Date Received](StructureDefinition-rs-observation-timeline-date-received.md) | Date/time call received by dispatch for the incident. |
 | [RS Observation - Timeline Date/Time](StructureDefinition-rs-observation-timeline-datetime.md) | Dispatch and transport timeline events capturing a precise date/time. |
+| [RS Observation - Timeline Time Departed](StructureDefinition-rs-observation-timeline-time-departed.md) | Time unit/personnel departed scene. |
+| [RS Observation - Timeline Time Enroute](StructureDefinition-rs-observation-timeline-time-enroute.md) | Time unit/personnel went enroute to scene. |
+| [RS Observation - Timeline Time Hospital Arrival](StructureDefinition-rs-observation-timeline-time-hospital-arrival.md) | Time patient arrived at hospital/facility. |
+| [RS Observation - Timeline Time On Scene](StructureDefinition-rs-observation-timeline-time-on-scene.md) | Time unit/personnel arrived on scene. |
+| [RS Observation - Timeline Time Station Arrival](StructureDefinition-rs-observation-timeline-time-station-arrival.md) | Time unit/personnel arrived back at station. |
 | [RS Observation - Transferred From Facility](StructureDefinition-rs-observation-transferred-from-facility.md) | Flag indicating patient transferred from another hospital/facility. |
 | [RS Observation - Transport/Vehicular Accident](StructureDefinition-rs-observation-transport-vehicular-accident.md) | Boolean flag indicating transport/vehicular accident. |
 | [RS Observation - Traumatic Amputation](StructureDefinition-rs-observation-traumatic-amputation.md) | Traumatic amputation present; with site and details. |
@@ -195,18 +200,6 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [Blood Pressure](Observation-rs-bundle-example-observation-blood-pressure.md) | Blood pressure measurement captured on scene. |
-| [Body Temperature](Observation-rs-bundle-example-observation-body-temperature.md) | Temperature measured upon hospital arrival. |
-| [Call Source](Observation-rs-bundle-example-observation-call-source.md) | Source of the EMS activation. |
-| [Clinical Remarks](Observation-rs-bundle-example-observation-clinical-remarks.md) | Clinical notes summarizing care provided. |
-| [Crash Scene Photo](DocumentReference-rs-bundle-example-documentreference.md) | Scene photograph captured by EMS crew to support referral. |
-| [Crash Site](Location-rs-bundle-example-incident-location.md) | Intersection incident location recorded during EMS response. |
-| [Cyanosis](Observation-rs-bundle-example-observation-cyanosis.md) | Cyanosis assessment recorded during transport. |
-| [Date/Time of Injury](Observation-rs-bundle-example-observation-injury-datetime.md) | Timestamp of collision reported by onsite responders. |
-| [EMS Encounter for Reyes](Encounter-rs-bundle-example-encounter.md) | Encounter covering EMS transport from crash scene to DOH Central ER on 2025-10-31. |
-| [EMS Referral Bundle – Reyes](Bundle-rs-bundle-example-bundle-ems.md) | Document bundle delivering the EMS referral for Thomas Reyes with all supporting resources embedded. |
-| [EMS Team Lead](Practitioner-rs-bundle-example-practitioner-teamlead.md) | Team lead coordinating transport for the EMS episode. |
-| [EMS Transport Claim](Claim-rs-bundle-example-claim.md) | Billing record for EMS referral transport. |
 | [Example EMS Team Leader](Practitioner-rs-practitioner-teamlead.md) | Response team leader overseeing transport in rs-example-encounter. |
 | [Example Incident Location](Location-rs-example-incident-location.md) | Road traffic collision site at EDSA and Ayala Avenue used in rs-example-encounter. |
 | [Example PH Core Organization](Organization-rs-organization-single-ex.md) | An example instance of a PH Core Organization conforming to the Philippine localization profile. |
@@ -288,30 +281,16 @@ These are example instances that show what data produced and consumed by systems
 | [Example Receiving Facility Location](Location-rs-example-service-location-er.md) | Emergency room location for Department of Health - Central Office receiving rs-example-encounter. |
 | [Example Receiving Practitioner](Practitioner-rs-practitioner-receivedby.md) | Practitioner who received rs-example-patient at the DOH Central ER. |
 | [Example Treatment Officer](Practitioner-rs-practitioner-treatment.md) | EMS treatment officer providing care during rs-example-encounter. |
-| [Final Diagnosis – Reyes](Condition-rs-bundle-example-condition-final-diagnosis.md) | Final diagnosis entered on discharge for Thomas Reyes. |
-| [Glasgow Coma Scale](Observation-rs-bundle-example-observation-gcs.md) | Neurologic assessment performed in ambulance. |
-| [Initial Impression – Reyes](Condition-rs-bundle-example-condition-initial-impression.md) | Initial impression documented at DOH Central ER for Thomas Reyes. |
-| [Injury Intent](Observation-rs-bundle-example-observation-injury-intent.md) | Intent recorded as unintentional vehicular crash. |
-| [Mode of Transport](Observation-rs-bundle-example-observation-mode-transport.md) | Ambulance transport to receiving facility. |
-| [ONEISS Bundle – Reyes](Bundle-rs-bundle-example-bundle-oneiss.md) | Document bundle delivering the facility ONEISS submission for Thomas Reyes with all required resources embedded. |
-| [Patient Coverage](Coverage-rs-bundle-example-coverage.md) | Coverage record supporting claim for EMS transport. |
-| [Patient Education](Procedure-rs-bundle-example-procedure-education.md) | Post-crash counseling delivered by EMS team lead. |
-| [Patient Thomas Reyes](Patient-rs-bundle-example-patient.md) | Adult male patient transported following a vehicular collision. |
-| [Pulse Rate](Observation-rs-bundle-example-observation-pulse-rate.md) | Pulse assessment recorded during transport. |
-| [RS EMS Provider Organization](Organization-rs-bundle-example-organization.md) | MetroCare EMS providing transport for the referral episode. |
-| [Receiving ER Physician](Practitioner-rs-bundle-example-practitioner-receiver.md) | Physician coordinating acceptance at DOH Central ER. |
-| [Receiving Facility Location](Location-rs-bundle-example-service-location.md) | Emergency room of DOH Central where the patient was referred. |
-| [Refusal-to-Admit Signal](ServiceRequest-rs-bundle-example-service-request.md) | Service request tracking refusal-to-admit escalation. |
-| [Reported Complaint](Observation-rs-bundle-example-observation-reported-complaint.md) | Caller-reported complaint captured during dispatch. |
-| [Respiratory Rate](Observation-rs-bundle-example-observation-respiratory-rate.md) | Respiratory assessment recorded en route. |
-| [Run Report Comments](Observation-rs-bundle-example-observation-runreport-comments.md) | Narrative remarks recorded by EMS crew. |
-| [Timeline - Arrived On Scene](Observation-rs-bundle-example-timeline-time-on-scene.md) | Crew arrival at collision site. |
-| [Timeline - Back In Service](Observation-rs-bundle-example-timeline-time-station.md) | Unit available after drop-off and debrief. |
-| [Timeline - Date Received](Observation-rs-bundle-example-timeline-date-received.md) | Call received by dispatch for the incident. |
-| [Timeline - Departed Scene](Observation-rs-bundle-example-timeline-time-departed.md) | Transport initiated with patient on board. |
-| [Timeline - Hospital Arrival](Observation-rs-bundle-example-timeline-time-hospital.md) | Arrival at DOH Central ER bay. |
-| [Timeline - Unit En Route](Observation-rs-bundle-example-timeline-time-enroute.md) | EMS unit dispatched toward the scene. |
-| [Track Refusal Escalation](Task-rs-bundle-example-task.md) | Task monitoring refusal-to-admit follow-up until hospital acceptance confirmed. |
-| [Transport Accident Flag](Observation-rs-bundle-example-observation-transport-accident.md) | Transport accident identified as precipitating factor. |
-| [Transport Coordination](Procedure-rs-bundle-example-procedure-transport.md) | Call confirming bed availability at DOH Central ER. |
+| [Minimum Data Set Bundle](Bundle-rs-minimum-example-bundle.md) | Example bundle containing only the minimum required elements from Minimum-MS-1.csv. |
+| [Minimum Data Set Disposition](Observation-rs-minimum-example-observation-disposition.md) | Patient disposition for minimum data set. |
+| [Minimum Data Set Encounter](Encounter-rs-minimum-example-encounter.md) | Encounter example with minimum required fields for Minimum Data Set. |
+| [Minimum Data Set External Cause (ICD-10)](Condition-rs-minimum-example-condition-external-cause.md) | ICD-10 External Cause code for minimum data set. |
+| [Minimum Data Set Final Diagnosis](Condition-rs-minimum-example-condition-final.md) | Final diagnosis for minimum data set example. |
+| [Minimum Data Set Initial Impression](Condition-rs-minimum-example-condition-initial.md) | Initial impression for minimum data set example. |
+| [Minimum Data Set Injury Date/Time](Observation-rs-minimum-example-observation-injury-datetime.md) | Date and time of injury for minimum data set. |
+| [Minimum Data Set Mode of Transport](Observation-rs-minimum-example-observation-mode-transport.md) | Mode of transport to hospital for minimum data set. |
+| [Minimum Data Set Nature of Injury (ICD-10)](Condition-rs-minimum-example-condition-nature-of-injury.md) | ICD-10 Nature of Injury code for minimum data set. |
+| [Minimum Data Set Outcome](Observation-rs-minimum-example-observation-outcome.md) | Patient outcome for minimum data set. |
+| [Minimum Data Set Patient](Patient-rs-minimum-example-patient.md) | Patient example with minimum required demographics and identifiers for Minimum Data Set. |
+| [Minimum Data Set Transport Accident](Observation-rs-minimum-example-observation-transport-accident.md) | Transport/vehicular accident flag for minimum data set. |
 

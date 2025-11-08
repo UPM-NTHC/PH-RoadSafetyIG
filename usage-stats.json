@@ -26,12 +26,8 @@
     ],
     "Bundle": [
       {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-ems",
-        "title": "RS Bundle — EMS Submission"
-      },
-      {
-        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-oneiss",
-        "title": "RS Bundle — ONEISS Submission"
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-bundle-minimum",
+        "title": "RS Bundle — Minimum Data Set"
       }
     ],
     "Claim": [
@@ -318,8 +314,32 @@
         "title": "RS Observation - Status on Arrival"
       },
       {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-date-received",
+        "title": "RS Observation - Timeline Date Received"
+      },
+      {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime",
         "title": "RS Observation - Timeline Date/Time"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-departed",
+        "title": "RS Observation - Timeline Time Departed"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-enroute",
+        "title": "RS Observation - Timeline Time Enroute"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-hospital-arrival",
+        "title": "RS Observation - Timeline Time Hospital Arrival"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-on-scene",
+        "title": "RS Observation - Timeline Time On Scene"
+      },
+      {
+        "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-station-arrival",
+        "title": "RS Observation - Timeline Time Station Arrival"
       },
       {
         "url": "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traffic-investigator",
@@ -447,16 +467,13 @@
       "Questionnaire.item.item.item.item"
     ],
     "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter-vehicle-used": [
-      "Bundle.entry.resource",
       "Encounter"
     ],
     "urn://example.com/ph-core/fhir/StructureDefinition/barangay": [
-      "Bundle.entry.resource.address",
       "Location.address",
       "Patient.address"
     ],
     "urn://example.com/ph-core/fhir/StructureDefinition/city-municipality": [
-      "Bundle.entry.resource.address",
       "Location.address",
       "Patient.address"
     ],
@@ -474,7 +491,6 @@
       "Patient"
     ],
     "urn://example.com/ph-core/fhir/StructureDefinition/province": [
-      "Bundle.entry.resource.address",
       "Location.address",
       "Patient.address"
     ],

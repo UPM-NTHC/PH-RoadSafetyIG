@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-TransportAccidentType | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:SILPH___Transport_Accident_Type__VS_ |
+| Draft as of 2025-11-08 | *Computable Name*:SILPH___Transport_Accident_Type__VS_ |
 
  
 SILPH Value Set for Transport Accident Type (Land, Water or Air) 
@@ -56,7 +56,7 @@ This value set contains 2 concepts
   "name" : "SILPH___Transport_Accident_Type__VS_",
   "title" : "SILPH - Transport Accident Type (VS)",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

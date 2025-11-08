@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "rs-minimum-example-encounter",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter rs-minimum-example-encounter</b></p><a name=\"rs-minimum-example-encounter\"> </a><a name=\"hcrs-minimum-example-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-encounter.html\">RS Encounter</a></p></div><p><b>identifier</b>: <code>http://doh.incident.system/</code>/INC-2025-0102, <code>http://doh.hospitalno.system/</code>/HCN-2025-1120</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"https://loinc.org/LA10268-3\">LOINC: LA10268-3</a> (ER)</p><p><b>subject</b>: <a href=\"Patient-rs-minimum-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>period</b>: 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://doh.incident.system/",
+    "value" : "INC-2025-0102"
+  },
+  {
+    "system" : "http://doh.hospitalno.system/",
+    "value" : "HCN-2025-1120"
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://loinc.org",
+    "code" : "LA10268-3",
+    "display" : "ER"
+  },
+  "subject" : {
+    "reference" : "Patient/rs-minimum-example-patient"
+  },
+  "period" : {
+    "start" : "2025-11-08T14:30:00+08:00",
+    "end" : "2025-11-08T16:45:00+08:00"
+  }
+}

@@ -9,15 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-runreport-comments | *Version*:0.3.0 |
-| Draft as of 2025-11-07 | *Computable Name*:RSObsRunReportComments |
+| Draft as of 2025-11-08 | *Computable Name*:RSObsRunReportComments |
 
  
 Enter other comment (s) regarding the case 
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — EMS Submission](StructureDefinition-rs-bundle-ems.md)
-* Examples for this Profile: [Observation/rs-bundle-example-observation-runreport-comments](Observation-rs-bundle-example-observation-runreport-comments.md) and [Observation/rs-example-observation-runreport-comments](Observation-rs-example-observation-runreport-comments.md)
+* Examples for this Profile: [Observation/rs-example-observation-runreport-comments](Observation-rs-example-observation-runreport-comments.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-runreport-comments)
 
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
   "name" : "RSObsRunReportComments",
   "title" : "RS Observation - Run Report Comments",
   "status" : "draft",
-  "date" : "2025-11-07T10:27:49+00:00",
+  "date" : "2025-11-08T13:50:02+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-runre
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
