@@ -9,7 +9,7 @@ Description: "Generic base Observation for RS data; specialized concept profiles
 * status 1..1 MS
 * subject 1..1 MS
 * subject only Reference(RSPatient)
-* code 1..1 MS
+// * code 0..1 MS
 * encounter 0..1 MS
 * encounter only Reference(RSEncounter)
 * effective[x] 0..1 MS
@@ -292,8 +292,7 @@ Title: "RS Observation - Outcome at Release"
 Description: "Outcome at release from ER/OPD/RHU."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from SILPH-OutcomeVS (preferred)
-* code.coding 0..1
-* code.coding = $SCT#418138009 "Patient condition finding (finding)"
+* code = $SCT#418138009 "Patient condition finding (finding)"
 
 // MDS58 - Outcome at Discharge
 // Profile: RSObsOutcomeAtDischarge
@@ -337,8 +336,7 @@ Parent: RSObsTimelineDateTime
 Id: rs-observation-timeline-date-received
 Title: "RS Observation - Timeline Date Received"
 Description: "Date/time call received by dispatch for the incident."
-* code.coding 0..1
-* code.coding = $LNC#30976-5 "Date received Form"
+* code = $LNC#30976-5 "Date received Form"
 
 // MDS63 - Time Enroute
 Profile: RSObsTimelineTimeEnroute
@@ -346,7 +344,7 @@ Parent: RSObsTimelineDateTime
 Id: rs-observation-timeline-time-enroute
 Title: "RS Observation - Timeline Time Enroute"
 Description: "Time unit/personnel went enroute to scene."
-* code.coding 0..1
+* code = $SCT#405796007 "Time of call for help (observable entity)"
 
 // MDS64 - Time On Scene
 Profile: RSObsTimelineTimeOnScene
@@ -362,8 +360,7 @@ Parent: RSObsTimelineDateTime
 Id: rs-observation-timeline-time-departed
 Title: "RS Observation - Timeline Time Departed"
 Description: "Time unit/personnel departed scene."
-* code.coding 0..1
-* code.coding = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
+* code = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
 
 // MDS66 - Time Hospital Arrival
 Profile: RSObsTimelineTimeHospitalArrival
@@ -379,8 +376,7 @@ Parent: RSObsTimelineDateTime
 Id: rs-observation-timeline-time-station-arrival
 Title: "RS Observation - Timeline Time Station Arrival"
 Description: "Time unit/personnel arrived back at station."
-* code.coding 0..1
-* code.coding = $LNC#11288-8 "Arrival time documented"
+* code = $LNC#11288-8 "Arrival time documented"
 
 // MDS69 - Vital Signs - Time
 // This is already designed as part of the 
@@ -608,8 +604,7 @@ Title: "RS Observation - Status on Arrival"
 Description: "Status upon reaching facility/hospital."
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from SILPH-StatusVS (preferred)
-* code.coding 0..1
-* code.coding = $SCT#118223001 "Patient status finding (finding)"
+* code = $SCT#118223001 "Patient status finding (finding)"
 
 // MDS117 - If Alive: Conscious/Unconscious (status on arrival detail)
 // Profile: RSObsStatusOnArrivalAliveDetail
@@ -681,8 +676,7 @@ Id: rs-observation-injury-datetime
 Title: "RS Observation - Date/Time of Injury"
 Description: "DateTimestamp patient was seen at the health facility."
 * valueDateTime 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#439771001 "Date of event (observable entity)"
+* code = $SCT#439771001 "Date of event (observable entity)"
 
 // (for discussion what final SCT code is appropriate for 
 // date/time of injury, for now $SCT#439771001 "Date of event (observable entity)" used)
