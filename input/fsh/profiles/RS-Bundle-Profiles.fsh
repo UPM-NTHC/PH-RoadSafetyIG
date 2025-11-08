@@ -61,7 +61,7 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * type = #transaction (exactly)
 * entry 1..*
 * entry.resource 1..1
-* entry ^slicing.discriminator.type = #value
+* entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
@@ -69,6 +69,10 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
     patient 1..1 and
     encounter 1..1 and
     location 0..1 and
+    observationInjuryDateTime 0..1 and
+    observationInjuryIntent 0..1 and
+    observationTransportAccident 0..1 and
+    observationModeOfTransport 0..1 and
     observationDateReceived 1..1 and
     observationTimeEnroute 0..1 and
     observationTimeOnScene 0..1 and
@@ -88,30 +92,23 @@ Description: "Document Bundle for EMS Run Report submission. The first entry MUS
 * entry[patient].resource only RSPatient
 * entry[encounter].resource only RSEncounter
 * entry[location].resource only RSIncidentLocation
+// New slices for Incident Observations
+* entry[observationInjuryDateTime].resource only RSObsInjuryDateTime
+* entry[observationInjuryIntent].resource only RSObsInjuryIntent
+* entry[observationTransportAccident].resource only RSObsTransportVehicularAccident
+* entry[observationModeOfTransport].resource only RSObsModeOfTransport
 // MDS #62 - Date Received
-* entry[observationDateReceived].resource only RSObsTimelineDateTime
-* entry[observationDateReceived].resource.code.coding 0..1
-* entry[observationDateReceived].resource.code.coding = $LNC#30976-5 "Date received Form"
+* entry[observationDateReceived].resource only RSObsTimelineDateReceived
 // MDS #64 - Time Enroute
-* entry[observationTimeEnroute].resource only RSObsTimelineDateTime
-* entry[observationTimeEnroute].resource.code.coding 0..1
-* entry[observationTimeEnroute].resource.code.coding = $LNC#69472-9 "Unit responded [Date and time] Vehicle"
+* entry[observationTimeEnroute].resource only RSObsTimelineTimeEnroute
 // MDS #65 - Time On Scene
-* entry[observationTimeOnScene].resource only RSObsTimelineDateTime
-* entry[observationTimeOnScene].resource.code.coding 0..1
-* entry[observationTimeOnScene].resource.code.coding = $SCT#405798008 "Time of arrival of emergency services (observable entity)"
+* entry[observationTimeOnScene].resource only RSObsTimelineTimeOnScene
 // MDS #66 - Time Departed Scene
-* entry[observationTimeDeparted].resource only RSObsTimelineDateTime
-* entry[observationTimeDeparted].resource.code.coding 0..1
-* entry[observationTimeDeparted].resource.code.coding = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
+* entry[observationTimeDeparted].resource only RSObsTimelineTimeDeparted
 // MDS #67 - Time of Hospital Arrival
-* entry[observationTimeHospitalArrival].resource only RSObsTimelineDateTime
-* entry[observationTimeHospitalArrival].resource.code.coding 0..1
-* entry[observationTimeHospitalArrival].resource.code.coding = $SCT#405799000 "Time of arrival at hospital (observable entity)"
+* entry[observationTimeHospitalArrival].resource only RSObsTimelineTimeHospitalArrival
 // MDS #68 - Time of Station Availability
-* entry[observationTimeStationArrival].resource only RSObsTimelineDateTime
-* entry[observationTimeStationArrival].resource.code.coding 0..1
-* entry[observationTimeStationArrival].resource.code.coding = $LNC#11288-8 "Arrival time documented"
+* entry[observationTimeStationArrival].resource only RSObsTimelineTimeStationArrival
 // MDS #70, #73, #76-81 - Vital signs cluster
 * entry[observationVitals].resource only RSObsRespiratoryRate 
     or RSObsPulseRate or RSObsBloodPressure 
@@ -222,7 +219,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 * type = #transaction (exactly)
 * entry 1..*
 * entry.resource 1..1
-* entry ^slicing.discriminator.type = #value
+* entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
@@ -333,7 +330,7 @@ Description: "Document Bundle for Facility ONEISS submission. The first entry MU
 // * type = #transaction (exactly)
 // * entry 1..*
 // * entry.resource 1..1
-// * entry ^slicing.discriminator.type = #value
+// * entry ^slicing.discriminator.type = #profile
 // * entry ^slicing.discriminator.path = "resource"
 // * entry ^slicing.rules = #open
 // * entry contains
