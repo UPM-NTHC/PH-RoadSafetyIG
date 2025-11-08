@@ -168,14 +168,6 @@ Description: "Example bundle containing only the minimum required elements from 
 * entry[patient].resource = rs-minimum-example-patient
 * entry[encounter].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * entry[encounter].resource = rs-minimum-example-encounter
-* entry[conditionInitial].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0003"
-* entry[conditionInitial].resource = rs-minimum-example-condition-initial
-* entry[conditionFinal].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0004"
-* entry[conditionFinal].resource = rs-minimum-example-condition-final
-* entry[conditionNatureOfInjury].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0005"
-* entry[conditionNatureOfInjury].resource = rs-minimum-example-condition-nature-of-injury
-* entry[conditionExternalCause].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0006"
-* entry[conditionExternalCause].resource = rs-minimum-example-condition-external-cause
 * entry[observationInjuryDateTime].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0007"
 * entry[observationInjuryDateTime].resource = rs-minimum-example-observation-injury-datetime
 * entry[observationTransportAccident].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0008"
@@ -184,3 +176,11 @@ Description: "Example bundle containing only the minimum required elements from 
 * entry[observationModeOfTransport].resource = rs-minimum-example-observation-mode-transport
 * entry[observationOutcome].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0010"
 * entry[observationOutcome].resource = rs-minimum-example-observation-outcome
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0003"
+* entry[=].resource = rs-minimum-example-condition-initial
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0004"
+* entry[=].resource = rs-minimum-example-condition-final
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0005"
+* entry[=].resource = rs-minimum-example-condition-nature-of-injury
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0006"
+* entry[=].resource = rs-minimum-example-condition-external-cause
