@@ -121,20 +121,75 @@ Description: "Encounter covering EMS transport from crash scene to DOH Central E
 * participant[receivedBy].individual = Reference(rs-bundle-example-practitioner-receiver)
 * hospitalization.destination = Reference(rs-bundle-example-service-location)
 
-// Timeline observations for workflow section and bundle slicing
-
 Instance: rs-bundle-example-timeline-date-received
-InstanceOf: RSObsTimelineDateTime
+InstanceOf: RSObsTimelineDateReceived
 Usage: #example
-Title: "Timeline - Date Received"
-Description: "Call received by dispatch for the incident."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
+Title: "Date Received"
+Description: "Date/time call received by dispatch for the incident."
 * status = #final
 * subject = Reference(rs-bundle-example-patient)
 * encounter = Reference(rs-bundle-example-encounter)
 * effectiveDateTime = "2025-10-31T15:02:00+08:00"
 * code = http://loinc.org#30976-5 "Date received Form"
 * valueDateTime = "2025-10-31T15:02:00+08:00"
+
+Instance: rs-bundle-example-timeline-time-enroute
+InstanceOf: RSObsTimelineTimeEnroute
+Usage: #example
+Title: "Time Enroute"
+Description: "Time unit/personnel went enroute to scene."
+* status = #final
+* subject = Reference(rs-bundle-example-patient)
+* encounter = Reference(rs-bundle-example-encounter)
+* effectiveDateTime = "2025-10-31T15:18:00+08:00"
+* code = http://snomed.info/sct#405796007 "Time of call for help (observable entity)"
+* valueDateTime = "2025-10-31T15:18:00+08:00"
+
+Instance: rs-bundle-example-timeline-time-on-scene
+InstanceOf: RSObsTimelineTimeOnScene
+Usage: #example
+Title: "Time On Scene"
+Description: "Time unit/personnel arrived on scene."
+* status = #final
+* subject = Reference(rs-bundle-example-patient)
+* encounter = Reference(rs-bundle-example-encounter)
+* effectiveDateTime = "2025-10-31T15:25:00+08:00"
+* valueDateTime = "2025-10-31T15:25:00+08:00"
+
+Instance: rs-bundle-example-timeline-time-departed
+InstanceOf: RSObsTimelineTimeDeparted
+Usage: #example
+Title: "Time Departed"
+Description: "Time unit/personnel departed scene."
+* status = #final
+* subject = Reference(rs-bundle-example-patient)
+* encounter = Reference(rs-bundle-example-encounter)
+* effectiveDateTime = "2025-10-31T15:45:00+08:00"
+* code = http://loinc.org#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
+* valueDateTime = "2025-10-31T15:45:00+08:00"
+
+Instance: rs-bundle-example-timeline-time-hospital
+InstanceOf: RSObsTimelineTimeHospitalArrival
+Usage: #example
+Title: "Time Hospital Arrival"
+Description: "Time patient arrived at hospital/facility."
+* status = #final
+* subject = Reference(rs-bundle-example-patient)
+* encounter = Reference(rs-bundle-example-encounter)
+* effectiveDateTime = "2025-10-31T16:30:00+08:00"
+* valueDateTime = "2025-10-31T16:30:00+08:00"
+
+Instance: rs-bundle-example-timeline-time-station
+InstanceOf: RSObsTimelineTimeStationArrival
+Usage: #example
+Title: "Time Station Arrival"
+Description: "Time unit/personnel arrived back at station."
+* status = #final
+* subject = Reference(rs-bundle-example-patient)
+* encounter = Reference(rs-bundle-example-encounter)
+* effectiveDateTime = "2025-10-31T17:15:00+08:00"
+* code = http://loinc.org#11288-8 "Arrival time documented"
+* valueDateTime = "2025-10-31T17:15:00+08:00"
 
 Instance: rs-bundle-example-observation-pulse-rate
 InstanceOf: RSObsPulseRate
@@ -411,18 +466,18 @@ Description: "Document bundle delivering the EMS referral for Thomas Reyes with 
 * entry[encounter].resource = rs-bundle-example-encounter
 * entry[location].fullUrl = "urn:uuid:6a6a58ed-1a83-4d30-a9a4-4aa97d708c03"
 * entry[location].resource = rs-bundle-example-incident-location
-* entry[+].fullUrl = "urn:uuid:c5d713cf-8f6a-4e54-9f19-611998c2e8c4"
-* entry[=].resource = rs-bundle-example-timeline-date-received
-* entry[+].fullUrl = "urn:uuid:d76f6795-22fa-4a6b-bd38-6b21c41a9282"
-* entry[=].resource = rs-bundle-example-timeline-time-enroute
-* entry[+].fullUrl = "urn:uuid:5d7f30dd-4c13-477f-b7ce-19b2dcaf53c3"
-* entry[=].resource = rs-bundle-example-timeline-time-on-scene
-* entry[+].fullUrl = "urn:uuid:4a4ca5bf-6b1f-478e-9d95-6022139b9392"
-* entry[=].resource = rs-bundle-example-timeline-time-departed
-* entry[+].fullUrl = "urn:uuid:0aa8d46d-45b2-40fa-9a27-76f0b5ce0d8f"
-* entry[=].resource = rs-bundle-example-timeline-time-hospital
-* entry[+].fullUrl = "urn:uuid:1b7da0ae-0d87-4a77-9b22-0b6d4c1f8c4d"
-* entry[=].resource = rs-bundle-example-timeline-time-station
+* entry[observationDateReceived].fullUrl = "urn:uuid:c5d713cf-8f6a-4e54-9f19-611998c2e8c4"
+* entry[observationDateReceived].resource = rs-bundle-example-timeline-date-received
+* entry[observationTimeEnroute].fullUrl = "urn:uuid:d76f6795-22fa-4a6b-bd38-6b21c41a9282"
+* entry[observationTimeEnroute].resource = rs-bundle-example-timeline-time-enroute
+* entry[observationTimeOnScene].fullUrl = "urn:uuid:5d7f30dd-4c13-477f-b7ce-19b2dcaf53c3"
+* entry[observationTimeOnScene].resource = rs-bundle-example-timeline-time-on-scene
+* entry[observationTimeDeparted].fullUrl = "urn:uuid:4a4ca5bf-6b1f-478e-9d95-6022139b9392"
+* entry[observationTimeDeparted].resource = rs-bundle-example-timeline-time-departed
+* entry[observationTimeHospitalArrival].fullUrl = "urn:uuid:0aa8d46d-45b2-40fa-9a27-76f0b5ce0d8f"
+* entry[observationTimeHospitalArrival].resource = rs-bundle-example-timeline-time-hospital
+* entry[observationTimeStationArrival].fullUrl = "urn:uuid:1b7da0ae-0d87-4a77-9b22-0b6d4c1f8c4d"
+* entry[observationTimeStationArrival].resource = rs-bundle-example-timeline-time-station
 * entry[observationVitals][+].fullUrl = "urn:uuid:6f8a4a51-6f31-4d6f-9b45-4cb41ffac7aa"
 * entry[observationVitals][=].resource = rs-bundle-example-observation-respiratory-rate
 * entry[observationVitals][+].fullUrl = "urn:uuid:0f30446d-ac8e-4e0b-8fd9-158f2f6c3c36"
@@ -474,70 +529,7 @@ Description: "Document bundle delivering the EMS referral for Thomas Reyes with 
 * entry[+].fullUrl = "urn:uuid:6cc6c44d-b57b-4cc2-b6ff-07bc5d01d6ab"
 * entry[=].resource = rs-bundle-example-coverage
 
-Instance: rs-bundle-example-timeline-time-enroute
-InstanceOf: RSObsTimelineDateTime
-Usage: #example
-Title: "Timeline - Unit En Route"
-Description: "EMS unit dispatched toward the scene."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
-* status = #final
-* subject = Reference(rs-bundle-example-patient)
-* encounter = Reference(rs-bundle-example-encounter)
-* effectiveDateTime = "2025-10-31T15:07:00+08:00"
-* code = http://loinc.org#69472-9 "Unit responded [Date and time] Vehicle"
-* valueDateTime = "2025-10-31T15:07:00+08:00"
-
-Instance: rs-bundle-example-timeline-time-on-scene
-InstanceOf: RSObsTimelineDateTime
-Usage: #example
-Title: "Timeline - Arrived On Scene"
-Description: "Crew arrival at collision site."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
-* status = #final
-* subject = Reference(rs-bundle-example-patient)
-* encounter = Reference(rs-bundle-example-encounter)
-* effectiveDateTime = "2025-10-31T15:18:00+08:00"
-* code = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#405798008 "Time of arrival of emergency services (observable entity)"
-* valueDateTime = "2025-10-31T15:18:00+08:00"
-
-Instance: rs-bundle-example-timeline-time-departed
-InstanceOf: RSObsTimelineDateTime
-Usage: #example
-Title: "Timeline - Departed Scene"
-Description: "Transport initiated with patient on board."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
-* status = #final
-* subject = Reference(rs-bundle-example-patient)
-* encounter = Reference(rs-bundle-example-encounter)
-* effectiveDateTime = "2025-10-31T15:42:00+08:00"
-* code = http://loinc.org#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
-* valueDateTime = "2025-10-31T15:42:00+08:00"
-
-Instance: rs-bundle-example-timeline-time-hospital
-InstanceOf: RSObsTimelineDateTime
-Usage: #example
-Title: "Timeline - Hospital Arrival"
-Description: "Arrival at DOH Central ER bay."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
-* status = #final
-* subject = Reference(rs-bundle-example-patient)
-* encounter = Reference(rs-bundle-example-encounter)
-* effectiveDateTime = "2025-10-31T16:10:00+08:00"
-* code = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20241001#405799000 "Time of arrival at hospital (observable entity)"
-* valueDateTime = "2025-10-31T16:10:00+08:00"
-
-Instance: rs-bundle-example-timeline-time-station
-InstanceOf: RSObsTimelineDateTime
-Usage: #example
-Title: "Timeline - Back In Service"
-Description: "Unit available after drop-off and debrief."
-* meta.profile[0] = "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-datetime"
-* status = #final
-* subject = Reference(rs-bundle-example-patient)
-* encounter = Reference(rs-bundle-example-encounter)
-* effectiveDateTime = "2025-10-31T16:55:00+08:00"
-* code = http://loinc.org#11288-8 "Arrival time documented"
-* valueDateTime = "2025-10-31T16:55:00+08:00"
+// Timeline observations are defined in RS-Observation-Timeline-Ex.fsh
 
 // Incident observations
 

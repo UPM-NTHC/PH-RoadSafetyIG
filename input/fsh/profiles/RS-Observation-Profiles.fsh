@@ -331,6 +331,57 @@ Description: "Dispatch and transport timeline events capturing a precise date/ti
 * valueDateTime 1..1 MS
 * code.coding 0..1 MS
 
+// MDS62 - Date Received
+Profile: RSObsTimelineDateReceived
+Parent: RSObsTimelineDateTime
+Id: rs-observation-timeline-date-received
+Title: "RS Observation - Timeline Date Received"
+Description: "Date/time call received by dispatch for the incident."
+* code.coding 0..1
+* code.coding = $LNC#30976-5 "Date received Form"
+
+// MDS63 - Time Enroute
+Profile: RSObsTimelineTimeEnroute
+Parent: RSObsTimelineDateTime
+Id: rs-observation-timeline-time-enroute
+Title: "RS Observation - Timeline Time Enroute"
+Description: "Time unit/personnel went enroute to scene."
+* code.coding 0..1
+
+// MDS64 - Time On Scene
+Profile: RSObsTimelineTimeOnScene
+Parent: RSObsTimelineDateTime
+Id: rs-observation-timeline-time-on-scene
+Title: "RS Observation - Timeline Time On Scene"
+Description: "Time unit/personnel arrived on scene."
+* code = $SCT#405798008 "Time of arrival of emergency services (observable entity)"
+
+// MDS65 - Time Departed
+Profile: RSObsTimelineTimeDeparted
+Parent: RSObsTimelineDateTime
+Id: rs-observation-timeline-time-departed
+Title: "RS Observation - Timeline Time Departed"
+Description: "Time unit/personnel departed scene."
+* code.coding 0..1
+* code.coding = $LNC#69475-2 "Responding unit left the scene with a patient [Date and time] Vehicle"
+
+// MDS66 - Time Hospital Arrival
+Profile: RSObsTimelineTimeHospitalArrival
+Parent: RSObsTimelineDateTime
+Id: rs-observation-timeline-time-hospital-arrival
+Title: "RS Observation - Timeline Time Hospital Arrival"
+Description: "Time patient arrived at hospital/facility."
+* code = $SCT#405799000 "Time of arrival at hospital (observable entity)"
+
+// MDS67 - Time Station Arrival
+Profile: RSObsTimelineTimeStationArrival
+Parent: RSObsTimelineDateTime
+Id: rs-observation-timeline-time-station-arrival
+Title: "RS Observation - Timeline Time Station Arrival"
+Description: "Time unit/personnel arrived back at station."
+* code.coding 0..1
+* code.coding = $LNC#11288-8 "Arrival time documented"
+
 // MDS69 - Vital Signs - Time
 // This is already designed as part of the 
 // Base RSObservation profile above
