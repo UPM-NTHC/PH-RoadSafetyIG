@@ -422,7 +422,7 @@ Title: "Minimum Data Set Nature Burns"
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueBoolean = true
-* component[burnType].code = $SCT#242490006 "Burning due to contact with hot substance (event)"
+* component[burnType].code = $SCT#48333001 "Burn injury"
 * component[burnType].valueCodeableConcept = $SCT#284486004 "Superficial second degree burn (disorder)"
 * component[burnType].valueCodeableConcept.text = "Second degree burns"
 
