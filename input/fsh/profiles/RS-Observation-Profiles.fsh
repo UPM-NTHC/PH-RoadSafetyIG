@@ -807,15 +807,19 @@ Parent: RSObservation
 Id: rs-observation-nature-burns
 Title: "RS Observation - External Cause: Burns"
 Description: "Flag indicating burns as external cause."
+* code = $SCT#125666000 "Burn (disorder)"
 * valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $SCT#125666000 "Burn (disorder)"
-
-* valueCodeableConcept 0..1 MS
-* valueCodeableConcept from SILPH-BurnsVS (preferred)
-* valueCodeableConcept ^short = "Specify burns agent"
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept.text = "Burns other (specify)"
+* component 0..1 MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains burnType 0..1
+* component[burnType].code = $SCT#48333001 "Burn injury"
+// To inform terminology team that this will be the code for component burn type
+* component[burnType].valueCodeableConcept 0..1 MS
+* component[burnType].valueCodeableConcept from SILPH-BurnsVS (preferred)
+* component[burnType].valueCodeableConcept.text 0..1 MS
+* component[burnType].valueCodeableConcept.text ^short = "Specify burns - if not captured by component"
 
 // MDS196 (presence) / MDS197 (site) / MDS198 (details) - Concussion
 Profile: RSObsConcussion
@@ -869,15 +873,15 @@ Parent: RSObservation
 Id: rs-observation-open-wound
 Title: "RS Observation - Open Wound"
 Description: "Open wound present; with site and details. Capture mechanism/type in a structured component (valueCodeableConcept with text)."
-* valueBoolean 0..1
 * bodySite 0..1 MS
 * bodySite.coding from SILPH-ListofBodySitesVS (preferred)
 * note 0..* 
 * code.coding 0..1
 * code.coding = $SCT#125643001 "Open wound (disorder)"
-
-* valueCodeableConcept.text 0..1 MS
-* valueCodeableConcept ^short = "Specify open wound mechanism/type"
+* valueBoolean 0..1
+* note 0..*
+// * valueCodeableConcept.text 0..1 MS
+// * valueCodeableConcept ^short = "Specify open wound mechanism/type"
 // Recommendation: use SNOMED CT codes for mechanism where available; allow free-text fallback.
 
 // MDS212 (presence) / MDS213 (site) / MDS214 (details) - Traumatic Amputation
