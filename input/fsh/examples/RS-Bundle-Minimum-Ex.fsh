@@ -34,12 +34,8 @@ Description: "Encounter example with minimum required fields for Minimum Data Se
 * period.start = "2025-11-08T14:30:00+08:00"
 * period.end = "2025-11-08T16:45:00+08:00"
 * identifier[incidentNumber].system = "http://doh.incident.system/"
-// * identifier[incidentNumber].type.coding.system = "http://www.roadsafetyph.doh.gov.ph/CodeSystem/identifier-type"
-// * identifier[incidentNumber].type.coding.code = #incident-number
-// * identifier[incidentNumber].type.coding.display = "Incident number"
 * identifier[incidentNumber].value = "INC-2025-0102"
 * identifier[hospitalCaseNo].system = "http://doh.hospitalno.system/"
-// * identifier[hospitalCaseNo].type.coding = $SCT#722248002 "Patient hospital visit number (observable entity)"
 * identifier[hospitalCaseNo].value = "HCN-2025-1120"
 
 Instance: rs-minimum-example-condition-initial
@@ -49,7 +45,6 @@ Title: "Minimum Data Set Initial Impression"
 Description: "Initial impression for minimum data set example."
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
-// * category.coding = $SCT#148006 "Preliminary diagnosis"
 * code = $SCT#125605004 "Injury of multiple body regions (disorder)"
 * subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
@@ -62,7 +57,6 @@ Title: "Minimum Data Set Final Diagnosis"
 Description: "Final diagnosis for minimum data set example."
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
-// * category.coding = $SCT#89100005 "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
 * code = $SCT#29718003 "Closed fracture of shaft of femur (disorder)"
 * subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
@@ -164,12 +158,10 @@ Description: "Example bundle containing only the minimum required elements from 
 * identifier.value = "MINIMUM-20251108-001"
 * type = #transaction
 * timestamp = "2025-11-08T17:00:00+08:00"
-// * entry[patient].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * entry[patient].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * entry[patient].resource = rs-minimum-example-patient
 * entry[patient].request.method = #POST
 * entry[patient].request.url = "Patient"
-// * entry[encounter].fullUrl = "urn:uuid:rs-minimum-example-encounter"
 * entry[encounter].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * entry[encounter].resource = rs-minimum-example-encounter
 * entry[encounter].request.method = #POST
