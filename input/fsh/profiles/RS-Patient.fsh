@@ -47,7 +47,6 @@ Description: "Index 0 of name.given is the patient's first name; index 1 (if pre
 * severity = #warning
 * expression = "name.given.count() = 2"
 * xpath = "count(f:name/f:given) = 2"
-
 /*
 I no longer sliced name.given to enforce exactly 2 entries because of at the end of the day the server could not Evaluate it properly.
 SLICING_CANNOT_BE_EVALUATED
