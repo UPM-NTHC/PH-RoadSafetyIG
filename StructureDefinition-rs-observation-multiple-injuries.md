@@ -16,7 +16,7 @@ Boolean flag indicating multiple injuries.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-multiple-injuries](Observation-rs-example-observation-multiple-injuries.md) and [Observation/rs-minimum-example-obs-multiple-injuries](Observation-rs-minimum-example-obs-multiple-injuries.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsMultipleInjuries](Observation-RSMinimumExampleObsMultipleInjuries.md) and [Observation/rs-example-observation-multiple-injuries](Observation-rs-example-observation-multiple-injuries.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-multiple-injuries)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-multi
   "name" : "RSObsMultipleInjuries",
   "title" : "RS Observation - Multiple Injuries?",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Observation",
+  "id" : "RSMinimumExampleObsAbrasion",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation RSMinimumExampleObsAbrasion</b></p><a name=\"RSMinimumExampleObsAbrasion\"> </a><a name=\"hcRSMinimumExampleObsAbrasion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-abrasion.html\">RS Observation - Abrasion</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399963005}\">Abrasion (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-RSMinimumExampleBundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-RSMinimumExampleBundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 362046005}\">Left upper limb</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "code" : "399963005",
+      "display" : "Abrasion (disorder)"
+    }]
+  },
+  "subject" : {
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+  },
+  "encounter" : {
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+  },
+  "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+  "valueBoolean" : true,
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+      "code" : "362046005",
+      "display" : "Left upper limb"
+    }]
+  }
+}

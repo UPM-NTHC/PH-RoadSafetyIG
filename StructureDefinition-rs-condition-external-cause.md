@@ -16,7 +16,7 @@ Captures the ICD-10 external cause axis as a Condition.category slice. Use in ad
 
 **Usages:**
 
-* Examples for this Profile: [Condition/rs-minimum-example-condition-external-cause](Condition-rs-minimum-example-condition-external-cause.md)
+* Examples for this Profile: [Condition/RSMinimumExampleConditionExternalCause](Condition-RSMinimumExampleConditionExternalCause.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition-external-cause)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-externa
   "name" : "RSConditionExternalCause",
   "title" : "RS Condition — External Cause (category)",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

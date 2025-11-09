@@ -16,7 +16,7 @@ GCS with components for eyes, verbal, motor; optional total score as integer.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-gcs](Observation-rs-example-observation-gcs.md) and [Observation/rs-minimum-example-obs-gcs](Observation-rs-minimum-example-obs-gcs.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsGcs](Observation-RSMinimumExampleObsGcs.md) and [Observation/rs-example-observation-gcs](Observation-rs-example-observation-gcs.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-gcs)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
   "name" : "RSObsGCS",
   "title" : "RS Observation - Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

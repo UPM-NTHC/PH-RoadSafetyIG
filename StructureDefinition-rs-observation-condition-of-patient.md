@@ -16,7 +16,7 @@ Overall condition of patient at assessment.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-condition](Observation-rs-example-observation-condition.md) and [Observation/rs-minimum-example-obs-condition-patient](Observation-rs-minimum-example-obs-condition-patient.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsConditionPatient](Observation-RSMinimumExampleObsConditionPatient.md) and [Observation/rs-example-observation-condition](Observation-rs-example-observation-condition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-condition-of-patient)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-condi
   "name" : "RSObsConditionOfPatient",
   "title" : "RS Observation - Condition of Patient",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

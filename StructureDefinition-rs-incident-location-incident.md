@@ -18,7 +18,7 @@ Location of incident; supports PH-Core address extensions and geolocation.
 
 * Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
 * Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md) and [RS HealthcareService](StructureDefinition-rs-healthcare-service.md)
-* Examples for this Profile: [EDSA & Ayala Intersection/a>,[EDSA - Ayala Southbound](Location-rs-example-incident-location.md)and[Location/rs-minimum-example-location](Location-rs-minimum-example-location.md)
+* Examples for this Profile: [Location/RSMinimumExampleLocation](Location-RSMinimumExampleLocation.md), [EDSA & Ayala Intersection/a> and[EDSA - Ayala Southbound](Location-rs-example-incident-location.md)
 You can also check for[usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-incident-location-incident)
 
 ### Formal Views of Profile Content
@@ -42,7 +42,7 @@ Other representations of profile:[CSV](StructureDefinition-rs-incident-location-
   "name" : "RSIncidentLocation",
   "title" : "RS Incident Location",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

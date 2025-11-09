@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Encounter/RSMinimumExampleEncounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RSMinimumExampleEncounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter RSMinimumExampleEncounter</b></p><a name=\"RSMinimumExampleEncounter\"> </a><a name=\"hcRSMinimumExampleEncounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-encounter.html\">RS Encounter</a></p></div><p><b>identifier</b>: <code>http://doh.incident.system/</code>/INC-2025-0102, <code>http://doh.hospitalno.system/</code>/HCN-2025-1120</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"https://loinc.org/LA10268-3\">LOINC: LA10268-3</a> (ER)</p><p><b>subject</b>: <a href=\"Bundle-RSMinimumExampleBundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>period</b>: 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</p><p><b>serviceProvider</b>: <a href=\"Bundle-RSMinimumExampleBundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0021\">Organization Department of Health - Central Office</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://doh.incident.system/"^^xsd:anyURI ;
+       fhir:l <http://doh.incident.system/>
+     ] ;
+     fhir:value [ fhir:v "INC-2025-0102" ]
+  ] [
+     fhir:system [
+       fhir:v "http://doh.hospitalno.system/"^^xsd:anyURI ;
+       fhir:l <http://doh.hospitalno.system/>
+     ] ;
+     fhir:value [ fhir:v "HCN-2025-1120" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     a loinc:LA10268-3 ;
+     fhir:system [
+       fhir:v "http://loinc.org"^^xsd:anyURI ;
+       fhir:l <http://loinc.org>
+     ] ;
+     fhir:code [ fhir:v "LA10268-3" ] ;
+     fhir:display [ fhir:v "ER" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001> ;
+     fhir:reference [ fhir:v "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-11-08T14:30:00+08:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-11-08T16:45:00+08:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:l <urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0021> ;
+     fhir:reference [ fhir:v "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0021" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -16,7 +16,7 @@ Mode of transport to the hospital/facility; allow coded value with optional text
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-mode-transport](Observation-rs-example-observation-mode-transport.md), [Observation/rs-minimum-example-obs-mode-transport-other](Observation-rs-minimum-example-obs-mode-transport-other.md) and [Observation/rs-minimum-example-observation-mode-transport](Observation-rs-minimum-example-observation-mode-transport.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsModeTransportOther](Observation-RSMinimumExampleObsModeTransportOther.md), [Observation/RSMinimumExampleObservationModeTransport](Observation-RSMinimumExampleObservationModeTransport.md) and [Observation/rs-example-observation-mode-transport](Observation-rs-example-observation-mode-transport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-mode-of-transport)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "name" : "RSObsModeOfTransport",
   "title" : "RS Observation - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

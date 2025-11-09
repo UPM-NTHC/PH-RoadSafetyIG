@@ -17,7 +17,7 @@ Workflow tracking for report receipt, durations of delay, and sources of delays.
 **Usages:**
 
 * Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
-* Examples for this Profile: [Task/rs-example-task](Task-rs-example-task.md) and [Task/rs-minimum-example-task-delays](Task-rs-minimum-example-task-delays.md)
+* Examples for this Profile: [Task/RSMinimumExampleTaskDelays](Task-RSMinimumExampleTaskDelays.md) and [Task/rs-example-task](Task-rs-example-task.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-task)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-task.csv), [Excel
   "name" : "RSTask",
   "title" : "RS Task",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

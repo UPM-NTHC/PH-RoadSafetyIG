@@ -17,7 +17,7 @@ Current medications as codeable concepts or references where available.
 **Usages:**
 
 * Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
-* Examples for this Profile: [MedicationStatement/rs-example-medication-statement](MedicationStatement-rs-example-medication-statement.md) and [MedicationStatement/rs-minimum-example-medication](MedicationStatement-rs-minimum-example-medication.md)
+* Examples for this Profile: [MedicationStatement/RSMinimumExampleMedication](MedicationStatement-RSMinimumExampleMedication.md) and [MedicationStatement/rs-example-medication-statement](MedicationStatement-rs-example-medication-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-medication-statement)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
   "name" : "RSMedicationStatement",
   "title" : "RS MedicationStatement",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

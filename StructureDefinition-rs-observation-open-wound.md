@@ -16,7 +16,7 @@ Open wound present; with site and details. Capture mechanism/type in a structure
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-open-wound](Observation-rs-example-observation-open-wound.md) and [Observation/rs-minimum-example-obs-open-wound](Observation-rs-minimum-example-obs-open-wound.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsOpenWound](Observation-RSMinimumExampleObsOpenWound.md) and [Observation/rs-example-observation-open-wound](Observation-rs-example-observation-open-wound.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-open-wound)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-open-
   "name" : "RSObsOpenWound",
   "title" : "RS Observation - Open Wound",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -16,7 +16,7 @@ Avulsion present; with optional site and details.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-avulsion](Observation-rs-example-observation-avulsion.md) and [Observation/rs-minimum-example-obs-avulsion](Observation-rs-minimum-example-obs-avulsion.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsAvulsion](Observation-RSMinimumExampleObsAvulsion.md) and [Observation/rs-example-observation-avulsion](Observation-rs-example-observation-avulsion.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-avulsion)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-avuls
   "name" : "RSObsAvulsion",
   "title" : "RS Observation - Avulsion",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -16,7 +16,7 @@ DateTimestamp patient was seen at the health facility.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-injury-datetime](Observation-rs-example-observation-injury-datetime.md) and [Observation/rs-minimum-example-observation-injury-datetime](Observation-rs-minimum-example-observation-injury-datetime.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObservationInjuryDatetime](Observation-RSMinimumExampleObservationInjuryDatetime.md) and [Observation/rs-example-observation-injury-datetime](Observation-rs-example-observation-injury-datetime.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-injury-datetime)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-injur
   "name" : "RSObsInjuryDateTime",
   "title" : "RS Observation - Date/Time of Injury",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

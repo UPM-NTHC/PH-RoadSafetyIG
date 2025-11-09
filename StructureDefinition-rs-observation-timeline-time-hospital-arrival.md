@@ -16,7 +16,7 @@ Time patient arrived at hospital/facility.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-minimum-example-obs-timeline-time-hospital-arrival](Observation-rs-minimum-example-obs-timeline-time-hospital-arrival.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsTimelineTimeHospitalArrival](Observation-RSMinimumExampleObsTimelineTimeHospitalArrival.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-timeline-time-hospital-arrival)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineTimeHospitalArrival",
   "title" : "RS Observation - Timeline Time Hospital Arrival",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

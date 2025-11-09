@@ -16,7 +16,7 @@ Status upon reaching facility/hospital.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-status-on-arrival](Observation-rs-example-observation-status-on-arrival.md), [Observation/rs-minimum-example-disposition](Observation-rs-minimum-example-disposition.md) and [Observation/rs-minimum-example-obs-disposition-others](Observation-rs-minimum-example-obs-disposition-others.md)
+* Examples for this Profile: [Observation/RSMinimumExampleDisposition](Observation-RSMinimumExampleDisposition.md), [Observation/RSMinimumExampleObsDispositionOthers](Observation-RSMinimumExampleObsDispositionOthers.md) and [Observation/rs-example-observation-status-on-arrival](Observation-rs-example-observation-status-on-arrival.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-status-on-arrival)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-statu
   "name" : "RSObsStatusOnArrival",
   "title" : "RS Observation - Status on Arrival",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

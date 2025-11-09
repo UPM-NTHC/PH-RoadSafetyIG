@@ -16,7 +16,7 @@ Body temperature.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-body-temperature](Observation-rs-example-observation-body-temperature.md) and [Observation/rs-minimum-example-obs-temp](Observation-rs-minimum-example-obs-temp.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsTemp](Observation-RSMinimumExampleObsTemp.md) and [Observation/rs-example-observation-body-temperature](Observation-rs-example-observation-body-temperature.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-body-temperature)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-body-
   "name" : "RSObsBodyTemperature",
   "title" : "RS Observation - Body Temperature",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

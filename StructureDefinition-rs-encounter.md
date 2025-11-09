@@ -18,7 +18,7 @@ Encounter for EMS run report / facility submission context. Captures incident nu
 
 * Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
 * Refer to this Profile: [RS AllergyIntolerance](StructureDefinition-rs-allergy-intolerance.md), [RS Condition](StructureDefinition-rs-condition.md), [RS DocumentReference (Evidence)](StructureDefinition-rs-document-reference.md), [RS Observation](StructureDefinition-rs-observation.md)...Show 2 more,[RS Procedure](StructureDefinition-rs-procedure.md)and[RS ServiceRequest](StructureDefinition-rs-service-request.md)
-* Examples for this Profile: [Encounter/rs-example-encounter](Encounter-rs-example-encounter.md) and [Encounter/rs-minimum-example-encounter](Encounter-rs-minimum-example-encounter.md)
+* Examples for this Profile: [Encounter/RSMinimumExampleEncounter](Encounter-RSMinimumExampleEncounter.md) and [Encounter/rs-example-encounter](Encounter-rs-example-encounter.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-encounter)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

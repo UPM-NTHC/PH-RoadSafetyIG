@@ -16,7 +16,7 @@ Enter the initial impression on the patient’s condition.
 
 **Usages:**
 
-* Examples for this Profile: [Condition/rs-minimum-example-condition-initial](Condition-rs-minimum-example-condition-initial.md)
+* Examples for this Profile: [Condition/RSMinimumExampleConditionInitial](Condition-RSMinimumExampleConditionInitial.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-condition-initial-impression)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-initial
   "name" : "RSConditionInitialImpression",
   "title" : "RS Condition — Initial Impression",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

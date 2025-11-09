@@ -16,7 +16,7 @@ Flag indicating burns as external cause.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-nature-burns](Observation-rs-example-observation-nature-burns.md) and [Observation/rs-minimum-example-obs-nature-burns](Observation-rs-minimum-example-obs-nature-burns.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsNatureBurns](Observation-RSMinimumExampleObsNatureBurns.md) and [Observation/rs-example-observation-nature-burns](Observation-rs-example-observation-nature-burns.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-nature-burns)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-natur
   "name" : "RSObsNatureBurns",
   "title" : "RS Observation - External Cause: Burns",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

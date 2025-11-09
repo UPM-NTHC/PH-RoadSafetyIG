@@ -16,7 +16,7 @@ Collision type (Angle, Head-on, Rear end, Side swipe, etc.).
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-collision-type](Observation-rs-example-observation-collision-type.md) and [Observation/rs-minimum-example-obs-collision-type](Observation-rs-minimum-example-obs-collision-type.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsCollisionType](Observation-RSMinimumExampleObsCollisionType.md) and [Observation/rs-example-observation-collision-type](Observation-rs-example-observation-collision-type.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-collision-type)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-colli
   "name" : "RSObsCollisionType",
   "title" : "RS Observation - Collision Type",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -16,7 +16,7 @@ Respiratory rate in breaths/min.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-respiratory-rate](Observation-rs-example-observation-respiratory-rate.md) and [Observation/rs-minimum-example-obs-resp](Observation-rs-minimum-example-obs-resp.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsResp](Observation-RSMinimumExampleObsResp.md) and [Observation/rs-example-observation-respiratory-rate](Observation-rs-example-observation-respiratory-rate.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-respiratory-rate)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "name" : "RSObsRespiratoryRate",
   "title" : "RS Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

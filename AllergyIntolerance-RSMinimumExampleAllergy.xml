@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="RSMinimumExampleAllergy"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance RSMinimumExampleAllergy</b></p><a name="RSMinimumExampleAllergy"> </a><a name="hcRSMinimumExampleAllergy"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-allergy-intolerance.html">RS AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title="Codes:">Peanuts</span></p><p><b>patient</b>: <a href="Bundle-RSMinimumExampleBundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="food"/>
+  <criticality value="low"/>
+  <code>
+    <text value="Peanuts"/>
+  </code>
+  <patient>
+    <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+  </patient>
+</AllergyIntolerance>

@@ -16,7 +16,7 @@ Blood pressure using component entries for systolic/diastolic.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-blood-pressure](Observation-rs-example-observation-blood-pressure.md) and [Observation/rs-minimum-example-obs-bp](Observation-rs-minimum-example-obs-bp.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsBp](Observation-RSMinimumExampleObsBp.md) and [Observation/rs-example-observation-blood-pressure](Observation-rs-example-observation-blood-pressure.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-blood-pressure)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-blood
   "name" : "RSObsBloodPressure",
   "title" : "RS Observation - Blood Pressure",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

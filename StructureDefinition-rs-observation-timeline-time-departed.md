@@ -16,7 +16,7 @@ Time unit/personnel departed scene.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-minimum-example-obs-timeline-time-departed](Observation-rs-minimum-example-obs-timeline-time-departed.md)
+* Examples for this Profile: [Observation/RSMinimumExampleObsTimelineTimeDeparted](Observation-RSMinimumExampleObsTimelineTimeDeparted.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-timeline-time-departed)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineTimeDeparted",
   "title" : "RS Observation - Timeline Time Departed",
   "status" : "draft",
-  "date" : "2025-11-09T07:15:59+00:00",
+  "date" : "2025-11-09T10:56:11+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
