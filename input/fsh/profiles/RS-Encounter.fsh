@@ -9,6 +9,15 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * class 1..1 MS
 * class ^short = "Encounter class/type"
 * class from SILPH-TypeofPatientVS (extensible)
+/*
+Warning: Terminology_TX_NoValid_13: The Coding provided 
+(http://loinc.org#LA10268-3) was not found in the value set 
+'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this 
+value set unless it has no suitable code (note that the
+validator cannot judge what is suitable).  (error message = 
+Unknown code 'http://loinc.org#LA10268-3' for in-memory 
+expansion of ValueSet 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode')
+*/
 * subject 1..1 MS
 * subject ^short = "Patient subject"
 * subject ^comment = "Reference constrained to the RS Patient profile (`RSPatient`)."

@@ -30,6 +30,15 @@ Title: "Minimum Data Set Encounter"
 Description: "Encounter example with minimum required fields for Minimum Data Set."
 * status = #finished
 * class = http://loinc.org#LA10268-3 "ER"
+/*
+Warning: Terminology_TX_NoValid_13: The Coding provided 
+(http://loinc.org#LA10268-3) was not found in the value set 
+'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this 
+value set unless it has no suitable code (note that the
+validator cannot judge what is suitable).  (error message = 
+Unknown code 'http://loinc.org#LA10268-3' for in-memory 
+expansion of ValueSet 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode')
+*/
 * subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * period.start = "2025-11-08T14:30:00+08:00"
 * period.end = "2025-11-08T16:45:00+08:00"
