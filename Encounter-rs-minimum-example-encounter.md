@@ -14,7 +14,7 @@ Profile: [RS Encounter](StructureDefinition-rs-encounter.md)
 
 **class**: [LOINC: LA10268-3](https://loinc.org/LA10268-3) (ER)
 
-**subject**: [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-minimum-example-patient.md)
+**subject**: [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Bundle-rs-minimum-example-bundle.md#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001)
 
 **period**: 2025-11-08 14:30:00+0800 --> 2025-11-08 16:45:00+0800
 
@@ -48,7 +48,7 @@ Profile: [RS Encounter](StructureDefinition-rs-encounter.md)
     "display" : "ER"
   },
   "subject" : {
-    "reference" : "Patient/rs-minimum-example-patient"
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
   },
   "period" : {
     "start" : "2025-11-08T14:30:00+08:00",

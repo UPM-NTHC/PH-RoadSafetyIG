@@ -6,7 +6,7 @@
     <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition rs-minimum-example-condition-final</b></p><a name="rs-minimum-example-condition-final"> </a><a name="hcrs-minimum-example-condition-final"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-condition-final-diagnosis.html">RS Condition — Final Diagnosis</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 29718003}">Closed fracture of shaft of femur (disorder)</span></p><p><b>subject</b>: <a href="Patient-rs-minimum-example-patient.html">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Encounter-rs-minimum-example-encounter.html">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>recordedDate</b>: 2025-11-08 16:45:00+0800</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition rs-minimum-example-condition-final</b></p><a name="rs-minimum-example-condition-final"> </a><a name="hcrs-minimum-example-condition-final"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-condition-final-diagnosis.html">RS Condition — Final Diagnosis</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 29718003}">Closed fracture of shaft of femur (disorder)</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>recordedDate</b>: 2025-11-08 16:45:00+0800</p></div>
   </text>
   <clinicalStatus>
     <coding>
@@ -29,10 +29,10 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/rs-minimum-example-patient"/>
+    <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
   </subject>
   <encounter>
-    <reference value="Encounter/rs-minimum-example-encounter"/>
+    <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"/>
   </encounter>
   <recordedDate value="2025-11-08T16:45:00+08:00"/>
 </Condition>

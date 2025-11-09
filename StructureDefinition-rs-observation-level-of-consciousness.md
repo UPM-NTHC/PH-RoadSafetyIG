@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-level-of-consciousness | *Version*:0.3.0 |
-| Draft as of 2025-11-08 | *Computable Name*:RSObsLevelOfConsciousness |
+| Draft as of 2025-11-09 | *Computable Name*:RSObsLevelOfConsciousness |
 
  
 Level of consciousness (e.g., AVPU). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-level
   "name" : "RSObsLevelOfConsciousness",
   "title" : "RS Observation - Level of Consciousness (AVPU)",
   "status" : "draft",
-  "date" : "2025-11-08T13:50:02+00:00",
+  "date" : "2025-11-09T01:35:45+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

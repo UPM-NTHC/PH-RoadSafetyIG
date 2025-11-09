@@ -14,9 +14,9 @@ Profile: [RS Condition — Final Diagnosis](StructureDefinition-rs-condition-fin
 
 **code**: Closed fracture of shaft of femur (disorder)
 
-**subject**: [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-minimum-example-patient.md)
+**subject**: [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Bundle-rs-minimum-example-bundle.md#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001)
 
-**encounter**: [Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --> 2025-11-08 16:45:00+0800](Encounter-rs-minimum-example-encounter.md)
+**encounter**: [Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --> 2025-11-08 16:45:00+0800](Bundle-rs-minimum-example-bundle.md#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002)
 
 **recordedDate**: 2025-11-08 16:45:00+0800
 
@@ -60,10 +60,10 @@ Profile: [RS Condition — Final Diagnosis](StructureDefinition-rs-condition-fin
     ]
   },
   "subject" : {
-    "reference" : "Patient/rs-minimum-example-patient"
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
   },
   "encounter" : {
-    "reference" : "Encounter/rs-minimum-example-encounter"
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
   },
   "recordedDate" : "2025-11-08T16:45:00+08:00"
 }

@@ -12,9 +12,9 @@ Profile: [RS Observation - Status on Arrival](StructureDefinition-rs-observation
 
 **code**: Patient status finding (finding)
 
-**subject**: [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Patient-rs-minimum-example-patient.md)
+**subject**: [Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01](Bundle-rs-minimum-example-bundle.md#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001)
 
-**encounter**: [Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --> 2025-11-08 16:45:00+0800](Encounter-rs-minimum-example-encounter.md)
+**encounter**: [Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --> 2025-11-08 16:45:00+0800](Bundle-rs-minimum-example-bundle.md#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002)
 
 **effective**: 2025-11-08 16:45:00+0800
 
@@ -45,10 +45,10 @@ Profile: [RS Observation - Status on Arrival](StructureDefinition-rs-observation
     ]
   },
   "subject" : {
-    "reference" : "Patient/rs-minimum-example-patient"
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
   },
   "encounter" : {
-    "reference" : "Encounter/rs-minimum-example-encounter"
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
   },
   "effectiveDateTime" : "2025-11-08T16:45:00+08:00",
   "valueCodeableConcept" : {

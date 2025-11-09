@@ -18,7 +18,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter rs-minimum-example-encounter</b></p><a name=\"rs-minimum-example-encounter\"> </a><a name=\"hcrs-minimum-example-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-encounter.html\">RS Encounter</a></p></div><p><b>identifier</b>: <code>http://doh.incident.system/</code>/INC-2025-0102, <code>http://doh.hospitalno.system/</code>/HCN-2025-1120</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"https://loinc.org/LA10268-3\">LOINC: LA10268-3</a> (ER)</p><p><b>subject</b>: <a href=\"Patient-rs-minimum-example-patient.html\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>period</b>: 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter rs-minimum-example-encounter</b></p><a name=\"rs-minimum-example-encounter\"> </a><a name=\"hcrs-minimum-example-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-encounter.html\">RS Encounter</a></p></div><p><b>identifier</b>: <code>http://doh.incident.system/</code>/INC-2025-0102, <code>http://doh.hospitalno.system/</code>/HCN-2025-1120</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"https://loinc.org/LA10268-3\">LOINC: LA10268-3</a> (ER)</p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>period</b>: 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
      fhir:system [
@@ -44,8 +44,8 @@
      fhir:display [ fhir:v "ER" ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Patient/rs-minimum-example-patient> ;
-     fhir:reference [ fhir:v "Patient/rs-minimum-example-patient" ]
+     fhir:l <urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001> ;
+     fhir:reference [ fhir:v "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001" ]
   ] ; # 
   fhir:period [
      fhir:start [ fhir:v "2025-11-08T14:30:00+08:00"^^xsd:dateTime ] ;
