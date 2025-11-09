@@ -137,7 +137,7 @@ Description: "Patient outcome for minimum data set."
 * code = $SCT#418138009 "Patient condition finding (finding)"
 * valueCodeableConcept = $SCT#268910001 "Improved"
 
-Instance: rs-minimum-example-observation-disposition
+Instance: rs-minimum-example-disposition
 InstanceOf: RSObsStatusOnArrival
 Usage: #example
 Title: "Minimum Data Set Disposition"
@@ -149,6 +149,120 @@ Description: "Patient disposition for minimum data set."
 * effectiveDateTime = "2025-11-08T16:45:00+08:00"
 * valueCodeableConcept = $SCT#19712007 "Transferred to another facility/hospital"
 
+// New Instances for Minimum Data Set
+
+Instance: rs-minimum-example-allergy
+InstanceOf: RSAllergyIntolerance
+Usage: #example
+Title: "Minimum Data Set Known Allergies"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* type = #allergy
+* category = #food
+* criticality = #low
+* code.text = "Peanuts"
+* patient.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+
+Instance: rs-minimum-example-medication
+InstanceOf: RSMedicationStatement
+Usage: #example
+Title: "Minimum Data Set Current Medication"
+* status = #active
+* medicationCodeableConcept.text = "Aspirin"
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+
+Instance: rs-minimum-example-task-delays
+InstanceOf: RSTask
+Usage: #example
+Title: "Minimum Data Set Sources of Delays"
+* status = #completed
+* intent = http://hl7.org/fhir/request-intent#order
+* description = "Delay in transport due to heavy traffic"
+* for.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001" // Reference to Patient
+
+Instance: rs-minimum-example-location
+InstanceOf: RSIncidentLocation
+Usage: #example
+Title: "Minimum Data Set Incident Location"
+* description = "Incident at the corner of EDSA and Ayala Avenue"
+* address.line = "EDSA corner Ayala Avenue"
+* address.city = "Makati"
+* address.country = "PH"
+
+Instance: rs-minimum-example-doc-ref
+InstanceOf: RSDocumentReference
+Usage: #example
+Title: "Minimum Data Set CCTV Video"
+* status = #current
+* docStatus = #final
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* content.attachment.url = "http://example.com/cctv.mp4"
+* content.attachment.contentType = #video/mp4
+
+Instance: rs-minimum-example-obs-bp
+InstanceOf: RSObsBloodPressure
+Usage: #example
+Title: "Minimum Data Set BP"
+* status = #final
+* code = $LNC#85354-9 "Blood pressure panel with all children optional"
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+* effectiveDateTime = "2025-11-08T14:35:00+08:00"
+* component[systolic].code = $SCT#271649006 "Systolic blood pressure (observable entity)"
+* component[systolic].valueQuantity = 120 'mm[Hg]'
+* component[diastolic].code = $SCT#271650006 "Diastolic blood pressure (observable entity)"
+* component[diastolic].valueQuantity = 80 'mm[Hg]'
+
+Instance: rs-minimum-example-obs-pulse
+InstanceOf: RSObsPulseRate
+Usage: #example
+Title: "Minimum Data Set Pulse"
+* status = #final
+* code = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+* effectiveDateTime = "2025-11-08T14:35:00+08:00"
+* valueQuantity = 88 '/min'
+
+Instance: rs-minimum-example-obs-resp
+InstanceOf: RSObsRespiratoryRate
+Usage: #example
+Title: "Minimum Data Set Respiratory Rate"
+* status = #final
+* code = $SCT#86290005 "Respiratory rate (observable entity)"
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+* effectiveDateTime = "2025-11-08T14:35:00+08:00"
+* valueQuantity = 18 '/min'
+
+Instance: rs-minimum-example-obs-temp
+InstanceOf: RSObsBodyTemperature
+Usage: #example
+Title: "Minimum Data Set Temperature"
+* status = #final
+* code = $SCT#386725007 "Body temperature (observable entity)"
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+* effectiveDateTime = "2025-11-08T14:35:00+08:00"
+* valueQuantity = 37 'Cel'
+
+Instance: rs-minimum-example-obs-gcs
+InstanceOf: RSObsGCS
+Usage: #example
+Title: "Minimum Data Set GCS"
+* status = #final
+* code = $SCT#248241002 "Glasgow coma score (observable entity)"
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+* effectiveDateTime = "2025-11-08T14:35:00+08:00"
+* component[gcs-eyes].valueCodeableConcept = $LNC#LA6562-8 "4"
+* component[=].code = $SCT#281395000 "Glasgow Coma Score eye opening subscore (observable entity)"
+* component[gcs-verbal].valueCodeableConcept = $LNC#LA6560-2 "5"
+* component[=].code = $SCT#281397008 "Glasgow Coma Scale verbal response subscore (observable entity)"
+* component[gcs-motor].valueCodeableConcept = $LNC#LA6558-6 "6"
+* component[=].code = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)"
+* valueInteger = 15
+
 Instance: rs-minimum-example-bundle
 InstanceOf: RSBundleMinimum
 Usage: #example
@@ -159,29 +273,71 @@ Description: "Example bundle containing only the minimum required elements from 
 * type = #transaction
 * timestamp = "2025-11-08T17:00:00+08:00"
 * entry[patient].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
-* entry[patient].resource = rs-minimum-example-patient
-* entry[patient].request.method = #POST
-* entry[patient].request.url = "Patient"
+* entry[=].resource = rs-minimum-example-patient
+* entry[=].request.method = #POST
+* entry[=].request.url = "Patient"
 * entry[encounter].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
-* entry[encounter].resource = rs-minimum-example-encounter
-* entry[encounter].request.method = #POST
-* entry[encounter].request.url = "Encounter"
-* entry[observationInjuryDateTime].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0007"
-* entry[observationInjuryDateTime].resource = rs-minimum-example-observation-injury-datetime
-* entry[observationInjuryDateTime].request.method = #POST
-* entry[observationInjuryDateTime].request.url = "Observation"
-* entry[observationTransportAccident].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0008"
-* entry[observationTransportAccident].resource = rs-minimum-example-observation-transport-accident
-* entry[observationTransportAccident].request.method = #POST
-* entry[observationTransportAccident].request.url = "Observation"
-* entry[observationModeOfTransport].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0009"
-* entry[observationModeOfTransport].resource = rs-minimum-example-observation-mode-transport
-* entry[observationModeOfTransport].request.method = #POST
-* entry[observationModeOfTransport].request.url = "Observation"
-* entry[observationOutcome].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0010"
-* entry[observationOutcome].resource = rs-minimum-example-observation-outcome
-* entry[observationOutcome].request.method = #POST
-* entry[observationOutcome].request.url = "Observation"
+* entry[=].resource = rs-minimum-example-encounter
+* entry[=].request.method = #POST
+* entry[=].request.url = "Encounter"
+// Note: Received By (Practitioner) profile not available.
+// Note: Vehicles Involved (Device) profile not available.
+* entry[allergyIntolerance].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0011"
+* entry[=].resource = rs-minimum-example-allergy
+* entry[=].request.method = #POST
+* entry[=].request.url = "AllergyIntolerance"
+* entry[medicationStatement].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0012"
+* entry[=].resource = rs-minimum-example-medication
+* entry[=].request.method = #POST
+* entry[=].request.url = "MedicationStatement"
+* entry[task].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0013"
+* entry[=].resource = rs-minimum-example-task-delays
+* entry[=].request.method = #POST
+* entry[=].request.url = "Task"
+* entry[location].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0014"
+* entry[=].resource = rs-minimum-example-location
+* entry[=].request.method = #POST
+* entry[=].request.url = "Location"
+* entry[documentReference].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0015"
+* entry[=].resource = rs-minimum-example-doc-ref
+* entry[=].request.method = #POST
+* entry[=].request.url = "DocumentReference"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0007"
+* entry[=].resource = rs-minimum-example-observation-injury-datetime
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0008"
+* entry[=].resource = rs-minimum-example-observation-transport-accident
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0009"
+* entry[=].resource = rs-minimum-example-observation-mode-transport
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0010"
+* entry[=].resource = rs-minimum-example-observation-outcome
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0016"
+* entry[=].resource = rs-minimum-example-obs-bp
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0017"
+* entry[=].resource = rs-minimum-example-obs-pulse
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0018"
+* entry[=].resource = rs-minimum-example-obs-resp
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0019"
+* entry[=].resource = rs-minimum-example-obs-temp
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+* entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0020"
+* entry[=].resource = rs-minimum-example-obs-gcs
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0003"
 * entry[=].resource = rs-minimum-example-condition-initial
 * entry[=].request.method = #POST

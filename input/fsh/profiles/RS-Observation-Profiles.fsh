@@ -240,10 +240,9 @@ Parent: RSObservation
 Id: rs-observation-transport-vehicular-accident
 Title: "RS Observation - Transport/Vehicular Accident"
 Description: "Boolean flag indicating transport/vehicular accident."
+* code = $SCT#274215009 "Transport accident (event)"
 // External Cause/s of Injury/ies: Transport /Vehicular Accident - Flag []
 * valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $SCT#274215009 "Transport accident (event)"
 
 // MDS42 (flag) ; MDS43 (specify) - External Cause: Other
 Profile: RSObsECOther
@@ -389,22 +388,19 @@ Parent: RSObservation
 Id: rs-observation-respiratory-rate
 Title: "RS Observation - Respiratory Rate"
 Description: "Respiratory rate in breaths/min."
+* code = $SCT#86290005 "Respiratory rate (observable entity)"
 * valueQuantity 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#86290005 "Respiratory rate (observable entity)"
 
 * component 0..* MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains respiratory-rhythm 0..1 and breath-sounds 0..11
-* component[respiratory-rhythm].code.coding 0..1
-* component[respiratory-rhythm].code.coding = $SCT#248582003 "Rhythm of respiration (observable entity)"
+* component[respiratory-rhythm].code = $SCT#248582003 "Rhythm of respiration (observable entity)"
 * component[respiratory-rhythm].valueCodeableConcept 1..1 MS
 * component[respiratory-rhythm].valueCodeableConcept from SILPH-RR-RhythmVS (preferred)
 
-* component[breath-sounds].code.coding 0..1
-* component[breath-sounds].code.coding = $SCT#52653008 "Respiratory sounds (observable entity)"
+* component[breath-sounds].code = $SCT#52653008 "Respiratory sounds (observable entity)"
 * component[breath-sounds].valueCodeableConcept 1..1 MS
 * component[breath-sounds].valueCodeableConcept from SILPH-RR-BreathSoundsVS (preferred)
 
@@ -414,22 +410,19 @@ Parent: RSObservation
 Id: rs-observation-pulse-rate
 Title: "RS Observation - Pulse Rate"
 Description: "Pulse/heart rate in beats/min."
+* code = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
 * valueQuantity 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
 
 * component 0..* MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains pulse-rhythm 0..1 and pulse-quality 0..1
-* component[pulse-rhythm].code.coding 0..1
-* component[pulse-rhythm].code.coding = $SCT#364095004 "Pulse rhythm (observable entity)"
+* component[pulse-rhythm].code = $SCT#364095004 "Pulse rhythm (observable entity)"
 * component[pulse-rhythm].valueCodeableConcept 1..1 MS
 * component[pulse-rhythm].valueCodeableConcept from SILPH-PR-RhythmVS (preferred)
 
-* component[pulse-quality].code.coding 0..1
-* component[pulse-quality].code.coding = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
+* component[pulse-quality].code = $SCT#78564009 "Heart rate measured at systemic artery (observable entity)"
 * component[pulse-quality].valueCodeableConcept 1..1 MS
 * component[pulse-quality].valueCodeableConcept from SILPH-PR-QualityVS (preferred)
 
@@ -440,8 +433,7 @@ Parent: RSObservation
 Id: rs-observation-blood-pressure
 Title: "RS Observation - Blood Pressure"
 Description: "Blood pressure using component entries for systolic/diastolic."
-// * code.coding 0..1
-// * code.coding = $LNC#85354-9 "Blood pressure panel with all children optional"
+* code = $LNC#85354-9 "Blood pressure panel with all children optional"
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept ^short = "Specify blood pressure components"
 * component 0..* MS
@@ -449,11 +441,9 @@ Description: "Blood pressure using component entries for systolic/diastolic."
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains systolic 0..1 and diastolic 0..1
-* component[systolic].code.coding 0..1
-* component[systolic].code.coding = $SCT#271649006 "Systolic blood pressure (observable entity)"
+* component[systolic].code = $SCT#271649006 "Systolic blood pressure (observable entity)"
 * component[systolic].valueQuantity 1..1 MS
-* component[diastolic].code.coding 0..1
-* component[diastolic].code.coding = $SCT#271650006 "Diastolic blood pressure (observable entity)"
+* component[diastolic].code = $SCT#271650006 "Diastolic blood pressure (observable entity)"
 * component[diastolic].valueQuantity 1..1 MS
 
 // MDS78 - Body Temperature
@@ -462,9 +452,8 @@ Parent: RSObservation
 Id: rs-observation-body-temperature
 Title: "RS Observation - Body Temperature"
 Description: "Body temperature."
+* code = $SCT#386725007 "Body temperature (observable entity)"
 * valueQuantity 1..1 MS
-* code.coding 0..1
-* code.coding = $SCT#386725007 "Body temperature (observable entity)"
 
 // MDS79 - Level of Consciousness (AVPU)
 Profile: RSObsLevelOfConsciousness
@@ -505,9 +494,7 @@ Parent: RSObservation
 Id: rs-observation-gcs
 Title: "RS Observation - Glasgow Coma Scale"
 Description: "GCS with components for eyes, verbal, motor; optional total score as integer."
-* valueBoolean 0..1
-* code.coding 0..1
-* code.coding = $SCT#248241002 "Glasgow coma score (observable entity)"
+* code = $SCT#248241002 "Glasgow coma score (observable entity)"
 * valueInteger 0..1 MS
 * valueInteger ^short = "Total GCS score"
 
@@ -515,22 +502,19 @@ Description: "GCS with components for eyes, verbal, motor; optional total score 
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
-* component contains gcs-eyes 0..1 and gcs-verbal 0..1 and gcs-motor 0..1 and gcs-total 0..1
+* component contains gcs-eyes 0..1 and gcs-verbal 0..1 and gcs-motor 0..1
 
-* component[gcs-eyes].code.coding 0..1
-* component[gcs-eyes].code.coding = $SCT#281395000 "Glasgow Coma Score eye opening subscore (observable entity)"
+* component[gcs-eyes].code = $SCT#281395000 "Glasgow Coma Score eye opening subscore (observable entity)"
 * component[gcs-eyes].valueCodeableConcept 1..1 MS
 * component[gcs-eyes].valueCodeableConcept from SILPH-GCSEyesVS (preferred)
 * component[gcs-eyes].valueCodeableConcept ^short = "Eye opening subscore"
 
-* component[gcs-verbal].code.coding 0..1
-* component[gcs-verbal].code.coding = $SCT#281397008 "Glasgow Coma Scale verbal response subscore (observable entity)"
+* component[gcs-verbal].code = $SCT#281397008 "Glasgow Coma Scale verbal response subscore (observable entity)"
 * component[gcs-verbal].valueCodeableConcept 1..1 MS
 * component[gcs-verbal].valueCodeableConcept from SILPH-GCSVerbalVS (preferred)
 * component[gcs-verbal].valueCodeableConcept ^short = "Verbal response subscore"
 
-* component[gcs-motor].code.coding 0..1
-* component[gcs-motor].code.coding = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)"
+* component[gcs-motor].code = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)"
 * component[gcs-motor].valueCodeableConcept 1..1 MS
 * component[gcs-motor].valueCodeableConcept from SILPH-GCSMotorVS (preferred)
 * component[gcs-motor].valueCodeableConcept ^short = "Motor response subscore"
@@ -623,11 +607,10 @@ Parent: RSObservation
 Id: rs-observation-mode-of-transport
 Title: "RS Observation - Mode of Transport to Facility"
 Description: "Mode of transport to the hospital/facility; allow coded value with optional text for 'Others'."
+* code = $LNC#74286-6 "Transport mode to hospital [NTDS]"
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.text 0..1 MS
 * valueCodeableConcept from SILPH-ModeofTransportVS (preferred)
-* code.coding 0..1
-* code.coding = $LNC#74286-6 "Transport mode to hospital [NTDS]"
 
 // MDS149 - Reported Complaint (free text)
 Profile: RSObsReportedComplaint
