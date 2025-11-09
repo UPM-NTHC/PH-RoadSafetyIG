@@ -30,7 +30,7 @@ Title: "Minimum Data Set Encounter"
 Description: "Encounter example with minimum required fields for Minimum Data Set."
 * status = #finished
 * class = http://loinc.org#LA10268-3 "ER"
-* subject = Reference(rs-minimum-example-patient)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * period.start = "2025-11-08T14:30:00+08:00"
 * period.end = "2025-11-08T16:45:00+08:00"
 * identifier[incidentNumber].system = "http://doh.incident.system/"
@@ -51,8 +51,8 @@ Description: "Initial impression for minimum data set example."
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
 // * category.coding = $SCT#148006 "Preliminary diagnosis"
 * code = $SCT#125605004 "Injury of multiple body regions (disorder)"
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * onsetDateTime = "2025-11-08T14:30:00+08:00"
 
 Instance: rs-minimum-example-condition-final
@@ -64,8 +64,8 @@ Description: "Final diagnosis for minimum data set example."
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 // * category.coding = $SCT#89100005 "Final diagnosis (discharge) (contextual qualifier) (qualifier value)"
 * code = $SCT#29718003 "Closed fracture of shaft of femur (disorder)"
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * recordedDate = "2025-11-08T16:45:00+08:00"
 
 Instance: rs-minimum-example-condition-nature-of-injury
@@ -79,8 +79,8 @@ Description: "ICD-10 Nature of Injury code for minimum data set."
 * category.coding.code = #S72.3
 * category.coding.display = "Fracture of shaft of femur"
 * code = $SCT#29718003 "Closed fracture of shaft of femur (disorder)"
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 
 Instance: rs-minimum-example-condition-external-cause
 InstanceOf: RSConditionExternalCause
@@ -93,8 +93,8 @@ Description: "ICD-10 External Cause code for minimum data set."
 * category.coding.code = #V29.9
 * category.coding.display = "Motorcycle rider injured in unspecified traffic accident"
 * code = $SCT#274215009 "Transport accident (event)"
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 
 Instance: rs-minimum-example-observation-injury-datetime
 InstanceOf: RSObsInjuryDateTime
@@ -102,8 +102,8 @@ Usage: #example
 Title: "Minimum Data Set Injury Date/Time"
 Description: "Date and time of injury for minimum data set."
 * status = #final
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * effectiveDateTime = "2025-11-08T14:15:00+08:00"
 * valueDateTime = "2025-11-08T14:15:00+08:00"
 
@@ -113,8 +113,8 @@ Usage: #example
 Title: "Minimum Data Set Transport Accident"
 Description: "Transport/vehicular accident flag for minimum data set."
 * status = #final
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * effectiveDateTime = "2025-11-08T14:15:00+08:00"
 * code = $SCT#274215009 "Transport accident (event)"
 * valueBoolean = true
@@ -125,8 +125,8 @@ Usage: #example
 Title: "Minimum Data Set Mode of Transport"
 Description: "Mode of transport to hospital for minimum data set."
 * status = #final
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * effectiveDateTime = "2025-11-08T14:30:00+08:00"
 * code = http://loinc.org#74286-6 "Transport mode to hospital [NTDS]"
 * valueCodeableConcept = $SCT#49122002 "Ambulance"
@@ -137,8 +137,8 @@ Usage: #example
 Title: "Minimum Data Set Outcome"
 Description: "Patient outcome for minimum data set."
 * status = #final
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * effectiveDateTime = "2025-11-08T16:45:00+08:00"
 * code = $SCT#418138009 "Patient condition finding (finding)"
 * valueCodeableConcept = $SCT#268910001 "Improved"
@@ -149,8 +149,8 @@ Usage: #example
 Title: "Minimum Data Set Disposition"
 Description: "Patient disposition for minimum data set."
 * status = #final
-* subject = Reference(rs-minimum-example-patient)
-* encounter = Reference(rs-minimum-example-encounter)
+* subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+* encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * code = $SCT#118223001 "Patient status finding (finding)"
 * effectiveDateTime = "2025-11-08T16:45:00+08:00"
 * valueCodeableConcept = $SCT#19712007 "Transferred to another facility/hospital"
@@ -164,10 +164,12 @@ Description: "Example bundle containing only the minimum required elements from 
 * identifier.value = "MINIMUM-20251108-001"
 * type = #transaction
 * timestamp = "2025-11-08T17:00:00+08:00"
+// * entry[patient].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * entry[patient].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * entry[patient].resource = rs-minimum-example-patient
 * entry[patient].request.method = #POST
 * entry[patient].request.url = "Patient"
+// * entry[encounter].fullUrl = "urn:uuid:rs-minimum-example-encounter"
 * entry[encounter].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * entry[encounter].resource = rs-minimum-example-encounter
 * entry[encounter].request.method = #POST
