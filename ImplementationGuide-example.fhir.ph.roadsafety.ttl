@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "PHRoadSafetyIG"] ; # 
   fhir:title [ fhir:v "DRAFT PH Road Safety Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-09T06:04:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-09T07:15:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila - National Institutes of Health - National Telehealth Center" ] ;
@@ -4942,6 +4942,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-abrasion> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-abrasion" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Abrasion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-avulsion> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-avulsion" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Avulsion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-bp> ;
          fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-bp" ]
        ] ;
@@ -5002,6 +5044,90 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-collision-type> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-collision-type" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Collision Type" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-concussion> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-concussion" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Concussion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-condition-patient> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-condition-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Condition of Patient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-contusion> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-contusion" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Contusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-contusion"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-contusion>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "MedicationStatement"
          ]
        ] ) ;
@@ -5032,6 +5158,27 @@
        ] ;
        fhir:name [ fhir:v "Minimum Data Set Disposition" ] ;
        fhir:description [ fhir:v "Patient disposition for minimum data set." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-disposition-others> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-disposition-others" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Disposition Others Specify" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival"^^xsd:anyURI ;
@@ -5102,6 +5249,27 @@
          a fhir:Canonical ;
          fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis"^^xsd:anyURI ;
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-final-diagnosis>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-fracture> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-fracture" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Fracture" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture>
        ]
      ] [
        fhir:extension ( [
@@ -5241,6 +5409,69 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-mode-transport-other> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-mode-transport-other" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Mode of Transport Other" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-multiple-injuries> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-multiple-injuries" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Multiple Injuries" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-nature-burns> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-nature-burns" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Nature Burns" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-nature-burns"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-nature-burns>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Condition"
          ]
        ] ) ;
@@ -5254,6 +5485,90 @@
          a fhir:Canonical ;
          fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-nature-of-injury"^^xsd:anyURI ;
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-nature-of-injury>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-open-wound> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-open-wound" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Open Wound" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-other-injury> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-other-injury" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Other Injury" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-other-risk-factors> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-other-risk-factors" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Other Risk Factors" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-other-vehicle> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-other-vehicle" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Other Vehicle Involved" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle>
        ]
      ] [
        fhir:extension ( [
@@ -5311,6 +5626,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-patients-vehicle> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-patients-vehicle" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Patient's Vehicle" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-position-of-patient> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-position-of-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Position of Patient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-pulse> ;
          fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-pulse" ]
        ] ;
@@ -5332,6 +5689,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-reported-complaint> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-reported-complaint" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Reported Complaint" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-minimum-example-organization> ;
+         fhir:reference [ fhir:v "Organization/rs-minimum-example-organization" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Reporting Health Facility" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-resp> ;
          fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-resp" ]
        ] ;
@@ -5340,6 +5739,27 @@
          a fhir:Canonical ;
          fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate"^^xsd:anyURI ;
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-safety-accessories> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-safety-accessories" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Safety Accessories" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories>
        ]
      ] [
        fhir:extension ( [
@@ -5396,6 +5816,132 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-timeline-date-received> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-timeline-date-received" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Timeline Date Received" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-date-received"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-date-received>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-timeline-time-departed> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-timeline-time-departed" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Timeline Time Departed" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-departed"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-departed>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-timeline-time-enroute> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-timeline-time-enroute" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Timeline Time Enroute" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-enroute"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-enroute>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-timeline-time-hospital-arrival> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-timeline-time-hospital-arrival" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Timeline Time Hospital Arrival" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-hospital-arrival"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-hospital-arrival>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-timeline-time-on-scene> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-timeline-time-on-scene" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Timeline Time On Scene" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-on-scene"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-on-scene>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-timeline-time-station-arrival> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-timeline-time-station-arrival" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Timeline Time Station Arrival" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-station-arrival"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-station-arrival>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-observation-transport-accident> ;
          fhir:reference [ fhir:v "Observation/rs-minimum-example-observation-transport-accident" ]
        ] ;
@@ -5405,6 +5951,27 @@
          a fhir:Canonical ;
          fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident"^^xsd:anyURI ;
          fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Observation/rs-minimum-example-obs-traumatic-amputation> ;
+         fhir:reference [ fhir:v "Observation/rs-minimum-example-obs-traumatic-amputation" ]
+       ] ;
+       fhir:name [ fhir:v "Minimum Data Set Traumatic Amputation" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation"^^xsd:anyURI ;
+         fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation>
        ]
      ] [
        fhir:extension ( [

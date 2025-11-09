@@ -16,7 +16,7 @@ Traumatic amputation present; with site and details.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-traumatic-amputation](Observation-rs-example-observation-traumatic-amputation.md)
+* Examples for this Profile: [Observation/rs-example-observation-traumatic-amputation](Observation-rs-example-observation-traumatic-amputation.md) and [Observation/rs-minimum-example-obs-traumatic-amputation](Observation-rs-minimum-example-obs-traumatic-amputation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-traumatic-amputation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-traum
   "name" : "RSObsTraumaticAmputation",
   "title" : "RS Observation - Traumatic Amputation",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

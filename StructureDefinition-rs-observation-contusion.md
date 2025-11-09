@@ -16,7 +16,7 @@ Contusion present; with site and details.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-contusion](Observation-rs-example-observation-contusion.md)
+* Examples for this Profile: [Observation/rs-example-observation-contusion](Observation-rs-example-observation-contusion.md) and [Observation/rs-minimum-example-obs-contusion](Observation-rs-minimum-example-obs-contusion.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-contusion)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-contu
   "name" : "RSObsContusion",
   "title" : "RS Observation - Contusion",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

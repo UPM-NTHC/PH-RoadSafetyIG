@@ -16,7 +16,7 @@ Type of vehicle used by patient; text for 'Others'.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-patients-vehicle](Observation-rs-example-observation-patients-vehicle.md)
+* Examples for this Profile: [Observation/rs-example-observation-patients-vehicle](Observation-rs-example-observation-patients-vehicle.md) and [Observation/rs-minimum-example-obs-patients-vehicle](Observation-rs-minimum-example-obs-patients-vehicle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-patients-vehicle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
   "name" : "RSObsPatientsVehicle",
   "title" : "RS Observation - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -62,7 +62,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_rs-minimum-example-encounter\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter rs-minimum-example-encounter</b></p><a name=\"rs-minimum-example-encounter\"> </a><a name=\"hcrs-minimum-example-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-encounter.html\">RS Encounter</a></p></div><p><b>identifier</b>: <code>http://doh.incident.system/</code>/INC-2025-0102, <code>http://doh.hospitalno.system/</code>/HCN-2025-1120</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"https://loinc.org/LA10268-3\">LOINC: LA10268-3</a> (ER)</p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>period</b>: 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_rs-minimum-example-encounter\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter rs-minimum-example-encounter</b></p><a name=\"rs-minimum-example-encounter\"> </a><a name=\"hcrs-minimum-example-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-encounter.html\">RS Encounter</a></p></div><p><b>identifier</b>: <code>http://doh.incident.system/</code>/INC-2025-0102, <code>http://doh.hospitalno.system/</code>/HCN-2025-1120</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"https://loinc.org/LA10268-3\">LOINC: LA10268-3</a> (ER)</p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>period</b>: 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</p><p><b>serviceProvider</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0021\">Organization Department of Health - Central Office</a></p></div>"
       },
       "identifier" : [{
         "system" : "http://doh.incident.system/",
@@ -84,6 +84,9 @@
       "period" : {
         "start" : "2025-11-08T14:30:00+08:00",
         "end" : "2025-11-08T16:45:00+08:00"
+      },
+      "serviceProvider" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0021"
       }
     },
     "request" : {
@@ -230,6 +233,36 @@
     "request" : {
       "method" : "POST",
       "url" : "DocumentReference"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0021",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "rs-minimum-example-organization",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_rs-minimum-example-organization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization rs-minimum-example-organization</b></p><a name=\"rs-minimum-example-organization\"> </a><a name=\"hcrs-minimum-example-organization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-organization.html\">RS Organization</a></p></div><p><b>name</b>: Department of Health - Central Office</p><p><b>telecom</b>: <a href=\"tel:+63-2-752-8401\">+63-2-752-8401</a></p><p><b>address</b>: San Lazaro Compound, Rizal Avenue Manila NCR 1003 PH </p></div>"
+      },
+      "name" : "Department of Health - Central Office",
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+63-2-752-8401"
+      }],
+      "address" : [{
+        "line" : ["San Lazaro Compound, Rizal Avenue"],
+        "city" : "Manila",
+        "state" : "NCR",
+        "postalCode" : "1003",
+        "country" : "PH"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Organization"
     }
   },
   {
@@ -645,6 +678,1045 @@
           }]
         }
       }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0022",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-timeline-date-received",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-date-received"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-timeline-date-received\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-timeline-date-received</b></p><a name=\"rs-minimum-example-obs-timeline-date-received\"> </a><a name=\"hcrs-minimum-example-obs-timeline-date-received\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-timeline-date-received.html\">RS Observation - Timeline Date Received</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 30976-5}\">Date received Form</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:10:00+0800</p><p><b>value</b>: 2025-11-08 14:10:00+0800</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "30976-5",
+          "display" : "Date received Form"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:10:00+08:00",
+      "valueDateTime" : "2025-11-08T14:10:00+08:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0023",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-timeline-time-enroute",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-enroute"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-timeline-time-enroute\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-timeline-time-enroute</b></p><a name=\"rs-minimum-example-obs-timeline-time-enroute\"> </a><a name=\"hcrs-minimum-example-obs-timeline-time-enroute\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-timeline-time-enroute.html\">RS Observation - Timeline Time Enroute</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405796007}\">Time of call for help (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:12:00+0800</p><p><b>value</b>: 2025-11-08 14:12:00+0800</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "405796007",
+          "display" : "Time of call for help (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:12:00+08:00",
+      "valueDateTime" : "2025-11-08T14:12:00+08:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0024",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-timeline-time-on-scene",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-on-scene"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-timeline-time-on-scene\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-timeline-time-on-scene</b></p><a name=\"rs-minimum-example-obs-timeline-time-on-scene\"> </a><a name=\"hcrs-minimum-example-obs-timeline-time-on-scene\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-timeline-time-on-scene.html\">RS Observation - Timeline Time On Scene</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405798008}\">Time of arrival of emergency services (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:25:00+0800</p><p><b>value</b>: 2025-11-08 14:25:00+0800</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "405798008",
+          "display" : "Time of arrival of emergency services (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:25:00+08:00",
+      "valueDateTime" : "2025-11-08T14:25:00+08:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0025",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-timeline-time-departed",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-departed"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-timeline-time-departed\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-timeline-time-departed</b></p><a name=\"rs-minimum-example-obs-timeline-time-departed\"> </a><a name=\"hcrs-minimum-example-obs-timeline-time-departed\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-timeline-time-departed.html\">RS Observation - Timeline Time Departed</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69475-2}\">Responding unit left the scene with a patient [Date and time] Vehicle</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:40:00+0800</p><p><b>value</b>: 2025-11-08 14:40:00+0800</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69475-2",
+          "display" : "Responding unit left the scene with a patient [Date and time] Vehicle"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:40:00+08:00",
+      "valueDateTime" : "2025-11-08T14:40:00+08:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0026",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-timeline-time-hospital-arrival",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-hospital-arrival"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-timeline-time-hospital-arrival\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-timeline-time-hospital-arrival</b></p><a name=\"rs-minimum-example-obs-timeline-time-hospital-arrival\"> </a><a name=\"hcrs-minimum-example-obs-timeline-time-hospital-arrival\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-timeline-time-hospital-arrival.html\">RS Observation - Timeline Time Hospital Arrival</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405799000}\">Time of arrival at hospital (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 15:15:00+0800</p><p><b>value</b>: 2025-11-08 15:15:00+0800</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "405799000",
+          "display" : "Time of arrival at hospital (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T15:15:00+08:00",
+      "valueDateTime" : "2025-11-08T15:15:00+08:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0027",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-timeline-time-station-arrival",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-station-arrival"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-timeline-time-station-arrival\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-timeline-time-station-arrival</b></p><a name=\"rs-minimum-example-obs-timeline-time-station-arrival\"> </a><a name=\"hcrs-minimum-example-obs-timeline-time-station-arrival\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-timeline-time-station-arrival.html\">RS Observation - Timeline Time Station Arrival</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11288-8}\">Arrival time documented</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 17:30:00+0800</p><p><b>value</b>: 2025-11-08 17:30:00+0800</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11288-8",
+          "display" : "Arrival time documented"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T17:30:00+08:00",
+      "valueDateTime" : "2025-11-08T17:30:00+08:00"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0028",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-reported-complaint",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-reported-complaint"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-reported-complaint\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-reported-complaint</b></p><a name=\"rs-minimum-example-obs-reported-complaint\"> </a><a name=\"hcrs-minimum-example-obs-reported-complaint\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-reported-complaint.html\">RS Observation - Reported Complaint</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1269489004}\">Chief complaint (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: Patient complaining of chest pain and difficulty breathing after car accident</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "1269489004",
+          "display" : "Chief complaint (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueString" : "Patient complaining of chest pain and difficulty breathing after car accident"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0029",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-mode-transport-other",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-mode-transport-other\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-mode-transport-other</b></p><a name=\"rs-minimum-example-obs-mode-transport-other\"> </a><a name=\"hcrs-minimum-example-obs-mode-transport-other\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-mode-of-transport.html\">RS Observation - Mode of Transport to Facility</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 74286-6}\">Transport mode to hospital [NTDS]</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:30:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 420220002}\">Private vehicle</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "74286-6",
+          "display" : "Transport mode to hospital [NTDS]"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:30:00+08:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "420220002",
+          "display" : "Private vehicle"
+        }],
+        "text" : "Private vehicle"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0030",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-condition-patient",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-condition-of-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-condition-patient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-condition-patient</b></p><a name=\"rs-minimum-example-obs-condition-patient\"> </a><a name=\"hcrs-minimum-example-obs-condition-patient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-condition-of-patient.html\">RS Observation - Condition of Patient</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 12386002}\">Patient status determination (procedure)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: <span title=\"Codes:\">Critical condition</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "12386002",
+          "display" : "Patient status determination (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueCodeableConcept" : {
+        "text" : "Critical condition"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0031",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-multiple-injuries",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-multiple-injuries"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-multiple-injuries\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-multiple-injuries</b></p><a name=\"rs-minimum-example-obs-multiple-injuries\"> </a><a name=\"hcrs-minimum-example-obs-multiple-injuries\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-multiple-injuries.html\">RS Observation - Multiple Injuries?</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 262519004}\">Multiple injuries (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: true</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "262519004",
+          "display" : "Multiple injuries (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : true
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0032",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-abrasion",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-abrasion"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-abrasion\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-abrasion</b></p><a name=\"rs-minimum-example-obs-abrasion\"> </a><a name=\"hcrs-minimum-example-obs-abrasion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-abrasion.html\">RS Observation - Abrasion</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399963005}\">Abrasion (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 362046005}\">Left upper limb</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "399963005",
+          "display" : "Abrasion (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : true,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "362046005",
+          "display" : "Left upper limb"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0033",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-avulsion",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-avulsion"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-avulsion\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-avulsion</b></p><a name=\"rs-minimum-example-obs-avulsion\"> </a><a name=\"hcrs-minimum-example-obs-avulsion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-avulsion.html\">RS Observation - Avulsion</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 284554003}\">Avulsion - injury (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 362045009}\">Right upper limb</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "284554003",
+          "display" : "Avulsion - injury (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : true,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "362045009",
+          "display" : "Right upper limb"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0034",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-nature-burns",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-nature-burns"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-nature-burns\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-nature-burns</b></p><a name=\"rs-minimum-example-obs-nature-burns\"> </a><a name=\"hcrs-minimum-example-obs-nature-burns\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-nature-burns.html\">RS Observation - External Cause: Burns</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 125666000}\">Burn (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: true</p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 48333001}\">Burn injury</span></td><td><span title=\"Codes:{http://snomed.info/sct 284486004}\">Second degree burns</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "125666000",
+          "display" : "Burn (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : true,
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+            "code" : "48333001",
+            "display" : "Burn injury"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+            "code" : "284486004",
+            "display" : "Superficial second degree burn (disorder)"
+          }],
+          "text" : "Second degree burns"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0035",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-concussion",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-concussion"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-concussion\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-concussion</b></p><a name=\"rs-minimum-example-obs-concussion\"> </a><a name=\"hcrs-minimum-example-obs-concussion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-concussion.html\">RS Observation - Concussion</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 110030002}\">Concussion injury of brain (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: false</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 834006}\">Head</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "110030002",
+          "display" : "Concussion injury of brain (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : false,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "834006",
+          "display" : "Head"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0036",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-contusion",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-contusion"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-contusion\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-contusion</b></p><a name=\"rs-minimum-example-obs-contusion\"> </a><a name=\"hcrs-minimum-example-obs-contusion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-contusion.html\">RS Observation - Contusion</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 125667009}\">Contusion (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 181279003}\">Entire body as a whole</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "125667009",
+          "display" : "Contusion (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : true,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "181279003",
+          "display" : "Entire body as a whole"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0037",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-fracture",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-fracture"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-fracture\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-fracture</b></p><a name=\"rs-minimum-example-obs-fracture\"> </a><a name=\"hcrs-minimum-example-obs-fracture\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-fracture.html\">RS Observation - Fracture</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 125605004}\">Fracture of bone (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 423125000}\">Closed fracture (disorder)</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 79601000}\">Lower limb structure</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "125605004",
+          "display" : "Fracture of bone (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "423125000",
+          "display" : "Closed fracture (disorder)"
+        }]
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "79601000",
+          "display" : "Lower limb structure"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0038",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-open-wound",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-open-wound"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-open-wound\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-open-wound</b></p><a name=\"rs-minimum-example-obs-open-wound\"> </a><a name=\"hcrs-minimum-example-obs-open-wound\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-open-wound.html\">RS Observation - Open Wound</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 125643001}\">Open wound (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: true</p><p><b>note</b>: </p><blockquote><div><p>Laceration from broken glass</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 4221004}\">Arm</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "125643001",
+          "display" : "Open wound (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : true,
+      "note" : [{
+        "text" : "Laceration from broken glass"
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "4221004",
+          "display" : "Arm"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0039",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-traumatic-amputation",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-traumatic-amputation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-traumatic-amputation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-traumatic-amputation</b></p><a name=\"rs-minimum-example-obs-traumatic-amputation\"> </a><a name=\"hcrs-minimum-example-obs-traumatic-amputation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-traumatic-amputation.html\">RS Observation - Traumatic Amputation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 262595009}\">Traumatic amputation (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: false</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "262595009",
+          "display" : "Traumatic amputation (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueBoolean" : false
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0040",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-other-injury",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-injury"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-other-injury\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-other-injury</b></p><a name=\"rs-minimum-example-obs-other-injury\"> </a><a name=\"hcrs-minimum-example-obs-other-injury\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-other-injury.html\">RS Observation - Other Specified Injury</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 417163006}\">Traumatic or non-traumatic injury (disorder)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: <span title=\"Codes:\">Internal bleeding</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "417163006",
+          "display" : "Traumatic or non-traumatic injury (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T14:35:00+08:00",
+      "valueCodeableConcept" : {
+        "text" : "Internal bleeding"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0041",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-collision-type",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-collision-type"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-collision-type\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-collision-type</b></p><a name=\"rs-minimum-example-obs-collision-type\"> </a><a name=\"hcrs-minimum-example-obs-collision-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-collision-type.html\">RS Observation - Collision Type</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://www.roadsafetyph.doh.gov.ph/CodeSystem COLLISIONTYPE}\">Collision type</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 15:00:00+0800</p><p><b>value</b>: <span title=\"Codes:\">Head-on collision</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "version" : "1",
+          "code" : "COLLISIONTYPE",
+          "display" : "Collision type"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T15:00:00+08:00",
+      "valueCodeableConcept" : {
+        "text" : "Head-on collision"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0042",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-other-risk-factors",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-risk-factors"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-other-risk-factors\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-other-risk-factors</b></p><a name=\"rs-minimum-example-obs-other-risk-factors\"> </a><a name=\"hcrs-minimum-example-obs-other-risk-factors\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-other-risk-factors.html\">RS Observation - Other Risk Factors</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 80943009}\">Risk factor (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 15:00:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 228380007}\">Alcohol intake</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "80943009",
+          "display" : "Risk factor (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T15:00:00+08:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "228380007",
+          "display" : "Alcohol intake (observable entity)"
+        }],
+        "text" : "Alcohol intake"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0043",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-safety-accessories",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-safety-accessories"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-safety-accessories\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-safety-accessories</b></p><a name=\"rs-minimum-example-obs-safety-accessories\"> </a><a name=\"hcrs-minimum-example-obs-safety-accessories\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-safety-accessories.html\">RS Observation - Safety Accessories</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386812007}\">Safety precautions (procedure)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 15:00:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 229214007}\">Seat belt worn</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "386812007",
+          "display" : "Safety precautions (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T15:00:00+08:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "229214007",
+          "display" : "Seat belt worn (situation)"
+        }],
+        "text" : "Seat belt worn"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0044",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-patients-vehicle",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-patients-vehicle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-patients-vehicle</b></p><a name=\"rs-minimum-example-obs-patients-vehicle\"> </a><a name=\"hcrs-minimum-example-obs-patients-vehicle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-patients-vehicle.html\">RS Observation - Patient's Vehicle</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://www.roadsafetyph.doh.gov.ph/CodeSystem PATIENTVEHICLE}\">Vehicles Involved: Patient's Vehicle</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 15:00:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 228364001}\">Motorcycle</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "version" : "1",
+          "code" : "PATIENTVEHICLE",
+          "display" : "Vehicles Involved: Patient's Vehicle"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T15:00:00+08:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "228364001",
+          "display" : "Motorcycle (physical object)"
+        }],
+        "text" : "Motorcycle"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0045",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-other-vehicle",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-other-vehicle"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-other-vehicle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-other-vehicle</b></p><a name=\"rs-minimum-example-obs-other-vehicle\"> </a><a name=\"hcrs-minimum-example-obs-other-vehicle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-other-vehicle.html\">RS Observation - Other Vehicle/Object Involved</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://www.roadsafetyph.doh.gov.ph/CodeSystem OTHERVEHICLE}\">Other Vehicle/Object Involved (for COLLISION accident ONLY)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 15:00:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 228370004}\">Automobile</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "version" : "1",
+          "code" : "OTHERVEHICLE",
+          "display" : "Other Vehicle/Object Involved (for COLLISION accident ONLY)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T15:00:00+08:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "228370004",
+          "display" : "Automobile (physical object)"
+        }],
+        "text" : "Automobile"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0046",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-position-of-patient",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-position-of-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-position-of-patient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-position-of-patient</b></p><a name=\"rs-minimum-example-obs-position-of-patient\"> </a><a name=\"hcrs-minimum-example-obs-position-of-patient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-position-of-patient.html\">RS Observation - Position of Patient</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://www.roadsafetyph.doh.gov.ph/CodeSystem PATIENTPOSITION}\">Position of Patient</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 15:00:00+0800</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 33831005}\">Driver</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.roadsafetyph.doh.gov.ph/CodeSystem",
+          "version" : "1",
+          "code" : "PATIENTPOSITION",
+          "display" : "Position of Patient"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T15:00:00+08:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "33831005",
+          "display" : "Driver of vehicle (person)"
+        }],
+        "text" : "Driver"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Observation"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0047",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "rs-minimum-example-obs-disposition-others",
+      "meta" : {
+        "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_rs-minimum-example-obs-disposition-others\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation rs-minimum-example-obs-disposition-others</b></p><a name=\"rs-minimum-example-obs-disposition-others\"> </a><a name=\"hcrs-minimum-example-obs-disposition-others\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-observation-status-on-arrival.html\">RS Observation - Status on Arrival</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 118223001}\">Patient status finding (finding)</span></p><p><b>subject</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002\">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 16:45:00+0800</p><p><b>value</b>: <span title=\"Codes:\">Discharged against medical advice</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+          "code" : "118223001",
+          "display" : "Patient status finding (finding)"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
+      },
+      "effectiveDateTime" : "2025-11-08T16:45:00+08:00",
+      "valueCodeableConcept" : {
+        "text" : "Discharged against medical advice"
+      }
     },
     "request" : {
       "method" : "POST",

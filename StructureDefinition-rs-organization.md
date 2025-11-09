@@ -17,7 +17,7 @@ Organization profile for EMS providers and receiving facilities involved in RS e
 **Usages:**
 
 * Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md), [RS HealthcareService](StructureDefinition-rs-healthcare-service.md) and [RS ServiceRequest](StructureDefinition-rs-service-request.md)
-* Examples for this Profile: [Department of Health - Central Office](Organization-rs-organization-single-ex.md)
+* Examples for this Profile: [Department of Health - Central Office](Organization-rs-minimum-example-organization.md) and [Department of Health - Central Office](Organization-rs-organization-single-ex.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-organization)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-organization.csv)
   "name" : "RSOrganization",
   "title" : "RS Organization",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

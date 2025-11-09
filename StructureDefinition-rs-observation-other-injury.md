@@ -16,7 +16,7 @@ Other specified injury present; capture type as valueCodeableConcept (text allow
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-other-injury](Observation-rs-example-observation-other-injury.md)
+* Examples for this Profile: [Observation/rs-example-observation-other-injury](Observation-rs-example-observation-other-injury.md) and [Observation/rs-minimum-example-obs-other-injury](Observation-rs-minimum-example-obs-other-injury.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-other-injury)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-other
   "name" : "RSObsOtherInjury",
   "title" : "RS Observation - Other Specified Injury",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

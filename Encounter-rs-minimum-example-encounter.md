@@ -18,6 +18,8 @@ Profile: [RS Encounter](StructureDefinition-rs-encounter.md)
 
 **period**: 2025-11-08 14:30:00+0800 --> 2025-11-08 16:45:00+0800
 
+**serviceProvider**: [Organization Department of Health - Central Office](Bundle-rs-minimum-example-bundle.md#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0021)
+
 
 
 ## Resource Content
@@ -53,6 +55,9 @@ Profile: [RS Encounter](StructureDefinition-rs-encounter.md)
   "period" : {
     "start" : "2025-11-08T14:30:00+08:00",
     "end" : "2025-11-08T16:45:00+08:00"
+  },
+  "serviceProvider" : {
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0021"
   }
 }
 

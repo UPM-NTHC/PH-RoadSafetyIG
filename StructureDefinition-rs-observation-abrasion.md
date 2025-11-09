@@ -16,7 +16,7 @@ Abrasion present; with optional site and details.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-abrasion](Observation-rs-example-observation-abrasion.md)
+* Examples for this Profile: [Observation/rs-example-observation-abrasion](Observation-rs-example-observation-abrasion.md) and [Observation/rs-minimum-example-obs-abrasion](Observation-rs-minimum-example-obs-abrasion.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-abrasion)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-abras
   "name" : "RSObsAbrasion",
   "title" : "RS Observation - Abrasion",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

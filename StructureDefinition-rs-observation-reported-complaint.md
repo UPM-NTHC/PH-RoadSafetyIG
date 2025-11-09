@@ -16,7 +16,7 @@ Free-text reported complaint. May or May not exactly be medical, could point to 
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-reported-complaint](Observation-rs-example-observation-reported-complaint.md)
+* Examples for this Profile: [Observation/rs-example-observation-reported-complaint](Observation-rs-example-observation-reported-complaint.md) and [Observation/rs-minimum-example-obs-reported-complaint](Observation-rs-minimum-example-obs-reported-complaint.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-reported-complaint)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-repor
   "name" : "RSObsReportedComplaint",
   "title" : "RS Observation - Reported Complaint",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/Organization/rs-minimum-example-organization> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rs-minimum-example-organization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization"^^xsd:anyURI ;
+       fhir:l <https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization rs-minimum-example-organization</b></p><a name=\"rs-minimum-example-organization\"> </a><a name=\"hcrs-minimum-example-organization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-organization.html\">RS Organization</a></p></div><p><b>name</b>: Department of Health - Central Office</p><p><b>telecom</b>: <a href=\"tel:+63-2-752-8401\">+63-2-752-8401</a></p><p><b>address</b>: San Lazaro Compound, Rizal Avenue Manila NCR 1003 PH </p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:name [ fhir:v "Department of Health - Central Office"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+63-2-752-8401" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "San Lazaro Compound, Rizal Avenue" ] ) ;
+     fhir:city [ fhir:v "Manila" ] ;
+     fhir:state [ fhir:v "NCR" ] ;
+     fhir:postalCode [ fhir:v "1003" ] ;
+     fhir:country [ fhir:v "PH" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

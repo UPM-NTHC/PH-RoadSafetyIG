@@ -16,7 +16,7 @@ Seat/position (driver/front passenger/rear/pedestrian); text for 'Others'.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-position-of-patient](Observation-rs-example-observation-position-of-patient.md)
+* Examples for this Profile: [Observation/rs-example-observation-position-of-patient](Observation-rs-example-observation-position-of-patient.md) and [Observation/rs-minimum-example-obs-position-of-patient](Observation-rs-minimum-example-obs-position-of-patient.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-position-of-patient)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-posit
   "name" : "RSObsPositionOfPatient",
   "title" : "RS Observation - Position of Patient",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

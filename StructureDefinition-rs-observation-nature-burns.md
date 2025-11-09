@@ -16,7 +16,7 @@ Flag indicating burns as external cause.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-nature-burns](Observation-rs-example-observation-nature-burns.md)
+* Examples for this Profile: [Observation/rs-example-observation-nature-burns](Observation-rs-example-observation-nature-burns.md) and [Observation/rs-minimum-example-obs-nature-burns](Observation-rs-minimum-example-obs-nature-burns.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-nature-burns)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-natur
   "name" : "RSObsNatureBurns",
   "title" : "RS Observation - External Cause: Burns",
   "status" : "draft",
-  "date" : "2025-11-09T06:04:07+00:00",
+  "date" : "2025-11-09T07:15:59+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,14 +120,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-natur
         "path" : "Observation"
       },
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "125666000",
-          "display" : "Burn (disorder)"
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "125666000",
+              "display" : "Burn (disorder)"
+            }
+          ]
         }
       },
       {
@@ -157,10 +160,59 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-natur
         ]
       },
       {
-        "id" : "Observation.value[x]:valueCodeableConcept",
-        "path" : "Observation.value[x]",
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "code"
+            }
+          ],
+          "rules" : "open"
+        },
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:burnType",
+        "path" : "Observation.component",
+        "sliceName" : "burnType",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Observation.component:burnType.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "48333001",
+              "display" : "Burn injury"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "Observation.component:burnType.value[x]",
+        "path" : "Observation.component.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Observation.component:burnType.value[x]:valueCodeableConcept",
+        "path" : "Observation.component.value[x]",
         "sliceName" : "valueCodeableConcept",
-        "short" : "Specify burns agent",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -175,9 +227,9 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-natur
         }
       },
       {
-        "id" : "Observation.value[x]:valueCodeableConcept.text",
-        "path" : "Observation.value[x].text",
-        "patternString" : "Burns other (specify)",
+        "id" : "Observation.component:burnType.value[x]:valueCodeableConcept.text",
+        "path" : "Observation.component.value[x].text",
+        "short" : "Specify burns - if not captured by component",
         "mustSupport" : true
       }
     ]
