@@ -16,7 +16,8 @@ Evidence and post-crash documentation linked to the incident (e.g., cause of cra
 
 **Usages:**
 
-* Examples for this Profile: [DocumentReference/rs-example-documentreference](DocumentReference-rs-example-documentreference.md)
+* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
+* Examples for this Profile: [DocumentReference/rs-example-documentreference](DocumentReference-rs-example-documentreference.md) and [DocumentReference/rs-minimum-example-doc-ref](DocumentReference-rs-minimum-example-doc-ref.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-document-reference)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
   "name" : "RSDocumentReference",
   "title" : "RS DocumentReference (Evidence)",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,10 +121,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "DocumentReference",
-        "path" : "DocumentReference"
-      },
       {
         "id" : "DocumentReference.status",
         "path" : "DocumentReference.status",

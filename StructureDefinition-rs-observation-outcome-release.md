@@ -16,7 +16,6 @@ Outcome at release from ER/OPD/RHU.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
 * Examples for this Profile: [Observation/rs-example-observation-outcome](Observation-rs-example-observation-outcome.md) and [Observation/rs-minimum-example-observation-outcome](Observation-rs-minimum-example-observation-outcome.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-outcome-release)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-outco
   "name" : "RSObsOutcome",
   "title" : "RS Observation - Outcome at Release",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +115,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-outco
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.code",
         "path" : "Observation.code",

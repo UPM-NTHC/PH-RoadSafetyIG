@@ -12,7 +12,7 @@
   <name value="PHRoadSafetyIG"/>
   <title value="DRAFT PH Road Safety Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-11-09T01:35:45+00:00"/>
+  <date value="2025-11-09T06:04:07+00:00"/>
   <publisher value="UP Manila - National Institutes of Health - National Telehealth Center"/>
   <contact>
     <name value="UP Manila - National Institutes of Health - National Telehealth Center"/>
@@ -1976,6 +1976,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/rs-minimum-example-obs-bp"/>
+      </reference>
+      <name value="Minimum Data Set BP"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -1987,10 +1997,30 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/rs-minimum-example-doc-ref"/>
+      </reference>
+      <name value="Minimum Data Set CCTV Video"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/rs-minimum-example-medication"/>
+      </reference>
+      <name value="Minimum Data Set Current Medication"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/rs-minimum-example-observation-disposition"/>
+        <reference value="Observation/rs-minimum-example-disposition"/>
       </reference>
       <name value="Minimum Data Set Disposition"/>
       <description value="Patient disposition for minimum data set."/>
@@ -2031,6 +2061,27 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/rs-minimum-example-obs-gcs"/>
+      </reference>
+      <name value="Minimum Data Set GCS"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/rs-minimum-example-location"/>
+      </reference>
+      <name value="Minimum Data Set Incident Location"/>
+      <description value="Incident at the corner of EDSA and Ayala Avenue"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -2050,6 +2101,16 @@
       <name value="Minimum Data Set Injury Date/Time"/>
       <description value="Date and time of injury for minimum data set."/>
       <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/rs-minimum-example-allergy"/>
+      </reference>
+      <name value="Minimum Data Set Known Allergies"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2094,6 +2155,47 @@
       <name value="Minimum Data Set Patient"/>
       <description value="Patient example with minimum required demographics and identifiers for Minimum Data Set."/>
       <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/rs-minimum-example-obs-pulse"/>
+      </reference>
+      <name value="Minimum Data Set Pulse"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/rs-minimum-example-obs-resp"/>
+      </reference>
+      <name value="Minimum Data Set Respiratory Rate"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/rs-minimum-example-task-delays"/>
+      </reference>
+      <name value="Minimum Data Set Sources of Delays"/>
+      <description value="Delay in transport due to heavy traffic"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/rs-minimum-example-obs-temp"/>
+      </reference>
+      <name value="Minimum Data Set Temperature"/>
+      <exampleCanonical value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

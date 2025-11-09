@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="rs-minimum-example-obs-gcs"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation rs-minimum-example-obs-gcs</b></p><a name="rs-minimum-example-obs-gcs"> </a><a name="hcrs-minimum-example-obs-gcs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-gcs.html">RS Observation - Glasgow Coma Scale</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 248241002}">Glasgow coma score (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: 15</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 281395000}">Glasgow Coma Score eye opening subscore (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6562-8}">4</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 281397008}">Glasgow Coma Scale verbal response subscore (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6560-2}">5</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 281396004}">Glasgow Coma Scale motor response subscore (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6558-6}">6</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+      <code value="248241002"/>
+      <display value="Glasgow coma score (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"/>
+  </encounter>
+  <effectiveDateTime value="2025-11-08T14:35:00+08:00"/>
+  <valueInteger value="15"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+        <code value="281395000"/>
+        <display value="Glasgow Coma Score eye opening subscore (observable entity)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6562-8"/>
+        <display value="4"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+        <code value="281397008"/>
+        <display value="Glasgow Coma Scale verbal response subscore (observable entity)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6560-2"/>
+        <display value="5"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+        <code value="281396004"/>
+        <display value="Glasgow Coma Scale motor response subscore (observable entity)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6558-6"/>
+        <display value="6"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

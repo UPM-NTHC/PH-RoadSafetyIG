@@ -92,6 +92,147 @@
     </request>
   </entry>
   <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0011"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="rs-minimum-example-allergy"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_rs-minimum-example-allergy"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance rs-minimum-example-allergy</b></p><a name="rs-minimum-example-allergy"> </a><a name="hcrs-minimum-example-allergy"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-allergy-intolerance.html">RS AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title="Codes:">Peanuts</span></p><p><b>patient</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <type value="allergy"/>
+        <category value="food"/>
+        <criticality value="low"/>
+        <code>
+          <text value="Peanuts"/>
+        </code>
+        <patient>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </patient>
+      </AllergyIntolerance>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="AllergyIntolerance"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0012"/>
+    <resource>
+      <MedicationStatement>
+        <id value="rs-minimum-example-medication"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationStatement_rs-minimum-example-medication"> </a><p class="res-header-id"><b>Generated Narrative: MedicationStatement rs-minimum-example-medication</b></p><a name="rs-minimum-example-medication"> </a><a name="hcrs-minimum-example-medication"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-medication-statement.html">RS MedicationStatement</a></p></div><p><b>status</b>: Active</p><p><b>medication</b>: <span title="Codes:">Aspirin</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p></div>
+        </text>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <text value="Aspirin"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </subject>
+      </MedicationStatement>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MedicationStatement"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0013"/>
+    <resource>
+      <Task>
+        <id value="rs-minimum-example-task-delays"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_rs-minimum-example-task-delays"> </a><p class="res-header-id"><b>Generated Narrative: Task rs-minimum-example-task-delays</b></p><a name="rs-minimum-example-task-delays"> </a><a name="hcrs-minimum-example-task-delays"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-task.html">RS Task</a></p></div><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>description</b>: Delay in transport due to heavy traffic</p><p><b>for</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p></div>
+        </text>
+        <status value="completed"/>
+        <intent value="order"/>
+        <description value="Delay in transport due to heavy traffic"/>
+        <for>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </for>
+      </Task>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Task"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0014"/>
+    <resource>
+      <Location>
+        <id value="rs-minimum-example-location"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Location_rs-minimum-example-location"> </a><p class="res-header-id"><b>Generated Narrative: Location rs-minimum-example-location</b></p><a name="rs-minimum-example-location"> </a><a name="hcrs-minimum-example-location"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-incident-location-incident.html">RS Incident Location</a></p></div><p><b>description</b>: Incident at the corner of EDSA and Ayala Avenue</p><p><b>address</b>: EDSA corner Ayala Avenue Makati PH </p></div>
+        </text>
+        <description value="Incident at the corner of EDSA and Ayala Avenue"/>
+        <address>
+          <line value="EDSA corner Ayala Avenue"/>
+          <city value="Makati"/>
+          <country value="PH"/>
+        </address>
+      </Location>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Location"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0015"/>
+    <resource>
+      <DocumentReference>
+        <id value="rs-minimum-example-doc-ref"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DocumentReference_rs-minimum-example-doc-ref"> </a><p class="res-header-id"><b>Generated Narrative: DocumentReference rs-minimum-example-doc-ref</b></p><a name="rs-minimum-example-doc-ref"> </a><a name="hcrs-minimum-example-doc-ref"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-document-reference.html">RS DocumentReference (Evidence)</a></p></div><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>video/mp4</td><td><a href="http://example.com/cctv.mp4">http://example.com/cctv.mp4</a></td></tr></table></blockquote></div>
+        </text>
+        <status value="current"/>
+        <docStatus value="final"/>
+        <subject>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </subject>
+        <content>
+          <attachment>
+            <contentType value="video/mp4"/>
+            <url value="http://example.com/cctv.mp4"/>
+          </attachment>
+        </content>
+      </DocumentReference>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="DocumentReference"/>
+    </request>
+  </entry>
+  <entry>
     <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0007"/>
     <resource>
       <Observation>
@@ -237,6 +378,272 @@
             <display value="Improved"/>
           </coding>
         </valueCodeableConcept>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0016"/>
+    <resource>
+      <Observation>
+        <id value="rs-minimum-example-obs-bp"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_rs-minimum-example-obs-bp"> </a><p class="res-header-id"><b>Generated Narrative: Observation rs-minimum-example-obs-bp</b></p><a name="rs-minimum-example-obs-bp"> </a><a name="hcrs-minimum-example-obs-bp"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-blood-pressure.html">RS Observation - Blood Pressure</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 85354-9}">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 271649006}">Systolic blood pressure (observable entity)</span></p><p><b>value</b>: 120 mm[Hg]<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 271650006}">Diastolic blood pressure (observable entity)</span></p><p><b>value</b>: 80 mm[Hg]<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"/>
+        </encounter>
+        <effectiveDateTime value="2025-11-08T14:35:00+08:00"/>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+              <code value="271649006"/>
+              <display value="Systolic blood pressure (observable entity)"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="120"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+              <code value="271650006"/>
+              <display value="Diastolic blood pressure (observable entity)"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="80"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0017"/>
+    <resource>
+      <Observation>
+        <id value="rs-minimum-example-obs-pulse"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_rs-minimum-example-obs-pulse"> </a><p class="res-header-id"><b>Generated Narrative: Observation rs-minimum-example-obs-pulse</b></p><a name="rs-minimum-example-obs-pulse"> </a><a name="hcrs-minimum-example-obs-pulse"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-pulse-rate.html">RS Observation - Pulse Rate</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 78564009}">Heart rate measured at systemic artery (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: 88 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/min = '/min')</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+            <code value="78564009"/>
+            <display value="Heart rate measured at systemic artery (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"/>
+        </encounter>
+        <effectiveDateTime value="2025-11-08T14:35:00+08:00"/>
+        <valueQuantity>
+          <value value="88"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0018"/>
+    <resource>
+      <Observation>
+        <id value="rs-minimum-example-obs-resp"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_rs-minimum-example-obs-resp"> </a><p class="res-header-id"><b>Generated Narrative: Observation rs-minimum-example-obs-resp</b></p><a name="rs-minimum-example-obs-resp"> </a><a name="hcrs-minimum-example-obs-resp"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-respiratory-rate.html">RS Observation - Respiratory Rate</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 86290005}">Respiratory rate (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: 18 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/min = '/min')</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+            <code value="86290005"/>
+            <display value="Respiratory rate (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"/>
+        </encounter>
+        <effectiveDateTime value="2025-11-08T14:35:00+08:00"/>
+        <valueQuantity>
+          <value value="18"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0019"/>
+    <resource>
+      <Observation>
+        <id value="rs-minimum-example-obs-temp"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_rs-minimum-example-obs-temp"> </a><p class="res-header-id"><b>Generated Narrative: Observation rs-minimum-example-obs-temp</b></p><a name="rs-minimum-example-obs-temp"> </a><a name="hcrs-minimum-example-obs-temp"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-body-temperature.html">RS Observation - Body Temperature</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 386725007}">Body temperature (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: 37 Cel<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+            <code value="386725007"/>
+            <display value="Body temperature (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"/>
+        </encounter>
+        <effectiveDateTime value="2025-11-08T14:35:00+08:00"/>
+        <valueQuantity>
+          <value value="37"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="Cel"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0020"/>
+    <resource>
+      <Observation>
+        <id value="rs-minimum-example-obs-gcs"/>
+        <meta>
+          <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_rs-minimum-example-obs-gcs"> </a><p class="res-header-id"><b>Generated Narrative: Observation rs-minimum-example-obs-gcs</b></p><a name="rs-minimum-example-obs-gcs"> </a><a name="hcrs-minimum-example-obs-gcs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-observation-gcs.html">RS Observation - Glasgow Coma Scale</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 248241002}">Glasgow coma score (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0002">Encounter: identifier = http://doh.incident.system/#INC-2025-0102,http://doh.hospitalno.system/#HCN-2025-1120; status = finished; class = ER (LOINC#LA10268-3); period = 2025-11-08 14:30:00+0800 --&gt; 2025-11-08 16:45:00+0800</a></p><p><b>effective</b>: 2025-11-08 14:35:00+0800</p><p><b>value</b>: 15</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 281395000}">Glasgow Coma Score eye opening subscore (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6562-8}">4</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 281397008}">Glasgow Coma Scale verbal response subscore (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6560-2}">5</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 281396004}">Glasgow Coma Scale motor response subscore (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6558-6}">6</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+            <code value="248241002"/>
+            <display value="Glasgow coma score (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"/>
+        </encounter>
+        <effectiveDateTime value="2025-11-08T14:35:00+08:00"/>
+        <valueInteger value="15"/>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+              <code value="281395000"/>
+              <display value="Glasgow Coma Score eye opening subscore (observable entity)"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="LA6562-8"/>
+              <display value="4"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+              <code value="281397008"/>
+              <display value="Glasgow Coma Scale verbal response subscore (observable entity)"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="LA6560-2"/>
+              <display value="5"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/900000000000207008/version/20241001"/>
+              <code value="281396004"/>
+              <display value="Glasgow Coma Scale motor response subscore (observable entity)"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="LA6558-6"/>
+              <display value="6"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
       </Observation>
     </resource>
     <request>

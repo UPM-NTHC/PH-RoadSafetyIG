@@ -27,7 +27,7 @@ Profile: [RS Observation - Status on Arrival](StructureDefinition-rs-observation
 ```json
 {
   "resourceType" : "Observation",
-  "id" : "rs-minimum-example-observation-disposition",
+  "id" : "rs-minimum-example-disposition",
   "meta" : {
     "profile" : [
       "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-status-on-arrival"

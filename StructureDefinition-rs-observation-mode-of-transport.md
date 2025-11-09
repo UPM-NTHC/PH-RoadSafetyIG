@@ -16,7 +16,6 @@ Mode of transport to the hospital/facility; allow coded value with optional text
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
 * Examples for this Profile: [Observation/rs-example-observation-mode-transport](Observation-rs-example-observation-mode-transport.md) and [Observation/rs-minimum-example-observation-mode-transport](Observation-rs-minimum-example-observation-mode-transport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-mode-of-transport)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "name" : "RSObsModeOfTransport",
   "title" : "RS Observation - Mode of Transport to Facility",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -117,13 +116,20 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-mode-
   "differential" : {
     "element" : [
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://loinc.org",
-          "code" : "74286-6",
-          "display" : "Transport mode to hospital [NTDS]"
+        "id" : "Observation",
+        "path" : "Observation"
+      },
+      {
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "74286-6",
+              "display" : "Transport mode to hospital [NTDS]"
+            }
+          ]
         }
       },
       {

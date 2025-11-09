@@ -16,7 +16,7 @@ Pulse/heart rate in beats/min.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-pulse-rate](Observation-rs-example-observation-pulse-rate.md)
+* Examples for this Profile: [Observation/rs-example-observation-pulse-rate](Observation-rs-example-observation-pulse-rate.md) and [Observation/rs-minimum-example-obs-pulse](Observation-rs-minimum-example-obs-pulse.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-pulse-rate)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
   "name" : "RSObsPulseRate",
   "title" : "RS Observation - Pulse Rate",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,14 +120,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
         "path" : "Observation"
       },
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "78564009",
-          "display" : "Heart rate measured at systemic artery (observable entity)"
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "78564009",
+              "display" : "Heart rate measured at systemic artery (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -180,14 +183,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
         "max" : "1"
       },
       {
-        "id" : "Observation.component:pulse-rhythm.code.coding",
-        "path" : "Observation.component.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "364095004",
-          "display" : "Pulse rhythm (observable entity)"
+        "id" : "Observation.component:pulse-rhythm.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "364095004",
+              "display" : "Pulse rhythm (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -230,14 +236,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-pulse
         "max" : "1"
       },
       {
-        "id" : "Observation.component:pulse-quality.code.coding",
-        "path" : "Observation.component.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "78564009",
-          "display" : "Heart rate measured at systemic artery (observable entity)"
+        "id" : "Observation.component:pulse-quality.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "78564009",
+              "display" : "Heart rate measured at systemic artery (observable entity)"
+            }
+          ]
         }
       },
       {

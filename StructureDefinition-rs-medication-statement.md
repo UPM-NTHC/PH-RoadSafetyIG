@@ -16,7 +16,8 @@ Current medications as codeable concepts or references where available.
 
 **Usages:**
 
-* Examples for this Profile: [MedicationStatement/rs-example-medication-statement](MedicationStatement-rs-example-medication-statement.md)
+* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
+* Examples for this Profile: [MedicationStatement/rs-example-medication-statement](MedicationStatement-rs-example-medication-statement.md) and [MedicationStatement/rs-minimum-example-medication](MedicationStatement-rs-minimum-example-medication.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-medication-statement)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
   "name" : "RSMedicationStatement",
   "title" : "RS MedicationStatement",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -105,10 +106,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-medication-statem
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "MedicationStatement",
-        "path" : "MedicationStatement"
-      },
       {
         "id" : "MedicationStatement.medication[x]",
         "path" : "MedicationStatement.medication[x]",

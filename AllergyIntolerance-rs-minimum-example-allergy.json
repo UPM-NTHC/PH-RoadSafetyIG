@@ -1,0 +1,32 @@
+{
+  "resourceType" : "AllergyIntolerance",
+  "id" : "rs-minimum-example-allergy",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance rs-minimum-example-allergy</b></p><a name=\"rs-minimum-example-allergy\"> </a><a name=\"hcrs-minimum-example-allergy\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-rs-allergy-intolerance.html\">RS AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes:\">Peanuts</span></p><p><b>patient</b>: <a href=\"Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001\">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "code" : "confirmed"
+    }]
+  },
+  "type" : "allergy",
+  "category" : ["food"],
+  "criticality" : "low",
+  "code" : {
+    "text" : "Peanuts"
+  },
+  "patient" : {
+    "reference" : "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
+  }
+}

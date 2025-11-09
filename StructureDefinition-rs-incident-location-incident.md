@@ -16,8 +16,9 @@ Location of incident; supports PH-Core address extensions and geolocation.
 
 **Usages:**
 
+* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
 * Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md) and [RS HealthcareService](StructureDefinition-rs-healthcare-service.md)
-* Examples for this Profile: [EDSA & Ayala Intersection/a> and[EDSA - Ayala Southbound](Location-rs-example-incident-location.md)
+* Examples for this Profile: [EDSA & Ayala Intersection/a>,[EDSA - Ayala Southbound](Location-rs-example-incident-location.md)and[Location/rs-minimum-example-location](Location-rs-minimum-example-location.md)
 You can also check for[usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-incident-location-incident)
 
 ### Formal Views of Profile Content
@@ -41,7 +42,7 @@ Other representations of profile:[CSV](StructureDefinition-rs-incident-location-
   "name" : "RSIncidentLocation",
   "title" : "RS Incident Location",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,10 +96,6 @@ Other representations of profile:[CSV](StructureDefinition-rs-incident-location-
   "derivation" : "constraint",
   "differential" : {
     "element" : [
-      {
-        "id" : "Location",
-        "path" : "Location"
-      },
       {
         "id" : "Location.name",
         "path" : "Location.name",

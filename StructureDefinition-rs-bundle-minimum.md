@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-minimum.cs
   "name" : "RSBundleMinimum",
   "title" : "RS Bundle — Minimum Data Set",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -172,77 +172,96 @@ Other representations of profile: [CSV](StructureDefinition-rs-bundle-minimum.cs
         ]
       },
       {
-        "id" : "Bundle.entry:observationInjuryDateTime",
+        "id" : "Bundle.entry:allergyIntolerance",
         "path" : "Bundle.entry",
-        "sliceName" : "observationInjuryDateTime",
+        "sliceName" : "allergyIntolerance",
         "min" : 0,
-        "max" : "1"
+        "max" : "*"
       },
       {
-        "id" : "Bundle.entry:observationInjuryDateTime.resource",
+        "id" : "Bundle.entry:allergyIntolerance.resource",
         "path" : "Bundle.entry.resource",
         "type" : [
           {
-            "code" : "Observation",
+            "code" : "AllergyIntolerance",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:observationTransportAccident",
+        "id" : "Bundle.entry:medicationStatement",
         "path" : "Bundle.entry",
-        "sliceName" : "observationTransportAccident",
+        "sliceName" : "medicationStatement",
         "min" : 0,
-        "max" : "1"
+        "max" : "*"
       },
       {
-        "id" : "Bundle.entry:observationTransportAccident.resource",
+        "id" : "Bundle.entry:medicationStatement.resource",
         "path" : "Bundle.entry.resource",
         "type" : [
           {
-            "code" : "Observation",
+            "code" : "MedicationStatement",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:observationModeOfTransport",
+        "id" : "Bundle.entry:task",
         "path" : "Bundle.entry",
-        "sliceName" : "observationModeOfTransport",
+        "sliceName" : "task",
         "min" : 0,
-        "max" : "1"
+        "max" : "*"
       },
       {
-        "id" : "Bundle.entry:observationModeOfTransport.resource",
+        "id" : "Bundle.entry:task.resource",
         "path" : "Bundle.entry.resource",
         "type" : [
           {
-            "code" : "Observation",
+            "code" : "Task",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-mode-of-transport"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"
             ]
           }
         ]
       },
       {
-        "id" : "Bundle.entry:observationOutcome",
+        "id" : "Bundle.entry:location",
         "path" : "Bundle.entry",
-        "sliceName" : "observationOutcome",
+        "sliceName" : "location",
         "min" : 0,
-        "max" : "1"
+        "max" : "*"
       },
       {
-        "id" : "Bundle.entry:observationOutcome.resource",
+        "id" : "Bundle.entry:location.resource",
         "path" : "Bundle.entry.resource",
         "type" : [
           {
-            "code" : "Observation",
+            "code" : "Location",
             "profile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-outcome-release"
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Bundle.entry:documentReference",
+        "path" : "Bundle.entry",
+        "sliceName" : "documentReference",
+        "min" : 0,
+        "max" : "*"
+      },
+      {
+        "id" : "Bundle.entry:documentReference.resource",
+        "path" : "Bundle.entry.resource",
+        "type" : [
+          {
+            "code" : "DocumentReference",
+            "profile" : [
+              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
             ]
           }
         ]

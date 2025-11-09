@@ -55,7 +55,7 @@ SILPH Value Set for fracture type designation (open versus closed)
   "name" : "SILPH___Fracture_Type__VS_",
   "title" : "SILPH - Fracture Type (VS)",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

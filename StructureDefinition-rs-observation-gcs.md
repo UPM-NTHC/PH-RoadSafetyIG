@@ -16,7 +16,7 @@ GCS with components for eyes, verbal, motor; optional total score as integer.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-gcs](Observation-rs-example-observation-gcs.md)
+* Examples for this Profile: [Observation/rs-example-observation-gcs](Observation-rs-example-observation-gcs.md) and [Observation/rs-minimum-example-obs-gcs](Observation-rs-minimum-example-obs-gcs.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-gcs)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
   "name" : "RSObsGCS",
   "title" : "RS Observation - Glasgow Coma Scale",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,14 +120,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "path" : "Observation"
       },
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "248241002",
-          "display" : "Glasgow coma score (observable entity)"
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "248241002",
+              "display" : "Glasgow coma score (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -143,18 +146,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
           "ordered" : false,
           "rules" : "open"
         }
-      },
-      {
-        "id" : "Observation.value[x]:valueBoolean",
-        "path" : "Observation.value[x]",
-        "sliceName" : "valueBoolean",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
       },
       {
         "id" : "Observation.value[x]:valueInteger",
@@ -192,14 +183,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "max" : "1"
       },
       {
-        "id" : "Observation.component:gcs-eyes.code.coding",
-        "path" : "Observation.component.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "281395000",
-          "display" : "Glasgow Coma Score eye opening subscore (observable entity)"
+        "id" : "Observation.component:gcs-eyes.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "281395000",
+              "display" : "Glasgow Coma Score eye opening subscore (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -243,14 +237,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "max" : "1"
       },
       {
-        "id" : "Observation.component:gcs-verbal.code.coding",
-        "path" : "Observation.component.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "281397008",
-          "display" : "Glasgow Coma Scale verbal response subscore (observable entity)"
+        "id" : "Observation.component:gcs-verbal.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "281397008",
+              "display" : "Glasgow Coma Scale verbal response subscore (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -294,14 +291,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
         "max" : "1"
       },
       {
-        "id" : "Observation.component:gcs-motor.code.coding",
-        "path" : "Observation.component.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "281396004",
-          "display" : "Glasgow Coma Scale motor response subscore (observable entity)"
+        "id" : "Observation.component:gcs-motor.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "281396004",
+              "display" : "Glasgow Coma Scale motor response subscore (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -336,13 +336,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-gcs.c
           "strength" : "preferred",
           "valueSet" : "http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-GCS-Motor"
         }
-      },
-      {
-        "id" : "Observation.component:gcs-total",
-        "path" : "Observation.component",
-        "sliceName" : "gcs-total",
-        "min" : 0,
-        "max" : "1"
       }
     ]
   }

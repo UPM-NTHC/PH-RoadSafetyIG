@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation.csv),
   "name" : "RSObservation",
   "title" : "RS Observation",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -116,6 +116,10 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation.csv),
   "derivation" : "constraint",
   "differential" : {
     "element" : [
+      {
+        "id" : "Observation",
+        "path" : "Observation"
+      },
       {
         "id" : "Observation.status",
         "path" : "Observation.status",

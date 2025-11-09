@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter-vehicle
   "name" : "RSEncounterVehicleUsed",
   "title" : "RS Encounter Vehicle Used",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

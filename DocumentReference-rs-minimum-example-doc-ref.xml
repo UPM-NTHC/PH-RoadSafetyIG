@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="rs-minimum-example-doc-ref"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference rs-minimum-example-doc-ref</b></p><a name="rs-minimum-example-doc-ref"> </a><a name="hcrs-minimum-example-doc-ref"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-rs-document-reference.html">RS DocumentReference (Evidence)</a></p></div><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>subject</b>: <a href="Bundle-rs-minimum-example-bundle.html#urn-uuid-aaaa1111-bbbb-cccc-dddd-eeeeffff0001">Thomas Niccolo Filamor Reyes (official) Male, DoB: 1990-01-01</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>video/mp4</td><td><a href="http://example.com/cctv.mp4">http://example.com/cctv.mp4</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="current"/>
+  <docStatus value="final"/>
+  <subject>
+    <reference value="urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"/>
+  </subject>
+  <content>
+    <attachment>
+      <contentType value="video/mp4"/>
+      <url value="http://example.com/cctv.mp4"/>
+    </attachment>
+  </content>
+</DocumentReference>

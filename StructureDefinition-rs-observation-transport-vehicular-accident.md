@@ -16,7 +16,6 @@ Boolean flag indicating transport/vehicular accident.
 
 **Usages:**
 
-* Use this Profile: [RS Bundle — Minimum Data Set](StructureDefinition-rs-bundle-minimum.md)
 * Examples for this Profile: [Observation/rs-example-observation-transport-accident](Observation-rs-example-observation-transport-accident.md) and [Observation/rs-minimum-example-observation-transport-accident](Observation-rs-minimum-example-observation-transport-accident.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-transport-vehicular-accident)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-trans
   "name" : "RSObsTransportVehicularAccident",
   "title" : "RS Observation - Transport/Vehicular Accident",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -117,14 +116,21 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-trans
   "differential" : {
     "element" : [
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "274215009",
-          "display" : "Transport accident (event)"
+        "id" : "Observation",
+        "path" : "Observation"
+      },
+      {
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "274215009",
+              "display" : "Transport accident (event)"
+            }
+          ]
         }
       },
       {

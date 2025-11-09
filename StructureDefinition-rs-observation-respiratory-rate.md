@@ -16,7 +16,7 @@ Respiratory rate in breaths/min.
 
 **Usages:**
 
-* Examples for this Profile: [Observation/rs-example-observation-respiratory-rate](Observation-rs-example-observation-respiratory-rate.md)
+* Examples for this Profile: [Observation/rs-example-observation-respiratory-rate](Observation-rs-example-observation-respiratory-rate.md) and [Observation/rs-minimum-example-obs-resp](Observation-rs-minimum-example-obs-resp.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-observation-respiratory-rate)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "name" : "RSObsRespiratoryRate",
   "title" : "RS Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -120,14 +120,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "path" : "Observation"
       },
       {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "86290005",
-          "display" : "Respiratory rate (observable entity)"
+        "id" : "Observation.code",
+        "path" : "Observation.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "86290005",
+              "display" : "Respiratory rate (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -180,14 +183,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "max" : "1"
       },
       {
-        "id" : "Observation.component:respiratory-rhythm.code.coding",
-        "path" : "Observation.component.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "248582003",
-          "display" : "Rhythm of respiration (observable entity)"
+        "id" : "Observation.component:respiratory-rhythm.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "248582003",
+              "display" : "Rhythm of respiration (observable entity)"
+            }
+          ]
         }
       },
       {
@@ -230,14 +236,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
         "max" : "11"
       },
       {
-        "id" : "Observation.component:breath-sounds.code.coding",
-        "path" : "Observation.component.code.coding",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct",
-          "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
-          "code" : "52653008",
-          "display" : "Respiratory sounds (observable entity)"
+        "id" : "Observation.component:breath-sounds.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
+              "code" : "52653008",
+              "display" : "Respiratory sounds (observable entity)"
+            }
+          ]
         }
       },
       {

@@ -11,7 +11,7 @@
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-11-09T01:35:45+00:00",
+  "date" : "2025-11-09T06:04:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [{
     "name" : "UP Manila - National Institutes of Health - National Telehealth Center",
@@ -2442,6 +2442,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-minimum-example-obs-bp"
+      },
+      "name" : "Minimum Data Set BP",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-blood-pressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -2454,10 +2465,32 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/rs-minimum-example-doc-ref"
+      },
+      "name" : "Minimum Data Set CCTV Video",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-document-reference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/rs-minimum-example-medication"
+      },
+      "name" : "Minimum Data Set Current Medication",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-medication-statement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/rs-minimum-example-observation-disposition"
+        "reference" : "Observation/rs-minimum-example-disposition"
       },
       "name" : "Minimum Data Set Disposition",
       "description" : "Patient disposition for minimum data set.",
@@ -2502,6 +2535,29 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-minimum-example-obs-gcs"
+      },
+      "name" : "Minimum Data Set GCS",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-gcs"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/rs-minimum-example-location"
+      },
+      "name" : "Minimum Data Set Incident Location",
+      "description" : "Incident at the corner of EDSA and Ayala Avenue",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
@@ -2522,6 +2578,17 @@
       "name" : "Minimum Data Set Injury Date/Time",
       "description" : "Date and time of injury for minimum data set.",
       "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-injury-datetime"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/rs-minimum-example-allergy"
+      },
+      "name" : "Minimum Data Set Known Allergies",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-allergy-intolerance"
     },
     {
       "extension" : [{
@@ -2570,6 +2637,51 @@
       "name" : "Minimum Data Set Patient",
       "description" : "Patient example with minimum required demographics and identifiers for Minimum Data Set.",
       "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-minimum-example-obs-pulse"
+      },
+      "name" : "Minimum Data Set Pulse",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-pulse-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-minimum-example-obs-resp"
+      },
+      "name" : "Minimum Data Set Respiratory Rate",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-respiratory-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/rs-minimum-example-task-delays"
+      },
+      "name" : "Minimum Data Set Sources of Delays",
+      "description" : "Delay in transport due to heavy traffic",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/rs-minimum-example-obs-temp"
+      },
+      "name" : "Minimum Data Set Temperature",
+      "exampleCanonical" : "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-body-temperature"
     },
     {
       "extension" : [{
