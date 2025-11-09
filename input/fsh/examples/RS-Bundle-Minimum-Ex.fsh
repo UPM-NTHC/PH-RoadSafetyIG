@@ -3,7 +3,7 @@
 
 
 
-Instance: rs-minimum-example-patient
+Instance: RSMinimumExamplePatient
 InstanceOf: RSPatient
 Usage: #example
 Title: "Minimum Data Set Patient"
@@ -25,7 +25,7 @@ Description: "Patient example with minimum required demographics and identifiers
 * address.postalCode = "1008"
 * address.country = "PH"
 
-Instance: rs-minimum-example-encounter
+Instance: RSMinimumExampleEncounter
 InstanceOf: RSEncounter
 Usage: #example
 Title: "Minimum Data Set Encounter"
@@ -50,7 +50,7 @@ expansion of ValueSet 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode')
 * identifier[hospitalCaseNo].value = "HCN-2025-1120"
 * serviceProvider.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0021" // Reference to the organization
 
-Instance: rs-minimum-example-condition-initial
+Instance: RSMinimumExampleConditionInitial
 InstanceOf: RSConditionInitialImpression
 Usage: #example
 Title: "Minimum Data Set Initial Impression"
@@ -62,7 +62,7 @@ Description: "Initial impression for minimum data set example."
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * onsetDateTime = "2025-11-08T14:30:00+08:00"
 
-Instance: rs-minimum-example-condition-final
+Instance: RSMinimumExampleConditionFinal
 InstanceOf: RSConditionFinalDiagnosis
 Usage: #example
 Title: "Minimum Data Set Final Diagnosis"
@@ -74,7 +74,7 @@ Description: "Final diagnosis for minimum data set example."
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * recordedDate = "2025-11-08T16:45:00+08:00"
 
-Instance: rs-minimum-example-condition-nature-of-injury
+Instance: RSMinimumExampleConditionNatureOfInjury
 InstanceOf: RSConditionNatureOfInjury
 Usage: #example
 Title: "Minimum Data Set Nature of Injury (ICD-10)"
@@ -88,7 +88,7 @@ Description: "ICD-10 Nature of Injury code for minimum data set."
 * subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 
-Instance: rs-minimum-example-condition-external-cause
+Instance: RSMinimumExampleConditionExternalCause
 InstanceOf: RSConditionExternalCause
 Usage: #example
 Title: "Minimum Data Set External Cause (ICD-10)"
@@ -102,7 +102,7 @@ Description: "ICD-10 External Cause code for minimum data set."
 * subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 
-Instance: rs-minimum-example-observation-injury-datetime
+Instance: RSMinimumExampleObservationInjuryDatetime
 InstanceOf: RSObsInjuryDateTime
 Usage: #example
 Title: "Minimum Data Set Injury Date/Time"
@@ -113,7 +113,7 @@ Description: "Date and time of injury for minimum data set."
 * effectiveDateTime = "2025-11-08T14:15:00+08:00"
 * valueDateTime = "2025-11-08T14:15:00+08:00"
 
-Instance: rs-minimum-example-observation-transport-accident
+Instance: RSMinimumExampleObservationTransportAccident
 InstanceOf: RSObsTransportVehicularAccident
 Usage: #example
 Title: "Minimum Data Set Transport Accident"
@@ -125,7 +125,7 @@ Description: "Transport/vehicular accident flag for minimum data set."
 * code = $SCT#274215009 "Transport accident (event)"
 * valueBoolean = true
 
-Instance: rs-minimum-example-observation-mode-transport
+Instance: RSMinimumExampleObservationModeTransport
 InstanceOf: RSObsModeOfTransport
 Usage: #example
 Title: "Minimum Data Set Mode of Transport"
@@ -137,7 +137,7 @@ Description: "Mode of transport to hospital for minimum data set."
 * code = http://loinc.org#74286-6 "Transport mode to hospital [NTDS]"
 * valueCodeableConcept = $SCT#49122002 "Ambulance"
 
-Instance: rs-minimum-example-observation-outcome
+Instance: RSMinimumExampleObservationOutcome
 InstanceOf: RSObsOutcome
 Usage: #example
 Title: "Minimum Data Set Outcome"
@@ -149,7 +149,7 @@ Description: "Patient outcome for minimum data set."
 * code = $SCT#418138009 "Patient condition finding (finding)"
 * valueCodeableConcept = $SCT#268910001 "Improved"
 
-Instance: rs-minimum-example-disposition
+Instance: RSMinimumExampleDisposition
 InstanceOf: RSObsStatusOnArrival
 Usage: #example
 Title: "Minimum Data Set Disposition"
@@ -163,7 +163,7 @@ Description: "Patient disposition for minimum data set."
 
 // New Instances for Minimum Data Set
 
-Instance: rs-minimum-example-allergy
+Instance: RSMinimumExampleAllergy
 InstanceOf: RSAllergyIntolerance
 Usage: #example
 Title: "Minimum Data Set Known Allergies"
@@ -175,7 +175,7 @@ Title: "Minimum Data Set Known Allergies"
 * code.text = "Peanuts"
 * patient.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 
-Instance: rs-minimum-example-medication
+Instance: RSMinimumExampleMedication
 InstanceOf: RSMedicationStatement
 Usage: #example
 Title: "Minimum Data Set Current Medication"
@@ -183,7 +183,7 @@ Title: "Minimum Data Set Current Medication"
 * medicationCodeableConcept.text = "Aspirin"
 * subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 
-Instance: rs-minimum-example-task-delays
+Instance: RSMinimumExampleTaskDelays
 InstanceOf: RSTask
 Usage: #example
 Title: "Minimum Data Set Sources of Delays"
@@ -192,7 +192,7 @@ Title: "Minimum Data Set Sources of Delays"
 * description = "Delay in transport due to heavy traffic"
 * for.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001" // Reference to Patient
 
-Instance: rs-minimum-example-location
+Instance: RSMinimumExampleLocation
 InstanceOf: RSIncidentLocation
 Usage: #example
 Title: "Minimum Data Set Incident Location"
@@ -201,7 +201,7 @@ Title: "Minimum Data Set Incident Location"
 * address.city = "Makati"
 * address.country = "PH"
 
-Instance: rs-minimum-example-doc-ref
+Instance: RSMinimumExampleDocRef
 InstanceOf: RSDocumentReference
 Usage: #example
 Title: "Minimum Data Set CCTV Video"
@@ -211,7 +211,7 @@ Title: "Minimum Data Set CCTV Video"
 * content.attachment.url = "http://example.com/cctv.mp4"
 * content.attachment.contentType = #video/mp4
 
-Instance: rs-minimum-example-organization
+Instance: RSMinimumExampleOrganization
 InstanceOf: RSOrganization
 Usage: #example
 Title: "Minimum Data Set Reporting Health Facility"
@@ -224,7 +224,7 @@ Title: "Minimum Data Set Reporting Health Facility"
 * address.postalCode = "1003"
 * address.country = "PH"
 
-Instance: rs-minimum-example-obs-bp
+Instance: RSMinimumExampleObsBp
 InstanceOf: RSObsBloodPressure
 Usage: #example
 Title: "Minimum Data Set BP"
@@ -238,7 +238,7 @@ Title: "Minimum Data Set BP"
 * component[diastolic].code = $SCT#271650006 "Diastolic blood pressure (observable entity)"
 * component[diastolic].valueQuantity = 80 'mm[Hg]'
 
-Instance: rs-minimum-example-obs-pulse
+Instance: RSMinimumExampleObsPulse
 InstanceOf: RSObsPulseRate
 Usage: #example
 Title: "Minimum Data Set Pulse"
@@ -249,7 +249,7 @@ Title: "Minimum Data Set Pulse"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueQuantity = 88 '/min'
 
-Instance: rs-minimum-example-obs-resp
+Instance: RSMinimumExampleObsResp
 InstanceOf: RSObsRespiratoryRate
 Usage: #example
 Title: "Minimum Data Set Respiratory Rate"
@@ -260,7 +260,7 @@ Title: "Minimum Data Set Respiratory Rate"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueQuantity = 18 '/min'
 
-Instance: rs-minimum-example-obs-temp
+Instance: RSMinimumExampleObsTemp
 InstanceOf: RSObsBodyTemperature
 Usage: #example
 Title: "Minimum Data Set Temperature"
@@ -271,7 +271,7 @@ Title: "Minimum Data Set Temperature"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueQuantity = 37 'Cel'
 
-Instance: rs-minimum-example-obs-gcs
+Instance: RSMinimumExampleObsGcs
 InstanceOf: RSObsGCS
 Usage: #example
 Title: "Minimum Data Set GCS"
@@ -288,7 +288,7 @@ Title: "Minimum Data Set GCS"
 * component[=].code = $SCT#281396004 "Glasgow Coma Scale motor response subscore (observable entity)"
 * valueInteger = 15
 
-Instance: rs-minimum-example-obs-timeline-date-received
+Instance: RSMinimumExampleObsTimelineDateReceived
 InstanceOf: RSObsTimelineDateReceived
 Usage: #example
 Title: "Minimum Data Set Timeline Date Received"
@@ -299,7 +299,7 @@ Title: "Minimum Data Set Timeline Date Received"
 * effectiveDateTime = "2025-11-08T14:10:00+08:00"
 * valueDateTime = "2025-11-08T14:10:00+08:00"
 
-Instance: rs-minimum-example-obs-timeline-time-enroute
+Instance: RSMinimumExampleObsTimelineTimeEnroute
 InstanceOf: RSObsTimelineTimeEnroute
 Usage: #example
 Title: "Minimum Data Set Timeline Time Enroute"
@@ -310,7 +310,7 @@ Title: "Minimum Data Set Timeline Time Enroute"
 * effectiveDateTime = "2025-11-08T14:12:00+08:00"
 * valueDateTime = "2025-11-08T14:12:00+08:00"
 
-Instance: rs-minimum-example-obs-timeline-time-on-scene
+Instance: RSMinimumExampleObsTimelineTimeOnScene
 InstanceOf: RSObsTimelineTimeOnScene
 Usage: #example
 Title: "Minimum Data Set Timeline Time On Scene"
@@ -321,7 +321,7 @@ Title: "Minimum Data Set Timeline Time On Scene"
 * effectiveDateTime = "2025-11-08T14:25:00+08:00"
 * valueDateTime = "2025-11-08T14:25:00+08:00"
 
-Instance: rs-minimum-example-obs-timeline-time-departed
+Instance: RSMinimumExampleObsTimelineTimeDeparted
 InstanceOf: RSObsTimelineTimeDeparted
 Usage: #example
 Title: "Minimum Data Set Timeline Time Departed"
@@ -332,7 +332,7 @@ Title: "Minimum Data Set Timeline Time Departed"
 * effectiveDateTime = "2025-11-08T14:40:00+08:00"
 * valueDateTime = "2025-11-08T14:40:00+08:00"
 
-Instance: rs-minimum-example-obs-timeline-time-hospital-arrival
+Instance: RSMinimumExampleObsTimelineTimeHospitalArrival
 InstanceOf: RSObsTimelineTimeHospitalArrival
 Usage: #example
 Title: "Minimum Data Set Timeline Time Hospital Arrival"
@@ -343,7 +343,7 @@ Title: "Minimum Data Set Timeline Time Hospital Arrival"
 * effectiveDateTime = "2025-11-08T15:15:00+08:00"
 * valueDateTime = "2025-11-08T15:15:00+08:00"
 
-Instance: rs-minimum-example-obs-timeline-time-station-arrival
+Instance: RSMinimumExampleObsTimelineTimeStationArrival
 InstanceOf: RSObsTimelineTimeStationArrival
 Usage: #example
 Title: "Minimum Data Set Timeline Time Station Arrival"
@@ -354,7 +354,7 @@ Title: "Minimum Data Set Timeline Time Station Arrival"
 * effectiveDateTime = "2025-11-08T17:30:00+08:00"
 * valueDateTime = "2025-11-08T17:30:00+08:00"
 
-Instance: rs-minimum-example-obs-reported-complaint
+Instance: RSMinimumExampleObsReportedComplaint
 InstanceOf: RSObsReportedComplaint
 Usage: #example
 Title: "Minimum Data Set Reported Complaint"
@@ -365,7 +365,7 @@ Title: "Minimum Data Set Reported Complaint"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueString = "Patient complaining of chest pain and difficulty breathing after car accident"
 
-Instance: rs-minimum-example-obs-mode-transport-other
+Instance: RSMinimumExampleObsModeTransportOther
 InstanceOf: RSObsModeOfTransport
 Usage: #example
 Title: "Minimum Data Set Mode of Transport Other"
@@ -377,7 +377,7 @@ Title: "Minimum Data Set Mode of Transport Other"
 * valueCodeableConcept = $SCT#420220002 "Private vehicle" // Using an appropriate code
 * valueCodeableConcept.text = "Private vehicle"
 
-Instance: rs-minimum-example-obs-multiple-injuries
+Instance: RSMinimumExampleObsMultipleInjuries
 InstanceOf: RSObsMultipleInjuries
 Usage: #example
 Title: "Minimum Data Set Multiple Injuries"
@@ -388,7 +388,7 @@ Title: "Minimum Data Set Multiple Injuries"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueBoolean = true
 
-Instance: rs-minimum-example-obs-abrasion
+Instance: RSMinimumExampleObsAbrasion
 InstanceOf: RSObsAbrasion
 Usage: #example
 Title: "Minimum Data Set Abrasion"
@@ -400,7 +400,7 @@ Title: "Minimum Data Set Abrasion"
 * valueBoolean = true
 * bodySite = $SCT#362046005 "Left upper limb"
 
-Instance: rs-minimum-example-obs-avulsion
+Instance: RSMinimumExampleObsAvulsion
 InstanceOf: RSObsAvulsion
 Usage: #example
 Title: "Minimum Data Set Avulsion"
@@ -412,7 +412,7 @@ Title: "Minimum Data Set Avulsion"
 * valueBoolean = true
 * bodySite = $SCT#362045009 "Right upper limb"
 
-Instance: rs-minimum-example-obs-nature-burns
+Instance: RSMinimumExampleObsNatureBurns
 InstanceOf: RSObsNatureBurns
 Usage: #example
 Title: "Minimum Data Set Nature Burns"
@@ -421,12 +421,12 @@ Title: "Minimum Data Set Nature Burns"
 * subject.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
 * encounter.reference = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
-* valueBoolean = true
+* valueBoolean = false
 * component[burnType].code = $SCT#48333001 "Burn injury"
 * component[burnType].valueCodeableConcept = $SCT#284486004 "Superficial second degree burn (disorder)"
 * component[burnType].valueCodeableConcept.text = "Second degree burns"
 
-Instance: rs-minimum-example-obs-concussion
+Instance: RSMinimumExampleObsConcussion
 InstanceOf: RSObsConcussion
 Usage: #example
 Title: "Minimum Data Set Concussion"
@@ -438,7 +438,7 @@ Title: "Minimum Data Set Concussion"
 * valueBoolean = false
 * bodySite = $SCT#834006 "Head"
 
-Instance: rs-minimum-example-obs-contusion
+Instance: RSMinimumExampleObsContusion
 InstanceOf: RSObsContusion
 Usage: #example
 Title: "Minimum Data Set Contusion"
@@ -450,7 +450,7 @@ Title: "Minimum Data Set Contusion"
 * valueBoolean = true
 * bodySite = $SCT#181279003 "Entire body as a whole"
 
-Instance: rs-minimum-example-obs-fracture
+Instance: RSMinimumExampleObsFracture
 InstanceOf: RSObsFracture
 Usage: #example
 Title: "Minimum Data Set Fracture"
@@ -462,7 +462,7 @@ Title: "Minimum Data Set Fracture"
 * valueCodeableConcept = $SCT#423125000 "Closed fracture (disorder)"
 * bodySite = $SCT#79601000 "Lower limb structure"
 
-Instance: rs-minimum-example-obs-open-wound
+Instance: RSMinimumExampleObsOpenWound
 InstanceOf: RSObsOpenWound
 Usage: #example
 Title: "Minimum Data Set Open Wound"
@@ -475,7 +475,7 @@ Title: "Minimum Data Set Open Wound"
 * bodySite = $SCT#4221004 "Arm"
 * note.text = "Laceration from broken glass"
 
-Instance: rs-minimum-example-obs-traumatic-amputation
+Instance: RSMinimumExampleObsTraumaticAmputation
 InstanceOf: RSObsTraumaticAmputation
 Usage: #example
 Title: "Minimum Data Set Traumatic Amputation"
@@ -486,7 +486,7 @@ Title: "Minimum Data Set Traumatic Amputation"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueBoolean = false // In this case, no traumatic amputation
 
-Instance: rs-minimum-example-obs-other-injury
+Instance: RSMinimumExampleObsOtherInjury
 InstanceOf: RSObsOtherInjury
 Usage: #example
 Title: "Minimum Data Set Other Injury"
@@ -497,7 +497,7 @@ Title: "Minimum Data Set Other Injury"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueCodeableConcept.text = "Internal bleeding"
 
-Instance: rs-minimum-example-obs-collision-type
+Instance: RSMinimumExampleObsCollisionType
 InstanceOf: RSObsCollisionType
 Usage: #example
 Title: "Minimum Data Set Collision Type"
@@ -508,7 +508,7 @@ Title: "Minimum Data Set Collision Type"
 * effectiveDateTime = "2025-11-08T15:00:00+08:00"
 * valueCodeableConcept.text = "Head-on collision"
 
-Instance: rs-minimum-example-obs-other-risk-factors
+Instance: RSMinimumExampleObsOtherRiskFactors
 InstanceOf: RSObsOtherRiskFactors
 Usage: #example
 Title: "Minimum Data Set Other Risk Factors"
@@ -520,7 +520,7 @@ Title: "Minimum Data Set Other Risk Factors"
 * valueCodeableConcept = $SCT#228380007 "Alcohol intake (observable entity)"
 * valueCodeableConcept.text = "Alcohol intake"
 
-Instance: rs-minimum-example-obs-patients-vehicle
+Instance: RSMinimumExampleObsPatientsVehicle
 InstanceOf: RSObsPatientsVehicle
 Usage: #example
 Title: "Minimum Data Set Patient's Vehicle"
@@ -532,7 +532,7 @@ Title: "Minimum Data Set Patient's Vehicle"
 * valueCodeableConcept = $SCT#228364001 "Motorcycle (physical object)"
 * valueCodeableConcept.text = "Motorcycle"
 
-Instance: rs-minimum-example-obs-other-vehicle
+Instance: RSMinimumExampleObsOtherVehicle
 InstanceOf: RSObsOtherVehicleInvolved
 Usage: #example
 Title: "Minimum Data Set Other Vehicle Involved"
@@ -544,7 +544,7 @@ Title: "Minimum Data Set Other Vehicle Involved"
 * valueCodeableConcept = $SCT#228370004 "Automobile (physical object)"
 * valueCodeableConcept.text = "Automobile"
 
-Instance: rs-minimum-example-obs-disposition-others
+Instance: RSMinimumExampleObsDispositionOthers
 InstanceOf: RSObsStatusOnArrival
 Usage: #example
 Title: "Minimum Data Set Disposition Others Specify"
@@ -555,7 +555,7 @@ Title: "Minimum Data Set Disposition Others Specify"
 * effectiveDateTime = "2025-11-08T16:45:00+08:00"
 * valueCodeableConcept.text = "Discharged against medical advice"
 
-Instance: rs-minimum-example-obs-position-of-patient
+Instance: RSMinimumExampleObsPositionOfPatient
 InstanceOf: RSObsPositionOfPatient
 Usage: #example
 Title: "Minimum Data Set Position of Patient"
@@ -567,7 +567,7 @@ Title: "Minimum Data Set Position of Patient"
 * valueCodeableConcept = $SCT#33831005 "Driver of vehicle (person)"
 * valueCodeableConcept.text = "Driver"
 
-Instance: rs-minimum-example-obs-safety-accessories
+Instance: RSMinimumExampleObsSafetyAccessories
 InstanceOf: RSObsSafetyAccessories
 Usage: #example
 Title: "Minimum Data Set Safety Accessories"
@@ -579,7 +579,7 @@ Title: "Minimum Data Set Safety Accessories"
 * valueCodeableConcept = $SCT#229214007 "Seat belt worn (situation)"
 * valueCodeableConcept.text = "Seat belt worn"
 
-Instance: rs-minimum-example-obs-condition-patient
+Instance: RSMinimumExampleObsConditionPatient
 InstanceOf: RSObsConditionOfPatient
 Usage: #example
 Title: "Minimum Data Set Condition of Patient"
@@ -590,7 +590,7 @@ Title: "Minimum Data Set Condition of Patient"
 * effectiveDateTime = "2025-11-08T14:35:00+08:00"
 * valueCodeableConcept.text = "Critical condition"
 
-Instance: rs-minimum-example-bundle
+Instance: RSMinimumExampleBundle
 InstanceOf: RSBundleMinimum
 Usage: #example
 Title: "Minimum Data Set Bundle"
@@ -600,193 +600,193 @@ Description: "Example bundle containing only the minimum required elements from 
 * type = #transaction
 * timestamp = "2025-11-08T17:00:00+08:00"
 * entry[patient].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0001"
-* entry[=].resource = rs-minimum-example-patient
+* entry[=].resource = RSMinimumExamplePatient
 * entry[=].request.method = #POST
 * entry[=].request.url = "Patient"
 * entry[encounter].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0002"
-* entry[=].resource = rs-minimum-example-encounter
+* entry[=].resource = RSMinimumExampleEncounter
 * entry[=].request.method = #POST
 * entry[=].request.url = "Encounter"
 // Note: Received By (Practitioner) profile not available.
 // Note: Vehicles Involved (Device) profile not available.
 * entry[allergyIntolerance].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0011"
-* entry[=].resource = rs-minimum-example-allergy
+* entry[=].resource = RSMinimumExampleAllergy
 * entry[=].request.method = #POST
 * entry[=].request.url = "AllergyIntolerance"
 * entry[medicationStatement].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0012"
-* entry[=].resource = rs-minimum-example-medication
+* entry[=].resource = RSMinimumExampleMedication
 * entry[=].request.method = #POST
 * entry[=].request.url = "MedicationStatement"
 * entry[task].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0013"
-* entry[=].resource = rs-minimum-example-task-delays
+* entry[=].resource = RSMinimumExampleTaskDelays
 * entry[=].request.method = #POST
 * entry[=].request.url = "Task"
 * entry[location].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0014"
-* entry[=].resource = rs-minimum-example-location
+* entry[=].resource = RSMinimumExampleLocation
 * entry[=].request.method = #POST
 * entry[=].request.url = "Location"
 * entry[documentReference].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0015"
-* entry[=].resource = rs-minimum-example-doc-ref
+* entry[=].resource = RSMinimumExampleDocRef
 * entry[=].request.method = #POST
 * entry[=].request.url = "DocumentReference"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0021"
-* entry[=].resource = rs-minimum-example-organization
+* entry[=].resource = RSMinimumExampleOrganization
 * entry[=].request.method = #POST
 * entry[=].request.url = "Organization"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0007"
-* entry[=].resource = rs-minimum-example-observation-injury-datetime
+* entry[=].resource = RSMinimumExampleObservationInjuryDatetime
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0008"
-* entry[=].resource = rs-minimum-example-observation-transport-accident
+* entry[=].resource = RSMinimumExampleObservationTransportAccident
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0009"
-* entry[=].resource = rs-minimum-example-observation-mode-transport
+* entry[=].resource = RSMinimumExampleObservationModeTransport
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0010"
-* entry[=].resource = rs-minimum-example-observation-outcome
+* entry[=].resource = RSMinimumExampleObservationOutcome
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0016"
-* entry[=].resource = rs-minimum-example-obs-bp
+* entry[=].resource = RSMinimumExampleObsBp
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0017"
-* entry[=].resource = rs-minimum-example-obs-pulse
+* entry[=].resource = RSMinimumExampleObsPulse
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0018"
-* entry[=].resource = rs-minimum-example-obs-resp
+* entry[=].resource = RSMinimumExampleObsResp
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0019"
-* entry[=].resource = rs-minimum-example-obs-temp
+* entry[=].resource = RSMinimumExampleObsTemp
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0020"
-* entry[=].resource = rs-minimum-example-obs-gcs
+* entry[=].resource = RSMinimumExampleObsGcs
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0022"
-* entry[=].resource = rs-minimum-example-obs-timeline-date-received
+* entry[=].resource = RSMinimumExampleObsTimelineDateReceived
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0023"
-* entry[=].resource = rs-minimum-example-obs-timeline-time-enroute
+* entry[=].resource = RSMinimumExampleObsTimelineTimeEnroute
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0024"
-* entry[=].resource = rs-minimum-example-obs-timeline-time-on-scene
+* entry[=].resource = RSMinimumExampleObsTimelineTimeOnScene
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0025"
-* entry[=].resource = rs-minimum-example-obs-timeline-time-departed
+* entry[=].resource = RSMinimumExampleObsTimelineTimeDeparted
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0026"
-* entry[=].resource = rs-minimum-example-obs-timeline-time-hospital-arrival
+* entry[=].resource = RSMinimumExampleObsTimelineTimeHospitalArrival
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0027"
-* entry[=].resource = rs-minimum-example-obs-timeline-time-station-arrival
+* entry[=].resource = RSMinimumExampleObsTimelineTimeStationArrival
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0028"
-* entry[=].resource = rs-minimum-example-obs-reported-complaint
+* entry[=].resource = RSMinimumExampleObsReportedComplaint
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0029"
-* entry[=].resource = rs-minimum-example-obs-mode-transport-other
+* entry[=].resource = RSMinimumExampleObsModeTransportOther
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0030"
-* entry[=].resource = rs-minimum-example-obs-condition-patient
+* entry[=].resource = RSMinimumExampleObsConditionPatient
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0031"
-* entry[=].resource = rs-minimum-example-obs-multiple-injuries
+* entry[=].resource = RSMinimumExampleObsMultipleInjuries
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0032"
-* entry[=].resource = rs-minimum-example-obs-abrasion
+* entry[=].resource = RSMinimumExampleObsAbrasion
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0033"
-* entry[=].resource = rs-minimum-example-obs-avulsion
+* entry[=].resource = RSMinimumExampleObsAvulsion
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0034"
-* entry[=].resource = rs-minimum-example-obs-nature-burns
+* entry[=].resource = RSMinimumExampleObsNatureBurns
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0035"
-* entry[=].resource = rs-minimum-example-obs-concussion
+* entry[=].resource = RSMinimumExampleObsConcussion
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0036"
-* entry[=].resource = rs-minimum-example-obs-contusion
+* entry[=].resource = RSMinimumExampleObsContusion
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0037"
-* entry[=].resource = rs-minimum-example-obs-fracture
+* entry[=].resource = RSMinimumExampleObsFracture
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0038"
-* entry[=].resource = rs-minimum-example-obs-open-wound
+* entry[=].resource = RSMinimumExampleObsOpenWound
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0039"
-* entry[=].resource = rs-minimum-example-obs-traumatic-amputation
+* entry[=].resource = RSMinimumExampleObsTraumaticAmputation
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0040"
-* entry[=].resource = rs-minimum-example-obs-other-injury
+* entry[=].resource = RSMinimumExampleObsOtherInjury
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0041"
-* entry[=].resource = rs-minimum-example-obs-collision-type
+* entry[=].resource = RSMinimumExampleObsCollisionType
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0042"
-* entry[=].resource = rs-minimum-example-obs-other-risk-factors
+* entry[=].resource = RSMinimumExampleObsOtherRiskFactors
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0043"
-* entry[=].resource = rs-minimum-example-obs-safety-accessories
+* entry[=].resource = RSMinimumExampleObsSafetyAccessories
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0044"
-* entry[=].resource = rs-minimum-example-obs-patients-vehicle
+* entry[=].resource = RSMinimumExampleObsPatientsVehicle
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0045"
-* entry[=].resource = rs-minimum-example-obs-other-vehicle
+* entry[=].resource = RSMinimumExampleObsOtherVehicle
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0046"
-* entry[=].resource = rs-minimum-example-obs-position-of-patient
+* entry[=].resource = RSMinimumExampleObsPositionOfPatient
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0047"
-* entry[=].resource = rs-minimum-example-obs-disposition-others
+* entry[=].resource = RSMinimumExampleObsDispositionOthers
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0003"
-* entry[=].resource = rs-minimum-example-condition-initial
+* entry[=].resource = RSMinimumExampleConditionInitial
 * entry[=].request.method = #POST
 * entry[=].request.url = "Condition"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0004"
-* entry[=].resource = rs-minimum-example-condition-final
+* entry[=].resource = RSMinimumExampleConditionFinal
 * entry[=].request.method = #POST
 * entry[=].request.url = "Condition"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0005"
-* entry[=].resource = rs-minimum-example-condition-nature-of-injury
+* entry[=].resource = RSMinimumExampleConditionNatureOfInjury
 * entry[=].request.method = #POST
 * entry[=].request.url = "Condition"
 * entry[+].fullUrl = "urn:uuid:aaaa1111-bbbb-cccc-dddd-eeeeffff0006"
-* entry[=].resource = rs-minimum-example-condition-external-cause
+* entry[=].resource = RSMinimumExampleConditionExternalCause
 * entry[=].request.method = #POST
 * entry[=].request.url = "Condition"
 
