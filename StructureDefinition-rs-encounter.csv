@@ -444,7 +444,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Category or kind of location after discharge","Category or kind of location after discharge.","","","","","","","","","",,"example","Discharge Disposition.","http://hl7.org/fhir/ValueSet/encounter-discharge-disposition|4.0.1","",,,,"Encounter.hospitalization.dischargeDisposition",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".dischargeDispositionCode","PV1-36"
 "Encounter.location","Encounter.location","","","",0,*,"","","","BackboneElement {[]} {[]}
-","List of locations where the patient has been","List of locations where  the patient has been during this encounter.","Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type ""kind"" such as ""client's home"" and an encounter.class = ""virtual"".","","","","","","","","",,,,,"","value:location}
+","List of locations where the patient has been","List of locations where  the patient has been during this encounter.","Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type ""kind"" such as ""client's home"" and an encounter.class = ""virtual"".","","","","","","","","",,,,,"","profile:resolve}
 ","",Y,"open","Encounter.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=LOC]"
 "Encounter.location.id","Encounter.location.id","","","",0,1,"","","","string {[]} {[]}

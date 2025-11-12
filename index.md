@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/ImplementationGuide/example.fhir.ph.roadsafety | *Version*:0.3.0 |
-| Draft as of 2025-11-09 | *Computable Name*:PHRoadSafetyIG |
+| Draft as of 2025-11-12 | *Computable Name*:PHRoadSafetyIG |
 
 # Draft PH Road Safety Implementation Guide
 
@@ -107,7 +107,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-11-09T12:30:11+00:00",
+  "date" : "2025-11-12T06:38:24+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

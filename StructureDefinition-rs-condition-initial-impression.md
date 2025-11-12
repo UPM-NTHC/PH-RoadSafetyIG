@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition-initial-impression | *Version*:0.3.0 |
-| Draft as of 2025-11-09 | *Computable Name*:RSConditionInitialImpression |
+| Draft as of 2025-11-12 | *Computable Name*:RSConditionInitialImpression |
 
  
 Enter the initial impression on the patient’s condition. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition-initial
   "name" : "RSConditionInitialImpression",
   "title" : "RS Condition — Initial Impression",
   "status" : "draft",
-  "date" : "2025-11-09T12:30:11+00:00",
+  "date" : "2025-11-12T06:38:24+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

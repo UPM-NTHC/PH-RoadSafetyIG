@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-transport-vehicular-accident | *Version*:0.3.0 |
-| Draft as of 2025-11-09 | *Computable Name*:RSObsTransportVehicularAccident |
+| Draft as of 2025-11-12 | *Computable Name*:RSObsTransportVehicularAccident |
 
  
 Boolean flag indicating transport/vehicular accident. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-trans
   "name" : "RSObsTransportVehicularAccident",
   "title" : "RS Observation - Transport/Vehicular Accident",
   "status" : "draft",
-  "date" : "2025-11-09T12:30:11+00:00",
+  "date" : "2025-11-12T06:38:24+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

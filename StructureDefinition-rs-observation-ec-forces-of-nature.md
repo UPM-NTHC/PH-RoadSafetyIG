@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-forces-of-nature | *Version*:0.3.0 |
-| Draft as of 2025-11-09 | *Computable Name*:RSObsECForcesOfNature |
+| Draft as of 2025-11-12 | *Computable Name*:RSObsECForcesOfNature |
 
  
 Flag indicating exposure to natural disaster/calamity. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-fo
   "name" : "RSObsECForcesOfNature",
   "title" : "RS Observation - External Cause: Exposure to Forces of Nature",
   "status" : "draft",
-  "date" : "2025-11-09T12:30:11+00:00",
+  "date" : "2025-11-12T06:38:24+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

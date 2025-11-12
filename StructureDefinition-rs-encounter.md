@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.3.0 |
-| Draft as of 2025-11-09 | *Computable Name*:RSEncounter |
+| Draft as of 2025-11-12 | *Computable Name*:RSEncounter |
 
  
 Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-11-09T12:30:11+00:00",
+  "date" : "2025-11-12T06:38:24+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -457,8 +457,8 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "slicing" : {
           "discriminator" : [
             {
-              "type" : "value",
-              "path" : "location"
+              "type" : "profile",
+              "path" : "resolve"
             }
           ],
           "ordered" : true,
