@@ -54,7 +54,7 @@ SILPH Value Set for ICD 10 Codes for External Cause of Injury (Selected Codes fr
   "name" : "SILPH___ICD10_External_Cause_of_Injury__VS_",
   "title" : "SILPH - ICD10 External Cause of Injury (VS)",
   "status" : "draft",
-  "date" : "2025-11-12T06:38:24+00:00",
+  "date" : "2025-11-12T06:39:32+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

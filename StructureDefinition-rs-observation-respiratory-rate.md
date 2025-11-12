@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-respi
   "name" : "RSObsRespiratoryRate",
   "title" : "RS Observation - Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-11-12T06:38:24+00:00",
+  "date" : "2025-11-12T06:39:32+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
