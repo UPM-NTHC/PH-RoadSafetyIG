@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-trans
   "name" : "RSObsTransferredFromFacility",
   "title" : "RS Observation - Transferred From Facility",
   "status" : "draft",
-  "date" : "2025-11-12T06:39:32+00:00",
+  "date" : "2025-11-12T08:01:17+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

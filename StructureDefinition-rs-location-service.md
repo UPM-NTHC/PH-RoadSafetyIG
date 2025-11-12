@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
   "name" : "RSServiceLocation",
   "title" : "RS Service Location",
   "status" : "draft",
-  "date" : "2025-11-12T06:39:32+00:00",
+  "date" : "2025-11-12T08:01:17+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
