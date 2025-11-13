@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-InjuryIntent | *Version*:0.3.0 |
-| Draft as of 2025-11-12 | *Computable Name*:SILPH___Injury_Intent__VS_ |
+| Draft as of 2025-11-13 | *Computable Name*:SILPH___Injury_Intent__VS_ |
 
  
 SILPH Value Set for Injury Intent 
@@ -57,7 +57,7 @@ This value set contains 5 concepts
   "name" : "SILPH___Injury_Intent__VS_",
   "title" : "SILPH - Injury Intent (VS)",
   "status" : "draft",
-  "date" : "2025-11-12T08:01:17+00:00",
+  "date" : "2025-11-13T05:16:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

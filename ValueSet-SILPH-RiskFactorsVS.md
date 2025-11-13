@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-RiskFactors | *Version*:0.3.0 |
-| Draft as of 2025-11-12 | *Computable Name*:SILPH___Risk_Factors__VS_ |
+| Draft as of 2025-11-13 | *Computable Name*:SILPH___Risk_Factors__VS_ |
 
  
 SILPH Value Set for Risk Factors 
@@ -55,7 +55,7 @@ SILPH Value Set for Risk Factors
   "name" : "SILPH___Risk_Factors__VS_",
   "title" : "SILPH - Risk Factors (VS)",
   "status" : "draft",
-  "date" : "2025-11-12T08:01:17+00:00",
+  "date" : "2025-11-13T05:16:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

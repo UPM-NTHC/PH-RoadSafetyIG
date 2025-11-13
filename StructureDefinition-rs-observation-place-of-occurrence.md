@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-place-of-occurrence | *Version*:0.3.0 |
-| Draft as of 2025-11-12 | *Computable Name*:RSObsPlaceOfOccurrence |
+| Draft as of 2025-11-13 | *Computable Name*:RSObsPlaceOfOccurrence |
 
  
 Place type where injury occurred; name can be carried in note when applicable. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-place
   "name" : "RSObsPlaceOfOccurrence",
   "title" : "RS Observation - Place of Occurrence",
   "status" : "draft",
-  "date" : "2025-11-12T08:01:17+00:00",
+  "date" : "2025-11-13T05:16:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

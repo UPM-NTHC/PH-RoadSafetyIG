@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-patients-vehicle | *Version*:0.3.0 |
-| Draft as of 2025-11-12 | *Computable Name*:RSObsPatientsVehicle |
+| Draft as of 2025-11-13 | *Computable Name*:RSObsPatientsVehicle |
 
  
 Type of vehicle used by patient; text for 'Others'. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-patie
   "name" : "RSObsPatientsVehicle",
   "title" : "RS Observation - Patient's Vehicle",
   "status" : "draft",
-  "date" : "2025-11-12T08:01:17+00:00",
+  "date" : "2025-11-13T05:16:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

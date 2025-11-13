@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-condition | *Version*:0.3.0 |
-| Draft as of 2025-11-12 | *Computable Name*:RSCondition |
+| Draft as of 2025-11-13 | *Computable Name*:RSCondition |
 
  
 Condition resource for RS IG that supports multiple coding systems, textual entries and use-case specific semantics (initial impression, final diagnosis, medical history) via code.coding slicing and category usage. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-condition.csv), [
   "name" : "RSCondition",
   "title" : "RS Condition",
   "status" : "draft",
-  "date" : "2025-11-12T08:01:17+00:00",
+  "date" : "2025-11-13T05:16:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

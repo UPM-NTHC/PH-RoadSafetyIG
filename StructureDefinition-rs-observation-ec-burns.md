@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-burns | *Version*:0.3.0 |
-| Draft as of 2025-11-12 | *Computable Name*:RSObsECBurns |
+| Draft as of 2025-11-13 | *Computable Name*:RSObsECBurns |
 
  
 Flag indicating burns as external cause. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-bu
   "name" : "RSObsECBurns",
   "title" : "RS Observation - External Cause: Burns",
   "status" : "draft",
-  "date" : "2025-11-12T08:01:17+00:00",
+  "date" : "2025-11-13T05:16:01+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
