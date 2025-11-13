@@ -34,21 +34,26 @@ expansion of ValueSet 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode')
 * obeys RSEncounterDischarge
 
 /* Incident and Service Locations (Encounter.location slicing) */
-* location ^slicing.discriminator.type = #value
-* location ^slicing.discriminator.path = "type"
+// * location ^slicing.discriminator.type = #value
+// * location ^slicing.discriminator.path = "location.type"
 * location ^slicing.rules = #open
 * location ^slicing.ordered = true
 * location contains accidentSite 0..1 and facility 0..*
 
 // first slice is the accident site
-* location[accidentSite].location 1..1 MS
-* location[accidentSite].location.type = http://terminology.hl7.org/CodeSystem/service-type#236 "Accident"
-* location[accidentSite].location only Reference(RSIncidentLocation)
+* location[accidentSite] 0..1  // Cardinality for this slice
+* location[accidentSite] ^short = "First Slice is the Accident Location"
+// * location[accidentSite].location 1..1 MS
+// * location[accidentSite].location.type = http://terminology.hl7.org/CodeSystem/service-type#236 "Accident"
+// * location[accidentSite].location only Reference(RSIncidentLocation)
 
 // second slice is the facility (receiving facility, previous facility, etc)
-* location[facility].location 1..1 MS
-* location[facility].location.type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
-* location[facility].location only Reference(RSServiceLocation)
+* location[facility] 0..* // Cardinality for this slice
+* location[facility] ^short = "Second slice is the Facility Location"
+// * location[facility].location 1..1 MS
+// * location[accidentSite].location ^short = "Succeeding Slices are Facility Locations"
+// * location[facility].location.type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
+// * location[facility].location only Reference(RSServiceLocation)
 
 /* Identifier slices for ONEISS */
 * identifier 1..* MS
