@@ -20,6 +20,16 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Collision site along Epifanio de los Santos Avenue near Ayala Avenue, Makati City.</div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:name [ fhir:v "EDSA - Ayala Southbound"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/service-type>
+       ] ;
+       fhir:code [ fhir:v "236" ] ;
+       fhir:display [ fhir:v "Accident" ]
+     ] )
+  ] ) ; # 
   fhir:address [
      fhir:use [ fhir:v "work" ] ;
      fhir:line ( [ fhir:v "Epifanio de los Santos Ave" ] ) ;

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-activ
   "name" : "RSObsActivityAtIncident",
   "title" : "RS Observation - Activity at Time of Incident",
   "status" : "draft",
-  "date" : "2025-11-13T05:42:41+00:00",
+  "date" : "2025-11-13T06:09:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

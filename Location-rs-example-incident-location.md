@@ -22,6 +22,17 @@ Collision site along Epifanio de los Santos Avenue near Ayala Avenue, Makati Cit
     ]
   },
   "name" : "EDSA - Ayala Southbound",
+  "type" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+          "code" : "236",
+          "display" : "Accident"
+        }
+      ]
+    }
+  ],
   "address" : {
     "use" : "work",
     "line" : ["Epifanio de los Santos Ave"],

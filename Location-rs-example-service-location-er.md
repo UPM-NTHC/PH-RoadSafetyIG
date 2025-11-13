@@ -26,9 +26,9 @@ Emergency Room, Department of Health - Central Office.
     {
       "coding" : [
         {
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-ServiceDeliveryLocationRoleType",
-          "code" : "ER",
-          "display" : "Emergency room"
+          "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+          "code" : "335",
+          "display" : "Facility"
         }
       ]
     }

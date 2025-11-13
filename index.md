@@ -80,10 +80,9 @@ This publication includes IP covered under the following statements.
 * [ConditionVerificationStatus](http://terminology.hl7.org/6.5.0/CodeSystem-condition-ver-status.html): [Bundle/RSMinimumExampleBundle](Bundle-RSMinimumExampleBundle.md), [Condition/RSMinimumExampleConditionExternalCause](Condition-RSMinimumExampleConditionExternalCause.md), [Condition/RSMinimumExampleConditionFinal](Condition-RSMinimumExampleConditionFinal.md), [Condition/RSMinimumExampleConditionInitial](Condition-RSMinimumExampleConditionInitial.md) and [Condition/RSMinimumExampleConditionNatureOfInjury](Condition-RSMinimumExampleConditionNatureOfInjury.md)
 * [Coverage Class Codes](http://terminology.hl7.org/6.5.0/CodeSystem-coverage-class.html): [Coverage/rs-example-coverage](Coverage-rs-example-coverage.md)
 * [Process Priority Codes](http://terminology.hl7.org/6.5.0/CodeSystem-processpriority.html): [Claim/rs-example-claim](Claim-rs-example-claim.md)
-* [Service type](http://terminology.hl7.org/6.5.0/CodeSystem-service-type.html): [DOH Emergency Medical Response](HealthcareService-rs-example-healthcare-service.md)
+* [Service type](http://terminology.hl7.org/6.5.0/CodeSystem-service-type.html): [DOH Central ER](Location-rs-example-service-location-er.md), [DOH Emergency Medical Response](HealthcareService-rs-example-healthcare-service.md), [EDSA - Ayala Southbound](Location-rs-example-incident-location.md), [RSIncidentLocation](StructureDefinition-rs-incident-location-incident.md) and [RSServiceLocation](StructureDefinition-rs-location-service.md)
 * [ActCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html): [Coverage/rs-example-coverage](Coverage-rs-example-coverage.md)
 * [ParticipationType](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ParticipationType.html): [Encounter/rs-example-encounter](Encounter-rs-example-encounter.md), [RSEncounter](StructureDefinition-rs-encounter.md) and [SILPHEncounterParticipantRoleVS](ValueSet-a451137e-f7ff-4fb3-af03-e2bae290ea22.md)
-* [RoleCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html): [RSServiceLocation](StructureDefinition-rs-location-service.md)
 
 
 
@@ -107,7 +106,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "PHRoadSafetyIG",
   "title" : "DRAFT PH Road Safety Implementation Guide",
   "status" : "draft",
-  "date" : "2025-11-13T05:42:41+00:00",
+  "date" : "2025-11-13T06:09:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-11-13T05:42:41+00:00",
+  "date" : "2025-11-13T06:09:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -458,7 +458,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           "discriminator" : [
             {
               "type" : "value",
-              "path" : "location.resolve().meta.profile[0]"
+              "path" : "type"
             }
           ],
           "ordered" : true,
@@ -486,6 +486,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "mustSupport" : true
       },
       {
+        "id" : "Encounter.location:accidentSite.location.type",
+        "path" : "Encounter.location.location.type",
+        "patternUri" : "236"
+      },
+      {
         "id" : "Encounter.location:facility",
         "path" : "Encounter.location",
         "sliceName" : "facility",
@@ -504,6 +509,11 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
           }
         ],
         "mustSupport" : true
+      },
+      {
+        "id" : "Encounter.location:facility.location.type",
+        "path" : "Encounter.location.location.type",
+        "patternUri" : "335"
       },
       {
         "id" : "Encounter.serviceProvider",

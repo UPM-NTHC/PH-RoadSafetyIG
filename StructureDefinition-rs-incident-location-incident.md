@@ -42,7 +42,7 @@ Other representations of profile:[CSV](StructureDefinition-rs-incident-location-
   "name" : "RSIncidentLocation",
   "title" : "RS Incident Location",
   "status" : "draft",
-  "date" : "2025-11-13T05:42:41+00:00",
+  "date" : "2025-11-13T06:09:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -101,6 +101,19 @@ Other representations of profile:[CSV](StructureDefinition-rs-incident-location-
         "path" : "Location.name",
         "short" : "Location name",
         "mustSupport" : true
+      },
+      {
+        "id" : "Location.type",
+        "path" : "Location.type",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+              "code" : "236",
+              "display" : "Accident"
+            }
+          ]
+        }
       },
       {
         "id" : "Location.address",

@@ -54,7 +54,13 @@ For searching knowing previous names that the location was known by can be very 
 ","instance | kind","Indicates whether a resource instance represents a specific location or a class of locations.","This is labeled as a modifier because whether or not the location is a class of locations changes how it can be used and understood.","When using a Location resource for scheduling or orders, we need to be able to refer to a class of Locations instead of a specific Location.","","","","","","","",,"required","Indicates whether a resource instance represents a specific location or a class of locations.","http://hl7.org/fhir/ValueSet/location-mode|4.0.1","",,,,"Location.mode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity[classCode=PLC].determinerCode","FiveWs.class"
 "Location.type","Location.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Type of function performed","Indicates the type of function performed at the location.","","","","","","","","","",,"extensible","Indicates the type of function performed at the location.","http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType","",,,,"Location.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of function performed","Indicates the type of function performed at the location.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/service-type""/>
+    <code value=""236""/>
+    <display value=""Accident""/>
+  </coding>
+</valueCodeableConcept>","","","",,"extensible","Indicates the type of function performed at the location.","http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType","",,,,"Location.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code","FiveWs.class"
 "Location.telecom","Location.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
 ","Contact details of the location","The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites.","","","","","","","","","",,,,,"",,,,"Location.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

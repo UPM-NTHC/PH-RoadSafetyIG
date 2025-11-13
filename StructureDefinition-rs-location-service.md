@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
   "name" : "RSServiceLocation",
   "title" : "RS Service Location",
   "status" : "draft",
-  "date" : "2025-11-13T05:42:41+00:00",
+  "date" : "2025-11-13T06:09:51+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -112,11 +112,16 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
         "id" : "Location.type",
         "path" : "Location.type",
         "max" : "1",
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"
-        }
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+              "code" : "335",
+              "display" : "Facility"
+            }
+          ]
+        },
+        "mustSupport" : true
       },
       {
         "id" : "Location.address",
