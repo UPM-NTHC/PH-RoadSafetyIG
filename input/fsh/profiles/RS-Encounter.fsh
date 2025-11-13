@@ -42,12 +42,13 @@ expansion of ValueSet 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode')
 
 // first slice is the accident site
 * location[accidentSite].location 1..1 MS
+* location[accidentSite].location.type = http://terminology.hl7.org/CodeSystem/service-type#236 "Accident"
 * location[accidentSite].location only Reference(RSIncidentLocation)
 
 // second slice is the facility (receiving facility, previous facility, etc)
 * location[facility].location 1..1 MS
+* location[facility].location.type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
 * location[facility].location only Reference(RSServiceLocation)
-* location[facility].location.type 0..1
 
 /* Identifier slices for ONEISS */
 * identifier 1..* MS
@@ -165,6 +166,7 @@ Title: "Example Incident Location"
 Description: "Road traffic collision site at EDSA and Ayala Avenue used in rs-example-encounter."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Collision site along Epifanio de los Santos Avenue near Ayala Avenue, Makati City.</div>"
+* type = http://terminology.hl7.org/CodeSystem/service-type#236 "Accident"
 * name = "EDSA - Ayala Southbound"
 * address.use = #work
 * address.line = "Epifanio de los Santos Ave"
@@ -184,7 +186,7 @@ Description: "Emergency room location for Department of Health - Central Office 
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Emergency Room, Department of Health - Central Office.</div>"
 * name = "DOH Central ER"
-* type = http://terminology.hl7.org/CodeSystem/v3-ServiceDeliveryLocationRoleType#ER "Emergency room"
+* type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
 * address.line = "San Lazaro Compound, Rizal Avenue"
 * address.city = "Manila"
 * address.state = "NCR"
