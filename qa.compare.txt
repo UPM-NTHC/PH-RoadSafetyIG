@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 2903, warn = 942, info = 460
+err = 2900, warn = 942, info = 460
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 142 / 35 / 0
@@ -19,7 +19,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/DocumentReference-RSMinimumExampleDocRef : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/DocumentReference-rs-example-documentreference : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Encounter-RSMinimumExampleEncounter : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/Encounter-rs-example-encounter : 6 / 2 / 1
+ /github/workspace/fsh-generated/resources/Encounter-rs-example-encounter : 4 / 2 / 1
  /github/workspace/fsh-generated/resources/HealthcareService-rs-example-healthcare-service : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Location-RSMinimumExampleLocation : 0 / 0 / 1
@@ -149,7 +149,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-nature-of-injury : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-condition-problem : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-document-reference : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 1 / 6 / 6
+ /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter : 0 / 6 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-encounter-vehicle-used : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-healthcare-service : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-rs-incident-location-incident : 0 / 3 / 2
@@ -703,10 +703,8 @@ ERROR: DocumentReference/rs-example-documentreference: DocumentReference.content
 WARNING: Encounter/RSMinimumExampleEncounter: Encounter.identifier[0].system: No definition could be found for URL value 'http://doh.incident.system/'
 WARNING: Encounter/RSMinimumExampleEncounter: Encounter.identifier[1].system: No definition could be found for URL value 'http://doh.hospitalno.system/'
 == fsh-generated/resources/Encounter-rs-example-encounter.json ==
-ERROR: Encounter/rs-example-encounter: Encounter.location[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: 'type' in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' on element 'Encounter.location:accidentSite', looking in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' (@char 1)
-ERROR: Encounter/rs-example-encounter: Encounter.location[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: 'type' in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' on element 'Encounter.location:accidentSite', looking in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' (@char 1)
-ERROR: Encounter/rs-example-encounter: Encounter.location[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: 'type' in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' on element 'Encounter.location:facility', looking in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' (@char 1)
-ERROR: Encounter/rs-example-encounter: Encounter.location[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: 'type' in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' on element 'Encounter.location:facility', looking in profile 'https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter' (@char 1)
+ERROR: Encounter/rs-example-encounter: Encounter.location[0]: Slicing cannot be evaluated: Invalid function name null() in discriminator (@char 32)
+ERROR: Encounter/rs-example-encounter: Encounter.location[1]: Slicing cannot be evaluated: Invalid function name null() in discriminator (@char 32)
 WARNING: Encounter/rs-example-encounter: Encounter.identifier[0].system: No definition could be found for URL value 'http://doh.incident.system/'
 WARNING: Encounter/rs-example-encounter: Encounter.identifier[1].system: No definition could be found for URL value 'http://doh.hospitalno.system/'
 ERROR: Encounter/rs-example-encounter: Encounter.participant[2].type[0].coding[0].version: The code system 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20241001' resulting from the version '' in the ValueSet include is different to the one in the value ('http://snomed.info/sct/900000000000207008/version/20241001')
@@ -2277,7 +2275,6 @@ INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.elem
 INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[74].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[81].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[88].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-ERROR: StructureDefinition/rs-encounter: StructureDefinition.snapshot.element[121].slicing.discriminator[0]: The discriminator path 'type' does not appear to be valid for the element that is being sliced 'Encounter.location'
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'incidentNumber' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'hospitalCaseNo' on path 'Encounter.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/rs-encounter: StructureDefinition.snapshot: The slice 'teamLeader' on path 'Encounter.participant' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true

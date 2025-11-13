@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-avuls
   "name" : "RSObsAvulsion",
   "title" : "RS Observation - Avulsion",
   "status" : "draft",
-  "date" : "2025-11-13T06:09:51+00:00",
+  "date" : "2025-11-13T06:07:07+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
