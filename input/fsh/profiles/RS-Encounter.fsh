@@ -35,7 +35,7 @@ expansion of ValueSet 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode')
 
 /* Incident and Service Locations (Encounter.location slicing) */
 * location ^slicing.discriminator.type = #profile
-* location ^slicing.discriminator.path = "resolve().meta.profile()"
+* location ^slicing.discriminator.path = "$this.location.resolve()"
 * location ^slicing.rules = #open
 * location ^slicing.ordered = true
 * location contains accidentSite 0..1 and facility 0..*
