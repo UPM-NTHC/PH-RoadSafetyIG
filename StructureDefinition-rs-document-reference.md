@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-document-referenc
   "name" : "RSDocumentReference",
   "title" : "RS DocumentReference (Evidence)",
   "status" : "draft",
-  "date" : "2025-11-13T05:16:01+00:00",
+  "date" : "2025-11-13T05:42:41+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -1,7 +1,7 @@
 PHRoadSafetyIG : Validation Results
 =========================================
 
-err = 2901, warn = 944, info = 460
+err = 2902, warn = 944, info = 459
 $--
 Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG)
  Build Errors : 142 / 35 / 0
@@ -19,7 +19,7 @@ Generated $--. FHIR version $-- for example.fhir.ph.roadsafety#$-- (canonical = 
  /github/workspace/fsh-generated/resources/DocumentReference-RSMinimumExampleDocRef : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/DocumentReference-rs-example-documentreference : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Encounter-RSMinimumExampleEncounter : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/Encounter-rs-example-encounter : 3 / 2 / 2
+ /github/workspace/fsh-generated/resources/Encounter-rs-example-encounter : 4 / 2 / 1
  /github/workspace/fsh-generated/resources/HealthcareService-rs-example-healthcare-service : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-example.fhir.ph.roadsafety : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Location-RSMinimumExampleLocation : 0 / 0 / 1
@@ -703,8 +703,8 @@ ERROR: DocumentReference/rs-example-documentreference: DocumentReference.content
 WARNING: Encounter/RSMinimumExampleEncounter: Encounter.identifier[0].system: No definition could be found for URL value 'http://doh.incident.system/'
 WARNING: Encounter/RSMinimumExampleEncounter: Encounter.identifier[1].system: No definition could be found for URL value 'http://doh.hospitalno.system/'
 == fsh-generated/resources/Encounter-rs-example-encounter.json ==
-ERROR: Encounter/rs-example-encounter: Encounter.location[0]: Profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter|0.3.0, Element matches more than one slice - accidentSite, facility
-INFORMATION: Encounter/rs-example-encounter: Encounter.location[1]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Encounter/rs-example-encounter: Encounter.location[0]: Slicing cannot be evaluated: Invalid function name null() in discriminator (@char 32)
+ERROR: Encounter/rs-example-encounter: Encounter.location[1]: Slicing cannot be evaluated: Invalid function name null() in discriminator (@char 32)
 WARNING: Encounter/rs-example-encounter: Encounter.identifier[0].system: No definition could be found for URL value 'http://doh.incident.system/'
 WARNING: Encounter/rs-example-encounter: Encounter.identifier[1].system: No definition could be found for URL value 'http://doh.hospitalno.system/'
 ERROR: Encounter/rs-example-encounter: Encounter.participant[2].type[0].coding[0].version: The code system 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20241001' resulting from the version '' in the ValueSet include is different to the one in the value ('http://snomed.info/sct/900000000000207008/version/20241001')
