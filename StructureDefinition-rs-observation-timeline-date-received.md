@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-date-received | *Version*:0.3.0 |
-| Draft as of 2025-11-13 | *Computable Name*:RSObsTimelineDateReceived |
+| Draft as of 2025-11-14 | *Computable Name*:RSObsTimelineDateReceived |
 
  
 Date/time call received by dispatch for the incident. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineDateReceived",
   "title" : "RS Observation - Timeline Date Received",
   "status" : "draft",
-  "date" : "2025-11-13T06:07:07+00:00",
+  "date" : "2025-11-14T06:33:14+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-SafetyDevices | *Version*:0.3.0 |
-| Draft as of 2025-11-13 | *Computable Name*:SILPH___Safety_Devices__VS_ |
+| Draft as of 2025-11-14 | *Computable Name*:SILPH___Safety_Devices__VS_ |
 
  
 SILPH Value Set for Safety Devices 
@@ -57,7 +57,7 @@ This value set contains 8 concepts
   "name" : "SILPH___Safety_Devices__VS_",
   "title" : "SILPH - Safety Devices (VS)",
   "status" : "draft",
-  "date" : "2025-11-13T06:07:07+00:00",
+  "date" : "2025-11-14T06:33:14+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

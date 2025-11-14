@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-urgency | *Version*:0.3.0 |
-| Draft as of 2025-11-13 | *Computable Name*:RSObsUrgencyLevel |
+| Draft as of 2025-11-14 | *Computable Name*:RSObsUrgencyLevel |
 
  
 System-generated urgency level per CAD/agency rules. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-urgen
   "name" : "RSObsUrgencyLevel",
   "title" : "RS Observation - Priority Level (Urgency)",
   "status" : "draft",
-  "date" : "2025-11-13T06:07:07+00:00",
+  "date" : "2025-11-14T06:33:14+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

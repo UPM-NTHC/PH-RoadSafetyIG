@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-encounter | *Version*:0.3.0 |
-| Draft as of 2025-11-13 | *Computable Name*:RSEncounter |
+| Draft as of 2025-11-14 | *Computable Name*:RSEncounter |
 
  
 Encounter for EMS run report / facility submission context. Captures incident number, type, timing, participants, disposition & transfer. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
   "name" : "RSEncounter",
   "title" : "RS Encounter",
   "status" : "draft",
-  "date" : "2025-11-13T06:07:07+00:00",
+  "date" : "2025-11-14T06:33:14+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -455,12 +455,6 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "id" : "Encounter.location",
         "path" : "Encounter.location",
         "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "location.resolve().meta.profile[0]"
-            }
-          ],
           "ordered" : true,
           "rules" : "open"
         }
@@ -469,51 +463,17 @@ Other representations of profile: [CSV](StructureDefinition-rs-encounter.csv), [
         "id" : "Encounter.location:accidentSite",
         "path" : "Encounter.location",
         "sliceName" : "accidentSite",
+        "short" : "First Slice is the Accident Location",
         "min" : 0,
         "max" : "1"
-      },
-      {
-        "id" : "Encounter.location:accidentSite.location",
-        "path" : "Encounter.location.location",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-incident-location-incident"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Encounter.location:accidentSite.location.type",
-        "path" : "Encounter.location.location.type",
-        "patternUri" : "236"
       },
       {
         "id" : "Encounter.location:facility",
         "path" : "Encounter.location",
         "sliceName" : "facility",
+        "short" : "Second slice is the Facility Location",
         "min" : 0,
         "max" : "*"
-      },
-      {
-        "id" : "Encounter.location:facility.location",
-        "path" : "Encounter.location.location",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Encounter.location:facility.location.type",
-        "path" : "Encounter.location.location.type",
-        "patternUri" : "335"
       },
       {
         "id" : "Encounter.serviceProvider",

@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-location-service | *Version*:0.3.0 |
-| Draft as of 2025-11-13 | *Computable Name*:RSServiceLocation |
+| Draft as of 2025-11-14 | *Computable Name*:RSServiceLocation |
 
  
 Facility/service delivery location. Type bound to HL7 v3 ServiceDeliveryLocationRoleType (e.g., ER, ward, clinic). 
 
 **Usages:**
 
-* Refer to this Profile: [RS Encounter](StructureDefinition-rs-encounter.md)
 * Examples for this Profile: [DOH Central ER](Location-rs-example-service-location-basic.md) and [DOH Central ER](Location-rs-example-service-location-er.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/example.fhir.ph.roadsafety|current/StructureDefinition/rs-location-service)
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-location-service.
   "name" : "RSServiceLocation",
   "title" : "RS Service Location",
   "status" : "draft",
-  "date" : "2025-11-13T06:07:07+00:00",
+  "date" : "2025-11-14T06:33:14+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

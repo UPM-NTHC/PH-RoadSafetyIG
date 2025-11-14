@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-timeline-time-hospital-arrival | *Version*:0.3.0 |
-| Draft as of 2025-11-13 | *Computable Name*:RSObsTimelineTimeHospitalArrival |
+| Draft as of 2025-11-14 | *Computable Name*:RSObsTimelineTimeHospitalArrival |
 
  
 Time patient arrived at hospital/facility. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineTimeHospitalArrival",
   "title" : "RS Observation - Timeline Time Hospital Arrival",
   "status" : "draft",
-  "date" : "2025-11-13T06:07:07+00:00",
+  "date" : "2025-11-14T06:33:14+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
