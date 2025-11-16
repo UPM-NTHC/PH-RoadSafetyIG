@@ -4,6 +4,7 @@ Id: rs-incident-location-incident
 Title: "RS Incident Location"
 Description: "Location of incident; supports PH-Core address extensions and geolocation."
 * ^version = "1.0.0"
+* type = http://terminology.hl7.org/CodeSystem/service-type#236 "Accident"
 * name 0..1 MS
 * name ^short = "Location name"
 * address 0..1 MS
@@ -26,10 +27,11 @@ Description: "Facility/service delivery location. Type bound to HL7 v3 ServiceDe
 * . ^short = "Service / facility location"
 * . ^definition = "Location representing a service or facility used in RS encounters (for example, ER, ward, clinic)."
 * . ^comment = "Used for recording facility or service locations related to encounters."
+* type 0..1 MS
+* type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
 * name 0..1 MS
 * address 0..1 MS
-* type 0..1 MS
-* type from http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType (extensible)
+// * type from http://terminology.hl7.org/ValueSet/service-type (extensible)
 
 Instance: rs-example-incident-location-basic
 InstanceOf: RSIncidentLocation
@@ -58,7 +60,7 @@ Description: "Emergency room location for rs-organization-single-ex used in rs-e
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Emergency Room of Department of Health - Central Office, Manila.</div>"
 * name = "DOH Central ER"
-* type = http://terminology.hl7.org/CodeSystem/v3-ServiceDeliveryLocationRoleType#ER "Emergency room"
+* type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
 * address.line = "San Lazaro Compound"
 * address.line[+] = "Rizal Avenue"
 * address.city = "Manila"

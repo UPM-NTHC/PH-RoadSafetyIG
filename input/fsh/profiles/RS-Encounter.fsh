@@ -9,8 +9,15 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * class 1..1 MS
 * class ^short = "Encounter class/type"
 * class from SILPH-TypeofPatientVS (extensible)
-* identifier 1..* MS
-* identifier ^short = "Encounter identifiers"
+/*
+Warning: Terminology_TX_NoValid_13: The Coding provided 
+(http://loinc.org#LA10268-3) was not found in the value set 
+'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this 
+value set unless it has no suitable code (note that the
+validator cannot judge what is suitable).  (error message = 
+Unknown code 'http://loinc.org#LA10268-3' for in-memory 
+expansion of ValueSet 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode')
+*/
 * subject 1..1 MS
 * subject ^short = "Patient subject"
 * subject ^comment = "Reference constrained to the RS Patient profile (`RSPatient`)."
@@ -27,32 +34,46 @@ Description: "Encounter for EMS run report / facility submission context. Captur
 * obeys RSEncounterDischarge
 
 /* Incident and Service Locations (Encounter.location slicing) */
-* location ^slicing.discriminator.type = #value
-* location ^slicing.discriminator.path = "location"
+// * location ^slicing.discriminator.type = #value
+// * location ^slicing.discriminator.path = "location.type"
 * location ^slicing.rules = #open
 * location ^slicing.ordered = true
 * location contains accidentSite 0..1 and facility 0..*
 
 // first slice is the accident site
-* location[accidentSite].location 1..1 MS
-* location[accidentSite].location only Reference(RSIncidentLocation)
+* location[accidentSite] 0..1  // Cardinality for this slice
+* location[accidentSite] ^short = "First Slice is the Accident Location"
+// * location[accidentSite].location 1..1 MS
+// * location[accidentSite].location.type = http://terminology.hl7.org/CodeSystem/service-type#236 "Accident"
+// * location[accidentSite].location only Reference(RSIncidentLocation)
 
 // second slice is the facility (receiving facility, previous facility, etc)
-* location[facility].location 1..1 MS
-* location[facility].location only Reference(RSServiceLocation)
-* location[facility].location.type 0..1
+* location[facility] 0..* // Cardinality for this slice
+* location[facility] ^short = "Second slice is the Facility Location"
+// * location[facility].location 1..1 MS
+// * location[accidentSite].location ^short = "Succeeding Slices are Facility Locations"
+// * location[facility].location.type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
+// * location[facility].location only Reference(RSServiceLocation)
 
 /* Identifier slices for ONEISS */
+* identifier 1..* MS
+* identifier ^short = "Encounter identifiers"
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains incidentNumber 0..1 and hospitalCaseNo 0..1
-* identifier[incidentNumber].type 1..1 MS
-* identifier[incidentNumber].type.coding 1..1
-* identifier[incidentNumber].type.coding.display = "Incident number"
-* identifier[hospitalCaseNo].type 1..1 MS
-* identifier[hospitalCaseNo].type.coding 1..1
-* identifier[hospitalCaseNo].type.coding = $SCT#722248002 "Patient hospital visit number (observable entity)"
+* identifier[incidentNumber].system = "http://doh.incident.system/"
+* identifier[hospitalCaseNo].system = "http://doh.hospitalno.system/"
+
+// * identifier[incidentNumber].type 1..1 MS
+// * identifier[incidentNumber].type.coding 1..1
+// * identifier[incidentNumber].type.coding.display = "Incident number"
+
+// * identifier[hospitalCaseNo].type 1..1 MS
+// * identifier[hospitalCaseNo].type.coding 1..1
+// * identifier[hospitalCaseNo].type.coding = $SCT#722248002 "Patient hospital visit number (observable entity)"
+
+// IDENTIFIERS SHOULD BE BOUND BY SYSTEM not code
 
 /* Originating hospital/practitioner */
 * hospitalization.origin 0..1 MS
@@ -118,12 +139,16 @@ Description: "Emergency encounter for rs-example-patient documenting transport f
 * class.system = "http://loinc.org"
 * class.code = #LA10268-3
 * class.display = "ER"
-* identifier[incidentNumber].system = "http://www.roadsafetyph.doh.gov.ph/identifier/incident"
-* identifier[incidentNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier[incidentNumber].type.coding.code = #AN
+* identifier[incidentNumber].system = "http://doh.incident.system/"
 * identifier[incidentNumber].value = "INC-2025-0007"
-* identifier[hospitalCaseNo].system = "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"
+* identifier[hospitalCaseNo].system = "http://doh.hospitalno.system/"
 * identifier[hospitalCaseNo].value = "HCN-2025-0459"
+// * identifier[incidentNumber].system = "http://www.roadsafetyph.doh.gov.ph/identifier/incident"
+// * identifier[incidentNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+// * identifier[incidentNumber].type.coding.code = #AN
+// * identifier[incidentNumber].value = "INC-2025-0007"
+// * identifier[hospitalCaseNo].system = "http://www.roadsafetyph.doh.gov.ph/identifier/hospital-case"
+// * identifier[hospitalCaseNo].value = "HCN-2025-0459"
 * subject = Reference(rs-example-patient)
 * period.start = "2025-10-31T13:45:00+08:00"
 * period.end = "2025-10-31T16:30:00+08:00"
@@ -146,6 +171,7 @@ Title: "Example Incident Location"
 Description: "Road traffic collision site at EDSA and Ayala Avenue used in rs-example-encounter."
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Collision site along Epifanio de los Santos Avenue near Ayala Avenue, Makati City.</div>"
+* type = http://terminology.hl7.org/CodeSystem/service-type#236 "Accident"
 * name = "EDSA - Ayala Southbound"
 * address.use = #work
 * address.line = "Epifanio de los Santos Ave"
@@ -165,7 +191,7 @@ Description: "Emergency room location for Department of Health - Central Office 
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Emergency Room, Department of Health - Central Office.</div>"
 * name = "DOH Central ER"
-* type = http://terminology.hl7.org/CodeSystem/v3-ServiceDeliveryLocationRoleType#ER "Emergency room"
+* type = http://terminology.hl7.org/CodeSystem/service-type#335 "Facility"
 * address.line = "San Lazaro Compound, Rizal Avenue"
 * address.city = "Manila"
 * address.state = "NCR"
