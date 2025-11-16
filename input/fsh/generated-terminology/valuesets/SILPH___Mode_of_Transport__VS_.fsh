@@ -37,7 +37,7 @@ Description: "SILPH Value Set for Mode of Transport of Patient to Healthcare Fac
 * ^expansion.contains[=].version = "2.78"
 * ^expansion.contains[=].code = #LA9319-0
 * ^expansion.contains[=].display = "Private vehicle"
-* SNOMED_CT#49122002 "Ambulance"
-* SNOMED_CT#74964007 "Others"
-* LOINC#LA9321-6 "Police vehicle"
-* LOINC#LA9319-0 "Private vehicle"
+* $SCT#49122002 "Ambulance"
+* $SCT#74964007 "Others"
+* $LNC#LA9321-6 "Police vehicle"
+* $LNC#LA9319-0 "Private vehicle"

@@ -43,8 +43,8 @@ Description: "SILPH Value Set for Patient Activity at the Time of Injury/Acciden
 * ^expansion.contains[=].version = "0.2.0"
 * ^expansion.contains[=].code = #LEISURE
 * ^expansion.contains[=].display = "Leisure"
-* SNOMED_CT#443786003 "Sports"
-* SNOMED_CT#17542004 "Work related"
-* SNOMED_CT#74964007 "Others"
-* SNOMED_CT#261665006 "Unknown"
+* $SCT#443786003 "Sports"
+* $SCT#17542004 "Work related"
+* $SCT#74964007 "Others"
+* $SCT#261665006 "Unknown"
 * SILPH_Road_Safety_Local_Codes#LEISURE "Leisure"

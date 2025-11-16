@@ -23,5 +23,5 @@ Description: "SILPH Value Set for Pulse Rhythm"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #61086009
 * ^expansion.contains[=].display = "Irregular"
-* SNOMED_CT#271636001 "Regular"
-* SNOMED_CT#61086009 "Irregular"
+* $SCT#271636001 "Regular"
+* $SCT#61086009 "Irregular"

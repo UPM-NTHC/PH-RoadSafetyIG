@@ -23,5 +23,5 @@ Description: "SILPH Value Set for Sex"
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #248152002
 * ^expansion.contains[=].display = "Female"
-* SNOMED_CT#248153007 "Male"
-* SNOMED_CT#248152002 "Female"
+* $SCT#248153007 "Male"
+* $SCT#248152002 "Female"

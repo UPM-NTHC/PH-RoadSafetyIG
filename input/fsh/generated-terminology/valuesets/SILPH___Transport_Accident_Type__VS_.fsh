@@ -32,5 +32,5 @@ Description: "SILPH Value Set for Transport Accident Type (Land, Water or Air)"
 * ^expansion.contains[=].code = #386679005
 * ^expansion.contains[=].display = "Air"
 * SILPH_Road_Safety_Local_Codes#LAND "Land"
-* SNOMED_CT#215414001 "Water"
-* SNOMED_CT#386679005 "Air"
+* $SCT#215414001 "Water"
+* $SCT#386679005 "Air"
