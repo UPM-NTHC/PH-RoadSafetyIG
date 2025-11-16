@@ -23,5 +23,5 @@ Description: "SILPH Value Set for fracture type designation (open versus closed)
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #397181002
 * ^expansion.contains[=].display = "Open fracture"
-* SNOMED_CT#423125000 "Closed fracture"
-* SNOMED_CT#397181002 "Open fracture"
+* $SCT#423125000 "Closed fracture"
+* $SCT#397181002 "Open fracture"

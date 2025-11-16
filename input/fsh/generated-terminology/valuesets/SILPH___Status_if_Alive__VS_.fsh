@@ -23,5 +23,5 @@ Description: "SILPH Value Set for Patient Status, if patient is alive, specify i
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #418107008
 * ^expansion.contains[=].display = "Unconscious"
-* SNOMED_CT#271591004 "Conscious"
-* SNOMED_CT#418107008 "Unconscious"
+* $SCT#271591004 "Conscious"
+* $SCT#418107008 "Unconscious"

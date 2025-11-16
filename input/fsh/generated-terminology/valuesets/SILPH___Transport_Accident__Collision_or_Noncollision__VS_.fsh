@@ -31,5 +31,5 @@ Description: "SILPH Value Set for Transport Accident if Collision or Noncollisio
 * ^expansion.contains[=].version = "0.2.0"
 * ^expansion.contains[=].code = #NONCOLLISION
 * ^expansion.contains[=].display = "Non-Collision"
-* LOINC#LA7319-2 "Collision"
+* $LNC#LA7319-2 "Collision"
 * SILPH_Road_Safety_Local_Codes#NONCOLLISION "Non-Collision"

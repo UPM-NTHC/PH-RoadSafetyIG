@@ -40,7 +40,9 @@ Description: "Patient demographics and identifiers for RS reporting; reuse PH-Co
 * identifier contains patientHospitalID 0..1
 * identifier[patientHospitalID] ^short = "Hospital Patient ID No."
 * identifier[patientHospitalID] ^definition = "Write the hospital-based issued I.D. or number to uniquely identify the patient."
-* identifier[patientHospitalID].type.coding = $SCT#184107009 "Patient hospital number"
+// * identifier[patientHospitalID].type.coding = $SCT#184107009 "Patient hospital number"
+* identifier[patientHospitalID].system = "http://hospitals.gov.ph/"
+
 
 Invariant: rs-name-given-order
 Description: "Index 0 of name.given is the patient's first name; index 1 (if present) is the patient's middle name. This is a modelling convention; follow it when populating the given array."
