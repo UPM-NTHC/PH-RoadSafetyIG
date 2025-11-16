@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-timel
   "name" : "RSObsTimelineDateReceived",
   "title" : "RS Observation - Timeline Date Received",
   "status" : "draft",
-  "date" : "2025-11-16T14:11:53+00:00",
+  "date" : "2025-11-16T14:40:58+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
