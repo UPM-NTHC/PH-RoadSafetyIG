@@ -52,8 +52,8 @@ Description: "SILPH Value Set for EMS encounter participant roles documented on 
 * ^expansion.contains[=].version = "5.0.0"
 * ^expansion.contains[=].code = #RCV
 * ^expansion.contains[=].display = "receiver"
-* LOINC#90123-1 "Response team leader name"
-* SNOMED_CT#397897005 "Paramedic (occupation)"
-* SNOMED_CT#159738005 "Ambulanceman (occupation)"
-* SNOMED_CT#22515006 "Medical assistant (occupation)"
+* $LNC#90123-1 "Response team leader name"
+* $SCT#397897005 "Paramedic (occupation)"
+* $SCT#159738005 "Ambulanceman (occupation)"
+* $SCT#22515006 "Medical assistant (occupation)"
 * $v3-ParticipationType#RCV "receiver"
