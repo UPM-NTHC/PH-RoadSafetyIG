@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG/StructureDefinition/rs-observation-ec-sexual-assault | *Version*:0.3.0 |
-| Draft as of 2025-11-14 | *Computable Name*:RSObsECSexualAssault |
+| Draft as of 2025-11-16 | *Computable Name*:RSObsECSexualAssault |
 
  
 Flag indicating sexual assault. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-rs-observation-ec-se
   "name" : "RSObsECSexualAssault",
   "title" : "RS Observation - External Cause: Sexual Assault/Abuse/Rape (Alleged)",
   "status" : "draft",
-  "date" : "2025-11-14T06:33:14+00:00",
+  "date" : "2025-11-16T14:11:53+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-OtherVehicle | *Version*:0.3.0 |
-| Draft as of 2025-11-14 | *Computable Name*:SILPH___Other_Vehicle_in_Collision__VS_ |
+| Draft as of 2025-11-16 | *Computable Name*:SILPH___Other_Vehicle_in_Collision__VS_ |
 
  
 SILPH Value Set for Other Vehicle in Collision Accident 
@@ -57,7 +57,7 @@ This value set contains 11 concepts
   "name" : "SILPH___Other_Vehicle_in_Collision__VS_",
   "title" : "SILPH - Other Vehicle in Collision (VS)",
   "status" : "draft",
-  "date" : "2025-11-14T06:33:14+00:00",
+  "date" : "2025-11-16T14:11:53+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -95,6 +95,7 @@ This value set contains 11 concepts
     "include" : [
       {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "260413007",

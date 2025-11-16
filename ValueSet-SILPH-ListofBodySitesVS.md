@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-ListofBodySites | *Version*:0.3.0 |
-| Draft as of 2025-11-14 | *Computable Name*:SILPH___List_of_Body_Sites__VS_ |
+| Draft as of 2025-11-16 | *Computable Name*:SILPH___List_of_Body_Sites__VS_ |
 
  
 SILPH List of Body Sites 
@@ -62,7 +62,7 @@ SILPH List of Body Sites
   "name" : "SILPH___List_of_Body_Sites__VS_",
   "title" : "SILPH - List of Body Sites (VS)",
   "status" : "draft",
-  "date" : "2025-11-14T06:33:14+00:00",
+  "date" : "2025-11-16T14:11:53+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -100,6 +100,7 @@ SILPH List of Body Sites
     "include" : [
       {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "818983003",

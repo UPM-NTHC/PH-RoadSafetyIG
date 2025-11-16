@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://www.roadsafetyph.doh.gov.ph/ValueSet/SILPH-LevelofConsciousness | *Version*:0.3.0 |
-| Draft as of 2025-11-14 | *Computable Name*:SILPH___Level_of_Consciousness__VS_ |
+| Draft as of 2025-11-16 | *Computable Name*:SILPH___Level_of_Consciousness__VS_ |
 
  
 SILPH Value Set for Level of Consciousness (AVPU) Score 
@@ -55,7 +55,7 @@ SILPH Value Set for Level of Consciousness (AVPU) Score
   "name" : "SILPH___Level_of_Consciousness__VS_",
   "title" : "SILPH - Level of Consciousness (VS)",
   "status" : "draft",
-  "date" : "2025-11-14T06:33:14+00:00",
+  "date" : "2025-11-16T14:11:53+00:00",
   "publisher" : "UP Manila - National Institutes of Health - National Telehealth Center",
   "contact" : [
     {
@@ -93,6 +93,7 @@ SILPH Value Set for Level of Consciousness (AVPU) Score
     "include" : [
       {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20241001",
         "concept" : [
           {
             "code" : "248234008",
