@@ -68,7 +68,8 @@ git clone --depth 1 https://github.com/UPM-NTHC/PH-RoadSafetyIG.git
 cd PH-RoadSafetyIG
 git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 git config --add remote.origin.fetch "^refs/heads/gh-pages"
-git fetch
+git fetch --depth 20 origin main # To retain a bit of history
+git branch -a # see all recent branches
 ```
 
 ---
