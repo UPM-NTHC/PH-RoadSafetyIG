@@ -59,6 +59,19 @@ The resulting Implementation Guide is consensus-driven, operationally validated,
 - This Implementation Guide and its Minimum Data Set are still being finalized and validated. For questions, refer to the ~~wiki~~.
 
 ---
+
+## Developer Setup
+This repository contains a large history. To save disk space and skip the heavy ```gh-pages``` branch, use this command to clone:
+
+```bash
+git clone --depth 1 https://github.com/UPM-NTHC/PH-RoadSafetyIG.git
+cd PH-RoadSafetyIG
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+git config --add remote.origin.fetch "^refs/heads/gh-pages"
+git fetch
+```
+
+---
 ## Future Plans
 
 Upon finalization of the official Road Safety FHIR Implementation Guide, the content of this repository will be transitioned to a more appropriate and permanent location.
